@@ -1,0 +1,47 @@
+{
+  "_doc": "全局设置。root_dir 在 Mac 上指向你的共享文件夹(Cowork 也连这个文件夹)。装机时改 root_dir 一处即可。",
+  "root_dir": ".",
+  "subdirs": {
+    "raw": "raw",
+    "prepared": "prepared",
+    "daily": "daily",
+    "weekly": "weekly",
+    "monthly": "monthly",
+    "payment": "payment",
+    "logs": "logs"
+  },
+  "http": {
+    "timeout_s": 15,
+    "retries": 2,
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X) IntelBot/1.0",
+    "prefetch_max_chars": 3000,
+    "prefetch_concurrency": 8
+  },
+  "dedup": {
+    "lookback_days": 14,
+    "title_similarity_threshold": 0.6
+  },
+  "quota": {
+    "ai":      {"min": 1, "target": 5, "max": 7,  "candidates": 12},
+    "vaccine": {"min": 1, "target": 5, "max": 7,  "candidates": 15},
+    "synbio":  {"min": 0, "target": 3, "max": 5,  "candidates": 12},
+    "cross":   {"min": 0, "target": 3, "max": 5,  "candidates": 10},
+    "china":   {"min": 0, "target": 6, "max": 8,  "candidates": 12},
+    "payment": {"min": 2, "target": 9, "max": 12, "candidates": 20}
+  },
+  "diversity": {
+    "_doc": "同源多样性上限:单源最多入选 N 条候选,防高产源刷屏/淹没低频高价值源。日报 payment 内容型 RSS 源少(PYMNTS/Finextra/PC&M)放宽到 6;payment_deep 是双周报深度池(14天窗、高产新闻源会淹没 Bits about Money/Net Interest 等精析源)放宽到 8。",
+    "max_per_source": 3,
+    "by_section": { "payment": 6, "payment_deep": 8 }
+  },
+  "content": {
+    "min_chars": 50,
+    "default_truncate": 3000,
+    "china_truncate": 2000
+  },
+  "merge": {
+    "auto_merge_weekday": 2,
+    "merge_days": 2,
+    "_doc": "周二(isoweekday=2)自动合并前2天，补周六日一三天数据"
+  }
+}

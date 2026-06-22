@@ -1,0 +1,12 @@
+# 只提交 prepared/(候选包,供下游取用);raw/logs 等中间物不入库
+raw/
+logs/
+sections/
+qa/
+daily/
+weekly/
+monthly/
+payment/
+__pycache__/
+*.pyc
+.DS_Store

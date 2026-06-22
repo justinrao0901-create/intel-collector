@@ -1,0 +1,53 @@
+name: collect-daily
+# Plan B:GitHub 常开 runner 跑日报采集 → prepared 提交回仓库;Cowork 侧 web_fetch 取用。
+# 纯标准库,无需 pip。run_daily.py 用北京时区(util.CN_TZ)算日期。
+
+on:
+  schedule:
+    - cron: '7 23 * * *'        # 23:07 UTC = 北京 07:07(早于 Cowork 08:02 生成,留足缓冲)
+  workflow_dispatch: {}          # 支持 Actions 页手动触发(测试 / 补跑)
+
+permissions:
+  contents: write                # 允许把 prepared 提交回仓库
+
+concurrency:
+  group: collect-daily
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 采集(run_daily.py)
+        run: python run_daily.py
+
+      - name: 提交 prepared 回仓库
+        run: |
+          DATE=$(date +%F)
+          git config user.name  "intel-collector-bot"
+          git config user.email "intel-collector-bot@users.noreply.github.com"
+          git add -A prepared/
+          if git diff --cached --quiet; then
+            echo "本次 prepared 无变化(采集失败或无新内容)"
+          else
+            git commit -m "daily prepared $DATE"
+            git push
+          fi
+
+      - name: 校验产物(没产出就让 workflow 失败、好收到通知)
+        run: |
+          DATE=$(date +%F)
+          if [ ! -s "prepared/prepared-daily-$DATE.json" ]; then
+            echo "::error::prepared-daily-$DATE.json 未产出 —— 采集失败,请查上一步日志"
+            exit 1
+          fi
+          echo "✅ prepared-daily-$DATE.json 已产出"
