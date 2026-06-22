@@ -1,0 +1,333 @@
+{
+  "date": "2026-06-22",
+  "sources": [
+    {
+      "name": "通义 Qwen",
+      "section": "ai",
+      "method": "search",
+      "url": "https://qwenlm.github.io/",
+      "queries": [
+        "通义千问 Qwen 最新 模型 发布 开源",
+        "Qwen3 Qwen 新版本 release"
+      ],
+      "dual_china": true,
+      "window_h": null,
+      "note": "原 qwenlm.github.io scrape 在 Mac 端 0 产出(JS/空 feed),改走 Cowork WebSearch;阿里系→并入中国动态"
+    },
+    {
+      "name": "量子位",
+      "section": "ai",
+      "method": "remote",
+      "url": "https://www.qbitai.com/",
+      "queries": [],
+      "dual_china": true,
+      "window_h": 36,
+      "note": "Mac够不到中国站，Cowork web_fetch"
+    },
+    {
+      "name": "36氪 AI",
+      "section": "ai",
+      "method": "remote",
+      "url": "https://36kr.com/",
+      "queries": [],
+      "dual_china": true,
+      "window_h": 36,
+      "note": ""
+    },
+    {
+      "name": "机器之心",
+      "section": "ai",
+      "method": "remote",
+      "url": "https://www.jiqizhixin.com/",
+      "queries": [],
+      "dual_china": true,
+      "window_h": 36,
+      "note": ""
+    },
+    {
+      "name": "DeepSeek",
+      "section": "ai",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "DeepSeek 最新模型发布",
+        "DeepSeek new model release"
+      ],
+      "dual_china": true,
+      "window_h": 168,
+      "note": "无稳定blog，WebSearch"
+    },
+    {
+      "name": "智谱 Z.ai (GLM)",
+      "section": "ai",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "智谱 GLM 发布",
+        "Zhipu Z.ai GLM release"
+      ],
+      "dual_china": true,
+      "window_h": 168,
+      "note": ""
+    },
+    {
+      "name": "Moonshot Kimi",
+      "section": "ai",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Moonshot Kimi 发布",
+        "Kimi K2 release"
+      ],
+      "dual_china": true,
+      "window_h": 168,
+      "note": ""
+    },
+    {
+      "name": "The Information / Stratechery / Semafor",
+      "section": "ai",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "The Information AI",
+        "Stratechery AI",
+        "Semafor Technology"
+      ],
+      "dual_china": false,
+      "window_h": 36,
+      "note": "付费墙"
+    },
+    {
+      "name": "CIDRAP",
+      "section": "vaccine",
+      "method": "search",
+      "url": "https://www.cidrap.umn.edu/",
+      "queries": [
+        "CIDRAP latest infectious disease outbreak news",
+        "CIDRAP measles avian influenza vaccine update"
+      ],
+      "dual_china": false,
+      "window_h": 36,
+      "note": "rss.xml 在 Mac 端 0 产出(gzip/反爬),改走 Cowork WebSearch;疫苗 subagent 工作此源"
+    },
+    {
+      "name": "GAVI / CEPI / WHO ICTRP",
+      "section": "vaccine",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "GAVI vaccine news",
+        "CEPI funding announcement",
+        "WHO prequalification vaccine"
+      ],
+      "dual_china": false,
+      "window_h": 336,
+      "note": ""
+    },
+    {
+      "name": "动脉网",
+      "section": "vaccine",
+      "method": "remote",
+      "url": "https://www.vbdata.cn/",
+      "queries": [],
+      "dual_china": true,
+      "window_h": 36,
+      "note": "Mac够不到，Cowork web_fetch"
+    },
+    {
+      "name": "丁香园",
+      "section": "vaccine",
+      "method": "remote",
+      "url": "https://www.dxy.cn/bbs/newweb/pc/home",
+      "queries": [],
+      "dual_china": true,
+      "window_h": 36,
+      "note": ""
+    },
+    {
+      "name": "NMPA / 医药魔方 / CDE",
+      "section": "vaccine",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "NMPA 药品批准 疫苗",
+        "医药魔方 疫苗 获批",
+        "CDE 受理 疫苗"
+      ],
+      "dual_china": true,
+      "window_h": 48,
+      "note": ""
+    },
+    {
+      "name": "SynBioBeta",
+      "section": "synbio",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "SynBioBeta synthetic biology news",
+        "合成生物 行业动态"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": "feed已失效，转WebSearch"
+    },
+    {
+      "name": "GEN News",
+      "section": "synbio",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "GEN genetic engineering biotechnology news",
+        "合成生物 基因工程"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": "SSL握手失败，转WebSearch"
+    },
+    {
+      "name": "华大/凯赛/蓝晶/恩和",
+      "section": "synbio",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "华大基因 合成生物",
+        "凯赛生物",
+        "蓝晶微生物",
+        "恩和生物"
+      ],
+      "dual_china": true,
+      "window_h": 168,
+      "note": ""
+    },
+    {
+      "name": "AI制药公司(Isomorphic/Insilico/Recursion/Generate/Chai/NOETIK/EvolutionaryScale/Xaira)",
+      "section": "cross",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Isomorphic Labs",
+        "Insilico Medicine clinical",
+        "Recursion Pharmaceuticals",
+        "Generate Biomedicines",
+        "Chai Discovery",
+        "AI drug discovery clinical phase"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": ""
+    },
+    {
+      "name": "CoinDesk",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "CoinDesk stablecoin payments",
+        "crypto cross-border payment news"
+      ],
+      "dual_china": false,
+      "window_h": 36,
+      "note": "feed重定向损坏，转WebSearch"
+    },
+    {
+      "name": "Agent支付协议(AP2/x402/Mastercard Agent Pay/Visa Trusted Agent/OpenAI ACP)",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "AP2 agent payments protocol",
+        "x402 Coinbase",
+        "Mastercard Agent Pay",
+        "Visa Trusted Agent Protocol",
+        "OpenAI Agentic Commerce Protocol"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "AI×支付前沿"
+    },
+    {
+      "name": "BIS / CPMI / FSB",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "BIS CPMI payments report",
+        "Financial Stability Board stablecoin"
+      ],
+      "dual_china": false,
+      "window_h": 336,
+      "note": ""
+    },
+    {
+      "name": "Token Terminal / Artemis",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "stablecoin volume Artemis",
+        "Token Terminal payments"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": ""
+    },
+    {
+      "name": "移动支付网",
+      "section": "payment",
+      "method": "remote",
+      "url": "https://www.mpaypass.com.cn/news/",
+      "queries": [],
+      "dual_china": false,
+      "window_h": 48,
+      "note": "中文支付源只归payment；Mac够不到，Cowork web_fetch"
+    },
+    {
+      "name": "36氪出海",
+      "section": "payment",
+      "method": "remote",
+      "url": "https://36kr.com/information/web_zhichang/",
+      "queries": [],
+      "dual_china": false,
+      "window_h": 36,
+      "note": ""
+    },
+    {
+      "name": "白鲸出海",
+      "section": "payment",
+      "method": "remote",
+      "url": "https://www.baijingapp.com/",
+      "queries": [],
+      "dual_china": false,
+      "window_h": 36,
+      "note": ""
+    },
+    {
+      "name": "中国支付清算协会/银联/CIPS",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "中国支付清算协会",
+        "银联 跨境",
+        "CIPS 人民币"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": ""
+    },
+    {
+      "name": "人民银行/外汇局/金融监管总局",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "人民银行 支付",
+        "外汇管理局 跨境",
+        "金融监管总局"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": ""
+    }
+  ]
+}
