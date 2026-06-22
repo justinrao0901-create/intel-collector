@@ -30,6 +30,15 @@ jobs:
       - name: 采集(run_daily.py)
         run: python run_daily.py
 
+      - name: 生成固定名副本(供 Cowork 用固定 URL 拉,绕开 web_fetch provenance)
+        run: |
+          DATE=$(date +%F)
+          cd prepared
+          cp "prepared-daily-$DATE.json"  latest-daily.json
+          cp "search-manifest-$DATE.json" latest-manifest.json 2>/dev/null || true
+          cp "recent-coverage-$DATE.json" latest-coverage.json 2>/dev/null || true
+          cp "source-health-$DATE.json"   latest-health.json   2>/dev/null || true
+
       - name: 提交 prepared 回仓库
         run: |
           DATE=$(date +%F)
