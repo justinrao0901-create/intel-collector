@@ -4,7 +4,12 @@ name: collect-daily
 
 on:
   schedule:
-    - cron: '7 23 * * *'        # 23:07 UTC = 北京 07:07(早于 Cowork 08:02 生成,留足缓冲)
+    # 错时多次兜底:GitHub 新增/单一 cron 常漏跑或延迟。排 4 个时段,全部早于 Cowork 08:02 取数窗口,
+    # 任一成功即可(同日重复跑是幂等的:无变化不提交)。北京时间见注释。
+    - cron: '47 22 * * *'        # 22:47 UTC = 北京 06:47
+    - cron: '7 23 * * *'         # 23:07 UTC = 北京 07:07
+    - cron: '27 23 * * *'        # 23:27 UTC = 北京 07:27
+    - cron: '47 23 * * *'        # 23:47 UTC = 北京 07:47
   workflow_dispatch: {}          # 支持 Actions 页手动触发(测试 / 补跑)
 
 permissions:
@@ -38,6 +43,19 @@ jobs:
           cp "search-manifest-$DATE.json" latest-manifest.json 2>/dev/null || true
           cp "recent-coverage-$DATE.json" latest-coverage.json 2>/dev/null || true
           cp "source-health-$DATE.json"   latest-health.json   2>/dev/null || true
+
+      - name: 发布固定名副本到 Release(绕开 raw /main ref 解析滞后,下游用稳定 download URL 取数)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd prepared
+          # 固定 tag,首次创建、之后复用;资产每天 --clobber 覆盖。
+          gh release create prepared-latest --title "prepared latest" \
+            --notes "最新 prepared 固定名副本,每日由 collect-daily 覆盖。下游用稳定 download URL 取数。" \
+            2>/dev/null || true
+          gh release upload prepared-latest \
+            latest-daily.json latest-manifest.json latest-coverage.json latest-health.json \
+            --clobber
 
       - name: 提交 prepared 回仓库
         run: |
