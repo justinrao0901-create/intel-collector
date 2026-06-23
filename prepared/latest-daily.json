@@ -50,7 +50,7 @@
           "word_count": 356
         },
         {
-          "id": 1,
+          "id": 2,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 156
         },
         {
-          "id": 2,
+          "id": 1,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -140,30 +140,15 @@
           "word_count": 163
         },
         {
-          "id": 72,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "PolicyTrim: Boosting Intrinsic Policy Efficiency of Vision-Language-Action Models",
-          "link": "https://arxiv.org/abs/2606.22540",
-          "content": "Vision-Language-Action (VLA) models provide a unified paradigm for robotic manipulation, yet their real-world deployment is often bottlenecked by execution efficiency. While existing efforts predominantly focus on compute-centric efficiency to reduce per-step inference latency, the intrinsic policy efficiency of these models remains largely unexplored. Policy efficiency is fundamentally affected by two factors, namely the effective executable length of predicted action chunks and the total physical steps required to complete a task. These two factors jointly determine the total number of forward inference calls during execution. We observe that current VLA policies struggle with planning unreliability and action redundancy, suffering from severe prediction degradation at the tail of action chunks and tending to generate unnecessarily redundant physical steps. To address this, we propose PolicyTrim, a reinforcement learning-based post-training framework that extends the reliable action chunk length and reduces redundant physical steps. For reliable chunk extension, we employ a dynamic exploration strategy that explicitly rewards the successful completion of longer executable lengths",
-          "pub_date": "2026-06-20T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 73,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Safe Few-Step Generation via Velocity Editing",
-          "link": "https://arxiv.org/abs/2606.23267",
-          "content": "Flow matching has recently emerged as a strong paradigm for state-of-the-art text-to-image (T2I) generation, enabling high-quality generation with a small number of sampling steps. As these models are increasingly integrated into real-world applications, ensuring safe and non-sensitive content generation has become a critical requirement. However, adapting safety and concept removal methods to this new generation framework remains an open challenge. Specifically, prior methods largely rely on iterative trajectory steering across a number of denoising steps or on CLIP-centric prompt embedding manipulation. These design assumptions pose fundamental bottlenecks for safety in flow matching-based T2I generation, where limited sampling steps constrain iterative correction and modern context-aware text encoders diminish the effectiveness of embedding-level interventions. In this paper, we propose VESFlow, a training-free safety method tailored to flow matching with extremely few sampling steps. Leveraging the fact that flow matching models learn the marginal velocity, we directly edit the velocity field via a safe-conditional posterior. VESFlow steers the trajectory toward safe outputs wh",
-          "pub_date": "2026-06-21T20:00:00.000Z",
+          "title": "DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams",
+          "link": "https://arxiv.org/abs/2606.21337",
+          "content": "Massive unstructured multimodal streams suffer from high \"data entropy,\" impeding both efficient human knowledge acquisition and high-quality AI post-training. Existing passive annotation paradigms, heavily reliant on heuristic rules or general VLMs, are costly, monotonous, and fail to unlock the deep procedural logic embedded in raw data. We elevate data processing to a learnable capability, proposing a paradigm shift towards Agentic Data Tailoring, which actively refining and structuring data to align with diverse user and downstream intents. To overcome the data scarcity bottleneck in training such high-order capabilities, we design a two-stage pipeline grounding generative semantic synthesis in deterministic Factual Anchors, yielding a large-scale dataset spanning five core physical and digital domains. Building upon this, DataClaw_0-9B model synergizes Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO), achieving robust alignment with complex refinement and tailoring intents. To systematically quantify this capability, we construct DataClaw_0-val, the first benchmark dedicated to data refinement. Crucially, we adopt downstream post-training as the ulti",
+          "pub_date": "2026-06-18T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -175,10 +160,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "OpenRath: Session-Centered Runtime State for Agent Systems",
-          "link": "https://arxiv.org/abs/2606.19409",
-          "content": "Modern agent systems often suffer from fragmented runtime state: transcripts, tool effects, memory events, workspace placement, branch provenance, and replay evidence are recorded separately and become difficult to inspect or reproduce. OpenRath addresses this issue with a PyTorch-like programming model for multi-agent, multi-session systems. The analogy concerns the role of a central first-class runtime abstraction, not tensor computation. Its core abstraction is Session, the runtime value passed between agents and workflows. A Session is branchable, inspectable, replayable, backend-aware, and composable. It records conversation chunks, sandbox placement, lineage metadata, token usage, pending work, and tool evidence, while defining where memory interactions enter the runtime record. Since this state is carried by the same value used in program execution, fork, merge, and replay become explicit runtime operations rather than states reconstructed from external traces. OpenRath further defines Sandbox, Tool, Agent, Memory, Workflow, and Selector, with Selector turning control flow into runtime-routed decisions. This report presents the programming model, architecture, audited milest",
-          "pub_date": "2026-06-16T20:00:00.000Z",
+          "title": "Tapered Language Models",
+          "link": "https://arxiv.org/abs/2606.23670",
+          "content": "Modern language models, including transformer, recurrent, and memory-based variants, share a common chassis: a stack of identical layers in which parameters are allocated uniformly across depth. This is a default inherited from the original transformer and largely unchanged since, yet a growing body of evidence suggests that layers contribute non-uniformly to the final output, with later layers refining the residual stream rather than transforming it. We ask whether parameter capacity should reflect this asymmetry. Our controlled experiment shows that, under a fixed budget, allocating more capacity to earlier layers and less to later layers improves perplexity over a uniform-width baseline, while the reverse allocation hurts. Building on this result, we introduce Tapered Language Models (TLMs), an architectural principle in which a parameter-bearing component is monotonically tapered across depth under a fixed total budget. MLPs are the natural site for this instantiation: they dominate parameter count across all modern LM families and expose width as a single, clean axis of variation. Across three model scales and four architectures (Transformer, Gated Attention, Hope-attention, a",
+          "pub_date": "2026-06-21T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 75,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "FastMix: Fast Data Mixture Optimization via Gradient Descent",
+          "link": "https://arxiv.org/abs/2606.14971",
+          "content": "While large and diverse datasets have driven recent advances in large models, identifying the optimal data mixture for pre-training and post-training remains a significant open problem. We address this challenge with FASTMIX, a novel framework that automates data mixture discovery while training only a single proxy model. Instead of relying on predefined heuristics or resource-intensive simulations, FASTMIX jointly optimizes mixture coefficients and model parameters, substantially improving efficiency and scalability over prior approaches. At the core of FASTMIX is a reformulation of mixture selection as a bilevel optimization problem. Under this reformulation, we show that optimizing mixture ratios is mathematically equivalent to assigning per-source loss weights under uniform source sampling. This embeds the mixture coefficients directly into the differentiable iterative optimization objective, enabling efficient, gradient-based optimization of both mixture and model. To solve the optimization problem, FASTMIX implements an approximate iterative optimization procedure, alternating between (i) updating model parameters on data sampled according to current mixture ratios (inner loo",
+          "pub_date": "2026-06-11T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 249,
-      "total_valid": 68,
+      "total_raw": 2306,
+      "total_valid": 1590,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 562,
+          "id": 2619,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 528
         },
         {
-          "id": 378,
+          "id": 2435,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 477
         },
         {
-          "id": 563,
+          "id": 2620,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 447
         },
         {
-          "id": 352,
+          "id": 2409,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 429
         },
         {
-          "id": 577,
+          "id": 2634,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 382
         },
         {
-          "id": 411,
+          "id": 2468,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 369
         },
         {
-          "id": 383,
+          "id": 2440,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 357
         },
         {
-          "id": 370,
+          "id": 2427,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 354
         },
         {
-          "id": 412,
+          "id": 2469,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 341
         },
         {
-          "id": 413,
+          "id": 2470,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 339
         },
         {
-          "id": 323,
+          "id": 2380,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 335
         },
         {
-          "id": 554,
+          "id": 2611,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 325
         },
         {
-          "id": 373,
+          "id": 2430,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 323
         },
         {
-          "id": 578,
+          "id": 2635,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 322
         },
         {
-          "id": 580,
+          "id": 2637,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 698,
+          "id": 2755,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 666,
+          "id": 2723,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 270
         },
         {
-          "id": 637,
+          "id": 2694,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 257
         },
         {
-          "id": 653,
+          "id": 2710,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 254
         },
         {
-          "id": 687,
+          "id": 2744,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 688,
+          "id": 2745,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 701,
+          "id": 2758,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 504
         },
         {
-          "id": 702,
+          "id": 2759,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 485
         },
         {
-          "id": 682,
+          "id": 2739,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 440
         },
         {
-          "id": 704,
+          "id": 2761,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 438
         },
         {
-          "id": 629,
+          "id": 2686,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 393
         },
         {
-          "id": 683,
+          "id": 2740,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 688,
+          "id": 2745,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 692,
+          "id": 2749,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 696,
+          "id": 2753,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 715,
+          "id": 2772,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 637
         },
         {
-          "id": 562,
+          "id": 2619,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 528
         },
         {
-          "id": 701,
+          "id": 2758,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 504
         },
         {
-          "id": 709,
+          "id": 2766,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 469
         },
         {
-          "id": 368,
+          "id": 2425,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 449
         },
         {
-          "id": 563,
+          "id": 2620,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 447
         },
         {
-          "id": 330,
+          "id": 2387,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 80,
-      "total_valid": 77,
+      "total_raw": 89,
+      "total_valid": 86,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 749,
+          "id": 2806,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 814
         },
         {
-          "id": 724,
+          "id": 2781,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 503
         },
         {
-          "id": 717,
+          "id": 2774,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 497
         },
         {
-          "id": 763,
+          "id": 2820,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 354
         },
         {
-          "id": 761,
+          "id": 2818,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 335
         },
         {
-          "id": 762,
+          "id": 2819,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 333
         },
         {
-          "id": 742,
+          "id": 2799,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 274
         },
         {
-          "id": 744,
+          "id": 2801,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 270
         },
         {
-          "id": 743,
+          "id": 2800,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 239
         },
         {
-          "id": 727,
+          "id": 2784,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 193
         },
         {
-          "id": 735,
+          "id": 2792,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 176
         },
         {
-          "id": 731,
+          "id": 2788,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 158
         },
         {
-          "id": 728,
+          "id": 2785,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 129
         },
         {
-          "id": 729,
+          "id": 2786,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,79 +1009,94 @@
           "word_count": 102
         },
         {
-          "id": 769,
-          "source": "Ledger Insights",
+          "id": 151,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "iCapital integrates alternatives DLT platform with fund admin UMBFS",
-          "link": "https://www.ledgerinsights.com/icapital-integrates-alternatives-dlt-platform-with-fund-admin-umbfs/",
-          "content": "iCapital, the alternative investment fintech, is integrating its distributed ledger technology (DLT) platform with UMB Fund Services (UMBFS), one of the largest US fund administrators. UMBFS is a subsidiary of UMB Financial Corporation. The DLT platform standardizes data and automates workflows across the alternatives ecosystem, creating a shared record of transactions that reduces the need [&#8230;] The post iCapital integrates alternatives DLT platform with fund admin UMBFS appeared first on Ledger Insights - blockchain for enterprise .",
-          "pub_date": "Mon, 22 Jun 2026 16:40:04 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Who Checks the Citations? Benchmarking Legal Hallucination Detection",
+          "link": "https://arxiv.org/abs/2606.21155",
+          "content": "arXiv:2606.21155v1 Announce Type: new Abstract: Attorneys, judges, and pro se filers increasingly use AI to draft legal documents, yet these tools frequently fabricate citations. Despite predictions that newer models would hallucinate less or that court sanctions would deter negligent filers, we found over 1,000 filings containing fabricated citations -- with this number growing year-over-year. This study evaluates whether AI-based systems can mitigate these errors by automatically detecting hallucinations. We propose a taxonomy of legal citation hallucinations grounded in actual court filings and introduce a dataset of 1,300 brief excerpts containing injected errors. Benchmarking five models in agentic and non-agentic settings reveals that while the latest iterations perform better -- GPT-5 achieves 82.8% recall and a 60.5% F1 score in an agentic framework -- all models struggle with subtle error categories. Agentic verification remains resource-intensive, with GPT-5 averaging 16.9 steps per excerpt. Furthermore, restricted information access limits the efficacy of even the best agents. This gap creates policy concerns, as it disadvantages both AI systems and litigants who lack su",
+          "pub_date": "Tue, 23 Jun 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 544
+          "word_count": 1200
         },
         {
-          "id": 719,
-          "source": "PYMNTS.com",
+          "id": 273,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Samsung Rolls Out OpenAI Tools to Workforce in Major Enterprise Push",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/samsung-rolls-out-openai-tools-to-workforce-in-major-enterprise-push/",
-          "content": "Samsung Electronics deployed OpenAI’s ChatGPT Enterprise and Codex to its entire South Korean workforce and select international divisions, Seeking Alpha reported Monday (June 22). The deployment marks one of the artificial intelligence developer’s largest corporate adoptions to date. The technology conglomerate plans to integrate these AI tools across multiple core business functions, encompassing software engineering, [&#8230;] The post Samsung Rolls Out OpenAI Tools to Workforce in Major Enterprise Push appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 22 Jun 2026 23:11:58 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Evaluation Awareness Is Not One Capability: Evidence from Open Language Models",
+          "link": "https://arxiv.org/abs/2606.23583",
+          "content": "arXiv:2606.23583v1 Announce Type: new Abstract: Safety benchmarks assume that test-condition behavior predicts deployment behavior, an assumption that fails if models detect evaluation cues and adapt. This opens a gap between benchmark performance and deployment behavior: compliance measured under test conditions becomes an optimistic upper bound that overstates how safely a model behaves once the evaluation harness is removed. We characterize this evaluation awareness through eight experiments across 37 open-weight models and seven families. (i)Detection is moderate and training-driven (24/37 models exceed chance, best AUROC 0.714 vs.0.819 human, with instruction tuning dominating over scale). (ii)Detection shifts safety behavior (hard refusal drops 5.8 percentage points under hypothetical framing, and 21/140 HarmBench framing effects are significant, with compliance rising up to +30 percentage points. (iii)Representations survive behavioral collapse (probes retain AUROC 0.98 under rewrites that drive behavior below chance, and multi-layer steering causally moves three downstream tasks while random controls do not). (iv)These axes are weakly coupled (only 1/15 correlations are sig",
+          "pub_date": "Tue, 23 Jun 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 542
+          "word_count": 1200
         },
         {
-          "id": 722,
-          "source": "PYMNTS.com",
+          "id": 295,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "California Consumers Sue Gas Stations Over AI Price Fixing",
-          "link": "https://www.pymnts.com/news/retail/2026/california-consumers-sue-gas-stations-over-ai-price-fixing/",
-          "content": "A group of California consumers filed a proposed class-action lawsuit alleging that gas station operators including Walmart, Marathon Petroleum, BP and 7-Eleven used an artificial intelligence pricing tool to illegally inflate pump prices in the state, according to a complaint filed in federal court in Sacramento. The companies, which collectively operate more than 1,700 [&#8230;] The post California Consumers Sue Gas Stations Over AI Price Fixing appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 22 Jun 2026 21:36:33 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Answer Engineering: Local Trajectory Editing for Protocol-Constrained Decision Making in Large Language Models",
+          "link": "https://arxiv.org/abs/2606.21121",
+          "content": "arXiv:2606.21121v1 Announce Type: cross Abstract: Large language models can produce confident but protocol-invalid answers in domains where procedural compliance is critical. This paper presents Answer Engineering, a deterministic runtime and authoring layer that applies localized rule-guided interventions to the visible reasoning trajectory during standard autoregressive generation, without retraining, modifying model weights, or performing global search. The method is evaluated on a controlled clinical benchmark for sudden sensorineural hearing loss (SSNHL), where correct management depends on protocol-consistent interpretation of symptom timing, Weber/Rinne tuning-fork findings, and otoscopic findings. In the benchmark, step-by-step reasoning shifted rather than eliminated errors: compliant outcomes for SSNHL decreased from 54.5% under unguided generation to 25.1%, while acceptance on the conductive contrast condition increased from 1.6% to 58.9%. Local trajectory editing increased SSNHL compliance to 83.5% and conductive-case adherence to 77.9%, raising balanced accuracy from 42.0% under reasoning-only generation to 80.7%. The results support a systems-level view in which proto",
+          "pub_date": "Tue, 23 Jun 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 482
+          "word_count": 1200
         },
         {
-          "id": 718,
-          "source": "PYMNTS.com",
+          "id": 450,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "The Corporate Road Warrior Is Back With a Bigger Mission",
-          "link": "https://www.pymnts.com/transportation/travel-payments/2026/the-corporate-road-warrior-is-back-with-a-bigger-mission/",
-          "content": "Business travel is back. Global business travel spending is expected to reach between $1.62 trillion and $1.69 trillion for the calendar year, per estimates cited by the Global Business Travel Association industry group, surpassing pre-pandemic highs and establishing a new industry record. Europe and Asia-Pacific are leading the expansion, while major events such as [&#8230;] The post The Corporate Road Warrior Is Back With a Bigger Mission appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 22 Jun 2026 23:40:29 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "When Does Streaming Tool Use Help? Characterizing Tool-Intent Stabilization in Streaming Retrieval-Augmented Generation",
+          "link": "https://arxiv.org/abs/2606.20113",
+          "content": "arXiv:2606.20113v2 Announce Type: replace Abstract: Streaming Retrieval-Augmented Generation (Streaming RAG) hides tool latency by issuing retrieval queries in parallel with the user's still-arriving input, before the utterance is complete. Speculation can only help, though, when the correct query becomes determinable before the user stops speaking or typing -- a property of the query, not the system. We name and measure this property, tool-intent stabilization: the point in the input stream at which a speculative query's retrieval converges on the answer-bearing result. On the CRAG benchmark (1371 validation questions) we (i) characterize how stabilization is distributed across queries; (ii) derive a model-agnostic bound H on the share of tool latency hideable behind the remaining input, given tool latency L and input cadence delta; (iii) validate it against a working streaming pipeline; and (iv) ask which query properties predict early versus late stabilization. Stabilization is typically early: at a realistic operating point a 73.9% streamable fraction of the benchmark admits latency hiding, and H acts as a conservative aggregate floor that realized savings meet or exceed -- tho",
+          "pub_date": "Tue, 23 Jun 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 475
+          "word_count": 1200
         },
         {
-          "id": 720,
-          "source": "PYMNTS.com",
+          "id": 620,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Fed Governor Casts Tokenization as New Dollar Channel",
-          "link": "https://www.pymnts.com/blockchain/2026/waller-opens-fed-conference-with-focus-on-stablecoins-and-tokenized-assets/",
-          "content": "Federal Reserve Board of Governors member Christopher J. Waller opened the Federal Reserve’s Fifth Conference on the International Roles of the Dollar on Monday (June 22) with remarks detailing the purpose of the meeting: to bring together different perspectives on the forces shaping the dollar’s global role. “This year, we are here to discuss [&#8230;] The post Fed Governor Casts Tokenization as New Dollar Channel appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 22 Jun 2026 22:39:00 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Closed-loop Auto Research for Molecular Property Prediction: Discovering and Certifying Generalizable Improvements",
+          "link": "https://arxiv.org/abs/2606.22731",
+          "content": "arXiv:2606.22731v1 Announce Type: new Abstract: Closed-loop Auto Research extends automated machine learning from fixed-dataset fitting to changing the research workflow, with language-model agents editing representations and model code and acquiring external evidence. Molecular property prediction spans many small endpoints. We ask whether this action space yields improvements generalizing beyond the validation signal selecting them. We isolate three Auto Research axes, features, models, and external evidence, under a file-level ablation lock attributing each gain to one axis over a strong baseline. Across 36 endpoints in three benchmark suites we score each selected configuration once on a held-out test whose labels the search never read. A routed pipeline taking each endpoint's best validation axis reaches positive held-out gains of 0.013, 0.011, and 0.042, the transferable axis differing by suite, data on TDC, model on Polaris, feature and model on MoleculeNet. The largest model-search gain falls from 0.041 on validation to 0.003 on test, while curated data reaches 0.022 but negative 0.019 on test, two non-transfer signatures. Curated external data raises held-out CYP2C9-substr",
+          "pub_date": "Tue, 23 Jun 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 449
+          "word_count": 1200
+        },
+        {
+          "id": 678,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Ghost Vectors: Soft-Deleted Embeddings Remain Reconstructible in HNSW Vector Databases",
+          "link": "https://arxiv.org/abs/2606.18497",
+          "content": "arXiv:2606.18497v1 Announce Type: cross Abstract: Retrieval-augmented generation (RAG) allows large language models to access external and private corpora for factual, domain-specific responses. Modern RAG pipelines use hierarchical navigable small world (HNSW) vector databases for efficient similarity search. When a user requests data deletion, the systems typically only mark the record as deleted, leaving the embedding on disk physically unchanged. This soft-delete operation raises compliance concerns under data-erasure and retention requirements such as GDPR Article 17 and HIPAA. Analysis on three HNSW implementations confirms that deleted vectors remain physically recoverable by accessing the raw index files at the storage layer, bypassing API access. Using the Vec2Text inversion model without domain-specific fine-tuning, we show this vulnerability on multiple real-world datasets and data modalities. On Wikipedia biographical living persons dataset (BLP), we successfully recover 25.5% of exact person names and 46.4% of geographic locations (ROUGE-L 0.185). Recovery reaches 100% for both patient age and gender markers (ROUGE-L 0.290) on highly structured, sensitive data (NIH Syn",
+          "pub_date": "Tue, 23 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1089,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 220,
-      "total_valid": 42,
-      "total_candidates": 19
+      "total_raw": 243,
+      "total_valid": 65,
+      "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 936,
-    "dup": 43,
+    "total_raw": 2993,
+    "dup": 578,
     "nocontent": 387,
     "noise": 4
   }
