@@ -55,6 +55,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 3,
+          "title": "How agents are transforming work",
+          "link": "https://openai.com/index/how-agents-are-transforming-work",
+          "content": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles.",
+          "pub_date": "Thu, 25 Jun 2026 02:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 147
+        },
+        {
+          "id": 2,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
           "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
           "link": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
           "content": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
@@ -65,7 +80,7 @@
           "word_count": 145
         },
         {
-          "id": 9,
+          "id": 10,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -80,22 +95,7 @@
           "word_count": 145
         },
         {
-          "id": 8,
-          "source": "OpenAI News",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Samsung Electronics brings ChatGPT and Codex to employees",
-          "link": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-          "content": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
-          "pub_date": "Sun, 21 Jun 2026 23:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 136
-        },
-        {
-          "id": 91,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 157
         },
         {
-          "id": 94,
+          "id": 93,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 141
         },
         {
-          "id": 89,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,44 +140,44 @@
           "word_count": 139
         },
         {
+          "id": 71,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation",
+          "link": "https://arxiv.org/abs/2606.23104",
+          "content": "On-policy distillation (OPD) improves LLM reasoning by training a student model on its own generated outputs, but standard OPD treats all student-generated outputs (SGOs) equally regardless of their informativeness. We observe a consistent asymmetry in controlled filtering experiments: in both OPD and on-policy self distillation (OPSD), training only on incorrect SGOs outperforms training only on correct ones. Our further analysis suggests that models trained on correct-only SGOs tend to generate shorter reasoning traces and show weaker reflection behavior, while incorrect SGOs better preserve exploratory reasoning near the model's capability boundary. To exploit this signal without requiring full answer-containing rollouts, we introduce ReNIO, which Reweights Negative trajectory Importance for LLM On-policy distillation. By using the student-to-teacher probability ratio, ReNIO identifies pivotal tokens leading to wrong reasoning traces and aggregates their information into a normalized sample weight, inherently assigning larger weights to likely negative trajectories without observing the correctness of final-answer. Since Re-NIO only uses prefix-conditioned token probabilities, i",
+          "pub_date": "2026-06-21T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 72,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Constraint Tax in Open-Weight LLMs: An Empirical Study of Tool Calling Suppression Under Structured Output Constraints",
+          "link": "https://arxiv.org/abs/2606.25605",
+          "content": "Tool Calling and Structured Output are two core capabilities of modern Agent systems, yet their interaction under joint deployment conditions remains insufficiently understood. This paper reports a reproducible phenomenon observed in a production Agent system: when Tool Calling and JSON Schema constraints are simultaneously enabled, multiple open-weight models cease invoking tools despite maintaining high schema compliance. We refer to this behavior as Tool Suppression. Through controlled experiments across multiple model families and deployment settings, we consistently reproduce Tool Suppression under joint constraints, while tool execution and schema compliance remain functional when evaluated independently. Further analysis reveals that JSON Schema constraints are compiled into grammar-based token masks, causing tool-call tokens to become unreachable during decoding. This provides an implementation-level explanation for the observed behavior. To interpret the phenomenon, we formulate the Constraint Priority Inversion (CPI) hypothesis, which suggests that schema satisfaction may dominate action-selection behavior under multiple simultaneous constraints. We present CPI as a behav",
+          "pub_date": "2026-06-23T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 73,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Are We Ready For An Agent-Native Memory System?",
-          "link": "https://arxiv.org/abs/2606.24775",
-          "content": "Memory for large language model (LLM) agents has rapidly evolved from simple retrieval-augmented mechanisms into a data management system that supports persistent information storage, retrieval, update, consolidation, and dynamic lifecycle governance throughout agent execution. Despite this evolution, existing evaluations still benchmark agent memory mainly through end-to-end task success metrics (e.g., F1, BLEU), while treating the underlying system as a monolithic black box. As a result, critical system-level concerns, including operational costs, architectural trade-offs across memory modules, and robustness under dynamic knowledge updates, remain insufficiently explored. In this paper, we present a systematic experimental study of agent memory from a data management perspective. We propose an analytical framework that decomposes agent memory into four core modules: memory representation and storage, extraction, retrieval and routing, and maintenance. Under this framework, we evaluate 12 representative memory systems and two reference baselines across five benchmark workloads spanning 11 datasets. Our extensive end-to-end evaluation shows that no single architecture dominates ac",
-          "pub_date": "2026-06-22T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 74,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Look Light, Think Heavy: What Multimodal Chain-of-Thought Reasoning Can and Cannot Do",
-          "link": "https://arxiv.org/abs/2606.22565",
-          "content": "Chain-of-Thought (CoT) has become a standard method for improving reasoning capabilities in large language models (LLMs) by eliciting step-by-step thinking, but its effectiveness in multimodal tasks remains unclear. In this paper, we aim to systematically investigate the key question: What can multimodal Chain-of-Thought reasoning do, and where and why does it fall short? To this end, we evaluate 12 multimodal tasks across perception and reasoning categories using both 14 non-reasoning models and 8 reasoning models. Our analysis reveals several important findings: (1) CoT is not a free lunch and should be used selectively depending on the specific requirements of each task. For perception tasks, CoT can lead to undesirable side effects, such as reduced performance in visual grounding and object counting. In contrast, it proves effective for reasoning tasks involving mathematical, scientific, and multi-image reasoning; (2) Compared to original models, existing open-source multimodal reasoning models often yield only marginal overall improvements, possibly due to an overemphasis on mathematical reasoning at the expense of broader capabilities; (3) Visual reasoning remains a key bottl",
-          "pub_date": "2026-06-20T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 76,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation",
-          "link": "https://arxiv.org/abs/2606.26058",
-          "content": "Open domain subject-driven text-to-video (S2V) generation has drawn significant interest in academia and industry. Open domain S2V mainly involves two scenarios: in-domain, which requires retaining the reference subject features as much as possible, and cross-domain, which preserves the intrinsic features of the subject while allowing subject-irrelevant properties to vary flexibly according to the text prompt. Existing methods primarily focus on maximizing subject fidelity in in-domain scenarios, which limits their editability and adaptability in cross-domain scenarios, such as novel styles, semantic combinations, or domain attributes. In this study, we propose that an ideal S2V method should flexibly shuttle between different domains, achieving strong performance in both in-domain and cross-domain scenarios. To this end, we propose DomainShuttle, which could achieve high fidelity and generative flexibility for open domain video personalization. Specifically, we introduce Domain-MoT, which decouples videos and reference features and introduces the domain-aware AdaLN for domain-specific modeling of reference images. We then introduce the Video-Reference DualRoPE scheme, which places",
+          "title": "MVTrack4Gen: Multi-View Point Tracking as Geometric Supervision for 4D Video Generation",
+          "link": "https://arxiv.org/abs/2606.26087",
+          "content": "Synthesizing a novel-view video from a monocular reference video along a target camera trajectory requires both geometric consistency and motion fidelity with respect to the reference video. Existing methods based on explicit 3D representations are limited by the accuracy of off-the-shelf reconstruction modules, which often produce inaccurate geometry for dynamic objects in monocular videos. In contrast, camera-conditioning-only methods can achieve high visual quality but often struggle to preserve geometric and motion consistency. In this work, we introduce MVTrack4Gen (Multi-View point Tracking for Novel-View Generation), a motion-aware training framework that leverages multi-view point tracking as an additional geometric and motion supervision signal for camera-conditioning-only novel-view video diffusion models. Our key finding is that specific attention layers encode strong correspondence cues, where query features attend to key features at geometrically corresponding locations across views and over time, and the misalignment of these correspondences causes motion inconsistency. Based on this observation, we route these features into an auxiliary multi-view tracking head and j",
           "pub_date": "2026-06-23T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 936,
-      "total_valid": 583,
+      "total_raw": 974,
+      "total_valid": 596,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1322,
+          "id": 1348,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,22 @@
           "word_count": 525
         },
         {
-          "id": 1159,
+          "id": 1169,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Neoadjuvant stereotactic body radiation therapy with durvalumab and oleclumab in ER<sup>+</sup>HER2<sup>−</sup> breast cancer: a randomized phase 2 trial",
+          "link": "https://www.nature.com/articles/s41591-026-04453-z",
+          "content": "Nature Medicine, Published online: 25 June 2026; doi:10.1038/s41591-026-04453-z In the randomized phase 2 Neo-CheckRay trial, patients with early-stage ER+HER2− breast cancer received neoadjuvant immune-modulating stereotactic body radiation therapy with or without durvalumab, and with or without the anti-CD73 antibody oleclumab, leading to encouraging clinical responses when durvalumab was added including in patients with PD-L1-negative tumors.",
+          "pub_date": "2026-06-25",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 449
+        },
+        {
+          "id": 1197,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +242,7 @@
           "word_count": 426
         },
         {
-          "id": 1080,
+          "id": 1118,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +257,7 @@
           "word_count": 346
         },
         {
-          "id": 992,
+          "id": 1029,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +272,7 @@
           "word_count": 302
         },
         {
-          "id": 1128,
+          "id": 1166,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 252
         },
         {
-          "id": 1011,
+          "id": 1048,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 245
         },
         {
-          "id": 1098,
+          "id": 1136,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 232
         },
         {
-          "id": 1106,
+          "id": 1144,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 223
         },
         {
-          "id": 1303,
+          "id": 1329,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 195
         },
         {
-          "id": 1062,
+          "id": 1099,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +362,7 @@
           "word_count": 191
         },
         {
-          "id": 1046,
+          "id": 1083,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +377,7 @@
           "word_count": 184
         },
         {
-          "id": 1047,
+          "id": 1084,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +392,7 @@
           "word_count": 180
         },
         {
-          "id": 1060,
+          "id": 1097,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +407,7 @@
           "word_count": 180
         },
         {
-          "id": 1059,
+          "id": 1096,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 169
-        },
-        {
-          "id": 1300,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "BCG enables protection against malaria through adjuvanting an adenovirus-vectored vaccine",
-          "link": "https://www.nature.com/articles/s41541-026-01506-9",
-          "content": "npj Vaccines, Published online: 24 June 2026; doi:10.1038/s41541-026-01506-9 BCG enables protection against malaria through adjuvanting an adenovirus-vectored vaccine",
-          "pub_date": "2026-06-24",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 166
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 444,
-      "total_valid": 359,
+      "total_raw": 432,
+      "total_valid": 346,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1439,
+          "id": 1466,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 227
         },
         {
-          "id": 1420,
+          "id": 1447,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 226
         },
         {
-          "id": 1440,
+          "id": 1467,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,52 +479,52 @@
           "word_count": 224
         },
         {
-          "id": 1463,
+          "id": 1488,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
           "priority": 2,
-          "title": "ATRX inactivation disrupts global chromatin state and topology to dysregulate neurodevelopmental pathways in glioma pathogenesis",
-          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag644/8715185?rss=1",
-          "content": "Abstract Mutational inactivation of the chromatin regulator gene ATRX (a-thalassemia mental retardation X-linked) represents a defining molecular abnormality in multiple cancer types. Recent findings suggest that the multifaceted consequences of ATRX deficiency on global chromatin landscapes fundamentally alter cellular differentiation and other complex phenotypes relevant to cancer, particularly in neuroepithelial and mesenchymal lineages. To comprehensively define ATRX-deficient epigenomic abnormalities and their transcriptional and phenotypic sequelae in a disease-relevant context, we conducted an array of high-throughput epigenome mapping studies in isogenic Atrx− and Atrx+ murine neuroepithelial progenitors (mNPCs). These investigations revealed that Atrx loss widely impacts 3D chromatin architecture and looping, with specific changes in topologically associating domains (TADs) and CCCTC-binding factor binding sites overlying neurodevelopmental gene sets. TAD shifts closely approximated disrupted large histone H3K9me3-marked laminin-associated domains, along with reprogrammed enhancer/superenhancer regions at neurodevelopmental effectors, including a novel regulator of cell mi",
-          "pub_date": "Wed, 24 Jun 2026 00:00:00 GMT",
+          "title": "Identifying membrane-bound transcriptional regulatory proteins from rare but evolutionarily conserved domain combinations",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag635/8715957?rss=1",
+          "content": "Abstract Transcriptional regulatory proteins, including transcription factors (TFs) and chromatin modifiers, must act inside cell nuclei, but membrane-bound transcription factors (MBTFs) are first anchored in membranes before nuclear translocation. Known MBTFs are vital for processes from myelin expression (MYRF) to cholesterol homeostasis (SREBP), yet their overall diversity remains uncharted. We hypothesized that additional membrane-bound transcriptional regulators (MBTRs) might exist, so we developed a bioinformatics screen to prioritize membrane proteins that are likely to regulate transcription. Our approach leverages domain composition by positing that unusual domain combinations suggest novel biological functions. We searched for rare but evolutionarily conserved pairings of transmembrane domains with domains likely involved in transcriptional regulation. Our method rediscovered known MBTFs and membrane-bound histone kinases, and identified novel MBTR candidates, including transmembrane histone N-acetyltransferases, a putative new subclass of MBTFs that shares the DNA-binding domain of MYRF, and the prolactin regulatory element-binding protein PREB (SEC12). Assays using reco",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 1468,
+          "id": 1490,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
           "priority": 2,
-          "title": "Processing of reversed replication forks is required for the resolution of replication-transcription conflicts",
-          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag639/8713656?rss=1",
-          "content": "Abstract DNA replication and transcription occur simultaneously on the same template, leading to conflicts between the two machineries. Conflicts stall replication forks, lead to genome instability, mutagenesis, and the formation of deleterious R-loop structures. Despite many studies across various organisms, how the replication fork structure is impacted by these encounters remains unclear. Here, we performed an unbiased genetic screen using a transposon library to identify factors essential for surviving deadly conflicts in Bacillus subtilis . Our screen identified three hits: RNase HIII, AddA, and AddB. Our prior work had shown that RNase HIII, which processes R-loops, is essential for surviving conflicts. However, AddA and AddB, which function together as a complex to process blunt DNA ends, have not been previously identified as essential conflict resolution factors. Through follow-up genetic and biochemical analyses, we found that the helicase activity but not the nuclease activity of this complex is required for conflict resolution. Based on the fundamental properties of DNA, our work collectively indicates that upon conflicts, the nascent strands form a reversed fork struct",
-          "pub_date": "Tue, 23 Jun 2026 00:00:00 GMT",
+          "title": "Caveat emptor: predicting and modeling protein–DNA recognition and binding via machine-learning computational approaches",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag608/8715950?rss=1",
+          "content": "Abstract The recent development of AI-based predictive tools, such as AlphaFold3, for the prediction of the structures of biological molecules and their complexes has transformed modern molecular and cellular biology. While it displays exceptional accuracy in the modeling of folded protein domains and subunits, as well as larger protein–protein complexes and assemblages, AlphaFold3’s performance in predicting the details of protein–DNA (or more broadly, protein–nucleic acid) contacts and complexes is less well established. Here we summarize the recent development and performance of tools intended to predict, model, and/or design protein:DNA recognition and contacts, and then demonstrate (using a well-defined system that offers a minimal “degree of difficulty”) the issues that often surround the use of a resource such as AlphaFold3 for predicting protein:DNA interactions. Beyond providing a cautionary tale for casual users, we note that the incorporation of hybrid models of protein–DNA complexes (in which computationally predicted models are docked into low-resolution CryoEM density maps with little further refinement or quality control) into future training sets may lead to an ongo",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 1473,
+          "id": 1491,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
           "priority": 2,
-          "title": "Enhancing ribosomal translation of backbone-altering nonproteinogenic amino acids via YebC and YeeN",
-          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag617/8713021?rss=1",
-          "content": "Abstract Development of genetic code reprogramming methodologies has enabled the ribosomal incorporation of diverse backbone-altering nonproteinogenic amino acids (BAAs)—including d -α-amino acids, β-amino acids, and N -methyl-α-amino acids—into nascent peptides. However, their incorporation is far less efficient than that of canonical l -α-amino acids. We previously demonstrated that the ribosomal E-site-binding translation factors, EF-P and ABC-F proteins, can enhance BAA incorporation. These findings motivated us to investigate additional ribosome-binding factors that might further facilitate this process. Here, we focused on two putative A-site-binding factors, YebC and YeeN, to activate A-site BAA-tRNA and facilitate efficient incorporation. When testing 11 BAAs for consecutive incorporation, YebC and YeeN yielded average enhancements of 2.1- and 2.7-fold, respectively, with an increase of up to 6.6-fold in specific cases. Furthermore, combining YebC with EF-P and Uup (a representative ABC-F protein) produced an 8.0-fold increase in the incorporation of two consecutive N -methyl- l -leucine residues, demonstrating a clear synergistic benefit. We also found that YebC and YeeN p",
-          "pub_date": "Mon, 22 Jun 2026 00:00:00 GMT",
+          "title": "Structural basis of βKNL2 centromeric targeting mechanism and its role in plant-specific kinetochore assembly",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag605/8715948?rss=1",
+          "content": "Abstract The kinetochore is an essential protein complex that ensures proper chromosome segregation during cell division. Kinetochore assembly is initiated by the incorporation of centromere-specific Histone H3 (CENP-A/CENH3) into centromeric nucleosomes. This process depends on KNL2/M18BP1 and CENP-C proteins. In eudicots, two variants of KNL2 are present, namely αKNL2 and βKNL2. Both possess the conserved SANTA domain, while αKNL2 additionally has the centromere-targeting CENPC-k motif. Despite lacking the CENPC-like motif, the plant-specific βKNL2 localizes to centromeres and aids in CENP-A/CENH3 loading. We found that efficient centromeric targeting of βKNL2 requires the SANTA domain and the C -terminal part, while nuclear localization is regulated by a conserved C -terminal motif-III, which undergoes SUMOylation. Independent experiments supported by structural analysis suggest that βKNL2 can interact multivalently with αKNL2, with DNA, and itself. We show that the centromeric targeting of βKNL2 depends on αKNL2 in a tissue-dependent manner. Our findings provide crucial insights into the unique mechanisms of plant-specific kinetochore assembly, highlighting βKNL2’s essential ro",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 1483,
+          "id": 1514,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 526
         },
         {
-          "id": 1454,
+          "id": 1481,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 507
         },
         {
-          "id": 1453,
+          "id": 1480,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,22 @@
           "word_count": 465
         },
         {
-          "id": 1450,
+          "id": 1422,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Data-driven surrogates of rational design enable antimicrobial peptide optimization",
+          "link": "https://www.nature.com/articles/s42256-026-01258-0",
+          "content": "Nature Machine Intelligence, Published online: 25 June 2026; doi:10.1038/s42256-026-01258-0 Rising pathogen drug resistance makes next-generation antimicrobial peptides a global priority. Generative AI accelerates discovery by rapidly proposing new peptides with high therapeutic potential. The key question is no longer whether broad data-driven exploration is possible, but whether it can refine biologically complex activity scaffolds.",
+          "pub_date": "2026-06-25",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 438
+        },
+        {
+          "id": 1477,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +599,7 @@
           "word_count": 364
         },
         {
-          "id": 1399,
+          "id": 1426,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -597,21 +612,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 363
-        },
-        {
-          "id": 1398,
-          "source": "Nature Machine Intel",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Autonomous navigation of intelligent microrobotic swarms in unknown environments",
-          "link": "https://www.nature.com/articles/s42256-026-01252-6",
-          "content": "Nature Machine Intelligence, Published online: 22 June 2026; doi:10.1038/s42256-026-01252-6 An, Luo, Zhang and colleagues present Turbo, a transformer-based reinforcement learning framework that enables simulation-to-real transfer for autonomous navigation and obstacle avoidance in physical microrobotic swarms operating in unknown environments.",
-          "pub_date": "2026-06-22",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 346
         }
       ],
       "quota": {
@@ -619,14 +619,89 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 110,
-      "total_valid": 64,
+      "total_raw": 115,
+      "total_valid": 69,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1492,
+          "id": 1490,
+          "source": "Nucleic Acids Research",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Caveat emptor: predicting and modeling protein–DNA recognition and binding via machine-learning computational approaches",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag608/8715950?rss=1",
+          "content": "Abstract The recent development of AI-based predictive tools, such as AlphaFold3, for the prediction of the structures of biological molecules and their complexes has transformed modern molecular and cellular biology. While it displays exceptional accuracy in the modeling of folded protein domains and subunits, as well as larger protein–protein complexes and assemblages, AlphaFold3’s performance in predicting the details of protein–DNA (or more broadly, protein–nucleic acid) contacts and complexes is less well established. Here we summarize the recent development and performance of tools intended to predict, model, and/or design protein:DNA recognition and contacts, and then demonstrate (using a well-defined system that offers a minimal “degree of difficulty”) the issues that often surround the use of a resource such as AlphaFold3 for predicting protein:DNA interactions. Beyond providing a cautionary tale for casual users, we note that the incorporation of hybrid models of protein–DNA complexes (in which computationally predicted models are docked into low-resolution CryoEM density maps with little further refinement or quality control) into future training sets may lead to an ongo",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1491,
+          "source": "Nucleic Acids Research",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Structural basis of βKNL2 centromeric targeting mechanism and its role in plant-specific kinetochore assembly",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag605/8715948?rss=1",
+          "content": "Abstract The kinetochore is an essential protein complex that ensures proper chromosome segregation during cell division. Kinetochore assembly is initiated by the incorporation of centromere-specific Histone H3 (CENP-A/CENH3) into centromeric nucleosomes. This process depends on KNL2/M18BP1 and CENP-C proteins. In eudicots, two variants of KNL2 are present, namely αKNL2 and βKNL2. Both possess the conserved SANTA domain, while αKNL2 additionally has the centromere-targeting CENPC-k motif. Despite lacking the CENPC-like motif, the plant-specific βKNL2 localizes to centromeres and aids in CENP-A/CENH3 loading. We found that efficient centromeric targeting of βKNL2 requires the SANTA domain and the C -terminal part, while nuclear localization is regulated by a conserved C -terminal motif-III, which undergoes SUMOylation. Independent experiments supported by structural analysis suggest that βKNL2 can interact multivalently with αKNL2, with DNA, and itself. We show that the centromeric targeting of βKNL2 depends on αKNL2 in a tissue-dependent manner. Our findings provide crucial insights into the unique mechanisms of plant-specific kinetochore assembly, highlighting βKNL2’s essential ro",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1489,
+          "source": "Nucleic Acids Research",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Dynamics and master transcription factors dependence of intestinal super-enhancers during differentiation and oncogenesis",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag634/8715955?rss=1",
+          "content": "Abstract The intestinal epithelium is a highly regenerative tissue organized along the crypt–villus axis, where spatially compartmentalized gene expression governs stem cell renewal, proliferation, and differentiation. Super-enhancers (SEs) are large clusters of regulatory elements densely bound by transcription factors (TFs) and cofactors that drive high-level expression of genes controlling cell identity and fate, yet their roles in intestinal epithelial identity and differentiation remain unclear. Here, we generate a spatiotemporal map of SEs in the small intestine, identifying compartment-specific SEs that define crypt and villus programs. Using mouse genetic models, we identify CDX2, HNF4, and SMAD4 as core TFs orchestrating SE-driven transcriptional networks essential for epithelial differentiation. CDX2 is required for SE integrity, and its loss causes widespread SE collapse and silencing of intestinal identity genes. We further demonstrate SE remodeling during colorectal cancer, in which HNF4 and SMAD4 function as SE-associated tumor suppressors that restrain oncogenic enhancer programs. Together, our findings establish SEs as central regulators of intestinal architecture,",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 1168,
+          "source": "Nature Medicine",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Metabolic determinants of cancer immunotherapy outcomes identified by plasma profiling",
+          "link": "https://www.nature.com/articles/s41591-026-04481-9",
+          "content": "Nature Medicine, Published online: 25 June 2026; doi:10.1038/s41591-026-04481-9 Mass-spectrometry-based metabolomic analysis of plasma samples from multiple cohorts of patients treated with immunotherapy across five distinct tumor types, followed by machine learning enabled identification of metabolic signatures, as well as functional exploration, reveals association of increased plasma histidine levels with prolonged survival and its potential for therapeutic intervention.",
+          "pub_date": "2026-06-25",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 478
+        },
+        {
+          "id": 1422,
+          "source": "Nature Machine Intel",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Data-driven surrogates of rational design enable antimicrobial peptide optimization",
+          "link": "https://www.nature.com/articles/s42256-026-01258-0",
+          "content": "Nature Machine Intelligence, Published online: 25 June 2026; doi:10.1038/s42256-026-01258-0 Rising pathogen drug resistance makes next-generation antimicrobial peptides a global priority. Generative AI accelerates discovery by rapidly proposing new peptides with high therapeutic potential. The key question is no longer whether broad data-driven exploration is possible, but whether it can refine biologically complex activity scaffolds.",
+          "pub_date": "2026-06-25",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 438
+        },
+        {
+          "id": 1523,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +716,7 @@
           "word_count": 385
         },
         {
-          "id": 1329,
+          "id": 1355,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +731,7 @@
           "word_count": 385
         },
         {
-          "id": 1497,
+          "id": 1528,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +746,7 @@
           "word_count": 381
         },
         {
-          "id": 1166,
+          "id": 1204,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +761,7 @@
           "word_count": 377
         },
         {
-          "id": 1399,
+          "id": 1426,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -699,81 +774,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 363
-        },
-        {
-          "id": 1335,
-          "source": "Cell Reports Medicine",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "ABO: A 3D stroma-supported culture platform enabling full human B-lymphopoiesis for disease modeling and gene therapy development",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00296-X?rss=yes",
-          "content": "Braams et al. establish 3D aggregate cocultures (ABOs) generating functional B cells from hematopoietic stem and progenitor cells (HSPCs). ABOs recapitulate the B cell developmental arrest of RAG1-deficient HSPCs, which is rescued by RAG1 gene correction, and thus provide a valuable tool to study B cell immunodeficiencies and test gene therapy strategies.",
-          "pub_date": "2026-06-18",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 357
-        },
-        {
-          "id": 1398,
-          "source": "Nature Machine Intel",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Autonomous navigation of intelligent microrobotic swarms in unknown environments",
-          "link": "https://www.nature.com/articles/s42256-026-01252-6",
-          "content": "Nature Machine Intelligence, Published online: 22 June 2026; doi:10.1038/s42256-026-01252-6 An, Luo, Zhang and colleagues present Turbo, a transformer-based reinforcement learning framework that enables simulation-to-real transfer for autonomous navigation and obstacle avoidance in physical microrobotic swarms operating in unknown environments.",
-          "pub_date": "2026-06-22",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 346
-        },
-        {
-          "id": 1337,
-          "source": "Cell Reports Medicine",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Self-assembly of tumor-related vascularized colorectal tumoroid-on-a-chip for precision medicine drug testing",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00290-9?rss=yes",
-          "content": "Dai et al. develop a biomimetic vascularized colorectal tumoroid-on-a-chip featuring self-assembled, tumor-associated vessels. This platform demonstrates high concordance with clinical drug responses, serving as a functional in vitro model for evaluating tailored therapeutic strategies and advancing personalized oncology for colorectal cancer.",
-          "pub_date": "2026-06-17",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 345
-        },
-        {
-          "id": 1396,
-          "source": "Nature Machine Intel",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Solutions, challenges and rising tensions in AI and mathematics",
-          "link": "https://www.nature.com/articles/s42256-026-01269-x",
-          "content": "Nature Machine Intelligence, Published online: 23 June 2026; doi:10.1038/s42256-026-01269-x Recent breakthroughs in mathematical research show that AI is transforming the field at a remarkable pace. In an open letter published this month, an international group of mathematicians argue that the field needs to remain a human endeavour.",
-          "pub_date": "2026-06-23",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 335
-        },
-        {
-          "id": 1002,
-          "source": "Nature",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Zero-shot design of drug-binding proteins via neural iterative selection−expansion",
-          "link": "https://www.nature.com/articles/s41586-026-10670-w",
-          "content": "Nature, Published online: 24 June 2026; doi:10.1038/s41586-026-10670-w By pairing two neural networks in an iterative optimization algorithm, small-molecule binding proteins can be designed from scratch with high accuracy, affinity and success rates, showing promise for applications in drug delivery and sequestration.",
-          "pub_date": "2026-06-24",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 319
         }
       ],
       "quota": {
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 67,
-      "total_valid": 62,
+      "total_raw": 63,
+      "total_valid": 58,
       "total_candidates": 10
     },
     "china": {
@@ -799,22 +799,67 @@
     "payment": {
       "candidates": [
         {
-          "id": 1507,
+          "id": 1534,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Hertz Shares Plunge 33% After Unexpected Used Car Market Slump",
-          "link": "https://www.pymnts.com/transportation/2026/hertz-shares-plunge-33-after-unexpected-used-car-market-slump/",
-          "content": "Rental car company Hertz announced a proposed offering of $100 million of common stock and $300 million of exchangeable senior first-lien secured payment-in-kind (PIK) notes Wednesday (June 24), while also disclosing that it realized losses on the sale of vehicles in May due to “unexpected softness in the used car market.” In a press release announcing the proposed sale [&#8230;] The post Hertz Shares Plunge 33% After Unexpected Used Car Market Slump appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 24 Jun 2026 19:37:26 +0000",
+          "title": "The Real-Time Perception Gap: How Experience Is Driving the Next Phase of Instant Payments Adoption",
+          "link": "https://www.pymnts.com/tracker_posts/the-real-time-perception-gap-how-experience-is-driving-the-next-phase-of-instant-payments-adoption/",
+          "content": "Business-to-business (B2B) payments have long relied on familiar rails—credit cards, checks and automated clearing house (ACH) transfers—that move money between bank accounts over one to three days. These methods are deeply embedded in financial workflows. And for most businesses, they work: More than nine in 10 businesses say they pay their suppliers on time, and [&#8230;] The post The Real-Time Perception Gap: How Experience Is Driving the Next Phase of Instant Payments Adoption appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 25 Jun 2026 08:00:16 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 485
+          "word_count": 516
         },
         {
-          "id": 1522,
+          "id": 1531,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "OpenPayd CEO Says Global Payments Need Less Plumbing and More Intelligence",
+          "link": "https://www.pymnts.com/news/cross-border-payments/2026/openpayd-ceo-says-global-payments-need-less-plumbing-and-more-intelligence/",
+          "content": "Watch more: The Digital Shift With OpenPayd’s Iana Dimitrova For years, the goal in global payments was simple: connect businesses to more rails. The pitch was always speed, lower cost, broader reach. The problem was access. Now access is no longer the problem. The problem is what to do with all of it. Businesses operating [&#8230;] The post OpenPayd CEO Says Global Payments Need Less Plumbing and More Intelligence appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 25 Jun 2026 08:03:57 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 449
+        },
+        {
+          "id": 1532,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "AI Gives Fuel Cards a Smarter Job to Do",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-gives-fuel-cards-a-smarter-job-to-do/",
+          "content": "Watch more: How AI Is Rewriting How Clients Buy Artificial intelligence may be entering a period in which the technology itself becomes less important than the way organizations redesign work around it. That was a central theme during a recent edition of the PYMNTS What’s Next in Payments series featuring Karen Stroup, chief digital officer [&#8230;] The post AI Gives Fuel Cards a Smarter Job to Do appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 25 Jun 2026 08:01:10 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 432
+        },
+        {
+          "id": 1536,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "AI Forces Compliance Teams to Rethink Alert Strategy",
+          "link": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/ai-forces-compliance-teams-to-rethink-alert-strategy/",
+          "content": "Financial crime compliance programs are a game of alerts. Or at least they used to be in the pre-AI era, when compliance teams operated on a linear equation in which more transactions generated more alerts, and more alerts required more analysts. But financial services is firmly in its post-AI era now. The emergence of agentic [&#8230;] The post AI Forces Compliance Teams to Rethink Alert Strategy appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 25 Jun 2026 08:00:02 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 431
+        },
+        {
+          "id": 1554,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +874,7 @@
           "word_count": 241
         },
         {
-          "id": 1525,
+          "id": 1559,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +889,22 @@
           "word_count": 229
         },
         {
-          "id": 1518,
+          "id": 1558,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Newland brings Android payments terminal to Poland",
+          "link": "https://www.finextra.com/pressarticle/110248/newland-brings-android-payments-terminal-to-poland?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Newland Payment Technology (NPT), a global provider of payment terminals and technology solutions, has partnered with Polskie ePłatności (PeP), part of Nexi Group, to deploy the Newland N950K Android payment terminal in Poland.",
+          "pub_date": "Thu, 25 Jun 2026 08:45:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 227
+        },
+        {
+          "id": 1550,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,22 +919,7 @@
           "word_count": 221
         },
         {
-          "id": 1535,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Interpolitan Money offers early access to fixed income treasury product",
-          "link": "https://www.finextra.com/pressarticle/110237/interpolitan-money-offers-early-access-to-fixed-income-treasury-product?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Interpolitan Money has launched early access to its new Fixed Income solution, marking the next stage in the expansion of its Asset Management proposition and cross-border capital infrastructure",
-          "pub_date": "Wed, 24 Jun 2026 09:32:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 194
-        },
-        {
-          "id": 1515,
+          "id": 1547,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +934,7 @@
           "word_count": 180
         },
         {
-          "id": 1511,
+          "id": 1541,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +949,7 @@
           "word_count": 142
         },
         {
-          "id": 1520,
+          "id": 1552,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,127 +964,82 @@
           "word_count": 141
         },
         {
-          "id": 1555,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "India’s Powerful Payment Ecosystem and the Access Challenge",
-          "link": "https://www.thunes.com/insights/learn/indias-payment-ecosystem-and-the-access-challenge/",
-          "content": "India has built one of the world&#8217;s most sophisticated payment ecosystems. It’s also one of the hardest to access from the outside. With 1.47 billion people, more than 2.6 billion bank accounts, around 500 million mobile money users, and its position as the world&#8217;s largest recipient of remittances, digital payments are embedded in everyday economic ... Read more &#187; The post India’s Powerful Payment Ecosystem and the Access Challenge first appeared on Thunes.com .",
-          "pub_date": "Wed, 24 Jun 2026 16:43:12 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 482
-        },
-        {
-          "id": 1556,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Interoperability is the only way to close the last-mile remittance gap",
-          "link": "https://www.thunes.com/insights/solutions/interoperability-is-the-only-way-to-close-the-last-mile-remittance-gap/",
-          "content": "Interoperability is the only way to close the last-mile remittance gap Every year on 16 June, the United Nations marks the International Day of Family Remittances – a day to recognise the more than 200 million migrant workers who send money home to support around 800 million family members. For many of those families, the ... Read more &#187; The post Interoperability is the only way to close the last-mile remittance gap first appeared on Thunes.com .",
-          "pub_date": "Wed, 24 Jun 2026 15:56:55 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 455
-        },
-        {
-          "id": 778,
-          "source": "arXiv cs.LG",
+          "id": 72,
+          "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
-          "priority": 6,
-          "title": "Efficient reduction of stellar contamination and noise in planetary transmission spectra using neural networks",
-          "link": "https://arxiv.org/abs/2602.10330",
-          "content": "arXiv:2602.10330v3 Announce Type: replace-cross Abstract: Context: The characterization of exoplanetary atmospheres has been transformed by the James Webb Space Telescope (JWST), whose infrared sensitivity enables transmission spectroscopy at unprecedented precision. However, stellar heterogeneities (e.g., spots and faculae) remain a dominant source of contamination that can bias atmospheric retrievals if not properly corrected. Aims: We present a methodology for reducing stellar contamination and instrument-specific noise from exoplanet transmission spectra using neural networks, in particular the so-called Denoising AutoEncoders (DAE). Our goals are to enable fast, accurate corrections that improve the reliability of atmospheric parameter retrievals and to promote the use of unsupervised algorithms for efficient data processing. Methods: We designed and trained DAE architectures using large synthetic datasets of terrestrial (TRAPPIST-1e analogues) and sub-Neptune (K2-18b analogues) planets. Atmospheric retrieval experiments were then performed on contaminated spectra in order to compare our deep-learning approach against standard correction methods in terms of accuracy and comput",
-          "pub_date": "Wed, 24 Jun 2026 00:00:00 -0400",
+          "priority": 5,
+          "title": "Constraint Tax in Open-Weight LLMs: An Empirical Study of Tool Calling Suppression Under Structured Output Constraints",
+          "link": "https://arxiv.org/abs/2606.25605",
+          "content": "Tool Calling and Structured Output are two core capabilities of modern Agent systems, yet their interaction under joint deployment conditions remains insufficiently understood. This paper reports a reproducible phenomenon observed in a production Agent system: when Tool Calling and JSON Schema constraints are simultaneously enabled, multiple open-weight models cease invoking tools despite maintaining high schema compliance. We refer to this behavior as Tool Suppression. Through controlled experiments across multiple model families and deployment settings, we consistently reproduce Tool Suppression under joint constraints, while tool execution and schema compliance remain functional when evaluated independently. Further analysis reveals that JSON Schema constraints are compiled into grammar-based token masks, causing tool-call tokens to become unreachable during decoding. This provides an implementation-level explanation for the observed behavior. To interpret the phenomenon, we formulate the Constraint Priority Inversion (CPI) hypothesis, which suggests that schema satisfaction may dominate action-selection behavior under multiple simultaneous constraints. We present CPI as a behav",
+          "pub_date": "2026-06-23T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 134,
+          "id": 187,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Do LLM Attribution Metrics Transfer? Auditing Retrieval-Augmented Generation Evaluation Across Datasets and Constructs",
-          "link": "https://arxiv.org/abs/2606.23915",
-          "content": "arXiv:2606.23915v1 Announce Type: new Abstract: Practice often treats automatic metrics for attribution in LLM retrieval-augmented generation as interchangeable. We audit eight automatic scorers -- lexical, embedding, and BERTScore baselines alongside entailment/grounding-trained models (clean and FEVER NLI, the checker MiniCheck) -- across three evaluation constructs (provenance/topicality, generated-answer attribution, and fact-check entailment), asking whether any scorer transfers: stays within the 95% confidence interval of the best audited scorer on every dataset of a multi-dataset construct. In the construct with the most multi-dataset human-labeled coverage -- generated-answer attribution (AttributionBench's four source datasets, n = 1,610, with independent HAGRID, n = 2,150) -- none does: the per-dataset metric rankings invert (Kendall tau = -0.64, p = 0.031 on AttributedQA vs. LFQA), and an off-the-shelf NLI scorer that is best on short-claim AttributedQA (AUROC 0.90) collapses to AUROC 0.53 (chance) on long-form LFQA, where BERTScore wins (0.91); the flip is not a length or truncation artifact. This instability has a concrete decision cost: a naive \"best-on-average\" rule",
-          "pub_date": "Wed, 24 Jun 2026 00:00:00 -0400",
+          "title": "Emergent Capabilities Arise Randomly from Learning Sparse Attention Patterns",
+          "link": "https://arxiv.org/abs/2606.25010",
+          "content": "arXiv:2606.25010v1 Announce Type: cross Abstract: Neural scaling laws for transformer language models predict smooth improvements in pretraining loss with increasing parameters, but downstream capabilities such as in-context learning are known to emerge abruptly past a certain model scale. In this paper, we show that emergent capabilities arise stochastically throughout training, with larger models acquiring them earlier on average. We demonstrate that the emergence of capabilities such as pattern completion and indirect object identification corresponds to the abrupt learning of task-relevant attention patterns. To isolate this phenomenon, we train transformer models on synthetic linear map and cellular automata datasets, and we show that the difficulty of learning attention patterns depends on context length and pattern sparsity. Moreover, scaling the number of attention heads improves learning efficiency on our synthetic tasks, while increasing the head dimension yields diminishing returns past a minimum capacity. We additionally investigate architectures with alternative attention mechanisms, showing that MLP-Mixer outperforms a transformer on linear map tasks with complex atte",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 400,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Probabilistic Agents in Deterministic Audits: Evaluating Multi-Agent Systems for Automated Audits Based on the German IT-Grundschutz",
+          "link": "https://arxiv.org/abs/2606.25622",
+          "content": "arXiv:2606.25622v1 Announce Type: cross Abstract: The NIS-2 Directive mandates robust Risk Management from thousands of small and medium enterprises. To ensure compliance, companies rely on established standards such as the German IT-Grundschutz (IT-GS) of the Federal Office for Information Security. However, IT-GS certification is resource-intensive and requires a high level of manual effort for documentation, validation, and revision, making scalable implementation difficult and expensive. Building upon our previous conceptual framework, this paper presents the technical implementation and empirical evaluation of a Multi-Agent System (MAS) architecture combined with Hybrid Retrieval Augmented Generation (HybridRAG) for the partial automation of IT-GS certification. We introduce two novel technical contributions to the MAS architecture to enforce the compliance rigor. The Hypothesis-Verification Loop in the Structural Analysis (SA) phase that cross-references agent-inferred dependencies against the Knowledge Graph to reduce hallucinations, and a Decoupled Reasoning Pipeline that separates agent-driven semantic extraction from the deterministic protection need inheritance. We utili",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 495,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "A Marketplace for AI-Generated Adult Content and Deepfakes",
+          "link": "https://arxiv.org/abs/2601.09117",
+          "content": "arXiv:2601.09117v3 Announce Type: replace-cross Abstract: Generative AI systems increasingly enable the production of highly realistic synthetic media. Civitai, a popular community-driven platform for AI-generated content, operates a monetized feature called Bounties, which allows users to commission the generation of content in exchange for payment. To examine how this mechanism is used and what content it incentivizes, we conduct a longitudinal analysis of all publicly available bounty requests collected over a 14-month period following the platform's launch. We find that the bounty marketplace is dominated by tools that let users steer AI models toward content they were not trained to generate. At the same time, requests for content that is \"Not Safe For Work\" are widespread and have increased steadily over time, now comprising a majority of all bounties. Participation in bounty creation is uneven, with 20% of requesters accounting for roughly half of requests. Requests for \"deepfake\" - media depicting identifiable real individuals - exhibit a higher concentration than other types of bounties. A nontrivial subset of these requests involves explicit deepfakes despite platform pol",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 535,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "FinRED: An Expert-Guided Benchmark Generation and Evaluation Framework for Financial LLM Red-Teaming",
+          "link": "https://arxiv.org/abs/2606.19887",
+          "content": "arXiv:2606.19887v2 Announce Type: replace-cross Abstract: Existing safety benchmarks target general adversarial scenarios but miss finance-specific risks. Financial LLMs face regulatory compliance violations, fraud facilitation, and systemic trust erosion that require targeted evaluation. We introduce FinRED, an expert-guided red-teaming framework for financial LLM safety evaluation developed with financial experts. FinRED uses a novel two-level taxonomy mapping global standards (e.g., FATF and EU DORA) to threats ranging from regulatory evasion to complex fraud, integrated with a scalable pipeline that converts real financial documents into context-rich red-teaming Behavioral Prompts (seeds) through an expert-defined schema. Rigorous expert validation confirms seed plausibility and realism for meaningful LLM safety evaluation. We also provide an expert-validated, finance-specific rubric that goes beyond disclaimer checks, aligns more closely with human experts than static one-size-fits-all rubrics, and reduces critical false negatives from 28 to 12. Aligned with internationally adopted risk-management and information-security standards (e.g., ISO/IEC 27001), FinRED is deployed in",
+          "pub_date": "Thu, 25 Jun 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
         },
         {
-          "id": 666,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "An Agnostic Machine Learning Model of Photosynthetic Habitability",
-          "link": "https://arxiv.org/abs/2606.24458",
-          "content": "arXiv:2606.24458v1 Announce Type: cross Abstract: The search for exoplanet biosignatures is guided by whether planetary environments can sustain photosynthesis. As such, the Photosynthetic Habitable Zone (PHZ) was recently proposed, as the overlap between the canonical habitable zone and the orbital range where stellar irradiance is sufficient to drive photosynthesis. Existing PHZ estimates rely on empirical light-response curves from Earth phytoplankton, and thus include implicit Earth-centric biases. We introduce an agnostic PHZ derived from a generalized model of photosynthesis grounded in thermodynamics and redox chemistry, without reference to model organisms. The model is built on a generic photochemical reaction in which photon capture couples oxidation of a donor molecule to the reduction of CO2. The optical properties and CO2 reduction rate are optimized against irradiance spectra for exoplanets orbiting main-sequence stars, using a genetic algorithm that mimics evolution by natural selection. Our simulations predict that photosynthetic organisms compensate for reduced flux by evolving larger light-harvesting structures. As a result, photosynthetic viability declines only",
-          "pub_date": "Wed, 24 Jun 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1199
-        },
-        {
-          "id": 527,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "CRAFT: A Tendon-Driven Hand with Hybrid Hard-Soft Compliance",
-          "link": "https://arxiv.org/abs/2603.12120",
-          "content": "arXiv:2603.12120v2 Announce Type: replace-cross Abstract: We introduce CRAFT hand, a tendon-driven anthropomorphic hand with hybrid hard-soft compliance for contact-rich manipulation. The design is based on a simple idea: contact is not uniform across the hand. Impacts concentrate at joints, while links carry most of the load. CRAFT places soft material at joints and keeps links rigid, and uses rollingcontact joint surfaces to keep flexion on repeatable motion paths. Fifteen motors mounted on the fingers drive the hand through tendons, keeping the form factor compact and the fingers light. In structural tests, CRAFT improves strength and endurance while maintaining comparable repeatability. In teleoperation, CRAFT improves handling of fragile and low-friction items, and the hand covers 33/33 grasps in the Feix taxonomy. The full design costs under $600 and will be released open-source with visionbased teleoperation and simulation integration. Project page: http://craft-hand.github.io/",
-          "pub_date": "Wed, 24 Jun 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 999
-        },
-        {
-          "id": 181,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "The Warrant Gap: Claim-Conditioned Re-scoring for Fact-Checking",
-          "link": "https://arxiv.org/abs/2606.24627",
-          "content": "arXiv:2606.24627v1 Announce Type: new Abstract: Fact-checking systems built on LLMs achieve high verdict accuracy on standard benchmarks, yet routinely output Supports labels whose cited evidence does not license the claim. Structured decomposition is the natural way to inspect those warrants, but rigid extraction protocols strip the full-claim context that facets need. We introduce SIFT -- claim-conditioned re-scoring of extracted evidence spans against the full claim -- paired with WSP (Warranted Supports Proportion), an automatic NLI check that the cited warrant entails the claim. We evaluate on FEVER, SciFact, 5PILS, and DP across four open-source backbones. SIFT recovers accuracy on cells where naive decomposition costs up to 27.6 points, while raising WSP above direct prompting; WSP itself calibrates against human gold evidence at AUC 0.92 and precision 0.98.",
-          "pub_date": "Wed, 24 Jun 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 877
-        },
-        {
-          "id": 329,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Cost-Optimal Decision Diagrams for Stochastic Boolean Function Evaluation",
-          "link": "https://arxiv.org/abs/2606.24672",
-          "content": "arXiv:2606.24672v1 Announce Type: new Abstract: In many decision-making scenarios, acquiring information incurs different costs. We consider the problem of constructing a deterministic evaluation strategy that minimizes the expected cost of evaluating a propositional formula under variable costs and a probability distribution over truth assignments. We present a branch-and-bound algorithm with variable-selection heuristics, pruning, and caching. To the best of our knowledge, it is the first practical exact algorithm for this level of generality. Experiments on random instances demonstrate scalability and quantify the efficiency-quality trade-off of a greedy beam-search variant. We additionally evaluate a structured heart-disease diagnosis instance. Finally, we prove that the problem is $\\#P$-hard and contained in $\\mathrm{PSPACE}$.",
-          "pub_date": "Wed, 24 Jun 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 843
-        },
-        {
-          "id": 1501,
+          "id": 1538,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 501
         },
         {
-          "id": 1502,
+          "id": 1539,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,34 +1069,34 @@
           "word_count": 475
         },
         {
-          "id": 1508,
-          "source": "PYMNTS.com",
+          "id": 1542,
+          "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "AmEx and ABA Team to Launch Credit Cards for Legal Practices",
-          "link": "https://www.pymnts.com/credit-cards/2026/amex-and-aba-team-to-launch-credit-cards-for-legal-practices/",
-          "content": "Financial services platform Mercantile has joined forces with American Express and the American Bar Association (ABA). The collaboration, announced Wednesday (June 24), is designed to give legal professionals who are part of the bar association (ABA) greater access to credit solutions. The new ABA American Express Business Card will be issued by Celtic Bank and [&#8230;] The post AmEx and ABA Team to Launch Credit Cards for Legal Practices appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 24 Jun 2026 19:05:44 +0000",
+          "title": "Tipalti counts on future IPO",
+          "link": "https://www.paymentsdive.com/news/tipalti-counts-on-future-ipo-ai-finance-automation-software/823594/",
+          "content": "The finance-automation software company is focused on AI and an eventual initial public stock offering, its president said.",
+          "pub_date": "Wed, 24 Jun 2026 08:11:15 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 474
+          "word_count": 123
         },
         {
-          "id": 1504,
-          "source": "PYMNTS.com",
+          "id": 1586,
+          "source": "Cointelegraph Payments",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Ethereum Doesn’t Know What It’s Supposed to Be Anymore",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/ethereum-doesnt-know-what-its-supposed-to-be-anymore/",
-          "content": "Every industry has its defining rivalry. McDonald’s and Burger King; Walmart and Amazon; Microsoft and Apple. In digital assets, that rivalry was bitcoin and ethereum. But on Tuesday (June 23) the Ethereum Foundation announced a significant organizational restructuring, including a 20% workforce reduction and plans to cut spending by 40% over the coming years. The [&#8230;] The post Ethereum Doesn’t Know What It’s Supposed to Be Anymore appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 24 Jun 2026 21:21:09 +0000",
+          "tier": "T3",
+          "priority": 5,
+          "title": "US arbitration giant rolls out ‘legal layer’ for agentic commerce",
+          "link": "https://cointelegraph.com/news/ai-is-getting-a-legal-layer-as-agentic-commerce-accelerates?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+          "content": "As agentic AI transactions increase, “we need to know there’s a clear answer to what happens if something goes wrong,” said Mance Harmon, co-founder of Hedera.",
+          "pub_date": "Thu, 25 Jun 2026 06:26:29 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 471
+          "word_count": 159
         }
       ],
       "quota": {
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 237,
+      "total_raw": 230,
       "total_valid": 49,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1730,
-    "dup": 280,
-    "nocontent": 400,
+    "total_raw": 1755,
+    "dup": 298,
+    "nocontent": 401,
     "noise": 3
   }
 }
