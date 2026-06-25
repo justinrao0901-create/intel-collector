@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 57,
+          "id": 56,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation",
-          "link": "https://arxiv.org/abs/2606.23104",
-          "content": "On-policy distillation (OPD) improves LLM reasoning by training a student model on its own generated outputs, but standard OPD treats all student-generated outputs (SGOs) equally regardless of their informativeness. We observe a consistent asymmetry in controlled filtering experiments: in both OPD and on-policy self distillation (OPSD), training only on incorrect SGOs outperforms training only on correct ones. Our further analysis suggests that models trained on correct-only SGOs tend to generate shorter reasoning traces and show weaker reflection behavior, while incorrect SGOs better preserve exploratory reasoning near the model's capability boundary. To exploit this signal without requiring full answer-containing rollouts, we introduce ReNIO, which Reweights Negative trajectory Importance for LLM On-policy distillation. By using the student-to-teacher probability ratio, ReNIO identifies pivotal tokens leading to wrong reasoning traces and aggregates their information into a normalized sample weight, inherently assigning larger weights to likely negative trajectories without observing the correctness of final-answer. Since Re-NIO only uses prefix-conditioned token probabilities, i",
-          "pub_date": "2026-06-21T20:00:00.000Z",
+          "title": "Distill Once, Adapt Life-Long: Exploring Dataset Distillation for Continual Test-Time Adaptation",
+          "link": "https://arxiv.org/abs/2606.20196",
+          "content": "Continual Test-Time Adaptation (CTTA) aims to maintain model performance under evolving target domains by adapting online without labeled data. However, practical deployments often cannot retain the source dataset due to privacy or licensing constraints, and purely source-free CTTA methods tend to become unstable under long-term distribution shift, suffering from compounding self-training errors and catastrophic forgetting. We introduce DO-ALL (Distill Once, Adapt Life-Long), a plug-and-play framework that revisits source information in a compact and privacy-conscious form via Dataset Distillation (DD). Before deployment, DO-ALL performs DD to produce a small set of synthetic distilled anchors that summarize the source distribution. During adaptation, each target sample is matched with its most semantically aligned anchor, which provides a stable reference for various CTTA via source replay, representation alignment, and manifold-smoothing regularization. DO-ALL can be seamlessly integrated into existing CTTA algorithms, consistently improving long-term robustness across CIFAR100-C, ImageNet-C, and the CCC benchmark. This demonstrates the potential of leveraging DD to enable stable",
+          "pub_date": "2026-06-17T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -160,10 +160,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Constraint Tax in Open-Weight LLMs: An Empirical Study of Tool Calling Suppression Under Structured Output Constraints",
-          "link": "https://arxiv.org/abs/2606.25605",
-          "content": "Tool Calling and Structured Output are two core capabilities of modern Agent systems, yet their interaction under joint deployment conditions remains insufficiently understood. This paper reports a reproducible phenomenon observed in a production Agent system: when Tool Calling and JSON Schema constraints are simultaneously enabled, multiple open-weight models cease invoking tools despite maintaining high schema compliance. We refer to this behavior as Tool Suppression. Through controlled experiments across multiple model families and deployment settings, we consistently reproduce Tool Suppression under joint constraints, while tool execution and schema compliance remain functional when evaluated independently. Further analysis reveals that JSON Schema constraints are compiled into grammar-based token masks, causing tool-call tokens to become unreachable during decoding. This provides an implementation-level explanation for the observed behavior. To interpret the phenomenon, we formulate the Constraint Priority Inversion (CPI) hypothesis, which suggests that schema satisfaction may dominate action-selection behavior under multiple simultaneous constraints. We present CPI as a behav",
-          "pub_date": "2026-06-23T20:00:00.000Z",
+          "title": "ReNIO: Reweighting Negative Trajectory Importance for LLM On-Policy Distillation",
+          "link": "https://arxiv.org/abs/2606.23104",
+          "content": "On-policy distillation (OPD) improves LLM reasoning by training a student model on its own generated outputs, but standard OPD treats all student-generated outputs (SGOs) equally regardless of their informativeness. We observe a consistent asymmetry in controlled filtering experiments: in both OPD and on-policy self distillation (OPSD), training only on incorrect SGOs outperforms training only on correct ones. Our further analysis suggests that models trained on correct-only SGOs tend to generate shorter reasoning traces and show weaker reflection behavior, while incorrect SGOs better preserve exploratory reasoning near the model's capability boundary. To exploit this signal without requiring full answer-containing rollouts, we introduce ReNIO, which Reweights Negative trajectory Importance for LLM On-policy distillation. By using the student-to-teacher probability ratio, ReNIO identifies pivotal tokens leading to wrong reasoning traces and aggregates their information into a normalized sample weight, inherently assigning larger weights to likely negative trajectories without observing the correctness of final-answer. Since Re-NIO only uses prefix-conditioned token probabilities, i",
+          "pub_date": "2026-06-21T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -175,9 +175,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "MVTrack4Gen: Multi-View Point Tracking as Geometric Supervision for 4D Video Generation",
-          "link": "https://arxiv.org/abs/2606.26087",
-          "content": "Synthesizing a novel-view video from a monocular reference video along a target camera trajectory requires both geometric consistency and motion fidelity with respect to the reference video. Existing methods based on explicit 3D representations are limited by the accuracy of off-the-shelf reconstruction modules, which often produce inaccurate geometry for dynamic objects in monocular videos. In contrast, camera-conditioning-only methods can achieve high visual quality but often struggle to preserve geometric and motion consistency. In this work, we introduce MVTrack4Gen (Multi-View point Tracking for Novel-View Generation), a motion-aware training framework that leverages multi-view point tracking as an additional geometric and motion supervision signal for camera-conditioning-only novel-view video diffusion models. Our key finding is that specific attention layers encode strong correspondence cues, where query features attend to key features at geometrically corresponding locations across views and over time, and the misalignment of these correspondences causes motion inconsistency. Based on this observation, we route these features into an auxiliary multi-view tracking head and j",
+          "title": "Constraint Tax in Open-Weight LLMs: An Empirical Study of Tool Calling Suppression Under Structured Output Constraints",
+          "link": "https://arxiv.org/abs/2606.25605",
+          "content": "Tool Calling and Structured Output are two core capabilities of modern Agent systems, yet their interaction under joint deployment conditions remains insufficiently understood. This paper reports a reproducible phenomenon observed in a production Agent system: when Tool Calling and JSON Schema constraints are simultaneously enabled, multiple open-weight models cease invoking tools despite maintaining high schema compliance. We refer to this behavior as Tool Suppression. Through controlled experiments across multiple model families and deployment settings, we consistently reproduce Tool Suppression under joint constraints, while tool execution and schema compliance remain functional when evaluated independently. Further analysis reveals that JSON Schema constraints are compiled into grammar-based token masks, causing tool-call tokens to become unreachable during decoding. This provides an implementation-level explanation for the observed behavior. To interpret the phenomenon, we formulate the Constraint Priority Inversion (CPI) hypothesis, which suggests that schema satisfaction may dominate action-selection behavior under multiple simultaneous constraints. We present CPI as a behav",
           "pub_date": "2026-06-23T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -212,7 +212,7 @@
           "word_count": 525
         },
         {
-          "id": 1169,
+          "id": 1170,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 449
         },
         {
-          "id": 1197,
+          "id": 1198,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 426
         },
         {
-          "id": 1118,
+          "id": 1119,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 346
         },
         {
-          "id": 1029,
+          "id": 1030,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 302
         },
         {
-          "id": 1166,
+          "id": 1167,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 252
         },
         {
-          "id": 1048,
+          "id": 1049,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 245
         },
         {
-          "id": 1136,
+          "id": 1137,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 232
         },
         {
-          "id": 1144,
+          "id": 1145,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 195
         },
         {
-          "id": 1099,
+          "id": 1100,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 191
         },
         {
-          "id": 1083,
+          "id": 1084,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 184
         },
         {
-          "id": 1084,
+          "id": 1085,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 180
         },
         {
-          "id": 1097,
+          "id": 1098,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 180
         },
         {
-          "id": 1096,
+          "id": 1097,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 526
         },
         {
-          "id": 1481,
+          "id": 1482,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 507
         },
         {
-          "id": 1480,
+          "id": 1481,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,6 +584,21 @@
           "word_count": 438
         },
         {
+          "id": 1480,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A tail of two ligases",
+          "link": "https://www.nature.com/articles/s41589-026-02255-5",
+          "content": "Nature Chemical Biology, Published online: 25 June 2026; doi:10.1038/s41589-026-02255-5 Targeted protein degradation eliminates disease-driving proteins by co-opting the ubiquitin–proteasome system. Now, a single degradation tail enables a molecular glue to hijack two E3 ubiquitin ligases in parallel, degrading SMARCA2 and SMARCA4 and providing a chemical safeguard against resistance.",
+          "pub_date": "2026-06-25",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 387
+        },
+        {
           "id": 1477,
           "source": "Cell Systems",
           "section": "synbio",
@@ -597,21 +612,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 364
-        },
-        {
-          "id": 1426,
-          "source": "Nature Machine Intel",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Algorithm–hardware co-design of neuromorphic networks with dual memory pathways",
-          "link": "https://www.nature.com/articles/s42256-026-01255-3",
-          "content": "Nature Machine Intelligence, Published online: 16 June 2026; doi:10.1038/s42256-026-01255-3 Pengfei Sun et al. develop a spiking neural network with a dual memory pathway, co-designed with a custom neuromorphic chip. The approach delivers over 4× throughput and 5x energy efficiency gains while using 40–60% fewer parameters than state-of-the-art implementations.",
-          "pub_date": "2026-06-16",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 363
         }
       ],
       "quota": {
@@ -671,7 +671,7 @@
           "word_count": 1199
         },
         {
-          "id": 1168,
+          "id": 1169,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 381
         },
         {
-          "id": 1204,
+          "id": 1205,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 141
         },
         {
-          "id": 72,
+          "id": 73,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1084,7 @@
           "word_count": 123
         },
         {
-          "id": 1586,
+          "id": 1580,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 230,
+      "total_raw": 224,
       "total_valid": 49,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1755,
-    "dup": 298,
+    "total_raw": 1749,
+    "dup": 292,
     "nocontent": 401,
     "noise": 3
   }
