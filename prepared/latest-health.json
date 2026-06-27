@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 8,
       "ok": true
     },
     "Sequoia Capital": {
@@ -70,19 +70,19 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 146,
+      "count": 0,
       "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 277,
+      "count": 0,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 249,
+      "count": 0,
       "ok": true
     },
     "Import AI": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 17,
+      "count": 16,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 14,
+      "count": 9,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 20,
+      "count": 11,
       "ok": true
     },
     "WHO News": {
@@ -244,13 +244,13 @@
     "bioRxiv Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 30,
+      "count": 26,
       "ok": true
     },
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 20,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -418,13 +418,13 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 4,
+      "count": 2,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 31,
+      "count": 21,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -443,7 +443,7 @@
       "section": "payment",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "Ledger Insights": {
       "section": "payment",
@@ -505,7 +505,6 @@
       "ACS Synthetic Biology",
       "Absci Blog",
       "ClinicalTrials.gov",
-      "Cointelegraph Payments",
       "Import AI",
       "NEJM",
       "NEJM AI",
@@ -513,7 +512,12 @@
       "Science",
       "Science Immunology"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "Cointelegraph Payments",
+      "arXiv cs.AI",
+      "arXiv cs.CL",
+      "arXiv cs.LG"
+    ],
     "persistent_zero": [
       "Lancet Digital Health",
       "PYMNTS Cross-Border",
