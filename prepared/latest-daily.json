@@ -434,21 +434,6 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1343,
-          "source": "Nature Reviews Bioengineering",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "CRISPR-based ex vivo gene editing of donor organs",
-          "link": "https://www.nature.com/articles/s44222-026-00462-2",
-          "content": "Nature Reviews Bioengineering, Published online: 29 June 2026; doi:10.1038/s44222-026-00462-2 Donor organs are frequently discarded because of concerns about quality or pathogen risk, challenges that could be mitigated through ex vivo gene editing or silencing during machine perfusion. Here, we discuss the development of CRISPR-based approaches for ex vivo gene silencing in human donor organs, from proof of concept in kidney biopsies to the challenges of organ-scale translation.",
-          "pub_date": "2026-06-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 483
-        },
-        {
           "id": 1295,
           "source": "Cell Systems",
           "section": "synbio",
@@ -590,8 +575,8 @@
         "max": 5
       },
       "total_raw": 123,
-      "total_valid": 36,
-      "total_candidates": 10
+      "total_valid": 35,
+      "total_candidates": 9
     },
     "cross": {
       "candidates": [
@@ -784,7 +769,7 @@
           "word_count": 654
         },
         {
-          "id": 1361,
+          "id": 1362,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +784,7 @@
           "word_count": 516
         },
         {
-          "id": 1362,
+          "id": 1363,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +799,7 @@
           "word_count": 501
         },
         {
-          "id": 1364,
+          "id": 1365,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +814,7 @@
           "word_count": 471
         },
         {
-          "id": 1366,
+          "id": 1367,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -838,21 +823,6 @@
           "link": "https://www.pymnts.com/news/artificial-intelligence/2026/why-its-time-to-know-your-agent/",
           "content": "A business deploys an artificial intelligence agent to manage procurement. The agent queries suppliers, compares prices, issues purchase orders, and routes payments. The supplier on the other end has no way to verify whether the agent placing the order is legitimate, acting within authorized limits, or impersonating a real buyer. That is the operating reality [&#8230;] The post Why It’s Time to Know Your Agent appeared first on PYMNTS.com .",
           "pub_date": "Mon, 29 Jun 2026 08:00:43 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 444
-        },
-        {
-          "id": 1368,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "53% of Bankers Say Security Drives Real-Time Payments",
-          "link": "https://www.pymnts.com/real-time-payments/2026/53percent-of-bankers-say-security-drives-real-time-payments/",
-          "content": "Real-time payments are starting to look less like a faster delivery truck and more like a digital receipt that arrives before anyone has to ask where the money went. That is the point inside “Beyond Speed: The Strategic Value of Real-Time Payments,” the March 2026 Real-Time Payments Tracker Series from PYMNTS Intelligence and The Clearing [&#8230;] The post 53% of Bankers Say Security Drives Real-Time Payments appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 29 Jun 2026 08:00:18 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -934,7 +904,7 @@
           "word_count": 106
         },
         {
-          "id": 1399,
+          "id": 1404,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1039,7 +1009,7 @@
           "word_count": 1118
         },
         {
-          "id": 1367,
+          "id": 1368,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1052,6 +1022,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 524
+        },
+        {
+          "id": 1364,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Robinhood Pushes Brokerages to End the Waiting Game",
+          "link": "https://www.pymnts.com/real-time-payments/2026/robinhood-pushes-brokerages-to-end-the-waiting-game/",
+          "content": "Watch more: Michael Silver of Robinhood Consumers managing their finances through digital channels increasingly assume that money will appear in accounts quickly, with visibility into when it can be used. For investment platforms, that expectation carries operational consequences. The pace of deposits and withdrawals influences how customers interact with brokerage services, whether they expand their [&#8230;] The post Robinhood Pushes Brokerages to End the Waiting Game appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 29 Jun 2026 08:02:02 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 505
         }
       ],
       "quota": {
@@ -1059,14 +1044,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 215,
+      "total_raw": 220,
       "total_valid": 42,
       "total_candidates": 19
     }
   },
   "meta": {
-    "total_raw": 1567,
-    "dup": 377,
+    "total_raw": 1572,
+    "dup": 383,
     "nocontent": 399,
     "noise": 4
   }
