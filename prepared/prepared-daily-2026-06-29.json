@@ -5,7 +5,52 @@
     "ai": {
       "candidates": [
         {
-          "id": 85,
+          "id": 47,
+          "source": "NVIDIA Blog",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Open Models, Closed Environments: Palantir Brings Secure AI to US Agencies With NVIDIA Nemotron",
+          "link": "https://blogs.nvidia.com/blog/palantir-secure-ai-us-agencies-nemotron-open-models/",
+          "content": "Showcasing the importance of open source innovation in American AI, Palantir’s new intelligent engine — introduced today — uses NVIDIA Nemotron open models to serve the needs of U.S. government agencies. Open source software has long been a pillar of U.S. technology leadership. In 1969, DARPA connected four university computers — from UCLA, Stanford, UCSB [&#8230;]",
+          "pub_date": "Mon, 29 Jun 2026 10:59:38 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 367
+        },
+        {
+          "id": 1,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Mapping Europe’s AI Workforce Opportunity",
+          "link": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+          "content": "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes.",
+          "pub_date": "Mon, 29 Jun 2026 07:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 146
+        },
+        {
+          "id": 2,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+          "link": "https://openai.com/index/hp-frontier-partnership",
+          "content": "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations.",
+          "pub_date": "Sun, 28 Jun 2026 17:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 137
+        },
+        {
+          "id": 78,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +65,22 @@
           "word_count": 141
         },
         {
-          "id": 84,
+          "id": 75,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Robot hand company settles Tesla trade secret suit and announces $11M raise",
+          "link": "https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/",
+          "content": "The startup, Proception, is taking a unique approach to collecting training data to tackle one of the hardest problems in robotics: hands.",
+          "pub_date": "Mon, 29 Jun 2026 14:00:08 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 138
+        },
+        {
+          "id": 77,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,67 +95,52 @@
           "word_count": 119
         },
         {
-          "id": 86,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "SoftBank’s CEO isn’t the only one with questions about Elon Musk’s orbital data center hype",
-          "link": "https://techcrunch.com/2026/06/27/softbanks-ceo-isnt-the-only-one-with-questions-about-elon-musks-orbital-data-center-hype/",
-          "content": "Not everyone is buying Elon Musk’s vision for orbital data centers.",
-          "pub_date": "Sat, 27 Jun 2026 20:42:36 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 67
-        },
-        {
-          "id": 83,
+          "id": 60,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It",
-          "link": "https://arxiv.org/abs/2606.26027",
-          "content": "Tool use enables large language models (LLMs) to perform complex tasks, and recent agentic reinforcement learning (RL) methods show promise for enhancing model capabilities. However, RL alone often leads to instability or limited gains in tool-use tasks. In our experiments, some models exhibit catastrophic collapse, where performance abruptly drops and tool-invocation structures fail. The analysis reveals that these failures stem from unexpected probability spikes in specific control tokens, disrupting structured execution, yet the underlying tool-use capability remains intact, merely obscured by specific formats. To address this, we systematically investigate a diverse set of supervisory signals, including off-policy supervision, hint-based guidance, erroneous example supervision, and others, applied under both synchronous and interleaved training schemes. We find that interleaving supervised fine-tuning (SFT) with RL substantially improves stability, but exhibits degraded performance under format and content out-of-distribution (OOD) evaluation. We also analyze the impact of learning rates and generalization across settings. These results highlight the importance of understanding",
-          "pub_date": "2026-06-23T20:00:00.000Z",
+          "title": "Parallel Rollout Approximation for Pixel-Space Autoregressive Image Generation",
+          "link": "https://arxiv.org/abs/2606.27978",
+          "content": "Pixel-space continuous-token autoregressive (AR) generation directly models images as sequences of raw pixel patches, avoiding discrete tokenization or a separately pretrained tokenizer. However, it faces coupled challenges: high-dimensional patch generation causes large single-step errors, and teacher-forced training creates a train--inference gap that makes these errors accumulate across AR steps. Existing fixes such as x-prediction and input noise injection only partially mitigate these issues. Exact rollout training better matches inference-time conditions, but is impractical due to prohibitively slow sequential sampling. We propose Parallel Rollout Approximation (PRA), a scalable framework that addresses both challenges jointly. PRA generates low-dimensional intermediate states instead of high-dimensional pixel patches, then maps them back to pixel-space tokens with a pixel decoder, preserving a pixel-in, pixel-out AR interface. It also constructs inference-like pixel inputs through the same intermediate-state-to-pixel path used at inference, independently across positions, approximating the pixel-feedback interface encountered during inference-time rollout while retaining par",
+          "pub_date": "2026-06-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting",
-          "link": "https://arxiv.org/abs/2606.27277",
-          "content": "Earth Observation (EO) forecasting aims to predict future Earth surface dynamics from satellite observations under changing meteorological conditions. In this paper, we view this task as a partially observed, weather-driven world modeling problem, in which weather acts as a conditioning signal, while forecasting remains uncertain due to sparse observations and unobserved land-surface states. However, existing methods do not fully capture this setting: deterministic models collapse uncertainty into a single future prediction, while diffusion-based methods typically treat weather variables as undifferentiated conditioning signals, and existing benchmarks focus mainly on reconstruction accuracy rather than whether forecasts respond correctly to changed weather forcing.We introduce EO-WM, a video diffusion transformer for multispectral EO forecasting. EO-WM incorporates a physically informed conditioning framework that represents meteorological forcing through a climatological baseline, weather anomalies, and cumulative physical stress signals. Specifically, it separates baseline and anomaly through distinct conditioning pathways, and accumulates anomalous forcing over time to capture",
-          "pub_date": "2026-06-24T20:00:00.000Z",
+          "title": "Thinking While Speaking: Inference-Time Knowledge Transfer for Responsive and Intelligent Conversational Voice Agents",
+          "link": "https://arxiv.org/abs/2511.07397",
+          "content": "Voice agents face a fundamental tension: the reasoning, retrieval, and tool use that make foundation models capable are iterative and slow, while conversational interaction demands responses on a millisecond timescale. Smaller, real-time models meet the latency bar but cannot match foundation models on complex tasks, leaving current voice agents to trade away either responsiveness or capability. We introduce conversational infill, where a small talker model both immediately generates contextually grounded responses to hide the latency of an external reasoner model and fluently integrates streamed reasoner knowledge into its responses during inference. We curate a 290,571-example synthetic dataset spanning six domains and demonstrate that this task is learnable across seven widely used small language models ranging from 135M to 1.7B parameters. Our system implementation, ConvFill, sustains millisecond-level time-to-first-response while closing the accuracy gap to within 6.3% of the corresponding frontier reasoner performance. In a live user study (n=18) with talker deployments running on an Apple M2 SoC, participants rank ConvFill on par with frontier models overall, prefer it for r",
+          "pub_date": "2026-06-22T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1199
+          "word_count": 1200
         },
         {
-          "id": 74,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments",
-          "link": "https://arxiv.org/abs/2606.14397",
-          "content": "As agentic systems continue to evolve and are widely deployed in real-world scenarios, there is a growing demand to faithfully evaluate their capabilities. However, current benchmarks are typically built on popular applications with relatively simple tasks and focus on a narrow set of capabilities while overlooking broader dimensions, resulting in saturated performance on modern agents and failing to probe their limitations. To this end, we introduce GauntletBench, a web-based benchmark for evaluating agent generalisation in challenging scenarios, focusing on three underexplored capabilities (temporal perception, graphical understanding, and 3D reasoning), across five less-covered professional applications (Video Editor, Workflow Builder, 3D Modeller, Flight Analyser, and Circuit Designer), each with 20 vision-intensive tasks (100 in total). Our benchmark provides a modular pipeline that comprises an environment compatible with both open- and closed-source agent frameworks, a controlled web-based application, a well-structured task suite, and an automated evaluation engine with diverse metrics. Contrary to widespread expectations, our empirical results reveal that frontier agentic",
-          "pub_date": "2026-06-24T20:00:00.000Z",
+          "title": "GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems",
+          "link": "https://arxiv.org/abs/2606.28187",
+          "content": "Multi-agent systems (MAS) built on large language models (LLMs) provide a promising framework for solving complex tasks through role specialization and structured interaction. However, their performance is often limited by miscoordination and, more fundamentally, the lack of fine-grained credit assignment across agents. Existing approaches typically rely on coarse-grained feedback, making it difficult to identify which agents or interaction steps are responsible for errors. We propose Gradient-Based Connections (GBC), an approach for fine-grained attribution and optimization of multi-agent systems. GBC models a MAS as a computational graph and introduces gradient-based connection weights to quantify the influence of each agent's output on downstream agents at the token level. By constructing an attribution graph and propagating task-specific loss signals backward, our method enables precise identification of error sources and targeted prompt optimization. We further develop AgentChord, an efficient implementation that leverages prefix-based gradient computation. Experiments on MultiWOZ and τ-bench show that GBC improves multi-agent performance and outperforms strong single-agent an",
+          "pub_date": "2026-06-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1199
+          "word_count": 1200
         },
         {
-          "id": 146,
+          "id": 701,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +155,7 @@
           "word_count": 632
         },
         {
-          "id": 136,
+          "id": 691,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +170,7 @@
           "word_count": 626
         },
         {
-          "id": 148,
+          "id": 703,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -138,51 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 433
-        },
-        {
-          "id": 133,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "🔬 The Self-Driving Lab — Joseph Krause, Radical AI",
-          "link": "https://www.latent.space/p/radical-ai",
-          "content": "Radical AI's Joseph Krause on why the moat in materials is the lab, not the model",
-          "pub_date": "Wed, 17 Jun 2026 17:58:06 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 81
-        },
-        {
-          "id": 116,
-          "source": "Interconnects",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
-          "link": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
-          "content": "An assessment of the open ecosystem and the motivations behind releasing models",
-          "pub_date": "Sun, 28 Jun 2026 17:03:07 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 79
-        },
-        {
-          "id": 128,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "[Exclusive] $250 off AI Engineer tix til Monday",
-          "link": "https://www.latent.space/p/exclusive-250-off-ai-engineer-tix",
-          "content": "special offer for subscribers - $250 off AI Engineer tix til Monday",
-          "pub_date": "Sun, 21 Jun 2026 15:01:23 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 67
         }
       ],
       "quota": {
@@ -190,14 +190,29 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 246,
-      "total_valid": 29,
+      "total_raw": 799,
+      "total_valid": 442,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 572,
+          "id": 982,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Author Correction: SEZ6-targeting antibody−drug conjugate ABBV-706 in advanced small cell lung cancer and solid tumors: a phase 1 trial",
+          "link": "https://www.nature.com/articles/s41591-026-04544-x",
+          "content": "Nature Medicine, Published online: 29 June 2026; doi:10.1038/s41591-026-04544-x Author Correction: SEZ6-targeting antibody−drug conjugate ABBV-706 in advanced small cell lung cancer and solid tumors: a phase 1 trial",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 215
+        },
+        {
+          "id": 1133,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +227,7 @@
           "word_count": 346
         },
         {
-          "id": 514,
+          "id": 1075,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +242,7 @@
           "word_count": 342
         },
         {
-          "id": 509,
+          "id": 1070,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +257,67 @@
           "word_count": 335
         },
         {
-          "id": 400,
+          "id": 1200,
+          "source": "BioPharma Dive",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "10 clinical trials to watch in the second half of 2026",
+          "link": "https://www.biopharmadive.com/news/biotech-pharma-clinical-trials-watch-2026/808255/",
+          "content": "The biotechnology sector&rsquo;s upswing accelerated in the first half. Positive results from anticipated trials in lung cancer, Alzheimer&rsquo;s and multiple autoimmune conditions could add to the momentum.",
+          "pub_date": "Mon, 29 Jun 2026 07:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 208
+        },
+        {
+          "id": 814,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: AI scientist company Edison Scientific tapped by team behind Metsera to create new biotechs",
+          "link": "https://www.statnews.com/2026/06/29/edison-scientific-population-health-partners-deal-to-create-new-biotechs/?utm_campaign=rss",
+          "content": "Edison Scientific and investment firm Population Health Partners are teaming up to leverage AI agents in drug discovery and development.",
+          "pub_date": "Mon, 29 Jun 2026 04:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 136
+        },
+        {
+          "id": 808,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: Moderna co-founder Kenneth Chien on the future of mRNA — and Moderna",
+          "link": "https://www.statnews.com/2026/06/29/moderna-founder-kenneth-chien-on-cancer-vaccine-and-mrna-future/?utm_campaign=rss",
+          "content": "In a Q&#38;A, Kenneth Chien, no longer with Moderna, predicts the company's mRNA cancer vaccine will be transformative for biotech.",
+          "pub_date": "Mon, 29 Jun 2026 08:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 131
+        },
+        {
+          "id": 805,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: Talawar bets bispecific approach can shake up eczema market",
+          "link": "https://www.statnews.com/2026/06/29/biotech-news-talawar-bets-bispecific-approach-for-eczema/?utm_campaign=rss",
+          "content": "Moderna still bullish on mRNA, Ipsen's acquisition of Kartos, and more biotech news from The Readout",
+          "pub_date": "Mon, 29 Jun 2026 13:52:48 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 100
+        },
+        {
+          "id": 965,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +332,7 @@
           "word_count": 477
         },
         {
-          "id": 268,
+          "id": 839,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +347,7 @@
           "word_count": 448
         },
         {
-          "id": 348,
+          "id": 914,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +362,7 @@
           "word_count": 435
         },
         {
-          "id": 308,
+          "id": 879,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +377,7 @@
           "word_count": 401
         },
         {
-          "id": 289,
+          "id": 860,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +392,7 @@
           "word_count": 391
         },
         {
-          "id": 621,
+          "id": 1183,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,94 +407,19 @@
           "word_count": 391
         },
         {
-          "id": 373,
-          "source": "Immunity",
+          "id": 1013,
+          "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
-          "title": "Neutrophil regulation of immunotherapy for cancer is controlled by type II interferon",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00225-6?rss=yes",
-          "content": "Neutrophils have the capacity to both support and block tumor growth depending on their polarization state. Here, Pei et al. find that IFN-γ produced during immunotherapy induces PD-L1 expression by neutrophils with an aged phenotype that drives therapy resistance; however, targeting this axis or deleting ifngr1 flips the functional state to support T cell-mediated tumor clearance.",
-          "pub_date": "2026-06-15",
+          "title": "Inflammatory immune modulators of AML lung infiltration and respiratory failure",
+          "link": "https://www.nature.com/articles/s41590-026-02582-8",
+          "content": "Nature Immunology, Published online: 29 June 2026; doi:10.1038/s41590-026-02582-8 Paraskevopoulou et al. examine lung damage that occurs in patients diagnosed with acute myeloid leukemia (AML). In mouse models, AML infiltration leads to inflammatory remodeling of the lung niche, resulting in extensive damage and fibrosis in a process driven by galectin-9 and IL-33 axis signaling.",
+          "pub_date": "2026-06-29",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 384
-        },
-        {
-          "id": 336,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Correspondence] Afghanistan's silent mental health crisis",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00822-6/fulltext?rss=yes",
-          "content": "Mental health conditions are highly prevalent in conflict-affected settings, where long-lasting instability reshapes daily life and erodes psychological wellbeing over time. WHO estimates that approximately 22% of individuals living in conflict settings have a mental health disorder:1 a rate that exceeds global averages and reflects sustained exposure to trauma and uncertainty.",
-          "pub_date": "2026-06-27",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 380
-        },
-        {
-          "id": 360,
-          "source": "Cell Host Microbe",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Meta-analysis reveals microbiome signatures for colorectal cancer that are universal across age groups and sequencing methods",
-          "link": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(26)00223-4?rss=yes",
-          "content": "Pekel, Karcher, et al. present the largest gut microbiome meta-analysis of colorectal cancer to date, integrating 6,779 amplicon and shotgun sequencing profiles. They establish a robust microbiome signature across populations, sequencing approaches, and age of onset; associate it with dietary fiber intake; and reveal the biogeography of cancer-enriched Fusobacterium subspecies.",
-          "pub_date": "2026-06-24",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 380
-        },
-        {
-          "id": 366,
-          "source": "Cell Host Microbe",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Adjunctive fecal microbiota transplantation for major depressive disorder: A randomized, double-blind, placebo-controlled trial",
-          "link": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(26)00210-6?rss=yes",
-          "content": "Li et al. report that adjunctive oral fecal microbiota transplantation provides a rapid and sustained antidepressant response in patients with major depressive disorder. Multi-omics integration reveals that this clinical benefit is linked to successful donor strain engraftment, which subsequently modulates bile-acid metabolism and suppresses systemic inflammatory signaling.",
-          "pub_date": "2026-06-17",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 376
-        },
-        {
-          "id": 415,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Symptom-Based Dosing for Neonatal Opioid Withdrawal Research Summary",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2848411",
-          "content": "This study assessed whether a symptom-based dosing strategy for opioid treatment reduces time to medical readiness for discharge compared with scheduled opioid taper in infants with neonatal opioid withdrawal syndrome (NOWS) cared for with the Eat, Sleep, Console approach (ESC) or Finnegan-based care, which focuses on detailed scoring of the signs of withdrawal.",
-          "pub_date": "Tue, 23 Jun 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 364
-        },
-        {
-          "id": 610,
-          "source": "Nature Reviews Immunology",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Extrafollicular plasma cells suppress T cell priming in tumour-draining lymph nodes",
-          "link": "https://www.nature.com/articles/s41577-026-01321-2",
-          "content": "Nature Reviews Immunology, Published online: 08 June 2026; doi:10.1038/s41577-026-01321-2 A preprint by Alberts et al. shows that extrafollicular plasma cells suppress dendritic cell activation and trafficking in tumour-draining lymph nodes, which results in failure to establish an antitumour memory T cell response in immune-cold, triple-negative breast cancer.",
-          "pub_date": "2026-06-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 363
+          "word_count": 382
         }
       ],
       "quota": {
@@ -427,14 +427,44 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 421,
-      "total_valid": 264,
+      "total_raw": 428,
+      "total_valid": 280,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 712,
+          "id": 1343,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "CRISPR-based ex vivo gene editing of donor organs",
+          "link": "https://www.nature.com/articles/s44222-026-00462-2",
+          "content": "Nature Reviews Bioengineering, Published online: 29 June 2026; doi:10.1038/s44222-026-00462-2 Donor organs are frequently discarded because of concerns about quality or pathogen risk, challenges that could be mitigated through ex vivo gene editing or silencing during machine perfusion. Here, we discuss the development of CRISPR-based approaches for ex vivo gene silencing in human donor organs, from proof of concept in kidney biopsies to the challenges of organ-scale translation.",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 483
+        },
+        {
+          "id": 1295,
+          "source": "Cell Systems",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Targeted genomic editing of human gut Bacteroides species based on CRISPR-associated transposases",
+          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00132-8?rss=yes",
+          "content": "Hu, Li, et al. present STIB, an optimized CRISPR-transposase system for efficient, large-payload genome editing across different Bacteroides species. This tool can selectively edit and enrich target Bacteroides species directly within complex microbial communities, advancing precision microbiome engineering.",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 309
+        },
+        {
+          "id": 1274,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +479,7 @@
           "word_count": 176
         },
         {
-          "id": 719,
+          "id": 1281,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +494,7 @@
           "word_count": 175
         },
         {
-          "id": 696,
+          "id": 1258,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +509,7 @@
           "word_count": 169
         },
         {
-          "id": 778,
+          "id": 1342,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 761,
+          "id": 1325,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +539,7 @@
           "word_count": 1199
         },
         {
-          "id": 762,
+          "id": 1326,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -522,6 +552,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
+        },
+        {
+          "id": 1303,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Allosteric disordering of eIF2B regulates the integrated stress response",
+          "link": "https://www.nature.com/articles/s41589-026-02256-4",
+          "content": "Nature Chemical Biology, Published online: 29 June 2026; doi:10.1038/s41589-026-02256-4 eIF2B is a guanine nucleotide exchange factor that catalyzes GDP/GTP exchange on the translation initiation factor eIF2 to regulate protein synthesis. Using cryo-EM structure-guided biochemistry and pharmacology, Dalwadi, Subramanian and colleagues reveal how phosphorylated eIF2, drug-like small molecules and viral effectors mediate allosteric regulation in the central core of eIF2B to sustain or attenuate the integrated stress response.",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 529
+        },
+        {
+          "id": 1294,
+          "source": "Cell Systems",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Scalable enumeration and sampling of minimal metabolic pathways for organisms and communities",
+          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00135-3?rss=yes",
+          "content": "Networks of metabolic exchanges are essential for multicellular systems and microbial consortia. Øyås et al. introduce minimal pathways, which generalize concepts of metabolic pathway analysis. By comprehensively and compactly capturing the network capabilities, minimal pathways enable applications ranging from quantitative gene essentiality predictions to the analysis of host-microbiome interactions.",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 404
         }
       ],
       "quota": {
@@ -529,14 +589,44 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 119,
-      "total_valid": 32,
-      "total_candidates": 6
+      "total_raw": 123,
+      "total_valid": 36,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 276,
+          "id": 1013,
+          "source": "Nature Immunology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Inflammatory immune modulators of AML lung infiltration and respiratory failure",
+          "link": "https://www.nature.com/articles/s41590-026-02582-8",
+          "content": "Nature Immunology, Published online: 29 June 2026; doi:10.1038/s41590-026-02582-8 Paraskevopoulou et al. examine lung damage that occurs in patients diagnosed with acute myeloid leukemia (AML). In mouse models, AML infiltration leads to inflammatory remodeling of the lung niche, resulting in extensive damage and fibrosis in a process driven by galectin-9 and IL-33 axis signaling.",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 382
+        },
+        {
+          "id": 1351,
+          "source": "Nature Methods",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Spatio-DARLIN enables robust and efficient in situ lineage tracing in mice at single-cell resolution",
+          "link": "https://www.nature.com/articles/s41592-026-03151-5",
+          "content": "Nature Methods, Published online: 29 June 2026; doi:10.1038/s41592-026-03151-5 Spatio-DARLIN combines the DARLIN mouse model with sequencing-based spatial transcriptomics to enable high-resolution spatial lineage tracing in mice.",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 229
+        },
+        {
+          "id": 847,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +641,22 @@
           "word_count": 220
         },
         {
-          "id": 304,
+          "id": 990,
+          "source": "Nature Biotech",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Experiment-guided AlphaFold3 resolves measurement-consistent protein ensembles",
+          "link": "https://www.nature.com/articles/s41587-026-03166-5",
+          "content": "Nature Biotechnology, Published online: 29 June 2026; doi:10.1038/s41587-026-03166-5 A generative model using AlphaFold3 as prior infers protein conformational ensembles consistent with measured experimental data.",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 213
+        },
+        {
+          "id": 875,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +671,7 @@
           "word_count": 210
         },
         {
-          "id": 309,
+          "id": 880,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +686,7 @@
           "word_count": 210
         },
         {
-          "id": 545,
+          "id": 1106,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +701,7 @@
           "word_count": 259
         },
         {
-          "id": 537,
+          "id": 1098,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +716,7 @@
           "word_count": 204
         },
         {
-          "id": 533,
+          "id": 1094,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +731,7 @@
           "word_count": 200
         },
         {
-          "id": 693,
+          "id": 1255,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -639,51 +744,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 162
-        },
-        {
-          "id": 465,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "TOX enforces the immunosuppressive program of tumor-infiltrating regulatory T cells",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.19.732838v1?rss=1",
-          "content": "Regulatory T (Treg) cells accumulate in the tumor microenvironment (TME) to suppress anti-tumor immunity, but the transcriptional regulators stabilizing their immunosuppressive state remain poorly defined. Here we show that transcriptional factor TOX is selectively upregulated in tumor-infiltrating (TI) Treg cells across human cancers and mouse tumor models, while remaining low in peripheral and naive Treg populations. Treg-specific deletion of TOX reduced tumor burden, impaired TI Treg-mediated immune suppression, and enhanced effector functions of CD8 and CD4 T cells. In mosaic mice, TOX-deficient Tregs were selectively depleted from tumors, accompanied by increased apoptosis. Single-cell RNA sequencing and TCR clonotype analysis linked TOX expression to an effector-like TI Treg state with clonal expansion, whereas TOX loss shifted cells toward a TCF7-associated progenitor-like phenotype. ATAC-seq revealed enrichment of AP-1 motifs in TOX-sufficient TI Tregs. In contrast, TCF7, LEF1, and FOXO1 motifs in TOX-deficient counterparts, uncovering the opposing transcriptional networks downstream of TOX. Furthermore, TOX deficiency augmented CD8 T cell responses to PD-1 blockade. Togeth",
-          "pub_date": "2026-06-24",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 473,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Elastin-derived peptides suppress CCL20 expression and block ILC2 recruitment during lung inflammation",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.18.733133v1?rss=1",
-          "content": "Elastin degradation during chronic lung inflammation generates elastin peptides (EPs) with immunomodulatory properties. Because elastin is abundant in the lung, its breakdown in diseases such as chronic obstructive pulmonary disease (COPD) and asthma produces high EPs levels that may influence local immune responses. Here, we investigated the impact of EPs on group 2 innate lymphoid cells (ILC2) using mouse models of EP-induced emphysema and house dust mite (HDM)-induced asthma. EPs instillation reduced lung ILC2 numbers without affecting Th2 cells. In patients with COPD, we observed decreased CCL20 expression in lung immune cells and an inverse correlation between serum CCL20 levels and clinical indicators of elevated EPs burden. We also showed that EPs instillation during HDM-induced lung inflammation directly decreased CCL20 expression. These findings identify EPs as regulators of ILC2 trafficking through CCL20 downregulation, revealing a direct link between extracellular matrix (ECM) degradation and the chemokine networks orchestrating type 2 immunity. One Sentence SummaryElastin-derived peptides reshape type 2 immunity by blocking CCL20-driven ILC2 recruitment during lung infl",
-          "pub_date": "2026-06-23",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 475,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Spatial Orchestration of Skin Fibrosis by a CD8+ T cell-Myofibroblast Axis",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.17.732787v1?rss=1",
-          "content": "Fibrosing skin diseases are highly morbid conditions with diverse clinical and histopathologic features. Prior work, primarily in systemic sclerosis (SSc), has yielded mixed data regarding the immune drivers of fibrosis, as well as the identity and spatial localization of pro-fibrotic fibroblast cell subsets. Here, we focus on morphea and eosinophilic fasciitis (EF), which cause more acutely inflammatory skin fibrosis. Using multimodal single-nucleus and spatial transcriptomics, we find that effector CD8+ T cells are highly enriched in fibrotic skin. These cells are particularly abundant in inflammatory tissue domains bordering fibrotic stroma, which are marked by expression of interferon-{gamma} stimulated genes. Inflammatory domains feature a loss of local homeostatic fibroblast populations and replacement with ADAM12-expressing inflammatory fibroblasts and myofibroblasts, which co-localize closely with CD8+ T cells. All subtypes of morphea featured similar patterns of CD8+ T-cell-associated fibro-inflammatory zonation and fibroblast transformation, suggesting that shared mechanisms can drive fibrosis across stromal compartments of skin. We apply these findings to a large publicl",
-          "pub_date": "2026-06-22",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -691,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 33,
-      "total_valid": 25,
+      "total_raw": 39,
+      "total_valid": 32,
       "total_candidates": 10
     },
     "china": {
@@ -709,34 +769,289 @@
     "payment": {
       "candidates": [
         {
-          "id": 795,
-          "source": "PYMNTS.com",
+          "id": 1387,
+          "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Strategy Valuation Drop Threatens Key Bitcoin Funding Engine",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/strategy-valuation-drop-threatens-key-bitcoin-funding-engine/",
-          "content": "Bitcoin’s largest corporate buyer, bitcoin treasury company Strategy, saw a valuation metric drop below a key threshold Friday (June 26), Bloomberg reported Friday. The ratio of the company’s enterprise value to its bitcoin holdings, or mNAV, fell below parity, meaning that its financing advantage is gone, according to the report. This occurred after seven months [&#8230;] The post Strategy Valuation Drop Threatens Key Bitcoin Funding Engine appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 28 Jun 2026 21:35:00 +0000",
+          "title": "How to Meet the Four Main Objectives for Client Experience",
+          "link": "https://www.finextra.com/videoarticle/3535/how-to-meet-the-four-main-objectives-for-client-experience?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Joining the FinextraTV studio at EBAday 2026 in Copenhagen, Patricia (Trish) Sullivan, Global Head of Institutional Cash Management, Deutsche Bank, provided her thoughts on some of the key trends shaping the future of payments. Discussing the growth in rail offerings, Sullivan described the infrastructure changes underway, including blockchain-based rails and the shift towards 24/7 capabilities. Sullivan also outlined the four main priorities for clients: convenience, certainty, liquidity optimisation and trust, as well as providing context into how financial institutions can develop a clear digital assets strategy and separate signal from noise.",
+          "pub_date": "Mon, 29 Jun 2026 12:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 476
+          "word_count": 654
         },
         {
-          "id": 796,
+          "id": 1361,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Auto Refinancing Volume Doubles as Fed Cuts Rates",
-          "link": "https://www.pymnts.com/consumer-finance/2026/auto-refinancing-volume-doubles-as-fed-cuts-rates/",
-          "content": "The number of consumers who refinanced their auto loan in the first quarter nearly doubled compared to the same period two years earlier, The Wall Street Journal (WSJ) reported Wednesday (June 24). During the first quarter, the number reached about 111,000, according to the report, which cited data from Experian. The surge in refinancing has [&#8230;] The post Auto Refinancing Volume Doubles as Fed Cuts Rates appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 28 Jun 2026 21:14:44 +0000",
+          "title": "Geoswift and SKUx Debut Programmable Stablecoin Commerce Network",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/geoswift-and-skux-debut-programmable-stablecoin-commerce-network/",
+          "content": "Payments companies Geoswift and SKUx are teaming to launch a programmable stablecoin commerce network. The collaboration is designed to bridge “digital assets, traditional finance, and real-world commerce at a global scale,” the companies said in a news release provided to PYMNTS Monday (June 29). “While enterprise stablecoin usage continues to accelerate globally, governments, enterprises, payment [&#8230;] The post Geoswift and SKUx Debut Programmable Stablecoin Commerce Network appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 29 Jun 2026 11:00:34 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 443
+          "word_count": 516
+        },
+        {
+          "id": 1362,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Adyen on Agentic Commerce: The AI Was Never the Hard Part",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/adyen-on-agentic-commerce-the-ai-was-never-the-hard-part/",
+          "content": "Watch more: Monday Conversation with Adyen’s Karan Katyal Ask someone how far along agentic commerce is and you&#8217;ll usually get an adjective. &#8220;Early.&#8221; &#8220;Nascent.&#8221; &#8220;Emerging.&#8221; Karen Webster wanted a number. So she gave Karan Katyal, global head of agentic commerce at Adyen, a scale. Zero means we&#8217;re nowhere. Five means agentic is just an embedded [&#8230;] The post Adyen on Agentic Commerce: The AI Was Never the Hard Part appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 29 Jun 2026 08:03:42 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 501
+        },
+        {
+          "id": 1364,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "World Cup Gives Cross-Border Payments Their Super Bowl Moment",
+          "link": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/world-cup-gives-cross-border-payments-their-super-bowl-moment/",
+          "content": "Watch more: The Digital Shift With Spreedly’s Justin Benson The 2026 World Cup will generate billions of dollars in ticket sales, travel bookings and merchandise purchases, but for merchants, it may also become the largest real-world examination of fraud controls and cross-border payment infrastructure they will face all year. As fans move across three host [&#8230;] The post World Cup Gives Cross-Border Payments Their Super Bowl Moment appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 29 Jun 2026 08:01:36 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 471
+        },
+        {
+          "id": 1366,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Why It’s Time to Know Your Agent",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/why-its-time-to-know-your-agent/",
+          "content": "A business deploys an artificial intelligence agent to manage procurement. The agent queries suppliers, compares prices, issues purchase orders, and routes payments. The supplier on the other end has no way to verify whether the agent placing the order is legitimate, acting within authorized limits, or impersonating a real buyer. That is the operating reality [&#8230;] The post Why It’s Time to Know Your Agent appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 29 Jun 2026 08:00:43 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 444
+        },
+        {
+          "id": 1368,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "53% of Bankers Say Security Drives Real-Time Payments",
+          "link": "https://www.pymnts.com/real-time-payments/2026/53percent-of-bankers-say-security-drives-real-time-payments/",
+          "content": "Real-time payments are starting to look less like a faster delivery truck and more like a digital receipt that arrives before anyone has to ask where the money went. That is the point inside “Beyond Speed: The Strategic Value of Real-Time Payments,” the March 2026 Real-Time Payments Tracker Series from PYMNTS Intelligence and The Clearing [&#8230;] The post 53% of Bankers Say Security Drives Real-Time Payments appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 29 Jun 2026 08:00:18 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 444
+        },
+        {
+          "id": 1384,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Maldives Premier Bank selects Finastra for international payments",
+          "link": "https://www.finextra.com/pressarticle/110261/maldives-premier-bank-selects-finastra-for-international-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Finastra, a global leader in financial services software, today announced that Maldives Premier Bank (MPB) has selected Finastra’s Financial Messaging API solution to drive a modern, digital-first approach to its international banking operations.",
+          "pub_date": "Mon, 29 Jun 2026 09:44:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 246
+        },
+        {
+          "id": 1370,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Crédit Agricole completes agentic payment transaction",
+          "link": "https://www.finextra.com/newsarticle/48008/crdit-agricole-completes-agentic-payment-transaction?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Crédit Agricole, Mastercard and Worldline have carried out the first agentic payment transaction completed in production in France.",
+          "pub_date": "Mon, 29 Jun 2026 15:28:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 131
+        },
+        {
+          "id": 1394,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "What profitable roles can banks play in the digital currency race?",
+          "link": "https://www.finextra.com/event-info/621/what-profitable-roles-can-banks-play-in-the-digital-currency-race?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Exploring banks' key considerations around the impact of digital money on infrastructure, settlement and control.",
+          "pub_date": "Thu, 10 Sep 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 113
+        },
+        {
+          "id": 1373,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Former ECB board member named as chair of Reform Technologies",
+          "link": "https://www.finextra.com/newsarticle/48004/former-ecb-board-member-named-as-chair-of-reform-technologies?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Anti money laundering (AML) technology platform Reform Technologies has named Elizabeth McCaul as its new chair.",
+          "pub_date": "Mon, 29 Jun 2026 10:37:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 112
+        },
+        {
+          "id": 1374,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Mynt plans $1.5bn IPO for Philippines mobile payment platform",
+          "link": "https://www.finextra.com/newsarticle/48003/mynt-plans-15bn-ipo-for-philippines-mobile-payment-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Philippines-based fintech Mynt is planning the country's largest ever listing for its mobile wallet GCash.",
+          "pub_date": "Mon, 29 Jun 2026 09:55:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 106
+        },
+        {
+          "id": 1399,
+          "source": "Cointelegraph Payments",
+          "section": "payment",
+          "tier": "T3",
+          "priority": 5,
+          "title": "Breez launches Bitcoin-to-stablecoin payments across more than 30 blockchains",
+          "link": "https://cointelegraph.com/news/breez-bitcoin-wallets-send-usdc-usdt-without-holding-stablecoins?utm_source=rss_feed&utm_medium=rss_tag_payments&utm_campaign=rss_partner_inbound",
+          "content": "The new SDK feature lets developers route payments from Bitcoin balances to recipients in USDC and USDT without requiring users to hold stablecoins.",
+          "pub_date": "Mon, 29 Jun 2026 13:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 148
+        },
+        {
+          "id": 217,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "NormAct: A Benchmark for Hidden Social Norm Compliance in Embodied Planning",
+          "link": "https://arxiv.org/abs/2606.27826",
+          "content": "arXiv:2606.27826v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) are increasingly deployed as embodied planners in egocentric environments, where task success requires not only achieving instructed goals but also acting in socially appropriate ways. While explicit goals may render certain actions optimal, implicit social norms often impose hidden constraints. Existing evaluations typically focus on explicit goal achievement or direct norm knowledge, seldom assessing whether planners can infer and apply these hidden constraints within action sequences. We introduce NormAct, a benchmark for embodied social-norm interactions that evaluates plans on Goal Achievement, Norm Compliance, and overall Task Success. NormAct uniquely embeds hidden norms within ordinary tasks, testing whether models can realize them without explicit instruction. Experiments with state-of-the-art MLLMs (GPT-5.4, Claude Opus 4.7, Gemini 3 Pro) reveal a significant gap: models achieve explicit goals in 67.3\\% of cases, but comply with hidden norms in only 26.4\\%. Cue-condition experiments indicate that this gap stems not from a lack of general social knowledge, but from challenges in activa",
+          "pub_date": "Mon, 29 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 221,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "JD Oxygen AI Item Center (Oxygen AIIC) V1: An Industrial-Scale LLM/VLM-Centric Solution for Item Understanding, Management, and Applications",
+          "link": "https://arxiv.org/abs/2606.28070",
+          "content": "arXiv:2606.28070v1 Announce Type: new Abstract: JD.com, one of the world's largest e-commerce platforms, serves over 700 million active users and millions of merchants, with a catalog of tens of billions of SKUs. At this scale, high-quality, structured item knowledge underpins a better consumer experience, lower management costs, and higher operational efficiency-yet producing and serving it poses three industrial-scale challenges: fast-emerging concepts, high-quality knowledge production for massive SKUs, and diverse downstream requirements. To address these challenges, we present the JD Oxygen AI Item Center (Oxygen AIIC), an industrial-scale platform built on LLMs/VLMs for item-knowledge production and service. Oxygen AIIC is built around four core pillars: (i) ontology engineering driven by efficient human-AI collaboration, which supports the dynamic evolution and agile expansion of an ontology with millions of entries; (ii) a \"Semantic Search then Discrimination\"(S2D) knowledge identification architecture that, combined with throughput improvement strategies, enables scalable, extensible, and high-throughput AI Item Library production for tens of billions of SKUs; (iii) self-e",
+          "pub_date": "Mon, 29 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 335,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Which Nash Equilibrium? Solver-Dependent Selection on Zero-Sum Nash Polytopes",
+          "link": "https://arxiv.org/abs/2606.28308",
+          "content": "arXiv:2606.28308v1 Announce Type: cross Abstract: Many two-player zero-sum games admit not a unique Nash equilibrium but a convex set of them: a polytope of profiles that all share the minimax value V* yet prescribe different behaviour. Standard solvers each converge to some equilibrium and are treated as interchangeable. We ask whether they instead select different members of the Nash set, systematically as a function of the algorithm rather than the seed. Using a tabular, exactly solvable testbed of six games with analytically known Nash sets -- including a two-dimensional Nash polytope and Kuhn poker -- we find that (i) selection is determined by the algorithm, not the seed, but families differ only on asymmetric Nash sets; (ii) regularized last-iterate methods (R-NaD, magnetic mirror descent) select the maximum-entropy member, the information projection of their uniform reference onto the Nash set -- exactly on the 2-D polytope and at 99.7% of maximum entropy in Kuhn -- while regret-averaging methods (CFR, CFR+, fictitious play) drift to a lower-entropy face; we confirm this on a randomized 180-game ensemble, where R-NaD attains the maximum-entropy member in 100% of converged g",
+          "pub_date": "Mon, 29 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 343,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "SciFig: Towards Automating Editable Figure Generation for Scientific Papers",
+          "link": "https://arxiv.org/abs/2601.04390",
+          "content": "arXiv:2601.04390v3 Announce Type: replace Abstract: High-quality methodology figures are central to scientific communication, yet they remain difficult and time-consuming to create. Such figures must distill a method's components and information flow into a clear, revisable diagram as the paper evolves. Existing methodology diagram automation systems typically face a trade-off between editability and visual quality: TikZ- or SVG-based methods produce editable structured outputs but often lack the richness of human-designed figures, while image-generation models produce polished raster outputs that are difficult to revise. We introduce SciFig, an end-to-end multi-agent framework for generating visually rich and fully editable methodology figures from scientific text. SciFig decomposes figure generation into planning, layout synthesis, component rendering, and iterative refinement, producing XML figures that can be edited in standard diagramming tools and refined through human or VLM feedback. We also introduce SciFig-Bench, a human-verified benchmark of 435 author-drawn methodology figures from 37 arXiv domains and 15 top-tier AI/ML venues, and SciFig-Eval, a four-axis evaluation pr",
+          "pub_date": "Mon, 29 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 344,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Health-ORSC-Bench: A Benchmark for Measuring Over-Refusal and Safety Completion in Health Context",
+          "link": "https://arxiv.org/abs/2601.17642",
+          "content": "arXiv:2601.17642v2 Announce Type: replace Abstract: Safety alignment in Large Language Models is critical for healthcare; however, reliance on binary refusal boundaries often results in over-refusal of benign queries or unsafe compliance with harmful ones. While existing benchmarks measure these extremes, they fail to evaluate Safe Completion: the model's ability to maximise helpfulness on dual-use or borderline queries by providing safe, high-level guidance without crossing into actionable harm. We introduce Health-ORSC-Bench, the first large-scale benchmark designed to systematically measure Over-Refusal and Safe Completion quality in healthcare. Comprising 31,920 benign boundary prompts across seven health categories (e.g., self-harm, medical misinformation), our framework uses an automated pipeline with human validation to test models at varying levels of intent ambiguity. We evaluate 30 state-of-the-art LLMs, including GPT-5 and Claude-4, revealing a significant tension: safety-optimised models frequently refuse up to 80% of \"Hard\" benign prompts, while domain-specific models often sacrifice safety for utility. Our findings demonstrate that model family and size significantly",
+          "pub_date": "Mon, 29 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 325,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "The Remittance Blueprint: Data-driven Intelligence for Sri Lanka",
+          "link": "https://arxiv.org/abs/2606.28190",
+          "content": "arXiv:2606.28190v1 Announce Type: cross Abstract: This study analyzes Sri Lankan migration and remittances over 32 years (1994-2025). Using a 384-month harmonized dataset, we apply exploratory data analysis, stationarity corrected time-series modeling (ADF, Johansen, VAR/VECM), and supervised learning. Results reveal remittance inflows are primarily driven by external macroeconomic variables, specifically exchange rate dynamics and global oil prices, rather than domestic indicators. Impulse response analysis confirms the asymmetric impact of currency depreciation and oil price shocks. Predictively, multivariate machine learning models outperform traditional univariate approaches; Ridge Regression achieves a 73.8% accuracy improvement over SARIMA (Annualized RMSE: USD 494.8 Mn). The optimized framework projects 2026 remittances at USD 9,001 million under stable conditions. These findings highlight the structural dependence of remittances on global economies, emphasizing the need for robust exchange rate policies, skilled migration, and formal financial channels to enhance long-term economic resilience.",
+          "pub_date": "Mon, 29 Jun 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1118
+        },
+        {
+          "id": 1367,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The Practical AI Opportunity: Why SMBs Want Guidance Before Automation",
+          "link": "https://www.pymnts.com/tracker_posts/the-practical-ai-opportunity-why-smbs-want-guidance-before-automation/",
+          "content": "Artificial intelligence (AI) has rapidly moved from experimental technology to business necessity. Yet for many small to mid-sized businesses (SMBs), the most valuable AI applications are not futuristic autonomous agents or complex automation tools. Instead, they are practical solutions that help owners manage expenses, improve cash flow visibility, create budgets and make better financial decisions. [&#8230;] The post The Practical AI Opportunity: Why SMBs Want Guidance Before Automation appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 29 Jun 2026 08:00:29 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 524
         }
       ],
       "quota": {
@@ -744,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 182,
-      "total_valid": 2,
-      "total_candidates": 2
+      "total_raw": 215,
+      "total_valid": 42,
+      "total_candidates": 19
     }
   },
   "meta": {
-    "total_raw": 976,
-    "dup": 252,
+    "total_raw": 1567,
+    "dup": 377,
     "nocontent": 399,
     "noise": 4
   }
