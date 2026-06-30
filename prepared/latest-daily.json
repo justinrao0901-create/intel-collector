@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 47,
+          "id": 46,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 389
         },
         {
-          "id": 77,
+          "id": 75,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,22 @@
           "word_count": 196
         },
         {
-          "id": 79,
+          "id": 73,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The AI jobs debate just got messier",
+          "link": "https://techcrunch.com/2026/06/29/the-ai-jobs-debate-just-got-messier/",
+          "content": "A new report finds \"high-intensity AI adopters” saw headcount increase 10.2%. Among those companies, entry-level headcount rose by 12%, countering the rhetoric that AI kills junior jobs.",
+          "pub_date": "Tue, 30 Jun 2026 04:01:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 186
+        },
+        {
+          "id": 77,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,67 +65,52 @@
           "word_count": 145
         },
         {
-          "id": 82,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "TIDAL cracks down on AI music by cutting off monetization",
-          "link": "https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/",
-          "content": "In addition, TIDAL will use automated tools to remove AI-generated music that attempts to impersonate an artist or a group, the company said.",
-          "pub_date": "Mon, 29 Jun 2026 16:29:04 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 141
-        },
-        {
-          "id": 63,
+          "id": 57,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CogniRoute: Learning to Route Social Evidence in Omni-Modal Models",
-          "link": "https://arxiv.org/abs/2606.20970",
-          "content": "Omni-modal models can ingest video, audio, and text, but unified access to multiple modalities does not guarantee that a model uses the right evidence. This gap is especially pronounced in social video question answering, where the answer may hinge on a gesture, vocal tone, temporal cue, or mismatch between what is said and what is visually expressed. We introduce CogniRoute, a schema-guided Mixture-of-Experts framework for social omni reasoning. CogniRoute uses a training-only cognitive schema that factorizes each example by cross-modal relation, reasoning demand, and temporal scope, and aligns global routing signatures with this structure during supervised fine-tuning. We further introduce route-aware reinforcement learning, which jointly optimizes token generation and expert allocation using rewards for answer correctness, modality-consistent reasoning, and cognitive temporal grounding. To support training and evaluation, we construct OmniSocialBench, a diagnostic social video QA resource with 118K structured training examples, grounded reasoning traces, schema labels, temporal evidence spans, and a manually verified evaluation split. CogniRoute achieves 59.38\\% average accuracy",
-          "pub_date": "2026-06-17T20:00:00.000Z",
+          "title": "Beyond IID: How General Are Tabular Foundation Models, Really?",
+          "link": "https://arxiv.org/abs/2606.30410",
+          "content": "Foundation models for predictive machine learning on tabular data have recently gained significant traction in academia and industry. Research communities across disciplines are increasingly evaluating tabular foundation models on diverse datasets and tasks. However, these task- and discipline-specific evaluations remain largely inaccessible to model researchers because benchmark software and evaluation protocols are fragmented. As a result, model researchers rely on standard benchmarks, which are mostly defined for tasks where tabular foundation models already excel. The most challenging scenarios are excluded, limiting meaningful progress in the field by focusing on marginal improvements on IID data rather than on broader, more demanding challenges. To overcome this, we introduce BeyondArena, the first unified holistic benchmark for tabular data that supports diverse task types (IID, temporal, grouped), across sample size and feature dimensionality scales, with diverse feature types (with text, with high cardinality) from a broad range of disciplines. To enable unified benchmarking beyond standard benchmarks, we introduce Data Foundry, a Python framework and metadata schema for c",
+          "pub_date": "2026-06-28T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 64,
+          "id": 58,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Simplified Sparse Attention via Gist Tokens",
-          "link": "https://arxiv.org/abs/2604.20920",
-          "content": "Sparse attention can reduce the cost of long-context inference, but most variants introduce new architectural components. We introduce Simplified Sparse Attention (SSA), a simpler approach to sparse attention that requires no architectural changes. Concretely, we first perform continued pretraining on sequences interleaved with gist tokens. We optimize the standard next-token loss as usual, but the gist tokens use an attention mask to restrict what parts of the context the language model can attend to; this teaches the model to pack each chunk's important information into the gist tokens. At inference time, SSA scores chunks via attention between the current query and the small set of gist tokens, selectively unfolding the top-k chunks by reintroducing their corresponding raw tokens. Since the query is scored only against the gist tokens, we avoid the memory-bandwidth cost associated with naive scoring against the full KV cache, without requiring the auxiliary KV cache approach used by sparse attention methods. On LongBench, SSA consistently outperforms compression and inference-time sparse-attention baselines under the same compression ratio. More strikingly, in retrieval-augmente",
-          "pub_date": "2026-06-25T20:00:00.000Z",
+          "title": "How Good Can Linear Models Be for Time-Series Forecasting?",
+          "link": "https://arxiv.org/abs/2606.27282",
+          "content": "Time-series forecasting research has been moving steadily toward larger architectures, from specialized transformers to general-purpose foundation models, on the assumption that capacity is what unlocks accuracy. We take the opposite position: most of the gap can be closed at far lower cost by tuning preprocessing rather than scaling models. We use Ridge regression as the testbed, since it has a closed-form solution and interpretable weights, which let the optimal hyperparameters be read off the search directly. We search over context length, local normalization, regularization, and augmentation on eight standard benchmarks and find three patterns. (1) Optimal lookback is strongly series-specific and often non-monotonic in forecast horizon, with fitted power-law exponents ranging from +0.46 on ETTm2 to -0.19 on Exchange and Traffic, challenging the convention that longer horizons need longer history. (2) Normalizing over a learned trailing fraction of the context, rather than its entirety, is almost universally preferred. (3) Series within the same dataset often disagree on hyperparameters; the optimal degree of cross-series sharing varies from fully shared to fully per-series. The",
+          "pub_date": "2026-06-24T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 59,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Qwen-RobotNav Technical Report: A Scalable Navigation Model Designed for an Agentic Navigation System",
-          "link": "https://arxiv.org/abs/2606.18112",
-          "content": "Agentic navigation systems require a base navigation model whose observation strategy can be externally reconfigured at inference time, because instruction following, object search, target tracking, and autonomous driving share the same perception-planning backbone yet demand fundamentally different strategies for consuming the visual stream. We present Qwen-RobotNav, a scalable navigation model built on Qwen-RobotNav that addresses it through a parameterised interface with two complementary dimensions: multiple task modes that select the navigation behaviour, and controllable observation parameters (e.g., token budget, per-camera weights) that govern how visual history is encoded. With training-time randomization over all parameters, Qwen-RobotNav is robust to any inference-time configuration requiring zero architectural modification to the Qwen-RobotNav backbone. We train Qwen-RobotNav on 15.6M samples; co-training with vision-language data prevents the collapse into reactive action-sequence mappers observed in trajectory-only training. The parameterised interface also makes Qwen-RobotNav a natural building block for agentic systems: for long-horizon scenarios, an upper-level pla",
-          "pub_date": "2026-06-17T20:00:00.000Z",
+          "title": "Agentic Abstention: Do Agents Know When to Stop Instead of Act?",
+          "link": "https://arxiv.org/abs/2606.28733",
+          "content": "LLM agents are expected to act over multiple turns, using search, browsing interfaces, and terminal tools to complete user goals. Yet not every goal is well specified or achievable in the available environment. In such cases, a reliable agent should recognize that further interaction is unlikely to help and abstain from additional tool calls. We define Agentic Abstention, the problem of deciding when an agent should stop acting under uncertainty. Unlike standard LLM abstention, which is usually evaluated as a single-turn answer-or-abstain decision, agentic abstention is a sequential decision problem: an agent can answer, abstain, or gather more information at each turn, and the need to abstain may only become clear after interacting with the environment. We study this problem across web shopping, terminal environments, and question answering, evaluating 13 LLM-as-agent systems and 2 agent scaffolds on more than 28,000 tasks. Our results show that the main challenge is not only whether agents can abstain, but also when they abstain. Some agents never abstain when they should, while others do so only after many unnecessary interactions. This gap is especially large on tasks where the",
+          "pub_date": "2026-06-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 700,
+          "id": 1232,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 704,
+          "id": 1236,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 250
         },
         {
-          "id": 696,
+          "id": 1228,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 81
         },
         {
-          "id": 679,
+          "id": 1210,
           "source": "Interconnects",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 79
         },
         {
-          "id": 691,
+          "id": 1223,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,59 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 809,
-      "total_valid": 439,
+      "total_raw": 1339,
+      "total_valid": 1055,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1177,
+          "id": 1501,
+          "source": "Nature Biotech",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Editor’s pick: Liberate Bio",
+          "link": "https://www.nature.com/articles/s41587-026-03201-5",
+          "content": "Nature Biotechnology, Published online: 30 June 2026; doi:10.1038/s41587-026-03201-5 Each year, Nature Biotechnology highlights companies that received sizeable early-stage funding in the previous year. Liberate Bio is developing a lipid nanoparticle toolbox to deliver genetic medicine to previously inaccessible cells inside the body.",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 336
+        },
+        {
+          "id": 1494,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Multi-antigen-targeting T cells in pediatric central nervous system tumors: a phase 1 trial",
+          "link": "https://www.nature.com/articles/s41591-026-04449-9",
+          "content": "Nature Medicine, Published online: 30 June 2026; doi:10.1038/s41591-026-04449-9 In the phase 1 ReMIND trial of tumor-associated antigen-specific T cells in patients with pediatric central nervous system tumors, treatment was generally well tolerated with one complete response and three long-term responders.",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 308
+        },
+        {
+          "id": 1378,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Ebola preparedness must start with ecosystems and before humans show symptoms",
+          "link": "https://www.nature.com/articles/d41586-026-02070-x",
+          "content": "Nature, Published online: 30 June 2026; doi:10.1038/d41586-026-02070-x Ebola preparedness must start with ecosystems and before humans show symptoms",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 148
+        },
+        {
+          "id": 1667,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +257,7 @@
           "word_count": 146
         },
         {
-          "id": 1163,
+          "id": 1653,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +272,7 @@
           "word_count": 327
         },
         {
-          "id": 1166,
+          "id": 1656,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +287,7 @@
           "word_count": 322
         },
         {
-          "id": 1151,
+          "id": 1641,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +302,37 @@
           "word_count": 314
         },
         {
-          "id": 923,
+          "id": 1341,
+          "source": "Endpoints News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "House China panel probes Bristol Myers, Pfizer on use of trial sites",
+          "link": "https://endpoints.news/house-china-panel-probes-bristol-myers-about-use-of-china-trial-sites/",
+          "content": "A congressional committee has opened an inquiry into Bristol Myers Squibb and Pfizer's use of clinical trial sites in China, including facilities that the committee's chairman said are affiliated with the Chinese military or that ...",
+          "pub_date": "Tue, 30 Jun 2026 10:00:31 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 233
+        },
+        {
+          "id": 1502,
+          "source": "Nature Biotech",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Editor’s pick: Trogenix",
+          "link": "https://www.nature.com/articles/s41587-026-03200-6",
+          "content": "Nature Biotechnology, Published online: 30 June 2026; doi:10.1038/s41587-026-03200-6 Each year, Nature Biotechnology highlights companies that received sizeable early-stage funding in the previous year. Trogenix has developed a platform for generating ‘synthetic super-enhancers’ that could drive highly cell-specific gene therapy-based treatment of solid tumors such as glioblastoma.",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 384
+        },
+        {
+          "id": 1456,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +347,7 @@
           "word_count": 380
         },
         {
-          "id": 948,
+          "id": 1480,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +362,7 @@
           "word_count": 380
         },
         {
-          "id": 954,
+          "id": 1486,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +377,7 @@
           "word_count": 376
         },
         {
-          "id": 883,
+          "id": 1425,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +392,7 @@
           "word_count": 373
         },
         {
-          "id": 877,
+          "id": 1419,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,22 +407,7 @@
           "word_count": 365
         },
         {
-          "id": 1002,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Symptom-Based Dosing for Neonatal Opioid Withdrawal Research Summary",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2848411",
-          "content": "This study assessed whether a symptom-based dosing strategy for opioid treatment reduces time to medical readiness for discharge compared with scheduled opioid taper in infants with neonatal opioid withdrawal syndrome (NOWS) cared for with the Eat, Sleep, Console approach (ESC) or Finnegan-based care, which focuses on detailed scoring of the signs of withdrawal.",
-          "pub_date": "Tue, 23 Jun 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 364
-        },
-        {
-          "id": 1198,
+          "id": 1688,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -360,66 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 363
-        },
-        {
-          "id": 888,
-          "source": "Nature",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Crude oil fractionation by means of mesoporous polyacrylonitrile membranes",
-          "link": "https://www.nature.com/articles/s41586-026-10677-3",
-          "content": "Nature, Published online: 24 June 2026; doi:10.1038/s41586-026-10677-3 Porous polyacrylonitrile membranes—typically used as non-selective support layers—can be used to achieve effective molecular refining of crude oil at steady state, enabling substantial reductions in energy consumption, cooling water, and CO2 emissions compared with distillation processes.",
-          "pub_date": "2026-06-24",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 360
-        },
-        {
-          "id": 951,
-          "source": "Cell Host Microbe",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "CBASS limits bacteriophage production while maintaining cell viability in Pseudomonas aeruginosa",
-          "link": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(26)00217-9?rss=yes",
-          "content": "Huiting, Shmidov, et al. report on a CBASS type encoding a phospholipase (CapV) effector that can successfully limit the late stage of phage replication while maintaining cell viability, rather than inducing cell death, in Pseudomonas aeruginosa. These findings represent a significant shift in our understanding of how CBASS antagonizes phage replication.",
-          "pub_date": "2026-06-19",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 356
-        },
-        {
-          "id": 921,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Perspectives] Why medicine needs literary magazines",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01250-X/fulltext?rss=yes",
-          "content": "Running a literary magazine was not in my academic game plan. I attended medical school with the plan to be a bench scientist. I chose the joint MD–PhD programme not just because it paid for my tuition—though this was certainly a selling point—but the goal was to run a basic-science research laboratory, with one morning per week in a neurology clinic.",
-          "pub_date": "2026-06-27",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 353
-        },
-        {
-          "id": 1003,
-          "source": "Nature Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Delivering the benefits of genomic data reanalysis for diagnosis equitably and at scale",
-          "link": "https://www.nature.com/articles/s41591-026-04516-1",
-          "content": "Nature Medicine, Published online: 29 June 2026; doi:10.1038/s41591-026-04516-1 We developed a tool, Talos, for automated reanalysis of genomic data from patients with a rare disease and show that frequent reanalysis can be delivered at scale and low cost. Talos is open source, thereby enabling broad adoption by the clinical and research communities.",
-          "pub_date": "2026-06-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 352
         }
       ],
       "quota": {
@@ -427,14 +427,29 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 444,
-      "total_valid": 280,
+      "total_raw": 402,
+      "total_valid": 265,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1369,
+          "id": 1831,
+          "source": "Nucleic Acids Research",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Intron location and sequence modulate gene expression in Yarrowia lipolytica",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag650/8719427?rss=1",
+          "content": "Abstract Introns are widespread among eukaryotic genomes. While intron-containing genes often show higher expression than genes lacking introns, the intron features influencing gene expression remain largely elusive. Here, we systematically characterize the intron landscape of Yarrowia lipolytica , an oleaginous yeast that is increasingly used as a microbial cell factory. Transcriptome analysis across 12 environments identified 2421 introns in 1430 genes, including 1302 newly discovered introns and 479 newly annotated intron-containing genes. We find that intron-containing genes exhibit higher and more stable expression across conditions and identify six key intron features, including the 5′ splice motif, 3′ splice motif, branch point motif, distance from branch point to 3′ splice site, GC content, and intron size, that influence splicing efficiency and gene expression. A linear regression model based on these features robustly captures the intron’s effect on gene expression, enabling us to select and test 55 different introns that modulate expression of a reporter gene by 200-fold. Moreover, we demonstrate that intron effects are robust across genomic contexts and identify a previ",
+          "pub_date": "Sat, 27 Jun 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1864,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +464,7 @@
           "word_count": 483
         },
         {
-          "id": 1297,
+          "id": 1784,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +479,7 @@
           "word_count": 167
         },
         {
-          "id": 1291,
+          "id": 1778,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +494,7 @@
           "word_count": 166
         },
         {
-          "id": 1287,
+          "id": 1774,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,49 +509,34 @@
           "word_count": 161
         },
         {
-          "id": 1348,
+          "id": 1825,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
           "priority": 2,
-          "title": "Bottlebrush polymer conjugates for enhanced antisense oligonucleotide therapy in myotonic dystrophy type 1",
-          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag619/8715186?rss=1",
-          "content": "Abstract Oligonucleotides are a promising class of genetic medicine for myotonic dystrophy type 1 (DM1), the most common adult-onset muscular dystrophy. However, poor muscle distribution of nucleic acid drugs following systemic administration has hindered drug development, and no curative treatment currently exists. DM1 pathology requires drug localization to the nucleus, where pathogenic mutant RNA is sequestered, posing additional challenges after cellular internalization regarding endosomal escape and nuclear uptake. Here, we show that a locked nucleic acid oligonucleotide targeting mutant CUG repeat RNA tracts, conjugated to a bottlebrush polymer, exhibits improved muscle distribution and potent correction of DM1-associated splicing dysregulation in a DM1 mouse model. Significant improvements in myotonia, body weight, and grip strength were observed. The conjugate was well tolerated following 12 weeks of weekly intravenous administration. These findings suggest that bottlebrush polymer conjugates may overcome key limitations of conventional oligonucleotide therapeutics for neuromuscular conditions, with potential to become a potent and cost-effective DM1 therapy.",
-          "pub_date": "Wed, 24 Jun 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1185
-        },
-        {
-          "id": 1340,
-          "source": "Nucleic Acids Research",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Mechanism of negative supercoil relaxation by Topoisomerase IV",
-          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag658/8719405?rss=1",
-          "content": "Abstract Type II topoisomerases are essential enzymes that alter DNA topology by making a transient double-stranded break in one segment of the DNA and passing another DNA segment through the break such that the sign of the crossing DNA segments is inverted. DNA gyrase has served as a paradigm for mechanistic studies of topoisomerase action. Prescient biochemistry predicting a positive sign for the crossing DNA segments during DNA gyrase supercoiling activity has recently been confirmed by cryo-electron microscope studies of the enzyme bound to DNA. These studies demonstrated a central role of the C-terminal domain of the GyrA subunit in shaping the DNA crossover. We show biochemically that exchanging the DNA GyrA CTD for the homologous one from the ParC subunit of Topoisomerase IV alters the orientation of the DNA crossover from a positive one to a negative one. The sign of the pre-catalytic DNA crossover in Topoisomerase IV is also negative. We suggest that relaxation of negatively supercoiled DNA by Topoisomerase IV proceeds by the opposite of the mechanism by which DNA gyrase supercoils DNA.",
+          "title": "MAPK/ERK signaling regulates H3K9me3 heterochromatin reorganization to confer mesendoderm developmental competence",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag642/8719433?rss=1",
+          "content": "Abstract During gastrulation, dynamic interplay among cell signaling pathways dictates cell fate decisions. While extensive studies have elucidated their critical roles in morphological regulation, how these signals orchestrate the epigenome to confer developmental competence remains unclear. In this study, we demonstrate that H3K9me3-marked facultative heterochromatin domains undergo global reorganization during differentiation of human pluripotent stem cells (hPSCs) into mesendoderm (ME) and definitive endoderm, which arise through epithelial–mesenchymal transition, but not into early neural ectoderm, which retains an epithelial state. We identify the MAPK/ERK pathway, acting downstream of FGF signaling, as a key mediator of this reorganization within a critical temporal window during hPSC-to-ME differentiation. Mechanistically, phosphorylated-ERK is enriched across chromatin domains spanning key developmental gene loci and exhibits a reciprocal genomic pattern with H3K9me3, which becomes ectopically accumulated upon MAPK/ERK inhibition. Furthermore, using CRISPRi-mediated perturbation of H3K9me3 methyltransferases, we reveal that proper establishment of H3K9me3 domains plays a d",
           "pub_date": "Sat, 27 Jun 2026 00:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1112
+          "word_count": 1200
         },
         {
-          "id": 1337,
+          "id": 1826,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
           "priority": 2,
-          "title": "dUTPase modulates mycobacterial homologous recombination and interacts with the AdnAB helicase–nuclease",
-          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag660/8719410?rss=1",
-          "content": "Abstract This study identifies a previously unrecognized interaction between Mycobacterium tuberculosis dUTPase (Dut) and the AdnAB homologous recombination complex. Using a combination of yeast two-hybrid screening, mycobacterial protein fragment complementation, and biochemical analyses with purified proteins, we show that dUTPase physically interacts with the N-terminal region of AdnA and modulates the activity of the AdnAB helicase–nuclease complex. Biochemical assays demonstrate that Dut enhances AdnAB activity on DNA substrates and alters the AdnAB–DNA interaction. Mutational perturbation of Dut, including catalytic inactivation or deletion of a mycobacteria-specific surface loop, reduces its stimulatory effect on AdnAB in vitro and decreases recombination efficiency in mycobacterial cells. Together, these results support a functional connection between dUTPase and the AdnAB DNA-processing machinery and suggest a potential link between nucleotide metabolism and DNA repair pathways.",
+          "title": "Antibody-trapping presents a widespread pitfall for microscopy and genomics in the nucleus",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag615/8719432?rss=1",
+          "content": "Abstract Chromatin has a complex 3D structure and diverse binding proteins that coordinate the genome’s most essential functions. Many microscopy and genomics technologies that map chromatin proteins and modifications rely on the diffusion of antibodies (Abs) to target epitopes within whole nuclei. Here, we reveal a critical flaw in such methods that arises when Abs become trapped at the edge of nuclear structures and fail to reach internally positioned epitopes. This “Ab-trapping” results in artifactual peripheral signal that fundamentally distorts the apparent positions of chromatin features across the genome and nucleus. Using computational modeling and experimental validation, we demonstrate that Ab-trapping is caused by a combination of three compounding factors—high epitope abundance, high Ab affinity, and low Ab diffusion rates. Ab-trapping can thus systematically misrepresent the localization of many prevalent chromatin features like histone modifications, transcription factors, nucleolar proteins, and protein tags. We also show that this artifact manifests in multiple technologies, including immunofluorescence microscopy, more recent CUT&Tag-seq, and likely any method rely",
           "pub_date": "Sat, 27 Jun 2026 00:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1002
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -544,14 +544,89 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 123,
-      "total_valid": 26,
+      "total_raw": 130,
+      "total_valid": 34,
       "total_candidates": 7
     },
     "cross": {
       "candidates": [
         {
-          "id": 843,
+          "id": 1826,
+          "source": "Nucleic Acids Research",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Antibody-trapping presents a widespread pitfall for microscopy and genomics in the nucleus",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag615/8719432?rss=1",
+          "content": "Abstract Chromatin has a complex 3D structure and diverse binding proteins that coordinate the genome’s most essential functions. Many microscopy and genomics technologies that map chromatin proteins and modifications rely on the diffusion of antibodies (Abs) to target epitopes within whole nuclei. Here, we reveal a critical flaw in such methods that arises when Abs become trapped at the edge of nuclear structures and fail to reach internally positioned epitopes. This “Ab-trapping” results in artifactual peripheral signal that fundamentally distorts the apparent positions of chromatin features across the genome and nucleus. Using computational modeling and experimental validation, we demonstrate that Ab-trapping is caused by a combination of three compounding factors—high epitope abundance, high Ab affinity, and low Ab diffusion rates. Ab-trapping can thus systematically misrepresent the localization of many prevalent chromatin features like histone modifications, transcription factors, nucleolar proteins, and protein tags. We also show that this artifact manifests in multiple technologies, including immunofluorescence microscopy, more recent CUT&Tag-seq, and likely any method rely",
+          "pub_date": "Sat, 27 Jun 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1828,
+          "source": "Nucleic Acids Research",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "RNA G-quadruplexes function as a tunable switch of FUS phase separation",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag594/8719430?rss=1",
+          "content": "Abstract Fused in sarcoma (FUS) undergoes liquid-liquid phase separation (LLPS) to support essential cellular functions, but aberrant phase transitions promote toxic aggregation in neurodegenerative disease. Short RNA oligonucleotides can reverse this behavior, yet the structural determinants that govern RNA activity remain poorly defined. Here, we identify RNA G-quadruplexes (rG4s) as tunable structural motifs that potently modulate FUS LLPS. rG4 activity depends on its concentration and is modulated by rG4 length and stability: increasing repeat number switches rG4s from inhibitor to nucleator of FUS assembly, whereas chemical modifications that stabilize rG4 enhance inhibitory function and render these activities resilient to ionic perturbation. Although short rG4s interact with both soluble and condensed FUS, they preferentially engage the soluble pool, likely shifting the equilibrium toward dispersion. Leveraging these mechanistic insights, we developed a bioinformatic pipeline that uncovered more rG4 inhibitors that robustly reverse FUS LLPS and aggregation. Our findings establish rG4s as chemically programmable regulators of protein phase behavior and provide a blueprint for",
+          "pub_date": "Sat, 27 Jun 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1872,
+          "source": "Nature Methods",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "RNAbpFlow: base pair-augmented SE(3) flow matching for conditional RNA 3D structure generation",
+          "link": "https://www.nature.com/articles/s41592-026-03128-4",
+          "content": "Nature Methods, Published online: 30 June 2026; doi:10.1038/s41592-026-03128-4 RNAbpFlow generates all-atom RNA conformational ensembles for single-chain RNA monomers without the explicit or implicit use of evolutionary information or homologous structural templates.",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 267
+        },
+        {
+          "id": 1495,
+          "source": "Nature Medicine",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Clinical decision support in hematological malignancies using a case-grounded AI agent",
+          "link": "https://www.nature.com/articles/s41591-026-04494-4",
+          "content": "Nature Medicine, Published online: 30 June 2026; doi:10.1038/s41591-026-04494-4 A locally deployable, case-grounded large language model agent achieved high concordance with hematology tumor board decisions across retrospective, external and prospective evaluations.",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 266
+        },
+        {
+          "id": 1381,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "AI systems devise hypotheses and ways to test them",
+          "link": "https://www.nature.com/articles/d41586-026-01873-2",
+          "content": "Nature, Published online: 30 June 2026; doi:10.1038/d41586-026-01873-2 AI agents collaborate to generate biomedical hypotheses and analyse data, moving towards a laboratory discovery cycle with AI involved in every step.",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 220
+        },
+        {
+          "id": 1385,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +641,7 @@
           "word_count": 205
         },
         {
-          "id": 848,
+          "id": 1390,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -581,22 +656,7 @@
           "word_count": 198
         },
         {
-          "id": 845,
-          "source": "Nature",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "How AI can crack open the ‘hidden curriculum’ for neurodivergent students",
-          "link": "https://www.nature.com/articles/d41586-026-01672-9",
-          "content": "Nature, Published online: 29 June 2026; doi:10.1038/d41586-026-01672-9 Marisa Chrysochoou and Keivan Stassun argue that AI tools could help students to navigate academia’s unwritten rules.",
-          "pub_date": "2026-06-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 188
-        },
-        {
-          "id": 1090,
+          "id": 1580,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +671,7 @@
           "word_count": 188
         },
         {
-          "id": 1123,
+          "id": 1613,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +686,7 @@
           "word_count": 186
         },
         {
-          "id": 1126,
+          "id": 1616,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -639,66 +699,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 157
-        },
-        {
-          "id": 811,
-          "source": "Endpoints News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "John Reed on J&J’s R&D model, oncology deals and pipeline expansion potential",
-          "link": "https://endpoints.news/john-reed-on-jjs-rd-model-oncology-deals-and-pipeline-expansion-potential/",
-          "content": "John Reed has overseen the pipelines of three of the largest drugmakers since leaving Southern California's Sanford Burnham medical research institute 13 years ago, giving him unique insight into how molecules move from a research ...",
-          "pub_date": "Mon, 29 Jun 2026 17:51:10 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 234
-        },
-        {
-          "id": 831,
-          "source": "STAT News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: Investor Clive Meanwell on designing biotechs for population health, and AI’s role as a catalyst",
-          "link": "https://www.statnews.com/2026/06/29/clive-meanwell-population-health-partners-on-ai-biotech/?utm_campaign=rss",
-          "content": "Clive Meanwell, chairman of investment firm Population Health Partners, was an AI skeptic until recently. Now, he thinks it's a catalyst.",
-          "pub_date": "Mon, 29 Jun 2026 08:30:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 137
-        },
-        {
-          "id": 832,
-          "source": "STAT News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: Sword Health contracted to provide AI-supported physical therapy for an entire country",
-          "link": "https://www.statnews.com/2026/06/29/sword-health-portugal-deal-ai-supported-physical-therapy/?utm_campaign=rss",
-          "content": "Portugal's National Health Service signed a deal with digital health company Sword for its AI-assisted virtual physical therapy care.",
-          "pub_date": "Mon, 29 Jun 2026 08:30:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 133
-        },
-        {
-          "id": 84,
-          "source": "TechCrunch AI",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Omen AI’s plan to optimize data centers is all wet",
-          "link": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
-          "content": "Omen AI raised a $31 million Series A to monitor chip coolant and stop bacterial outbreaks in data centers.",
-          "pub_date": "Mon, 29 Jun 2026 13:00:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 107
         }
       ],
       "quota": {
@@ -706,8 +706,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 31,
-      "total_valid": 23,
+      "total_raw": 40,
+      "total_valid": 33,
       "total_candidates": 10
     },
     "china": {
@@ -724,7 +724,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1395,
+          "id": 1890,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -739,37 +739,97 @@
           "word_count": 535
         },
         {
-          "id": 1387,
+          "id": 1884,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Chainalysis Proposes Standards for Tracing Blockchain Transactions",
-          "link": "https://www.pymnts.com/blockchain/2026/chainalysis-proposes-standards-for-tracing-blockchain-transactions/",
-          "content": "Blockchain analytics firm Chainalysis is proposing new standards for tracing funds on a blockchain. Chainalysis on Monday (June 29) introduced an ontology that explores how investigators can track funds to wallet clusters to help law enforcement in their investigations into illicit finance. “Investigators and compliance teams rely on blockchain data to follow and seize illicit [&#8230;] The post Chainalysis Proposes Standards for Tracing Blockchain Transactions appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 29 Jun 2026 20:52:59 +0000",
+          "title": "Liquidity Management Becomes the Next Test for Real-Time Payments",
+          "link": "https://www.pymnts.com/real-time-payments/2026/liquidity-management-becomes-the-next-test-for-real-time-payments/",
+          "content": "Real-time payment networks have changed the speed at which money moves. The greater challenge now lies in ensuring institutions can support that movement without creating new operational pressures around funding, risk and cash positioning. The expansion of The Clearing House’s RTP® Network and the Federal Reserve’s FedNow® Service has given hundreds of financial institutions access [&#8230;] The post Liquidity Management Becomes the Next Test for Real-Time Payments appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 30 Jun 2026 08:00:23 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 496
+          "word_count": 500
         },
         {
-          "id": 1390,
+          "id": 1882,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "BNY Accelerates Stablecoin Push via Expanded Circle Relationship",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/bny-accelerates-stablecoin-push-via-expanded-circle-relationship/",
-          "content": "BNY’s institutional clients can now hold USDC stablecoins in digital asset custody wallets at the bank and instruct the stablecoin’s issuer, Circle Internet Group, through BNY, to convert U.S. dollars into USDC and to redeem USDC for U.S. dollars. These new stablecoin enablement capabilities for institutional clients result from an expanded relationship between BNY and [&#8230;] The post BNY Accelerates Stablecoin Push via Expanded Circle Relationship appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 29 Jun 2026 19:23:18 +0000",
+          "title": "Entersekt Reframes 3D Secure as a Revenue Recovery Tool",
+          "link": "https://www.pymnts.com/cybersecurity/2026/entersekt-reframes-3d-secure-as-a-revenue-recovery-tool/",
+          "content": "Watch more: The Digital Shift With Entersekt’s Dewald Nolte Firms get what they measure, and for years, payment security technology has been measured by how much fraud it stops. Untold billions of dollars have been invested in risk models, authentication technologies and compliance frameworks designed to stop fraudsters before they can exploit the financial system. But [&#8230;] The post Entersekt Reframes 3D Secure as a Revenue Recovery Tool appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 30 Jun 2026 08:01:12 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 486
+          "word_count": 477
         },
         {
-          "id": 1406,
+          "id": 1889,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "JPMorgan Executives Say Banking Rules Should Apply to Digital Assets",
+          "link": "https://www.pymnts.com/blockchain/2026/jpmorgan-executives-say-banking-rules-should-apply-to-digital-assets/",
+          "content": "As the United States works to establish a framework for digital assets, lawmakers must ensure it includes durable safeguards, according to an article posted Monday (June 29) by JPMorgan Chase. The article was written by Umar Farooq, global co-head of J.P. Morgan Payments, and Peter Muriungi, CEO of Digital Assets and Blockchain Solutions at JPMorgan [&#8230;] The post JPMorgan Executives Say Banking Rules Should Apply to Digital Assets appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 30 Jun 2026 00:27:38 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 470
+        },
+        {
+          "id": 1883,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Household Bills Turn Optimism Into Deferred Purchases",
+          "link": "https://www.pymnts.com/consumer-insights/2026/household-bills-turn-optimism-into-deferred-purchases/",
+          "content": "Consumers still have a strong appetite to spend, but many have lost the room in their budgets to act on it. New PYMNTS Intelligence research suggests that while financial pressures continue to shape household decisions, the desire to make purchases remains intact. That distinction offers an encouraging signal for banks, merchants and payment providers looking [&#8230;] The post Household Bills Turn Optimism Into Deferred Purchases appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 30 Jun 2026 08:00:27 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 465
+        },
+        {
+          "id": 1887,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Visa Brings Card Acceptance to SMB Smartphones",
+          "link": "https://www.pymnts.com/visa/2026/visa-turns-smartphones-into-small-business-cash-registers/",
+          "content": "Visa introduced new ways to help small businesses manage payments via smartphone. The capabilities are for the company’s Visa Pay, Visa Accept and Visa Direct offerings and are designed for small businesses in emerging markets, according to a Tuesday (June 30) press release provided to PYMNTS. “Financial institutions, wallet providers and platform partners play a [&#8230;] The post Visa Brings Card Acceptance to SMB Smartphones appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 30 Jun 2026 07:00:46 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 462
+        },
+        {
+          "id": 1886,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Invest Now, Win Later: How Buy Now, Pay Later Became a Merchant Growth Strategy",
+          "link": "https://www.pymnts.com/tracker_posts/invest-now-win-later-how-buy-now-pay-later-became-a-merchant-growth-strategy/",
+          "content": "Buy now, pay later (BNPL) has emerged as a defining payment trend in recent years. What began as a niche checkout option has evolved into a meaningful driver of customer behavior and revenue creation. Shoppers who use BNPL spend more, purchase more often and return at higher rates. It now influences how customers choose where [&#8230;] The post Invest Now, Win Later: How Buy Now, Pay Later Became a Merchant Growth Strategy appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 30 Jun 2026 08:00:02 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 457
+        },
+        {
+          "id": 1914,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,22 +844,97 @@
           "word_count": 429
         },
         {
-          "id": 1386,
-          "source": "PYMNTS.com",
+          "id": 1906,
+          "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Ripple Hopes to Bring Lending Layer to XRP Ledger",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/ripple-hopes-bring-lending-layer-xrp-ledger/",
-          "content": "Ripple wants to add a lending layer to its XRP Ledger blockchain, CoinDesk reported Monday (June 29). The move is a bid by the blockchain company to allow institutions to borrow against on-chain assets instead of simply issuing and moving them, according to the report. The planned XRPL Lending Protocol is built on a “simple [&#8230;] The post Ripple Hopes to Bring Lending Layer to XRP Ledger appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 29 Jun 2026 21:41:11 +0000",
+          "title": "Axiology goes live on blockchain Canton",
+          "link": "https://www.finextra.com/pressarticle/110281/axiology-goes-live-on-blockchain-canton?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Axiology is now operating as a live validator node on Canton network, the privacy-enabled blockchain network used by a significant share of the world's regulated financial institutions for tokenisation, settlement, and asset servicing. Applications deployed on Canton can now interact directly with Axiology's regulated issuance, custody and settlement infrastructure.",
+          "pub_date": "Tue, 30 Jun 2026 10:03:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 425
+          "word_count": 368
         },
         {
-          "id": 1407,
+          "id": 1930,
+          "source": "Payments Cards & Mobile",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Major UK Banks unite to develop digital verification service",
+          "link": "https://paymentsindustryintelligence.com/major-uk-banks-unite-to-develop-digital-verification-service/",
+          "content": "Barclays, HSBC, Lloyds Banking Group, Nationwide Building Society, NatWest Group and Santander UK are working with UK Finance in the development of a voluntary digital verification service that could transform... read more The post Major UK Banks unite to develop digital verification service appeared first on Payments Industry Intelligence .",
+          "pub_date": "Tue, 30 Jun 2026 06:05:20 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 343
+        },
+        {
+          "id": 1931,
+          "source": "Payments Cards & Mobile",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Binance faces EU service restrictions amid MiCA deadline",
+          "link": "https://paymentsindustryintelligence.com/binance-faces-eu-service-restrictions-amid-mica-deadline/",
+          "content": "Europe’s landmark crypto regulation is entering its enforcement phase, with Binance becoming one of the highest-profile exchanges to be caught by the bloc’s new licensing regime after failing to secure... read more The post Binance faces EU service restrictions amid MiCA deadline appeared first on Payments Industry Intelligence .",
+          "pub_date": "Tue, 30 Jun 2026 06:04:41 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 331
+        },
+        {
+          "id": 1929,
+          "source": "Payments Cards & Mobile",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Worldpay Outage Disrupts Card Payments During England Match",
+          "link": "https://paymentsindustryintelligence.com/worldpay-outage-disrupts-card-payments-during-england-match/",
+          "content": "A technology outage at Worldpay left thousands of UK consumers unable to make card payments on one of the busiest evenings of the summer, disrupting transactions at supermarkets, pubs and... read more The post Worldpay Outage Disrupts Card Payments During England Match appeared first on Payments Industry Intelligence .",
+          "pub_date": "Tue, 30 Jun 2026 06:06:39 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 320
+        },
+        {
+          "id": 1893,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Real-time payments 'out-of-reach' for most banks - survey",
+          "link": "https://www.finextra.com/newsarticle/48012/real-time-payments-out-of-reach-for-most-banks---survey?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "A lack of automation and the prevalence of manual processes means that the majority of banks are unable to offer real-time payments to their customers, suggests recently released research.",
+          "pub_date": "Tue, 30 Jun 2026 11:27:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 188
+        },
+        {
+          "id": 1907,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "BR-DGE secures $10m funding round",
+          "link": "https://www.finextra.com/pressarticle/110280/br-dge-secures-10m-funding-round?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "BR-DGE, the high-growth payments technology company, has secured a £10m funding round, along with a new growth investor, as it executes its international growth strategy.",
+          "pub_date": "Tue, 30 Jun 2026 09:58:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 170
+        },
+        {
+          "id": 1915,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,22 +949,37 @@
           "word_count": 150
         },
         {
-          "id": 1428,
+          "id": 1896,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "The moment UK recurring payments changed for good",
-          "link": "https://www.finextra.com/blogposting/32127/the-moment-uk-recurring-payments-changed-for-good?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The UK has been waiting a long time for a real alternative to card networks. The digital economy has...",
-          "pub_date": "Mon, 29 Jun 2026 14:29:45 GMT",
+          "title": "Mastercard launches Africa Cybersecurity Centre of Excellence",
+          "link": "https://www.finextra.com/newsarticle/48010/mastercard-launches-africa-cybersecurity-centre-of-excellence?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Mastercard has unveiled a pan-African, multiyear initiative designed to strengthen cyber resilience across the continent.",
+          "pub_date": "Tue, 30 Jun 2026 00:01:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 103
+          "word_count": 121
         },
         {
-          "id": 700,
+          "id": 72,
+          "source": "TechCrunch AI",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Crypto exchange OKX wants AI agents to hire and pay each other",
+          "link": "https://techcrunch.com/2026/06/30/crypto-exchange-okx-wants-ai-agents-to-hire-and-pay-each-other/",
+          "content": "OKX is bringing together payments, identity and reputation into a marketplace for AI agents.",
+          "pub_date": "Tue, 30 Jun 2026 09:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 92
+        },
+        {
+          "id": 1232,
           "source": "Simon Willison",
           "section": "payment",
           "tier": "T2",
@@ -844,109 +994,34 @@
           "word_count": 1200
         },
         {
-          "id": 1393,
-          "source": "PYMNTS.com",
+          "id": 333,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Walmart Expands In-House Career Pathways to Train Opticians",
-          "link": "https://www.pymnts.com/walmart/2026/walmart-expands-in-house-career-pathways-to-train-opticians/",
-          "content": "Walmart has launched a program that helps its associates become opticians in a Walmart Vision Center or a Sam’s Club Optical Center. The new Associate to Optician program offers associates who work outside its vision care centers the opportunity to earn a fully funded associate degree in optical science through Walmart’s Live Better U education benefit while completing hands-on clinical training, [&#8230;] The post Walmart Expands In-House Career Pathways to Train Opticians appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 29 Jun 2026 18:26:49 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "How Alignment Routes: Localizing, Scaling, and Controlling Policy Circuits in Language Models",
+          "link": "https://arxiv.org/abs/2604.04385",
+          "content": "arXiv:2604.04385v5 Announce Type: replace Abstract: We localize the policy routing mechanism in alignment-trained language models. An intermediate-layer attention gate reads detected content and triggers deeper amplifier heads that boost the signal toward refusal. In smaller models the gate and amplifier are single heads; at larger scale they become bands of heads across adjacent layers. The gate contributes under 1% of output DLA, yet interchange testing (p = 120 detects the same motif in twelve models from six labs (2B to 72B), though specific heads differ by lab. Per-head ablation weakens up to 58x at 72B and misses gates that interchange identifies; at scale, interchange is the only reliable audit. Modulating the detection-layer signal continuously controls policy from hard refusal through evasion to factual answering. On safety prompts the same intervention turns refusal into harmful guidance, showing that the safety-trained capability is gated by routing, not removed. Thresholds vary by topic and by input language, and the circuit relocates across generations within a family even while behavioral benchmarks register no change. Routing is early-commitment: the gate fires at it",
+          "pub_date": "Tue, 30 Jun 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 509
+          "word_count": 1200
         },
         {
-          "id": 1388,
-          "source": "PYMNTS.com",
+          "id": 698,
+          "source": "arXiv cs.LG",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Tidal Eliminates Royalties for Fully AI-Generated Music",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/tidal-eliminates-royalties-for-fully-ai-generated-music/",
-          "content": "Music streaming platform Tidal has announced a new AI policy that will crack down on artificial intelligence (AI)-generated music. The policy says that as of Monday (June 29), Tidal will not knowingly attribute royalties to music the company identifies as wholly AI-generated. In addition, beginning in mid-July, Tidal will identify and tag music that it [&#8230;] The post Tidal Eliminates Royalties for Fully AI-Generated Music appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 29 Jun 2026 20:48:47 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Learning to Bid in Discriminatory Auctions with Budget Constraints",
+          "link": "https://arxiv.org/abs/2606.29252",
+          "content": "arXiv:2606.29252v1 Announce Type: new Abstract: We study repeated bidding in multi-unit discriminatory (pay-as-bid) auctions for a single bidder with per-round utility equal to value minus $\\alpha$ times payment, where $\\alpha\\in[0,1]$ is a cost-of-capital parameter. The bidder aims to maximize cumulative utility over $T$ rounds subject to a total budget $B$. The problem is challenging even without budgets: the action space is exponential in $M$, the maximum demand of the bidder and the valuation vector (context) varies over time. Exploiting a decomposition of utility across units, we develop polynomial-time learning algorithms based on shortest paths in a directed acyclic graph, obtaining sublinear regret under both full-information and bandit feedback. In the bandit setting, the regret is independent of the number of contexts due to complete cross-learning: observing the utility of the chosen action under the realized context reveals the utility for the same action under all counterfactual contexts. With budget constraints, when the average normalized per-round budget $\\rho=\\frac{B}{MT}<1$, we design a coupled primal-dual algorithm in which the DAG-based procedure uses dual-adjus",
+          "pub_date": "Tue, 30 Jun 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 460
-        },
-        {
-          "id": 1413,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Trading Technologies launches multi-asset trade surveillance tools",
-          "link": "https://www.finextra.com/pressarticle/110265/trading-technologies-launches-multi-asset-trade-surveillance-tools?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Trading Technologies International, Inc. (TT), a global capital markets technology platform services provider, today announced a major upgrade to TT® Trade Surveillance that includes a new Market Replay tool and an enhanced enterprise-level case management system user interface (UI) that significantly improve the workflow, speed and scope of surveillance cases across equities, futures and options, foreign exchange (FX), fixed income and cryptocurrencies.",
-          "pub_date": "Mon, 29 Jun 2026 13:12:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 458
-        },
-        {
-          "id": 1391,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "White House Seeks Law Enforcement Support of Clarity Act",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/white-house-seeks-law-enforcement-support-of-clarity-act/",
-          "content": "The White House reportedly wants to speak with law enforcement organizations on their objection to new cryptocurrency legislation. That’s according to a report Monday (June 29) from CoinDesk, citing a source briefed on the plan, which is aimed to address opposition related to the bill’s protections against illicit finance. At issue is a section of [&#8230;] The post White House Seeks Law Enforcement Support of Clarity Act appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 29 Jun 2026 19:06:34 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 456
-        },
-        {
-          "id": 1405,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Mphasis joins Microsoft Intelligent Security Association",
-          "link": "https://www.finextra.com/pressarticle/110274/mphasis-joins-microsoft-intelligent-security-association?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Mphasis, (BSE: 526299; NSE: MPHASIS), a global AI-led, platform-driven technology solutions provider, today announced that it has become a member of the Microsoft Intelligent Security Association (MISA), an ecosystem of software development companies and security services partners that have integrated their solutions with Microsoft Security technology to better defend their mutual customers against a world of increasing cyber threats.",
-          "pub_date": "Mon, 29 Jun 2026 20:56:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 438
-        },
-        {
-          "id": 1408,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Personetics embeds AI into Fiserv Experience Digital",
-          "link": "https://www.finextra.com/pressarticle/110271/personetics-embeds-ai-into-fiserv-experience-digital?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "As consumers and small businesses increasingly expect digital banking experiences that are more relevant, timely, and intuitive, Personetics, the Cognitive Banking platform, today announced that Personetics’ AI-driven platform is now embedded within Experience Digital (XD) from Fiserv, giving banks and credit unions new ways to deliver more personalized digital experiences to customers and members.",
-          "pub_date": "Mon, 29 Jun 2026 14:56:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 401
-        },
-        {
-          "id": 1397,
-          "source": "PaymentsDive",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "World Cup chargebacks coming",
-          "link": "https://www.paymentsdive.com/news/world-cup-chargebacks-coming/823962/",
-          "content": "Companies that track fraud related to major events expect the chargebacks for fraudulent World Cup related purchases will arrive soon.",
-          "pub_date": "Mon, 29 Jun 2026 10:33:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 134
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -954,15 +1029,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 220,
-      "total_valid": 36,
-      "total_candidates": 15
+      "total_raw": 234,
+      "total_valid": 51,
+      "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1603,
-    "dup": 427,
-    "nocontent": 401,
+    "total_raw": 2104,
+    "dup": 315,
+    "nocontent": 397,
     "noise": 3
   }
 }
