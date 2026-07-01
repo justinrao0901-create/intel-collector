@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 9,
+      "count": 8,
       "ok": true
     },
     "Anthropic Blog": {
@@ -34,13 +34,13 @@
     "NVIDIA Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 9,
+      "count": 8,
       "ok": true
     },
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 20,
+      "count": 17,
       "ok": true
     },
     "Sequoia Capital": {
@@ -70,19 +70,19 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 285,
+      "count": 132,
       "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 233,
+      "count": 356,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 583,
+      "count": 290,
       "ok": true
     },
     "Import AI": {
@@ -100,13 +100,13 @@
     "Latent Space": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 18,
       "ok": true
     },
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 19,
+      "count": 20,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 24,
+      "count": 15,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,14 +148,14 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 20,
+      "count": 18,
       "ok": true
     },
     "WHO News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 3,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "FDA 审批动态": {
       "section": "vaccine",
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 43,
       "ok": true
     },
     "NEJM": {
@@ -190,13 +190,13 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 13,
+      "count": 10,
       "ok": true
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 6,
       "ok": true
     },
     "Immunity": {
@@ -232,7 +232,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
+      "count": 20,
       "ok": true
     },
     "Nature Immunology": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 11,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -268,7 +268,7 @@
     "npj Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "Sci Transl Med": {
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
+      "count": 16,
       "ok": true
     },
     "BioPharma Dive": {
@@ -328,13 +328,13 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 17,
+      "count": 15,
       "ok": true
     },
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 4,
+      "count": 5,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -418,19 +418,19 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 4,
+      "count": 3,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 38,
+      "count": 37,
       "ok": true
     },
     "Payments Cards & Mobile": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 4,
       "ok": true
     },
     "Thunes": {
@@ -442,7 +442,7 @@
     "Cointelegraph Payments": {
       "section": "payment",
       "method": "rss",
-      "count": 2,
+      "count": 1,
       "ok": true
     },
     "Ledger Insights": {
@@ -510,7 +510,8 @@
       "NEJM AI",
       "Sci Transl Med",
       "Science",
-      "Science Immunology"
+      "Science Immunology",
+      "WHO News"
     ],
     "sudden_drop": [],
     "persistent_zero": [
