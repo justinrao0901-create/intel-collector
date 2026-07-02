@@ -1,20 +1,22 @@
 name: collect-daily
-# Plan B:GitHub 常开 runner 跑日报采集 → prepared 提交回仓库;Cowork 侧 web_fetch 取用。
+# Plan B:GitHub 常开 runner 跑日报采集 → prepared 提交回仓库 + 经 **GitHub Actions 显式部署到 Pages**
+# (取代不可靠的 "deploy from branch" 自动构建;每次采集完在本 workflow 里可靠发布,Actions 页可见)。
 # 纯标准库,无需 pip。run_daily.py 用北京时区(util.CN_TZ)算日期。
+# 前提:仓库 Settings → Pages → Source 必须设为 "GitHub Actions"。
 
 on:
   schedule:
-    # 错时多次兜底:GitHub 新增/单一 cron 常漏跑或延迟。排 4 个时段,全部早于 Cowork 08:02 取数窗口,
-    # 任一成功即可(同日重复跑是幂等的:无变化不提交)。北京时间见注释。
+    # 错时备份(主触发是 cron-job.org 每天北京 06:30;GitHub 自带 cron 不可靠,仅兜底)。
     - cron: '47 22 * * *'        # 22:47 UTC = 北京 06:47
     - cron: '7 23 * * *'         # 23:07 UTC = 北京 07:07
     - cron: '27 23 * * *'        # 23:27 UTC = 北京 07:27
     - cron: '47 23 * * *'        # 23:47 UTC = 北京 07:47
-  workflow_dispatch: {}          # 支持 Actions 页手动触发(测试 / 补跑)
+  workflow_dispatch: {}
 
 permissions:
-  contents: write                # 允许把 prepared 提交回仓库
-  pages: write                   # 允许显式请求 Pages 重建(GITHUB_TOKEN 的 push 不会自动触发 Pages)
+  contents: write                # 提交 prepared 回仓库
+  pages: write                   # 部署 Pages
+  id-token: write                # Pages 部署所需 OIDC
 
 concurrency:
   group: collect-daily
@@ -24,6 +26,9 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     env:
       TZ: Asia/Shanghai
     steps:
@@ -36,7 +41,7 @@ jobs:
       - name: 采集(run_daily.py)
         run: python run_daily.py
 
-      - name: 生成固定名副本(供 Cowork 用固定 URL 拉,绕开 web_fetch provenance)
+      - name: 生成固定名副本(供 Cowork 用固定 URL 拉)
         run: |
           DATE=$(date +%F)
           cd prepared
@@ -45,42 +50,32 @@ jobs:
           cp "recent-coverage-$DATE.json" latest-coverage.json 2>/dev/null || true
           cp "source-health-$DATE.json"   latest-health.json   2>/dev/null || true
 
-      - name: 发布固定名副本到 Release(绕开 raw /main ref 解析滞后,下游用稳定 download URL 取数)
+      - name: 发布固定名副本到 Release(备用下载通道)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           cd prepared
-          # 固定 tag,首次创建、之后复用;资产每天 --clobber 覆盖。
           gh release create prepared-latest --title "prepared latest" \
-            --notes "最新 prepared 固定名副本,每日由 collect-daily 覆盖。下游用稳定 download URL 取数。" \
+            --notes "最新 prepared 固定名副本,每日由 collect-daily 覆盖。" \
             2>/dev/null || true
           gh release upload prepared-latest \
             latest-daily.json latest-manifest.json latest-coverage.json latest-health.json \
             --clobber
 
-      - name: 提交 prepared 回仓库
+      - name: 提交 prepared 回仓库(存档 + 供 git 核对)
         run: |
           DATE=$(date +%F)
           git config user.name  "intel-collector-bot"
           git config user.email "intel-collector-bot@users.noreply.github.com"
           git add -A prepared/
           if git diff --cached --quiet; then
-            echo "本次 prepared 无变化(采集失败或无新内容)"
+            echo "本次 prepared 无变化"
           else
             git commit -m "daily prepared $DATE"
             git push
           fi
 
-      - name: 触发 Pages 重新部署(关键:GITHUB_TOKEN 的 push 不会自动触发 Pages,必须显式请求一次 build)
-        run: |
-          code=$(curl -sS -o /dev/null -w "%{http_code}" -X POST \
-            -H "Authorization: Bearer ${{ github.token }}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/justinrao0901-create/intel-collector/pages/builds)
-          echo "POST /pages/builds 返回 $code(201=已排队重建;Pages 约 1-2 分钟刷新)"
-
-      - name: 校验产物(没产出就让 workflow 失败、好收到通知)
+      - name: 校验产物(没产出就让 workflow 失败)
         run: |
           DATE=$(date +%F)
           if [ ! -s "prepared/prepared-daily-$DATE.json" ]; then
@@ -88,3 +83,25 @@ jobs:
             exit 1
           fi
           echo "✅ prepared-daily-$DATE.json 已产出"
+
+      # ---------- 显式部署 Pages(核心改动:取代 deploy-from-branch 的不可靠自动构建) ----------
+      - name: 组装 Pages 站点(只放 4 个 latest-*.json,保持原 URL 路径 /prepared/)
+        run: |
+          rm -rf _site
+          mkdir -p _site/prepared
+          cp prepared/latest-daily.json    _site/prepared/latest-daily.json
+          cp prepared/latest-manifest.json _site/prepared/latest-manifest.json 2>/dev/null || true
+          cp prepared/latest-coverage.json _site/prepared/latest-coverage.json 2>/dev/null || true
+          cp prepared/latest-health.json   _site/prepared/latest-health.json   2>/dev/null || true
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传 Pages 制品(_site)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
