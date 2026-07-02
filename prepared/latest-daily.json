@@ -20,7 +20,7 @@
           "word_count": 410
         },
         {
-          "id": 78,
+          "id": 79,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 226
         },
         {
-          "id": 83,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 223
         },
         {
-          "id": 79,
+          "id": 80,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,29 +65,14 @@
           "word_count": 195
         },
         {
-          "id": 63,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "ASPIRE: Agentic /Skills Discovery for Robotics",
-          "link": "https://arxiv.org/abs/2607.00272",
-          "content": "Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tasks, simulation and real-world settings, and embodiments. It operates in an open-ended loop with three components: (1) a closed-loop robot execution engine that exposes fine-grained multimodal traces, enabling autonomous failure diagnosis, repair synthesis, and validation; (2) a continually expanding skill library that distills validated fixes into reusable, transferable knowledge; and (3) evolutionary search that generates diverse task sequences and control programs to explore beyond single-trajectory refinement. ASPIRE surpasses prior methods by up to 77% on LIBERO-Pro manipulation under perturbation, 72% on Robosuite bimanual handover, and 32% on BEHAVIOR-1K long-horizon household tasks. I",
-          "pub_date": "2026-06-29T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Perceive-to-Reason: Decoupling Perception and Reasoning for Fine-Grained Visual Reasoning",
-          "link": "https://arxiv.org/abs/2607.01191",
-          "content": "Fine-grained visual reasoning remains challenging for vision-language models, especially when small but critical visual cues are buried in high-resolution images. Existing approaches rely on repeated cropping or test-time visual search to introduce local evidence, but they typically do not explicitly distinguish perception from reasoning. In this paper, we propose Perceive-to-Reason (P2R), a unified framework that formulates fine-grained visual reasoning as a two-stage process: the model first localizes question-relevant evidence as a Perceiver, and then answers the question as a Reasoner based on the annotated image and cropped regions. To better align training with this decoupled formulation, we further introduce Perception-Reasoning Alternating GRPO (PRA-GRPO), a role-aware reinforcement learning strategy that alternates between perception-focused and reasoning-focused updates using only final-answer supervision. Built on top of Qwen3-VL-Instruct-2B/4B/8B, P2R consistently improves performance across model scales. In particular, P2R-4B achieves 93.2% on V-Star, 81.9% on HR-Bench-4K, and 80.5% on HR-Bench-8K, substantially outperforming its corresponding backbone. Further experim",
+          "title": "Graph-Native Reinforcement Learning Enables Traceable Scientific Hypothesis Generation through Conceptual Recombination",
+          "link": "https://arxiv.org/abs/2607.00924",
+          "content": "Accelerating materials discovery requires AI systems that can generate scientifically valid hypotheses through multi-step, domain-grounded reasoning. Standard large language models often produce fluent but weakly traceable responses to open-ended materials design problems, making it difficult to determine whether final answers are supported by coherent intermediate reasoning. We develop Graph-PRefLexOR, a family of graph-native reasoning models fine-tuned with Group Relative Policy Optimization (GRPO) to organize reasoning into explicit phases for mechanism exploration, graph construction, pattern extraction, and hypothesis synthesis. This design links neural language generation with symbolic relational structure, enabling causal connections to be constructed, inspected, and reused. On 100 open-ended questions from materials science and mechanics literature, Graph-PRefLexOR achieves 40-65% improvements over corresponding base models, with the largest gains in reasoning traceability. Embedding analyses show broader semantic exploration and approximately 2-3 times greater semantic diversity than baselines. Semantic backtracking and layer-wise hidden-state analyses further show strong",
           "pub_date": "2026-06-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -95,22 +80,37 @@
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 63,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "TurboServe: Serving Streaming Video Generation Efficiently and Economically",
-          "link": "https://arxiv.org/abs/2606.19271",
-          "content": "Streaming video generation is emerging as a new serving workload in which users interact with long-lived sessions that generate video progressively, chunk by chunk. Unlike offline video generation or typical LLM serving, streaming video generation must preserve session state across active and idle periods, repeatedly schedule ongoing sessions, and deliver each chunk under a tight latency target. This creates two key serving challenges in multi-user, multi-GPU environments: session duration heterogeneity, where long-running sessions make placement decisions suboptimal over time, and temporal user-demand heterogeneity, where the number of active sessions fluctuates sharply across bursts and idle periods. We present TurboServe, the first serving system designed specifically for streaming video generation workloads. TurboServe formulates serving as an online scheduling problem that jointly coordinates session placement and GPU provisioning. Its closed-loop scheduling algorithm combines a migration-aware placement controller, which rebalances sessions across GPUs to reduce the maximum per-chunk latency, with a load-driven autoscaling controller, which adapts the GPU budget to workload v",
-          "pub_date": "2026-06-16T20:00:00.000Z",
+          "title": "AI translation of literary texts is \"fine\", but readers still prefer human translations",
+          "link": "https://arxiv.org/abs/2606.26040",
+          "content": "AI translation of literary works is increasingly common. While the content may be rendered adequately, we do not know enough about how readers experience it in terms of immersiveness and literary effect, aspects poorly captured by automatic machine translation metrics or human evaluation targeting fluency and adequacy. We ask 15 avid readers to compare recently published human translations (HT) to machine translations (MT) generated with an agentic large language model (LLM)-based pipeline, for 15 recent novels in French, Polish, and Japanese and translated into English. Readers evaluated approximately 8K-word excerpts in two conditions: immersive reading of the whole excerpt (30 comparisons) and close reading of 386 aligned HT-MT chunk pairs (772 comparisons), with two readers per book and in alternating order of presentation. Overall, readers find MT \"fine\", but prefer HT (slightly at excerpt-level 19/30, more clearly at chunk-level 522/772) for its ease, clarity, and immersive nature. Readers' highlights show that MT's quality varies more within one book than HT's does. Crucially, readers cannot reliably tell the two apart (17/30 guess correctly) and tend to prefer the version t",
+          "pub_date": "2026-06-23T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 807,
+          "id": 66,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "PerceptionRubrics: Calibrating Multimodal Evaluation to Human Perception",
+          "link": "https://arxiv.org/abs/2606.28322",
+          "content": "We introduce PerceptionRubrics, a rubric-based evaluation framework that addresses the gap between saturated benchmark scores and real-world brittleness. Shifting evaluation from holistic semantic matching to rigorous atomic auditing, PerceptionRubrics pairs 1,038 information-dense images with over 12,000 instance-specific rubrics. These criteria are derived from golden captions constructed via a novel Circular Peer-Review consensus pipeline and then distilled into a dual-stream system of Must-Right (essential facts) and Easy-Wrong (fine-grained details) rubrics. Crucially, PerceptionRubrics implements a Gated Scoring mechanism: unlike linear averages, failure on mandatory visual facts triggers sharp binary penalties. Extensive evaluation yields critical insights: (1) The Reliability Gap: models often verify fragmented elements correctly yet fail strict conjunctive constraints, exposing brittleness in dense domains; (2) Open-Closed Stratification: contrary to reasoning trends, we reveal a persistent 8% perception deficit between open-source and proprietary frontiers; and (3) Human-Aligned Rigor: our gated metrics substantially out-align conventional benchmarks, validating that stri",
+          "pub_date": "2026-06-25T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 802,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 809,
+          "id": 804,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1199
         },
         {
-          "id": 806,
+          "id": 801,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 600
         },
         {
-          "id": 785,
+          "id": 782,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 171
         },
         {
-          "id": 789,
+          "id": 786,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,7 +190,7 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 916,
+      "total_raw": 911,
       "total_valid": 621,
       "total_candidates": 12
     },
@@ -227,7 +227,7 @@
           "word_count": 392
         },
         {
-          "id": 1269,
+          "id": 1271,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,22 @@
           "word_count": 263
         },
         {
-          "id": 1236,
+          "id": 1238,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Mapping SARS-CoV-2 immunity after an XBB.1.5 booster by antigenic cartography of merged human and hamster sera",
+          "link": "https://www.nature.com/articles/s41541-026-01516-7",
+          "content": "npj Vaccines, Published online: 02 July 2026; doi:10.1038/s41541-026-01516-7 Mapping SARS-CoV-2 immunity after an XBB.1.5 booster by antigenic cartography of merged human and hamster sera",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 187
+        },
+        {
+          "id": 1239,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 187
         },
         {
-          "id": 1148,
+          "id": 1150,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 283
         },
         {
-          "id": 1163,
+          "id": 1165,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 266
         },
         {
-          "id": 1174,
+          "id": 1176,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 260
         },
         {
-          "id": 920,
+          "id": 915,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -345,6 +360,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 215
+        },
+        {
+          "id": 925,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Opinion: CDC leadership continues to try manufacture a scientific debate on vaccines where none exists",
+          "link": "https://www.statnews.com/2026/07/02/measuring-vaccine-effectiveness-test-negative-design-cdc/?utm_campaign=rss",
+          "content": "CDC leadership continues to try manufacture a scientific debate on vaccines where none exists, writes Ben Lopman.",
+          "pub_date": "Thu, 02 Jul 2026 08:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 113
         },
         {
           "id": 1044,
@@ -367,6 +397,21 @@
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
+          "title": "Polypill for heart failure with reduced ejection fraction: the POLY-HF randomized trial",
+          "link": "https://www.nature.com/articles/s41591-026-04504-5",
+          "content": "Nature Medicine, Published online: 02 July 2026; doi:10.1038/s41591-026-04504-5 In an open-label randomized trial, a polypill containing three types of heart failure medication (metoprolol, spironolactone and empagliflozin) improved left ventricular ejection fraction and resulted in a smaller number of heart failure hospitalizations or emergency room visits at 6 months, as compared to enhanced usual care.",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 408
+        },
+        {
+          "id": 1059,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
           "title": "Biological aging might help to explain the rising risk of early-onset cancer",
           "link": "https://www.nature.com/articles/s41591-026-04517-0",
           "content": "Nature Medicine, Published online: 01 July 2026; doi:10.1038/s41591-026-04517-0 Cancers have risen rapidly in younger adults in recent generations. Analyzing large population-based cohorts, we found that recent generations exhibited signs of faster biological aging than older ones, and that systemic and organ-specific aging markers were associated with an increased risk of early-onset solid cancers.",
@@ -375,51 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 402
-        },
-        {
-          "id": 1270,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Metabolomic and lifestyle profiles refine BMI-metabolic phenotypes in older adults",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00324-1?rss=yes",
-          "content": "Chen et al. apply large-scale metabolomics to develop machine learning models that accurately classify metabolic dysfunction within each BMI category, derive a BMHS that independently predicts mortality beyond BMI-metabolic phenotypes, and, when combined with lifestyle factors, further refine metabolic risk stratification, offering scalable precision management for older adults.",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 381
-        },
-        {
-          "id": 1034,
-          "source": "Cell",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Recurrent patterns of TOP1-mediated neuronal genomic damage shared by major neurodegenerative disorders",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00700-2?rss=yes",
-          "content": "Single-cell whole-genome sequencing reveals a shared pattern of excessive somatic mutations across C9ORF72 ALS, C9ORF72 FTD, and Alzheimer’s disease, dominated by 2-bp deletions. These mutations arise from aberrant topoisomerase 1 (TOP1)-mediated mutagenesis linked to oxidative DNA damage, identifying a unifying mechanism of neuronal genomic instability in neurodegeneration.",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 377
-        },
-        {
-          "id": 1051,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Lactate binds and inhibits the innate immune sensor STING to promote tumor immune evasion",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00255-4?rss=yes",
-          "content": "Aerobic glycolysis, a hallmark of cancer, preferentially converts pyruvate into lactate. Guo et al. demonstrate that tumor aerobic glycolysis drives lactate production through PKM2-mediated phosphorylation and activation of LDHA. Lactate directly binds to and inhibits STING, and targeting PKM2 attenuates lactate-dependent immune evasion and synergizes with anti-PD-1 therapy.",
-          "pub_date": "2026-06-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 377
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 399,
-      "total_valid": 250,
+      "total_raw": 406,
+      "total_valid": 257,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1384,
+          "id": 1388,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 346
         },
         {
-          "id": 1362,
+          "id": 1366,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 154
         },
         {
-          "id": 1349,
+          "id": 1353,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 152
         },
         {
-          "id": 1363,
+          "id": 1367,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 147
         },
         {
-          "id": 1402,
+          "id": 1406,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 1421,
+          "id": 1425,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1185
         },
         {
-          "id": 1413,
+          "id": 1417,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,22 @@
           "word_count": 1112
         },
         {
-          "id": 1381,
+          "id": 1333,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Reshaping biomolecular structure prediction through strategic conformational exploration with HelixFold-S1",
+          "link": "https://www.nature.com/articles/s42256-026-01264-2",
+          "content": "Nature Machine Intelligence, Published online: 02 July 2026; doi:10.1038/s42256-026-01264-2 Liu and colleagues introduce HelixFold-S1, a guided sampling strategy for biomolecular complex structure prediction that targets high-probability interaction regions. The method achieves higher accuracy than traditional unguided methods while reducing computational costs.",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 364
+        },
+        {
+          "id": 1385,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +569,7 @@
           "word_count": 307
         },
         {
-          "id": 1383,
+          "id": 1387,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -567,6 +582,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 305
+        },
+        {
+          "id": 1332,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Empowering biomedical evidence exploration and synthesis with deep knowledge graph research",
+          "link": "https://www.nature.com/articles/s42256-026-01266-0",
+          "content": "Nature Machine Intelligence, Published online: 02 July 2026; doi:10.1038/s42256-026-01266-0 Wang et al. develop DeepEvidence, a biomedical deep research agent for exploring and synthesizing evidence across various knowledge sources to support drug discovery, clinical trials and evidence-based medicine.",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 303
         }
       ],
       "quota": {
@@ -574,14 +604,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 134,
-      "total_valid": 24,
-      "total_candidates": 9
+      "total_raw": 136,
+      "total_valid": 26,
+      "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 1270,
+          "id": 1272,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +656,7 @@
           "word_count": 347
         },
         {
-          "id": 1384,
+          "id": 1388,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +701,7 @@
           "word_count": 336
         },
         {
-          "id": 1381,
+          "id": 1385,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +716,7 @@
           "word_count": 307
         },
         {
-          "id": 1383,
+          "id": 1387,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +731,22 @@
           "word_count": 305
         },
         {
-          "id": 923,
+          "id": 1332,
+          "source": "Nature Machine Intel",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Empowering biomedical evidence exploration and synthesis with deep knowledge graph research",
+          "link": "https://www.nature.com/articles/s42256-026-01266-0",
+          "content": "Nature Machine Intelligence, Published online: 02 July 2026; doi:10.1038/s42256-026-01266-0 Wang et al. develop DeepEvidence, a biomedical deep research agent for exploring and synthesizing evidence across various knowledge sources to support drug discovery, clinical trials and evidence-based medicine.",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 303
+        },
+        {
+          "id": 918,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -714,21 +759,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 202
-        },
-        {
-          "id": 937,
-          "source": "STAT News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: AI company Anthropic announces it will begin developing drugs of its own",
-          "link": "https://www.statnews.com/2026/06/30/anthropic-ai-drug-development/?utm_campaign=rss",
-          "content": "AI giant Anthropic has already become a dominant player in technology and a household name for everyday users of artificial intelligence. Can it make drugs too?",
-          "pub_date": "Tue, 30 Jun 2026 22:48:28 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 160
         }
       ],
       "quota": {
@@ -736,8 +766,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 41,
-      "total_valid": 33,
+      "total_raw": 45,
+      "total_valid": 37,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1461,
+          "id": 1470,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +799,7 @@
           "word_count": 529
         },
         {
-          "id": 1462,
+          "id": 1471,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +814,7 @@
           "word_count": 524
         },
         {
-          "id": 1468,
+          "id": 1472,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +829,7 @@
           "word_count": 507
         },
         {
-          "id": 1521,
+          "id": 1523,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -814,22 +844,22 @@
           "word_count": 503
         },
         {
-          "id": 1464,
+          "id": 1462,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "The US Senate Calendar Is Becoming Crypto Markets’ Biggest Whale",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/the-us-senate-calendar-is-becoming-crypto-markets-biggest-whale/",
-          "content": "Six months ago, the crypto industry believed the 2026 legislative calendar would give it a policy sweep across both stablecoins and digital asset markets. It was only last July that the GENIUS Act regulating stablecoins, the first tangible piece of successful crypto policy in the U.S., was signed into law. Crypto players, then, could’ve been forgiven for [&#8230;] The post The US Senate Calendar Is Becoming Crypto Markets’ Biggest Whale appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 01 Jul 2026 21:18:01 +0000",
+          "title": "Real-Time Payments Could Add $19.3 Billion to Argentina’s GDP",
+          "link": "https://www.pymnts.com/real-time-payments/2026/real-time-payments-could-add-19-3-billion-to-argentinas-gdp/",
+          "content": "Real-time payments in South America have moved well beyond proof of concept. They’re becoming the financial backbone of entire economies, and the numbers speak for themselves. The evidence starts with Brazil’s Pix, which has become one of the most consequential instant payment platforms in the world. Launched in 2020, it now counts more than 150 [&#8230;] The post Real-Time Payments Could Add $19.3 Billion to Argentina’s GDP appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 02 Jul 2026 08:03:46 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 471
+          "word_count": 459
         },
         {
-          "id": 1458,
+          "id": 1467,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +874,7 @@
           "word_count": 441
         },
         {
-          "id": 1510,
+          "id": 1514,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,22 +889,22 @@
           "word_count": 379
         },
         {
-          "id": 1494,
+          "id": 1492,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "RTGS.global and Bamboo partner on cross-border payments across Latin America",
-          "link": "https://www.finextra.com/pressarticle/110310/rtgsglobal-and-bamboo-partner-on-cross-border-payments-across-latin-america?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "RTGS.global and Bamboo have today announced a strategic partnership to enhance cross-border payment capabilities for financial institutions, payment providers and businesses operating across Latin America, including those supporting regulated iGaming activities enabling faster, more efficient movement of funds across one of the industry's fastest-growing regions.",
-          "pub_date": "Wed, 01 Jul 2026 13:19:00 GMT",
+          "title": "Lightspark becomes first payments company in Estonia to get MiCA licence",
+          "link": "https://www.finextra.com/pressarticle/110322/lightspark-becomes-first-payments-company-in-estonia-to-get-mica-licence?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Today, Lightspark Payments Europe AS announced it received a crypto-asset service provider (CASP) authorization under the EU's Markets in Crypto-Assets Regulation (MiCA), together with authorization to operate as an electronic money institution (EMI), from Estonia's Financial Supervision Authority (Finantsinspektsioon).",
+          "pub_date": "Thu, 02 Jul 2026 07:57:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 365
+          "word_count": 321
         },
         {
-          "id": 1509,
+          "id": 1513,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,52 +919,22 @@
           "word_count": 308
         },
         {
-          "id": 1492,
+          "id": 1488,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "SumUp launches consumer personal accounts",
-          "link": "https://www.finextra.com/pressarticle/110312/sumup-launches-consumer-personal-accounts?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "SumUp, the global financial technology company serving more than four million merchants worldwide, has today announced the launch of consumer personal accounts, marking the most significant expansion of its consumer offering to date.",
-          "pub_date": "Wed, 01 Jul 2026 13:24:00 GMT",
+          "title": "NCI and DataExpert launch crypto compliance training programme",
+          "link": "https://www.finextra.com/pressarticle/110325/nci-and-dataexpert-launch-crypto-compliance-training-programme?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "The European Anti-Money Laundering Regulation (AMLR) will come into force on 10 July 2027, introducing stricter requirements for financial institutions, crypto-asset service providers (CASPs) and other regulated entities acting as financial gatekeepers",
+          "pub_date": "Thu, 02 Jul 2026 10:25:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 233
+          "word_count": 252
         },
         {
-          "id": 1493,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Finova acquires Cubit Labs to accelerate its future of lending strategy",
-          "link": "https://www.finextra.com/pressarticle/110311/finova-acquires-cubit-labs-to-accelerate-its-future-of-lending-strategy?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Finova, the UK's leading cloud-based mortgage, savings and lending software provider, today announces the acquisition of Cubit Labs, an AI technology company focused on transforming intermediary workflows and compliance.",
-          "pub_date": "Wed, 01 Jul 2026 13:21:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 220
-        },
-        {
-          "id": 1491,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Nuvei makes C-suite changes",
-          "link": "https://www.finextra.com/pressarticle/110313/nuvei-makes-c-suite-changes?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Nuvei, the global fintech building the infrastructure for every payment, everywhere, today announced three appointments to its executive leadership team as the company continues its next phase of global growth.",
-          "pub_date": "Wed, 01 Jul 2026 14:10:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 210
-        },
-        {
-          "id": 1475,
+          "id": 1479,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 194
         },
         {
-          "id": 1482,
+          "id": 1486,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 173
         },
         {
-          "id": 1470,
+          "id": 1474,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,52 @@
           "word_count": 141
         },
         {
-          "id": 1515,
+          "id": 1498,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Grasshopper adds stablecoin-based payments capability",
+          "link": "https://www.finextra.com/pressarticle/110315/grasshopper-adds-stablecoin-based-payments-capability?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Grasshopper, the client-first, full-service digital bank, today announced the launch of a new stablecoin-based payments capability.",
+          "pub_date": "Wed, 01 Jul 2026 14:57:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 131
+        },
+        {
+          "id": 1499,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Stripe rolls out tools to help German businesses sell globally",
+          "link": "https://www.finextra.com/pressarticle/110314/stripe-rolls-out-tools-to-help-german-businesses-sell-globally?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Stripe today shared new tools to help businesses in Germany sell to and via AI agents, and reach more markets around the world.",
+          "pub_date": "Wed, 01 Jul 2026 14:11:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 127
+        },
+        {
+          "id": 65,
+          "source": "HuggingFace Daily Papers",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Personalization as Inverse Planning: Learning Latent Design Intents for Agentic Slide Generation via Structural Denoising",
+          "link": "https://arxiv.org/abs/2607.00407",
+          "content": "Slide design requires personalizing both deck themes and page layouts. Yet, current AI agent-based methods struggle with fine-grained, page-level design. Solely relying on prespecified templates or user verbose instructions, they fail to capture latent design intents, leaving Page-level Slide Personalization (PSP) unresolved. To close this gap, this work formulates PSP as an inverse planning problem. We propose to learn a design intent without assuming any knowledge of the specific executing tools (e.g., PowerPoint, Beamer) being used. However, relinquishing control over these tools makes the problem intractable to optimize end-to-end. To overcome this, we propose SPIRE, a principled framework to solve PSP approximately. By intentionally corrupting the visual structures of clean slides, SPIRE creates a verifiable task to denoise the corruption, whereby two agents learn to collaboratively refine executable designs via reinforcement learning (RL). We present a proof that structural denoising is a consistent surrogate for PSP, and that the multi-agent formulation strictly reduces policy gradient variance in RL. Extensive experiments demonstrate the superiority of SPIRE.",
+          "pub_date": "2026-06-30T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1185
+        },
+        {
+          "id": 1518,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -994,22 +1039,7 @@
           "word_count": 554
         },
         {
-          "id": 263,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Personalization as Inverse Planning: Learning Latent Design Intents for Agentic Slide Generation via Structural Denoising",
-          "link": "https://arxiv.org/abs/2607.00407",
-          "content": "arXiv:2607.00407v1 Announce Type: new Abstract: Slide design requires personalizing both deck themes and page layouts. Yet, current AI agent-based methods struggle with fine-grained, page-level design. Solely relying on prespecified templates or user verbose instructions, they fail to capture latent design intents, leaving Page-level Slide Personalization (PSP) unresolved. To close this gap, this work formulates PSP as an inverse planning problem. We propose to learn a design intent without assuming any knowledge of the specific executing tools (e.g., PowerPoint, Beamer) being used. However, relinquishing control over these tools makes the problem intractable to optimize end-to-end. To overcome this, we propose SPIRE, a principled framework to solve PSP approximately. By intentionally corrupting the visual structures of clean slides, SPIRE creates a verifiable task to denoise the corruption, whereby two agents learn to collaboratively refine executable designs via reinforcement learning (RL). We present a proof that structural denoising is a consistent surrogate for PSP, and that the multi-agent formulation strictly reduces policy gradient variance in RL. Extensive experiments demo",
-          "pub_date": "Thu, 02 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 280,
+          "id": 275,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 295,
+          "id": 290,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 512,
+          "id": 507,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1059,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 240,
+      "total_raw": 238,
       "total_valid": 55,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1689,
-    "dup": 356,
-    "nocontent": 401,
+    "total_raw": 1691,
+    "dup": 346,
+    "nocontent": 404,
     "noise": 3
   }
 }
