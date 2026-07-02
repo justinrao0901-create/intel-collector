@@ -85,14 +85,15 @@ jobs:
           echo "✅ prepared-daily-$DATE.json 已产出"
 
       # ---------- 显式部署 Pages(核心改动:取代 deploy-from-branch 的不可靠自动构建) ----------
-      - name: 组装 Pages 站点(只放 4 个 latest-*.json,保持原 URL 路径 /prepared/)
+      - name: 组装 Pages 站点(发布所有 latest-*.json,保持原 URL 路径 /prepared/)
         run: |
+          # glob 所有 latest-*.json:日报的 latest-daily/manifest/coverage/health +
+          # 周/月/双周报各自的 latest-*(由各自 collect-* 提交回仓)。Pages 是整站部署,
+          # 每次都发布全集,确保不同报告的 latest-* 共存、互不覆盖。
           rm -rf _site
           mkdir -p _site/prepared
-          cp prepared/latest-daily.json    _site/prepared/latest-daily.json
-          cp prepared/latest-manifest.json _site/prepared/latest-manifest.json 2>/dev/null || true
-          cp prepared/latest-coverage.json _site/prepared/latest-coverage.json 2>/dev/null || true
-          cp prepared/latest-health.json   _site/prepared/latest-health.json   2>/dev/null || true
+          cp prepared/latest-*.json _site/prepared/ 2>/dev/null || true
+          echo "本次发布到 Pages 的 latest-*:"; ls -1 _site/prepared/
 
       - name: 配置 Pages
         uses: actions/configure-pages@v5

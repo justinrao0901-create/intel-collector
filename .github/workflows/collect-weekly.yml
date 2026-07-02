@@ -1,0 +1,89 @@
+name: collect-weekly
+# Plan B(周报·混合):GitHub 只抓【在线 AI 论文池】(HF/arXiv/HN/SS/alphaXiv/Emergent)→ 经 Pages 提供。
+# 「重大事件 / 中国动态」由 Cowork intel-weekly 任务在本地用 daily/*.md 聚合(runner 上没有 daily/,
+# 所以本 workflow 产出的 events/china 为空、不发布,只发布论文池)。
+# 每周五。纯 stdlib、无需 pip。前提:仓库 Settings→Pages→Source = GitHub Actions(与 collect-daily 共用同一 Pages 站)。
+
+on:
+  schedule:
+    # 主触发 = cron-job.org 周五北京 ~18:00;以下为 GitHub 自带备份(周五=5,北京时间见注释)。
+    - cron: '7 9 * * 5'          #  9:07 UTC = 北京 17:07 周五
+    - cron: '37 9 * * 5'         #  9:37 UTC = 北京 17:37 周五
+    - cron: '7 10 * * 5'         # 10:07 UTC = 北京 18:07 周五
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: collect-weekly
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 抓 AI 论文池(run_weekly.py;runner 无 daily/,事件/中国为空属正常,只取论文池)
+        run: |
+          DATE=$(date +%F)
+          python run_weekly.py --end "$DATE"
+
+      - name: 生成固定名副本(论文池 + 论文源体检;给论文池盖当天 date 戳供下游校验新鲜度)
+        run: |
+          DATE=$(date +%F)
+          cd prepared
+          python3 -c "import json; d=json.load(open('weekly-papers-$DATE.json')); d['date']='$DATE'; json.dump(d, open('latest-weekly-papers.json','w'), ensure_ascii=False)"
+          cp "papers-health-$DATE.json"  latest-papers-health.json 2>/dev/null || true
+
+      - name: 提交论文池回仓库(不提交 runner 上事件为空的 prepared-weekly)
+        run: |
+          DATE=$(date +%F)
+          git config user.name  "intel-collector-bot"
+          git config user.email "intel-collector-bot@users.noreply.github.com"
+          git add prepared/weekly-papers-"$DATE".json prepared/latest-weekly-papers.json 2>/dev/null || true
+          git add prepared/papers-health-"$DATE".json prepared/latest-papers-health.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "论文池无变化"
+          else
+            git commit -m "weekly papers $DATE"
+            git push
+          fi
+
+      - name: 校验产物(没抓到论文池就失败)
+        run: |
+          DATE=$(date +%F)
+          if [ ! -s "prepared/weekly-papers-$DATE.json" ]; then
+            echo "::error::weekly-papers-$DATE.json 未产出 —— 论文抓取失败,请查上一步日志"
+            exit 1
+          fi
+          echo "✅ weekly-papers-$DATE.json 已产出"
+
+      - name: 组装 Pages 站点(glob 全部 latest-*.json,与日报共存)
+        run: |
+          rm -rf _site
+          mkdir -p _site/prepared
+          cp prepared/latest-*.json _site/prepared/ 2>/dev/null || true
+          echo "发布到 Pages 的 latest-*:"; ls -1 _site/prepared/
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+      - name: 上传 Pages 制品(_site)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

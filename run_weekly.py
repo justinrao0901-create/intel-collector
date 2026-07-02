@@ -19,6 +19,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--end", default=None)
     ap.add_argument("--days", type=int, default=7)
+    ap.add_argument("--no-papers", action="store_true",
+                    help="只从本地日报归档聚合事件/中国动态,跳过在线论文抓取(供 Cowork 本地离线运行;论文池由 GitHub 侧另抓)")
     args = ap.parse_args()
     end = args.end or util.today_str()
     y, wk, _ = datetime.strptime(end, "%Y-%m-%d").isocalendar()
@@ -39,16 +41,20 @@ def main():
         emit(f"  读到 {agg['dailies_loaded']} 份日报 → AI事件 {len(events)} | 中国 {len(china)}")
 
         # 2. 抓 AI 论文候选池(HF/arXiv/HN/SS/alphaXiv/Emergent)
-        emit("抓论文候选池...")
-        papers.collect(end, args.days)
-        pp = util.path_for("prepared", f"weekly-papers-{end}.json")
-        paper_pool = json.load(open(pp, encoding="utf-8")) if os.path.exists(pp) else {"papers": []}
-        # 论文源体检告警(写入周报日志,供 PLAYBOOK-weekly 步0 上报)
-        hp = util.path_for("prepared", f"papers-health-{end}.json")
-        if os.path.exists(hp):
-            al = (json.load(open(hp, encoding="utf-8")) or {}).get("alarms", {})
-            if al.get("sudden_drop") or al.get("fail") or al.get("persistent_zero"):
-                emit(f"⚠️ 论文源告警: 骤降{al.get('sudden_drop')} 失败{al.get('fail')} 持续0{al.get('persistent_zero')}")
+        if args.no_papers:
+            emit("--no-papers:跳过在线论文抓取(本地离线模式;论文池由 GitHub 侧 collect-weekly 另抓、经 Pages 提供)")
+            paper_pool = {"papers": []}
+        else:
+            emit("抓论文候选池...")
+            papers.collect(end, args.days)
+            pp = util.path_for("prepared", f"weekly-papers-{end}.json")
+            paper_pool = json.load(open(pp, encoding="utf-8")) if os.path.exists(pp) else {"papers": []}
+            # 论文源体检告警(写入周报日志,供 PLAYBOOK-weekly 步0 上报)
+            hp = util.path_for("prepared", f"papers-health-{end}.json")
+            if os.path.exists(hp):
+                al = (json.load(open(hp, encoding="utf-8")) or {}).get("alarms", {})
+                if al.get("sudden_drop") or al.get("fail") or al.get("persistent_zero"):
+                    emit(f"⚠️ 论文源告警: 骤降{al.get('sudden_drop')} 失败{al.get('fail')} 持续0{al.get('persistent_zero')}")
 
         # 3. 打包 prepared-weekly
         out = {
