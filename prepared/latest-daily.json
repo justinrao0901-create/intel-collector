@@ -5,6 +5,21 @@
     "ai": {
       "candidates": [
         {
+          "id": 46,
+          "source": "NVIDIA Blog",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "NVIDIA Unlocks AI Compute at Scale, Inviting Partners to Power the AI Infrastructure Buildout",
+          "link": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
+          "content": "As AI moves from model development to production inference, compute demand is accelerating and shifting toward continuously operating AI factories that generate tokens at scale. This shift requires access to large‑scale, multi‑tenant accelerated computing that can come online quickly, stay highly utilized and support the economics of token‑scale AI services. Emerging AI companies historically have [&#8230;]",
+          "pub_date": "Thu, 02 Jul 2026 03:34:48 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 410
+        },
+        {
           "id": 78,
           "source": "TechCrunch AI",
           "section": "ai",
@@ -50,29 +65,14 @@
           "word_count": 195
         },
         {
-          "id": 62,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "SpheRoPE: Zero-Shot Optimization-Free 360 Panorama Generation with Spherical RoPE",
-          "link": "https://arxiv.org/abs/2606.32033",
-          "content": "We present a zero-shot, training-free and optimization-free framework for generating 360 panoramic images and videos by directly injecting spherical priors into pre-trained diffusion transformers. Existing methods either rely on costly fine-tuning on scarce panoramic data that limits generalization, or leverage multi-step optimization that incurs prohibitive inference latency. We observe that contemporary generative models natively exhibit some panoramic priors from large-scale training. However, these emergent capabilities are insufficient, as the models fundamentally fail to satisfy the rigorous topological constraints imposed by equirectangular projection (ERP). We introduce a zero-shot and optimization-free approach that resolves these constraints at inference time. Spherical RoPE replaces standard rotary position embeddings: low-frequency channels are re-parameterized as 3D Cartesian coordinates to natively encode the spherical manifold, while high-frequency channels are harmonically quantized to enforce exact periodicity. Coupled with complementary Semantic Distortion classifier-free guidance (CFG) that explicitly steers geometry, we avoid retraining and inherit the full crea",
-          "pub_date": "2026-06-29T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 63,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning",
-          "link": "https://arxiv.org/abs/2606.32017",
-          "content": "Agentic reinforcement learning requires assigning credit to environment-facing actions such as searches, clicks, edits, navigation commands, and object interactions. Standard GRPO uses the final verifier outcome as a uniform advantage over all action tokens. This outcome signal is useful but structurally incomplete: it punishes useful exploration in failed rollouts and reinforces redundant or regressive actions in successful rollouts. We propose TRIAGE, a role-typed credit assignment framework that adds a semantic role axis to outcome credit. A structured judge classifies each segment as decisive progress, useful exploration, no-progress infrastructure, or regression, and a fixed role-conditioned rule maps these labels to bounded segment-level process rewards. This keeps verifier outcomes as the source of optimization direction while correcting the two main blind spots of outcome-only credit. We further show that role-conditioned credit is the optimal segment-level correction expressible from role labels alone -- a projection of the per-segment advantage residual onto the role variable -- so that the fixed role constants reduce advantage estimation error whenever the judge is relia",
+          "title": "ASPIRE: Agentic /Skills Discovery for Robotics",
+          "link": "https://arxiv.org/abs/2607.00272",
+          "content": "Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tasks, simulation and real-world settings, and embodiments. It operates in an open-ended loop with three components: (1) a closed-loop robot execution engine that exposes fine-grained multimodal traces, enabling autonomous failure diagnosis, repair synthesis, and validation; (2) a continually expanding skill library that distills validated fixes into reusable, transferable knowledge; and (3) evolutionary search that generates diverse task sequences and control programs to explore beyond single-trajectory refinement. ASPIRE surpasses prior methods by up to 77% on LIBERO-Pro manipulation under perturbation, 72% on Robosuite bimanual handover, and 32% on BEHAVIOR-1K long-horizon household tasks. I",
           "pub_date": "2026-06-29T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -80,22 +80,37 @@
           "word_count": 1200
         },
         {
-          "id": 64,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions",
-          "link": "https://arxiv.org/abs/2606.30573",
-          "content": "We introduce SWE-Interact, a new testbed for evaluating coding agents on multi-turn, interactive, user-driven software engineering tasks. Existing frontier SWE benchmarks typically provide complete requirements upfront and evaluate agents on autonomous implementation. In contrast, SWE-Interact places agents in a realistic developer workflow: a carefully designed user simulator starts with vague or incomplete instructions, progressively reveals requirements, inspects the agent's workspace, and provides targeted feedback, revisions, and new constraints until the full task goal has been handed off. Grounded in large-scale studies of real coding-agent interactions, this setup tests whether agents can discover user intent, adapt to evolving requirements, and build on their own prior work. Across a suite of frontier and open-weight models, we find that strong performance on single-turn SWE tasks does not reliably transfer to multi-turn, user-driven workflows: the best-performing models solve roughly 50% of single-turn baseline tasks but only 25% of the corresponding SWE-Interact tasks. The strongest models in our evaluation, including Opus 4.8 and GPT 5.5, start strong even in the face o",
-          "pub_date": "2026-06-28T20:00:00.000Z",
+          "title": "Perceive-to-Reason: Decoupling Perception and Reasoning for Fine-Grained Visual Reasoning",
+          "link": "https://arxiv.org/abs/2607.01191",
+          "content": "Fine-grained visual reasoning remains challenging for vision-language models, especially when small but critical visual cues are buried in high-resolution images. Existing approaches rely on repeated cropping or test-time visual search to introduce local evidence, but they typically do not explicitly distinguish perception from reasoning. In this paper, we propose Perceive-to-Reason (P2R), a unified framework that formulates fine-grained visual reasoning as a two-stage process: the model first localizes question-relevant evidence as a Perceiver, and then answers the question as a Reasoner based on the annotated image and cropped regions. To better align training with this decoupled formulation, we further introduce Perception-Reasoning Alternating GRPO (PRA-GRPO), a role-aware reinforcement learning strategy that alternates between perception-focused and reasoning-focused updates using only final-answer supervision. Built on top of Qwen3-VL-Instruct-2B/4B/8B, P2R consistently improves performance across model scales. In particular, P2R-4B achieves 93.2% on V-Star, 81.9% on HR-Bench-4K, and 80.5% on HR-Bench-8K, substantially outperforming its corresponding backbone. Further experim",
+          "pub_date": "2026-06-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 926,
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "TurboServe: Serving Streaming Video Generation Efficiently and Economically",
+          "link": "https://arxiv.org/abs/2606.19271",
+          "content": "Streaming video generation is emerging as a new serving workload in which users interact with long-lived sessions that generate video progressively, chunk by chunk. Unlike offline video generation or typical LLM serving, streaming video generation must preserve session state across active and idle periods, repeatedly schedule ongoing sessions, and deliver each chunk under a tight latency target. This creates two key serving challenges in multi-user, multi-GPU environments: session duration heterogeneity, where long-running sessions make placement decisions suboptimal over time, and temporal user-demand heterogeneity, where the number of active sessions fluctuates sharply across bursts and idle periods. We present TurboServe, the first serving system designed specifically for streaming video generation workloads. TurboServe formulates serving as an online scheduling problem that jointly coordinates session placement and GPU provisioning. Its closed-loop scheduling algorithm combines a migration-aware placement controller, which rebalances sessions across GPUs to reduce the maximum per-chunk latency, with a load-driven autoscaling controller, which adapts the GPU budget to workload v",
+          "pub_date": "2026-06-16T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 807,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 928,
+          "id": 809,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 1199
         },
         {
-          "id": 925,
+          "id": 806,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +155,22 @@
           "word_count": 600
         },
         {
-          "id": 907,
+          "id": 785,
+          "source": "Latent Space",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Autoresearch: The feedback loop behind self-improving agents",
+          "link": "https://www.latent.space/p/autoresearch-introspection",
+          "content": "Introspection co-founder Roland Gavrilescu explains autoresearch, agent &#8220;recipes,&#8221; self-improving loops, and why humans remain central to the software factory.",
+          "pub_date": "Wed, 01 Jul 2026 23:52:30 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 171
+        },
+        {
+          "id": 789,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -153,36 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 171
-        },
-        {
-          "id": 904,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "How Cursor deploys AI inside the enterprise",
-          "link": "https://www.latent.space/p/cursor-forward-deployed-engineers",
-          "content": "Cursor's Pauline Brunet explains how her team of Forward Deployed Engineers help organizations implement agents &#8212; essentially setting up software factories.",
-          "pub_date": "Wed, 01 Jul 2026 19:03:44 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 162
-        },
-        {
-          "id": 905,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI",
-          "link": "https://www.latent.space/p/the-coolest-diffusion-research-isnt",
-          "content": "Why the Llama lead left Meta for drug discovery, PEARL's zero-shot OpenBind win, and what becomes possible when co-folding finally crosses the accuracy threshold.",
-          "pub_date": "Wed, 01 Jul 2026 14:42:39 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 162
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1036,
-      "total_valid": 636,
+      "total_raw": 916,
+      "total_valid": 621,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1105,
+          "id": 965,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 395
         },
         {
-          "id": 1115,
+          "id": 975,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 392
         },
         {
-          "id": 1420,
+          "id": 1269,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 390
         },
         {
-          "id": 1099,
+          "id": 959,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 354
         },
         {
-          "id": 1178,
+          "id": 1031,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 263
         },
         {
-          "id": 1387,
+          "id": 1236,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 187
         },
         {
-          "id": 1299,
+          "id": 1148,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 283
         },
         {
-          "id": 1314,
+          "id": 1163,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 266
         },
         {
-          "id": 1325,
+          "id": 1174,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 260
         },
         {
-          "id": 1040,
+          "id": 920,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,22 +347,7 @@
           "word_count": 215
         },
         {
-          "id": 1073,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Marburg outbreak is reported in Uganda, threatening to complicate Ebola response in region",
-          "link": "https://www.statnews.com/2026/06/30/marburg-virus-cases-ugandan-ebola-outbreak-zone/?utm_campaign=rss",
-          "content": "Sources confirm to STAT that Marburg cases have been detected in western Uganda, adding another viral hemorrhagic fever outbreak in central Africa.",
-          "pub_date": "Tue, 30 Jun 2026 15:58:19 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 147
-        },
-        {
-          "id": 1191,
+          "id": 1044,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +362,7 @@
           "word_count": 413
         },
         {
-          "id": 1205,
+          "id": 1058,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +377,7 @@
           "word_count": 402
         },
         {
-          "id": 1421,
+          "id": 1270,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +392,7 @@
           "word_count": 381
         },
         {
-          "id": 1180,
+          "id": 1034,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 377
+        },
+        {
+          "id": 1051,
+          "source": "Immunity",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Lactate binds and inhibits the innate immune sensor STING to promote tumor immune evasion",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00255-4?rss=yes",
+          "content": "Aerobic glycolysis, a hallmark of cancer, preferentially converts pyruvate into lactate. Guo et al. demonstrate that tumor aerobic glycolysis drives lactate production through PKM2-mediated phosphorylation and activation of LDHA. Lactate directly binds to and inhibits STING, and targeting PKM2 attenuates lactate-dependent immune evasion and synergizes with anti-PD-1 therapy.",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 377
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 433,
-      "total_valid": 278,
+      "total_raw": 399,
+      "total_valid": 250,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1540,
+          "id": 1384,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 346
         },
         {
-          "id": 1518,
+          "id": 1362,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 154
         },
         {
-          "id": 1505,
+          "id": 1349,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 152
         },
         {
-          "id": 1519,
+          "id": 1363,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 147
         },
         {
-          "id": 1559,
+          "id": 1402,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 1578,
+          "id": 1421,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1185
         },
         {
-          "id": 1570,
+          "id": 1413,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1112
         },
         {
-          "id": 1537,
+          "id": 1381,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 307
         },
         {
-          "id": 1539,
+          "id": 1383,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 137,
+      "total_raw": 134,
       "total_valid": 24,
       "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 1421,
+          "id": 1270,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 381
         },
         {
-          "id": 1180,
+          "id": 1034,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 377
         },
         {
-          "id": 1101,
+          "id": 961,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 347
         },
         {
-          "id": 1540,
+          "id": 1384,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 346
         },
         {
-          "id": 1096,
+          "id": 956,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 339
         },
         {
-          "id": 1104,
+          "id": 964,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 336
         },
         {
-          "id": 1537,
+          "id": 1381,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 307
         },
         {
-          "id": 1539,
+          "id": 1383,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -701,34 +701,34 @@
           "word_count": 305
         },
         {
-          "id": 1047,
+          "id": 923,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
           "priority": 4,
-          "title": "Anthropic debuts Claude Science, an AI product for bioscience",
-          "link": "https://endpoints.news/anthropic-debuts-claude-science-an-ai-product-for-bioscience/",
-          "content": "Anthropic upended software programming with the runaway success of the coding agent Claude Code. For its next act, the AI lab is turning its attention to biopharma. On Tuesday, Anthropic announced Claude Science, a new ...",
-          "pub_date": "Tue, 30 Jun 2026 17:15:35 +0000",
+          "title": "Angitia ends Phase 3 in disc disease; Abivax targets $800M on colitis data",
+          "link": "https://endpoints.news/angitia-ends-phase-3-in-disc-disease-abivax-raises-800m-on-colitis-data/",
+          "content": "🩻 Angitia Biopharmaceuticals drops Phase 3: The US and China biotech terminated a late-stage trial of AGA111 in patients with degenerative disc disease who had a lumbar interbody fusion, according to an",
+          "pub_date": "Wed, 01 Jul 2026 13:29:11 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 222
+          "word_count": 202
         },
         {
-          "id": 1051,
-          "source": "Endpoints News",
+          "id": 937,
+          "source": "STAT News",
           "section": "cross",
           "tier": "T2",
           "priority": 4,
-          "title": "Health AI caution crosses into confidence",
-          "link": "https://endpoints.news/health-ai-caution-crosses-into-confidence/",
-          "content": "How people in health tech feel about AI in healthcare has changed drastically from just a year ago. Each year, health tech venture firm Venrock partners Bob Kocher, Bryan Roberts and Siobhan Nolan Mangini survey ...",
-          "pub_date": "Tue, 30 Jun 2026 15:09:59 +0000",
+          "title": "STAT+: AI company Anthropic announces it will begin developing drugs of its own",
+          "link": "https://www.statnews.com/2026/06/30/anthropic-ai-drug-development/?utm_campaign=rss",
+          "content": "AI giant Anthropic has already become a dominant player in technology and a household name for everyday users of artificial intelligence. Can it make drugs too?",
+          "pub_date": "Tue, 30 Jun 2026 22:48:28 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 215
+          "word_count": 160
         }
       ],
       "quota": {
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 47,
-      "total_valid": 39,
+      "total_raw": 41,
+      "total_valid": 33,
       "total_candidates": 10
     },
     "china": {
@@ -754,23 +754,38 @@
     "payment": {
       "candidates": [
         {
-          "id": 1615,
+          "id": 1461,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "AI Shopping Assistants Jump to the Top of Retail Budgets",
+          "title": "Alibaba and Ant Subsidiary Pay $600 Million to Settle DOJ Illegal Sales Claims",
+          "link": "https://www.pymnts.com/legal/2026/alibaba-and-ant-subsidiary-pay-600-million-to-settle-doj-illegal-sales-claims/",
+          "content": "Alibaba Group Holding and its U.S.-based payment processor, Ant Group subsidiary AUS Merchant Services, have agreed to pay $600 million to resolve U.S. Justice Department allegations that they failed to prevent illegal sales on Alibaba’s eCommerce platforms. The Justice Department alleged that Alibaba.com and AliExpress.com failed to prevent merchants’ sales and imports of illegal pharmaceuticals, [&#8230;] The post Alibaba and Ant Subsidiary Pay $600 Million to Settle DOJ Illegal Sales Claims appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 01 Jul 2026 22:37:40 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 529
+        },
+        {
+          "id": 1462,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Retailers Turn to AI Agents to Meet Shoppers Before Checkout",
           "link": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-shopping-assistants-top-retail-budgets/",
-          "content": "Retailers have spent years enhancing digital shopping capabilities. Today, many merchants are evaluating which features still justify additional investment as artificial intelligence becomes a larger part of their technology plans. The PYMNTS Intelligence report “Global Digital Shopping Index: The AI-Powered Shopper Has Arrived,” commissioned by Visa Acceptance Solutions, found that AI is influencing more than [&#8230;] The post AI Shopping Assistants Jump to the Top of Retail Budgets appeared first on PYMNTS.com .",
+          "content": "Retailers have spent years enhancing digital shopping capabilities. Today, many merchants are evaluating which features still justify additional investment as artificial intelligence becomes a larger part of their technology plans. The PYMNTS Intelligence report “Global Digital Shopping Index: The AI-Powered Shopper Has Arrived,” commissioned by Visa Acceptance Solutions, found that AI is influencing more than [&#8230;] The post Retailers Turn to AI Agents to Meet Shoppers Before Checkout appeared first on PYMNTS.com .",
           "pub_date": "Wed, 01 Jul 2026 22:07:20 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 520
+          "word_count": 524
         },
         {
-          "id": 1623,
-          "source": "PYMNTS.com",
+          "id": 1468,
+          "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
@@ -784,7 +799,22 @@
           "word_count": 507
         },
         {
-          "id": 1617,
+          "id": 1521,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Korea’s unified ledger paper is silent on privacy. Central banks should take note",
+          "link": "https://www.ledgerinsights.com/koreas-unified-ledger-paper-is-silent-on-privacy-central-banks-should-take-note/",
+          "content": "In preparation for a talk at the ECB Forum today, the Bank of Korea published a paper on its unified ledger Project Hangang (Han River). It involves tokenized deposits from commercial banks, with interbank settlement using a wholesale CBDC. Seven banks participated in Phase I earlier this year, expanding to nine for Phase II which [&#8230;] The post Korea&#8217;s unified ledger paper is silent on privacy. Central banks should take note appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Wed, 01 Jul 2026 19:26:20 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 503
+        },
+        {
+          "id": 1464,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +829,22 @@
           "word_count": 471
         },
         {
-          "id": 1672,
+          "id": 1458,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Credit Card Payments Outpace Debit for First Time Since 2000",
+          "link": "https://www.pymnts.com/news/payment-methods/2026/credit-card-payments-outpace-debit-for-first-time-since-2000/",
+          "content": "Cards continued to account for the greatest number of noncash payments in the United States in 2024, while ACH payments continued to account for the highest value of noncash payments. Both of those trends were true by a wider margin than three years earlier, according to the latest Federal Reserve Payments Study (FRPS). The FRPS [&#8230;] The post Credit Card Payments Outpace Debit for First Time Since 2000 appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 02 Jul 2026 01:28:08 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 441
+        },
+        {
+          "id": 1510,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +859,7 @@
           "word_count": 379
         },
         {
-          "id": 1655,
+          "id": 1494,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +874,7 @@
           "word_count": 365
         },
         {
-          "id": 1671,
+          "id": 1509,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +889,7 @@
           "word_count": 308
         },
         {
-          "id": 1653,
+          "id": 1492,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +904,7 @@
           "word_count": 233
         },
         {
-          "id": 1654,
+          "id": 1493,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +919,7 @@
           "word_count": 220
         },
         {
-          "id": 1652,
+          "id": 1491,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +934,7 @@
           "word_count": 210
         },
         {
-          "id": 1633,
+          "id": 1475,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +949,7 @@
           "word_count": 194
         },
         {
-          "id": 1640,
+          "id": 1482,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +964,7 @@
           "word_count": 173
         },
         {
-          "id": 1627,
+          "id": 1470,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +979,7 @@
           "word_count": 141
         },
         {
-          "id": 1677,
+          "id": 1515,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -949,105 +994,60 @@
           "word_count": 554
         },
         {
-          "id": 328,
+          "id": 263,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "PolicyGuard: From Organizational Policies to Neuro-SymbolicCompliance Review Engines",
-          "link": "https://arxiv.org/abs/2606.32004",
-          "content": "arXiv:2606.32004v1 Announce Type: new Abstract: Policy-grounded document review requires determining whether a target document complies with organization-specific policies, guidelines, or playbooks. While large language models can assist with policy interpretation and document analysis, end-to-end prompting leaves the applied policy logic implicit, making compliance decisions difficult to inspect, update, and test. We present PolicyGuard, a neuro-symbolic framework for policy-grounded document compliance review. PolicyGuard converts organizational policy guidance into an executable review engine consisting of typed relational logic rules and atom-level extraction questions. During review, LLMs answer these local questions using retrieved document evidence, and a symbolic evaluator applies the formal rules to detect non-compliance. We instantiate and evaluate PolicyGuard on company-specific NDA compliance review, where contract clauses must be checked against organization-specific negotiation policies. By separating policy formalization, local document interpretation, and symbolic compliance evaluation, PolicyGuard makes document review more explicit, maintainable, and systematicall",
-          "pub_date": "Wed, 01 Jul 2026 00:00:00 -0400",
+          "title": "Personalization as Inverse Planning: Learning Latent Design Intents for Agentic Slide Generation via Structural Denoising",
+          "link": "https://arxiv.org/abs/2607.00407",
+          "content": "arXiv:2607.00407v1 Announce Type: new Abstract: Slide design requires personalizing both deck themes and page layouts. Yet, current AI agent-based methods struggle with fine-grained, page-level design. Solely relying on prespecified templates or user verbose instructions, they fail to capture latent design intents, leaving Page-level Slide Personalization (PSP) unresolved. To close this gap, this work formulates PSP as an inverse planning problem. We propose to learn a design intent without assuming any knowledge of the specific executing tools (e.g., PowerPoint, Beamer) being used. However, relinquishing control over these tools makes the problem intractable to optimize end-to-end. To overcome this, we propose SPIRE, a principled framework to solve PSP approximately. By intentionally corrupting the visual structures of clean slides, SPIRE creates a verifiable task to denoise the corruption, whereby two agents learn to collaboratively refine executable designs via reinforcement learning (RL). We present a proof that structural denoising is a consistent surrogate for PSP, and that the multi-agent formulation strictly reduces policy gradient variance in RL. Extensive experiments demo",
+          "pub_date": "Thu, 02 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 335,
+          "id": 280,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "AI Transparency: Governance Compliance or Stakeholder Requirements?",
-          "link": "https://arxiv.org/abs/2606.30652",
-          "content": "arXiv:2606.30652v1 Announce Type: cross Abstract: Transparency is increasingly mandated for public-sector AI systems, with organisations required to publish statements describing their AI use and oversight arrangements. However, the existence of such artefacts is often treated as equivalent to transparency itself, despite limited evidence that they proportionately serve relevant stakeholder groups. From a requirements engineering perspective, this raises a validation concern: compliance with mandated disclosure criteria does not necessarily ensure transparency adequacy for stakeholders with different levels of risk exposure, decision control, and involvement. This paper presents an empirical analysis of 92 publicly available AI transparency statements published by Australian Government agencies under the national AI governance mandate. We introduce the stakeholder Risk--Control--Involvement--Need (RCIN) framework to differentiate stakeholder classes according to their structural position and transparency needs. Using a structured rubric derived from the mandated criteria, we evaluate how both the mandate and published statements are calibrated to each stakeholder class. The finding",
-          "pub_date": "Wed, 01 Jul 2026 00:00:00 -0400",
+          "title": "Theoria: Rewrite-Acceptability Verification over Informal Reasoning States",
+          "link": "https://arxiv.org/abs/2607.01223",
+          "content": "arXiv:2607.01223v1 Announce Type: new Abstract: When should an AI system's answer be trusted? Formal proof assistants offer certainty but cannot reach most of the problem distribution; scalar LLM judges offer coverage but produce opaque scores that cannot be audited after the fact and are subject to the same coherence issues as any LLM. We present Theoria, a verification architecture that closes this gap. A candidate solution is rewritten into a sequence of typed state transitions, each licensed by an explicit justification, whether that be a citation, computation, or problem-given fact, and every transition is independently auditable. The foundational invariant is completeness of change: every difference between consecutive proof states must be accounted for, so hidden premises surface as unlicensed mutations rather than passing silently. On HLE-Verified Gold (185 text-only expert problems), Theoria certifies 105 at 91.4% strict precision (Wilson 95% CI [84.5%, 95.4%]). Every certification produces a human readable proof trace in which each step can be independently challenged. Holistic LLM judges achieve comparable precision at matched coverage but fail on different problems (Jac",
+          "pub_date": "Thu, 02 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 342,
+          "id": 295,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "ELEVATE: Designing Human-Centered GenAI Virtual Tutors for Scalable and Inclusive Education",
-          "link": "https://arxiv.org/abs/2606.30662",
-          "content": "arXiv:2606.30662v1 Announce Type: cross Abstract: The advent of Generative Artificial Intelligence (GenAI), and in particular Large Language Models (LLMs), is reshaping educational practice, while intensifying ethical debate about its adoption. To date, the dominant paradigm remains cloud-based and text-only chatbot: a centralized service that offers limited pedagogical control, weak transparency over knowledge sources, and non-trivial risks for privacy and regulatory compliance. This model also presumes continuous connectivity and recurring API costs, creating structural barriers for many institutions, reinforcing existing digital divides. At the same time, educational interaction with LLM can benefit from multimodal cues and embodied presence, requiring interfaces that move beyond text-only tutoring. In this work, we propose ELEVATE (Efficient LLM Education with Virtual Avatar Teaching Engine), a framework to develop efficient GenAI-driven avatar tutors governed by epistemic infrastructures. ELEVATE integrates LLM-driven dialogue with embodied 3D avatars for multimodal interaction and adopts a local-first execution model enabling deployment on consumer-grade hardware. The framewo",
-          "pub_date": "Wed, 01 Jul 2026 00:00:00 -0400",
+          "title": "Towards an automated AI-based framework for floor plan compliance checks for residential buildings",
+          "link": "https://arxiv.org/abs/2607.00015",
+          "content": "arXiv:2607.00015v1 Announce Type: cross Abstract: To improve residents' well-being in Australia's urban areas, governments have introduced policy reforms such as SEPP65, BADS, and SPP7.3 to enhance apartment design quality. These regulations require precise geometric and spatial analysis to evaluate health-related features, including daylight access, natural ventilation, privacy, and space efficiency. However, compliance checking remains challenging due to its manual, time-intensive nature. Additionally, evolving policies limit scalability for large-scale assessments across thousands of apartments. Existing automated floor plan analysis methods are fragmented and typically focus on single apartments, lacking a unified framework for multi-unit compliance checking. This article explores current advancements in automated floor plan analysis, particularly AI-driven approaches, and highlights key challenges in their practical adoption. To address these gaps, a conceptual framework is proposed for automated compliance checking in multi-apartment buildings. A Large Language Model (LLM) is used within a Rule Engine to convert textual building codes into executable, explainable rules. A Dat",
+          "pub_date": "Thu, 02 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 559,
+          "id": 512,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "DeXposure-FM: A Time-series, Graph Foundation Model for Credit Exposures and Stability on Decentralized Financial Networks",
-          "link": "https://arxiv.org/abs/2602.03981",
-          "content": "arXiv:2602.03981v2 Announce Type: replace-cross Abstract: Credit exposure in Decentralized Finance (DeFi) is often implicit and token-mediated, creating a dense web of inter-protocol dependencies. Thus, a shock to one token may result in significant and uncontrolled contagion effects. As the DeFi ecosystem becomes increasingly linked with traditional financial infrastructure through instruments, such as stablecoins, the risk posed by this dynamic demands more powerful quantification tools. We introduce DeXposure-FM, the first time-series, graph foundation model for measuring and forecasting inter-protocol credit exposure on DeFi networks, to the best of our knowledge. Employing a graph-tabular encoder, with pre-trained weight initialization, and multiple task-specific heads, DeXposure-FM is trained on the DeXposure dataset that has 43.7 million data entries, across 4,300+ protocols on 602 blockchains, covering 24,300+ unique tokens. The training is operationalized for credit-exposure forecasting, predicting the joint dynamics of (1) protocol-level flows, and (2) the topology and weights of credit-exposure links. The DeXposure-FM is empirically validated on two machine learning benc",
-          "pub_date": "Wed, 01 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 595,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "The Geometry of Refusal: Linear Instability in Safety-Aligned LLMs",
-          "link": "https://arxiv.org/abs/2606.22686",
-          "content": "arXiv:2606.22686v2 Announce Type: replace-cross Abstract: Modern Large Language Models (LLMs) rely on extensive safety alignment, yet the mechanistic basis of refusal remains opaque. In this work, we investigate whether safety compliance is a deep semantic decision or a manipulable linear feature. We introduce Contrastive Logit Steering (CLS), a zero-optimization framework that isolates the \"refusal direction\" by contrasting hidden states derived from safe and unrestricted system prompts. Unlike representation engineering methods that intervene on internal activations, CLS operates directly on the output distribution, serving as a diagnostic probe for alignment fragility. When coupled with prefix injection to bypass initial refusal reflexes, this method induces a phase transition where guardrails collapse. Our experiments on 7 model families reveal that safety implementation is architecturally deterministic. While models like Llama-3.1 exhibit a \"Late Decision\" topology that is easily bypassed by CLS (reaching 95% ASR in approximately one second), others like Qwen-2.5 demonstrate \"Early Divergence\" by integrating safety mid-computation. Direct comparison with established activation",
-          "pub_date": "Wed, 01 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 648,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "The Calibration Turn in AI-Assisted Research: A Conceptual and Methodological Framework for Evidence-Licensed Claims",
-          "link": "https://arxiv.org/abs/2606.31273",
-          "content": "arXiv:2606.31273v1 Announce Type: new Abstract: AI-assisted research has entered a stage in which the central question is not only whether systems can generate hypotheses, run experiments, or produce manuscripts, but whether their scientific claims are calibrated to the evidence that supports them. This Perspective-style paper develops a conceptual and methodological framework for evidence-licensed claims in AI-assisted research. Motivated by representative routes including specialized scientific foundation models, LLM research assistants, multi-agent co-scientists, AI Scientist pipelines, mathematical discovery agents, and self-driving laboratories, it represents AI-assisted research as five operators: hypothesis generation, model-mediated consequence derivation, external validation, belief update, and claim calibration. The central claim is that calibration is not merely cautious wording but a mechanism for managing scientific assertion rights: evidence licenses some forms of speech and withholds others. The paper distinguishes linguistic, consequence-based, interventional, and evidence-licensed semantics; defines the claim-evidence gap and epistemic debt; and treats minimal stru",
-          "pub_date": "Wed, 01 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 894,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Learning a Sampling-Free Variational DNN Plugin from Tiny Training Sets to Refine OOD Segmentation With Uncertainty Estimation",
-          "link": "https://arxiv.org/abs/2606.15837",
-          "content": "arXiv:2606.15837v2 Announce Type: replace-cross Abstract: Deep neural networks (DNNs) frequently fail to generalize to out-of-distribution (OOD) medical images because of variations in scanners and acquisition protocols. Retraining DNN models to address these distribution shifts is often impractical due to the high cost of acquiring and annotating new medical datasets. To address this, we introduce VarDeepPCA, a novel lightweight variational DNN framework designed to restore/refine degraded segmentation maps by leveraging intrinsic geometric priors. Unlike existing approaches that require target-domain data or extensive pre-training, our VarDeepPCA explicitly learns a distribution of valid anatomical geometries using only small in-distribution (ID) datasets. Theoretically, our novel variational learning framework leverages a reinterpretation of the softmax mapping to implicitly perform exact distribution modeling, thereby enabling computationally efficient, sampling-free learning and inference. This also enables VarDeepPCA to provide uncertainty estimates associated with its restored segmentation maps. We empirically validate our framework across 4 distinct clinical applications, u",
-          "pub_date": "Wed, 01 Jul 2026 00:00:00 -0400",
+          "title": "Hardening x402: PII-Safe Agentic Payments via Pre-Execution Metadata Filtering",
+          "link": "https://arxiv.org/abs/2604.11430",
+          "content": "arXiv:2604.11430v2 Announce Type: replace-cross Abstract: AI agents that pay for resources via the x402 protocol embed payment metadata - resource URLs, descriptions, and reason strings - in every HTTP payment request. This metadata is transmitted to the payment server and to the centralised facilitator API before any on-chain settlement occurs; neither party is typically bound by a data processing agreement. We present presidio-hardened-x402, the first open-source middleware that intercepts x402 payment requests before transmission to detect and redact personally identifiable information (PII), enforce declarative spending policies, and block duplicate replay attempts. To evaluate the PII filter, we construct a labeled synthetic corpus of 2,000 x402 metadata triples spanning seven use-case categories, and run a 42-configuration precision/recall sweep across two detection modes (regex, NLP) and five confidence thresholds. The recommended configuration (mode=nlp, min_score=0.4, all entity types) achieves micro-F1 = 0.894 with precision 0.972, at a p99 latency of 5.73ms - well within the 50ms overhead budget. The middleware, corpus, and all experiment code are publicly available at h",
+          "pub_date": "Thu, 02 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 247,
-      "total_valid": 58,
+      "total_raw": 240,
+      "total_valid": 55,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1850,
-    "dup": 469,
-    "nocontent": 405,
+    "total_raw": 1689,
+    "dup": 356,
+    "nocontent": 401,
     "noise": 3
   }
 }
