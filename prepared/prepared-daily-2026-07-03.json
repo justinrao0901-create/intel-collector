@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 79,
+          "id": 59,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +20,7 @@
           "word_count": 205
         },
         {
-          "id": 81,
+          "id": 61,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 160
         },
         {
-          "id": 82,
+          "id": 62,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,52 +50,7 @@
           "word_count": 151
         },
         {
-          "id": 60,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR",
-          "link": "https://arxiv.org/abs/2606.25178",
-          "content": "Reinforcement learning with verifiable rewards (RLVR) has been extended from single-domain training to multi-domain reasoning suites spanning mathematics, programming, and science. However, the training curriculum (how often each domain is sampled) is typically fixed or hand-tuned, even though reasoning skills transfer unevenly across domains. Existing learnability-based curricula adapt to where the policy is currently improving, but are blind to whether a gradient step on the selected domain benefits the remaining domains. In this paper, we propose Transfer-Aware Curriculum (TAC), a bandit-style online curriculum that prioritizes domains whose updates broadly benefit the rest of the training suite. TAC repurposes signals already produced by RL training: per-domain advantages capture local learnability, and projected gradients, taken from the GRPO step being computed, estimate cross-domain transferability via gradient-geometry alignment, at negligible cost (<1% wall-clock overhead). Across a six-domain reasoning suite, TAC achieves the best macro-averaged accuracy on both Qwen3-1.7B and Llama3.2-3B, outperforming proportional random sampling, a hand-designed schedule, and a learnab",
-          "pub_date": "2026-06-26T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 62,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning",
-          "link": "https://arxiv.org/abs/2606.31825",
-          "content": "Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correctness or sequence-level preferences. This suffers from sparse credit assignment, making it difficult to optimize the reasoning process essential for clinical applications. Our analysis reveals that cascading errors from early-stage reasoning failures are a leading cause of incorrect predictions in medical visual question answering (VQA) benchmarks. Motivated by this, we propose Medical Reasoning-aware Policy Optimization (MRPO), an RL algorithm that incorporates step-wise process rewards. When the final answer is incorrect, MRPO assigns exponentially larger penalties to tokens in earlier invalid reasoning steps, breaking failure cascades without compromising successful paths. Across three multimodal LLM backbones, MRPO consistently outperforms standard GRPO and a recent RL baseline, and on Qwen3-VL-8B-Instruct even surpasses substantially larger medical MLLMs such as HuatuoGPT-Vision-34B by 2.79 points. Moreover, MRPO reduces early-stage reasoning failures from 64.0% to 13.0%, showing t",
-          "pub_date": "2026-06-29T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 64,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
-          "link": "https://arxiv.org/abs/2607.02255",
-          "content": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see. The simplest contract appends past observations, tool calls, and reflections to every prompt, which makes prior context easy to access but also turns it into a jumbled mixture in which the effect of any single memory component is hard to isolate. We introduce and instrument an alternative bounded contract: every decision is made from a fresh user message assembled by typed retrieval, with no raw cross-decision transcript appended. The prompt thus stays bounded across runs of any length, and any single layer can be ablated in isolation. We instantiate the contract in Slay the Spire 2, a closed-rule stochastic deck-building game whose runs require hundreds of tactical and strategic decisions. A public online benchmark of frontier LLMs on the same game reports zero wins at the lowest difficulty across five configurations, and the developer-reported human win rate at the same difficulty is 16%; the task is hard but not saturated. Within our harness, a fixed-A0 ablation shows the largest observed difference when triggered strategic skills are enabled: the no-store baseline wins 3/10 game",
-          "pub_date": "2026-07-01T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 910,
+          "id": 890,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +65,7 @@
           "word_count": 1199
         },
         {
-          "id": 911,
+          "id": 891,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +80,7 @@
           "word_count": 1166
         },
         {
-          "id": 912,
+          "id": 892,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +95,7 @@
           "word_count": 1136
         },
         {
-          "id": 892,
+          "id": 872,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +110,7 @@
           "word_count": 179
         },
         {
-          "id": 897,
+          "id": 877,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +125,7 @@
           "word_count": 162
         },
         {
-          "id": 898,
+          "id": 878,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +138,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 162
+        },
+        {
+          "id": 868,
+          "source": "Interconnects",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "GLM-5.2 is the step change for open agents",
+          "link": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+          "content": "A capability threshold I've been carefully monitoring.",
+          "pub_date": "Mon, 22 Jun 2026 14:52:45 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 54
+        },
+        {
+          "id": 90,
+          "source": "arXiv cs.CL",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Safeguarding LLM Agents from Misalignment through Provenance Analysis",
+          "link": "https://arxiv.org/abs/2607.01236",
+          "content": "arXiv:2607.01236v1 Announce Type: new Abstract: As LLM agents gain increasing access to powerful tools, ensuring that their actions are aligned with the user's intent becomes critical. When an agent's proposed tool invocation deviates from the user's intent -- a phenomenon called misalignment -- it may lead to harmful consequences that are difficult to undo. Existing runtime guardrails rely on an LLM-as-a-judge paradigm that lacks a systematic framework for reasoning about alignment, often producing judgments that are inconsistent or difficult to audit. Motivated by provenance analysis, we propose a provenance-based conceptual framework that formalizes misalignment detection as determining whether a proposed tool call is supported by traceable evidence in the agent's context. Building on this framework, we propose ProvenanceGuard, a multi-stage pipeline that analyzes the agent's action for three types of misalignment before the selected tool is executed and only allows the action to take place when it is considered aligned with the user's input query. We evaluated our proposed approach on two different benchmarks, Agent-SafetyBench and WorkBench, across 10 backbone LLMs. Compared t",
+          "pub_date": "Fri, 03 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 91,
+          "source": "arXiv cs.CL",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Kara: Efficient Reasoning LLM Serving via Sliding-Window KV Cache Compression",
+          "link": "https://arxiv.org/abs/2607.01237",
+          "content": "arXiv:2607.01237v1 Announce Type: new Abstract: Reasoning language models often generate long chain-of-thought (CoT), which accumulates a massive KV cache during the decoding phase and incurs high decoding latency and limited throughput. To address these issues, KV cache compression has emerged as a promising technique for reducing memory overhead by selectively removing unimportant KV pairs while preserving useful ones for subsequent decoding. Nevertheless, we identify two key limitations in existing KV cache compression methods: 1) their threshold-triggered compression policy may provide limited throughput improvement or even reduce throughput, and may fully eliminate KV pairs from certain blocks of the sequence, potentially worsening information loss. 2) they typically retain either isolated KV pairs or fixed-size chunks with rigid boundaries, failing to preserve important flexible-sized chunks at arbitrary token positions. To overcome these limitations, we propose Kara, a sliding-window KV cache compression method that performs decoding-time compression by operating only on the recently generated context. Kara leverages bidirectional attention to score and select informative KV",
+          "pub_date": "Fri, 03 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1022,
-      "total_valid": 616,
+      "total_raw": 1002,
+      "total_valid": 607,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1054,
+          "id": 1034,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1055,
+          "id": 1035,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 222
         },
         {
-          "id": 1168,
+          "id": 1148,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 416
         },
         {
-          "id": 1368,
+          "id": 1348,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 388
         },
         {
-          "id": 1144,
+          "id": 1124,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 364
         },
         {
-          "id": 1085,
+          "id": 1065,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 344
         },
         {
-          "id": 1153,
+          "id": 1133,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,22 @@
           "word_count": 340
         },
         {
-          "id": 1072,
+          "id": 1160,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Immune aging biomarkers for clinical trials",
+          "link": "https://www.nature.com/articles/s41591-026-04493-5",
+          "content": "Nature Medicine, Published online: 03 July 2026; doi:10.1038/s41591-026-04493-5 The authors present a framework for the selection of immune aging biomarkers suitable for clinical trials in geroscience, alongside a translational roadmap for biomarker development to support the next generation of clinical studies on immune aging.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 329
+        },
+        {
+          "id": 1052,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 328
         },
         {
-          "id": 1080,
+          "id": 1060,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 323
         },
         {
-          "id": 1170,
+          "id": 1150,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +362,22 @@
           "word_count": 322
         },
         {
-          "id": 1353,
+          "id": 1158,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Lassa fever countermeasures gather pace",
+          "link": "https://www.nature.com/articles/s41591-026-04478-4",
+          "content": "Nature Medicine, Published online: 03 July 2026; doi:10.1038/s41591-026-04478-4 Two early phase clinical trials represent progress in Lassa fever vaccine and therapeutic development, including the first interventional treatment trial in decades.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 245
+        },
+        {
+          "id": 1333,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +392,7 @@
           "word_count": 188
         },
         {
-          "id": 1130,
+          "id": 1110,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +407,7 @@
           "word_count": 170
         },
         {
-          "id": 1131,
+          "id": 1111,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -390,36 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 159
-        },
-        {
-          "id": 1305,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Half a century of pneumococcal vaccination in sickle cell disease: Are we winning the battle or losing immunity?",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26006754?dgcid=rss_sd_all",
-          "content": "Publication date: 13 August 2026 Source: Vaccine, Volume 88 Author(s): Sumit Jamwal, Britney Omene, Abhishek Giri, Keyner Rojas, Subhasis Mohanty, Cecelia Calhoun, Lakshmanan Krishnamurti, Ruth R. Montgomery, Albert C. Shaw, Biree Andemariam, Inci Yildirim",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 256
-        },
-        {
-          "id": 1319,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Corrigendum to “Drivers of decision-making for future adult vaccines: a best–worst scaling among community members and health care workers in Zambia” [Vaccine 70 (2026) 128003]",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26005657?dgcid=rss_sd_all",
-          "content": "Publication date: 11 July 2026 Source: Vaccine, Volume 87 Author(s): Noelle Le Tourneau, Anjali Sharma, Jake M. Pry, Mwiza Haambokoma, Bertha Shamoya, Kombatende Sikombe, Sandra S. Simbeza, Nelly Zulu, Elvin H. Geng, Ingrid Eshun-Wilson, Andrew D. Kerkhoff",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 256
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 412,
-      "total_valid": 269,
+      "total_raw": 387,
+      "total_valid": 271,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1492,
+          "id": 1448,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 147
         },
         {
-          "id": 1457,
+          "id": 1413,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 144
         },
         {
-          "id": 1496,
+          "id": 1452,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 1521,
+          "id": 1477,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1523,
+          "id": 1479,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1524,
+          "id": 1480,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1513,
+          "id": 1469,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 533
         },
         {
-          "id": 1576,
+          "id": 1532,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 524
         },
         {
-          "id": 1514,
+          "id": 1470,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,22 @@
           "word_count": 343
         },
         {
-          "id": 1503,
+          "id": 1404,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Principled approaches for extending neural architectures to function spaces for operator learning",
+          "link": "https://www.nature.com/articles/s42256-026-01267-z",
+          "content": "Nature Machine Intelligence, Published online: 03 July 2026; doi:10.1038/s42256-026-01267-z Berner et al. show how to adapt popular neural networks into discretization-agnostic neural operators that learn from continuous scientific data, enabling scientific simulations that generalize more reliably across resolutions.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 319
+        },
+        {
+          "id": 1459,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +604,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 149,
-      "total_valid": 33,
-      "total_candidates": 10
+      "total_raw": 150,
+      "total_valid": 34,
+      "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 1525,
+          "id": 1481,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1530,
+          "id": 1486,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1532,
+          "id": 1488,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1576,
+          "id": 1532,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +671,7 @@
           "word_count": 524
         },
         {
-          "id": 1178,
+          "id": 1161,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +686,7 @@
           "word_count": 486
         },
         {
-          "id": 1080,
+          "id": 1060,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +701,22 @@
           "word_count": 323
         },
         {
-          "id": 1117,
+          "id": 1404,
+          "source": "Nature Machine Intel",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Principled approaches for extending neural architectures to function spaces for operator learning",
+          "link": "https://www.nature.com/articles/s42256-026-01267-z",
+          "content": "Nature Machine Intelligence, Published online: 03 July 2026; doi:10.1038/s42256-026-01267-z Berner et al. show how to adapt popular neural networks into discretization-agnostic neural operators that learn from continuous scientific data, enabling scientific simulations that generalize more reliably across resolutions.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 319
+        },
+        {
+          "id": 1097,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +731,7 @@
           "word_count": 269
         },
         {
-          "id": 1584,
+          "id": 1540,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,34 +746,19 @@
           "word_count": 242
         },
         {
-          "id": 1075,
-          "source": "Nature",
+          "id": 1159,
+          "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
           "priority": 2,
-          "title": "Restoring cortical disinhibition improves Huntington’s disease phenotypes",
-          "link": "https://www.nature.com/articles/s41586-026-10671-9",
-          "content": "Nature, Published online: 01 July 2026; doi:10.1038/s41586-026-10671-9 In a mouse model of Huntington’s disease, targeted modulation of neuronal activity restores network function and improves motor deficits.",
-          "pub_date": "2026-07-01",
+          "title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
+          "link": "https://www.nature.com/articles/s41591-026-04502-7",
+          "content": "Nature Medicine, Published online: 03 July 2026; doi:10.1038/s41591-026-04502-7 COMPASS is a pan-cancer foundation model that predicts immunotherapy response, across cancer types and treatments, from bulk tumor transcriptomes.",
+          "pub_date": "2026-07-03",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 208
-        },
-        {
-          "id": 1130,
-          "source": "The Lancet",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[World Report] USA to phase out PEPFAR support in South Africa",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01331-0/fulltext?rss=yes",
-          "content": "The USA is to wind down its PEPFAR support for South Africa—home to the world's largest HIV epidemic—prompting fears of a resurgence in infections. Sharmila Devi reports.",
-          "pub_date": "2026-07-04",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 170
+          "word_count": 226
         }
       ],
       "quota": {
@@ -751,8 +766,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 35,
-      "total_valid": 28,
+      "total_raw": 37,
+      "total_valid": 30,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1632,
+          "id": 1588,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 612
         },
         {
-          "id": 1633,
+          "id": 1589,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 604
         },
         {
-          "id": 1603,
+          "id": 1559,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 545
         },
         {
-          "id": 1601,
+          "id": 1557,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 505
         },
         {
-          "id": 1593,
+          "id": 1549,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 493
         },
         {
-          "id": 1598,
+          "id": 1554,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 481
         },
         {
-          "id": 1600,
+          "id": 1556,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 428
         },
         {
-          "id": 1620,
+          "id": 1576,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 349
         },
         {
-          "id": 1625,
+          "id": 1581,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 318
         },
         {
-          "id": 1629,
+          "id": 1585,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 304
         },
         {
-          "id": 1630,
+          "id": 1586,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 235
         },
         {
-          "id": 1604,
+          "id": 1560,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 161
         },
         {
-          "id": 1605,
+          "id": 1561,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 123
         },
         {
-          "id": 1606,
+          "id": 1562,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,37 +994,7 @@
           "word_count": 107
         },
         {
-          "id": 72,
-          "source": "HuggingFace Daily Papers",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
-          "link": "https://arxiv.org/abs/2607.02466",
-          "content": "Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations -- triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the latter requires language supervision. Building on this Decomposition Hypothesis, we propose Task-Agnostic Pretraining (TAP), a two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data -- including discarded off-task trajectories and autonomous robot play -- via a self-supervised Inverse Dynamics objective. A lightweight second stage then grounds these priors in language using minimal expert data. On the SIMPLER benchmark, TAP matches models trained on over 1M expert trajectories while using orders of magnitude less labeled data, yielding a 10% absolute gain over standard behavior cloning. On a real-world WidowX platform, TAP retains 25% success under camera perturbations where internet-scale baselines collapse to 0%, demonstrating that task-agnost",
-          "pub_date": "2026-07-01T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1647,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "The 24/7/365 Treasury: How stablecoins are reducing the “weekend settlement gap”",
-          "link": "https://www.thunes.com/insights/learn/how-stablecoins-are-reducing-the-weekend-settlement-gap/",
-          "content": "Cross-border payments have become a 24/7, always-on experience – nearly.&#160; While cross-border payment initiation has become increasingly real-time, settlement has not kept pace. The movement of liquidity and settlement between financial institutions – the last mile – still depends heavily on banking hours, market cut-off times, correspondent banking networks and local holiday schedules.&#160; For treasury ... Read more &#187; The post The 24/7/365 Treasury: How stablecoins are reducing the “weekend settlement gap” first appeared on Thunes.com .",
-          "pub_date": "Tue, 30 Jun 2026 20:13:53 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 554
-        },
-        {
-          "id": 1652,
+          "id": 1603,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,7 +1009,7 @@
           "word_count": 180
         },
         {
-          "id": 226,
+          "id": 206,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 292,
+          "id": 272,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1039,22 @@
           "word_count": 1200
         },
         {
-          "id": 564,
+          "id": 460,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
+          "link": "https://arxiv.org/abs/2607.02466",
+          "content": "arXiv:2607.02466v1 Announce Type: cross Abstract: Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations -- triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the latter requires language supervision. Building on this Decomposition Hypothesis, we propose Task-Agnostic Pretraining (TAP), a two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data -- including discarded off-task trajectories and autonomous robot play -- via a self-supervised Inverse Dynamics objective. A lightweight second stage then grounds these priors in language using minimal expert data. On the SIMPLER benchmark, TAP matches models trained on over 1M expert trajectories while using orders of magnitude less labeled data, yielding a 10% absolute gain over standard behavior cloning. On a real-world WidowX platform, TAP retains 25% success under camera perturbations where internet-scale baseli",
+          "pub_date": "Fri, 03 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 544,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1067,6 +1067,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1061
+        },
+        {
+          "id": 1548,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The Enterprise Gives AI Models a Path to Consumer Loyalty",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/the-enterprise-gives-ai-models-path-to-consumer-loyalty/",
+          "content": "The growth across enterprise and consumer technology markets represents a tale of two separate playbooks. Consumer products won users through advertising, app stores and word of mouth. Enterprise software, meanwhile, spread through CIO and CFO purchasing decisions, procurement cycles and IT deployments. That was before artificial intelligence arrived. New data in PYMNTS Intelligence’s latest 2026 Consumer [&#8230;] The post The Enterprise Gives AI Models a Path to Consumer Loyalty appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 03 Jul 2026 08:02:33 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 516
         }
       ],
       "quota": {
@@ -1074,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 234,
-      "total_valid": 53,
+      "total_raw": 203,
+      "total_valid": 52,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1821,
-    "dup": 463,
-    "nocontent": 399,
+    "total_raw": 1746,
+    "dup": 450,
+    "nocontent": 344,
     "noise": 2
   }
 }

@@ -40,14 +40,14 @@
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 5,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "HuggingFace Daily Papers": {
       "section": "ai",
       "method": "api",
-      "count": 15,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "TechCrunch AI": {
       "section": "ai",
@@ -322,8 +322,8 @@
     "EMA": {
       "section": "vaccine",
       "method": "scrape",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Synthetic Biology": {
       "section": "synbio",
@@ -334,7 +334,7 @@
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -436,8 +436,8 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 5,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -448,8 +448,8 @@
     "Ledger Insights": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Chainalysis Blog": {
       "section": "payment",
@@ -496,8 +496,8 @@
     "a16z crypto": {
       "section": "payment",
       "method": "scrape",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     }
   },
   "alarms": {
@@ -505,12 +505,18 @@
       "ACS Synthetic Biology",
       "Absci Blog",
       "ClinicalTrials.gov",
+      "EMA",
+      "HuggingFace Blog",
+      "HuggingFace Daily Papers",
       "Import AI",
+      "Ledger Insights",
       "NEJM",
       "NEJM AI",
       "Sci Transl Med",
       "Science",
-      "Science Immunology"
+      "Science Immunology",
+      "Thunes",
+      "a16z crypto"
     ],
     "sudden_drop": [],
     "persistent_zero": [
