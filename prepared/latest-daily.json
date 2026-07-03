@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 80,
+          "id": 79,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +20,7 @@
           "word_count": 205
         },
         {
-          "id": 82,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 160
         },
         {
-          "id": 83,
+          "id": 82,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,29 +50,14 @@
           "word_count": 151
         },
         {
-          "id": 62,
+          "id": 60,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "GRPO, Dr. GRPO, and DAPO Are Three Operations on One Number: The Group-Standard-Deviation Identity",
-          "link": "https://arxiv.org/abs/2607.00152",
-          "content": "Three of the most popular methods for training language models to reason look like three different tricks. They are not. All three adjust a single number: standard deviation, reflecting how much a prompt's sampled answers disagree. When such a model is trained, it answers each problem many times, and an automatic checker marks every answer right or wrong. The standard deviation of those marks measures the disagreement: largest when the answers split evenly between right and wrong, and zero when they all agree. Group Relative Policy Optimization (GRPO) divides by this number, GRPO Done Right (Dr. GRPO) drops the division, and Decoupled Clip and Dynamic Sampling Policy Optimization (DAPO) discards the groups where it is zero. Each is presented as its own fix, yet this paper proves they are three settings of one dial. That dial is not cosmetic: for right-or-wrong rewards, the disagreement is exactly the size of the training update, the group-standard-deviation identity. A split group teaches the most, while a unanimous group teaches nothing and falls silent. The same result says which problems deserve the most weight and how many tries each one needs. This paper confirms the intuition",
-          "pub_date": "2026-06-29T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 63,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "When More Sampling Hurts: The Modal Ceiling and Correlation Ceiling of Test-Time Scaling",
-          "link": "https://arxiv.org/abs/2606.28661",
-          "content": "People overthink; language models over-sample, and the extra effort can talk both into a worse answer. Reasoning systems answer a hard question by sampling it many times (test-time scaling), and the more they draw, the more often a correct answer turns up somewhere, so coverage, the fraction of problems with at least one correct try, climbs and appears to be progress. But a deployed system must return one answer, and choosing it, not knowing which try is right, is selection; selection is capped, and past a point extra samples only make the model surer of a confident mistake, even as every draw adds cost. The gap between climbing coverage and stalled selection, the identifiability gap, is the answer a model can produce but not pick. So the real question is not whether to sample but how far, and the answer is: not far. For picking an answer, the vote has already settled within a few dozen draws, the modal ceiling; for scoring a benchmark, sooner still, the correlation ceiling. Beyond that, extra draws cost compute and add nothing, and can even make the answer worse. This paper turns the cutoff into a single number, the effective number of samples, that any sampling run already reveal",
+          "title": "Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR",
+          "link": "https://arxiv.org/abs/2606.25178",
+          "content": "Reinforcement learning with verifiable rewards (RLVR) has been extended from single-domain training to multi-domain reasoning suites spanning mathematics, programming, and science. However, the training curriculum (how often each domain is sampled) is typically fixed or hand-tuned, even though reasoning skills transfer unevenly across domains. Existing learnability-based curricula adapt to where the policy is currently improving, but are blind to whether a gradient step on the selected domain benefits the remaining domains. In this paper, we propose Transfer-Aware Curriculum (TAC), a bandit-style online curriculum that prioritizes domains whose updates broadly benefit the rest of the training suite. TAC repurposes signals already produced by RL training: per-domain advantages capture local learnability, and projected gradients, taken from the GRPO step being computed, estimate cross-domain transferability via gradient-geometry alignment, at negligible cost (<1% wall-clock overhead). Across a six-domain reasoning suite, TAC achieves the best macro-averaged accuracy on both Qwen3-1.7B and Llama3.2-3B, outperforming proportional random sampling, a hand-designed schedule, and a learnab",
           "pub_date": "2026-06-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -80,14 +65,14 @@
           "word_count": 1200
         },
         {
-          "id": 65,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents",
-          "link": "https://arxiv.org/abs/2606.31179",
-          "content": "As AI agents become increasingly capable of complex, long-horizon reasoning, rigorous and holistic evaluation is essential for measuring progress toward real-world healthcare applications. We introduce HealthAgentBench, a suite of 54 agentic healthcare tasks across 7 categories each with its unique environment. The benchmark suite spans diverse workflows throughout the patient journey and a broad range of modalities. Each task is designed to replicate an end-to-end clinical workflow: given minimal instructions, an agent must explore raw healthcare data, operate within a complex environment, and execute multi-step solutions that go beyond naive prompting. A final task success rate is reported to provide a single, interpretable metric for HealthAgentBench overall performance for each agent. Evaluating frontier agents on HealthAgentBench, we find that overall task success rate remains low, underscoring the difficulty of the suite. The strongest and the most cost effective agent, Codex GPT-5.5, achieves only approximately 42% success rate. Beyond aggregate performance, HealthAgentBench reveals nuanced strengths and weaknesses across task categories. Frontier agents show promise in auto",
+          "title": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning",
+          "link": "https://arxiv.org/abs/2606.31825",
+          "content": "Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correctness or sequence-level preferences. This suffers from sparse credit assignment, making it difficult to optimize the reasoning process essential for clinical applications. Our analysis reveals that cascading errors from early-stage reasoning failures are a leading cause of incorrect predictions in medical visual question answering (VQA) benchmarks. Motivated by this, we propose Medical Reasoning-aware Policy Optimization (MRPO), an RL algorithm that incorporates step-wise process rewards. When the final answer is incorrect, MRPO assigns exponentially larger penalties to tokens in earlier invalid reasoning steps, breaking failure cascades without compromising successful paths. Across three multimodal LLM backbones, MRPO consistently outperforms standard GRPO and a recent RL baseline, and on Qwen3-VL-8B-Instruct even surpasses substantially larger medical MLLMs such as HuatuoGPT-Vision-34B by 2.79 points. Moreover, MRPO reduces early-stage reasoning failures from 64.0% to 13.0%, showing t",
           "pub_date": "2026-06-29T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -95,37 +80,52 @@
           "word_count": 1200
         },
         {
-          "id": 803,
-          "source": "Simon Willison",
+          "id": 64,
+          "source": "HuggingFace Daily Papers",
           "section": "ai",
-          "tier": "T2",
+          "tier": "T1",
           "priority": 5,
-          "title": "llm-coding-agent 0.1a0",
-          "link": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
-          "content": "Release: llm-coding-agent 0.1a0 Another Fable 5 experiment. Now that my LLM library has evolved into more of an agent framework it's time to see what a simple coding agent would look like built on it. I started a new Python library using my python-lib-template-repository GitHub template repository, then ran these two prompts (here's the Claude Code for web transcript ): Write a spec.md for this project - it will depend on the latest “llm” alpha from PyPI and implement a Claude code style coding agent complete with tools for reading and editing files and executing commands Then: Commit the spec, then build it using red/green TDD in a series of sensible commits (each with passing tests and updated docs) - occasionally manually test it using the OpenAI API key in your environment Here's the resulting README file and the sequence of commits . I've shipped a slop-alpha to PyPI, so you can run the new agent like this: uvx --prerelease=allow --with llm-coding-agent llm code It's pretty good for a first attempt! Here's the (Fable-authored) README , which lists recipes like llm code --yolo and llm code --allow \"pytest*\" --allow \"git diff*\" . It also presents a Python API based around a Codi",
-          "pub_date": "2026-07-02T19:33:12+00:00",
+          "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+          "link": "https://arxiv.org/abs/2607.02255",
+          "content": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see. The simplest contract appends past observations, tool calls, and reflections to every prompt, which makes prior context easy to access but also turns it into a jumbled mixture in which the effect of any single memory component is hard to isolate. We introduce and instrument an alternative bounded contract: every decision is made from a fresh user message assembled by typed retrieval, with no raw cross-decision transcript appended. The prompt thus stays bounded across runs of any length, and any single layer can be ablated in isolation. We instantiate the contract in Slay the Spire 2, a closed-rule stochastic deck-building game whose runs require hundreds of tactical and strategic decisions. A public online benchmark of frontier LLMs on the same game reports zero wins at the lowest difficulty across five configurations, and the developer-reported human win rate at the same difficulty is 16%; the task is hard but not saturated. Within our harness, a fixed-A0 ablation shows the largest observed difference when triggered strategic skills are enabled: the no-store baseline wins 3/10 game",
+          "pub_date": "2026-07-01T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 804,
+          "id": 910,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "llm-coding-agent 0.1a0",
+          "link": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
+          "content": "Release: llm-coding-agent 0.1a0 Another Fable 5 experiment. Now that my LLM library has evolved into more of an agent framework it's time to see what a simple coding agent would look like built on it. I started a new Python library using my python-lib-template-repository GitHub template repository, then ran these two prompts (here's the Claude Code for web transcript ): Write a spec.md for this project - it will depend on the latest “llm” alpha from PyPI and implement a Claude code style coding agent complete with tools for reading and editing files and executing commands Then: Commit the spec, then build it using red/green TDD in a series of sensible commits (each with passing tests and updated docs) - occasionally manually test it using the OpenAI API key in your environment Here's the spec , the resulting README file , and the sequence of commits . I've shipped a slop-alpha to PyPI, so you can run the new agent like this: uvx --prerelease=allow --with llm-coding-agent llm code It's pretty good for a first attempt! Here's the (Fable-authored) README , which lists recipes like llm code --yolo and llm code --allow \"pytest*\" --allow \"git diff*\" . It also presents a Python API based",
+          "pub_date": "2026-07-02T19:33:12+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 911,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
           "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
           "link": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
-          "content": "Research: Using DSPy to evaluate and improve Datasette Agent&#x27;s SQL system prompts One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5: Pip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about data. Fable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements. I particularly like this one: The schema listing gives only table names; the \"don't call describe_table if you already have the information\" advice caused column-name guessing (page_count, o.order_id, first_name) and error-retry loops in baseline traces. Either include column names in the prompt's schema listing or soften that advice. Tags: ai , datasette , generative-ai , llms , evals , dspy , datasette-agent , claude-mythos",
+          "content": "Research: Using DSPy to evaluate and improve Datasette Agent&#x27;s SQL system prompts One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5: Pip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about data. Fable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements. I particularly like this one: The schema listing gives only table names; the \"don't call describe_table if you already have the information\" advice caused column-name guessing (page_count, o.order_id, first_name) and error-retry loops in baseline traces. Either include column names in the prompt's schema listing or soften that advice. Tags: ai , datasette , generative-ai , llms , evals , dspy , datasette-agent , claude-mythos-fable",
           "pub_date": "2026-07-02T18:25:00+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1160
+          "word_count": 1166
         },
         {
-          "id": 805,
+          "id": 912,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1136
         },
         {
-          "id": 783,
+          "id": 892,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 179
         },
         {
-          "id": 788,
+          "id": 897,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 162
         },
         {
-          "id": 789,
+          "id": 898,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,44 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 915,
-      "total_valid": 613,
+      "total_raw": 1022,
+      "total_valid": 616,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1077,
+          "id": 1054,
+          "source": "WHO News",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 1,
+          "title": "WHO adds first diagnostic test for Ebola Bundibugyo virus to its Emergency Use Listing",
+          "link": "https://www.who.int/news/item/02-07-2026-who-adds-first-diagnostic-test-for-ebola-bundibugyo-virus-to-its-emergency-use-listing",
+          "content": "Today, the World Health Organization (WHO) has added the first molecular diagnostic test for Bundibugyo virus (BDBV) to its Emergency Use Listing (EUL) . The test detects the virus by identifying its genetic material in blood samples, helping confirm infection rapidly and accurately. WHO&rsquo;s EUL procedure assesses the quality, safety and performance of essential health products based on the available evidence, while ensuring they meet minimum international standards and address the needs of low- and middle-income countries. Through this mechanism, WHO aims to accelerate access to reliable diagnostic tools for early case detection, timely clinical care, disease surveillance and effective outbreak response. The EUL also supports United Nations procurement agencies and governments in making informed decisions about the procurement and use of these products in public health emergency settings. \"Public health emergencies require not only speed, but also confidence that the health products being used meet standards for quality, safety and performance,\" said Dr Yukiko Nakatani, WHO Assistant Director-General for Health Systems, Access and Data. \"During a fast-moving outbreak, timely a",
+          "pub_date": "Thu, 02 Jul 2026 16:21:23 Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1055,
+          "source": "WHO News",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 1,
+          "title": "Patient enrolment begins in a scientific trial to identify the first effective treatments for Bundibugyo virus disease",
+          "link": "https://www.who.int/news/item/02-07-2026-patient-enrolment-begins-in-a-scientific-trial-to-identify-the-first-effective-treatments-for-bundibugyo-virus-disease",
+          "content": "In a major international effort to evaluate potential treatments for Ebola disease due to Bundibugyo virus (BVD), the PARTNERS clinical trial has opened enrolment today for patients in the Democratic Republic of the Congo.",
+          "pub_date": "Thu, 02 Jul 2026 12:19:20 Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 222
+        },
+        {
+          "id": 1168,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +242,37 @@
           "word_count": 416
         },
         {
-          "id": 986,
+          "id": 1368,
+          "source": "Nature Reviews Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A guide to CAR T cell therapies: development, current status and future prospects",
+          "link": "https://www.nature.com/articles/s41577-026-01322-1",
+          "content": "Nature Reviews Immunology, Published online: 02 July 2026; doi:10.1038/s41577-026-01322-1 This Review traces the development of chimeric antigen receptor (CAR) T cell therapy from foundational immunology to approved products, highlighting clinical successes, engineering advances, safety strategies and ongoing challenges in extending durable responses beyond haematological malignancies.",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 388
+        },
+        {
+          "id": 1144,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Department of Error] Department of Error",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01301-2/fulltext?rss=yes",
+          "content": "Nikolcheva T, Pagano G, Anzures-Cabrera J, et al. Efficacy and safety of intravenous prasinezumab in individuals with early-stage Parkinson's disease on stable symptomatic monotherapy (PADOVA): a phase 2b, multicentre, randomised, double-blind, placebo-controlled study. Lancet 2026; 407: 2227–40—The appendix of this Article has been corrected as of July 2, 2026.",
+          "pub_date": "2026-07-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 364
+        },
+        {
+          "id": 1085,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +287,22 @@
           "word_count": 344
         },
         {
-          "id": 973,
+          "id": 1153,
+          "source": "Cell",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A viral ORFeome library for systems-level genetic dissection of host-pathogen interactions",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00583-0?rss=yes",
+          "content": "A scalable library of ∼13,000 barcoded viral open reading frames from >500 viral species enables functional genomic screens across the virome. Applying this platform identified viral regulators of cellular proliferation, antigen presentation, and interferon signaling. This platform enables systematic exploration of viral protein function.",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 340
+        },
+        {
+          "id": 1072,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +317,7 @@
           "word_count": 328
         },
         {
-          "id": 981,
+          "id": 1080,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +332,7 @@
           "word_count": 323
         },
         {
-          "id": 1079,
+          "id": 1170,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +347,52 @@
           "word_count": 322
         },
         {
-          "id": 1220,
+          "id": 1353,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Oral contraceptive usage among healthcare workers and its impact on COVID-19 booster vaccination immunogenicity",
+          "link": "https://www.nature.com/articles/s41541-026-01510-z",
+          "content": "npj Vaccines, Published online: 02 July 2026; doi:10.1038/s41541-026-01510-z Oral contraceptive usage among healthcare workers and its impact on COVID-19 booster vaccination immunogenicity",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 188
+        },
+        {
+          "id": 1130,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[World Report] USA to phase out PEPFAR support in South Africa",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01331-0/fulltext?rss=yes",
+          "content": "The USA is to wind down its PEPFAR support for South Africa—home to the world's largest HIV epidemic—prompting fears of a resurgence in infections. Sharmila Devi reports.",
+          "pub_date": "2026-07-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 170
+        },
+        {
+          "id": 1131,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[World Report] Kenya halts US-funded Ebola facility after protests",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01332-2/fulltext?rss=yes",
+          "content": "Kenya has stopped construction of a quarantine and treatment facility for affected Americans after public outcry and legal challenges. Gilbert Nakweya reports.",
+          "pub_date": "2026-07-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 159
+        },
+        {
+          "id": 1305,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +407,7 @@
           "word_count": 256
         },
         {
-          "id": 1234,
+          "id": 1319,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -300,126 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 256
-        },
-        {
-          "id": 1264,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "COVID-19 vaccine attitudes and behaviors among pregnant women in Nairobi, Kenya with diverse socio-economic and educational backgrounds",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X25007777?dgcid=rss_sd_all",
-          "content": "Publication date: Available online 12 July 2025 Source: Vaccine Author(s): Jessica L. Schue, Ferdinand Okwaro, Ingrid Gichere, Daizy Cherono, Mandeep Sura, Emily S. Miller, Berhaun Fesshaye, Prachi Singh, Grace Belayneh, Rupali J. Limaye, Marleen Temmerman",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 256
-        },
-        {
-          "id": 1095,
-          "source": "Nature Biotech",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Unlocking the chemical potential of filamentous fungi using prime editing",
-          "link": "https://www.nature.com/articles/s41587-026-03219-9",
-          "content": "Nature Biotechnology, Published online: 02 July 2026; doi:10.1038/s41587-026-03219-9 We developed the prime editor fPE7max, which is optimized for filamentous fungi and enables precise genome engineering — from single-base substitutions to kilobase-scale insertions and multi-kilobase deletions, across diverse species. Editing of translation-regulatory elements for a pleiotropic metabolic regulator unlocked previously inaccessible biosynthetic pathways and uncovered new fungal metabolites.",
-          "pub_date": "2026-07-02",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 493
-        },
-        {
-          "id": 1087,
-          "source": "Nature Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Why high scores do not mean application readiness for health AI",
-          "link": "https://www.nature.com/articles/s41591-026-04500-9",
-          "content": "Nature Medicine, Published online: 02 July 2026; doi:10.1038/s41591-026-04500-9 Large language models achieve high scores on health application benchmarks, yet adversarial stress tests now reveal prevalent brittleness — shortcut reliance, fragile visual grounding and fabricated reasoning traces — which exposes substantial gaps between benchmark performance and the robustness evidence needed to support claims of readiness for medical decision-support and patient-facing applications.",
-          "pub_date": "2026-07-02",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 486
-        },
-        {
-          "id": 1300,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Transplantation tolerance versus immune evasion: Mechanistic divergences and therapeutic frontiers for islet cell replacement",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00305-8?rss=yes",
-          "content": "Deuse et al. review emerging strategies to overcome the toxicities of chronic immunosuppression that limit allogeneic islet transplantation. This review contrasts fragile recipient-centric tolerance induction—vulnerable to destabilization by infections, heterologous immunity, and inflammation—with robust product-centric immune evasion engineered for hypoimmunity, highlighting its transformative potential for islet cell replacement therapy.",
-          "pub_date": "2026-07-02",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 443
-        },
-        {
-          "id": 1078,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Extracellular ATP-P2RY2 signaling drives intratumoral prostaglandin E2 accumulation and adaptive resistance to immunotherapy in solid tumors",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00257-8?rss=yes",
-          "content": "Extracellular ATP (eATP) is associated with immune suppression in the tumor microenvironment (TME) via its metabolite adenosine. Hu et al. find that immunotherapy increases eATP within the TME and drives immune suppression through direct binding of the purinergic receptor P2RY2, driving pathological COX-1- and COX-2-PGE₂ hyperactivation in solid tumors. This self-reinforcing circuit promotes adaptive resistance to immunotherapy.",
-          "pub_date": "2026-07-02",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 432
-        },
-        {
-          "id": 1299,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Differential T cell clonal dynamics underlie outcomes to frontline chemoimmunotherapy in advanced gastric cancer",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00327-7?rss=yes",
-          "content": "Wright et al. use serial single-cell RNA/TCR sequencing to show that durable benefit from gastric cancer chemo-immunotherapy associates with persistence of putative tumor-reactive progenitor-exhausted T cells, circulating TCR clones that infiltrate tumors after immunotherapy, increased B cell abundance after chemotherapy, and B cell interactions that support T cell persistence.",
-          "pub_date": "2026-07-02",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 380
-        },
-        {
-          "id": 1064,
-          "source": "Cell",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Multiscale integration of tissue and chromatin context converts cell heterogeneity into stable intestinal patterning",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00696-3?rss=yes",
-          "content": "During regeneration, tissues must translate transient cellular variability into stable spatial organization. Tissue architecture generates a density-dependent window of heterogeneity in the mechanosensor YAP1 that FOXA1 integrates with Delta-Notch signaling, thereby linking tissue-scale mechanics to bistable cell fate decisions and stable tissue patterning.",
-          "pub_date": "2026-06-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 359
-        },
-        {
-          "id": 1041,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Perspectives] Why medicine needs literary magazines",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01250-X/fulltext?rss=yes",
-          "content": "Running a literary magazine was not in my academic game plan. I attended medical school with the plan to be a bench scientist. I chose the joint MD–PhD programme not just because it paid for my tuition—though this was certainly a selling point—but the goal was to run a basic-science research laboratory, with one morning per week in a neurology clinic.",
-          "pub_date": "2026-06-27",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 353
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 436,
-      "total_valid": 272,
+      "total_raw": 412,
+      "total_valid": 269,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1409,
+          "id": 1492,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 147
         },
         {
-          "id": 1374,
+          "id": 1457,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 144
         },
         {
-          "id": 1413,
+          "id": 1496,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 1441,
+          "id": 1521,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1443,
+          "id": 1523,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1444,
+          "id": 1524,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,52 @@
           "word_count": 1200
         },
         {
-          "id": 1420,
+          "id": 1513,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Cryo-EM sheds light on the mechanism of human telomerase inhibition by BIBR1532",
+          "link": "https://www.nature.com/articles/s41589-026-02277-z",
+          "content": "Nature Chemical Biology, Published online: 03 July 2026; doi:10.1038/s41589-026-02277-z Human telomerase is upregulated in most cancers, making it a prime therapeutic target, but a lack of structures in complex with inhibitors have hindered drug design. Here, cryo-electron microscopy structures of BIBR1532-bound human telomerase reveal an unexpected BIBR1532-binding pocket and mechanism of inhibition, which provides a framework for understanding how telomerase acts and for developing telomerase-targeted anticancer therapeutics.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 533
+        },
+        {
+          "id": 1576,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Computational approaches in bioprinting processes",
+          "link": "https://www.nature.com/articles/s44222-026-00455-1",
+          "content": "Nature Reviews Bioengineering, Published online: 03 July 2026; doi:10.1038/s44222-026-00455-1 Computational simulations are emerging as powerful complements to bioprinting, enabling prediction of bioink behaviours, shear effects and printability across extrusion-based, droplet-based and light-based techniques. This Review outlines key modelling frameworks, rheological considerations, major applications and remaining challenges, highlighting how simulations can streamline workflows and guide future bioprinting advances.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 524
+        },
+        {
+          "id": 1514,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Artificial metalloenzymes in complex biological environments",
+          "link": "https://www.nature.com/articles/s41589-026-02249-3",
+          "content": "Nature Chemical Biology, Published online: 03 July 2026; doi:10.1038/s41589-026-02249-3 Bringing transition-metal catalysis into biological systems remains challenging. Here the author examines how artificial metalloenzymes can be made to function across biological settings, from cell extracts to cell surfaces and intracellular environments.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 343
+        },
+        {
+          "id": 1503,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -537,21 +582,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 269
-        },
-        {
-          "id": 1432,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Prosculpt: Lowering the Barrier to Computational Protein Design",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.25.732351v1?rss=1",
-          "content": "Over the past decade, protein design has evolved from a specialized discipline into a broadly accessible approach for engineering and interrogating biological systems. Despite these advances, protein design continues to be a technically challenging task, often requiring knowledge of programming to be able to use and combine the different software packages. To address this challenge, we have developed Prosculpt, an easy-to-use protein design pipeline. Prosculpt integrates RFdiffusion for backbone generation, ProteinMPNN for sequence design and multiple structure-prediction platforms (AF2, AF3, Colabfold, Boltz2). Candidate designs are evaluated using customizable Rosetta-based scoring protocols. Each project is specified through a single configuration file, enabling users with minimal computational expertise to perform sophisticated protein design tasks without writing code, while also allowing advanced users to access the full capabilities of the underlying programs. Prosculpt supports a wide range of applications, including design of symmetric homo-oligomers, design of binders, motif scaffolding, partial diffusion and fixed-backbone sequence redesign. By combining these capabiliti",
-          "pub_date": "2026-6-26",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -559,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 152,
-      "total_valid": 31,
-      "total_candidates": 8
+      "total_raw": 149,
+      "total_valid": 33,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 1445,
+          "id": 1525,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1450,
+          "id": 1530,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1452,
+          "id": 1532,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +641,22 @@
           "word_count": 1200
         },
         {
-          "id": 1087,
+          "id": 1576,
+          "source": "Nature Reviews Bioengineering",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Computational approaches in bioprinting processes",
+          "link": "https://www.nature.com/articles/s44222-026-00455-1",
+          "content": "Nature Reviews Bioengineering, Published online: 03 July 2026; doi:10.1038/s44222-026-00455-1 Computational simulations are emerging as powerful complements to bioprinting, enabling prediction of bioink behaviours, shear effects and printability across extrusion-based, droplet-based and light-based techniques. This Review outlines key modelling frameworks, rheological considerations, major applications and remaining challenges, highlighting how simulations can streamline workflows and guide future bioprinting advances.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 524
+        },
+        {
+          "id": 1178,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +671,7 @@
           "word_count": 486
         },
         {
-          "id": 981,
+          "id": 1080,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +686,7 @@
           "word_count": 323
         },
         {
-          "id": 1018,
+          "id": 1117,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +701,22 @@
           "word_count": 269
         },
         {
-          "id": 976,
+          "id": 1584,
+          "source": "Nature Methods",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Efficient evidence-based genome annotation with EviAnn",
+          "link": "https://www.nature.com/articles/s41592-026-03156-0",
+          "content": "Nature Methods, Published online: 03 July 2026; doi:10.1038/s41592-026-03156-0 EviAnn surpasses existing genome annotation methods by leveraging gene expression and protein sequence homology evidence to achieve higher accuracy and efficiency.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 242
+        },
+        {
+          "id": 1075,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,49 +731,19 @@
           "word_count": 208
         },
         {
-          "id": 957,
-          "source": "STAT News",
+          "id": 1130,
+          "source": "The Lancet",
           "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: Pharmalittle: We’re reading about Anthropic drug development goals, Trump drug plan snags, and more",
-          "link": "https://www.statnews.com/pharmalot/2026/07/01/anthropic-drug-development-goals-trump-plan-hitting-snag/?utm_campaign=rss",
-          "content": "Anthropic announced the availability of Claude Science, which optimizes its large language model for use in scientific labs and by drugmakers",
-          "pub_date": "Wed, 01 Jul 2026 13:41:23 +0000",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[World Report] USA to phase out PEPFAR support in South Africa",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01331-0/fulltext?rss=yes",
+          "content": "The USA is to wind down its PEPFAR support for South Africa—home to the world's largest HIV epidemic—prompting fears of a resurgence in infections. Sharmila Devi reports.",
+          "pub_date": "2026-07-04",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 141
-        },
-        {
-          "id": 955,
-          "source": "STAT News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: The moment Anthropic convinced me it’s serious about science",
-          "link": "https://www.statnews.com/2026/07/01/anthropic-claude-science-convinced-me-its-serious-ai-prognosis/?utm_campaign=rss",
-          "content": "AI Prognosis: The release of Claude Science suggests big model makers are getting serious about real science, and not just flashy problems.",
-          "pub_date": "Wed, 01 Jul 2026 15:11:47 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 139
-        },
-        {
-          "id": 948,
-          "source": "STAT News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: A ‘historic’ FDA clearance raises the question: Is the LLM an interface or the decision-maker?",
-          "link": "https://www.statnews.com/2026/07/02/fda-clearance-raises-questions-updoc-use-generative-ai-diabetes-treatment/?utm_campaign=rss",
-          "content": "The newly cleared device is based around an app that helps a patient manage their diabetes using a treatment plan defined by their doctor.",
-          "pub_date": "Thu, 02 Jul 2026 08:30:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 138
+          "word_count": 170
         }
       ],
       "quota": {
@@ -721,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 39,
-      "total_valid": 31,
+      "total_raw": 35,
+      "total_valid": 28,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +769,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1555,
+          "id": 1632,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Will VOP be enough to fight fraud and comply with PSR?",
+          "link": "https://www.finextra.com/videoarticle/3539/will-vop-be-enough-to-fight-fraud-and-comply-with-psr?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "At EBAday in Copenhagen, Erwin Kulk, Head of Service Development and Management, EBA Clearing joined FinextraTV to discuss the impact of Verification of Payee on fraud numbers. Kulk said it was a strong introduction but no 'silver bullet' and said that fraud has not reduced, but in fact continued to increase. And it continues to become more sophisticated, more organised and more difficult to tackle in isolation. Kulk emphasised that PSPs will need to complement VOP with collaborative, network-based tools to detect suspicious activity earlier, share relevant data in a structured way and react in real time.",
+          "pub_date": "Fri, 03 Jul 2026 11:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 612
+        },
+        {
+          "id": 1633,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +799,7 @@
           "word_count": 604
         },
         {
-          "id": 1522,
+          "id": 1603,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,22 +814,7 @@
           "word_count": 545
         },
         {
-          "id": 1520,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Regions Bank Accelerates Capital Markets Push With Frazer Lanier Acquisition",
-          "link": "https://www.pymnts.com/news/banking/2026/regions-bank-accelerates-capital-markets-push-with-frazer-lanier-acquisition/",
-          "content": "Regions Bank parent company Regions Financial Corp. has expanded its services by acquiring The Frazer Lanier Company, a Montgomery, Alabama-based full-service investment banking firm specializing in municipal and corporate securities. Regions announced in a Thursday (July 2) press release that it closed on the acquisition. The acquisition strengthens Regions’ capital markets capabilities, expands its municipal [&#8230;] The post Regions Bank Accelerates Capital Markets Push With Frazer Lanier Acquisition appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 02 Jul 2026 18:39:34 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 540
-        },
-        {
-          "id": 1512,
+          "id": 1601,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +829,67 @@
           "word_count": 505
         },
         {
-          "id": 1544,
+          "id": 1593,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "36% of Small Businesses Turn to FinTechs for Cross-Border Payments",
+          "link": "https://www.pymnts.com/news/cross-border-payments/2026/36percent-small-businesses-fintechs-cross-border-payments/",
+          "content": "For small businesses buying goods overseas, choosing a payment provider is becoming less about habit and more about finding the right tool for the job. The PYMNTS Intelligence report “The Cross-Border Opportunity: How Payments Innovation Can Help SMBs Go Global” found that while traditional banks remain the dominant provider for international payments, FinTech companies are [&#8230;] The post 36% of Small Businesses Turn to FinTechs for Cross-Border Payments appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 03 Jul 2026 08:00:59 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 493
+        },
+        {
+          "id": 1598,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "PayPal Secures EPC Seat to Help Guide Future of European Payments",
+          "link": "https://www.pymnts.com/legal/2026/paypal-secures-epc-seat-to-help-guide-future-of-european-payments/",
+          "content": "PayPal said Thursday (July 2) that it has secured a seat at the table to influence the future of payments in Europe by joining the European Payments Council (EPC). EPC brings together organizations that are involved with the rules, standards and infrastructure underpinning European payments. The council manages the rules for payment systems used across the Single [&#8230;] The post PayPal Secures EPC Seat to Help Guide Future of European Payments appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 03 Jul 2026 00:35:49 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 481
+        },
+        {
+          "id": 1600,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "What Payward’s Reap Purchase Says About B2B Stablecoin Cards",
+          "link": "https://www.pymnts.com/news/b2b-payments/2026/payward-reap-purchase-b2b-stablecoin-cards/",
+          "content": "In a winner-take-most market, firms typically want to be the ones winning and taking the most. Stable coins are shaping up to be exactly that kind of market. On Wednesday (July 1), Payward, the parent company behind the crypto platform Kraken, completed its acquisition of Reap in a deal valued at up to $600 million, [&#8230;] The post What Payward’s Reap Purchase Says About B2B Stablecoin Cards appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 02 Jul 2026 22:58:10 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 428
+        },
+        {
+          "id": 1620,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Signicat and TrustTech partner to bring reusable identity to European digital wallets",
+          "link": "https://www.finextra.com/pressarticle/110342/signicat-and-trusttech-partner-to-bring-reusable-identity-to-european-digital-wallets?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Signicat, the European digital identity leader and trust services provider, and TrustTech, the digital trust infrastructure company specialising in identity verification, reusable compliance checks and trusted signatures, today announced a partnership to help regulated businesses build reusable identity processes through private wallet ecosystems.",
+          "pub_date": "Fri, 03 Jul 2026 09:44:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 349
+        },
+        {
+          "id": 1625,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +904,7 @@
           "word_count": 318
         },
         {
-          "id": 1548,
+          "id": 1629,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +919,7 @@
           "word_count": 304
         },
         {
-          "id": 1549,
+          "id": 1630,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,22 +934,7 @@
           "word_count": 235
         },
         {
-          "id": 1533,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Major UK banks adopt Swift consumer payments framework",
-          "link": "https://www.finextra.com/newsarticle/48030/major-uk-banks-adopt-swift-consumer-payments-framework?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Barclays, HSBC, Lloyds and NatWest will be among the first financial institutions in the world to go live with Swift's new framework for cross-border retail payments.",
-          "pub_date": "Thu, 02 Jul 2026 14:19:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 166
-        },
-        {
-          "id": 1524,
+          "id": 1604,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,37 +949,7 @@
           "word_count": 161
         },
         {
-          "id": 1531,
-          "source": "PaymentsDive",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Payments events still ahead in 2026",
-          "link": "https://www.paymentsdive.com/news/payments-conferences-2026/761201/",
-          "content": "Stablecoins, fraud prevention and artificial intelligence have been hot topics at this year&rsquo;s payments industry conferences. There&rsquo;s more to come.",
-          "pub_date": "Wed, 01 Jul 2026 09:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 158
-        },
-        {
-          "id": 1546,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Paysera becomes direct Visa member",
-          "link": "https://www.finextra.com/pressarticle/110334/paysera-becomes-direct-visa-member?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Paysera LT, UAB has obtained the status of a direct Visa member (Issuing Principal Member) – one of the highest statuses in the payments industry.",
-          "pub_date": "Thu, 02 Jul 2026 15:03:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 146
-        },
-        {
-          "id": 1525,
+          "id": 1605,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +964,7 @@
           "word_count": 123
         },
         {
-          "id": 1526,
+          "id": 1606,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +979,37 @@
           "word_count": 107
         },
         {
-          "id": 1574,
+          "id": 72,
+          "source": "HuggingFace Daily Papers",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
+          "link": "https://arxiv.org/abs/2607.02466",
+          "content": "Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations -- triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the latter requires language supervision. Building on this Decomposition Hypothesis, we propose Task-Agnostic Pretraining (TAP), a two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data -- including discarded off-task trajectories and autonomous robot play -- via a self-supervised Inverse Dynamics objective. A lightweight second stage then grounds these priors in language using minimal expert data. On the SIMPLER benchmark, TAP matches models trained on over 1M expert trajectories while using orders of magnitude less labeled data, yielding a 10% absolute gain over standard behavior cloning. On a real-world WidowX platform, TAP retains 25% success under camera perturbations where internet-scale baselines collapse to 0%, demonstrating that task-agnost",
+          "pub_date": "2026-07-01T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1647,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "The 24/7/365 Treasury: How stablecoins are reducing the “weekend settlement gap”",
+          "link": "https://www.thunes.com/insights/learn/how-stablecoins-are-reducing-the-weekend-settlement-gap/",
+          "content": "Cross-border payments have become a 24/7, always-on experience – nearly.&#160; While cross-border payment initiation has become increasingly real-time, settlement has not kept pace. The movement of liquidity and settlement between financial institutions – the last mile – still depends heavily on banking hours, market cut-off times, correspondent banking networks and local holiday schedules.&#160; For treasury ... Read more &#187; The post The 24/7/365 Treasury: How stablecoins are reducing the “weekend settlement gap” first appeared on Thunes.com .",
+          "pub_date": "Tue, 30 Jun 2026 20:13:53 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 554
+        },
+        {
+          "id": 1652,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -949,94 +1024,49 @@
           "word_count": 180
         },
         {
-          "id": 446,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Rule-VLN: Bridging Perception and Compliance via Semantic Reasoning and Geometric Rectification",
-          "link": "https://arxiv.org/abs/2604.16993",
-          "content": "arXiv:2604.16993v2 Announce Type: replace Abstract: As embodied AI transitions to real-world deployment, the success of the Vision-and-Language Navigation (VLN) task tends to evolve from mere reachability to social compliance. However, current agents suffer from a \"goal-driven trap\", prioritizing physical geometry (\"can I go?\") over semantic rules (\"may I go?\"), frequently overlooking subtle regulatory constraints. To bridge this gap, we establish Rule-VLN, the first large-scale urban benchmark for rule-compliant navigation. Spanning a massive 29k-node environment, it injects 177 diverse regulatory categories into 8k constrained nodes across four curriculum levels, challenging agents with fine-grained visual and behavioral constraints. We further propose the Semantic Navigation Rectification Module (SNRM), a universal, zero-shot module designed to equip pre-trained agents with safety awareness. SNRM integrates a coarse-to-fine visual perception VLM framework with an epistemic mental map for dynamic detour planning. Experiments demonstrate that while Rule-VLN challenges state-of-the-art models, SNRM significantly restores navigation capabilities, reducing CVR by 19.26% and boosting",
-          "pub_date": "Thu, 02 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1199
-        },
-        {
-          "id": 665,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Evaluating Pretrained Music Embeddings for Cross-Performance Jazz Standard Recognition",
-          "link": "https://arxiv.org/abs/2607.00777",
-          "content": "arXiv:2607.00777v1 Announce Type: cross Abstract: Recognizing jazz standards from audio is a challenging form of tune-level music retrieval: different performances of the same standard may vary in tempo, key, arrangement, instrumentation, improvisational content, and even whether the head melody is present. We study this problem using a curated subset of the Jazz Trio Database designed for cross-performance standard recognition. We compare a from-scratch trained Harmonic CNN baseline against frozen pretrained music representations from recent music understanding foundation models, using both supervised probing and nearest-neighbor retrieval. Our results suggest that from-scratch spectrogram models overfit strongly to training performances, while pretrained embeddings provide better top-$k$ results but are sensitive to performer identity, which can be partially reduced with a lightweight contrastive projection. Our findings motivate jazz standard recognition as a useful stress test for music representation models and as a step toward retrieval-based standard identification. Project page: https://github.com/cagries/tipofmyear.",
-          "pub_date": "Thu, 02 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1142
-        },
-        {
-          "id": 179,
+          "id": 226,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Information Terra: A Narrative-Anchored Semantic-First Projection of Document Embeddings",
-          "link": "https://arxiv.org/abs/2606.30824",
-          "content": "arXiv:2606.30824v1 Announce Type: cross Abstract: We introduce Information Terra, a narrative-anchored semantic-first projection that places a document corpus on an Earth-like globe whose poles are two user-chosen endpoint documents and whose prime meridian is the great-circle geodesic between them on the embedding hypersphere -- so latitude encodes narrative progress and longitude thematic deviation. Land features are recovered from document density via kernel density estimation and labeled by theme. A narrative trail built from the underlying narrative coherence graph, and constrained to be monotone in geodesic progress, provides a readable storyline. The projection's axes are semantically grounded in the user's chosen narrative endpoints, and the globe metaphor affords rotation and antipodal reading. We demonstrate the method on a 540-article Cuban Protests corpus, showing a storyline from Obama's 2016 visit to the 2021 International Aid during the protests.",
-          "pub_date": "Thu, 02 Jul 2026 00:00:00 -0400",
+          "title": "AthDGC: An Open Diachronic Greek Treebank with Indo-European Parallels",
+          "link": "https://arxiv.org/abs/2606.15510",
+          "content": "arXiv:2606.15510v2 Announce Type: replace Abstract: AthDGC (\"Athens-PROIEL\") is an open, end-to-end workflow and dataset. It is, to the best of our knowledge, the first openly licensed dependency-parsed treebank of Greek that spans eight diachronic periods, namely Archaic, Classical, Koine, Late Antique, Byzantine, Late Byzantine, Early Modern, and Modern Greek, under a single PROIEL XML 2.0 schema, with verse-level cross-alignment of the New Testament to Latin (Vulgate), Gothic (Wulfila), Old Church Slavonic (Marianus), and Classical Armenian. AthDGC builds on the PROIEL Treebank Family (Haug and Johndal 2008; Eckhoff et al. 2018), which established the schema and the Koine-Greek reference set for the project. Annotation uses the Stanford Stanza PROIEL-trained workflow; sentence-level alignment uses LaBSE, a multilingual sentence-embedding model; word-level alignment uses multilingual-BERT attention through the AwesomeAlign procedure. The v0.4 release provides curated samples and the open-source toolkit; the full annotated corpus partitions remain under v0.5 audit on the Greek national HPC. Quantitative scale, per-witness verse counts, and per-period annotated-row counts are repor",
+          "pub_date": "Fri, 03 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 975
+          "word_count": 1200
         },
         {
-          "id": 1516,
-          "source": "PYMNTS.com",
+          "id": 292,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Sen. Warner Demands DOJ Probe Into Homeland Security Network Breach",
-          "link": "https://www.pymnts.com/cybersecurity/2026/sen-warner-demands-doj-probe-into-homeland-security-network-breach/",
-          "content": "Sen. Mark Warner, D-Va., vice chair of the Senate Select Committee on Intelligence, has called on the Department of Homeland Security (DHS) and the Department of Justice (DOJ) to look into a recently revealed breach of a DHS information-sharing network. That network, the Homeland Security Information Network (HSIN), is used by federal, state, local, tribal, territorial law enforcement and private sector partners [&#8230;] The post Sen. Warner Demands DOJ Probe Into Homeland Security Network Breach appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 02 Jul 2026 19:47:57 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Meta-Benchmarks for Financial-Services LLM Evaluation",
+          "link": "https://arxiv.org/abs/2607.01740",
+          "content": "arXiv:2607.01740v1 Announce Type: new Abstract: Public LLM leaderboards optimise for global average performance and do not capture the specific cognitive demands of financial-services work: a model that leads on MMLU-Pro may underperform on document-grounded compliance reasoning, and a coding leader may handle multi-turn customer interactions poorly. We present a meta-benchmarking framework that organises 452 publicly reported benchmarks into 41 O*NET Generalized Work Activities and aggregates those into 38 BIAN banking business domains spanning sales, operations, risk, and support work. A multiplicative weighting scheme (discrimination x coverage x recency), computed over a rolling model window, rewards benchmarks that still separate the best models, are widely reported, and remain in active use, suppressing saturated legacy tests automatically. These weights scale the K-factor in a pairwise Elo tournament, producing cross-benchmark-comparable work-activity scores without raw score normalisation; business-domain scores are weighted averages of the constituent work-activity Elos. We demonstrate the framework on a point-in-time public snapshot covering 288 models across 25 organisat",
+          "pub_date": "Fri, 03 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 533
+          "word_count": 1200
         },
         {
-          "id": 1521,
-          "source": "PYMNTS.com",
+          "id": 564,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Google Launches Digital ID Partnership With Poland’s Authologic",
-          "link": "https://www.pymnts.com/authentication/digital-identity/2026/google-launches-digital-id-partnership-with-polands-authologic/",
-          "content": "Google has formed a digital identity partnership with Polish ID-verification startup Authologic. “Google Wallet already lets users store verified identity credentials issued by governments, banks, or Google itself on their phones,” Authologic wrote on its blog Wednesday (July 1). “Using our OmniID platform, businesses can now accept all these credentials, including Google ID Pass, the digital [&#8230;] The post Google Launches Digital ID Partnership With Poland’s Authologic appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 02 Jul 2026 18:32:57 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Adaptive Contracts for Cost-Effective AI Delegation",
+          "link": "https://arxiv.org/abs/2603.17212",
+          "content": "arXiv:2603.17212v2 Announce Type: replace-cross Abstract: When organizations delegate text generation tasks to AI providers via pay-for-performance contracts, expected payments rise when evaluation is noisy. As evaluation methods become more elaborate, the economic benefits of decreased noise are often overshadowed by increased evaluation costs. In this work, we introduce adaptive contracts for AI delegation, which allow detailed evaluation to be performed selectively after observing an initial coarse signal in order to conserve resources. We make three sets of contributions: First, we provide efficient algorithms for computing optimal adaptive contracts under natural assumptions or when core problem dimensions are small, and prove hardness of approximation in the general unstructured case. We then formulate alternative models of randomized adaptive contracts and discuss their benefits and limitations. Finally, we empirically demonstrate the benefits of adaptivity over non-adaptive baselines using question-answering and code-generation datasets.",
+          "pub_date": "Fri, 03 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 509
-        },
-        {
-          "id": 1514,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Microsoft Spends $2.5 Billion on Customer AI Deployments",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-spends-2-5-billion-on-customer-ai-deployments/",
-          "content": "Microsoft will spend $2.5 billion on a new unit aimed at helping its customers implement artificial intelligence (AI). The Microsoft Frontier Company, announced Thursday (July 2), will also embed 6,000 industry and engineering experts with the tech giant’s customers in what it calls a step above what is known as “forward deployed engineering” (FDE). “The [&#8230;] The post Microsoft Spends $2.5 Billion on Customer AI Deployments appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 02 Jul 2026 20:58:04 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 463
+          "word_count": 1061
         }
       ],
       "quota": {
@@ -1044,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 235,
-      "total_valid": 51,
+      "total_raw": 234,
+      "total_valid": 53,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1743,
-    "dup": 384,
-    "nocontent": 403,
-    "noise": 3
+    "total_raw": 1821,
+    "dup": 463,
+    "nocontent": 399,
+    "noise": 2
   }
 }
