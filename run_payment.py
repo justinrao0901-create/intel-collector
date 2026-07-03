@@ -84,6 +84,10 @@ def main():
     ap.add_argument("--end", default=None)
     ap.add_argument("--days", type=int, default=14)
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--online-only", action="store_true",
+                    help="只抓深度文章在线池,跳过间隔判断 + 跳过本地日报聚合(events=[]);供 GitHub collect-payment 用")
+    ap.add_argument("--no-online", action="store_true",
+                    help="只聚合本地日报支付事件,跳过间隔判断 + 跳过在线深度抓取(deep=[]);供 Cowork 本地离线运行,深度池由 GitHub 另抓")
     args = ap.parse_args()
     end = args.end or util.today_str()
     _, settings, _ = util.settings()
@@ -96,32 +100,45 @@ def main():
         line = f"[{datetime.now(timezone.utc).isoformat()}] {m}"; print(line); log_f.write(line + "\n"); log_f.flush()
 
     emit(f"=== 支付双周报采集 END={end} ({args.days}天) ===")
-    ok_run, why = _interval_ok(end, args.force)
-    emit(f"间隔判断: {why}")
-    if not ok_run:
-        emit("→ 未到周期,跳过(用 --force 强制)"); log_f.close(); sys.exit(0)
+    # 间隔判断:--online-only(GitHub,无 schedule 恒跑)/ --no-online(Cowork,cadence 已由任务步0 决定)均跳过
+    if not (args.online_only or args.no_online):
+        ok_run, why = _interval_ok(end, args.force)
+        emit(f"间隔判断: {why}")
+        if not ok_run:
+            emit("→ 未到周期,跳过(用 --force 强制)"); log_f.close(); sys.exit(0)
     try:
-        emit("聚合 14 天日报💳支付板块...")
-        agg = aggregate.aggregate(end, args.days, sections=["payment"])
-        events = agg["sections"].get("payment", [])
-        emit(f"  读到 {agg['dailies_loaded']} 份日报 → 支付事件池 {len(events)}")
+        # 本地日报💳支付事件池(--online-only 跳过)
+        if args.online_only:
+            events, dailies_loaded = [], 0
+            emit("--online-only:跳过本地日报聚合(events 空;由 Cowork 本地另聚)")
+        else:
+            emit("聚合 14 天日报💳支付板块...")
+            agg = aggregate.aggregate(end, args.days, sections=["payment"])
+            events = agg["sections"].get("payment", [])
+            dailies_loaded = agg["dailies_loaded"]
+            emit(f"  读到 {dailies_loaded} 份日报 → 支付事件池 {len(events)}")
 
-        emit(f"抓深度文章 Layer1 候选(每源上限 {deep_cap})...")
-        deep_cands, deep_health = collect_deep(end, args.days, http, emit, cap=deep_cap)
-        alarms = compute_alarms(deep_health, {})   # 深度源首期无 prior,标 fail/zero
-        emit(f"  深度候选 {len(deep_cands)} 篇 / {len(DEEP_SOURCES)} 源")
-        if alarms["fail"] or alarms["persistent_zero"]:
-            emit(f"  ⚠️ 深度源告警: 失败{alarms['fail']} 零产{alarms['persistent_zero']}")
+        # 在线深度文章候选池(--no-online 跳过)
+        if args.no_online:
+            deep_cands, deep_health = [], {}
+            emit("--no-online:跳过在线深度抓取(deep 空;由 GitHub collect-payment 另抓、Pages 提供)")
+        else:
+            emit(f"抓深度文章 Layer1 候选(每源上限 {deep_cap})...")
+            deep_cands, deep_health = collect_deep(end, args.days, http, emit, cap=deep_cap)
+            alarms = compute_alarms(deep_health, {})   # 深度源首期无 prior,标 fail/zero
+            emit(f"  深度候选 {len(deep_cands)} 篇 / {len(DEEP_SOURCES)} 源")
+            if alarms["fail"] or alarms["persistent_zero"]:
+                emit(f"  ⚠️ 深度源告警: 失败{alarms['fail']} 零产{alarms['persistent_zero']}")
 
-        out = {"end": end, "days": args.days, "dailies_loaded": agg["dailies_loaded"],
+        out = {"end": end, "days": args.days, "dailies_loaded": dailies_loaded,
                "events": events, "deep_candidates": deep_cands, "deep_health": deep_health,
                "meta": {"events": len(events), "deep": len(deep_cands)}}
         outpath = util.path_for("prepared", f"prepared-payment-{end}.json")
         json.dump(out, open(outpath, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
         emit(f"✅ 完成 → {outpath}")
         emit(f"   事件{len(events)} 深度候选{len(deep_cands)}")
-        if agg["dailies_loaded"] < args.days:
-            emit(f"⚠️ 仅 {agg['dailies_loaded']}/{args.days} 份日报归档,事件池可能偏薄(Cowork 侧酌情 WebSearch 补)")
+        if not args.online_only and dailies_loaded < args.days:
+            emit(f"⚠️ 仅 {dailies_loaded}/{args.days} 份日报归档,事件池可能偏薄(Cowork 侧酌情 WebSearch 补)")
     except Exception as e:
         emit(f"❌ 异常: {e}\n{traceback.format_exc()}"); sys.exit(1)
     finally:
