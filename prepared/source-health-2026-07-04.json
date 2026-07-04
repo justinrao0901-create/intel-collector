@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 9,
+      "count": 3,
       "ok": true
     },
     "Sequoia Capital": {
@@ -70,19 +70,19 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 152,
+      "count": 0,
       "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 353,
+      "count": 0,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 273,
+      "count": 0,
       "ok": true
     },
     "Import AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 14,
+      "count": 2,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
+      "count": 0,
       "ok": true
     },
     "WHO News": {
@@ -178,32 +178,32 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 17,
+      "ok": true
     },
     "Lancet Infect Dis": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 7,
+      "ok": true
     },
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 11,
+      "ok": true
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 4,
+      "ok": true
     },
     "Immunity": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 11,
+      "ok": true
     },
     "Science": {
       "section": "vaccine",
@@ -232,7 +232,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 21,
+      "count": 22,
       "ok": true
     },
     "Nature Immunology": {
@@ -304,8 +304,8 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 16,
+      "ok": true
     },
     "BioPharma Dive": {
       "section": "vaccine",
@@ -352,8 +352,8 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 11,
+      "ok": true
     },
     "bioRxiv SynBio": {
       "section": "synbio",
@@ -389,7 +389,7 @@
       "section": "cross",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "NEJM AI": {
       "section": "cross",
@@ -412,19 +412,19 @@
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 2,
+      "count": 1,
       "ok": true
     },
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 4,
+      "count": 1,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 39,
+      "count": 29,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -442,7 +442,7 @@
     "Cointelegraph Payments": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
+      "count": 0,
       "ok": true
     },
     "Ledger Insights": {
@@ -504,25 +504,24 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Cell",
-      "Cell Host Microbe",
-      "Cell Reports Medicine",
-      "Cell Systems",
       "ClinicalTrials.gov",
-      "Immunity",
       "Import AI",
-      "Lancet Digital Health",
-      "Lancet Infect Dis",
       "NEJM",
       "NEJM AI",
       "Sci Transl Med",
       "Science",
-      "Science Immunology",
-      "The Lancet"
+      "Science Immunology"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "Cointelegraph Payments",
+      "STAT News",
+      "arXiv cs.AI",
+      "arXiv cs.CL",
+      "arXiv cs.LG"
+    ],
     "persistent_zero": [
       "JAMA",
+      "Lancet Digital Health",
       "Thunes",
       "bioRxiv SynBio"
     ]
