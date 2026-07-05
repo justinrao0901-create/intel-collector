@@ -2241,6 +2241,51 @@
       "summary": "Nature Immunology, Published online: 29 June 2026; doi:10.1038/s41590-026-02594-4 New perspectives, insights and therapy applications can arise from exploring the interactions between the immune and nervous systems."
     },
     {
+      "title": "TRIOPS: A deep learning framework for prediction of T cell receptor-MHC binding specificity",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735718v1?rss=1",
+      "section": "vaccine",
+      "source": "bioRxiv Immunology",
+      "is_review": false,
+      "pub": "2026-07-04",
+      "summary": "T cell receptor (TCR) recognition is MHC-restricted, yet accurately predicting a TCR's restricting HLA allele remains an open problem. We present TRIOPS, a dual-branch convolutional model with soft cross-attention that predicts TCR-MHC restriction from amino acid sequence alone. TRIOPS uses cross-reactivity-aware negative sampling by HLA pseudosequence similarity to reduce allele-boundary label noise, extending prediction to alleles absent from training. TRIOPS reaches a held-out AUC of 0.97 for paired TCR; and 0.92 for TCR-only inputs, generalizes to unseen receptors and HLA alleles, and after locus-specific calibration, assigns TCR clonotypes to their likeliest restricting allele across an individual's HLA genotype. In TCGA tumors, TCR repertoires preferentially engage the expression-lost allele at HLA-A and HLA-B and the retained allele at HLA-C, recapitulating from bulk tumor RNA-seq the allele specific HLA loss previously linked to immune escape."
+    },
+    {
+      "title": "Peptide allosteric inhibitor of TNFR1 signaling attenuates inflammation and rheumatoid arthritis pathology in human TNF transgenic mice",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735704v1?rss=1",
+      "section": "vaccine",
+      "source": "bioRxiv Immunology",
+      "is_review": false,
+      "pub": "2026-07-04",
+      "summary": "Inhibition of tumor necrosis factor receptor 1 (TNFR1) represents a major therapeutic strategy for chronic autoimmune and inflammatory diseases such as rheumatoid arthritis (RA). As current anti-TNF therapies can cause adverse side effects due to global blockade of the ligand, receptor-specific inhibition of TNFR1 signaling has emerged as a highly sought-after strategy. We have recently identified a novel peptide-based allosteric inhibitor, FKC (FKCRRWQWRMKK), that targets TNFR1 conformationally active region to alter receptor conformational states and disable receptor-ligand signaling complex. Here, we evaluated the therapeutic efficacy of FKC in a human TNF (hTNF) transgenic mouse model of RA. FKC treatment improves clinical RA scores in hTNF mice, accompanied by enhanced grip strength and increased walking distance. Importantly, FKC treatment inhibits TNF/TNFR1-mediated inflammation and attenuates RA pathology in hTNF mice. Together, our findings establish FKC as a promising new cla"
+    },
+    {
+      "title": "Colorectal cancers with distinct metastatic potential trigger divergent early T cell responses",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735606v1?rss=1",
+      "section": "vaccine",
+      "source": "bioRxiv Immunology",
+      "is_review": false,
+      "pub": "2026-07-04",
+      "summary": "Colorectal cancer (CRC) remains a leading cause of cancer mortality, with most cases refractory to immunotherapy. Distinguishing tumor-induced from steady-state mucosal T cell responses has been a critical barrier to understanding antitumor immunity in CRC. Using orthotopic transplantation of CRC organoids with and without metastatic potential, combined with temporal T cell fate-mapping, we show that non-metastatic tumors elicit early recruitment of CD8{beta}+ and CD4+ T cells that acquired cytotoxic and Th1-like programs, whereas pro-metastatic tumors induce a naive-like, hypoactivated state. Tumor-infiltrating CD4+ T cells underwent clonal expansion, including clones recognizing microbial and dietary antigens. T cells in physical contact with tumor cells, identified by uLIPSTIC, were enriched for expanded and cytotoxic clones. Fate-mapped T cells from non-metastatic tumors suppressed tumor growth in an IFN-{gamma}-dependent manner, whereas pro-metastatic tumor-derived T cells failed "
+    },
+    {
+      "title": "PRISM : Peptide-specificity annotation of T-cell receptors with uncertainty quantification",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735715v1?rss=1",
+      "section": "vaccine",
+      "source": "bioRxiv Immunology",
+      "is_review": false,
+      "pub": "2026-07-04",
+      "summary": "Mapping T-cell receptor (TCR) sequences to their cognate peptide-major histocompatibility complex (pMHC) ligands underlies both basic immunology and T-cell target discovery, yet current models aimed at predicting TCR specificity are limited by sparse labels, viral-biased training data, and an inability to recognize receptors outside their training distribution. We present PRISM, an uncertainty-aware metric-learning framework for TCR{beta} sequence representation. PRISM embeds receptors into a peptide-organized latent space, returns top-k peptides by nearest-neighbor retrieval, and abstains on out-of-distribution receptors by modeling an intrinsic uncertainty that tracks annotation correctness. To offset the viral bias of public databases, PRISM augments training data with structure-guided synthetic receptors that diversify TCR sequences while preserving the energetics of the TCR-pMHC interface. Across a held-out set of 923 peptides and the independent IMMREP23 benchmark, PRISM matches "
+    },
+    {
+      "title": "Microbial induction of MHC-II expression in colon cancer cells overcomes immunotherapy resistance and limits metastasis",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735621v1?rss=1",
+      "section": "vaccine",
+      "source": "bioRxiv Immunology",
+      "is_review": false,
+      "pub": "2026-07-04",
+      "summary": "Colorectal cancer remains a major cause of cancer mortality, and most microsatellite stable tumors derive little benefit from immune checkpoint blockade. Here, we identify a microbiome-dependent mechanism that converts immune-refractory colorectal cancer into a more immunologically responsive state. Using orthotopic mouse models spanning distinct genetic and immunologic contexts, we show that a Helicobacter-containing microbiome suppresses primary tumor growth and limits metastasis. This protective state is associated with increased intratumoral lymphocyte infiltration and stronger effector programs. Mechanistically, microbial exposure induces MHC class II expression in colon cancer cells to promote anti-tumor immunity. Tumor-intrinsic loss of CIITA abrogates microbial protection, whereas enforced CIITA expression is sufficient to increase intratumoral T cell accumulation, restrict progression and metastasis, and sensitize microsatellite-stable tumors to PD-1 and CTLA-4 blockade. In hu"
+    },
+    {
       "title": "Trans-presentation of IL-15 by IL15Rα attenuates tumor immune surveillance and is dispensable for IL-15-dependent tumor growth control",
       "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.732683v1?rss=1",
       "section": "vaccine",
@@ -2464,51 +2509,6 @@
       "is_review": false,
       "pub": "2026-07-01",
       "summary": "Maintenance of mitochondrial homeostasis is required to balance the host-pathogen interface during Mycobacterium tuberculosis (Mtb) infection. Here, we identify the non-canonical TRIM family member Trim14 as a critical regulator of mitochondrial integrity in Mtb-infected macrophages. Specifically, we demonstrate that Trim14 preserves mitochondrial membrane polarization and limits macrophage apoptosis by controlling phosphorylation and mitochondrial targeting of Stat3. When targeted to mitochondria, Stat3 restricts opening of the mitochondrial permeability transition pore, which raises the macrophage threshold for apoptotic commitment. In vivo, loss of Trim14 enhances apoptosis of macrophages and dendritic cells, leading to augmented antimycobacterial immunity marked by increased CD8+ T cell activation and effector function. Together, these findings define a Trim14-mitochondrial Stat3 axis that suppresses host-protective apoptosis during Mtb infection and pinpoint mitochondrial Stat3 as"
-    },
-    {
-      "title": "Disruption of a CCR5-like immunoglobulin gene is linked to plague susceptibility in black-footed ferrets",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734856v1?rss=1",
-      "section": "vaccine",
-      "source": "bioRxiv Immunology",
-      "is_review": false,
-      "pub": "2026-07-01",
-      "summary": "Black-footed ferrets (Mustela nigripes) are highly susceptible to sylvatic plague caused by Yersinia pestis, but the genetic basis of this vulnerability remains poorly understood. Here, comparative immunogenomic analyses across Carnivora species identified a conserved class of immunoglobulin lambda variable (IGLV) genes with unusually long antigen-binding sites (CDRL1) that are common among Caniformia species but absent in Feliformia species. First discovered in the domestic ferret (Mustela putorius furo), these genes encode tyrosine-rich and anionic motifs resembling the chemokine receptor CCR5 and contain experimentally validated sulfotyrosines previously associated with pathogen-interacting interfaces. Evolutionary analyses revealed distinct selective pressures across Caniformia lineages and showed strong purifying selection acting on long-CDRL1 IGLV genes in mustelids and bears. Antibody repertoire sequencing demonstrated that these genes are actively utilized in expressed repertoi"
-    },
-    {
-      "title": "Sequential infection reprograms the immune landscape to shape future responses",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734836v1?rss=1",
-      "section": "vaccine",
-      "source": "bioRxiv Immunology",
-      "is_review": false,
-      "pub": "2026-07-01",
-      "summary": "Mouse models have been instrumental in defining immune mechanisms but often fail to capture the complexity of human immunity, limiting clinical translation. A major limitation is the immunological immaturity of specific pathogen-free (SPF) mice relative to pathogen-experienced adult humans. Here, we use a sequential infection (SI) model that recapitulates cumulative pathogen exposure and define its impact on immune composition and function. Beyond the previously reported expansion of memory T cells, SI induced durable, system-wide remodeling across lymphoid and non-lymphoid tissues, reshaping innate and adaptive immune populations, tissue-resident immunity, and hematopoietic output. Single-cell transcriptomic analyses revealed inflammatory imprinting of naive CD4 and CD8 T cells, whereas memory T cells acquired enhanced effector programs coupled with reduced biosynthetic activity, transcriptional states that more closely resemble those of pathogen-experienced adult humans. Functionally"
-    },
-    {
-      "title": "CD56dimCD16dim NK cells are the dominant effector cells against HIV-infected primary T-cells",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734820v1?rss=1",
-      "section": "vaccine",
-      "source": "bioRxiv Immunology",
-      "is_review": false,
-      "pub": "2026-07-01",
-      "summary": "Despite being rare among circulating natural killer (NK) cells and expressing 10-fold less CD16 than the predominant CD56dimCD16bright population, CD56dimCD16dim NK cells are expanded in HIV long-term elite controllers, yet their capacity to kill HIV-infected cells remained untested. Here, we show that these rare cells are the dominant effectors against HIV-infected T-cells, mediating approximately 4-fold higher direct cytotoxicity and 3-4-fold higher antibody-dependent cellular cytotoxicity (ADCC) than CD56dimCD16bright cells, and serially engaging multiple targets. This advantage is intrinsic, unexplained by cytotoxic granule content or inhibitory receptors recognizing MHC class I. Direct killing depends on NKG2D recognition of Vpr-induced ligands, with NKG2D elevated on CD56dimCD16dim cells; ADCC requires both NKG2D and ADAM17-mediated CD16 turnover for serial engagement. These findings explain the elite-controller reorganization, reveal that NK effector dominance is target-tuned ra"
-    },
-    {
-      "title": "Viral capsid delivery of cGAMP enhances STING-dependent antitumor immune response",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734859v1?rss=1",
-      "section": "vaccine",
-      "source": "bioRxiv Immunology",
-      "is_review": false,
-      "pub": "2026-07-01",
-      "summary": "Therapies to activate the STING immune response pathway represent promising potential anticancer treatments. However, the native STING activating molecule, 2,3-cGAMP, is a poor drug candidate due to its susceptibility to nuclease degradation and its relatively poor cell uptake. In this study, we present a nanoscale delivery vehicle based on the bacteriophage MS2 virus-like particle that can both protect cGAMP and deliver it into cells to access and bind cytosolic STING. MS2-delivered cGAMP achieved greatly increased STING activation potency relative to both free cGAMP and a nuclease-resistant synthetic cGAMP analog. In an in vivo murine colon carcinoma model, MS2-cGAMP elicited significant and prolonged antitumor activity in a STING-dependent manner at 50-fold lower concentrations relative to free cGAMP and synthetic analogs. These results demonstrate that MS2 delivery of cGAMP can yield a highly potent STING agonist immunotherapy with in vivo anticancer activity."
-    },
-    {
-      "title": "ARL15 promotes inflammatory fibroblast activation and disease severity in rheumatoid arthritis: integrated transcriptomic and collagen-induced arthritis model analyses",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.733622v1?rss=1",
-      "section": "vaccine",
-      "source": "bioRxiv Immunology",
-      "is_review": false,
-      "pub": "2026-07-01",
-      "summary": "BackgroundADP-ribosylation factor-like protein 15 (ARL15) is a rheumatoid arthritis (RA) susceptibility gene identified through GWAS. Previous studies suggested a role for ARL15 in synovial fibroblast (SF) pathogenicity, but its contribution to inflammatory arthritis remains unclear. We investigated the inflammatory role of ARL15 and its therapeutic potential in RA. MethodsARL15 was overexpressed in MH7A cells followed by bulk RNA sequencing and pathway enrichment analyses. Therapeutic relevance was evaluated in collagen-induced arthritis (CIA) mouse model using anti-ARL15 monoclonal antibodies, ARL15-targeting siRNA, or isoquinoline. Arthritis scores, histopathology, micro-CT and serum cytokines were assessed. Publicly available single-cell RNA sequencing (scRNA-seq) datasets were analyzed to determine ARL15 expression in RASF subsets. ResultsARL15 overexpression induced a pro-inflammatory transcriptional program characterized by upregulation of IL1A, IL1B, IL6, IL8, CXCL1, CXCL10, an"
     },
     {
       "title": "Impact of wildfire-related fine particulate matter on tuberculosis notifications in Brazil: a nationwide panel study, 2003-2023",
@@ -4887,6 +4887,96 @@
       "summary": "Publication date: Available online 12 June 2026 Source: Metabolic Engineering Author(s): William B. Black, Kristina McKee, Kelly N. Richardson, Samer Saleh, Mikhail Gednov, Austin Si, Han Li"
     },
     {
+      "title": "AI-enabled rhodopsin design for blue-light enhanced bacterial growth",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.735265v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-30",
+      "summary": "We developed an AI-guided design pipeline that generated and validated non-natural microbial rhodopsins with spectral properties not yet known in nature. The pipeline comprised a three-stage in silico design, a genetic algorithm (GA) for sequence generation, a stacked LASSO and XGBoost machine-learning (ML) regressor for spectral prediction and fitness ranking, and a Markov-based sequence plausibility filter to enforce proton pumping like characteristics. Four candidate rhodopsins (APR1, APR2, APR6, and APR7) targeting blue light absorption were designed and AlphaFold3 structural modelling predicted retinal binding pocket architecture consistent with outward proton-pumping function. Experimental characterisation confirmed that all four variants absorbed light at ∼410 nm and significantly promoted the growth of Cupriavidus necator under blue light illumination. This study demonstrates that AI-enabled design can engineer proteins with no natural precedent, generating light-harvesting rho"
+    },
+    {
+      "title": "Computational design of microbial and animal rhodopsin soluble analogues",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734960v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-29",
+      "summary": "The computational design of soluble analogues of membrane proteins has unlocked exciting opportunities for the integration of unique membrane protein functions into soluble proteins. Here, we use AF2 seq to generate accurate soluble analogues of both animal and microbial rhodopsins, based on the membrane GPCR topology, and the microbial rhodopsin transmembrane fold. We characterize the analogues and demonstrate that they are well-folded and highly thermostable. Furthermore, they exhibit the expected red shift characteristic of retinal binding. Top-down mass spectrometry confirms the placement of retinal covalent attachment, while X-ray crystallography validates the structural fidelity of the microbial rhodopsin analogue. Notably, the microbial rhodopsin analogue retains the primary reaction of the retinal photocycle, closely matching that of the native membrane protein. Overall, this work advances the possibility to transfer unique membrane protein functions, such as retinal photoswitc"
+    },
+    {
+      "title": "Engineering Methyl-Coenzyme M Reductase for Enhanced Methane and Carbon Dioxide Capture through Biofilm Growth",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734734v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-27",
+      "summary": "Methane is a potent greenhouse gas, nearly half of which is consumed anaerobically by anaerobic methanotrophic archaea (ANME) through methyl-coenzyme M reductase (Mcr). However, ANME cannot be grown as pure cultures, and obtaining active ANME Mcr in vitro remains extremely challenging, preventing previous efforts to engineer this key enzyme. Here, we used directed evolution in the methanogen Methanosarcina acetivorans to enhance ANME-1 Mcr (Mcr ANME-1 ) activity for methane and carbon dioxide capture by selecting Mcr ANME-1 variants with improved growth during methane-dependent cultivation. As a result, we discovered two beneficial substitutions in the catalytic α-subunit of Mcr ANME-1 , S60P and I154V, that increased biofilm growth as well as acetate production and methane capture. AlphaFold structural predictions suggest possible mechanistic explanations for these beneficial substitutions. These findings demonstrate that Mcr can be engineered to enhance methane and carbon dioxide cap"
+    },
+    {
+      "title": "Systematic dissection of Cas12a-mediated precision genome editing defines design principles for genome-scale variant engineering",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734799v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-29",
+      "summary": "Cas9 precision editing is increasingly predictable because guide, donor and target-context effects have been systematically characterized. Extending this framework to other nucleases is essential for installing variants outside convenient Cas9 target space. Cas12a provides a T-rich protospacer-adjacent motif (PAM) alternative, but determinants of efficient donor-templated Cas12a editing remain poorly defined. Here, we systematically dissected Cas12a precision editing in Saccharomyces cerevisiae across nuclease, direct repeat, expression, crRNA, donor, genomic context and time-course variables. Reporter and amplicon-sequencing assays showed that cleavage activity alone did not predict precise editing. Highly active configurations often reduced viability or lost edited alleles over time, whereas attenuated configurations better preserved programmed edits. Enhanced AsCas12a edited rapidly and tolerated shorter crRNAs, resulting in a narrower editing window, while an attenuated FnCas12a co"
+    },
+    {
+      "title": "RNA editing and trans-splicing with reprogrammed tracrRNAs",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.28.735058v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-29",
+      "summary": "Natural CRISPR-Cas9 systems rely on crRNA-tracrRNA duplexes to guide DNA targeting. Prior work showed that tracrRNAs could be reprogrammed to hybridize to cellular RNAs, resulting in their conversion into non-canonical crRNAs that enabled RNA detection and recording. However, the fate of the cellular RNA and the engineering opportunities it affords remain unexplored. Here, we show that the hybridized RNA is not inactivated, allowing the recruitment of Cas9 to the RNA duplex to drive RNA base editing and trans-splicing. Fusing ADAR2dd to dSpyCas9 and systematically engineering the reprogrammed tracrRNA (Rptr) enabled efficient and tunable A-to-I RNA editing, with on- and off-target profiles comparable to dCas13. The methodology extended to the compact CjeCas9 that could be further tailored for RNA targeting by deleting the HNH domain and mutating the PAM-interacting domain. Finally, utilizing Rptrs to block splicing enabled 3′ and 5′ RNA trans-splicing. Thus, Rptrs offer a versatile alt"
+    },
+    {
+      "title": "A Minimal Packaging Signal Enables Production of High-Purity Phage-Like Particles for CRISPR-Cas Antimicrobials in\n                  Staphylococcus aureus",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734846v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-29",
+      "summary": "Precision phage therapeutics provide a promising strategy to combat multidrug-resistant pathogens, including Staphylococcus aureus . Efficient, specific packaging of genetic cargoes remains challenging. Using modular design principles, we report a minimal phagemid packaging signal consisting of the phage terminase small subunit under its native promoter that significantly outperforms conventional packaging signals. The utility of this synthetic terS operon was demonstrated through production of highly concentrated and genetically pure CRISPR-Cas antimicrobials. To circumvent CRISPR-mediated self-targeting during antimicrobial generation, a terS -deficient strain was engineered to express the anti-CRISPR protein AcrIIA4, enabling titers above 10 10 transducing units per milliliter (TRU/mL) with over 94% purity. With a high-copy origin of replication module, CRISPR-Cas phage-like particle titers could approach 10 12 TRU/mL. We discovered that pure CRISPR-Cas antimicrobials are potent and"
+    },
+    {
+      "title": "In vivo spatial coordination with synthetic paracrine signaling",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734902v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-29",
+      "summary": "The immune system uses paracrine signaling to spatially confine potent responses such as inflammation. A bio-orthogonal synthetic paracrine system could enable engineering of analogous multicellular circuits in which different cell types coordinate their functions in a spatially organized fashion. Here, using the plant hormone auxin as a bio-orthogonal chemical signal, we introduce programmable paracrine circuits that distribute sensing and effector functions to different cell types to spatially restrict responses in mouse xenografts. Cells engineered to express auxin biosynthetic genes generated auxin-dense regions with tunable length scales in vivo. This localized signaling ability enabled design of a multicellular sentinel-effector system, in which THP-1 sentinel cells conditionally produce auxin in regions expressing the tumor-specific antigen EGFRvIII, and Jurkat effector cells respond by locally modulating the activity of a chimeric antigen receptor (CAR). This two-cell type syst"
+    },
+    {
+      "title": "Synthetic expansion of non-coding DNA reveals physiological constraints on genome size",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734810v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-27",
+      "summary": "Genome size varies widely across eukaryotes, largely because of differences in non-coding DNA, but the physiological consequences of this variation remain unclear. To directly test how non-coding DNA abundance influences cellular physiology, we engineered a scalable genome-expansion system in the budding yeast S. cerevisiae that increases genome size while leaving the endogenous genome unchanged. By sequentially fusing yeast artificial chromosomes (YACs) carrying predominantly non-coding human DNA, we generated strains with up to 12.8 Mb of additional DNA, approximately doubling the native genome. Genome expansion reduced growth rate and increased cell size in proportion to the amount of non-coding DNA. Spike-in-normalized RNA-seq and ChIP-seq revealed that the non-coding DNA is pervasively transcribed, with a proportional amount of RNA polymerase II being redistributed from the endogenous genome to the added non-coding sequences. This resulted in a global decrease in the endogenous mR"
+    },
+    {
+      "title": "Biosensor-guided evolution of chalcone synthase enhances biosynthesis of natural and non-natural flavanones",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.12.731874v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-12",
+      "summary": "Flavonoids constitute a large class of natural products widely investigated for their bioactive properties, with microbial production offering a potentially scalable alternative to plant extraction. However, achieving structural diversification of these compounds in microbial systems remains challenging, as modification of the flavonoid B-ring typically relies on downstream tailoring enzymes. An alternative strategy is to exploit the intrinsic promiscuity of the canonical flavanone biosynthesis pathway to introduce structural variation at an early stage. Here, we sought to improve microbial production of diverse flavanones by systematically leveraging pathway promiscuity. By constructing a combinatorial library of pathways comprising 4-coumarate-CoA ligase, chalcone synthase, and chalcone isomerase, we enabled the conversion of a panel of ring-substituted cinnamic acid precursors into ten natural and non-natural flavanones. In parallel, we established a genetically encoded biosensor ba"
+    },
+    {
+      "title": "Engineering tumor-homing bacteria as membrane-anchored immune checkpoint-blockade interfaces",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.06.10.731477v1?rss=1",
+      "section": "synbio",
+      "source": "bioRxiv SynBio",
+      "is_review": false,
+      "pub": "2026-6-11",
+      "summary": "Bacterial cancer therapies can exploit tumor tropism to localize immunomodulatory payloads, but most approaches rely on secretion or lysis-dependent release of soluble biologics that may diffuse beyond the tumor niche. Here, we engineer non-pathogenic, tumor-homing Escherichia coli strains as membrane-anchored immunotherapeutic interfaces, with individual strains displaying immune checkpoint-blocking nanobodies targeting CTLA-4 or PD-L1, either alone or in combination with a separate strain displaying murine decoy-resistant IL-18 (mDR18). By screening multiple bacterial outer-membrane proteins as scaffolds, we identified scaffold-dependent differences in display levels and target engagement, and YiaT as a functional platform for checkpoint nanobody presentation. Delivery of YiaT-displayed nanobodies in combination with OmpA-displayed mDR18 suppressed tumor growth in syngeneic mouse colon cancer and melanoma models in either local or systemic delivery. Upon systemic administration, the "
+    },
+    {
       "title": "Prosculpt: Lowering the Barrier to Computational Protein Design",
       "link": "https://www.biorxiv.org/content/10.64898/2026.06.25.732351v1?rss=1",
       "section": "synbio",
@@ -5065,51 +5155,6 @@
       "is_review": false,
       "pub": "2026-06-09",
       "summary": "Predicting labels in massive, hierarchically structured output spaces is a core challenge in machine learning. In this work, we use the problem of predicting the full taxonomic lineage of a protein from its sequence as a case study for this challenge. We introduce TaxoFormer, an architecture whose primary contribution is a structured tokenization scheme that losslessly represents the entire NCBI phylogenetic tree, a graph with over 1.3 million nodes using a compact vocabulary of just 15,000 tokens. By coupling a pre-trained ESM-2 model with an autoregressive decoder and training with a standard cross-entropy objective, we test the hypothesis that a simple generative objective is sufficient to learn complex, latent structure when the output space is explicitly modeled. We show that this approach is highly effective: on a dataset of 188 million proteins, the model not only achieves accurate lineage prediction but also implicitly learns a continuous, phylogenetically-structured latent spa"
-    },
-    {
-      "title": "Complex-phase stochastic modeling of mitochondrial heteroplasmy",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.07.730672v1?rss=1",
-      "section": "synbio",
-      "source": "bioRxiv SynBio",
-      "is_review": false,
-      "pub": "2026-06-09",
-      "summary": "AnnotationMitochondrial heteroplasmy --the coexistence of both wild-type and mutant copies of mitochondrial DNA (mtDNA) within a cell--is a key factor in the pathogenesis of mitochondrial diseases. Classical approaches, which rely solely on the scalar fraction of mutant DNA, fail to fully account for threshold effects, the stochastic nature of heteroplasmy dynamics, and tissue specificity. The aim of the work is to construct a complex stochastic model of heteroplasmy dynamics, which for the first time combines the effects of selection, genetic drift, migration of mitochondrial genomes between tissues and threshold mechanisms of pathology development, for a quantitative assessment of the risk of mitochondrial diseases. In this paper, we propose a complex-phase formalism in which the state of a cells mitochondrial genome is described by a complex number Z = a + ib, where a and b are the absolute numbers of normal and mutant mtDNA copies, respectively. This approach naturally combines inf"
-    },
-    {
-      "title": "A Drug-Target Specificity Foundation Model for Off-target Prediction, Repurposing, and Generative Design",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.08.730844v1?rss=1",
-      "section": "synbio",
-      "source": "bioRxiv SynBio",
-      "is_review": false,
-      "pub": "2026-06-08",
-      "summary": "Molecular recognition - which small molecule binds which protein, and with what selectivity - governs the efficacy, safety, and discovery of every therapeutic, yet binding specificity is still determined by experimental screening or by computational methods that first predict three-dimensional structure. Transformer softmax attention is mathematically isomorphic to the Boltzmann distribution governing molecular binding at thermal equilibrium1, an identity that prescribes a single sequence-native architecture: the Specificity Foundation Model (SFM), which computes molecular binding compatibility as a thermodynamic quantity directly from sequence2. The framework was recently realized as prototype encoders across six molecular-recognition domains3. Here we report the small molecule drug-target protein SFM (dtSFM) as the first instance to pair a full-scale encoder with a generative decoder, trained on publicly available data consisting of 714,747 measured drug-protein interactions spanning"
-    },
-    {
-      "title": "Inosine incorporation in DNA nanostructures and 3D DNA crystals",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.06.730639v1?rss=1",
-      "section": "synbio",
-      "source": "bioRxiv SynBio",
-      "is_review": false,
-      "pub": "2026-06-07",
-      "summary": "DNA nanotechnology is based on programmable base pairing, resulting in the precise construction of nanoscale structures. Sequence variability in DNA nanostructure self-assembly is achieved by the use of xeno nucleic acids, chemically modified bases and base analogs. The naturally occurring base inosine, while well studied in RNA editing, has not been used in the context of DNA nanotechnology. In this work, I demonstrate the use of inosine in DNA nanostructures, specifically by incorporating inosine within the duplex regions or junctions of a double crossover DNA motif. In strand displacement and competition assays, I show that canonical complements do not displace inosine containing strands post-assembly but dominate in product formation when competing with inosine containing strands during assembly. Finally, sticky ends with inosine base pairs enable the formation of rationally designed 3D DNA crystals based on the tensegrity triangle motif. Overall, this work shows that inosine is a "
-    },
-    {
-      "title": "Catalytic Bacterial Nanocellulose Composite That Captures and Degrades PET Microplastics",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.05.730390v1?rss=1",
-      "section": "synbio",
-      "source": "bioRxiv SynBio",
-      "is_review": false,
-      "pub": "2026-06-06",
-      "summary": "Microplastic (MP) pollution is a growing environmental concern, with wastewater treatment plants (WWTPs) serving as a critical yet insufficient barrier. Although WWTPs can remove up to 99% of MPs from influent streams, a large fraction of the sequestered MPs is concentrated into sewage sludge and subsequently redistributed to soil and waterways via biosolids. Here, we report a biosynthetic approach to address MP redistribution by coupling microplastic removal with catalytic depolymerization, using enzyme-functionalized bacterial nanocellulose (BNC) filtration materials. As a proof-of-concept, we fused a cellulose-binding domain (CBD) to the thermostable PET hydrolase HotPETase, creating a bifunctional protein, CBD-PETase, that binds to a BNC scaffold and degrades PET microplastic ({micro}PET) captured within the scaffold. We showed that BNC-CBD-PETase composites sequestered irregularly shaped {micro}PET within hierarchical pore networks and generated PET degradation products proportion"
-    },
-    {
-      "title": "MicroGrowAgents: An Agentic AI System for Microbial Cultivation Engineering",
-      "link": "https://www.biorxiv.org/content/10.64898/2026.06.04.729985v1?rss=1",
-      "section": "synbio",
-      "source": "bioRxiv SynBio",
-      "is_review": false,
-      "pub": "2026-06-05",
-      "summary": "Microbial cultivation optimization remains labor-intensive and inefficient, requiring extensive experimental screening to identify suitable growth conditions. Traditional one-factor-at-a-time approaches are particularly ineffective for exploring complex, multidimensional nutrient parameter spaces. We present MicroGrowAgents, an AI-driven, agent-based system that automates the design of optimized growth media through integration of knowledge graphs, metabolic modeling, and optimal experimental design. The system employs 28 specialized agents and 50 skills that query structured biological knowledge (KG-Microbe: 864,363 validated species), mine literature evidence (245+ papers), perform genome-guided design (57 genomes, 667,000+ annotated features), and generate statistically optimal experimental designs using the MaxPro algorithm. We applied the approach to Methylorubrum extorquens AM1 by cultivating 70 designed conditions in quadruplicate and assessing three concurrent objectives: bioma"
     },
     {
       "title": "Cryo-EM sheds light on the mechanism of human telomerase inhibition by BIBR1532",
@@ -5930,7 +5975,7 @@
     },
     "bioRxiv SynBio": {
       "section": "synbio",
-      "count": 25,
+      "count": 30,
       "ok": true
     },
     "Absci Blog": {
@@ -5960,7 +6005,7 @@
       "synbio": 0,
       "cross": 0
     },
-    "papers_primary": 606,
+    "papers_primary": 611,
     "papers_review": 32,
     "pipeline": 0
   }
