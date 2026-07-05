@@ -95,52 +95,52 @@
           "word_count": 1200
         },
         {
-          "id": 133,
+          "id": 128,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "June 2026 newsletter",
-          "link": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
-          "content": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here . This month: Claude Fable 5, GPT-5.6, and US export restrictions GLM-5.2 is the new best open weights model Tokenmaxxing is so over Datasette Apps sqlite-utils and shot-scraper and Datasette Miscellaneous WASM projects Other model releases What I'm using Here's a copy of the May newsletter as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy! Tags: newsletter",
-          "pub_date": "2026-07-03T14:50:50+00:00",
+          "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+          "link": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+          "content": "I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incompatible major versions to be as rare as possible. I started with this prompt, in Claude Code for web on my iPhone: Final review before shipping a stable 4.0 release - very important to spot any last minute things that would be a breaking change if we fix them later Here's that initial report it created for me. There were some significant problems that I hadn't myself encountered yet - 5 that Fable categorized as \"release blockers\". Here's the worst of the bunch: 1. delete_where() never commits and poisons the connection (data loss) Table.delete_where() ( sqlite_utils/db.py:2948 ) runs its DELETE via a bare self.db.execute() with no atomic() wrapper — compare Table.delete() at db.py:2944 , which wraps correctly. The connection is left in_transaction=True , so every subsequent atomic() call takes the savepoint branch ( db.py:430-440 ) and never commits either. Reproduced end-to-end: db = sqlit",
+          "pub_date": "2026-07-05T01:00:48+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 539
+          "word_count": 1200
         },
         {
-          "id": 140,
+          "id": 131,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "The AI Compass",
-          "link": "https://simonwillison.net/2026/Jun/30/the-ai-compass/#atom-everything",
-          "content": "The AI Compass This political compass style quiz by bambamramfan is pretty neat - answer 29 questions about AI and AI ethics to see which of the 30 archetypes you best fit. I'm impressed that my answers on my first time through the quiz categorized me as \"The Garage Tinkerer\", patron saint myself! It's implemented as a single page React app using the <script type=\"text/babel\"> trick to avoid the necessary build step. Here's the code . Via @erisianrite.com Tags: ai , generative-ai , llms , ai-ethics",
-          "pub_date": "2026-06-30T17:39:23+00:00",
+          "title": "Better Models: Worse Tools",
+          "link": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
+          "content": "Better Models: Worse Tools Armin reports on a weird problem he ran into while hacking on Pi: The short version is that newer Claude models sometimes call Pi’s edit tool with extra, invented fields in the nested edits[] array. And not Haiku or some small model: Opus 4.8. The edit itself is usually correct but the arguments do not match the schema as the model invents made-up keys and Pi thus rejects the tool call and asks to try again. That alone is not too surprising as models emit malformed tool calls sometimes. Particularly small ones. What surprised me is that this is getting worse with newer Anthropic models as both Opus 4.8 and Sonnet 5 show it but none of the older models. In other words, the SOTA models of the family are worse at this specific tool schema than their older siblings. Armin theorizes that this is because more recent Anthropic models have been specifically trained (presumably via Reinforcement Learning) to better use the edit tools that are baked into Claude Code. This has the unfortunate effect that other coding harnesses, such as Pi, may find that their own custom edit tools are more likely to be used incorrectly. Claude's edit tool uses search and replace . O",
+          "pub_date": "2026-07-04T22:53:52+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 503
+          "word_count": 1200
         },
         {
-          "id": 137,
+          "id": 130,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "Quoting Anthropic",
-          "link": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
-          "content": "We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5. We'll begin restoring access tomorrow, and will share an update soon. &mdash; Anthropic , on Twitter Tags: anthropic , claude , generative-ai , claude-mythos-fable , ai , llms",
-          "pub_date": "2026-06-30T23:58:15+00:00",
+          "title": "Building a World Map with only 500 bytes",
+          "link": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
+          "content": "Building a World Map with only 500 bytes Iwo Kadziela (assisted by Codex) figured out a way to generate a credible ASCII world map using 445 bytes of data: The key trick is to use deflate compression, which is then wired together using this neat snippet of JavaScript. I didn't know you could use fetch() with data: URIs like this: fetch('data:;base64,1ZpLsgIxCEXnrM...==').then( r => r.body.pipeThrough(new DecompressionStream('deflate-raw')) ).then( s => new Response(s).text() ).then( t => b.innerHTML = '<pre style=font-size:.65vw>' + t ) Via Hacker News Tags: ascii-art , data-urls , javascript",
+          "pub_date": "2026-07-04T23:09:02+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 288
+          "word_count": 599
         },
         {
-          "id": 113,
+          "id": 111,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 128
         },
         {
-          "id": 115,
+          "id": 113,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 105
         },
         {
-          "id": 125,
+          "id": 123,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 241,
-      "total_valid": 32,
+      "total_raw": 243,
+      "total_valid": 35,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 521,
+          "id": 480,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 254
         },
         {
-          "id": 507,
+          "id": 466,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 250
         },
         {
-          "id": 514,
+          "id": 473,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,67 +242,7 @@
           "word_count": 248
         },
         {
-          "id": 325,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Correspondence] Make rehabilitation count: invest in people, not just devices",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01047-0/fulltext?rss=yes",
-          "content": "The WHO global rehabilitation indicators represent a vital shift from counting disease to measuring functioning and lives lived with quality and dignity,1 and to ensuring rehabilitation is an essential part of the health-care continuum rather than a luxury add-on. After the recent 79th World Health Assembly review of rehabilitation progress on Rehabilitation 2030,2 we highlight two persistent gaps in current dialogue and attention which risk undermining such progress towards access to rehabilitation for all.",
-          "pub_date": "2026-07-04",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 513
-        },
-        {
-          "id": 330,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Correspondence] From PCOS to PMOS: perspectives on the new nomenclature",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01084-6/fulltext?rss=yes",
-          "content": "The group led by Helena J Teede should be commended for undertaking a rigorous international effort through surveys and expert consensus to reconsider the nomenclature of polycystic ovary syndrome (PCOS).1 The proposed term polyendocrine metabolic ovarian syndrome (PMOS) represents an important attempt to move beyond historically inaccurate terminology. However, renaming alone does not resolve one of the central challenges of PCOS: the marked biological and clinical heterogeneity of the condition itself.",
-          "pub_date": "2026-07-04",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 509
-        },
-        {
-          "id": 323,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Perspectives] Epidemiological invisibilisation: a man overdoses in Tijuana",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01298-5/fulltext?rss=yes",
-          "content": "Ramón, a 55-year-old Mexican national and deportee from the USA with opioid use disorder, was rushed into a harm reduction clinic in Tijuana, Mexico, during an overdose. Minutes before, ambulance staff had found him unconscious on the street, with blue lips and nailbeds, and an imperceptible respiratory rate. Their small stock of naloxone for the month had run out days earlier, so they brought him to the community harm reduction clinic, where he received intranasal naloxone and airway management.",
-          "pub_date": "2026-07-04",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 501
-        },
-        {
-          "id": 353,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Extracellular ATP-P2RY2 signaling drives intratumoral prostaglandin E2 accumulation and adaptive resistance to immunotherapy in solid tumors",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00257-8?rss=yes",
-          "content": "Extracellular ATP (eATP) is associated with immune suppression in the tumor microenvironment (TME) via its metabolite adenosine. Hu et al. find that immunotherapy increases eATP within the TME and drives immune suppression through direct binding of the purinergic receptor P2RY2, driving pathological COX-1- and COX-2-PGE₂ hyperactivation in solid tumors. This self-reinforcing circuit promotes adaptive resistance to immunotherapy.",
-          "pub_date": "2026-07-02",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 432
-        },
-        {
-          "id": 286,
+          "id": 288,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +257,7 @@
           "word_count": 422
         },
         {
-          "id": 289,
+          "id": 291,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,37 +272,7 @@
           "word_count": 410
         },
         {
-          "id": 573,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Differential T cell clonal dynamics underlie outcomes to frontline chemoimmunotherapy in advanced gastric cancer",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00327-7?rss=yes",
-          "content": "Wright et al. use serial single-cell RNA/TCR sequencing to show that durable benefit from gastric cancer chemo-immunotherapy associates with persistence of putative tumor-reactive progenitor-exhausted T cells, circulating TCR clones that infiltrate tumors after immunotherapy, increased B cell abundance after chemotherapy, and B cell interactions that support T cell persistence.",
-          "pub_date": "2026-07-02",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 380
-        },
-        {
-          "id": 355,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Lactate binds and inhibits the innate immune sensor STING to promote tumor immune evasion",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00255-4?rss=yes",
-          "content": "Aerobic glycolysis, a hallmark of cancer, preferentially converts pyruvate into lactate. Guo et al. demonstrate that tumor aerobic glycolysis drives lactate production through PKM2-mediated phosphorylation and activation of LDHA. Lactate directly binds to and inhibits STING, and targeting PKM2 attenuates lactate-dependent immune evasion and synergizes with anti-PD-1 therapy.",
-          "pub_date": "2026-06-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 377
-        },
-        {
-          "id": 257,
+          "id": 259,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,22 +287,7 @@
           "word_count": 363
         },
         {
-          "id": 344,
-          "source": "Cell",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Multiscale integration of tissue and chromatin context converts cell heterogeneity into stable intestinal patterning",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00696-3?rss=yes",
-          "content": "During regeneration, tissues must translate transient cellular variability into stable spatial organization. Tissue architecture generates a density-dependent window of heterogeneity in the mechanosensor YAP1 that FOXA1 integrates with Delta-Notch signaling, thereby linking tissue-scale mechanics to bistable cell fate decisions and stable tissue patterning.",
-          "pub_date": "2026-06-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 359
-        },
-        {
-          "id": 563,
+          "id": 522,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +302,7 @@
           "word_count": 352
         },
         {
-          "id": 561,
+          "id": 520,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +315,111 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 349
+        },
+        {
+          "id": 362,
+          "source": "Nature Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Pregnancy-induced tissue-resident memory-like T cells contribute to tumor control in breast cancer",
+          "link": "https://www.nature.com/articles/s41590-026-02579-3",
+          "content": "Nature Immunology, Published online: 03 July 2026; doi:10.1038/s41590-026-02579-3 Here the authors identify an abundance of a tissue-resident memory-like T cell population in the breasts of women who have given birth. These cells can contribute to tumor control and may thereby provide a link between pregnancy and reduced risk of breast cancer.",
+          "pub_date": "2026-07-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 345
+        },
+        {
+          "id": 517,
+          "source": "Nature Reviews Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Macrophages in embryonic development",
+          "link": "https://www.nature.com/articles/s41577-026-01327-w",
+          "content": "Nature Reviews Immunology, Published online: 01 July 2026; doi:10.1038/s41577-026-01327-w This Review discusses the origins and roles of macrophages in embryonic development. The authors highlight the importance of macrophages for development of the haematopoietic and immune systems and for the establishment of immune tolerance in early life.",
+          "pub_date": "2026-07-01",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 344
+        },
+        {
+          "id": 327,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A meta-analysis of the long-term effects of antihypertensive therapy on the risk of major cardiovascular disease across 51 randomized trials",
+          "link": "https://www.nature.com/articles/s41591-026-04514-3",
+          "content": "Nature Medicine, Published online: 01 July 2026; doi:10.1038/s41591-026-04514-3 Results from an individual participant data meta-analysis across 51 randomized trials challenge the assumption that the cardiovascular benefits from antihypertensive treatment compound over a prolonged duration of treatment.",
+          "pub_date": "2026-07-01",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 304
+        },
+        {
+          "id": 528,
+          "source": "Nature Reviews Microbiology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Bacterial vesicles protect the membrane during polymyxin stress",
+          "link": "https://www.nature.com/articles/s41579-026-01339-2",
+          "content": "Nature Reviews Microbiology, Published online: 24 June 2026; doi:10.1038/s41579-026-01339-2 In this study, Bos and colleagues report previously uncharacterized roles for bacterial extracellular vesicles in membrane repair and tolerance to membrane-active antibiotics such as polymyxin B.",
+          "pub_date": "2026-06-24",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 287
+        },
+        {
+          "id": 525,
+          "source": "Nature Reviews Microbiology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Climate change boosts <i>Salmonella</i> antimicrobial resistance",
+          "link": "https://www.nature.com/articles/s41579-026-01341-8",
+          "content": "Nature Reviews Microbiology, Published online: 02 July 2026; doi:10.1038/s41579-026-01341-8 In this study, Zhou, Teng, Geng and colleagues report that warming and changes in precipitation patterns were associated with increased abundance of Salmonella antimicrobial resistance genes.",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 283
+        },
+        {
+          "id": 527,
+          "source": "Nature Reviews Microbiology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Climate adaptation and biodiversity shape West Nile virus risk in cities",
+          "link": "https://www.nature.com/articles/s41579-026-01340-9",
+          "content": "Nature Reviews Microbiology, Published online: 02 July 2026; doi:10.1038/s41579-026-01340-9 The study suggests that climate adaptation measures that increase urban biodiversity and green infrastructure may help to reduce local West Nile virus transmission in cities.",
+          "pub_date": "2026-07-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 266
+        },
+        {
+          "id": 365,
+          "source": "Nature Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Editorial Expression of Concern: Recognition of the nonclassical MHC class I molecule H2-M3 by the receptor Ly49A regulates the licensing and activation of NK cells",
+          "link": "https://www.nature.com/articles/s41590-026-02597-1",
+          "content": "Nature Immunology, Published online: 29 June 2026; doi:10.1038/s41590-026-02597-1 Editorial Expression of Concern: Recognition of the nonclassical MHC class I molecule H2-M3 by the receptor Ly49A regulates the licensing and activation of NK cells",
+          "pub_date": "2026-06-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 246
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 374,
-      "total_valid": 200,
+      "total_raw": 315,
+      "total_valid": 178,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 673,
+          "id": 616,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 119
         },
         {
-          "id": 642,
+          "id": 585,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 118
         },
         {
-          "id": 669,
+          "id": 612,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 118
         },
         {
-          "id": 704,
+          "id": 641,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1051
         },
         {
-          "id": 726,
+          "id": 663,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1002
         },
         {
-          "id": 752,
+          "id": 689,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -522,6 +522,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 965
+        },
+        {
+          "id": 629,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Systematic dissection of Cas12a-mediated precision genome editing defines design principles for genome-scale variant engineering",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734799v1?rss=1",
+          "content": "Cas9 precision editing is increasingly predictable because guide, donor and target-context effects have been systematically characterized. Extending this framework to other nucleases is essential for installing variants outside convenient Cas9 target space. Cas12a provides a T-rich protospacer-adjacent motif (PAM) alternative, but determinants of efficient donor-templated Cas12a editing remain poorly defined. Here, we systematically dissected Cas12a precision editing in Saccharomyces cerevisiae across nuclease, direct repeat, expression, crRNA, donor, genomic context and time-course variables. Reporter and amplicon-sequencing assays showed that cleavage activity alone did not predict precise editing. Highly active configurations often reduced viability or lost edited alleles over time, whereas attenuated configurations better preserved programmed edits. Enhanced AsCas12a edited rapidly and tolerated shorter crRNAs, resulting in a narrower editing window, while an attenuated FnCas12a configuration edited more slowly but maintained higher viability and better distal-edit recovery. Alternative repair outcomes were rare, target-dependent, and further suppressed by LexA-FHA donor recrui",
+          "pub_date": "2026-6-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 630,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "RNA editing and trans-splicing with reprogrammed tracrRNAs",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734846v1?rss=1",
+          "content": "Precision phage therapeutics provide a promising strategy to combat multidrug-resistant pathogens, including Staphylococcus aureus . Efficient, specific packaging of genetic cargoes remains challenging. Using modular design principles, we report a minimal phagemid packaging signal consisting of the phage terminase small subunit under its native promoter that significantly outperforms conventional packaging signals. The utility of this synthetic terS operon was demonstrated through production of highly concentrated and genetically pure CRISPR-Cas antimicrobials. To circumvent CRISPR-mediated self-targeting during antimicrobial generation, a terS -deficient strain was engineered to express the anti-CRISPR protein AcrIIA4, enabling titers above 10 10 transducing units per milliliter (TRU/mL) with over 94% purity. With a high-copy origin of replication module, CRISPR-Cas phage-like particle titers could approach 10 12 TRU/mL. We discovered that pure CRISPR-Cas antimicrobials are potent and can be amplified in hosts possessing prophages. Taken altogether, this study defines the minimal and optimal genetic requirements for efficient, specific creation of phage-based technologies. Technol",
+          "pub_date": "2026-6-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 631,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "In vivo spatial coordination with synthetic paracrine signaling",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.26.734902v1?rss=1",
+          "content": "The immune system uses paracrine signaling to spatially confine potent responses such as inflammation. A bio-orthogonal synthetic paracrine system could enable engineering of analogous multicellular circuits in which different cell types coordinate their functions in a spatially organized fashion. Here, using the plant hormone auxin as a bio-orthogonal chemical signal, we introduce programmable paracrine circuits that distribute sensing and effector functions to different cell types to spatially restrict responses in mouse xenografts. Cells engineered to express auxin biosynthetic genes generated auxin-dense regions with tunable length scales in vivo. This localized signaling ability enabled design of a multicellular sentinel-effector system, in which THP-1 sentinel cells conditionally produce auxin in regions expressing the tumor-specific antigen EGFRvIII, and Jurkat effector cells respond by locally modulating the activity of a chimeric antigen receptor (CAR). This two-cell type system was able to achieve localized activation of engineered effector cells in vivo. These results establish a foundation for engineering multicellular therapeutic systems that focus responses in specifi",
+          "pub_date": "2026-6-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -529,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 150,
-      "total_valid": 13,
-      "total_candidates": 6
+      "total_raw": 144,
+      "total_valid": 18,
+      "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 242,
+          "id": 244,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -551,7 +596,37 @@
           "word_count": 196
         },
         {
-          "id": 419,
+          "id": 372,
+          "source": "bioRxiv Immunology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "PRISM : Peptide-specificity annotation of T-cell receptors with uncertainty quantification",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735715v1?rss=1",
+          "content": "Mapping T-cell receptor (TCR) sequences to their cognate peptide-major histocompatibility complex (pMHC) ligands underlies both basic immunology and T-cell target discovery, yet current models aimed at predicting TCR specificity are limited by sparse labels, viral-biased training data, and an inability to recognize receptors outside their training distribution. We present PRISM, an uncertainty-aware metric-learning framework for TCR{beta} sequence representation. PRISM embeds receptors into a peptide-organized latent space, returns top-k peptides by nearest-neighbor retrieval, and abstains on out-of-distribution receptors by modeling an intrinsic uncertainty that tracks annotation correctness. To offset the viral bias of public databases, PRISM augments training data with structure-guided synthetic receptors that diversify TCR sequences while preserving the energetics of the TCR-pMHC interface. Across a held-out set of 923 peptides and the independent IMMREP23 benchmark, PRISM matches or exceeds sequence-based models, with largest gains on rare epitopes. Finally, PRISM learns attention weights on TCR residues that concentrate on the CDR3{beta} salt-bridge and hydrophobic contacts c",
+          "pub_date": "2026-07-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 373,
+          "source": "bioRxiv Immunology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Microbial induction of MHC-II expression in colon cancer cells overcomes immunotherapy resistance and limits metastasis",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735621v1?rss=1",
+          "content": "Colorectal cancer remains a major cause of cancer mortality, and most microsatellite stable tumors derive little benefit from immune checkpoint blockade. Here, we identify a microbiome-dependent mechanism that converts immune-refractory colorectal cancer into a more immunologically responsive state. Using orthotopic mouse models spanning distinct genetic and immunologic contexts, we show that a Helicobacter-containing microbiome suppresses primary tumor growth and limits metastasis. This protective state is associated with increased intratumoral lymphocyte infiltration and stronger effector programs. Mechanistically, microbial exposure induces MHC class II expression in colon cancer cells to promote anti-tumor immunity. Tumor-intrinsic loss of CIITA abrogates microbial protection, whereas enforced CIITA expression is sufficient to increase intratumoral T cell accumulation, restrict progression and metastasis, and sensitize microsatellite-stable tumors to PD-1 and CTLA-4 blockade. In human microsatellite-stable patient-derived organoids, increased cancer-cell MHC-II enhanced interactions with autologous immune cells and increased tumor cell apoptosis. Together, these findings define",
+          "pub_date": "2026-07-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 383,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -566,34 +641,19 @@
           "word_count": 1200
         },
         {
-          "id": 420,
-          "source": "bioRxiv Immunology",
+          "id": 627,
+          "source": "bioRxiv SynBio",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Analysis of genetic variation in the bovine Mannose Receptor gene (MRC1), its influence on receptor expression, and a potential association with resistance to bovine tuberculosis",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734952v1?rss=1",
-          "content": "Naturally occurring variation in the bovine mannose receptor C-type 1 gene (MRC1) may shape macrophage responses to Mycobacterium (M.) bovis, a key driver of bovine tuberculosis (bTB). We identified four coding region SNPs in MRC1 across Bos taurus (Holstein Friesian, Brown Swiss) and Bos indicus (Boran, Sahiwal) cattle breeds, including a non-synonymous variant, rs380943118 (c.2963G>A; Ser988Asn) in C-type lectin-like domain (CTLD) 6, most prevalent in Sahiwal cattle. Structural modelling suggested that the S988N substitution, which is spatially separated from the monosaccharide binding site of CTLD4, might indirectly affect glycan binding, perhaps through a conformational change in the receptor. Monocyte-derived macrophages upregulated MR expression during differentiation, with heterozygous (G/A) animals showing higher MR expression and increased uptake of GFP-M. bovis BCG, although differences were not statistically significant. Anti-CD206 blockade did not inhibit BCG internalization, either indicating that this specific antibody did not bind to a CTLD involved in ligand binding or that MR is not the sole entry receptor. These results highlight naturally occurring MRC1 polymorph",
-          "pub_date": "2026-07-03",
+          "title": "AI-enabled rhodopsin design for blue-light enhanced bacterial growth",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.735265v1?rss=1",
+          "content": "We developed an AI-guided design pipeline that generated and validated non-natural microbial rhodopsins with spectral properties not yet known in nature. The pipeline comprised a three-stage in silico design, a genetic algorithm (GA) for sequence generation, a stacked LASSO and XGBoost machine-learning (ML) regressor for spectral prediction and fitness ranking, and a Markov-based sequence plausibility filter to enforce proton pumping like characteristics. Four candidate rhodopsins (APR1, APR2, APR6, and APR7) targeting blue light absorption were designed and AlphaFold3 structural modelling predicted retinal binding pocket architecture consistent with outward proton-pumping function. Experimental characterisation confirmed that all four variants absorbed light at ∼410 nm and significantly promoted the growth of Cupriavidus necator under blue light illumination. This study demonstrates that AI-enabled design can engineer proteins with no natural precedent, generating light-harvesting rhodopsins with novel spectral properties while preserving biological function, marking a significant advance in programmable synthetic biology.",
+          "pub_date": "2026-6-30",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 426,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Targeted depletion of CD38+ autoreactive T cells prevents type 1 diabetes",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734105v1?rss=1",
-          "content": "Type 1 diabetes (T1D) is caused by T cell-mediated autoimmune destruction of insulin-producing islet beta-cells. Treatment with T-cell depleting therapies delays the progression of stage 2 and 3 T1D, but these agents exert broad immunosuppressive effects on T cell populations, including T regulatory cells (Tregs), which are key in promoting immune tolerance. We evaluated non-obese diabetic (NOD) mice and recently diagnosed T1D patients and identified CD38 as a marker for pathogenic T cell populations. Using adoptive T-cell transfer in Recombination Activating Gene 1 knockout NOD mice and in a humanized mouse model of autoimmune diabetes, we demonstrated that CD38-expressing autoreactive T cells drive diabetes pathogenesis. Furthermore, we found that selective depletion of CD38+ cells, using an anti-CD38 monoclonal antibody (mAb), prevents insulitis and diabetes onset without depleting CD4+CD25+ Tregs. Administration of anti-CD38 mAb did not adversely affect islet function and may selectively eliminate immunogenic senescent islet beta-cells. These results support the strategy of selectively depleting diabetogenic T cells using an anti-CD38 mAb to treat T1D and restore immune toleran",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
+          "word_count": 1141
         }
       ],
       "quota": {
@@ -601,9 +661,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 15,
-      "total_valid": 7,
-      "total_candidates": 4
+      "total_raw": 17,
+      "total_valid": 9,
+      "total_candidates": 5
     },
     "china": {
       "candidates": [],
@@ -619,22 +679,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 777,
-          "source": "PYMNTS.com",
+          "id": 721,
+          "source": "Thunes",
           "section": "payment",
           "tier": "T2",
-          "priority": 4,
-          "title": "Klarna Expands App Features With Money Wellness Partnership",
-          "link": "https://www.pymnts.com/consumer-finance/2026/klarna-expands-app-features-with-money-wellness-partnership/",
-          "content": "Klarna users can now access a free financial health check delivered by financial well-being provider Money Wellness through the Klarna app. Money Wellness’ Money MOT offers users a personalized picture of their finances along with advice about everyday budgeting, making the most of their income and managing debts, the companies said in a Friday (July [&#8230;] The post Klarna Expands App Features With Money Wellness Partnership appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 03 Jul 2026 21:10:55 +0000",
+          "priority": 5,
+          "title": "The 24/7/365 Treasury: How stablecoins are reducing the “weekend settlement gap”",
+          "link": "https://www.thunes.com/insights/learn/how-stablecoins-are-reducing-the-weekend-settlement-gap/",
+          "content": "Cross-border payments have become a 24/7, always-on experience – nearly.&#160; While cross-border payment initiation has become increasingly real-time, settlement has not kept pace. The movement of liquidity and settlement between financial institutions – the last mile – still depends heavily on banking hours, market cut-off times, correspondent banking networks and local holiday schedules.&#160; For treasury ... Read more &#187; The post The 24/7/365 Treasury: How stablecoins are reducing the “weekend settlement gap” first appeared on Thunes.com .",
+          "pub_date": "Tue, 30 Jun 2026 20:13:53 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 462
+          "word_count": 554
         },
         {
-          "id": 774,
+          "id": 711,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -649,52 +709,7 @@
           "word_count": 425
         },
         {
-          "id": 781,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Easing Gas Prices Boost Consumer Sentiment for July Fourth",
-          "link": "https://www.pymnts.com/economy/2026/easing-gas-prices-boost-consumer-sentiment-for-july-fourth/",
-          "content": "Gas prices heading into the Fourth of July weekend are the highest they’ve been in four years but lower than recent highs, AAA said in a Thursday (July 2) press release. Thursday’s national average was $3.838, which was up from $3.172 a year ago but down from $3.918 a week ago and $4.290 a month [&#8230;] The post Easing Gas Prices Boost Consumer Sentiment for July Fourth appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 03 Jul 2026 16:45:45 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 405
-        },
-        {
-          "id": 784,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "IMF issues tokenisation warning",
-          "link": "https://www.finextra.com/newsarticle/48038/imf-issues-tokenisation-warning?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Monetary policy frameworks must adapt to the ongoing development of tokenisation and the likelihood that risk will migrate from banks' balance sheets to service providers and market infrastructures.",
-          "pub_date": "Fri, 03 Jul 2026 11:22:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 198
-        },
-        {
-          "id": 787,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Monetary Authority of Singapore and banks team on safeguards for AI agents",
-          "link": "https://www.finextra.com/pressarticle/110344/monetary-authority-of-singapore-and-banks-team-on-safeguards-for-ai-agents?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The Monetary Authority of Singapore (MAS), together with leading financial institutions and FinTechs, today published an industry white paper on developing safeguards for AI agents in Finance.",
-          "pub_date": "Fri, 03 Jul 2026 13:12:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 192
-        },
-        {
-          "id": 795,
+          "id": 718,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -709,22 +724,7 @@
           "word_count": 139
         },
         {
-          "id": 785,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Klarna taps Money Wellness to offer free financial wellbeing checks to UK users",
-          "link": "https://www.finextra.com/newsarticle/48037/klarna-taps-money-wellness-to-offer-free-financial-wellbeing-checks-to-uk-users?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Klarna has joined forces with financial wellbeing platform Money Wellness to provide their UK customers with a financial health check.",
-          "pub_date": "Fri, 03 Jul 2026 10:37:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 134
-        },
-        {
-          "id": 796,
+          "id": 719,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -737,21 +737,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 107
-        },
-        {
-          "id": 783,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Starling to axe 130 jobs as part of automation drive",
-          "link": "https://www.finextra.com/newsarticle/48039/starling-to-axe-130-jobs-as-part-of-automation-drive?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "UK challenger bank Starling has announced plans to cut more than 100 jobs as part of an efficiency drive.",
-          "pub_date": "Fri, 03 Jul 2026 12:30:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 105
         }
       ],
       "quota": {
@@ -759,15 +744,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 195,
-      "total_valid": 11,
-      "total_candidates": 9
+      "total_raw": 183,
+      "total_valid": 4,
+      "total_candidates": 4
     }
   },
   "meta": {
-    "total_raw": 968,
-    "dup": 318,
-    "nocontent": 403,
-    "noise": 1
+    "total_raw": 893,
+    "dup": 267,
+    "nocontent": 401,
+    "noise": 0
   }
 }
