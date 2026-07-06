@@ -5,44 +5,14 @@
     "ai": {
       "candidates": [
         {
-          "id": 78,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Alibaba reportedly bans employees from using Claude Code",
-          "link": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
-          "content": "Alibaba has reportedly classified Claude Code as high-risk software.",
-          "pub_date": "Sat, 04 Jul 2026 16:32:08 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 68
-        },
-        {
-          "id": 67,
+          "id": 61,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR",
-          "link": "https://arxiv.org/abs/2606.25178",
-          "content": "Reinforcement learning with verifiable rewards (RLVR) has been extended from single-domain training to multi-domain reasoning suites spanning mathematics, programming, and science. However, the training curriculum (how often each domain is sampled) is typically fixed or hand-tuned, even though reasoning skills transfer unevenly across domains. Existing learnability-based curricula adapt to where the policy is currently improving, but are blind to whether a gradient step on the selected domain benefits the remaining domains. In this paper, we propose Transfer-Aware Curriculum (TAC), a bandit-style online curriculum that prioritizes domains whose updates broadly benefit the rest of the training suite. TAC repurposes signals already produced by RL training: per-domain advantages capture local learnability, and projected gradients, taken from the GRPO step being computed, estimate cross-domain transferability via gradient-geometry alignment, at negligible cost (<1% wall-clock overhead). Across a six-domain reasoning suite, TAC achieves the best macro-averaged accuracy on both Qwen3-1.7B and Llama3.2-3B, outperforming proportional random sampling, a hand-designed schedule, and a learnab",
-          "pub_date": "2026-06-26T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 69,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning",
-          "link": "https://arxiv.org/abs/2606.31825",
-          "content": "Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correctness or sequence-level preferences. This suffers from sparse credit assignment, making it difficult to optimize the reasoning process essential for clinical applications. Our analysis reveals that cascading errors from early-stage reasoning failures are a leading cause of incorrect predictions in medical visual question answering (VQA) benchmarks. Motivated by this, we propose Medical Reasoning-aware Policy Optimization (MRPO), an RL algorithm that incorporates step-wise process rewards. When the final answer is incorrect, MRPO assigns exponentially larger penalties to tokens in earlier invalid reasoning steps, breaking failure cascades without compromising successful paths. Across three multimodal LLM backbones, MRPO consistently outperforms standard GRPO and a recent RL baseline, and on Qwen3-VL-8B-Instruct even surpasses substantially larger medical MLLMs such as HuatuoGPT-Vision-34B by 2.79 points. Moreover, MRPO reduces early-stage reasoning failures from 64.0% to 13.0%, showing t",
+          "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
+          "link": "https://arxiv.org/abs/2606.31227",
+          "content": "The fast growth of open-source AI infrastructure, from model serving engines and agent platforms to the Model Context Protocol (MCP) ecosystem and the language models themselves, has outpaced the security tooling available to defend it. We present AI-Infra-Guard, an open-source framework that organizes AI red teaming around a single observation: the attack surface of an AI agent is stratified across layers (infrastructure, protocol/tool, agent behavior, and model), and no single detection paradigm fits all of them. The framework therefore matches a paradigm to each layer, from deterministic rule matching over 75+ AI components and 1{,}400+ vulnerability rules, through LLM-driven agentic auditing of MCP servers and agent-skill packages and multi-turn black-box agent red teaming, to a jailbreak harness with 26+ attack operators over sixteen datasets. To our knowledge it is the only open-source framework to span all of these, including supply-chain auditing of the agent skills that increasingly extend AI agents. We release AI-Infra-Guard as open source so that layer-paradigm matching can serve as a practical foundation for agent security and a shared base for the community to build on",
           "pub_date": "2026-06-29T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -50,14 +20,29 @@
           "word_count": 1200
         },
         {
-          "id": 71,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
-          "link": "https://arxiv.org/abs/2607.02255",
-          "content": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see. The simplest contract appends past observations, tool calls, and reflections to every prompt, which makes prior context easy to access but also turns it into a jumbled mixture in which the effect of any single memory component is hard to isolate. We introduce and instrument an alternative bounded contract: every decision is made from a fresh user message assembled by typed retrieval, with no raw cross-decision transcript appended. The prompt thus stays bounded across runs of any length, and any single layer can be ablated in isolation. We instantiate the contract in Slay the Spire 2, a closed-rule stochastic deck-building game whose runs require hundreds of tactical and strategic decisions. A public online benchmark of frontier LLMs on the same game reports zero wins at the lowest difficulty across five configurations, and the developer-reported human win rate at the same difficulty is 16%; the task is hard but not saturated. Within our harness, a fixed-A0 ablation shows the largest observed difference when triggered strategic skills are enabled: the no-store baseline wins 3/10 game",
+          "title": "AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation",
+          "link": "https://arxiv.org/abs/2607.00052",
+          "content": "GraphRAG is an extension of retrieval-augmented generation (RAG) that supports large language models (LLMs) by referring to graph-structured data as external knowledge. While this technique ideally captures intricate relationships, it often struggles with graph representations for LLMs, particularly for frozen LLMs, due to the misalignment between graph-based and text-based latent features. We tackle this issue by introducing the {\\it Adaptive-masking for Graph Embedding (AGE)}. AGE employs a Transformer in a mask-based self-supervised learning (SSL) approach. We designed the architecture similar to text embedding encoders, addressing the latent feature misalignment. In contrast to natural language texts, graphs are concise representations, and there exist {\\it key nodes} that hold dominant contextual information, which are challenging to predict from their surroundings. Masking such key nodes leads to inefficiency in the SSL process. Therefore, AGE focuses on predicting nodes apart from key nodes, utilizing a learnable node sampler. Our experimental results indicate that AGE significantly improves approaches using non-parametric search component in GraphQA tasks, achieving superio",
+          "pub_date": "2026-06-29T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 64,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+          "link": "https://arxiv.org/abs/2607.02501",
+          "content": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do not satisfy the runtime contract of embodied deployment: multi-rate execution inside closed-loop control, latency-first batch-1 inference on heterogeneous hardware, and extensible embodied interfaces beyond fixed token I/O. We present Embodied.cpp, a portable C++ inference runtime for embodied models. Based on an architectural analysis of representative VLA models and WAMs, Embodied.cpp captures a shared execution path and organizes it into five layers: input adapters, sequence builders, backbone execution, head plugins, and deployment adapters. The runtime provides modular multi-rate execution, latency-first fused inference, and extensible operator and I/O support, enabling deployment across heterogeneous devices, robots, and simulators through one backend abstraction. We evaluate Embodied.cpp on two VLA models, HY-VLA and pi0.",
           "pub_date": "2026-07-01T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -65,7 +50,7 @@
           "word_count": 1200
         },
         {
-          "id": 135,
+          "id": 134,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +65,7 @@
           "word_count": 539
         },
         {
-          "id": 142,
+          "id": 141,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +80,7 @@
           "word_count": 503
         },
         {
-          "id": 139,
+          "id": 138,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +125,7 @@
           "word_count": 290
         },
         {
-          "id": 75,
+          "id": 76,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +140,7 @@
           "word_count": 55
         },
         {
-          "id": 117,
+          "id": 116,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +155,7 @@
           "word_count": 155
         },
         {
-          "id": 120,
+          "id": 119,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 105
+        },
+        {
+          "id": 124,
+          "source": "Latent Space",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "[AINews] It's Meta-Harness Summer",
+          "link": "https://www.latent.space/p/ainews-its-meta-harness-summer",
+          "content": "Move over, Harness Engineering, it is time for the harness of harnesses!",
+          "pub_date": "Thu, 25 Jun 2026 02:14:08 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 72
         }
       ],
       "quota": {
@@ -190,14 +190,74 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 241,
-      "total_valid": 23,
+      "total_raw": 240,
+      "total_valid": 22,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 439,
+          "id": 526,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "The immunogenicity of pneumococcal conjugate vaccinations in patients with asplenia and hyposplenia: a systematic review",
+          "link": "https://www.nature.com/articles/s41541-026-01514-9",
+          "content": "npj Vaccines, Published online: 06 July 2026; doi:10.1038/s41541-026-01514-9 The immunogenicity of pneumococcal conjugate vaccinations in patients with asplenia and hyposplenia: a systematic review",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 197
+        },
+        {
+          "id": 527,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Preclinical immunogenicity of the LP.8.1-adapted BNT162b2 COVID-19 vaccine",
+          "link": "https://www.nature.com/articles/s41541-026-01515-8",
+          "content": "npj Vaccines, Published online: 06 July 2026; doi:10.1038/s41541-026-01515-8 Preclinical immunogenicity of the LP.8.1-adapted BNT162b2 COVID-19 vaccine",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 151
+        },
+        {
+          "id": 535,
+          "source": "Sci Transl Med",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Bioresponsive microneedle stent provides anastomosis and postoperative adjuvant therapy in preclinical resectable intestinal diseases",
+          "link": "https://www.science.org/doi/abs/10.1126/scitranslmed.adx4225?af=R",
+          "content": "Science Translational Medicine, Volume 18, Issue 856 , July 2026.",
+          "pub_date": "2026-07-01T07:00:00Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 65
+        },
+        {
+          "id": 314,
+          "source": "Science",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Surface immune signaling unlocks NLR activation through mRNA alternative splicing",
+          "link": "https://www.science.org/doi/abs/10.1126/science.adx9929?af=R",
+          "content": "Science, Volume 393, Issue 6806 , Page 65-70, July 2026.",
+          "pub_date": "2026-07-02T06:00:12Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 56
+        },
+        {
+          "id": 468,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +272,7 @@
           "word_count": 243
         },
         {
-          "id": 491,
+          "id": 520,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +287,7 @@
           "word_count": 243
         },
         {
-          "id": 414,
+          "id": 443,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +302,7 @@
           "word_count": 240
         },
         {
-          "id": 265,
+          "id": 264,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +317,7 @@
           "word_count": 332
         },
         {
-          "id": 272,
+          "id": 271,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +332,7 @@
           "word_count": 303
         },
         {
-          "id": 266,
+          "id": 265,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +347,7 @@
           "word_count": 297
         },
         {
-          "id": 523,
+          "id": 559,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +362,7 @@
           "word_count": 251
         },
         {
-          "id": 358,
+          "id": 390,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +377,7 @@
           "word_count": 244
         },
         {
-          "id": 516,
+          "id": 552,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +392,7 @@
           "word_count": 243
         },
         {
-          "id": 365,
+          "id": 397,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +407,7 @@
           "word_count": 215
         },
         {
-          "id": 515,
+          "id": 551,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -360,66 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 213
-        },
-        {
-          "id": 332,
-          "source": "Nature Biotech",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "A retargeted recombinase for precise insertion of large DNA",
-          "link": "https://www.nature.com/articles/s41587-026-03198-x",
-          "content": "Nature Biotechnology, Published online: 29 June 2026; doi:10.1038/s41587-026-03198-x An approach to retarget the large serine recombinase Bxb1 enables precise integration of large DNA payloads at desired loci.",
-          "pub_date": "2026-06-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 209
-        },
-        {
-          "id": 331,
-          "source": "Nature Biotech",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Prime editing for precise genome engineering and modulation of fungal metabolism",
-          "link": "https://www.nature.com/articles/s41587-026-03202-4",
-          "content": "Nature Biotechnology, Published online: 30 June 2026; doi:10.1038/s41587-026-03202-4 fPE7max efficiently installs base substitutions, insertions and deletions to modulate filamentous fungal metabolism.",
-          "pub_date": "2026-06-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 201
-        },
-        {
-          "id": 326,
-          "source": "Nature Biotech",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Author Correction: Improved RNA base editing with guide RNAs mimicking highly edited endogenous ADAR substrates",
-          "link": "https://www.nature.com/articles/s41587-026-03246-6",
-          "content": "Nature Biotechnology, Published online: 03 July 2026; doi:10.1038/s41587-026-03246-6 Author Correction: Improved RNA base editing with guide RNAs mimicking highly edited endogenous ADAR substrates",
-          "pub_date": "2026-07-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 196
-        },
-        {
-          "id": 506,
-          "source": "Nature Rev Drug Discovery",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Growth in clinical research capability in China and impact on the pharmaceutical sector",
-          "link": "https://www.nature.com/articles/d41573-026-00113-6",
-          "content": "Nature Reviews Drug Discovery, Published online: 01 July 2026; doi:10.1038/d41573-026-00113-6 Growth in clinical research capability in China and impact on the pharmaceutical sector",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 181
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 312,
-      "total_valid": 157,
+      "total_raw": 356,
+      "total_valid": 199,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 617,
+          "id": 657,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 103
         },
         {
-          "id": 579,
+          "id": 619,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 101
         },
         {
-          "id": 618,
+          "id": 658,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 79
         },
         {
-          "id": 647,
+          "id": 683,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 333
         },
         {
-          "id": 642,
+          "id": 678,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 246
         },
         {
-          "id": 649,
+          "id": 685,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -522,21 +522,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 244
-        },
-        {
-          "id": 623,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Computational design of microbial and animal rhodopsin soluble analogues",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734960v1?rss=1",
-          "content": "The computational design of soluble analogues of membrane proteins has unlocked exciting opportunities for the integration of unique membrane protein functions into soluble proteins. Here, we use AF2 seq to generate accurate soluble analogues of both animal and microbial rhodopsins, based on the membrane GPCR topology, and the microbial rhodopsin transmembrane fold. We characterize the analogues and demonstrate that they are well-folded and highly thermostable. Furthermore, they exhibit the expected red shift characteristic of retinal binding. Top-down mass spectrometry confirms the placement of retinal covalent attachment, while X-ray crystallography validates the structural fidelity of the microbial rhodopsin analogue. Notably, the microbial rhodopsin analogue retains the primary reaction of the retinal photocycle, closely matching that of the native membrane protein. Overall, this work advances the possibility to transfer unique membrane protein functions, such as retinal photoswitching, into the soluble proteome.",
-          "pub_date": "2026-6-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1032
         }
       ],
       "quota": {
@@ -544,14 +529,89 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 144,
-      "total_valid": 8,
-      "total_candidates": 7
+      "total_raw": 125,
+      "total_valid": 7,
+      "total_candidates": 6
     },
     "cross": {
       "candidates": [
         {
-          "id": 381,
+          "id": 534,
+          "source": "Sci Transl Med",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "KSHV-infected endothelial cells expand and up-regulate angiogenic pathways and CXCR4 in patient-derived Kaposi sarcoma models",
+          "link": "https://www.science.org/doi/abs/10.1126/scitranslmed.adw9462?af=R",
+          "content": "Science Translational Medicine, Volume 18, Issue 856 , July 2026.",
+          "pub_date": "2026-07-01T07:00:00Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 65
+        },
+        {
+          "id": 537,
+          "source": "Sci Transl Med",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Hypoxia-driven T cell–macrophage–stromal cross-talk sustains fibrosis in preclinical models of cutaneous chronic graft-versus-host disease",
+          "link": "https://www.science.org/doi/abs/10.1126/scitranslmed.adx7264?af=R",
+          "content": "Science Translational Medicine, Volume 18, Issue 856 , July 2026.",
+          "pub_date": "2026-07-01T07:00:00Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 65
+        },
+        {
+          "id": 538,
+          "source": "Sci Transl Med",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "CAR T cell therapy selectively depletes disease-driving mutant calreticulin cells in xenotransplants and human organoid models of myelofibrosis",
+          "link": "https://www.science.org/doi/abs/10.1126/scitranslmed.adz3553?af=R",
+          "content": "Science Translational Medicine, Volume 18, Issue 856 , July 2026.",
+          "pub_date": "2026-07-01T07:00:00Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 65
+        },
+        {
+          "id": 320,
+          "source": "Science",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A sub–10-millisecond neural dynamical system based on phase-change memristors",
+          "link": "https://www.science.org/doi/abs/10.1126/science.aee6277?af=R",
+          "content": "Science, Volume 393, Issue 6806 , Page 105-112, July 2026.",
+          "pub_date": "2026-07-02T06:00:12Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 58
+        },
+        {
+          "id": 325,
+          "source": "Science",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A classroom contract for AI",
+          "link": "https://www.science.org/doi/abs/10.1126/science.aek1435?af=R",
+          "content": "Science, Volume 393, Issue 6806 , Page 114-114, July 2026.",
+          "pub_date": "2026-07-02T06:00:12Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 58
+        },
+        {
+          "id": 416,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 387,
+          "id": 422,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -581,19 +641,19 @@
           "word_count": 1200
         },
         {
-          "id": 384,
+          "id": 398,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "The lack of macrophage fragment adhesion is a benchmark of dormant hematopoietic stem cells throughout the lifespan",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.735148v1?rss=1",
-          "content": "Hematopoietic stem cells (HSCs) play a pivotal role in the lifelong maintenance of hematopoiesis. However, heterogeneity and age-related alterations in HSC populations hinders accurate HSC analysis. Here, we show that bone marrow (BM) macrophage fragments that preferentially express F4/80 adhere to proliferative rather than dormant HSCs. The adhesion of macrophage fragments to proliferative HSCs occurred throughout the process of BM cell preparation in vitro. Consistently, proliferative HSCs express genes involved in the adhesion of macrophage fragments at higher levels than dormant HSCs. Notably, by using that as a benchmark, dormant HSCs can be easily identified as F4/80lowHSCs throughout their lifespan, thereby revealing that they retain considerable stemness and remain functional with aging. Collectively, we propose a novel and straightforward method for the rapid identification, isolation, and analysis of distinct HSC subpopulations, which will be helpful for a wide range of hematological studies and will provide insights into HSC biology.",
-          "pub_date": "2026-07-02",
+          "title": "Linking Systemic Endotoxin Exposure to Retinal Microglia Migration Through Mathematical Modeling",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735687v1?rss=1",
+          "content": "Microglia are the resident immune cells of the central nervous system (CNS), including the brain, spinal cord, and retina, where they serve as the first line of defense against infection and inflammation. Dysregulated microglia activity has been implicated in vision-threatening diseases, highlighting the need to understand how retinal microglia respond to inflammatory stimuli. Importantly, acute inflammation induces substantial redistribution of microglia across retinal layers, yet the mechanisms governing this migration remain poorly understood. Here, we develop the first mathematical model of retinal microglia migration during inflammation to determine how inflammatory exposure, administration route, and species-specific pharmacokinetics shape redistribution dynamics across the retina. The model couples lipopolysaccharide (LPS) pharmacokinetics with microglia migration between the outer plexiform layer (OPL), inner plexiform layer (IPL), and ganglion cell layer/nerve fiber layer (GCL/NFL). Model parameters are calibrated to retinal microglia density measurements from mice following LPS (bacterial endotoxin) challenge, before extending the framework to rats and rhesus macaques to",
+          "pub_date": "2026-07-05",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1060
+          "word_count": 1199
         }
       ],
       "quota": {
@@ -601,9 +661,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 12,
-      "total_valid": 4,
-      "total_candidates": 3
+      "total_raw": 16,
+      "total_valid": 11,
+      "total_candidates": 8
     },
     "china": {
       "candidates": [],
@@ -619,7 +679,67 @@
     "payment": {
       "candidates": [
         {
-          "id": 707,
+          "id": 729,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Crypto Payments Firm Mesh Eyes $2 Billion Valuation Backed by Binance",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/crypto-payments-firm-mesh-eyes-2-billion-valuation-backed-by-binance/",
+          "content": "Binance is reportedly ready to lead a new funding round for crypto payments company Mesh. That’s according to Axios, which says the round could value Mesh at up to $2 billion. The report, citing sources familiar with the matter, noted that the funding round comes amid increasing demand for digital asset-to-fiat transfer tools, payment systems, and [&#8230;] The post Crypto Payments Firm Mesh Eyes $2 Billion Valuation Backed by Binance appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 00:59:18 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 469
+        },
+        {
+          "id": 738,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Thought Machine hits revenue milestone",
+          "link": "https://www.finextra.com/pressarticle/110336/thought-machine-hits-revenue-milestone?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Thought Machine, the cloud-native core banking and payments technology company, today announced it has surpassed the $100m total revenue threshold for the financial year ending December 2025, as verified by the filing of its audited accounts.",
+          "pub_date": "Mon, 06 Jul 2026 05:05:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 242
+        },
+        {
+          "id": 736,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Crédit Agricole buys Worldline out of merchant payments JV",
+          "link": "https://www.finextra.com/newsarticle/48040/crdit-agricole-buys-worldline-out-of-merchant-payments-jv?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Crédit Agricole has bought out Worldline to take 100% ownership of Cawl, the merchant payment services joint venture the two established in 2023. Financial terms were not disclosed.",
+          "pub_date": "Mon, 06 Jul 2026 00:01:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 181
+        },
+        {
+          "id": 746,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "The 24/7/365 Treasury: How stablecoins are reducing the “weekend settlement gap”",
+          "link": "https://www.thunes.com/insights/learn/how-stablecoins-are-reducing-the-weekend-settlement-gap/",
+          "content": "Cross-border payments have become a 24/7, always-on experience – nearly.&#160; While cross-border payment initiation has become increasingly real-time, settlement has not kept pace. The movement of liquidity and settlement between financial institutions – the last mile – still depends heavily on banking hours, market cut-off times, correspondent banking networks and local holiday schedules.&#160; For treasury ... Read more &#187; The post The 24/7/365 Treasury: How stablecoins are reducing the “weekend settlement gap” first appeared on Thunes.com .",
+          "pub_date": "Tue, 30 Jun 2026 20:13:53 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 554
+        },
+        {
+          "id": 735,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -634,7 +754,7 @@
           "word_count": 483
         },
         {
-          "id": 706,
+          "id": 734,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -647,6 +767,66 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 467
+        },
+        {
+          "id": 730,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Anthropic, White House Have Not Discussed Government Stake in Firm",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-white-house-have-not-discussed-government-stake-in-firm/",
+          "content": "Last week it was reported that OpenAI had offered the government a stake in the company. So far, rival artificial intelligence startup Anthropic does not seem to have followed suit, according to a corresponding report from Reuters. A source familiar with the matter told the news outlet that the White House and Anthropic have not [&#8230;] The post Anthropic, White House Have Not Discussed Government Stake in Firm appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 00:34:35 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 447
+        },
+        {
+          "id": 733,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Prediction Markets Score Thanks to World Cup’s Popularity",
+          "link": "https://www.pymnts.com/economy/markets/2026/prediction-markets-score-thanks-to-world-cups-popularity/",
+          "content": "Prediction markets have reportedly seen a surge in trading volume thanks to the World Cup. Kalshi saw more than $31 billion in notional volume in June, a 70% increase from May, CNBC reported Saturday (July 4), citing Dune Analytics. The platform has consistently seen volumes of more than $1 billion each day since the tournament [&#8230;] The post Prediction Markets Score Thanks to World Cup&#8217;s Popularity appeared first on PYMNTS.com .",
+          "pub_date": "Sun, 05 Jul 2026 22:56:20 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 443
+        },
+        {
+          "id": 728,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Microsoft Merges Enterprise and Consumer Copilot Apps",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-merges-enterprise-and-consumer-copilot-apps/",
+          "content": "Microsoft is reportedly planning to combine its Copilot consumer and enterprise artificial intelligence apps. The tech giant is also eliminating unwanted features so it can ‘earn the right to exist’ in the eyes of customers, according to a memo cited in a Thursday (July 2) report from The Information. In that memo, Jacob Andreou — [&#8230;] The post Microsoft Merges Enterprise and Consumer Copilot Apps appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 01:21:12 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 436
+        },
+        {
+          "id": 737,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Financial platform for immigrants LemFi buys Wealth8",
+          "link": "https://www.finextra.com/newsarticle/48041/financial-platform-for-immigrants-lemfi-buys-wealth8?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "LemFi, a Nigerian-founded financial services fintech for immigrant communities, has received the green light from UK regulators to buy investment platform Wealth8.",
+          "pub_date": "Mon, 06 Jul 2026 00:01:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 163
         }
       ],
       "quota": {
@@ -654,15 +834,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 177,
-      "total_valid": 2,
-      "total_candidates": 2
+      "total_raw": 192,
+      "total_valid": 13,
+      "total_candidates": 10
     }
   },
   "meta": {
-    "total_raw": 882,
-    "dup": 302,
-    "nocontent": 401,
+    "total_raw": 918,
+    "dup": 280,
+    "nocontent": 408,
     "noise": 0
   }
 }
