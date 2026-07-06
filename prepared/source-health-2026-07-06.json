@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 5,
+      "count": 4,
       "ok": true
     },
     "Anthropic Blog": {
@@ -34,13 +34,13 @@
     "NVIDIA Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 10,
+      "count": 9,
       "ok": true
     },
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 6,
+      "count": 7,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 3,
+      "count": 1,
       "ok": true
     },
     "Sequoia Capital": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 20,
+      "count": 21,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
+      "count": 2,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
+      "count": 7,
       "ok": true
     },
     "WHO News": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 62,
+      "count": 66,
       "ok": true
     },
     "NEJM": {
@@ -178,32 +178,32 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 17,
+      "ok": true
     },
     "Lancet Infect Dis": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 7,
+      "ok": true
     },
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 9,
+      "ok": true
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 4,
+      "ok": true
     },
     "Immunity": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 10,
+      "ok": true
     },
     "Science": {
       "section": "vaccine",
@@ -226,7 +226,7 @@
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
+      "count": 8,
       "ok": true
     },
     "Nature Vaccines": {
@@ -304,8 +304,8 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 16,
+      "ok": true
     },
     "BioPharma Dive": {
       "section": "vaccine",
@@ -328,13 +328,13 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 12,
+      "count": 13,
       "ok": true
     },
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -352,8 +352,8 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 11,
+      "ok": true
     },
     "bioRxiv SynBio": {
       "section": "synbio",
@@ -389,7 +389,7 @@
       "section": "cross",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "NEJM AI": {
       "section": "cross",
@@ -400,13 +400,13 @@
     "Nature Methods": {
       "section": "cross",
       "method": "rss",
-      "count": 5,
+      "count": 6,
       "ok": true
     },
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 9,
+      "count": 10,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -418,13 +418,13 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 2,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 10,
+      "count": 22,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -504,31 +504,21 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Cell",
-      "Cell Host Microbe",
-      "Cell Reports Medicine",
-      "Cell Systems",
       "ClinicalTrials.gov",
-      "Immunity",
       "Import AI",
-      "Lancet Digital Health",
-      "Lancet Infect Dis",
       "NEJM",
-      "NEJM AI",
-      "The Lancet"
+      "NEJM AI"
     ],
     "sudden_drop": [
-      "BioPharma Dive",
-      "Endpoints News"
+      "BioPharma Dive"
     ],
     "persistent_zero": [
       "Cointelegraph Payments",
       "JAMA",
+      "Lancet Digital Health",
       "Ledger Insights",
       "PYMNTS Cross-Border",
       "Payments Cards & Mobile",
-      "PaymentsDive",
-      "STAT News",
       "arXiv cs.AI",
       "arXiv cs.CL",
       "arXiv cs.LG"

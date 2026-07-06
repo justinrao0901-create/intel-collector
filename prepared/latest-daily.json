@@ -5,7 +5,37 @@
     "ai": {
       "candidates": [
         {
-          "id": 61,
+          "id": 60,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "DataComp-VLM: Improved Open Datasets for Vision-Language Models",
+          "link": "https://arxiv.org/abs/2606.28551",
+          "content": "Building performant Vision-Language Models (VLMs) requires carefully curating large-scale training datasets, yet the community lacks systematic benchmarks for evaluating such curation strategies. We introduce DataComp for VLMs (DCVLM), a benchmark for controlled data-centric experiments to improve VLM training. As part of DCVLM, we collect 160 datasets spanning four data types -- image-caption pairs, multimodal interleaved documents, text-only, and instruction-tuning data -- into a corpus of 6T multimodal tokens. DCVLM allows participants to test curation strategies (filtering, mixing, formatting, sampling) across 1B-8B models and 6.25B-200B token budgets. Models are then evaluated on a carefully selected suite of up to 52 downstream benchmarks across 9 domains. We conduct extensive experiments on DCVLM and find that data mixing, not filtering, is key to a high-quality training dataset: instruction-heavy mixtures scale better than caption-heavy ones, with gains widening at larger scales. The resulting dataset, DCVLM-Baseline, enables training an 8B VLM to 63.6% accuracy on our 33-task core suite with 200B training tokens. Compared to FineVision, the state-of-the-art open VLM traini",
+          "pub_date": "2026-06-25T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 63,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "MultAttnAttrib: Training-Free Multimodal Attribution in Long Document Question Answering",
+          "link": "https://arxiv.org/abs/2607.01420",
+          "content": "As grounded QA systems are increasingly deployed in AI assistants, accurately attributing generated answers to evidence is critical for user trust and model safety. While unimodal attributions have been explored in depth, the multimodal setting remains relatively under-researched. As a result, we introduce MultAttnAttrib, a training-free attribution-generation method that leverages a model's prefill pass, selected attention heads, and calibrated thresholds to locate source evidence within a document. To establish baseline results for the method, we introduce MultAttrEval, a complementary benchmark dataset annotated with fine-grained, ground-truth attributions for answer components grounded in multimodal source documents. To our knowledge, this is the first evaluation dataset designed specifically for multimodal attribution in long-form documents. Experimental results show that MultAttnAttrib consistently outperforms a variety of attribution-generation methods, including several strong prompting-based approaches and matches the latest frontier models such as GPT 5.4. Our method not only substantially improves attribution accuracy for both unimodal and multimodal attribution types, b",
+          "pub_date": "2026-06-30T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -20,37 +50,22 @@
           "word_count": 1200
         },
         {
-          "id": 62,
-          "source": "HuggingFace Daily Papers",
+          "id": 124,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
+          "tier": "T2",
           "priority": 5,
-          "title": "AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation",
-          "link": "https://arxiv.org/abs/2607.00052",
-          "content": "GraphRAG is an extension of retrieval-augmented generation (RAG) that supports large language models (LLMs) by referring to graph-structured data as external knowledge. While this technique ideally captures intricate relationships, it often struggles with graph representations for LLMs, particularly for frozen LLMs, due to the misalignment between graph-based and text-based latent features. We tackle this issue by introducing the {\\it Adaptive-masking for Graph Embedding (AGE)}. AGE employs a Transformer in a mask-based self-supervised learning (SSL) approach. We designed the architecture similar to text embedding encoders, addressing the latent feature misalignment. In contrast to natural language texts, graphs are concise representations, and there exist {\\it key nodes} that hold dominant contextual information, which are challenging to predict from their surroundings. Masking such key nodes leads to inefficiency in the SSL process. Therefore, AGE focuses on predicting nodes apart from key nodes, utilizing a learnable node sampler. Our experimental results indicate that AGE significantly improves approaches using non-parametric search component in GraphQA tasks, achieving superio",
-          "pub_date": "2026-06-29T20:00:00.000Z",
+          "title": "sqlite-utils 4.0rc3",
+          "link": "https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything",
+          "content": "Release: sqlite-utils 4.0rc3 I hoped to release sqlite-utils 4.0 stable this weekend, but as I worked through the backlog of issues and PRs with a combination of Claude Fable 5 and GPT-5.5 the changelog since rc2 kept getting bigger . The biggest new feature is support for introspecting and creating compound foreign keys - a feature that involves a subtle breaking change to table.foreign_keys and hence needed to land for the 4.0 stable release. sqlite-utils also now follows SQLite's convention for case insensitive column names, which turned out to touch a bunch of different places at once . Tags: projects , sqlite , sqlite-utils , annotated-release-notes , gpt , claude-mythos-fable",
+          "pub_date": "2026-07-06T05:40:08+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 690
         },
         {
-          "id": 64,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
-          "link": "https://arxiv.org/abs/2607.02501",
-          "content": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do not satisfy the runtime contract of embodied deployment: multi-rate execution inside closed-loop control, latency-first batch-1 inference on heterogeneous hardware, and extensible embodied interfaces beyond fixed token I/O. We present Embodied.cpp, a portable C++ inference runtime for embodied models. Based on an architectural analysis of representative VLA models and WAMs, Embodied.cpp captures a shared execution path and organizes it into five layers: input adapters, sequence builders, backbone execution, head plugins, and deployment adapters. The runtime provides modular multi-rate execution, latency-first fused inference, and extensible operator and I/O support, enabling deployment across heterogeneous devices, robots, and simulators through one backend abstraction. We evaluate Embodied.cpp on two VLA models, HY-VLA and pi0.",
-          "pub_date": "2026-07-01T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 134,
+          "id": 132,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 539
         },
         {
-          "id": 141,
+          "id": 139,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -80,22 +95,7 @@
           "word_count": 503
         },
         {
-          "id": 138,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting Anthropic",
-          "link": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
-          "content": "We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5. We'll begin restoring access tomorrow, and will share an update soon. &mdash; Anthropic , on Twitter Tags: anthropic , claude , generative-ai , claude-mythos-fable , ai , llms",
-          "pub_date": "2026-06-30T23:58:15+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 288
-        },
-        {
-          "id": 45,
+          "id": 44,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 320
         },
         {
-          "id": 47,
+          "id": 46,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 290
         },
         {
-          "id": 76,
+          "id": 75,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 55
         },
         {
-          "id": 116,
+          "id": 113,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 155
         },
         {
-          "id": 119,
+          "id": 116,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 105
         },
         {
-          "id": 124,
+          "id": 121,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,29 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 240,
-      "total_valid": 22,
+      "total_raw": 238,
+      "total_valid": 24,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 526,
+          "id": 451,
+          "source": "Nature Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Exhausted CD8<sup>+</sup> T cell subsets differ a TAD",
+          "link": "https://www.nature.com/articles/s41590-026-02583-7",
+          "content": "Nature Immunology, Published online: 06 July 2026; doi:10.1038/s41590-026-02583-7 Lineage choices that maintain and diversify exhausted CD8+ T cells under chronic antigen exposure are driven by epigenetic rewiring. CTCF-mediated spatial chromatin reorganization is shown to regulate subset-specific architecture and gene expression programs, guiding differentiation of stem-like and effector exhausted CD8+ T cells.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 415
+        },
+        {
+          "id": 586,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +227,7 @@
           "word_count": 197
         },
         {
-          "id": 527,
+          "id": 587,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +242,7 @@
           "word_count": 151
         },
         {
-          "id": 535,
+          "id": 595,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +257,7 @@
           "word_count": 65
         },
         {
-          "id": 314,
+          "id": 372,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +272,7 @@
           "word_count": 56
         },
         {
-          "id": 468,
+          "id": 528,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 243
         },
         {
-          "id": 520,
+          "id": 580,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 243
         },
         {
-          "id": 443,
+          "id": 503,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,124 +317,109 @@
           "word_count": 240
         },
         {
-          "id": 264,
-          "source": "Nature",
+          "id": 241,
+          "source": "STAT News",
           "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Tin perovskite transistors stabilized through volatile coordination",
-          "link": "https://www.nature.com/articles/s41586-026-10714-1",
-          "content": "Nature, Published online: 01 July 2026; doi:10.1038/s41586-026-10714-1 A volatile-assisted coordination strategy regulates surface defect chemistry and self-doping, thus stabilizing the stoichiometry of tin perovskite semiconductors, resulting in transistors that can maintain stable operation for a month at temperatures of 100 °C.",
-          "pub_date": "2026-07-01",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: Pharmalittle: We’re reading about a Novartis acquisition, Republicans backing clinical trial diversity, and more",
+          "link": "https://www.statnews.com/pharmalot/2026/07/06/novartis-buys-myricx-republicans-back-clinical-trial-diversity/?utm_campaign=rss",
+          "content": "Novartis is pushing deeper into antibody-drug conjugate development, paying $1.1 billion upfront to buy Myricx Bio",
+          "pub_date": "Mon, 06 Jul 2026 12:56:19 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 332
+          "word_count": 114
         },
         {
-          "id": 271,
-          "source": "Nature",
+          "id": 244,
+          "source": "STAT News",
           "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Aerosols and hydrocarbons in the atmosphere of a white dwarf planet",
-          "link": "https://www.nature.com/articles/s41586-026-10514-7",
-          "content": "Nature, Published online: 01 July 2026; doi:10.1038/s41586-026-10514-7 Transmission spectroscopy of the planet WD 1856 b, orbiting a white dwarf, with the James Webb Space Telescope reveals the presence of hydrocarbons and aerosols in its atmosphere, providing insight into its mass and heating history.",
-          "pub_date": "2026-07-01",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: GOP lawmakers push Trump’s FDA to make sure clinical trials are diverse",
+          "link": "https://www.statnews.com/2026/07/06/republican-lawmakers-attempt-clinical-trial-diversity-protection/?utm_campaign=rss",
+          "content": "Supporters say clinical trial diversity is about making sure drugs and devices work, not about DEI.",
+          "pub_date": "Mon, 06 Jul 2026 08:30:00 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 303
+          "word_count": 99
         },
         {
-          "id": 265,
-          "source": "Nature",
+          "id": 242,
+          "source": "STAT News",
           "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Hadean bridgmanite in the source of a present-day ocean island",
-          "link": "https://www.nature.com/articles/s41586-026-10719-w",
-          "content": "Nature, Published online: 01 July 2026; doi:10.1038/s41586-026-10719-w New high-precision neodymium isotope data measured on recently erupted lavas from the submarine Fani Maoré volcano in the Comoros archipelago allow the identification of heterogeneities dating back to Earth’s earliest history.",
-          "pub_date": "2026-07-01",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The race for an Ebola therapy begins",
+          "link": "https://www.statnews.com/2026/07/06/health-news-race-for-an-ebola-therapy-begins/?utm_campaign=rss",
+          "content": "Male marathoners \"hit the wall,\" mental health in 2026, and more Morning Rounds news",
+          "pub_date": "Mon, 06 Jul 2026 12:08:48 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 297
+          "word_count": 84
         },
         {
-          "id": 559,
-          "source": "Nature Reviews Microbiology",
+          "id": 325,
+          "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
-          "title": "Climate factors and evolution drive cholera surges in Dhaka",
-          "link": "https://www.nature.com/articles/s41579-026-01342-7",
-          "content": "Nature Reviews Microbiology, Published online: 02 July 2026; doi:10.1038/s41579-026-01342-7 This study suggests that both genomic evolution and climate factors shape the dynamics of cholera transmission and drive case surges in Dhaka city, Bangladesh.",
+          "title": "[Correspondence] Make rehabilitation count: invest in people, not just devices",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01047-0/fulltext?rss=yes",
+          "content": "The WHO global rehabilitation indicators represent a vital shift from counting disease to measuring functioning and lives lived with quality and dignity,1 and to ensuring rehabilitation is an essential part of the health-care continuum rather than a luxury add-on. After the recent 79th World Health Assembly review of rehabilitation progress on Rehabilitation 2030,2 we highlight two persistent gaps in current dialogue and attention which risk undermining such progress towards access to rehabilitation for all.",
+          "pub_date": "2026-07-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 513
+        },
+        {
+          "id": 330,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] From PCOS to PMOS: perspectives on the new nomenclature",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01084-6/fulltext?rss=yes",
+          "content": "The group led by Helena J Teede should be commended for undertaking a rigorous international effort through surveys and expert consensus to reconsider the nomenclature of polycystic ovary syndrome (PCOS).1 The proposed term polyendocrine metabolic ovarian syndrome (PMOS) represents an important attempt to move beyond historically inaccurate terminology. However, renaming alone does not resolve one of the central challenges of PCOS: the marked biological and clinical heterogeneity of the condition itself.",
+          "pub_date": "2026-07-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 509
+        },
+        {
+          "id": 323,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Perspectives] Epidemiological invisibilisation: a man overdoses in Tijuana",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01298-5/fulltext?rss=yes",
+          "content": "Ramón, a 55-year-old Mexican national and deportee from the USA with opioid use disorder, was rushed into a harm reduction clinic in Tijuana, Mexico, during an overdose. Minutes before, ambulance staff had found him unconscious on the street, with blue lips and nailbeds, and an imperceptible respiratory rate. Their small stock of naloxone for the month had run out days earlier, so they brought him to the community harm reduction clinic, where he received intranasal naloxone and airway management.",
+          "pub_date": "2026-07-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 501
+        },
+        {
+          "id": 358,
+          "source": "Immunity",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Extracellular ATP-P2RY2 signaling drives intratumoral prostaglandin E2 accumulation and adaptive resistance to immunotherapy in solid tumors",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00257-8?rss=yes",
+          "content": "Extracellular ATP (eATP) is associated with immune suppression in the tumor microenvironment (TME) via its metabolite adenosine. Hu et al. find that immunotherapy increases eATP within the TME and drives immune suppression through direct binding of the purinergic receptor P2RY2, driving pathological COX-1- and COX-2-PGE₂ hyperactivation in solid tumors. This self-reinforcing circuit promotes adaptive resistance to immunotherapy.",
           "pub_date": "2026-07-02",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 251
-        },
-        {
-          "id": 390,
-          "source": "Nature Immunology",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Mechanosensing by T cells promotes a tissue-resident memory transcriptional program",
-          "link": "https://www.nature.com/articles/s41590-026-02581-9",
-          "content": "Nature Immunology, Published online: 03 July 2026; doi:10.1038/s41590-026-02581-9 Mandl and colleagues show that increased mechanical input drives transcriptional changes associated with a core tissue-resident program in activated CD8+ T cells.",
-          "pub_date": "2026-07-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 244
-        },
-        {
-          "id": 552,
-          "source": "Nature Reviews Immunology",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Glycolytic capacity instructs tumour vasculature and response to immunotherapy",
-          "link": "https://www.nature.com/articles/s41577-026-01333-y",
-          "content": "Nature Reviews Immunology, Published online: 30 June 2026; doi:10.1038/s41577-026-01333-y A preprint by Serganova, Colombo et al. shows that tumour glycolytic capacity drives vascular abnormalities that influence the response to immunotherapy.",
-          "pub_date": "2026-06-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 243
-        },
-        {
-          "id": 397,
-          "source": "Nature Immunology",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Critical connections",
-          "link": "https://www.nature.com/articles/s41590-026-02594-4",
-          "content": "Nature Immunology, Published online: 29 June 2026; doi:10.1038/s41590-026-02594-4 New perspectives, insights and therapy applications can arise from exploring the interactions between the immune and nervous systems.",
-          "pub_date": "2026-06-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 215
-        },
-        {
-          "id": 551,
-          "source": "Nature Reviews Immunology",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Vaginal NK cells limit epithelial barrier disruption during infection",
-          "link": "https://www.nature.com/articles/s41577-026-01332-z",
-          "content": "Nature Reviews Immunology, Published online: 30 June 2026; doi:10.1038/s41577-026-01332-z A preprint by Vick et al. reports a crucial role for vaginal NK cells in maintaining epithelial integrity during infection.",
-          "pub_date": "2026-06-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 213
+          "word_count": 432
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 356,
-      "total_valid": 199,
+      "total_raw": 434,
+      "total_valid": 240,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 657,
+          "id": 735,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 103
         },
         {
-          "id": 619,
+          "id": 697,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 101
         },
         {
-          "id": 658,
+          "id": 736,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,37 @@
           "word_count": 79
         },
         {
-          "id": 683,
+          "id": 752,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "AI decodes protein–ligand binding",
+          "link": "https://www.nature.com/articles/s41589-026-02268-0",
+          "content": "Nature Chemical Biology, Published online: 06 July 2026; doi:10.1038/s41589-026-02268-0 Structure-based binding affinity prediction has to navigate a trade-off between accuracy and throughput. Now, PBCNet2.0 learns geometry-aware pairwise affinity changes at scale, delivering free energy perturbation-competitive ranking accuracy while offering interpretable interaction insights and emergent sensitivity to binding-pocket mutations.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 434
+        },
+        {
+          "id": 753,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Cephalotaxinone enzymes reveal a whole plant model for homoharringtonine biosynthesis",
+          "link": "https://www.nature.com/articles/s41589-026-02260-8",
+          "content": "Nature Chemical Biology, Published online: 06 July 2026; doi:10.1038/s41589-026-02260-8 Homoharringtonine (HHT) is a plant-derived anticancer drug approved by the US Food and Drug Administration. Here, the authors elucidate a root-tip-specific biosynthetic pathway to its alkaloid core, identifying six enzymes and seven intermediates and revealing a whole-plant coordination model for HHT biosynthesis.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 403
+        },
+        {
+          "id": 772,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +524,22 @@
           "word_count": 333
         },
         {
-          "id": 678,
+          "id": 686,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Guiding generative models to uncover diverse and novel crystals via reinforcement learning",
+          "link": "https://www.nature.com/articles/s42256-026-01262-4",
+          "content": "Nature Machine Intelligence, Published online: 06 July 2026; doi:10.1038/s42256-026-01262-4 Park and Walsh introduce a reinforcement learning framework that could accelerate the discovery of new, thermodynamically stable and diverse crystalline materials with desired properties.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 279
+        },
+        {
+          "id": 767,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +554,7 @@
           "word_count": 246
         },
         {
-          "id": 685,
+          "id": 774,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -529,14 +574,104 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 125,
-      "total_valid": 7,
-      "total_candidates": 6
+      "total_raw": 138,
+      "total_valid": 10,
+      "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 534,
+          "id": 752,
+          "source": "Nature Chemical Biology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "AI decodes protein–ligand binding",
+          "link": "https://www.nature.com/articles/s41589-026-02268-0",
+          "content": "Nature Chemical Biology, Published online: 06 July 2026; doi:10.1038/s41589-026-02268-0 Structure-based binding affinity prediction has to navigate a trade-off between accuracy and throughput. Now, PBCNet2.0 learns geometry-aware pairwise affinity changes at scale, delivering free energy perturbation-competitive ranking accuracy while offering interpretable interaction insights and emergent sensitivity to binding-pocket mutations.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 434
+        },
+        {
+          "id": 753,
+          "source": "Nature Chemical Biology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Cephalotaxinone enzymes reveal a whole plant model for homoharringtonine biosynthesis",
+          "link": "https://www.nature.com/articles/s41589-026-02260-8",
+          "content": "Nature Chemical Biology, Published online: 06 July 2026; doi:10.1038/s41589-026-02260-8 Homoharringtonine (HHT) is a plant-derived anticancer drug approved by the US Food and Drug Administration. Here, the authors elucidate a root-tip-specific biosynthetic pathway to its alkaloid core, identifying six enzymes and seven intermediates and revealing a whole-plant coordination model for HHT biosynthesis.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 403
+        },
+        {
+          "id": 686,
+          "source": "Nature Machine Intel",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Guiding generative models to uncover diverse and novel crystals via reinforcement learning",
+          "link": "https://www.nature.com/articles/s42256-026-01262-4",
+          "content": "Nature Machine Intelligence, Published online: 06 July 2026; doi:10.1038/s42256-026-01262-4 Park and Walsh introduce a reinforcement learning framework that could accelerate the discovery of new, thermodynamically stable and diverse crystalline materials with desired properties.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 279
+        },
+        {
+          "id": 811,
+          "source": "Nature Methods",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A comprehensive benchmark of sequence-based subcellular localization predictors for human proteins",
+          "link": "https://www.nature.com/articles/s41592-026-03142-6",
+          "content": "Nature Methods, Published online: 06 July 2026; doi:10.1038/s41592-026-03142-6 This Registered Report presents the results of a study to evaluate the performance of sequence-based protein localization predictors on a curated test dataset of 3,814 human proteins.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 262
+        },
+        {
+          "id": 419,
+          "source": "Nature Biotech",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Author Correction: Sustained nitric oxide production by engineered <i>E. coli</i> remodels the tumor microenvironment and potentiates immunotherapy",
+          "link": "https://www.nature.com/articles/s41587-026-03247-5",
+          "content": "Nature Biotechnology, Published online: 06 July 2026; doi:10.1038/s41587-026-03247-5 Author Correction: Sustained nitric oxide production by engineered E. coli remodels the tumor microenvironment and potentiates immunotherapy",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 225
+        },
+        {
+          "id": 253,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Universities are relying on AI-detection software to catch cheating. How well do the programs work?",
+          "link": "https://www.nature.com/articles/d41586-026-01358-2",
+          "content": "Nature, Published online: 06 July 2026; doi:10.1038/d41586-026-01358-2 Technology companies say that their services can sniff out AI-generated writing, but their tools vary in technique and quality.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 198
+        },
+        {
+          "id": 594,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +686,7 @@
           "word_count": 65
         },
         {
-          "id": 537,
+          "id": 597,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +701,7 @@
           "word_count": 65
         },
         {
-          "id": 538,
+          "id": 598,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +716,7 @@
           "word_count": 65
         },
         {
-          "id": 320,
+          "id": 378,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -594,66 +729,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 58
-        },
-        {
-          "id": 325,
-          "source": "Science",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "A classroom contract for AI",
-          "link": "https://www.science.org/doi/abs/10.1126/science.aek1435?af=R",
-          "content": "Science, Volume 393, Issue 6806 , Page 114-114, July 2026.",
-          "pub_date": "2026-07-02T06:00:12Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 58
-        },
-        {
-          "id": 416,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Analysis of genetic variation in the bovine Mannose Receptor gene (MRC1), its influence on receptor expression, and a potential association with resistance to bovine tuberculosis",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734952v1?rss=1",
-          "content": "Naturally occurring variation in the bovine mannose receptor C-type 1 gene (MRC1) may shape macrophage responses to Mycobacterium (M.) bovis, a key driver of bovine tuberculosis (bTB). We identified four coding region SNPs in MRC1 across Bos taurus (Holstein Friesian, Brown Swiss) and Bos indicus (Boran, Sahiwal) cattle breeds, including a non-synonymous variant, rs380943118 (c.2963G>A; Ser988Asn) in C-type lectin-like domain (CTLD) 6, most prevalent in Sahiwal cattle. Structural modelling suggested that the S988N substitution, which is spatially separated from the monosaccharide binding site of CTLD4, might indirectly affect glycan binding, perhaps through a conformational change in the receptor. Monocyte-derived macrophages upregulated MR expression during differentiation, with heterozygous (G/A) animals showing higher MR expression and increased uptake of GFP-M. bovis BCG, although differences were not statistically significant. Anti-CD206 blockade did not inhibit BCG internalization, either indicating that this specific antibody did not bind to a CTLD involved in ligand binding or that MR is not the sole entry receptor. These results highlight naturally occurring MRC1 polymorph",
-          "pub_date": "2026-07-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 422,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Targeted depletion of CD38+ autoreactive T cells prevents type 1 diabetes",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734105v1?rss=1",
-          "content": "Type 1 diabetes (T1D) is caused by T cell-mediated autoimmune destruction of insulin-producing islet beta-cells. Treatment with T-cell depleting therapies delays the progression of stage 2 and 3 T1D, but these agents exert broad immunosuppressive effects on T cell populations, including T regulatory cells (Tregs), which are key in promoting immune tolerance. We evaluated non-obese diabetic (NOD) mice and recently diagnosed T1D patients and identified CD38 as a marker for pathogenic T cell populations. Using adoptive T-cell transfer in Recombination Activating Gene 1 knockout NOD mice and in a humanized mouse model of autoimmune diabetes, we demonstrated that CD38-expressing autoreactive T cells drive diabetes pathogenesis. Furthermore, we found that selective depletion of CD38+ cells, using an anti-CD38 monoclonal antibody (mAb), prevents insulitis and diabetes onset without depleting CD4+CD25+ Tregs. Administration of anti-CD38 mAb did not adversely affect islet function and may selectively eliminate immunogenic senescent islet beta-cells. These results support the strategy of selectively depleting diabetogenic T cells using an anti-CD38 mAb to treat T1D and restore immune toleran",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 398,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Linking Systemic Endotoxin Exposure to Retinal Microglia Migration Through Mathematical Modeling",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.30.735687v1?rss=1",
-          "content": "Microglia are the resident immune cells of the central nervous system (CNS), including the brain, spinal cord, and retina, where they serve as the first line of defense against infection and inflammation. Dysregulated microglia activity has been implicated in vision-threatening diseases, highlighting the need to understand how retinal microglia respond to inflammatory stimuli. Importantly, acute inflammation induces substantial redistribution of microglia across retinal layers, yet the mechanisms governing this migration remain poorly understood. Here, we develop the first mathematical model of retinal microglia migration during inflammation to determine how inflammatory exposure, administration route, and species-specific pharmacokinetics shape redistribution dynamics across the retina. The model couples lipopolysaccharide (LPS) pharmacokinetics with microglia migration between the outer plexiform layer (OPL), inner plexiform layer (IPL), and ganglion cell layer/nerve fiber layer (GCL/NFL). Model parameters are calibrated to retinal microglia density measurements from mice following LPS (bacterial endotoxin) challenge, before extending the framework to rats and rhesus macaques to",
-          "pub_date": "2026-07-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1199
         }
       ],
       "quota": {
@@ -661,9 +736,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 16,
-      "total_valid": 11,
-      "total_candidates": 8
+      "total_raw": 24,
+      "total_valid": 19,
+      "total_candidates": 10
     },
     "china": {
       "candidates": [],
@@ -679,22 +754,82 @@
     "payment": {
       "candidates": [
         {
-          "id": 729,
+          "id": 819,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Crypto Payments Firm Mesh Eyes $2 Billion Valuation Backed by Binance",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/crypto-payments-firm-mesh-eyes-2-billion-valuation-backed-by-binance/",
-          "content": "Binance is reportedly ready to lead a new funding round for crypto payments company Mesh. That’s according to Axios, which says the round could value Mesh at up to $2 billion. The report, citing sources familiar with the matter, noted that the funding round comes amid increasing demand for digital asset-to-fiat transfer tools, payment systems, and [&#8230;] The post Crypto Payments Firm Mesh Eyes $2 Billion Valuation Backed by Binance appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 00:59:18 +0000",
+          "title": "Real-Time Payments Target Healthcare Benefits Bottlenecks",
+          "link": "https://www.pymnts.com/real-time-payments/2026/real-time-payments-target-healthcare-benefits-bottlenecks/",
+          "content": "Real-time money movement is beginning to alter the expectations surrounding healthcare and HR benefits where reimbursement timing and payout clarity have long been sources of frustration for employers and participants alike. Within healthcare and human resources (HR) benefits, those frictions remain deeply embedded in the processes that govern payouts. The most persistent friction points appear [&#8230;] The post Real-Time Payments Target Healthcare Benefits Bottlenecks appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 08:02:15 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 469
+          "word_count": 505
         },
         {
-          "id": 738,
+          "id": 821,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "24% of RTP® Network Holdouts Say Current B2B Payment Methods Work Well Enough",
+          "link": "https://www.pymnts.com/news/b2b-payments/2026/24-percent-of-rtp-network-holdouts-say-current-b2b-payment-methods-work-well-enough/",
+          "content": "Real-time B2B payments may not be losing to skepticism. They are losing, for now, to payment systems that work just well enough. That is one of the more useful takeaways from the PYMNTS Intelligence report, “Ready and Willing: B2B Payments Are Headed for Real-Time Rails. Here’s How They’re Getting There.” The report finds that instant payments outperform traditional methods [&#8230;] The post 24% of RTP® Network Holdouts Say Current B2B Payment Methods Work Well Enough appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 08:00:39 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 504
+        },
+        {
+          "id": 824,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Credit Unions Fight Fraud by Connecting Member Data Faster",
+          "link": "https://www.pymnts.com/credit-unions/2026/credit-unions-fight-fraud-by-connecting-member-data-faster/",
+          "content": "Fraud has become a moving target for credit unions, and the pace of change is forcing institutions to rethink how they protect members without slowing everyday banking. Criminals are no longer concentrating on a single payment channel or one weak point. Instead, they are stitching together attacks that stretch from account opening through authentication and [&#8230;] The post Credit Unions Fight Fraud by Connecting Member Data Faster appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 08:00:09 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 468
+        },
+        {
+          "id": 823,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Europe Wants Its Own Digital Money Moment",
+          "link": "https://www.pymnts.com/news/payments-innovation/2026/europe-wants-its-own-digital-money-moment/",
+          "content": "Watch more: How Stablecoins Are Reshaping Global Banking The same question can have both a strategic answer and a practical one. That’s something EU lawmakers are finding out in real time, after the European Parliament’s ECON Committee approved a plan by the European Central Bank to launch a digital euro by 2029. For Europe, the [&#8230;] The post Europe Wants Its Own Digital Money Moment appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 08:00:22 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 422
+        },
+        {
+          "id": 836,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Ripple receives full Crypto Asset Service Provider licence in Europe",
+          "link": "https://www.finextra.com/pressarticle/110346/ripple-receives-full-crypto-asset-service-provider-licence-in-europe?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Ripple, the leading provider of blockchain-based enterprise solutions across traditional and digital finance, today announced it has received authorisation of its Crypto Asset Service Provider (CASP) license from Luxembourg’s Commission de Surveillance du Secteur Financier (CSSF).",
+          "pub_date": "Mon, 06 Jul 2026 11:31:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 281
+        },
+        {
+          "id": 838,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +844,52 @@
           "word_count": 242
         },
         {
-          "id": 736,
+          "id": 837,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Caixabank initiates first agentic shopping transaction",
+          "link": "https://www.finextra.com/pressarticle/110345/caixabank-initiates-first-agentic-shopping-transaction?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "CaixaBank, in collaboration with Visa, has completed its first transaction initiated by an artificial intelligence agent on behalf of a cardholder, as part of the new agentic commerce experiences beginning to emerge in Europe.",
+          "pub_date": "Mon, 06 Jul 2026 10:19:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 226
+        },
+        {
+          "id": 834,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "BBVA completes first agent-initiated transaction",
+          "link": "https://www.finextra.com/pressarticle/110348/bbva-completes-first-agent-initiated-transaction?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "BBVA has completed a transaction initiated by an artificial intelligence agent on behalf of a cardholder, as part of a live agentic commerce activity that Visa is developing in Europe under its Visa Agentic Ready programme.",
+          "pub_date": "Mon, 06 Jul 2026 12:11:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 223
+        },
+        {
+          "id": 830,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "PSR lauds results of APP fraud reimbursement policy",
+          "link": "https://www.finextra.com/newsarticle/48042/psr-lauds-results-of-app-fraud-reimbursement-policy?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "The UK's Payment Systems Regulator says it APP fraud reimbursement policy is having a postitive impact, with fewer victims, more money returned and firms stepping up to tackle and prevent fraud.",
+          "pub_date": "Mon, 06 Jul 2026 09:27:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 194
+        },
+        {
+          "id": 831,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +904,37 @@
           "word_count": 181
         },
         {
-          "id": 746,
+          "id": 828,
+          "source": "PaymentsDive",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Simplifying the operations behind modern payments",
+          "link": "https://www.paymentsdive.com/spons/simplifying-the-operations-behind-modern-payments/823602/",
+          "content": "Reduce &ldquo;operational drag&rdquo; with a payment solution built for Adobe Commerce and Magento Open Source.",
+          "pub_date": "Mon, 06 Jul 2026 05:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 111
+        },
+        {
+          "id": 827,
+          "source": "PaymentsDive",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The B2B payments infrastructure gap: Most platforms weren’t built for agentic AI",
+          "link": "https://www.paymentsdive.com/spons/the-b2b-payments-infrastructure-gap-most-platforms-werent-built-for-agent/824370/",
+          "content": "Legacy B2B tech stacks were designed to be compatible with automation &mdash; not today&rsquo;s agentic AI.",
+          "pub_date": "Mon, 06 Jul 2026 05:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 107
+        },
+        {
+          "id": 851,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -739,94 +949,34 @@
           "word_count": 554
         },
         {
-          "id": 735,
+          "id": 817,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "White House Adviser Says Trump Won’t Create ‘FDA for AI’",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/white-house-adviser-says-trump-wont-create-fda-for-ai/",
-          "content": "The White House’s outgoing artificial intelligence adviser says the administration won’t require formal licensing for the technology. “There will not be an FDA for AI,” Sriram Krishnan said in an interview with the Financial Times (FT) Friday (July 3), in reference to the Food and Drug Administration. “This administration, [the] president, from day one has [&#8230;] The post White House Adviser Says Trump Won&#8217;t Create &#8216;FDA for AI&#8217; appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 05 Jul 2026 21:53:45 +0000",
+          "title": "FCA Seeks More AI Regulation as Agents Take Over Finance",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/fca-seeks-more-ai-regulation-as-agents-take-over-finance/",
+          "content": "British regulators are calling for tougher AI rules amid the rise of agentic banking services. “AI will reshape consumer financial journeys, with people increasingly delegating to AI applications that act on their behalf,” Sheldon Mills, an executive director for the Financial Conduct Authority (FCA), wrote in a report published Monday (July 6). “Consumer demand is already emerging, suggesting a shift [&#8230;] The post FCA Seeks More AI Regulation as Agents Take Over Finance appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 12:41:11 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 511
+        },
+        {
+          "id": 822,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Meet the AI Mom Assistant With a Grocery List",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/meet-the-ai-mom-assistant-with-a-grocery-list/",
+          "content": "Watch more: Digital Shift With AI-Empowered Mom’s Sarah Dooley Artificial intelligence (AI) has become synonymous with workplace productivity, helping employees summarize meetings, write code and automate repetitive tasks. But Sarah Dooley believes one of AI’s most important consumer applications is emerging somewhere much closer to home. Families are beginning to use AI to manage the [&#8230;] The post Meet the AI Mom Assistant With a Grocery List appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 06 Jul 2026 08:00:25 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 483
-        },
-        {
-          "id": 734,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Crypto Use Among Rogue States Jumped Eightfold in 2025",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/crypto-use-among-rogue-states-jumped-eightfold-in-2025/",
-          "content": "Countries sanctioned by the U.S. have reportedly increased their use of cryptocurrencies. Iran, North Korea, Russia and other sanctioned nations handled more than $100 billion in crypto just in 2025, The Wall Street Journal (WSJ) reported Saturday (July 4), citing industry estimates. The report added that these countries have grown more savvy in navigating the [&#8230;] The post Crypto Use Among Rogue States Jumped Eightfold in 2025 appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 05 Jul 2026 22:18:28 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 467
-        },
-        {
-          "id": 730,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Anthropic, White House Have Not Discussed Government Stake in Firm",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-white-house-have-not-discussed-government-stake-in-firm/",
-          "content": "Last week it was reported that OpenAI had offered the government a stake in the company. So far, rival artificial intelligence startup Anthropic does not seem to have followed suit, according to a corresponding report from Reuters. A source familiar with the matter told the news outlet that the White House and Anthropic have not [&#8230;] The post Anthropic, White House Have Not Discussed Government Stake in Firm appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 00:34:35 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 447
-        },
-        {
-          "id": 733,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Prediction Markets Score Thanks to World Cup’s Popularity",
-          "link": "https://www.pymnts.com/economy/markets/2026/prediction-markets-score-thanks-to-world-cups-popularity/",
-          "content": "Prediction markets have reportedly seen a surge in trading volume thanks to the World Cup. Kalshi saw more than $31 billion in notional volume in June, a 70% increase from May, CNBC reported Saturday (July 4), citing Dune Analytics. The platform has consistently seen volumes of more than $1 billion each day since the tournament [&#8230;] The post Prediction Markets Score Thanks to World Cup&#8217;s Popularity appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 05 Jul 2026 22:56:20 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 443
-        },
-        {
-          "id": 728,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Microsoft Merges Enterprise and Consumer Copilot Apps",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-merges-enterprise-and-consumer-copilot-apps/",
-          "content": "Microsoft is reportedly planning to combine its Copilot consumer and enterprise artificial intelligence apps. The tech giant is also eliminating unwanted features so it can ‘earn the right to exist’ in the eyes of customers, according to a memo cited in a Thursday (July 2) report from The Information. In that memo, Jacob Andreou — [&#8230;] The post Microsoft Merges Enterprise and Consumer Copilot Apps appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 01:21:12 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 436
-        },
-        {
-          "id": 737,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Financial platform for immigrants LemFi buys Wealth8",
-          "link": "https://www.finextra.com/newsarticle/48041/financial-platform-for-immigrants-lemfi-buys-wealth8?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "LemFi, a Nigerian-founded financial services fintech for immigrant communities, has received the green light from UK regulators to buy investment platform Wealth8.",
-          "pub_date": "Mon, 06 Jul 2026 00:01:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 163
         }
       ],
       "quota": {
@@ -834,15 +984,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 192,
-      "total_valid": 13,
-      "total_candidates": 10
+      "total_raw": 207,
+      "total_valid": 28,
+      "total_candidates": 15
     }
   },
   "meta": {
-    "total_raw": 918,
-    "dup": 280,
-    "nocontent": 408,
-    "noise": 0
+    "total_raw": 1023,
+    "dup": 318,
+    "nocontent": 411,
+    "noise": 2
   }
 }
