@@ -109,11 +109,14 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     concurrency:
       group: pages-deploy
       cancel-in-progress: false
     steps:
-      - name: 部署到 GitHub Pages
-        id: deployment
+      - name: 部署到 GitHub Pages(第 1 次)
+        id: deploy1
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: 部署重试(第 1 次瞬时失败时再来一次)
+        if: steps.deploy1.outcome == 'failure'
         uses: actions/deploy-pages@v4
