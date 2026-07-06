@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "WHO News": {
@@ -178,8 +178,8 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Lancet Infect Dis": {
       "section": "vaccine",
@@ -190,14 +190,14 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Immunity": {
       "section": "vaccine",
@@ -304,13 +304,13 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
+      "count": 1,
       "ok": true
     },
     "Fierce Biotech": {
@@ -334,7 +334,7 @@
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -389,7 +389,7 @@
       "section": "cross",
       "method": "rss",
       "count": 0,
-      "ok": true
+      "ok": false
     },
     "NEJM AI": {
       "section": "cross",
@@ -418,13 +418,13 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 2,
+      "count": 3,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 22,
+      "count": 23,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -504,18 +504,20 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
+      "Cell",
+      "Cell Host Microbe",
+      "Cell Reports Medicine",
       "ClinicalTrials.gov",
       "Import AI",
+      "Lancet Digital Health",
       "NEJM",
-      "NEJM AI"
+      "NEJM AI",
+      "The Lancet"
     ],
-    "sudden_drop": [
-      "BioPharma Dive"
-    ],
+    "sudden_drop": [],
     "persistent_zero": [
       "Cointelegraph Payments",
       "JAMA",
-      "Lancet Digital Health",
       "Ledger Insights",
       "PYMNTS Cross-Border",
       "Payments Cards & Mobile",
