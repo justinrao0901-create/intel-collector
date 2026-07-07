@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 45,
+          "id": 42,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 407
         },
         {
-          "id": 44,
+          "id": 41,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,37 @@
           "word_count": 372
         },
         {
-          "id": 78,
+          "id": 40,
+          "source": "NVIDIA Blog",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot for the Open Robotics Community",
+          "link": "https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/",
+          "content": "Open source AI has shown how quickly developers can innovate when models, data and tools are shared. Robotics has the same opportunity, but advancements in physical AI development can still be gated by costly and fragmented resources, from large datasets and robot foundation models to simulation, compute and validation tools. NVIDIA and Hugging Face are [&#8230;]",
+          "pub_date": "Tue, 07 Jul 2026 06:00:26 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 365
+        },
+        {
+          "id": 72,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The ‘first’ AI-run ransomware attack still needed a human",
+          "link": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
+          "content": "An AI agent carried out the technical execution of a real-world ransomware attack for the first known time, but new details show a human still chose the victim, set up the infrastructure, and supplied stolen credentials — meaning it wasn't quite the fully autonomous cybercrime debut that last week's headlines suggested.",
+          "pub_date": "Mon, 06 Jul 2026 23:56:14 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 321
+        },
+        {
+          "id": 77,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +80,7 @@
           "word_count": 224
         },
         {
-          "id": 79,
+          "id": 78,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,44 +95,14 @@
           "word_count": 215
         },
         {
-          "id": 77,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Every major tech layoff in 2026 that has name-checked AI",
-          "link": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
-          "content": "A running look — in reverse chronological order — at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
-          "pub_date": "Mon, 06 Jul 2026 18:35:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 156
-        },
-        {
-          "id": 60,
+          "id": 56,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Teaching LLMs to Recommend and Defer in Underrepresented Epilepsy Care",
-          "link": "https://arxiv.org/abs/2606.31036",
-          "content": "Specialist epilepsy expertise is scarce in resource-constrained settings, making LLM-based decision support attractive for frontline clinicians managing longitudinal treatment. Such systems must adapt to local prescribing practice and know when to defer. We study this problem in Ugandan pediatric epilepsy care, predicting anti-seizure medication regimens from longitudinal unstructured clinic notes. Standard prompting achieves non-trivial agreement with physician prescriptions, but neurologist review shows that many errors reflect distribution-miscalibrated prescribing defaults rather than failures to parse the local record. We introduce MANANA, a non-parametric prompt-learning framework that learns local prescribing guidance from a small patient-level training set. MANANA converts observed prescription errors into auditable prompt memories, instantiated in single-agent and multi-agent variants, and improves over classical ML models, direct LLM prompting, and prompt-optimization baselines across two independently collected Ugandan cohorts. We further propose Bayesian prompt averaging, which converts the learned prompt trajectory into prescription likelihoods and an uncertainty-based",
-          "pub_date": "2026-06-29T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 61,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Measuring the Gap Between Human and LLM Research Ideas",
-          "link": "https://arxiv.org/abs/2607.01233",
-          "content": "LLMs are increasingly used to brainstorm research ideas, but existing evaluations mostly judge individual ideas by novelty, feasibility, or expert preference. We instead ask: how far are current LLM-generated ideas from human researchers? To characterize this gap, we build a large-scale evaluation framework for ideation from high-quality human research papers. For each paper, we reverse-engineer a small set of closely related prior works that likely inspired its core idea. LLMs are then prompted to generate a new idea from the set of paper titles and summaries. We introduce a two-axis research-taste taxonomy to profile each idea by its opportunity pattern and research paradigm, and use it to quantify the divergence between human and LLM ideas. Across idea sets generated by different LLMs, we observe a consistent distributional gap: LLM ideas are disproportionately concentrated around bridge-like opportunities and synthesis methods, whereas the human paper reference distribution spreads more broadly across ways of framing gaps and constructing contributions. This result suggests that strong LLMs can produce a range of reasonable ideas, but that range remains narrower than, and syste",
+          "title": "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+          "link": "https://arxiv.org/abs/2607.00597",
+          "content": "Scientific literature search often requires more than retrieving papers from a single query: users' intents are underspecified, preference-dependent, and evolve through interaction. Existing search agents typically rely on fixed pipelines or implicit language-only reasoning, making their search strategies difficult to control, inspect, and refine. We introduce PaperPilot, a multi-turn literature search agent that frames scientific search as workflow induction. Given an anchor paper and a user query, PaperPilot constructs an executable DAG of paper-search operators, including keyword search, citation expansion, filtering, scoring, reranking, and evidence extraction. User feedback is then used to refine both the query and the workflow itself. We train PaperPilot with supervised workflow imitation and preference optimization over controlled workflow corruptions. Experiments show that PaperPilot-9B improves over the base Qwen3.5-9B toolset agent under multi-turn interaction, increasing Hit@5 from 58.0 to 77.0, MRR from 47.5 to 59.4, and nDCG@10 from 26.8 to 32.5, while reducing workflow execution errors from 9.5% to 0%. These results show that explicit, editable search workflows provid",
           "pub_date": "2026-06-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -110,22 +110,52 @@
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 58,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation",
-          "link": "https://arxiv.org/abs/2607.00052",
-          "content": "GraphRAG is an extension of retrieval-augmented generation (RAG) that supports large language models (LLMs) by referring to graph-structured data as external knowledge. While this technique ideally captures intricate relationships, it often struggles with graph representations for LLMs, particularly for frozen LLMs, due to the misalignment between graph-based and text-based latent features. We tackle this issue by introducing the {\\it Adaptive-masking for Graph Embedding (AGE)}. AGE employs a Transformer in a mask-based self-supervised learning (SSL) approach. We designed the architecture similar to text embedding encoders, addressing the latent feature misalignment. In contrast to natural language texts, graphs are concise representations, and there exist {\\it key nodes} that hold dominant contextual information, which are challenging to predict from their surroundings. Masking such key nodes leads to inefficiency in the SSL process. Therefore, AGE focuses on predicting nodes apart from key nodes, utilizing a learnable node sampler. Our experimental results indicate that AGE significantly improves approaches using non-parametric search component in GraphQA tasks, achieving superio",
-          "pub_date": "2026-06-29T20:00:00.000Z",
+          "title": "MV-Forcing: Long Multi-View Video Generation via 4D-Grounded Spatio-Temporal Self-Forcing",
+          "link": "https://arxiv.org/abs/2607.05376",
+          "content": "Recent advances in video diffusion models have enabled either long single-view generation through temporal autoregression, or short multi-view synthesis through bidirectional attention. However, generating long, multi-view consistent videos of dynamic scenes remains unsolved. In this work, we present MV-Forcing, a framework that composes temporal and view-wise autoregression within a single diffusion model by introducing a 4D geometric bridge between sequentially generated views. Our key insight is that an autoregressive 3D reconstruction model naturally interfaces between autoregressively generated views. Given a completed source view, we reconstruct its 3D structure and render a geometric prior of the next target viewpoint, which the diffusion model refines into a high-quality video. To extend generation beyond the teacher's fixed temporal window, we introduce a joint denoising regime where both view slots are initialized from noise during training, enabling temporally unbounded generation. We distill the model via Distribution Matching Distillation with Spatio-Temporal Self-Forcing, closing the train-inference exposure bias gap for both temporal and view-sequential autoregressio",
+          "pub_date": "2026-07-05T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 142,
+          "id": 59,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "CONFLUX: A Latent Diusion Model for 3D Chest-CT Synthesis with RL Post-Training",
+          "link": "https://arxiv.org/abs/2607.02998",
+          "content": "Controllable generative models of 3D medical images can synthesize volumes with specified clinical attributes, but this demands samples that are simultaneously high-fidelity, natively 3D, and faithful to the requested conditioning. We present CONFLUX, a latent diffusion model for chest computed tomography (CT): a 3D variational autoencoder compresses each volume, and a rectified-flow transformer generates in the latent space. Generation is conditioned on structured radiological metadata (18 abnormality findings, sex, age, and reconstruction kernel) through adaptive layer normalization. The model leads strong volumetric baselines on tri-planar Frechet distance (FID 32.3 vs. 74.6 for MAISI) while exposing direct control over clinical attributes. To strengthen that control we add an online reinforcement-learning post-training stage (group-relative policy optimization) that rewards how reliably a classifier recovers the requested findings from each generated volume. Judged by a separate, independent classifier, post-training removes 47% of the shortfall relative to real-scan reliability. We release the model and a ~200k synthetic chest-CT dataset with conditioning metadata spanning a w",
+          "pub_date": "2026-07-02T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1953,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "tencent/Hy3",
+          "link": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
+          "content": "tencent/Hy3 New Apache 2.0 licensed model from Tencent in China: Hy3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy Team. Following the Hy3 Preview launch in late April, we gathered feedback from 50+ products and scaled up post-training with higher quality data. Today, we introduce Hy3, which outperforms similar-size models and rivals flagship open-source models with 2-5x parameters. It also shows significant gains in utility across various products and productivity tasks. The full-sized model is 598GB on Hugging Face, and the FP8 quantized one is 300GB . The context length is 256K. It's available for free on OpenRouter until July 21st . I had it \"Generate an SVG of a pelican riding a bicycle\" there and got this: Tags: ai , generative-ai , llms , pelican-riding-a-bicycle , llm-release , ai-in-china",
+          "pub_date": "2026-07-06T23:57:35+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 899
+        },
+        {
+          "id": 1966,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +170,7 @@
           "word_count": 288
         },
         {
-          "id": 147,
+          "id": 1971,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -153,36 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 200
-        },
-        {
-          "id": 132,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "sqlite-utils 4.0rc2",
-          "link": "https://simonwillison.net/2026/Jul/5/sqlite-utils/#atom-everything",
-          "content": "Release: sqlite-utils 4.0rc2 See sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) .",
-          "pub_date": "2026-07-05T00:47:38+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 106
-        },
-        {
-          "id": 127,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "[AINews] It's Meta-Harness Summer",
-          "link": "https://www.latent.space/p/ainews-its-meta-harness-summer",
-          "content": "Move over, Harness Engineering, it is time for the harness of harnesses!",
-          "pub_date": "Thu, 25 Jun 2026 02:14:08 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 72
         }
       ],
       "quota": {
@@ -190,14 +190,59 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 242,
-      "total_valid": 24,
+      "total_raw": 2065,
+      "total_valid": 1385,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 547,
+          "id": 2245,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Bispecific 10E8.4/iMab broadly neutralizing antibody in people with or without HIV-1: a partially randomized phase 1 trial",
+          "link": "https://www.nature.com/articles/s41591-026-04472-w",
+          "content": "Nature Medicine, Published online: 07 July 2026; doi:10.1038/s41591-026-04472-w A first-in-human, partially randomized and placebo-controlled phase I trial examined the safety, tolerability, pharmacokinetics and antiviral activity of the bispecific 10E8.4/iMab broadly neutralizing monoclonal antibody in people living with or without HIV, and found it was safe and well tolerated at different dose levels and routes of administration.",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 435
+        },
+        {
+          "id": 2246,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Spatiotemporal diffusion of the 2024 Oropouche outbreak in Cuba",
+          "link": "https://www.nature.com/articles/s41591-026-04411-9",
+          "content": "Nature Medicine, Published online: 07 July 2026; doi:10.1038/s41591-026-04411-9 Whole genomes of Oropouche virus were sequenced in Cuba from people infected during the 2024 outbreak, and phylogenetic analyses suggest that this Cuban subclade was introduced through a single introduction from Brazil in early 2024.",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 313
+        },
+        {
+          "id": 2423,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Real-world effectiveness and impact of the 4CMenB vaccine against serogroup B invasive meningococcal disease: a systematic review and meta-analysis",
+          "link": "https://www.nature.com/articles/s41541-026-01511-y",
+          "content": "npj Vaccines, Published online: 06 July 2026; doi:10.1038/s41541-026-01511-y Real-world effectiveness and impact of the 4CMenB vaccine against serogroup B invasive meningococcal disease: a systematic review and meta-analysis",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 224
+        },
+        {
+          "id": 2362,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +257,7 @@
           "word_count": 236
         },
         {
-          "id": 576,
+          "id": 2391,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +272,7 @@
           "word_count": 234
         },
         {
-          "id": 563,
+          "id": 2378,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +287,7 @@
           "word_count": 230
         },
         {
-          "id": 251,
+          "id": 2075,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -257,7 +302,7 @@
           "word_count": 226
         },
         {
-          "id": 245,
+          "id": 2069,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -272,7 +317,22 @@
           "word_count": 191
         },
         {
-          "id": 342,
+          "id": 2077,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Opinion: What if this Ebola outbreak can’t be stopped?",
+          "link": "https://www.statnews.com/2026/07/07/ebola-outbreak-drc-uganda-endemic-control/?utm_campaign=rss",
+          "content": "In the past, the possibility of endemic Ebola was unthinkable. This time is different, write Ivan Buendia Gayton and Eric D. Perakslis.",
+          "pub_date": "Tue, 07 Jul 2026 08:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 135
+        },
+        {
+          "id": 2165,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +347,7 @@
           "word_count": 513
         },
         {
-          "id": 347,
+          "id": 2170,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +362,7 @@
           "word_count": 509
         },
         {
-          "id": 340,
+          "id": 2163,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -317,109 +377,49 @@
           "word_count": 501
         },
         {
-          "id": 653,
-          "source": "Cell Reports Medicine",
+          "id": 2278,
+          "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
-          "title": "Differential T cell clonal dynamics underlie outcomes to frontline chemoimmunotherapy in advanced gastric cancer",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00327-7?rss=yes",
-          "content": "Wright et al. use serial single-cell RNA/TCR sequencing to show that durable benefit from gastric cancer chemo-immunotherapy associates with persistence of putative tumor-reactive progenitor-exhausted T cells, circulating TCR clones that infiltrate tumors after immunotherapy, increased B cell abundance after chemotherapy, and B cell interactions that support T cell persistence.",
-          "pub_date": "2026-07-02",
+          "title": "Tissue-resident CD8<sup>+</sup> T cells link pregnancy to breast cancer protection",
+          "link": "https://www.nature.com/articles/s41590-026-02580-w",
+          "content": "Nature Immunology, Published online: 07 July 2026; doi:10.1038/s41590-026-02580-w We discovered that pregnancy promotes the expansion of tissue-resident memory-like CD8+ T (TRM-like) cells in the mammary gland. This expansion is driven by mammary gland alveologenesis and cytokines produced by mammary epithelial cells. Depletion of TRM-like cells abolished pregnancy-associated protection against breast cancer, whereas expansion of these cells conferred protection.",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 467
+        },
+        {
+          "id": 2247,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Longitudinal multiomics profiling of extracorporeal cross-circulation with pig liver xenografts in human decedents",
+          "link": "https://www.nature.com/articles/s41591-026-04511-6",
+          "content": "Nature Medicine, Published online: 07 July 2026; doi:10.1038/s41591-026-04511-6 Multiomics profiling of extracorporeal cross-circulation with gene-edited pig liver xenografts in four human decedents provides comprehensive information on immune, coagulation and metabolic parameters that will help in the clinical development of this strategy for delivering hepatic support to patients with liver failure.",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 404
+        },
+        {
+          "id": 2253,
+          "source": "Nature Biotech",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Frontier AI companies as biotech acquirers",
+          "link": "https://www.nature.com/articles/s41587-026-03214-0",
+          "content": "Nature Biotechnology, Published online: 07 July 2026; doi:10.1038/s41587-026-03214-0 A new class of biotech buyer is emerging, as frontier AI and big tech companies acquire early-stage biology foundational platforms. How do big tech acquisitions differ from traditional pharma exits, and what are the potential implications for founders, investors and the pharmaceutical industry?",
+          "pub_date": "2026-07-07",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 380
-        },
-        {
-          "id": 368,
-          "source": "Cell",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Multiscale integration of tissue and chromatin context converts cell heterogeneity into stable intestinal patterning",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00696-3?rss=yes",
-          "content": "During regeneration, tissues must translate transient cellular variability into stable spatial organization. Tissue architecture generates a density-dependent window of heterogeneity in the mechanosensor YAP1 that FOXA1 integrates with Delta-Notch signaling, thereby linking tissue-scale mechanics to bistable cell fate decisions and stable tissue patterning.",
-          "pub_date": "2026-06-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 359
-        },
-        {
-          "id": 362,
-          "source": "Cell",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Four-dimensional molecular mapping from a spatial snapshot reveals the dynamics of hair follicle organogenesis",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00702-6?rss=yes",
-          "content": "A deep-tissue spatial transcriptomics method simultaneously captures hundreds of hair follicles spanning organogenesis in mouse skin. Ordering follicles by molecular age transforms this snapshot into a map of organogenesis in both space and time, revealing the choreography of organ assembly and how it goes awry in genetically hairless mice.",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 342
-        },
-        {
-          "id": 655,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Targeted DNA triplex-forming oligonucleotide liposome for pulmonary fibrosis gene therapy",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00326-5?rss=yes",
-          "content": "Xu et al. develop a targeted DNA triplex-forming oligonucleotide liposome (tLipo-TFO1) for pulmonary fibrosis gene therapy to accelerate the clearance of deposited extracellular matrix. Downregulation of plasminogen activator inhibitor 1 (PAI-1) activates the fibrinolysis and attenuates the fibrosis of pulmonary-fibrosis-bearing mice.",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 336
-        },
-        {
-          "id": 665,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Advancing CAR-NK cell therapy in solid tumors: Current landscape and future directions",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00298-3?rss=yes",
-          "content": "CAR-NK cells offer a scalable and safer alternative to CAR-T therapy, with growing clinical success in hematologic malignancies. Here, Manzar et al. examine emerging engineering strategies and translational approaches aimed at overcoming key barriers in solid tumors and unlocking the broader therapeutic potential of CAR-NK therapy.",
-          "pub_date": "2026-06-25",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 333
-        },
-        {
-          "id": 363,
-          "source": "Cell",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Co-option of lysosomal machinery shapes the evolution of the intracellular photosymbiosis supporting coral reefs",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00701-4?rss=yes",
-          "content": "Corals harbor intracellular algal symbionts in specialized organelles that enable them to build diverse reef ecosystems. Corals and other cnidarians have repeatedly evolved this symbiosis through the co-option of lysosomal machinery to simultaneously support photosynthesis and extract photosynthetic products from the algae.",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 325
-        },
-        {
-          "id": 293,
-          "source": "Nature",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Hadean bridgmanite in the source of a present-day ocean island",
-          "link": "https://www.nature.com/articles/s41586-026-10719-w",
-          "content": "Nature, Published online: 01 July 2026; doi:10.1038/s41586-026-10719-w New high-precision neodymium isotope data measured on recently erupted lavas from the submarine Fani Maoré volcano in the Comoros archipelago allow the identification of heterogeneities dating back to Earth’s earliest history.",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 297
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 455,
-      "total_valid": 240,
+      "total_raw": 444,
+      "total_valid": 254,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 791,
+          "id": 2593,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1101
         },
         {
-          "id": 725,
+          "id": 2531,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 313
         },
         {
-          "id": 744,
+          "id": 2550,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 285
         },
         {
-          "id": 727,
+          "id": 2533,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 271
         },
         {
-          "id": 785,
+          "id": 2587,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 786,
+          "id": 2588,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -522,6 +522,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 2579,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Structural and biochemical basis for cannabinoid cyclase activity in marine bacterial flavoenzymes",
+          "link": "https://www.nature.com/articles/s41589-026-02257-3",
+          "content": "Nature Chemical Biology, Published online: 07 July 2026; doi:10.1038/s41589-026-02257-3 Cannabinoid cyclases produce bioactive cannabinoids, but their mechanisms are poorly understood. Here the authors solve the substrate-bound structure of a cannabinoid cyclase, show that bacterial and plant cyclases use distinct mechanisms and engineer variants with improved stereocontrol.",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 377
         }
       ],
       "quota": {
@@ -529,14 +544,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 102,
-      "total_valid": 10,
-      "total_candidates": 6
+      "total_raw": 92,
+      "total_valid": 11,
+      "total_candidates": 7
     },
     "cross": {
       "candidates": [
         {
-          "id": 787,
+          "id": 2589,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +566,7 @@
           "word_count": 1200
         },
         {
-          "id": 789,
+          "id": 2591,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +581,82 @@
           "word_count": 1200
         },
         {
-          "id": 620,
+          "id": 2253,
+          "source": "Nature Biotech",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Frontier AI companies as biotech acquirers",
+          "link": "https://www.nature.com/articles/s41587-026-03214-0",
+          "content": "Nature Biotechnology, Published online: 07 July 2026; doi:10.1038/s41587-026-03214-0 A new class of biotech buyer is emerging, as frontier AI and big tech companies acquire early-stage biology foundational platforms. How do big tech acquisitions differ from traditional pharma exits, and what are the potential implications for founders, investors and the pharmaceutical industry?",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 380
+        },
+        {
+          "id": 2246,
+          "source": "Nature Medicine",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Spatiotemporal diffusion of the 2024 Oropouche outbreak in Cuba",
+          "link": "https://www.nature.com/articles/s41591-026-04411-9",
+          "content": "Nature Medicine, Published online: 07 July 2026; doi:10.1038/s41591-026-04411-9 Whole genomes of Oropouche virus were sequenced in Cuba from people infected during the 2024 outbreak, and phylogenetic analyses suggest that this Cuban subclade was introduced through a single introduction from Brazil in early 2024.",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 313
+        },
+        {
+          "id": 2100,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Save Hubble: the race to preserve the space telescope kicks off",
+          "link": "https://www.nature.com/articles/d41586-026-02000-x",
+          "content": "Nature, Published online: 07 July 2026; doi:10.1038/d41586-026-02000-x The orbiting observatory’s unique vision and public support continue to be crucial for understanding the Universe.",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 185
+        },
+        {
+          "id": 2097,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Listen to Gen Z when it comes to AI in education",
+          "link": "https://www.nature.com/articles/d41586-026-02110-6",
+          "content": "Nature, Published online: 07 July 2026; doi:10.1038/d41586-026-02110-6 Listen to Gen Z when it comes to AI in education",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 119
+        },
+        {
+          "id": 2098,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "AI can cause harm: safeguards must catch up",
+          "link": "https://www.nature.com/articles/d41586-026-02109-z",
+          "content": "Nature, Published online: 07 July 2026; doi:10.1038/d41586-026-02109-z AI can cause harm: safeguards must catch up",
+          "pub_date": "2026-07-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 114
+        },
+        {
+          "id": 2435,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +671,7 @@
           "word_count": 65
         },
         {
-          "id": 400,
+          "id": 2217,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +686,7 @@
           "word_count": 58
         },
         {
-          "id": 250,
+          "id": 2074,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -609,81 +699,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 222
-        },
-        {
-          "id": 258,
-          "source": "STAT News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: I spoke to Anthropic’s CEO about how AI may affect biotech. Here’s what I learned",
-          "link": "https://www.statnews.com/2026/07/06/anthropic-ai-biotech-impact/?utm_campaign=rss",
-          "content": "Call AI in biotech hype at your peril. There are real reasons that pharmaceutical companies are embracing this technology right now.",
-          "pub_date": "Mon, 06 Jul 2026 08:30:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 132
-        },
-        {
-          "id": 255,
-          "source": "STAT News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: Four major biotech updates to catch up on",
-          "link": "https://www.statnews.com/2026/07/06/biotech-news-anthropic-ceo-dario-amodei-tempers-expectations/?utm_campaign=rss",
-          "content": "Anthropic CEO talks drug discovery, Medicare proposes steep 340B drug payment cuts, and more biotech news",
-          "pub_date": "Mon, 06 Jul 2026 13:37:50 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 105
-        },
-        {
-          "id": 495,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Analysis of genetic variation in the bovine Mannose Receptor gene (MRC1), its influence on receptor expression, and a potential association with resistance to bovine tuberculosis",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734952v1?rss=1",
-          "content": "Naturally occurring variation in the bovine mannose receptor C-type 1 gene (MRC1) may shape macrophage responses to Mycobacterium (M.) bovis, a key driver of bovine tuberculosis (bTB). We identified four coding region SNPs in MRC1 across Bos taurus (Holstein Friesian, Brown Swiss) and Bos indicus (Boran, Sahiwal) cattle breeds, including a non-synonymous variant, rs380943118 (c.2963G>A; Ser988Asn) in C-type lectin-like domain (CTLD) 6, most prevalent in Sahiwal cattle. Structural modelling suggested that the S988N substitution, which is spatially separated from the monosaccharide binding site of CTLD4, might indirectly affect glycan binding, perhaps through a conformational change in the receptor. Monocyte-derived macrophages upregulated MR expression during differentiation, with heterozygous (G/A) animals showing higher MR expression and increased uptake of GFP-M. bovis BCG, although differences were not statistically significant. Anti-CD206 blockade did not inhibit BCG internalization, either indicating that this specific antibody did not bind to a CTLD involved in ligand binding or that MR is not the sole entry receptor. These results highlight naturally occurring MRC1 polymorph",
-          "pub_date": "2026-07-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 501,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Targeted depletion of CD38+ autoreactive T cells prevents type 1 diabetes",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.27.734105v1?rss=1",
-          "content": "Type 1 diabetes (T1D) is caused by T cell-mediated autoimmune destruction of insulin-producing islet {beta}-cells. Treatment with T-cell depleting therapies delays the progression of stage 2 and 3 T1D, but these agents exert broad immunosuppressive effects on T cell populations, including T regulatory cells (Tregs), which are key in promoting immune tolerance. We evaluated non-obese diabetic (NOD) mice and recently diagnosed T1D patients and identified CD38 as a marker for pathogenic T cell populations. Using adoptive T-cell transfer in Recombination Activating Gene 1 knockout NOD mice and in a humanized mouse model of autoimmune diabetes, we demonstrated that CD38-expressing autoreactive T cells drive diabetes pathogenesis. Furthermore, we found that selective depletion of CD38+ cells, using an anti-CD38 monoclonal antibody (mAb), prevents insulitis and diabetes onset without depleting CD4+CD25+ Tregs. Administration of anti-CD38 mAb did not adversely affect islet function and may selectively eliminate immunogenic senescent islet {beta}-cells. These results support the strategy of selectively depleting diabetogenic T cells using an anti-CD38 mAb to treat T1D and restore immune tol",
-          "pub_date": "2026-07-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 507,
-          "source": "medRxiv Infectious",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Reimagining youth-responsive TB care: Voices and visions from adolescents and young adults who completed TB treatment in Nairobi, Kenya",
-          "link": "https://www.medrxiv.org/content/10.64898/2026.07.02.26357188v1?rss=1",
-          "content": "Tuberculosis (TB) services often fail to adequately address the needs of adolescents and young adults in many high-TB-burden settings. Despite evidence on the barriers this age group faces across the TB care pathway, young people are rarely involved in designing solutions to improve care that better meets their needs. This study focused on the perspectives of adolescents and young adults who had completed TB treatment in Nairobi, Kenya, engaging them as partners to examine their treatment experiences and co-create ways to improve youth?responsive TB services. This participatory qualitative study was conducted among young people aged 15-24 years (n=37) who had completed treatment for drug-susceptible TB from six health facilities in Nairobi County. Other study participants included County TB stakeholders, healthcare workers, facility managers and community representatives (n=214). Data were collected in December 2024 through four participatory workshops organised by age and gender to facilitate open discussion of shared lived experiences. Participants in each workshop used visual methods to describe their journey with TB, identified common challenges through group discussions, and p",
-          "pub_date": "2026-07-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -691,8 +706,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 19,
-      "total_valid": 13,
+      "total_raw": 39,
+      "total_valid": 34,
       "total_candidates": 10
     },
     "china": {
@@ -709,22 +724,37 @@
     "payment": {
       "candidates": [
         {
-          "id": 807,
+          "id": 2643,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Insights Into a Review of Outgrown Technology Stacks",
+          "link": "https://www.finextra.com/videoarticle/3542/insights-into-a-review-of-outgrown-technology-stacks?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "While at EBAday in Copenhagen, David Callanan, Head of Payments, Strategy and Operations, PTSB spoke to FinextraTV about how to retain reliability and trust in payments, as things continue to change. Callanan expressed optimism about the way trust is improving, and described an issue they faced and the key strategies they implemented in order to improve the issues within their technology stacks. Key to this change was a need for minimal disruption and a frictionless process that still allows for security and compliance.",
+          "pub_date": "Tue, 07 Jul 2026 11:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 525
+        },
+        {
+          "id": 2611,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Klarna’s Charter Bid Tests the FinTech Banking Model",
-          "link": "https://www.pymnts.com/news/banking/2026/klarna-charter-bid-tests-fintech-banking-model/",
-          "content": "FinTechs are treating banking licenses as strategic infrastructure. Klarna’s decision to apply to establish Klarna Bank USA, a Utah-chartered industrial bank, illustrates that shift. The Swedish company filed applications with both the Utah Department of Financial Institutions and the Federal Deposit Insurance Corp., seeking authority to operate a federally insured industrial bank in the United [&#8230;] The post Klarna’s Charter Bid Tests the FinTech Banking Model appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 22:05:25 +0000",
+          "title": "84% of Cross-Border Shoppers Say One-Click Checkout Influences Merchant Choice",
+          "link": "https://www.pymnts.com/commerce/ecommerce/2026/84-percent-of-cross-border-shoppers-say-one-click-checkout-influences-merchant-choice/",
+          "content": "For merchants looking overseas for growth, the fastest route may run straight through the checkout page. That is the central finding of “Payments Optimization: Powering Global eCommerce Growth,” a PYMNTS Intelligence report done with Worldpay. The report argues that cross-border demand is there, but too many merchants still make it harder than it needs to be for customers [&#8230;] The post 84% of Cross-Border Shoppers Say One-Click Checkout Influences Merchant Choice appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 07 Jul 2026 08:00:45 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 500
+          "word_count": 503
         },
         {
-          "id": 816,
+          "id": 2617,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -739,22 +769,67 @@
           "word_count": 491
         },
         {
-          "id": 809,
+          "id": 2612,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Stablecoin and Collateral Rules Give Crypto a New Bankability Test",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-and-collateral-rules-give-crypto-a-new-bankability-test/",
-          "content": "Digital assets began with the idea that trust could be engineered out of the system. The current regulatory trajectory in the U.S. now suggests something different. Two new legal developments, one from FinCEN and federal banking regulators and the other from the New York State legislature amending their Uniform Commercial Code (UCC), underscore that when it [&#8230;] The post Stablecoin and Collateral Rules Give Crypto a New Bankability Test appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 21:00:35 +0000",
+          "title": "Workers Face Cash Gaps While Earned Wage Access Sits Unused",
+          "link": "https://www.pymnts.com/consumer-finance/2026/workers-face-cash-gaps-while-earned-wage-access-sits-unused/",
+          "content": "Earned wage access has largely solved the question of availability. The remaining challenge is persuading workers that it deserves a place in their regular financial lives. That distinction emerges from the Wage to Wallet Index, produced by PYMNTS Intelligence in collaboration with Ingo Payments and WorkWhile. The research paints a picture of workers who routinely [&#8230;] The post Workers Face Cash Gaps While Earned Wage Access Sits Unused appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 07 Jul 2026 08:00:40 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 476
         },
         {
-          "id": 847,
+          "id": 2615,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Gift Card Loophole Gives Hackers a New Way to Cash Out",
+          "link": "https://www.pymnts.com/cybersecurity/2026/gift-card-loophole-gives-hackers-a-new-way-to-cash-out/",
+          "content": "Every artificial intelligence (AI) platform that stores a payment method and adds a gifting feature has created a new monetization surface for account takeover fraud. Claude users are discovering gift subscriptions they never bought showing up as charges on their credit cards, The Guardian reported in May. Attackers did not breach Anthropic’s systems. They exploited [&#8230;] The post Gift Card Loophole Gives Hackers a New Way to Cash Out appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 07 Jul 2026 00:09:50 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 473
+        },
+        {
+          "id": 2608,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Insurers Find a Loyalty Test in Every Premium Payment",
+          "link": "https://www.pymnts.com/insurance/2026/insurers-find-a-loyalty-test-in-every-premium-payment/",
+          "content": "Watch more: Need to Know With One Inc’s Colin Zalewski For millions of drivers, paying an auto insurance bill is one of the most common financial transactions they make, yet it is also one of the least appreciated opportunities for insurers to strengthen customer relationships. Claims naturally command attention because they determine whether an insurer [&#8230;] The post Insurers Find a Loyalty Test in Every Premium Payment appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 07 Jul 2026 08:02:04 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 459
+        },
+        {
+          "id": 2614,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Big Banks Eye Payments Deal That Could Rewire Debit Fees",
+          "link": "https://www.pymnts.com/news/banking/2026/big-banks-eye-payments-deal-that-could-rewire-debit-fees/",
+          "content": "Some of the biggest U.S. banks are exploring a deal that could reshape the economics of debit cards, reopen one of payments’ fiercest policy fights and give large issuers a way around federal fee limits they have opposed for more than a decade. The Wall Street Journal reported Monday (July 6) that JPMorgan Chase, Bank [&#8230;] The post Big Banks Eye Payments Deal That Could Rewire Debit Fees appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 07 Jul 2026 01:01:16 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 426
+        },
+        {
+          "id": 2657,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +844,7 @@
           "word_count": 354
         },
         {
-          "id": 848,
+          "id": 2658,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +859,7 @@
           "word_count": 351
         },
         {
-          "id": 849,
+          "id": 2659,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +874,37 @@
           "word_count": 323
         },
         {
-          "id": 824,
+          "id": 2633,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "credit card-linked instalments fintech Float goes live in the UK",
+          "link": "https://www.finextra.com/pressarticle/110355/credit-card-linked-instalments-fintech-float-goes-live-in-the-uk?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Float, the card-linked instalment platform, has launched in the UK. Compatible with 55+ million UK credit cards, Float lets merchants offer their shoppers up to 12 interest-and fee-free1 monthly instalments using the credit card they already have – with no new credit issued and no additional sign-up process.",
+          "pub_date": "Tue, 07 Jul 2026 09:36:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 309
+        },
+        {
+          "id": 2634,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Open banking fraud rates remain below wider UK payments industry benchmarks",
+          "link": "https://www.finextra.com/pressarticle/110354/open-banking-fraud-rates-remain-below-wider-uk-payments-industry-benchmarks?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Fraud rates within Open Banking payments remain below wider UK payments industry benchmarks as adoption of Open Banking continues to grow, according to the first edition of the Open Banking Payments & Fraud Monitor, published today by Open Banking Limited (OBL).",
+          "pub_date": "Tue, 07 Jul 2026 09:19:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 262
+        },
+        {
+          "id": 2629,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +919,7 @@
           "word_count": 181
         },
         {
-          "id": 830,
+          "id": 2641,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +934,22 @@
           "word_count": 151
         },
         {
-          "id": 817,
+          "id": 2635,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Nuvion adds Ripple stablecoin to payments stack",
+          "link": "https://www.finextra.com/pressarticle/110353/nuvion-adds-ripple-stablecoin-to-payments-stack?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Businesses today operate in a world where customers, suppliers, contractors, and partners increasingly span multiple countries and currencies.",
+          "pub_date": "Tue, 07 Jul 2026 09:17:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 142
+        },
+        {
+          "id": 2618,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -844,37 +964,22 @@
           "word_count": 115
         },
         {
-          "id": 842,
-          "source": "Finextra",
+          "id": 1953,
+          "source": "Simon Willison",
           "section": "payment",
           "tier": "T2",
-          "priority": 4,
-          "title": "How wallet-based refunds can turn into new purchase opportunities",
-          "link": "https://www.finextra.com/blogposting/32197/how-wallet-based-refunds-can-turn-into-new-purchase-opportunities?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The payments industry has spent the past decade transforming the checkout experience. From embedded ...",
-          "pub_date": "Mon, 06 Jul 2026 14:26:01 GMT",
+          "priority": 5,
+          "title": "tencent/Hy3",
+          "link": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
+          "content": "tencent/Hy3 New Apache 2.0 licensed model from Tencent in China: Hy3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy Team. Following the Hy3 Preview launch in late April, we gathered feedback from 50+ products and scaled up post-training with higher quality data. Today, we introduce Hy3, which outperforms similar-size models and rivals flagship open-source models with 2-5x parameters. It also shows significant gains in utility across various products and productivity tasks. The full-sized model is 598GB on Hugging Face, and the FP8 quantized one is 300GB . The context length is 256K. It's available for free on OpenRouter until July 21st . I had it \"Generate an SVG of a pelican riding a bicycle\" there and got this: Tags: ai , generative-ai , llms , pelican-riding-a-bicycle , llm-release , ai-in-china",
+          "pub_date": "2026-07-06T23:57:35+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 103
+          "word_count": 899
         },
         {
-          "id": 821,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Klarna applies for US banking license",
-          "link": "https://www.finextra.com/newsarticle/48045/klarna-applies-for-us-banking-license?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Swedish fintech giant Klarna has applied for a US banking license.",
-          "pub_date": "Mon, 06 Jul 2026 15:22:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 66
-        },
-        {
-          "id": 855,
+          "id": 2665,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -889,94 +994,34 @@
           "word_count": 188
         },
         {
-          "id": 806,
-          "source": "PYMNTS.com",
+          "id": 432,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Google Expands AI Training to Include User-Uploaded Media via Search Tools",
-          "link": "https://www.pymnts.com/google/2026/google-expands-ai-training-to-include-user-uploaded-media-via-search-tools/",
-          "content": "Google has expanded the scope of data it collects to train its artificial intelligence models, now incorporating media uploaded by users across several of its primary search-related services. The policy change, Engadget reported Monday (July 6), was implemented without much public fanfare and allows the technology giant to use images, audio, video and other files [&#8230;] The post Google Expands AI Training to Include User-Uploaded Media via Search Tools appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 22:18:05 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Explainable Reinforcement Learning for Adaptive Traffic Signal Control",
+          "link": "https://arxiv.org/abs/2607.03703",
+          "content": "arXiv:2607.03703v1 Announce Type: new Abstract: Reinforcement Learning (RL) has emerged as a powerful paradigm for adaptive traffic signal control. However, in safety-critical infrastructure like traffic control, the opaque, black-box nature of deep RL models poses challenges for transportation agency acceptance, regulatory compliance, operational trust, troubleshooting, and fine-tuning. To bridge this gap between high-performance optimization and human-comprehensible interpretability, this effort introduces a novel, explainable entity centric RL framework for safe and transparent traffic signal control. Rather than processing traffic states through monolithic, flat vectors, the proposed architecture disaggregates real-time intersection observations into distinct, high-dimensional lane entities and phase temporal configurations to inherently preserve the structural topology and geometric configurations of the intersection. Relational dependencies and inter-lane conflicts are dynamically extracted via a dual-stage attention network featuring sequential multi-head cross-attention and self-attention blocks. This design yields a real time affinity matrix that quantifies the direct infl",
+          "pub_date": "Tue, 07 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 490
+          "word_count": 1200
         },
         {
-          "id": 811,
-          "source": "PYMNTS.com",
+          "id": 584,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "White House Signals More Hands-On Approach to Oversight of AI Systems",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/white-house-signals-more-hands-on-approach-to-oversight-of-ai-systems/",
-          "content": "From hands-off to hands-on. The Trump administration increasingly is taking a direct role in overseeing the release of the most powerful artificial intelligence (AI) models, marking a sharp turnaround from its previous policy of removing regulations that might hamper U.S. development of the technology. Last week, the White House lifted the export restrictions it had [&#8230;] The post White House Signals More Hands-On Approach to Oversight of AI Systems appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 20:07:35 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "A Multi-Task Deep Learning Framework for Real-Time Intelligent Video Surveillance with Temporal Event Validation",
+          "link": "https://arxiv.org/abs/2607.03131",
+          "content": "arXiv:2607.03131v1 Announce Type: cross Abstract: Modern video surveillance systems generate far more video streams than human operators can effectively monitor, making automated analysis essential for timely detection of security events. This paper presents a unified multi-task deep learning framework that simultaneously performs face recognition with zone-based authorization, automatic license plate recognition, weapon detection, fire and smoke detection, and human action recognition on a shared GPU platform. Among the integrated modules, two task-specific deep-learning models are proposed in this work to address scenarios that are insufficiently represented in publicly available datasets: a single-class weapon detector fine-tuned on a merged and relabeled dataset, achieving a mean average precision (mAP@0.5) of 0.947, and a SlowFast-R50 action recognition model trained on a purpose-built vandalism dataset comprising 614 video clips, achieving 94.33% classification accuracy. To improve robustness in continuous video, all detection modules are integrated into a temporal event-validation architecture based on multi-frame confirmation, confidence-weighted voting, and cascaded filter",
+          "pub_date": "Tue, 07 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 488
-        },
-        {
-          "id": 808,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Retailers, Platforms Seek Sales-Tax Exemptions to Bolster Resale Market",
-          "link": "https://www.pymnts.com/news/retail/2026/retailers-platforms-seek-sales-tax-exemptions-to-bolster-resale-market/",
-          "content": "A coalition of global fashion brands and digital marketplaces is mounting a campaign to eliminate sales taxes on secondhand clothing, according to a report June 30 from Retail Brew. The group argues that taxing items at the point of resale constitutes “double taxation,” as the government already collected sales tax when the garments were originally [&#8230;] The post Retailers, Platforms Seek Sales-Tax Exemptions to Bolster Resale Market appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 21:36:35 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 472
-        },
-        {
-          "id": 812,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "An AI Trained on Wall Street’s Own Data Just Beat GPT",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/an-ai-trained-on-wall-streets-own-data-just-beat-gpt/",
-          "content": "General-purpose AI models have been trained on enormous volumes of public financial data. What they cannot replicate is the judgment an experienced investment analyst builds over years — which signals matter, which documents are worth reading and how to separate the relevant from the noise inside a 300-page filing. Bridgewater Associates, the world’s largest hedge [&#8230;] The post An AI Trained on Wall Street’s Own Data Just Beat GPT appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 06 Jul 2026 19:40:47 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 470
-        },
-        {
-          "id": 826,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "DNB goes live on nCino platform for corporate lending business",
-          "link": "https://www.finextra.com/pressarticle/110351/dnb-goes-live-on-ncino-platform-for-corporate-lending-business?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "nCino, Inc. (NASDAQ: NCNO), the platform for agentic AI banking, today announced that DNB has gone live on the nCino Platform, powering its corporate lending business, with plans to extend to SME lending next year.",
-          "pub_date": "Mon, 06 Jul 2026 18:04:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 214
-        },
-        {
-          "id": 827,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Bluevine launches US business banking offering for India-resident business owners",
-          "link": "https://www.finextra.com/pressarticle/110350/bluevine-launches-us-business-banking-offering-for-india-resident-business-owners?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Bluevine, the largest digital banking platform for small businesses in the U.S.*, today announced the launch of its US business banking solutions for eligible India-resident owners of U.S.-registered businesses**.",
-          "pub_date": "Mon, 06 Jul 2026 15:38:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 213
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -984,15 +1029,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 218,
-      "total_valid": 33,
-      "total_candidates": 18
+      "total_raw": 239,
+      "total_valid": 56,
+      "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1023,
-    "dup": 315,
-    "nocontent": 410,
+    "total_raw": 2833,
+    "dup": 748,
+    "nocontent": 400,
     "noise": 2
   }
 }
