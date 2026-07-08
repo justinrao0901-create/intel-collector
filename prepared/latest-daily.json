@@ -100,9 +100,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages",
-          "link": "https://arxiv.org/abs/2607.05992",
-          "content": "Mathematical reasoning has become a central task for evaluating and tuning reasoning Large Language Models (LLMs), yet existing benchmarks remain heavily biased toward high-resource languages, with English and Chinese dominating both pre-training corpora and evaluation suites. The recently released PolyMath (Wang et al., 2025) dataset represents a significant step forward, yet its coverage is still limited to 18 only high-resource languages. To address this gap, we introduce PluraMath, an extension of PolyMath to 18 additional {underrepresented languages spanning 6 language families -- ranging from mid-resource to extreme low-resource settings. We constructed the dataset through a human-curated pipeline, where native speakers thoroughly validated pre-computed translations. Using PluraMath, we then benchmark 27 reasoning LLMs across four model scales -- small, mid-size, large, and closed-source ensembles -- probing the multilingual mathematical reasoning capabilities of state-of-the-art models under diverse linguistic conditions. Our fine-grained analysis confirms a persistent gap in mathematical reasoning performance between high-resource and underrepresented languages, with strong",
+          "title": "From Foundation to Application: Improving VLA Models in Practice",
+          "link": "https://arxiv.org/abs/2607.06403",
+          "content": "Despite recent progress of VLA foundation models, the disparity between laboratory conditions and real-world applications continues to impede their practical implementation. To bridge this gap, we present LingBot-VLA 2.0, which advances LingBot-VLA through improvements in three functional domains. (1) Generalization across tasks and embodiments. Compared to the previous version, we revamp the data processing pipeline and curate around 60,000 hours of data for pretraining, including 50,000 hours of robot trajectories spanning 20 robot configurations and 10,000 hours of egocentric human videos. (2) Expanded action space in addition to dual-arm hardware platforms. In particular, our system accommodates degrees of freedom for the heads, waists, mobile bases, and dexterous hands, thereby empowering the robots to tackle more complex tasks in practical scenarios. (3) Predictive dynamics modeling for improved temporal reasoning. Specifically, we formulate future prediction as a proxy task, facilitated by a video representation model for semantic priors and a depth estimation model for geometric cues. Evaluations on the GM-100 benchmark, conducted in a generalist setting, validate the benef",
+          "pub_date": "2026-07-06T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 56,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator",
+          "link": "https://arxiv.org/abs/2607.05765",
+          "content": "Embodied navigation aims to build agents that interpret multimodal goals, reason in 3D space, and reach target destinations reliably in the real world. However, progress remains constrained by the lack of scalable, high-fidelity, and physically grounded interactive environments. Although real-world scanned datasets offer visual realism, they are limited by scale. In contrast, synthetic simulators scale more easily but often exhibit large sim-to-real gaps. We introduce Image2Sim, a real-time neural simulation framework that constructs high-quality interactive environments from posed RGB-D image sequences. The central idea is to decouple 3D spatial anchoring from photorealistic observation synthesis. For scene construction, Image2Sim uses a feed-forward feature Gaussian model that lifts posed RGB-D observations into a 3D feature-Gaussian representation in a single pass. For rendering, we propose a Geometry-Aware One-Step Pixel Flow model that transforms sparse and noisy Gaussian projections into high-quality panoramic RGB-D observations. Image2Sim also serves as a fully automated embodied data engine that generates high-fidelity observations, executable actions, and diverse navigatio",
           "pub_date": "2026-07-06T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -115,24 +130,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "When Classic Cache Policies Fail: Learning-Augmented Replacement for Semantic Retrieval Buffers",
-          "link": "https://arxiv.org/abs/2607.00394",
-          "content": "LLM agents increasingly rely on retrieval buffers to store and reuse past experience, yet the cache management policies governing these buffers remain largely ad-hoc. We formalize this as an online semantic cache replacement problem with switching costs, where items are matched by embedding similarity and hit quality is continuous rather than binary. Through experiments on two datasets from MemoryBench-Full (LoCoMo, DialSim) with 8 replacement policies, we reveal a surprising finding: classic heuristics (LRU, LFU) consistently underperform the naive FIFO baseline on semantic workloads, due to the absence of temporal locality and frequency concentration. We propose SOLAR, a learning-augmented framework that derives modification timing from regret accumulation (achieving sim17\\% modification rate) and content selection from Bayesian online learning over implicit retrieval feedback. We prove SOLAR achieves a constant competitive ratio leq 3, independent of cache size and horizon (vs.\\ Ω(K) for FIFO), and eviction regret O(KTlog T), matching the Ω(KT) lower bound up to logarithmic factors. Experiments demonstrate 5--75\\% relative improvement over FIFO at tight cache sizes, with a clear",
-          "pub_date": "2026-06-30T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 59,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training",
-          "link": "https://arxiv.org/abs/2607.05804",
-          "content": "On-policy distillation (OPD) trains a student policy by matching a stronger teacher on the student's own trajectories, offering a promising framework for language agent training. However, its application to long-horizon agentic tasks remains insufficiently explored. We identify two key inefficiencies in vanilla agent OPD: (1) full-horizon rollouts often waste wall-clock resources on tail turns that provide weak and noisy KL supervision, and (2) trajectory-level KL objectives concentrate most of the loss on shallow tokens, leaving deeper decision turns under-trained once initial behaviors are aligned. To address these challenges, we propose TurnOPD, a turn-level budgeting strategy for efficient on-policy distillation of long-horizon agents. TurnOPD consists of two budget controllers: adaptive rollout-depth budgeting, which uses probe-based turn statistics to determine rollout length, and progressive turn-normalized loss budgeting, which gradually shifts KL weighting from token-level to turn-balanced supervision. Experiments on ALFWorld, WebShop, and Multi-Hop Search with task-specialized teacher models show that TurnOPD achieves superior validation accuracy under equal wall-clock tr",
+          "title": "PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages",
+          "link": "https://arxiv.org/abs/2607.05992",
+          "content": "Mathematical reasoning has become a central task for evaluating and tuning reasoning Large Language Models (LLMs), yet existing benchmarks remain heavily biased toward high-resource languages, with English and Chinese dominating both pre-training corpora and evaluation suites. The recently released PolyMath (Wang et al., 2025) dataset represents a significant step forward, yet its coverage is still limited to 18 only high-resource languages. To address this gap, we introduce PluraMath, an extension of PolyMath to 18 additional {underrepresented languages spanning 6 language families -- ranging from mid-resource to extreme low-resource settings. We constructed the dataset through a human-curated pipeline, where native speakers thoroughly validated pre-computed translations. Using PluraMath, we then benchmark 27 reasoning LLMs across four model scales -- small, mid-size, large, and closed-source ensembles -- probing the multilingual mathematical reasoning capabilities of state-of-the-art models under diverse linguistic conditions. Our fine-grained analysis confirms a persistent gap in mathematical reasoning performance between high-resource and underrepresented languages, with strong",
           "pub_date": "2026-07-06T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 749,
+          "id": 748,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 733
         },
         {
-          "id": 751,
+          "id": 750,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 181
         },
         {
-          "id": 755,
+          "id": 754,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 858,
-      "total_valid": 519,
+      "total_raw": 857,
+      "total_valid": 518,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1010,
+          "id": 1009,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 999
         },
         {
-          "id": 1018,
+          "id": 1017,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 676
         },
         {
-          "id": 1241,
+          "id": 1240,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 528
         },
         {
-          "id": 940,
+          "id": 939,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 449
         },
         {
-          "id": 1023,
+          "id": 1022,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 407
         },
         {
-          "id": 1252,
+          "id": 1251,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 367
         },
         {
-          "id": 1233,
+          "id": 1232,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 325
         },
         {
-          "id": 1204,
+          "id": 1203,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 213
         },
         {
-          "id": 1163,
+          "id": 1162,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 223
         },
         {
-          "id": 1114,
+          "id": 1113,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 222
         },
         {
-          "id": 1201,
+          "id": 1200,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 220
         },
         {
-          "id": 863,
+          "id": 862,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 221
         },
         {
-          "id": 870,
+          "id": 869,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 137
         },
         {
-          "id": 876,
+          "id": 875,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 84
         },
         {
-          "id": 916,
+          "id": 915,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1347,
+          "id": 1346,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 270
         },
         {
-          "id": 1318,
+          "id": 1317,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 257
         },
         {
-          "id": 1334,
+          "id": 1333,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 254
         },
         {
-          "id": 1374,
+          "id": 1373,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1375,
+          "id": 1374,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1377,
+          "id": 1376,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1390,
+          "id": 1389,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 504
         },
         {
-          "id": 1391,
+          "id": 1390,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1011,
+          "id": 1010,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 744
         },
         {
-          "id": 1241,
+          "id": 1240,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 528
         },
         {
-          "id": 1390,
+          "id": 1389,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 504
         },
         {
-          "id": 1250,
+          "id": 1249,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 418
         },
         {
-          "id": 1251,
+          "id": 1250,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 340
         },
         {
-          "id": 1233,
+          "id": 1232,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 325
         },
         {
-          "id": 1022,
+          "id": 1021,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 233
         },
         {
-          "id": 1017,
+          "id": 1016,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 224
         },
         {
-          "id": 894,
+          "id": 893,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 211
         },
         {
-          "id": 874,
+          "id": 873,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 178
         },
         {
-          "id": 1456,
+          "id": 1449,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 528
         },
         {
-          "id": 1407,
+          "id": 1406,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 515
         },
         {
-          "id": 1430,
+          "id": 1429,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 493
         },
         {
-          "id": 1408,
+          "id": 1407,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 479
         },
         {
-          "id": 1399,
+          "id": 1398,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 477
         },
         {
-          "id": 1405,
+          "id": 1404,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 437
         },
         {
-          "id": 1444,
+          "id": 1443,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 346
         },
         {
-          "id": 1443,
+          "id": 1442,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 341
         },
         {
-          "id": 1445,
+          "id": 1444,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 331
         },
         {
-          "id": 1421,
+          "id": 1420,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 266
         },
         {
-          "id": 1419,
+          "id": 1418,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 210
         },
         {
-          "id": 1412,
+          "id": 1411,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 200
         },
         {
-          "id": 1422,
+          "id": 1421,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 198
         },
         {
-          "id": 1413,
+          "id": 1412,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 171
         },
         {
-          "id": 1409,
+          "id": 1408,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 139
         },
         {
-          "id": 1410,
+          "id": 1409,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,22 +994,7 @@
           "word_count": 125
         },
         {
-          "id": 1449,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "What It Takes to Create a Truly Global Payment Network",
-          "link": "https://www.thunes.com/insights/solutions/what-it-takes-to-create-a-truly-global-payment-network/",
-          "content": "The metrics traditionally used to evaluate international payment networks are fundamentally flawed. For decades, the financial services industry has measured global reach by counting countries, currencies, and corridors. Those numbers fail to answer the critical question for most payment senders or recipients: will this payment complete instantly, and cost-effectively, at the specific endpoint the beneficiary ... Read more &#187; The post What It Takes to Create a Truly Global Payment Network first appeared on Thunes.com .",
-          "pub_date": "Wed, 08 Jul 2026 04:15:11 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 528
-        },
-        {
-          "id": 1455,
+          "id": 1448,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,7 +1009,7 @@
           "word_count": 169
         },
         {
-          "id": 203,
+          "id": 202,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1037,6 +1022,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 409,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Agentic AI for Commercial Insurance Underwriting with Adversarial Self-Critique",
+          "link": "https://arxiv.org/abs/2602.13213",
+          "content": "arXiv:2602.13213v2 Announce Type: replace Abstract: Commercial insurance underwriting is a labor-intensive process that requires manual review of extensive documentation to assess risk and determine policy pricing. While AI offers substantial efficiency improvements, existing solutions lack comprehensive reasoning and internal mechanisms to ensure reliability in regulated, high-stakes environments. Full automation remains impractical and inadvisable when human judgment and accountability are critical. This study presents a decision-negative, human-in-the-loop agentic system that incorporates an adversarial self-critique mechanism as a bounded safety architecture for regulated underwriting workflows. In this system, a critic agent challenges the primary agent's conclusions prior to submitting recommendations to human reviewers. This internal system of checks and balances addresses a critical gap in AI safety for regulated workflows. Additionally, the research develops a formal taxonomy of failure modes to characterize potential errors by decision-negative agents. This taxonomy provides a structured framework for risk identification and management in high-stakes applications. Experim",
+          "pub_date": "Wed, 08 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1044,14 +1044,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 234,
-      "total_valid": 52,
+      "total_raw": 228,
+      "total_valid": 51,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1623,
-    "dup": 395,
+    "total_raw": 1616,
+    "dup": 390,
     "nocontent": 401,
     "noise": 2
   }
