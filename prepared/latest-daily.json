@@ -10,6 +10,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 3,
+          "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+          "link": "https://openai.com/index/deutsche-telekom",
+          "content": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
+          "pub_date": "Fri, 10 Jul 2026 07:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 159
+        },
+        {
+          "id": 2,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
           "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
           "link": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
           "content": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work.",
@@ -20,7 +35,7 @@
           "word_count": 158
         },
         {
-          "id": 2,
+          "id": 4,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -35,22 +50,22 @@
           "word_count": 150
         },
         {
-          "id": 4,
-          "source": "OpenAI News",
+          "id": 81,
+          "source": "TechCrunch AI",
           "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
-          "link": "https://openai.com/index/gpt-5-6",
-          "content": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
-          "pub_date": "Thu, 09 Jul 2026 10:00:00 GMT",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Fidji Simo steps down from OpenAI’s no. 2 role",
+          "link": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
+          "content": "OpenAI's No. 2 executive, Fidji Simo, is stepping down from her full-time role after her medical leave proved longer than expected — a leadership vacuum that comes at a tricky time as the company eyes a possible IPO and races to catch Anthropic in the enterprise market.",
+          "pub_date": "Thu, 09 Jul 2026 23:38:00 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 121
+          "word_count": 270
         },
         {
-          "id": 88,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 223
         },
         {
-          "id": 85,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,74 +95,59 @@
           "word_count": 218
         },
         {
-          "id": 83,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Meta enters the crowded AI coding battle with Muse Spark 1.1",
-          "link": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
-          "content": "Meta's pitch to users is Spark's ability to handle large agentic workloads, fix bugs, and help with large code migrations — the kind of automation that enterprises are increasingly turning to AI companies to provide.",
-          "pub_date": "Thu, 09 Jul 2026 19:40:45 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 216
-        },
-        {
-          "id": 63,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "TESSERA v2: Scaling Pixel-wise Earth Foundation Models",
-          "link": "https://arxiv.org/abs/2607.03949",
-          "content": "Pixel-wise Earth-observation (EO) foundation models are now achieving state-of-the-art performance via generated spatial embeddings. However, how these models scale and how best to spend a pretraining budget remain poorly understood. We present the largest controlled scaling study for EO to date: 395 training runs on 1,024 GH200 superchips within a fixed pixel-wise Barlow Twins family, each evaluated on 15 downstream tasks. We find that pretraining loss barely predicts downstream performance (|Pearson r| < 0.2), so selecting models by loss wastes a large share of the compute. We also find that, as the training budget grows, the encoder and the data should grow together while the projector stays fixed, which gives a simple rule for allocating compute. Using this rule, we train a family of pixel-wise models (0.5B and 1B, with a 2B model in training) and distill them into compact students for embeddings-as-data deployment. The 21-million-parameter distilled TESSERA v2-1B-M in aggregate outperforms all open and proprietary models tested, some of which are orders of magnitude larger. These students produce Matryoshka representations that are inexpensive to serve: a 16-dimensional prefix",
-          "pub_date": "2026-07-03T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Token-Based Dual-view Fusion and Adaptation of Large Vision Models for Breast Cancer Classification",
-          "link": "https://arxiv.org/abs/2607.06309",
-          "content": "Accurate breast cancer classification from mammography requires effective integration of complementary information from craniocaudal (CC) and mediolateral oblique (MLO) views, which provide a more complete characterization of breast abnormalities. However, existing multi-view learning approaches typically rely on feature-level aggregation or single-stage cross-attention, which can entangle view-specific and shared representations and restrict interaction to limited network depths. To address these limitations, we propose a token-centric dual-view learning framework that unifies prompt-based adaptation and cross-view fusion within a frozen vision transformer backbone. The framework reformulates inter-view interaction as structured token-level communication, where dedicated fusion tokens explicitly encode bidirectional information exchange between CC and MLO views via cross-attention, serving as intermediate carriers of cross-view dependencies rather than relying on direct feature fusion. Unlike conventional methods that apply fusion at a single layer, fusion modules are inserted at multiple transformer depths, enabling progressive and repeated interaction across the encoder hierarch",
-          "pub_date": "2026-07-06T20:00:00.000Z",
+          "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing",
+          "link": "https://arxiv.org/abs/2607.07953",
+          "content": "Self-attention lets each token retrieve information from the full context, but its quadratic cost in sequence length limits training and inference at long context. This paper presents a comparative study of softmax attention and four recent recurrent linear-attention architectures: DeltaNet, Gated DeltaNet, Kimi Delta Attention, and Gated DeltaNet-2. We express these mechanisms in a common recurrent-memory notation, making explicit how they differ in expressivity, memory decay, erase and write control, training throughput, and implementation complexity. Our experiments center on 350M-parameter models trained for 15B tokens, and include optimizer and learning-rate comparisons, hybrid-versus-pure stack comparisons, sequence-length runtime measurements, larger DeltaNet runs at 1.3B and 3B parameters, and a small set of downstream evaluations. The reported speed results measure training throughput and iteration time; we do not provide an empirical inference-speed benchmark. Within the reported 350M-parameter, 15B-token sweep, Kimi Delta Attention with Muon reaches the lowest final validation loss, a pure Gated DeltaNet stack trained with AdamW has the highest normalized training throug",
+          "pub_date": "2026-07-07T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Wake up for Touch! Mask-isolated Tactile Alignment Learning in MLLMs",
-          "link": "https://arxiv.org/abs/2607.00302",
-          "content": "Touch supplies the physical grounding needed to perceive intrinsic material properties, such as friction and compliance, that vision alone often cannot resolve. Recent efforts for equipping multimodal LLMs with this tactile sense, however, expose a zero-sum trade-off: the limited parameter budget of compact models forces a choice between acquiring the new sensory modality and preserving the established vision-language reasoning. We present Splash, a mask-isolated tactile alignment learning framework for MLLMs. Splash quantifies the significance of each pretrained parameter, and partitions the parameter space into a dormant and critical subspace. While the frozen critical subspace acts as a stable anchor to safeguard general visual knowledge, Splash updates the isolated dormant subspace to internalize tactile alignment towards LLMs. This selective, non-destructive expansion effectively prevents catastrophic forgetting and ensures non-destructive modality expansion. Extensive experiments show that Splash effectively achieves tactile reasoning without additional inference overhead in the LLM part, demonstrating state-of-the-art performance on visuo-tactile benchmarks, including SSVTP,",
-          "pub_date": "2026-06-30T20:00:00.000Z",
+          "title": "DrugGen 2: A disease-aware language model for enhancing drug discovery",
+          "link": "https://arxiv.org/abs/2607.08404",
+          "content": "Current computational approaches for drug design typically focus on generating molecules conditioned on specific targets or general molecular properties, often neglecting the influence of disease context on target behavior and therapeutic outcomes. To address this gap, we introduce DrugGen-2, a novel generative model that designs small molecules conditioned on both disease ontology and target protein sequences. DrugGen-2 was developed by fine-tuning a pre-trained GPT-2 model on a curated dataset of approved drugs linked to their diseases and targets, using a two-step strategy of supervised fine-tuning followed by reinforcement learning via group relative policy optimization (GRPO). This process was guided by reward functions optimizing for chemical validity, novelty, diversity, and high predicted binding affinity. When evaluated on five protein targets relevant to diabetic nephropathy, DrugGen-2 significantly outperformed baseline models (DrugGPT and DrugGen). It demonstrated a superior capacity to generate unique molecules, exhibited greater structural similarity to approved drugs, and achieved improved predicted binding affinities across all targets. Molecular docking analyses fu",
+          "pub_date": "2026-07-08T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 723,
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Enhancing In-context Panoramic Generation via Geometric-aware Pretraining",
+          "link": "https://arxiv.org/abs/2607.08765",
+          "content": "In this work, we present Canvas360, a two-stage framework for in-context panoramic generation that combines geometry-aware pretraining with downstream task-specific fine-tuning. To address the lack of large-scale, high-quality training data tailored to in-context panoramic tasks, we propose Canvas360Dataset, a collection of 1M high-quality paired panoramic samples for style transfer, inpainting, outpainting, and editing, enabling effective supervision across diverse in-context generation scenarios. On the modeling side, Canvas360 enhances text-to-panorama generation through parallel depth generation, velocity circular padding, and similarity loss regularization, enabling the model to learn geometry-aware representations, capture object distortion details, and improve geometric consistency and global coherence. Furthermore, empowered by strong panoramic priors, Canvas360 enables a unified in-context panoramic generation framework that supports diverse downstream tasks via token-level concatenation, surpassing prior methods in both task coverage and modeling flexibility. Extensive experiments show that Canvas360 improves panoramic image fidelity, achieving particularly strong perform",
+          "pub_date": "2026-07-08T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 735,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
           "title": "The new GPT-5.6 family: Luna, Terra, Sol",
           "link": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
-          "content": "OpenAI's latest flagship model hit general availability this morning , and comes in three sizes: Luna, Terra, and Sol (from smallest to largest). The new models are priced per 1M input/output tokens as Luna $1/$6, Terra $2.50/$15, Sol $5/$30. For comparison, the Claude Opus series are $5/$25 and the Claude Fable 5 is $10/$50, but price-per-million tokens doesn't tell us much now that the number of reasoning tokens can differ so much between models for the same task. OpenAI's biggest benchmark claim concerns long-running agentic performance, with one benchmark showing all three models outperforming Claude Fable 5: We trained GPT-5.6 to get more useful work from every token. On Agents’ Last Exam , an evaluation of long-running professional workflows across 55 fields, GPT-5.6 Sol sets a new high of 53.6, eclipsing Claude Fable 5 (adaptive reasoning) by 13.1 points. Even at medium reasoning, it beats Fable 5 by 11.4 points at roughly one-quarter the estimated cost. That efficiency extends to smaller models, which are essential to making intelligence more abundant and affordable: GPT-5.6 Terra and GPT-5.6 Luna outperform Fable 5 at around one-sixteenth the cost. Amusingly, one self-repo",
+          "content": "OpenAI's latest flagship model hit general availability this morning , and comes in three sizes: Luna, Terra, and Sol (from smallest to largest). The new models are priced per 1M input/output tokens as Luna $1/$6, Terra $2.50/$15, Sol $5/$30. For comparison, the Claude Opus series are $5/$25 and the Claude Fable 5 is $10/$50, but price-per-million tokens doesn't tell us much now that the number of reasoning tokens can differ so much between models for the same task. All three models have a February 16th 2026 knowledge cutoff, a million token context window, and 128,000 maximum output tokens. OpenAI's biggest benchmark claim concerns long-running agentic performance, with one benchmark showing all three models outperforming Claude Fable 5: We trained GPT-5.6 to get more useful work from every token. On Agents’ Last Exam , an evaluation of long-running professional workflows across 55 fields, GPT-5.6 Sol sets a new high of 53.6, eclipsing Claude Fable 5 (adaptive reasoning) by 13.1 points. Even at medium reasoning, it beats Fable 5 by 11.4 points at roughly one-quarter the estimated cost. That efficiency extends to smaller models, which are essential to making intelligence more abund",
           "pub_date": "2026-07-09T19:46:38+00:00",
           "is_duplicate": false,
           "has_content": true,
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 724,
+          "id": 736,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1040
         },
         {
-          "id": 729,
+          "id": 741,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,29 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 838,
-      "total_valid": 482,
+      "total_raw": 850,
+      "total_valid": 606,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1268,
+          "id": 948,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] The African Medicines Agency: time for integration with the African Vaccine Regulatory Forum",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01075-5/fulltext?rss=yes",
+          "content": "Andrew Green's World Report1 on the African Medicines Agency (AMA) highlights both its promise and the considerable challenges ahead in harmonising regulatory systems, strengthening national regulatory authorities (NRAs), and improving access to safe and effective medical products across Africa. The establishment of the AMA is a historical milestone in Africa's pursuit of health sovereignty and regulatory convergence.2 However, the AMA's success will depend on how effectively it builds on and integrates existing continental regulatory platforms, especially the African Vaccine Regulatory Forum (AVAREF).",
+          "pub_date": "2026-07-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 609
+        },
+        {
+          "id": 1271,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +227,22 @@
           "word_count": 525
         },
         {
-          "id": 957,
+          "id": 1235,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Hemagglutination-inhibition and microneutralization antibody titers as mediators of protection for cell-based and recombinant influenza vaccines",
+          "link": "https://www.nature.com/articles/s41541-026-01521-w",
+          "content": "npj Vaccines, Published online: 09 July 2026; doi:10.1038/s41541-026-01521-w Hemagglutination-inhibition and microneutralization antibody titers as mediators of protection for cell-based and recombinant influenza vaccines",
+          "pub_date": "2026-07-09",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 221
+        },
+        {
+          "id": 956,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +257,7 @@
           "word_count": 180
         },
         {
-          "id": 1015,
+          "id": 1014,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +272,7 @@
           "word_count": 180
         },
         {
-          "id": 1040,
+          "id": 1039,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +287,7 @@
           "word_count": 173
         },
         {
-          "id": 956,
+          "id": 955,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +302,7 @@
           "word_count": 169
         },
         {
-          "id": 990,
+          "id": 989,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +317,7 @@
           "word_count": 58
         },
         {
-          "id": 1000,
+          "id": 999,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +332,7 @@
           "word_count": 58
         },
         {
-          "id": 1167,
+          "id": 1170,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +347,7 @@
           "word_count": 423
         },
         {
-          "id": 1147,
+          "id": 1150,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +362,7 @@
           "word_count": 415
         },
         {
-          "id": 1144,
+          "id": 1147,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +377,7 @@
           "word_count": 414
         },
         {
-          "id": 877,
+          "id": 880,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -362,22 +392,7 @@
           "word_count": 383
         },
         {
-          "id": 853,
-          "source": "Endpoints News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Sanofi offers to end disparaging claims against CSL flu shot in Europe",
-          "link": "https://endpoints.news/sanofi-offers-to-end-disparaging-claims-against-csl-flu-shot-in-europe/",
-          "content": "Two weeks after the European Commission launched an investigation into Sanofi, the French drugmaker has offered to stop making negative claims about a rival drugmaker's flu vaccine. The dispute centered on Sanofi's enhanced flu vaccine ...",
-          "pub_date": "Wed, 08 Jul 2026 15:13:27 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 239
-        },
-        {
-          "id": 840,
+          "id": 852,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +407,7 @@
           "word_count": 220
         },
         {
-          "id": 843,
+          "id": 855,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 208
-        },
-        {
-          "id": 858,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Outbreak of diarrhea-causing parasite grows to more than 1,000 cases",
-          "link": "https://www.statnews.com/2026/07/09/cyclospora-outbreak-faq-diarrhea-causing-parasite/?utm_campaign=rss",
-          "content": "An outbreak of diarrhea-causing parasite has grown to more than 1,000 cases, making it one of the nation’s largest such outbreaks in years.",
-          "pub_date": "Thu, 09 Jul 2026 15:01:27 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 139
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 487,
-      "total_valid": 315,
+      "total_raw": 476,
+      "total_valid": 319,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1343,
+          "id": 1345,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 234
         },
         {
-          "id": 1389,
+          "id": 1391,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 227
         },
         {
-          "id": 1370,
+          "id": 1372,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 226
         },
         {
-          "id": 1423,
+          "id": 1436,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1424,
+          "id": 1437,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1425,
+          "id": 1438,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1445,
+          "id": 1458,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,19 +539,19 @@
           "word_count": 526
         },
         {
-          "id": 1403,
-          "source": "bioRxiv SynBio",
+          "id": 1338,
+          "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
-          "priority": 6,
-          "title": "Crowdsourced riboregulators reveal design principles for programmable RNA switching",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.07.08.737257v1?rss=1",
-          "content": "RNA-based sensors offer powerful and programmable control of gene expression, yet our understanding of the structural principles that govern their potential design space remains incomplete. Here, we challenged a community of designers to generate novel riboregulators capable of activating translation in response to specific RNA targets. Participants submitted diverse sequence architectures, which were synthesized and evaluated in a cell-free transcription-translation system. Across 100 designs, community-generated riboregulators displayed wide variability in activation dynamics, fold change, and structural features, outperforming some canonical toehold-switch designs and achieving up to 80-fold activation. Structural ensemble analyses identified accessibility patterns near the ribosome binding site that distinguish high- from low-performing regulators, highlighting the central role of RBS sequestration and release in modulating expression. Together, we demonstrate community-driven design can expand the accessible structural space of riboregulators and uncover mechanistic features governing translational activation. Our findings establish quantitative links between RNA folding energ",
-          "pub_date": "2026-07-09",
+          "priority": 2,
+          "title": "Four questions for AI-ready biological data",
+          "link": "https://www.nature.com/articles/s42256-026-01270-4",
+          "content": "Nature Machine Intelligence, Published online: 10 July 2026; doi:10.1038/s42256-026-01270-4 The push to make biological data ‘AI-ready’ is accelerating worldwide. But to understand what AI-ready means for biological data, there are several questions to answer.",
+          "pub_date": "2026-07-10",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 260
         },
         {
           "id": 1411,
@@ -559,10 +559,10 @@
           "section": "synbio",
           "tier": "T1",
           "priority": 6,
-          "title": "UstiGate: Next generation toolkit for advanced genetic engineering of the basidiomycete chassis Ustilago maydis",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.06.11.731564v1?rss=1",
-          "content": "BackgroundThe corn smut fungus Ustilago maydis is an important microbial model organism representing a genetically amenable and readily cultivable basidiomycete. Research in this fungus addresses a broad range of fundamental questions and its biotechnological exploitation is on the rise. Although genetic engineering in principle is well established, efficient methodology for synthetic biology approaches such as metabolic engineering or pathway transplantation has remained limited. ResultsHere, we present a comprehensive toolbox for U. maydis based on modular cloning and the characterization of more than 20 promoters. Careful comparative evaluation of insertion loci and terminator as well as reporter effects was conducted and a novel color-based strategy for straightforward genome integration was implemented. Moreover, the cloning and subsequent one-step integration of four transcriptional units into U. maydis was demonstrated by creating a \"rainbow\" strain producing four fluorescent proteins. ConclusionOverall, this next generation toolkit strongly advances genetic engineering and systems biology approaches in U. maydis, fostering its development into a valuable and competitive fun",
-          "pub_date": "2026-07-08",
+          "title": "Directed evolution of compact synthetic promoters via AlphaGenome and genetic algorithms",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.28.735069v1?rss=1",
+          "content": "Compact tissue-specific promoters are highly desirable for gene therapy because viral vectors possess limited packaging capacity. However, existing promoter engineering strategies rely primarily on rational design or de novo sequence generation and lack efficient approaches for compressing long native promoters while preserving regulatory specificity. Although genome foundation models have substantially improved sequence-to-function prediction, they have not been effectively translated into computational platforms for promoter engineering. Here, we present VirEvo, a computational promoter engineering framework that integrates a virtual dual-luciferase assay (VirDLA), genome-foundation-model-guided genetic evolution, and an orthogonal Pan-Tissue Consistency Filter (PTCF). VirDLA introduces an internal-reference normalization strategy inspired by dual-luciferase reporter assays, enabling relative comparison of promoter activity across tissues without retraining AlphaGenome. Guided by these normalized activity scores, VirEvo iteratively optimizes promoter selectivity, off-target activity, and sequence length. Using the human p16INK4a promoter as a proof of concept, VirEvo evolved a co",
+          "pub_date": "2026-07-09",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -574,10 +574,25 @@
           "section": "synbio",
           "tier": "T1",
           "priority": 6,
-          "title": "Machine learning guided cell-free expression maps the biochemical landscape of carbonic anhydrase",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.07.07.736810v1?rss=1",
-          "content": "Carbonic anhydrases are among the fastest known biocatalysts, reversibly facilitating the hydration of CO2 to HCO3- at rates up to 107 s-1, which warrants their investigation for industrial carbon capture technologies. However, engineering carbonic anhydrases to maintain stability under harsh industrial process conditions remains a key challenge, and sequence-to-function datasets compatible with machine learning to inform forward engineering are lacking. Here, we developed a high-throughput platform that couples cell-free gene expression with a gaseous CO2 colorimetric assay to map the fitness landscapes of carbonic anhydrases. From 96 diverse natural homologs, we identified a robust variant from the Aquificota phylum and conducted an exhaustive mutational scan and functional assessment of this enzyme at 70C and 90C, covering >99% of all single-amino acid substitutions (totaling 4,365 mutations assayed in 39,285 reactions). This biochemical landscape was used to benchmark 22 zero-shot protein fitness models and identify critical mutations that improved enzyme stability at 90C by more than three-fold. We then used both zero-shot protein language models and supervised learning to fil",
-          "pub_date": "2026-07-08",
+          "title": "Expanding all-α-helical protein space through rational computational design",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.07.03.736327v1?rss=1",
+          "content": "De novo protein design is advancing rapidly1,2. This is being driven by AI to generate protein backbones, sequences, and structural models3-7. As a result, de novo designed proteins are becoming larger and more complex8-10, and increasingly explore new protein structures11,12. By contrast, natural proteins have evolved structural and functional complexity by modular combination of recurring protein domains13. Approximately 25% of these natural domains are mostly -helical structures14. Here we show how these can be expanded using rational computational design. Following the domain classification scheme CATH15, we build complex all- de novo proteins hierarchically using sequence-to-structure relationships for helix-helix interactions, systematic rules to connect helices, computational tools to design loops, and in silico evaluation. The pipeline starts with a target architecture of free-standing helices. These are connected into a topology by considering local arrangements of helical bundles using understood sequence-to-structure relationships for helix packing. Single-chain sequences are completed using template- and AI-based methods. Finally, AlphaFold models are assessed to give s",
+          "pub_date": "2026-07-09",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1414,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Linker-Length Landscape Mapping Enables Coupling of Diverse Synthetic Chemically Induced Dimerization Systems to Molecular Readouts",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.07.01.735888v1?rss=1",
+          "content": "Programmable molecular biology increasingly requires strategies for converting engineered recognition or proximity modules into measurable outputs, particularly within transcriptional regulation, RNA imaging, and CRISPR-associated systems. Synthetic chemically induced dimerization (CID) systems provide a class of programmable recognition modules for such applications, yet generalized strategies for coupling structurally diverse CIDs to functional readouts remain limited. Here, we introduce a CID-to-output conversion strategy based on engineering of the linker-mediated coupling interface. Using single-fluorescent-protein sensors as an experimentally tractable optical model readout, we systematically varied paired N- and C-terminal linkers flanking circularly permuted green fluorescent protein (cpGFP) to map coupling landscapes across synthetic CID systems derived from combinatorial selection and computational protein design. The results revealed strong non-additive interactions across paired linkers and suggest that linker length is a first-order determinant of CID-to-output coupling. Across nanobody-, monobody-, and de novo-designed CID architectures, this framework yielded functio",
+          "pub_date": "2026-07-09",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -589,14 +604,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 123,
-      "total_valid": 27,
-      "total_candidates": 10
+      "total_raw": 135,
+      "total_valid": 40,
+      "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 1423,
+          "id": 1436,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1425,
+          "id": 1438,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,22 @@
           "word_count": 1200
         },
         {
-          "id": 893,
+          "id": 949,
+          "source": "The Lancet",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] Long-term outcomes of total hip replacement",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00921-9/fulltext?rss=yes",
+          "content": "In their recent Article,1 Veronica Pentland and colleagues present a systematic review and meta-analysis of 29 clinical studies and eight national joint registries, encompassing more than 1·9 million total hip arthroplasties with contemporary bearing surfaces.1 The registry data observed over 20 years are robust and clinically valuable. However, we have concerns about the model-based extrapolations to 25 years and 30 years, from which the headline survivorship estimate of 92·1% at 30 years is derived.",
+          "pub_date": "2026-07-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 506
+        },
+        {
+          "id": 896,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +671,7 @@
           "word_count": 322
         },
         {
-          "id": 902,
+          "id": 905,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +686,22 @@
           "word_count": 316
         },
         {
-          "id": 1456,
+          "id": 1046,
+          "source": "Nature Medicine",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Health system learning enables generalist neuroimaging models",
+          "link": "https://www.nature.com/articles/s41591-026-04497-1",
+          "content": "Nature Medicine, Published online: 10 July 2026; doi:10.1038/s41591-026-04497-1 NeuroVFM, trained on routine health system MRI and CT scans, learns general neuroimaging representations that improve diagnosis, report generation and triage, showing how private clinical data will power safer, more accurate medical AI.",
+          "pub_date": "2026-07-10",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 316
+        },
+        {
+          "id": 1469,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +716,7 @@
           "word_count": 286
         },
         {
-          "id": 901,
+          "id": 904,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +731,22 @@
           "word_count": 273
         },
         {
-          "id": 1457,
+          "id": 1338,
+          "source": "Nature Machine Intel",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Four questions for AI-ready biological data",
+          "link": "https://www.nature.com/articles/s42256-026-01270-4",
+          "content": "Nature Machine Intelligence, Published online: 10 July 2026; doi:10.1038/s42256-026-01270-4 The push to make biological data ‘AI-ready’ is accelerating worldwide. But to understand what AI-ready means for biological data, there are several questions to answer.",
+          "pub_date": "2026-07-10",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 260
+        },
+        {
+          "id": 1470,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -699,51 +759,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 247
-        },
-        {
-          "id": 1455,
-          "source": "Nature Methods",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Click to plot",
-          "link": "https://www.nature.com/articles/s41592-026-03147-1",
-          "content": "Nature Methods, Published online: 09 July 2026; doi:10.1038/s41592-026-03147-1 Biological figures increasingly originate in the browser.",
-          "pub_date": "2026-07-09",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 136
-        },
-        {
-          "id": 972,
-          "source": "Science",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Does AI work for us, or do we work for AI?",
-          "link": "https://www.science.org/doi/abs/10.1126/science.aei9754?af=R",
-          "content": "Science, Volume 393, Issue 6807 , Page 152-152, July 2026.",
-          "pub_date": "2026-07-09T06:00:05Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 58
-        },
-        {
-          "id": 1140,
-          "source": "Vaccine (journal)",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Influence of correlated vaccination behaviors on estimates of COVID-19 vaccine effectiveness in older adults – VISION network, October 2023 – March 2024",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26007000?dgcid=rss_sd_all",
-          "content": "Publication date: 30 August 2026 Source: Vaccine, Volume 89 Author(s): Amber Kautz, Duck-Hye Yang, Sean Chickery, Stephanie A. Irving, Nicola P. Klein, Shaun J. Grannis, Toan C. Ong, Sarah W. Ball, Malini B. DeSilva, Kristin Dascomb, Allison L. Naleway, Ousseny Zerbo, John R. Hansen, Lawrence Block, Brian E. Dixon, Colin M. Rogerson, William F. Fadel, Thomas J. Duszynski, Michelle A. Barron, David Mayer",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 406
         }
       ],
       "quota": {
@@ -751,8 +766,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 46,
-      "total_valid": 45,
+      "total_raw": 54,
+      "total_valid": 52,
       "total_candidates": 10
     },
     "china": {
@@ -769,82 +784,67 @@
     "payment": {
       "candidates": [
         {
-          "id": 1468,
+          "id": 1481,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Swift Cuts Ribbon on Blockchain-Based Cross-Border Payments Ledger",
+          "title": "Swift Debuts Blockchain-Based Cross-Border Payments Ledger",
           "link": "https://www.pymnts.com/news/cross-border-payments/2026/swift-cuts-ribbon-on-blockchain-based-cross-border-payments-ledger/",
-          "content": "Global financial messaging platform Swift says its blockchain-based ledger is ready for use. Seventeen banks are preparing live pilot transactions on the ledger, which supports 24/7 cross-border payments with tokenized deposits, Swift announced Thursday (July 9). “With our new ledger capability, we’re extending the trust and stability of established finance into the frontiers of digital money,” Thierry Chilosi, Swift’s chief [&#8230;] The post Swift Cuts Ribbon on Blockchain-Based Cross-Border Payments Ledger appeared first on PYMNTS.com .",
+          "content": "Global financial messaging platform Swift says its blockchain-based ledger is ready for use. Seventeen banks are preparing live pilot transactions on the ledger, which supports 24/7 cross-border payments with tokenized deposits, Swift announced Thursday (July 9). “With our new ledger capability, we’re extending the trust and stability of established finance into the frontiers of digital money,” Thierry Chilosi, Swift’s chief [&#8230;] The post Swift Debuts Blockchain-Based Cross-Border Payments Ledger appeared first on PYMNTS.com .",
           "pub_date": "Thu, 09 Jul 2026 12:52:49 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 545
+          "word_count": 537
         },
         {
-          "id": 1460,
+          "id": 1510,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Is AI The 'Wingman' Data Needed?",
+          "link": "https://www.finextra.com/videoarticle/3561/is-ai-the-wingman-data-needed?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "At EBAday in Copenhagen, Lauran Macare, Head of Data and Risk, Payments Technology, Natwest, spoke to FinextraTV about a panel she featured on surrounding payments innovation. Macare referred to AI as the 'wingman' that data needed to ensure its importance within payment agendas, and the core focus right now are the practicalities and, according to Macare, cyber resilience will also help drive the change. Data, Macare said, is bringing the industry together to find the mutual benefits, where before they were operating in silos.",
+          "pub_date": "Fri, 10 Jul 2026 11:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 533
+        },
+        {
+          "id": 1473,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Banks Turn Stablecoin Safety Into a Selling Point",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/banks-turn-stablecoin-safety-into-a-selling-point/",
-          "content": "Stablecoins have drawn attention for how they move money. Custody may prove to be the business that help solidify banks’ positioning in the institutional market. Traditional financial institutions (FIs) already possess traits corporate treasurers value: regulated custody, established payment infrastructure, treasury services and long-standing client relationships. If those services become the operating center for institutional [&#8230;] The post Banks Turn Stablecoin Safety Into a Selling Point appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 09 Jul 2026 21:00:56 +0000",
+          "title": "New Data Shows Why One Consumer Economy Has Become Three",
+          "link": "https://www.pymnts.com/consumer-insights/2026/new-data-shows-why-one-consumer-economy-has-become-three/",
+          "content": "Consumer spending has become less about confidence and more about financial capacity, and that shift is giving banks and payments providers a clearer map of growth opportunities. That is one of the clearest messages from “The Three-Speed Consumer Economy: How Financial Capacity Is Rewriting Spending Behavior,” the latest Consumer Expectations Index from PYMNTS Intelligence. Traditional [&#8230;] The post New Data Shows Why One Consumer Economy Has Become Three appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 10 Jul 2026 08:00:06 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 530
+          "word_count": 495
         },
         {
-          "id": 1462,
+          "id": 1476,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Aria Secures $283 Million to Expand Invoice Financing Offering",
-          "link": "https://www.pymnts.com/news/b2b-payments/2026/aria-secures-283-million-to-expand-invoice-financing-offering/",
-          "content": "French embedded invoice financing platform Aria has raised $283 million, much of it in debt. The company on Thursday (July 9) announced it had raised $8 million in a Series A extension and launched a $275 million debt facility to scale its capacity. Aria says the new financing comes amid a “late payments crisis” in Europe. “No [&#8230;] The post Aria Secures $283 Million to Expand Invoice Financing Offering appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 09 Jul 2026 20:07:46 +0000",
+          "title": "Financial Firms Ban Employee Prediction Market Trading as Compliance Concerns Spread",
+          "link": "https://www.pymnts.com/economy/markets/2026/financial-firms-ban-employee-prediction-market-trading-as-compliance-concerns-spread/",
+          "content": "Goldman Sachs Group has updated its personal trading policy to ban employees from trading on event contracts related to specific companies, election outcomes or the performance of any financial market, Bloomberg reported Thursday (July 9). The policy also bans trading on event contracts having to do with the dates of ceasefires in conflicts, the price [&#8230;] The post Financial Firms Ban Employee Prediction Market Trading as Compliance Concerns Spread appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 10 Jul 2026 01:44:52 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 441
+          "word_count": 488
         },
         {
-          "id": 1463,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "An AI Told Millions Norway Won. The Match Hadn’t Started",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/an-ai-told-millions-norway-won-the-match-hadnt-started/",
-          "content": "Every four years, the World Cup tests the world’s best soccer players. In 2026, it is also testing AI. Microsoft Copilot, Google Gemini and other AI models are being asked to pick the champion. Opta’s supercomputer is simulating the tournament 25,000 times per round to estimate each team’s odds. And on July 5, a Coinbase [&#8230;] The post An AI Told Millions Norway Won. The Match Hadn&#8217;t Started appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 09 Jul 2026 19:46:57 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 435
-        },
-        {
-          "id": 1467,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "OpenAI Accused of Lying to Court in Newspaper Lawsuit",
-          "link": "https://www.pymnts.com/legal/2026/openai-accused-of-lying-to-court-in-newspaper-lawsuit/",
-          "content": "Newspapers suing OpenAI for copyright infractions are reportedly now seeking sanctions against the AI startup. The papers, The New York Times (NYT) and New York Daily News among them, accuse OpenAI of lying to a federal court about its ability to search its ‌systems for evidence that it misused millions of their news stories to [&#8230;] The post OpenAI Accused of Lying to Court in Newspaper Lawsuit appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 09 Jul 2026 18:48:52 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 433
-        },
-        {
-          "id": 1499,
+          "id": 1511,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 420
         },
         {
-          "id": 1514,
+          "id": 1525,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 341
         },
         {
-          "id": 1513,
+          "id": 1524,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 308
         },
         {
-          "id": 1489,
+          "id": 1503,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 263
         },
         {
-          "id": 1488,
+          "id": 1502,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -924,32 +924,32 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Volt enables Profee wallet top-ups via USDC",
-          "link": "https://www.finextra.com/pressarticle/110378/volt-enables-profee-wallet-top-ups-via-usdc?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Volt, the real-time, rail-agnostic money movement platform, has gone live with its stablecoin checkout for Profee, a Cyprus-based electronic money institution focusing on cross-currency money transfers.",
-          "pub_date": "Thu, 09 Jul 2026 09:30:00 GMT",
+          "title": "Nepal's MBL selects ZIGRAM for AML",
+          "link": "https://www.finextra.com/pressarticle/110393/nepals-mbl-selects-zigram-for-aml?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Machhapuchchhre Bank Limited (MBL), one of Nepal’s leading commercial banks, has selected ZIGRAM‘s Complete AML System to strengthen its Anti-Money Laundering (AML) and financial crime risk management capabilities.",
+          "pub_date": "Fri, 10 Jul 2026 10:39:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 202
+          "word_count": 214
         },
         {
-          "id": 1487,
+          "id": 1490,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "IPC connects with Luware's cloud-based compliance recording tool",
-          "link": "https://www.finextra.com/pressarticle/110389/ipc-connects-with-luwares-cloud-based-compliance-recording-tool?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "IPC Systems today announced a strategic partnership with Luware that expands access to Luware Recording, a cloud-based compliance recording platform for financial institutions.",
-          "pub_date": "Thu, 09 Jul 2026 14:08:00 GMT",
+          "title": "European Parliament backs digital euro, paving way for final negotiations",
+          "link": "https://www.finextra.com/newsarticle/48068/european-parliament-backs-digital-euro-paving-way-for-final-negotiations?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "The European Parliament has voted in favour of the creation of a digital euro, paving the way for the final stage of negotiations with EU state members on the makeup of the CBDC ahead of a potential 2029 launch.",
+          "pub_date": "Fri, 10 Jul 2026 00:01:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 176
+          "word_count": 211
         },
         {
-          "id": 84,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -964,22 +964,7 @@
           "word_count": 170
         },
         {
-          "id": 1491,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Nium acquires crypto wallet Cypher",
-          "link": "https://www.finextra.com/pressarticle/110385/nium-acquires-crypto-wallet-cypher?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Nium, the global leader in cross-border payments infrastructure, today announced the acquisition of Cypher, a crypto-native non-custodial wallet and issuing company.",
-          "pub_date": "Thu, 09 Jul 2026 10:12:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 165
-        },
-        {
-          "id": 1470,
+          "id": 1483,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,7 @@
           "word_count": 143
         },
         {
-          "id": 1471,
+          "id": 1484,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +994,7 @@
           "word_count": 134
         },
         {
-          "id": 1472,
+          "id": 1485,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1024,49 +1009,79 @@
           "word_count": 132
         },
         {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
+          "id": 537,
+          "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
-          "priority": 5,
-          "title": "Wake up for Touch! Mask-isolated Tactile Alignment Learning in MLLMs",
-          "link": "https://arxiv.org/abs/2607.00302",
-          "content": "Touch supplies the physical grounding needed to perceive intrinsic material properties, such as friction and compliance, that vision alone often cannot resolve. Recent efforts for equipping multimodal LLMs with this tactile sense, however, expose a zero-sum trade-off: the limited parameter budget of compact models forces a choice between acquiring the new sensory modality and preserving the established vision-language reasoning. We present Splash, a mask-isolated tactile alignment learning framework for MLLMs. Splash quantifies the significance of each pretrained parameter, and partitions the parameter space into a dormant and critical subspace. While the frozen critical subspace acts as a stable anchor to safeguard general visual knowledge, Splash updates the isolated dormant subspace to internalize tactile alignment towards LLMs. This selective, non-destructive expansion effectively prevents catastrophic forgetting and ensures non-destructive modality expansion. Extensive experiments show that Splash effectively achieves tactile reasoning without additional inference overhead in the LLM part, demonstrating state-of-the-art performance on visuo-tactile benchmarks, including SSVTP,",
-          "pub_date": "2026-06-30T20:00:00.000Z",
+          "priority": 6,
+          "title": "Secure Decentralized Federated Learning via Gossip and Virtual Voting",
+          "link": "https://arxiv.org/abs/2607.08651",
+          "content": "arXiv:2607.08651v1 Announce Type: new Abstract: Decentralized federated learning (DFL) removes the central server by letting nodes exchange model updates through peer-to-peer gossip, but existing gossip-based methods often lack provenance finality and resilience to Byzantine or lazy participants. Ledger-assisted federated learning (FL) improves auditability, yet blockchains, shards, or settlement committees can reintroduce global coordination costs that conflict with DFL locality. This paper proposes \\emph{gspDAG-FL}, a secure DFL framework that derives consensus from the same gossip history used to disseminate models. Nodes exchange model payloads only with neighbors, while full nodes collect event certificates and receiver-endorsed accepted gossip proofs, reconstruct a compact Topology directed acyclic graph (DAG), and run Hashgraph-style virtual voting followed by compact full-node certificates. Finality is over unique model-origin tuples, not identical local parameter states. To improve resilience, gspDAG-FL combines payload validation, accepted-proof validation, and private semantic audit before aggregation. We formalize the adversarial setting, prove safety and conditional li",
+          "pub_date": "Fri, 10 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 1464,
-          "source": "PYMNTS.com",
+          "id": 645,
+          "source": "arXiv cs.LG",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Axos Aims to Expand AI-Powered Financial Services With Arc Acquisition",
-          "link": "https://www.pymnts.com/news/banking/2026/axos-aims-to-expand-ai-powered-financial-services-with-arc-acquisition/",
-          "content": "Axos Financial subsidiary Axos Nevada Holding plans to acquire Arc Technologies to expand Axos’ artificial intelligence capabilities and enhance its ability to serve small businesses across the United States. The companies have entered into a definitive agreement for the acquisition and expect the transaction to close this month, subject to customary closing conditions, Axos Financial [&#8230;] The post Axos Aims to Expand AI-Powered Financial Services With Arc Acquisition appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 09 Jul 2026 19:32:13 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "PhasorFlow: A Python Library for Unit Circle Based Computing",
+          "link": "https://arxiv.org/abs/2603.15886",
+          "content": "arXiv:2603.15886v3 Announce Type: replace Abstract: We present PhasorFlow, an open-source Python library for computing on the $S^1$ unit circle. Inputs are encoded as complex phasors $z=e^{i\\phi}$ on the $N$-torus ($\\mathbb{T}^N$); as computation proceeds through unitary wave-interference gates, global norm is preserved while components drift into $\\mathbb{C}^N$, letting algorithms leverage continuous geometric gradients. PhasorFlow makes three contributions. First, we formalize the Phasor Circuit model ($N$ threads, $M$ gates) with a 22-gate library spanning standard-unitary, non-linear, neuromorphic, and encoding operations under full matrix-algebra simulation. Second, we present the Variational Phasor Circuit (VPC), analogous to variational quantum circuits, optimizing continuous phase parameters for classification. Third, we introduce the Phasor Transformer, replacing $QK^TV$ attention with a parameter-free DFT token-mixing layer inspired by FNet. We validate on spatial classification, time-series prediction, financial volatility, neuromorphic tasks, and -- for the VPC -- real motor-imagery EEG, where it matches standard baselines at a fraction of their parameters. We character",
+          "pub_date": "Fri, 10 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 508
+          "word_count": 1200
         },
         {
-          "id": 1465,
-          "source": "PYMNTS.com",
+          "id": 648,
+          "source": "arXiv cs.LG",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Amazon and Walmart’s AI Shopping Race Is Now a Battle for Context, Not Clicks",
-          "link": "https://www.pymnts.com/news/retail/2026/amazon-walmarts-ai-shopping-race-is-battle-context-not-clicks/",
-          "content": "Retail is getting a first-principles upgrade at the hands, or lack of them, of artificial intelligence. The shopping transformation looks less like a better eCommerce search bar and more like something out of science fiction. It’s a bot-filled operating layer that autonomously mediates between consumer intent and transaction execution. Headlines this week from Amazon and [&#8230;] The post Amazon and Walmart’s AI Shopping Race Is Now a Battle for Context, Not Clicks appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 09 Jul 2026 19:21:31 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Variational Phasor Circuits for Phase-Native Brain-Computer Interface Classification",
+          "link": "https://arxiv.org/abs/2603.18078",
+          "content": "arXiv:2603.18078v2 Announce Type: replace Abstract: We present the Variational Phasor Circuit (VPC), a deterministic classical learning architecture on the continuous $S^1$ unit-circle manifold. Inspired by variational quantum circuits, VPC replaces dense weight matrices with trainable phase shifts, local unitary mixing, and structured interference in the ambient complex space, giving a unified method for binary and multi-class classification of spatially distributed signals. We evaluate VPC on real motor-imagery electroencephalography (EEG) from the PhysioNet Motor Movement/Imagery database (10 subjects, Common Spatial Pattern features, subject-wise cross-validation), where it attains a mean decoding accuracy of $0.60$ -- the highest among standard brain--computer-interface baselines (linear discriminant analysis, logistic regression, RBF-SVM, and a multilayer perceptron) -- using an order of magnitude fewer parameters and the lowest cross-subject variance. We also characterize capacity honestly: with phase-only shifts and unitary mixing, VPC realizes a linear decision function in a fixed cosine/sine feature lifting, well matched to the largely separable band-power structure of EE",
+          "pub_date": "Fri, 10 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 501
+          "word_count": 1200
+        },
+        {
+          "id": 497,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Cross-Modal Generative Framework for Signal Translation from Fetal-Maternal Electrocardiograms to Fetal Doppler Waveforms",
+          "link": "https://arxiv.org/abs/2607.08073",
+          "content": "arXiv:2607.08073v1 Announce Type: new Abstract: Fetal electrocardiogram (fECG) and Doppler ultrasound provide complementary views of fetal cardiovascular function: fECG captures electrical activity while Doppler reflects mechanical hemodynamics shaped by factors such as placental resistance and vascular compliance. Understanding the recoverable and unrecoverable Doppler components through reconstruction from fECG offers insight into the relative contributions of electrical versus mechanical factors in fetal circulation, thereby informing clinical decisions. In addition, clinical evidence of maternal-fetal cardiac coupling suggests that maternal cardiovascular dynamics may also inform fetal hemodynamics. To computationally model these relationships, we propose a cross-modal generative framework combining dilated convolutions with cross-modal attention to selectively incorporate maternal ECG and self-attention to capture long-range temporal dependencies. Trained on 885 synchronized fetal/maternal ECG and Doppler envelope segments from 39 pregnancies, our model synthesizes Doppler envelopes with power spectral density mean squared error (PSD MSE) of 49.9 +/- 15.8 dB^2 (51% lower than",
+          "pub_date": "Fri, 10 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 647,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "The Phasor Transformer: Resolving Attention Bottlenecks on the Unit Circle",
+          "link": "https://arxiv.org/abs/2603.17433",
+          "content": "arXiv:2603.17433v2 Announce Type: replace Abstract: Transformer models have redefined sequence learning, yet dot-product self-attention introduces a quadratic token-mixing bottleneck for long-context time-series. We introduce the Phasor Transformer block, a phase-native alternative representing sequence states on the unit-circle manifold $S^1$. Each block combines lightweight trainable phase-shifts with parameter-free Discrete Fourier Transform (DFT) token coupling, achieving global $\\mathcal{O}(N\\log N)$ mixing without explicit attention maps. Stacking these blocks defines the Large Phasor Model (LPM). We validate LPM on autoregressive time-series prediction over synthetic multi-frequency benchmarks against honest baselines: it beats a zero-parameter persistence baseline and, with the corrected gradient path, improves monotonically with depth before saturating, while remaining competitive-but-not-superior to self-attention at a fraction of the parameter count. Our results establish an explicit efficiency--accuracy frontier, showing that scalable temporal modeling in oscillatory domains can emerge from geometry-constrained phase computation with deterministic global coupling.",
+          "pub_date": "Fri, 10 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1194
         }
       ],
       "quota": {
@@ -1075,13 +1090,13 @@
         "max": 12
       },
       "total_raw": 233,
-      "total_valid": 51,
+      "total_valid": 56,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1688,
-    "dup": 412,
+    "total_raw": 1696,
+    "dup": 279,
     "nocontent": 401,
     "noise": 3
   }
