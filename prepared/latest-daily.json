@@ -20,21 +20,6 @@
           "word_count": 138
         },
         {
-          "id": 83,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
-          "link": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
-          "content": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
-          "pub_date": "Fri, 10 Jul 2026 17:17:12 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 132
-        },
-        {
           "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
@@ -95,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 388,
+          "id": 133,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +95,7 @@
           "word_count": 101
         },
         {
-          "id": 369,
+          "id": 113,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +110,7 @@
           "word_count": 80
         },
         {
-          "id": 366,
+          "id": 110,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +125,7 @@
           "word_count": 71
         },
         {
-          "id": 364,
+          "id": 108,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,30 +140,45 @@
           "word_count": 50
         },
         {
-          "id": 110,
-          "source": "arXiv cs.AI",
+          "id": 49,
+          "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
-          "priority": 6,
-          "title": "Context Graphs for Proactive Enterprise Agents",
-          "link": "https://arxiv.org/abs/2607.07721",
-          "content": "arXiv:2607.07721v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This paper argues that genuine enterprise productivity gains require proactive agents: systems that surface relevant, actionable information to workers before they ask. We propose the Context Graph, a live relational data structure that models enterprise entities, their relationships, and state transitions over time. Built on this graph, we define a Delta Detection Engine that continuously monitors state changes, a Proactivity Scorer that ranks candidate insights by urgency, relevance, and persona-fit, and a Surfacing Layer powered by an LLM that delivers ranked notifications with grounded explanations. We formalize each component, derive a unified Proactivity Score function, and provide a complete end-to-end Python implementation using NetworkX and the Anthropic Claude API. Evaluation across three generic enterprise case studies (contract lifecycle management, engineering incident response, and sales pipeline hygiene) demonstrates that context-graph-",
-          "pub_date": "Sat, 11 Jul 2026 00:00:00 -0400",
+          "priority": 3,
+          "title": "GeForce NOW Turns Up the Heat With New GeForce RTX 5080-Powered Toronto Server",
+          "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-toronto-expansion/",
+          "content": "This GFN Thursday brings more games, more power and more ways to play on GeForce NOW. The cloud gaming service is expanding with a new GeForce RTX 5080-powered server in Toronto, bringing dedicated high performance in the cloud closer to members across the region. NTE: Neverness to Everness also gets an update in the cloud, [&#8230;]",
+          "pub_date": "Thu, 09 Jul 2026 13:00:55 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 335
+        },
+        {
+          "id": 128,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "sqlite-utils 4.1",
+          "link": "https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything",
+          "content": "Release: sqlite-utils 4.1 The first dot-release since 4.0 a few days ago , introducing a number of minor new features. sqlite-utils insert and sqlite-utils upsert now accept a --code option for providing a block of Python code (or a path to a .py file) that defines a rows() function or rows iterable of rows to insert, as an alternative to importing from a file. ( #684 ) sqlite-utils already had features that allow you to pass blocks of Python code as CLI arguments, for example this one for the sqlite-utils convert command: sqlite - utils convert content . db articles headline ' def convert ( value ): return value . upper ()' Allowing blocks of code to generate new rows directly was on obvious extension of that pattern: sqlite - utils insert data . db creatures - - code ' def rows (): yield { \"id\" : 1 , \"name\" : \"Cleo\" } yield { \"id\" : 2 , \"name\" : \"Suna\" } ' - - pk id sqlite-utils insert and sqlite-utils upsert now accept --type column-name type to override the type automatically chosen when the table is created . This is useful for CSV or TSV columns such as ZIP codes that look like integers but should be stored as TEXT to preserve leading zeros. ( #131 ) A long-standing feature r",
+          "pub_date": "2026-07-11T23:50:20+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 114,
-          "source": "arXiv cs.AI",
+          "id": 138,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Alignment Plausibility: A New Standard for Assuring AI in Healthcare",
-          "link": "https://arxiv.org/abs/2607.07766",
-          "content": "arXiv:2607.07766v1 Announce Type: new Abstract: Large language models (LLMs) have become significant providers of mental health support, yet they remain products of an attention economy whose operational and commercial targets favour sustained engagement over the friction that effective psychological support often requires. Developers' safety responses have been largely reactive, addressing the most visible and acute harms while subtler, longer-term patterns of risk (e.g., dependency, boundary erosion, the amplification of distorted beliefs) receive less attention. We contend that making LLMs structurally safe requires alignment organised at three levels that mirror how society assures the safety of human clinical practice: 1) explicit value specification grounded in the codified normative commitments of clinical practice; 2) training that embeds those values in the model; and 3) oversight that detects drift and longer-term harm during deployment, much as clinical supervision does for human practice. Organising alignment in this way yields a construct we call alignment plausibility - a structured demonstration that a system's values, training regime, and oversight mechanisms are to",
-          "pub_date": "Sat, 11 Jul 2026 00:00:00 -0400",
+          "tier": "T2",
+          "priority": 5,
+          "title": "sqlite-utils 4.0, now with database schema migrations",
+          "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+          "content": "This morning I released sqlite-utils 4.0 , the 124th release of that project and the first major version bump since 3.0 in November 2020. In addition to some small but significant breaking changes (described in this upgrade guide ), this version introduces three major features: database migrations , nested transactions (via a new db.atomic() method), and support for compound foreign keys . Database schema migrations using sqlite-utils Schema migrations define a sequence of changes to be made to a SQLite database, plus a mechanism for tracking which migrations have been applied and applying any that are found to be pending. Migrations are defined in Python files using the sqlite-utils Python library , which includes a powerful table.transform() method providing enhanced alter table capabilities that are not supported by SQLite's ALTER TABLE statement. ( table.transform() implements the pattern recommended by the SQLite documentation - create a new temporary table with the new schema, copy across the data, then drop the old table and rename the temporary one in its place.) Here's an example migration file which creates a table called creatures , adds an additional column to it in a s",
+          "pub_date": "2026-07-07T19:32:57+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 497,
-      "total_valid": 263,
+      "total_raw": 238,
+      "total_valid": 20,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 889,
+          "id": 587,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 409
         },
         {
-          "id": 859,
+          "id": 557,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 401
         },
         {
-          "id": 866,
+          "id": 564,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 397
         },
         {
-          "id": 515,
+          "id": 244,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 271
         },
         {
-          "id": 682,
+          "id": 380,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 706
         },
         {
-          "id": 689,
+          "id": 387,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,22 +287,7 @@
           "word_count": 641
         },
         {
-          "id": 610,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Health Policy] Children in all policies: lessons from a global collaboration to promote the health and wellbeing of children and future generations",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00856-1/fulltext?rss=yes",
-          "content": "Currently children's needs, perspectives, and rights are not adequately included in public policies, with negative consequences for the health and wellbeing of children and future generations. The 2020 WHO–UNICEF–Lancet Commission reviewed threats to children's health and concluded that children's needs and voices should be centred in all policies for a sustainable future. Since 2021, Children in All Policies 2030, a global collaboration of policy makers, scientists, and advocates, has implemented the Commission's recommendations by fostering new approaches to participatory, intersectoral policy making across diverse countries.",
-          "pub_date": "2026-07-11",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 635
-        },
-        {
-          "id": 696,
+          "id": 394,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,37 +302,7 @@
           "word_count": 597
         },
         {
-          "id": 609,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Department of Error] Department of Error",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01340-1/fulltext?rss=yes",
-          "content": "The Staphylococcus aureus Network Adaptive Platform (SNAP) Trial Group. Benzylpenicillin versus flucloxacillin or cloxacillin for the treatment of penicillin-susceptible Staphylococcus aureus bacteraemia (SNAP): an international, multicentre, open-label, non-inferiority randomised controlled trial. Lancet 2026; 408: 141–52—In the Declaration of interests section of this Article, the statement for Michael Marks has been corrected. This correction has been made to the online version as of July 9, 2026, and the printed version is correct.",
-          "pub_date": "2026-07-11",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 541
-        },
-        {
-          "id": 601,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Perspectives] Whose distress, whose diagnosis?",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01336-X/fulltext?rss=yes",
-          "content": "Khameer Kidia's Empire of Madness: Reimagining Western Mental Health Care for Everyone is an entrant into an already crowded and increasingly polarised conversation about the scope, limits, and moral obligations of psychiatry. For readers embedded in global mental health, much of Empire of Madness will feel conceptually familiar. The emphasis on structural and social determinants, the critique of biomedical dominance, and the interrogation of psychiatry's historical entanglements with power echo long-standing debates within the field.",
-          "pub_date": "2026-07-11",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 540
-        },
-        {
-          "id": 738,
+          "id": 436,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,52 +317,7 @@
           "word_count": 467
         },
         {
-          "id": 618,
-          "source": "Cell",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Map of spiking activity underlying change detection in the mouse visual system",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00745-2?rss=yes",
-          "content": "Large-scale Neuropixels recordings across the mouse visual system during an image-change detection task map how sensory, motor, and task engagement signals are distributed across the cortex, thalamus, and midbrain. Task and novelty signals differentially modulate activity along this hierarchy, and combined decoding and optogenetics suggest mice detect changes via an adaptation-based strategy within a critical time window.",
-          "pub_date": "2026-07-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 425
-        },
-        {
-          "id": 942,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Molecular mechanisms and therapeutic perspectives in vulvodynia: From current evidence to future investigations",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00334-4?rss=yes",
-          "content": "Albano et al. provide a molecular overview of vulvodynia, discussing the key determinants associated with the disease including microbial imbalances, hormonal factors, and genetic predisposition from the macroscopic to the microscopic level. They underscore the need for longitudinal and multi-omic studies to clarify causality, refine patient stratification, and support the development of personalized therapies.",
-          "pub_date": "2026-07-10",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 414
-        },
-        {
-          "id": 620,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "CRISPR-mediated precise large fragment insertion in zygotes enables rapid generation of humanized immunoglobulin heavy-chain mice",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00259-1?rss=yes",
-          "content": "Current CRISPR-Cas9 methods are restricted to small genomic edits. Nair et al. report the rapid generation of knock-in mice expressing human immunoglobulin (Ig) by precise deletion of the 2.4-Mb murine Ig heavy-chain locus and insertion of a 155-kb human fragment. B cells in knock-in mice undergo class switching and recombination, enabling modular, customizable humanization of additional loci.",
-          "pub_date": "2026-07-09",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 396
-        },
-        {
-          "id": 543,
+          "id": 272,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +330,96 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 382
+        },
+        {
+          "id": 404,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "KRAS-G12D inhibitor HRS-4642 plus chemotherapy in advanced <i>KRAS</i><sup>G12D</sup>-mutant pancreatic cancer: a phase 1b/2 trial",
+          "link": "https://www.nature.com/articles/s41591-026-04538-9",
+          "content": "Nature Medicine, Published online: 09 July 2026; doi:10.1038/s41591-026-04538-9 In phase 1b/2 trial, the treatment of patients with metastatic KRASG12D-mutant pancreatic cancer, the intravenously delivered KRAS-G12D inhibitor HRS-4642 plus nab-paclitaxel and gemcitabine led to encouraging clinical response rates that support investigation in larger trials.",
+          "pub_date": "2026-07-09",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 358
+        },
+        {
+          "id": 405,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Human embryonic stem cell-derived dopaminergic cells for Parkinson’s disease: a phase 1/2 open-label trial",
+          "link": "https://www.nature.com/articles/s41591-026-04525-0",
+          "content": "Nature Medicine, Published online: 09 July 2026; doi:10.1038/s41591-026-04525-0 A phase 1/2 trial of an off-the-shelf stem cell-derived dopaminergic progenitor therapy demonstrated a favorable 12-month safety profile, with no graft-related adverse events, dyskinesias or tumor formation, although risks were associated with the immunosuppression regimen.",
+          "pub_date": "2026-07-09",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 354
+        },
+        {
+          "id": 270,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Air-permeable hydrogels through viscoelastic phase separation of aerogels",
+          "link": "https://www.nature.com/articles/s41586-026-10712-3",
+          "content": "Nature, Published online: 08 July 2026; doi:10.1038/s41586-026-10712-3 Viscoelastic phase separation is used to fabricate non-collapsible, air-rich networks in high-water-content hydrogels containing silica aerogel beads, allowing air to permeate through the material and enabling a tenfold increase in oxygen permeability over pristine hydrogels.",
+          "pub_date": "2026-07-08",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 347
+        },
+        {
+          "id": 399,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Anti-LAG-3 with or without anti-PD-1 in recurrent glioblastoma: a phase 1 trial",
+          "link": "https://www.nature.com/articles/s41591-026-04475-7",
+          "content": "Nature Medicine, Published online: 10 July 2026; doi:10.1038/s41591-026-04475-7 In a non-randomized phase 1 trial, patients with recurrent glioblastoma received anti-LAG-3 relatlimab with or without anti-PD-1 nivolumab, showing that both monotherapy and combination therapy are safe and result in encouraging preliminary clinical response signals.",
+          "pub_date": "2026-07-10",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 347
+        },
+        {
+          "id": 269,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Reconfigurable mmWave microchips co-integrating hBN switches on GaN",
+          "link": "https://www.nature.com/articles/s41586-026-10761-8",
+          "content": "Nature, Published online: 08 July 2026; doi:10.1038/s41586-026-10761-8 Radio-frequency switches made from two-dimensional layered hexagonal boron nitride (hBN) were co-integrated on gallium nitride (GaN) microchips to build programmable millimetre-wave (mmWave) monolithic microwave integrated circuits suitable for 6G hardware.",
+          "pub_date": "2026-07-08",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 328
+        },
+        {
+          "id": 433,
+          "source": "Nature Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Rediscovering eosinophil identity through tissue adaptation",
+          "link": "https://www.nature.com/articles/s41590-026-02593-5",
+          "content": "Nature Immunology, Published online: 10 July 2026; doi:10.1038/s41590-026-02593-5 In this Review, the authors discuss the immunology of eosinophils beyond their roles in allergy and type 2 immune responses, focusing on the adaptation and heterogeneity of these cells in different tissues and inflammatory contexts.",
+          "pub_date": "2026-07-10",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 314
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 487,
-      "total_valid": 302,
+      "total_raw": 432,
+      "total_valid": 274,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1040,
+          "id": 726,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 213
         },
         {
-          "id": 1001,
+          "id": 687,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 212
         },
         {
-          "id": 1009,
+          "id": 695,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 206
         },
         {
-          "id": 1104,
+          "id": 782,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1062
         },
         {
-          "id": 1097,
+          "id": 775,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 777
         },
         {
-          "id": 1119,
+          "id": 797,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 434
         },
         {
-          "id": 1085,
+          "id": 763,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1086,
+          "id": 764,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1083,
+          "id": 761,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 139,
+      "total_raw": 131,
       "total_valid": 31,
       "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 1129,
+          "id": 806,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 123
         },
         {
-          "id": 1126,
+          "id": 803,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 118
         },
         {
-          "id": 1127,
+          "id": 804,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 115
         },
         {
-          "id": 878,
+          "id": 576,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 395
         },
         {
-          "id": 888,
+          "id": 586,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 294
         },
         {
-          "id": 1040,
+          "id": 726,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 213
         },
         {
-          "id": 836,
+          "id": 534,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -686,37 +686,37 @@
           "word_count": 166
         },
         {
-          "id": 507,
-          "source": "Endpoints News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Pfizer appoints obesity discovery head; AI startup Xaira makes leadership adjustments",
-          "link": "https://endpoints.news/pfizer-appoints-obesity-discovery-head-ai-startup-xaira-makes-leadership-adjustments/",
-          "content": "→ Danna Breen has been promoted to head of obesity discovery at Pfizer, according to a LinkedIn post. Breen succeeds Kendra Bence and gets this opportunity after nearly 14 years with ...",
-          "pub_date": "Fri, 10 Jul 2026 11:00:12 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 186
-        },
-        {
-          "id": 269,
-          "source": "arXiv cs.AI",
+          "id": 441,
+          "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Dual-Difficulty Curriculum Learning for Direct Preference Optimization",
-          "link": "https://arxiv.org/abs/2504.07856",
-          "content": "arXiv:2504.07856v4 Announce Type: replace Abstract: Curriculum learning enhances Direct Preference Optimization (DPO) for aligning Large Language Models (LLMs), yet existing methods rely on a one-dimensional view of difficulty. In this work, we reframe alignment difficulty as a two-dimensional space spanned by Prompt Complexity (PC) and Pairwise Distinguishability (PD), providing a more principled foundation for alignment. We first demonstrate the efficacy of this space by developing DM-Curri-DPO, a framework of static curricula that already achieves significant gains over baseline methods. Moving beyond these handcrafted paths, we introduce our primary contribution: GSP-Curri-DPO, a novel Group-wise Self-Paced Learning framework. This advanced method empowers the model to navigate the difficulty grid, discovering an optimal learning trajectory based on its own evolving capabilities. Extensive experiments show our self-paced approach not only sets a new state-of-the-art on key benchmarks but, more importantly, demonstrates superior data efficiency and robustness to preference noise. Our work establishes a new paradigm for LLM alignment, offering both a structured difficulty space a",
-          "pub_date": "Sat, 11 Jul 2026 00:00:00 -0400",
+          "title": "Limitations of EBV transformed human Raji B cells as a model for measuring canonical NF-κB activation",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.07.07.737082v1?rss=1",
+          "content": "Autoimmune diseases, such as systemic lupus erythematosus (SLE), are underscored by dysregulated B cell function including the production of autoantibodies, skewed population ratios, and aberrant signaling. Given that the family of nuclear factor kappa B (NF-{kappa}B) transcription factors govern responses to stimuli, survival, differentiation, and so forth understanding the intricate regulatory network of NF-{kappa}B in B cell biology is paramount for unraveling treatments for B cell-linked autoimmune diseases. Here, we focus on a negative regulator of NF-{kappa}B signaling, A20 (TNFAIP3), that deactivates NF-{kappa}B transcription factor translocation through the ubiquitination and deubiquitination of target proteins. Haploinsufficiency in A20 results in an autoimmune phenotype and mutations to A20 have been associated with SLE, suggesting implications to B cell function. To investigate the role of A20 in NF-{kappa}B in human B cells, we generated a TNFAIP3 knockout (KO) Raji cell line. Cells were stimulated with either anti-IgM or Resiquimod (R848) to activate distinct NF-{kappa}B signaling pathways. Using qRT-PCR, western blotting, and flow cytometry, we assessed differences in",
+          "pub_date": "2026-07-11",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 744,
+          "id": 442,
+          "source": "bioRxiv Immunology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Mycobacterium tuberculosis Δlsr2 Vaccine Enhances Protection Against Tuberculosis",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.07.07.737086v1?rss=1",
+          "content": "Tuberculosis (TB) has been a leading cause of death from a single infectious agent for decades. Bacille Calmette-Guerin (BCG) remains both the primary TB vaccine strategy and the oldest vaccine in circulation, with severe limitations in adult populations. Recently, live attenuated vaccine strategies, or generating safe strains of Mycobacterium tuberculosis (Mtb) through genetic engineering, have shown considerable promise. We previously developed an attenuated strain of Mtb lacking the nucleoid-associated protein Lsr2 ({Delta}lsr2) which is also phthiocerol dimycocerosates (PDIM) deficient and induces an immune response that represents an intermediate stage between the parental Mtb strain and BCG. In this study we examined the immune response of {Delta}lsr2 vaccinated mice in comparison to BCG and found a substantially stronger CD4 and CD8 T cell responses from {Delta}lsr2 vaccinated mice. Complementary, we conducted Mtb protection studies in {Delta}lsr2 and BCG vaccinated mice and guinea pigs, where we found that {Delta}lsr2 provided superior protection in both animals. This improved protection is shown with reduced bacterial burden and improved organ pathology in the lungs and sp",
+          "pub_date": "2026-07-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 444,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 41,
-      "total_valid": 35,
+      "total_raw": 38,
+      "total_valid": 34,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1133,
+          "id": 810,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,22 +769,7 @@
           "word_count": 445
         },
         {
-          "id": 1142,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Big Tech Doubles Down on AI Infrastructure",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/big-tech-doubles-down-on-ai-infrastructure/",
-          "content": "The five companies spending the most on artificial intelligence (AI) data centers in the United States doubled their debt load over the past five years to finance their efforts, Bloomberg reported Friday (July 10). In total, Alphabet, Amazon, Meta, Microsoft and Oracle added about $350 billion to their debt obligations, according to the report. This marks a change for the software industry, [&#8230;] The post Big Tech Doubles Down on AI Infrastructure appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 10 Jul 2026 18:33:05 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 486
-        },
-        {
-          "id": 1139,
+          "id": 816,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +784,7 @@
           "word_count": 472
         },
         {
-          "id": 1137,
+          "id": 814,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,97 +799,7 @@
           "word_count": 471
         },
         {
-          "id": 1141,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Retail’s Best Customer Now Arrives From ChatGPT",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/retails-best-customer-now-arrives-from-chatgpt/",
-          "content": "Retailers have spent two decades optimizing for traffic. The metric that shaped every SEO budget, every paid search bid and every social media campaign was volume: how many visitors arrived at the site. Shopify reported in a May blog post that artificial intelligence-referred shoppers on its platform converted at nearly 50% higher rates than organic [&#8230;] The post Retail’s Best Customer Now Arrives From ChatGPT appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 10 Jul 2026 18:46:38 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 449
-        },
-        {
-          "id": 1151,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Horizon launches native Kalshi connectivity for institutional traders",
-          "link": "https://www.finextra.com/pressarticle/110395/horizon-launches-native-kalshi-connectivity-for-institutional-traders?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Horizon Trading Solutions, a global leader in electronic trading solutions and algorithmic technology for capital markets, today announced expanded capabilities for market making on Kalshi, providing its institutional clients with native connectivity to the leading CFTC-regulated prediction market.",
-          "pub_date": "Fri, 10 Jul 2026 13:13:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 299
-        },
-        {
-          "id": 1147,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "ESMA to review the resilience of crypto custodians",
-          "link": "https://www.finextra.com/newsarticle/48073/esma-to-review-the-resilience-of-crypto-custodians?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Europe's capital markets regulator, the European Securities and Markets Authority (ESMA), has announced plans to examine the operational resilience and governance of crypto custodians.",
-          "pub_date": "Fri, 10 Jul 2026 12:23:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 184
-        },
-        {
-          "id": 1149,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Revolut recruits JP Morgan exec to lead European operations",
-          "link": "https://www.finextra.com/newsarticle/48071/revolut-recruits-jp-morgan-exec-to-lead-european-operations?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Kuba Fast, the man responsible for setting up JP Morgan Chase's UK banking venture, Chase UK, has been poached by UK digital bank Revolut to lead its European banking operation.",
-          "pub_date": "Fri, 10 Jul 2026 11:04:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 177
-        },
-        {
-          "id": 1145,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Wall Street banks clamp down on employee use of prediction markets",
-          "link": "https://www.finextra.com/newsarticle/48075/wall-street-banks-clamp-down-on-employee-use-of-prediction-markets?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Banks including Goldman Sachs and Morgan Stanley have updated their employee codes of conduct to ban employees from some bets on predictions markets, according to reports.",
-          "pub_date": "Fri, 10 Jul 2026 14:54:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 171
-        },
-        {
-          "id": 1146,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "UK gives financial regulators oversight of cloud giants",
-          "link": "https://www.finextra.com/newsarticle/48074/uk-gives-financial-regulators-oversight-of-cloud-giants?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The UK government has put the four biggest cloud service providers - Amazon, Google, Microsoft and Oracle - under direct oversight by the country's financial regulators.",
-          "pub_date": "Fri, 10 Jul 2026 14:29:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 169
-        },
-        {
-          "id": 1159,
+          "id": 821,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -917,6 +812,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 139
+        },
+        {
+          "id": 819,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Digital sovereignty: The key deliverable of banking transformation",
+          "link": "https://www.finextra.com/event-info/616/digital-sovereignty-the-key-deliverable-of-banking-transformation?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "How FIs can achieve banking transformation as well as digital sovereignty.",
+          "pub_date": "Tue, 28 Jul 2026 15:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 74
+        },
+        {
+          "id": 818,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "From copilot to autopilot: Exploring agentic AI’s impact on treasury",
+          "link": "https://www.finextra.com/event-info/620/from-copilot-to-autopilot-exploring-agentic-ais-impact-on-treasury?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "How can agentic AI empower bank and corporate treasurers?",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 57
+        },
+        {
+          "id": 820,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "AI, HR and financial services: Modernising banking systems from front to back",
+          "link": "https://www.finextra.com/event-info/619/ai-hr-and-financial-services-modernising-banking-systems-from-front-to-back?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "How should FIs embed AI into their core banking systems?",
+          "pub_date": "Thu, 30 Jul 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 56
         }
       ],
       "quota": {
@@ -924,15 +864,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 195,
-      "total_valid": 16,
-      "total_candidates": 11
+      "total_raw": 182,
+      "total_valid": 7,
+      "total_candidates": 7
     }
   },
   "meta": {
-    "total_raw": 1327,
-    "dup": 318,
-    "nocontent": 399,
-    "noise": 3
+    "total_raw": 991,
+    "dup": 266,
+    "nocontent": 398,
+    "noise": 0
   }
 }
