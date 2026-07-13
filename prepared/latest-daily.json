@@ -5,29 +5,59 @@
     "ai": {
       "candidates": [
         {
-          "id": 77,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CineMobile: On-Device Image-to-Video Diffusion for Cinematic Camera Motion Generation",
-          "link": "https://arxiv.org/abs/2607.03803",
-          "content": "The growing demand for image-to-video creation on mobile devices has increasingly focused on cinematic motion effects like bullet time, dolly zoom, slow motion, etc. While Diffusion Transformers (DiTs) exhibit strong performance in video generation, their large parameter sizes and multi-step iterative denoising processes lead to substantial computational overhead, making efficient generation on mobile devices challenging. We propose CineMobile to bridge the gap. In particular, CineMobile adopts a three-fold optimization strategy: (1) leveraging a distillation-guided pruning approach to derive a compact yet efficient model that retains the essential video generation capabilities required for cinematic effects; (2) optimizing the compressed model into a 4-step generator via a combination of diffusion distillation and reinforcement learning; (3) employing a hybrid post-training quantization strategy to compress the model footprint to under 1 GB. Experimental results show that compared to the teacher model with the Wan 2.1 architecture, CineMobile achieves a 40x speedup in generation while maintaining comparable visual quality. Specifically, CineMobile generates 49-frame 480p videos wi",
-          "pub_date": "2026-07-03T20:00:00.000Z",
+          "title": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery",
+          "link": "https://arxiv.org/abs/2607.06374",
+          "content": "Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliable VLM assistance is limited by two challenges. First, open-ended interpretation requires grounding fine-grained 2D/3D visual evidence in specialized curatorial knowledge, yet the retrieval process may introduce weak sources and unverifiable references. Second, when the available evidence is incomplete, noisy, or ambiguous, VLMs often produce confident but unsupported answers instead of calibrated uncertainty. To address these challenges, we propose VaseMuseum, a lightweight and modular multimodal agent framework for intelligent digital museums of ancient Greek pottery. VaseMuseum combines an interactive virtual museum with VaseAgent, which supports both 2D images and 3D artifacts through multimodal perception, 3D-aware reasoning, external knowledge retrieval, and inference-time reliability control. Specifically, VaseAgent retrieves evidence from authoritative web and museum knowledge sources, and source-level control selects diverse and verifiabl",
+          "pub_date": "2026-07-06T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 126,
+          "id": 66,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+          "link": "https://arxiv.org/abs/2607.08964",
+          "content": "AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solvin",
+          "pub_date": "2026-07-08T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "From RGB Generation to Dense Field Readout: Pixel-Space Dense Prediction with Text-to-Image Models",
+          "link": "https://arxiv.org/abs/2607.06553",
+          "content": "Large-scale text-to-image models are attractive backbones for dense prediction because RGB generation pretraining learns rich semantic, structural, and geometric priors. Existing generative and editing approaches reuse these priors by casting dense prediction as target generation: annotations such as depth, normals, alpha mattes, masks, and heatmaps are encoded into an RGB-trained VAE latent space and decoded back as image-like targets. We argue this inherits more of the generative output interface than dense prediction requires: unlike RGB synthesis, dense prediction asks for pixel-correct, task-native fields on the same image plane, not new RGB content to be rendered. Our key observation is that a pretrained DiT already organizes RGB inputs through a patch-to-token-to-patch lattice on the image plane, so each token indexes a fixed output patch whose channels can carry task-native quantities instead of RGB appearance. We instantiate this as ReChannel: we keep the VAE encoder for the DiT's input distribution but drop the target-side decoder, adapt the frozen DiT with task LoRA, and map each token to its p x p x K_t pixel-space patch through a shared token-local linear head--about 3",
+          "pub_date": "2026-07-08T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 559,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
           "title": "Fable gets another bump",
           "link": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
-          "content": "One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans: We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19. As before, you can use up to half of your weekly usage limit on Fable 5. After that, you can continue using Fable 5 with usage credits, or switch to another model to keep working within your remaining limits. Anthropic's original rationale for this was compute constraints - they wanted a better idea of both demand and compute availability before committing to keeping the new model cheap for subscribers. OpenAI appear confident that they won't need to restrict access to GPT-5.6 in the same way. Here's Tibo this morning : The last 48 hours of Codex and ChatGPT Work have been intense! Three important updates: Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans Rolling out changes that will make GPT 5.6 Sol more efficient across the board and that will be reflected in less usage being used so that it can take you further.",
+          "content": "One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans: We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19. As before, you can use up to half of your weekly usage limit on Fable 5. After that, you can continue using Fable 5 with usage credits, or switch to another model to keep working within your remaining limits. Anthropic's original rationale for this was compute constraints - they wanted a better idea of both demand and compute availability before committing to keeping the new model cheap for subscribers. OpenAI appear confident that they won't need to restrict access to GPT-5.6 in the same way. Here's Thibault Sottiaux this morning : The last 48 hours of Codex and ChatGPT Work have been intense! Three important updates: Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans Rolling out changes that will make GPT 5.6 Sol more efficient across the board and that will be reflected in less usage being used so that it can take",
           "pub_date": "2026-07-12T21:20:07+00:00",
           "is_duplicate": false,
           "has_content": true,
@@ -35,37 +65,37 @@
           "word_count": 1200
         },
         {
-          "id": 70,
-          "source": "HuggingFace Daily Papers",
+          "id": 557,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
+          "tier": "T2",
           "priority": 5,
-          "title": "LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with Video Diffusion Models",
-          "link": "https://arxiv.org/abs/2607.08770",
-          "content": "Recovering high-quality video from sparse event streams is a challenging task. Regression methods often blur textures, while existing generative models struggle with long-term stability. We propose LongE2V, a novel approach that leverages pre-trained video diffusion priors to jointly handle event-based video reconstruction, prediction, and frame interpolation. By fine-tuning a foundational video model, our approach achieves high data efficiency and superior perceptual quality. We introduce Autoregressive Unrolling and Adaptive Context Switching to mitigate temporal drift in extremely long sequences. We also propose Reencoding Alignment with Cross Residual Correction to ensure precise bidirectional consistency during frame interpolation. Furthermore, Event Voxel Density Augmentation ensures robustness across varying sensor resolutions. Extensive experiments on real-world benchmarks demonstrate that LongE2V outperforms state-of-the-art methods across all three tasks, exhibiting exceptional temporal coherence and zero-shot generalization. Project page: https://cdfan0627.github.io/LongE2V-page/",
-          "pub_date": "2026-07-08T20:00:00.000Z",
+          "title": "Directly Responsible Individuals (DRI)",
+          "link": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
+          "content": "Directly Responsible Individuals (DRI) I went looking for a definition of \"Directly Responsible Individuals\" and the best I found was in the GitLab handbook. Apparently the term originated at Apple, where it's used to describe the person who is \"ultimately accountable for the success or failure of a specific project, initiative, or activity\". I've been thinking about this term recently in the context of LLM-powered agents and how they fit into human organizations. I don't think an agent should ever be considered the DRI for a project - that's something that feels uniquely human to me, because humans can take accountability for their actions where machines cannot. (See also IBM's legendary 1979 training slide that states \"A computer can never be held accountable, therefore a computer must never make a management decision.\") Tags: apple , management , ai , gitlab , generative-ai , llms , ai-ethics , coding-agents",
+          "pub_date": "2026-07-12T23:57:14+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1107
+          "word_count": 924
         },
         {
-          "id": 65,
-          "source": "HuggingFace Daily Papers",
+          "id": 560,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
+          "tier": "T2",
           "priority": 5,
-          "title": "PAST-TIDE: Prototype-Anchored Statement Tuning with Topic-Invariant Normalization for Stance Detection",
-          "link": "https://arxiv.org/abs/2607.04690",
-          "content": "We introduce PAST-TIDE, our stance detection system addressing both subtasks of the StanceNakba Shared Task at NakbaNLP@LREC-COLING 2026. The main idea is statement tuning. We redefine stance as cloze-style masked language modeling (MLM), letting a verbalizer map label words to stance categories through the pre-trained MLM head rather than appending a randomly initialized classification head. We complement this with prototypical contrastive learning, which uses learnable class prototypes for batch-size independent contrastive training, and topic-conditional layer normalization for cross-topic Arabic stance detection. PAST-TIDE achieves macro-F1 scores of 0.75 for Subtask A and 0.74 for Subtask B on the official leaderboard, indicating that minimal architectural additions to a pre-trained model can remain competitive in low-resource settings.",
-          "pub_date": "2026-07-05T20:00:00.000Z",
+          "title": "sqlite-utils 4.1.1",
+          "link": "https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything",
+          "content": "Release: sqlite-utils 4.1.1 Mainly a fix for an edge case that regular Claude chat spotted while experimenting with the 4.1 release to answer a question about ON DELETE. table.transform() now raises a TransactionError if called while a transaction is open with PRAGMA foreign_keys enabled and the table is referenced by foreign keys with destructive ON DELETE actions - CASCADE , SET NULL or SET DEFAULT . The pragma cannot be changed inside a transaction, so previously dropping the old table as part of the transform could fire those actions and silently delete or modify referencing rows. See Foreign keys and transactions for details and workarounds. ( #794 ) The CLI and Python API documentation now cross-reference each other: CLI sections link to the equivalent Python API functionality and Python API sections link back to the corresponding CLI command. ( #791 ) Tags: sqlite , sqlite-utils",
+          "pub_date": "2026-07-12T20:55:30+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 853
+          "word_count": 898
         },
         {
-          "id": 105,
+          "id": 536,
           "source": "Interconnects",
           "section": "ai",
           "tier": "T2",
@@ -80,34 +110,79 @@
           "word_count": 89
         },
         {
-          "id": 138,
-          "source": "Simon Willison",
+          "id": 103,
+          "source": "arXiv cs.CL",
           "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "sqlite-migrate 0.2",
-          "link": "https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything",
-          "content": "Release: sqlite-migrate 0.2 The version that retires the library, instead implementing a compatibility shim against the new sqlite-utils 4.0 dependency. Tags: sqlite-utils",
-          "pub_date": "2026-07-07T16:33:55+00:00",
+          "tier": "T1",
+          "priority": 6,
+          "title": "HALO: Hybrid Adaptive Latent Reasoning for Language Models",
+          "link": "https://arxiv.org/abs/2607.08775",
+          "content": "arXiv:2607.08775v1 Announce Type: new Abstract: We study how to improve a frozen pretrained language model with a small amount of adaptive extra computation. A simple approach is to add additional refinement steps on top of the backbone hidden states, but fixed extra refinement can be wasteful: a one-step refinement head may be too weak, while forcing a second full-sequence refinement step everywhere can increase compute without improving transfer. We introduce HALO, a hybrid adaptive latent-refinement method that combines a coarse refinement stage with selective second-stage latent refinement on a subset of tokens chosen by token scoring and monotonic token halting. On the main public benchmark comparison built from MMLU-Pro and GPQA-Diamond, HALO achieves the best overall average among the paper-facing methods, outperforming the frozen backbone, fixed-1, and fixed-2. Internal analysis further shows that HALO reaches nearly the same token-accuracy level as fixed-2 while using fewer average applied refine steps than fixed-1 and far fewer than fixed-2. These results suggest that the key advantage is not simply more refinement, but a better allocation of refinement: HALO achieves the",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 171
+          "word_count": 1200
         },
         {
-          "id": 140,
-          "source": "Simon Willison",
+          "id": 106,
+          "source": "arXiv cs.CL",
           "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "sqlite-utils 4.0",
-          "link": "https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything",
-          "content": "Release: sqlite-utils 4.0 See sqlite-utils 4.0, now with database schema migrations for details. Tags: sqlite-utils",
-          "pub_date": "2026-07-07T15:42:43+00:00",
+          "tier": "T1",
+          "priority": 6,
+          "title": "PRecG: Legal Precedent Retrieval with Graph Neural Networks and Rhetorical Role Segmentation",
+          "link": "https://arxiv.org/abs/2607.09094",
+          "content": "arXiv:2607.09094v1 Announce Type: new Abstract: Legal precedent retrieval is a fundamental task in legal case preparation, planning, litigation strategy, and legal research. Current approaches for automatic precedent retrieval map legal documents to a low-dimensional semantic space and compute similarity based on the proximity of their representations. These approaches treat legal documents as monolithic texts, ignoring the rhetorical organization of the legal technicalities. Ergo, they overlook nuanced legal meanings and fail to distinguish the contextual significance of legal entities and concepts that vary based on their rhetorical roles within the document. To address this insufficiency, we propose the PRecG pipeline that computes the similarity between pairs of legal judgments by hierarchically learning their representations. The process begins by decomposing each document into distinct semantic units (segments) based on the rhetorical roles of sentences. For each rhetorical segment, a knowledge graph is constructed to capture the legal entities and their relationships within the segment. Contextual representations of the entities are then learned and aggregated to derive segm",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 115
+          "word_count": 1200
+        },
+        {
+          "id": 108,
+          "source": "arXiv cs.CL",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Complexity-Guided Component-wise Initialization for Language Model Pretraining",
+          "link": "https://arxiv.org/abs/2607.09204",
+          "content": "arXiv:2607.09204v1 Announce Type: new Abstract: Pretrained language models often exhibit structured weight spectra, suggesting that training may repeatedly produce similar layerwise and component-wise organization. We ask whether these recurring spectral patterns can be reused as an initialization signal for GPT-2-style language-model pretraining. First, we analyze eleven pretrained GPT-2-style checkpoints that vary in size, language, tokenizer, and training corpus, measuring Frobenius norm and effective-rank entropy across layers and Transformer subcomponents. The checkpoints show shared depth trends, especially increasing scale and stronger spectral concentration in residual-writing matrices. We then construct initialization schemes that imitate the component-wise magnitudes and spectral profiles of pretrained models, and compare them with several weight initialization methods. These initializers visibly change the model's structural spectral patterns, but the evaluation results do not show a corresponding performance advantage. Pretrained-weight reuse remains competitive, while coarse spectral matching alone is not a reliable optimization strategy. Our results suggest that pretr",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 172,
+          "source": "arXiv cs.AI",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Interval Certifications for Multilayered Perceptrons via Lattice Traversal",
+          "link": "https://arxiv.org/abs/2607.08773",
+          "content": "arXiv:2607.08773v1 Announce Type: new Abstract: In this work we present a rigorous theoretical framework to a foundational problem of AI safety, namely adversarial robustness. In particular, we show that the adversarial robustness problem can be reduced to a lattice traversal problem. Each element of this lattice corresponds to an interval, i.e., an axis-aligned hyper-rectangle, containing an input point $\\mathbf{x}$. Consider a multilayered perceptron classifier (MLP). An interval $I$ constitutes a sound certification if $\\mathbf{x} \\in I$ and $\\mathbf{x}$ can be freely perturbed in $I$ without changing the MLP's prediction. Complementarily, an interval $I$ constitutes a complete certification if $\\mathbf{x} \\in I$ and when $\\mathbf{x}$ moves outside of $I$ the MLP's prediction is guaranteed to change. While the sound certification problem corresponds to the well-studied adversarial robustness, complete certifications have not been examined in the literature. We develop lattice traversal operators, which we apply in a refine & verify iterative scheme. Using formal MLP verifiers, sound maximality and complete minimality are guaranteed. Moreover, we examine objective optimization pr",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 173,
+          "source": "arXiv cs.AI",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 6,
+          "title": "CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions",
+          "link": "https://arxiv.org/abs/2607.08774",
+          "content": "arXiv:2607.08774v1 Announce Type: new Abstract: Reliability in large language model (LLM) systems is typically framed as a function of model capability. We challenge this by demonstrating that reliability is significantly influenced by \\emph{inference-time control} -- the computational layer governing task framing and context selection. We introduce \\emph{CogniConsole}, an architectural instantiation that externalizes this control into a structured interface combining programmatic coordination with bounded prompt-based reasoning. Through \\emph{controllability-oriented probes} ($N=489$) in a multi-step interactive environment, we show that increasing structural scaffolding -- from unstructured to fully scaffolded -- \\textbf{systematically reduces output variance and failure rates under a fixed model architecture}. Our results indicate that many observed failure modes, such as context drift and inconsistent constraint adherence, arise from under-specified control rather than insufficient capability. This work provides an empirical basis for treating inference-time control as a first-class abstraction, opening new directions for designing and evaluating LLM systems beyond scaling alon",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -115,14 +190,44 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 237,
-      "total_valid": 10,
-      "total_candidates": 7
+      "total_raw": 670,
+      "total_valid": 342,
+      "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 511,
+          "id": 819,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "An anti-PMEL antibody−drug conjugate with a G<sub>q/1</sub><sub>1</sub> inhibitor payload in <i>GNAQ</i>/<i>GNA11</i>-mutant melanomas: a phase 1 trial",
+          "link": "https://www.nature.com/articles/s41591-026-04518-z",
+          "content": "Nature Medicine, Published online: 13 July 2026; doi:10.1038/s41591-026-04518-z In a phase 1 trial, treatment with the antibody−drug conjugate DYP688, targeting PMEL and delivering a Gq/11 inhibitor, in patients with GNAQ/GNA11-mutant metastatic uveal melanoma or other GNAQ/GNA11-mutant melanomas, showed acceptable safety and encouraging preliminary efficacy, with supporting biomarker data for proof of mechanism.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 416
+        },
+        {
+          "id": 683,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "The rise of evidence-based medicine and the ‘mavericks’ who championed it",
+          "link": "https://www.nature.com/articles/d41586-026-02153-9",
+          "content": "Nature, Published online: 13 July 2026; doi:10.1038/d41586-026-02153-9 An impeccably researched account describes how clinical trials have transformed health and social policy.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 176
+        },
+        {
+          "id": 920,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -137,7 +242,7 @@
           "word_count": 324
         },
         {
-          "id": 524,
+          "id": 933,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -152,7 +257,7 @@
           "word_count": 303
         },
         {
-          "id": 499,
+          "id": 908,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -167,7 +272,7 @@
           "word_count": 270
         },
         {
-          "id": 642,
+          "id": 1051,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -182,7 +287,7 @@
           "word_count": 164
         },
         {
-          "id": 390,
+          "id": 808,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -197,7 +302,7 @@
           "word_count": 596
         },
         {
-          "id": 631,
+          "id": 1040,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +317,7 @@
           "word_count": 472
         },
         {
-          "id": 384,
+          "id": 802,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +332,7 @@
           "word_count": 451
         },
         {
-          "id": 265,
+          "id": 708,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +347,7 @@
           "word_count": 320
         },
         {
-          "id": 617,
+          "id": 1026,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +362,7 @@
           "word_count": 314
         },
         {
-          "id": 264,
+          "id": 707,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,22 +377,7 @@
           "word_count": 305
         },
         {
-          "id": 269,
-          "source": "Nature",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Verification of the Outer Space Treaty with cosmic protons",
-          "link": "https://www.nature.com/articles/s41586-026-10783-2",
-          "content": "Nature, Published online: 08 July 2026; doi:10.1038/s41586-026-10783-2 By observing the neutrons induced by spallation from protons in the inner Van Allen radiation belts using widely available sensor technologies, the detection of a thermonuclear weapon carried by a space satellite is possible.",
-          "pub_date": "2026-07-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 296
-        },
-        {
-          "id": 377,
+          "id": 795,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +392,7 @@
           "word_count": 293
         },
         {
-          "id": 627,
+          "id": 1036,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +407,7 @@
           "word_count": 251
         },
         {
-          "id": 439,
+          "id": 856,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -330,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 249
-        },
-        {
-          "id": 408,
-          "source": "Nature Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Biological aging clocks in health and disease",
-          "link": "https://www.nature.com/articles/s41591-026-04495-3",
-          "content": "Nature Medicine, Published online: 09 July 2026; doi:10.1038/s41591-026-04495-3 This review outlines the state of the art of biological clocks and how they could help understand pathobiology, reduce the burden of disease and extend healthspan.",
-          "pub_date": "2026-07-09",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 243
         }
       ],
       "quota": {
@@ -352,14 +427,29 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 432,
-      "total_valid": 251,
+      "total_raw": 408,
+      "total_valid": 238,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 704,
+          "id": 1112,
+          "source": "Metabolic Engineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "<em>De novo</em> biosynthesis of the polymethoxylated flavones eupatilin and jaceosidin in <em>Saccharomyces cerevisiae</em>",
+          "link": "https://www.sciencedirect.com/science/article/pii/S1096717626000972?dgcid=rss_sd_all",
+          "content": "Publication date: Available online 13 July 2026 Source: Metabolic Engineering Author(s): Jingyan Liu, Tianzhen Sun, Zhongjun Liu, Yanli Zou, Yu Liu, Xiaoyu Yao, Hui Wu, Xudong Wang, Fahui Li, Weiguo Song, Yanan Qiao, Xiaozhou Luo",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 229
+        },
+        {
+          "id": 1115,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -374,7 +464,7 @@
           "word_count": 195
         },
         {
-          "id": 727,
+          "id": 1138,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -389,22 +479,82 @@
           "word_count": 193
         },
         {
-          "id": 690,
-          "source": "Metabolic Engineering",
+          "id": 1089,
+          "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
           "priority": 2,
-          "title": "Evolution-guided high yield production of potent Gα<sub>q/11</sub>-signalling inhibitors FR900359 and YM-254890",
-          "link": "https://www.sciencedirect.com/science/article/pii/S1096717626000923?dgcid=rss_sd_all",
-          "content": "Publication date: September 2026 Source: Metabolic Engineering, Volume 97 Author(s): Yiwen Zhou, Xinyi Zhao, Xingyu Zhao, Fei Zhang, Yunchuan Jia, Shuang Xia, Jianming Zhang, Yinhua Lu, Lei Li",
-          "pub_date": "",
+          "title": "Towards shared embodied intelligence in humanoid robots through optimization, development and testing of the human-aware ergoCub robot",
+          "link": "https://www.nature.com/articles/s42256-026-01272-2",
+          "content": "Nature Machine Intelligence, Published online: 13 July 2026; doi:10.1038/s42256-026-01272-2 Sartore et al. present ergoCub, a humanoid robot that prioritizes human safety at hardware and motion levels. Using a shared embodied intelligence framework, design and control are jointly optimized with human-related metrics such as back stress alongside locomotion objectives, reducing spinal load and improving walking robustness.",
+          "pub_date": "2026-07-13",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 192
+          "word_count": 425
         },
         {
-          "id": 747,
+          "id": 1207,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Soft robotic phantoms for ethical and multimodal surgical simulation",
+          "link": "https://www.nature.com/articles/s44222-026-00474-y",
+          "content": "Nature Reviews Bioengineering, Published online: 13 July 2026; doi:10.1038/s44222-026-00474-y Surgical phantoms are artificial models of human tissues used for training, preoperative planning and device testing. Soft robotics is transforming these systems from passive anatomical replicas into dynamic, sensorized and multimodal systems, enabling more realistic surgical training and reducing reliance on animal models.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 419
+        },
+        {
+          "id": 1088,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "The brain is a diverse place, why not computing?",
+          "link": "https://www.nature.com/articles/s42256-026-01273-1",
+          "content": "Nature Machine Intelligence, Published online: 13 July 2026; doi:10.1038/s42256-026-01273-1 The brain’s architecture exhibits diversity across many temporal and spatial scales, yet our computing architectures remain largely homogeneous. Low-powered neuromorphic hardware offers a path towards energy-efficient AI, but could these approaches be improved with heterogeneous computing architectures?",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 396
+        },
+        {
+          "id": 1090,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A manifesto for Sustainability Robotics",
+          "link": "https://www.nature.com/articles/s42256-026-01260-6",
+          "content": "Nature Machine Intelligence, Published online: 13 July 2026; doi:10.1038/s42256-026-01260-6 Song et al. propose Sustainability Robotics as a new discipline to overcome fragmentation and enhance societal and environmental impact. They define three guiding principles, alongside two dimensions spanning sustainable design and robotics for sustainability.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 352
+        },
+        {
+          "id": 1206,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Author Correction: Organoids as platforms for infectious disease research",
+          "link": "https://www.nature.com/articles/s44222-026-00478-8",
+          "content": "Nature Reviews Bioengineering, Published online: 13 July 2026; doi:10.1038/s44222-026-00478-8 Author Correction: Organoids as platforms for infectious disease research",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 167
+        },
+        {
+          "id": 1161,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -419,7 +569,7 @@
           "word_count": 1194
         },
         {
-          "id": 742,
+          "id": 1156,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -434,7 +584,7 @@
           "word_count": 1193
         },
         {
-          "id": 755,
+          "id": 1169,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -454,14 +604,59 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 131,
-      "total_valid": 25,
-      "total_candidates": 6
+      "total_raw": 135,
+      "total_valid": 33,
+      "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 804,
+          "id": 1207,
+          "source": "Nature Reviews Bioengineering",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Soft robotic phantoms for ethical and multimodal surgical simulation",
+          "link": "https://www.nature.com/articles/s44222-026-00474-y",
+          "content": "Nature Reviews Bioengineering, Published online: 13 July 2026; doi:10.1038/s44222-026-00474-y Surgical phantoms are artificial models of human tissues used for training, preoperative planning and device testing. Soft robotics is transforming these systems from passive anatomical replicas into dynamic, sensorized and multimodal systems, enabling more realistic surgical training and reducing reliance on animal models.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 419
+        },
+        {
+          "id": 1088,
+          "source": "Nature Machine Intel",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "The brain is a diverse place, why not computing?",
+          "link": "https://www.nature.com/articles/s42256-026-01273-1",
+          "content": "Nature Machine Intelligence, Published online: 13 July 2026; doi:10.1038/s42256-026-01273-1 The brain’s architecture exhibits diversity across many temporal and spatial scales, yet our computing architectures remain largely homogeneous. Low-powered neuromorphic hardware offers a path towards energy-efficient AI, but could these approaches be improved with heterogeneous computing architectures?",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 396
+        },
+        {
+          "id": 690,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Daily briefing: Preprints are chock-full of authors’ private info",
+          "link": "https://www.nature.com/articles/d41586-026-02198-w",
+          "content": "Nature, Published online: 10 July 2026; doi:10.1038/d41586-026-02198-w Passwords, to-do lists and even derogatory comments litter arXiv preprints. Plus, two huge planets that are lighter than candy floss and which ‘AI scientist’ might suit your lab.",
+          "pub_date": "2026-07-10",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 249
+        },
+        {
+          "id": 1217,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -476,7 +671,37 @@
           "word_count": 105
         },
         {
-          "id": 444,
+          "id": 126,
+          "source": "arXiv cs.CL",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "A Unified Approach to Interpreting Knowledge Distillation for Large Language Models via Interactions",
+          "link": "https://arxiv.org/abs/2607.08776",
+          "content": "arXiv:2607.08776v1 Announce Type: cross Abstract: Despite the success of knowledge distillation (KD) in Large Language Models (LLMs), the underlying mechanism behind its efficacy remains unclear. In this paper, we propose a unified approach to explore the common mechanism of various KD methods using interactions. Specifically, we decompose the output score of the LLM into the sum of numerous interactions. Each interaction represents a nonlinear relationship involving a set of input variables (e.g., words). Based on the decomposed interactions, we discover that the common mechanism underlying various KD methods is the sparsification of interactions, i.e., student models retain fewer interactions for inference while suppressing other interactions to zero effects. Furthermore, we discover that the performance variance across different KD methods arises from their capabilities in handling complex interactions. A KD method typically yields better performance if it enables the student model to achieve higher sparsity of complex interactions. Motivated by these insights, we propose a plug-and-play loss function called Complex Interaction Penalty (CIP) to explicitly enforce the sparsity of",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 860,
+          "source": "bioRxiv Immunology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Synovium-Restricted Armored PD-1-Targeted CAR-T Cells Reprogram Immunity and Resolve Experimental Arthritis",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.07.09.737520v1?rss=1",
+          "content": "Despite major therapeutic advances, a substantial fraction of patients with autoimmune disease remains refractory to treatment. While B cell-targeted CAR-T therapies have shown considerable efficacy, the central contribution of pathogenic T cells to rheumatoid arthritis (RA) suggests that complementary T cell-directed strategies may enable deeper disease control. Using single-cell multi-omics of human RA and experimental models, PDCD1 was identified as a selective marker of synovial disease-associated T cells. We developed PD-1-directed CAR-T cells that potently eliminate these cells in vitro and in vivo, leading to marked attenuation of synovitis in RA models. To limit off-target activity, we engineered NR4A2-driven CAR-responsive biosensors to restrict CAR activity to inflamed synovium. To couple anti-PD-1 CAR-mediated cytotoxicity with microenvironmental modulation, we further engineered these CAR-T cells to secrete soluble TNF receptor II (sTNFRII), counteracting baseline inflammation and CAR-induced IFN response and promoting a tissue-reparative myeloid state. PD-1-targeted CAR-T therapy thus represents a promising, specific, and safe strategy for autoimmune diseases involving",
+          "pub_date": "2026-07-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 862,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -491,7 +716,7 @@
           "word_count": 1200
         },
         {
-          "id": 451,
+          "id": 869,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -506,22 +731,7 @@
           "word_count": 1200
         },
         {
-          "id": 452,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Restricted MHC-II trafficking in Mycobacterium tuberculosis-infected M2-like macrophages limits CD4+ T cell activation",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.07.07.736943v1?rss=1",
-          "content": "Recognition of infected macrophages by CD4+ T cells is essential to immune protection against Mycobacterium tuberculosis (Mtb), the causative agent of tuberculosis (TB). However, not all infected macrophage subsets successfully elicit T cell activation. We recently discovered that M2-like macrophages fail to efficiently activate memory CD4+ T cells when infected with Mtb, yet successfully elicit T cell activation when loaded with peptides, g-irradiated bacteria, or Mtb whole cell lysate. Since the mechanisms underlying CD4+ T cell evasion by infected M2 but not M1-like macrophages remain underexplored, we sought to determine the genes and pathways unique to Mtb infection of M2-like cells, including alveolar macrophages. RNA sequencing of human macrophages infected with virulent Mtb identified enrichment of IL-10 and type I interferon (IFN) signaling genes, including IL10RA and HERC5, respectively, in infected M2-like monocyte-derived and alveolar macrophages. However, genes involved in MHC-II trafficking, such as AP1M2, were higher in infected M1-like macrophages. In complementary experiments using fluorescence microscopy and flow cytometry, we observed impaired trafficking of newl",
-          "pub_date": "2026-07-10",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 473,
+          "id": 890,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +746,7 @@
           "word_count": 1200
         },
         {
-          "id": 475,
+          "id": 892,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -549,36 +759,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 476,
-          "source": "medRxiv Infectious",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Empirical contact networks reveal heterogeneous outbreak risks in a UK long-term care facility: a modelling study",
-          "link": "https://www.medrxiv.org/content/10.64898/2026.07.07.26357238v1?rss=1",
-          "content": "Long-term care facilities (LTCs) worldwide experienced disproportionately high infection and mortality rates during the COVID-19 pandemic, where essential care limits opportunities for contact segregation. However, empirical contact data remain scarce, limiting our understanding of how individual contact behaviours shape transmission in these settings. In this study, we developed a stochastic network-based transmission model parameterised using real-world self-reported contact data collected from a median-sized UK LTC unit. By incorporating high-resolution observational data that reflect routine care delivery patterns, we quantified how heterogeneity in contact networks influences outbreak dynamics. We found substantial variation in contact behaviour between individuals, resulting in highly heterogeneous transmission outcomes. Outbreak occurrence, timing, final size, and the likelihood of super-spreading events all varied markedly depending on the structure of the underlying contact network and the characteristics of the index case. Individuals with high contact activity were considerably more likely to initiate large outbreaks than those with fewer contacts. For a per-contact tran",
-          "pub_date": "2026-07-10",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 751,
-          "source": "bioRxiv SynBio",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "A Chemically Defined Synthetic Cell Capable Of Growth And Replication",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.07.01.735724v1?rss=1",
-          "content": "Cells are the fundamental unit of life. Yet there is no natural cell for which all its life-essential functions are understood. Here we demonstrate a complete cell cycle for a synthetic cell undergoing selection, with genome replication, growth, resource acquisition via feeding, and genetically encoded division. The cell is encoded via a 90kb genome that includes functions needed for resource uptake, transcription, translation, growth, genome replication, and division. The resulting synthetic cell is sufficiently encouraging to support routinization of synthetic cell engineering workflows, and will ultimately underlie diverse applications across all of biotechnology.",
-          "pub_date": "2026-07-09",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 675
         }
       ],
       "quota": {
@@ -586,9 +766,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 28,
-      "total_valid": 21,
-      "total_candidates": 8
+      "total_raw": 30,
+      "total_valid": 23,
+      "total_candidates": 10
     },
     "china": {
       "candidates": [],
@@ -604,22 +784,157 @@
     "payment": {
       "candidates": [
         {
-          "id": 809,
+          "id": 1226,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Ripple CEO Says Company Considered Folding Before SEC Fight",
-          "link": "https://www.pymnts.com/blockchain/2026/ripple-ceo-says-company-considered-folding-before-sec-fight/",
-          "content": "Ripple&#8217;s CEO says the blockchain company considered shuttering following an Securities and Exchange Commission (SEC) lawsuit. In a talk at the University of Kansas School of Business, Brad Garlinghouse said he and co-founder Chris Larsen weighed winding down the company and distributing its XRP cryptocurrency holdings to shareholders. The company saw this as the easier [&#8230;] The post Ripple CEO Says Company Considered Folding Before SEC Fight appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 12 Jul 2026 22:24:17 +0000",
+          "title": "Why the Companies Winning at Payments Aren’t Adding Providers",
+          "link": "https://www.pymnts.com/news/payments-innovation/2026/why-the-companies-winning-at-payments-arent-adding-providers/",
+          "content": "Payments are now part of the customer experience layer, the uptime layer and the revenue operations layer. That means they can no longer be managed only as finance infrastructure. Findings in “The Orchestration Advantage: How Routing Architecture Shapes Payments Performance,” a PYMNTS Intelligence and Spreedly collaboration, reveal that the next phase of payments performance looks more and [&#8230;] The post Why the Companies Winning at Payments Aren’t Adding Providers appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 13 Jul 2026 08:00:09 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 487
+          "word_count": 504
         },
         {
-          "id": 818,
+          "id": 1225,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "85% of CFOs Say Automation Cuts Payments Friction",
+          "link": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/85-percent-of-cfos-say-automation-cuts-payments-friction/",
+          "content": "Security controls are designed to stop bad payments, but new data suggested the strongest systems may be the ones customers barely notice. The PYMNTS Intelligence report “When Controls Slow Commerce: The Data Behind Middle-Market Payment Friction,” the latest installment of the 2026 Certainty Project, found that many firms still struggle to protect transactions without delaying [&#8230;] The post 85% of CFOs Say Automation Cuts Payments Friction appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 13 Jul 2026 08:00:58 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 480
+        },
+        {
+          "id": 1228,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Stablecoin Market Cap Suffers Biggest Decline in 4 Years",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-market-cap-suffers-biggest-decline-in-4-years/",
+          "content": "The stablecoin market saw its largest decline in nearly four years last month. That’s according to a report Sunday (July 12) by CoinDesk, which calls the downturn a sign that on-chain liquidity has dipped as crypto markets continue to consolidate near this year’s lows. Stablecoins’ market capitalization dropped by $7.7 billion in June, the report [&#8230;] The post Stablecoin Market Cap Suffers Biggest Decline in 4 Years appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 13 Jul 2026 00:27:09 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 455
+        },
+        {
+          "id": 1227,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "88% of Banks Report Strong ROI With Instant Business Payments",
+          "link": "https://www.pymnts.com/real-time-payments/2026/88-percent-of-banks-report-strong-roi-with-instant-business-payments/",
+          "content": "Business clients don’t want to hear that the payment is “in process.” They want to know that the money was moved, the supplier was paid and the bank can prove it. Nearly nine in 10 institutions rate the ROI of instant business-to-business (B2B) payments as high or very high. This includes 82% of institutions that [&#8230;] The post 88% of Banks Report Strong ROI With Instant Business Payments appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 13 Jul 2026 08:00:06 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 426
+        },
+        {
+          "id": 1243,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Xsquare signs for Pay by Bank software from Spare",
+          "link": "https://www.finextra.com/pressarticle/110398/xsquare-signs-for-pay-by-bank-software-from-spare?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Spare, a leading Open Finance infrastructure company, today announced a strategic partnership with Xsquare, a UAE-based B2B payments company that facilitates and optimizes payment strategies for businesses powered by CBUAE’s Open Finance Framework.",
+          "pub_date": "Mon, 13 Jul 2026 09:11:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 248
+        },
+        {
+          "id": 1241,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Bottomline CFO Suite unlocks stablecoins for corporate finance",
+          "link": "https://www.finextra.com/pressarticle/110400/bottomline-cfo-suite-unlocks-stablecoins-for-corporate-finance?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Bottomline, a global leader in business payments, today announced an expansion of its Bottomline CFO Suite, enabling finance teams to access and view stablecoin payments within existing payment and cash management workflows.",
+          "pub_date": "Mon, 13 Jul 2026 09:57:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 224
+        },
+        {
+          "id": 1235,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Early AI adopters set to dominate European banking market - Visa study",
+          "link": "https://www.finextra.com/newsarticle/48076/early-ai-adopters-set-to-dominate-european-banking-market---visa-study?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Artificial intelligence will fundamentally reshape retail banking by 2030, with early adopters set to significantly outperform laggards, according to a Visa survey of European industry players.",
+          "pub_date": "Mon, 13 Jul 2026 00:01:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 193
+        },
+        {
+          "id": 1236,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "ACE Money transfer joins forces with Visa to promote account funding transactions",
+          "link": "https://www.finextra.com/pressarticle/110405/ace-money-transfer-joins-forces-with-visa-to-promote-account-funding-transactions?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "ACE Money Transfer, a leading global remittance provider, today announced a strategic collaboration with Visa, a world leader in digital payments.",
+          "pub_date": "Mon, 13 Jul 2026 11:39:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 146
+        },
+        {
+          "id": 1232,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Mastercard examines sale of Vocalink - FT",
+          "link": "https://www.finextra.com/newsarticle/48079/mastercard-examines-sale-of-vocalink---ft?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Mastercard is examining the case for selling UK payments platform Vocalink back to the British banks it bought it from in 2016.",
+          "pub_date": "Mon, 13 Jul 2026 10:07:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 127
+        },
+        {
+          "id": 1255,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Tokenized payments: how SWIFT, Project Agorá, PONTES and APPIA are positioned",
+          "link": "https://www.finextra.com/blogposting/32251/tokenized-payments-how-swift-project-agor-pontes-and-appia-are-positioned?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "From the announcement of SWIFT’s new ledger to a possible multi-layer architectural scenario. An ana...",
+          "pub_date": "Sun, 12 Jul 2026 01:22:22 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 103
+        },
+        {
+          "id": 1260,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -634,19 +949,94 @@
           "word_count": 189
         },
         {
-          "id": 810,
+          "id": 1259,
+          "source": "Cointelegraph Payments",
+          "section": "payment",
+          "tier": "T3",
+          "priority": 5,
+          "title": "Japan stablecoin payments advance with Lawson trial, Netstars launch",
+          "link": "https://cointelegraph.com/news/japan-lawson-netstars-stablecoin-payments?utm_source=rss_feed&utm_medium=rss_tag_payments&utm_campaign=rss_partner_inbound",
+          "content": "Lawson will test yen stablecoin payments in Tokyo as Netstars launches a merchant service supporting USDC, USDT and JPYC.",
+          "pub_date": "Mon, 13 Jul 2026 08:58:51 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 121
+        },
+        {
+          "id": 217,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution",
+          "link": "https://arxiv.org/abs/2607.08960",
+          "content": "arXiv:2607.08960v1 Announce Type: cross Abstract: Warehouse operations are governed by Standard Operating Procedures (SOPs) that encode complex, multi-system decision logic, which must be executed reliably under strict time constraints, yet LLM agents lack mechanisms to enforce procedural compliance and degrade under the context overload full SOP specifications introduce. We present Eluna, a production-deployed agentic system for reliable SOP execution. Eluna is a graph-guided, multi-agent framework that encodes SOPs as directed acyclic graphs with progressive disclosure and delegates independent tasks to parallel sub-agents, each with persistent code execution and live data access. To meet production latency and accuracy needs, we use asymmetric episodic distillation where a strong teacher is improved through episodic error memories, then a smaller student is fine-tuned on the corrected trajectories with memory stripped, internalizing corrections without inference-time overhead. On a 13-task benchmark and two production applications, our fine-tuned models match or exceed their teacher, beat all larger off-the-shelf baselines, and reach 94% expert agreement on the ticket processing",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 359,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Adaptive Bayes exactly tracks information over intrinsic time",
+          "link": "https://arxiv.org/abs/2607.08789",
+          "content": "arXiv:2607.08789v1 Announce Type: new Abstract: Bayesian and multiplicative-weights updates reweight experts, models, or actions from sequential feedback. We show that the regret of any such update obeys an exact information-accounting identity. On each round, the learner's excess loss to any chosen comparator is the sum of an immediate payment for the uncertainty exposed by the round and a reduction in the information distance from the learner's current weights to the comparator. The cumulative payment defines a pathwise uncertainty clock, the \\emph{intrinsic time} of the realized sequence. Summing one-step balances yields two exact adaptive decompositions of cumulative regret, one for each natural way of composing the update across rounds. Because the decompositions are exact rather than upper bounds, favorable stochastic or low-noise regimes appear as self-bounding properties of the realized intrinsic time, not as slack in worst-case analyses. The same calculus covers Hedge, optimistic and side-information variants, continuous priors, boosting, online convex optimization, contextual bandits, and repeated games: the pathwise account is the same in every case.",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1179
+        },
+        {
+          "id": 1231,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "OpenAI Safety Boss Resigns in Latest Executive Departure",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-safety-boss-resigns-in-latest-executive-departure/",
-          "content": "OpenAI’s safety head is reportedly leaving the company amid a larger leadership shakeup. Johannes Heidecke, the artificial intelligence startup’s head of safety systems, informed staff last week of his departure, according to a Friday (July 10) Wired report. His departure comes after a reorganization aimed at melding OpenAI’s safety and research teams. In a memo [&#8230;] The post OpenAI Safety Boss Resigns in Latest Executive Departure appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 12 Jul 2026 21:57:44 +0000",
+          "title": "Meta Shuts Down AI Image Tool Following Backlash",
+          "link": "https://www.pymnts.com/facebook-meta/2026/meta-shuts-down-ai-image-tool-following-backlash/",
+          "content": "Meta has shuttered an artificial intelligence image creation feature after just three days, following public backlash. The tech giant last Tuesday (July 7) introduced a tool that let users generate images using public Instagram accounts. By Friday (July 10), the feature was pulled, after Meta received widespread privacy-related criticism. “Our intent was to provide a [&#8230;] The post Meta Shuts Down AI Image Tool Following Backlash appeared first on PYMNTS.com .",
+          "pub_date": "Sun, 12 Jul 2026 23:23:49 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 471
+          "word_count": 468
+        },
+        {
+          "id": 1223,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Smaller Card Issuers Can Out-Compete the Giants, New Study Finds",
+          "link": "https://www.pymnts.com/credit-cards/2026/smaller-card-issuers-can-out-compete-the-giants-new-study-finds/",
+          "content": "Customer lifetime value has long been treated as an output metric, a way to judge whether a card portfolio performed well after the fact. Increasingly, issuers are using it as an operating discipline, measuring whether every decision improves the odds that a customer stays longer, spends more consistently and becomes harder to displace. That framing [&#8230;] The post Smaller Card Issuers Can Out-Compete the Giants, New Study Finds appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 13 Jul 2026 08:01:19 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 466
+        },
+        {
+          "id": 441,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "When Does Order Flow Matter? State-Dependent L2 Liquidity-State Transitions in Crypto Futures",
+          "link": "https://arxiv.org/abs/2607.09230",
+          "content": "arXiv:2607.09230v1 Announce Type: cross Abstract: Building event-conditioned market models requires separating macro-event labels from persistent microstructure state. We study this distinction in Binance BTCUSDT and ETHUSDT futures from 2023-2026, combining top-20 L2 order book data, trade-flow records, and macro-event windows. We define a supervised discrete L2 liquidity-state transition task, distinct from latent-regime detection and price-direction prediction, and evaluate models in rolling monthly out-of-sample folds with event-clustered validation and blocked permutation tests, admitting each feature layer only if it improves on the layer below it on the same panel. Within these event windows, the first-order predictive signal is the pre-event L2 liquidity state: a coarse pre-event state baseline strongly predicts post-event liquidity regimes, interpretable logit models over continuous L2 features fail to improve on it, and a shallow nonlinear L2 model adds a robust further gain of comparable size to the state baseline's own. The macro-event calendar enters only by locating the windows and supplying matched non-event controls; we use event timing but not the event's label con",
+          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -654,15 +1044,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 171,
-      "total_valid": 3,
-      "total_candidates": 3
+      "total_raw": 203,
+      "total_valid": 32,
+      "total_candidates": 17
     }
   },
   "meta": {
-    "total_raw": 979,
-    "dup": 295,
-    "nocontent": 402,
+    "total_raw": 1421,
+    "dup": 392,
+    "nocontent": 393,
     "noise": 0
   }
 }

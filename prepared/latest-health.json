@@ -40,7 +40,7 @@
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 9,
+      "count": 8,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 1,
+      "count": 0,
       "ok": true
     },
     "Sequoia Capital": {
@@ -70,19 +70,19 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 69,
       "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 177,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 187,
       "ok": true
     },
     "Import AI": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 18,
+      "count": 20,
       "ok": true
     },
     "Hacker News AI": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 1,
+      "count": 6,
       "ok": true
     },
     "WHO News": {
@@ -166,14 +166,14 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 65,
+      "count": 64,
       "ok": true
     },
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 19,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "The Lancet": {
       "section": "vaccine",
@@ -232,7 +232,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
+      "count": 17,
       "ok": true
     },
     "Nature Immunology": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 21,
+      "count": 13,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -328,13 +328,13 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 10,
+      "count": 9,
       "ok": true
     },
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 6,
+      "count": 8,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -346,7 +346,7 @@
     "Metabolic Engineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 52,
+      "count": 53,
       "ok": true
     },
     "Cell Systems": {
@@ -358,7 +358,7 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 28,
+      "count": 30,
       "ok": true
     },
     "Absci Blog": {
@@ -395,7 +395,7 @@
       "section": "cross",
       "method": "rss",
       "count": 0,
-      "ok": true
+      "ok": false
     },
     "Nature Methods": {
       "section": "cross",
@@ -406,7 +406,7 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 2,
+      "count": 10,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -424,7 +424,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 7,
+      "count": 24,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -436,13 +436,13 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 3,
       "ok": true
     },
     "Cointelegraph Payments": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
+      "count": 2,
       "ok": true
     },
     "Ledger Insights": {
@@ -513,23 +513,21 @@
       "Import AI",
       "Lancet Digital Health",
       "Lancet Infect Dis",
+      "NEJM",
+      "NEJM AI",
       "The Lancet"
     ],
     "sudden_drop": [
       "Endpoints News",
       "Payments Cards & Mobile",
-      "Thunes"
+      "TechCrunch AI"
     ],
     "persistent_zero": [
       "Google DeepMind",
       "Ledger Insights",
-      "NEJM AI",
       "PYMNTS Cross-Border",
       "PaymentsDive",
-      "Sequoia Capital",
-      "arXiv cs.AI",
-      "arXiv cs.CL",
-      "arXiv cs.LG"
+      "Sequoia Capital"
     ]
   }
 }
