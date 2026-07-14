@@ -20,6 +20,36 @@
           "word_count": 131
         },
         {
+          "id": 36,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Empowering India’s next generation of innovators with ATL Saathi",
+          "link": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
+          "content": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs.",
+          "pub_date": "Mon, 13 Jul 2026 12:37:28 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 106
+        },
+        {
+          "id": 73,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Uber’s product chief on hotels, robotaxis, and why the company doesn’t want to be “everything for everyone”",
+          "link": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/",
+          "content": "Uber Chief Product Officer Sachin Kansal walks TechCrunch through the company's financial-services ambitions, its increasingly complicated relationship with Waymo, its new AV Labs data operation, and how AI is starting to show up in ways riders and drivers will actually notice.",
+          "pub_date": "Tue, 14 Jul 2026 00:45:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 278
+        },
+        {
           "id": 77,
           "source": "TechCrunch AI",
           "section": "ai",
@@ -50,67 +80,67 @@
           "word_count": 244
         },
         {
-          "id": 81,
-          "source": "TechCrunch AI",
+          "id": 58,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+          "link": "https://arxiv.org/abs/2607.11881",
+          "content": "Metacognition is a foundational component of intelligence critical to effective learning, problem solving, decision-making, communication, and more. In recent years, it has become increasingly recognized as a cornerstone of capable, transparent AI systems. Yet while LLMs have made significant progress across diverse real-world tasks, it is not yet clear when, how, or to what extent they can exhibit or be endowed with effective metacognitive abilities, nor how such abilities can be adapted to advance the fundamental capabilities, reliability, and intelligence of AI systems. This paper bridges this gap by presenting the first comprehensive overview of the current state of knowledge on metacognition for LLMs. We analyze and taxonomize the landscape of this emerging field and summarize recent technical advancements, including methods and benchmarks to measure and evaluate LLMs' metacognitive abilities, techniques to elicit, improve, and apply metacognition in LLMs, and findings and implications of ongoing research. We also discuss applications, open questions and challenges, and promising directions for future work. Our aim is to provide a detailed and up-to-date review of this topic a",
+          "pub_date": "2026-07-13T13:58:37.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 59,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "4D Human-Scene Reconstruction from Low-Overlap Captures",
+          "link": "https://arxiv.org/abs/2607.09125",
+          "content": "Existing volumetric capture of dynamic human performance achieves high fidelity with dense camera arrays. However, in real-world scenarios, only a handful of low-overlap cameras are available, which degrades the output quality and leaves large areas unobserved. Recent 4D reconstruction methods have focused on low-overlap settings, yet they still produce noticeable artifacts in under-observed regions. Video diffusion models have emerged as another option, but they show geometrically inconsistent results for humans. To address these limitations, we propose StudioRecon, a pipeline that reconstructs 4D human scenes from sparse, low-overlap cameras by decoupling background and humans. We densify background supervision by synthesizing hundreds of camera-controlled novel views with a video diffusion model. We also robustly initialize deformable Gaussian humans with cross-view identity association and triangulated multi-view keypoint fitting. Finally, our recursive enhancement module with motion-adaptive consistency injection harmonizes the composed output, thereby further avoiding remaining artifacts. We achieve state-of-the-art novel view synthesis across four real-world datasets and dem",
+          "pub_date": "2026-07-10T02:30:45.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 60,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Motion4Motion: Motion Transfer Across Subjects at Inference",
+          "link": "https://arxiv.org/abs/2607.11644",
+          "content": "This work explores the motion transfer from one video to another, which is crucial in animation for diverse characters. Previously, video motion transfer has been largely explored between human and human-like characters, enabling a lot of applications in digital creation. However, these approaches encounter a main limitation. Specifically, related technical pipelines heavily rely on a predefined human skeleton structure and accordingly require skeleton-conditional model training. On the one hand, these methods are difficult to generalize to diverse characters, such as animals from different species, while preserving their unique motion styles. On the other hand, labeled data in diverse skeletons is limited, which additionally restricts the large-scale training for the task. In this paper, we jump out of the skeleton-based motion transfer framework and propose a training-free motion transfer framework, named Motion4Motion. Motion4Motionmodels the motion flow of the character in a video instead of skeletons, which makes motion transfer across species easier. Extensive experimental results and novel applications show our methods outperform baselines impressively. Project page is avail",
+          "pub_date": "2026-07-13T10:58:57.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1327,
+          "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
-          "priority": 4,
-          "title": "Waze adds new AI-powered features and customization updates",
-          "link": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
-          "content": "Some of the new features are powered by Google's Gemini AI assistant, which reflects the tech giant's broader push to integrate Gemini across its products while also better positioning Waze to compete with rival services such as Apple Maps.",
-          "pub_date": "Mon, 13 Jul 2026 14:18:16 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 240
-        },
-        {
-          "id": 61,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
           "priority": 5,
-          "title": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
-          "link": "https://arxiv.org/abs/2607.07673",
-          "content": "Medicine is inherently multimodal, requiring clinicians to synthesize information across diverse data streams. Yet the development of multimodal foundation models is constrained by limited access to large-scale, high-quality clinical data. Although PubMed Central (PMC) offers a complementary source of expert-authored image-text data, existing PMC-derived resources remain limited in fidelity, reproducibility, and clinical validation. We introduce MedPMC, an automated, continuously updatable framework that transforms permissively licensed literature into high-fidelity infrastructure for medical multimodal models. Applied to 6.1 million PMC articles, MedPMC curated 11 million medical image-text pairs. Component evaluations showed strong performance for initial screening (F1 = 93.2), multi-panel figure detection (F1 = 96.5), figure separation (mAP = 89.8), caption separation and alignment (F1 = 81.4; ROUGE-L = 85.3), and medical figure classification (F1 = 96.5). Manual review by five annotators, three with medical training, found 95.3% of MedPMC images medically relevant, versus 19.7% in a prior PMC-derived dataset. Across 26 benchmarks spanning 11 specialties, a MedPMC-trained CLIP-s",
-          "pub_date": "2026-07-07T20:00:00.000Z",
+          "title": "DOOMQL",
+          "link": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
+          "content": "DOOMQL Peter Gostev built this using GPT-5.6 Sol. This is a lot of fun: DOOMQL started with a deliberately unreasonable question: what if SQLite were the game engine, not merely the place where a game stores data? The result is a small, original Doom-like game in which SQL owns movement, collision, enemies, combat, progression and every RGB pixel on screen. It's implemented as a Python terminal script - I tried it out like this: cd /tmp git clone https://github.com/petergpt/doomql cd doomql uv run host/doomql.py Here's the huge SQL query that implements a full ray tracer in SQLite using a recursive CTE. Running the above script creates a /tmp/doomql/.doomql/doomql.sqlite SQLite database, which you can explore using Datasette like this: uvx --prerelease=allow --with datasette-apps datasette \\ /tmp/doomql/.doomql/doomql.sqlite \\ -p 4444 --root --secret 1 --internal internal.db The --with datasette-apps option installs the new Datasette Apps plugin, which supports creating custom HTML+JavaScript apps that can run SQL queries directly within the Datasette interface. I created a new app, pasted the copy-paste prompt into Claude chat (Fable 5) and told it : Build an app that displays the",
+          "pub_date": "2026-07-13T22:34:41+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 68,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "PanoWorld: Real-World Panoramic Generation",
-          "link": "https://arxiv.org/abs/2607.09661",
-          "content": "In this work, we aim to address the challenge of long-range memory in panoramic world models by exploiting the rotation-equivariant property of omnidirectional representations, where rotation can be treated as an implicit geometric transformation.Building on this insight, we propose PanoWorld, which simplifies camera trajectories into translations via fixed headings for both current-action modeling and long-range memory through Dense Panoramic Ray-Conditioning (DPRC) and Geometry-aware Memory Augmentation (GMA).Then, a three-stage training pipeline is introduced to progressively optimize each component. To better evaluate physical consistency under large-scale spatial variations and diverse illumination conditions, where existing datasets are relatively stable, we construct World360, a large-scale dataset consisting of both real-world video clips collected via panoramic unmanned aerial vehicles and high-quality simulated clips generated by AirSim360.Extensive experiments on World360 demonstrate the effectiveness of PanoWorld, outperforming alternative methods by a large margin.Our models, training code, and dataset will be publicly available. More information can be found on our pr",
-          "pub_date": "2026-07-09T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 72,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Video Generation Models are General-Purpose Vision Learners",
-          "link": "https://arxiv.org/abs/2607.09024",
-          "content": "Driven by next-token prediction, NLP shifted from task-specific models into powerful generalist foundation models. What, then, is the equivalent catalyst needed to achieve a general-purpose model in computer vision? In this paper, we contend that large-scale text-to-video generation serves as a strong pre-training paradigm for computer vision, providing the necessary spatiotemporal priors, vision-language alignment, and scalability required for general visual intelligence. We introduce GenCeption, which leverages a pre-trained video generative diffusion backbone to define a feed-forward perception model, capable of performing various vision tasks steered by text instructions. Empirical results demonstrate that GenCeption achieves state-of-the-art performance across a diverse suite of tasks, including depth, surface normal, and camera pose estimation, expression-referring segmentation, and 3D keypoint prediction, often matching or surpassing specialized models (e.g. DepthAnything3, SAM3, D4RT, VGGT-Omega, Sapiens, David, Genmo, and Lotus-2). Furthermore, the video generative pretrained backbone outperforms alternative pretraining paradigms (e.g., V-JEPA, and Video MAE) under compara",
-          "pub_date": "2026-07-09T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 561,
+          "id": 1328,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,60 +155,30 @@
           "word_count": 489
         },
         {
-          "id": 113,
+          "id": 1306,
+          "source": "Latent Space",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+          "link": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+          "content": "a quiet day lets us fact check some numbers against the sound of silence of Claude Code reporting...",
+          "pub_date": "Tue, 14 Jul 2026 01:22:27 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 100
+        },
+        {
+          "id": 107,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
           "priority": 6,
-          "title": "Letter Lemmatization: One-to-one and Banded RNNs for Reversing Character-Set Simplification and Abbreviation in Medieval Text",
-          "link": "https://arxiv.org/abs/2607.09291",
-          "content": "arXiv:2607.09291v1 Announce Type: new Abstract: Medieval document transcribers have very different practices; on top of that, heterogeneous digitization policies have resulted in corpora where the character-set must be viewed as fluid. In this paper we address the problem of changing between character-sets in a flexible manner. We focus on one-to-one character mappings and train characterlevel one-to-one RNNs to undo them with self-supervision; recovering half the CER even with 20 text lines. We analyse the use of these one-to-one networks for HTR post-correction and we see that they obtain significant improvements while totally ignoring ins-dels. We then use the exact same networks with character-level alignment groundtruth compiled from parallel corpora in a training and inference mode we call Banded RNNs. We use such networks to successfully expand abbreviations in medieval charter transcriptions. Finally we introduce an elaborate heuristic which takes the characters of two arbitrary character-sets and defines a metric encapsulating what we consider to be semantic similarity of characters. We call the construction of such mappings letter lemmatization and present a rich Python l",
-          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 115,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Automatic Thematic Indexing of Large Literary Corpora: A Machine Learning Approach to Voltaire's Complete Works",
-          "link": "https://arxiv.org/abs/2607.09316",
-          "content": "arXiv:2607.09316v1 Announce Type: new Abstract: Thematic indexing -- the practice of assigning structured conceptual labels to sections of text -- is essential to scholarly access in large-scale literary and historical editions, yet it remains a largely manual, labour-intensive process. This paper explores the application of machine learning to automatic thematic indexing, using two substantial sub-corpora of the Complete Works of Voltaire as a test case: the Essai sur les m\\oe urs et l'esprit des nations and the Questions sur l'Encyclop\\'edie. The task is framed as a multi-label classification problem, in which a model must assign the set of index entries that a professional indexer would apply to a given page of text. We compare a range of approaches -- from encoder-based models with classification heads to generative large language models (LLMs) fine-tuned via Low-Rank Adaptation (LoRA) -- spanning model sizes from approximately 3 to 120 billion parameters. Our best-performing model, from the Mistral family in a 4-bit quantised configuration, achieves F1 scores of up to 0.67; we argue that these figures represent lower bounds, given the inherent subjectivity of professional inde",
-          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 116,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Letting the Data Speak: Extracting Keywords from Crowdsourced Collections with AI",
-          "link": "https://arxiv.org/abs/2607.09324",
-          "content": "arXiv:2607.09324v1 Announce Type: new Abstract: Identifying and assigning keywords at scale is a technical, practical, and ethical challenge for crowdsourced collections. This article reports the findings of the \"Extracting Keywords from Crowdsourced Collections\" project, which used the Their Finest Hour Online Archive, a crowdsourced Second World War digital collection hosted by the University of Oxford, as a case study. The project evaluated three Natural Language Processing approaches to automate keyword extraction: Named Entity Recognition, Keyword Extraction, and Topic Modelling. It tested these approaches across a range of artificial intelligence techniques, from traditional statistical methods to modern GenAI neural networks. Our quantitative and qualitative findings indicate that Natural Language Processing approaches offer real potential for keyword extraction at scale in crowdsourced collections, but that no single method offers a complete solution and that model choice significantly shapes results. We argue that in crowdsourced collections, where metadata is the direct product of engagement with living contributors, automated keyword extraction raises distinct stewardshi",
-          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 178,
-          "source": "arXiv cs.AI",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
-          "link": "https://arxiv.org/abs/2607.08894",
-          "content": "arXiv:2607.08894v1 Announce Type: new Abstract: Large Language Model (LLM) agents have shown promise in multi-step planning tasks, but existing approaches like LATS (Language Agent Tree Search) and ReAct rely heavily on LLM inference during planning, leading to high computational costs and stochastic behavior. We present \\textbf{GATS} (Graph-Augmented Tree Search), a planning framework that combines systematic UCB1-based tree search with a layered world model to eliminate LLM calls during inference while achieving superior planning performance. Our three-layer world model integrates: (L1) exact symbolic action matching, (L2) statistics learned from execution logs, and (L3) LLM-based prediction for unknown actions. On synthetic planning tasks with branching paths and dead-ends, GATS achieves \\textbf{100\\% success rate} compared to 92 % for LATS and 64\\% for ReAct. On a comprehensive stress test spanning 12 challenging scenarios -- including coding workflows, web navigation, and long-horizon tasks -- GATS maintains \\textbf{100\\% success} while LATS drops to 88.9 % and ReAct to 23.9%. GATS requires \\textbf{zero LLM calls per task} during planning (vs. 37 per task for LATS) and produce",
-          "pub_date": "Mon, 13 Jul 2026 00:00:00 -0400",
+          "title": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series",
+          "link": "https://arxiv.org/abs/2607.09880",
+          "content": "arXiv:2607.09880v1 Announce Type: new Abstract: Clinical time series are central to patient monitoring, risk assessment, and clinical decision support. However, they are often sparse, irregularly sampled, and asynchronous, making it difficult for models to identify the temporal evidence required for clinical Question Answering (QA). Existing benchmarks primarily focus on regularly sampled time-series QA or medical QA over static data, and therefore rarely assess whether models can faithfully ground their answers in irregular temporal observations. To fill this gap, we introduce CLIR-Bench, a benchmark for irregular clinical time series QA constructed from de-identified ICU records through a principled four-stage pipeline. CLIR-Bench contains 6,600 QA instances spanning 11 clinical variables, organized into four capability dimensions and 11 tasks. Each question is linked to explicit temporal evidence and task-specific answer derivation rules, enabling evaluation of both answer accuracy and evidence use. Experiments show that existing generalist models struggle to retrieve and reason over sparse clinical evidence, highlighting the need for stronger irregular time-series reasoning met",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 675,
-      "total_valid": 334,
+      "total_raw": 1440,
+      "total_valid": 948,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1044,
+          "id": 1756,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 620
         },
         {
-          "id": 1052,
+          "id": 1764,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 445
         },
         {
-          "id": 973,
+          "id": 1685,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 342
         },
         {
-          "id": 966,
+          "id": 1678,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 335
         },
         {
-          "id": 958,
+          "id": 1670,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 265
         },
         {
-          "id": 1079,
+          "id": 1791,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -287,7 +287,7 @@
           "word_count": 195
         },
         {
-          "id": 688,
+          "id": 1453,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -302,7 +302,7 @@
           "word_count": 106
         },
         {
-          "id": 685,
+          "id": 1450,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 84
         },
         {
-          "id": 735,
+          "id": 1500,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,22 +332,7 @@
           "word_count": 296
         },
         {
-          "id": 817,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Insulin Costs and Use After the Inflation Reduction Act Out-of-Pocket Cap",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2850128",
-          "content": "This interrupted time series analysis uses Medicare Part D data from January 2021 through December 2023 to measure changes in insulin cost and use after the Inflation Reduction Act $35 cap on out-of-pocket insulin costs, overall and for insulin users with previously high out-of-pocket cost.",
-          "pub_date": "Tue, 07 Jul 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 291
-        },
-        {
-          "id": 724,
+          "id": 1489,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +347,7 @@
           "word_count": 286
         },
         {
-          "id": 732,
+          "id": 1497,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,37 +362,7 @@
           "word_count": 279
         },
         {
-          "id": 814,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Slow Life Support for Imminently Dying Patients",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2850179",
-          "content": "This Viewpoint discusses slow life support, a care strategy used when clinicians believe patient recovery is impossible but cannot negotiate full withdrawal of therapies, and provides ethical analysis and practical recommendations for such practices.",
-          "pub_date": "Tue, 07 Jul 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 250
-        },
-        {
-          "id": 824,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Private Equity’s Growing Presence in Health Care",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2849854",
-          "content": "JAMA Senior Editor Derek C. Angus, MD, MPH, spoke with Sneha Kannan, MD, MS, assistant professor of critical care medicine at the University of Pittsburgh, about the complex role of private equity in health care for the Healthy Dialogue podcast.",
-          "pub_date": "Tue, 07 Jul 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 245
-        },
-        {
-          "id": 1058,
+          "id": 1770,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +375,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 243
+        },
+        {
+          "id": 1593,
+          "source": "Nature Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Mapping self-associating chromatin hubs identifies Id proteins as key determinants of exhausted CD8<sup>+</sup> T cell fate",
+          "link": "https://www.nature.com/articles/s41590-026-02578-4",
+          "content": "Nature Immunology, Published online: 06 July 2026; doi:10.1038/s41590-026-02578-4 Xue et al. describe the dynamics of chromatin architecture during exhausted CD8+ T cell fate decisions and identify Id proteins as key regulators.",
+          "pub_date": "2026-07-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 228
+        },
+        {
+          "id": 1769,
+          "source": "Nature Reviews Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Vaginal NK cells limit epithelial barrier disruption during infection",
+          "link": "https://www.nature.com/articles/s41577-026-01332-z",
+          "content": "Nature Reviews Immunology, Published online: 30 June 2026; doi:10.1038/s41577-026-01332-z A preprint by Vick et al. reports a crucial role for vaginal NK cells in maintaining epithelial integrity during infection.",
+          "pub_date": "2026-06-30",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 213
+        },
+        {
+          "id": 1570,
+          "source": "Nature Biotech",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "An AAV vector for glial cells",
+          "link": "https://www.nature.com/articles/s41587-026-03193-2",
+          "content": "Nature Biotechnology, Published online: 08 July 2026; doi:10.1038/s41587-026-03193-2 Delivery of an in vivo–selected AAV into the glymphatics achieves broad transduction of human glial cells in chimeric mice.",
+          "pub_date": "2026-07-08",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 208
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 431,
-      "total_valid": 247,
+      "total_raw": 378,
+      "total_valid": 225,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1140,
+          "id": 1849,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 1154,
+          "id": 1863,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 1136,
+          "id": 1845,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 186
         },
         {
-          "id": 1178,
+          "id": 1887,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1180,
+          "id": 1889,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1185,
+          "id": 1894,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -529,14 +529,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 135,
+      "total_raw": 132,
       "total_valid": 26,
       "total_candidates": 6
     },
     "cross": {
       "candidates": [
         {
-          "id": 842,
+          "id": 1557,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 193
         },
         {
-          "id": 1009,
+          "id": 1721,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 259
         },
         {
-          "id": 997,
+          "id": 1709,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 204
         },
         {
-          "id": 993,
+          "id": 1705,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 200
         },
         {
-          "id": 1141,
+          "id": 1850,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -611,75 +611,75 @@
           "word_count": 162
         },
         {
-          "id": 887,
-          "source": "bioRxiv Immunology",
+          "id": 262,
+          "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Inflammatory endothelial cells promote infiltration of antigen-licensed cytotoxic T cells in malignant gliomas after irradiation",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.07.08.737259v1?rss=1",
-          "content": "Insufficient T cell infiltration into malignant gliomas fundamentally limits the efficacy of adoptive T cell therapy. Here we show that fractionated irradiation overcomes this barrier by reprogramming the tumor endothelium towards an immune-recruiting interface. Using complementary murine glioma models combined with adoptive T cell transfer, antigen-specific vaccination, and single-cell transcriptomic and T cell receptor profiling, we demonstrate that irradiation enhances the accumulation, clonal expansion, and effector differentiation of tumor-specific CD8+ T cells. Irradiated tumors showed increased T cell receptor clonality and local enrichment of proliferative effector CD8 T cells with enhanced cytotoxic, interferon-responsive, and oxidative metabolic programs. Mechanistically, irradiation triggers a conserved interferon-driven endothelial program marked by antigen presentation and upregulation of adhesion molecules, including ICAM-1 and VCAM-1. This radiation-induced endothelial activation program preferentially seen in inflammatory endothelial subsets was conserved in human glioblastoma and linked to T cell recruitment and maintenance of activated CD8 T cell states. Functiona",
-          "pub_date": "2026-07-13",
+          "title": "Improving Topic Modeling of Social Media Short Texts with Rephrasing: A Case Study of COVID-19 Related Tweets",
+          "link": "https://arxiv.org/abs/2510.18908",
+          "content": "arXiv:2510.18908v2 Announce Type: replace Abstract: Social media platforms such as Twitter (now X) provide rich data for analyzing public discourse, especially during crises such as the COVID-19 pandemic. However, the brevity, informality, and noise of social media short texts often hinder the effectiveness of traditional topic modeling, producing incoherent or redundant topics that are often difficult to interpret. To address these challenges, we have developed \\emph{TM-Rephrase}, a model-agnostic framework that leverages large language models (LLMs) to rephrase raw tweets into more standardized and formal language prior to topic modeling. Using a dataset of 25,027 COVID-19-related Twitter posts, we investigate the effects of two rephrasing strategies, general- and colloquial-to-formal-rephrasing, on multiple topic modeling methods. Results demonstrate that \\emph{TM-Rephrase} improves three metrics measuring topic modeling performance (i.e., topic coherence, topic uniqueness, and topic diversity) while reducing topic redundancy of most topic modeling algorithms, with the colloquial-to-formal strategy yielding the greatest performance gains and especially for the Latent Dirichlet A",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 899,
-          "source": "bioRxiv Immunology",
+          "id": 734,
+          "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Restricted MHC-II trafficking in Mycobacterium tuberculosis-infected M2-like macrophages limits CD4+ T cell activation",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.07.07.736943v1?rss=1",
-          "content": "Recognition of infected macrophages by CD4+ T cells is essential to immune protection against Mycobacterium tuberculosis (Mtb), the causative agent of tuberculosis (TB). However, not all infected macrophage subsets successfully elicit T cell activation. We recently discovered that M2-like macrophages fail to efficiently activate memory CD4+ T cells when infected with Mtb, yet successfully elicit T cell activation when loaded with peptides, g-irradiated bacteria, or Mtb whole cell lysate. Since the mechanisms underlying CD4+ T cell evasion by infected M2 but not M1-like macrophages remain underexplored, we sought to determine the genes and pathways unique to Mtb infection of M2-like cells, including alveolar macrophages. RNA sequencing of human macrophages infected with virulent Mtb identified enrichment of IL-10 and type I interferon (IFN) signaling genes, including IL10RA and HERC5, respectively, in infected M2-like monocyte-derived and alveolar macrophages. However, genes involved in MHC-II trafficking, such as AP1M2, were higher in infected M1-like macrophages. In complementary experiments using fluorescence microscopy and flow cytometry, we observed impaired trafficking of newl",
-          "pub_date": "2026-07-10",
+          "title": "Enhancing Adversarial Transferability through Block Stretch and Shrink",
+          "link": "https://arxiv.org/abs/2511.17688",
+          "content": "arXiv:2511.17688v2 Announce Type: replace-cross Abstract: Input transformation-based attacks improve adversarial transferability by aggregating gradients over transformed inputs. Existing analyses mainly explain their efficacy from image diversity, semantic preservation, attention variance or hypothesis space augmentation, yet overlook the critical role of model frontend responses. In this paper, we revisit transformation-based attacks from an implicit ensemble perspective: each transformation can be viewed as a pre-processing operator before the surrogate model, inducing a distinct frontend response for gradient aggregation. Based on this view, we propose FRO, a Frontend Response-Oriented input transformation method that enriches such responses through two complementary operators. The Local Scaling Operator perturbs local content sampling via block-wise stretch-and-shrink operations, while the Projection Operator modifies global spatial organization through coherent perspective deformation. Together, they produce structured transformed views to optimize transferable adversarial perturbations. Experiments on an ImageNet subset show that FRO consistently improves black-box transfera",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 902,
-          "source": "bioRxiv Immunology",
+          "id": 946,
+          "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Akkermansia muciniphila-derived LPS links gut dysbiosis to pathogenic miR-21 signaling in experimental autoimmune encephalomyelitis.",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.07.06.736880v1?rss=1",
-          "content": "Multiple sclerosis (MS) is a chronic T cell-mediated autoimmune disease characterized by blood-brain barrier (BBB) disruption, neuroinflammation, and demyelination of the central nervous system (CNS). Emerging evidence links gut microbiota to disease pathogenesis, but the microbial factors that regulate pathogenic microRNA (miRNA) programs are largely unknown. Here, using experimental autoimmune encephalomyelitis (EAE, a MS mouse model), we investigated whether gut microbiota exacerbate EAE pathogenesis by modulating host miRNA expression. Antibiotic-induced depletion of the gut microbiota markedly attenuated EAE scores and reduced circulating inflammatory miRNAs, with miR-21 emerging as the dominant pathogenic candidate. Functional inhibition of miR-21 significantly ameliorated disease severity and reduced CNS T-cell infiltration. Mechanistically, miR-21 enhanced IL-17 and GM-CSF production by CD4 T cells and promoted immune-cell entry into the CNS through endothelial activation and blood-brain barrier dysfunction. We identified a transient expansion of Akkermansia muciniphila during the prodromal phase of EAE that positively correlated with circulating miR-21 levels. Colonization",
-          "pub_date": "2026-07-10",
+          "title": "FastTPS: An Optimized Method for LLM Token Phase for AI accelerators",
+          "link": "https://arxiv.org/abs/2607.11211",
+          "content": "arXiv:2607.11211v1 Announce Type: new Abstract: The popularity of large language models (LLMs) escalates an ongoing demand for effective inference. However, due to the sequential processing of tokens during the token phase in decoder-only LLMs inference, the inherent low parallelism leads to reduced throughput and suboptimal utilization of the computing units on artificial intelligence (AI) accelerators, particularly when handling long-sequence inputs that impose significant memory overhead. Recently, many reported methods have been developed as potential solutions, since they emerge with numeric deviation. This paper presents FastTPS, a high performance and low-precision loss method for accelerating the token-phase in LLM inference on general AI accelerators which includes three key components: (1) AI accelerator-enabled reloading-free KV Cache concatenation which decreases memory access overhead as well as enables full fusion of Attention, (2) high-efficiency and high-accuracy 'RoPE' attention based on the tiling optimized FLAT, and (3) highly-fused MLP with fine-grain pipeline scheduling. Our results confirm that FastTPS significantly alleviates memory bottlenecks in the token p",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 914,
-          "source": "medRxiv Infectious",
+          "id": 1089,
+          "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Beyond isolated cough events: AI-based tuberculosis screening through temporal analysis of cough sounds",
-          "link": "https://www.medrxiv.org/content/10.64898/2026.07.08.26357519v1?rss=1",
-          "content": "Tuberculosis (TB) is a major global health challenge, with many cases remaining undiagnosed due to limited access to screening and diagnostic services. Artificial intelligence (AI) systems based on cough sound analysis offer a scalable and accessible approach to TB screening, but most previous studies have analysed isolated cough events, despite the possibility that diagnostically useful information is encoded in the temporal dynamics of cough episodes. We evaluated an AI-based screening framework using cough recordings collected under real-world clinical conditions from 500 participants in Zambia, including 201 individuals with bacteriologically confirmed TB, 150 symptomatic patients with other respiratory diseases, and 149 healthy controls. Using multiple pre-trained speech foundation models fine-tuned on cough sounds, we systematically investigated the influence of temporal context by varying the audio input window from 1 to 6 s, measured from the onset of each cough episode. Across all evaluated models, diagnostic performance consistently peaked with a 3 s input window, indicating that useful information extends beyond individual cough events and is encoded within the short-ter",
-          "pub_date": "2026-07-13",
+          "title": "MMRM: A Multiplex Multimodal Representation Model for Product Ranking in E-commerce Search",
+          "link": "https://arxiv.org/abs/2607.11030",
+          "content": "arXiv:2607.11030v1 Announce Type: cross Abstract: Multimodal information is pivotal for e-commerce search ranking. Existing works leverage multimodal data typically by fine-tuning general Multimodal Large Language Models (MLLMs) via collaborative signals, subsequently integrating the derived representations into ranking models as item features. Despite their efficacy, these methods face two primary limitations: (1) they rely on a single collaborative signal for MLLM fine-tuning, failing to exploit the heterogeneous signals essential for multitask ranking; and (2) they treat multimodal representations as regular item features in ranking models, underutilizing their latent potential for user behavior modeling. To address these challenges, we propose the Multiplex Multimodal Representation Model (MMRM), a unified framework that aligns MLLMs with diverse collaborative signals. By employing a shared backbone with task-specific tokens and projection layers, MMRM simultaneously learns from multiple signals and generates comprehensive multiplex item representations in a single inference pass. Furthermore, we introduce a multiplex user representation strategy in ranking models, which derive",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 919,
-          "source": "medRxiv Infectious",
+          "id": 1099,
+          "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Empirical contact networks reveal heterogeneous outbreak risks in a UK long-term care facility: a modelling study",
-          "link": "https://www.medrxiv.org/content/10.64898/2026.07.07.26357238v1?rss=1",
-          "content": "Long-term care facilities (LTCs) worldwide experienced disproportionately high infection and mortality rates during the COVID-19 pandemic, where essential care limits opportunities for contact segregation. However, empirical contact data remain scarce, limiting our understanding of how individual contact behaviours shape transmission in these settings. In this study, we developed a stochastic network-based transmission model parameterised using real-world self-reported contact data collected from a median-sized UK LTC unit. By incorporating high-resolution observational data that reflect routine care delivery patterns, we quantified how heterogeneity in contact networks influences outbreak dynamics. We found substantial variation in contact behaviour between individuals, resulting in highly heterogeneous transmission outcomes. Outbreak occurrence, timing, final size, and the likelihood of super-spreading events all varied markedly depending on the structure of the underlying contact network and the characteristics of the index case. Individuals with high contact activity were considerably more likely to initiate large outbreaks than those with fewer contacts. For a per-contact tran",
-          "pub_date": "2026-07-10",
+          "title": "Long-Memory Reservoir Computing for Data-Scarce Dengue Forecasting",
+          "link": "https://arxiv.org/abs/2607.11272",
+          "content": "arXiv:2607.11272v1 Announce Type: cross Abstract: Accurate dengue forecasting is crucial for public health planning, but remains challenging because incidence series are often short, noisy, non-stationary, nonlinear, and often affected by long-range temporal dependence. Fractional differencing in Autoregressive Fractionally Integrated Moving Average (ARFIMA) helps balance non-stationarity and persistence, but its linear structure limits its ability to capture nonlinear dynamics. Deep neural networks can model nonlinear patterns, but usually require large training samples and do not explicitly encode statistical long memory. Echo State Networks (ESNs), a widely used reservoir computing framework, are attractive in this setting because they retain nonlinear recurrent dynamics while training only a simple readout, making them suitable for data-scarce scenarios. However, standard ESNs lack long-term memory from a time-series perspective. This study proposes a long-memory reservoir computing framework that integrates dedicated long-memory and short-memory ESN reservoirs with a ridge-regression readout. We introduce two variants: Fractional ESN (fESN), which incorporates fractional-diffe",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -691,8 +691,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 27,
-      "total_valid": 19,
+      "total_raw": 33,
+      "total_valid": 25,
       "total_candidates": 10
     },
     "china": {
@@ -709,8 +709,8 @@
     "payment": {
       "candidates": [
         {
-          "id": 1258,
-          "source": "PYMNTS.com",
+          "id": 1970,
+          "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
@@ -724,7 +724,7 @@
           "word_count": 496
         },
         {
-          "id": 1252,
+          "id": 1964,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 490
         },
         {
-          "id": 1253,
+          "id": 1965,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 480
         },
         {
-          "id": 1251,
+          "id": 1963,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 453
         },
         {
-          "id": 1294,
+          "id": 2006,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 349
         },
         {
-          "id": 1292,
+          "id": 2004,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 333
         },
         {
-          "id": 1269,
+          "id": 1981,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 317
         },
         {
-          "id": 1293,
+          "id": 2005,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 317
         },
         {
-          "id": 1263,
+          "id": 1972,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 146
         },
         {
-          "id": 1262,
+          "id": 1971,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 145
         },
         {
-          "id": 1264,
+          "id": 1976,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 128
         },
         {
-          "id": 1285,
+          "id": 1997,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 113
         },
         {
-          "id": 1289,
+          "id": 2001,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 98
         },
         {
-          "id": 1291,
+          "id": 2003,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,64 +919,94 @@
           "word_count": 98
         },
         {
-          "id": 1255,
-          "source": "PYMNTS.com",
+          "id": 127,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "London Authority Sets Out Plan For Tokenizing Wholesale Financial Markets",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/london-authority-sets-out-plan-for-tokenizing-wholesale-financial-markets/",
-          "content": "London has issued a report on accelerating tokenization in wholesale financial markets. “Wholesale financial markets are a fundamental driver of economic growth, directly supporting jobs and financing activity in the wider economy,” the City of London Corporation said in a news release promoting the report Monday (July 13). “Tokenising wholesale markets will boost the U.K.’s competitiveness, [&#8230;] The post London Authority Sets Out Plan For Tokenizing Wholesale Financial Markets appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 13 Jul 2026 20:15:53 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "CAFE: A Compound-AI Factorial Evaluation Framework",
+          "link": "https://arxiv.org/abs/2607.10380",
+          "content": "arXiv:2607.10380v1 Announce Type: new Abstract: We introduce CAFE (Compound-AI Factorial Evaluation), an open-source platform that brings design of experiments to the evaluation of compound AI systems (CAIS). Such systems expose many interchangeable choices - e.g. which retriever, model, or prompt - and practitioners rarely know which of them most affects answer quality. With CAFE, a practitioner registers each swappable component of a pipeline as a factor to build a factorial design over the chosen factors, run the resulting configurations, and score the answers on a shared rubric using a configurable LLM judge together with human raters. From these ratings it attributes answer-quality variance to the components and their interactions with mixed-effects models and reports effect sizes, significance, the best configuration, cost and latency trade-offs, and judge-human reliability. Whereas existing tools mostly either search for a good configuration or score outputs in isolation, CAFE also explains which component drives quality and whether an observed difference is significant. We validate CAFE on a retrieval-augmented question-answering (QA) pipeline over the HotpotQA benchmark da",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 518
+          "word_count": 1200
         },
         {
-          "id": 1256,
-          "source": "PYMNTS.com",
+          "id": 157,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Kraken Debuts Debit Card to Let Customers Pay in Crypto",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/kraken-debuts-debit-card-to-let-customers-pay-in-crypto/",
-          "content": "Cryptocurrency exchange Kraken has introduced a debit card for British and European Economic Area customers. The Kraken Card, announced in a news release Monday (July 13), is designed to link a customer’s crypto and cash balances to everyday spending. “Our new debit card connects your Kraken balances to everyday spending, whether that’s online or in shops, so the money you hold [&#8230;] The post Kraken Debuts Debit Card to Let Customers Pay in Crypto appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 13 Jul 2026 20:03:31 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Do LLMs Fabricate Legal Citations? A Bilingual Benchmark on Saudi Data Protection Law and the GDPR",
+          "link": "https://arxiv.org/abs/2607.11127",
+          "content": "arXiv:2607.11127v1 Announce Type: new Abstract: Organizations and regulators increasingly consult large language models (LLMs) for regulatory-compliance questions, yet a wrong statutory citation can silently propagate into legal advice, compliance documentation, and policy decisions. We introduce a bilingual benchmark of 120 questions probing whether freely accessible LLMs fabricate article citations for two data-protection instruments: the EU General Data Protection Regulation (GDPR) and the Saudi Personal Data Protection Law (PDPL). The benchmark pairs direct citation retrieval questions with false premise verification probes and deliberately unanswerable \"trap\" questions -- including questions about a repealed article and about deadlines that exist only in implementing regulations, not in the law itself. Every question is posed in both Arabic and English, and all scoring is fully automatic against a manually verified gold reference. Evaluating three freely accessible models (Gemini 2.5 Flash, GPT-OSS-120B, Nemotron-3-Super-120B), we find a dramatic jurisdiction gap: near-ceiling citation accuracy on the GDPR (94-100% on direct retrieval) against majority fabrication on the Saudi",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 486
+          "word_count": 1200
         },
         {
-          "id": 1272,
-          "source": "Finextra",
+          "id": 249,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Standard Chartered integrates BlackRock's Aladdin into wealth platform",
-          "link": "https://www.finextra.com/pressarticle/110404/standard-chartered-integrates-blackrocks-aladdin-into-wealth-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Standard Chartered (“the Bank”) today announced a global collaboration with Aladdin Wealth, BlackRock’s wealth management technology platform, to further strengthen the Bank’s wealth advisory and risk management capabilities for its relationship managers and investment advisors through its myWealth Advisor platform.",
-          "pub_date": "Mon, 13 Jul 2026 10:35:00 GMT",
+          "tier": "T1",
+          "priority": 6,
+          "title": "HyperSafe: Inference-Time Safety Recovery for Fine-Tuned Language Models",
+          "link": "https://arxiv.org/abs/2607.11475",
+          "content": "arXiv:2607.11475v1 Announce Type: cross Abstract: Safety alignment in large language models can be fragile under fine-tuning, as even benign task adaptation may increase harmful compliance. Existing defenses mainly follow two directions: they either intervene during or after fine-tuning through retraining or weight modification, which can be costly and may hurt task performance, or they use model-agnostic safety classifiers, which may miss failures specific to a given fine-tuned checkpoint. These limitations motivate a post hoc, model-specific, and non-invasive approach to safety restoration. To meet these requirements, we propose HyperSafe, a framework that restores safety behavior by generating a model-specific Safe Side Network (SSN) for each fine-tuned checkpoint. HyperSafe uses layer-wise activation fingerprints to capture how fine-tuning changes the model's inner representations. With a small set of given calibration prompts, the hypernetwork maps these fingerprints to the parameters of the \\ssn{} in a single forward pass. The generated \\ssn{} runs alongside the frozen fine-tuned model and performs prompt-level safety classification: harmful prompts are routed to refusal, whi",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 317
+          "word_count": 1200
         },
         {
-          "id": 1298,
-          "source": "Cointelegraph Payments",
+          "id": 374,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T3",
-          "priority": 5,
-          "title": "Coinbase Ventures tops crypto VC list for H1 2026",
-          "link": "https://cointelegraph.com/news/coinbase-ventures-leading-crypto-vc-h1-2026?utm_source=rss_feed&utm_medium=rss_tag_payments&utm_campaign=rss_partner_inbound",
-          "content": "Coinbase’s venture capital arm leads 2026 crypto investing even as funding withered and unique investors shied away amid the bear market.",
-          "pub_date": "Mon, 13 Jul 2026 13:26:50 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "When Are Sparse Feature Interventions Actually Localized? Matched Evaluation for SAE-Based Safety Control",
+          "link": "https://arxiv.org/abs/2607.10226",
+          "content": "arXiv:2607.10226v1 Announce Type: new Abstract: We evaluate when sparse autoencoder (SAE) features act as localized control handles for safety-relevant behavior. This question is difficult because apparent success can arise from weak interventions, mismatched baselines, model robustness, or degenerate outputs that automated safety judges mark as unsafe without representing meaningful harmful compliance. We introduce a matched coherence-gated evaluation protocol for runtime safety interventions: methods are compared at matched target-effect points, and the primary target metric counts harmful compliance only when an output is both judge-unsafe and coherent. Applying this protocol to three prompt splits on Gemma-2-9B-it with a Gemma Scope layer-20 residual SAE, we find that SAE feature ablation has a narrow useful regime. SAE top800 reaches a low-to-mid target effect with lower total perturbation and competitive utility, but SAE top1600 loses utility relative to a matched dense refusal-direction baseline, and SAE top3200 primarily induces coherence collapse. Human audit confirms that coherence gating removes unsafe-only artifacts, and feature diagnostics show that the useful regime i",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 137
+          "word_count": 1200
+        },
+        {
+          "id": 394,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "The Compliance Trap: Diagnosing How AI Agents Consume Conflicting Memory",
+          "link": "https://arxiv.org/abs/2607.10608",
+          "content": "arXiv:2607.10608v1 Announce Type: new Abstract: Memory is becoming a core component of long-horizon AI agents, allowing agents to reuse past experience when operating web browsers, software tools, and other interactive environments. Existing work mostly treats memory as a supply problem, asking what experience to write, how to store it, and which entry to retrieve for the next task. Yet we still lack a clear account of how models consume retrieved memory across a multi-step action trajectory. This consumption process matters because it determines not only what memories should be retrieved, but also what models and control policies are needed to use them safely. To diagnose this process, we propose Entry--Propagation--Recovery (E-P-R), a trajectory-level framework that asks where memory first changes an action, whether that change carries forward, and whether the agent can recover after leaving a correct path. We instantiate E-P-R on WebArena and on MemTrapBench, a controlled benchmark we build to isolate these phases. We find that the main failure often begins at entry: agents adopt conflicting memory at the first exposed decision point even when it is task-wrong. Repeated exposure",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 441,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "MAGIC: Transition-Aware Generation of Navigable Multi-Scene Game Worlds with Large Language Models",
+          "link": "https://arxiv.org/abs/2607.11594",
+          "content": "arXiv:2607.11594v1 Announce Type: new Abstract: Multi-scene navigation (clearing an objective in one bounded space and then crossing a portal into the next) is a defining feature of contemporary 3D games, but authoring it is laborious: every portal must have consistent endpoints on both sides, each interior must remain navigable once it is furnished, and the resulting connectivity must be kept consistent across many files. Recent large language model (LLM) and multimodal LLM (MLLM) scene generators have made single-interior synthesis dramatically cheaper, yet they produce one scene at a time and cannot, by naive repetition, yield a connected multi-scene world. We identify three obstacles that single-scene methods leave unsolved: cross-scene consistency, in-scene navigability, and the evaluation of whether a transition actually works. We present MAGIC, a prompt-to-project system that addresses all three. MAGIC is a four-stage pipeline that turns a single natural-language prompt into a runnable multi-scene game project: it plans a shared transition-aware intermediate representation, specifies each scene while enforcing portal reachability with a flood-fill validator, generates the sc",
+          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -984,15 +1014,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 213,
-      "total_valid": 33,
-      "total_candidates": 18
+      "total_raw": 227,
+      "total_valid": 52,
+      "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1462,
-    "dup": 436,
-    "nocontent": 393,
+    "total_raw": 2170,
+    "dup": 555,
+    "nocontent": 383,
     "noise": 0
   }
 }
