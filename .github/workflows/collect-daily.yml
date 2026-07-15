@@ -118,5 +118,37 @@ jobs:
         continue-on-error: true
         uses: actions/deploy-pages@v4
       - name: 部署重试(第 1 次瞬时失败时再来一次)
+        id: deploy2
         if: steps.deploy1.outcome == 'failure'
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+      # 治「部署报成功但 Pages 站点/边缘不落地」:部署后自检,不新鲜就再部署一次
+      - name: 校验 Pages 是否已刷新到今天
+        id: verify
+        run: |
+          TODAY=$(TZ=Asia/Shanghai date +%F)
+          URL=https://justinrao0901-create.github.io/intel-collector/prepared/latest-daily.json
+          fresh=no
+          for i in 1 2 3 4 5; do
+            sleep 40
+            D=$(curl -fsSL "$URL" 2>/dev/null | python3 -c "import sys,json;print(json.load(sys.stdin).get('date',''))" 2>/dev/null || echo "")
+            echo "校验 $i:Pages date=$D / 今天=$TODAY"
+            if [ "$D" = "$TODAY" ]; then fresh=yes; break; fi
+          done
+          echo "fresh=$fresh" >> "$GITHUB_OUTPUT"
+      - name: Pages 未刷新 → 再部署一次
+        if: steps.verify.outputs.fresh != 'yes'
+        uses: actions/deploy-pages@v4
+      - name: 二次校验(仍不刷新则让本次运行失败,便于发现)
+        if: steps.verify.outputs.fresh != 'yes'
+        run: |
+          TODAY=$(TZ=Asia/Shanghai date +%F)
+          URL=https://justinrao0901-create.github.io/intel-collector/prepared/latest-daily.json
+          for i in 1 2 3 4 5 6; do
+            sleep 40
+            D=$(curl -fsSL "$URL" 2>/dev/null | python3 -c "import sys,json;print(json.load(sys.stdin).get('date',''))" 2>/dev/null || echo "")
+            echo "二次校验 $i:Pages date=$D / 今天=$TODAY"
+            [ "$D" = "$TODAY" ] && { echo "已刷新"; exit 0; }
+          done
+          echo "::error::部署后 Pages 仍未刷新到 $TODAY —— 需人工关注(疑似 GitHub Pages 传播异常)"
+          exit 1
