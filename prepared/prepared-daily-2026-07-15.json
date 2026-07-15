@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 52,
+          "id": 51,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 356
         },
         {
-          "id": 51,
+          "id": 50,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -80,19 +80,49 @@
           "word_count": 269
         },
         {
-          "id": 81,
+          "id": 73,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
           "priority": 4,
-          "title": "Meta’s Adam Mosseri says AI token budgets could soon be capped per engineer",
-          "link": "https://techcrunch.com/2026/07/14/metas-adam-mosseri-says-ai-token-budgets-could-soon-be-capped-per-engineer/",
-          "content": "Instagram head Adam Mosseri believes companies will eventually need to manage AI token spending the same way they manage payroll or other operating expenses, predicting that engineers could soon face limits on how much they spend using AI tools.",
-          "pub_date": "Tue, 14 Jul 2026 16:22:15 +0000",
+          "title": "OpenAI’s first hardware device is reportedly a screenless speaker that can move",
+          "link": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
+          "content": "The device is weirdly described as involving \"mechanical elements that can move on their own\" and the Bloomberg report includes the detail that the device is designed to \"feel like a companion and become a physical manifestation of OpenAI’s ChatGPT.\"",
+          "pub_date": "Tue, 14 Jul 2026 22:22:24 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 245
+          "word_count": 250
+        },
+        {
+          "id": 56,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation",
+          "link": "https://arxiv.org/abs/2607.11886",
+          "content": "In this paper, we propose SpectraReward, a training-free reward function that turns pretrained MLLMs into off-the-shelf reward models for image-generation reinforcement learning. Instead of asking the MLLM to judge a generated image or answer decomposed verification questions, SpectraReward measures how well the original prompt can be recovered from the generated image through a single image-conditioned, teacher-forced forward pass. We use the average image-conditioned prompt log-likelihood as the reward, directly reusing the MLLM's pretrained image-text alignment ability without preference labels, reward-model fine-tuning. We further introduce Self-SpectraReward, a special case for unified multimodal models where the policy's own understanding branch serves as the reward model for its generation branch, forming a closed-loop self-improving framework without external reward models or external knowledge. Extensive experiments validate SpectraReward through a broad image-generation RL study covering two diffusion models, three RL algorithms, nine reward MLLM backbones from four MLLM families spanning 4B to 235B parameters, and five out-of-distribution text-to-image benchmarks. Result",
+          "pub_date": "2026-07-12T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 57,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution",
+          "link": "https://arxiv.org/abs/2607.11111",
+          "content": "LLM-based coding agents have significantly advanced automated software issue resolution, yet they remain highly prone to factual errors caused by insufficient repository understanding. Recent methods attempt to mitigate this limitation through pre-repair repository exploration; however, their fix-driven strategies explore repositories without identifying the agent's knowledge gaps, often yielding imprecise context that fails to bridge the underlying understanding deficit. In this paper, we propose ACQUIRE, a QA-driven framework for software issue resolution. Mirroring how experienced developers first comprehend unfamiliar code before attempting a fix, ACQUIRE explicitly acquires repository knowledge prior to repair. The framework decouples knowledge acquisition from patch generation through two stages: in the first stage, a Questioner and an Answerer collaborate to acquire structured repository knowledge, where the Questioner poses targeted questions and the Answerer produces evidence-grounded answers through autonomous exploration; in the second stage, the Resolver leverages the resulting QA knowledge to generate informed patches. By transforming implicit knowledge gaps into expli",
+          "pub_date": "2026-07-12T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         },
         {
           "id": 58,
@@ -100,54 +130,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Evidence-Backed Video Question Answering",
-          "link": "https://arxiv.org/abs/2607.11862",
-          "content": "Current Video Large Language Models (Video LLMs) excel in question answering (QA) but largely operate as black boxes, providing textual answers without verifiable visual grounding. Existing explainability efforts rely on textual rationales or sparse bounding boxes, which struggle to capture complex video dynamics such as occlusions and non-rigid deformations. We propose Evidence-Backed Video Question Answering (E-VQA), a novel task requiring models to jointly output a semantic answer and precise spatio-temporal evidence: temporal segments and dense, tracked object segmentation masklets. To support this, we introduce ST-Evidence, the first human-verified benchmark for both discriminative and generative pixel-level grounding. Evaluations of state-of-the-art models reveal a critical decoupling between QA accuracy and true visual perception that scaling alone fails to bridge. To address this, we develop scalable, automated generation pipelines to create ST-Evidence-Instruct, a 160k-scale dataset bridging high-level reasoning with fine-grained grounding. Fine-tuning grounded Video LLMs on this data yields substantial gains over the corresponding size-matched UniPixel baselines (e.g., +2",
-          "pub_date": "2026-07-13T13:49:10.000Z",
+          "title": "Multi-Agent LLMs Fail to Explore Each Other",
+          "link": "https://arxiv.org/abs/2607.11250",
+          "content": "Exploration is essential for reliable autonomy in multi-agent systems, yet it remains unclear whether large language model (LLM) agents can explore effectively when interacting with one another. We show that modern LLM agents fail to do so, often exhibiting myopic and polarized interaction patterns that lead to suboptimal coordination and increased regret. We formalize this challenge as the Multi-Agent Exploration problem, modeling it as a partially observable stochastic game (POSG) problem in which agents must probe peers to infer their capabilities and identify effective interaction strategies. To address this, we introduce Multi- Agent Contextual Exploration (MACE), a lightweight framework that explicitly promotes exploration through structured peer selection. Across both contextual and parametric diversity settings, MACE substantially improves exploration behavior and downstream task performance. We further show theoretically that the value of exploration increases with agent diversity. Overall, our results highlight a fundamental limitation of current LLM agents and underscore the importance of explicitly guided exploration for reliable multi-agent autonomy. Code will be relea",
+          "pub_date": "2026-07-13T04:34:05.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 59,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "MET: Theory-Grounded and Culture-Aware Multilingual Moral Reasoning",
-          "link": "https://arxiv.org/abs/2607.11736",
-          "content": "Language models are increasingly used for moral decision-making across diverse linguistic and cultural contexts, yet existing work overlooks multilinguality on three aspects: 1) multilingual evaluation benchmarks use direct translation, failing to adapt culture-specific items; 2) inference-time methods for moral reasoning rely on static, English-centric scaffolds and lack grounding in moral theory; 3) training methods for moral decision-making typically require expensive supervision from stronger models or human annotators. We address these gaps with three contributions. First, we introduce MCLASH, a multilingual moral decision-making benchmark to capture culturally situated moral intuitions and social norms across languages. Second, we propose MET (Multilingual Ethics with Theory-grounded reasoning), a two-step prompting method built on expert-curated, theory-based grounds drawn from psychology and philosophy: the model first selects situation- and culture-specific grounds, then reasons over them in the native language of the user. Third, we introduce MET-D (MET-Distillation), which enhances the second step through a self-distillation training stage that requires no external super",
-          "pub_date": "2026-07-13T11:59:25.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 61,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Xiaomi-Robotics-U0: Unified Embodied Synthesis with World Foundation Model",
-          "link": "https://arxiv.org/abs/2607.11643",
-          "content": "Recent foundation image and video generation models offer strong generalization and controllability, but their direct application to embodied scenarios is limited by requirements for multi-view consistency, geometric coherence, and robot embodiment constraints. Existing methods typically adapt foundation models with limited robot data, often sacrificing visual knowledge acquired during large-scale pre-training. We present Xiaomi-Robotics-U0, a 38-billion-parameter multimodal autoregressive model for unified embodied synthesis. It treats embodied generation as an extension of foundation image and video generation and jointly optimizes text-to-image generation, image editing, embodied scene generation, embodied transfer, and embodied video generation. This unified framework preserves the generalization of the pre-trained world foundation model while adapting it to embodied settings. Xiaomi-Robotics-U0 is the first model to support high-quality multi-view scene generation across multiple robot embodiments and to introduce structured, controllable embodied transfer for fine-grained editing while preserving multi-view consistency and interaction dynamics. It achieves state-of-the-art re",
-          "pub_date": "2026-07-13T10:57:58.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1337,
+          "id": 959,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "simonw/pedalican-pet",
+          "title": "simonw/pedalican",
           "link": "https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything",
-          "content": "simonw/pedalican-pet Clearly I wasn't paying attention when these were first announced back in May, but today I accidentally activated a \"pet\" in Codex Desktop - a little animated robot, reminiscent of Clippy - and then learned you can create your own. So I did, and now I have a cute little pelican on a bicycle bouncing around my desktop giving me updates on my Codex tasks. Your browser does not support HTML5 video. The most interesting thing about this process was watching how the custom pet was created. I told it I wanted a custom pet that was a pelican riding a bicycle and GPT-5.6 Sol xhigh did the rest of the work, using several rounds with gpt-image-2 to generate the necessary sprite assets. I had it make extensive notes and record all of the intermediary steps . My GItHub repo includes every generated image and combined sprite sheet, plus GIFs for each of the animation loops such as this one, called waving.gif : That GIF was compiled from a single image generated by git-image-2 that looked like this: And that image was created by executing this prompt against the initial generated character reference image , which was created with this prompt , which has this structure: Creat",
+          "content": "simonw/pedalican Clearly I wasn't paying attention when these were first announced back in May, but today I accidentally activated a \"pet\" in Codex Desktop - a little animated robot, reminiscent of Clippy - and then learned you can create your own. So I did, and now I have a cute little pelican on a bicycle bouncing around my desktop giving me updates on my Codex tasks. Your browser does not support HTML5 video. The most interesting thing about this process was watching how the custom pet was created. I told it I wanted a custom pet that was a pelican riding a bicycle and GPT-5.6 Sol xhigh did the rest of the work, using several rounds with gpt-image-2 to generate the necessary sprite assets. I had it make extensive notes and record all of the intermediary steps . My GItHub repo includes every generated image and combined sprite sheet, plus GIFs for each of the animation loops such as this one, called waving.gif : That GIF was compiled from a single image generated by gpt-image-2 that looked like this: And that image was created by executing this prompt against the initial generated character reference image , which was created with this prompt , which has this structure: Create on",
           "pub_date": "2026-07-14T22:29:45+00:00",
           "is_duplicate": false,
           "has_content": true,
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1339,
+          "id": 961,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,19 +170,19 @@
           "word_count": 1139
         },
         {
-          "id": 120,
-          "source": "arXiv cs.CL",
+          "id": 940,
+          "source": "Latent Space",
           "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "RouteRec: Strict Evaluation of Recommender-Agent Selection and Aggregation",
-          "link": "https://arxiv.org/abs/2607.09908",
-          "content": "arXiv:2607.09908v1 Announce Type: new Abstract: Recommender systems increasingly face a choice among heterogeneous agents -- collaborative filters, sequential models, content-based retrievers, and LLM-based rerankers -- yet no single agent is uniformly best. We study this choice as task-aware agent ranking under cost constraints using RouteRec, a framework that compares request-level hard selection with item-level learned aggregation over four traditional recommender agents and one LLM reranker agent. On MovieLens-1M, the full quality oracle has substantial headroom (HR@10 = 0.584), confirming that useful cross-agent signal exists. Under a leakage-free 5-fold out-of-fold protocol, however, hard selection remains below BM25 (0.223 vs. 0.254), and selective LLM escalation does not improve it. The same protocol yields a different outcome for learned aggregation: its cheap-only variant matches BM25 in HR and has a higher NDCG point estimate (0.123 vs. 0.114), while gated all-agent aggregation reaches HR@10 = 0.295 with 70.2\\% LLM calls. The resulting lesson is not that routing is solved, but that request-level selection of one complete agent list is too coarse for this sparse fixed-can",
-          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
+          "tier": "T2",
+          "priority": 5,
+          "title": "5 Trends That Defined AI Engineering at World’s Fair 2026",
+          "link": "https://www.latent.space/p/aiewf26trends",
+          "content": "At this year's AIE World&#8217;s Fair, AI engineering entered a new phase: building systems around agents, rather than just building with agents.",
+          "pub_date": "Tue, 14 Jul 2026 23:21:21 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 145
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1451,
-      "total_valid": 942,
+      "total_raw": 1073,
+      "total_valid": 821,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1637,
+          "id": 1219,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 654
         },
         {
-          "id": 1864,
+          "id": 1442,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 439
         },
         {
-          "id": 1623,
+          "id": 1205,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 340
         },
         {
-          "id": 1605,
+          "id": 1187,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 229
         },
         {
-          "id": 1501,
+          "id": 1117,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 204
         },
         {
-          "id": 1832,
+          "id": 1410,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 176
         },
         {
-          "id": 1654,
+          "id": 1236,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 164
         },
         {
-          "id": 1833,
+          "id": 1411,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 146
         },
         {
-          "id": 1740,
+          "id": 1318,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 404
         },
         {
-          "id": 1830,
+          "id": 1408,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 392
         },
         {
-          "id": 1819,
+          "id": 1397,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 261
         },
         {
-          "id": 1462,
+          "id": 1084,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 232
         },
         {
-          "id": 1476,
+          "id": 1094,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 183
         },
         {
-          "id": 1490,
+          "id": 1105,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 182
         },
         {
-          "id": 1478,
+          "id": 1096,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 463,
-      "total_valid": 303,
+      "total_raw": 419,
+      "total_valid": 283,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2045,
+          "id": 1619,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 483
         },
         {
-          "id": 1945,
+          "id": 1522,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 276
         },
         {
-          "id": 1956,
+          "id": 1533,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 180
         },
         {
-          "id": 1958,
+          "id": 1535,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 177
         },
         {
-          "id": 2040,
+          "id": 1614,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,22 @@
           "word_count": 436
         },
         {
-          "id": 1922,
+          "id": 1587,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Early maturation of host antimicrobial peptide defences is associated with host–pathogen coexistence",
+          "link": "https://www.nature.com/articles/s41589-026-02254-6",
+          "content": "Nature Chemical Biology, Published online: 15 July 2026; doi:10.1038/s41589-026-02254-6 Host antimicrobial peptides (AMPs) are a frontline defense against infection. Now, it has been shown that maturation of AMP repertoires early in life can predict stable host coexistence with a highly invasive pathogen.",
+          "pub_date": "2026-07-15",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 306
+        },
+        {
+          "id": 1499,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +539,7 @@
           "word_count": 273
         },
         {
-          "id": 1921,
+          "id": 1498,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +554,7 @@
           "word_count": 158
         },
         {
-          "id": 1983,
+          "id": 1560,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1984,
+          "id": 1561,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 1985,
+          "id": 1562,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +604,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 133,
+      "total_raw": 129,
       "total_valid": 29,
-      "total_candidates": 10
+      "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 1922,
+          "id": 1499,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 273
         },
         {
-          "id": 1633,
+          "id": 1215,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 266
         },
         {
-          "id": 1502,
+          "id": 1118,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +656,7 @@
           "word_count": 241
         },
         {
-          "id": 1618,
+          "id": 1200,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +671,7 @@
           "word_count": 240
         },
         {
-          "id": 1617,
+          "id": 1199,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +686,7 @@
           "word_count": 207
         },
         {
-          "id": 1921,
+          "id": 1498,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +701,7 @@
           "word_count": 158
         },
         {
-          "id": 1833,
+          "id": 1411,
           "source": "npj Vaccines",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +716,7 @@
           "word_count": 146
         },
         {
-          "id": 1498,
+          "id": 1113,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +731,7 @@
           "word_count": 130
         },
         {
-          "id": 1765,
+          "id": 1343,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +746,7 @@
           "word_count": 188
         },
         {
-          "id": 1801,
+          "id": 1379,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +766,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 40,
-      "total_valid": 32,
+      "total_raw": 44,
+      "total_valid": 36,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +784,37 @@
     "payment": {
       "candidates": [
         {
-          "id": 2056,
+          "id": 1633,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Credit Unions Ask Fed to Freeze Debit Interchange Plan Until Courts Rule",
+          "link": "https://www.pymnts.com/credit-unions/2026/credit-unions-ask-fed-to-freeze-debit-interchange-plan-until-courts-rule/",
+          "content": "America’s Credit Unions has called on the Federal Reserve to withdraw its 2023 proposed Regulation II changes to debit interchange until legal challenges have been resolved. The organization shared this and other credit union priorities in a letter submitted to the House Financial Services Committee ahead of Federal Reserve Chair Kevin Warsh’s Tuesday (July 14) appearance before the committee in a hearing, according to [&#8230;] The post Credit Unions Ask Fed to Freeze Debit Interchange Plan Until Courts Rule appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 15 Jul 2026 00:04:25 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 545
+        },
+        {
+          "id": 1634,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Ex-CFPB Enforcement Officials Launch Consumer-Focused Law Firm",
+          "link": "https://www.pymnts.com/legal/2026/ex-cfpb-enforcement-officials-launch-consumer-focused-law-firm/",
+          "content": "Three former senior enforcement leaders from the Consumer Financial Protection Bureau (CFPB) have launched a public interest law firm that will focus on consumer rights, tenant rights, workers’ rights and civil rights. Eric Halperin, Cara Petersen and Tara Mikkilineni led a CFPB team that secured orders for $9.5 billion in penalties and payments to consumers between 2021 and 2025, according to a Tuesday (July [&#8230;] The post Ex-CFPB Enforcement Officials Launch Consumer-Focused Law Firm appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 14 Jul 2026 23:28:24 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 525
+        },
+        {
+          "id": 1636,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +829,7 @@
           "word_count": 511
         },
         {
-          "id": 2114,
+          "id": 1686,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -799,37 +844,22 @@
           "word_count": 486
         },
         {
-          "id": 2060,
+          "id": 1635,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "CSI Acquires Qolo to Boost Commercial Banking Capabilities",
-          "link": "https://www.pymnts.com/news/banking/2026/csi-acquires-qolo-boost-commercial-banking-capabilities/",
-          "content": "CSI acquired Qolo to further its strategy of equipping community banks with commercial banking infrastructure that will help them compete with larger banks. CSI is a provider of end-to-end financial software and technology, while Qolo is a FinTech provider of modern treasury solutions and payments infrastructure, CSI said in a Tuesday (July 14) press release. [&#8230;] The post CSI Acquires Qolo to Boost Commercial Banking Capabilities appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 14 Jul 2026 20:41:44 +0000",
+          "title": "New QR Standard Unlocks US Instant Payments at Checkout",
+          "link": "https://www.pymnts.com/real-time-payments/2026/new-x9-150-qr-standard-unlocks-us-instant-payments-at-checkout/",
+          "content": "The United States does not lack instant payment rails. It lacks a simple, universal front door to them. That is the larger significance of X9.150, a new American national standard for merchant-presented payment QR codes, published Tuesday (July 14) by the Accredited Standards Committee X9. The specification creates a common structure for dynamically generated codes [&#8230;] The post New QR Standard Unlocks US Instant Payments at Checkout appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 14 Jul 2026 22:58:49 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 470
+          "word_count": 473
         },
         {
-          "id": 2061,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "PayPal Expands UK BNPL Offering Ahead of New Regulations",
-          "link": "https://www.pymnts.com/bnpl/2026/paypal-expands-united-kingdom-bnpl-offering-before-new-regulations/",
-          "content": "PayPal introduced another buy now, pay later (BNPL) option for its customers in the United Kingdom, according to a Tuesday (July 14) press release. Pay in 30 Days lets shoppers complete a purchase up front and pay the full amount up to 30 days later, the release said. “British customers are smart,” Tamer El-Emary, general [&#8230;] The post PayPal Expands UK BNPL Offering Ahead of New Regulations appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 14 Jul 2026 20:15:33 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 430
-        },
-        {
-          "id": 2085,
+          "id": 1659,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +874,7 @@
           "word_count": 294
         },
         {
-          "id": 2093,
+          "id": 1667,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +889,7 @@
           "word_count": 292
         },
         {
-          "id": 2089,
+          "id": 1663,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +904,7 @@
           "word_count": 243
         },
         {
-          "id": 2088,
+          "id": 1662,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +919,22 @@
           "word_count": 217
         },
         {
-          "id": 2090,
+          "id": 1646,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Founded by Netflix payments duo, Dutch startup Nopan bags €7.2 million",
+          "link": "https://www.finextra.com/newsarticle/48086/founded-by-netflix-payments-duo-dutch-startup-nopan-bags-72-million?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Nopan, an Amsterdam-based startup founded by two former members of Netflix's payments team, has bagged €7.2 million in funding to build a performance layer for account-to-account and wallet payments.",
+          "pub_date": "Wed, 15 Jul 2026 00:01:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 199
+        },
+        {
+          "id": 1664,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,22 +949,7 @@
           "word_count": 190
         },
         {
-          "id": 2084,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "CSI buys Qolo to strengthen commercial banking and embedded finance capabilities",
-          "link": "https://www.finextra.com/pressarticle/110418/csi-buys-qolo-to-strengthen-commercial-banking-and-embedded-finance-capabilities?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "CSI, a leading provider of end-to-end financial software and technology, has acquired Qolo, a leading fintech provider of modern treasury solutions and payments infrastructure.",
-          "pub_date": "Tue, 14 Jul 2026 19:48:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 176
-        },
-        {
-          "id": 2070,
+          "id": 1644,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +964,37 @@
           "word_count": 140
         },
         {
-          "id": 471,
+          "id": 143,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Policy-Conditioned Constrained Decoding for Column-Level Access Control in Text-to-SQL",
+          "link": "https://arxiv.org/abs/2607.12341",
+          "content": "arXiv:2607.12341v1 Announce Type: new Abstract: Text-to-SQL is increasingly deployed across trust boundaries between data providers and users. Such deployment must balance three competing requirements: policy compliance, answer coverage, and bounded cost. Existing approaches typically decide refusal based on which columns a query mentions and enforce it stochastically. Whether a query is compliant, however, depends not only on which columns appear but on how they are used, and stochastic enforcement cannot deterministically rule out violations. We formalize this requirement as a column-use policy over semantic use: output, filter condition, and aggregation argument. We integrate the policy by aligning each role with grammar productions tracked by the decoder. The resulting system, PCC-SQL, applies a per-token logits mask that deterministically eliminates single-query column-use violations on the supported SQL fragment in a single decoding pass. Across three benchmarks and three open-source models, PCC-SQL achieves 0% Leakage Rate and Coverage up to 88.7% on Spider-CU, while staying within +10% tokens of direct prompting. We additionally assess semantic alignment with execution accu",
+          "pub_date": "Wed, 15 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 208,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Can a Language Model Learn Facts Continually in Its Weights?",
+          "link": "https://arxiv.org/abs/2607.11020",
+          "content": "arXiv:2607.11020v2 Announce Type: replace Abstract: Continual learning promises a language model that keeps acquiring knowledge after training, with each new fact written into its weights. Whether weight writes can support accumulation remains undecided. We follow invented facts written into Qwen3 models from creation through sequences of twenty to one hundred later writes, using held-out questions of five types, with the original model given the fact in its prompt as the reference. Across these experiments, the breadth of the training data determines the kind of knowledge created. Bare-statement training produces recitation, while diverse restatements reduce the recitation-to-use gap from 27.4 to 5.4 points without showing the model a conclusion. This difference carries into later writes: after twenty sequential writes, bare-statement facts retain 1% accuracy while facts written from broad study data retain 46%. We also find that facts can be behaviourally forgotten without being erased. Forgotten facts keep most of the log-probability added by their write, and under bare-statement training 70% of wrong answers about them contain the most recently written fact. The same writes bar",
+          "pub_date": "Wed, 15 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 347,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 487,
+          "id": 363,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 515,
+          "id": 391,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 521,
+          "id": 397,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 559,
+          "id": 435,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 704,
+          "id": 580,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1022,51 +1082,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 163,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Can a Language Model Learn Facts Continually in Its Weights?",
-          "link": "https://arxiv.org/abs/2607.11020",
-          "content": "arXiv:2607.11020v1 Announce Type: new Abstract: Continual learning promises a language model that keeps acquiring knowledge after training, with each new fact written into its weights. Whether weight writes can support accumulation remains undecided. We follow invented facts written into Qwen3 models from creation through sequences of twenty to one hundred later writes, using held-out questions of five types, with the original model given the fact in its prompt as the reference. Across these experiments, the breadth of the training data determines the kind of knowledge created. Bare-statement training produces recitation, while diverse restatements reduce the recitation-to-use gap from 27.4 to 5.4 points without showing the model a conclusion. This difference carries into later writes: after twenty sequential writes, bare-statement facts retain 1% accuracy while facts written from broad study data retain 46%. We also find that facts can be behaviourally forgotten without being erased. Forgotten facts keep most of the log-probability added by their write, and under bare-statement training 70% of wrong answers about them contain the most recently written fact. The same writes barely",
-          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1199
-        },
-        {
-          "id": 213,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking",
-          "link": "https://arxiv.org/abs/2607.09665",
-          "content": "arXiv:2607.09665v1 Announce Type: cross Abstract: Prompt wrappers often differ only in formatting, yet they can change model scores enough to flip leaderboard conclusions. We study this variance under a token-controlled protocol and introduce two complementary metrics: the Format Sensitivity Index (FSI), the accuracy range induced by wrapper choice, and the Parseability Sensitivity Index (PSI), the corresponding range in answer parseability. Across 140,000 OpenRouter generations spanning 7 QA tasks, 5 wrapper families, and 4 instruct models from 7B to 72B parameters, we find that mean FSI varies by over 30x across models and is largely explained by compliance failures. A fixed-effects regression shows that parseability remains a strong predictor of accuracy even after controlling for task, model, and wrapper. We argue that reporting accuracy without wrapper variance and compliance is statistically fragile, and we give practical recommendations for both benchmarking and structured-output deployments.",
-          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1014
-        },
-        {
-          "id": 2064,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Wells Fargo Wealth Unit Drives Productivity Boom With New AI Suite",
-          "link": "https://www.pymnts.com/earnings/2026/wells-fargo-wealth-unit-drives-productivity-boom-with-new-ai-suite/",
-          "content": "Wells Fargo’s Wealth &#38; Investment Management business has invested over $1 billion over the past several years to modernize its technology platform, with a new generative artificial intelligence-powered suite of tools for financial advisors being the latest addition, Wells Fargo Chairman and CEO Charlie Scharf said Tuesday (July 14) during an earnings call. The bank [&#8230;] The post Wells Fargo Wealth Unit Drives Productivity Boom With New AI Suite appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 14 Jul 2026 19:38:52 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 489
         }
       ],
       "quota": {
@@ -1074,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 229,
-      "total_valid": 49,
+      "total_raw": 234,
+      "total_valid": 57,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2275,
-    "dup": 583,
-    "nocontent": 381,
+    "total_raw": 1848,
+    "dup": 298,
+    "nocontent": 375,
     "noise": 0
   }
 }
