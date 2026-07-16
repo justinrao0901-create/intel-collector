@@ -65,7 +65,7 @@
           "word_count": 139
         },
         {
-          "id": 84,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 525
         },
         {
-          "id": 81,
+          "id": 82,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 258
         },
         {
-          "id": 77,
+          "id": 78,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,30 +110,30 @@
           "word_count": 183
         },
         {
-          "id": 62,
+          "id": 61,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Are LLMs Ready for Scientific Discovery? A Capability-Oriented Benchmark for AI Scientists",
-          "link": "https://arxiv.org/abs/2607.11079",
-          "content": "Existing benchmarks for scientific data analysis evaluate LLMs primarily on code execution or workflow completion, overlooking that scientific analysis serves to support distinct types of scientific claims: hypothesis exploration, statistical inference, mechanistic explanation, each with different assumptions and validity criteria. We introduce SDABench, a benchmark that reorganizes evaluation around six capabilities (descriptive, exploratory, inferential, predictive, causal, and mechanistic) across five domains (Biology, Chemistry, Environment, Geography, Physics). SDABench comprises 527 real-data instances (SDA-Real) and 6000 synthetic instances (SDA-Synth), each in both multiple-choice and open-ended formats, constructed through an automated pipeline. Evaluating 15 representative LLMs, we find that models handle descriptive analysis well but degrade sharply on tasks requiring assumption selection, latent-process modeling, or mechanistic reasoning. SDABench further provides a five-stage error analysis framework that locates where LLMs fail: more advanced models more reliably identify the relevant scope and variables, but still struggle to select appropriate analytical procedures,",
-          "pub_date": "2026-07-12T20:00:00.000Z",
+          "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
+          "link": "https://arxiv.org/abs/2607.13125",
+          "content": "We introduce Boogu-Image-0.1, an open-source unified multimodal understanding and generation model family, comprising Base, Turbo, Edit, and Edit-Turbo variants. It delivers competitive performance in high-quality text-to-image generation, fast inference, instruction-based editing, and bilingual (Chinese-English) text rendering. Closed-source multimodal systems like Nano-Banana-Pro and GPT-Image-2 achieve strong performance through system-level integration rather than a single model, yet their internal practices remain largely undisclosed. In this work, we demonstrate that targeted improvements in model understanding, data quality, and training pipelines, coupled with agentic inference-time scaling, can substantially enhance generation and editing performance even under highly constrained compute budgets. Comprehensive evaluations show that Boogu-Image-0.1 consistently matches or surpasses other open-source models across standard benchmarks, and achieves results approaching leading closed-source systems. Notably, this is accomplished with only 208.62 million unique images. The base model's theoretical training cost is only approximately \\$400K. We share practical discussions that w",
+          "pub_date": "2026-07-13T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 63,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Navigating the Mirage: A Dual-Path Agentic Framework for Robust Misleading Chart Question Answering",
-          "link": "https://arxiv.org/abs/2603.28583",
-          "content": "Despite the success of Vision-Language Models (VLMs), misleading charts remain a significant challenge due to their deceptive visual structures and distorted data representations. We present ChartCynics, an agentic dual-path framework designed to unmask visual deception via a \"skeptical\" reasoning paradigm. Unlike holistic models, ChartCynics decouples perception from verification: a Diagnostic Vision Path captures structural anomalies (e.g., inverted axes) through strategic ROI cropping, while an OCR-Driven Data Path ensures numerical grounding. To resolve cross-modal conflicts, we introduce an Agentic Summarizer optimized via a two-stage protocol: Oracle-Informed SFT for reasoning distillation and Deception-Aware GRPO for adversarial alignment. This pipeline effectively penalizes visual traps and enforces logical consistency. Evaluations on two benchmarks show that ChartCynics achieves 74.43% and 64.55% accuracy, providing an absolute performance boost of ~29% over the Qwen3-VL-8B backbone, outperforming state-of-the-art proprietary models. Our results demonstrate that specialized agentic workflows can grant smaller open-source models superior robustness, establishing a new found",
-          "pub_date": "2026-07-13T20:00:00.000Z",
+          "title": "Hallo4D: Multi-Modal Hallucination Mitigation for Consistent Spatio-Temporal Generation",
+          "link": "https://arxiv.org/abs/2607.12752",
+          "content": "While recent advances in 3D generation have enabled impressive visual synthesis, existing methods often rely on 2D diffusion supervision without explicit mechanisms for geometric consistency, leading to spatial hallucinations such as duplicated structures and misaligned geometry. These issues become more severe in 4D generation, where maintaining consistency across viewpoints and temporal evolution introduces additional challenges, including jitter, identity flicker, and structural drift. We present Hallo4D, a unified and model-agnostic framework for mitigating spatiotemporal hallucinations in 3D and 4D content generation. Hallo4D introduces a generation-detection-correction paradigm that leverages large multimodal language models (LMMs) to identify and summarize spatial and temporal inconsistencies from multi-view and multi-frame renderings. These insights guide a consensus-driven image-space consistency optimization, where an LMM-based selector evaluates candidate corrections through multi-model voting, without requiring retraining or architectural modifications. To further improve temporal consistency and optimization efficiency, Hallo4D incorporates motion-aware keyframe sampli",
+          "pub_date": "2026-07-14T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,17 +145,17 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
-          "link": "https://arxiv.org/abs/2607.08046",
-          "content": "Large language models fine-tuned for forecasting can be accurate yet poorly calibrated, and their chain-of-thought (CoT) reasoning may not faithfully reflect the evidence behind a forecast. We ask whether internal representations offer a more direct window into both. Working with Eternis-Forecaster 8B on OpenForesight, we train representation-pooling probes on intermediate activations and find they achieve substantially better calibration; a result that also holds for GLM-4.7-Flash and GLM-4.5-Air. We then assess CoT faithfulness through evidence ablation and diversionary injection: removing an influential source in the prompt often changes the model's forecast while leaving the reasoning trace untouched. The same probes function as lie detectors: their activations track behavioral shifts far better than the reasoning trace does, and they also predict the direction of change in 84% of cases, including when the CoT conceals the perturbation's influence. Finally, forced answering reveals that forecasts are largely fixed before reasoning begins: a single pre-reasoning pass recovers the committed answer and confidence, and routing questions by the spread of this pre-set answer distribu",
-          "pub_date": "2026-07-08T20:00:00.000Z",
+          "title": "Tracing Agentic Failure from the Flow of Success",
+          "link": "https://arxiv.org/abs/2607.12747",
+          "content": "Failure attribution for LLM-based agentic systems, i.e., identifying which steps in a failure trajectory caused the task to fail, is critical for debugging and improving these systems. Existing approaches either rely on prompting-based pipelines, which are computationally expensive, or require post-training on failure trajectories with step-level error annotations, which are costly to collect and difficult to scale. We argue that a practical failure attribution model should be lightweight and trainable without step-level supervision on failure data. To this end, we address unsupervised failure attribution, i.e., training exclusively on successful trajectories and identifying error steps at inference time given a failure trajectory. We propose OAT, which casts this problem as one-class learning with neural controlled differential equations, modeling the dynamical pattern of successful trajectories in latent space. At inference time, each step in a failure trajectory is assigned an anomaly score based on its deviation from the dynamics learned on successful trajectories, which is then used to form a set of error steps. With training on only 100 successful trajectories, experiments sh",
+          "pub_date": "2026-07-13T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 961,
+          "id": 697,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 959,
+          "id": 695,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1074,
-      "total_valid": 814,
+      "total_raw": 810,
+      "total_valid": 471,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1113,
+          "id": 844,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,52 @@
           "word_count": 1200
         },
         {
-          "id": 1143,
+          "id": 951,
+          "source": "Immunity",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Flavin adenine dinucleotide is an endogenous suppressor for cytosolic DNA and RNA sensors to modulate innate immunity",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00261-X?rss=yes",
+          "content": "Precise control of cytosolic nucleic acid sensing is essential for immune homeostasis, yet endogenous metabolites that regulate both DNA and RNA sensing remain unidentified. Wang et al. identify FAD as a natural brake restraining both DNA- and RNA-triggered innate immunity. FAD deficiency aggravates autoinflammation and senescence. Upon viral infection, reduced FAD relieves this inhibition and enables full antiviral immunity.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 429
+        },
+        {
+          "id": 948,
+          "source": "Immunity",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Antigen-restricted Candida albicans Th17 cells link oral-gut immunity and adopt pathogenic features during intestinal inflammation",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00264-5?rss=yes",
+          "content": "Martini, Hofmann, et al. identify C. albicans-specific Th17 cells targeting fungal EV proteins that predominantly reside in the human oral mucosa at homeostasis. However, these oral-residing cells exhibit TCR overlap with gut Th17 cells. During intestinal inflammation, C. albicans-specific Th17 cells retain their antigen specificity but acquire pathogenic traits, highlighting how oral immunity impacts intestinal disease.",
+          "pub_date": "2026-07-14",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 424
+        },
+        {
+          "id": 949,
+          "source": "Immunity",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "MEK-dependent bioenergetic demand drives terminal CD8+ T cell exhaustion",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00263-3?rss=yes",
+          "content": "Mitra et al. examine how chronic antigen stimulation of CD8+ T cells leads to this metabolic dysfunction and find that MEK-driven ATP demand drives terminal T cell exhaustion by supporting protein synthesis at the expense of NAD+-dependent proliferation. MEK inhibition restores proliferative capacity and maintains a progenitor-like exhausted T cell state that can respond to immune checkpoint blockade.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 404
+        },
+        {
+          "id": 874,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +272,22 @@
           "word_count": 351
         },
         {
-          "id": 1273,
+          "id": 1224,
+          "source": "Cell Reports Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Targeted antibody-drug conjugates for rhabdomyosarcoma and other FGFR4-expressing cancers",
+          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00339-3?rss=yes",
+          "content": "Tian et al. develop FGFR4-targeted antibody-drug conjugates that selectively kill rhabdomyosarcoma and other FGFR4-expressing cancers. Their findings show that FGFR4 can be exploited to deliver potent cytotoxic payloads selectively to tumors, with an exatecan-based ADC producing durable tumor control in several aggressive preclinical models.",
+          "pub_date": "2026-07-14",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 343
+        },
+        {
+          "id": 998,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +302,7 @@
           "word_count": 337
         },
         {
-          "id": 1123,
+          "id": 854,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +317,7 @@
           "word_count": 279
         },
         {
-          "id": 1274,
+          "id": 999,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +332,7 @@
           "word_count": 251
         },
         {
-          "id": 1236,
+          "id": 961,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +347,7 @@
           "word_count": 212
         },
         {
-          "id": 1267,
+          "id": 992,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +362,7 @@
           "word_count": 189
         },
         {
-          "id": 1261,
+          "id": 986,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +377,7 @@
           "word_count": 185
         },
         {
-          "id": 1460,
+          "id": 1185,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +392,7 @@
           "word_count": 65
         },
         {
-          "id": 1461,
+          "id": 1186,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +407,7 @@
           "word_count": 65
         },
         {
-          "id": 1464,
+          "id": 1189,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -360,66 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 65
-        },
-        {
-          "id": 1447,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Cost-effectiveness analysis of a hypothetical vaccine for schistosomiasis in Madagascar and Burkina Faso",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26007450?dgcid=rss_sd_all",
-          "content": "Publication date: 13 August 2026 Source: Vaccine, Volume 88 Author(s): Yongha Hwang, Gbènonminvo Enoch Cakpo, Njariharinjakamampionona Rakotozandrindrainy, Lady Rosny Wandji Nana, Ravomialisoa Razafimanantsoa, Lovasoa Derandrainy, Gabriel Nyirenda, Abdramane Bassiahi Soura, Raphaël Rakotozandrindrainy, Florian Marks, Jung-Seok Lee",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 332
-        },
-        {
-          "id": 1386,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Comparison of immunogenicity of mRNA and protein subunit SARS-CoV-2 vaccines in dialysis patients: a multicenter study",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26006705?dgcid=rss_sd_all",
-          "content": "Publication date: 13 August 2026 Source: Vaccine, Volume 88 Author(s): Ryosuke Morio, Takahiro Takazono, Shimpei Morimoto, Nobuyuki Ashizawa, Tatsuro Hirayama, Masakata Yoshida, Kazuaki Takeda, Katsuji Hirano, Shotaro Ide, Naoki Iwanaga, Naoki Hosogaya, Satoshi Funakoshi, Katsunori Yanagihara, Hiroshi Mukae",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 308
-        },
-        {
-          "id": 1446,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Impact of antigen and carrier substitution on the molecular weight and immunogenicity of the Pfs230D1–CRM197 malaria transmission-blocking vaccine",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X2600722X?dgcid=rss_sd_all",
-          "content": "Publication date: 13 August 2026 Source: Vaccine, Volume 88 Author(s): Puthupparampil V. Scaria, Beth Chen, Olga Muratova, Pinar Kemanli, Justin Y.A. Doritchamou, Lynn E. Lambert, Emma K. Barnafo, Kelly M. Rausch, David L. Narum, Umesh Shaligram, Gale Smith, Patrick E. Duffy",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 275
-        },
-        {
-          "id": 1083,
-          "source": "Endpoints News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Insilico, Bora Pharma reveal plans for AI-driven manufacturing company",
-          "link": "https://endpoints.news/insilico-bora-pharma-reveal-plans-for-ai-driven-manufacturing-company/",
-          "content": "Insilico Medicine and Taiwan-based CDMO Bora Pharmaceuticals are launching a new company with an AI-driven biologics manufacturing platform in a bid to compete with service providers headquartered in China. “What we are trying to create ...",
-          "pub_date": "Wed, 15 Jul 2026 12:30:44 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 240
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 459,
-      "total_valid": 317,
+      "total_raw": 456,
+      "total_valid": 316,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1584,
+          "id": 1317,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 176
         },
         {
-          "id": 1591,
+          "id": 1324,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 175
         },
         {
-          "id": 1568,
+          "id": 1301,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 169
         },
         {
-          "id": 1621,
+          "id": 1355,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 455
         },
         {
-          "id": 1539,
+          "id": 1272,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,22 @@
           "word_count": 329
         },
         {
-          "id": 1601,
+          "id": 1334,
+          "source": "Cell Systems",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Multimolecular proofreading overcomes the activity-fidelity trade-off",
+          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00140-7?rss=yes",
+          "content": "Mao et al. create a protein circuit that uses self-activation and mutual inhibition to maintain high fidelity while transmitting signals effectively. The circuit bypasses the typical trade-off between activity and accuracy, offering a versatile approach for constructing robust synthetic biological networks.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 308
+        },
+        {
+          "id": 1335,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1602,
+          "id": 1336,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1603,
+          "id": 1337,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -559,14 +574,29 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 122,
-      "total_valid": 23,
-      "total_candidates": 8
+      "total_raw": 123,
+      "total_valid": 24,
+      "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 1135,
+          "id": 951,
+          "source": "Immunity",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Flavin adenine dinucleotide is an endogenous suppressor for cytosolic DNA and RNA sensors to modulate innate immunity",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00261-X?rss=yes",
+          "content": "Precise control of cytosolic nucleic acid sensing is essential for immune homeostasis, yet endogenous metabolites that regulate both DNA and RNA sensing remain unidentified. Wang et al. identify FAD as a natural brake restraining both DNA- and RNA-triggered innate immunity. FAD deficiency aggravates autoinflammation and senescence. Upon viral infection, reduced FAD relieves this inhibition and enables full antiviral immunity.",
+          "pub_date": "2026-07-13",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 429
+        },
+        {
+          "id": 866,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +611,7 @@
           "word_count": 401
         },
         {
-          "id": 1139,
+          "id": 870,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +626,22 @@
           "word_count": 397
         },
         {
-          "id": 1539,
+          "id": 1224,
+          "source": "Cell Reports Medicine",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Targeted antibody-drug conjugates for rhabdomyosarcoma and other FGFR4-expressing cancers",
+          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00339-3?rss=yes",
+          "content": "Tian et al. develop FGFR4-targeted antibody-drug conjugates that selectively kill rhabdomyosarcoma and other FGFR4-expressing cancers. Their findings show that FGFR4 can be exploited to deliver potent cytotoxic payloads selectively to tumors, with an exatecan-based ADC producing durable tumor control in several aggressive preclinical models.",
+          "pub_date": "2026-07-14",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 343
+        },
+        {
+          "id": 1272,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +656,7 @@
           "word_count": 329
         },
         {
-          "id": 1137,
+          "id": 868,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +671,7 @@
           "word_count": 317
         },
         {
-          "id": 1656,
+          "id": 1390,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +686,7 @@
           "word_count": 299
         },
         {
-          "id": 1233,
+          "id": 958,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +701,7 @@
           "word_count": 192
         },
         {
-          "id": 1463,
+          "id": 1188,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +716,7 @@
           "word_count": 65
         },
         {
-          "id": 1423,
+          "id": 1148,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -684,36 +729,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 157
-        },
-        {
-          "id": 1083,
-          "source": "Endpoints News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Insilico, Bora Pharma reveal plans for AI-driven manufacturing company",
-          "link": "https://endpoints.news/insilico-bora-pharma-reveal-plans-for-ai-driven-manufacturing-company/",
-          "content": "Insilico Medicine and Taiwan-based CDMO Bora Pharmaceuticals are launching a new company with an AI-driven biologics manufacturing platform in a bid to compete with service providers headquartered in China. “What we are trying to create ...",
-          "pub_date": "Wed, 15 Jul 2026 12:30:44 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 240
-        },
-        {
-          "id": 1079,
-          "source": "Endpoints News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Radiopharma maker AdvanCell hauls in $315M for Pluvicto challenger",
-          "link": "https://endpoints.news/radiopharma-maker-advancell-hauls-in-315m-for-pluvicto-challenger/",
-          "content": "AdvanCell raised a $315 million Series D to study a lead-based prostate cancer agent and shore up its US manufacturing of the radioactive treatment. The round marks one of the largest yet for a radiopharmaceutical ...",
-          "pub_date": "Wed, 15 Jul 2026 15:25:34 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 217
         }
       ],
       "quota": {
@@ -721,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 42,
-      "total_valid": 35,
+      "total_raw": 40,
+      "total_valid": 32,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1692,
+          "id": 1422,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 492
         },
         {
-          "id": 1712,
+          "id": 1445,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 492
         },
         {
-          "id": 1705,
+          "id": 1435,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 371
         },
         {
-          "id": 1704,
+          "id": 1434,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 334
         },
         {
-          "id": 1707,
+          "id": 1437,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 314
         },
         {
-          "id": 1706,
+          "id": 1436,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 295
         },
         {
-          "id": 1681,
+          "id": 1413,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 266
         },
         {
-          "id": 1685,
+          "id": 1417,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 203
         },
         {
-          "id": 1688,
+          "id": 1420,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 188
         },
         {
-          "id": 1671,
+          "id": 1403,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 176
         },
         {
-          "id": 1687,
+          "id": 1419,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,13 +919,13 @@
           "word_count": 176
         },
         {
-          "id": 1664,
+          "id": 1398,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "How PayPal may benefit Stripe",
-          "link": "https://www.paymentsdive.com/news/how-paypal-may-benefit-stripe/825309/",
+          "title": "How a PayPal may benefit Stripe",
+          "link": "https://www.paymentsdive.com/news/how-a-paypal-may-benefit-stripe/825309/",
           "content": "The digital payments startup has reportedly made a bid for a stake in its older predecessor, potentially creating a massive processor.",
           "pub_date": "Wed, 15 Jul 2026 10:56:00 -0400",
           "is_duplicate": false,
@@ -919,7 +934,7 @@
           "word_count": 134
         },
         {
-          "id": 1665,
+          "id": 1399,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,109 +949,79 @@
           "word_count": 130
         },
         {
-          "id": 402,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "SALT-GNN: Handling Dense Neighborhoods in Anti-Money Laundering Graphs via Statistics-Aware Attention",
-          "link": "https://arxiv.org/abs/2607.10131",
-          "content": "arXiv:2607.10131v1 Announce Type: cross Abstract: Money laundering threatens financial stability and exposes institutions to penalties, motivating automated detection. Because laundering schemes often emerge through relational patterns, graph neural networks (GNNs) are increasingly used for anti-money laundering (AML). Yet AML GNNs are typically evaluated with aggregate metrics such as overall F1 score, which hide an operational issue: high-activity recipient accounts concentrate many incoming transactions, making suspicious signals harder to isolate and costlier to investigate. We introduce a recipient-degree stratified evaluation that reports standard AML metrics across recipient-context density. Across three datasets (HI-Small, HI-Medium, and AMLSim-32k-5%), it reveals consistent degradation in dense recipient contexts, which we trace to three GNN characteristics: two known limitations that AML amplifies, i.e., (1) multiset non-discriminability and (2) cardinality blindness, and (3) an attention-specific effect: in dense neighborhoods, normalized attention attenuates weak but pattern-relevant multi-hop signals. Guided by this diagnosis, we propose SALT-GNN, a lightweight statist",
-          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 440,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Temporary Authority, Permanent Effects: Commit-Time Authorization for LLM Agents",
-          "link": "https://arxiv.org/abs/2607.10487",
-          "content": "arXiv:2607.10487v1 Announce Type: cross Abstract: LLM agents can commit durable effects from authority evidence that was valid earlier in execution: a DOM snapshot, approval epoch, version witness, branch token, or worker result. We study the commit boundary at which earlier authority evidence no longer authorizes a durable effect. We call this property commit-time authorization: a durable effect is authorized only if the witness that licensed its derived state remains fresh, causally prior, bound to the same effect, and eligible at commit time. We build a controlled-invalidation suite spanning browser, tool/API, and multi-agent workflows. The suite preserves the user goal and payload shape while invalidating the authority relation before durability. In the primary 54-task matrix, endpoint success remains high: 262/270 runs reach the visible result. Only 55/270 are authorized completions; among the 216 invalidating rows, 207 commit after the authorizing path has failed. All 54 clean controls remain authorized, and a separate 54-run authority-preserving check produces no unauthorized commits. We then evaluate mitigation families. Prompt caution and single-condition checks are insuff",
-          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 585,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "NormAct: A Benchmark for Hidden Social Norm Compliance in Embodied Planning",
-          "link": "https://arxiv.org/abs/2606.27826",
-          "content": "arXiv:2606.27826v2 Announce Type: replace Abstract: Multimodal large language models (MLLMs) are increasingly deployed as embodied planners in egocentric environments, where task success requires not only achieving instructed goals but also acting in socially appropriate ways. While explicit goals may render certain actions optimal, implicit social norms often impose hidden constraints. Existing evaluations typically focus on explicit goal achievement or direct norm knowledge, seldom assessing whether planners can infer and apply these hidden constraints within action sequences. We introduce NormAct, a benchmark for embodied social-norm interactions that evaluates plans on Goal Achievement, Norm Compliance, and overall Task Success. NormAct uniquely embeds hidden norms within ordinary tasks, testing whether models can realize them without explicit instruction. Experiments with state-of-the-art MLLMs (GPT-5.4, Claude Opus 4.7, Gemini 3 Pro) reveal a significant gap: models achieve explicit goals in 67.3\\% of cases, but comply with hidden norms in only 26.4\\%. Cue-condition experiments indicate that this gap stems not from a lack of general social knowledge, but from challenges in ac",
-          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 858,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "RAFP: Identifying LLM Lineages via Rare-Region Fingerprints",
-          "link": "https://arxiv.org/abs/2505.12682",
-          "content": "arXiv:2505.12682v2 Announce Type: replace Abstract: Large language models (LLMs) are increasingly released under restricted licenses, creating a growing need for robust model ownership verification. Existing fingerprinting methods are often fragile under downstream finetuning, require invasive training modifications, or fail in black-box settings. We introduce RAFP, a robust framework for identifying LLM lineages via rare-region fingerprints. Our key insight is that downstream finetuning primarily updates common high-density language behaviors, while low-probability prompt regions receive weak optimization signal and limited gradient alignment under finetuned distribution. As a result, rare prompt-response behaviors remain stable across common model adaptations. RAFP is non-invasive, constructing fingerprints via discrete gradient-based optimization over rare prompts without modifying model weights. We provide a theoretical analysis showing that the likelihood change of rare-region fingerprints under finetuning remains bounded. Experiments across four LLM families and multiple downstream adaptations, including supervised finetuning, LoRA, quantization, prompt-template variation, an",
-          "pub_date": "Wed, 15 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 860,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Inclusive Federated Learning Through Compliance-Weighted Noise Allocation in Healthcare AI",
-          "link": "https://arxiv.org/abs/2505.22108",
-          "content": "arXiv:2505.22108v4 Announce Type: replace Abstract: Background: Federated learning (FL) enables collaborative training of clinical AI models without centralizing patient data, but adoption is limited by privacy concerns, heterogeneous institutional compliance, and resource disparities; standard differential privacy (DP) applies uniform noise to all clients, penalizing well-compliant or under-resourced institutions. Objective: We introduce a compliance-aware FL framework that adapts DP to institutional compliance, letting lower-compliance sites participate without uniformly penalizing others. Methods: A compliance scoring tool aligned with HIPAA, GDPR, NIST, ISO, and HL7/FHIR maps each client score to a per-step Gaussian noise scale for server-side DP-SGD on a small aggregator dataset. The formal $(\\epsilon,\\delta)$ bound applies to the aggregator dataset under a semi-honest aggregator; client-level DP needs secure aggregation (future work). We evaluate five FL strategies on PneumoniaMNIST and BreastMNIST (16 clients, 50 rounds, five seeds); the cumulative aggregator-dataset $\\epsilon$ is about 1434 (Breast) and 513 (Pneumonia) at $\\delta=10^{-5}$. Results: Including 12 lower-compli",
-          "pub_date": "Wed, 15 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 171,
+          "id": 163,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "GRID: Grammar-Railed Decoding for Enterprise SQL Generation",
-          "link": "https://arxiv.org/abs/2607.11951",
-          "content": "arXiv:2607.11951v1 Announce Type: cross Abstract: Large language models can write SQL, but enterprise deployment demands more than plausible text: outputs must be syntactically valid, must respect per-role and per-schema policy, must carry provable (not best-effort) guarantees, must not slow down as generations grow, and must leave a compliance-grade record of every decision. We present GRID (Grammar-Railed Decoding), a grammar-constrained decoding engine that keys exact next-token masks on parser configurations (lexer scan state x LALR(1) stack) rather than on token sequences, and uses the incrementally advanced LALR(1) parser itself as a viable-prefix oracle. LLM tokens are bridged to grammar terminals by a byte-level trie walk with a context-independent/context-dependent split that makes cache-key soundness hold by construction. Role-based access control is compiled into the language: role projections subset the grammar's productions and schema lexicons restrict identifier terminals, so forbidden verbs and identifiers are unreachable at mask level. Four guarantees (soundness, completeness, termination, and near-constant per-token cost) are stated with explicit preconditions and",
-          "pub_date": "Wed, 15 Jul 2026 00:00:00 -0400",
+          "title": "The Refusal Residue: When Probes Catch Alignment Faking and When They Don't",
+          "link": "https://arxiv.org/abs/2607.13346",
+          "content": "arXiv:2607.13346v1 Announce Type: cross Abstract: Alignment faking is dangerous because a model can appear compliant under monitoring while preserving behavior it would reveal when unmonitored. When no scratchpad is visible, behavior alone cannot distinguish strategic from genuine compliance. We ask whether hidden states reveal what outputs hide. We run a 13-model sweep for naturally-emerging faking, then probe and steer hidden states on the two models that fake. Natural faking appears only in Qwen3-32B (+18.2pp) and Llama-3.1-8B (+24.4pp at n=10, p<10^-15), while explicit scratchpad self-reports are rare (a Claude Opus 4 judge flags faking reasoning in 1.4% of Qwen and 0.0% of Llama compliant scratchpads). Both fakers show an asymmetric refusal residue: monitored compliance shifts toward refusal (d=0.32 Qwen, d=0.33 Llama, both p<0.0001), while refusal representations do not move (p=1.00). Per-sample detection is model-conditional. Under leakage-free leave-one-query-out probing, detection survives on Llama (AUROC 0.87) but collapses to chance on Qwen (0.43), and cross-model transfer is null. Steering over 2,000 runs barely changes compliance (|h|<0.08), so the detected direction c",
+          "pub_date": "Thu, 16 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 318,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Explainable Artificial Intelligence for Anomaly Detection in Banking Transactions: An Internal Audit Perspective",
+          "link": "https://arxiv.org/abs/2607.13469",
+          "content": "arXiv:2607.13469v1 Announce Type: cross Abstract: The banking sector increasingly relies on automated systems to monitor electronic transactions for signs of fraud, yet conventional rule-based approaches struggle with high false-positive rates and offer no justification for their outputs, limiting their utility for compliance teams. This paper introduces an Explainable Artificial Intelligence (XAI) framework tailored for banking transaction anomaly detection within internal audit workflows. An Isolation Forest (iForest) model performs unsupervised anomaly scoring, while a SHAP (SHapley Additive exPlanations) layer provides transaction-level, feature-attributed explanations grounded in cooperative game theory [8]. A lightweight Streamlit dashboard renders these outputs in a form accessible to audit professionals without machine learning expertise. Evaluation on a synthetic banking dataset yields 0.91 precision and 0.88 recall, outperforming three unsupervised baselines. Expert feedback confirms that feature-level explanations measurably improve auditor confidence and decision quality. The framework advances the practical deployment of accountable, transparent AI in regulated financi",
+          "pub_date": "Thu, 16 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 528,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Securing LLMs in the Wild: Privacy and Security Challenges at the Edge",
+          "link": "https://arxiv.org/abs/2607.13088",
+          "content": "arXiv:2607.13088v1 Announce Type: cross Abstract: Large Language Models (LLMs) are rapidly moving from research settings into the wild, deployed on enterprise infrastructure, personal devices, and edge platforms. While cloud deployments offer scalable compute, concerns over data sovereignty, compliance, latency, and third-party dependence are driving organizations toward edge and on-premise LLMs. This shift introduces new security and privacy challenges: limited compute and memory force aggressive optimizations, including quantization, pruning, model partitioning, and parameter-efficient adaptation, each of which can introduce vulnerabilities and reshape the threat landscape. We describe this tension as the Security-Efficiency Paradox, mechanisms that improve efficiency may weaken robustness, expose new attack surfaces, or increase privacy risks. We examine how compression can degrade safety alignment, how partitioned inference enables reconstruction attacks, and how continuous local adaptation may cause privacy leakage and model drift. To analyze these risks, we introduce a deployment-centric taxonomy organized around three architectural constraints: the Memory Wall, the Quadratic",
+          "pub_date": "Thu, 16 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 356,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce",
+          "link": "https://arxiv.org/abs/2607.13998",
+          "content": "arXiv:2607.13998v1 Announce Type: cross Abstract: The rapid proliferation of Agentic Artificial Intelligence fundamentally disrupts traditional customer loyalty paradigms. As AI evolves from passive recommendation algorithms to autonomous, goal-directed agents capable of executing purchasing decisions, the conventional understanding of consumer-brand relationships requires a structural reevaluation. By synthesizing extant literature across human-machine teaming, consumer decision-making, and algorithmic trust dynamics, we demonstrate that traditional loyalty models fail to account for algorithmic bounded rationality and constructed autonomy. To address this, we introduce the Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) model. We formalize brand choice via a softmax probability formulation where human emotional equity, agentic machine-experience utility, calibrated trust, delegated authority, and verifiable execution jointly determine selection. The model features recursive updating mechanisms to dynamically calibrate trust and delegation after each interaction. Crucially, the framework integrates a verifiable execution layer for Decentralized Finance (DeFi)",
+          "pub_date": "Thu, 16 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
         },
         {
-          "id": 340,
-          "source": "arXiv cs.AI",
+          "id": 1441,
+          "source": "Thunes",
           "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Reverse Engineering Compliance: A Dual-Graph Verification Framework for Auditing Legacy IT Security Concepts",
-          "link": "https://arxiv.org/abs/2607.08292",
-          "content": "arXiv:2607.08292v1 Announce Type: cross Abstract: The NIS-2 Directive increases the need for continuous, auditable compliance evidence and motivates a shift from document-based compliance toward machine-readable compliance artifacts. The Open Security Controls Assessment Language (OSCAL) is a standard for this purpose, which the German Federal Office for Information Security (BSI) is adapting with Grundschutz++. However, companies are still managing extensive legacy IT security concepts (IT-SCs), and migrating them without verification could transfer outdated assets into the new format. While existing research primarily addresses the generation of new concepts, there is a lack of a verification framework that extracts legacy IT-SCs into an auditable intermediate representation, deterministically compares the extracted graph with an independently constructed reference state, and exports schema-valid OSCAL artifacts. This paper introduces the Automated Security Concept Structure Extraction and Reverse Topology-checking (ASSERT) Framework, which addresses this gap by using ontology-based extraction of legacy documents into formal document graphs, a five-class graph difference against",
-          "pub_date": "Tue, 14 Jul 2026 00:00:00 -0400",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Employee Spotlight on Virginia Jimeno",
+          "link": "https://www.thunes.com/insights/life-at-thunes/employee-spotlight-on-virginia-jimeno/",
+          "content": "Meet the humans behind Thunes. Our Employee Spotlight series shines a light on the people who make our business what it is, sharing the experiences, perspectives, and journeys that shape our culture. In this spotlight, we’re proud to introduce Virginia Jimeno, who has spent the past two years learning, adapting, and delivering at pace in ... Read more &#187; The post Employee Spotlight on Virginia Jimeno first appeared on Thunes.com .",
+          "pub_date": "Thu, 16 Jul 2026 06:13:22 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1199
+          "word_count": 438
         }
       ],
       "quota": {
@@ -1044,15 +1029,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 221,
-      "total_valid": 46,
-      "total_candidates": 20
+      "total_raw": 214,
+      "total_valid": 39,
+      "total_candidates": 18
     }
   },
   "meta": {
-    "total_raw": 1874,
-    "dup": 305,
-    "nocontent": 378,
-    "noise": 0
+    "total_raw": 1607,
+    "dup": 391,
+    "nocontent": 367,
+    "noise": 2
   }
 }

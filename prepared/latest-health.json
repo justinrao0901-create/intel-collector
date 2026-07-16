@@ -70,19 +70,19 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 103,
+      "count": 94,
       "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 485,
+      "count": 228,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 234,
+      "count": 237,
       "ok": true
     },
     "Import AI": {
@@ -100,7 +100,7 @@
     "Latent Space": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 14,
       "ok": true
     },
     "Simon Willison": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
+      "count": 13,
       "ok": true
     },
     "Fierce Pharma": {
@@ -178,37 +178,37 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 15,
+      "ok": true
     },
     "Lancet Infect Dis": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 7,
+      "ok": true
     },
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 1,
+      "ok": true
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "Immunity": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 7,
+      "ok": true
     },
     "Science": {
       "section": "vaccine",
       "method": "rss",
-      "count": 36,
+      "count": 0,
       "ok": true
     },
     "JAMA": {
@@ -304,8 +304,8 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 8,
+      "ok": true
     },
     "BioPharma Dive": {
       "section": "vaccine",
@@ -352,8 +352,8 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 1,
+      "ok": true
     },
     "bioRxiv SynBio": {
       "section": "synbio",
@@ -389,7 +389,7 @@
       "section": "cross",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "NEJM AI": {
       "section": "cross",
@@ -418,13 +418,13 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 4,
+      "count": 2,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 36,
+      "count": 34,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 3,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -504,25 +504,19 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Cell",
-      "Cell Host Microbe",
-      "Cell Reports Medicine",
-      "Cell Systems",
       "ClinicalTrials.gov",
-      "Immunity",
       "Import AI",
-      "Lancet Digital Health",
-      "Lancet Infect Dis",
       "NEJM",
       "NEJM AI",
       "PYMNTS Cross-Border",
-      "PYMNTS.com",
-      "The Lancet"
+      "PYMNTS.com"
     ],
     "sudden_drop": [
-      "Thunes"
+      "Science"
     ],
     "persistent_zero": [
+      "Cell Host Microbe",
+      "Lancet Digital Health",
       "Sequoia Capital"
     ]
   }
