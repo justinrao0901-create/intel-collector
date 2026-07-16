@@ -10,6 +10,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 3,
+          "title": "NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI",
+          "link": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/",
+          "content": "General-purpose robots and autonomous machines are moving from research labs to real-world mass-market deployment, creating demand for compact, power-efficient AI supercomputers capable of running foundation models at the edge. To meet that need, NVIDIA today introduced the T3000 and T2000, new modules based on the NVIDIA Thor architecture that enable mass-market robotics and edge AI [&#8230;]",
+          "pub_date": "Wed, 15 Jul 2026 23:00:54 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 396
+        },
+        {
+          "id": 52,
+          "source": "NVIDIA Blog",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
           "title": "NVIDIA and Japan Bring Full-Stack AI and Robotics to Every Industry",
           "link": "https://blogs.nvidia.com/blog/japan-ecosystem-2026/",
           "content": "Home to leading manufacturers, robotics pioneers, infrastructure builders and iconic gaming companies, of course, Japan is one of the world’s centers of AI — building across the full stack with NVIDIA technologies. This week NVIDIA and its partners in Japan are showcasing the AI ecosystem’s latest advancements. Check back here for updates.",
@@ -50,7 +65,7 @@
           "word_count": 139
         },
         {
-          "id": 82,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 525
         },
         {
-          "id": 79,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 258
         },
         {
-          "id": 75,
+          "id": 77,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +110,7 @@
           "word_count": 183
         },
         {
-          "id": 61,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 62,
+          "id": 63,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 63,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 120,
+          "id": 121,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 121,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "CANDI: Contextual Alignment for Niche Domains Question Answering",
-          "link": "https://arxiv.org/abs/2607.11891",
-          "content": "arXiv:2607.11891v1 Announce Type: new Abstract: The deployment of large language models (LLMs) in specialized domains like medical diagnostics and financial advisory necessitates evaluating capabilities beyond general knowledge. Traditional question-answering benchmarks often fail to capture the nuanced contextual grounding, user awareness, and domain understanding these fields require. To address this, we introduce CANDI-QA (Contextual Alignment for Niche Domains Question Answering), a novel dataset evaluating LLMs on delivering accurate, context-sensitive, and user-aligned answers in specialized settings. CANDI-QA features expert-curated question-answer pairs structured into two categories: (1) Information Assistance Questions, which are direct, factual queries requiring precise extraction, and (2) Applied Inference Questions, which are multi-hop reasoning tasks needing situational inference to generate actionable insights. We evaluate over ten diverse language models, from compact open-source to state-of-the-art proprietary systems. As a robust baseline, we present MTSS-Net, a lightweight neuro-symbolic framework combining neural retrieval with rule-based reasoning. Our findings",
-          "pub_date": "Wed, 15 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1074,
-      "total_valid": 810,
+      "total_raw": 1072,
+      "total_valid": 812,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1114,
+          "id": 1111,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1144,
+          "id": 1141,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 351
         },
         {
-          "id": 1275,
+          "id": 1271,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 337
         },
         {
-          "id": 1124,
+          "id": 1121,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 279
         },
         {
-          "id": 1276,
+          "id": 1272,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 251
         },
         {
-          "id": 1238,
+          "id": 1234,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 212
         },
         {
-          "id": 1269,
+          "id": 1265,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 189
         },
         {
-          "id": 1263,
+          "id": 1259,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 185
         },
         {
-          "id": 1468,
+          "id": 1457,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 65
         },
         {
-          "id": 1469,
+          "id": 1458,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 65
         },
         {
-          "id": 1472,
+          "id": 1461,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 65
         },
         {
-          "id": 1455,
+          "id": 1444,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 332
         },
         {
-          "id": 1394,
+          "id": 1383,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 308
         },
         {
-          "id": 1454,
+          "id": 1443,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 275
         },
         {
-          "id": 1083,
+          "id": 1081,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 467,
-      "total_valid": 323,
+      "total_raw": 458,
+      "total_valid": 316,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1592,
+          "id": 1581,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 176
         },
         {
-          "id": 1599,
+          "id": 1588,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 175
         },
         {
-          "id": 1576,
+          "id": 1565,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 169
         },
         {
-          "id": 1639,
+          "id": 1618,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 455
         },
         {
-          "id": 1547,
+          "id": 1536,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 329
         },
         {
-          "id": 1609,
+          "id": 1598,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1610,
+          "id": 1599,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1611,
+          "id": 1600,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -559,14 +559,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 132,
-      "total_valid": 27,
+      "total_raw": 122,
+      "total_valid": 23,
       "total_candidates": 8
     },
     "cross": {
       "candidates": [
         {
-          "id": 1136,
+          "id": 1133,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 401
         },
         {
-          "id": 1140,
+          "id": 1137,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 397
         },
         {
-          "id": 1547,
+          "id": 1536,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 329
         },
         {
-          "id": 1138,
+          "id": 1135,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 317
         },
         {
-          "id": 1674,
+          "id": 1653,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 299
         },
         {
-          "id": 1235,
+          "id": 1231,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 192
         },
         {
-          "id": 1471,
+          "id": 1460,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 65
         },
         {
-          "id": 1431,
+          "id": 1420,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 157
         },
         {
-          "id": 1083,
+          "id": 1081,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -701,7 +701,7 @@
           "word_count": 240
         },
         {
-          "id": 1079,
+          "id": 1077,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 44,
-      "total_valid": 37,
+      "total_raw": 42,
+      "total_valid": 35,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1710,
+          "id": 1689,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 492
         },
         {
-          "id": 1732,
+          "id": 1711,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 492
         },
         {
-          "id": 1723,
+          "id": 1702,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 371
         },
         {
-          "id": 1722,
+          "id": 1701,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 334
         },
         {
-          "id": 1725,
+          "id": 1704,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 314
         },
         {
-          "id": 1724,
+          "id": 1703,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 295
         },
         {
-          "id": 1699,
+          "id": 1678,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 266
         },
         {
-          "id": 1703,
+          "id": 1682,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 203
         },
         {
-          "id": 1706,
+          "id": 1685,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 188
         },
         {
-          "id": 1689,
+          "id": 1668,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 176
         },
         {
-          "id": 1705,
+          "id": 1684,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,13 +904,13 @@
           "word_count": 176
         },
         {
-          "id": 1682,
+          "id": 1661,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "How PayPal may benefit Stripe",
-          "link": "https://www.paymentsdive.com/news/how-paypal-may-benefit-stripe/825309/",
+          "title": "How a PayPal may benefit Stripe",
+          "link": "https://www.paymentsdive.com/news/how-a-paypal-may-benefit-stripe/825309/",
           "content": "The digital payments startup has reportedly made a bid for a stake in its older predecessor, potentially creating a massive processor.",
           "pub_date": "Wed, 15 Jul 2026 10:56:00 -0400",
           "is_duplicate": false,
@@ -919,7 +919,7 @@
           "word_count": 134
         },
         {
-          "id": 1683,
+          "id": 1662,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 130
         },
         {
-          "id": 401,
+          "id": 402,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 439,
+          "id": 440,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 584,
+          "id": 585,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 857,
+          "id": 858,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 859,
+          "id": 860,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 170,
+          "id": 171,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1199
         },
         {
-          "id": 339,
+          "id": 340,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1050,9 +1050,9 @@
     }
   },
   "meta": {
-    "total_raw": 1894,
-    "dup": 317,
-    "nocontent": 380,
+    "total_raw": 1873,
+    "dup": 307,
+    "nocontent": 378,
     "noise": 0
   }
 }
