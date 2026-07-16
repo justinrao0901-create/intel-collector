@@ -115,10 +115,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
-          "link": "https://arxiv.org/abs/2607.08046",
-          "content": "Large language models fine-tuned for forecasting can be accurate yet poorly calibrated, and their chain-of-thought (CoT) reasoning may not faithfully reflect the evidence behind a forecast. We ask whether internal representations offer a more direct window into both. Working with Eternis-Forecaster 8B on OpenForesight, we train representation-pooling probes on intermediate activations and find they achieve substantially better calibration; a result that also holds for GLM-4.7-Flash and GLM-4.5-Air. We then assess CoT faithfulness through evidence ablation and diversionary injection: removing an influential source in the prompt often changes the model's forecast while leaving the reasoning trace untouched. The same probes function as lie detectors: their activations track behavioral shifts far better than the reasoning trace does, and they also predict the direction of change in 84% of cases, including when the CoT conceals the perturbation's influence. Finally, forced answering reveals that forecasts are largely fixed before reasoning begins: a single pre-reasoning pass recovers the committed answer and confidence, and routing questions by the spread of this pre-set answer distribu",
-          "pub_date": "2026-07-08T20:00:00.000Z",
+          "title": "Are LLMs Ready for Scientific Discovery? A Capability-Oriented Benchmark for AI Scientists",
+          "link": "https://arxiv.org/abs/2607.11079",
+          "content": "Existing benchmarks for scientific data analysis evaluate LLMs primarily on code execution or workflow completion, overlooking that scientific analysis serves to support distinct types of scientific claims: hypothesis exploration, statistical inference, mechanistic explanation, each with different assumptions and validity criteria. We introduce SDABench, a benchmark that reorganizes evaluation around six capabilities (descriptive, exploratory, inferential, predictive, causal, and mechanistic) across five domains (Biology, Chemistry, Environment, Geography, Physics). SDABench comprises 527 real-data instances (SDA-Real) and 6000 synthetic instances (SDA-Synth), each in both multiple-choice and open-ended formats, constructed through an automated pipeline. Evaluating 15 representative LLMs, we find that models handle descriptive analysis well but degrade sharply on tasks requiring assumption selection, latent-process modeling, or mechanistic reasoning. SDABench further provides a five-stage error analysis framework that locates where LLMs fail: more advanced models more reliably identify the relevant scope and variables, but still struggle to select appropriate analytical procedures,",
+          "pub_date": "2026-07-12T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,24 +130,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding",
-          "link": "https://arxiv.org/abs/2607.10400",
-          "content": "Vision language models (VLMs) have achieved strong performance on visual document understanding benchmarks such as DocVQA, ChartQA, and MMLongBench-Doc. However, real-world documents combine multiple factors such as length, layout complexity, modality, and question difficulty, which makes it difficult to attribute model failures to specific causes. We introduce SynthDocBench, a fully synthetic benchmark for long-context visual document understanding that systematically controls factors including document length, layout structure, modality composition, and question type. The benchmark is constructed using a combinatorial design, each factor is varied independently across generated documents, enabling controlled analysis of model behavior. Documents are generated end to end using an LLM pipeline across six layout archetypes, with a 40 percent random override to prevent models from exploiting spurious correlations. Additionally, SynthDocBench spans long-context documents with substantially greater length and structural diversity than existing benchmarks. Evaluating seven frontier VLMs, we uncover three failure modes that existing benchmarks cannot surface: sharp degradation with docum",
-          "pub_date": "2026-07-10T20:00:00.000Z",
+          "title": "Navigating the Mirage: A Dual-Path Agentic Framework for Robust Misleading Chart Question Answering",
+          "link": "https://arxiv.org/abs/2603.28583",
+          "content": "Despite the success of Vision-Language Models (VLMs), misleading charts remain a significant challenge due to their deceptive visual structures and distorted data representations. We present ChartCynics, an agentic dual-path framework designed to unmask visual deception via a \"skeptical\" reasoning paradigm. Unlike holistic models, ChartCynics decouples perception from verification: a Diagnostic Vision Path captures structural anomalies (e.g., inverted axes) through strategic ROI cropping, while an OCR-Driven Data Path ensures numerical grounding. To resolve cross-modal conflicts, we introduce an Agentic Summarizer optimized via a two-stage protocol: Oracle-Informed SFT for reasoning distillation and Deception-Aware GRPO for adversarial alignment. This pipeline effectively penalizes visual traps and enforces logical consistency. Evaluations on two benchmarks show that ChartCynics achieves 74.43% and 64.55% accuracy, providing an absolute performance boost of ~29% over the Qwen3-VL-8B backbone, outperforming state-of-the-art proprietary models. Our results demonstrate that specialized agentic workflows can grant smaller open-source models superior robustness, establishing a new found",
+          "pub_date": "2026-07-13T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 64,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation",
-          "link": "https://arxiv.org/abs/2607.05382",
-          "content": "Visual generators excel at rendering, but they confidently fabricate what they do not know. User requests are unbounded, evolving, and deeply long-tailed: new characters, trending entities, post-cutoff events, and more. This world-knowledge bottleneck is structural: generators are trained on fixed corpora, but the visual world is open-ended. We construct SearchGen-20K and SearchGen-Bench, with 20,839 prompts spanning twelve failure categories and twenty-two domains, paired with a pre-executed multimodal SearchGen-Corpus-1M to support offline, reproducible research. On SearchGen-Bench, frontier open generators score only 21 to 28 out of 100, a 40-point collapse invisible to existing benchmarks. The natural remedy is to employ search tools, enabling agentic visual generation. However, we find that naive search fails: it retrieves indiscriminately, injecting noise into prompts the generator already handles. We trace the root cause to a generator-specific, evolving knowledge boundary: the divide between what a generator can internalize through training and what must remain in external context. Although this boundary is hard to specify in advance, we show that it is discoverable through",
+          "title": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
+          "link": "https://arxiv.org/abs/2607.08046",
+          "content": "Large language models fine-tuned for forecasting can be accurate yet poorly calibrated, and their chain-of-thought (CoT) reasoning may not faithfully reflect the evidence behind a forecast. We ask whether internal representations offer a more direct window into both. Working with Eternis-Forecaster 8B on OpenForesight, we train representation-pooling probes on intermediate activations and find they achieve substantially better calibration; a result that also holds for GLM-4.7-Flash and GLM-4.5-Air. We then assess CoT faithfulness through evidence ablation and diversionary injection: removing an influential source in the prompt often changes the model's forecast while leaving the reasoning trace untouched. The same probes function as lie detectors: their activations track behavioral shifts far better than the reasoning trace does, and they also predict the direction of change in 84% of cases, including when the CoT conceals the perturbation's influence. Finally, forced answering reveals that forecasts are largely fixed before reasoning begins: a single pre-reasoning pass recovers the committed answer and confidence, and routing questions by the spread of this pre-set answer distribu",
           "pub_date": "2026-07-08T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 959,
+          "id": 961,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,19 +170,19 @@
           "word_count": 1200
         },
         {
-          "id": 121,
-          "source": "arXiv cs.CL",
+          "id": 959,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Scaling Point-in-Time Language Models",
-          "link": "https://arxiv.org/abs/2607.11889",
-          "content": "arXiv:2607.11889v1 Announce Type: new Abstract: Large language models trained on unrestricted internet corpora inevitably embed information from the future, introducing lookahead bias that compromises the validity of backtests and causal inference in finance and the social sciences. Point-in-time language models--trained exclusively on text available up to each calendar date--eliminate this leakage by construction, but existing efforts typically produce models that lag substantially behind their unconstrained counterparts. We show that this performance gap can be substantially narrowed through scale. Training decoder-only transformers with up to 4 billion parameters on 1 trillion chronologically filtered tokens from FineWeb, we construct a sequence of monthly model checkpoints spanning 2013-2024. Across a range of common-sense reasoning and language understanding benchmarks, our models approach the performance of leading open-weight models of comparable size (e.g., Gemma-3-4B and LLaMA-7B) trained on temporally unrestricted data, although a performance gap remains on several tasks. Instruction fine-tuning via LoRA further improves downstream usability. We release the complete pipel",
-          "pub_date": "Wed, 15 Jul 2026 00:00:00 -0400",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Mermaid to Unicode box art (grok-mermaid)",
+          "link": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+          "content": "Tool: Mermaid to Unicode box art (grok-mermaid) While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust. I figured it would be fun to try that out in a browser via WebAssembly. Here's the prompt I ran in Claude Code for web (Fable 5), and this is what the resulting tool looks like: Tags: tools , rust , webassembly , mermaid , grok , xai",
+          "pub_date": "2026-07-16T00:33:18+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 483
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1072,
-      "total_valid": 812,
+      "total_raw": 1074,
+      "total_valid": 814,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1111,
+          "id": 1113,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1141,
+          "id": 1143,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 351
         },
         {
-          "id": 1271,
+          "id": 1273,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 337
         },
         {
-          "id": 1121,
+          "id": 1123,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 279
         },
         {
-          "id": 1272,
+          "id": 1274,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 251
         },
         {
-          "id": 1234,
+          "id": 1236,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 212
         },
         {
-          "id": 1265,
+          "id": 1267,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 189
         },
         {
-          "id": 1259,
+          "id": 1261,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 185
         },
         {
-          "id": 1457,
+          "id": 1460,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 65
         },
         {
-          "id": 1458,
+          "id": 1461,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 65
         },
         {
-          "id": 1461,
+          "id": 1464,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 65
         },
         {
-          "id": 1444,
+          "id": 1447,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 332
         },
         {
-          "id": 1383,
+          "id": 1386,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 308
         },
         {
-          "id": 1443,
+          "id": 1446,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 275
         },
         {
-          "id": 1081,
+          "id": 1083,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 458,
-      "total_valid": 316,
+      "total_raw": 459,
+      "total_valid": 317,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1581,
+          "id": 1584,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 176
         },
         {
-          "id": 1588,
+          "id": 1591,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 175
         },
         {
-          "id": 1565,
+          "id": 1568,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 169
         },
         {
-          "id": 1618,
+          "id": 1621,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 455
         },
         {
-          "id": 1536,
+          "id": 1539,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 329
         },
         {
-          "id": 1598,
+          "id": 1601,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1599,
+          "id": 1602,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1600,
+          "id": 1603,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1133,
+          "id": 1135,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 401
         },
         {
-          "id": 1137,
+          "id": 1139,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 397
         },
         {
-          "id": 1536,
+          "id": 1539,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 329
         },
         {
-          "id": 1135,
+          "id": 1137,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 317
         },
         {
-          "id": 1653,
+          "id": 1656,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 299
         },
         {
-          "id": 1231,
+          "id": 1233,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 192
         },
         {
-          "id": 1460,
+          "id": 1463,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 65
         },
         {
-          "id": 1420,
+          "id": 1423,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 157
         },
         {
-          "id": 1081,
+          "id": 1083,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -701,7 +701,7 @@
           "word_count": 240
         },
         {
-          "id": 1077,
+          "id": 1079,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1689,
+          "id": 1692,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 492
         },
         {
-          "id": 1711,
+          "id": 1712,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 492
         },
         {
-          "id": 1702,
+          "id": 1705,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 371
         },
         {
-          "id": 1701,
+          "id": 1704,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 334
         },
         {
-          "id": 1704,
+          "id": 1707,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 314
         },
         {
-          "id": 1703,
+          "id": 1706,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 295
         },
         {
-          "id": 1678,
+          "id": 1681,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 266
         },
         {
-          "id": 1682,
+          "id": 1685,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 203
         },
         {
-          "id": 1685,
+          "id": 1688,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 188
         },
         {
-          "id": 1668,
+          "id": 1671,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 176
         },
         {
-          "id": 1684,
+          "id": 1687,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,13 +904,13 @@
           "word_count": 176
         },
         {
-          "id": 1661,
+          "id": 1664,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "How a PayPal may benefit Stripe",
-          "link": "https://www.paymentsdive.com/news/how-a-paypal-may-benefit-stripe/825309/",
+          "title": "How PayPal may benefit Stripe",
+          "link": "https://www.paymentsdive.com/news/how-paypal-may-benefit-stripe/825309/",
           "content": "The digital payments startup has reportedly made a bid for a stake in its older predecessor, potentially creating a massive processor.",
           "pub_date": "Wed, 15 Jul 2026 10:56:00 -0400",
           "is_duplicate": false,
@@ -919,7 +919,7 @@
           "word_count": 134
         },
         {
-          "id": 1662,
+          "id": 1665,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1044,14 +1044,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 223,
+      "total_raw": 221,
       "total_valid": 46,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1873,
-    "dup": 307,
+    "total_raw": 1874,
+    "dup": 305,
     "nocontent": 378,
     "noise": 0
   }
