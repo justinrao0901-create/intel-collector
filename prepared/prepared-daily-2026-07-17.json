@@ -35,7 +35,7 @@
           "word_count": 144
         },
         {
-          "id": 34,
+          "id": 33,
           "source": "Google DeepMind",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 98
         },
         {
-          "id": 81,
+          "id": 80,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 274
         },
         {
-          "id": 79,
+          "id": 78,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 248
         },
         {
-          "id": 76,
+          "id": 75,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,15 +95,30 @@
           "word_count": 224
         },
         {
+          "id": 60,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "GRASP: GRanularity-Aware Search Policy for Agentic RAG",
+          "link": "https://arxiv.org/abs/2607.10463",
+          "content": "Agentic retrieval-augmented generation (RAG) extends static RAG by allowing language models to iteratively reason, generate search queries, retrieve evidence, and predict answers. However, it remains challenging for models to decide when to retrieve, whether to use lexical matching or semantic similarity, and how to control context granularity to prevent irrelevant tokens from interfering with agent reasoning. In this paper, we introduce GRASP, a reinforcement learning (RL) framework for training agents to adaptively coordinate complementary retrieval tools during multi-step reasoning. GRASP provides the agent with semantic search, keyword search, and paragraph-reading actions, enabling it to retrieve sentence-level evidence and expand further context only when needed. We train the policy with a reward that jointly accounts for answer accuracy, grounded reading, complementary search, and turn efficiency. Experiments on multi-hop reasoning benchmarks show that GRASP improves both retrieval recall and downstream question answering performance compared with single-step retrieval, prompting-based agentic RAG, and RL-based retrieval baselines. Qualitative and ablation analyses show that",
+          "pub_date": "2026-07-10T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 61,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Generative Compilation: On-the-Fly Compiler Feedback as AI Generates Code",
-          "link": "https://arxiv.org/abs/2607.13921",
-          "content": "Languages with rich static semantics, such as Rust, provide stronger guarantees for AI-generated code, but their strictness makes generation more difficult. Off-the-shelf compilers can provide useful feedback post-generation, but does not guide intermediate generation steps, such as those during autoregressive LLM decoding. Constrained decoding intervenes earlier by rejecting invalid tokens during sampling, but requires white-box model access and costly reimplementation for semantic constraints.We introduce generative compilation, the first approach to obtaining compiler feedback on partial programs during generation. The core technical device is a sealor: a lightweight, mostly syntax-guided transformation that converts partial programs into complete ones that standard compilers can diagnose. It is designed such that possible-to-complete partial programs are never rejected, while preserving enough code context to catch genuine dead ends early. We construct such a sealor on a core Rust-like calculus and prove that it satisfies these properties, all mechanized in Lean. We extend it to the first partial-program checker for real Rust. We evaluate our method on challenging repository-le",
-          "pub_date": "2026-07-14T20:00:00.000Z",
+          "title": "Spectral Rewiring for Exploration, Purification, and Model Merging",
+          "link": "https://arxiv.org/abs/2607.03065",
+          "content": "Reinforcement learning has become a standard post-training recipe for large language models, but dense full-parameter updates create two deployment-relevant bottlenecks: suppressed reasoning performance, often reflected by premature saturation of test-time scaling, and interference when consolidating multiple capabilities through multi-domain training or model merging. We show that the reasoning-effective component of these updates is largely concentrated in the base model's spectral space, motivating Subspace-Aligned Rewiring (SAR), a post-hoc editing method that retains this spectral core while removing orthogonal components. SAR therefore preserves reasoning gains and filters residual update directions that suppress performance or amplify cross-domain interference. Across several model families and scales, SAR extracts compact reasoning cores using as little as approximately 0.58% of total parameters: it preserves over 99% of post-training performance and improves high-k exploration in mathematical reasoning, and generalizes to agentic coding by improving six of seven open benchmarks on an in-house model. SAR also purifies mixed-domain training updates by releasing suppressed co",
+          "pub_date": "2026-07-02T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -115,39 +130,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Length Penalties Make Chain-of-Thought Less Monitorable",
-          "link": "https://arxiv.org/abs/2607.09786",
-          "content": "Length-penalized reinforcement learning can shorten chain-of-thought reasoning while hiding an influence that drives the model's answer. In our experiments, training with length penalties does not stop misleading hints from steering models, even though the models' chains of thought mention the hint much less often. A token-accuracy evaluation would count these runs as successful because they use fewer reasoning tokens with little accuracy loss; it would miss whether the remaining trace still shows what drove the answer. We train Qwen3-4B and Qwen3-14B variants with different target chain lengths, then evaluate them with biasing-hint interventions on held-out MMLU-Pro-R and four transfer benchmarks. Compression sharply cuts reasoning tokens, preserves most multiple-choice accuracy, and leaves hint influence near baseline. At the strongest target, lower-bound faithfulness falls to 63.1% of baseline for Qwen3-14B and 69.4% for Qwen3-4B; the raw rate at which a monitor catches hint use falls from 69% to 49% and from 60% to 48%. To separate length from content, we randomly delete sentences from uncompressed baseline chains until the remaining text matches the compressed length. Even aft",
-          "pub_date": "2026-07-07T20:00:00.000Z",
+          "title": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+          "link": "https://arxiv.org/abs/2607.15277",
+          "content": "In-context learning is commonly interpreted as a form of conditional inference, in which the prompt specifies a context and the model's output is treated as an estimate of the corresponding conditional distribution. If this interpretation holds, then LLM estimates should satisfy basic probabilistic identities. In particular, the law of total probability asserts that prior-weighted conditional distributions aggregate into population-level marginals over any valid partition of the population. In this work, we investigate to what extent LLM estimates adhere to this self-consistency principle. We use binary trees as an evaluation scaffold to recursively partition a population into increasingly fine-grained subpopulations. We then prompt LLMs with verbalized subpopulation descriptions in context, aggregate the resulting estimates back into population-level estimates, and compare them across partitions of varying granularity. Applying this protocol across problem domains and state-of-the-art frontier models, we show widespread violations of basic consistency properties. An in-depth study of persona prompting reveals a pattern we call the macro fallacy: estimates reconstructed from more f",
+          "pub_date": "2026-07-15T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 64,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence",
-          "link": "https://arxiv.org/abs/2607.12477",
-          "content": "Autonomous UAV systems increasingly rely on multimodal large language models (MLLMs) to operate in complex real-world environments. Such embodied scenarios require not only understanding the surrounding space but also maintaining a coherent representation of the agent itself. However, existing UAV-oriented approaches and benchmarks remain largely environment-centric, primarily focusing on spatial understanding tasks, with the agent's self-awareness remaining implicit. To address this gap, we introduce SIS-Bench, a benchmark for evaluating embodied spatial intelligence in UAV scenarios under a unified self-in-space formulation. SIS-Bench organizes evaluation along two complementary dimensions, space and self, and a three-level hierarchy of perception, memory, and reasoning. It contains 4,856 question--answer pairs across 13 tasks derived from 1,646 real-world UAV videos through a task-conditioned construction pipeline with expert verification.Extensive evaluations reveal that current MLLMs exhibit fundamental limitations in modeling dynamic and agent-centered processes. In particular, we observe a clear imbalance between spatial cognition and self-awareness, as well as a progressive",
-          "pub_date": "2026-07-13T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 693,
+          "id": 715,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
           "title": "Firefox in WebAssembly",
           "link": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
-          "content": "Firefox in WebAssembly This is absurdly cool: Puter compiled Firefox to WebAssembly such that the whole browser runs in another browser. Here's my blog, running in Firefox, running in WebAssembly, running in Chrome: They chose Firefox/Gecko because it has strong single-process support. The project took an estimated $25,000 of Claude Opus and Fable tokens, taking advantage of a Claude Max subscription plan. The demo funnels all traffic over a WebSocket protocol (using the Wisp protocol ) through Puter's server - a requirement to get this kind of thing to work because code running in browsers can't open arbitrary network connections. (That proxying sounds expensive! The team had to scale the servers up to handle the traffic during the Hacker News conversation about the project.) Puter claim this supports end-to-end encryption and that looks to be true - I inspected the WebSocket messages and traffic to my own HTTPS site was encrypted whereas requests and responses to http://www.example.com/ were in cleartext. Here's the repo for firefox-wasm . theogbob/WebkitWasm is a similar project that compiles WebKit to WASM, but that one doesn't currently have an accessible online demo. Via Hack",
+          "content": "Firefox in WebAssembly This is absurdly cool: Puter compiled Firefox to WebAssembly such that the whole browser runs in another browser. Here's my blog, running in Firefox, running in WebAssembly, running in Chrome: They chose Firefox/Gecko because it has strong single-process support. The project used an estimated $25,000 worth of Claude Opus and Fable tokens, but took advantage of a Claude Max subscription plan so cost much less in actual dollars. The demo funnels all traffic over a WebSocket protocol (using the Wisp protocol ) through Puter's server - a requirement to get this kind of thing to work because code running in browsers can't open arbitrary network connections. (That proxying sounds expensive! The team had to scale the servers up to handle the traffic during the Hacker News conversation about the project.) Puter claim this supports end-to-end encryption and that looks to be true - I inspected the WebSocket messages and traffic to my own HTTPS site was encrypted whereas requests and responses to http://www.example.com/ were in cleartext. Here's the repo for firefox-wasm . theogbob/WebkitWasm is a similar project that compiles WebKit to WASM, but that one doesn't curren",
           "pub_date": "2026-07-16T23:34:16+00:00",
           "is_duplicate": false,
           "has_content": true,
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 694,
+          "id": 716,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 696,
+          "id": 718,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 810,
-      "total_valid": 469,
+      "total_raw": 831,
+      "total_valid": 598,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 944,
+          "id": 958,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 411
         },
         {
-          "id": 1041,
+          "id": 1055,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 411
         },
         {
-          "id": 952,
+          "id": 966,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 266
         },
         {
-          "id": 1229,
+          "id": 1249,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 253
         },
         {
-          "id": 1039,
+          "id": 1053,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 243
         },
         {
-          "id": 854,
+          "id": 868,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 193
         },
         {
-          "id": 1024,
+          "id": 1038,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 116
         },
         {
-          "id": 1149,
+          "id": 1169,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 308
         },
         {
-          "id": 1142,
+          "id": 1162,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 283
         },
         {
-          "id": 1162,
+          "id": 1182,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 266
         },
         {
-          "id": 845,
+          "id": 859,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 1200
         },
         {
-          "id": 813,
+          "id": 834,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,22 +377,7 @@
           "word_count": 233
         },
         {
-          "id": 820,
-          "source": "Endpoints News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Senate committee questions CDC pick on political interference over vaccines",
-          "link": "https://endpoints.news/senate-committee-questions-cdc-pick-on-political-interference-over-vaccines/",
-          "content": "Lawmakers in the Senate pressed the Trump administration’s nominee for CDC director on whether she will cave to political pressure during a confirmation hearing on Wednesday. The CDC has been without permanent leadership for most ...",
-          "pub_date": "Wed, 15 Jul 2026 18:46:12 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 233
-        },
-        {
-          "id": 816,
+          "id": 837,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +392,7 @@
           "word_count": 224
         },
         {
-          "id": 1276,
+          "id": 1289,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 184
+        },
+        {
+          "id": 841,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Predicting biotech clinical trials and a new Alzheimer’s drug controversy",
+          "link": "https://www.statnews.com/2026/07/16/readout-loud-podcast-predicting-clinical-trials-biogen-alzheimers-tau/?utm_campaign=rss",
+          "content": "This week on \"The Readout LOUD\" podcast: a new Alzheimer's drug controversy and prediction markets for clinical trials and FDA drug reviews. Listen now.",
+          "pub_date": "Thu, 16 Jul 2026 20:06:43 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 152
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 497,
-      "total_valid": 346,
+      "total_raw": 489,
+      "total_valid": 339,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1377,
+          "id": 1390,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 356
         },
         {
-          "id": 1356,
+          "id": 1369,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 167
         },
         {
-          "id": 1350,
+          "id": 1363,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 166
         },
         {
-          "id": 1326,
+          "id": 1339,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,37 @@
           "word_count": 161
         },
         {
-          "id": 1376,
+          "id": 1412,
+          "source": "Nucleic Acids Research",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Characterizing RNA 3D structural features from DMS reactivity",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag672/8736262?rss=1",
+          "content": "Abstract Dimethyl sulfate (DMS) chemical mapping probes RNA structure, where low reactivity is generally interpreted as Watson–Crick (WC) base pairs and high reactivity as unpaired nucleotides. Studies examining DMS reactivity of RNAs with known 3D structures have identified nucleotides that deviate from this interpretation with distinct solvent accessibility and hydrogen bonding patterns. Understanding the frequency of these outliers and their recurring 3D structural features remains incomplete. To address this, we systematically analyzed DMS reactivity across a library of 7500 RNA constructs containing two-way junctions with known 3D structures. DMS reactivity exists on a continuum over four orders of magnitude, with ∼10% overlap between WC and non-WC nucleotides. Non-WC bases with WC-like protection exhibit increased hydrogen bonding and decreased solvent accessibility, whereas reactive WC pairs tend to flank junctions, correlating with weaker base stacking and greater junction dynamics. Reactivity in noncanonical pairs correlates with specific atomic distances, allowing discrimination among base-pair conformations. These underlying reactivity–distance correlations are independe",
+          "pub_date": "Fri, 17 Jul 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1411,
+          "source": "Nucleic Acids Research",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Exploitation of host U2AF1 and U2AF2 splicing factors facilitates mosquito-borne orthoflavivirus infection across species",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag713/8736263?rss=1",
+          "content": "Abstract To identify novel host factors essential for orthoflavivirus replication, we performed proteomic profiling of endoplasmic reticulum fractions isolated from cells infected with Dengue virus or Zika virus (ZIKV). Among the enriched proteins, the splicing factor U2AF2 and its heterodimeric partner U2AF1 were found to be critical for efficient viral infection, functioning at the viral protein synthesis stage. The arginine/serine-rich (RS) domain and the first zinc knuckle (Zn1) of U2AF1, as well as nearly all domains except the RS domain of U2AF2, were essential for their proviral function. Disruption of the U2AF1–U2AF2 interaction potently suppressed ZIKV infection. U2AF1 and U2AF2 partially localize to the cytoplasm, and notably, the cytoplasmic U2AF2 was predominantly a truncated form that was sufficient to support viral replication. Both U2AF1 and U2AF2 bind to viral RNA, with U2AF1 binding being dependent on U2AF2. Interestingly, trans -complementation of the Aedes aegypti homolog u2af38 into U2AF1-knockout cells restored ZIKV replication, whereas expressing u2af50 in U2AF2-knockdown cells did not. However, knockdown of either u2af38 or u2af50 significantly inhibited the",
+          "pub_date": "Fri, 17 Jul 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 1389,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +539,7 @@
           "word_count": 255
         },
         {
-          "id": 1383,
+          "id": 1396,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1379,
+          "id": 1392,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +569,7 @@
           "word_count": 1199
         },
         {
-          "id": 1387,
+          "id": 1400,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -559,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 117,
-      "total_valid": 17,
-      "total_candidates": 8
+      "total_raw": 100,
+      "total_valid": 19,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 926,
+          "id": 940,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +611,7 @@
           "word_count": 542
         },
         {
-          "id": 863,
+          "id": 877,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +626,7 @@
           "word_count": 293
         },
         {
-          "id": 861,
+          "id": 875,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +641,7 @@
           "word_count": 292
         },
         {
-          "id": 872,
+          "id": 886,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +656,7 @@
           "word_count": 245
         },
         {
-          "id": 978,
+          "id": 992,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +671,7 @@
           "word_count": 58
         },
         {
-          "id": 979,
+          "id": 993,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +686,7 @@
           "word_count": 58
         },
         {
-          "id": 991,
+          "id": 1005,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -671,22 +701,7 @@
           "word_count": 58
         },
         {
-          "id": 823,
-          "source": "Endpoints News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Radiopharma maker AdvanCell hauls in $315M for Pluvicto challenger",
-          "link": "https://endpoints.news/radiopharma-maker-advancell-hauls-in-315m-for-pluvicto-challenger/",
-          "content": "AdvanCell raised a $315 million Series D to study a lead-based prostate cancer agent and shore up its US manufacturing of the radioactive treatment. The round marks one of the largest yet for a radiopharmaceutical ...",
-          "pub_date": "Wed, 15 Jul 2026 15:25:34 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 217
-        },
-        {
-          "id": 832,
+          "id": 847,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -701,7 +716,7 @@
           "word_count": 138
         },
         {
-          "id": 835,
+          "id": 850,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -714,6 +729,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 138
+        },
+        {
+          "id": 854,
+          "source": "STAT News",
+          "section": "cross",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: CMS signals intent to revamp how it pays for clinical software and AI",
+          "link": "https://www.statnews.com/2026/07/16/cms-to-revamp-payments-for-clinical-software-ai/?utm_campaign=rss",
+          "content": "CMS wants to build a standardized payment structure for clinical software and AI that factors in their impact on patient outcomes.",
+          "pub_date": "Thu, 16 Jul 2026 08:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 130
         }
       ],
       "quota": {
@@ -721,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 36,
-      "total_valid": 28,
+      "total_raw": 40,
+      "total_valid": 32,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1473,
+          "id": 1467,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,22 +784,7 @@
           "word_count": 689
         },
         {
-          "id": 1442,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "BitPay Obtains EU Crypto License Under MiCA Regulations",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/bitpay-obtains-eu-crypto-license-under-mica-regulations/",
-          "content": "Cryptocurrency payment processor BitPay has received authorization to operate across the European Union under the bloc’s landmark Markets in Crypto-Assets (MiCA) regulation, the company announced Thursday (July 16). The approval, granted by the Dutch Authority for the Financial Markets (AFM), designates the firm’s European subsidiary, BitPay B.V., as an authorized crypto-asset service provider (CASP). The [&#8230;] The post BitPay Obtains EU Crypto License Under MiCA Regulations appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 16 Jul 2026 20:28:38 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 514
-        },
-        {
-          "id": 1440,
+          "id": 1438,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 474
         },
         {
-          "id": 1487,
+          "id": 1481,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 373
         },
         {
-          "id": 1488,
+          "id": 1482,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 343
         },
         {
-          "id": 1489,
+          "id": 1483,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 317
         },
         {
-          "id": 1465,
+          "id": 1459,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 270
         },
         {
-          "id": 1468,
+          "id": 1462,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 243
         },
         {
-          "id": 1463,
+          "id": 1457,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 236
         },
         {
-          "id": 1461,
+          "id": 1455,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 220
         },
         {
-          "id": 1469,
+          "id": 1463,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 201
         },
         {
-          "id": 1445,
+          "id": 1441,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 139
         },
         {
-          "id": 1444,
+          "id": 1440,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 126
         },
         {
-          "id": 696,
+          "id": 718,
           "source": "Simon Willison",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 1495,
+          "id": 1489,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -964,7 +979,7 @@
           "word_count": 159
         },
         {
-          "id": 1494,
+          "id": 1488,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -979,7 +994,7 @@
           "word_count": 150
         },
         {
-          "id": 1497,
+          "id": 1491,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +1009,52 @@
           "word_count": 133
         },
         {
-          "id": 1437,
+          "id": 135,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak",
+          "link": "https://arxiv.org/abs/2607.14147",
+          "content": "arXiv:2607.14147v1 Announce Type: new Abstract: Aligned language models refuse harmful requests, but a one-line prefill (\"Sure, here is\") strips the refusal. We ask where and how it fails. The harm representation stays intact: on the prompts the attack flips to compliance, a linear probe reads harm as high as on the refused ones (0.91-0.98), while behavioral refusal drops to chance. This holds across four models and three families (1.5-3.8B, and at 14B). Refusal is therefore a shallow, response-site computation. We localize it to an early window: a dose-matched position control shows the first half of the response suffices to break refusal, while the second half is nearly inert. Three causal probes converge on that window. Restoring the harm direction there partially re-engages refusal. Injecting the model's own refuse-state reverses the jailbreak (74%, held-out). And knocking out the early response's attention to the prefill, but not an equal attention mass elsewhere, selectively collapses the harmful continuation. A base-model control identifies the mechanism: the same knockout collapses the continuation prefill-specifically even in a non-safety-tuned base model (64% to 25% harmf",
+          "pub_date": "Fri, 17 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 695,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Governing Generative AI Across Financial Institutions: A Framework for Generative AI Risk Control",
+          "link": "https://arxiv.org/abs/2607.04103",
+          "content": "arXiv:2607.04103v3 Announce Type: replace-cross Abstract: Generative artificial intelligence is moving from general-purpose experimentation toward specialized applications across banking, capital markets, insurance, payments, and wealth management. Its main contribution is not limited to conversational interfaces. Modern generative systems can synthesize large document collections, extract information from unstructured data, generate software and analytical code, create scenario narratives, support research workflows, and coordinate multi-step tasks. These capabilities make generative AI especially relevant to finance, where decisions often depend on combining quantitative data with contracts, policies,filings, news, customer communications, and expert judgment. This paper presents an application-oriented view of generative AI in finance. It organizes potential uses around five capability patterns, including knowledge synthesis, content generation, analytical assistance, interaction, and workflow orchestration, and maps them to major financia functions. Representative applications include investment research, customer service, lending support, fraud investigation, financial reporti",
+          "pub_date": "Fri, 17 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 203,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
+          "link": "https://arxiv.org/abs/2607.15253",
+          "content": "arXiv:2607.15253v1 Announce Type: cross Abstract: Retrieval systems are trained and evaluated on a static idea of usefulness: hand a document and a question to a reader model, see whether the answer improves, and score the document accordingly. The idea holds up when a document is read on its own. It breaks when a language model works as a search agent, issuing several queries and reasoning across turns, because a document can matter for what it lets the agent do next rather than for what it says about the current question. We measure that gap rather than argue it. Using a ReAct style agent over HotpotQA, we replay 1000 development questions and, for every document the agent read, delete it and re-run the rest of the trajectory from that point. Comparing the original run against its counterfactual gives a Counterfactual Trajectory Utility (CTU) score from three deltas: final answer quality, next query retrieval quality, and turn count. Crossing CTU against Static RAG Utility (SRU) over 23,322 document observations, the two are close to statistically independent (Spearman rho = -0.026). Roughly a third of the documents the agent reads are causally load bearing while looking useless",
+          "pub_date": "Fri, 17 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 1435,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1007,36 +1067,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 548
-        },
-        {
-          "id": 1436,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "1Password and Anthropic Bring Secure Credential Access to Claude",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/1password-and-anthropic-bring-secure-credential-access-to-claude/",
-          "content": "1Password has introduced a browser integration that lets Anthropic‘s Claude access stored credentials but doesn’t share those credentials with the model, its memory or Anthropic’s systems. The browser integration, 1Password for Claude, is designed to let users authorize Claude to complete tasks such as booking travel and managing accounts, while preventing the model from seeing the credentials as well as retaining [&#8230;] The post 1Password and Anthropic Bring Secure Credential Access to Claude appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 16 Jul 2026 22:44:12 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 532
-        },
-        {
-          "id": 1434,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "New Fed Report Says Community Banks Matter More as They Get Smaller",
-          "link": "https://www.pymnts.com/news/banking/2026/new-fed-report-says-community-banks-matter-more-as-they-get-smaller/",
-          "content": "While community banks have steadily lost market share by almost every conventional metric, they have simultaneously become more systemically important to the parts of the economy that cannot easily be standardized. Despite holding a fraction of U.S. banking assets, they remain the financial infrastructure for rural economies, agricultural borrowers and small businesses that national lenders [&#8230;] The post New Fed Report Says Community Banks Matter More as They Get Smaller appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 17 Jul 2026 00:02:35 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 511
         }
       ],
       "quota": {
@@ -1044,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 226,
-      "total_valid": 55,
+      "total_raw": 227,
+      "total_valid": 58,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1657,
-    "dup": 394,
-    "nocontent": 376,
+    "total_raw": 1651,
+    "dup": 263,
+    "nocontent": 377,
     "noise": 2
   }
 }
