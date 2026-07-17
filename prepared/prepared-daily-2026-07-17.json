@@ -287,6 +287,21 @@
           "word_count": 193
         },
         {
+          "id": 1233,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A19Δbpe275 emerges as a safer live attenuated vaccine candidate",
+          "link": "https://www.nature.com/articles/s41541-026-01522-9",
+          "content": "npj Vaccines, Published online: 16 July 2026; doi:10.1038/s41541-026-01522-9 A19Δbpe275 emerges as a safer live attenuated vaccine candidate",
+          "pub_date": "2026-07-16",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 140
+        },
+        {
           "id": 1038,
           "source": "JAMA",
           "section": "vaccine",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 184
-        },
-        {
-          "id": 841,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Predicting biotech clinical trials and a new Alzheimer’s drug controversy",
-          "link": "https://www.statnews.com/2026/07/16/readout-loud-podcast-predicting-clinical-trials-biogen-alzheimers-tau/?utm_campaign=rss",
-          "content": "This week on \"The Readout LOUD\" podcast: a new Alzheimer's drug controversy and prediction markets for clinical trials and FDA drug reviews. Listen now.",
-          "pub_date": "Thu, 16 Jul 2026 20:06:43 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 152
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 489,
-      "total_valid": 339,
+      "total_valid": 340,
       "total_candidates": 15
     },
     "synbio": {
@@ -1081,7 +1081,7 @@
   },
   "meta": {
     "total_raw": 1651,
-    "dup": 263,
+    "dup": 262,
     "nocontent": 377,
     "noise": 2
   }
