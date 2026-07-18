@@ -35,7 +35,7 @@
           "word_count": 115
         },
         {
-          "id": 82,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 486
         },
         {
-          "id": 84,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 486
         },
         {
-          "id": 83,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -85,6 +85,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
+          "title": "On Locality and Length Generalization in Visual Reasoning",
+          "link": "https://arxiv.org/abs/2607.09061",
+          "content": "A striking feature of the human visual system is that it ingests visual information through a series of local foveated glimpses, rather than a single global computation. This makes human vision distinctly different from most popular computer vision models in use today, which input images globally and in a single shot. A natural question therefore is whether local, sequential vision models may provide any fundamental computational benefits in addition to being biologically more plausible than global models. In this work, we investigate this question from the perspective of visual state tracking and length generalization. Inspired by recent studies of length generalization in language models, we study the behavior of vision models trained on simple vision tasks that require the aggregation of local information across an image. Our experiments reveal that, similar to language models, vision models can learn to exploit global shortcuts and thereby fail to generalize over task length or complexity. We also show that recurrent vision policies based on strictly local perception can mitigate these failures, thereby allowing models to generalize on these tasks. Our results show that local a",
+          "pub_date": "2026-07-09T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 63,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
           "title": "Rethinking the Evaluation of Harness Evolution for Agents",
           "link": "https://arxiv.org/abs/2607.12227",
           "content": "We revisit the evaluation of automatic harness evolution for LLM agents. Existing harness evolution methods use unit test cases to search for harness configurations and then report final performance on the same public benchmark. This protocol raises two fundamental concerns. First, harness evolution is itself an iterative search procedure that repeatedly evaluates and revises candidate harnesses using task feedback. As in agentic test-time scaling, it should therefore be compared with simple task-level search baselines under matched feedback and inference budgets to determine whether its gains arise from improved harness design or from additional search alone. Second, because the search and the final evaluation share the same benchmark, the reported gains risk overfitting to that specific task set. To address these concerns, we conduct an extensive evaluation comparing harness evolution with simple test-time scaling and discovery baselines under comparable feedback and inference budgets, and also evaluate evolved harnesses on held-out tasks to assess whether the discovered improvements generalize. Experiments on Terminal-Bench 2.1 with GPT-5.4 and Claude Opus 4.6 show that automati",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 64,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,22 +125,22 @@
           "word_count": 1200
         },
         {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
+          "id": 129,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
+          "tier": "T2",
           "priority": 5,
-          "title": "SUFLECA: Scaling Up Feature Learning for CAD-to-image Alignment",
-          "link": "https://arxiv.org/abs/2607.15058",
-          "content": "CAD-to-image alignment aims to estimate an object's 9D pose (rotation, translation, and anisotropic scale) from a single RGB image, enabling applications in robotics and augmented reality. Recent zero-shot methods use visual foundation models to match image regions to CAD models, yet typically their correspondences are appearance-driven and degrade under occlusion or sim-to-real domain shift. To address these limitations, we introduce SUFLECA (Scaling Up Feature LEarning for CAD Alignment), a weakly-supervised framework for zero-shot CAD alignment with two key contributions. First, SUFLECA scales up geometry-grounded feature learning from pretrained visual representations through Normalized Object Coordinates (NOCs) supervision on 674K images spanning 12 real and synthetic datasets, learning compact geometry-aware features that generalize across domains. Second, we propose a geometrically consistent matching algorithm that establishes reliable one-to-one CAD-to-image correspondences. Together, these contributions enable accurate, sub-second alignment per object instance without iterative pose refinement. On ScanNet25k, SUFLECA achieves 33.4%/42.3% category/instance accuracy, outper",
-          "pub_date": "2026-07-15T20:00:00.000Z",
+          "title": "Claude make Fable 5 permanent",
+          "link": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
+          "content": "Claude make Fable 5 permanent An update from the @claudeai account on Twitter: Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits. Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit. As I was saying last week , the competition from GPT-5.6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make it available exclusively through API pricing. Why pay $100 or $200/month for a subscription plan that doesn't include Anthropic's best model? Their original plan was driven by concerns over compute capacity. I wonder if they'll have to dial back their training efforts in order to make more GPUs available to help serve the model. A lot of people were losing sleep over trying to make the most of Fable 5 before subscriber access was withdrawn. It's nice not to have to worry about the Fablepocalypse any more. Tags: ai , generative-ai , llms , anthropic , claude , llm-pricing , claude-mythos-fable",
+          "pub_date": "2026-07-18T06:00:13+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 1100
         },
         {
-          "id": 730,
+          "id": 139,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +155,7 @@
           "word_count": 798
         },
         {
-          "id": 727,
+          "id": 136,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,22 +170,7 @@
           "word_count": 555
         },
         {
-          "id": 729,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Mermaid to ASCII art (mermaid-ascii)",
-          "link": "https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything",
-          "content": "Tool: Mermaid to ASCII art (mermaid-ascii) After building the Mermaid to ASCII tool based on Grok Build's Rust code I learned that there's an older, more fully-featured Go library called AlexanderGrooff/mermaid-ascii that implements a similar pattern, so I had Claude Fable 5 compile that one to WebAssembly as well so I could compare the two. This one includes support for colors! Tags: go , tools , webassembly , mermaid",
-          "pub_date": "2026-07-16T14:57:39+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 422
-        },
-        {
-          "id": 711,
+          "id": 118,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 840,
-      "total_valid": 594,
+      "total_raw": 249,
+      "total_valid": 45,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1291,
+          "id": 692,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 453
         },
         {
-          "id": 1288,
+          "id": 689,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,22 @@
           "word_count": 388
         },
         {
-          "id": 1158,
+          "id": 659,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Single-cell technologies in mRNA cancer vaccines",
+          "link": "https://www.nature.com/articles/s41541-026-01529-2",
+          "content": "npj Vaccines, Published online: 18 July 2026; doi:10.1038/s41541-026-01529-2 Single-cell technologies in mRNA cancer vaccines",
+          "pub_date": "2026-07-18",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 125
+        },
+        {
+          "id": 559,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +257,7 @@
           "word_count": 263
         },
         {
-          "id": 1169,
+          "id": 570,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +272,7 @@
           "word_count": 260
         },
         {
-          "id": 1219,
+          "id": 620,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 260
         },
         {
-          "id": 843,
+          "id": 252,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -287,7 +302,7 @@
           "word_count": 244
         },
         {
-          "id": 1316,
+          "id": 717,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -302,7 +317,7 @@
           "word_count": 218
         },
         {
-          "id": 855,
+          "id": 260,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +332,7 @@
           "word_count": 175
         },
         {
-          "id": 865,
+          "id": 270,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,22 +347,7 @@
           "word_count": 152
         },
         {
-          "id": 869,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "WHO: Uganda is silent on updates following disclosure of Marburg outbreak",
-          "link": "https://www.statnews.com/2026/07/16/world-health-organization-wants-marburg-virus-update-from-uganda/?utm_campaign=rss",
-          "content": "The government of Uganda has gone quiet on an outbreak of the deadly Marburg virus that it reported late last month, the WHO acknowledged.",
-          "pub_date": "Thu, 16 Jul 2026 16:22:07 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 138
-        },
-        {
-          "id": 1055,
+          "id": 454,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 1199
         },
         {
-          "id": 1061,
+          "id": 460,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 953
         },
         {
-          "id": 962,
+          "id": 361,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 787
         },
         {
-          "id": 966,
+          "id": 365,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 768
         },
         {
-          "id": 964,
+          "id": 363,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 509,
-      "total_valid": 349,
+      "total_raw": 501,
+      "total_valid": 344,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1383,
+          "id": 784,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 309
         },
         {
-          "id": 1390,
+          "id": 791,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 161
         },
         {
-          "id": 1399,
+          "id": 800,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 156
         },
         {
-          "id": 1451,
+          "id": 852,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 524
         },
         {
-          "id": 1420,
+          "id": 821,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 372
         },
         {
-          "id": 1421,
+          "id": 822,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 346
         },
         {
-          "id": 1425,
+          "id": 826,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1436,
+          "id": 837,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1451,
+          "id": 852,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 524
         },
         {
-          "id": 1455,
+          "id": 856,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 413
         },
         {
-          "id": 984,
+          "id": 383,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 410
         },
         {
-          "id": 1420,
+          "id": 821,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 372
         },
         {
-          "id": 1421,
+          "id": 822,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 346
         },
         {
-          "id": 1073,
+          "id": 472,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 253
         },
         {
-          "id": 885,
+          "id": 284,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 240
         },
         {
-          "id": 903,
+          "id": 302,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 227
         },
         {
-          "id": 926,
+          "id": 325,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 186
         },
         {
-          "id": 1316,
+          "id": 717,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1500,
+          "id": 891,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 572
         },
         {
-          "id": 1472,
+          "id": 873,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 543
         },
         {
-          "id": 1468,
+          "id": 869,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 488
         },
         {
-          "id": 1492,
+          "id": 888,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 234
         },
         {
-          "id": 1479,
+          "id": 877,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 175
         },
         {
-          "id": 1484,
+          "id": 882,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 173
         },
         {
-          "id": 1489,
+          "id": 885,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 159
         },
         {
-          "id": 1473,
+          "id": 874,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -859,22 +859,22 @@
           "word_count": 144
         },
         {
-          "id": 1488,
+          "id": 904,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Hacked fintech Nayax refuses to pay ransom",
-          "link": "https://www.finextra.com/newsarticle/48106/hacked-fintech-nayax-refuses-to-pay-ransom?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Nayax, an Israeli payments and loyalty platform for merchants, says it will not pay a ransom for data stolen by hackers in a recent data breach.",
-          "pub_date": "Thu, 16 Jul 2026 13:12:00 GMT",
+          "title": "Which Enterprise Tokenized Deposit Use Cases Have the Strongest Business Case?",
+          "link": "https://www.finextra.com/blogposting/32310/which-enterprise-tokenized-deposit-use-cases-have-the-strongest-business-case?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Tokenized deposits are moving from pilot initiatives to production very fast. There are at least fiv...",
+          "pub_date": "Fri, 17 Jul 2026 10:51:32 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 144
+          "word_count": 103
         },
         {
-          "id": 1463,
+          "id": 864,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 528
         },
         {
-          "id": 1527,
+          "id": 914,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 510
         },
         {
-          "id": 1469,
+          "id": 870,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 501
         },
         {
-          "id": 1465,
+          "id": 866,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 477
         },
         {
-          "id": 1464,
+          "id": 865,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 473
         },
         {
-          "id": 1474,
+          "id": 875,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -962,36 +962,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 154
-        },
-        {
-          "id": 1475,
-          "source": "PaymentsDive",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "EWA backers push for CFPB move",
-          "link": "https://www.paymentsdive.com/news/ewa-backers-push-cfpb-move/825418/",
-          "content": "Supporters of earned wage access aim to update national oversight this year, backing a new law and seeking to confirm a Trump policy change.",
-          "pub_date": "Thu, 16 Jul 2026 10:57:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 140
-        },
-        {
-          "id": 1522,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Employee Spotlight on Virginia Jimeno",
-          "link": "https://www.thunes.com/insights/life-at-thunes/employee-spotlight-on-virginia-jimeno/",
-          "content": "Meet the humans behind Thunes. Our Employee Spotlight series shines a light on the people who make our business what it is, sharing the experiences, perspectives, and journeys that shape our culture. In this spotlight, we’re proud to introduce Virginia Jimeno, who has spent the past two years learning, adapting, and delivering at pace in ... Read more &#187; The post Employee Spotlight on Virginia Jimeno first appeared on Thunes.com .",
-          "pub_date": "Thu, 16 Jul 2026 06:13:22 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 438
         }
       ],
       "quota": {
@@ -999,15 +969,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 225,
-      "total_valid": 44,
-      "total_candidates": 17
+      "total_raw": 211,
+      "total_valid": 36,
+      "total_candidates": 15
     }
   },
   "meta": {
-    "total_raw": 1687,
-    "dup": 305,
-    "nocontent": 376,
+    "total_raw": 1074,
+    "dup": 252,
+    "nocontent": 378,
     "noise": 2
   }
 }
