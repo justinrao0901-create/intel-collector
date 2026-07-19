@@ -95,7 +95,37 @@
           "word_count": 1200
         },
         {
-          "id": 138,
+          "id": 125,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "AI Mania Is Eviscerating Global Decision-Making",
+          "link": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
+          "content": "AI Mania Is Eviscerating Global Decision-Making Here's an entertaining perspective from Nik Suresh on the AI mania that is overwhelming the large companies that he consults with. It's crammed with spicy anecdotes from anonymous sources. In one extreme case, I have seen an executive confess that they had never even used ChatGPT or any AI tool in their life, immediately after producing a technical strategy for an organisation with $2B+ in revenue which was entirely centered around AI. Here's a report from an engineer at a company with a token leaderboard: Checking out a parallel copy of our Go repository and telling the AI to rewrite the whole thing in Zig while I work on something else just so I can keep my job. I particularly enjoyed this report of a conversation with a skeptical executive at an over-enthusiastic company: I asked why this was being repeated without opposition. Was it just sales fluff? The answer was a lot more interesting. It was partially ridiculous sales material being delivered to an easily excitable audience, but this was not the dominant factor constraining honesty. Executives at their customers were saying absurd things about achieving 100x productivity, and",
+          "pub_date": "2026-07-19T05:06:21+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 126,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Claude Code uses Bun written in Rust now",
+          "link": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything",
+          "content": "In Rewriting Bun in Rust Jarred Sumner made the following claim: Claude Code v2.1.181 (released June 17th) and later use the Rust port of Bun. Startup got 10% faster on Linux but otherwise, barely anyone noticed. Boring is good. I decided to have a poke at my own Claude Code installation to see if I could find evidence that it was using Bun written in Rust. I found these two commands convincing: strings ~/.local/bin/claude | grep -m1 'Bun v1' For me this outputs Bun v1.4.0 (macOS arm64) . The most recent release of Bun on GitHub is currently v1.3.14 from May 12th, so that v1.4.0 version number in Claude supports them shipping a preview of a not-yet-released Bun version. strings ~/.local/bin/claude | grep -Eo 'src/[[:alnum:]_./-]+\\.rs' This outputs a list of 563 filenames , starting with these: src/runtime/bake/dev_server/mod.rs src/runtime/bake/production.rs src/bundler/bundle_v2.rs It looks like Bun in Rust is indeed being run in production across millions of different devices. Like Jarred said, \"Boring is good\". Tags: bun , rust , anthropic , claude-code , jarred-sumner",
+          "pub_date": "2026-07-19T03:54:09+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1088
+        },
+        {
+          "id": 137,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,37 +140,7 @@
           "word_count": 422
         },
         {
-          "id": 132,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "LLM cliché highlighter",
-          "link": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
-          "content": "Tool: LLM cliché highlighter I got frustrated reading yet another article that was crammed with the clichés of LLM-generated writing - \"no fluff, no filler, no jargon\" type stuff - so I had Fable 5 vibe code up this app for highlighting ten common patterns that show up in that sort of writing. Tags: tools , ai , generative-ai , llms",
-          "pub_date": "2026-07-17T12:11:11+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 334
-        },
-        {
-          "id": 131,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting Kimi K3",
-          "link": "https://simonwillison.net/2026/Jul/17/kimi-k3/#atom-everything",
-          "content": "Is there something I can actually help you with today? &mdash; Kimi K3 , after refusing to leak its system prompt Tags: kimi , ai-personality , generative-ai , ai , llms",
-          "pub_date": "2026-07-17T13:43:53+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 169
-        },
-        {
-          "id": 87,
+          "id": 84,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 119
         },
         {
-          "id": 88,
+          "id": 85,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 93
         },
         {
-          "id": 118,
+          "id": 115,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 248,
-      "total_valid": 34,
+      "total_raw": 247,
+      "total_valid": 36,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 686,
+          "id": 676,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 488
         },
         {
-          "id": 576,
+          "id": 566,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 257
         },
         {
-          "id": 553,
+          "id": 543,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 256
         },
         {
-          "id": 632,
+          "id": 622,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 256
         },
         {
-          "id": 363,
+          "id": 353,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 669
         },
         {
-          "id": 455,
+          "id": 445,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 640
         },
         {
-          "id": 348,
+          "id": 338,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 615
         },
         {
-          "id": 469,
+          "id": 459,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 517
         },
         {
-          "id": 345,
+          "id": 335,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 500
         },
         {
-          "id": 447,
+          "id": 437,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 489
         },
         {
-          "id": 438,
+          "id": 428,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 474
         },
         {
-          "id": 356,
+          "id": 346,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 470
         },
         {
-          "id": 675,
+          "id": 665,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 450
         },
         {
-          "id": 362,
+          "id": 352,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 435
         },
         {
-          "id": 374,
+          "id": 364,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 490,
-      "total_valid": 318,
+      "total_raw": 481,
+      "total_valid": 311,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 803,
+          "id": 793,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 155
         },
         {
-          "id": 778,
+          "id": 768,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 154
         },
         {
-          "id": 793,
+          "id": 783,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -491,7 +491,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 312,
+          "id": 302,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 175
         },
         {
-          "id": 277,
+          "id": 267,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 167
         },
         {
-          "id": 275,
+          "id": 265,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,22 +536,7 @@
           "word_count": 151
         },
         {
-          "id": 250,
-          "source": "Endpoints News",
-          "section": "cross",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Midsize biotechs press White House to drop CMS pricing rules",
-          "link": "https://endpoints.news/midsize-biotechs-press-white-house-to-drop-cms-pricing-rules/",
-          "content": "A number of midsize biotech companies have met with White House and HHS officials in the last week, presenting their case for why two pending CMS pricing models could hinder their business and should not ...",
-          "pub_date": "Fri, 17 Jul 2026 18:42:39 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 207
-        },
-        {
-          "id": 709,
+          "id": 699,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -566,7 +551,7 @@
           "word_count": 134
         },
         {
-          "id": 710,
+          "id": 700,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -581,7 +566,7 @@
           "word_count": 133
         },
         {
-          "id": 495,
+          "id": 485,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 496,
+          "id": 486,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 500,
+          "id": 490,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 530,
+          "id": 520,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -639,6 +624,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 523,
+          "source": "medRxiv Infectious",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Longitudinal multiomic network rewiring at the complement coagulation interface in post-acute sequelae of COVID 19 (PASC)",
+          "link": "https://www.medrxiv.org/content/10.64898/2026.07.14.26358048v1?rss=1",
+          "content": "BackgroundPost-acute sequelae of COVID-19 (PASC) is clinically heterogeneous and mechanistically unresolved, and single-analyte studies have struggled to explain it. MethodsWe profiled matched plasma proteomics, metabolomics and whole-blood transcriptomics at acute infection and convalescence (mean 86 days later) in a Belgian cohort, using linear mixed models, multi-omic gene-set enrichment, and a degree-matched differential-correlation approach to quantify how each nodes interactions were rewired between patients who developed PASC and those who recovered; seven axis proteins were additionally quantified by multiplex immunoassay as orthogonal validation. FindingsSingle-omic testing yielded few FDR-significant features, yet multi-omic enrichment showed sustained complement-cascade involvement from acute illness to follow-up in PASC. Correlation networks re-organised topologically toward C3 and lost the immunoglobulin V-gene co-expression seen in recovery. The most rewired nodes -- heparin cofactor II (SERPIND1), alpha-1 antitrypsin (SERPINA1), complement factor H-related 5 (CFHR5), prothrombin/thrombin (F2) and immunoglobulin V-gene transcripts (notably IGLV3-21) -- changed in thei",
+          "pub_date": "2026-07-16",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -646,8 +646,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 33,
-      "total_valid": 25,
+      "total_raw": 32,
+      "total_valid": 24,
       "total_candidates": 10
     },
     "china": {
@@ -664,7 +664,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 876,
+          "id": 852,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -679,52 +679,7 @@
           "word_count": 63
         },
         {
-          "id": 857,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Consumer Sentiment Jumped 10% in July Before Gas Price Hikes",
-          "link": "https://www.pymnts.com/economy/2026/consumer-sentiment-jumped-10percent-july-before-gas-price-hikes/",
-          "content": "Consumer sentiment improved by 10% in early July, marking the second consecutive month of 10% jumps, according to preliminary results for the month from the University of Michigan’s Surveys of Consumers. The Index of Consumer Sentiment was gauged at 54.4, the highest reading since February’s 56.6. July’s improvement was driven by “easing price pressures at [&#8230;] The post Consumer Sentiment Jumped 10% in July Before Gas Price Hikes appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 17 Jul 2026 19:39:41 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 469
-        },
-        {
-          "id": 861,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "VC Firm Lakestar Raises $300 Million to Fund European Tech Sovereignty",
-          "link": "https://www.pymnts.com/news/investment-tracker/2026/vc-firm-lakestar-raises-300-million-to-fund-european-tech-sovereignty/",
-          "content": "European investment firm Lakestar has closed a $300 million Resilience I Fund designed to invest in defense and dual-use technologies that enhance Europe’s resilience capabilities, the company said in a Friday (July 17) post on LinkedIn. “As [Klaus Hommels], our founder and chairman, wrote last year: freedom is not for free,” Lakestar said in the [&#8230;] The post VC Firm Lakestar Raises $300 Million to Fund European Tech Sovereignty appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 17 Jul 2026 17:28:45 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 469
-        },
-        {
-          "id": 860,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Watch. Comment. Buy. AI Powers Live Shopping’s Encore",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/watch-comment-buy-ai-powers-live-shopping-encore/",
-          "content": "Live shopping is the television home shopping experience rebuilt for the internet. A host goes live on a platform, demonstrates a product, takes questions from viewers in the comments and offers a limited-time deal. Viewers buy with a single tap, without leaving the stream. The format collapses the distance between discovery and transaction to mere [&#8230;] The post Watch. Comment. Buy. AI Powers Live Shopping’s Encore appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 17 Jul 2026 17:49:55 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 454
-        },
-        {
-          "id": 852,
+          "id": 842,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +694,7 @@
           "word_count": 447
         },
         {
-          "id": 856,
+          "id": 846,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,52 +709,7 @@
           "word_count": 429
         },
         {
-          "id": 868,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Standard Chartered picks Broadcom for private cloud infrastructure",
-          "link": "https://www.finextra.com/pressarticle/110446/standard-chartered-picks-broadcom-for-private-cloud-infrastructure?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Broadcom Inc. (NASDAQ: AVGO) and Standard Chartered today announced a long-term strategic commitment to accelerate the bank’s global infrastructure modernization by establishing a secure, resilient private cloud foundation to seamlessly support critical banking services across 54 global markets.",
-          "pub_date": "Fri, 17 Jul 2026 13:17:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 296
-        },
-        {
-          "id": 867,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "FIS and Anthropic extend partnership",
-          "link": "https://www.finextra.com/pressarticle/110447/fis-and-anthropic-extend-partnership?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "FIS (NYSE: FIS), a global financial technology leader, is using Mythos 5 through Project Glasswing, Anthropic’s controlled-access initiative that applies frontier AI to help strengthen the security of software supporting critical infrastructure, to secure its own systems.",
-          "pub_date": "Fri, 17 Jul 2026 15:40:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 272
-        },
-        {
-          "id": 864,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Trump Media to sell traders instant access to market moving Truth Social posts",
-          "link": "https://www.finextra.com/newsarticle/48117/trump-media-to-sell-traders-instant-access-to-market-moving-truth-social-posts?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "President Donald Trump's media company is planning to charge traders for real-time access to Truth Social posts, possibly including his own.",
-          "pub_date": "Fri, 17 Jul 2026 15:22:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 140
-        },
-        {
-          "id": 877,
+          "id": 853,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -812,21 +722,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 109
-        },
-        {
-          "id": 879,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Banks Are Winning the Sponsorship and Losing the Loyalty",
-          "link": "https://www.finextra.com/blogposting/32314/banks-are-winning-the-sponsorship-and-losing-the-loyalty?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The World Cup final is set: Spain versus Argentina, Sunday, at MetLife Stadium. And the ticket marke...",
-          "pub_date": "Fri, 17 Jul 2026 17:51:31 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 103
         }
       ],
       "quota": {
@@ -834,14 +729,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 197,
-      "total_valid": 13,
-      "total_candidates": 11
+      "total_raw": 177,
+      "total_valid": 4,
+      "total_candidates": 4
     }
   },
   "meta": {
-    "total_raw": 1048,
-    "dup": 292,
+    "total_raw": 1018,
+    "dup": 276,
     "nocontent": 378,
     "noise": 2
   }
