@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 5,
+      "count": 4,
       "ok": true
     },
     "Sequoia Capital": {
@@ -70,19 +70,19 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 76,
       "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 201,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 206,
       "ok": true
     },
     "Import AI": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 27,
+      "count": 26,
       "ok": true
     },
     "Hacker News AI": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 1,
+      "count": 4,
       "ok": true
     },
     "WHO News": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 71,
       "ok": true
     },
     "NEJM": {
@@ -244,13 +244,13 @@
     "bioRxiv Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 30,
+      "count": 23,
       "ok": true
     },
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 29,
+      "count": 23,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -328,7 +328,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true
     },
     "Nature Machine Intel": {
@@ -358,7 +358,7 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 13,
+      "count": 10,
       "ok": true
     },
     "Absci Blog": {
@@ -376,7 +376,7 @@
     "Nucleic Acids Research": {
       "section": "synbio",
       "method": "rss",
-      "count": 2,
+      "count": 3,
       "ok": true
     },
     "Nature Reviews Bioengineering": {
@@ -406,7 +406,7 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 10,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -418,13 +418,13 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 2,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 9,
+      "count": 18,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -436,8 +436,8 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -478,7 +478,7 @@
     "ECB Press": {
       "section": "payment",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "Visa Navigate": {
@@ -507,7 +507,8 @@
       "ClinicalTrials.gov",
       "Import AI",
       "NEJM",
-      "NEJM AI"
+      "NEJM AI",
+      "Thunes"
     ],
     "sudden_drop": [
       "Endpoints News",
@@ -516,11 +517,7 @@
     "persistent_zero": [
       "Cointelegraph Payments",
       "Lancet Digital Health",
-      "PYMNTS Cross-Border",
-      "PaymentsDive",
-      "arXiv cs.AI",
-      "arXiv cs.CL",
-      "arXiv cs.LG"
+      "PYMNTS Cross-Border"
     ]
   }
 }
