@@ -100,10 +100,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Self-State Attacks on Self-Hosted AI Agents: How Far Can OS Defenses Go?",
-          "link": "https://arxiv.org/abs/2607.17986",
-          "content": "Self-hosted AI agents read and write their own memory and configuration files to function. An agent may get compromised via corruption of its own state -- a compromise realized via legitimate OS system call invocation. We refer to this class of threats as self-state attacks. In this paper, we investigate the OS resilience to this class of attacks. Formally, we characterize a four-axis attack space (Target, Mechanism, Granularity, Temporal); investigate the structural limits of prevention, detection, and recovery; and introduce a workload-conditioned view of detectability. To instantiate the framework, we collect live activity traces from a representative self-hosted agent running across distinct workload profiles, and realize the attack space as a 23-cell matrix, 43 concrete operations on real self-state files, and injected into those traces. We then evaluate both canonical and workload-conditioned defense strategies. The empirical results show that a layered defense stack (access-control prevention on the instruction and configuration layers, workload-conditioned detection on the memory layer, and periodic backup for recovery) is effective on most attack cells while a small residu",
-          "pub_date": "2026-07-19T20:00:00.000Z",
+          "title": "HarmoHOI: Harmonizing Appearance and 3D Motion for Multi-view Hand-Object Interaction Synthesis",
+          "link": "https://arxiv.org/abs/2607.17097",
+          "content": "Hand-Object Interaction (HOI) synthesis is a cornerstone for animation production and embodied AI. Despite the strong priors of video foundation models, multi-view consistent HOI synthesis remains challenging due to complex hand motions and occlusions. We present HarmoHOI, a unified diffusion framework that jointly and harmoniously generates synchronized multi-view HOI videos and globally aligned 3D point tracks. Our core insight is that robust multi-view consistency fundamentally requires globally aligned 3D geometry and motion. To this end, we propose a Mixture of Multi-view Diffusion Transformer that co-models RGB videos and 3D point tracks. By representing point tracks as pseudo-videos, we align 3D geometric signals with the 2D latent space of foundation models, thereby minimizing the domain gap and easing adaptation of priors. To further ensure geometry consistency, we introduce Global Motion Aligning Diffusion, which refines coarse point tracks into metric-scale, globally aligned 3D trajectories. HarmoHOI enables on-the-fly co-evolution of 2D appearance and 3D motion during denoising. To overcome the scarcity of multi-view HOI data, we employ a hybrid data curriculum learning",
+          "pub_date": "2026-07-18T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -115,9 +115,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "FlowMimic: Mask-free Visual Editing and Generation with Pixel-pair Warped Flow Field for Online Video Editing Data Generation and Modality Mimicry",
-          "link": "https://arxiv.org/abs/2607.18227",
-          "content": "In line with the prevailing direction of vision research, we explore the integration of both generation and editing capabilities for video and image modalities within a single model. Current approaches to collecting video editing data typically depend on labour-intensive, time-consuming curated procedures--involving object mask annotation, the use of error-introducing pair synthesis via I2V model and ControlNet-like guidance, and VLM-based quality filtering or refinement--and demonstrate limited task scalability. As a result, the diversity of editing tasks remains substantially narrower than that available for image editing models. We develop a pixel-pair temporal warped flow field that can directly generate corresponding video editing samples in real time from image editing samples, and we demonstrate across multiple levels of video editing tasks that a model can learn video editing using only such data. We regard the image modality as a particular form of the video modality. Accordingly, we design a modality mimic generation loss and a modality mimic editing loss to relatively align the capabilities--and thereby the output distributions--of the two modalities through mutual imita",
+          "title": "Self-State Attacks on Self-Hosted AI Agents: How Far Can OS Defenses Go?",
+          "link": "https://arxiv.org/abs/2607.17986",
+          "content": "Self-hosted AI agents read and write their own memory and configuration files to function. An agent may get compromised via corruption of its own state -- a compromise realized via legitimate OS system call invocation. We refer to this class of threats as self-state attacks. In this paper, we investigate the OS resilience to this class of attacks. Formally, we characterize a four-axis attack space (Target, Mechanism, Granularity, Temporal); investigate the structural limits of prevention, detection, and recovery; and introduce a workload-conditioned view of detectability. To instantiate the framework, we collect live activity traces from a representative self-hosted agent running across distinct workload profiles, and realize the attack space as a 23-cell matrix, 43 concrete operations on real self-state files, and injected into those traces. We then evaluate both canonical and workload-conditioned defense strategies. The empirical results show that a layered defense stack (access-control prevention on the instruction and configuration layers, workload-conditioned detection on the memory layer, and periodic backup for recovery) is effective on most attack cells while a small residu",
           "pub_date": "2026-07-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Apple-π: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence",
-          "link": "https://arxiv.org/abs/2607.16401",
-          "content": "Modern video generation models are increasingly hailed as emerging world models with an internalized grasp of physical law. Yet existing benchmarks largely evaluate physical plausibility only at the output level, without verifying whether the model arrives there through a faithful, law-grounded reasoning process. We introduce Apple-PI, the first benchmark that anchors video-model evaluation explicitly in physical laws. Apple-PI comprises three components. 1) Orchard: a dataset of 400 videos covering ten canonical tasks in classical mechanics. It separates single-law tasks for confounder-free diagnosis from multi-law tasks for probing generalization. 2) Benchmark Protocol: a three-stage protocol based on scientific reasoning, including Perception, Formulation, and Deduction. It uses chain-of-frames prompting on infographic-annotated first frames, treating the generated video as the model's visible reasoning trace. 3) Evaluation Suite: a hybrid evaluation suite that combines MLLM-based subjective scoring with physics-law-grounded objective measures. This enables stage-resolved diagnosis of not only whether a model fails, but where it fails. Benchmarking 11 models shows that current v",
-          "pub_date": "2026-07-16T20:00:00.000Z",
+          "title": "FlowMimic: Mask-free Visual Editing and Generation with Pixel-pair Warped Flow Field for Online Video Editing Data Generation and Modality Mimicry",
+          "link": "https://arxiv.org/abs/2607.18227",
+          "content": "In line with the prevailing direction of vision research, we explore the integration of both generation and editing capabilities for video and image modalities within a single model. Current approaches to collecting video editing data typically depend on labour-intensive, time-consuming curated procedures--involving object mask annotation, the use of error-introducing pair synthesis via I2V model and ControlNet-like guidance, and VLM-based quality filtering or refinement--and demonstrate limited task scalability. As a result, the diversity of editing tasks remains substantially narrower than that available for image editing models. We develop a pixel-pair temporal warped flow field that can directly generate corresponding video editing samples in real time from image editing samples, and we demonstrate across multiple levels of video editing tasks that a model can learn video editing using only such data. We regard the image modality as a particular form of the video modality. Accordingly, we design a modality mimic generation loss and a modality mimic editing loss to relatively align the capabilities--and thereby the output distributions--of the two modalities through mutual imita",
+          "pub_date": "2026-07-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 1431,
-      "total_valid": 919,
+      "total_valid": 920,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1467,
+          "id": 1468,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 278
         },
         {
-          "id": 1778,
+          "id": 1779,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 193
         },
         {
-          "id": 1538,
+          "id": 1539,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 178
         },
         {
-          "id": 1745,
+          "id": 1746,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 243
         },
         {
-          "id": 1717,
+          "id": 1718,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 240
         },
         {
-          "id": 1715,
+          "id": 1716,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 202
         },
         {
-          "id": 1834,
+          "id": 1835,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 136
         },
         {
-          "id": 1537,
+          "id": 1538,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 419
         },
         {
-          "id": 1548,
+          "id": 1549,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 384
         },
         {
-          "id": 1503,
+          "id": 1504,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 379
         },
         {
-          "id": 1545,
+          "id": 1546,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 367
         },
         {
-          "id": 1546,
+          "id": 1547,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 429,
+      "total_raw": 430,
       "total_valid": 252,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1895,
+          "id": 1896,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 191
         },
         {
-          "id": 1881,
+          "id": 1882,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 144
         },
         {
-          "id": 1888,
+          "id": 1889,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 144
         },
         {
-          "id": 1938,
+          "id": 1939,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -506,7 +506,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1465,
+          "id": 1466,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 185
         },
         {
-          "id": 1834,
+          "id": 1835,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -596,7 +596,7 @@
           "word_count": 145
         },
         {
-          "id": 1832,
+          "id": 1833,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -679,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1999,
+          "id": 2000,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 625
         },
         {
-          "id": 1973,
+          "id": 1974,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 541
         },
         {
-          "id": 1979,
+          "id": 1980,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 451
         },
         {
-          "id": 1992,
+          "id": 1993,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 196
         },
         {
-          "id": 1983,
+          "id": 1984,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 157
         },
         {
-          "id": 1984,
+          "id": 1985,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 124
         },
         {
-          "id": 1988,
+          "id": 1989,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 117
         },
         {
-          "id": 2008,
+          "id": 2009,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 103
         },
         {
-          "id": 2010,
+          "id": 2011,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 103
         },
         {
-          "id": 1987,
+          "id": 1988,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -990,7 +990,7 @@
     }
   },
   "meta": {
-    "total_raw": 2173,
+    "total_raw": 2174,
     "dup": 581,
     "nocontent": 381,
     "noise": 2
