@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 51,
+          "id": 49,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 164
         },
         {
-          "id": 50,
+          "id": 48,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 126
         },
         {
-          "id": 82,
+          "id": 80,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 162
         },
         {
-          "id": 80,
+          "id": 78,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 145
         },
         {
-          "id": 86,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 145
         },
         {
-          "id": 65,
+          "id": 63,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,22 +140,22 @@
           "word_count": 1200
         },
         {
-          "id": 617,
+          "id": 615,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
           "title": "Who’s Afraid of Chinese Models?",
           "link": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
-          "content": "Who’s Afraid of Chinese Models? Interesting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing distillation against their models despite training on unlicensed data, and could help US open models compete more effectively with their Chinese counterparts: The U.S. should pass a law that (1) makes explicit that collecting data for training models is fair use, and (2) bars terms of service that forbid distillation, for U.S. companies at a minimum. Stopping distillation — which is literally just querying the API — is nearly impossible; the U.S. should go the other way and lean into a new copyright policy that both indemnifies the labs and also guarantees that what they learned fuels further innovation for everyone else. Ben also theorizes that Alibaba's decision to release Qwen 3.8 Max as open weights - a reversal from their decision not to release Qwen 3.7 Max in May - may have been influenced by a recent speech by Xi Jinping, who said: We should seize this rare, historic opportunity to encourage open source, openness, collaboration and sharing. Via John Gruber Tags: ai , generative-ai , llms , training-data , qwen , ai-ethics , ai-in-china",
+          "content": "Who’s Afraid of Chinese Models? Interesting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing distillation against their models despite training on unlicensed data, and could help US open models compete more effectively with their Chinese counterparts: The U.S. should pass a law that (1) makes explicit that collecting data for training models is fair use, and (2) bars terms of service that forbid distillation, for U.S. companies at a minimum. Stopping distillation — which is literally just querying the API — is nearly impossible; the U.S. should go the other way and lean into a new copyright policy that both indemnifies the labs and also guarantees that what they learned fuels further innovation for everyone else. Ben also theorizes that Alibaba's decision to release Qwen 3.8 Max as open weights - a reversal from their decision not to release Qwen 3.7 Max in May - may have been influenced by a recent speech by Xi Jinping, who said: We should seize this rare, historic opportunity to encourage open source, openness, collaboration and sharing. And on the subject of Qwen 3.8 Max - a new 2.4T parameter model (nearly as large as the 2.8T Kimi K3) - here's a p",
           "pub_date": "2026-07-20T17:09:19+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1182
+          "word_count": 1200
         },
         {
-          "id": 616,
+          "id": 614,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1018
         },
         {
-          "id": 121,
+          "id": 119,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 735,
-      "total_valid": 384,
+      "total_raw": 733,
+      "total_valid": 382,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 772,
+          "id": 770,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 278
         },
         {
-          "id": 857,
+          "id": 841,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 178
         },
         {
-          "id": 1108,
+          "id": 1041,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 243
         },
         {
-          "id": 1080,
+          "id": 1013,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 240
         },
         {
-          "id": 1078,
+          "id": 1011,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 210
         },
         {
-          "id": 738,
+          "id": 736,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -287,7 +287,7 @@
           "word_count": 202
         },
         {
-          "id": 1201,
+          "id": 1130,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -302,7 +302,7 @@
           "word_count": 185
         },
         {
-          "id": 744,
+          "id": 742,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 169
         },
         {
-          "id": 748,
+          "id": 746,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 136
         },
         {
-          "id": 856,
+          "id": 840,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 419
         },
         {
-          "id": 867,
+          "id": 851,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 384
         },
         {
-          "id": 808,
+          "id": 806,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,22 +377,7 @@
           "word_count": 379
         },
         {
-          "id": 935,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "The Leisure Corner: High Fidelity Recording",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2850223",
-          "content": "Today’s high-fidelity phonograph systems owe their existence to a discovery by Thomas A. Edison, who in 1876 hit on a method that permitted both recording and reproduction of sound from a rotating cylinder. After a number of attempts had been made to convert his machine from a cylinder into a standard phonograph, the phonograph industry was born at the turn of the century.",
-          "pub_date": "Tue, 14 Jul 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 375
-        },
-        {
-          "id": 864,
+          "id": 848,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +392,7 @@
           "word_count": 367
         },
         {
-          "id": 865,
+          "id": 849,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 361
+        },
+        {
+          "id": 905,
+          "source": "Nature Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A neuroprosthesis for restoring hand movement and sensation in a person with complete tetraplegia",
+          "link": "https://www.nature.com/articles/s41591-026-04498-0",
+          "content": "Nature Medicine, Published online: 16 July 2026; doi:10.1038/s41591-026-04498-0 A bidirectional sensorimotor neuroprosthetic system that decodes brain signals associated with movement intention while delivering patterned neuromodulation to the spinal cord and cortex provides long-term recovery of hand motor and sensory function, even when the device is off.",
+          "pub_date": "2026-07-16",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 359
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 492,
-      "total_valid": 286,
+      "total_raw": 423,
+      "total_valid": 245,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1262,
+          "id": 1190,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 191
         },
         {
-          "id": 1248,
+          "id": 1176,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 144
         },
         {
-          "id": 1255,
+          "id": 1183,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 144
         },
         {
-          "id": 1305,
+          "id": 1233,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -499,14 +499,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 107,
+      "total_raw": 103,
       "total_valid": 14,
       "total_candidates": 4
     },
     "cross": {
       "candidates": [
         {
-          "id": 770,
+          "id": 768,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 251
         },
         {
-          "id": 743,
+          "id": 741,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -536,7 +536,7 @@
           "word_count": 254
         },
         {
-          "id": 736,
+          "id": 734,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -551,7 +551,7 @@
           "word_count": 219
         },
         {
-          "id": 739,
+          "id": 737,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -566,7 +566,7 @@
           "word_count": 185
         },
         {
-          "id": 1201,
+          "id": 1130,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -581,7 +581,7 @@
           "word_count": 185
         },
         {
-          "id": 749,
+          "id": 747,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -596,7 +596,7 @@
           "word_count": 145
         },
         {
-          "id": 1199,
+          "id": 1128,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -611,7 +611,7 @@
           "word_count": 118
         },
         {
-          "id": 1016,
+          "id": 953,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1021,
+          "id": 958,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 991,
+          "id": 930,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -661,8 +661,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 25,
-      "total_valid": 17,
+      "total_raw": 23,
+      "total_valid": 15,
       "total_candidates": 10
     },
     "china": {
@@ -679,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1369,
+          "id": 1294,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,22 +694,7 @@
           "word_count": 625
         },
         {
-          "id": 1352,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Visa Bets the Future of Money Still Needs an Operator",
-          "link": "https://www.pymnts.com/visa/2026/visa-bets-the-future-of-money-still-needs-an-operator/",
-          "content": "Stablecoins were supposed to make payment networks less necessary. Visa’s new stablecoin platform, introduced Thursday (July 16), suggests a messier outcome. The move comes on the heels of Visa’s June announcement that it had joined a 140-plus member Open Standard consortium to launch Open USD (OUSD), a dollar-backed stablecoin. The technical act of transferring a stablecoin [&#8230;] The post Visa Bets the Future of Money Still Needs an Operator appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 20 Jul 2026 18:02:14 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 481
-        },
-        {
-          "id": 1346,
+          "id": 1273,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +709,7 @@
           "word_count": 451
         },
         {
-          "id": 1362,
+          "id": 1287,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +724,7 @@
           "word_count": 196
         },
         {
-          "id": 1353,
+          "id": 1278,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +739,7 @@
           "word_count": 157
         },
         {
-          "id": 1354,
+          "id": 1279,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +754,7 @@
           "word_count": 124
         },
         {
-          "id": 1358,
+          "id": 1283,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +769,7 @@
           "word_count": 117
         },
         {
-          "id": 1378,
+          "id": 1303,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +784,7 @@
           "word_count": 103
         },
         {
-          "id": 1380,
+          "id": 1305,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +799,7 @@
           "word_count": 103
         },
         {
-          "id": 1357,
+          "id": 1282,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,22 +814,37 @@
           "word_count": 89
         },
         {
-          "id": 617,
+          "id": 615,
           "source": "Simon Willison",
           "section": "payment",
           "tier": "T2",
           "priority": 5,
           "title": "Who’s Afraid of Chinese Models?",
           "link": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
-          "content": "Who’s Afraid of Chinese Models? Interesting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing distillation against their models despite training on unlicensed data, and could help US open models compete more effectively with their Chinese counterparts: The U.S. should pass a law that (1) makes explicit that collecting data for training models is fair use, and (2) bars terms of service that forbid distillation, for U.S. companies at a minimum. Stopping distillation — which is literally just querying the API — is nearly impossible; the U.S. should go the other way and lean into a new copyright policy that both indemnifies the labs and also guarantees that what they learned fuels further innovation for everyone else. Ben also theorizes that Alibaba's decision to release Qwen 3.8 Max as open weights - a reversal from their decision not to release Qwen 3.7 Max in May - may have been influenced by a recent speech by Xi Jinping, who said: We should seize this rare, historic opportunity to encourage open source, openness, collaboration and sharing. Via John Gruber Tags: ai , generative-ai , llms , training-data , qwen , ai-ethics , ai-in-china",
+          "content": "Who’s Afraid of Chinese Models? Interesting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing distillation against their models despite training on unlicensed data, and could help US open models compete more effectively with their Chinese counterparts: The U.S. should pass a law that (1) makes explicit that collecting data for training models is fair use, and (2) bars terms of service that forbid distillation, for U.S. companies at a minimum. Stopping distillation — which is literally just querying the API — is nearly impossible; the U.S. should go the other way and lean into a new copyright policy that both indemnifies the labs and also guarantees that what they learned fuels further innovation for everyone else. Ben also theorizes that Alibaba's decision to release Qwen 3.8 Max as open weights - a reversal from their decision not to release Qwen 3.7 Max in May - may have been influenced by a recent speech by Xi Jinping, who said: We should seize this rare, historic opportunity to encourage open source, openness, collaboration and sharing. And on the subject of Qwen 3.8 Max - a new 2.4T parameter model (nearly as large as the 2.8T Kimi K3) - here's a p",
           "pub_date": "2026-07-20T17:09:19+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1182
+          "word_count": 1200
         },
         {
-          "id": 1349,
+          "id": 1269,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Trump Orders Defense Contractors to End Reliance on Suppliers From Adversary Nations",
+          "link": "https://www.pymnts.com/supply-chain/2026/trump-orders-defense-contractors-to-end-reliance-on-suppliers-from-adversary-nations/",
+          "content": "President Donald Trump signed an executive order Monday (July 20) that requires defense contractors to map their supply chains and encourages them to shift their sourcing of critical materials to suppliers in the United States or partner nations. The order aims to secure the critical materials and components needed to manufacture cutting-edge equipment used on modern battlefields, the White House [&#8230;] The post Trump Orders Defense Contractors to End Reliance on Suppliers From Adversary Nations appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 20 Jul 2026 23:26:48 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 534
+        },
+        {
+          "id": 1276,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 507
         },
         {
-          "id": 1350,
+          "id": 1277,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 493
         },
         {
-          "id": 1345,
+          "id": 1272,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,22 +889,22 @@
           "word_count": 489
         },
         {
-          "id": 1351,
+          "id": 1268,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Hugging Face Latest Company Dealing With AI Cyberattacks",
-          "link": "https://www.pymnts.com/cybersecurity/2026/hugging-face-latest-company-dealing-with-ai-cyberattacks/",
-          "content": "Hugging Face, whose platform hosts AI datasets, has reportedly suffered an AI-powered data breach. As TechCrunch reported Monday (July 20), the company revealed the breach last week but said it was still determining if any customer or partner data had been stolen. On its blog, Hugging Face said a dataset uploaded to its platform exploited a security vulnerability [&#8230;] The post Hugging Face Latest Company Dealing With AI Cyberattacks appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 20 Jul 2026 18:19:55 +0000",
+          "title": "US AI Safety Chief Chris Fall Resigns After 3 Months",
+          "link": "https://www.pymnts.com/personnel/2026/us-ai-safety-chief-chris-fall-resigns-after-3-months/",
+          "content": "The head of the U.S. Center for AI Standards and Innovation (CAISI), Chris Fall, resigned from that role three months after he was selected for it, CNBC reported Monday (July 20). A Commerce Department spokesperson confirmed Fall’s resignation without disclosing the reason, according to the report. CAISI is part of the Commerce Department. The director of the National Institute of [&#8230;] The post US AI Safety Chief Chris Fall Resigns After 3 Months appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 20 Jul 2026 23:54:19 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 472
+          "word_count": 486
         },
         {
-          "id": 1355,
+          "id": 1280,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 99
         },
         {
-          "id": 1356,
+          "id": 1281,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -945,9 +945,9 @@
     }
   },
   "meta": {
-    "total_raw": 1540,
-    "dup": 448,
-    "nocontent": 382,
+    "total_raw": 1465,
+    "dup": 419,
+    "nocontent": 379,
     "noise": 2
   }
 }
