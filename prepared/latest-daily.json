@@ -100,10 +100,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
-          "link": "https://arxiv.org/abs/2607.15263",
-          "content": "Security-agent evaluations commonly measure peak offensive capability under generous inference budgets, emphasizing vulnerability discovery, exploit development, penetration testing, and CTF completion. Such measurements are useful but incomplete: in operational security, every reasoning step, tool call, telemetry query, and enrichment request consumes budget. We evaluate language-model security agents through this cost-success lens on offensive Cybench challenges and defensive Splunk BOTS v1 investigation challenges. Instead of reporting only best-case success, we compare models at fixed cost levels and decompose performance by inference spend and tool spend. Our results show distinct scalingregimes for red- and blue-team tasks. Offensive CTF performance improves with additional test-time compute, and scaled open-weight models can approach frontier proprietary systems while remaining cost-competitive. Defensive SOC investigation does not scale in the same way: success depends more heavily on disciplined tool use, telemetry navigation, and selective enrichment than on raw reasoning budget alone. We argue that security-agent benchmarks should measure economic efficiency and operatio",
-          "pub_date": "2026-07-16T20:00:00.000Z",
+          "title": "Self-State Attacks on Self-Hosted AI Agents: How Far Can OS Defenses Go?",
+          "link": "https://arxiv.org/abs/2607.17986",
+          "content": "Self-hosted AI agents read and write their own memory and configuration files to function. An agent may get compromised via corruption of its own state -- a compromise realized via legitimate OS system call invocation. We refer to this class of threats as self-state attacks. In this paper, we investigate the OS resilience to this class of attacks. Formally, we characterize a four-axis attack space (Target, Mechanism, Granularity, Temporal); investigate the structural limits of prevention, detection, and recovery; and introduce a workload-conditioned view of detectability. To instantiate the framework, we collect live activity traces from a representative self-hosted agent running across distinct workload profiles, and realize the attack space as a 23-cell matrix, 43 concrete operations on real self-state files, and injected into those traces. We then evaluate both canonical and workload-conditioned defense strategies. The empirical results show that a layered defense stack (access-control prevention on the instruction and configuration layers, workload-conditioned detection on the memory layer, and periodic backup for recovery) is effective on most attack cells while a small residu",
+          "pub_date": "2026-07-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -115,10 +115,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SVR-R1: Bootstrapping Multi-modal Reasoning with Self-verification in Reinforcement Learning",
-          "link": "https://arxiv.org/abs/2607.10966",
-          "content": "We introduce Self-Verified Reasoner (SVR-R1), a multi-turn RL framework that turns a model's own verification into a learning signal for multimodal reasoning. For each query, the model proposes an answer using the same weights, and issues a binary self-verdict (Yes/No). A 'No' triggers a second-chance rethink; a 'Yes,' or a turn cap, finalizes the output for computing the outcome-based reward. SVR-R1 is implemented with GRPO and an asynchronous multi-turn rollout framework and needs no external supervision or auxiliary critics. We evaluate SVR-R1 on vision-language reasoning benchmarks and show that it improves accuracy by a large margin over strong standard GRPO baselines. Training dynamics show decreasing reliance on verification-fewer verification turns, yet higher test accuracy-indicating that the gap between verification and generation narrows as the policy internalizes self-correction and chooses the most confident answer via our framework. SVR-R1 bridges the less explored intersection of inference-time self-refinement and RL training for VLMs, offering a simple yet effective recipe for bootstrapping multimodal reasoning. We will open-source SVR-R1 to facilitate future resear",
-          "pub_date": "2026-07-12T20:00:00.000Z",
+          "title": "FlowMimic: Mask-free Visual Editing and Generation with Pixel-pair Warped Flow Field for Online Video Editing Data Generation and Modality Mimicry",
+          "link": "https://arxiv.org/abs/2607.18227",
+          "content": "In line with the prevailing direction of vision research, we explore the integration of both generation and editing capabilities for video and image modalities within a single model. Current approaches to collecting video editing data typically depend on labour-intensive, time-consuming curated procedures--involving object mask annotation, the use of error-introducing pair synthesis via I2V model and ControlNet-like guidance, and VLM-based quality filtering or refinement--and demonstrate limited task scalability. As a result, the diversity of editing tasks remains substantially narrower than that available for image editing models. We develop a pixel-pair temporal warped flow field that can directly generate corresponding video editing samples in real time from image editing samples, and we demonstrate across multiple levels of video editing tasks that a model can learn video editing using only such data. We regard the image modality as a particular form of the video modality. Accordingly, we design a modality mimic generation loss and a modality mimic editing loss to relatively align the capabilities--and thereby the output distributions--of the two modalities through mutual imita",
+          "pub_date": "2026-07-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,17 +130,17 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Benchmarking Sensor Robustness in Plasma Diagnostic Models: A Systematic Evaluation on TokaMark",
-          "link": "https://arxiv.org/abs/2607.11915",
-          "content": "Plasma diagnostic models for tokamak fusion devices are almost universally evaluated on clean, complete sensor data. In practice, fusion diagnostics fail regularly: acquisition systems start late, individual sensors die, and signal dropouts cluster precisely when a plasma disruption is approaching. We present the first systematic robustness benchmark for plasma diagnostic ML using the TokaMark dataset of 11,573 MAST shots, evaluating XGBoost, LSTM, Transformer, and the TokaMark CNN baseline across six physically-grounded failure scenarios and three imputation strategies. We introduce the Robustness Score (RS) for standardized cross-architecture comparison. Our central finding is that disruption-proximate sensor failure (corruption injected in the final window timesteps) collapses sequence model performance (LSTM +212% NRMSE) while a statistical feature model remains comparatively stable (XGBoost +37%). Forward-fill imputation eliminates nearly all degradation from random dropout for sequence models (LSTM +57% to ~0%), but offers little help when the end of the window is corrupted. Shot-level alarm evaluation using ground-truth disruption timestamps reveals that LSTM alarm detection",
-          "pub_date": "2026-07-04T20:00:00.000Z",
+          "title": "Apple-π: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence",
+          "link": "https://arxiv.org/abs/2607.16401",
+          "content": "Modern video generation models are increasingly hailed as emerging world models with an internalized grasp of physical law. Yet existing benchmarks largely evaluate physical plausibility only at the output level, without verifying whether the model arrives there through a faithful, law-grounded reasoning process. We introduce Apple-PI, the first benchmark that anchors video-model evaluation explicitly in physical laws. Apple-PI comprises three components. 1) Orchard: a dataset of 400 videos covering ten canonical tasks in classical mechanics. It separates single-law tasks for confounder-free diagnosis from multi-law tasks for probing generalization. 2) Benchmark Protocol: a three-stage protocol based on scientific reasoning, including Perception, Formulation, and Deduction. It uses chain-of-frames prompting on infographic-annotated first frames, treating the generated video as the model's visible reasoning trace. 3) Evaluation Suite: a hybrid evaluation suite that combines MLLM-based subjective scoring with physics-law-grounded objective measures. This enables stage-resolved diagnosis of not only whether a model fails, but where it fails. Benchmarking 11 models shows that current v",
+          "pub_date": "2026-07-16T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 616,
+          "id": 1314,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 615,
+          "id": 1313,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,15 +170,15 @@
           "word_count": 1018
         },
         {
-          "id": 120,
+          "id": 115,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
           "priority": 6,
-          "title": "EpiNarrate: Agentic Generation of Grounded Narratives from Epidemiological Scenario Projections",
-          "link": "https://arxiv.org/abs/2607.15544",
-          "content": "arXiv:2607.15544v1 Announce Type: new Abstract: Generation of clear and accessible public health narratives is critical for communicating complex epidemiological projections to policymakers and the general public at large. Such narratives require more than simply reporting numbers: projections must be contextualized and quantitatively grounded across multiple dimensions. Further, projections are often derived from large ensemble datasets which combine intervention assumptions, geographic and demographic strata, outcomes, time horizons, and uncertainty quantiles. However, directly using large language models (LLMs) to summarize and contextualize such data often leads to inconsistencies, omissions, and fragile behavior. We introduce an agentic framework (EpiNarrate) for public health report generation that separates structured numerical reasoning from natural-language generation. The framework first extracts scenario axes and organizes them into a partial-order schema, enabling systematic traversal of the underlying multidimensional space. It then constructs an augmented dataset and derives valid quantitative statements through a comparison grammar that enforces semantic and arithmet",
-          "pub_date": "Mon, 20 Jul 2026 00:00:00 -0400",
+          "title": "RIMS: Preference Optimization via Smoothed Multi-pair Aggregation for Small-Scale LLM Retrieval-Augmented Generation",
+          "link": "https://arxiv.org/abs/2607.16431",
+          "content": "arXiv:2607.16431v1 Announce Type: new Abstract: Small-scale language models (SLMs) are attractive for retrieval-augmented generation (RAG) in resource-constrained settings, but their limited capacity makes them highly sensitive to noisy or spurious retrieved evidence. Existing preference-based methods such as RoseRAG select only the hardest single preference pair via hard argmin/argmax, discarding the remaining signal; others treat multiple pairs as independent binary comparisons, resulting in low data utilization. We propose RIMS, a three-stage preference optimization framework comprising (1) synthetic chain-of-thought preference data generation via rejection sampling using the target SLM itself without relying on proprietary models, (2) a differentiable soft aggregation mechanism that replaces hard selection with a smooth operator, preserving gradient signal from all preference pairs while retaining the discriminative structure of margin-aware selection, and (3) preference optimization with the smoothed objective applied to multiple alignment algorithms. We theoretically show that the smoothed approximation admits a controllable error bound and that smooth aggregation yields prov",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,29 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 733,
-      "total_valid": 382,
+      "total_raw": 1431,
+      "total_valid": 919,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 752,
-          "source": "WHO News",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 1,
-          "title": "WHO Member States continue negotiations on the Pathogen Access and Benefit Sharing Annex",
-          "link": "https://www.who.int/news/item/20-07-2026-who-member-states-continue-negotiations-on-the-pathogen-access-and-benefit-sharing-annex",
-          "content": "WHO Member States have advanced negotiations on the Pathogen Access and Benefit Sharing (PABS) annex, a central component of the WHO Pandemic Agreement, while agreeing that continued discussions are needed to finalize a framework that supports a faster, more effective and equitable response to future pandemics.",
-          "pub_date": "Sat, 18 Jul 2026 07:27:54 Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 312
-        },
-        {
-          "id": 771,
+          "id": 1467,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +212,7 @@
           "word_count": 278
         },
         {
-          "id": 1076,
+          "id": 1778,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +227,7 @@
           "word_count": 193
         },
         {
-          "id": 842,
+          "id": 1538,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +242,7 @@
           "word_count": 178
         },
         {
-          "id": 1043,
+          "id": 1745,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +257,7 @@
           "word_count": 243
         },
         {
-          "id": 1015,
+          "id": 1717,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +272,7 @@
           "word_count": 240
         },
         {
-          "id": 1013,
+          "id": 1715,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +287,7 @@
           "word_count": 210
         },
         {
-          "id": 736,
+          "id": 1434,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +302,7 @@
           "word_count": 202
         },
         {
-          "id": 1132,
+          "id": 1834,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +317,7 @@
           "word_count": 185
         },
         {
-          "id": 742,
+          "id": 1440,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +332,7 @@
           "word_count": 169
         },
         {
-          "id": 746,
+          "id": 1444,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +347,7 @@
           "word_count": 136
         },
         {
-          "id": 841,
+          "id": 1537,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +362,7 @@
           "word_count": 419
         },
         {
-          "id": 852,
+          "id": 1548,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +377,7 @@
           "word_count": 384
         },
         {
-          "id": 807,
+          "id": 1503,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +392,7 @@
           "word_count": 379
         },
         {
-          "id": 849,
+          "id": 1545,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 367
+        },
+        {
+          "id": 1546,
+          "source": "Cell Host Microbe",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Hadal topography incubates hidden microbial hotspots in the deepest ocean",
+          "link": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(26)00275-1?rss=yes",
+          "content": "Zhao et al. apply integrated multi-omics, geochemical, and fine-scale topographic analyses of sediments across 55 locations in the Mariana Trench to reveal that hadal topography is an overlooked yet important determinant of microbial ecosystems and activities, with implications for understanding microbial hotspots and biogeochemical cycling in the deep ocean.",
+          "pub_date": "2026-07-20",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 361
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 425,
-      "total_valid": 247,
+      "total_raw": 429,
+      "total_valid": 252,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1192,
+          "id": 1895,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 191
         },
         {
-          "id": 1178,
+          "id": 1881,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 144
         },
         {
-          "id": 1185,
+          "id": 1888,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 144
         },
         {
-          "id": 1235,
+          "id": 1938,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -499,14 +499,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 103,
+      "total_raw": 104,
       "total_valid": 14,
       "total_candidates": 4
     },
     "cross": {
       "candidates": [
         {
-          "id": 769,
+          "id": 1465,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 251
         },
         {
-          "id": 741,
+          "id": 1439,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -536,7 +536,7 @@
           "word_count": 254
         },
         {
-          "id": 734,
+          "id": 1432,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -551,7 +551,7 @@
           "word_count": 219
         },
         {
-          "id": 737,
+          "id": 1435,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -566,7 +566,7 @@
           "word_count": 185
         },
         {
-          "id": 1132,
+          "id": 1834,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -581,7 +581,7 @@
           "word_count": 185
         },
         {
-          "id": 747,
+          "id": 1445,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -596,7 +596,7 @@
           "word_count": 145
         },
         {
-          "id": 1130,
+          "id": 1832,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -611,49 +611,49 @@
           "word_count": 118
         },
         {
-          "id": 955,
-          "source": "medRxiv Infectious",
+          "id": 115,
+          "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Machine learning models to improve targeting of blood culture testing",
-          "link": "https://www.medrxiv.org/content/10.64898/2026.07.17.26358320v1?rss=1",
-          "content": "Background Bloodstream infections are a major cause of mortality, yet the primary testing method, blood cultures, have low positivity (<10%) and turnaround times of 24 - 48 hours. Many are taken from patients at low risk of infection, while some bloodstream infections are diagnosed late or missed entirely. We aimed to develop and externally validate machine learning models to improve targeting of blood culture testing. Methods In this retrospective cohort study, we used routinely collected clinical and laboratory data available around culture collection from a large multi-site NHS trust (Oxford University Hospitals; Infections in Oxfordshire Research Database), between 1 January 2016 and 17 March 2025. All blood cultures taken from adults and children were included. XGBoost models were trained to predict pathogenic blood culture positivity using a temporal split (training before 1 January 2024; held-out test thereafter). External validation used emergency department data (between 1st May 2019 and 30th April 2024) from University College London Hospitals. An additional analysis examined blood culture reallocation towards the highest-risk untested admissions. Findings 294,064 culture",
-          "pub_date": "2026-07-20",
+          "title": "RIMS: Preference Optimization via Smoothed Multi-pair Aggregation for Small-Scale LLM Retrieval-Augmented Generation",
+          "link": "https://arxiv.org/abs/2607.16431",
+          "content": "arXiv:2607.16431v1 Announce Type: new Abstract: Small-scale language models (SLMs) are attractive for retrieval-augmented generation (RAG) in resource-constrained settings, but their limited capacity makes them highly sensitive to noisy or spurious retrieved evidence. Existing preference-based methods such as RoseRAG select only the hardest single preference pair via hard argmin/argmax, discarding the remaining signal; others treat multiple pairs as independent binary comparisons, resulting in low data utilization. We propose RIMS, a three-stage preference optimization framework comprising (1) synthetic chain-of-thought preference data generation via rejection sampling using the target SLM itself without relying on proprietary models, (2) a differentiable soft aggregation mechanism that replaces hard selection with a smooth operator, preserving gradient signal from all preference pairs while retaining the discriminative structure of margin-aware selection, and (3) preference optimization with the smoothed objective applied to multiple alignment algorithms. We theoretically show that the smoothed approximation admits a controllable error bound and that smooth aggregation yields prov",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 960,
-          "source": "medRxiv Infectious",
+          "id": 257,
+          "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Malaria Pre-screening Technology Using Artificial Intelligence (AI)",
-          "link": "https://www.medrxiv.org/content/10.64898/2026.07.15.26357432v1?rss=1",
-          "content": "Malaria remains a severe health problem in endemic regions because people lack adequate diagnostic tools, leading to delayed medical care and elevated death rates. This research introduces a dual-mode artificial intelligence system that uses two complementary models to enhance malaria pre-screening and diagnosis. The patient-centered model uses multivariate logistic regression to analyze biosignals, including heart rate, body temperature, and oxygen saturation, collected through a wearable sensor prototype and a mobile interface for symptom analysis. The system enables patients to begin self-assessment to determine their level of need before scheduling a doctors appointment. The clinician-centered model represents a customized convolutional neural network that uses annotated microscopy images of red blood cells to achieve 94.84% accuracy, 95.71% precision, 93.87% recall, 94.78% F1 score, and 0.84 Area Under Curve (AUC). The patient model achieved 94.6% accuracy and an AUC of 0.985 using a 70/30 train-test split. These systems work together to create a layered diagnostic system that can operate independently or together to detect malaria at an early stage, especially in areas with l",
-          "pub_date": "2026-07-17",
+          "title": "LV-ROVER-MLT: Low-Resource Maltese OCR by Synthetic Fine-Tuning and Multi-Stream Arbitration",
+          "link": "https://arxiv.org/abs/2607.00250",
+          "content": "arXiv:2607.00250v3 Announce Type: replace Abstract: Maltese OCR is constrained by the absence of a public, reusable paragraph-scale training corpus. We address this by generating synthetic Maltese line images, fine-tuning the Tesseract 5 LSTM, and combining five deterministic Tesseract configurations through anchor-preserving, lexicon-gated word-level arbitration. The method uses a fixed anchor stream, a longest-stream fallback, a confusion-based anchor corrector, and a Maltese-specific diacritic-restoration gate. Unlike canonical ROVER, candidate streams cannot restructure the anchor through insertions or deletions; they propose only eligible substitutions at aligned anchor positions. On the 422-paragraph development set of the DocEng 2026 Maltese OCR competition, the organizers' fine-tuned Tesseract baseline obtains CER 0.0234. Our pre-convention pipeline reaches CER 0.01317, a 44% reduction. Synthetic fine-tuning provides the largest single gain, while multi-stream arbitration contributes a further material reduction beyond the selected anchor, reaching CER 0.01220 in the current replay with paired-resampling support. A development-tuned label-convention normalization chain furt",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 932,
-          "source": "bioRxiv Immunology",
+          "id": 515,
+          "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
           "priority": 6,
-          "title": "Deep learning representations of human Immune Health for precision immunology",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.07.15.724605v1?rss=1",
-          "content": "The human immune system is composed of [~]30-50 distinct cell types, each of which can exist in different states of activation or differentiation. Indeed, the mammalian immune system has evolved to sense and respond to infections, cancers, injuries, and changes in tissue or host homeostasis (1). Moreover, an increasingly large fraction of approved drugs target the immune system directly, and/or cause immune changes (2-4). A key feature of the immune system is to store some of this information, for example as innate or adaptive immune memory (5). In addition, rewiring of immune network architecture induced by disease, environmental exposures, drug treatments, and/or chronological age allows the immune system to store information in the pattern of connections and activity across populations of immune cells. This ensemble information storage, in addition to changes to individual cells, functions as a major way the immune system encodes aspects of immune history and future potential. Genetic information can identify inherited risk alleles, but cannot capture the continual remodeling of the immune system shaped by exposures, infection, inflammation, therapy, and aging (6, 7). To define",
-          "pub_date": "2026-07-20",
+          "title": "Optimizing Clinical Trial Protocols Using EHR-Derived Heterogeneous Treatment Effects",
+          "link": "https://arxiv.org/abs/2607.16934",
+          "content": "arXiv:2607.16934v1 Announce Type: cross Abstract: Traditional randomized trials often obscure clinically meaningful heterogeneity in treatment response by focusing on average effects. Leveraging real-world data to emulate clinical trials and estimate heterogeneous treatment effects (HTEs) offers a promising path toward more precise and efficient trial design. In this study, we emulate the DAPA-HF trial using electronic health records from the Mayo Clinic Cloud (MCC) to investigate whether HTE-guided stratification can identify patient subgroups with distinct treatment responses to dapagliflozin versus placebo in patients with heart failure with reduced ejection fraction. All-cause mortality was evaluated using Cox proportional hazards models, with HTEs estimated using a Meta-S learner and subgroups defined using a decision tree-based thresholding approach. In the overall cohort of the emulation, no significant treatment difference was observed (HR, 1.681; 95% CI, 0.828-3.413; p = 0.1507). However, compared with the overall emulated cohort, in which dapagliflozin showed no statistically significant survival benefit, HTE-driven stratification identified subgroups with significant and",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1199
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -661,8 +661,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 23,
-      "total_valid": 15,
+      "total_raw": 30,
+      "total_valid": 22,
       "total_candidates": 10
     },
     "china": {
@@ -679,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1296,
+          "id": 1999,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 625
         },
         {
-          "id": 1270,
+          "id": 1973,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 541
         },
         {
-          "id": 1276,
+          "id": 1979,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 451
         },
         {
-          "id": 1289,
+          "id": 1992,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 196
         },
         {
-          "id": 1280,
+          "id": 1983,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 157
         },
         {
-          "id": 1281,
+          "id": 1984,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 124
         },
         {
-          "id": 1285,
+          "id": 1988,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 117
         },
         {
-          "id": 1305,
+          "id": 2008,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 103
         },
         {
-          "id": 1307,
+          "id": 2010,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 103
         },
         {
-          "id": 1284,
+          "id": 1987,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 89
         },
         {
-          "id": 616,
+          "id": 1314,
           "source": "Simon Willison",
           "section": "payment",
           "tier": "T2",
@@ -859,94 +859,124 @@
           "word_count": 1200
         },
         {
-          "id": 1272,
-          "source": "PYMNTS.com",
+          "id": 185,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Trump Orders Defense Contractors to End Reliance on Suppliers From Adversary Nations",
-          "link": "https://www.pymnts.com/supply-chain/2026/trump-orders-defense-contractors-to-end-reliance-on-suppliers-from-adversary-nations/",
-          "content": "President Donald Trump signed an executive order Monday (July 20) that requires defense contractors to map their supply chains and encourages them to shift their sourcing of critical materials to suppliers in the United States or partner nations. The order aims to secure the critical materials and components needed to manufacture cutting-edge equipment used on modern battlefields, the White House [&#8230;] The post Trump Orders Defense Contractors to End Reliance on Suppliers From Adversary Nations appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 20 Jul 2026 23:26:48 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "A Systematic Evaluation of Traditional Privacy Policy Analysis Tools Against LLMs",
+          "link": "https://arxiv.org/abs/2607.17075",
+          "content": "arXiv:2607.17075v1 Announce Type: cross Abstract: The advent of LLMs has significantly changed the research on privacy policy and data compliance analysis by enabling tasks that previously required specialized, domain-specific tools. However, it remains unclear to what extent LLMs can truly replicate the diverse functionalities, and the wide range of methodologies and analysis offered by prior work. In this paper, we conduct the first systematic evaluation of whether off-the-shelf LLMs can replace specialized privacy analysis tools. We study six representative tools spanning three major functionalities: contradiction detection, regulatory compliance analysis, and privacy policy summarization and aggregation, and across three intermediate tasks: structured data extraction using tuples, Semantic Role Labeling (SRL) and manual privacy policy labeling. We compare the performance of two state-of-the-art LLMs (GPT-5.2 and Gemini-2.5 in various configurations) against the tools by directly prompting the models to perform corresponding functionalities and tasks on a custom dataset of 10 privacy policies, allowing us to assess whether off-the-shelf models can produce tool-specific functiona",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 534
+          "word_count": 1200
         },
         {
-          "id": 1279,
-          "source": "PYMNTS.com",
+          "id": 247,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "DOJ Seizes 1,000 Domains Illegally Streaming World Cup Finals",
-          "link": "https://www.pymnts.com/legal/2026/doj-seizes-1000-domains-illegally-streaming-world-cup-finals/",
-          "content": "The Justice Department has seized more than 1,000 domains illegally streaming World Cup matches. The seizures, announced Monday (July 20), took place in three different actions during the global soccer tournament, and were based on investigation by the U.S. Immigration and Customs Enforcement Homeland Security Investigations (HSI) Washington Field Office and the National Intellectual Property [&#8230;] The post DOJ Seizes 1,000 Domains Illegally Streaming World Cup Finals appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 20 Jul 2026 18:37:29 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "BERT-as-a-Judge: A Robust Alternative to Lexical Methods for Efficient Reference-Based LLM Evaluation",
+          "link": "https://arxiv.org/abs/2604.09497",
+          "content": "arXiv:2604.09497v2 Announce Type: replace Abstract: Accurate evaluation is central to the large language model (LLM) ecosystem, guiding model selection and downstream adoption across diverse use cases. In practice, however, evaluating generative outputs typically relies on rigid lexical methods to extract and assess answers, which can conflate a model's true problem-solving ability with its compliance with predefined formatting guidelines. While recent LLM-as-a-Judge approaches mitigate this issue by assessing semantic correctness rather than strict structural conformity, they also introduce substantial computational overhead, making evaluation costly. In this work, we first systematically investigate the limitations of lexical evaluation through a large-scale empirical study spanning 36 models and 15 downstream tasks, demonstrating that such methods correlate poorly with human judgments. To address this limitation, we introduce BERT-as-a-Judge, an encoder-driven approach for assessing answer correctness in reference-based generative settings, robust to variations in output phrasing, and requiring only lightweight training on synthetically annotated question-candidate-reference tri",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 507
+          "word_count": 1200
         },
         {
-          "id": 1275,
-          "source": "PYMNTS.com",
+          "id": 251,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "South Korea Defends Record $422 Million Coupang Fine as US Alleges Protectionism",
-          "link": "https://www.pymnts.com/legal/2026/south-korea-defends-record-422-million-coupang-fine-as-us-alleges-protectionism/",
-          "content": "South Korea’s decision to fine American-owned eCommerce firm Coupang is straining relations between the two countries, Reuters reported Friday (July 20). South Korea said the fine was imposed over a data leak, but American lawmakers said the move raises questions about whether the country is treating U.S. companies fairly, according to the report. The fine [&#8230;] The post South Korea Defends Record $422 Million Coupang Fine as US Alleges Protectionism appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 20 Jul 2026 21:06:48 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Does RAG Know When Retrieval Is Wrong? Diagnosing Context Compliance under Knowledge Conflict",
+          "link": "https://arxiv.org/abs/2605.14473",
+          "content": "arXiv:2605.14473v4 Announce Type: replace Abstract: Retrieval-Augmented Generation (RAG) is usually evaluated by whether the final answer is correct. Under knowledge conflict, this hides a key question: did the model follow retrieved evidence, rely on its parametric prior, or produce a post-hoc rationale? We study this as context compliance, the regime in which retrieved context controls the answer even when it conflicts with the model's prior knowledge. We introduce Context-Driven Decomposition (CDD), an inference-time diagnostic intervention that elicits contextual and prior answers, isolates the conflicting premise, and records a resolution trace that can be perturbed. Across Epi-Scale stress tests, TruthfulQA misconception injection, and cross-model reruns, CDD makes three behaviors visible. First, misleading retrieval can severely degrade accuracy: under a worst-case TruthfulQA misconception-injection probe, Standard RAG reaches only 15.0%. Second, better answers need not share the same mechanism: CDD improves adversarial accuracy on Gemini-2.5-Flash and shows directional gains across Claude variants, yet trace-perturbation sensitivity is high only on Gemini. Third, explicit d",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 489
+          "word_count": 1200
         },
         {
-          "id": 1271,
-          "source": "PYMNTS.com",
+          "id": 356,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "US AI Safety Chief Chris Fall Resigns After 3 Months",
-          "link": "https://www.pymnts.com/personnel/2026/us-ai-safety-chief-chris-fall-resigns-after-3-months/",
-          "content": "The head of the U.S. Center for AI Standards and Innovation (CAISI), Chris Fall, resigned from that role three months after he was selected for it, CNBC reported Monday (July 20). A Commerce Department spokesperson confirmed Fall’s resignation without disclosing the reason, according to the report. CAISI is part of the Commerce Department. The director of the National Institute of [&#8230;] The post US AI Safety Chief Chris Fall Resigns After 3 Months appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 20 Jul 2026 23:54:19 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Constrained Path Reasoning: Measuring When Committed Stages Earn Their Cost",
+          "link": "https://arxiv.org/abs/2607.17240",
+          "content": "arXiv:2607.17240v1 Announce Type: new Abstract: When does a committed intermediate stage in an LLM reasoning pipeline earn its cost? Constrained Path Reasoning (CPR) pairs a source-aware path hypothesis with stage-level accounting. Search generates provisional states; trusted or validated invariants can constrain hard, while other proposals remain soft and revisable. CPR predicts that task-compatible commitments can factor transitions, concentrate candidate mass, induce regularity, and expose feedback when their gains exceed propagated error and execution cost. The formalism covers discrete commitments and continuous flows and measures effective branching, endpoint concentration, and cost per usable output. Across 1,180 generated QCQPs and 40 engineered degenerate polynomial instances (2,140 endpoints), residual triage recovers 63.0% of repair-all's additional feasible yield with 17.7% of its attempts. Fixed-LLM accounting (270 unique calls shared across nested arms) finds usable yield of 41.1% direct, 90.0% after formalization and deterministic execution, 20.0% after one-shot convexification, and 21.1% for the full path. In 120 paired-condition calls, a two-action rollback rule re",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 486
+          "word_count": 1200
         },
         {
-          "id": 1282,
-          "source": "PaymentsDive",
+          "id": 541,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "The next competitive edge is the payout experience",
-          "link": "https://www.paymentsdive.com/spons/the-next-competitive-edge-is-the-payout-experience/824913/",
-          "content": "Spending is instant. Getting paid back is not. Learn why that payout gap will impact your business.",
-          "pub_date": "Mon, 20 Jul 2026 05:00:00 -0400",
+          "tier": "T1",
+          "priority": 6,
+          "title": "A RFID Based Campus Wide Payment System",
+          "link": "https://arxiv.org/abs/2607.17233",
+          "content": "arXiv:2607.17233v1 Announce Type: cross Abstract: This work titled \"RFID Based Campuswide Payment System\" introduces an innovative cashless payment solution for educational institutions. It uses RFID cards and a Raspberry Pi to enable hassle free payments for various campus services, such as cafeteria purchases, tuition fees, and library fines. A centralized database ensures real-time updates on transactions and account balances, accessible through a simple and user-friendly web interface. This work is involved in designing a secure system with object-oriented principles, setting up databases, and integrating hardware like RFID readers with a Raspberry Pi. The systems are proved to be a cost-effective and efficient alternative to traditional payment methods, enhancing convenience and security for students and administrators. The study also explored similar RFID applications, like smart parking and attendance systems, to identify challenges and improvements. Looking ahead, it envisions features like wearable RFID devices, voice-activated payments, and blockchain integration to boost security and usability. Results show that this system simplifies campus payments and has the potentia",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 99
+          "word_count": 1200
         },
         {
-          "id": 1283,
-          "source": "PaymentsDive",
+          "id": 542,
+          "source": "arXiv cs.AI",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Retail media was the first wave. Financial services may define the next one.",
-          "link": "https://www.paymentsdive.com/spons/retail-media-was-the-first-wave-financial-services-may-define-the-next-one/825477/",
-          "content": "Retail media changed advertising. Financial services could define what comes next.",
-          "pub_date": "Mon, 20 Jul 2026 05:00:00 -0400",
+          "tier": "T1",
+          "priority": 6,
+          "title": "A Large-Scale Measurement of AI Bill of Materials Completeness in Hugging Face Models",
+          "link": "https://arxiv.org/abs/2607.17242",
+          "content": "arXiv:2607.17242v1 Announce Type: cross Abstract: Pretrained machine learning (ML) models help developers build ML-intensive software systems without training models from scratch. However, model repositories often provide incomplete machine-readable documentation about model provenance, licenses, datasets, limitations, and external references, creating transparency and governance gaps across the AI supply chain. Artificial Intelligence Bills of Materials (AIBOMs) address these gaps by documenting AI artifacts, including models, metadata, licenses, datasets, model-card information, and external references. Taking public Hugging Face (HF) model repositories as a case study, this paper empirically investigates AIBOM completeness, defined as the extent to which repositories provide AIBOM-relevant information for machine-readable AI supply-chain documentation. We examine approximately 97.5K AIBOM artifacts to assess the extent to which generated AIBOMs: (i) contain required structural and metadata fields, (ii) represent model identity, license, and external-reference information, (iii) capture model-card documentation such as datasets, limitations, safety-risk assessment, and environmen",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 82
+          "word_count": 1200
+        },
+        {
+          "id": 695,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Lost in Transmission: An Information-Theoretic Account of Unsupervised Software Traceability",
+          "link": "https://arxiv.org/abs/2412.04704",
+          "content": "arXiv:2412.04704v2 Announce Type: replace-cross Abstract: Traceability remains a critical capability to ensure system reliability, maintainability, and compliance in modern software development. Although unsupervised Information Retrieval (IR) and Machine Learning (ML) techniques are widely adopted for automated trace link recovery, their effectiveness is often limited by the quality and structure of the underlying artifacts. In practice, these approaches assume that meaningful traceability signals are embedded in textual data, an assumption that rarely holds in industrial settings with sparse, inconsistent, or unbalanced documentation. Furthermore, conventional evaluation metrics (e.g., precision, recall, F1) can misrepresent performance when data characteristics are not explicitly considered. We introduce TraceXplainer, an information-theoretic framework for evaluating the reliability and limits of unsupervised traceability. Our approach leverages self-information and mutual information (MI) to quantify the informativeness and alignment of source and target artifacts. Through a comprehensive empirical analysis of industry datasets, we show that typical traceability corpora exhibi",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 870,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Multimodal Attention-based Deep Learning for Emergency Triage with Electronic Health Records",
+          "link": "https://arxiv.org/abs/2607.16662",
+          "content": "arXiv:2607.16662v1 Announce Type: new Abstract: Accurate emergency triage decision is critical to avoid clinical deterioration, morbidity, and mortality. Machine learning-based triage system involves acquiring the main presenting complaint in text form and assessing vital signs in numerical data, enabling an automated and efficient analysis of patient information for timely and accurate prioritization of medical attention. However, modelling the intricacies of both data types requires a comprehensive understanding of the temporal structure and dependencies within the data. Thus, the aim of this study is to propose a multimodal deep learning architecture that can effectively handle both tabular and textual data. Furthermore, the proposed model exploits self-attention to to capture both local and global relationships between the features. A dataset consisting of 11,102 triage data collected from emergency department of Hospital Universiti Sains Malaysia is used for model development and validation. The proposed model demonstrated an increase of 1.95% in accuracy, 2.49% in F1-score, and 1.41% in ROC AUC compared to the baseline model. The experimental results demonstrated the potentia",
+          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -954,15 +984,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 203,
-      "total_valid": 28,
-      "total_candidates": 18
+      "total_raw": 213,
+      "total_valid": 38,
+      "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1470,
-    "dup": 421,
-    "nocontent": 380,
+    "total_raw": 2173,
+    "dup": 581,
+    "nocontent": 381,
     "noise": 2
   }
 }
