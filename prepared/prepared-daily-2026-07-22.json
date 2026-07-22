@@ -170,15 +170,15 @@
           "word_count": 156
         },
         {
-          "id": 68,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Masked Diffusion Language Models are Strong and Steerable Text-Based World Models for Agentic RL",
-          "link": "https://arxiv.org/abs/2607.16204",
-          "content": "Recent growth in reinforcement learning (RL) has surfaced a need for diverse, specialized training environments. Hand-curated environments with fixed task and reward difficulties become ineffective signals as model performance improves, and sparse rewards over long horizons induce mode collapse on specific workflows or tool structures. World models that simulate environment states have matched pure rollout performance, making them promising for scaling diversity on-demand. However, autoregressive (AR) world models suffer from a left-to-right bias preventing conditioning on globally interdependent state anchors such as tool schemas, prior turns, and expected outcomes. We (i) formalize text-based world modeling as a steerable transition-dynamics problem decomposed into initial state, task context, tool schemas, domain rules, and steering directives, and (ii) curate 239,403 grounded state-action trajectories spanning nine open-source environments and twelve frontier model families. We compare AR LMs and masked diffusion language models (MDLMs), showing MDLMs, via bidirectional anchor-aware denoising, achieve better coherence, groundedness, and empirically validated rollout diversity t",
-          "pub_date": "2026-05-06T20:00:00.000Z",
+          "title": "Nonuniformity Principle in Human-AI Coworking",
+          "link": "https://arxiv.org/abs/2607.16530",
+          "content": "As generative AI is increasingly applied to automate multi-step and high-stake workflows, human judgment and involvement remain essential for ensuring the quality of AI-generated outputs. In practice, while it is desirable for human experts to provide oversight on AI regularly, often by reviewing intermediate outputs, giving feedback, making corrections, and steering subsequent steps, such oversight is constrained by the time and resources that humans can afford. This creates a tension between the need for human oversight and AI's efficiency in delivering more output with less intervention. An important but underexplored question, then, is how to optimally engage humans in human-AI coworking. This work was originally motivated by our empirical observation that in long AI workflows, human oversight often improves user satisfaction while reducing unnecessary rework and token consumption. From there, we formulate the problem of where to place oversight stages in human-AI coworking. Under reasonable assumptions, we then develop the nonuniformity principle, which states that the optimal schedule places oversight stages with non-decreasing gaps along the workflow. We empirically validate",
+          "pub_date": "2026-07-16T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 1479,
+          "id": 1480,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 312
         },
         {
-          "id": 1612,
+          "id": 1613,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1165
         },
         {
-          "id": 1641,
+          "id": 1642,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 984
         },
         {
-          "id": 1616,
+          "id": 1617,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 444
         },
         {
-          "id": 1663,
+          "id": 1664,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 326
         },
         {
-          "id": 1538,
+          "id": 1539,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 298
         },
         {
-          "id": 1820,
+          "id": 1821,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 179
         },
         {
-          "id": 1785,
+          "id": 1786,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 236
         },
         {
-          "id": 1805,
+          "id": 1806,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 230
         },
         {
-          "id": 1743,
+          "id": 1744,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 209
         },
         {
-          "id": 1478,
+          "id": 1479,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 1200
         },
         {
-          "id": 1477,
+          "id": 1478,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 457
         },
         {
-          "id": 1450,
+          "id": 1451,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 227
         },
         {
-          "id": 1466,
+          "id": 1467,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 174
         },
         {
-          "id": 1469,
+          "id": 1470,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 463,
-      "total_valid": 292,
+      "total_valid": 293,
       "total_candidates": 15
     },
     "synbio": {
@@ -596,7 +596,7 @@
           "word_count": 1154
         },
         {
-          "id": 1619,
+          "id": 1620,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 901
         },
         {
-          "id": 1618,
+          "id": 1619,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 672
         },
         {
-          "id": 1540,
+          "id": 1541,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 416
         },
         {
-          "id": 1647,
+          "id": 1648,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 380
         },
         {
-          "id": 1627,
+          "id": 1628,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 340
         },
         {
-          "id": 1649,
+          "id": 1650,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 315
         },
         {
-          "id": 1538,
+          "id": 1539,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 38,
-      "total_valid": 30,
+      "total_raw": 37,
+      "total_valid": 29,
       "total_candidates": 10
     },
     "china": {
@@ -739,21 +739,6 @@
     "payment": {
       "candidates": [
         {
-          "id": 2033,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "KeyCorp Expands US Middle Market Footprint and Targets European M&A",
-          "link": "https://www.pymnts.com/earnings/2026/keycorp-expands-us-middle-market-footprint-and-targets-european-m-a/",
-          "content": "KeyCorp made gains across its priority growth businesses of investment banking, commercial payments and wealth management in the second quarter, Chairman, CEO and President Chris Gorman said Tuesday (July 14). The bank’s investment banking pipelines grew 9% over the previous quarter, its commercial payments business delivered double-digit fee growth over the past year, and its [&#8230;] The post KeyCorp Expands US Middle Market Footprint and Targets European M&#038;A appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 21 Jul 2026 19:34:44 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 502
-        },
-        {
           "id": 2035,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
@@ -769,7 +754,7 @@
           "word_count": 483
         },
         {
-          "id": 2080,
+          "id": 2076,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +769,22 @@
           "word_count": 483
         },
         {
-          "id": 2057,
+          "id": 2025,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Augustus Raises $180 Million to Build Clearing Bank for Stablecoins",
+          "link": "https://www.pymnts.com/news/investment-tracker/2026/augustus-raises-180-million-to-build-clearing-bank-for-stablecoins/",
+          "content": "Augustus, formerly known as Ivy, raised $180 million in a Series B funding round to support its offering that gives financial institutions around the world direct access to dollar accounts and rails through a federally chartered bank. The company will use the new funding to continue serving FinTechs and banks in Latin America, Southeast Asia, [&#8230;] The post Augustus Raises $180 Million to Build Clearing Bank for Stablecoins appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 22 Jul 2026 00:42:59 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 462
+        },
+        {
+          "id": 2056,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 262
         },
         {
-          "id": 2058,
+          "id": 2057,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 231
         },
         {
-          "id": 2056,
+          "id": 2055,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 230
         },
         {
-          "id": 2052,
+          "id": 2051,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,22 +979,22 @@
           "word_count": 1200
         },
         {
-          "id": 2034,
+          "id": 2026,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Billtrust Debuts AI Assistant Connectivity to Promote AR Automation",
-          "link": "https://www.pymnts.com/news/b2b-payments/2026/billtrust-debuts-ai-assistant-connectivity-to-promote-ar-automation/",
-          "content": "B2B cash generation platform Billtrust has launched the “Billtrust MCP Server.” With this new offering, the company becomes the first accounts receivable (AR) platform to directly link live invoice-to-cash intelligence to leading AI assistants through the Model Context Protocol (MCP), Billtrust said in a Tuesday (July 21) news release. “Finance teams can now query their [&#8230;] The post Billtrust Debuts AI Assistant Connectivity to Promote AR Automation appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 21 Jul 2026 19:25:32 +0000",
+          "title": "OpenAI Models Breach Hugging Face During Cyber Evaluation",
+          "link": "https://www.pymnts.com/cybersecurity/2026/openai-models-breach-hugging-face-during-cyber-evaluation/",
+          "content": "OpenAI said Tuesday (July 21) that a security incident reported last week by Hugging Face was caused by OpenAI models as their cyber capabilities were being tested by OpenAI. “We consider this incident to be an unprecedented cyber incident, involving state-of-the-art cyber capabilities, and are responding accordingly,” OpenAI said in a Tuesday blog post. The incident involved a combination of OpenAI [&#8230;] The post OpenAI Models Breach Hugging Face During Cyber Evaluation appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 22 Jul 2026 00:08:32 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 490
+          "word_count": 510
         },
         {
-          "id": 2030,
+          "id": 2032,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 488
         },
         {
-          "id": 2026,
+          "id": 2028,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 487
         },
         {
-          "id": 2032,
+          "id": 2034,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1044,14 +1044,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 223,
+      "total_raw": 219,
       "total_valid": 44,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2242,
-    "dup": 587,
+    "total_raw": 2238,
+    "dup": 582,
     "nocontent": 383,
     "noise": 2
   }
