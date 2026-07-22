@@ -125,7 +125,7 @@
           "word_count": 100
         },
         {
-          "id": 85,
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 348
         },
         {
-          "id": 88,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 182
         },
         {
-          "id": 87,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -170,15 +170,15 @@
           "word_count": 156
         },
         {
-          "id": 67,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Nonuniformity Principle in Human-AI Coworking",
-          "link": "https://arxiv.org/abs/2607.16530",
-          "content": "As generative AI is increasingly applied to automate multi-step and high-stake workflows, human judgment and involvement remain essential for ensuring the quality of AI-generated outputs. In practice, while it is desirable for human experts to provide oversight on AI regularly, often by reviewing intermediate outputs, giving feedback, making corrections, and steering subsequent steps, such oversight is constrained by the time and resources that humans can afford. This creates a tension between the need for human oversight and AI's efficiency in delivering more output with less intervention. An important but underexplored question, then, is how to optimally engage humans in human-AI coworking. This work was originally motivated by our empirical observation that in long AI workflows, human oversight often improves user satisfaction while reducing unnecessary rework and token consumption. From there, we formulate the problem of where to place oversight stages in human-AI coworking. Under reasonable assumptions, we then develop the nonuniformity principle, which states that the optimal schedule places oversight stages with non-decreasing gaps along the workflow. We empirically validate",
-          "pub_date": "2026-07-16T20:00:00.000Z",
+          "title": "Generative World Renderer at the Speed of Play",
+          "link": "https://arxiv.org/abs/2607.18703",
+          "content": "Generative world renderer AlayaRenderer receives structured world states exported from physics engines and synthesizes RGB frames. Unlike models that generate frames from text/control-hints prompts, AlayaRenderer preserves scene structure without altering the underlying world dynamics. This demonstrates an alternative path toward interactive world modeling and user-controllable play. However, the original AlayaRenderer is too computationally expensive for real-time deployment. This technical report introduces AlayaRenderer-Flash, a real-time-oriented generative forward world renderer that pushes AlayaRenderer from 0.56 FPS to 31.54 FPS, reaching the speed of play. AlayaRenderer-Flash reformulates the original renderer as a few-step autoregressive streaming model and introduces lightweight distilled codecs for efficient latent encoding and frame reconstruction. It retains the teacher model's G-buffer and text-prompt interfaces while enabling continuous rendering over input streams of unbounded length. We evaluate AlayaRenderer-Flash on G-buffer streams across content preservation, temporal consistency, cross-window stability, prompt controllability, and runtime efficiency. Our resul",
+          "pub_date": "2026-07-21T00:54:24.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1441,
-      "total_valid": 916,
+      "total_raw": 991,
+      "total_valid": 567,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1480,
+          "id": 1022,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 312
         },
         {
-          "id": 1613,
+          "id": 1155,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1165
         },
         {
-          "id": 1642,
+          "id": 1184,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 984
         },
         {
-          "id": 1617,
+          "id": 1159,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 444
         },
         {
-          "id": 1664,
+          "id": 1206,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 326
         },
         {
-          "id": 1539,
+          "id": 1081,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 298
         },
         {
-          "id": 1821,
+          "id": 1364,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 179
         },
         {
-          "id": 1786,
+          "id": 1329,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 236
         },
         {
-          "id": 1806,
+          "id": 1349,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 230
         },
         {
-          "id": 1744,
+          "id": 1287,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 209
         },
         {
-          "id": 1479,
+          "id": 1021,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 1200
         },
         {
-          "id": 1478,
+          "id": 1020,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 457
         },
         {
-          "id": 1451,
+          "id": 1001,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 227
         },
         {
-          "id": 1467,
+          "id": 1012,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 174
         },
         {
-          "id": 1470,
+          "id": 1015,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 463,
-      "total_valid": 293,
+      "total_raw": 456,
+      "total_valid": 291,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1940,
+          "id": 1483,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 313
         },
         {
-          "id": 1960,
+          "id": 1503,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 285
         },
         {
-          "id": 1943,
+          "id": 1486,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 271
         },
         {
-          "id": 1996,
+          "id": 1539,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1997,
+          "id": 1540,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1999,
+          "id": 1542,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1914,
+          "id": 1457,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 340
         },
         {
-          "id": 1983,
+          "id": 1526,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2003,
+          "id": 1546,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1998,
+          "id": 1541,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1154
         },
         {
-          "id": 1620,
+          "id": 1162,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 901
         },
         {
-          "id": 1619,
+          "id": 1161,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 672
         },
         {
-          "id": 1541,
+          "id": 1083,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 416
         },
         {
-          "id": 1648,
+          "id": 1190,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 380
         },
         {
-          "id": 1628,
+          "id": 1170,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 357
         },
         {
-          "id": 1914,
+          "id": 1457,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 340
         },
         {
-          "id": 1650,
+          "id": 1192,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 315
         },
         {
-          "id": 1539,
+          "id": 1081,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 37,
-      "total_valid": 29,
+      "total_raw": 39,
+      "total_valid": 31,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2035,
+          "id": 1578,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 483
         },
         {
-          "id": 2076,
+          "id": 1616,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 483
         },
         {
-          "id": 2025,
+          "id": 1572,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 462
         },
         {
-          "id": 2056,
+          "id": 1597,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 262
         },
         {
-          "id": 2057,
+          "id": 1598,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 255
         },
         {
-          "id": 2045,
+          "id": 1586,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 231
         },
         {
-          "id": 2055,
+          "id": 1596,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 230
         },
         {
-          "id": 2051,
+          "id": 1592,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 194
         },
         {
-          "id": 88,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 182
         },
         {
-          "id": 2037,
+          "id": 1580,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 157
         },
         {
-          "id": 2047,
+          "id": 1588,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 147
         },
         {
-          "id": 2038,
+          "id": 1581,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,124 +919,124 @@
           "word_count": 139
         },
         {
-          "id": 707,
+          "id": 71,
+          "source": "HuggingFace Daily Papers",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 5,
+          "title": "ISO: An RLVR-Native Optimization Stack",
+          "link": "https://arxiv.org/abs/2607.19331",
+          "content": "Reinforcement learning with verifiable rewards (RLVR) is rapidly advancing the reasoning capabilities of language models, yet the optimization layer that converts reward feedback into weight-space updates remains poorly understood. Building on our prior analysis (Zhu et al., 2025), we study this missing layer through the singular structure of model weights and identify spectral inheritance: RLVR can reuse the base model's weight spectra while acquiring new behavior through changes in the associated input and output singular frames. We operationalize spectral inheritance as Isospectral Optimization (ISO), an RLVR-native, fixed-spectrum optimization framework with complementary offline and online instantiations. Offline, ISO-Merger combines the frame changes of shared-base specialists into a single fixed-spectrum model, requiring no post-merge data, rollouts, gradient updates, or on-policy distillation (OPD). It recovers complementary specialist capabilities and achieves the strongest aggregate performance among the compared data-free merging methods. Online, ISO-Optimizer applies a chosen base optimizer, including AdamW and Muon, to the frame variables while keeping the base spectra",
+          "pub_date": "2026-07-21T13:51:36.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 167,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Prompt Design at Scale: How Format, Instruction Count, and Context Length Shape Instruction Adherence and Hallucination in Large Language Models",
+          "link": "https://arxiv.org/abs/2607.19257",
+          "content": "arXiv:2607.19257v1 Announce Type: new Abstract: Practitioners make three prompt-design decisions with almost no controlled evidence behind them: how to format instructions and context (markdown, plain text, prose, or tabular), how many simultaneous instructions a system prompt can carry before compliance degrades, and how much context a model can hold before recall and honesty degrade. We report two controlled experiments crossing all three factors on one held, contamination-free synthetic corpus (the \"Book of Veyra,\" 8,780 uniquely-named entities, deterministically regenerable from a fixed seed), evaluated across five models. Experiment 1 (960 calls/model) measures instruction-following decay as rule count N grows from 10 to 160, crossed with four formats and system-prompt vs. user-turn placement. Perfect-response rate collapses to zero by N=80 for every model, format, and placement. Placement produces effects at least as large as format at N=160 in most models, but the direction is model-specific. No model shows a reliable markdown advantage; one 35B model favors plain text instead. Experiment 2 (5,520 calls/model) measures recall accuracy, false-premise sycophancy, and absent-fa",
+          "pub_date": "Wed, 22 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 243,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "FinRAG-12B: A Production-Validated Recipe for Grounded Question Answering in Banking",
+          "link": "https://arxiv.org/abs/2605.05482",
+          "content": "arXiv:2605.05482v2 Announce Type: replace-cross Abstract: Large language models (LLMs) are rapidly being adopted across various domains. However, their adoption in banking industry faces resistance due to demands for high accuracy, regulatory compliance, and the need for verifiable and grounded responses. We present a unified, data-efficient framework for training grounded domain-specific LLMs that optimizes answer quality, citation grounding, and calibrated refusal under real-world deployment constraints. First, we describe a data generation pipeline that combines LLM-as-a-Judge filtering, citation annotation, and curriculum learning with only 143M tokens. The resulting 12B model achieves high answer quality outperforming GPT-4.1 on citation grounding, with a modest citation tradeoff versus the untuned base. Second, we propose a calibrated refusal mechanism: training on 22% unanswerable examples yield a 12% \"I don't know\" rate, substantially improving over the base model's unsafe 4.3% rate while avoiding GPT-4.1's over-refusal (20.2%). Third, we present an end-to-end methodology spanning from data curation to quantized serving. The system is deployed at 40+ financial institutions,",
+          "pub_date": "Wed, 22 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 415,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Lost in Transmission: An Information-Theoretic Account of Unsupervised Software Traceability",
-          "link": "https://arxiv.org/abs/2412.04704",
-          "content": "arXiv:2412.04704v2 Announce Type: replace-cross Abstract: Traceability remains a critical capability to ensure system reliability, maintainability, and compliance in modern software development. Although unsupervised Information Retrieval (IR) and Machine Learning (ML) techniques are widely adopted for automated trace link recovery, their effectiveness is often limited by the quality and structure of the underlying artifacts. In practice, these approaches assume that meaningful traceability signals are embedded in textual data, an assumption that rarely holds in industrial settings with sparse, inconsistent, or unbalanced documentation. Furthermore, conventional evaluation metrics (e.g., precision, recall, F1) can misrepresent performance when data characteristics are not explicitly considered. We introduce TraceXplainer, an information-theoretic framework for evaluating the reliability and limits of unsupervised traceability. Our approach leverages self-information and mutual information (MI) to quantify the informativeness and alignment of source and target artifacts. Through a comprehensive empirical analysis of industry datasets, we show that typical traceability corpora exhibi",
-          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
+          "title": "SFGA: A Statistics-First Gating Architecture with Adjudicative Escalation for Trustworthy SFT Data Procurement",
+          "link": "https://arxiv.org/abs/2607.18960",
+          "content": "arXiv:2607.18960v1 Announce Type: cross Abstract: Procuring supervised fine-tuning (SFT) data forces a buyer to decide, before any downstream training, whether a candidate corpus is worth acquiring. We present \\sys{}, a statistics-first gating architecture that treats procurement as a cost-aware routing problem over three intrinsic quality axes -- diversity, utility, and redundancy. Cheap blind measurements are summarised into per-axis estimates with confidence intervals; a gate accepts a decision only when intervals are tight, sample sizes are adequate, and the axes agree, otherwise it escalates the case to an adjudicative debate between a buy-advocate and a reject-advocate judge, resolved by a presiding verdict. On a controlled benchmark of 12 datasets ($2{\\times}3{\\times}2$ grid over the three axes) with 5 seeds, the gate reaches 0.90 accuracy and 0.83 $F_1$ at \\$0.017 per unit, sitting between an always-verify baseline (0.75) and an oracle upper bound (0.98) while spending less than always-escalate (\\$0.020). We further report honest negative diagnostics of the debate path: a con-side win rate of 0.80 ($p\\approx3{\\times}10^{-6}$) and a 52\\% position-flip rate under advocate swa",
+          "pub_date": "Wed, 22 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 882,
+          "id": 487,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Resist and Update: Counterfactual Report Coordinates for Incentive-Compatible LLMs",
+          "link": "https://arxiv.org/abs/2607.12985",
+          "content": "arXiv:2607.12985v2 Announce Type: replace Abstract: Aligned language models routinely misreport under non-evidential pressure: they cave to a confident user, yet fail to revise when genuine evidence arrives. We cast this as a failure of internal incentive-compatibility and study the two demands, resist (ignore forbidden pressure) and update (follow licensed evidence), on a Bayesian-witness benchmark with known posteriors, where the same user disagreement is evidence or pressure purely by stated source reliability, removing the evidence/pressure confound by construction. Using interchange interventions rather than probes, we causally localize low-rank report coordinates for answer, confidence, and caveat, establishing causal sufficiency at a late intervention site rather than uniqueness or necessity, with a causal cross-talk matrix showing strong own-coordinate control and only small cross-effects (partial functional disentanglement). We then introduce a training-free counterfactual report-coordinate (CRC) clamp that references the model's own report under an incentive-neutralized counterfactual of the prompt. The two-pass full-window clamp attains resist and update of $1.00$ jointl",
+          "pub_date": "Wed, 22 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 819,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Multimodal Attention-based Deep Learning for Emergency Triage with Electronic Health Records",
-          "link": "https://arxiv.org/abs/2607.16662",
-          "content": "arXiv:2607.16662v1 Announce Type: new Abstract: Accurate emergency triage decision is critical to avoid clinical deterioration, morbidity, and mortality. Machine learning-based triage system involves acquiring the main presenting complaint in text form and assessing vital signs in numerical data, enabling an automated and efficient analysis of patient information for timely and accurate prioritization of medical attention. However, modelling the intricacies of both data types requires a comprehensive understanding of the temporal structure and dependencies within the data. Thus, the aim of this study is to propose a multimodal deep learning architecture that can effectively handle both tabular and textual data. Furthermore, the proposed model exploits self-attention to to capture both local and global relationships between the features. A dataset consisting of 11,102 triage data collected from emergency department of Hospital Universiti Sains Malaysia is used for model development and validation. The proposed model demonstrated an increase of 1.95% in accuracy, 2.49% in F1-score, and 1.41% in ROC AUC compared to the baseline model. The experimental results demonstrated the potentia",
-          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
+          "title": "DeepPAAC: A New Deep Galerkin Method for Principal-Agent Problems",
+          "link": "https://arxiv.org/abs/2511.04309",
+          "content": "arXiv:2511.04309v3 Announce Type: replace-cross Abstract: We consider numerical resolution of principal-agent (PA) problems in continuous time. We formulate a generic PA model with continuous and lump payments and a multi-dimensional strategy of the agent. To tackle the resulting Hamilton-Jacobi-Bellman equation with an implicit Hamiltonian we develop a novel deep learning method: the Deep Principal-Agent Actor Critic (DeepPAAC) Actor-Critic algorithm. DeepPAAC is able to handle multi-dimensional states and controls, as well as constraints. We investigate the role of the neural network architecture, training designs, loss functions, etc. on the convergence of the solver, presenting five different case studies.",
+          "pub_date": "Wed, 22 Jul 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 719
         },
         {
-          "id": 1045,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Semi-Supervised Conditional Diffusion via Label Augmentation",
-          "link": "https://arxiv.org/abs/2607.16685",
-          "content": "arXiv:2607.16685v1 Announce Type: cross Abstract: Conditional diffusion models have become a powerful and flexible framework for learning complex conditional distributions from labeled data. In practice, however, acquiring high-quality labels is costly and time-consuming, leaving large volumes of unlabeled data unused. To address this, we introduce label-augmented conditional diffusion (LACD), a simple and effective approach that incorporates unlabeled examples by assigning them a designated trivial label and performing joint denoising score matching over the augmented dataset. We provide sufficient conditions guaranteeing population-level identifiability of the target conditional distribution under this scheme. Moreover, we establish rigorous statistical guarantees: when sufficiently many unlabeled samples are available, the sampling distribution produced by LACD converges strictly faster than the purely supervised estimator in total variation distance, and at least as fast in Wasserstein-1 distance. Extensive experiments on synthetic, image, and tabular benchmarks corroborate our theory and show substantial gains in sample efficiency and generative performance compared with the p",
-          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1243,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "STRATA: A Name-and-Geography Race Inference Model for Fair Lending and Housing Equity Applications",
-          "link": "https://arxiv.org/abs/2504.21259",
-          "content": "arXiv:2504.21259v2 Announce Type: replace-cross Abstract: Accurate imputation of race and ethnicity (R&E) is essential for fair lending compliance under ECOA, HMDA, and the Community Reinvestment Act, where up to 15% of mortgage applications carry missing race data and regulated institutions bear responsibility for identifying disparities on those records. Existing proxy methods, including Bayesian Improved Surname Geocoding (BISG), exhibit systematic misclassification biases linked to socioeconomic status that cause measured disparities to understate true levels. This paper introduces STRATA (Socioeconomic and Tract-Referenced Attribution for Algorithmic analysis), a race and ethnicity inference model that integrates character-level name sequences with census tract geolocation via stacked Bidirectional LSTM networks and XGBoost post-filtering. A central goal is reducing the socioeconomically correlated bias that causes non-White individuals to be misclassified as White: STRATA reduces this White False Positive Rate from 41.8% under BISG to 17.8% for the STRATA ensemble. On a held-out voter registration validation dataset, the STRATA base model achieves 88.7% accuracy, outperformin",
-          "pub_date": "Tue, 21 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 2026,
+          "id": 1568,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "OpenAI Models Breach Hugging Face During Cyber Evaluation",
-          "link": "https://www.pymnts.com/cybersecurity/2026/openai-models-breach-hugging-face-during-cyber-evaluation/",
-          "content": "OpenAI said Tuesday (July 21) that a security incident reported last week by Hugging Face was caused by OpenAI models as their cyber capabilities were being tested by OpenAI. “We consider this incident to be an unprecedented cyber incident, involving state-of-the-art cyber capabilities, and are responding accordingly,” OpenAI said in a Tuesday blog post. The incident involved a combination of OpenAI [&#8230;] The post OpenAI Models Breach Hugging Face During Cyber Evaluation appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 22 Jul 2026 00:08:32 +0000",
+          "title": "Bank of America Equips Customer Service Reps With Gen AI",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/bank-of-america-equips-customer-service-reps-with-gen-ai/",
+          "content": "Bank of America has added new generative artificial intelligence capabilities to EricaAssist, an AI agent that works alongside the bank’s customer service representatives during calls. The new AI capabilities enable EricaAssist to deliver relevant insights in under three seconds, without interrupting the flow of the conversation, and help customer service representatives provide clients with more personalized [&#8230;] The post Bank of America Equips Customer Service Reps With Gen AI appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 22 Jul 2026 02:15:20 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 510
+          "word_count": 519
         },
         {
-          "id": 2032,
+          "id": 1571,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Software Brands Lead ChatGPT’s Ad Market as Retailers Sit Out",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/software-brands-lead-chatgpts-ad-market-as-retailers-sit-out/",
-          "content": "ChatGPT started advertising in February. Within six weeks the program had crossed $100 million in annualized revenue, CNBC reported. On May 5, OpenAI removed the $50,000 minimum spend threshold and launched a self-serve Ads Manager, Digiday reported. That change lowered the barrier to entry and advertisers responded immediately. Active advertisers on ChatGPT rose from 2,585 [&#8230;] The post Software Brands Lead ChatGPT’s Ad Market as Retailers Sit Out appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 21 Jul 2026 20:33:43 +0000",
+          "title": "Capital One Tests Moving Credit Cards to Discover Network",
+          "link": "https://www.pymnts.com/earnings/2026/capital-one-tests-moving-credit-cards-to-discover-network/",
+          "content": "Capital One’s Discover integration dominated discussion during the second-quarter earnings call, alongside new initiatives, with the bank testing Capital One credit cards on the Discover network while continuing to spend on technology and artificial intelligence (AI). The company’s results on Tuesday (July 21) indicated that credit card purchase volume totaled $253.8 billion, increasing 15% sequentially and [&#8230;] The post Capital One Tests Moving Credit Cards to Discover Network appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 22 Jul 2026 01:22:27 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 488
-        },
-        {
-          "id": 2028,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Forward Financing Secures Another $525 Million to Support Small Businesses",
-          "link": "https://www.pymnts.com/smbs/2026/forward-financing-secures-another-525-million-dollars-support-small-businesses/",
-          "content": "Forward Financing, a provider of capital to small businesses across the United States, secured $525 million of new financing that brings the company’s total committed funding capacity to nearly $700 million. The new financing includes a $350 million variable funding note (VFN) facility and a $175 million asset-backed securitization (ABS), the company said in a [&#8230;] The post Forward Financing Secures Another $525 Million to Support Small Businesses appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 21 Jul 2026 22:04:19 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 487
-        },
-        {
-          "id": 2034,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "UK Discards Digital ID Plans After Public Pushback",
-          "link": "https://www.pymnts.com/authentication/digital-identity/2026/uk-discards-digital-id-plans-after-public-pushback/",
-          "content": "England’s new prime minister has reportedly cancelled his predecessor’s plans for a national digital ID. Andy Burnham confirmed for Techcrunch Tuesday (July 21) that the government would scrap the widely-criticized proposal for a digital identity card program, announced last year by former Prime Minister Keir Starmer. The government plans to use the money saved from [&#8230;] The post UK Discards Digital ID Plans After Public Pushback appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 21 Jul 2026 19:43:47 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 469
+          "word_count": 518
         }
       ],
       "quota": {
@@ -1044,15 +1044,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 219,
-      "total_valid": 44,
+      "total_raw": 218,
+      "total_valid": 45,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2238,
-    "dup": 582,
-    "nocontent": 383,
+    "total_raw": 1778,
+    "dup": 475,
+    "nocontent": 382,
     "noise": 2
   }
 }
