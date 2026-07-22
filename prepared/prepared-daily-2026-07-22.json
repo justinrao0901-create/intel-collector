@@ -170,15 +170,15 @@
           "word_count": 156
         },
         {
-          "id": 68,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Generative World Renderer at the Speed of Play",
-          "link": "https://arxiv.org/abs/2607.18703",
-          "content": "Generative world renderer AlayaRenderer receives structured world states exported from physics engines and synthesizes RGB frames. Unlike models that generate frames from text/control-hints prompts, AlayaRenderer preserves scene structure without altering the underlying world dynamics. This demonstrates an alternative path toward interactive world modeling and user-controllable play. However, the original AlayaRenderer is too computationally expensive for real-time deployment. This technical report introduces AlayaRenderer-Flash, a real-time-oriented generative forward world renderer that pushes AlayaRenderer from 0.56 FPS to 31.54 FPS, reaching the speed of play. AlayaRenderer-Flash reformulates the original renderer as a few-step autoregressive streaming model and introduces lightweight distilled codecs for efficient latent encoding and frame reconstruction. It retains the teacher model's G-buffer and text-prompt interfaces while enabling continuous rendering over input streams of unbounded length. We evaluate AlayaRenderer-Flash on G-buffer streams across content preservation, temporal consistency, cross-window stability, prompt controllability, and runtime efficiency. Our resul",
-          "pub_date": "2026-07-21T00:54:24.000Z",
+          "title": "Where Should Optimizer State Live? Tiered State Allocation for Memory-Efficient Mixture-of-Experts Training",
+          "link": "https://arxiv.org/abs/2607.19058",
+          "content": "Optimizer state is the largest single line item in the memory budget of mixture-of-experts (MoE) training: on a 6.78B-parameter MoE language model, AdamW keeps 50.6 GB of first and second moments to update 12.6 GB of bfloat16 weights. We study SkewAdam, an optimizer built on the observation that the three parameter populations of an MoE - the dense backbone, the experts, and the router - differ enough in size and gradient statistics that they should not receive the same state. SkewAdam keeps float32 momentum plus a factored second moment for the backbone (5% of parameters), a factored second moment alone for the experts (95%), and an exact second moment for the router (<0.01%). The resulting state occupies 1.29 GB, 2.6% of AdamW's, and peak training memory falls from 81.4 GB to 31.3 GB, within the budget of a 40 GB accelerator. In a controlled comparison from identical initializations over 82M tokens, SkewAdam reaches validation perplexity 108.4, ahead of AdamW (126.8), Muon (120.2), and Lion (393.7), and settles router load balance to within 1% of its uniform floor. The allocation is not what earns that perplexity: a tier ablation matches it with twenty times the state, and Adafac",
+          "pub_date": "2026-07-20T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 991,
-      "total_valid": 567,
+      "total_valid": 566,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1022,
+          "id": 1021,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 312
         },
         {
-          "id": 1155,
+          "id": 1154,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1165
         },
         {
-          "id": 1184,
+          "id": 1183,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 984
         },
         {
-          "id": 1159,
+          "id": 1158,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 444
         },
         {
-          "id": 1206,
+          "id": 1205,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 326
         },
         {
-          "id": 1081,
+          "id": 1080,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 298
         },
         {
-          "id": 1364,
+          "id": 1363,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 179
         },
         {
-          "id": 1329,
+          "id": 1328,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 236
         },
         {
-          "id": 1349,
+          "id": 1348,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 230
         },
         {
-          "id": 1287,
+          "id": 1286,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 209
         },
         {
-          "id": 1021,
+          "id": 1020,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 1200
         },
         {
-          "id": 1020,
+          "id": 1019,
           "source": "WHO News",
           "section": "vaccine",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1154
         },
         {
-          "id": 1162,
+          "id": 1161,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 901
         },
         {
-          "id": 1161,
+          "id": 1160,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 672
         },
         {
-          "id": 1083,
+          "id": 1082,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 416
         },
         {
-          "id": 1190,
+          "id": 1189,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 380
         },
         {
-          "id": 1170,
+          "id": 1169,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 340
         },
         {
-          "id": 1192,
+          "id": 1191,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 315
         },
         {
-          "id": 1081,
+          "id": 1080,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 39,
-      "total_valid": 31,
+      "total_raw": 40,
+      "total_valid": 32,
       "total_candidates": 10
     },
     "china": {
@@ -919,7 +919,7 @@
           "word_count": 139
         },
         {
-          "id": 71,
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1051,7 +1051,7 @@
   },
   "meta": {
     "total_raw": 1778,
-    "dup": 475,
+    "dup": 476,
     "nocontent": 382,
     "noise": 2
   }
