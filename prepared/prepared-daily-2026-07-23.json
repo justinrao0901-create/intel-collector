@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 55,
+          "id": 56,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 165
         },
         {
-          "id": 37,
+          "id": 38,
           "source": "Google DeepMind",
           "section": "ai",
           "tier": "T1",
@@ -170,15 +170,15 @@
           "word_count": 1200
         },
         {
-          "id": 885,
+          "id": 884,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
-          "link": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
-          "content": "Earlier this month I hosted a fireside chat session at the AI Engineer World's Fair with Cat Wu and Thariq Shihipar from Anthropic's Claude Code team. We talked about Claude Code, Claude Tag, Fable, coding agent security, evals, tool design, and how Anthropic use these tools themselves. The full video of the session is now available on YouTube . Below is an edited copy of the transcript, with extra links and my own bolded highlights. A few top-level notes if you don't want to watch the video or wade through the whole transcript: Claude Tag (Claude's new collaborative Slack integration) now lands 65% of the product engineering PRs for the Claude Code team. Claude Code ships features to Anthropic employees first, and only ships the features that demonstrate user retention with that cohort Critical changes to Claude Code are still reviewed manually, but the team increasingly relies on automated code review for the \"outer layers\" of the product. Adding examples to a system prompt is no longer best practice for models like Fable 5 or even Opus 4.8. The Claude Code system prompt recently reduced in size by 80% . Likewise, lists of \" don't do X and don't do Y \" can reduce the quality of r",
-          "pub_date": "2026-07-21T12:54:02+00:00",
+          "title": "Are AI labs pelicanmaxxing?",
+          "link": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
+          "content": "Are AI labs pelicanmaxxing? Excellent piece of work by Dylan Castillo, who took a deep-dive into the frequently pondered question of whether the AI labs have been deliberately training models to draw pelicans riding bicycles in response to my deeply unscientific benchmark . I've been randomly spot-checking this in the past by testing models against other animals riding other types of vehicle, but never with anything close to the diligence of Dylan's methodology here. Dylan took 8 animals × 6 vehicles = 48 prompts and ran them three times each through 7 different models ( GPT-5.6 Terra, Claude Sonnet 5, Gemini 3.5 Flash, Grok 4.5, Qwen3.7-Max, GLM-5.2, and DeepSeek V4 Pro). He then used GPT-5.6 Luna and Gemini 3.1 Flash-Lite to help evaluate the results. There's a neat filter view for exploring the results: For the models he tested he could find no evidence of pelimaxxing: The pelicans on bicycles don’t look any better Labs are not better at drawing pelicans Labs are not better at drawing bicycles Labs are not better at drawing pelicans on bicycles, even adjusting for difficulty The pelican-bicycle scenes don’t look memorized [...] Pelicans aren’t drawn any better than other animals",
+          "pub_date": "2026-07-22T23:01:00+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 998,
-      "total_valid": 566,
+      "total_raw": 999,
+      "total_valid": 568,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1150,
+          "id": 1151,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 536
         },
         {
-          "id": 1273,
+          "id": 1274,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 521
         },
         {
-          "id": 1145,
+          "id": 1146,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 514
         },
         {
-          "id": 1251,
+          "id": 1252,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 377
         },
         {
-          "id": 1166,
+          "id": 1167,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 355
         },
         {
-          "id": 1236,
+          "id": 1237,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 329
         },
         {
-          "id": 1052,
+          "id": 1053,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 321
         },
         {
-          "id": 1491,
+          "id": 1493,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 320
         },
         {
-          "id": 1136,
+          "id": 1137,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 308
         },
         {
-          "id": 1051,
+          "id": 1052,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 303
         },
         {
-          "id": 1489,
+          "id": 1491,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 301
         },
         {
-          "id": 1488,
+          "id": 1490,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 296
         },
         {
-          "id": 1267,
+          "id": 1268,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 294
         },
         {
-          "id": 1055,
+          "id": 1056,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 288
         },
         {
-          "id": 1153,
+          "id": 1154,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 536,
-      "total_valid": 368,
+      "total_raw": 537,
+      "total_valid": 369,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1599,
+          "id": 1601,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 270
         },
         {
-          "id": 1570,
+          "id": 1572,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 257
         },
         {
-          "id": 1586,
+          "id": 1588,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 254
         },
         {
-          "id": 1632,
+          "id": 1634,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1633,
+          "id": 1635,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1635,
+          "id": 1637,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1649,
+          "id": 1651,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 367
         },
         {
-          "id": 1608,
+          "id": 1610,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 313
         },
         {
-          "id": 1609,
+          "id": 1611,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 259
         },
         {
-          "id": 1615,
+          "id": 1617,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 1616,
+          "id": 1618,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1618,
+          "id": 1620,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1632,
+          "id": 1634,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1633,
+          "id": 1635,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1150,
+          "id": 1151,
           "source": "Lancet Infect Dis",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 536
         },
         {
-          "id": 1141,
+          "id": 1142,
           "source": "Lancet Infect Dis",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 461
         },
         {
-          "id": 1649,
+          "id": 1651,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 367
         },
         {
-          "id": 1490,
+          "id": 1492,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 364
         },
         {
-          "id": 1608,
+          "id": 1610,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 313
         },
         {
-          "id": 1061,
+          "id": 1062,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 247
         },
         {
-          "id": 1081,
+          "id": 1082,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 245
         },
         {
-          "id": 1078,
+          "id": 1079,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1691,
+          "id": 1693,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,22 +814,7 @@
           "word_count": 771
         },
         {
-          "id": 1674,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "DoorDash Taps Astra to Fast-Track Instant Deposits for Drivers",
-          "link": "https://www.pymnts.com/digital-payments/2026/doordash-taps-astra-to-fast-track-instant-deposits-for-drivers/",
-          "content": "DoorDash’s banking product for delivery drivers, DoorDash Crimson, now includes instant deposits powered by Astra’s Payment Cloud. With this capability, DoorDash delivery drivers can use Visa Direct and Mastercard Send to add funds from external accounts in real time, Astra said in a Wednesday (July 22) press release. Astra’s Payment Cloud is a vertically integrated platform that powers real-time money movement for businesses through a [&#8230;] The post DoorDash Taps Astra to Fast-Track Instant Deposits for Drivers appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 22 Jul 2026 18:37:50 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 552
-        },
-        {
-          "id": 1692,
+          "id": 1694,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 475
         },
         {
-          "id": 1666,
+          "id": 1670,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 472
         },
         {
-          "id": 1667,
+          "id": 1671,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 464
         },
         {
-          "id": 1671,
+          "id": 1675,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 450
         },
         {
-          "id": 1717,
+          "id": 1719,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 331
         },
         {
-          "id": 1716,
+          "id": 1718,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 330
         },
         {
-          "id": 1718,
+          "id": 1720,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 326
         },
         {
-          "id": 1693,
+          "id": 1695,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 273
         },
         {
-          "id": 1696,
+          "id": 1698,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 264
         },
         {
-          "id": 1698,
+          "id": 1700,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 225
         },
         {
-          "id": 1678,
+          "id": 1680,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,7 @@
           "word_count": 204
         },
         {
-          "id": 1683,
+          "id": 1685,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +994,7 @@
           "word_count": 180
         },
         {
-          "id": 1677,
+          "id": 1679,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1039,37 +1024,7 @@
           "word_count": 103
         },
         {
-          "id": 1719,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Bridging the gap between legacy Swift and modern API-first rails",
-          "link": "https://www.thunes.com/insights/learn/bridging-the-gap-between-legacy-swift-and-modern-api-first-rails/",
-          "content": "The payments industry often frames modernisation as a choice between legacy infrastructure and newer API-first models. But global payments aren&#8217;t evolving in one direction. They&#8217;re expanding in many directions at once. While Swift remains the backbone of payments, innovation is happening around it through APIs, domestic real-time payment systems, digital wallets, stablecoins and other local ... Read more &#187; The post Bridging the gap between legacy Swift and modern API-first rails first appeared on Thunes.com .",
-          "pub_date": "Wed, 22 Jul 2026 12:41:38 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 531
-        },
-        {
-          "id": 1720,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Thunes Named a 2026 World’s Top FinTech Company by CNBC and Statista",
-          "link": "https://www.thunes.com/news/thunes-named-a-2026-worlds-top-fintech-company-by-cnbc-and-statista/",
-          "content": "For the second year running, cross-border payments leader Thunes, named on the prestigious list. SINGAPORE — July 22, 2026 — Thunes, the Smart Superhighway to move money around the world, has been named one of CNBC and Statista ‘World’s Top FinTech Companies’ for the second year in a row. The repeat recognition confirms Thunes’ role ... Read more &#187; The post Thunes Named a 2026 World’s Top FinTech Company by CNBC and Statista first appeared on Thunes.com .",
-          "pub_date": "Wed, 22 Jul 2026 08:09:07 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 464
-        },
-        {
-          "id": 1723,
+          "id": 1721,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1097,6 +1052,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 827,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "DeepPAAC: A New Deep Galerkin Method for Principal-Agent Problems",
+          "link": "https://arxiv.org/abs/2511.04309",
+          "content": "arXiv:2511.04309v3 Announce Type: replace-cross Abstract: We consider numerical resolution of principal-agent (PA) problems in continuous time. We formulate a generic PA model with continuous and lump payments and a multi-dimensional strategy of the agent. To tackle the resulting Hamilton-Jacobi-Bellman equation with an implicit Hamiltonian we develop a novel deep learning method: the Deep Principal-Agent Actor Critic (DeepPAAC) Actor-Critic algorithm. DeepPAAC is able to handle multi-dimensional states and controls, as well as constraints. We investigate the role of the neural network architecture, training designs, loss functions, etc. on the convergence of the solver, presenting five different case studies.",
+          "pub_date": "Wed, 22 Jul 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 719
+        },
+        {
+          "id": 1667,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Uber Co-Founder Kalanick’s Atoms Secures $1.7 Billion to Build Physical AI",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/uber-co-founder-kalanicks-atoms-secures-1-7-billion-to-build-physical-ai/",
+          "content": "Uber Co-Founder Travis Kalanick’s company Atoms raised $1.7 billion to develop physical artificial intelligence (AI) for all the major industrial sectors. “Mining, construction, heavy transport, food production are just a few examples of atoms-heavy industries awaiting massive digital transformation,” Kalanick said in an announcement on the company’s website. “Multiple trillion-dollar industries rapidly transforming over the next decade powering [&#8230;] The post Uber Co-Founder Kalanick’s Atoms Secures $1.7 Billion to Build Physical AI appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 22 Jul 2026 23:38:18 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 574
+        },
+        {
+          "id": 1676,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Kraken Cracked the Fed’s Vault. It Still Can’t Spend",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/kraken-cracked-the-feds-vault-it-still-cant-spend/",
+          "content": "In March, the Federal Reserve Bank of Kansas City approved a limited-purpose account for Payward Financial, which operates as Kraken Financial. The decision was historic:. Kraken, a Wyoming-chartered special purpose depository institution, became the first crypto-focused Tier 3 applicant to break through a Federal Reserve account-access system that had proved effectively impenetrable for institutions without [&#8230;] The post Kraken Cracked the Fed’s Vault. It Still Can’t Spend appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 22 Jul 2026 18:55:19 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 514
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 226,
-      "total_valid": 49,
+      "total_raw": 222,
+      "total_valid": 47,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1887,
-    "dup": 496,
+    "total_raw": 1885,
+    "dup": 493,
     "nocontent": 382,
     "noise": 3
   }
