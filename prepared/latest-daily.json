@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 56,
+          "id": 55,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 165
         },
         {
-          "id": 38,
+          "id": 37,
           "source": "Google DeepMind",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 68
         },
         {
-          "id": 93,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 481
         },
         {
-          "id": 88,
+          "id": 87,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 370
         },
         {
-          "id": 86,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 216
         },
         {
-          "id": 69,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 73,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 76,
+          "id": 74,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,15 +170,15 @@
           "word_count": 1200
         },
         {
-          "id": 884,
+          "id": 882,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "Are AI labs pelicanmaxxing?",
-          "link": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
-          "content": "Are AI labs pelicanmaxxing? Excellent piece of work by Dylan Castillo, who took a deep-dive into the frequently pondered question of whether the AI labs have been deliberately training models to draw pelicans riding bicycles in response to my deeply unscientific benchmark . I've been randomly spot-checking this in the past by testing models against other animals riding other types of vehicle, but never with anything close to the diligence of Dylan's methodology here. Dylan took 8 animals × 6 vehicles = 48 prompts and ran them three times each through 7 different models ( GPT-5.6 Terra, Claude Sonnet 5, Gemini 3.5 Flash, Grok 4.5, Qwen3.7-Max, GLM-5.2, and DeepSeek V4 Pro). He then used GPT-5.6 Luna and Gemini 3.1 Flash-Lite to help evaluate the results. There's a neat filter view for exploring the results: For the models he tested he could find no evidence of pelimaxxing: The pelicans on bicycles don’t look any better Labs are not better at drawing pelicans Labs are not better at drawing bicycles Labs are not better at drawing pelicans on bicycles, even adjusting for difficulty The pelican-bicycle scenes don’t look memorized [...] Pelicans aren’t drawn any better than other animals",
-          "pub_date": "2026-07-22T23:01:00+00:00",
+          "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
+          "link": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
+          "content": "This story is wild. The short version: OpenAI were running a cybersecurity test against an unreleased model, with the model's guardrail features turned off. Rather than solve the test, the model broke its way out of OpenAI's sandbox, then found exploits to break in to Hugging Face, all so it could cheat on the test by stealing the answers. Along the way it helped make the strongest case yet for how the imbalance of model availability is hurting our ability to secure our software. Here's what happened We currently have three documents to help us understand what happened here. ExploitGym: Can AI Agents Turn Security Vulnerabilities into Real Attacks? is a paper published on 11th May 2026 describing ExploitGym, a new eval suite for LLM-powered agent systems. Security incident disclosure — July 2026 by Hugging Face on 16th July 2026 describes how they detected an attack from an \"agentic security-research harness - used LLM still not known\" that breached some of their systems. OpenAI and Hugging Face partner to address security incident during model evaluation from OpenAI on 21st July 2026 confesses that it was their agent harness that did this, and that they're working with Hugging Fac",
+          "pub_date": "2026-07-22T23:51:33+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 999,
+      "total_raw": 997,
       "total_valid": 568,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1151,
+          "id": 1140,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 536
         },
         {
-          "id": 1274,
+          "id": 1259,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 521
         },
         {
-          "id": 1146,
+          "id": 1135,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 514
         },
         {
-          "id": 1252,
+          "id": 1237,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 377
         },
         {
-          "id": 1167,
+          "id": 1153,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 355
         },
         {
-          "id": 1237,
+          "id": 1222,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 329
         },
         {
-          "id": 1053,
+          "id": 1050,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 321
         },
         {
-          "id": 1493,
+          "id": 1474,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 320
         },
         {
-          "id": 1137,
+          "id": 1126,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 308
         },
         {
-          "id": 1052,
+          "id": 1049,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 303
         },
         {
-          "id": 1491,
+          "id": 1472,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 301
         },
         {
-          "id": 1490,
+          "id": 1471,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 296
         },
         {
-          "id": 1268,
+          "id": 1253,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 294
         },
         {
-          "id": 1056,
+          "id": 1053,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 288
         },
         {
-          "id": 1154,
+          "id": 1143,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 537,
-      "total_valid": 369,
+      "total_raw": 520,
+      "total_valid": 361,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1601,
+          "id": 1581,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 270
         },
         {
-          "id": 1572,
+          "id": 1552,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 257
         },
         {
-          "id": 1588,
+          "id": 1568,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 254
         },
         {
-          "id": 1634,
+          "id": 1613,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1635,
+          "id": 1614,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1637,
+          "id": 1616,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1651,
+          "id": 1630,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 367
         },
         {
-          "id": 1610,
+          "id": 1590,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 313
         },
         {
-          "id": 1611,
+          "id": 1591,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 259
         },
         {
-          "id": 1617,
+          "id": 1597,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 1618,
+          "id": 1598,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1620,
+          "id": 1600,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 122,
+      "total_raw": 120,
       "total_valid": 29,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1634,
+          "id": 1613,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1635,
+          "id": 1614,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1151,
+          "id": 1140,
           "source": "Lancet Infect Dis",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 536
         },
         {
-          "id": 1142,
+          "id": 1131,
           "source": "Lancet Infect Dis",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 461
         },
         {
-          "id": 1651,
+          "id": 1630,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 367
         },
         {
-          "id": 1492,
+          "id": 1473,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 364
         },
         {
-          "id": 1610,
+          "id": 1590,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 313
         },
         {
-          "id": 1062,
+          "id": 1059,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 247
         },
         {
-          "id": 1082,
+          "id": 1079,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 245
         },
         {
-          "id": 1079,
+          "id": 1076,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 53,
-      "total_valid": 44,
+      "total_raw": 52,
+      "total_valid": 45,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1693,
+          "id": 1670,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 771
         },
         {
-          "id": 1694,
+          "id": 1671,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 475
         },
         {
-          "id": 1670,
+          "id": 1647,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 472
         },
         {
-          "id": 1671,
+          "id": 1648,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 464
         },
         {
-          "id": 1675,
+          "id": 1652,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 450
         },
         {
-          "id": 1719,
+          "id": 1696,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 331
         },
         {
-          "id": 1718,
+          "id": 1695,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 330
         },
         {
-          "id": 1720,
+          "id": 1697,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 326
         },
         {
-          "id": 1695,
+          "id": 1672,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 273
         },
         {
-          "id": 1698,
+          "id": 1675,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 264
         },
         {
-          "id": 1700,
+          "id": 1677,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 225
         },
         {
-          "id": 1680,
+          "id": 1657,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 204
         },
         {
-          "id": 1685,
+          "id": 1662,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 180
         },
         {
-          "id": 1679,
+          "id": 1656,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 143
         },
         {
-          "id": 85,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 103
         },
         {
-          "id": 1721,
+          "id": 1698,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1039,7 +1039,7 @@
           "word_count": 170
         },
         {
-          "id": 495,
+          "id": 493,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 827,
+          "id": 825,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 719
         },
         {
-          "id": 1667,
+          "id": 1644,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 574
         },
         {
-          "id": 1676,
+          "id": 1653,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 222,
-      "total_valid": 47,
+      "total_raw": 221,
+      "total_valid": 46,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1885,
-    "dup": 493,
-    "nocontent": 382,
+    "total_raw": 1861,
+    "dup": 480,
+    "nocontent": 380,
     "noise": 3
   }
 }
