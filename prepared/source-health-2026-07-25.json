@@ -172,8 +172,8 @@
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "The Lancet": {
       "section": "vaccine",
@@ -394,8 +394,8 @@
     "NEJM AI": {
       "section": "cross",
       "method": "rss",
-      "count": 7,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Methods": {
       "section": "cross",
@@ -436,14 +436,14 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 0,
       "ok": true
     },
     "Cointelegraph Payments": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Ledger Insights": {
       "section": "payment",
@@ -505,10 +505,14 @@
       "ACS Synthetic Biology",
       "Absci Blog",
       "ClinicalTrials.gov",
-      "Import AI"
+      "Cointelegraph Payments",
+      "Import AI",
+      "NEJM",
+      "NEJM AI"
     ],
     "sudden_drop": [
-      "Ledger Insights"
+      "Ledger Insights",
+      "Thunes"
     ],
     "persistent_zero": [
       "Lancet Digital Health"
