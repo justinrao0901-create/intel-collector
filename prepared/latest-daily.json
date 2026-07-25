@@ -347,21 +347,6 @@
           "word_count": 162
         },
         {
-          "id": 1462,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Maternal PspA antibodies protect neonates and enable serotype-specific immunity",
-          "link": "https://www.nature.com/articles/s41541-026-01537-2",
-          "content": "npj Vaccines, Published online: 24 July 2026; doi:10.1038/s41541-026-01537-2 Maternal PspA antibodies protect neonates and enable serotype-specific immunity",
-          "pub_date": "2026-07-24",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 156
-        },
-        {
           "id": 1241,
           "source": "JAMA",
           "section": "vaccine",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 58
+        },
+        {
+          "id": 1440,
+          "source": "Vaccine (journal)",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A prematurely terminated phase 2, randomised trial to evaluate immunogenicity and reactogenicity of a single versus two-dose primary vaccination regimen of the mRNA vaccine BNT162b2 in previously SARS-CoV-2 infected children 5–11 years old (CoVacc trial)",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26005785?dgcid=rss_sd_all",
+          "content": "Publication date: 13 August 2026 Source: Vaccine, Volume 88 Author(s): Cristina Prat-Aymerich, Lusine Yeghiazaryan, Rishi Delan Pathirana, Virginie Gautier, Alejandro Abner Garcia Leon, Gurvin Saini, Katherine Loens, Rebecca Jane Cox, Elisa Formiconi, Sophie O'Reilly, Karen van Hulst, Jeri Nijland, Oliver A. Cornely, Patrick Mallon, Martin Posch, Patricia Bruijning-Verhagen, On behalf of CoVacc Study Group of the VACCELERATE Consortium www.vaccelerate.eu., Ingvild Bruun Mikalsen, Henrik Dollner, Sanne Hammer, Per Kristian Knudsen",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 535
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 535,
-      "total_valid": 359,
+      "total_valid": 358,
       "total_candidates": 15
     },
     "synbio": {
@@ -1074,14 +1074,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 225,
+      "total_raw": 228,
       "total_valid": 42,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1909,
-    "dup": 487,
+    "total_raw": 1912,
+    "dup": 491,
     "nocontent": 393,
     "noise": 3
   }
