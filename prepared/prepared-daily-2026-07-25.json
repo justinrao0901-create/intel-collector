@@ -110,7 +110,22 @@
           "word_count": 1200
         },
         {
-          "id": 915,
+          "id": 909,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Introducing Claude Opus 5",
+          "link": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything",
+          "content": "Introducing Claude Opus 5 I've been offline kayaking with sea otters for much of today so I haven't had a chance to put Anthropic's new model Claude Opus 5 through its paces yet. The buzz is positive, and Anthropic's description of it as a \"thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price\" sounds promising. It's currently leading the Artificial Analysis leaderboard , in front of even Fable 5. It's priced the same as Opus 4.8, and continues to offer a \"fast mode\" at twice the cost of the base model. Based on this anecdote in the release post it sounds like it might be relentlessly proactive : On one Frontier-Bench task, Opus 5 was given a drawing of a machine part and asked to write code to rebuild it as a 3D FreeCAD model. However, in this task, the model was intentionally given no way to directly viewthe drawing. Opus 5 responded by writing its own computer vision pipeline to pull the geometry from the raw pixels, then reconstructed the full machine part. It's better at finding vulnerabilities but has deliberately not been trained on how to exploit them. Hopefully this means the US government won't shut it down! As wi",
+          "pub_date": "2026-07-24T23:48:50+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 917,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 598
         },
         {
-          "id": 909,
+          "id": 911,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,22 +155,7 @@
           "word_count": 517
         },
         {
-          "id": 910,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting Thomas Ptacek",
-          "link": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
-          "content": "I genuinely believe that if you took an open weights model from 2025 and built a pentest harness for it, it could do this kind of sandbox escape and scan/hack in most networks. This is only surprising because you assume OpenAI has sounder sandboxes. &mdash; Thomas Ptacek , doesn't think this even needs a frontier model Tags: thomas-ptacek , openai , security , generative-ai , ai-security-research , ai , llms , sandboxing",
-          "pub_date": "2026-07-22T23:59:01+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 424
-        },
-        {
-          "id": 896,
+          "id": 897,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 197
         },
         {
-          "id": 898,
+          "id": 899,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1018,
-      "total_valid": 607,
+      "total_raw": 1020,
+      "total_valid": 609,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1205,
+          "id": 1207,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 364
         },
         {
-          "id": 1200,
+          "id": 1202,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 307
         },
         {
-          "id": 1295,
+          "id": 1297,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 298
         },
         {
-          "id": 1283,
+          "id": 1285,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 180
         },
         {
-          "id": 1182,
+          "id": 1184,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 172
         },
         {
-          "id": 1073,
+          "id": 1075,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 168
         },
         {
-          "id": 1254,
+          "id": 1256,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 156
         },
         {
-          "id": 1256,
+          "id": 1258,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 154
         },
         {
-          "id": 1152,
+          "id": 1154,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 556,
-      "total_valid": 376,
+      "total_raw": 554,
+      "total_valid": 375,
       "total_candidates": 15
     },
     "synbio": {
@@ -479,7 +479,7 @@
           "word_count": 226
         },
         {
-          "id": 1679,
+          "id": 1678,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1199
         },
         {
-          "id": 1689,
+          "id": 1688,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1036
         },
         {
-          "id": 1686,
+          "id": 1685,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -589,7 +589,7 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 127,
+      "total_raw": 125,
       "total_valid": 21,
       "total_candidates": 10
     },
@@ -611,7 +611,7 @@
           "word_count": 350
         },
         {
-          "id": 1200,
+          "id": 1202,
           "source": "Cell Host Microbe",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 332
         },
         {
-          "id": 1711,
+          "id": 1709,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 307
         },
         {
-          "id": 1295,
+          "id": 1297,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 298
         },
         {
-          "id": 1066,
+          "id": 1068,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 230
         },
         {
-          "id": 1710,
+          "id": 1708,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 192
         },
         {
-          "id": 1068,
+          "id": 1070,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 183
         },
         {
-          "id": 1129,
+          "id": 1131,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1719,
+          "id": 1715,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "This Week in Stablecoins: Visa, Goldman and Samsung Raise the Stakes",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/this-week-in-stablecoins-visa-goldman-and-samsung-raise-the-stakes/",
+          "content": "Stablecoins spent years waiting for regulatory legitimacy. Now that legitimacy is creating a more complicated problem: almost everyone wants a piece of the business. As a result, the biggest stablecoin news this week didn’t come from crypto-native companies. Visa launched a new Visa Stablecoin Platform (VSP) that gives financial institutions, FinTechs and crypto companies a [&#8230;] The post This Week in Stablecoins: Visa, Goldman and Samsung Raise the Stakes appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 24 Jul 2026 23:51:13 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 495
+        },
+        {
+          "id": 1718,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 485
         },
         {
-          "id": 1722,
+          "id": 1721,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 434
         },
         {
-          "id": 1727,
+          "id": 1725,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 434
         },
         {
-          "id": 1738,
+          "id": 1736,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 338
         },
         {
-          "id": 1743,
+          "id": 1741,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 245
         },
         {
-          "id": 1744,
+          "id": 1742,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 234
         },
         {
-          "id": 1745,
+          "id": 1743,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 232
         },
         {
-          "id": 1741,
+          "id": 1739,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 186
         },
         {
-          "id": 1730,
+          "id": 1728,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 128
         },
         {
-          "id": 1732,
+          "id": 1730,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 128
         },
         {
-          "id": 148,
+          "id": 149,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 198,
+          "id": 199,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 228,
+          "id": 229,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 319,
+          "id": 320,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 395,
+          "id": 396,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 860,
+          "id": 861,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 1717,
+          "id": 1716,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1039,7 @@
           "word_count": 509
         },
         {
-          "id": 1720,
+          "id": 1719,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1054,7 @@
           "word_count": 494
         },
         {
-          "id": 1724,
+          "id": 1723,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1052,21 +1067,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 489
-        },
-        {
-          "id": 1723,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Eurozone Consumers Expect Cooling Inflation While Experts Hold Firm",
-          "link": "https://www.pymnts.com/economy/2026/eurozone-consumers-expect-cooling-inflation-while-experts-hold-firm/",
-          "content": "Consumers in euro area countries perceive and expect significant reductions in inflation, the European Central Bank (ECB) said in a Friday (July 24) press release. The ECB Consumer Expectations Survey for June found that compared with May, median consumer perceptions of inflation over the past 12 months decreased “significantly.” The figure dropped from 4.0% in [&#8230;] The post Eurozone Consumers Expect Cooling Inflation While Experts Hold Firm appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 24 Jul 2026 18:48:09 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 481
         }
       ],
       "quota": {
@@ -1074,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 225,
+      "total_raw": 228,
       "total_valid": 42,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1935,
-    "dup": 489,
-    "nocontent": 404,
+    "total_raw": 1936,
+    "dup": 490,
+    "nocontent": 403,
     "noise": 3
   }
 }
