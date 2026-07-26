@@ -709,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1011,
+          "id": 1009,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 114
         },
         {
-          "id": 1014,
+          "id": 1012,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 103
         },
         {
-          "id": 1012,
+          "id": 1010,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 100
         },
         {
-          "id": 1015,
+          "id": 1013,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -874,21 +874,6 @@
           "word_count": 147
         },
         {
-          "id": 1002,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Billtrust launches AR Intelligence connection for Claude and Microsoft Copilot",
-          "link": "https://www.finextra.com/pressarticle/110491/billtrust-launches-ar-intelligence-connection-for-claude-and-microsoft-copilot?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Beginning today, finance teams can query their live invoice-to-cash data directly from inside Microsoft Copilot and Claude, using plain language.",
-          "pub_date": "Fri, 24 Jul 2026 13:16:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 145
-        },
-        {
           "id": 995,
           "source": "PaymentsDive",
           "section": "payment",
@@ -902,6 +887,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 141
+        },
+        {
+          "id": 1005,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Tackling fraud as an ecosystem: Exploring the shift needed in regulation and the industry",
+          "link": "https://www.finextra.com/event-info/623/tackling-fraud-as-an-ecosystem-exploring-the-shift-needed-in-regulation-and-the-industry?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "What ecosystem and regulatory changes are needed to create true industry-wide collaboration to fight fraud?",
+          "pub_date": "Tue, 08 Sep 2026 15:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 107
         }
       ],
       "quota": {
@@ -909,14 +909,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 201,
-      "total_valid": 15,
+      "total_raw": 199,
+      "total_valid": 14,
       "total_candidates": 13
     }
   },
   "meta": {
-    "total_raw": 1183,
-    "dup": 284,
+    "total_raw": 1181,
+    "dup": 283,
     "nocontent": 405,
     "noise": 0
   }
