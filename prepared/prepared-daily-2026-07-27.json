@@ -5,7 +5,22 @@
     "ai": {
       "candidates": [
         {
-          "id": 81,
+          "id": 51,
+          "source": "NVIDIA Blog",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "NVIDIA Harnesses Vera CPU to Speed Up Design of Next-Generation CPUs and GPUs",
+          "link": "https://blogs.nvidia.com/blog/vera-cpu-eda/",
+          "content": "The complexity of modern chip design continues to grow as engineering teams work to develop increasingly sophisticated CPUs, GPUs and AI systems. To help meet that challenge, NVIDIA is collaborating with industry leaders Cadence and Synopsys to optimize critical electronic design automation (EDA) applications for the NVIDIA Vera CPU. NVIDIA is now deploying Vera across [&#8230;]",
+          "pub_date": "Mon, 27 Jul 2026 00:45:42 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 381
+        },
+        {
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +35,22 @@
           "word_count": 156
         },
         {
-          "id": 79,
+          "id": 80,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Are brain waves the next unlock for physical AI?",
+          "link": "https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/",
+          "content": "Forget YouTube videos—frontier physical AI models need multiple camera angles, dense annotation, and soon, brain wave readings.",
+          "pub_date": "Mon, 27 Jul 2026 00:19:14 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 127
+        },
+        {
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,22 +65,7 @@
           "word_count": 116
         },
         {
-          "id": 80,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack",
-          "link": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
-          "content": "\"The first autonomous agent cyberattack is an unprecedented event. It deserves an unprecedented response!\"",
-          "pub_date": "Sun, 26 Jul 2026 16:33:13 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 106
-        },
-        {
-          "id": 71,
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 73,
+          "id": 74,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 74,
+          "id": 75,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 129,
+          "id": 131,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 52,
+          "id": 53,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 324
         },
         {
-          "id": 58,
+          "id": 59,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +170,7 @@
           "word_count": 166
         },
         {
-          "id": 130,
+          "id": 132,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 138,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Orchestrions",
-          "link": "https://simonwillison.net/2026/Jul/22/all-the-orchestrions/#atom-everything",
-          "content": "San Francisco tip: it only costs around $15 ($10 in quarters plus a $5 bill for the self-playing violin) to activate every single Orchestrion in Musée Mécanique . And because most people are bad at allocating their funds you may well be the ONLY person activating the Orchestrions, which means you get to craft the soundscape for the entire museum. Tags: san-francisco",
-          "pub_date": "2026-07-22T14:48:52+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 368
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 238,
-      "total_valid": 20,
+      "total_raw": 240,
+      "total_valid": 22,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 487,
+          "id": 489,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 401
         },
         {
-          "id": 540,
+          "id": 542,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 401
         },
         {
-          "id": 547,
+          "id": 549,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 397
         },
         {
-          "id": 247,
+          "id": 249,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 290
         },
         {
-          "id": 364,
+          "id": 366,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 912
         },
         {
-          "id": 388,
+          "id": 390,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 697
         },
         {
-          "id": 379,
+          "id": 381,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 447
         },
         {
-          "id": 298,
+          "id": 300,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 403
         },
         {
-          "id": 294,
+          "id": 296,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 385
         },
         {
-          "id": 269,
+          "id": 271,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 366
         },
         {
-          "id": 599,
+          "id": 601,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 354
         },
         {
-          "id": 423,
+          "id": 425,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 293
         },
         {
-          "id": 601,
+          "id": 603,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 292
         },
         {
-          "id": 611,
+          "id": 613,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 283
         },
         {
-          "id": 598,
+          "id": 600,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 406,
-      "total_valid": 240,
+      "total_raw": 405,
+      "total_valid": 239,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 694,
+          "id": 695,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 218
         },
         {
-          "id": 709,
+          "id": 710,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 213
         },
         {
-          "id": 663,
+          "id": 664,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 212
         },
         {
-          "id": 740,
+          "id": 741,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 741,
+          "id": 742,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 746,
+          "id": 747,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -536,7 +536,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 559,
+          "id": 561,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 395
         },
         {
-          "id": 709,
+          "id": 710,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 213
         },
         {
-          "id": 517,
+          "id": 519,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 166
         },
         {
-          "id": 617,
+          "id": 619,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -596,7 +596,7 @@
           "word_count": 211
         },
         {
-          "id": 432,
+          "id": 437,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 433,
+          "id": 438,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 435,
+          "id": 440,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 455,
+          "id": 457,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 460,
+          "id": 462,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 461,
+          "id": 463,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -691,8 +691,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 27,
-      "total_valid": 19,
+      "total_raw": 26,
+      "total_valid": 18,
       "total_candidates": 10
     },
     "china": {
@@ -709,7 +709,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 784,
+          "id": 780,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "DeepSeek Reportedly Suspends Funding Round Ahead of IPO",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/deepseek-reportedly-suspends-funding-round-ahead-of-ipo/",
+          "content": "Chinese artificial intelligence startup DeepSeek has reportedly paused its second round of funding. That’s according to a report Saturday (July 25) from Bloomberg News, which says the decision comes days after viral comments on American-Chinese AI competition, widely attributed to the company’s founder. Sources familiar with the matter told Bloomberg that DeepSeek had told some [&#8230;] The post DeepSeek Reportedly Suspends Funding Round Ahead of IPO appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 27 Jul 2026 00:13:39 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 486
+        },
+        {
+          "id": 786,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +739,7 @@
           "word_count": 483
         },
         {
-          "id": 780,
+          "id": 782,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +754,7 @@
           "word_count": 482
         },
         {
-          "id": 782,
+          "id": 784,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 478
         },
         {
-          "id": 779,
+          "id": 781,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 471
         },
         {
-          "id": 781,
+          "id": 783,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,22 +799,7 @@
           "word_count": 461
         },
         {
-          "id": 785,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "TikTok Tests Prime-Style Shopping Membership Service",
-          "link": "https://www.pymnts.com/commerce/ecommerce/2026/tiktok-tests-prime-style-shopping-membership-service/",
-          "content": "TikTok is reportedly testing a membership program for U.S. shoppers, similar to Amazon Prime. That’s according to a report Friday (July 24) from Business Insider, citing screenshots of the offering seen by its journalists. According to the report, the program is called TikTok Shop Plus, built into the social media company’s eCommerce platform. It offers [&#8230;] The post TikTok Tests Prime-Style Shopping Membership Service appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 26 Jul 2026 21:08:13 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 458
-        },
-        {
-          "id": 786,
+          "id": 788,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 159
         },
         {
-          "id": 789,
+          "id": 791,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 139
         },
         {
-          "id": 787,
+          "id": 789,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 74
         },
         {
-          "id": 788,
+          "id": 790,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -864,14 +864,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 189,
-      "total_valid": 11,
+      "total_raw": 187,
+      "total_valid": 12,
       "total_candidates": 10
     }
   },
   "meta": {
-    "total_raw": 967,
-    "dup": 285,
+    "total_raw": 966,
+    "dup": 282,
     "nocontent": 394,
     "noise": 0
   }
