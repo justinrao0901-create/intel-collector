@@ -22,7 +22,7 @@
     "Meta AI Blog": {
       "section": "ai",
       "method": "scrape",
-      "count": 8,
+      "count": 12,
       "ok": true
     },
     "Microsoft AI Blog": {
@@ -172,8 +172,8 @@
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "The Lancet": {
       "section": "vaccine",
@@ -208,8 +208,8 @@
     "Science": {
       "section": "vaccine",
       "method": "rss",
-      "count": 36,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "JAMA": {
       "section": "vaccine",
@@ -274,8 +274,8 @@
     "Sci Transl Med": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Rev Drug Discovery": {
       "section": "vaccine",
@@ -298,8 +298,8 @@
     "Science Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cell Reports Medicine": {
       "section": "vaccine",
@@ -394,8 +394,8 @@
     "NEJM AI": {
       "section": "cross",
       "method": "rss",
-      "count": 7,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Methods": {
       "section": "cross",
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 3,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -513,12 +513,16 @@
       "Import AI",
       "Lancet Digital Health",
       "Lancet Infect Dis",
+      "NEJM",
+      "NEJM AI",
+      "Sci Transl Med",
+      "Science",
+      "Science Immunology",
       "The Lancet"
     ],
     "sudden_drop": [
       "Cointelegraph Payments",
-      "JAMA",
-      "Thunes"
+      "JAMA"
     ],
     "persistent_zero": [
       "Ledger Insights",
