@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 8,
+      "count": 7,
       "ok": true
     },
     "Anthropic Blog": {
@@ -100,7 +100,7 @@
     "Latent Space": {
       "section": "ai",
       "method": "rss",
-      "count": 14,
+      "count": 13,
       "ok": true
     },
     "Simon Willison": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 42,
       "ok": true
     },
     "NEJM": {
@@ -226,7 +226,7 @@
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
+      "count": 2,
       "ok": true
     },
     "Nature Vaccines": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 19,
+      "count": 12,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -334,7 +334,7 @@
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 5,
+      "count": 4,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -358,7 +358,7 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 10,
+      "count": 6,
       "ok": true
     },
     "Absci Blog": {
@@ -382,7 +382,7 @@
     "Nature Reviews Bioengineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 8,
+      "count": 7,
       "ok": true
     },
     "Lancet Digital Health": {
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 0,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -517,7 +517,9 @@
       "NEJM AI",
       "The Lancet"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "Thunes"
+    ],
     "persistent_zero": [
       "Payments Cards & Mobile"
     ]
