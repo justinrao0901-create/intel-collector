@@ -130,6 +130,21 @@
           "section": "ai",
           "tier": "T2",
           "priority": 5,
+          "title": "Advancing the price-performance frontier with GPT‑5.6",
+          "link": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything",
+          "content": "Advancing the price-performance frontier with GPT‑5.6 Huge price drop from OpenAI today: GPT-5.6 Terra got a 20% reduction, and GPT-5.6 Luna got a massive 80% drop. OpenAI credit 5.6 Sol with enabling this: in How GPT‑5.6 fuses frontier intelligence with frontier efficiency they describe using 5.6 Sol to optimize load balancing, and more impressively to optimize inference itself: We also used GPT‑5.6 Sol to optimize the model’s forward pass: the computation that transforms inputs into next-token predictions. Even when individual operations are fast, excess memory movement, synchronization, and inefficient data layouts can leave GPUs idle. To avoid this, GPT‑5.6 Sol found work that could be precomputed, avoided, or parallelized. With Codex, GPT‑5.6 Sol autonomously rewrote and optimized our production kernels, the core code that executes the mathematical operations that make up the model. This worked in part because we’ve trained GPT‑5.6 to be effective at writing and improving kernels in Triton⁠ and Gluon⁠ , two open-source GPU programming languages maintained by OpenAI. These efforts, combined with broader kernel advancements from GPT‑5.6 Sol, reduced end-to-end serving costs by 2",
+          "pub_date": "2026-07-30T23:58:42+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 789,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
           "title": "Investigating three real-world incidents in our cybersecurity evaluations",
           "link": "https://simonwillison.net/2026/Jul/30/three-real-world-incidents/#atom-everything",
           "content": "Investigating three real-world incidents in our cybersecurity evaluations It happened again! This is turning into something of a pattern. Last week OpenAI accidentally exploited Hugging Face when one of their frontier models broke out of a sandboxed container and hacked into Hugging Face to try and get the solutions to the cyber benchmark it was executing. This inspired Anthropic to double-check their own logs, and it turned out they had three similar (albeit less impressive) incidents that played out back in April! Of the 141,006 evaluation runs we reviewed, we identified three separate incidents (involving six total runs, four of which impacted the same organization; the other two incidents each happened in independent evaluation runs). [...] In all cases, Anthropic’s evaluation prompt specified to Claude that its environment was a simulation and that it had no internet access. Due to a misunderstanding between us and our evaluation partner, this was not the case, and internet access was available. Because of this, when Claude’s search led it to real systems on the open internet, it treated them as part of the exercise. [...] Operating under the false belief that all accessible e",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 57
-        },
-        {
-          "id": 121,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Large-Scale ChatBot Validation Through Customer Digital Twin Simulations",
-          "link": "https://arxiv.org/abs/2607.26060",
-          "content": "arXiv:2607.26060v1 Announce Type: new Abstract: LLM-based chatbots are transforming customer service in regulated domains such as banking, but scalable and cost-effective validation remains a critical barrier to safe deployment. We present a two-part contribution for large-scale chatbot validation. First, we introduce a methodology for creating high-fidelity synthetic customer agents (SCAs) as digital twins, grounded in real transactional and conversational data, that enables automatic generation and behavioral conditioning to simulate diverse customer profiles and interaction styles. Evaluation demonstrates that SCAs achieve high semantic alignment with real customers, low hallucination rates, and successful personality trait reproduction with controllable interventions. Second, we develop an SCA-based validation framework combining automated LLM-as-a-Judge evaluation, human expert testing, and adversarial probing. Scenario-based validation across emotional states, demographic groups, and linguistic factors confirms robust performance. Our approach was used to validate a customer facing chatbot at a leading UK bank, providing financial institutions with a scalable pathway toward r",
-          "pub_date": "Thu, 30 Jul 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 898,
-      "total_valid": 537,
+      "total_raw": 899,
+      "total_valid": 538,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1071,
+          "id": 1072,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 173
         },
         {
-          "id": 987,
+          "id": 988,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 166
         },
         {
-          "id": 1004,
+          "id": 1005,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 153
         },
         {
-          "id": 1305,
+          "id": 1306,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 147
         },
         {
-          "id": 1047,
+          "id": 1048,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 58
         },
         {
-          "id": 1278,
+          "id": 1279,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 223
         },
         {
-          "id": 1217,
+          "id": 1218,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 222
         },
         {
-          "id": 1264,
+          "id": 1265,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 206
         },
         {
-          "id": 900,
+          "id": 901,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 228
         },
         {
-          "id": 926,
+          "id": 927,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 153
         },
         {
-          "id": 923,
+          "id": 924,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 131
         },
         {
-          "id": 927,
+          "id": 928,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 76
         },
         {
-          "id": 1084,
+          "id": 1085,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 1200
         },
         {
-          "id": 1090,
+          "id": 1091,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 1200
         },
         {
-          "id": 1000,
+          "id": 1001,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1410,
+          "id": 1411,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 1411,
+          "id": 1412,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 132
         },
         {
-          "id": 1388,
+          "id": 1389,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 124
         },
         {
-          "id": 1433,
+          "id": 1434,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1079
         },
         {
-          "id": 1418,
+          "id": 1419,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 449
         },
         {
-          "id": 1427,
+          "id": 1428,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 427
         },
         {
-          "id": 1426,
+          "id": 1427,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 375
         },
         {
-          "id": 1382,
+          "id": 1383,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 359
         },
         {
-          "id": 1419,
+          "id": 1420,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 349
         },
         {
-          "id": 1383,
+          "id": 1384,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 329
         },
         {
-          "id": 1412,
+          "id": 1413,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1413,
+          "id": 1414,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1469,
+          "id": 1470,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 448
         },
         {
-          "id": 1471,
+          "id": 1472,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 408
         },
         {
-          "id": 1470,
+          "id": 1471,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 378
         },
         {
-          "id": 1382,
+          "id": 1383,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 359
         },
         {
-          "id": 1383,
+          "id": 1384,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 329
         },
         {
-          "id": 1020,
+          "id": 1021,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 267
         },
         {
-          "id": 995,
+          "id": 996,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 238
         },
         {
-          "id": 994,
+          "id": 995,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 139
         },
         {
-          "id": 1301,
+          "id": 1302,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 65
         },
         {
-          "id": 1302,
+          "id": 1303,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1476,
+          "id": 1477,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 469
         },
         {
-          "id": 1504,
+          "id": 1505,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 415
         },
         {
-          "id": 1508,
+          "id": 1509,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 330
         },
         {
-          "id": 1501,
+          "id": 1502,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 303
         },
         {
-          "id": 1506,
+          "id": 1507,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 265
         },
         {
-          "id": 1494,
+          "id": 1495,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 158
         },
         {
-          "id": 1503,
+          "id": 1504,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 140
         },
         {
-          "id": 1487,
+          "id": 1488,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,22 +949,7 @@
           "word_count": 136
         },
         {
-          "id": 1525,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Designing Payment Infrastructure for Real-World Financial Diversity",
-          "link": "https://www.thunes.com/insights/trends/designing-payment-infrastructure-for-real-world-financial-diversity/",
-          "content": "For decades, the standard measure of financial inclusion was if a person either held a formal bank account or they did not. Policymakers, development institutions, and payment platforms built their access strategies around closing that gap, assuming that bringing someone into the banking system was synonymous with bringing them into the financial system. That assumption ... Read more &#187; The post Designing Payment Infrastructure for Real-World Financial Diversity first appeared on Thunes.com .",
-          "pub_date": "Wed, 29 Jul 2026 09:23:02 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 501
-        },
-        {
-          "id": 1528,
+          "id": 1526,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1054,7 +1039,7 @@
           "word_count": 1126
         },
         {
-          "id": 1484,
+          "id": 1485,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1054,7 @@
           "word_count": 510
         },
         {
-          "id": 1483,
+          "id": 1484,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1069,7 @@
           "word_count": 498
         },
         {
-          "id": 1477,
+          "id": 1478,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1097,6 +1082,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 489
+        },
+        {
+          "id": 1481,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "FTC Puts Digital Health’s Growth Playbook on Trial",
+          "link": "https://www.pymnts.com/healthcare/2026/ftc-lawsuit-digital-health-growth-trial/",
+          "content": "Digital health borrowed its growth playbook from consumer technology, landing patients fast and keeping them subscribed. In a legal complaint against Hims &#38; Hers filed Wednesday (July 29), the Federal Trade Commission directly challenged that model. The FTC, joined by Utah and Los Angeles County on behalf of California, alleged that Hims shared sensitive information [&#8230;] The post FTC Puts Digital Health’s Growth Playbook on Trial appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 30 Jul 2026 21:08:56 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 473
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 229,
-      "total_valid": 49,
+      "total_raw": 226,
+      "total_valid": 48,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1697,
-    "dup": 387,
+    "total_raw": 1695,
+    "dup": 385,
     "nocontent": 406,
     "noise": 0
   }
