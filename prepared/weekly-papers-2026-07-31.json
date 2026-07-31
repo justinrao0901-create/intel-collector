@@ -11,14 +11,14 @@
       "title": "Kimi K3: Open Frontier Intelligence",
       "abstract": "We introduce Kimi K3, a 2.8T parameter Mixture-of-Experts model with 104 billion activated parameters, native vision capabilities, and a 1-million-token context window. Kimi K3 is built on Kimi Delta Attention and Attention Residuals, which improve information flow across sequence length and model depth. Together with Stable LatentMoE, which effectively activates 16 of 896 routed experts per token, and refined training and data recipes, these advances yield an approximately 2.5x improvement in overall scaling efficiency over Kimi K2. Post-training highlights reinforcement learning across general, agentic, and coding domains and multiple reasoning-effort levels, enabling compositional generalization and robust long-horizon execution. At 2.8T scale, Kimi K3 is supported by infrastructure advances in multiple areas: algorithm-system co-design for KDA, perfectly balanced expert-parallel training with efficient memory management, million-token agentic RL with persistent rollout and sandbox states, and deployment innovations. Extensive evaluations show that Kimi K3 achieves frontier-level performance across long-horizon coding, agentic, knowledge, reasoning, and vision tasks. While its o",
       "link": "https://arxiv.org/abs/2607.24653",
-      "upvotes": 404,
+      "upvotes": 406,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily+alphaXiv",
       "pub": "2026-07-26",
       "is_survey": false,
       "is_china": true,
-      "score": 1247
+      "score": 1253
     },
     {
       "id": "2607.21655",
@@ -33,6 +33,20 @@
       "is_survey": true,
       "is_china": false,
       "score": 636
+    },
+    {
+      "id": "2607.28227",
+      "title": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+      "abstract": "GUI agents have the potential to become a general purpose executor over existing digital devices. To advance them toward real-world use, we envision agents that operate reliably on real devices, execute workflows across platforms, combine GUI interaction with CLI execution, complete long-horizon tasks, proactively initiate useful services, and autonomously improve their capabilities with minimal human effort. Guided by this vision, we present Qwen-UI-Agent, a real-world centric foundation GUI agent spanning mobile, computer-use, web, and DeepSearch environments. Qwen-UI-Agent combines diverse sandbox environments with a large-scale real-device mobile runtime. Its unified action space interleaves GUI operations with CLI execution and generates batched actions in a single model turn. An AutoResearch-style data flywheel uses agents to construct tasks and environments, diagnose failures, and plan subsequent iterations. Online RL supports training on trajectories exceeding 100 turns, with over 10,000 concurrent environments accelerating rollout. A lightweight harness layer supports proactive service initiation and stateful workflows across mobile and computer. Across a broad suite of ev",
+      "link": "https://arxiv.org/abs/2607.28227",
+      "upvotes": 152,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+arXiv",
+      "pub": "2026-07-29",
+      "is_survey": false,
+      "is_china": true,
+      "score": 491
     },
     {
       "id": "2607.28624",
@@ -61,6 +75,20 @@
       "is_survey": false,
       "is_china": false,
       "score": 429
+    },
+    {
+      "id": "2607.26760",
+      "title": "Metis: Memory Foundation Model",
+      "abstract": "Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large reasoning models. However, agent memory is still primarily implemented through external modules, leaving the native memory capability largely unexplored. In this paper, we take a first step toward this direction by introducing memory foundation models, which empower foundation models with native memory capabilities. We formalize native memory from two perspectives: a persistent and dynamically evolving memory state within the backbone, and native memory procedures that autonomously store and utilize information through model computation. We show that native memory offers advantages in architecture, end-to-end optimization, and efficiency. Based on this formulation, we propose Metis, the first prototype of memory foundation models. Metis introduces a new architecture that equips a foundation model with a native memory state, allowing historical information to be compressed into the model and accessed through memory attention. We construct large-scale memory-specific training data and introduce multiple optimiza",
+      "link": "https://arxiv.org/abs/2607.26760",
+      "upvotes": 127,
+      "hn_points": 0,
+      "citations": 0,
+      "source": "HF Daily+alphaXiv",
+      "pub": "2026-07-28",
+      "is_survey": false,
+      "is_china": false,
+      "score": 381
     },
     {
       "id": "2607.27205",
@@ -93,7 +121,7 @@
     {
       "title": "Kimi Linear: An Expressive, Efficient Attention Architecture (2025)",
       "link": "https://arxiv.org/abs/2510.26692",
-      "hn_points": 305,
+      "hn_points": 306,
       "id": "2510.26692",
       "upvotes": 0,
       "citations": null,
@@ -102,7 +130,7 @@
       "pub": "2026-07-28",
       "is_survey": false,
       "is_china": true,
-      "score": 340
+      "score": 341
     },
     {
       "id": "2607.28568",
@@ -125,7 +153,7 @@
       "link": "https://arxiv.org/abs/2607.25398",
       "upvotes": 0,
       "hn_points": 324,
-      "citations": null,
+      "citations": 0,
       "source": "HN+arXiv",
       "pub": "Fri, 31 Ju",
       "cats": [
@@ -134,20 +162,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 324
-    },
-    {
-      "id": "2607.28227",
-      "title": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
-      "abstract": "GUI agents have the potential to become a general purpose executor over existing digital devices. To advance them toward real-world use, we envision agents that operate reliably on real devices, execute workflows across platforms, combine GUI interaction with CLI execution, complete long-horizon tasks, proactively initiate useful services, and autonomously improve their capabilities with minimal human effort. Guided by this vision, we present Qwen-UI-Agent, a real-world centric foundation GUI agent spanning mobile, computer-use, web, and DeepSearch environments. Qwen-UI-Agent combines diverse sandbox environments with a large-scale real-device mobile runtime. Its unified action space interleaves GUI operations with CLI execution and generates batched actions in a single model turn. An AutoResearch-style data flywheel uses agents to construct tasks and environments, diagnose failures, and plan subsequent iterations. Online RL supports training on trajectories exceeding 100 turns, with over 10,000 concurrent environments accelerating rollout. A lightweight harness layer supports proactive service initiation and stateful workflows across mobile and computer. Across a broad suite of ev",
-      "link": "https://arxiv.org/abs/2607.28227",
-      "upvotes": 96,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+arXiv",
-      "pub": "2026-07-29",
-      "is_survey": false,
-      "is_china": true,
-      "score": 323
     },
     {
       "id": "2607.28618",
@@ -164,32 +178,18 @@
       "score": 297
     },
     {
-      "id": "2607.26760",
-      "title": "Metis: Memory Foundation Model",
-      "abstract": "Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large reasoning models. However, agent memory is still primarily implemented through external modules, leaving the native memory capability largely unexplored. In this paper, we take a first step toward this direction by introducing memory foundation models, which empower foundation models with native memory capabilities. We formalize native memory from two perspectives: a persistent and dynamically evolving memory state within the backbone, and native memory procedures that autonomously store and utilize information through model computation. We show that native memory offers advantages in architecture, end-to-end optimization, and efficiency. Based on this formulation, we propose Metis, the first prototype of memory foundation models. Metis introduces a new architecture that equips a foundation model with a native memory state, allowing historical information to be compressed into the model and accessed through memory attention. We construct large-scale memory-specific training data and introduce multiple optimiza",
-      "link": "https://arxiv.org/abs/2607.26760",
-      "upvotes": 97,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+alphaXiv",
-      "pub": "2026-07-28",
-      "is_survey": false,
-      "is_china": false,
-      "score": 291
-    },
-    {
       "id": "2607.24223",
       "title": "A New Role for Relevance: Guiding Corpus Interaction in Agentic Search",
       "abstract": "Relevance is a query-dependent estimate of whether a document or excerpt contains useful evidence. Existing retrieval agents use relevance to select top-k content, but document relevance alone cannot localize, compose, or verify the evidence required by complex questions. Direct Corpus Interaction (DCI) enables such fine-grained operations through grep-style exploration, but its relevance-agnostic search can expose useful clues late and delay convergence. Recent advances use relevance to narrow the corpus into a working space for interaction. Once interaction begins, however, relevance still does not directly guide which documents grep searches first or distinguish informative excerpts from a broad set of matches to let LLMs see them first. We introduce the Relevance-Aware RipGrep Search Agent (RARG), which turns relevance into an execution prior for corpus interaction. RARG provides coarse-to-fine relevance guidance: it orders documents for sequential 'ripgrep' traversal to expose globally relevant clues earlier, initializes promising entry points with query-relevant paragraphs, and reranks grep matches to surface informative excerpts that document-level ranking may otherwise obsc",
       "link": "https://arxiv.org/abs/2607.24223",
-      "upvotes": 88,
+      "upvotes": 89,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-07-26",
       "is_survey": false,
       "is_china": false,
-      "score": 264
+      "score": 267
     },
     {
       "id": "2607.26811",
@@ -198,7 +198,7 @@
       "link": "https://arxiv.org/abs/2607.26811",
       "upvotes": 87,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-07-28",
       "is_survey": false,
@@ -352,7 +352,7 @@
       "link": "https://arxiv.org/abs/2607.25565",
       "upvotes": 58,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-07-27",
       "is_survey": false,
@@ -380,7 +380,7 @@
       "link": "https://arxiv.org/abs/2607.20465",
       "upvotes": 53,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-05-18",
       "is_survey": false,
@@ -394,7 +394,7 @@
       "link": "https://arxiv.org/abs/2607.27919",
       "upvotes": 40,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily+arXiv",
       "pub": "2026-07-29",
       "is_survey": false,
@@ -422,7 +422,7 @@
       "link": "https://arxiv.org/abs/2607.22529",
       "upvotes": 47,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-07-23",
       "is_survey": false,
@@ -458,6 +458,20 @@
       "score": 126
     },
     {
+      "id": "2607.28595",
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "abstract": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet inefficient reasoning paradigm. In this work, we rethink agentic visual reasoning through two key dimensions of tool use: Mode Adaptiveness (MA) and Tool Effect (TE). Mode Adaptiveness characterizes whether an MLLM can recognize when tools are truly necessary and invoke them accordingly, thereby avoiding unnecessary computational overhead while improving performance on challenging problems that require tool assistance. Tool Effect characterizes the actual impact of tool use: tools should extend the model's capabilities on problems unsolvable through text-only reasoning, while avoiding additional errors on problems that the model can already solve without tools. We conduct a comprehensive analysis to quantify these two properties and empirically reveal that existing agentic visual reasoning models exhibit limited Mode Adaptiveness, while the gains produced by tool use on hard examples are largely offset by the harm introduced on easy examples that the models can already solve. Motivate",
+      "link": "https://arxiv.org/abs/2607.28595",
+      "upvotes": 41,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+alphaXiv+arXiv",
+      "pub": "2026-07-29",
+      "is_survey": false,
+      "is_china": false,
+      "score": 123
+    },
+    {
       "id": "2607.26057",
       "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
       "abstract": "On-policy distillation (OPD) grounds token-level supervision in the student's own trajectory, yet suffers from prefix failure: once the student commits to a wrong reasoning direction, all subsequent generation builds on this deviation, producing misdirected continuations that elicit unreliable supervision and waste compute. We identify a teacher-student continuation asymmetry on failed prefixes, where the teacher tends to redirect while the student continues along the original direction, and convert it into a label-free handoff trigger in Relay On-Policy Distillation (Relay-OPD). During training, Relay-OPD constructs relay trajectories by letting the teacher briefly take over at detected trigger points to produce a teacher leg, after which the student resumes and is optimized on the resulting trajectory. A limited relay budget concentrates intervention on critical early positions while limiting departure from the student policy. With a Qwen3-4B-Instruct-2507 teacher and Qwen3-0.6B/1.7B-Non-Thinking students on eight mathematical reasoning benchmarks, Relay-OPD achieves the best or second-best results on every benchmark, outperforming standard OPD by +5.73% and the strongest baselin",
@@ -470,20 +484,6 @@
       "is_survey": false,
       "is_china": true,
       "score": 122
-    },
-    {
-      "id": "2607.28595",
-      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
-      "abstract": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet inefficient reasoning paradigm. In this work, we rethink agentic visual reasoning through two key dimensions of tool use: Mode Adaptiveness (MA) and Tool Effect (TE). Mode Adaptiveness characterizes whether an MLLM can recognize when tools are truly necessary and invoke them accordingly, thereby avoiding unnecessary computational overhead while improving performance on challenging problems that require tool assistance. Tool Effect characterizes the actual impact of tool use: tools should extend the model's capabilities on problems unsolvable through text-only reasoning, while avoiding additional errors on problems that the model can already solve without tools. We conduct a comprehensive analysis to quantify these two properties and empirically reveal that existing agentic visual reasoning models exhibit limited Mode Adaptiveness, while the gains produced by tool use on hard examples are largely offset by the harm introduced on easy examples that the models can already solve. Motivate",
-      "link": "https://arxiv.org/abs/2607.28595",
-      "upvotes": 39,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+alphaXiv+arXiv",
-      "pub": "2026-07-29",
-      "is_survey": false,
-      "is_china": false,
-      "score": 117
     },
     {
       "title": "Show HN: Formally verified 3D CSG: Trust 93 lines spec, not 1000 lines AI code",
@@ -504,14 +504,14 @@
       "title": "BM25 Wins at Scale: A Scaling Study of Retrieval-Augmented Generation Paradigms",
       "abstract": "Retrieval-augmented generation (RAG) spans lexical and dense retrieval, graph-based indexing, and agentic search, but these paradigms are usually evaluated on different benchmarks at one corpus size, leaving their accuracy-cost scaling unclear. To bridge this gap, we present a controlled study that varies corpus size along 28 strictly nested tiers spanning roughly 450-fold, while holding questions and a fixed bedrock of relevant and adversarial documents unchanged. Under one reader model and one judging protocol, we measure official accuracy, construction and query tokens, and latency. The results reveal a scale-dependent crossover rather than an unconditional winner. File-System Agent leads at the smallest shared tiers, but its sequential exploration costs 39 times more query tokens at the bedrock and becomes less effective as the search space grows. Around 10 million corpus tokens, BM25 overtakes it and leads at every larger shared tier, with a margin approaching 20 points at full scale. BM25 also anchors the low-cost end of the Pareto frontier without LLM-based construction. Dense retrieval remains efficient but less accurate, whereas graph-based RAG encounters construction wall",
       "link": "https://arxiv.org/abs/2607.26497",
-      "upvotes": 36,
+      "upvotes": 37,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-07-29",
       "is_survey": false,
       "is_china": false,
-      "score": 108
+      "score": 111
     },
     {
       "id": "2607.24744",
@@ -556,6 +556,20 @@
       "score": 102
     },
     {
+      "id": "2607.25308",
+      "title": "CAST: Game Solvers as Turn-Level Teachers for LLM Agents",
+      "abstract": "Training large language models (LLMs) to act in long-horizon games is a promising step toward generalist decision-making, yet reinforcement learning with verifiable rewards (RLVR) relies on sparse final rewards that reveal little about which decisions determine success. Denser process signals could supply this missing turn-level credit, but existing sources are hard to keep both cheap and accurate. We observe that changes in a game solver's state value reveal whether an action advances the state toward success. Building on this insight, we propose CAST (Credit Assignment from Solver Teachers), which converts these value changes into solver advantages and injects them into RLVR as turn-level signals. We further show that, under a soft-optimal solver assumption, maximizing the solver advantage is equivalent to on-policy distillation from the solver, requiring only scalar values rather than teacher logits. Across Sokoban, Minesweeper, and Rush Hour, CAST outperforms all trained baselines on every game under both in-domain and unseen-difficulty evaluation and achieves the highest average zero-shot performance on ALFWorld and WebShop. Our code is available at https://github.com/Wloner08",
+      "link": "https://arxiv.org/abs/2607.25308",
+      "upvotes": 34,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily",
+      "pub": "2026-07-27",
+      "is_survey": false,
+      "is_china": false,
+      "score": 102
+    },
+    {
       "id": "2607.24027",
       "title": "Sol-Attn: Accelerating Video Generation Inference via On-the-Fly Attention Sparsification",
       "abstract": "Diffusion transformers are essential for high-fidelity video generation, but long token sequences make attention a dominant inference bottleneck. Training-free dynamic sparse attention alleviates this bottleneck by computing only selected key-value blocks, yet existing methods struggle to sparsify attention both efficiently and accurately for two reasons: (1) Rigid, unpredictable, and costly routing: selecting a fixed fraction of top-ranked blocks by proxy score imposes fixed budgets, whereas retaining blocks to reach a target cumulative proxy probability mass yields dynamic but potentially imbalanced budgets; both incur non-negligible overhead from computing and materializing proxy scores. (2) Lossy keep-or-drop sparsification: unselected blocks are discarded entirely, degrading accuracy under aggressive sparsity. These limitations motivate cheaper dynamic-budget routing while limiting accuracy degradation. In this paper, we introduce training-free Sol-Attn (Sparsifying online attention), which unifies dynamic routing, sparse computation, and approximation correction in a single online-softmax pass, achieving a better accuracy-efficiency trade-off in sparse attention. The core of ",
@@ -579,20 +593,6 @@
       "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-07-29",
-      "is_survey": false,
-      "is_china": false,
-      "score": 99
-    },
-    {
-      "id": "2607.25308",
-      "title": "CAST: Game Solvers as Turn-Level Teachers for LLM Agents",
-      "abstract": "Training large language models (LLMs) to act in long-horizon games is a promising step toward generalist decision-making, yet reinforcement learning with verifiable rewards (RLVR) relies on sparse final rewards that reveal little about which decisions determine success. Denser process signals could supply this missing turn-level credit, but existing sources are hard to keep both cheap and accurate. We observe that changes in a game solver's state value reveal whether an action advances the state toward success. Building on this insight, we propose CAST (Credit Assignment from Solver Teachers), which converts these value changes into solver advantages and injects them into RLVR as turn-level signals. We further show that, under a soft-optimal solver assumption, maximizing the solver advantage is equivalent to on-policy distillation from the solver, requiring only scalar values rather than teacher logits. Across Sokoban, Minesweeper, and Rush Hour, CAST outperforms all trained baselines on every game under both in-domain and unseen-difficulty evaluation and achieves the highest average zero-shot performance on ALFWorld and WebShop. Our code is available at https://github.com/Wloner08",
-      "link": "https://arxiv.org/abs/2607.25308",
-      "upvotes": 33,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily",
-      "pub": "2026-07-27",
       "is_survey": false,
       "is_china": false,
       "score": 99
@@ -631,8 +631,8 @@
       "hn_points": 96,
       "id": "2607.05188",
       "upvotes": 0,
-      "citations": null,
-      "abstract": "",
+      "citations": 0,
+      "abstract": "It is shown that the residual streams of language models under coding agents linearly encode properties of the evolving program: a logistic-regression probe on hidden states is able to decode whether the current code parses, passes its test suite, reduces the number of failing tests, and introduces regressions.",
       "source": "HN",
       "pub": "2026-07-14",
       "is_survey": false,
@@ -668,6 +668,20 @@
       "score": 95
     },
     {
+      "id": "2607.28022",
+      "title": "Flux-OPD: On-Policy Distillation with Evolving Contexts",
+      "abstract": "Large language model training in open-ended domains lacks verifiable rewards, making task preferences difficult to formalize as effective supervision. Contexts can convey such preferences, yet provide little additional supervision once distilled into the student, motivating contexts that evolve with student performance. However, directly using evolving contexts as in-training supervision results in an unstable distillation target and conflicting distributions, requiring mechanisms to stabilize target and downweight conflicts. In this paper, we analyze the effect of contexts through a decomposition of the reverse KL objective, revealing two findings: the student is distilled toward the geometric mean of context-conditioned teachers, and the objective contains a conflict term that measures conflicts among these teachers. Based on this decomposition, we propose Flux-OPD, an OPD paradigm that uses evolving contexts as in-training supervision to capture task preferences in open-ended domains. Flux-OPD treats the differences between context-conditioned and context-free teachers as contextual difference signals, injects them as contextual corrections into the context-free teacher anchor, ",
+      "link": "https://arxiv.org/abs/2607.28022",
+      "upvotes": 31,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+arXiv",
+      "pub": "2026-07-29",
+      "is_survey": false,
+      "is_china": false,
+      "score": 93
+    },
+    {
       "title": "Co-evolution of self-replication and function in a digital primordial soup",
       "link": "https://arxiv.org/abs/2607.09211",
       "hn_points": 92,
@@ -694,20 +708,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 92
-    },
-    {
-      "id": "2607.24368",
-      "title": "Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory",
-      "abstract": "Long-term memory systems store what a user says in an external store and retrieve it when a related query arrives. This interface rests on an assumption so natural that it is rarely stated: a memory that is needed will resemble the query that needs it. World knowledge breaks the assumption. A tree-nut allergy should change the answer to a macaron request through their almond-flour ingredient, yet the two texts share no cue a retriever can see. We call this failure mode the implicit-association blind spot and introduce InMind, a 125-task, expert-verified benchmark spanning ten life domains, with 113 tasks grounded in citable public sources. Its paired controls separate three explanations that existing evaluations conflate: the fact was never stored, the model lacks the bridging knowledge, or the fact was stored and never surfaced. The verdict is clean. With the decisive memory placed in context, the backbone answers 84.0 percent of indirect queries; when the same memory must be retrieved, six vector, graph, and agentic memory systems reach at most 14.4 percent, even though they recall the same facts on demand at up to 100 percent. An embedding with eight times the dimensionality rai",
-      "link": "https://arxiv.org/abs/2607.24368",
-      "upvotes": 30,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily",
-      "pub": "2026-07-26",
-      "is_survey": false,
-      "is_china": false,
-      "score": 90
     }
   ]
 }
