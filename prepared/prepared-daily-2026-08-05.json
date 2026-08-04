@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 2028,
+          "id": 2025,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2013,
+          "id": 2010,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 395
         },
         {
-          "id": 2016,
+          "id": 2013,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 276
         },
         {
-          "id": 1890,
+          "id": 1887,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 174
         },
         {
-          "id": 2235,
+          "id": 2232,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 139
         },
         {
-          "id": 2184,
+          "id": 2181,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 424
         },
         {
-          "id": 2209,
+          "id": 2206,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 409
         },
         {
-          "id": 2146,
+          "id": 2143,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 221
         },
         {
-          "id": 1861,
+          "id": 1859,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 120
         },
         {
-          "id": 1866,
+          "id": 1864,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 108
         },
         {
-          "id": 1933,
+          "id": 1930,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 411
         },
         {
-          "id": 2252,
+          "id": 2249,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 410
         },
         {
-          "id": 2047,
+          "id": 2044,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 453,
-      "total_valid": 328,
+      "total_raw": 450,
+      "total_valid": 325,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2365,
+          "id": 2363,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2368,
+          "id": 2366,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 2363,
+          "id": 2361,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1199
         },
         {
-          "id": 2321,
+          "id": 2318,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 187
         },
         {
-          "id": 2340,
+          "id": 2337,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 173
         },
         {
-          "id": 2341,
+          "id": 2338,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 152
         },
         {
-          "id": 2354,
+          "id": 2352,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,22 @@
           "word_count": 318
         },
         {
-          "id": 2343,
+          "id": 2340,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Cell-free pathway prototyping enables cost-effective biomanufacturing of 1,2,4-butanetriol at the 1-L scale",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.08.03.742631v1?rss=1",
+          "content": "Biomanufacturing offers sustainable alternatives to chemical synthesis under lower temperatures and pressures than traditional catalytic methods. However, the slow pace and iterative engineering bottlenecks of cell strain development restrict the feasible biological design space. Cell-free systems circumvent these constraints, providing a flexible and high-throughput screening approach to accelerate pathway prototyping and enzyme optimization but are not typically used for manufacturing scale-up. To understand the scalability of cell-free biosynthesis, we establish an end-to-end fully cell-free architecture to discover, develop, and scale the biosynthesis of 1,2,4-butanetriol (BT), a high-value industrial platform chemical. First, we systematically screened ~150 enzymes across the 4-step pathway from xylose to BT to identify highly active homologs for each reaction. Next, we applied statistical Design of Experiments to optimize reaction formulations for cost and titer. Finally, the maximum-titer and minimum-cost formulations were scaled up across five orders of magnitude, from 10-L to 1-L reactions. This resulted in peak volumetric productivities of ~1 g/L/h and yields over 13 g of",
+          "pub_date": "2026-08-04",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 2341,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +569,7 @@
           "word_count": 1199
         },
         {
-          "id": 2344,
+          "id": 2342,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 120,
-      "total_valid": 16,
-      "total_candidates": 9
+      "total_raw": 121,
+      "total_valid": 17,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 2366,
+          "id": 2364,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 2022,
+          "id": 2019,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 368
         },
         {
-          "id": 2035,
+          "id": 2032,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 292
         },
         {
-          "id": 2014,
+          "id": 2011,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +656,7 @@
           "word_count": 269
         },
         {
-          "id": 1893,
+          "id": 1890,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +671,7 @@
           "word_count": 238
         },
         {
-          "id": 1884,
+          "id": 1881,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +686,7 @@
           "word_count": 213
         },
         {
-          "id": 2146,
+          "id": 2143,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +701,7 @@
           "word_count": 399
         },
         {
-          "id": 2164,
+          "id": 2161,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +716,7 @@
           "word_count": 294
         },
         {
-          "id": 2208,
+          "id": 2205,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2431,
+          "id": 2429,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 504
         },
         {
-          "id": 2423,
+          "id": 2422,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 499
         },
         {
-          "id": 2480,
+          "id": 2481,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 498
         },
         {
-          "id": 2476,
+          "id": 2474,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 351
         },
         {
-          "id": 2455,
+          "id": 2453,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 281
         },
         {
-          "id": 2456,
+          "id": 2454,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 256
         },
         {
-          "id": 2443,
+          "id": 2441,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 213
         },
         {
-          "id": 2450,
+          "id": 2448,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 191
         },
         {
-          "id": 2439,
+          "id": 2437,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 165
         },
         {
-          "id": 2434,
+          "id": 2432,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 156
         },
         {
-          "id": 2446,
+          "id": 2444,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 139
         },
         {
-          "id": 2433,
+          "id": 2431,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 131
         },
         {
-          "id": 2479,
+          "id": 2480,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1059,14 +1074,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 243,
+      "total_raw": 246,
       "total_valid": 66,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2645,
-    "dup": 609,
+    "total_raw": 2646,
+    "dup": 612,
     "nocontent": 400,
     "noise": 0
   }
