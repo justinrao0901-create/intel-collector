@@ -5,6 +5,21 @@
     "ai": {
       "candidates": [
         {
+          "id": 2,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Circles powers telco personalization with OpenAI technology",
+          "link": "https://openai.com/index/circles",
+          "content": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.",
+          "pub_date": "Mon, 03 Aug 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 159
+        },
+        {
           "id": 1,
           "source": "OpenAI News",
           "section": "ai",
@@ -20,7 +35,7 @@
           "word_count": 153
         },
         {
-          "id": 80,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +50,7 @@
           "word_count": 211
         },
         {
-          "id": 79,
+          "id": 80,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +65,7 @@
           "word_count": 194
         },
         {
-          "id": 75,
+          "id": 76,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,22 @@
           "word_count": 164
         },
         {
-          "id": 60,
+          "id": 61,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Weak-to-Strong On-Policy Distillation",
+          "link": "https://arxiv.org/abs/2607.26246",
+          "content": "On-policy distillation (OPD), which aligns a student with the teacher's token-level distribution on the student's own rollouts, is an effective paradigm for transferring capabilities across LLMs. Prevailing approaches assume a teacher at least as capable as the student: they either distill a larger model into a smaller one, which fails at the frontier where no larger teacher exists, or consolidate multiple domain experts trained from a shared base, which requires costly training at the student's scale. We introduce Weak-to-Strong On-Policy Distillation (W2S-OPD), a simple yet effective OPD framework that improves the strong student by distilling from multiple weak models. W2S-OPD constructs a proxy teacher in logit space from a contrast pair of a positive and a negative model, both smaller than the student and cheap to obtain. Their logit difference isolates the capability direction, which is added to the student's own base model, yielding a proxy teacher that couples this direction while staying distributionally adjacent to the student. The student then distills it by minimizing the per-token reverse KL on its own rollouts. We instantiate the contrast pair as i) a post-RL expert a",
+          "pub_date": "2026-07-27T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 61,
+          "id": 63,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,22 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 63,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "SAF-OPD: Stable Advantage Fusion for On-Policy Distillation",
-          "link": "https://arxiv.org/abs/2607.29209",
-          "content": "Reinforcement learning with verifiable rewards (RLVR) broadcasts a single response-level reward to every token, while on-policy distillation (OPD) scores each token against a stronger teacher for a dense advantage but caps performance at teacher quality and discourages exploration beyond it. Their complementarity makes combining RLVR and OPD promising, but we find that fusing the two advantages with a fixed coefficient triggers entropy collapse from two miscalibrations: a magnitude mismatch, where token-level OPD advantages can spike far beyond the bounded RLVR advantage and erase its signal, and a temporal mismatch, where sustained full-strength OPD keeps pulling the student toward the teacher and limits exploration needed to surpass it. We propose SAF, a Stable Advantage Fusion framework that resolves both issues via a lightweight, four-stage pipeline applied only to the OPD advantage: a sparsify-then-compress mechanism for magnitude control paired with a warm-up-then-anneal mechanism for temporal control, with each stage independently switchable and adding negligible overhead. Instantiating RLVR with GRPO, we evaluate SAF across seven mathematical reasoning and code generation b",
-          "pub_date": "2026-07-30T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 753,
+          "id": 754,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 598
         },
         {
-          "id": 754,
+          "id": 755,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +155,7 @@
           "word_count": 541
         },
         {
-          "id": 748,
+          "id": 749,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 470
         },
         {
-          "id": 732,
+          "id": 733,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 182
-        },
-        {
-          "id": 111,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Can LLMs Really Understand Item Difficulty Levels? Implications for Automated Item Generation Using LLMs",
-          "link": "https://arxiv.org/abs/2607.28634",
-          "content": "arXiv:2607.28634v1 Announce Type: new Abstract: The estimation of item difficulty plays a key role in both formative assessment and large-scale high-stakes summative assessments. This study explores how large language models (LLMs) perform in predicting item difficulty levels using items from a large-scale Reading and Writing test. The study investigated various prompting strategies and parameter settings across multiple LLMs. LLM performance was compared with encoder-only language models and feature-based supervised machine learning models. Zero-shot GPT-4.1 with a temperature of 0 yielded the highest item difficulty level prediction accuracy, with a quadratic weighted kappa (QWK) of 0.578. However, LLMs' prediction accuracy was lower than that of ConvBERT (QWK = 0.625), which outperformed the best feature-based supervised machine learning model. Further analysis showed that all LLMs struggled to label hard items; in particular, the current advanced GPT-5.4 tended to underestimate item difficulty levels. Dimension reduction of embeddings showed that item embeddings from different difficulty levels were mixed together, indicating that semantic information from items alone is likely",
-          "pub_date": "Mon, 03 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 869,
-      "total_valid": 510,
+      "total_raw": 870,
+      "total_valid": 511,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1210,
+          "id": 1211,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 360
         },
         {
-          "id": 1015,
+          "id": 1016,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 339
         },
         {
-          "id": 1177,
+          "id": 1178,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 212
         },
         {
-          "id": 902,
+          "id": 903,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 199
         },
         {
-          "id": 1092,
+          "id": 1093,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 252
         },
         {
-          "id": 1084,
+          "id": 1085,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 228
         },
         {
-          "id": 1081,
+          "id": 1082,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 225
         },
         {
-          "id": 873,
+          "id": 874,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 234
         },
         {
-          "id": 872,
+          "id": 873,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 217
         },
         {
-          "id": 870,
+          "id": 871,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 215
         },
         {
-          "id": 1223,
+          "id": 1224,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 185
         },
         {
-          "id": 883,
+          "id": 884,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 172
         },
         {
-          "id": 885,
+          "id": 886,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 101
         },
         {
-          "id": 1014,
+          "id": 1015,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 530
         },
         {
-          "id": 1207,
+          "id": 1208,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1349,
+          "id": 1350,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 445
         },
         {
-          "id": 1322,
+          "id": 1323,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 970
         },
         {
-          "id": 1350,
+          "id": 1351,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 472
         },
         {
-          "id": 1265,
+          "id": 1266,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 395
         },
         {
-          "id": 1308,
+          "id": 1309,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 358
         },
         {
-          "id": 1306,
+          "id": 1307,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 342
         },
         {
-          "id": 1266,
+          "id": 1267,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 332
         },
         {
-          "id": 1297,
+          "id": 1298,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1298,
+          "id": 1299,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1265,
+          "id": 1266,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 395
         },
         {
-          "id": 1015,
+          "id": 1016,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 339
         },
         {
-          "id": 1266,
+          "id": 1267,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 332
         },
         {
-          "id": 907,
+          "id": 908,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 235
         },
         {
-          "id": 902,
+          "id": 903,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 199
         },
         {
-          "id": 1021,
+          "id": 1022,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 184
         },
         {
-          "id": 899,
+          "id": 900,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 162
         },
         {
-          "id": 1153,
+          "id": 1154,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 157
         },
         {
-          "id": 870,
+          "id": 871,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -716,7 +716,7 @@
           "word_count": 215
         },
         {
-          "id": 890,
+          "id": 891,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -754,7 +754,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1366,
+          "id": 2,
+          "source": "OpenAI News",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Circles powers telco personalization with OpenAI technology",
+          "link": "https://openai.com/index/circles",
+          "content": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.",
+          "pub_date": "Mon, 03 Aug 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 159
+        },
+        {
+          "id": 1367,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 547
         },
         {
-          "id": 1365,
+          "id": 1366,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 520
         },
         {
-          "id": 1376,
+          "id": 1377,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 503
         },
         {
-          "id": 1369,
+          "id": 1370,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 499
         },
         {
-          "id": 1374,
+          "id": 1375,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 490
         },
         {
-          "id": 1414,
+          "id": 1415,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 339
         },
         {
-          "id": 1389,
+          "id": 1390,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 338
         },
         {
-          "id": 1400,
+          "id": 1401,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 337
         },
         {
-          "id": 1413,
+          "id": 1414,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 323
         },
         {
-          "id": 1393,
+          "id": 1394,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 280
         },
         {
-          "id": 1397,
+          "id": 1398,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 252
         },
         {
-          "id": 1392,
+          "id": 1393,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 247
         },
         {
-          "id": 1391,
+          "id": 1392,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 230
         },
         {
-          "id": 1379,
+          "id": 1380,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 144
         },
         {
-          "id": 1378,
+          "id": 1379,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 141
         },
         {
-          "id": 1377,
+          "id": 1378,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +1009,7 @@
           "word_count": 139
         },
         {
-          "id": 1380,
+          "id": 1381,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1024,7 @@
           "word_count": 82
         },
         {
-          "id": 230,
+          "id": 231,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 258,
+          "id": 259,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1037,21 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 276,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Sensitivity Analysis of GRU, LSTM and Transformer Encoder in Classification of Automated Driving Systems",
-          "link": "https://arxiv.org/abs/2607.28665",
-          "content": "arXiv:2607.28665v1 Announce Type: cross Abstract: Automated driving systems (ADSs) are becoming ubiquitous. Future Software Defined Vehicles (SDVs) may be able to run multiple ADSs, both native and aftermarket such as Comma.ai's Openpilot. Monitoring systems to independently verify which automated driving system is active are important for safety monitoring, regulatory compliance, insurance assessment, and anomaly detection. In this paper, we first evaluate the effectiveness of three sequence-based classification models: Gated Recurrent Units (GRU), Long Short-Term Memory (LSTM) networks, and a Transformer encoder model for identifying Level 2 automated driving systems using vehicle telematics data alone: Comma Openpilot, Tesla Autopilot, and Cadillac Super Cruise, along with manual driving. All three models achieve strong clean-data performance with macro F1-scores of 0.92 (GRU), 0.90 (LSTM), and 0.93 (Transformer encoder model) when trained on clean data; threat-matched training yields 0.904-0.916 macro F1 with only a modest clean-data penalty. Second, we introduce a modular robustness evaluation framework that simulates realistic telematics degradation through five corruption fa",
-          "pub_date": "Mon, 03 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 230,
-      "total_valid": 51,
+      "total_raw": 228,
+      "total_valid": 52,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1584,
-    "dup": 390,
+    "total_raw": 1582,
+    "dup": 387,
     "nocontent": 401,
     "noise": 0
   }
