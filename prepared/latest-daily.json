@@ -140,7 +140,22 @@
           "word_count": 183
         },
         {
-          "id": 65,
+          "id": 63,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "MemSFT: Mitigating Alignment Tax with an External Parametric Memory",
+          "link": "https://arxiv.org/abs/2607.25614",
+          "content": "Adapting Large Language Models (LLMs) to specialized domains often incurs an alignment tax, as fine-tuning on domain-specific tasks can cause catastrophic forgetting and substantially degrade performance on general tasks. We propose MemSFT, which mitigates the alignment tax by decoupling domain specialization from backbone parameter updates through a plug-and-play parametric memory. The memory is trained to imitate the behavior of a non-parametric retriever operating over domain data, thereby memorizing knowledge and patterns that would otherwise be accessed through retrieval. Once trained on a specific domain, the memory can be reused across LLMs of different sizes. During generation, a learned router dynamically fuses the output distributions of the memory and backbone at each decoding step, allowing domain expertise to be invoked selectively. Across biology, geoscience, and law, evaluations with models ranging from Qwen3-8B to Qwen3-235B-A22B show that MemSFT consistently improves domain performance with negligible degradation in general performance, whereas full SFT suffers severe forgetting on general tasks. Overall, our results demonstrate a practical path to decoupling gener",
+          "pub_date": "2026-07-27T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Loud or Silent? A Reusable Framework for Per-Modality Failure Analysis in Multimodal Clinical AI",
-          "link": "https://arxiv.org/abs/2608.01462",
-          "content": "Multimodal clinical models are usually judged on accuracy with every modality present, but deployment removes modalities; an echocardiogram is often unavailable where an ECG is routine. Two questions then matter beyond the size of the accuracy loss: which modality was responsible, and whether the model fails loudly or silently once that modality is dropped. The distinction is per-example and modality-level, and is separate from post-hoc feature attribution (e.g. SHAP). Models are replaced often; the evaluation that answers these questions is reused. We present a model-agnostic modality-failure framework: given N modality embeddings, any mask-aware probe, and labels, it returns a per-example failure taxonomy, a per-modality complementarity matrix that attributes error to modalities, and a loud-vs-silent dropout profile separating monitorable failures from those that pass unflagged far from the decision boundary, using only deployment-observable signals. We release it as a small, unit-tested harness and validate it against planted ground truth. Across seeds it recovers that planted modality dominance and complementary subset, reports per-modality loud-vs-silent rates, and scales to a",
-          "pub_date": "2026-08-01T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1838,
-      "total_valid": 1253,
+      "total_raw": 1840,
+      "total_valid": 1256,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1993,
+          "id": 1995,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1978,
+          "id": 1980,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 395
         },
         {
-          "id": 1981,
+          "id": 1983,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 276
         },
         {
-          "id": 1886,
+          "id": 1888,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 174
         },
         {
-          "id": 2189,
+          "id": 2191,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 139
         },
         {
-          "id": 2138,
+          "id": 2140,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 424
         },
         {
-          "id": 2163,
+          "id": 2165,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 409
         },
         {
-          "id": 2100,
+          "id": 2102,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 399
         },
         {
-          "id": 1842,
+          "id": 1844,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 252
         },
         {
-          "id": 1850,
+          "id": 1852,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 221
         },
         {
-          "id": 1858,
+          "id": 1860,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 120
         },
         {
-          "id": 1863,
+          "id": 1865,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 108
         },
         {
-          "id": 2206,
+          "id": 2208,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 410
         },
         {
-          "id": 2008,
+          "id": 2010,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 307
         },
         {
-          "id": 2000,
+          "id": 2002,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 2320,
+          "id": 2322,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2323,
+          "id": 2325,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 2318,
+          "id": 2320,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1199
         },
         {
-          "id": 2275,
+          "id": 2277,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 187
         },
         {
-          "id": 2294,
+          "id": 2296,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 173
         },
         {
-          "id": 2295,
+          "id": 2297,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 152
         },
         {
-          "id": 2309,
+          "id": 2311,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 318
         },
         {
-          "id": 2297,
+          "id": 2299,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2298,
+          "id": 2300,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1199
         },
         {
-          "id": 2299,
+          "id": 2301,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2321,
+          "id": 2323,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1987,
+          "id": 1989,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 368
         },
         {
-          "id": 2000,
+          "id": 2002,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 292
         },
         {
-          "id": 1979,
+          "id": 1981,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 269
         },
         {
-          "id": 1889,
+          "id": 1891,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 238
         },
         {
-          "id": 1880,
+          "id": 1882,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 213
         },
         {
-          "id": 2100,
+          "id": 2102,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 399
         },
         {
-          "id": 2118,
+          "id": 2120,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 294
         },
         {
-          "id": 2162,
+          "id": 2164,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 294
         },
         {
-          "id": 1847,
+          "id": 1849,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2382,
+          "id": 2384,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 504
         },
         {
-          "id": 2375,
+          "id": 2378,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 499
         },
         {
-          "id": 2431,
+          "id": 2433,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,22 @@
           "word_count": 498
         },
         {
-          "id": 2427,
+          "id": 2374,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "llinois Requires Retailers to Accept Cash by 2028",
+          "link": "https://www.pymnts.com/cash/2026/llinois-requires-retailers-to-accept-cash-by-2028/",
+          "content": "Illinois will require retailers to accept certain cash payments, beginning Jan. 1, 2028. This state law results from the Friday (July 31) signing of the Retail Cash Payment Act (HB 4592) by Gov. JB Pritzker, according to a Friday press release from the Office of the Governor. The law “prohibits retailers from refusing to accept cash [&#8230;] The post llinois Requires Retailers to Accept Cash by 2028 appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 05 Aug 2026 00:08:17 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 434
+        },
+        {
+          "id": 2429,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 351
         },
         {
-          "id": 2406,
+          "id": 2408,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 281
         },
         {
-          "id": 2407,
+          "id": 2409,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 256
         },
         {
-          "id": 2394,
+          "id": 2396,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 213
         },
         {
-          "id": 2401,
+          "id": 2403,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 191
         },
         {
-          "id": 2390,
+          "id": 2392,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 165
         },
         {
-          "id": 2385,
+          "id": 2387,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 156
         },
         {
-          "id": 2397,
+          "id": 2399,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 139
         },
         {
-          "id": 2384,
+          "id": 2386,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 131
         },
         {
-          "id": 2430,
+          "id": 2432,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1052,21 +1067,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 518,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Agentic Stage-One Stellarator Optimization: Autonomous Multi-Objective Search for Finite-Beta Equilibria",
-          "link": "https://arxiv.org/abs/2608.01344",
-          "content": "arXiv:2608.01344v1 Announce Type: new Abstract: Stage-one stellarator design searches a high-dimensional family of three-dimensional plasma boundaries and fixed-boundary MHD equilibria for configurations that jointly meet requirements on confinement, field-line topology, force balance, stability proxies, and geometry. These specifications do not provide a general constructive map to a validated finite-beta equilibrium. High-quality targets are commonly developed through iterative numerical optimization whose outcome depends on the initial configuration, active Fourier resolution, objective priorities, and local solver budget. Coordinating this process is computationally costly and expert-intensive, limiting both design throughput and the production of consistently evaluated data. We present a proof of concept for \\emph{agentic} stage-one optimization. A bounded language-model agent diagnoses the current equilibrium and selects the next local optimization experiment, while deterministic DESC execution owns prescribed profiles and flux, symmetry, metric evaluation, solver validity, and acceptance. On a common-budget subset from an expanding finite-beta campaign, the number of gate-va",
-          "pub_date": "Tue, 04 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1080,8 +1080,8 @@
     }
   },
   "meta": {
-    "total_raw": 2596,
-    "dup": 593,
+    "total_raw": 2598,
+    "dup": 592,
     "nocontent": 399,
     "noise": 0
   }
