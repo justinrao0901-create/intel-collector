@@ -110,7 +110,22 @@
           "word_count": 1200
         },
         {
-          "id": 1353,
+          "id": 1351,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Introducing Muse Code and Muse Spark 1.2",
+          "link": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
+          "content": "Introducing Muse Code and Muse Spark 1.2 Yet more evidence that the most important characteristic of any model these days is long-sequence agentic tool calling. Meta shipped their own coding agent as part of getting that to work! Muse Spark 1.2 is a coding-focused update to Muse Spark 1.1, with improvements in code generation, complex debugging, codebase understanding, and end-to-end developer workflows. In Muse Spark 1.2, we significantly scaled up training compute on coding tasks while expanding training environment diversity. The model also maintains its strength in other key areas like general agents. [...] We co-trained Muse Spark 1.2 with Muse Code to ensure the model exhibits its best performance and coding usability when paired together. The training included rejection sampled harness trajectories and recipe optimizations for goals, compaction, and subagents, alongside the integration of the Muse Code toolset to maximize harness compatibility. [...] Muse Spark 1.2 was extensively trained on long-horizon coding tasks, including whole-repository generation, large end-to-end projects, and auto-research. Here's a pelican riding a bicycle SVG produced by Muse Spark 1.2 : You can",
+          "pub_date": "2026-08-05T23:58:35+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1354,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1354,
+          "id": 1355,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -134,21 +149,6 @@
           "link": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
           "content": "I released LLM 0.32 this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-addressable SQLite logs, new models, and new features enabled by the OpenAI Responses API. I also released a new version of the llm-anthropic plugin with substantial updates of its own. Headline features for LLM CLI users Running LLM against reasoning models now displays their reasoning traces to standard error, so you can see what they are \"thinking\" without that information being included in the standard output that you might pipe to another tool. Add -R/--hide-reasoning to turn this off. LLM includes support out-of-the-box for the GPT-5.6 model family , and the new default model used with llm \"prompt\" is now the inexpensive but capable GPT-5.6 Luna . LLM calls can now use server-side tools from various providers. OpenAI provide a code execution environment as a server-side tool; LLM can now run prompts that benefit from that like so: llm --tool CodeInterpreter ' Show current python and SQLite versions ' OpenAI also gets a WebSearch tool. The llm-anthropic pl",
           "pub_date": "2026-08-04T23:58:24+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1356,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "PipeNetwork/minimax-h3-mlx",
-          "link": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
-          "content": "PipeNetwork/minimax-h3-mlx MiniMax released MiniMax-H3 two days ago - they describe it as a \"a general-purpose, omni-modal generative system\", which in practice means it accepts text, images, audio and video and can use them to generate up to 15 second video clips with audio included. This Python package ports it to MLX for running on Apple Silicon. I got it running on my M5 Max MacBook Pro. I cloned the repo and ran the model like this: # First download the models uvx --from huggingface_hub hf download MiniMaxAI/MiniMax-H3 \\ --include 'FL2VA/*' --exclude 'FL2VA/transformer/*' uvx --from huggingface_hub hf download pipenetwork/MiniMax-H3-MLX-8bit # Now run the prompt uv run --with mlx-vlm \\ --with-requirements requirements.txt python scripts/generate.py \\ \"a rainbow colored skunk leaps over a mossy log in a supermarket\" \\ -o skunk.mp4 \\ -c ~/.cache/huggingface/hub/models--MiniMaxAI--MiniMax-H3/snapshots/fa9c8ab1eaa21c8ae25e7e40b83b2e6002f340af/FL2VA \\ -t ~/.cache/huggingface/hub/models--pipenetwork--MiniMax-H3-MLX-8bit/snapshots/3ac52081470b0488921c3ec3ba84a39097bf2361 Here's the video I got for the prompt: a rainbow colored skunk leaps over a mossy log in a supermarket Your browse",
-          "pub_date": "2026-08-04T19:10:09+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1473,
-      "total_valid": 1192,
+      "total_valid": 1193,
       "total_candidates": 12
     },
     "vaccine": {
@@ -1081,7 +1081,7 @@
   },
   "meta": {
     "total_raw": 2277,
-    "dup": 305,
+    "dup": 304,
     "nocontent": 391,
     "noise": 0
   }
