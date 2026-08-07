@@ -115,9 +115,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Helping Music Co-Creation Agents 'Listen' Well: Hierarchical Self-Supervised World Models for Understanding and Generation",
-          "link": "https://arxiv.org/abs/2608.04378",
-          "content": "Collaborative music agents need internal representations rich enough to support both understanding and generation, yet flexible enough for a workflow where the human retains agency. We present a hierarchical self-supervised ``world model'' for symbolic music: a 2.55M-parameter Swin V2 encoder trained on MIDI piano-roll images with JEPA-style objectives (pitch- and time-shift equivariance, masked embedding prediction, and a distributional regularizer), using no labels and no music-theory vocabulary. Probing the frozen embeddings shows that the level at which a musical property becomes decodable tracks its musical time scale: phrase boundaries are read off the coarsest levels, note density and harmonic detail off the finest. Temporal and phrase structure emerge from the self-supervised objectives alone, while harmonic content must be asked for; a small chord-supervision head raises joint chord recovery from .18 to .54, and key detection, which is never supervised, from .16 to .70. Following the Representation AutoEncoder paradigm, a conditional flow-matching model stands in for a trained decoder, flowing in pixel space from PCA-reduced conditioning: it reproduces a target window at p",
+          "title": "Recursive Synthesis for Long-Horizon Terminal Tasks",
+          "link": "https://arxiv.org/abs/2608.05466",
+          "content": "High-quality long-horizon training data for terminal agents is expensive to produce, often costing hundreds to thousands of dollars per task, because each task must keep the instruction, environment, reference solution, and verifier mutually consistent. Human authoring does not scale, and direct generation with large language models (LLMs) often breaks these dependencies. We present Recursive Synthetic Terminal Tasks (RST), a recursive verified synthesis framework for constructing long-horizon terminal-agent tasks at scale. Starting from verified seed tasks, RST extends the reference solution, realigns the verifier and instruction to the new workflow, validates the result in a fresh sandbox, and reuses accepted tasks as seeds for subsequent rounds. Across fifteen recursive rounds, RST produces 37,484 synthesized terminal-agent tasks at roughly \\0.05 per task. Task difficulty increases substantially over rounds: the median reference solution grows from 67 to 374 lines, the median number of executed commands grows from 40 to 244, and DeepSeek-V4-Pro pass@4 drops from 90% at R_1 to 2.5% at R_{15}$. To demonstrate training utility, we collect rejection-sampled Qwen3.5 trajectories on t",
           "pub_date": "2026-08-04T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -125,15 +125,15 @@
           "word_count": 1200
         },
         {
-          "id": 63,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "What AI Red-Team Evaluations Can and Cannot Prove",
-          "link": "https://arxiv.org/abs/2607.21735",
-          "content": "Red-team evaluations of AI models support some claims and not others, and the boundary between the two is calculable rather than merely a matter of judgment. We define the evidential ceiling of an evaluation as the largest factor by which one result can move belief under a fixed testing budget, derive it in closed form for the benchmark null result, and use it to locate that boundary exactly. We find that above a calculable harm rate, a benchmark of modest size certifies a category to a stated evidentiary standard, and a clean sheet is then the stronger of the two possible observations, outweighing a single reproduced failure. Below that rate, no passive benchmark of feasible size provides the specified evidence of safety under the fixed scoring rule and approximately independent trial structure. The crossing between the two regimes has a closed form. The bound is not specific to benchmarks: written in terms of a procedure's hypothesis conditioned elicitation rates, it covers adaptive and automated red teaming as well, and shows that discrimination between the hypotheses rather than attack success is what determines evidential worth. Auditing eight evaluation suites against the bou",
-          "pub_date": "2026-07-22T20:00:00.000Z",
+          "title": "Helping Music Co-Creation Agents 'Listen' Well: Hierarchical Self-Supervised World Models for Understanding and Generation",
+          "link": "https://arxiv.org/abs/2608.04378",
+          "content": "Collaborative music agents need internal representations rich enough to support both understanding and generation, yet flexible enough for a workflow where the human retains agency. We present a hierarchical self-supervised ``world model'' for symbolic music: a 2.55M-parameter Swin V2 encoder trained on MIDI piano-roll images with JEPA-style objectives (pitch- and time-shift equivariance, masked embedding prediction, and a distributional regularizer), using no labels and no music-theory vocabulary. Probing the frozen embeddings shows that the level at which a musical property becomes decodable tracks its musical time scale: phrase boundaries are read off the coarsest levels, note density and harmonic detail off the finest. Temporal and phrase structure emerge from the self-supervised objectives alone, while harmonic content must be asked for; a small chord-supervision head raises joint chord recovery from .18 to .54, and key detection, which is never supervised, from .16 to .70. Following the Representation AutoEncoder paradigm, a conditional flow-matching model stands in for a trained decoder, flowing in pixel space from PCA-reduced conditioning: it reproduces a target window at p",
+          "pub_date": "2026-08-04T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SIGNPOST-Bench: Benchmarking Text-Vision Conflict Resolution in Multimodal Large Language Models",
-          "link": "https://arxiv.org/abs/2608.04244",
-          "content": "Multimodal large language models (MLLMs) make grounded predictions in real-world scenes by combining visual and textual cues, yet existing benchmarks rarely reveal how they arbitrate between these evidence sources when they conflict. We introduce SIGNPOST-Bench, a controlled counterfactual benchmark for evaluating text-vision conflict resolution. Each source image is transformed into a counterfactual quintuplet of Original, Blank, Similar, Random, and Adversarial variants. Synthetic, localized scene-text interventions are designed to preserve non-textual content, enabling paired measurements of changes in localization performance and directed shifts toward geographic targets introduced by conflicting text. SIGNPOST-Bench contains 5,111 counterfactual groups and 25,555 image variants from four datasets. We evaluate 20 MLLMs from seven providers. Compared with Original images, Adversarial variants raise median localization error from 282 km to 1,347 km, a 4.8-fold increase. Among geocodable adversarial samples, 6.5-20.1% of predictions lie less than 50 km from the injected target across models, and every evaluated model exhibits a positive mean paired reduction in target distance fro",
-          "pub_date": "2026-08-03T20:00:00.000Z",
+          "title": "What AI Red-Team Evaluations Can and Cannot Prove",
+          "link": "https://arxiv.org/abs/2607.21735",
+          "content": "Red-team evaluations of AI models support some claims and not others, and the boundary between the two is calculable rather than merely a matter of judgment. We define the evidential ceiling of an evaluation as the largest factor by which one result can move belief under a fixed testing budget, derive it in closed form for the benchmark null result, and use it to locate that boundary exactly. We find that above a calculable harm rate, a benchmark of modest size certifies a category to a stated evidentiary standard, and a clean sheet is then the stronger of the two possible observations, outweighing a single reproduced failure. Below that rate, no passive benchmark of feasible size provides the specified evidence of safety under the fixed scoring rule and approximately independent trial structure. The crossing between the two regimes has a closed form. The bound is not specific to benchmarks: written in terms of a procedure's hypothesis conditioned elicitation rates, it covers adaptive and automated red teaming as well, and shows that discrimination between the hypotheses rather than attack success is what determines evidential worth. Auditing eight evaluation suites against the bou",
+          "pub_date": "2026-07-22T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -739,7 +739,7 @@
           "word_count": 736
         },
         {
-          "id": 1558,
+          "id": 1559,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 540
         },
         {
-          "id": 1553,
+          "id": 1554,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,22 +769,7 @@
           "word_count": 489
         },
         {
-          "id": 1562,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Fiserv Puts Clover at Center of Its Technology Reset",
-          "link": "https://www.pymnts.com/earnings/2026/fiservs-new-ceo-resets-guidance-as-headwinds-hit-growth/",
-          "content": "Five weeks into Takis Georgakopoulos’ tenure as CEO, Fiserv used the first quarterly report under its new leader to reset expectations for 2026. The payments and banking technology provider lowered its full-year revenue and earnings guidance Thursday, pointing to delayed client projects, weaker conditions in Argentina and softer hardware sales. It also plans to spend [&#8230;] The post Fiserv Puts Clover at Center of Its Technology Reset appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 06 Aug 2026 20:06:17 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 472
-        },
-        {
-          "id": 1555,
+          "id": 1556,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 1199
         },
         {
-          "id": 1556,
+          "id": 1557,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 540
         },
         {
-          "id": 1554,
+          "id": 1555,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -992,6 +977,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 474
+        },
+        {
+          "id": 1561,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The Conference Board: Geopolitical Concerns Are Easing but CEOs Remain Cautious",
+          "link": "https://www.pymnts.com/economy/2026/the-conference-board-geopolitical-concerns-are-easing-but-ceos-remain-cautious/",
+          "content": "CEOs are generally feeling more optimistic, but clouds remain on the horizon. The Q3 2026 installment of the Conference Board’s CEO Confidence™ report, released Thursday (Aug. 6), shows an improvement in sentiment. The CEO Confidence Index rose to 52 in the third quarter of 2026 from 47 in Q2, with readings above 50 reflecting more [&#8230;] The post The Conference Board: Geopolitical Concerns Are Easing but CEOs Remain Cautious appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 06 Aug 2026 20:37:34 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 463
         },
         {
           "id": 1565,
