@@ -35,7 +35,7 @@
           "word_count": 140
         },
         {
-          "id": 80,
+          "id": 79,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,22 @@
           "word_count": 568
         },
         {
-          "id": 78,
+          "id": 75,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "OpenAI says it slowed Astra model development over security concerns",
+          "link": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+          "content": "OpenAI said this model, which is still in development, reached its \"critical cybersecurity threshold,\" meaning it could independently identify and carry out cyberattacks against traditionally well-protected real-world systems.",
+          "pub_date": "Fri, 07 Aug 2026 22:48:24 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 226
+        },
+        {
+          "id": 77,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,22 +80,7 @@
           "word_count": 215
         },
         {
-          "id": 88,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
-          "link": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
-          "content": "The startup's platform predicts which product a shopper wants next, learns their general taste, and fine-tunes continuously based on what they do in real time.",
-          "pub_date": "Thu, 06 Aug 2026 13:00:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 159
-        },
-        {
-          "id": 61,
+          "id": 60,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 62,
+          "id": 61,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 63,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 855,
+          "id": 854,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,22 @@
           "word_count": 1200
         },
         {
-          "id": 856,
+          "id": 853,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+          "link": "https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything",
+          "content": "OpenAI gave a last-minute presentation at the Black Hat security on Wednesday about \"the Hugging Face Incident\" ( previously on this blog). The video was published yesterday. It's short and information dense and well worth watching, in particular because it provides full details of what happened and how things played out inside OpenAI. I've used the video to construct the timeline below. Here's the timeline. My favourite detail is at the end: OpenAI found out that they were responsible for the attack on Hugging Face when they reached out to ask to have their credentials revoked (after their internal investigation) and learned that they had been revoked already since they were used in that attack! May 7 : OpenAI starts a new training run for an experimental, unreleased model. ( Do they mean an evaluation run? They say training run in the video, and later mention a \"reward signal to judge how well they're doing\", so I guess this really was about training a model, not evaluating one that was already trained.) May 8 : An agent is accidentally given an impossible task involving a Google Drive link despite no internet access). It tries attacking the Artifactory packaging service, fails,",
+          "pub_date": "2026-08-07T23:55:58+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 855,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,22 +170,7 @@
           "word_count": 1093
         },
         {
-          "id": 860,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "An AI model from Meta also hacked another company during testing",
-          "link": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything",
-          "content": "An AI model from Meta also hacked another company during testing Stop me if you've heard this one before : An AI model from the parent company of Facebook and Instagram hacked into another company’s systems during cybersecurity testing, a spokesperson confirmed on Wednesday. Meta says the breach occurred because of an inadvertent error during testing of the model, similar to previously disclosed incidents with OpenAI and Anthropic. “A misconfiguration by Irregular, an independent testing company Meta uses, inadvertently allowed one of our models access to the internet during evaluation,” the Meta spokesperson said. Meta’s Muse Spark model “exploited a security vulnerability” in another company “in a manner similar to previously-reported instances with other companies.” The Information had the scoop , I'm linking to CNN's re-report of it since they don't have a paywall. So that's Anthropic, OpenAI, and Meta. Google Gemini really needs to catch up on accidentally cyberattacking other companies. Tags: security , ai , generative-ai , llms , meta , accidental-cyberattacks",
-          "pub_date": "2026-08-06T00:25:27+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1083
-        },
-        {
-          "id": 118,
+          "id": 115,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 973,
-      "total_valid": 577,
+      "total_raw": 971,
+      "total_valid": 578,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1326,
+          "id": 1323,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 469
         },
         {
-          "id": 1327,
+          "id": 1324,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 329
         },
         {
-          "id": 1317,
+          "id": 1314,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 277
         },
         {
-          "id": 1008,
+          "id": 1005,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 185
         },
         {
-          "id": 1335,
+          "id": 1332,
           "source": "Science Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 55
         },
         {
-          "id": 1280,
+          "id": 1277,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 369
         },
         {
-          "id": 1285,
+          "id": 1282,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 366
         },
         {
-          "id": 1284,
+          "id": 1281,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 365
         },
         {
-          "id": 1338,
+          "id": 1335,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 140
         },
         {
-          "id": 996,
+          "id": 994,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 138
         },
         {
-          "id": 1343,
+          "id": 1340,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 134
         },
         {
-          "id": 1003,
+          "id": 1001,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,22 +377,22 @@
           "word_count": 130
         },
         {
-          "id": 1005,
+          "id": 997,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
           "priority": 4,
-          "title": "Opinion: One year since Kennedy canceled mRNA vaccine projects, science shows how wrong he was",
-          "link": "https://www.statnews.com/2026/08/06/mflusiva-fda-mrna-flu-vaccine-rfk-jr/?utm_campaign=rss",
-          "content": "“The United States invented this platform and is the only country walking away from it,” Jeff Coller writes of mRNA vaccines.",
-          "pub_date": "Thu, 06 Aug 2026 12:10:18 +0000",
+          "title": "STAT+: Two FDA approvals — a new drug and a new vaccine",
+          "link": "https://www.statnews.com/2026/08/06/biotech-news-two-fda-approvals-a-new-drug-and-a-new-vaccine/?utm_campaign=rss",
+          "content": "Takeda's narcolepsy drug approved, the first mRNA flu shot approved, and more biotech updates from The Readout",
+          "pub_date": "Thu, 06 Aug 2026 13:49:23 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 125
+          "word_count": 110
         },
         {
-          "id": 1138,
+          "id": 1135,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 1200
         },
         {
-          "id": 1142,
+          "id": 1139,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 397,
-      "total_valid": 274,
+      "total_raw": 396,
+      "total_valid": 273,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1411,
+          "id": 1407,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 248
         },
         {
-          "id": 1406,
+          "id": 1402,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 238
         },
         {
-          "id": 1418,
+          "id": 1414,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 172
         },
         {
-          "id": 1451,
+          "id": 1447,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1453,
+          "id": 1449,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1440,
+          "id": 1436,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1047
         },
         {
-          "id": 1476,
+          "id": 1472,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 377
         },
         {
-          "id": 1431,
+          "id": 1427,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 330
         },
         {
-          "id": 1421,
+          "id": 1417,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1422,
+          "id": 1418,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 1420,
+          "id": 1416,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -604,14 +604,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 113,
+      "total_raw": 112,
       "total_valid": 12,
       "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 1306,
+          "id": 1303,
           "source": "Nature Rev Drug Discovery",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 547
         },
         {
-          "id": 1025,
+          "id": 1022,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 284
         },
         {
-          "id": 1035,
+          "id": 1032,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 280
         },
         {
-          "id": 1154,
+          "id": 1151,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 277
         },
         {
-          "id": 1316,
+          "id": 1313,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 268
         },
         {
-          "id": 1013,
+          "id": 1010,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 169
         },
         {
-          "id": 1484,
+          "id": 1480,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 117
         },
         {
-          "id": 1487,
+          "id": 1483,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 117
         },
         {
-          "id": 1486,
+          "id": 1482,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 116
         },
         {
-          "id": 1115,
+          "id": 1112,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1497,
+          "id": 1493,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 506
         },
         {
-          "id": 1494,
+          "id": 1490,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 465
         },
         {
-          "id": 1517,
+          "id": 1513,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 235
         },
         {
-          "id": 1518,
+          "id": 1514,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 233
         },
         {
-          "id": 1503,
+          "id": 1499,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 207
         },
         {
-          "id": 1507,
+          "id": 1503,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 137
         },
         {
-          "id": 1504,
+          "id": 1500,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 118
         },
         {
-          "id": 1532,
+          "id": 1528,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 109
         },
         {
-          "id": 1502,
+          "id": 1498,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 92
         },
         {
-          "id": 1511,
+          "id": 1507,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 92
         },
         {
-          "id": 204,
+          "id": 201,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 235,
+          "id": 232,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 357,
+          "id": 354,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 396,
+          "id": 393,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 453,
+          "id": 450,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 468,
+          "id": 465,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 583,
+          "id": 580,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 336,
+          "id": 333,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 947
         },
         {
-          "id": 1493,
+          "id": 1489,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 538
         },
         {
-          "id": 1501,
+          "id": 1497,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1095,9 +1095,9 @@
     }
   },
   "meta": {
-    "total_raw": 1696,
-    "dup": 419,
-    "nocontent": 383,
+    "total_raw": 1692,
+    "dup": 416,
+    "nocontent": 382,
     "noise": 0
   }
 }
