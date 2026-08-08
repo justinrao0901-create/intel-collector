@@ -197,21 +197,6 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 543,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Photochemical internalization enhances in vivo immunity to peptide‑ and protein‑based vaccines with synthetic dsRNA adjuvants",
-          "link": "https://www.nature.com/articles/s41541-026-01554-1",
-          "content": "npj Vaccines, Published online: 09 August 2026; doi:10.1038/s41541-026-01554-1 Photochemical internalization enhances in vivo immunity to peptide‑ and protein‑based vaccines with synthetic dsRNA adjuvants",
-          "pub_date": "2026-08-09",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 204
-        },
-        {
           "id": 525,
           "source": "Vaccine (journal)",
           "section": "vaccine",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 261
+        },
+        {
+          "id": 429,
+          "source": "Nature Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Tissue-resident immune cells drive genetic risk in autoimmune and lung diseases",
+          "link": "https://www.nature.com/articles/s41590-026-02596-2",
+          "content": "Nature Immunology, Published online: 03 August 2026; doi:10.1038/s41590-026-02596-2 Schmiedel et al. present a human lung immune cell atlas linking disease-associated genetic variants to gene expression in tissue-resident immune cells.",
+          "pub_date": "2026-08-03",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 235
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 379,
-      "total_valid": 240,
+      "total_valid": 239,
       "total_candidates": 15
     },
     "synbio": {
@@ -694,7 +694,7 @@
           "word_count": 458
         },
         {
-          "id": 760,
+          "id": 759,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -707,21 +707,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 218
-        },
-        {
-          "id": 759,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "FDIC aims to establish standards body to certify banking services providers - Bloomberg Law",
-          "link": "https://www.finextra.com/newsarticle/48212/fdic-aims-to-establish-standards-body-to-certify-banking-services-providers---bloomberg-law?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The Federal Deposit Insurance Corp. (FDIC) is working with industry leaders to establish an independent standards committee to certify banks' fintech partners.",
-          "pub_date": "Fri, 07 Aug 2026 11:15:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 159
         },
         {
           "id": 758,
@@ -739,7 +724,7 @@
           "word_count": 155
         },
         {
-          "id": 769,
+          "id": 768,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +739,7 @@
           "word_count": 137
         },
         {
-          "id": 763,
+          "id": 762,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +754,7 @@
           "word_count": 136
         },
         {
-          "id": 774,
+          "id": 773,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -782,6 +767,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 103
+        },
+        {
+          "id": 774,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Why Banks Need to Rethink Personalization Using First-Party Shopping Insights",
+          "link": "https://www.finextra.com/blogposting/32495/why-banks-need-to-rethink-personalization-using-first-party-shopping-insights?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "A scenario that plays out constantly in banking: a customer spends two weeks researching kitchen ren...",
+          "pub_date": "Fri, 07 Aug 2026 18:22:47 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 103
         }
       ],
       "quota": {
@@ -789,14 +789,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 191,
-      "total_valid": 19,
+      "total_raw": 190,
+      "total_valid": 18,
       "total_candidates": 12
     }
   },
   "meta": {
-    "total_raw": 934,
-    "dup": 262,
+    "total_raw": 933,
+    "dup": 263,
     "nocontent": 382,
     "noise": 0
   }
