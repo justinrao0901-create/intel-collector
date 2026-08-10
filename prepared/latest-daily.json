@@ -100,25 +100,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
-          "link": "https://arxiv.org/abs/2608.04302",
-          "content": "Benchmarking video-language models has largely focused on short clips and single-sentence metrics, leaving open whether current systems can generate accurate long-form, paragraph-level descriptions. We introduce CLIP-CC-Bench, an evaluation suite for long-form video description built from 5 hours of movie content segmented into 90-second clips, each paired with an expert-written paragraph-style reference. The evaluation suite employs an ensemble of five state-of-the-art LLM-based embedding models to increase reliability and mitigate single-model bias, and applies two complementary methodologies: (i) coarse-grained semantic matching and (ii) fine-grained semantic matching to compare model-generated descriptions against CLIP-CC-Bench references. Using this framework, we evaluate 17 state-of-the-art video-language models and report both their Borda-aggregated rankings and their average scores on CLIP-CC-Bench. We further quantify the protocol's internal reliability through inter-judge agreement and bootstrap ranking stability. We release standardized evaluation scripts, model outputs, and aggregation tools at https://github.com/Multimodal-Intelligence-Lab/CLIP-CC-Bench to support repr",
-          "pub_date": "2026-08-04T20:00:00.000Z",
+          "title": "Enfold: Folding World Model Imagination into Predictive Representations for Ultra-Efficient Embodied Control",
+          "link": "https://arxiv.org/abs/2607.26657",
+          "content": "World generative models are typically used through what they produce: a rendered future, a video-conditioned action, or latent context computed by a costly generative branch. We argue that their more reusable asset is the computation that constructs a future. As a generator transforms a corrupted future into a coherent trajectory, its intermediate states organize appearance, spatial layout, and interaction across levels of abstraction. Can this future-generative computation be internalized in a representation inferred from the present alone? We present Enfold, which transfers this computation into a representation predicted from the current visual context and language instruction. During training, multi-level states exposed as the generator processes the observed future supervise a current-only encoder. The learned representation is fed back to condition future generation and is read by task heads without allowing task gradients to reshape the encoder. At deployment, action prediction no longer executes the generator. Across LIBERO, RoboTwin2.0, and real-robot tasks, Enfold supports strong control while reducing action latency by 3.7times relative to Fast--WAM, Enfold-Flash reaches",
+          "pub_date": "2026-08-05T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
-          "link": "https://arxiv.org/abs/2608.04205",
-          "content": "Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract away human diversity and interactive behavior. We therefore introduce MatrAIx, a population-scale simulated-user evaluation infrastructure for testing AI systems and digital products with heterogeneous users. MatrAIx has three core components: First, Persona 8B contains 8.3 billion persona records represented by 1,290 categorical dimensions. Records are either sampled from a dependency graph that preserves correlated attributes or derived from human-authored profiles. We release a quality-filtered coreset of approximately 1 million personas, comprising 599,847 human-grounded and 400,000 synthetic records. Second, the MatrAIx Playground provides four environments in which diverse users evaluate and interact with digital products: Survey, AI Chatbot, Web, and App. Third, MatrAIx provides 1,010 application tasks spanning more than 25 domains, including Commerce, Software, Finance, and Healthcare. We conducted 18,189 evaluation trials across eight representative tasks. Persona agents were powered by three LLMs: Claude Opus 4.8, GPT 5.5, a",
-          "pub_date": "2026-08-03T20:00:00.000Z",
+          "title": "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models",
+          "link": "https://arxiv.org/abs/2608.04302",
+          "content": "Benchmarking video-language models has largely focused on short clips and single-sentence metrics, leaving open whether current systems can generate accurate long-form, paragraph-level descriptions. We introduce CLIP-CC-Bench, an evaluation suite for long-form video description built from 5 hours of movie content segmented into 90-second clips, each paired with an expert-written paragraph-style reference. The evaluation suite employs an ensemble of five state-of-the-art LLM-based embedding models to increase reliability and mitigate single-model bias, and applies two complementary methodologies: (i) coarse-grained semantic matching and (ii) fine-grained semantic matching to compare model-generated descriptions against CLIP-CC-Bench references. Using this framework, we evaluate 17 state-of-the-art video-language models and report both their Borda-aggregated rankings and their average scores on CLIP-CC-Bench. We further quantify the protocol's internal reliability through inter-judge agreement and bootstrap ranking stability. We release standardized evaluation scripts, model outputs, and aggregation tools at https://github.com/Multimodal-Intelligence-Lab/CLIP-CC-Bench to support repr",
+          "pub_date": "2026-08-04T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "DCAS: Decoupling CLI Agent Scaffolding to Internalize Planning across Scaffolds",
-          "link": "https://arxiv.org/abs/2608.06113",
-          "content": "CLI-based software-engineering agents have matured rapidly, yet the open ecosystem has converged on a single training environment: trajectory datasets used to fine-tune open models are collected almost exclusively under OpenHands. Models fine-tuned on this data score well under OpenHands but degrade substantially when deployed under any non-training scaffold. Untrained base models do not show this divergence, indicating the gap is fine-tuning-induced and tied to the conventions of the training scaffold. We argue that a load-bearing scaffold-specific behavior is planning structure, in two senses this paper distinguishes: explicit planning, a pre-execution plan produced as a first-class artifact, and implicit planning, the structural conventions that shape execution throughout the agent loop. Under this hypothesis, closing the gap requires moving planning from a fixed scaffold artifact to a learned model capability. We introduce Decoupling CLI Agent Scaffolding (DCAS), a backend-substitution interception layer that routes API traffic between any CLI scaffold and any backend model without modifying the scaffold, enabling cross-scaffold evaluation and planning-aware trajectory collecti",
-          "pub_date": "2026-08-05T20:00:00.000Z",
+          "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+          "link": "https://arxiv.org/abs/2608.04205",
+          "content": "Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract away human diversity and interactive behavior. We therefore introduce MatrAIx, a population-scale simulated-user evaluation infrastructure for testing AI systems and digital products with heterogeneous users. MatrAIx has three core components: First, Persona 8B contains 8.3 billion persona records represented by 1,290 categorical dimensions. Records are either sampled from a dependency graph that preserves correlated attributes or derived from human-authored profiles. We release a quality-filtered coreset of approximately 1 million personas, comprising 599,847 human-grounded and 400,000 synthetic records. Second, the MatrAIx Playground provides four environments in which diverse users evaluate and interact with digital products: Survey, AI Chatbot, Web, and App. Third, MatrAIx provides 1,010 application tasks spanning more than 25 domains, including Commerce, Software, Finance, and Healthcare. We conducted 18,189 evaluation trials across eight representative tasks. Persona agents were powered by three LLMs: Claude Opus 4.8, GPT 5.5, a",
+          "pub_date": "2026-08-03T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 905,
+      "total_raw": 904,
       "total_valid": 537,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1083,
+          "id": 1082,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 350
         },
         {
-          "id": 1081,
+          "id": 1080,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 280
         },
         {
-          "id": 1222,
+          "id": 1221,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 184
         },
         {
-          "id": 1182,
+          "id": 1181,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 401
         },
         {
-          "id": 1162,
+          "id": 1161,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 272
         },
         {
-          "id": 1160,
+          "id": 1159,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 264
         },
         {
-          "id": 931,
+          "id": 930,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 274
         },
         {
-          "id": 912,
+          "id": 911,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 261
         },
         {
-          "id": 913,
+          "id": 912,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 242
         },
         {
-          "id": 906,
+          "id": 905,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 239
         },
         {
-          "id": 917,
+          "id": 916,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 164
         },
         {
-          "id": 926,
+          "id": 925,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 141
         },
         {
-          "id": 927,
+          "id": 926,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 122
         },
         {
-          "id": 1247,
+          "id": 1246,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 454
         },
         {
-          "id": 1085,
+          "id": 1084,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1321,
+          "id": 1320,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 212
         },
         {
-          "id": 1366,
+          "id": 1365,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 1368,
+          "id": 1367,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1369,
+          "id": 1368,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1370,
+          "id": 1369,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 519
         },
         {
-          "id": 1310,
+          "id": 1309,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 278
         },
         {
-          "id": 1345,
+          "id": 1344,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1346,
+          "id": 1345,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1082,
+          "id": 1081,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 350
         },
         {
-          "id": 938,
+          "id": 937,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 193
         },
         {
-          "id": 941,
+          "id": 940,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 193
         },
         {
-          "id": 936,
+          "id": 935,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 131
         },
         {
-          "id": 907,
+          "id": 906,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -701,7 +701,7 @@
           "word_count": 1200
         },
         {
-          "id": 1137,
+          "id": 1136,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1412,
+          "id": 1411,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,19 +769,19 @@
           "word_count": 521
         },
         {
-          "id": 1395,
+          "id": 1385,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Adyen and Toast Bring FinTech Partnership to US",
-          "link": "https://www.pymnts.com/partnerships/2026/adyen-and-toast-bring-fintech-partnership-to-us/",
-          "content": "FinTech platform Adyen has expanded its partnership with restaurant/hospitality/retail tech company Toast. The expansion will bring the two companies’ relationship into the U.S. following collaborations throughout Ireland, the U.K., Canada and Australia, Adyen said in a news release Monday (Aug. 10). “Speed, control, and reliability matter, especially in service-based businesses like restaurants, retail, or hospitality. [&#8230;] The post Adyen and Toast Bring FinTech Partnership to US appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 10 Aug 2026 19:40:08 +0000",
+          "title": "Synchrony and PayPal Bring Special Financing to Entire Mastercard Network",
+          "link": "https://www.pymnts.com/bnpl/2026/synchrony-and-paypal-bring-special-financing-to-entire-mastercard-network/",
+          "content": "Synchrony and PayPal now offer PayPal Credit Card cardholders special financing everywhere Mastercard is accepted. This special financing is now available both in online checkout and in stores across the Mastercard network. It offers six months special financing on purchases of $149 or more, with pay over time at millions of merchants and with everything [&#8230;] The post Synchrony and PayPal Bring Special Financing to Entire Mastercard Network appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 10 Aug 2026 23:42:13 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 521
+          "word_count": 480
         },
         {
           "id": 1388,
@@ -814,7 +814,7 @@
           "word_count": 466
         },
         {
-          "id": 1431,
+          "id": 1430,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 338
         },
         {
-          "id": 1430,
+          "id": 1429,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 331
         },
         {
-          "id": 1432,
+          "id": 1431,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 324
         },
         {
-          "id": 1397,
+          "id": 1396,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 149
         },
         {
-          "id": 1396,
+          "id": 1395,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 141
         },
         {
-          "id": 1429,
+          "id": 1428,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 103
         },
         {
-          "id": 1426,
+          "id": 1425,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 495
         },
         {
-          "id": 1408,
+          "id": 1407,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1050,8 +1050,8 @@
     }
   },
   "meta": {
-    "total_raw": 1588,
-    "dup": 394,
+    "total_raw": 1587,
+    "dup": 393,
     "nocontent": 381,
     "noise": 0
   }
