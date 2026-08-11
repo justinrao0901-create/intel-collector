@@ -145,24 +145,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "On-Policy Self-Distillation without Any Supervision",
-          "link": "https://arxiv.org/abs/2608.06296",
-          "content": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose unsupervised on-policy self-distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo solution by majority vote under a self-consistency threshold. It then conditions the model's distribution on the pseudo-solution and distills itself on the disagreeing completions, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT) such as OPSD and GRPO. On five mathematical reasoning benchmarks, i.e., AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7",
-          "pub_date": "2026-08-08T20:00:00.000Z",
+          "title": "Beyond Starry Night: Shortcut-Aware Control-State Planning for Artist-Grounded Text to Image Generation",
+          "link": "https://arxiv.org/abs/2608.06751",
+          "content": "Artist-grounded image generation requires more than appending an artist name to a prompt. Image models often respond to artist names through canonical shortcuts, such as recurring motifs, generic palettes, or overrepresented period signatures, rather than preserving the user's intended scene. We introduce Atelier, a shortcut-aware control-state planning framework for artist-grounded image generation. Atelier translates underspecified artistic intent into an explicit control state that separates scene anchors, preserve/transform decisions, style-regime hypotheses, role-bound artist evidence, and shortcut-avoidance constraints. It grounds this state using artist-level knowledge and local patch references, compiles backend-aware generation plans, and iteratively refines candidates through global and local authenticity feedback. We further introduce ArtIntentBench, a benchmark covering Van Gogh and Qi Baishi across artwork re-rendering, period/style-controlled generation, historically unseen subjects, shortcut auditing, and human preference evaluation. Across open-weight and closed-source generators, Atelier improves artist-level style fidelity, preserves source structure more faithful",
+          "pub_date": "2026-08-06T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Business Arena: Benchmarking LLM Agents in a Realistic Marketplace",
-          "link": "https://arxiv.org/abs/2608.08621",
-          "content": "Running a business is a challenging form of intelligent work. Operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes in a changing market, and satisfy regulatory obligations before trading legally. Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks. We introduce Business Arena, a controlled environment where an AI agent runs a cross-border shop, buying from suppliers and selling to buyers over a long horizon. We ground the arena in real Alibaba.com sourcing data and market conditions calibrated from authoritative sources. Delayed and coupled consequences make individual business decisions difficult to judge, but their combined outcome is measurable through profit. Because profit alone cannot explain why an agent succeeds or fails, we compare agents with human-designed strategies to estimate available opportunity, use skill-level metrics to reveal underlying strengths and weaknesses, and trace realized gains and losses to the actions that produced them. We use mechanism ablations to establish that strong results reflect genui",
+          "title": "On-Policy Self-Distillation without Any Supervision",
+          "link": "https://arxiv.org/abs/2608.06296",
+          "content": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose unsupervised on-policy self-distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo solution by majority vote under a self-consistency threshold. It then conditions the model's distribution on the pseudo-solution and distills itself on the disagreeing completions, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT) such as OPSD and GRPO. On five mathematical reasoning benchmarks, i.e., AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7",
           "pub_date": "2026-08-08T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -175,10 +175,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation",
-          "link": "https://arxiv.org/abs/2608.07463",
-          "content": "Recent advances in video diffusion models (VDMs) have enabled high-fidelity video synthesis. However, generating mirror reflections remains challenging because the content within a mirror must remain consistent with the surrounding scene. Existing VDMs are not specifically designed to model scene-to-mirror relationships, which can lead to reflections with incorrect content or inconsistent spatial arrangements. We observe that mirror reflection generation involves two complementary challenges: determining what scene content should be reflected and how the reflected content should be spatially arranged within the mirror region. Motivated by this observation, we propose MirrorWorld, a reflection-aware video inpainting framework that models scene-to-mirror relationships during generation. Specifically, we introduce Semantic Relation Distillation (SRD), which transfers relational information from a frozen visual foundation model to encourage semantic associations between visible scene content and mirror regions. We further propose Geometric Transformation Alignment (GTA), which learns a transformation that guides the spatial arrangement of reflected content. The two components play comp",
-          "pub_date": "2026-08-06T20:00:00.000Z",
+          "title": "Business Arena: Benchmarking LLM Agents in a Realistic Marketplace",
+          "link": "https://arxiv.org/abs/2608.08621",
+          "content": "Running a business is a challenging form of intelligent work. Operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes in a changing market, and satisfy regulatory obligations before trading legally. Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks. We introduce Business Arena, a controlled environment where an AI agent runs a cross-border shop, buying from suppliers and selling to buyers over a long horizon. We ground the arena in real Alibaba.com sourcing data and market conditions calibrated from authoritative sources. Delayed and coupled consequences make individual business decisions difficult to judge, but their combined outcome is measurable through profit. Because profit alone cannot explain why an agent succeeds or fails, we compare agents with human-designed strategies to estimate available opportunity, use skill-level metrics to reveal underlying strengths and weaknesses, and trace realized gains and losses to the actions that produced them. We use mechanism ablations to establish that strong results reflect genui",
+          "pub_date": "2026-08-08T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 1882,
-      "total_valid": 1282,
+      "total_valid": 1283,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2043,
+          "id": 2042,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 829
         },
         {
-          "id": 2054,
+          "id": 2053,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 590
         },
         {
-          "id": 2066,
+          "id": 2065,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 234
         },
         {
-          "id": 1931,
+          "id": 1930,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 231
         },
         {
-          "id": 2068,
+          "id": 2067,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 223
         },
         {
-          "id": 2208,
+          "id": 2207,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 192
         },
         {
-          "id": 2209,
+          "id": 2208,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 192
         },
         {
-          "id": 2170,
+          "id": 2169,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 324
         },
         {
-          "id": 2205,
+          "id": 2204,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 256
         },
         {
-          "id": 2184,
+          "id": 2183,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 252
         },
         {
-          "id": 2258,
+          "id": 2257,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 211
         },
         {
-          "id": 2256,
+          "id": 2255,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 154
         },
         {
-          "id": 1905,
+          "id": 1904,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 144
         },
         {
-          "id": 1904,
+          "id": 1903,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 406,
-      "total_valid": 269,
+      "total_raw": 405,
+      "total_valid": 268,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2358,
+          "id": 2357,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2367,
+          "id": 2366,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 2327,
+          "id": 2326,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 206
         },
         {
-          "id": 2359,
+          "id": 2358,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2350,
+          "id": 2349,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 509
         },
         {
-          "id": 2374,
+          "id": 2373,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 381
         },
         {
-          "id": 2341,
+          "id": 2340,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 2338,
+          "id": 2337,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1135
         },
         {
-          "id": 2339,
+          "id": 2338,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2359,
+          "id": 2358,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 2058,
+          "id": 2057,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1199
         },
         {
-          "id": 2060,
+          "id": 2059,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 481
         },
         {
-          "id": 2070,
+          "id": 2069,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 418
         },
         {
-          "id": 2374,
+          "id": 2373,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 381
         },
         {
-          "id": 2089,
+          "id": 2088,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 330
         },
         {
-          "id": 1949,
+          "id": 1948,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 270
         },
         {
-          "id": 1937,
+          "id": 1936,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 232
         },
         {
-          "id": 2382,
+          "id": 2381,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 189
         },
         {
-          "id": 2046,
+          "id": 2045,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2454,
+          "id": 2451,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 446
         },
         {
-          "id": 2417,
+          "id": 2416,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 286
         },
         {
-          "id": 2424,
+          "id": 2423,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 259
         },
         {
-          "id": 2420,
+          "id": 2419,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 234
         },
         {
-          "id": 2425,
+          "id": 2424,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 198
         },
         {
-          "id": 2426,
+          "id": 2425,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 198
         },
         {
-          "id": 2408,
+          "id": 2407,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 170
         },
         {
-          "id": 2400,
+          "id": 2399,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,22 +904,7 @@
           "word_count": 144
         },
         {
-          "id": 2451,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Why local payment ecosystems are key to global payment strategy",
-          "link": "https://www.thunes.com/insights/learn/why-local-payment-ecosystems-are-key-to-global-payment-strategy/",
-          "content": "For many businesses, the challenge is no longer reaching new markets. The challenge is succeeding once they arrive. Every market has developed its own payment habits, trusted providers, regulatory environment and expectations around how money moves. Those expectations have become more entrenched as domestic payment systems have become part of everyday financial infrastructure. This creates ... Read more &#187; The post Why local payment ecosystems are key to global payment strategy first appeared on Thunes.com .",
-          "pub_date": "Tue, 11 Aug 2026 09:52:03 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 517
-        },
-        {
-          "id": 2453,
+          "id": 2450,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1052,6 +1037,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 506,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Persuasive and Compliant Tendencies Predict Group Decision-Making in Humans and Language Models",
+          "link": "https://arxiv.org/abs/2608.08199",
+          "content": "arXiv:2608.08199v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly involved in group decision-making with other LLMs and humans. Yet it remains unclear whether their influence is driven by persuasion-oriented expression or compliance-oriented accommodation. We introduce DecisionQE, a questionnaire-based framework for measuring each model's persuasive and compliant tendencies across multiple decision scenarios, and use the Werewolf game as an interactive testbed to study their effects on social influence and group outcomes under asymmetric information. Across experiments, stronger persuasive tendency does not significantly improve group outcomes, whereas compliant-oriented models show more stable advantages in cooperation. We further reveal a dual effect of compliance: it supports cooperation in honest roles but improves concealment in adversarial roles. These findings suggest that LLM group interactions reveal not only task outcomes, but also measurable patterns of intrinsic behavioral tendency. LLMs can therefore serve as a lens for sociological observation of language-mediated interaction, while highlighting the need to incorporate behavioral tendencies",
+          "pub_date": "Tue, 11 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 248,
-      "total_valid": 74,
+      "total_raw": 246,
+      "total_valid": 73,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2611,
-    "dup": 614,
+    "total_raw": 2608,
+    "dup": 612,
     "nocontent": 381,
     "noise": 0
   }
