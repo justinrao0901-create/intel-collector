@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 14,
       "ok": true
     },
     "Anthropic Blog": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 8,
+      "count": 9,
       "ok": true
     },
     "Sequoia Capital": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 24,
+      "count": 25,
       "ok": true
     },
     "Hacker News AI": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 59,
       "ok": true
     },
     "NEJM": {
@@ -214,7 +214,7 @@
     "JAMA": {
       "section": "vaccine",
       "method": "rss",
-      "count": 36,
+      "count": 0,
       "ok": true
     },
     "Nature Medicine": {
@@ -232,25 +232,25 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
+      "count": 6,
       "ok": true
     },
     "Nature Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 6,
       "ok": true
     },
     "bioRxiv Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 30,
+      "count": 24,
       "ok": true
     },
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 21,
+      "count": 16,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -358,7 +358,7 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 11,
+      "count": 8,
       "ok": true
     },
     "Absci Blog": {
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 1,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -517,12 +517,13 @@
       "NEJM AI",
       "The Lancet"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "JAMA"
+    ],
     "persistent_zero": [
       "Cointelegraph Payments",
       "Ledger Insights",
       "PYMNTS Cross-Border",
-      "Thunes",
       "WHO News"
     ]
   }
