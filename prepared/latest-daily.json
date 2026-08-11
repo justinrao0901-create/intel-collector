@@ -50,7 +50,7 @@
           "word_count": 146
         },
         {
-          "id": 86,
+          "id": 87,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 182
         },
         {
-          "id": 84,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 176
         },
         {
-          "id": 85,
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,22 @@
           "word_count": 1200
         },
         {
-          "id": 805,
+          "id": 789,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Introducing Muse Glimmer",
+          "link": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+          "content": "Introducing Muse Glimmer Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses of old). They claim to have optimized it for exactly the kind of things I'm looking for in a local model: End-to-end Agentic Task Completion. Muse Glimmer achieves strong success rates on full-task benchmarks including DeepSearch QA, MCP-Atlas, 𝛕-Bench and SWE-Bench, which measure its ability to work within scaffolds, write and debug code, and resolve multi-turn requests from start to finish. Reliable Tool Use. The model handles a wide range of function calls, invoking tools with precise schemas throughout extended workflows. Multi-Step Reasoning. Muse Glimmer chains reasoning over long horizons, sustaining coherent plans across complex, extended workflows. [...] Here's a pelican which I generated using LM Studio's 18.16 GB version of the model : I also tried it out with my llm-coding-agent plugin, running against a fresh checkout of Datasette with the prompt: how does auth work? Here's the response , at the end of a long transcript showing all of the tool calls it made to explore the codebase. I ran this us",
+          "pub_date": "2026-08-10T23:56:03+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 806,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 1041
         },
         {
-          "id": 809,
+          "id": 810,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1030
-        },
-        {
-          "id": 788,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Introducing Muse Glimmer",
-          "link": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
-          "content": "Introducing Muse Glimmer Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses of old). Here's a pelican which I generated using LM Studio's 18.16 GB version of the model : I really like this size of model, because if a machine has 32 GB of RAM or more (mine has 128GB) it leaves plenty of space for running other applications at the same time. Via Hacker News Tags: ai , generative-ai , llama , local-llms , llms , meta , llm-release",
-          "pub_date": "2026-08-10T23:56:03+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 532
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 905,
-      "total_valid": 539,
+      "total_raw": 906,
+      "total_valid": 540,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1031,
+          "id": 1032,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 350
         },
         {
-          "id": 1029,
+          "id": 1030,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 280
         },
         {
-          "id": 1154,
+          "id": 1156,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 184
         },
         {
-          "id": 1114,
+          "id": 1116,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 401
         },
         {
-          "id": 1094,
+          "id": 1096,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 272
         },
         {
-          "id": 1092,
+          "id": 1094,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 264
         },
         {
-          "id": 931,
+          "id": 932,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 274
         },
         {
-          "id": 912,
+          "id": 913,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 261
         },
         {
-          "id": 913,
+          "id": 914,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 242
         },
         {
-          "id": 906,
+          "id": 907,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 239
         },
         {
-          "id": 917,
+          "id": 918,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 164
         },
         {
-          "id": 926,
+          "id": 927,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 141
         },
         {
-          "id": 927,
+          "id": 928,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 122
         },
         {
-          "id": 1179,
+          "id": 1181,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 454
         },
         {
-          "id": 1033,
+          "id": 1034,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 324,
-      "total_valid": 198,
+      "total_raw": 325,
+      "total_valid": 199,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1253,
+          "id": 1255,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 212
         },
         {
-          "id": 1295,
+          "id": 1297,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 1297,
+          "id": 1299,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1298,
+          "id": 1300,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1299,
+          "id": 1301,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 519
         },
         {
-          "id": 1242,
+          "id": 1244,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 278
         },
         {
-          "id": 1277,
+          "id": 1279,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1278,
+          "id": 1280,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1030,
+          "id": 1031,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 350
         },
         {
-          "id": 938,
+          "id": 939,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 193
         },
         {
-          "id": 941,
+          "id": 942,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 193
         },
         {
-          "id": 936,
+          "id": 937,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 131
         },
         {
-          "id": 907,
+          "id": 908,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -641,7 +641,7 @@
           "word_count": 249
         },
         {
-          "id": 355,
+          "id": 356,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 559,
+          "id": 560,
           "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 677,
+          "id": 678,
           "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 1200
         },
         {
-          "id": 769,
+          "id": 770,
           "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 1200
         },
         {
-          "id": 1074,
+          "id": 1076,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1341,
+          "id": 1343,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 595
         },
         {
-          "id": 1318,
+          "id": 1321,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 521
         },
         {
-          "id": 1316,
+          "id": 1319,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 480
         },
         {
-          "id": 1319,
+          "id": 1322,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 467
         },
         {
-          "id": 1322,
+          "id": 1325,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 466
         },
         {
-          "id": 1360,
+          "id": 1362,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 338
         },
         {
-          "id": 1359,
+          "id": 1361,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 331
         },
         {
-          "id": 1361,
+          "id": 1363,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 324
         },
         {
-          "id": 1326,
+          "id": 1328,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 149
         },
         {
-          "id": 1325,
+          "id": 1327,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 141
         },
         {
-          "id": 1358,
+          "id": 1360,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 103
         },
         {
-          "id": 1355,
+          "id": 1357,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,22 +919,22 @@
           "word_count": 98
         },
         {
-          "id": 788,
+          "id": 789,
           "source": "Simon Willison",
           "section": "payment",
           "tier": "T2",
           "priority": 5,
           "title": "Introducing Muse Glimmer",
           "link": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
-          "content": "Introducing Muse Glimmer Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses of old). Here's a pelican which I generated using LM Studio's 18.16 GB version of the model : I really like this size of model, because if a machine has 32 GB of RAM or more (mine has 128GB) it leaves plenty of space for running other applications at the same time. Via Hacker News Tags: ai , generative-ai , llama , local-llms , llms , meta , llm-release",
+          "content": "Introducing Muse Glimmer Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses of old). They claim to have optimized it for exactly the kind of things I'm looking for in a local model: End-to-end Agentic Task Completion. Muse Glimmer achieves strong success rates on full-task benchmarks including DeepSearch QA, MCP-Atlas, 𝛕-Bench and SWE-Bench, which measure its ability to work within scaffolds, write and debug code, and resolve multi-turn requests from start to finish. Reliable Tool Use. The model handles a wide range of function calls, invoking tools with precise schemas throughout extended workflows. Multi-Step Reasoning. Muse Glimmer chains reasoning over long horizons, sustaining coherent plans across complex, extended workflows. [...] Here's a pelican which I generated using LM Studio's 18.16 GB version of the model : I also tried it out with my llm-coding-agent plugin, running against a fresh checkout of Datasette with the prompt: how does auth work? Here's the response , at the end of a long transcript showing all of the tool calls it made to explore the codebase. I ran this us",
           "pub_date": "2026-08-10T23:56:03+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 532
+          "word_count": 1200
         },
         {
-          "id": 203,
+          "id": 204,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 268,
+          "id": 269,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 280,
+          "id": 281,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 398,
+          "id": 399,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 383,
+          "id": 384,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1057
         },
         {
-          "id": 1320,
+          "id": 1323,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 505
         },
         {
-          "id": 1315,
+          "id": 1318,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1044,14 +1044,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 210,
+      "total_raw": 209,
       "total_valid": 41,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1518,
-    "dup": 363,
+    "total_raw": 1519,
+    "dup": 362,
     "nocontent": 376,
     "noise": 0
   }
