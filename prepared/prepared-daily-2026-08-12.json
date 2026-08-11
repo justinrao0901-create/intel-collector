@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2452,
+          "id": 2454,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 554
         },
         {
-          "id": 2397,
+          "id": 2398,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 451
         },
         {
-          "id": 2393,
+          "id": 2394,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -905,6 +905,21 @@
         },
         {
           "id": 2451,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Why local payment ecosystems are key to global payment strategy",
+          "link": "https://www.thunes.com/insights/learn/why-local-payment-ecosystems-are-key-to-global-payment-strategy/",
+          "content": "For many businesses, the challenge is no longer reaching new markets. The challenge is succeeding once they arrive. Every market has developed its own payment habits, trusted providers, regulatory environment and expectations around how money moves. Those expectations have become more entrenched as domestic payment systems have become part of everyday financial infrastructure. This creates ... Read more &#187; The post Why local payment ecosystems are key to global payment strategy first appeared on Thunes.com .",
+          "pub_date": "Tue, 11 Aug 2026 09:52:03 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 517
+        },
+        {
+          "id": 2453,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1037,21 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 506,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Persuasive and Compliant Tendencies Predict Group Decision-Making in Humans and Language Models",
-          "link": "https://arxiv.org/abs/2608.08199",
-          "content": "arXiv:2608.08199v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly involved in group decision-making with other LLMs and humans. Yet it remains unclear whether their influence is driven by persuasion-oriented expression or compliance-oriented accommodation. We introduce DecisionQE, a questionnaire-based framework for measuring each model's persuasive and compliant tendencies across multiple decision scenarios, and use the Werewolf game as an interactive testbed to study their effects on social influence and group outcomes under asymmetric information. Across experiments, stronger persuasive tendency does not significantly improve group outcomes, whereas compliant-oriented models show more stable advantages in cooperation. We further reveal a dual effect of compliance: it supports cooperation in honest roles but improves concealment in adversarial roles. These findings suggest that LLM group interactions reveal not only task outcomes, but also measurable patterns of intrinsic behavioral tendency. LLMs can therefore serve as a lens for sociological observation of language-mediated interaction, while highlighting the need to incorporate behavioral tendencies",
-          "pub_date": "Tue, 11 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 246,
-      "total_valid": 73,
+      "total_raw": 248,
+      "total_valid": 74,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2609,
-    "dup": 613,
+    "total_raw": 2611,
+    "dup": 614,
     "nocontent": 381,
     "noise": 0
   }
