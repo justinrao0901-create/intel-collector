@@ -145,6 +145,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
+          "title": "VectraYX-Vision-1B: A Sub-2B Spanish/LATAM Cybersecurity Vision-Language Model with Structured Visual Reasoning and Native Tool Use",
+          "link": "https://arxiv.org/abs/2608.08477",
+          "content": "We present VectraYX-Vision-1B, a sub-2B vision-language model (VLM) for Spanish/LATAM cybersecurity imagery, coupling a frozen SigLIP-so400m encoder to a 1.04B Spanish/LATAM security decoder via an MLP. To our knowledge, it is the first sub-2B VLM specialized for cyber UI (IDA, Ghidra, Wireshark, Nmap, Metasploit, Volatility) that answers in Spanish, emits structured reasoning via native tokens, invokes tools via Model Context Protocol ( ), and exports to llama.cpp's LLaVA mmproj format for air-gapped deployment. We report a negative preliminary visual-grounding result: despite fully functional pipelines, the current vision SFT (400-1900 steps, ~16M tokens) yields near-zero B6 scores (0.08 tool-identification), ignoring image content. We specify remediation (longer SFT, >=60% replay, lower LR) and expose a checkpoint-loader bug (unstripped llm. prefix) masquerading as training collapse. Crucially, we introduce a 3-variant ablation matrix (V0: NoPE-every-4, V1: all-RoPE, V2: NoPE+learned 2D) to study if periodic no-positional-encoding (NoPE) layers help or hurt attention over the 729-token visual block. Code, configs, and weights are released to establish priority on this architectu",
+          "pub_date": "2026-08-08T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 71,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
           "title": "Beyond Sequence Order: Syntax-Informed Positional Embeddings for Transformers",
           "link": "https://arxiv.org/abs/2608.06111",
           "content": "Positional embeddings (PE) in Transformers encode token distance and order but are largely agnostic to syntactic structure. We introduce Syntax-informed Positional Embeddings (SiPE), which learns a lightweight syntactic prior from dependency parses during pretraining and injects it across all three dominant PE families (absolute, relative, rotary), for both encoders and decoders, leaving self-attention and the rest of the architecture untouched. We isolate where and how the prior should enter the model, and find it depends on the architecture: for autoregressive decoders that use relative PE, the prior is strongest when coupled multiplicatively with the relative-position term of the attention score, outperforming injection into the input embeddings, into self-attention, or into the positional and attention terms jointly---while for encoders it is best added directly to the input embeddings, composing with each encoder's native positional mechanism. We find that models pre-trained with SiPE improve on the SyntaxGym benchmark by up to 10.3% while simultaneously reducing perplexity by 9.0% over a base model with no syntactic supervision---a metric nearly every existing syntax-injectio",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 71,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "On-Policy Self-Distillation without Any Supervision",
-          "link": "https://arxiv.org/abs/2608.06296",
-          "content": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose unsupervised on-policy self-distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo solution by majority vote under a self-consistency threshold. It then conditions the model's distribution on the pseudo-solution and distills itself on the disagreeing completions, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT) such as OPSD and GRPO. On five mathematical reasoning benchmarks, i.e., AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7",
-          "pub_date": "2026-08-08T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1882,
+      "total_raw": 1881,
       "total_valid": 1284,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2005,
+          "id": 2004,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 829
         },
         {
-          "id": 2016,
+          "id": 2015,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 590
         },
         {
-          "id": 2028,
+          "id": 2027,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 234
         },
         {
-          "id": 1930,
+          "id": 1929,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 231
         },
         {
-          "id": 2030,
+          "id": 2029,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 223
         },
         {
-          "id": 2167,
+          "id": 2166,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 192
         },
         {
-          "id": 2168,
+          "id": 2167,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 192
         },
         {
-          "id": 2129,
+          "id": 2128,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 324
         },
         {
-          "id": 2164,
+          "id": 2163,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 256
         },
         {
-          "id": 2143,
+          "id": 2142,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 252
         },
         {
-          "id": 2217,
+          "id": 2216,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 240
         },
         {
-          "id": 1886,
+          "id": 1885,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 211
         },
         {
-          "id": 2215,
+          "id": 2214,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 154
         },
         {
-          "id": 1904,
+          "id": 1903,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 144
         },
         {
-          "id": 1903,
+          "id": 1902,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 2316,
+          "id": 2315,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2325,
+          "id": 2324,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 2286,
+          "id": 2285,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 206
         },
         {
-          "id": 2317,
+          "id": 2316,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2308,
+          "id": 2307,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 509
         },
         {
-          "id": 2332,
+          "id": 2331,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 381
         },
         {
-          "id": 2300,
+          "id": 2299,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 2297,
+          "id": 2296,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1135
         },
         {
-          "id": 2298,
+          "id": 2297,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2317,
+          "id": 2316,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 2020,
+          "id": 2019,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1199
         },
         {
-          "id": 2022,
+          "id": 2021,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 481
         },
         {
-          "id": 2032,
+          "id": 2031,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 418
         },
         {
-          "id": 2332,
+          "id": 2331,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 381
         },
         {
-          "id": 2050,
+          "id": 2049,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 330
         },
         {
-          "id": 1948,
+          "id": 1947,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 270
         },
         {
-          "id": 1936,
+          "id": 1935,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 232
         },
         {
-          "id": 2340,
+          "id": 2339,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 189
         },
         {
-          "id": 2008,
+          "id": 2007,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2412,
+          "id": 2409,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 554
         },
         {
-          "id": 2354,
+          "id": 2353,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 446
         },
         {
-          "id": 2375,
+          "id": 2374,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 286
         },
         {
-          "id": 2382,
+          "id": 2381,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 259
         },
         {
-          "id": 2378,
+          "id": 2377,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 234
         },
         {
-          "id": 2383,
+          "id": 2382,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 198
         },
         {
-          "id": 2384,
+          "id": 2383,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 198
         },
         {
-          "id": 2366,
+          "id": 2365,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 170
         },
         {
-          "id": 2358,
+          "id": 2357,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,22 +889,7 @@
           "word_count": 144
         },
         {
-          "id": 2409,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Why local payment ecosystems are key to global payment strategy",
-          "link": "https://www.thunes.com/insights/learn/why-local-payment-ecosystems-are-key-to-global-payment-strategy/",
-          "content": "For many businesses, the challenge is no longer reaching new markets. The challenge is succeeding once they arrive. Every market has developed its own payment habits, trusted providers, regulatory environment and expectations around how money moves. Those expectations have become more entrenched as domestic payment systems have become part of everyday financial infrastructure. This creates ... Read more &#187; The post Why local payment ecosystems are key to global payment strategy first appeared on Thunes.com .",
-          "pub_date": "Tue, 11 Aug 2026 09:52:03 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 517
-        },
-        {
-          "id": 2411,
+          "id": 2408,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1052,6 +1037,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 598,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "SafeSceneReason: A Multimodal Reasoning Benchmark Connecting Industrial Hazards with Accident Knowledge",
+          "link": "https://arxiv.org/abs/2608.09230",
+          "content": "arXiv:2608.09230v1 Announce Type: new Abstract: Industrial-safety understanding requires more than detecting workers, equipment, and personal protective equipment. Models must also assess compliance, identify hazardous interactions, explain potential accident mechanisms, and recommend preventive actions. Existing safety datasets primarily focus on visual perception or isolated violation recognition and provide limited supervision for evidence-grounded reasoning. We introduce SafeSceneReason, a multimodal industrial-safety reasoning benchmark and companion training corpus that connects workplace scenes with knowledge from occupational accident investigations. SafeSceneReason combines two complementary data-construction pipelines. The scene-centric pipeline converts annotated workplace images into executable safety scene graphs and generates deterministic answers through program execution over objects, relations, and safety rules. The report-centric pipeline extracts figures and contextual evidence from accident reports and constructs multimodal questions using evidence graphs, explicit information boundaries, multi-step reasoning paths, and iterative verification. The resulting reso",
+          "pub_date": "Tue, 11 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 248,
-      "total_valid": 74,
+      "total_raw": 246,
+      "total_valid": 73,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2569,
-    "dup": 592,
-    "nocontent": 380,
+    "total_raw": 2566,
+    "dup": 591,
+    "nocontent": 379,
     "noise": 0
   }
 }
