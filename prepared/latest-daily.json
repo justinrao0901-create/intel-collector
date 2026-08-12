@@ -145,6 +145,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
+          "title": "Beyond Sequence Order: Syntax-Informed Positional Embeddings for Transformers",
+          "link": "https://arxiv.org/abs/2608.06111",
+          "content": "Positional embeddings (PE) in Transformers encode token distance and order but are largely agnostic to syntactic structure. We introduce Syntax-informed Positional Embeddings (SiPE), which learns a lightweight syntactic prior from dependency parses during pretraining and injects it across all three dominant PE families (absolute, relative, rotary), for both encoders and decoders, leaving self-attention and the rest of the architecture untouched. We isolate where and how the prior should enter the model, and find it depends on the architecture: for autoregressive decoders that use relative PE, the prior is strongest when coupled multiplicatively with the relative-position term of the attention score, outperforming injection into the input embeddings, into self-attention, or into the positional and attention terms jointly---while for encoders it is best added directly to the input embeddings, composing with each encoder's native positional mechanism. We find that models pre-trained with SiPE improve on the SyntaxGym benchmark by up to 10.3% while simultaneously reducing perplexity by 9.0% over a base model with no syntactic supervision---a metric nearly every existing syntax-injectio",
+          "pub_date": "2026-08-05T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 69,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
           "title": "Beyond Starry Night: Shortcut-Aware Control-State Planning for Artist-Grounded Text to Image Generation",
           "link": "https://arxiv.org/abs/2608.06751",
           "content": "Artist-grounded image generation requires more than appending an artist name to a prompt. Image models often respond to artist names through canonical shortcuts, such as recurring motifs, generic palettes, or overrepresented period signatures, rather than preserving the user's intended scene. We introduce Atelier, a shortcut-aware control-state planning framework for artist-grounded image generation. Atelier translates underspecified artistic intent into an explicit control state that separates scene anchors, preserve/transform decisions, style-regime hypotheses, role-bound artist evidence, and shortcut-avoidance constraints. It grounds this state using artist-level knowledge and local patch references, compiles backend-aware generation plans, and iteratively refines candidates through global and local authenticity feedback. We further introduce ArtIntentBench, a benchmark covering Van Gogh and Qi Baishi across artwork re-rendering, period/style-controlled generation, historically unseen subjects, shortcut auditing, and human preference evaluation. Across open-weight and closed-source generators, Atelier improves artist-level style fidelity, preserves source structure more faithful",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 69,
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 71,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Business Arena: Benchmarking LLM Agents in a Realistic Marketplace",
-          "link": "https://arxiv.org/abs/2608.08621",
-          "content": "Running a business is a challenging form of intelligent work. Operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes in a changing market, and satisfy regulatory obligations before trading legally. Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks. We introduce Business Arena, a controlled environment where an AI agent runs a cross-border shop, buying from suppliers and selling to buyers over a long horizon. We ground the arena in real Alibaba.com sourcing data and market conditions calibrated from authoritative sources. Delayed and coupled consequences make individual business decisions difficult to judge, but their combined outcome is measurable through profit. Because profit alone cannot explain why an agent succeeds or fails, we compare agents with human-designed strategies to estimate available opportunity, use skill-level metrics to reveal underlying strengths and weaknesses, and trace realized gains and losses to the actions that produced them. We use mechanism ablations to establish that strong results reflect genui",
-          "pub_date": "2026-08-08T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1882,
+      "total_raw": 1881,
       "total_valid": 1283,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2042,
+          "id": 2004,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 829
         },
         {
-          "id": 2053,
+          "id": 2015,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 590
         },
         {
-          "id": 2065,
+          "id": 2027,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 234
         },
         {
-          "id": 1930,
+          "id": 1929,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 231
         },
         {
-          "id": 2067,
+          "id": 2029,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 223
         },
         {
-          "id": 2207,
+          "id": 2166,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 192
         },
         {
-          "id": 2208,
+          "id": 2167,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 192
         },
         {
-          "id": 2169,
+          "id": 2128,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 324
         },
         {
-          "id": 2204,
+          "id": 2163,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 256
         },
         {
-          "id": 2183,
+          "id": 2142,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 252
         },
         {
-          "id": 2257,
+          "id": 2216,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 240
         },
         {
-          "id": 1886,
+          "id": 1885,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 211
         },
         {
-          "id": 2255,
+          "id": 2214,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 154
         },
         {
-          "id": 1904,
+          "id": 1903,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 144
         },
         {
-          "id": 1903,
+          "id": 1902,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 405,
-      "total_valid": 268,
+      "total_raw": 365,
+      "total_valid": 246,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2357,
+          "id": 2315,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2366,
+          "id": 2324,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 2326,
+          "id": 2285,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 206
         },
         {
-          "id": 2358,
+          "id": 2316,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2349,
+          "id": 2307,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 509
         },
         {
-          "id": 2373,
+          "id": 2331,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 381
         },
         {
-          "id": 2340,
+          "id": 2299,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 2337,
+          "id": 2296,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1135
         },
         {
-          "id": 2338,
+          "id": 2297,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 93,
+      "total_raw": 92,
       "total_valid": 20,
       "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 2358,
+          "id": 2316,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 2057,
+          "id": 2019,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1199
         },
         {
-          "id": 2059,
+          "id": 2021,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 481
         },
         {
-          "id": 2069,
+          "id": 2031,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 418
         },
         {
-          "id": 2373,
+          "id": 2331,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 381
         },
         {
-          "id": 2088,
+          "id": 2049,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 330
         },
         {
-          "id": 1948,
+          "id": 1947,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 270
         },
         {
-          "id": 1936,
+          "id": 1935,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 232
         },
         {
-          "id": 2381,
+          "id": 2339,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 189
         },
         {
-          "id": 2045,
+          "id": 2007,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2451,
+          "id": 2411,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 554
         },
         {
-          "id": 2398,
+          "id": 2356,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 451
         },
         {
-          "id": 2394,
+          "id": 2352,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 446
         },
         {
-          "id": 2416,
+          "id": 2374,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 286
         },
         {
-          "id": 2423,
+          "id": 2381,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 259
         },
         {
-          "id": 2419,
+          "id": 2377,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 234
         },
         {
-          "id": 2424,
+          "id": 2382,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 198
         },
         {
-          "id": 2425,
+          "id": 2383,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 198
         },
         {
-          "id": 2407,
+          "id": 2365,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 170
         },
         {
-          "id": 2399,
+          "id": 2357,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,22 @@
           "word_count": 144
         },
         {
-          "id": 2450,
+          "id": 2408,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Why local payment ecosystems are key to global payment strategy",
+          "link": "https://www.thunes.com/insights/learn/why-local-payment-ecosystems-are-key-to-global-payment-strategy/",
+          "content": "For many businesses, the challenge is no longer reaching new markets. The challenge is succeeding once they arrive. Every market has developed its own payment habits, trusted providers, regulatory environment and expectations around how money moves. Those expectations have become more entrenched as domestic payment systems have become part of everyday financial infrastructure. This creates ... Read more &#187; The post Why local payment ecosystems are key to global payment strategy first appeared on Thunes.com .",
+          "pub_date": "Tue, 11 Aug 2026 09:52:03 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 517
+        },
+        {
+          "id": 2410,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -919,7 +934,7 @@
           "word_count": 158
         },
         {
-          "id": 142,
+          "id": 141,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 152,
+          "id": 151,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 155,
+          "id": 154,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 242,
+          "id": 241,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 257,
+          "id": 256,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 436,
+          "id": 435,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 452,
+          "id": 451,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 497,
+          "id": 496,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1037,21 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 506,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Persuasive and Compliant Tendencies Predict Group Decision-Making in Humans and Language Models",
-          "link": "https://arxiv.org/abs/2608.08199",
-          "content": "arXiv:2608.08199v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly involved in group decision-making with other LLMs and humans. Yet it remains unclear whether their influence is driven by persuasion-oriented expression or compliance-oriented accommodation. We introduce DecisionQE, a questionnaire-based framework for measuring each model's persuasive and compliant tendencies across multiple decision scenarios, and use the Werewolf game as an interactive testbed to study their effects on social influence and group outcomes under asymmetric information. Across experiments, stronger persuasive tendency does not significantly improve group outcomes, whereas compliant-oriented models show more stable advantages in cooperation. We further reveal a dual effect of compliance: it supports cooperation in honest roles but improves concealment in adversarial roles. These findings suggest that LLM group interactions reveal not only task outcomes, but also measurable patterns of intrinsic behavioral tendency. LLMs can therefore serve as a lens for sociological observation of language-mediated interaction, while highlighting the need to incorporate behavioral tendencies",
-          "pub_date": "Tue, 11 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 246,
-      "total_valid": 73,
+      "total_raw": 248,
+      "total_valid": 74,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2608,
-    "dup": 612,
-    "nocontent": 381,
+    "total_raw": 2568,
+    "dup": 593,
+    "nocontent": 380,
     "noise": 0
   }
 }
