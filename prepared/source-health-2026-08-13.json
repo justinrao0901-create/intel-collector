@@ -22,7 +22,7 @@
     "Meta AI Blog": {
       "section": "ai",
       "method": "scrape",
-      "count": 14,
+      "count": 9,
       "ok": true
     },
     "Microsoft AI Blog": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 20,
+      "count": 19,
       "ok": true
     },
     "Sequoia Capital": {
@@ -178,38 +178,38 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 17,
+      "ok": true
     },
     "Lancet Infect Dis": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 18,
+      "ok": true
     },
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 8,
+      "ok": true
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true
     },
     "Immunity": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 6,
+      "ok": true
     },
     "Science": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 36,
+      "ok": true
     },
     "JAMA": {
       "section": "vaccine",
@@ -244,14 +244,14 @@
     "bioRxiv Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 24,
+      "ok": true
     },
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 18,
+      "ok": true
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -274,8 +274,8 @@
     "Sci Transl Med": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 8,
+      "ok": true
     },
     "Nature Rev Drug Discovery": {
       "section": "vaccine",
@@ -298,14 +298,14 @@
     "Science Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 6,
+      "ok": true
     },
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 24,
+      "ok": true
     },
     "BioPharma Dive": {
       "section": "vaccine",
@@ -352,14 +352,14 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 1,
+      "ok": true
     },
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 10,
+      "ok": true
     },
     "Absci Blog": {
       "section": "synbio",
@@ -389,7 +389,7 @@
       "section": "cross",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "NEJM AI": {
       "section": "cross",
@@ -418,7 +418,7 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 4,
+      "count": 3,
       "ok": true
     },
     "Finextra": {
@@ -504,29 +504,16 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Cell",
-      "Cell Host Microbe",
-      "Cell Reports Medicine",
-      "Cell Systems",
       "ClinicalTrials.gov",
-      "Immunity",
       "Import AI",
-      "Lancet Digital Health",
-      "Lancet Infect Dis",
       "NEJM",
-      "NEJM AI",
-      "Sci Transl Med",
-      "Science",
-      "Science Immunology",
-      "The Lancet",
-      "bioRxiv Immunology",
-      "bioRxiv SynBio",
-      "medRxiv Infectious"
+      "NEJM AI"
     ],
     "sudden_drop": [
       "Cointelegraph Payments"
     ],
     "persistent_zero": [
+      "Lancet Digital Health",
       "WHO News"
     ]
   }
