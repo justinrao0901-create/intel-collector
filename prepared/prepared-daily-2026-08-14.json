@@ -799,22 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1595,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Airwallex Adds Affirm Pay-Over-Time Options for US Shoppers",
-          "link": "https://www.pymnts.com/bnpl/2026/airwallex-adds-affirm-pay-over-time-options-for-us-shoppers/",
-          "content": "Airwallex is adding Affirm’s installment payment options to its checkout platform, giving merchants in 35 countries a way to offer pay-over-time financing to eligible customers in the United States. Under the partnership announced Thursday (Aug. 13), merchants using Airwallex can make Affirm available at checkout without completing a separate integration. U.S. shoppers who qualify can [&#8230;] The post Airwallex Adds Affirm Pay-Over-Time Options for US Shoppers appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 13 Aug 2026 19:03:09 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 497
-        },
-        {
-          "id": 1586,
+          "id": 1587,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +814,7 @@
           "word_count": 493
         },
         {
-          "id": 1592,
+          "id": 1593,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1097,6 +1082,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
+        },
+        {
+          "id": 354,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Reinforcement Learning based DBMS Buffer Pool Auto-Tuning for Optimal Memory Utilization",
+          "link": "https://arxiv.org/abs/2608.11239",
+          "content": "arXiv:2608.11239v1 Announce Type: cross Abstract: Administering Database Management Systems (DBMS) instances requires Database Administrators (DBA) to balance performance in terms of Service Level Agreement (SLA) against resource usage, often prompting RAM over-allocation that wastes memory. We introduce MicroTune, an online RL-based buffer adjustment system that minimizes unnecessary memory allocation while ensuring SLA compliance. To identify the most effective RL core, we evaluate multiple algorithms under diverse benchmark workloads, training MicroTune on extensive traces of both external metrics (latency, throughput) and internal DBMS metrics (status variables and performance statistics). Experimental results demonstrate that MicroTune dynamically adapts buffer sizes to workload fluctuations, outperforming baselines by achieving significant memory savings with fewer SLA violations. These findings underscore the promise of reinforcement learning for adaptive resource management in DBMS environments.",
+          "pub_date": "Thu, 13 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1018
         }
       ],
       "quota": {
