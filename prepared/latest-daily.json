@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 62,
+          "id": 66,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 363
         },
         {
-          "id": 58,
+          "id": 62,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 146
         },
         {
-          "id": 43,
+          "id": 42,
           "source": "Google DeepMind",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,7 @@
           "word_count": 134
         },
         {
-          "id": 94,
+          "id": 97,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 405
         },
         {
-          "id": 97,
+          "id": 100,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 405
         },
         {
-          "id": 91,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 196
         },
         {
-          "id": 76,
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 78,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 81,
+          "id": 84,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -190,59 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1480,
+      "total_raw": 1482,
       "total_valid": 1212,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1624,
-          "source": "Lancet Infect Dis",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Profile] Krutika Kuppalli—containing infectious disease outbreaks",
-          "link": "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00370-1/fulltext?rss=yes",
-          "content": "In 2014, Krutika Kuppalli served as Medical Director of a large Ebola Treatment Unit (ETU) in Sierra Leone during the West African Ebola virus disease epidemic (2013–16). “It was the most challenging but transformative experience of my life. Even 12 years later, I am learning from it”, says Kuppalli. She is now Associate Professor in the Division of Infectious Diseases and Geographic Medicine at UT Southwestern Medical Center, in Dallas, TX, USA, with a secondary appointment in the Peter O’Donell Jr School of Public Health (OSPH).",
-          "pub_date": "2026-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 536
-        },
-        {
-          "id": 1619,
-          "source": "Lancet Infect Dis",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Correspondence] A defining clinical moment during the COVID-19 pandemic in Nigeria",
-          "link": "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00306-3/fulltext?rss=yes",
-          "content": "Moments that shape careers in infectious diseases are often rooted in uncertainty but clarified by experience. After passing my part one fellowship examination in internal medicine in May 2019, I remained undecided about whether to pursue a career in nephrology or in infectious diseases. This uncertainty was resolved by the emergence of COVID-19 in Nigeria in February 2020, and the rapid establishment of national response structures, including isolation and treatment centres across federal tertiary hospitals.",
-          "pub_date": "2026-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 514
-        },
-        {
-          "id": 1642,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "CD163+ red pulp macrophages interact with marginal metallophilic macrophages during blood-stage malaria to maintain splenic architecture",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00305-5?rss=yes",
-          "content": "Splenic macrophages adapt to malaria through subset-specific remodeling and inter-macrophage communication. Using fate mapping, single-cell transcriptomics, and genetic perturbation, Mauel et al. show that red pulp macrophages (RPMs) and marginal metallophilic macrophages (MMMs) are predominantly yolk sac derived. They identify a CD163high iron-recycling RPM subset that is lost after malaria and find that stress response factor GDF15-dependent signaling supports MMM maintenance.",
-          "pub_date": "2026-08-04",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 483
-        },
-        {
-          "id": 1717,
+          "id": 1628,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,67 +212,7 @@
           "word_count": 463
         },
         {
-          "id": 1641,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Virus-induced deconjugation of ISG15 dysregulates innate immunity and cellular metabolism",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00306-7?rss=yes",
-          "content": "SARS-CoV-2 encodes a viral deISGylase called PLpro, but its physiological functions and direct substrates remain elusive. Using a deISGylation-activity-ablated recombinant SARS-CoV-2, Zhu et al. show that deISGylation activity is required for innate immune evasion and, furthermore, relieves metabolic restriction of viral replication by modulating the activity of key enzymes in glycolysis, the pentose phosphate pathway, and redox homeostasis.",
-          "pub_date": "2026-08-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 445
-        },
-        {
-          "id": 1877,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Phase 1 study of intracranial T cell therapy with pemetrexed for refractory brain metastases and glioblastomas",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00384-8?rss=yes",
-          "content": "Li et al. assess the safety and early efficacy of an intracranially autologous cell therapy combined with chemotherapy in patients with refractory brain metastases and glioblastomas, demonstrating tolerability alongside preliminary efficacy signals. Exploratory cerebrospinal fluid analyses reveal treatment-associated immune activation and tumor dynamics, offering early biological rationale for the strategy.",
-          "pub_date": "2026-08-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 410
-        },
-        {
-          "id": 1881,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Capsid inclusion in a CHIKV mRNA vaccine impairs adaptive immune responses",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00382-4?rss=yes",
-          "content": "Chen et al. reveal that antigen architecture may determine immune fate following CHIKV mRNA vaccination. Capsid-deleted V2 promotes sustained B cell differentiation, Th1-biased T cell responses, and superior protection, whereas capsid-containing V1 impairs recognition of E2/E1 epitopes. These findings establish a framework for rational antigen engineering of alphavirus mRNA vaccines.",
-          "pub_date": "2026-08-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 386
-        },
-        {
-          "id": 1876,
-          "source": "Cell Reports Medicine",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Corpora amylacea profiling reveals disease stage and brain region-specific alterations in glycogen metabolism in Alzheimer’s disease patient brains",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00385-X?rss=yes",
-          "content": "Villareal and Bathe et al. studied glycogen metabolism in 230 patient brains with various neurodegenerative diseases. In Alzheimer’s disease patient brains, patch-like glycogen deposits were observed throughout the brain, which increased with disease severity. These findings strengthen the argument for an important role of glycogen metabolism in Alzheimer’s disease pathogenesis.",
-          "pub_date": "2026-08-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 381
-        },
-        {
-          "id": 1528,
+          "id": 1529,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,67 +227,7 @@
           "word_count": 354
         },
         {
-          "id": 1643,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Butyrophilin-like 3 and 8 tetramers clamp Vγ4Vδ1 T cell receptors for antigen-independent activation",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00280-3?rss=yes",
-          "content": "BTNL3 and BTNL8 are butyrophilin-like receptors that selectively regulate intestinal Vγ4+ T cells, yet the underlying activation mechanism has remained elusive. Dong et al. reveal that BTNL3-BTNL8 forms an antigen-independent tetramer that drives γδ TCR dimerization and activation, providing a structural basis for tissue-specific immune surveillance.",
-          "pub_date": "2026-08-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 352
-        },
-        {
-          "id": 1630,
-          "source": "Cell",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Trans-regulatory gene mapping prioritizes disease drivers in asthma",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00866-4?rss=yes",
-          "content": "DANDELION is a causal mediation-inspired framework enabling the identification of disease-driving genes missed by existing approaches. Applied to asthma, DANDELION prioritizes two protein palmitoylation enzymes, revealing a therapeutically tractable pathway that is an important and previously unexplored mechanism underlying asthma pathogenesis.",
-          "pub_date": "2026-08-11",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 346
-        },
-        {
-          "id": 1636,
-          "source": "Cell Host Microbe",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Cell-type-specific activation of broadly perceived effector-triggered immunity restricts pathogen invasion in plants",
-          "link": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(26)00310-0?rss=yes",
-          "content": "Chhillar et al. reveal that plant immunity is organized across leaf tissues through specialized cell-type programs. While a shared core immune program is broadly activated, individual cell types deploy distinct defenses. This spatial division of labor restricts pathogen invasion and explains immune coordination at single-cell resolution.",
-          "pub_date": "2026-08-10",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 339
-        },
-        {
-          "id": 1610,
-          "source": "Lancet Infect Dis",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Correspondence] Rapid recruitment for a remote long COVID clinical trial",
-          "link": "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00070-8/fulltext?rss=yes",
-          "content": "There have been few long COVID clinical trials relative to the burden of disease,1 and even fewer have been accessible to people with more severe illness.2 As a person who has had moderate-to-severe long COVID (depending on the day) since 2020, I have long advocated for at-home access to clinical trials.3–5",
-          "pub_date": "2026-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 308
-        },
-        {
-          "id": 1525,
+          "id": 1526,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +242,7 @@
           "word_count": 305
         },
         {
-          "id": 1712,
+          "id": 1623,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +255,171 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 224
+        },
+        {
+          "id": 1595,
+          "source": "JAMA",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Goal-Focused Rehabilitation May Improve Cognitive Outcomes of Long COVID",
+          "link": "https://jamanetwork.com/journals/jama/fullarticle/2851948",
+          "content": "Cognitive rehabilitation focused on personal functional goals may be more effective in treating long COVID−related impairment than treatment as usual, a randomized clinical trial published in JAMA Network Open found.",
+          "pub_date": "Tue, 11 Aug 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 216
+        },
+        {
+          "id": 1620,
+          "source": "JAMA",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Neonatal Survival After Serial Amnioinfusions for Anhydramnios Due to Fetal Kidney Failure",
+          "link": "https://jamanetwork.com/journals/jama/fullarticle/2850820",
+          "content": "This nonrandomized clinical trial examines the effectiveness of serial amnioinfusions for the treatment of neonates with anhydramnios due to fetal kidney failure without bilateral renal agenesis.",
+          "pub_date": "Tue, 11 Aug 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 195
+        },
+        {
+          "id": 1558,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Trump wants MMR vaccine split up: the science behind why it’s a bad idea",
+          "link": "https://www.nature.com/articles/d41586-026-02515-3",
+          "content": "Nature, Published online: 12 August 2026; doi:10.1038/d41586-026-02515-3 Numerous studies have shown that separating childhood jabs will delay protection and increase costs for families.",
+          "pub_date": "2026-08-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 186
+        },
+        {
+          "id": 1659,
+          "source": "Vaccine (journal)",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Effectiveness of NmCV-5 vaccine against meningococcal meningitis in an outbreak setting in Niger: results from a case-control study",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26008066?dgcid=rss_sd_all",
+          "content": "Publication date: 17 September 2026 Source: Vaccine, Volume 90 Author(s): Laura V. Cooper, Medard Djedanem, Assan Abdoul Nasser, Khalidou Moussa, Kourouma Mamadou, Camara Ibrahima, Mahamadou Doutchi, Joaquin Baruch, Katya Fernandez, Anderson Latt, Clement Lingani, Andre Bita, Isha Berry, Todd Swarthout, Ousmane Guindo, Lorenzo Pezzoli, Elhadji Ibrahim Tassiou, Matthew Coldiron",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 379
+        },
+        {
+          "id": 1661,
+          "source": "Vaccine (journal)",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Functional neutralizing and bactericidal antibody responses induced by dual-target immunization with SARS-CoV-2 RBD and <em>Neisseria meningitidis</em> antigens in mice",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26008200?dgcid=rss_sd_all",
+          "content": "Publication date: 17 September 2026 Source: Vaccine, Volume 90 Author(s): Amanda Izeli Portilho, Robert Andreata-Santos, Márcia Duarte-Barbosa, Ana Paula Cunha Chaves, Hernan Hermes Monteiro da Costa, Nicoly Simões de Melo, Ana Flavia Segati, Giovanna Santos Oliveira, Carlos Roberto Prudencio, Luiz Mario Ramos Janini, Elizabeth De Gaspari",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 340
+        },
+        {
+          "id": 1675,
+          "source": "Vaccine (journal)",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Erratum to “Randomized trial showing persistence of hSBA titers elicited by a pentavalent meningococcal MenABCWY vaccine for up to 4 years following a primary series and safety and immunogenicity of a booster dose” [Vaccine 43 (2025) 126469]",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26006936?dgcid=rss_sd_all",
+          "content": "Publication date: 30 August 2026 Source: Vaccine, Volume 89 Author(s): James Peterson, Daniel Drazan, Beth Moughan, Jason D. Maguire, Lefteris Zolotas, Roger Maansson, Robert O'Neill, Paula Peyrani, Luis Jodar, William C. Gruber, Annaliesa S. Anderson, Johannes Beelsaar",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 270
+        },
+        {
+          "id": 1484,
+          "source": "Endpoints News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Vaccine makers throw cold water on separating MMR vaccine",
+          "link": "https://endpoints.news/vaccine-makers-throw-cold-water-on-separating-mmr-vaccine/",
+          "content": "Theoretically speaking, it’s possible for vaccine makers to split up the measles, mumps and rubella vaccines, as recently ordered by President Donald Trump. Practically speaking, it’s far-fetched. Vaccine makers and clinical development veterans in the ...",
+          "pub_date": "Wed, 12 Aug 2026 18:17:06 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 256
+        },
+        {
+          "id": 1486,
+          "source": "Endpoints News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Eli Lilly files first lawsuits over retatrutide 'black market'",
+          "link": "https://endpoints.news/eli-lilly-files-first-lawsuits-over-retatrutide-black-market/",
+          "content": "Eli Lilly has sued six US companies for selling what it claims is the pharma giant’s investigational diabetes and weight loss drug retatrutide, which is still undergoing clinical trials. The litigation is Lilly’s first involving ...",
+          "pub_date": "Wed, 12 Aug 2026 16:38:05 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 232
+        },
+        {
+          "id": 1760,
+          "source": "BioPharma Dive",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Silence cashes in on ‘differentiated’ data; UK reaffirms support for childhood vaccines",
+          "link": "https://www.biopharmadive.com/news/silence-divesiran-vaccines-itm-crl-abcellera-biomarin/827400/",
+          "content": "Some analysts believe Silence&rsquo;s polycythemia vera drug could be superior to a closely watched Takeda medicine. Elsewhere, the FDA spurned a radiopharmaceutical and AbCellera shares climbed to levels not seen since 2023.",
+          "pub_date": "Wed, 12 Aug 2026 09:11:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 225
+        },
+        {
+          "id": 1761,
+          "source": "BioPharma Dive",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Boulevard starts up with $65M to pursue targeted autoimmune drugs",
+          "link": "https://www.biopharmadive.com/news/boulevard-immune-drugs-igan-georg-schett/827583/",
+          "content": "Co-founded by pioneering researcher Georg Schett and ex-Sanofi CSO Frank Nestle, the startup is advancing a trio of multifaceted antibodies with the potential to treat several immune diseases.",
+          "pub_date": "Wed, 12 Aug 2026 06:30:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 192
+        },
+        {
+          "id": 1497,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Talks on launch of clinical trial of Ebola vaccine in DRC advance, WHO says",
+          "link": "https://www.statnews.com/2026/08/12/ebola-who-drc-ebola-vaccine-trial/?utm_campaign=rss",
+          "content": "Talks are underway between the Democratic Republic of the Congo and the WHO to expedite the start of a multi-armed Phase 3 clinical trial of Ebola vaccines.",
+          "pub_date": "Wed, 12 Aug 2026 20:46:29 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 156
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 441,
-      "total_valid": 307,
+      "total_raw": 310,
+      "total_valid": 203,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1956,
+          "id": 1823,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 225
         },
         {
-          "id": 1960,
+          "id": 1827,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 192
         },
         {
-          "id": 1973,
+          "id": 1840,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 150
         },
         {
-          "id": 1984,
+          "id": 1850,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1985,
+          "id": 1851,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1987,
+          "id": 1853,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 2004,
+          "id": 1870,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 580
         },
         {
-          "id": 2011,
+          "id": 1877,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,22 +554,7 @@
           "word_count": 454
         },
         {
-          "id": 1976,
-          "source": "Nature Chemical Biology",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "A dual assault on KRAS",
-          "link": "https://www.nature.com/articles/s41589-026-02283-1",
-          "content": "Nature Chemical Biology, Published online: 12 August 2026; doi:10.1038/s41589-026-02283-1 KRAS(Q61) mutant oncoproteins drive cancer through defective GTP hydrolysis. A study now shows that small molecules can restore catalytic activity while simultaneously shifting KRAS toward its inactive state, identifying an unexpected strategy to target previously untreatable KRAS mutants.",
-          "pub_date": "2026-08-12",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 380
-        },
-        {
-          "id": 1938,
+          "id": 1807,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,34 +569,49 @@
           "word_count": 350
         },
         {
-          "id": 1975,
-          "source": "Cell Systems",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "The emergence of the fractal bronchial tree",
-          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00186-9?rss=yes",
-          "content": "Mederacke et al. show that the lung’s fractal bronchial tree emerges through fluid-structure interactions that equalize mechanical stresses across all branches. These developmental principles continue to operate throughout life. Key biophysical parameters change in chronic obstructive pulmonary disease, offering potential biomarkers for diagnosis.",
-          "pub_date": "2026-08-12",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 349
-        },
-        {
-          "id": 1977,
+          "id": 1843,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
           "priority": 2,
-          "title": "Brønsted-basic small molecules activate GTP hydrolysis in KRAS-Q61 mutants",
-          "link": "https://www.nature.com/articles/s41589-026-02291-1",
-          "content": "Nature Chemical Biology, Published online: 12 August 2026; doi:10.1038/s41589-026-02291-1 Through chemical complementation, Brønsted-basic small molecules rescue the loss of the catalytic glutamine side chain in KRAS-Q61X mutants, accelerating GTP hydrolysis up to 20-fold.",
+          "title": "Development of samarium-153 oxide loaded polystyrene radiotracer particles for gamma scintigraphy of whole gastrointestinal transit study",
+          "link": "https://www.nature.com/articles/s41598-026-66901-7",
+          "content": "Nature Chemical Biology, Published online: 12 August 2026; doi:10.1038/s41598-026-66901-7 Development of samarium-153 oxide loaded polystyrene radiotracer particles for gamma scintigraphy of whole gastrointestinal transit study",
           "pub_date": "2026-08-12",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 273
+          "word_count": 227
+        },
+        {
+          "id": 1847,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Experiences of kinesiophobia in patients with chronic obstructive pulmonary disease: a qualitative phenomenological study",
+          "link": "https://www.nature.com/articles/s41598-026-66659-y",
+          "content": "Nature Chemical Biology, Published online: 12 August 2026; doi:10.1038/s41598-026-66659-y Experiences of kinesiophobia in patients with chronic obstructive pulmonary disease: a qualitative phenomenological study",
+          "pub_date": "2026-08-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 211
+        },
+        {
+          "id": 1845,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Service trade liberalization and manufacturing value chain upgrading: a quasi-natural experiment from China",
+          "link": "https://www.nature.com/articles/s41599-026-08691-x",
+          "content": "Nature Chemical Biology, Published online: 12 August 2026; doi:10.1057/s41599-026-08691-x Service trade liberalization and manufacturing value chain upgrading: a quasi-natural experiment from China",
+          "pub_date": "2026-08-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 197
         }
       ],
       "quota": {
@@ -619,59 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 90,
-      "total_valid": 23,
+      "total_raw": 85,
+      "total_valid": 28,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1624,
-          "source": "Lancet Infect Dis",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Profile] Krutika Kuppalli—containing infectious disease outbreaks",
-          "link": "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00370-1/fulltext?rss=yes",
-          "content": "In 2014, Krutika Kuppalli served as Medical Director of a large Ebola Treatment Unit (ETU) in Sierra Leone during the West African Ebola virus disease epidemic (2013–16). “It was the most challenging but transformative experience of my life. Even 12 years later, I am learning from it”, says Kuppalli. She is now Associate Professor in the Division of Infectious Diseases and Geographic Medicine at UT Southwestern Medical Center, in Dallas, TX, USA, with a secondary appointment in the Peter O’Donell Jr School of Public Health (OSPH).",
-          "pub_date": "2026-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 536
-        },
-        {
-          "id": 1642,
-          "source": "Immunity",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "CD163+ red pulp macrophages interact with marginal metallophilic macrophages during blood-stage malaria to maintain splenic architecture",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00305-5?rss=yes",
-          "content": "Splenic macrophages adapt to malaria through subset-specific remodeling and inter-macrophage communication. Using fate mapping, single-cell transcriptomics, and genetic perturbation, Mauel et al. show that red pulp macrophages (RPMs) and marginal metallophilic macrophages (MMMs) are predominantly yolk sac derived. They identify a CD163high iron-recycling RPM subset that is lost after malaria and find that stress response factor GDF15-dependent signaling supports MMM maintenance.",
-          "pub_date": "2026-08-04",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 483
-        },
-        {
-          "id": 1615,
-          "source": "Lancet Infect Dis",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Correspondence] The optimism in front of us",
-          "link": "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00118-0/fulltext?rss=yes",
-          "content": "The world often feels dark when seen through today's headlines. Conflict, division, mistrust, and crisis compete for attention.1 However, working and training in infectious diseases offers a different daily perspective. Infection does not recognise age, gender, ethnicity, religion, borders, politics, or culture; it can affect any person and any organ system. Because of this, infectious diseases practice is, by necessity, collaborative and boundary-crossing.",
-          "pub_date": "2026-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 461
-        },
-        {
-          "id": 1715,
+          "id": 1626,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,37 +641,7 @@
           "word_count": 420
         },
         {
-          "id": 1868,
-          "source": "Cell Reports Medicine",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Multi-modal AI-enabled steatotic liver disease diagnostics using facial images and metabolomics",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00388-5?rss=yes",
-          "content": "Gao et al. present a deep learning system that uses three-dimensional facial images to non-invasively detect steatotic liver disease. The derived facial risk score reflects underlying glycolipid and amino acid metabolic alterations. Multimodal integration with metabolomics further enhances accuracy, while smartphone compatibility and privacy-preserving federated learning make population-scale screening feasible.",
-          "pub_date": "2026-08-07",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 415
-        },
-        {
-          "id": 1872,
-          "source": "Cell Reports Medicine",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Biomarker-guided responses in patient-derived organoids predict effective therapies in breast cancer",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00390-3?rss=yes",
-          "content": "Bui et al. demonstrate that response-predictive models derived from patient biomarkers and clinical outcomes accurately predict in vitro responses in organoids using only biomarkers measurable in organoids as input and inform subtype-specific drug screening efforts. This highlights the potential of integrating organoids into personalized medicine strategies through gene-expression-based characterization.",
-          "pub_date": "2026-08-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 407
-        },
-        {
-          "id": 1536,
+          "id": 1537,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,22 +656,7 @@
           "word_count": 400
         },
         {
-          "id": 1876,
-          "source": "Cell Reports Medicine",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Corpora amylacea profiling reveals disease stage and brain region-specific alterations in glycogen metabolism in Alzheimer’s disease patient brains",
-          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00385-X?rss=yes",
-          "content": "Villareal and Bathe et al. studied glycogen metabolism in 230 patient brains with various neurodegenerative diseases. In Alzheimer’s disease patient brains, patch-like glycogen deposits were observed throughout the brain, which increased with disease severity. These findings strengthen the argument for an important role of glycogen metabolism in Alzheimer’s disease pathogenesis.",
-          "pub_date": "2026-08-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 381
-        },
-        {
-          "id": 1938,
+          "id": 1807,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -761,19 +671,109 @@
           "word_count": 350
         },
         {
-          "id": 1636,
-          "source": "Cell Host Microbe",
+          "id": 1527,
+          "source": "Nature",
           "section": "cross",
           "tier": "T1",
           "priority": 2,
-          "title": "Cell-type-specific activation of broadly perceived effector-triggered immunity restricts pathogen invasion in plants",
-          "link": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(26)00310-0?rss=yes",
-          "content": "Chhillar et al. reveal that plant immunity is organized across leaf tissues through specialized cell-type programs. While a shared core immune program is broadly activated, individual cell types deploy distinct defenses. This spatial division of labor restricts pathogen invasion and explains immune coordination at single-cell resolution.",
-          "pub_date": "2026-08-10",
+          "title": "Glucose-responsive probiotics for glycaemic modulation in mice and monkeys",
+          "link": "https://www.nature.com/articles/s41586-026-10909-6",
+          "content": "Nature, Published online: 12 August 2026; doi:10.1038/s41586-026-10909-6 Engineered probiotics equipped with a synthetic glucose-responsive circuit transiently colonize the gut and secrete therapeutic factors when glucose levels increase, enabling safe, oral, sense-and-respond control of diabetes in mouse and primate models.",
+          "pub_date": "2026-08-12",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 339
+          "word_count": 326
+        },
+        {
+          "id": 1526,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Agentic profiles for effective AI governance",
+          "link": "https://www.nature.com/articles/s41586-026-10805-z",
+          "content": "Nature, Published online: 12 August 2026; doi:10.1038/s41586-026-10805-z A framework comprising four dimensions—autonomy, efficacy, goal complexity and generality—is proposed for characterizing AI agents, supporting the construction of agentic profiles for the effective governance of different AI agents.",
+          "pub_date": "2026-08-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 305
+        },
+        {
+          "id": 1633,
+          "source": "Nature Biotech",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Author Correction: Circular RNA aptamers targeting neuroinflammation ameliorate Alzheimer disease phenotypes in mouse models",
+          "link": "https://www.nature.com/articles/s41587-026-03281-3",
+          "content": "Nature Biotechnology, Published online: 12 August 2026; doi:10.1038/s41587-026-03281-3 Author Correction: Circular RNA aptamers targeting neuroinflammation ameliorate Alzheimer disease phenotypes in mouse models",
+          "pub_date": "2026-08-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 211
+        },
+        {
+          "id": 1636,
+          "source": "Nature Biotech",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Discovery and design of potent cell surface display elements",
+          "link": "https://www.nature.com/articles/s41587-026-03144-x",
+          "content": "Nature Biotechnology, Published online: 12 August 2026; doi:10.1038/s41587-026-03144-x A systematic artificial intelligence-guided approach designs cell surface display elements for therapeutic applications.",
+          "pub_date": "2026-08-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 207
+        },
+        {
+          "id": 1842,
+          "source": "Nature Chemical Biology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Model-free multiparametric analysis of SHG images reveals collagen signatures in breast cancer",
+          "link": "https://www.nature.com/articles/s41598-026-62801-y",
+          "content": "Nature Chemical Biology, Published online: 12 August 2026; doi:10.1038/s41598-026-62801-y Model-free multiparametric analysis of SHG images reveals collagen signatures in breast cancer",
+          "pub_date": "2026-08-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 184
+        },
+        {
+          "id": 1844,
+          "source": "Nature Chemical Biology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "AlzheiNN: a convolutional neural network-based model for Alzheimer’s disease classification",
+          "link": "https://www.nature.com/articles/s41598-026-64954-2",
+          "content": "Nature Chemical Biology, Published online: 12 August 2026; doi:10.1038/s41598-026-64954-2 AlzheiNN: a convolutional neural network-based model for Alzheimer’s disease classification",
+          "pub_date": "2026-08-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 181
+        },
+        {
+          "id": 1619,
+          "source": "JAMA",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Using AI Disagreement to Expose Gaps in Coverage Rules",
+          "link": "https://jamanetwork.com/journals/jama/fullarticle/2851146",
+          "content": "This Viewpoint discusses the use of artificial intelligence (AI) in health care to support coverage and payment decisions that historically have been made by human representatives.",
+          "pub_date": "Tue, 11 Aug 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 180
         }
       ],
       "quota": {
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 54,
-      "total_valid": 45,
+      "total_raw": 37,
+      "total_valid": 29,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2022,
+          "id": 1888,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 555
         },
         {
-          "id": 2083,
+          "id": 1949,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 536
         },
         {
-          "id": 2023,
+          "id": 1889,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 494
         },
         {
-          "id": 2020,
+          "id": 1886,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 477
         },
         {
-          "id": 2026,
+          "id": 1892,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 476
         },
         {
-          "id": 2029,
+          "id": 1895,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 436
         },
         {
-          "id": 2057,
+          "id": 1923,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 352
         },
         {
-          "id": 2056,
+          "id": 1922,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 342
         },
         {
-          "id": 2048,
+          "id": 1914,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 336
         },
         {
-          "id": 2050,
+          "id": 1916,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 336
         },
         {
-          "id": 2054,
+          "id": 1920,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 239
         },
         {
-          "id": 2032,
+          "id": 1898,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 224
         },
         {
-          "id": 2052,
+          "id": 1918,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 149
         },
         {
-          "id": 2031,
+          "id": 1897,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 148
         },
         {
-          "id": 2081,
+          "id": 1947,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 544
         },
         {
-          "id": 2082,
+          "id": 1948,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1039,7 @@
           "word_count": 517
         },
         {
-          "id": 254,
+          "id": 257,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 292,
+          "id": 295,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 454,
+          "id": 457,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 480,
+          "id": 483,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1110,9 +1110,9 @@
     }
   },
   "meta": {
-    "total_raw": 2239,
-    "dup": 265,
-    "nocontent": 385,
-    "noise": 4
+    "total_raw": 2105,
+    "dup": 242,
+    "nocontent": 377,
+    "noise": 0
   }
 }

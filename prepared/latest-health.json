@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 17,
+      "count": 16,
       "ok": true
     },
     "Anthropic Blog": {
@@ -22,7 +22,7 @@
     "Meta AI Blog": {
       "section": "ai",
       "method": "scrape",
-      "count": 9,
+      "count": 14,
       "ok": true
     },
     "Microsoft AI Blog": {
@@ -40,7 +40,7 @@
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 21,
+      "count": 20,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 14,
       "ok": true
     },
     "Fierce Pharma": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 73,
       "ok": true
     },
     "NEJM": {
@@ -178,38 +178,38 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Lancet Infect Dis": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 2,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Immunity": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Science": {
       "section": "vaccine",
       "method": "rss",
-      "count": 36,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "JAMA": {
       "section": "vaccine",
@@ -274,8 +274,8 @@
     "Sci Transl Med": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Rev Drug Discovery": {
       "section": "vaccine",
@@ -298,14 +298,14 @@
     "Science Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 26,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "BioPharma Dive": {
       "section": "vaccine",
@@ -328,13 +328,13 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 16,
+      "count": 14,
       "ok": true
     },
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 5,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -352,8 +352,8 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 1,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "bioRxiv SynBio": {
       "section": "synbio",
@@ -389,7 +389,7 @@
       "section": "cross",
       "method": "rss",
       "count": 0,
-      "ok": true
+      "ok": false
     },
     "NEJM AI": {
       "section": "cross",
@@ -504,10 +504,21 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
+      "Cell",
+      "Cell Host Microbe",
+      "Cell Reports Medicine",
+      "Cell Systems",
       "ClinicalTrials.gov",
+      "Immunity",
       "Import AI",
+      "Lancet Digital Health",
+      "Lancet Infect Dis",
       "NEJM",
       "NEJM AI",
+      "Sci Transl Med",
+      "Science",
+      "Science Immunology",
+      "The Lancet",
       "bioRxiv Immunology",
       "bioRxiv SynBio",
       "medRxiv Infectious"
@@ -516,7 +527,6 @@
       "Cointelegraph Payments"
     ],
     "persistent_zero": [
-      "Lancet Digital Health",
       "WHO News"
     ]
   }
