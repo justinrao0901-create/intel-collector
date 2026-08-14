@@ -81,14 +81,14 @@
       "title": "ComBodied Agents: a New Paradigm of Human-Centric Agentic AI",
       "abstract": "After an older adult misses a medication dose, a software agent can send another reminder and an embodied agent can bring the medication. Yet neither explains whether the person forgot, is confused, has side effects, or deliberately refused, nor what support is appropriate. This reveals a structural gap in Agentic AI: Digital Agents primarily transform software states, while Embodied Agents transform physical states; neither makes a person's evolving state and agency the primary object of modeling, intervention, and evaluation. We introduce Combodied Agents, a human-centered paradigm that perceives, models, predicts, and supports individual human-state trajectories over time, using software tools, sensors, wearables, robots, and human services as action channels rather than end goals. We unify fragmented capabilities across personal assistants, health agents, AI companions, and adaptive human--AI systems into a closed loop: event-based multimodal perception reconstructs meaningful personal events; longitudinal, correctable memory provides temporal context; Personal World Models estimate future personal states and outcomes under alternative decisions and interventions; and an admiss",
       "link": "https://arxiv.org/abs/2608.10915",
-      "upvotes": 183,
+      "upvotes": 184,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-08-10",
       "is_survey": false,
       "is_china": false,
-      "score": 549
+      "score": 552
     },
     {
       "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
@@ -109,14 +109,14 @@
       "title": "Beyond Pixels: From Video Priors to 4D Worlds",
       "abstract": "4D generation synthesizes dynamic 3D scenes from conditions such as text or images. Existing methods either reconstruct generated RGB videos with a separate 4D model or adapt a particular video generator to predict geometry directly. The former suffers from distribution mismatch and error propagation, whereas the latter ties 4D prediction to a specific generator and may require retraining when the generator or conditioning regime changes. We ask whether the final denoised latents of video models that share a variational autoencoder (VAE) can instead provide a reusable interface to explicit 4D prediction. Building on this insight, we introduce direct latent-to-4D generation and instantiate it as Latent-to-4D, which bypasses RGB by aligning a video latent with the token grid of a pretrained 4D decoder and refining it through frame-wise and global spatiotemporal attention. Trained on roughly 1K existing reconstruction clips, a single checkpoint transfers unchanged across multiple video diffusion transformers within the same VAE family. On Text4D-200 and I4D-200, Latent-to-4D surpasses matched same-latent Wan+4RC cascades in projection-based DINO-F1 by 2.88--3.45 and 5.81 points, respe",
       "link": "https://arxiv.org/abs/2608.10744",
-      "upvotes": 174,
+      "upvotes": 175,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily+alphaXiv",
       "pub": "2026-08-10",
       "is_survey": false,
       "is_china": false,
-      "score": 522
+      "score": 525
     },
     {
       "id": "2608.10299",
@@ -133,13 +133,27 @@
       "score": 435
     },
     {
+      "title": "Kimi Linear: An Expressive, Efficient Attention Architecture (2025)",
+      "link": "https://arxiv.org/abs/2510.26692",
+      "hn_points": 306,
+      "id": "2510.26692",
+      "upvotes": 0,
+      "citations": 121,
+      "abstract": "",
+      "source": "HN",
+      "pub": "2026-07-28",
+      "is_survey": false,
+      "is_china": true,
+      "score": 401.5
+    },
+    {
       "id": "2608.09802",
       "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
       "abstract": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and that frontier models can verbatim reproduce gold patches from training data. Code refactoring, which requires coordinated, behavior-preserving changes across many files, offers a substantially harder and more realistic test of agent capability, yet remains underserved by current benchmarks. We introduce SWE-Bench ProMax, an expert-curated, multilingual code refactoring benchmark of 170 instances drawn from real commits across seven programming languages (Python, Java, TypeScript, Go, C, C++, and Rust). Every instance undergoes rigorous, multi-stage curation that directly addresses the quality problems identified in prior benchmarks: issue descriptions are rewritten from scratch to provide precise, unambiguous specifications, and test suites are manually reviewed to remove ",
       "link": "https://arxiv.org/abs/2608.09802",
       "upvotes": 127,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-09",
       "is_survey": false,
@@ -147,27 +161,13 @@
       "score": 381
     },
     {
-      "title": "Kimi Linear: An Expressive, Efficient Attention Architecture (2025)",
-      "link": "https://arxiv.org/abs/2510.26692",
-      "hn_points": 306,
-      "id": "2510.26692",
-      "upvotes": 0,
-      "citations": null,
-      "abstract": "",
-      "source": "HN",
-      "pub": "2026-07-28",
-      "is_survey": false,
-      "is_china": true,
-      "score": 341
-    },
-    {
       "title": "Handbook.md shows that long policy documents do not reliably govern agents",
       "link": "https://arxiv.org/abs/2607.25398",
       "hn_points": 325,
       "id": "2607.25398",
       "upvotes": 0,
-      "citations": null,
-      "abstract": "",
+      "citations": 0,
+      "abstract": "HANDBOOK_md is presented, a benchmark of 65 agentic tasks modeled on how employees follow company handbooks, and every task modifies one of 10 base handbooks, altering the specific rules and thresholds on which grading depends, so no two tasks share the same set of policies.",
       "source": "HN",
       "pub": "2026-07-29",
       "is_survey": false,
@@ -195,7 +195,7 @@
       "link": "https://arxiv.org/abs/2608.07468",
       "upvotes": 103,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-06",
       "is_survey": false,
@@ -237,12 +237,26 @@
       "link": "https://arxiv.org/abs/2608.12036",
       "upvotes": 82,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily+alphaXiv+arXiv",
       "pub": "2026-08-11",
       "is_survey": false,
       "is_china": false,
       "score": 246
+    },
+    {
+      "id": "2608.13489",
+      "title": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+      "abstract": "We present DreamX-Phi 1.0, an action-conditioned video world model for robotic manipulation that, given an observed frame, a language instruction, and a prescribed action sequence comprising end-effector poses and gripper states, predicts the resulting future observations. Yet realism alone does not guarantee faithfulness: a convincing rollout can still move the wrong arm or lose the manipulated object. To ensure the prediction respects each arm's commanded path, we inject per-arm SE(3) transformations into attention via PRoPE-style geometric encoding, preserving arm identity and rigid-motion structure. Action control alone does not fully constrain scene geometry or the evolution of small manipulated objects. We therefore add a lightweight depth branch for scene-level geometry and use SAM3 masks with a frozen V-JEPA teacher to maintain object consistency throughout grasping. We further distill the multi-step generator into a few-step student via distribution-matching distillation for efficient deployment. At the time of writing, achieves first place on Track~1 and second place on Track~2 of the WorldArena~2.0 Challenge. Our model and code will be publicly available.",
+      "link": "https://arxiv.org/abs/2608.13489",
+      "upvotes": 75,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+alphaXiv+arXiv",
+      "pub": "2026-08-12",
+      "is_survey": false,
+      "is_china": false,
+      "score": 225
     },
     {
       "id": "2608.06867",
@@ -259,27 +273,13 @@
       "score": 225
     },
     {
-      "id": "2608.13489",
-      "title": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
-      "abstract": "We present DreamX-Phi 1.0, an action-conditioned video world model for robotic manipulation that, given an observed frame, a language instruction, and a prescribed action sequence comprising end-effector poses and gripper states, predicts the resulting future observations. Yet realism alone does not guarantee faithfulness: a convincing rollout can still move the wrong arm or lose the manipulated object. To ensure the prediction respects each arm's commanded path, we inject per-arm SE(3) transformations into attention via PRoPE-style geometric encoding, preserving arm identity and rigid-motion structure. Action control alone does not fully constrain scene geometry or the evolution of small manipulated objects. We therefore add a lightweight depth branch for scene-level geometry and use SAM3 masks with a frozen V-JEPA teacher to maintain object consistency throughout grasping. We further distill the multi-step generator into a few-step student via distribution-matching distillation for efficient deployment. At the time of writing, achieves first place on Track~1 and second place on Track~2 of the WorldArena~2.0 Challenge. Our model and code will be publicly available.",
-      "link": "https://arxiv.org/abs/2608.13489",
-      "upvotes": 73,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+alphaXiv+arXiv",
-      "pub": "2026-08-12",
-      "is_survey": false,
-      "is_china": false,
-      "score": 219
-    },
-    {
       "id": "2608.05604",
       "title": "SkillZip: Contract-Preserving Graph Compression for Scalable Agent Skill Libraries",
       "abstract": "Large Language Models (LLMs) increasingly act as agents whose procedural knowledge is stored in reusable skill packages and loaded at inference time. As skill libraries grow, a central challenge is to expose the smallest sufficient executable context under a limited context budget. Existing systems struggle to reuse routines below the whole-skill level, preserve procedural contracts during compression, keep compressed routines executable and expandable, and update the compressed library as skills evolve. These challenges reveal a unit mismatch: skills are retrieved as packages, compressed as text, and converted into execution graphs only after retrieval, whereas reliable reuse requires a contract-bearing procedural unit. We propose SkillZip, an execution-aware procedural abstraction framework that performs contract-preserving compression over section-level graphs. SkillZip rewrites recurring contract-valid motifs into reversible ported macros while preserving boundary signatures, dependency closure, verifier reachability, and source-level expansion. At inference time, it hydrates a compact, dependency-closed context and expands macros only when required. ReZip further integrates ne",
       "link": "https://arxiv.org/abs/2608.05604",
       "upvotes": 73,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-05",
       "is_survey": false,
@@ -291,14 +291,14 @@
       "title": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World",
       "abstract": "Interactive world models must support persistent memory, responsive interaction, and long-horizon generation, yet these requirements place conflicting demands on the model. Maintaining history in the denoiser context or key-value cache incurs growing cost, forcing a trade-off between session length and retained memory, while low-latency interaction relies on few-step generation whose capabilities are bounded by its teacher. Evoke addresses both limitations by externalizing persistent world state and redesigning the teacher for long-horizon interactive generation. Scene geometry is maintained in an external, camera-indexed world state bank, from which only view-relevant information is retrieved, keeping the denoiser context bounded as the session grows. Rather than treating the teacher as a fixed generator, we design it for long-horizon supervision: its sparse attention combines chunk-wise grouping, retrieval of selected distant frames, and a linear-attention global state, yielding linear growth in memory and compute while enabling supervision over long horizons. Such supervision exposes content drift that stays locally plausible within short windows, while per-chunk conditioning en",
       "link": "https://arxiv.org/abs/2608.13546",
-      "upvotes": 68,
+      "upvotes": 69,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-08-12",
       "is_survey": false,
       "is_china": false,
-      "score": 204
+      "score": 207
     },
     {
       "title": "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence (2025)",
@@ -334,13 +334,13 @@
       "hn_points": 157,
       "id": "2607.27197",
       "upvotes": 0,
-      "citations": null,
+      "citations": 1,
       "abstract": "",
       "source": "HN",
       "pub": "2026-07-31",
       "is_survey": false,
       "is_china": false,
-      "score": 157
+      "score": 157.5
     },
     {
       "id": "2608.03573",
@@ -363,7 +363,7 @@
       "link": "https://arxiv.org/abs/2608.07169",
       "upvotes": 49,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-08-06",
       "is_survey": false,
@@ -391,7 +391,7 @@
       "link": "https://arxiv.org/abs/2607.27749",
       "upvotes": 44,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-07-29",
       "is_survey": false,
@@ -483,32 +483,18 @@
       "score": 114
     },
     {
-      "title": "Emergent Introspective Awareness in Large Language Models",
-      "link": "https://arxiv.org/abs/2601.01828",
-      "hn_points": 72,
-      "id": "2601.01828",
-      "upvotes": 0,
-      "citations": 81,
-      "abstract": "The results indicate that current language models possess some functional introspective awareness of their own internal states, although it is stressed that in today's models, this capacity is highly unreliable and context-dependent; however, it may continue to develop with further improvements to model capabilities.",
-      "source": "HN",
-      "pub": "2026-08-11",
-      "is_survey": false,
-      "is_china": false,
-      "score": 112.5
-    },
-    {
       "title": "The Tragedy of the Cognitive Commons",
       "link": "https://arxiv.org/abs/2607.29380",
       "hn_points": 111,
       "id": "2607.29380",
       "upvotes": 0,
-      "citations": null,
-      "abstract": "",
+      "citations": 1,
+      "abstract": "The Cognitive Commons framework is introduced, integrating commons theory, HRD scholarship, and distributed cognition to explain how rational AI adoption decisions can deplete the shared expertise pool professions require for renewal.",
       "source": "HN",
       "pub": "2026-08-10",
       "is_survey": false,
       "is_china": false,
-      "score": 111
+      "score": 111.5
     },
     {
       "id": "2608.11215",
@@ -525,32 +511,32 @@
       "score": 107
     },
     {
-      "title": "Zigbee vs. Matter over Thread:Understanding IoT Protocol Performance in Practice",
-      "link": "https://arxiv.org/abs/2603.04221",
-      "hn_points": 106,
-      "id": "2603.04221",
-      "upvotes": 0,
-      "citations": 1,
-      "abstract": "This paper presents a comprehensive experimental comparison between the two protocols, conducted on a testbed built from commercially available hardware, and highlights that Zigbee and Matter over Thread embody distinct trade-offs between agility, efficiency, and scalability.",
-      "source": "HN",
-      "pub": "2026-08-05",
-      "is_survey": false,
-      "is_china": false,
-      "score": 106.5
-    },
-    {
       "title": "Harmony Explained: Progress Towards a Scientific Theory of Music (2012)",
       "link": "https://arxiv.org/abs/1202.4212",
       "hn_points": 105,
       "id": "1202.4212",
       "upvotes": 0,
-      "citations": null,
-      "abstract": "",
+      "citations": 3,
+      "abstract": "This article is intended to be satisfying to scientists as an original contribution to science and art, and to be approachable by musicians and other curious members of the general public who may have long wondered at the curious properties of tonal music and been frustrated by the lack of satisfying, readable exposition.",
       "source": "HN",
       "pub": "2026-07-28",
       "is_survey": false,
       "is_china": false,
-      "score": 105
+      "score": 106.5
+    },
+    {
+      "title": "Zigbee vs. Matter over Thread:Understanding IoT Protocol Performance in Practice",
+      "link": "https://arxiv.org/abs/2603.04221",
+      "hn_points": 106,
+      "id": "2603.04221",
+      "upvotes": 0,
+      "citations": null,
+      "abstract": "",
+      "source": "HN",
+      "pub": "2026-08-05",
+      "is_survey": false,
+      "is_china": false,
+      "score": 106
     },
     {
       "id": "2608.07545",
@@ -708,6 +694,20 @@
       "is_survey": true,
       "is_china": false,
       "score": 81
+    },
+    {
+      "id": "2608.08160",
+      "title": "Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives",
+      "abstract": "The rapid advancement of Large Language Models (LLMs) is revolutionizing AI for Games by enabling open-ended and fluid interactive storytelling. However, existing research has largely overlooked the critical challenge of maintaining long-horizon logical consistency and narrative integrity against unconstrained user interventions. To address this, we formulate this challenge as Narrative Commitment Preservation (NCP), and take interactive narrative as our testbed. We introduce NCP-Bench, a benchmark of 100 narrative environments derived from movie synopses. Each environment includes a structured narrative specification (trajectory, commitments, and initial facts) that we can automatically check throughout the interaction between the player agent and the narrator agent. Experiments across state-of-the-art LLMs reveal a substantial long-horizon consistency gap: high linguistic quality does not guarantee commitment preservation; even strong models frequently generate logically conflicting content under adversarial interventions, with the best-performing model (GPT-5.2) achieving only 42% survival rate after 20 turns and fact conflict rates ranging from 40% to 68% across models, and onl",
+      "link": "https://arxiv.org/abs/2608.08160",
+      "upvotes": 26,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily",
+      "pub": "2026-08-07",
+      "is_survey": false,
+      "is_china": false,
+      "score": 78
     }
   ]
 }
