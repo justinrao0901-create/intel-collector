@@ -65,7 +65,22 @@
           "word_count": 165
         },
         {
-          "id": 75,
+          "id": 74,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Thought-Level Beam Search for Reasoning",
+          "link": "https://arxiv.org/abs/2608.08020",
+          "content": "Test-time compute scaling is a primary driver of performance in large reasoning models (LRMs), but extreme inefficiency bounds current approaches, shifting the critical question from how much compute to spend, to where to allocate it. We formalize test-time reasoning as a constrained compute allocation problem over partial trajectories. Under a fixed hardware budget, existing paradigms fail to actively allocate the compute to the most promising partial progress: traditional parallel sampling treats traces independently and induces severe memory bottlenecks, while subtractive pruning starves hardware and fails to actively and sufficiently shift the output distribution. To overcome this dichotomy, we introduce Gambit, an inference algorithm that executes thought-level beam search. By periodically pruning unpromising trajectories and immediately branching from high-quality prefixes, Gambit dynamically concentrates compute onto the most promising reasoning traces via a light-weight scorer probing hidden states while maintaining continuous high hardware utilization. Extensive evaluations across multiple models and benchmarks demonstrate that Gambit strictly dominates existing baselines.",
+          "pub_date": "2026-08-10T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 77,
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -88,21 +103,6 @@
           "title": "Hybrid-Policy Self-Editing for Composable Unstructured Knowledge Editing",
           "link": "https://arxiv.org/abs/2608.11660",
           "content": "Large language models (LLMs) achieve remarkable performance across natural language tasks, yet they are trained on static corpora and their knowledge quickly becomes outdated in a fast-changing world. This motivates knowledge editing (KE), which updates specific knowledge in an LLM without changing unrelated others. Recent works move from structured knowledge triples toward unstructured KE (UKE), where the edit is a free-form passage that may state multiple facts at once. Nonetheless, existing editors inject such a passage yet fail to use it: the edited model can recall the passage, but can neither answer atomic questions about its facts nor compose them into multi-hop reasoning. We attribute this missing property, which we term composability, to editors' passive reliance on the fixed passage as the sole learning source. In response, we cast editing as a proactive self-distillation from a privileged in-context state of the same model, which requires no external supervision. We further reveal that due to the novelty of the injected knowledge, the pre-edited model's own rollouts rarely cover it, which limits the effectiveness of pure on-policy distillation. To close this gap, we prop",
-          "pub_date": "2026-08-11T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 78,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Specification-first convergence with an AI coding agent: a case study of dismantling a core architectural invariant across 189 files in a 717k-line codebase with no test oracle and no human code review",
-          "link": "https://arxiv.org/abs/2608.12440",
-          "content": "This paper reports a single, fully instrumented case study of a large-scale architectural refactoring by an AI coding agent under a specification-first protocol, with no human review of the generated code and no pre-existing oracle to validate the target behaviour. The task, dismantling a central invariant across a large interdependent codebase, was assessed by the author as effectively infeasible through incremental refactoring, the kind of change that conventionally calls for a rewrite instead. Under the protocol described here, the agent completed it successfully. The system is a 717,725-line production TypeScript application across 3,648 files. The task required dismantling a core lifetime invariant: the guarantee that a UI panel remains open for the duration of an AI request. The target behaviour was that a streaming generation survives the closing of its panel and can be reattached, on reopening, to the same live stream with no loss or duplication. The protocol: formal specification by the agent, 14 refinement cycles auditing that specification against the source code, atomic implementation, a compile/test feedback loop, then 17 verification cycles auditing the code against t",
           "pub_date": "2026-08-11T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -197,22 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 1383,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Report from the inaugural 2025 Asia-UK Maternal-Neonatal Infection and Immunity Network (AMMuNet) symposium",
-          "link": "https://www.nature.com/articles/s41541-026-01541-6",
-          "content": "npj Vaccines, Published online: 14 August 2026; doi:10.1038/s41541-026-01541-6 The Asia-UK maternal-neonatal infection and iMMunity Network (AMMuNet) convened its first international symposium in Kathmandu, November 2025, to address global and regional burden of maternal-neonatal infections. Primary objective of the symposium was to share the latest research and evidence on perinatal infections and immunization, alongside a focused workshop to develop an outline for potential studies targeting priority pathogens: group B Streptococcus, respiratory syncytial virus, Bordetella pertussis, and Klebsiella pneumoniae.",
-          "pub_date": "2026-08-14",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 619
-        },
-        {
-          "id": 1130,
+          "id": 1129,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +212,7 @@
           "word_count": 411
         },
         {
-          "id": 1455,
+          "id": 1454,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +227,7 @@
           "word_count": 334
         },
         {
-          "id": 1451,
+          "id": 1450,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +242,7 @@
           "word_count": 323
         },
         {
-          "id": 1443,
+          "id": 1442,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +257,7 @@
           "word_count": 309
         },
         {
-          "id": 1017,
+          "id": 1016,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,22 +272,7 @@
           "word_count": 278
         },
         {
-          "id": 1382,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Immune correlates of protection against RSV following Ad26.RSV.preF–RSV preF vaccination of adults aged &gt;60 years",
-          "link": "https://www.nature.com/articles/s41541-026-01557-y",
-          "content": "npj Vaccines, Published online: 14 August 2026; doi:10.1038/s41541-026-01557-y Immune correlates of protection against RSV following Ad26.RSV.preF–RSV preF vaccination of adults aged >60 years",
-          "pub_date": "2026-08-14",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 192
-        },
-        {
-          "id": 1187,
+          "id": 1186,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +287,7 @@
           "word_count": 188
         },
         {
-          "id": 1185,
+          "id": 1184,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,22 +302,7 @@
           "word_count": 169
         },
         {
-          "id": 1380,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "High immunogenicity of a new mucosal vaccine against <i>Porphyromonas gingivalis</i>",
-          "link": "https://www.nature.com/articles/s41541-026-01559-w",
-          "content": "npj Vaccines, Published online: 14 August 2026; doi:10.1038/s41541-026-01559-w High immunogenicity of a new mucosal vaccine against Porphyromonas gingivalis",
-          "pub_date": "2026-08-14",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 156
-        },
-        {
-          "id": 1396,
+          "id": 1395,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +317,7 @@
           "word_count": 129
         },
         {
-          "id": 1391,
+          "id": 1390,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +332,7 @@
           "word_count": 67
         },
         {
-          "id": 1393,
+          "id": 1392,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +347,7 @@
           "word_count": 67
         },
         {
-          "id": 1394,
+          "id": 1393,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +362,7 @@
           "word_count": 67
         },
         {
-          "id": 1161,
+          "id": 1160,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +375,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 60
+        },
+        {
+          "id": 1165,
+          "source": "Science",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Equity in pathogen genomic surveillance",
+          "link": "https://www.science.org/doi/abs/10.1126/science.aej6968?af=R",
+          "content": "Science, Volume 393, Issue 6812 , Page 668-668, August 2026.",
+          "pub_date": "2026-08-13T06:00:12Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 60
+        },
+        {
+          "id": 1174,
+          "source": "Science",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "‘Mismatched’ Ebola vaccine may soon be rolled out widely",
+          "link": "https://www.science.org/doi/abs/10.1126/science.ael4193?af=R",
+          "content": "Science, Volume 393, Issue 6812 , Page 649-650, August 2026.",
+          "pub_date": "2026-08-13T06:00:12Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 60
+        },
+        {
+          "id": 1423,
+          "source": "Science Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Fusion of IgG antibodies to albumin inhibits transport across the placenta",
+          "link": "https://www.science.org/doi/abs/10.1126/sciimmunol.aee5151?af=R",
+          "content": "Science Immunology, Volume 11, Issue 122 , August 2026.",
+          "pub_date": "2026-08-14T07:00:00Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 55
         }
       ],
       "quota": {
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 519,
-      "total_valid": 359,
+      "total_raw": 518,
+      "total_valid": 355,
       "total_candidates": 15
     },
     "synbio": {
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1543,
+          "id": 1542,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 229
         },
         {
-          "id": 1541,
+          "id": 1540,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 195
         },
         {
-          "id": 1517,
+          "id": 1516,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 367
         },
         {
-          "id": 1505,
+          "id": 1504,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 319
         },
         {
-          "id": 1506,
+          "id": 1505,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -619,8 +619,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 112,
-      "total_valid": 30,
+      "total_raw": 113,
+      "total_valid": 31,
       "total_candidates": 12
     },
     "cross": {
@@ -671,7 +671,7 @@
           "word_count": 430
         },
         {
-          "id": 1215,
+          "id": 1214,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 404
         },
         {
-          "id": 1448,
+          "id": 1447,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 371
         },
         {
-          "id": 1430,
+          "id": 1429,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 368
         },
         {
-          "id": 1437,
+          "id": 1436,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 330
         },
         {
-          "id": 1505,
+          "id": 1504,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 319
         },
         {
-          "id": 1128,
+          "id": 1127,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1619,
+          "id": 1620,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 552
         },
         {
-          "id": 1612,
+          "id": 1613,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 499
         },
         {
-          "id": 1611,
+          "id": 1612,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 451
         },
         {
-          "id": 1636,
+          "id": 1633,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 149
         },
         {
-          "id": 1626,
+          "id": 1624,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 115
         },
         {
-          "id": 1654,
+          "id": 1651,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 103
         },
         {
-          "id": 1655,
+          "id": 1652,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 103
         },
         {
-          "id": 1662,
+          "id": 1659,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1009,7 +1009,7 @@
           "word_count": 918
         },
         {
-          "id": 1616,
+          "id": 1617,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 513
         },
         {
-          "id": 1615,
+          "id": 1616,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1039,7 @@
           "word_count": 483
         },
         {
-          "id": 1617,
+          "id": 1618,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 483
         },
         {
-          "id": 1635,
+          "id": 1632,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 277
         },
         {
-          "id": 1640,
+          "id": 1637,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 256
         },
         {
-          "id": 1623,
+          "id": 1622,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 214,
-      "total_valid": 39,
+      "total_raw": 211,
+      "total_valid": 37,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1819,
-    "dup": 323,
+    "total_raw": 1816,
+    "dup": 325,
     "nocontent": 396,
     "noise": 4
   }
