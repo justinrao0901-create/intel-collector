@@ -95,7 +95,22 @@
           "word_count": 147
         },
         {
-          "id": 69,
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "HarmProfile: Characterizing Harmful Distributions in Frontier LLMs",
+          "link": "https://arxiv.org/abs/2608.14577",
+          "content": "Frontier large language models (LLMs) safety evaluation has largely treated harmful generation as an attack outcome rather than as an object of analysis. Consequently, little is known about the harmful outputs produced during model misbehavior, partly because large-scale, high-quality collections of frontier-LLM misbehavior are difficult to obtain. To address this gap, we introduce HarmProfile, a content-centric benchmark dataset that collects model misbehavior across diverse harm categories and model families, and defines the resulting harmful-output distribution as a model-level risk profile. The premise is that, just as linguistic behavior can be characterized from an utterance corpus, model risk can be characterized from the content, severity, and variation of its safety failures. HarmProfile contains over 80,000 validated artifacts from 23 frontier LLMs across 13 model families, organized into 15 harm categories and 57 subcategories. Using this corpus, we find that frontier LLMs reliably produce harmful content at scale, yet exhibit distinct risk profiles; both harmfulness and diversity grow with model capability, suggesting that frontier LLMs may appear safe yet harbor increa",
+          "pub_date": "2026-06-10T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -119,21 +134,6 @@
           "link": "https://arxiv.org/abs/2608.15089",
           "content": "Long-horizon agents can fail even when their underlying models can solve the constituent steps. They may lose track of mutable state, fail to reactivate lessons from earlier executions, skip known procedures, or stop prematurely. We bet on harness scaling to improve the execution system around an agent without changing its model weights. We introduce StateM, an agent-native runtime that organizes execution around durable states, phase-local context, checked transitions, recoverable runbooks, and versioned procedural practices that agents and users can inspect together. On Terminal-Bench 2.1, StateM raises GPT-5.5 xhigh to 92.1\\%, versus 83.1\\% reference and GPT-5.6 Sol Ultra at 91.9\\%. The runbook transfers unchanged to GPT-5.6. With GPT-5.6 Sol xhigh, StateM reaches 95.3\\% raw accuracy across 445 trials and succeeds on all 89 tasks at least once. The frozen profile raises GPT-5.6 Luna from 76.7 to 85.4\\%, above the 84.9\\% Sol xhigh reference. Using the same runtime, runbook structure, and golden rules, less than \\38 of adaptation raises DeepSeek-V4 Flash from 82.7 to 88.1% under standard timeouts and to 89.1% on an 88-task common core. Extending only the remaining latency-sensitiv",
           "pub_date": "2026-08-14T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 71,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "StreamOPD: A Post-Training Recipe with Spatio-Temporal Cue Gating for Streaming Video Understanding",
-          "link": "https://arxiv.org/abs/2608.16320",
-          "content": "Streaming video understanding demands direct responses from the causally observed prefix of an unfolding video. Existing systems add inference-time memory, retrieval, and compression, yet a training-free sliding-window baseline already matches them. We therefore fix a memory-free recent-window protocol and ask how far post-training alone can go. Reinforcement learning with verifiable rewards fits this regime poorly, encouraging long ``think-then-answer'' generations, while on-policy distillation (OPD) supplies dense token-level teacher supervision on student trajectories but is stable only when both models train in thinking mode. These observations lead to StreamOPD, a recipe combining verifiable streaming-video data, thinking-mode OPD, and instruct-mode deployment. It raises StreamingBench from 77.9% to 83.9%---within 0.3 points of the 9B teacher---and improves OVO-Bench excluding its hallucination-detection subtask (HLD) by 9.1 points under unchanged inference. As a teacher-privilege extension, Spatio-Temporal CueGate (ST-CueGate) aggregates cue-versus-no-cue teacher likelihood ratios into a group-relative response score that reweights OPD. It reaches 71.9% on OVO-Bench (excludin",
-          "pub_date": "2026-08-16T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -362,21 +362,6 @@
           "word_count": 218
         },
         {
-          "id": 1938,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Multi-antigen coronavirus vaccine induces potent and durable cross-protection against multiple SARS-CoV-2 variants",
-          "link": "https://www.nature.com/articles/s41541-026-01549-y",
-          "content": "npj Vaccines, Published online: 18 August 2026; doi:10.1038/s41541-026-01549-y Multi-antigen coronavirus vaccine induces potent and durable cross-protection against multiple SARS-CoV-2 variants",
-          "pub_date": "2026-08-18",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 193
-        },
-        {
           "id": 1885,
           "source": "Vaccine (journal)",
           "section": "vaccine",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 243
+        },
+        {
+          "id": 1582,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Opinion: 8 steps to making surrogacy more ethical for everyone involved",
+          "link": "https://www.statnews.com/2026/08/18/mckenna-west-surrogacy-laws-ethics/?utm_campaign=rss",
+          "content": "“Everything about the West case shows how miserably surrogacy has been managed in America,” writes Arthur Caplan.",
+          "pub_date": "Tue, 18 Aug 2026 08:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 113
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 479,
-      "total_valid": 315,
+      "total_valid": 314,
       "total_candidates": 15
     },
     "synbio": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2202,
+          "id": 2204,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 498
         },
         {
-          "id": 2226,
+          "id": 2235,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 466
         },
         {
-          "id": 2200,
+          "id": 2202,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 374
         },
         {
-          "id": 2224,
+          "id": 2226,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 329
         },
         {
-          "id": 2223,
+          "id": 2225,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 328
         },
         {
-          "id": 2222,
+          "id": 2224,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 319
         },
         {
-          "id": 2197,
+          "id": 2199,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 295
         },
         {
-          "id": 2190,
+          "id": 2192,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 261
         },
         {
-          "id": 2196,
+          "id": 2198,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 251
         },
         {
-          "id": 2193,
+          "id": 2195,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,22 @@
           "word_count": 989
         },
         {
-          "id": 2225,
+          "id": 2227,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "The Complete Guide to B2B Cross-Border Payments",
+          "link": "https://www.thunes.com/insights/learn/business-cross-border-payments/",
+          "content": "Efficient cross-border transactions are a pre-requisite for businesses to enter global markets and to scale across them.&#160;&#160; Yet cross-border payments can become more complex as they move between different financial institutions, currencies, compliance requirements and local payment systems. This can create longer settlement journeys, reduced visibility into payment status, additional costs and varying payment experiences ... Read more &#187; The post The Complete Guide to B2B Cross-Border Payments first appeared on Thunes.com .",
+          "pub_date": "Tue, 18 Aug 2026 16:32:30 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 542
+        },
+        {
+          "id": 2234,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 390,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "AeroCopilotBench: A Two-Tier Benchmark for Evaluating LLM Agents as Aviation Copilots in an Interactive Virtual Cockpit Environment",
-          "link": "https://arxiv.org/abs/2608.16349",
-          "content": "arXiv:2608.16349v1 Announce Type: new Abstract: Large language model (LLM) agents may assist flight crews with complex decisions and task execution, but existing aviation evaluations centered on static knowledge do not support systematic testing of procedural execution and safety compliance in interactive environments. This paper presents the AeroCopilot Operational Environment (ACOE), a reproducible interactive virtual-cockpit test environment, and AeroCopilotBench, a two-tier aviation agent evaluation benchmark. Tier-1 evaluates aviation knowledge using 1,200 multiple-choice questions, while Tier-2 comprises 73 emergency and abnormal tasks derived from the manufacturers' Pilot's Operating Handbooks (POHs) and instantiated in ACOE. ACOE converts natural-language procedures into executable state transitions, final-state goal conditions, and hard safety constraints, enabling models to interpret cockpit state, diagnose faults, and operate aircraft systems through standardized tool interfaces. We establish a safety-gated evaluation framework in which a trajectory succeeds only when all task goals are achieved without violating any hard safety constraint, while safe goal progress and t",
-          "pub_date": "Tue, 18 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 242,
-      "total_valid": 71,
+      "total_raw": 251,
+      "total_valid": 75,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2383,
-    "dup": 455,
+    "total_raw": 2392,
+    "dup": 461,
     "nocontent": 389,
     "noise": 4
   }
