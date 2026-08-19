@@ -50,7 +50,7 @@
           "word_count": 136
         },
         {
-          "id": 85,
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 440
         },
         {
-          "id": 84,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 204
         },
         {
-          "id": 83,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1108,
+          "id": 1110,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,22 @@
           "word_count": 1200
         },
         {
-          "id": 1089,
+          "id": 1108,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
+          "link": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
+          "content": "Research: smolmachines / smolvm as a sandbox for untrusted Python & JavaScript I tasked Claude Fable 5 running in Claude Code for web with the following research task: Put https://smolmachines.com through its paces as a fast secure sandbox. Explore what it would take to use this to run untrusted Python and JavaScript code in a way that is limited in what RAM and CPU time it can take up (protection against \"while true\") with no network access and filesystem access only to designated files Goal is to be able to use this to execute user-provided tasks for things like data transformations It quickly ran into a problem: the Claude Code for web environment can't run smol machines . Quoting the notes it wrote : This Claude Code container: Linux 6.18.5-fc-v20 (itself a Firecracker guest), 4 vCPU, 15GB RAM. No /dev/kvm, no vmx/svm CPU flags → no nested virt. smolvm machine run fails as expected: \"kvm not available\". Plan B: GitHub Actions ubuntu runners DO expose /dev/kvm → run the real test battery via a temporary workflow on this branch, collect logs, remove workflow in final commit. And Plan B is what it did , installing smolvm and running these tests directly in a GitHub Actions runner",
+          "pub_date": "2026-08-19T23:16:00+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 1090,
           "source": "Interconnects",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 75
-        },
-        {
-          "id": 125,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Margin-Regularized Structured Semantic Alignment for Brain-Language Correspondence",
-          "link": "https://arxiv.org/abs/2608.16975",
-          "content": "arXiv:2608.16975v1 Announce Type: new Abstract: With the rapid advancement of large language models, brain-language decoding has achieved remarkable progress. However, it remains unclear whether decoded content genuinely reflects neural representations or is largely reconstructed by the language model itself. This ambiguity limits interpretability and hinders the investigation of intrinsic brain-language correspondence. To address this challenge, we propose MD-SigLIP. This margin-regularized structured semantic alignment framework directly aligns brain embeddings with text embeddings in a shared semantic space, enabling retrieval-based decoding. This formulation enables explicit modeling of the correspondence between neural representations and language semantics. Building upon duplicate-aware sigmoid contrastive learning, we introduce a listwise margin-regularized term that enforces structured ranking constraints between positive semantic clusters and negative samples. By modeling multi-positive semantic structure and margin-based ordering simultaneously, the method captures the manifold organization of language embeddings reflected in neural signals. Experiments demonstrate state-",
-          "pub_date": "Wed, 19 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1215,
-      "total_valid": 936,
+      "total_raw": 1217,
+      "total_valid": 938,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1347,
+          "id": 1349,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 631
         },
         {
-          "id": 1434,
+          "id": 1436,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 500
         },
         {
-          "id": 1449,
+          "id": 1451,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 493
         },
         {
-          "id": 1641,
+          "id": 1643,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 395
         },
         {
-          "id": 1642,
+          "id": 1644,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 390
         },
         {
-          "id": 1625,
+          "id": 1627,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 357
         },
         {
-          "id": 1269,
+          "id": 1271,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 339
         },
         {
-          "id": 1351,
+          "id": 1353,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 314
         },
         {
-          "id": 1448,
+          "id": 1450,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 306
         },
         {
-          "id": 1640,
+          "id": 1642,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 272
         },
         {
-          "id": 1451,
+          "id": 1453,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 258
         },
         {
-          "id": 1417,
+          "id": 1419,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 231
         },
         {
-          "id": 1592,
+          "id": 1594,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 226
         },
         {
-          "id": 1460,
+          "id": 1462,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 206
         },
         {
-          "id": 1415,
+          "id": 1417,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1761,
+          "id": 1763,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 313
         },
         {
-          "id": 1723,
+          "id": 1725,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 187
         },
         {
-          "id": 1714,
+          "id": 1716,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 167
         },
         {
-          "id": 1715,
+          "id": 1717,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 146
         },
         {
-          "id": 1798,
+          "id": 1800,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 1799,
+          "id": 1801,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1199
         },
         {
-          "id": 1805,
+          "id": 1807,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1199
         },
         {
-          "id": 1744,
+          "id": 1746,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 631
         },
         {
-          "id": 1760,
+          "id": 1762,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 432
         },
         {
-          "id": 1743,
+          "id": 1745,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 372
         },
         {
-          "id": 1703,
+          "id": 1705,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 321
         },
         {
-          "id": 1749,
+          "id": 1751,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1760,
+          "id": 1762,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 432
         },
         {
-          "id": 1453,
+          "id": 1455,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 371
         },
         {
-          "id": 1270,
+          "id": 1272,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 366
         },
         {
-          "id": 1261,
+          "id": 1263,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 345
         },
         {
-          "id": 1272,
+          "id": 1274,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 326
         },
         {
-          "id": 1703,
+          "id": 1705,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 321
         },
         {
-          "id": 1450,
+          "id": 1452,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 283
         },
         {
-          "id": 1592,
+          "id": 1594,
           "source": "npj Vaccines",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 226
         },
         {
-          "id": 1460,
+          "id": 1462,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 206
         },
         {
-          "id": 1599,
+          "id": 1601,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1887,
+          "id": 1889,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 578
         },
         {
-          "id": 1832,
+          "id": 1835,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 558
         },
         {
-          "id": 1881,
+          "id": 1883,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 354
         },
         {
-          "id": 1852,
+          "id": 1854,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 316
         },
         {
-          "id": 1861,
+          "id": 1863,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 250
         },
         {
-          "id": 1856,
+          "id": 1858,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 212
         },
         {
-          "id": 1853,
+          "id": 1855,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 204
         },
         {
-          "id": 1847,
+          "id": 1849,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,22 @@
           "word_count": 202
         },
         {
-          "id": 1862,
+          "id": 80,
+          "source": "TechCrunch AI",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Stripe didn’t really buy OpenRouter because of the ‘singularity’",
+          "link": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
+          "content": "What does a payments giant want with a startup that routes prompts between different AI models? Stripe says it's because of \"the singularity\" but it's really for a far more real and powerful reason.",
+          "pub_date": "Wed, 19 Aug 2026 23:32:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 198
+        },
+        {
+          "id": 1864,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 196
         },
         {
-          "id": 1836,
+          "id": 1838,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 158
         },
         {
-          "id": 1837,
+          "id": 1839,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 150
         },
         {
-          "id": 1835,
+          "id": 1837,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 144
         },
         {
-          "id": 1885,
+          "id": 1887,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +1009,7 @@
           "word_count": 188
         },
         {
-          "id": 272,
+          "id": 273,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 605,
+          "id": 606,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 622,
+          "id": 623,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 660,
+          "id": 661,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 759,
+          "id": 760,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 902,
+          "id": 903,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 949,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "PRO-Bid: Pareto-Prioritized Regret Optimization for Constraint-Aware Generative Auto-Bidding",
-          "link": "https://arxiv.org/abs/2602.08261",
-          "content": "arXiv:2602.08261v2 Announce Type: replace Abstract: Auto-bidding systems strive to maximize marketing value while maintaining high compliance with efficiency constraints, such as Target Cost-Per-Action (CPA). While Decision Transformers offer powerful sequence modeling capabilities, their application to this setting faces two challenges: 1) standard Return-to-Go conditioning causes state aliasing by ignoring the cost dimension, preventing precise resource pacing; and 2) standard regression constrains the policy to mimic historical averages, limiting its capacity to optimize performance near the high-efficiency boundary. To tackle these challenges, we propose PRO-Bid, a constraint-aware generative auto-bidding framework featuring systematic redesigns across data, architecture, and training via two synergistic mechanisms: 1) Constraint-Decoupled Pareto Representation (CDPR) separates global constraints into recursive cost and value contexts to restore resource perception, while reweighting trajectories based on the empirical Pareto frontier to prioritize high-efficiency data; and 2) Counterfactual Regret Optimization (CRO) employs a global predictor to evaluate alternative actions an",
-          "pub_date": "Wed, 19 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,13 +1104,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 230,
-      "total_valid": 55,
+      "total_raw": 231,
+      "total_valid": 56,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2045,
+    "total_raw": 2047,
     "dup": 328,
     "nocontent": 393,
     "noise": 4
