@@ -100,10 +100,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "The Problem Is the Problem: Towards Scalable Mathematical Discovery",
-          "link": "https://arxiv.org/abs/2608.16977",
-          "content": "AI systems are increasingly capable of contributing to mathematical research. In research practice, frontier-model reasoning is a limited resource, and expert mathematical review is even more sharply constrained. Allocating these scarce resources well is therefore central to making AI-assisted mathematical discovery efficient. In most current AI-for-math workflows, human effort is concentrated at the beginning and end, in selecting suitable research problems and later reviewing the resulting artifacts. These two stages are becoming bottlenecks for research-level mathematics. We address them by proposing a new human-AI discovery paradigm. The human input is no longer a single problem selected in advance, but a research direction in which the experts have interest and expertise. The system then searches a broad literature corpus for candidate problems in that direction. Inspired by search and recommender systems, we build Find, Attempt, and Recommend (FAR), a literature-to-review cascade that automates the search for suitable problems and focuses human attention on artifacts that have passed several stages of filtering. In a combinatorics pilot, the pipeline starts from 5,245 combina",
-          "pub_date": "2026-08-16T20:00:00.000Z",
+          "title": "FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis",
+          "link": "https://arxiv.org/abs/2608.18580",
+          "content": "Training terminal agents requires scalable executable supervision, yet synthesizing high-quality terminal tasks remains challenging. Each task couples an instruction, an initialized environment, a reference solution, and an executable verifier; if these artifacts are generated from inconsistent assumptions, the resulting task may be unsolvable or incorrectly evaluated. Meanwhile, multi-stage synthesis can discard the goals, dependencies, state transitions, and procedural constraints encoded in the original sources. We present FACET (Fine-grained Agentic Construction of Executable Tasks), a framework that addresses both information preservation and cross-artifact consistency. FACET reconstructs related agent skills into coherent, information-rich scenarios, then realizes and repairs the execution environment before generating the final task artifacts. The resulting container state serves as shared grounding for the instruction, solution, and verifier, while execution-based validation and targeted repair correct artifact-specific failures without unnecessarily regenerating valid components. FACET produces complex terminal tasks with dense executable checks, and successful trajectorie",
+          "pub_date": "2026-08-18T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -115,25 +115,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents",
-          "link": "https://arxiv.org/abs/2608.17393",
-          "content": "Reinforcement learning for coding agents increasingly relies on long-running agent harnesses to manage tool integration, repository contexts, and execution feedback. However, the native execution environments of these harnesses are inherently misaligned with policy-gradient training: environmental crashes and reward hacking corrupt outcome signals, while train-inference discrepancies decouple rollout behavior from policy updates. To address this, we present LEGO-RL, a framework that bridges native coding-agent harnesses with scalable policy-gradient optimization without modifying their internal control flow. LEGO-RL is built upon three pillars: (1) faithful optimization via in-process LLM proxying that captures raw generation streams for token-level alignment and robust trainer-side log-probability recomputation, even under harness-side compaction or re-serialization; (2) reliable execution via scalable sandbox orchestration featuring image caching and stage-wise defenses to mitigate reward hacking; and (3) observable training through an integrated plugin that automates validation and monitoring, paired with a Live UI for granular trajectory diagnostics. We evaluate LEGO-RL by trai",
-          "pub_date": "2026-08-17T20:00:00.000Z",
+          "title": "The Problem Is the Problem: Towards Scalable Mathematical Discovery",
+          "link": "https://arxiv.org/abs/2608.16977",
+          "content": "AI systems are increasingly capable of contributing to mathematical research. In research practice, frontier-model reasoning is a limited resource, and expert mathematical review is even more sharply constrained. Allocating these scarce resources well is therefore central to making AI-assisted mathematical discovery efficient. In most current AI-for-math workflows, human effort is concentrated at the beginning and end, in selecting suitable research problems and later reviewing the resulting artifacts. These two stages are becoming bottlenecks for research-level mathematics. We address them by proposing a new human-AI discovery paradigm. The human input is no longer a single problem selected in advance, but a research direction in which the experts have interest and expertise. The system then searches a broad literature corpus for candidate problems in that direction. Inspired by search and recommender systems, we build Find, Attempt, and Recommend (FAR), a literature-to-review cascade that automates the search for suitable problems and focuses human attention on artifacts that have passed several stages of filtering. In a combinatorics pilot, the pipeline starts from 5,245 combina",
+          "pub_date": "2026-08-16T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CardioState-JEPA: Delay-Aware Cross-Modal Learning of a Shared Cardiac Representation",
-          "link": "https://arxiv.org/abs/2608.12944",
-          "content": "Electrocardiography (ECG), photoplethysmography (PPG), and phonocardiography (PCG) provide complementary views of the same cardiac cycle, yet existing cardiac foundation models are trained for a single sensing modality, leaving the shared physiology across sensors unexploited. We introduce CardioState-JEPA, a cardiac foundation model to learn a single shared representation jointly across ECG, PPG, and PCG, built on a physiology-aware joint-embedding predictive architecture. The model maps heterogeneous waveforms into a common token space, processes them with a single shared Transformer encoder, and learns by predicting masked latent cardiac states, placing the pretraining target on shared physiology rather than sensor-specific waveform appearance. To handle the temporal offsets between electrical, mechanical, and hemodynamic events, cross-modal prediction uses a learned delay aligner that matches signals at the corresponding cardiac time. Because synchronized multi-sensor recordings are scarce, CardioState-JEPA first learns within-modality structure from abundant unimodal data and then uses paired data to align modalities in latent cardiac time. Evaluated as a frozen encoder across",
-          "pub_date": "2026-08-12T20:00:00.000Z",
+          "title": "LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents",
+          "link": "https://arxiv.org/abs/2608.17393",
+          "content": "Reinforcement learning for coding agents increasingly relies on long-running agent harnesses to manage tool integration, repository contexts, and execution feedback. However, the native execution environments of these harnesses are inherently misaligned with policy-gradient training: environmental crashes and reward hacking corrupt outcome signals, while train-inference discrepancies decouple rollout behavior from policy updates. To address this, we present LEGO-RL, a framework that bridges native coding-agent harnesses with scalable policy-gradient optimization without modifying their internal control flow. LEGO-RL is built upon three pillars: (1) faithful optimization via in-process LLM proxying that captures raw generation streams for token-level alignment and robust trainer-side log-probability recomputation, even under harness-side compaction or re-serialization; (2) reliable execution via scalable sandbox orchestration featuring image caching and stage-wise defenses to mitigate reward hacking; and (3) observable training through an integrated plugin that automates validation and monitoring, paired with a Live UI for granular trajectory diagnostics. We evaluate LEGO-RL by trai",
+          "pub_date": "2026-08-17T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1215,
-      "total_valid": 938,
+      "total_valid": 939,
       "total_candidates": 12
     },
     "vaccine": {
@@ -377,21 +377,6 @@
           "word_count": 231
         },
         {
-          "id": 1578,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "mRNA delivery of <i>Plasmodium vivax</i> circumsporozoite protein fused to HBsAg virus-like particles elicits protective immunity in a malaria mouse model",
-          "link": "https://www.nature.com/articles/s41541-026-01558-x",
-          "content": "npj Vaccines, Published online: 19 August 2026; doi:10.1038/s41541-026-01558-x mRNA delivery of Plasmodium vivax circumsporozoite protein fused to HBsAg virus-like particles elicits protective immunity in a malaria mouse model",
-          "pub_date": "2026-08-19",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 226
-        },
-        {
           "id": 1447,
           "source": "Nature Biotech",
           "section": "vaccine",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 188
+        },
+        {
+          "id": 1448,
+          "source": "Nature Biotech",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Enhanced antitumor immunity of mRNA vaccines by bioorthogonal-like delayed activation of exogeneous STING",
+          "link": "https://www.nature.com/articles/s41587-026-03224-y",
+          "content": "Nature Biotechnology, Published online: 19 August 2026; doi:10.1038/s41587-026-03224-y mRNA vaccine efficacy is enhanced by delayed activation of a STING adjuvant.",
+          "pub_date": "2026-08-19",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 163
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 460,
-      "total_valid": 320,
+      "total_valid": 318,
       "total_candidates": 15
     },
     "synbio": {
@@ -731,21 +731,6 @@
           "word_count": 283
         },
         {
-          "id": 1578,
-          "source": "npj Vaccines",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "mRNA delivery of <i>Plasmodium vivax</i> circumsporozoite protein fused to HBsAg virus-like particles elicits protective immunity in a malaria mouse model",
-          "link": "https://www.nature.com/articles/s41541-026-01558-x",
-          "content": "npj Vaccines, Published online: 19 August 2026; doi:10.1038/s41541-026-01558-x mRNA delivery of Plasmodium vivax circumsporozoite protein fused to HBsAg virus-like particles elicits protective immunity in a malaria mouse model",
-          "pub_date": "2026-08-19",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 226
-        },
-        {
           "id": 1447,
           "source": "Nature Biotech",
           "section": "cross",
@@ -774,6 +759,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 67
+        },
+        {
+          "id": 1586,
+          "source": "Sci Transl Med",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "MAPT splicing modulators reduce 4R tau and rescue tauopathy phenotypes in human neurons and in a mouse model",
+          "link": "https://www.science.org/doi/abs/10.1126/scitranslmed.ady6759?af=R",
+          "content": "Science Translational Medicine, Volume 18, Issue 863 , August 2026.",
+          "pub_date": "2026-08-19T07:00:00Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 67
         }
       ],
       "quota": {
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 50,
-      "total_valid": 42,
+      "total_raw": 49,
+      "total_valid": 41,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1875,
+          "id": 1874,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -1104,13 +1104,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 238,
+      "total_raw": 237,
       "total_valid": 57,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2033,
+    "total_raw": 2032,
     "dup": 323,
     "nocontent": 390,
     "noise": 4
