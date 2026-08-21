@@ -20,7 +20,22 @@
           "word_count": 81
         },
         {
-          "id": 85,
+          "id": 72,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Anthropic’s Opus 4.6 is a smut-machine",
+          "link": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/",
+          "content": "Anthropic forbids its Claude models from generating sexually explicit content. But a series of tests conducted by TechCrunch found that it didn't take much to get past the restriction.",
+          "pub_date": "Fri, 21 Aug 2026 23:07:25 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 184
+        },
+        {
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +50,7 @@
           "word_count": 161
         },
         {
-          "id": 86,
+          "id": 87,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,22 +65,22 @@
           "word_count": 161
         },
         {
-          "id": 73,
-          "source": "TechCrunch AI",
+          "id": 57,
+          "source": "HuggingFace Daily Papers",
           "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
-          "link": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
-          "content": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
-          "pub_date": "Fri, 21 Aug 2026 19:43:39 +0000",
+          "tier": "T1",
+          "priority": 5,
+          "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+          "link": "https://arxiv.org/abs/2607.21596",
+          "content": "Large language model agents can adapt to complex tasks by constructing workflows at inference time, but procedures discovered in one episode are usually discarded after execution. Existing skill libraries provide reusable executable routines, but are typically assembled offline and do not grow from the agent's own workflows. We introduce FlowEvo, a training-free framework in which workflows and skills co-evolve at inference time. FlowEvo compiles successful workflows into callable skills, stores them in a persistent bank, and uses retrieved skills either through direct execution or as context for constructing new workflows. It also tracks each skill's downstream utility and suppresses skills that cause negative transfer. Using a shared GPT-4o-mini backbone, FlowEvo achieves the highest accuracy among 8 baselines on the full standard splits of ALFWorld, HumanEval, MBPP, GSM8K, and MATH-500. On ALFWorld, it reaches 85.6%, 26.4 points above the strongest baseline, while using roughly one third as many tokens. Across 10 base models spanning 7B to 671B parameters, FlowEvo outperforms ExpeL in 49 of 50 model-dataset comparisons. Code is available at https://github.com/DEFENSE-SEU/FlowEvo",
+          "pub_date": "2026-08-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 155
+          "word_count": 1200
         },
         {
-          "id": 58,
+          "id": 59,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 60,
+          "id": 61,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,22 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 61,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses",
-          "link": "https://arxiv.org/abs/2608.08466",
-          "content": "Modern LLM agents are often improved by modifying prompts, tools, or workflows manually, while the executable scaffold surrounding the model---the harness---is typically treated as a fixed artifact after deployment. This work studies an alternative where the harness is task-specific and continuously evolvable: each task family maintains its own harness, which is hot-swapped across iterations through a fixed task-injection seam and rewritten using environment feedback. We introduce Hierarchical Self-Improvement (HSI), a framework in which a single frozen LLM M operates across three hierarchical scopes: a task harness H that executes tasks, an evolver that rewrites H, and a meta-evolver that rewrites the evolver's strategy code under a frozen outer anchor. A thinking-on/off design isolates the contribution of harness evolution by disabling reasoning during task execution while enabling it during self-modification. HSI is bounded by two factors: a feedback-fidelity bound, since evolution requires informative reward signals to guide selection, and a backbone capability bound, since harness redesign cannot overcome limitations of the frozen model. On BALROG with DeepSeek-V4-Flash-Previe",
-          "pub_date": "2026-08-08T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 714,
+          "id": 715,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 753
         },
         {
-          "id": 715,
+          "id": 716,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 640
         },
         {
-          "id": 712,
+          "id": 713,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 401
         },
         {
-          "id": 120,
+          "id": 121,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 121,
+          "id": 122,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -190,8 +190,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 820,
-      "total_valid": 585,
+      "total_raw": 821,
+      "total_valid": 586,
       "total_candidates": 12
     },
     "vaccine": {
@@ -407,7 +407,7 @@
           "word_count": 261
         },
         {
-          "id": 821,
+          "id": 822,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 424,
-      "total_valid": 274,
+      "total_raw": 423,
+      "total_valid": 273,
       "total_candidates": 15
     },
     "synbio": {
@@ -709,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1418,
+          "id": 1417,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 512
         },
         {
-          "id": 1384,
+          "id": 1385,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 492
         },
         {
-          "id": 1385,
+          "id": 1386,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 475
         },
         {
-          "id": 1381,
+          "id": 1382,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,22 @@
           "word_count": 464
         },
         {
-          "id": 1388,
+          "id": 1380,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "One AI Agent, 2,395 Payments. Still No Final Say",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/one-ai-agent-2395-payments-still-no-final-say/",
+          "content": "Preparing a batch of payments used to mean a person checking each invoice, confirming it matched what was approved, and grouping everything by hand. Coupa just showed how much of that work software can now do on its own. The company’s Payment Batch Creation Agent ran 14 payment batches on its own, covering 2,395 individual [&#8230;] The post One AI Agent, 2,395 Payments. Still No Final Say appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 21 Aug 2026 23:12:32 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 423
+        },
+        {
+          "id": 1389,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 140
         },
         {
-          "id": 1434,
+          "id": 1433,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 103
         },
         {
-          "id": 1433,
+          "id": 1432,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 102
         },
         {
-          "id": 122,
+          "id": 123,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -889,7 +904,7 @@
           "word_count": 1200
         },
         {
-          "id": 181,
+          "id": 182,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -904,7 +919,7 @@
           "word_count": 1200
         },
         {
-          "id": 552,
+          "id": 553,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -919,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 674,
+          "id": 675,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +949,7 @@
           "word_count": 1199
         },
         {
-          "id": 1387,
+          "id": 1388,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -949,22 +964,7 @@
           "word_count": 525
         },
         {
-          "id": 1389,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "European Consumers’ Inflation Expectations Ease Despite Middle East War Uncertainty",
-          "link": "https://www.pymnts.com/economy/2026/european-consumers-inflation-expectations-ease-despite-middle-east-war-uncertainty/",
-          "content": "European consumers’ inflation expectations inched down in July, the European Central Bank said in a Friday (Aug. 21) press release. Consumers’ median expectations for inflation over the next 12 months decreased from 3.0% in June to 2.9% in July, while those for inflation three years ahead declined from 2.8% to 2.7%, according to the release. Their median expectations for inflation [&#8230;] The post European Consumers’ Inflation Expectations Ease Despite Middle East War Uncertainty appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 21 Aug 2026 16:21:55 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 517
-        },
-        {
-          "id": 1416,
+          "id": 1415,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 396
         },
         {
-          "id": 1407,
+          "id": 1406,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1014,13 +1014,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 222,
-      "total_valid": 44,
+      "total_raw": 221,
+      "total_valid": 43,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1597,
+    "total_raw": 1596,
     "dup": 301,
     "nocontent": 382,
     "noise": 7
