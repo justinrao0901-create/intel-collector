@@ -50,7 +50,7 @@
           "word_count": 135
         },
         {
-          "id": 78,
+          "id": 79,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 208
         },
         {
-          "id": 75,
+          "id": 76,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 191
         },
         {
-          "id": 91,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 181
         },
         {
-          "id": 61,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 62,
+          "id": 63,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 63,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -134,6 +134,21 @@
           "link": "https://arxiv.org/abs/2608.15964",
           "content": "Language-specific competency (LSC) is the phenomenon of a language model performing better or worse depending on the language of the prompt. In other words, a language model outputs different (and potentially incorrect) responses to the same semantic query when prompted in different languages. Prior work attributes this to an internal misalignment of semantic representation across languages. Currently, there are two main approaches to address LSC in the literature: (1) routing all queries through English, improving performance, but limiting language expressivity to English; or (2) training on language-balanced data, equalizing model performance across languages, but reducing overall performance. In this work, we take a data centric perspective and introduce HOTFIXR: Hardness Optimized Training data For Improving X-Lingual Reasoning. It is a data generation framework that uses models to probe and learn a student model's multilingual weaknesses, and generates data to mitigate them. HOTFIXR can generate multilingual synthetic training data that can improve multilingual performance. We evaluate on three in-distribution tasks, three out-of-distribution tasks, and four out-of-distributio",
           "pub_date": "2026-08-15T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 787,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "ChatGPT search now uses the site:operator at scale",
+          "link": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+          "content": "ChatGPT search now uses the site:operator at scale Promptwatch is part of the emerging \"GEO\" space, for Generative Engine Optimization - the chatbot version of SEO, where companies offer tools and consulting to help your site increase its presence in replies to prompts inside tools like ChatGPT. The Promptwatch product uses automation to track responses to prompts across end-user chat products like ChatGPT, Claude, and Gemini. They publish aggregate reports on this as part of their own content marketing strategy, which do seem to provide credible hints as to otherwise invisible design changes to those products. Their own tracking shows a notable change aligned with the GPT-5.6 rollout earlier this month: The percentage of all ChatGPT Search fanout queries that contain the site:operator, per day. The share hovered between 0.3% and 0.5% for weeks, dipped briefly to 0.15% on August 3 to 5 (consistent with a staged rollout or pre-launch experiment), then jumped to 16-17% on August 8. It's important to note that these figures only reflect the prompts for which they have automated tracking enabled. This corresponds to OpenAI's somewhat vague August 6th announcement : For Plus and Pro use",
+          "pub_date": "2026-08-20T23:57:32+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 126,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Persona-Guided LLM Agents for Task-Oriented Dialogue",
-          "link": "https://arxiv.org/abs/2608.18085",
-          "content": "arXiv:2608.18085v1 Announce Type: new Abstract: Prior work has shown that large language models (LLMs) can express diverse personality traits in open-ended text generation. However, it remains unclear whether they can do so in a goal-directed dialogue without compromising task completion, and whether adapting to the user's personality improves the interaction quality. We study these questions in task-oriented dialogue (TOD), where a system helps a user accomplish a goal via multi-turn interaction. We build a training-free framework that simulates a TOD interaction between two LLMs: a user agent that exhibits a target personality and a system agent that adapts to the user while completing the task. To isolate the effect of adaptation, we vary how much the system knows about the user's personality across three conditions. In Neutral, the system receives no personality information. In Try, it infers the personality from dialogue cues. In Oracle, it is given the personality explicitly. We evaluate GPT-4o, Qwen3-Next-80B, and Gemini 2.0 Flash on Hotel and Restaurant dialogues from the Schema-Guided Dialogue (SGD) dataset, across the Big Five traits and their opposite poles. We find that",
-          "pub_date": "Thu, 20 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 892,
-      "total_valid": 606,
+      "total_raw": 893,
+      "total_valid": 608,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1006,
+          "id": 1007,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 560
         },
         {
-          "id": 1009,
+          "id": 1010,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 506
         },
         {
-          "id": 1010,
+          "id": 1011,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 453
         },
         {
-          "id": 1041,
+          "id": 1042,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 446
         },
         {
-          "id": 1118,
+          "id": 1119,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 391
         },
         {
-          "id": 1148,
+          "id": 1149,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 353
         },
         {
-          "id": 1119,
+          "id": 1120,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 276
         },
         {
-          "id": 1263,
+          "id": 1260,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 226
         },
         {
-          "id": 1262,
+          "id": 1259,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 182
         },
         {
-          "id": 930,
+          "id": 931,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 174
         },
         {
-          "id": 934,
+          "id": 935,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 168
         },
         {
-          "id": 1261,
+          "id": 1258,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 167
         },
         {
-          "id": 1284,
+          "id": 1281,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 139
         },
         {
-          "id": 1092,
+          "id": 1093,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 118
         },
         {
-          "id": 1207,
+          "id": 1204,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 467,
-      "total_valid": 323,
+      "total_raw": 463,
+      "total_valid": 319,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1409,
+          "id": 1406,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 313
         },
         {
-          "id": 1396,
+          "id": 1393,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 144
         },
         {
-          "id": 1403,
+          "id": 1400,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 144
         },
         {
-          "id": 1436,
+          "id": 1433,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1437,
+          "id": 1434,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1438,
+          "id": 1435,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1420,
+          "id": 1417,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1418,
+          "id": 1415,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1159
         },
         {
-          "id": 1419,
+          "id": 1416,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1436,
+          "id": 1433,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 1437,
+          "id": 1434,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1440,
+          "id": 1437,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1005,
+          "id": 1006,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 596
         },
         {
-          "id": 1023,
+          "id": 1024,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 584
         },
         {
-          "id": 1010,
+          "id": 1011,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 453
         },
         {
-          "id": 951,
+          "id": 952,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 283
         },
         {
-          "id": 965,
+          "id": 966,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 242
         },
         {
-          "id": 969,
+          "id": 970,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 227
         },
         {
-          "id": 1263,
+          "id": 1260,
           "source": "npj Vaccines",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 46,
-      "total_valid": 38,
+      "total_raw": 43,
+      "total_valid": 35,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1509,
+          "id": 1506,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 534
         },
         {
-          "id": 1501,
+          "id": 1500,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 453
         },
         {
-          "id": 1505,
+          "id": 1504,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 447
         },
         {
-          "id": 1554,
+          "id": 1551,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 345
         },
         {
-          "id": 1528,
+          "id": 1525,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 343
         },
         {
-          "id": 1555,
+          "id": 1552,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 337
         },
         {
-          "id": 1531,
+          "id": 1528,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 267
         },
         {
-          "id": 1515,
+          "id": 1512,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 165
         },
         {
-          "id": 1511,
+          "id": 1508,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 160
         },
         {
-          "id": 1535,
+          "id": 1532,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 125
         },
         {
-          "id": 1551,
+          "id": 1548,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 103
         },
         {
-          "id": 1541,
+          "id": 1538,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 1506,
+          "id": 1505,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 513
         },
         {
-          "id": 1504,
+          "id": 1503,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1039,7 @@
           "word_count": 480
         },
         {
-          "id": 1499,
+          "id": 1498,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1065,8 +1065,8 @@
     }
   },
   "meta": {
-    "total_raw": 1725,
-    "dup": 348,
+    "total_raw": 1722,
+    "dup": 347,
     "nocontent": 386,
     "noise": 7
   }
