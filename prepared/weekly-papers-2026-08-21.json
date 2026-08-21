@@ -39,14 +39,14 @@
       "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
       "abstract": "LLM agents learn by interacting with environments, yet these environments are hand-built and static: blind to an agent's weaknesses, and quickly left behind as it improves. While recent environment generation methods attempt to address this, they require domain-specific pipelines, rely on expensive or unreliable verifiers, and still produce static environments. To alleviate the engineering burden of rebuilding environments from scratch, we propose Environment Harness (EnvHarness), a programmable layer of plug-in components that wraps a static environment to reshape its behavior without modifying the underlying logic. Operating through standard interfaces, EnvHarness applies across diverse domains while ensuring every reshaped environment retains its original verifier. To automate this process, we introduce EnvRigger, which treats the target policy as a black box, observing its execution trajectories to synthesize EnvHarness components targeting diagnosed flaws, and validating them via fresh rollouts. Across five benchmarks in four domains, EnvHarness outperforms both original environments and domain-specific environment generation pipelines, achieving up to a 9.0-point improvement ",
       "link": "https://arxiv.org/abs/2608.19880",
-      "upvotes": 186,
+      "upvotes": 196,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-08-19",
       "is_survey": false,
       "is_china": false,
-      "score": 558
+      "score": 588
     },
     {
       "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
@@ -69,7 +69,7 @@
       "link": "https://arxiv.org/abs/2608.14036",
       "upvotes": 156,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-13",
       "is_survey": true,
@@ -83,7 +83,7 @@
       "link": "https://arxiv.org/abs/2608.14144",
       "upvotes": 163,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-13",
       "is_survey": false,
@@ -97,7 +97,7 @@
       "link": "https://arxiv.org/abs/2608.17426",
       "upvotes": 153,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-17",
       "is_survey": false,
@@ -111,7 +111,7 @@
       "link": "https://arxiv.org/abs/2608.16072",
       "upvotes": 145,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-16",
       "is_survey": false,
@@ -217,6 +217,20 @@
       "score": 245
     },
     {
+      "title": "Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces (2025)",
+      "link": "https://arxiv.org/abs/2504.09762",
+      "hn_points": 244,
+      "id": "2504.09762",
+      "upvotes": 0,
+      "citations": null,
+      "abstract": "",
+      "source": "HN",
+      "pub": "2026-08-19",
+      "is_survey": false,
+      "is_china": false,
+      "score": 244
+    },
+    {
       "title": "GPU Offload in Rust: Portable, Safe, and Fast",
       "link": "https://arxiv.org/abs/2608.13759",
       "hn_points": 243,
@@ -229,20 +243,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 243
-    },
-    {
-      "title": "Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces (2025)",
-      "link": "https://arxiv.org/abs/2504.09762",
-      "hn_points": 239,
-      "id": "2504.09762",
-      "upvotes": 0,
-      "citations": null,
-      "abstract": "",
-      "source": "HN",
-      "pub": "2026-08-19",
-      "is_survey": false,
-      "is_china": false,
-      "score": 239
     },
     {
       "id": "2608.18580",
@@ -264,27 +264,27 @@
       "hn_points": 207,
       "id": "2608.16753",
       "upvotes": 0,
-      "citations": 2,
+      "citations": null,
       "abstract": "",
       "source": "HN+alphaXiv",
       "pub": "2026-08-19",
       "is_survey": false,
       "is_china": false,
-      "score": 208.0
+      "score": 207
     },
     {
       "id": "2608.11341",
       "title": "Apodex Discovery: Reality Benchmarks and Environments for Evaluating and Building Discoverative Artificial Intelligence",
       "abstract": "Apollo did not reach the Moon merely because its engineers could solve difficult equations. It succeeded by turning a distant ambition into a mission architecture of explicit objectives, simulation, verification, and repeated correction. AI now faces a similar transition: frontier models can solve difficult tasks once the problem, tools, and success criteria are specified, yet consequential real-world challenges rarely arrive in an executable or verifiable form. We introduce Apodex Discovery, a framework for building and evaluating discoverative AI through the heavy-duty solver, a system comprising a foundation model, harness, tools, and control policies that pursues extended, stateful, verifiable investigations. It has three core components. First, a problem-scouting process surveyed 561 industries across 16 sectors, assembled 423 high-value real-world problems, and selected 20 for the initial release. Second, a common environment-task-episode abstraction provides data, tools, constraints, feedback, trajectory recording, and verification of intermediate artifacts and final submissions. Third, HDS6 evaluates Tools, Repair, Alternatives, Coherence, Evidence, and Scope independently ",
       "link": "https://arxiv.org/abs/2608.11341",
-      "upvotes": 43,
+      "upvotes": 46,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-08-10",
       "is_survey": true,
       "is_china": false,
-      "score": 189
+      "score": 198
     },
     {
       "id": "2608.15669",
@@ -306,13 +306,13 @@
       "hn_points": 175,
       "id": "2510.01395",
       "upvotes": 0,
-      "citations": 15,
-      "abstract": "This work shows the pervasiveness and harmful impacts of sycophancy when people seek advice from AI, and suggests that people are drawn to AI that unquestioningly validate, even as that validation risks eroding their judgment and reducing their inclination toward prosocial behavior.",
+      "citations": null,
+      "abstract": "",
       "source": "HN",
       "pub": "2026-08-05",
       "is_survey": false,
       "is_china": false,
-      "score": 182.5
+      "score": 175
     },
     {
       "id": "2608.15265",
@@ -363,7 +363,7 @@
       "link": "https://arxiv.org/abs/2608.13417",
       "upvotes": 52,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-12",
       "is_survey": false,
@@ -376,8 +376,8 @@
       "hn_points": 152,
       "id": "2608.00146",
       "upvotes": 0,
-      "citations": 0,
-      "abstract": "DiffusionGemma, an experimental open-weight language model that uses discrete diffusion to generate text at exceptionally high speed, is introduced, establishing a new Pareto frontier for the trade-off between generation speed and model capability.",
+      "citations": null,
+      "abstract": "",
       "source": "HN",
       "pub": "2026-08-20",
       "is_survey": false,
@@ -433,7 +433,7 @@
       "link": "https://arxiv.org/abs/2608.17512",
       "upvotes": 46,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-17",
       "is_survey": false,
@@ -445,14 +445,14 @@
       "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
       "abstract": "Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of compromising not only program behavior but also the evidence underlying scientific conclusions. Yet existing evaluations of coding agents largely emphasize aggregate task success, providing limited insight into why agents fail when repairing scientific software. We introduce SWE-bench Science, a repository-level benchmark for scientific software engineering comprising 119 tasks from 98 GitHub repositories across 20 scientific domains. Each task is organized into one of three paradigms: Issue-driven, Expert-exploratory, and Engineering-integration. Even the best-performing agent, Claude Code with Opus-5 (max), achieves a pass@1 below 50\\%, highlighting the substantial challenges posed by scientific software engineering. We identify four recurring failure mechanisms: deficits in scientific knowledge or abstraction, misguided exploration or surface-level repair, incomplete repair coverage or system integration, and failures to generalize scientific knowledge beyond observed cases in our analysis. We further conduct a paired ablation that removes explicit scientifi",
       "link": "https://arxiv.org/abs/2608.19799",
-      "upvotes": 44,
+      "upvotes": 45,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily+alphaXiv+arXiv",
       "pub": "2026-08-19",
       "is_survey": false,
       "is_china": false,
-      "score": 132
+      "score": 135
     },
     {
       "id": "2608.14277",
@@ -611,7 +611,7 @@
     {
       "title": "Every Model Cheats",
       "link": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/",
-      "hn_points": 101,
+      "hn_points": 103,
       "id": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/",
       "upvotes": 0,
       "citations": null,
@@ -620,7 +620,7 @@
       "pub": "2026-08-20",
       "is_survey": false,
       "is_china": false,
-      "score": 101
+      "score": 103
     },
     {
       "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
