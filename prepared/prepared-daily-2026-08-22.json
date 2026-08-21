@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 715,
+          "id": 716,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 753
         },
         {
-          "id": 716,
+          "id": 717,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 640
         },
         {
-          "id": 713,
+          "id": 714,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -153,6 +153,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 401
+        },
+        {
+          "id": 699,
+          "source": "Latent Space",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Simulation: the new Scaling Law — Joon Sung Park, Simile AI",
+          "link": "https://www.latent.space/p/simile",
+          "content": "Simile&#8217;s CEO about his journey from the viral Generative Agents to creating 8 Billion Digital Twins of every living human... and why it&#8217;s gone from fun exploration to very serious business.",
+          "pub_date": "Fri, 21 Aug 2026 23:37:38 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 201
         },
         {
           "id": 121,
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 122,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Hallucination as a Feature, not a Defect: Evaluating a multi-agent architecture to transform speculative language-model outputs into testable scientific hypotheses",
-          "link": "https://arxiv.org/abs/2608.19206",
-          "content": "arXiv:2608.19206v1 Announce Type: new Abstract: Contemporary Large Language Models (LLMs) are increasingly aligned to suppress hallucinations, prioritizing factual retrieval over combinatorial creativity. While crucial for mitigating misinformation, this alignment may also restrict speculative Research and Development (R&D) by encouraging what this work operationally treats as semantic overfitting and diversity collapse. In this paper, we propose a Rust-based multi-agent orchestration that uses the contrast between narrative daydreaming and executive control as a functional analogy, not as a neurocognitive claim. The system instigates an Epistemological Friction loop between a high-entropy generating agent and a web-grounded evaluating agent, mediated by a low-entropy semantic bottleneck intended to reduce noise and repetition. Initial experiments generated diverse, viability-rated hypotheses across physical and social-science domains. We additionally report an exploratory paired baseline and ablation study comparing the full system against direct prompting, self-reflection, removal of the semantic filter, removal of search grounding, and removal of lateral lenses. The results plac",
-          "pub_date": "Fri, 21 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 821,
-      "total_valid": 586,
+      "total_raw": 822,
+      "total_valid": 587,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 962,
+          "id": 963,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 467
         },
         {
-          "id": 942,
+          "id": 943,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 445
         },
         {
-          "id": 963,
+          "id": 964,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 331
         },
         {
-          "id": 944,
+          "id": 945,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 320
         },
         {
-          "id": 1194,
+          "id": 1195,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 313
         },
         {
-          "id": 1187,
+          "id": 1188,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 200
         },
         {
-          "id": 1151,
+          "id": 1152,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 185
         },
         {
-          "id": 1150,
+          "id": 1151,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 184
         },
         {
-          "id": 852,
+          "id": 853,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 159
         },
         {
-          "id": 1169,
+          "id": 1170,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 149
         },
         {
-          "id": 1149,
+          "id": 1150,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 146
         },
         {
-          "id": 1142,
+          "id": 1143,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 421
         },
         {
-          "id": 1134,
+          "id": 1135,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 418
         },
         {
-          "id": 1086,
+          "id": 1087,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 261
         },
         {
-          "id": 822,
+          "id": 823,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1293,
+          "id": 1294,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 257
         },
         {
-          "id": 1297,
+          "id": 1298,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 201
         },
         {
-          "id": 1296,
+          "id": 1297,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 200
         },
         {
-          "id": 1313,
+          "id": 1314,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1314,
+          "id": 1315,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1315,
+          "id": 1316,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -536,7 +536,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1315,
+          "id": 1316,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 1200
         },
         {
-          "id": 1323,
+          "id": 1324,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 1200
         },
         {
-          "id": 1049,
+          "id": 1050,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 359
         },
         {
-          "id": 1194,
+          "id": 1195,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 313
         },
         {
-          "id": 1372,
+          "id": 1373,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 311
         },
         {
-          "id": 862,
+          "id": 863,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 217
         },
         {
-          "id": 897,
+          "id": 898,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 196
         },
         {
-          "id": 851,
+          "id": 852,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 188
         },
         {
-          "id": 1161,
+          "id": 1162,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 67
         },
         {
-          "id": 1007,
+          "id": 1008,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -709,7 +709,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1417,
+          "id": 1381,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Standard Chartered and HSBC Complete First Interbank Transaction on Swift’s Blockchain-Based Ledger",
+          "link": "https://www.pymnts.com/blockchain/2026/standard-chartered-and-hsbc-complete-first-interbank-transaction-on-swifts-blockchain-based-ledger/",
+          "content": "Standard Chartered and HSBC have completed the first interbank transaction executed on Swift’s blockchain-based ledger, Standard Chartered said in a Wednesday (Aug. 19) press release. This live cross-border transaction demonstrated interbank operability and helped advance industry progress on 24/7 cross-border payments, according to the release. By doing so, it marked a milestone in the use of tokenized deposits by regulated [&#8230;] The post Standard Chartered and HSBC Complete First Interbank Transaction on Swift&#8217;s Blockchain-Based Ledger appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 21 Aug 2026 23:42:50 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 584
+        },
+        {
+          "id": 1418,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +739,7 @@
           "word_count": 512
         },
         {
-          "id": 1385,
+          "id": 1387,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +754,7 @@
           "word_count": 492
         },
         {
-          "id": 1386,
+          "id": 1388,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 475
         },
         {
-          "id": 1382,
+          "id": 1384,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 464
         },
         {
-          "id": 1380,
+          "id": 1382,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,22 +799,7 @@
           "word_count": 423
         },
         {
-          "id": 1389,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Walmart Tap to Pay Rollout Begins Monday",
-          "link": "https://www.pymnts.com/news/payment-methods/2026/walmart-tap-to-pay-rollout-begins-monday/",
-          "content": "Walmart will soon begin rolling out tap to pay as a payment option at Walmart and Sam’s Club locations, the company said in a Friday (Aug. 21) press release. The retailer will begin enabling tap to pay at select stores and clubs on Monday (Aug. 24) and plans to roll it out to all U.S. [&#8230;] The post Walmart Tap to Pay Rollout Begins Monday appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 21 Aug 2026 17:09:27 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 376
-        },
-        {
-          "id": 1393,
+          "id": 1394,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 184
         },
         {
-          "id": 1391,
+          "id": 1392,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 154
         },
         {
-          "id": 1392,
+          "id": 1393,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 149
         },
         {
-          "id": 1396,
+          "id": 1397,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 140
         },
         {
-          "id": 1433,
+          "id": 1434,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 103
         },
         {
-          "id": 1432,
+          "id": 1433,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 1199
         },
         {
-          "id": 1388,
+          "id": 1390,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 525
         },
         {
-          "id": 1415,
+          "id": 1416,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 396
         },
         {
-          "id": 1406,
+          "id": 1407,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 352
         },
         {
-          "id": 1394,
+          "id": 1395,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1020,7 +1020,7 @@
     }
   },
   "meta": {
-    "total_raw": 1596,
+    "total_raw": 1597,
     "dup": 301,
     "nocontent": 382,
     "noise": 7
