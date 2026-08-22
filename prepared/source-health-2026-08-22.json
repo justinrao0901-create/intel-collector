@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 18,
+      "count": 17,
       "ok": true
     },
     "Sequoia Capital": {
@@ -245,13 +245,13 @@
       "section": "vaccine",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -359,7 +359,7 @@
       "section": "synbio",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "Absci Blog": {
       "section": "synbio",
@@ -424,7 +424,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 38,
+      "count": 36,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 8,
+      "count": 0,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -508,12 +508,14 @@
       "Import AI",
       "Microsoft AI Blog",
       "NEJM",
-      "NEJM AI",
+      "NEJM AI"
+    ],
+    "sudden_drop": [
+      "Thunes",
       "bioRxiv Immunology",
       "bioRxiv SynBio",
       "medRxiv Infectious"
     ],
-    "sudden_drop": [],
     "persistent_zero": [
       "Cointelegraph Payments",
       "Lancet Digital Health",
