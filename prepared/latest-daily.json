@@ -65,7 +65,7 @@
           "word_count": 122
         },
         {
-          "id": 76,
+          "id": 77,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 269
         },
         {
-          "id": 75,
+          "id": 76,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,22 +95,37 @@
           "word_count": 185
         },
         {
-          "id": 77,
+          "id": 73,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
           "priority": 4,
-          "title": "OpenAI is building AI agents for everything. Will everyone use them?",
-          "link": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
-          "content": "Inside the frontier lab’s push to bring AI agents from software engineers to the masses.",
-          "pub_date": "Mon, 24 Aug 2026 15:00:00 +0000",
+          "title": "Situational Awareness, star AI hedge fund that nearly imploded, now being probed by the SEC",
+          "link": "https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/",
+          "content": "The AI hedge fund went from \"the talk of Wall Street\" to \"subject of federal subpoenas\" faster than you can say \"diversify your portfolio.\"",
+          "pub_date": "Tue, 25 Aug 2026 00:23:12 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 88
+          "word_count": 139
         },
         {
           "id": 58,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "WorldMind: Decoupled Game World Model for State-Aware NPC Behavior",
+          "link": "https://arxiv.org/abs/2608.21439",
+          "content": "Game world models have recently demonstrated promising capabilities in generating visually coherent and action-controllable gameplay videos. However, non-player character (NPC) behavior in existing models is either implicitly entangled with video generation or explicitly prescribed through external control signals. Consequently, a game world model has to jointly understand the state, plan the NPC's response and render its visual outcome, limiting its ability to produce responsive and state-aware NPC behavior. The challenge lies in the lack of an explicit interface for state-grounded decision-making. To this end, we introduce WorldMind, to our knowledge the first decoupled framework for state-aware NPC behavior in game world models. WorldMind separates interactive world modeling into four layers: an Understanding Layer that constructs a compact state from generated frames; a Decision Layer that reasons over the compact state to plan the NPC's next action; a Control Layer that translates the actions into temporally aligned conditions; and a Generation Layer that synthesizes their visual outcomes. By reconnecting layers in a closed interaction loop, WorldMind grounds NPC behavior in t",
+          "pub_date": "2026-08-17T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 59,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 59,
+          "id": 60,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 62,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "ParaTempo: Efficient Parallel Reasoning via Temporal Confidence",
-          "link": "https://arxiv.org/abs/2608.16425",
-          "content": "Parallel reasoning improves the accuracy and robustness of large reasoning models by exploring multiple solution paths, but its computational cost grows with reasoning depth and branch count. Existing methods for managing these parallel paths typically rely on final-answer consensus, local token confidence, or isolated intermediate probes. However, these signals are often delayed, weakly tied to actual reasoning progress, or too noisy for dynamic, branch-level control. To address these limitations, we introduce ParaTempo, a training-free asynchronous parallel reasoning framework. ParaTempo is driven by temporal confidence, a branch-local measure of answer-space convergence. Each branch is periodically probed for a tentative answer probability distribution, and temporal confidence quantifies how sharply the recent intermediate probes concentrate on a dominant answer. Once sufficient evidence has accumulated, ParaTempo drives its entire control process from this single signal: low-confidence branches are pruned, branches that persistently commit to their dominant answer are retired early, freed computation is reallocated by forking new branches, and generation stops globally once the",
-          "pub_date": "2026-08-17T07:24:46.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 753,
+          "id": 754,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 597
         },
         {
-          "id": 110,
+          "id": 111,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 860,
-      "total_valid": 500,
+      "total_raw": 861,
+      "total_valid": 502,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1020,
+          "id": 1021,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 433
         },
         {
-          "id": 1214,
+          "id": 1215,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 372
         },
         {
-          "id": 1019,
+          "id": 1020,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 371
         },
         {
-          "id": 1169,
+          "id": 1170,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 228
         },
         {
-          "id": 1172,
+          "id": 1173,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 216
         },
         {
-          "id": 1170,
+          "id": 1171,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 212
         },
         {
-          "id": 1157,
+          "id": 1158,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 322
         },
         {
-          "id": 1099,
+          "id": 1100,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 313
         },
         {
-          "id": 1103,
+          "id": 1104,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 250
         },
         {
-          "id": 863,
+          "id": 864,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 202
         },
         {
-          "id": 874,
+          "id": 875,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 150
         },
         {
-          "id": 1237,
+          "id": 1238,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 139
         },
         {
-          "id": 869,
+          "id": 870,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 129
         },
         {
-          "id": 872,
+          "id": 873,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 116
         },
         {
-          "id": 1184,
+          "id": 1185,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1302,
+          "id": 1303,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 224
         },
         {
-          "id": 1291,
+          "id": 1292,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 215
         },
         {
-          "id": 1312,
+          "id": 1313,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 1345,
+          "id": 1346,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1347,
+          "id": 1348,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1349,
+          "id": 1350,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1355,
+          "id": 1356,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 546
         },
         {
-          "id": 1316,
+          "id": 1317,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 381
         },
         {
-          "id": 1273,
+          "id": 1274,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 310
         },
         {
-          "id": 1272,
+          "id": 1273,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 281
         },
         {
-          "id": 1274,
+          "id": 1275,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 221
         },
         {
-          "id": 1323,
+          "id": 1324,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1349,
+          "id": 1350,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1351,
+          "id": 1352,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1355,
+          "id": 1356,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 546
         },
         {
-          "id": 1363,
+          "id": 1364,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 517
         },
         {
-          "id": 1316,
+          "id": 1317,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 381
         },
         {
-          "id": 1214,
+          "id": 1215,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 372
         },
         {
-          "id": 1213,
+          "id": 1214,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 350
         },
         {
-          "id": 1365,
+          "id": 1366,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 329
         },
         {
-          "id": 1273,
+          "id": 1274,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 310
         },
         {
-          "id": 1272,
+          "id": 1273,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1401,
+          "id": 1402,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 662
         },
         {
-          "id": 1402,
+          "id": 1403,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 554
         },
         {
-          "id": 1376,
+          "id": 1378,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,52 +844,7 @@
           "word_count": 457
         },
         {
-          "id": 1380,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "No Discount Survives an AI That Can’t See It",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/no-discount-survives-an-ai-that-cant-see-it/",
-          "content": "Loyalty benefits used to show up at checkout: a card swiped, a code entered, a discount applied after the decision was already made. That moment is moving earlier, into the conversation where an artificial intelligence agent is still deciding where to buy. Synchrony announced an enterprise collaboration with OpenAI on Aug. 17 to power what [&#8230;] The post No Discount Survives an AI That Can’t See It appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 24 Aug 2026 17:32:37 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 436
-        },
-        {
-          "id": 1422,
-          "source": "Payments Cards & Mobile",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "HSBC and Standard Chartered complete live Swift Blockchain Ledger transaction",
-          "link": "https://paymentsindustryintelligence.com/hsbc-and-standard-chartered-complete-live-swift-blockchain-ledger-transaction/",
-          "content": "HSBC and Standard Chartered have completed the first live interbank tokenised deposit transaction using Swift’s blockchain-based ledger, marking another step towards integrating digital money into established banking infrastructure. The transaction... read more The post HSBC and Standard Chartered complete live Swift Blockchain Ledger transaction appeared first on Payments Industry Intelligence .",
-          "pub_date": "Mon, 24 Aug 2026 18:24:52 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 399
-        },
-        {
-          "id": 1421,
-          "source": "Payments Cards & Mobile",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Crypto card spending tops $1bn as Stablecoins move into everyday payments",
-          "link": "https://paymentsindustryintelligence.com/crypto-card-spending-tops-1bn/",
-          "content": "Cryptocurrency-funded card spending has more than tripled over the past year topping $1bn, offering further evidence that stablecoins are moving beyond trading and cross-border transfers into everyday consumer payments. Monthly... read more The post Crypto card spending tops $1bn as Stablecoins move into everyday payments appeared first on Payments Industry Intelligence .",
-          "pub_date": "Mon, 24 Aug 2026 18:40:03 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 374
-        },
-        {
-          "id": 1396,
+          "id": 1397,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,22 +859,7 @@
           "word_count": 350
         },
         {
-          "id": 1423,
-          "source": "Payments Cards & Mobile",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Revolut applies for Banking Licence in Finland",
-          "link": "https://paymentsindustryintelligence.com/revolut-applies-for-banking-licence-in-finland/",
-          "content": "Revolut has applied to establish a licensed banking branch in Finland, as the digital bank pushes deeper into domestic European markets and seeks to become the primary financial provider for... read more The post Revolut applies for Banking Licence in Finland appeared first on Payments Industry Intelligence .",
-          "pub_date": "Mon, 24 Aug 2026 18:23:06 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 310
-        },
-        {
-          "id": 1395,
+          "id": 1396,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +874,7 @@
           "word_count": 281
         },
         {
-          "id": 1398,
+          "id": 1399,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +889,7 @@
           "word_count": 247
         },
         {
-          "id": 1388,
+          "id": 1389,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +904,7 @@
           "word_count": 158
         },
         {
-          "id": 1381,
+          "id": 1382,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +919,7 @@
           "word_count": 142
         },
         {
-          "id": 1382,
+          "id": 1383,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +934,7 @@
           "word_count": 140
         },
         {
-          "id": 112,
+          "id": 113,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 303,
+          "id": 304,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 316,
+          "id": 317,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 333,
+          "id": 334,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 352,
+          "id": 353,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 369,
+          "id": 370,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 385,
+          "id": 386,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1097,6 +1037,66 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 220,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Language Shapes Instruction Hierarchy Compliance in Multilingual LLMs",
+          "link": "https://arxiv.org/abs/2607.23545",
+          "content": "arXiv:2607.23545v2 Announce Type: replace Abstract: Instruction hierarchy (IH) requires models to prioritize instructions by source, ensuring that higher-priority instructions override lower-priority ones. Despite its importance for safe and controllable deployment, existing evaluations have focused almost exclusively on English, leaving it unclear whether IH compliance remains stable in multilingual settings. We introduce XIH-Bench, a benchmark for multilingual IH evaluation with both same-language and cross-language conflicts across six languages, four domains, and three IH settings. Across models, we find two consistent patterns. First, IH compliance exhibits a clear language-dependent asymmetry: a language that strengthens compliance in the higher-priority position can become disruptive in the lower-priority position. Second, cross-language conflicts yield higher compliance than same-language conflicts, a phenomenon we term the Language Boundary Effect. We further show that language specialization can make lower-priority instructions in model-favored languages harder to override, creating multilingual reliability and security risks.",
+          "pub_date": "Mon, 24 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1154
+        },
+        {
+          "id": 180,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Move by Move: Measuring and Steering How LLMs Conduct Psychotherapy",
+          "link": "https://arxiv.org/abs/2608.21325",
+          "content": "arXiv:2608.21325v1 Announce Type: new Abstract: Users increasingly turn to large language models for emotional support, yet little is known about how these models actually conduct a psychotherapy interaction. We introduce an ontology of ten therapeutic moves: compact, function-based categories grounded in the MULTI-60 inventory, validated through an annotation campaign with five licensed psychologists, and scaled with a judge-based approach that matches expert agreement. Applying it to real counseling transcripts and model-led sessions, we compare the move distributions between human clinicians and a panel of frontier models. Models over-use inquiry at up to three times the human rate, neglect psychoeducation, and are strongly context-anchored: they carry forward strategies initiated by a human clinician but rarely initiate them themselves. Exposing the ontology as a set of tools roughly halves the mean deviation from the human move distribution and improves turn-level alignment with human therapist by 7-9 percentage points, without any fine-tuning.",
+          "pub_date": "Mon, 24 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1065
+        },
+        {
+          "id": 1379,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Australian Businesses Favor AI for Back-Office Tasks Over Software Building",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/australian-businesses-favor-ai-for-back-office-tasks-over-software-building/",
+          "content": "Anthropic’s customers in Australia, who have been among the leading adopters of the company’s Claude artificial intelligence (AI) model, tend to use the tool for back-office tasks, the company’s country head said Monday (Aug. 24), Bloomberg reported. Speaking at a National Australia Bank Ltd. event, Theo Hourmouzis, general manager for Australia and New Zealand at Anthropic, said the share [&#8230;] The post Australian Businesses Favor AI for Back-Office Tasks Over Software Building appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 24 Aug 2026 19:45:49 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 518
+        },
+        {
+          "id": 1372,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Amazon Envisions Next-Generation Automated Stations to Process Packages 2.5 Times Faster",
+          "link": "https://www.pymnts.com/amazon/2026/amazon-envisions-next-generation-automated-stations-to-process-packages-2-5-times-faster/",
+          "content": "Amazon is developing an automated delivery-station concept that could process packages at about 2.5 times the rate of the company’s existing delivery stations, Seeking Alpha reported Monday (Aug. 24), citing a paywalled article by Business Insider. This initiative, known internally as Project Tetromino, aims to use artificial intelligence and robotics to automate work such as [&#8230;] The post Amazon Envisions Next-Generation Automated Stations to Process Packages 2.5 Times Faster appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 25 Aug 2026 00:54:49 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 517
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 221,
-      "total_valid": 52,
+      "total_raw": 226,
+      "total_valid": 49,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1582,
-    "dup": 395,
+    "total_raw": 1588,
+    "dup": 402,
     "nocontent": 377,
     "noise": 6
   }
