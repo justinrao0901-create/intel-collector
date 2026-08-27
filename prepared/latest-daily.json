@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 53,
+          "id": 52,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 149
         },
         {
-          "id": 38,
+          "id": 37,
           "source": "Google DeepMind",
           "section": "ai",
           "tier": "T1",
@@ -95,6 +95,21 @@
           "word_count": 198
         },
         {
+          "id": 80,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Amazon just tripled its order of Nvidia chips over ‘surging demand’",
+          "link": "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/",
+          "content": "Amazon is adding another 2 million Nvidia GPU chips to its data centers over the next two years. But this extended partnerships stretches beyond buying more chips.",
+          "pub_date": "Wed, 26 Aug 2026 23:47:18 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 163
+        },
+        {
           "id": 91,
           "source": "TechCrunch AI",
           "section": "ai",
@@ -110,19 +125,19 @@
           "word_count": 154
         },
         {
-          "id": 88,
-          "source": "TechCrunch AI",
+          "id": 65,
+          "source": "HuggingFace Daily Papers",
           "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Surprise: Z.ai is the AI lab behind the mysterious Ox Alpha model",
-          "link": "https://techcrunch.com/2026/08/26/surprise-z-ai-is-the-ai-lab-behind-the-mysterious-ox-alpha-model/",
-          "content": "Z.ai confirms it is behind Ox Alpha, the mysterious open AI model topping benchmarks and leaderboards, and its weights are set to be released soon.",
-          "pub_date": "Wed, 26 Aug 2026 14:19:29 +0000",
+          "tier": "T1",
+          "priority": 5,
+          "title": "MARS: Multi-Specialist LLM Relay System for Competitive Programming",
+          "link": "https://arxiv.org/abs/2608.23918",
+          "content": "Large Language Models excel at code generation, yet competitive programming exposes a persistent failure mode: existing multi-agent pipelines distribute work over generic planner, coder, and debugger roles and delegate the choice of algorithmic technique to the backbone alone. We present MARS (Multi-Agent Relay of Specialized LLMs), a prompt-only framework in which each agent is a topic specialist---dynamic programming, graphs, strings, geometry, and so on---grounded by retrieval-augmented generation over an algorithm-theory corpus. Given a problem, retrieval selects a small team of relevant specialists; a starter writes an initial C++17 solution, and each subsequent turn runs the candidate against public examples in a sandbox, lets the active specialist keep, repair, or hand off the draft, and forwards a structured packet to the next specialist. A single infrastructure-fixer pass normalizes boilerplate at the end. On the CodeContests test split with Gemma 4, MARS reaches 0.624 pm 0.006 pass rate at 2.3 recorded pipeline stages per task (+14.4 percentage points over direct prompting), closing most of the gap to CodeSIM (0.731) at 3.3{times} lower wall-clock cost and substantially s",
+          "pub_date": "2026-08-23T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 147
+          "word_count": 1200
         },
         {
           "id": 66,
@@ -155,22 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation",
-          "link": "https://arxiv.org/abs/2608.21500",
-          "content": "Prompt injection is listed as the \\#1 threat to AI agents. When an agent accesses external data from websites, files, or emails, an attacker may inject a prompt into the data, saying, \"Ignore all prior instructions and perform .\" To prevent arbitrary manipulation of agents, defenders try to train secure LLMs, which, however, still suffer from near 100% attack success rates (ASRs) against adaptive prompt injections. We note that this is because existing defensive finetuning recipes rely on sequence-level feedback signals (in DPO or GRPO). Treating an entire output equally prevents the model from learning precisely which output tokens are insecure. In this paper, we propose Secure On-Policy Distillation (SecOPD) that provides token-level feedback to guide defensive fine-tuning. The LLM receives an injected sample and produces a rollout, whose tokens are scored by the initialization model given the corresponding clean input. With more fine-grained training signals, our defended Qwen3.6-27B achieves a 9.0% ASR against the SoTA PISmith adaptive prompt injections, compared to 94.0% for the prior SoTA, Meta-SecAlign. The obtained security generalizes to domains completely unseen in traini",
-          "pub_date": "2026-08-20T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 937,
+          "id": 936,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1043,
-      "total_valid": 660,
+      "total_raw": 1041,
+      "total_valid": 661,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1196,
+          "id": 1185,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 389
         },
         {
-          "id": 1281,
+          "id": 1269,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 315
         },
         {
-          "id": 1092,
+          "id": 1089,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 294
         },
         {
-          "id": 1241,
+          "id": 1229,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 257
         },
         {
-          "id": 1274,
+          "id": 1262,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 232
         },
         {
-          "id": 1268,
+          "id": 1256,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 231
         },
         {
-          "id": 1085,
+          "id": 1082,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 226
         },
         {
-          "id": 1120,
+          "id": 1117,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 210
         },
         {
-          "id": 1277,
+          "id": 1265,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 182
         },
         {
-          "id": 1449,
+          "id": 1426,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 67
         },
         {
-          "id": 1453,
+          "id": 1430,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 67
         },
         {
-          "id": 1437,
+          "id": 1414,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 256
         },
         {
-          "id": 1382,
+          "id": 1359,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 230
         },
         {
-          "id": 1373,
+          "id": 1350,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 226
         },
         {
-          "id": 1048,
+          "id": 1046,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 494,
-      "total_valid": 336,
+      "total_raw": 468,
+      "total_valid": 322,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1625,
+          "id": 1590,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1628,
+          "id": 1593,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 1629,
+          "id": 1594,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1648,
+          "id": 1613,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 435
         },
         {
-          "id": 1579,
+          "id": 1551,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 206
         },
         {
-          "id": 1588,
+          "id": 1560,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 200
         },
         {
-          "id": 1592,
+          "id": 1564,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 406
         },
         {
-          "id": 1618,
+          "id": 1583,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 385
         },
         {
-          "id": 1549,
+          "id": 1521,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 364
         },
         {
-          "id": 1547,
+          "id": 1519,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 345
         },
         {
-          "id": 1548,
+          "id": 1520,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 298
         },
         {
-          "id": 1603,
+          "id": 1574,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 118,
+      "total_raw": 111,
       "total_valid": 28,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1627,
+          "id": 1592,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1186,
+          "id": 1176,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 446
         },
         {
-          "id": 1648,
+          "id": 1613,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 435
         },
         {
-          "id": 1197,
+          "id": 1186,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 427
         },
         {
-          "id": 1189,
+          "id": 1179,
           "source": "Cell Host Microbe",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 401
         },
         {
-          "id": 1549,
+          "id": 1521,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 364
         },
         {
-          "id": 1104,
+          "id": 1101,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 352
         },
         {
-          "id": 1547,
+          "id": 1519,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 345
         },
         {
-          "id": 1095,
+          "id": 1092,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 328
         },
         {
-          "id": 1548,
+          "id": 1520,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1706,
+          "id": 1671,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 988
         },
         {
-          "id": 1740,
+          "id": 1698,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -829,22 +829,7 @@
           "word_count": 581
         },
         {
-          "id": 1676,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Paysafe Teams With FastSpring on Merchant of Record Solution",
-          "link": "https://www.pymnts.com/partnerships/2026/paysafe-teams-with-fastspring-on-merchant-of-record-solution/",
-          "content": "Payments platform Paysafe has launched a partnership with Merchant of Record service provider FastSpring. The collaboration, announced Wednesday (Aug. 26), has yielded the launch of Paysafe’s new Merchant of Record (MoR) solution, designed to help businesses sell globally without needing to handle many of the operational, regulatory and administrative requirements that come with direct merchant [&#8230;] The post Paysafe Teams With FastSpring on Merchant of Record Solution appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 26 Aug 2026 18:44:10 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 508
-        },
-        {
-          "id": 1669,
+          "id": 1636,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 472
         },
         {
-          "id": 1694,
+          "id": 1659,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 320
         },
         {
-          "id": 1699,
+          "id": 1664,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 314
         },
         {
-          "id": 1697,
+          "id": 1662,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 236
         },
         {
-          "id": 1700,
+          "id": 1665,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 229
         },
         {
-          "id": 1702,
+          "id": 1667,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 224
         },
         {
-          "id": 1678,
+          "id": 1643,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 154
         },
         {
-          "id": 1681,
+          "id": 1646,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 115
         },
         {
-          "id": 1679,
+          "id": 1644,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 107
         },
         {
-          "id": 1739,
+          "id": 1697,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +979,7 @@
           "word_count": 137
         },
         {
-          "id": 163,
+          "id": 162,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 277,
+          "id": 276,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 330,
+          "id": 329,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 433,
+          "id": 432,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 440,
+          "id": 439,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 497,
+          "id": 496,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 556,
+          "id": 555,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1097,6 +1082,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 609,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution",
+          "link": "https://arxiv.org/abs/2607.08960",
+          "content": "arXiv:2607.08960v2 Announce Type: replace-cross Abstract: Warehouse operations are governed by Standard Operating Procedures (SOPs) that encode complex, multi-system decision logic, which must be executed reliably under strict time constraints, yet LLM agents lack mechanisms to enforce procedural compliance and degrade under the context overload full SOP specifications introduce. We present Eluna, a production-deployed agentic system for reliable SOP execution. Eluna is a graph-guided, multi-agent framework that encodes SOPs as directed acyclic graphs with progressive disclosure and delegates independent tasks to parallel sub-agents, each with persistent code execution and live data access. To meet production latency and accuracy needs, we use asymmetric episodic distillation where a strong teacher is improved through episodic error memories, then a smaller student is fine-tuned on the corrected trajectories with memory stripped, internalizing corrections without inference-time overhead. On a 13-task benchmark and two production applications, our fine-tuned models match or exceed their teacher, beat all larger off-the-shelf baselines, and reach 94% expert agreement on the ticket pr",
+          "pub_date": "Wed, 26 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 245,
+      "total_raw": 238,
       "total_valid": 63,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1899,
-    "dup": 436,
-    "nocontent": 387,
+    "total_raw": 1857,
+    "dup": 409,
+    "nocontent": 384,
     "noise": 8
   }
 }
