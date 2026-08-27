@@ -70,7 +70,7 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 163,
+      "count": 182,
       "ok": true
     },
     "arXiv cs.AI": {
@@ -82,7 +82,7 @@
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 277,
+      "count": 308,
       "ok": true
     },
     "Import AI": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 14,
+      "count": 13,
       "ok": true
     },
     "WHO News": {
@@ -394,8 +394,8 @@
     "NEJM AI": {
       "section": "cross",
       "method": "rss",
-      "count": 6,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Methods": {
       "section": "cross",
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 7,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -505,11 +505,10 @@
       "ACS Synthetic Biology",
       "Absci Blog",
       "ClinicalTrials.gov",
-      "Import AI"
+      "Import AI",
+      "NEJM AI"
     ],
-    "sudden_drop": [
-      "Thunes"
-    ],
+    "sudden_drop": [],
     "persistent_zero": [
       "NEJM",
       "WHO News"
