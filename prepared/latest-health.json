@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 16,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 14,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 20,
+      "count": 19,
       "ok": true
     },
     "WHO News": {
@@ -173,7 +173,7 @@
       "section": "vaccine",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "The Lancet": {
       "section": "vaccine",
@@ -394,8 +394,8 @@
     "NEJM AI": {
       "section": "cross",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 6,
+      "ok": true
     },
     "Nature Methods": {
       "section": "cross",
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 7,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -505,14 +505,11 @@
       "ACS Synthetic Biology",
       "Absci Blog",
       "ClinicalTrials.gov",
-      "Import AI",
-      "NEJM",
-      "NEJM AI"
+      "Import AI"
     ],
-    "sudden_drop": [
-      "Thunes"
-    ],
+    "sudden_drop": [],
     "persistent_zero": [
+      "NEJM",
       "WHO News"
     ]
   }
