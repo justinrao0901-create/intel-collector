@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "MARS: Multi-Specialist LLM Relay System for Competitive Programming",
-          "link": "https://arxiv.org/abs/2608.23918",
-          "content": "Large Language Models excel at code generation, yet competitive programming exposes a persistent failure mode: existing multi-agent pipelines distribute work over generic planner, coder, and debugger roles and delegate the choice of algorithmic technique to the backbone alone. We present MARS (Multi-Agent Relay of Specialized LLMs), a prompt-only framework in which each agent is a topic specialist---dynamic programming, graphs, strings, geometry, and so on---grounded by retrieval-augmented generation over an algorithm-theory corpus. Given a problem, retrieval selects a small team of relevant specialists; a starter writes an initial C++17 solution, and each subsequent turn runs the candidate against public examples in a sandbox, lets the active specialist keep, repair, or hand off the draft, and forwards a structured packet to the next specialist. A single infrastructure-fixer pass normalizes boilerplate at the end. On the CodeContests test split with Gemma 4, MARS reaches 0.624 pm 0.006 pass rate at 2.3 recorded pipeline stages per task (+14.4 percentage points over direct prompting), closing most of the gap to CodeSIM (0.731) at 3.3{times} lower wall-clock cost and substantially s",
-          "pub_date": "2026-08-23T20:00:00.000Z",
+          "title": "V-Rubrics: Visual Faithfulness via Rubric-Based Reinforcement Learning",
+          "link": "https://arxiv.org/abs/2608.25580",
+          "content": "Vision-language models can produce fluent answers that are insufficiently grounded in the visual evidence: a single unsupported object, chart value, or intermediate inference can undermine an otherwise plausible response. We argue that this is a credit-assignment failure in multimodal post-training. Scalar outcome rewards indicate whether an answer is acceptable, but do not identify which visual facts are grounded, which reasoning steps are valid, or which instruction constraints are missed. We introduce Visual Rubrics-Based Reinforcement Learning, which decomposes reference responses into atomic propositions and scores generated answers along Visual Faithfulness (VF), Reasoning Consistency (RC), and Instruction Following (IF). The resulting rubric items provide structured partial credit and localize rubric credit when supporting evidence spans are available. We first obtain an SFT checkpoint by fine-tuning Qwen3-VL-8B-Instruct on the public OpenMMReasoner-SFT-874K corpus, adapting OpenMMReasoner's cold-start data recipe. We construct V-Rubrics 50K, a 50,248-example training set from 17 visually grounded sources, by applying rule-based filters before deriving example difficulty fro",
+          "pub_date": "2026-08-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "When \"Must\" Becomes \"Maybe\": Constraint Weakening in LLM Agent Workflows",
-          "link": "https://arxiv.org/abs/2608.24569",
-          "content": "Large language model (LLM) agents coordinate complex tasks through multi-role and multi-stage workflows. Upstream state is repeatedly transformed into intermediate language artifacts, such as summaries, plans, tickets, memories, and handoff notes, from which downstream components act. For action-constraining state, topical retention is insufficient: an artifact may mention an unresolved condition while changing it from a requirement that must be resolved before execution into information that may merely inform the next action. We study this action-binding role as operational state preservation. Safety blockers provide a controlled instance because each source state has an explicit prerequisite, authority, fallback, and execution consequence. We condition on correct upstream identification, vary the handoff transformation, and evaluate an executor restricted to the resulting artifact. Across 1,296 controlled synthetic episodes, direct-handoff controls preserve every blocker, whereas compression, plan assimilation, convergence, ownership deferral, and precedent substitution repeatedly turn binding state into caveats or non-binding considerations. Normal handoff compression produces 1",
-          "pub_date": "2026-08-24T20:00:00.000Z",
+          "title": "JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution",
+          "link": "https://arxiv.org/abs/2608.25593",
+          "content": "Agent capability is not determined by the model alone. The agent harness, encompassing memory management, planning strategy, action protocol, and tool/skill orchestration, can dominate the contribution of the underlying foundation model. Yet harness design remains manual, task-specific, and fundamentally unscalable. We present JIT-Agent, a harness intelligence model trained to synthesize task-adaptive agent harnesses on the fly for arbitrary off-the-shelf agentic LLMs. We formalize the agent harness as a composable, machine-generatable artifact governed by a fixed four-module protocol, and train JIT-Agent to customize harnesses for a given task at hand, repair harnesses for stable and reliable execution, and self-evolve by distilling performance signals from an expanding archive of prior harness configurations. Equipped with JIT-Agent as a harness helper, DeepSeek-V4-Flash surpasses GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), while the already strong GLM-5.2 gains up to +20.2 points. Across controlled evaluations, JIT-Agent-generated harnesses are performance-competitive with mature agent runtimes such as OpenCode and Claude Code and consistently improve multi-scale mod",
+          "pub_date": "2026-08-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -160,17 +160,17 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "link": "https://arxiv.org/abs/2608.23691",
-          "content": "We study autonomous mathematical discovery in the Station, an open-world multi-agent environment in which AI agents from different model families pursue a shared research goal without a central coordinator or scripted pipeline. Agents choose their own research directions, conduct experiments, collaborate, and build a shared scientific literature. Across 12 construction problems from the AlphaEvolve catalogue and two additional case studies, the Station obtained results novel relative to the prior literature on five problems: a new infinite family of finite-field Kakeya sets, new exact 604-point kissing configurations in dimension 11, new records for the discretized Kakeya needle and sign uncertainty problems, and a substantially improved lower bound for Erdős's minimum-overlap problem. Agents also discovered novel infinite families for Book Ramsey numbers. Importantly, the agents produced not only numerical constructions but also theorems and analyses explaining how those constructions work, making the results more interpretable and easier for mathematicians to build upon. We release all raw agent dialogues, proofs, and verification code, providing a transparent record of how these",
-          "pub_date": "2026-08-23T20:00:00.000Z",
+          "title": "VGI-BENCH: Probing Visual Intelligence in Video Generation Models",
+          "link": "https://arxiv.org/abs/2608.19583",
+          "content": "Recent studies suggest that video generation models can exhibit certain forms of zero-shot visual reasoning through generated frames. Yet reliable evaluation remains challenging: benchmarks should adopt inputs aligned with the visual priors of current video models, require valid evolving processes rather than only plausible final states, and calibrate task difficulty to remain challenging yet partly feasible. To this end, we introduce VGI-bench, containing 27 tasks and 810 instances, organized by a two-level taxonomy of task domains and skill tags for fine-grained evaluation of visual reasoning capabilities of video generation models. Our evaluations show that current generative systems can solve a subset of visually grounded reasoning tasks, but remain far from reliable, with even the strongest model, Seedance~2.0, achieving only 51.0% under our evaluation criteria. Our analysis further explore the output failure modes, input condition sensitivity, performance transfer boundary from synthetic fine-tuning, and internal denoising perspective revealing limited self-correction, where later steps mainly refine early hypotheses rather than correct reasoning errors. We hope VGI-bench wil",
+          "pub_date": "2026-08-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 937,
+          "id": 938,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1042,
-      "total_valid": 662,
+      "total_raw": 1043,
+      "total_valid": 666,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1184,
+          "id": 1177,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 389
         },
         {
-          "id": 1268,
+          "id": 1261,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 315
         },
         {
-          "id": 1088,
+          "id": 1081,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 294
         },
         {
-          "id": 1228,
+          "id": 1221,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 257
         },
         {
-          "id": 1261,
+          "id": 1254,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 232
         },
         {
-          "id": 1255,
+          "id": 1248,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 231
         },
         {
-          "id": 1081,
+          "id": 1074,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 226
         },
         {
-          "id": 1116,
+          "id": 1109,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 210
         },
         {
-          "id": 1264,
+          "id": 1257,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 182
         },
         {
-          "id": 1425,
+          "id": 1418,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 67
         },
         {
-          "id": 1429,
+          "id": 1422,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 67
         },
         {
-          "id": 1413,
+          "id": 1406,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 256
         },
         {
-          "id": 1358,
+          "id": 1351,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 230
         },
         {
-          "id": 1349,
+          "id": 1342,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 226
         },
         {
-          "id": 1047,
+          "id": 1048,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 466,
-      "total_valid": 320,
+      "total_raw": 458,
+      "total_valid": 314,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1589,
+          "id": 1582,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1592,
+          "id": 1585,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 1593,
+          "id": 1586,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1612,
+          "id": 1605,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 435
         },
         {
-          "id": 1550,
+          "id": 1543,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 206
         },
         {
-          "id": 1559,
+          "id": 1552,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 200
         },
         {
-          "id": 1563,
+          "id": 1556,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 406
         },
         {
-          "id": 1582,
+          "id": 1575,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 385
         },
         {
-          "id": 1520,
+          "id": 1513,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 364
         },
         {
-          "id": 1518,
+          "id": 1511,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 345
         },
         {
-          "id": 1519,
+          "id": 1512,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 298
         },
         {
-          "id": 1573,
+          "id": 1566,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1591,
+          "id": 1584,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1175,
+          "id": 1168,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 446
         },
         {
-          "id": 1612,
+          "id": 1605,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 435
         },
         {
-          "id": 1185,
+          "id": 1178,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 427
         },
         {
-          "id": 1178,
+          "id": 1171,
           "source": "Cell Host Microbe",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 401
         },
         {
-          "id": 1520,
+          "id": 1513,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 364
         },
         {
-          "id": 1100,
+          "id": 1093,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 352
         },
         {
-          "id": 1518,
+          "id": 1511,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 345
         },
         {
-          "id": 1091,
+          "id": 1084,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 328
         },
         {
-          "id": 1519,
+          "id": 1512,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 66,
-      "total_valid": 51,
+      "total_raw": 64,
+      "total_valid": 49,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1676,
+          "id": 1667,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 988
         },
         {
-          "id": 1710,
+          "id": 1694,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -829,22 +829,37 @@
           "word_count": 581
         },
         {
-          "id": 1642,
+          "id": 1630,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "New Forum Wants Banks Speaking the Same Fraud Language",
+          "title": "Bank of England Welcomes Government Plan to Drive UK Payments Innovation",
+          "link": "https://www.pymnts.com/news/payments-innovation/2026/bank-of-england-welcomes-government-plan-to-drive-uk-payments-innovation/",
+          "content": "The British Treasury plans to give the Bank of England a new “secondary objective” to support innovation in payments technology and digital currencies, including stablecoins, Reuters reported Wednesday (Aug. 26). The proposed objective aims to ensure that regulation keeps up with changes in technology, and it would require the bank to report annually to parliament [&#8230;] The post Bank of England Welcomes Government Plan to Drive UK Payments Innovation appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 27 Aug 2026 01:53:35 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 489
+        },
+        {
+          "id": 1637,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "X9 Wants Fraud Data to Move as Fast as Money",
           "link": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/new-forum-wants-banks-speaking-the-same-fraud-language/",
-          "content": "The U.S. payments industry does not lack fraud data. It lacks agreement about what that data means. The Accredited Standards Committee X9’s new Payment Fraud Forum, which holds its first meeting Sept. 10, is targeting exactly that problem. The initiative brings together participants including Federal Reserve Financial Services, The Clearing House (TCH) and the U.S. [&#8230;] The post New Forum Wants Banks Speaking the Same Fraud Language appeared first on PYMNTS.com .",
+          "content": "The U.S. payments industry does not lack fraud data. It lacks agreement about what that data means. The Accredited Standards Committee X9’s new Payment Fraud Forum, which holds its first meeting Sept. 10, is targeting exactly that problem. The initiative brings together participants including Federal Reserve Financial Services, The Clearing House (TCH) and the U.S. [&#8230;] The post X9 Wants Fraud Data to Move as Fast as Money appeared first on PYMNTS.com .",
           "pub_date": "Wed, 26 Aug 2026 21:05:39 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 472
+          "word_count": 462
         },
         {
-          "id": 1664,
+          "id": 1655,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 320
         },
         {
-          "id": 1669,
+          "id": 1660,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 314
         },
         {
-          "id": 1667,
+          "id": 1658,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 236
         },
         {
-          "id": 1670,
+          "id": 1661,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 229
         },
         {
-          "id": 1672,
+          "id": 1663,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 224
         },
         {
-          "id": 1648,
+          "id": 1641,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,22 +949,7 @@
           "word_count": 154
         },
         {
-          "id": 1651,
-          "source": "PaymentsDive",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Amex’s low fraud rate turns on its closed system",
-          "link": "https://www.paymentsdive.com/news/amexs-low-fraud-rate-turns-on-its-closed-system/828716/",
-          "content": "More access to cardholder and merchant data also gives the card network an edge in fraud detection over its rivals.",
-          "pub_date": "Tue, 25 Aug 2026 10:38:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 115
-        },
-        {
-          "id": 1649,
+          "id": 1642,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 107
         },
         {
-          "id": 1709,
+          "id": 1693,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 245,
-      "total_valid": 63,
+      "total_raw": 236,
+      "total_valid": 61,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1869,
-    "dup": 416,
-    "nocontent": 390,
+    "total_raw": 1853,
+    "dup": 403,
+    "nocontent": 391,
     "noise": 8
   }
 }
