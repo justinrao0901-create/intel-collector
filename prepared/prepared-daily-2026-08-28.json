@@ -95,7 +95,7 @@
           "word_count": 54
         },
         {
-          "id": 84,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 224
         },
         {
-          "id": 83,
+          "id": 82,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 215
         },
         {
-          "id": 90,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 199
         },
         {
-          "id": 67,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 69,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1095,
+      "total_raw": 1092,
       "total_valid": 820,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1222,
+          "id": 1215,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,22 @@
           "word_count": 548
         },
         {
-          "id": 1220,
+          "id": 1489,
+          "source": "Nature Reviews Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Epigenetic regulation of B cell tolerance and dysfunction in autoimmune disease",
+          "link": "https://www.nature.com/articles/s41577-026-01344-9",
+          "content": "Nature Reviews Immunology, Published online: 27 August 2026; doi:10.1038/s41577-026-01344-9 Epigenetic programmes collectively orchestrate B cell development, activation, germinal centre responses and the maintenance of self-tolerance. This Review examines how layered epigenetic mechanisms govern normal B cell function and enforce self-tolerance, and how their dysregulation breaches successive tolerance checkpoints to drive autoreactive B cell emergence and autoantibody production in systemic autoimmune disease.",
+          "pub_date": "2026-08-27",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 517
+        },
+        {
+          "id": 1213,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +242,7 @@
           "word_count": 511
         },
         {
-          "id": 1178,
+          "id": 1174,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +257,7 @@
           "word_count": 272
         },
         {
-          "id": 1300,
+          "id": 1292,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +272,7 @@
           "word_count": 222
         },
         {
-          "id": 1167,
+          "id": 1163,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 175
         },
         {
-          "id": 1501,
+          "id": 1481,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 168
         },
         {
-          "id": 1332,
+          "id": 1324,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 151
         },
         {
-          "id": 1213,
+          "id": 1206,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 122
         },
         {
-          "id": 1483,
+          "id": 1463,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 220
         },
         {
-          "id": 1417,
+          "id": 1397,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +362,7 @@
           "word_count": 216
         },
         {
-          "id": 1423,
+          "id": 1403,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +377,7 @@
           "word_count": 209
         },
         {
-          "id": 1097,
+          "id": 1094,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +392,7 @@
           "word_count": 237
         },
         {
-          "id": 1102,
+          "id": 1099,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +407,7 @@
           "word_count": 203
         },
         {
-          "id": 1096,
+          "id": 1093,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 191
-        },
-        {
-          "id": 1120,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "RFK Jr. said a Samoa trip had nothing to do with vaccines. New documents refute that",
-          "link": "https://www.statnews.com/2026/08/27/kennedy-samoa-trip-mmr-vaccine-new-documents/?utm_campaign=rss",
-          "content": "Health secretary Robert F. Kennedy Jr. said a Samoa trip had nothing to do with vaccines. New documents obtained by The Associated Press and The Guardian refute that testimony.",
-          "pub_date": "Thu, 27 Aug 2026 13:16:38 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 176
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 483,
-      "total_valid": 340,
+      "total_raw": 466,
+      "total_valid": 330,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1612,
+          "id": 1591,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 225
         },
         {
-          "id": 1616,
+          "id": 1595,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 192
         },
         {
-          "id": 1606,
+          "id": 1585,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 1662,
+          "id": 1638,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1664,
+          "id": 1640,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1674,
+          "id": 1650,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,22 @@
           "word_count": 1200
         },
         {
-          "id": 1640,
+          "id": 1662,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "The spinal motor neuron as the target for large-scale neuroengineering interfacing",
+          "link": "https://www.nature.com/articles/s44222-026-00494-8",
+          "content": "Nature Reviews Bioengineering, Published online: 27 August 2026; doi:10.1038/s44222-026-00494-8 Spinal motor neurons offer a window into the neural control of movement, combining large-scale observability, physiological interpretability and direct coupling to behaviour. Population-scale recordings could transform human physiology from hypothesis-by-hypothesis investigation into artificial intelligence-driven discovery of general principles, while establishing a new foundation for scalable, physiologically grounded neural interfaces.",
+          "pub_date": "2026-08-27",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 538
+        },
+        {
+          "id": 1619,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1641,
+          "id": 1620,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +569,7 @@
           "word_count": 1179
         },
         {
-          "id": 1643,
+          "id": 1622,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 115,
-      "total_valid": 22,
-      "total_candidates": 9
+      "total_raw": 111,
+      "total_valid": 23,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 1661,
+          "id": 1637,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +611,7 @@
           "word_count": 1199
         },
         {
-          "id": 1222,
+          "id": 1215,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,22 @@
           "word_count": 548
         },
         {
-          "id": 1218,
+          "id": 1662,
+          "source": "Nature Reviews Bioengineering",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "The spinal motor neuron as the target for large-scale neuroengineering interfacing",
+          "link": "https://www.nature.com/articles/s44222-026-00494-8",
+          "content": "Nature Reviews Bioengineering, Published online: 27 August 2026; doi:10.1038/s44222-026-00494-8 Spinal motor neurons offer a window into the neural control of movement, combining large-scale observability, physiological interpretability and direct coupling to behaviour. Population-scale recordings could transform human physiology from hypothesis-by-hypothesis investigation into artificial intelligence-driven discovery of general principles, while establishing a new foundation for scalable, physiologically grounded neural interfaces.",
+          "pub_date": "2026-08-27",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 538
+        },
+        {
+          "id": 1211,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +656,7 @@
           "word_count": 532
         },
         {
-          "id": 1697,
+          "id": 1673,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +671,7 @@
           "word_count": 515
         },
         {
-          "id": 1217,
+          "id": 1210,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +686,7 @@
           "word_count": 503
         },
         {
-          "id": 1698,
+          "id": 1674,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +701,7 @@
           "word_count": 319
         },
         {
-          "id": 1178,
+          "id": 1174,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +716,7 @@
           "word_count": 272
         },
         {
-          "id": 1334,
+          "id": 1326,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +731,7 @@
           "word_count": 246
         },
         {
-          "id": 1163,
+          "id": 1159,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -714,21 +744,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 231
-        },
-        {
-          "id": 1142,
-          "source": "Nature",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Highest-ever ocean temperatures recorded as El Niño intensifies",
-          "link": "https://www.nature.com/articles/d41586-026-02681-4",
-          "content": "Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02681-4 Why extreme temperatures are expected to weaken ocean carbon sinks — plus, how mitochondrial injections could treat vision loss.",
-          "pub_date": "2026-08-26",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 201
         }
       ],
       "quota": {
@@ -736,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 61,
-      "total_valid": 54,
+      "total_raw": 60,
+      "total_valid": 53,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1743,
+          "id": 1719,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 988
         },
         {
-          "id": 1774,
+          "id": 1749,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 536
         },
         {
-          "id": 1707,
+          "id": 1685,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 513
         },
         {
-          "id": 1721,
+          "id": 1697,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 294
         },
         {
-          "id": 1723,
+          "id": 1699,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 191
         },
         {
-          "id": 1720,
+          "id": 1696,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 184
         },
         {
-          "id": 1741,
+          "id": 1717,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 177
         },
         {
-          "id": 1725,
+          "id": 1701,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 149
         },
         {
-          "id": 1715,
+          "id": 1691,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 107
         },
         {
-          "id": 1772,
+          "id": 1748,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -904,7 +919,7 @@
           "word_count": 154
         },
         {
-          "id": 517,
+          "id": 515,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -919,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 576,
+          "id": 574,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 607,
+          "id": 605,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 630,
+          "id": 628,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 644,
+          "id": 642,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 675,
+          "id": 673,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 751,
+          "id": 749,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 781,
+          "id": 779,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 814,
+          "id": 812,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 818,
+          "id": 816,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1059,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 243,
+      "total_raw": 242,
       "total_valid": 64,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1933,
-    "dup": 314,
-    "nocontent": 385,
+    "total_raw": 1908,
+    "dup": 307,
+    "nocontent": 376,
     "noise": 7
   }
 }
