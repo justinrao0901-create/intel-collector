@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "GUI-Primitives: Diagnosing Spatial Reasoning Failures in Vision-Language GUI Grounding",
-          "link": "https://arxiv.org/abs/2608.21832",
-          "content": "Computer-use agents ground natural-language instructions in screenshots to locate interface elements, yet existing benchmarks do not isolate whether models bind relational language to the correct element. We introduce GUI-Primitives, a 994-item benchmark of contrastive instruction pairs over seven spatial relations in graphical user interfaces (left/right, above/below, containment, alignment, proximity, list ordinal, occlusion). Each pair holds the screenshot and anchor fixed while changing the relation expression, so the correct target moves between two designated candidates. Five annotators validate a 196-item subset (κ= 0.94 well-formedness; κ= 0.79 target selection). Nineteen vision-language models reach at most 32% strict point-in-box accuracy. Because models emit unconstrained coordinates, we classify each prediction by the candidate region it falls within. Predictions fall outside both candidates on 60-92% of items. Conditional on falling within a candidate region, target selection reaches 0.82-0.90 for horizontal position, vertical position, proximity, and list ordinal, but does not differ significantly from 0.50 for containment and occlusion: most failures reflect candidat",
-          "pub_date": "2026-08-21T20:00:00.000Z",
+          "title": "PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents",
+          "link": "https://arxiv.org/abs/2608.26530",
+          "content": "Long-horizon agent runs generate experience that can improve both the current run and future work. Most self-improvement methods process this experience only after execution ends, so they cannot redirect the active run or immediately apply and validate lessons learned from it. We argue that self-improvement should instead be live, using emerging experience both to redirect the active run and to update the persistent harness. Existing agent architectures do not fully support this goal. Single-agent self-correction combines task execution and trajectory assessment within one context, while subagent delegation separates execution but typically cannot redirect an active subagent. We present PILOT, a supervisor-worker harness for live self-improvement through two coupled mechanisms: (1) live steering lets a separate supervisor redirect or abort the active worker during execution; and (2) live self-evolution distils procedures and failure modes revealed during execution into reusable skills and memory. Across two frozen backbones and three benchmarks, PILOT ranks first in five of six configurations. On Terminal-Bench 2.0, PILOT outperforms counterpart harnesses by up to 9.8 percentage po",
+          "pub_date": "2026-08-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -160,9 +160,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Skill Issue: Are Skills Language-Invariant in LLMs?",
-          "link": "https://arxiv.org/abs/2608.25832",
-          "content": "Large language models access knowledge inconsistently across languages, but to what extent do they differ in their skill sets when interacting with different languages? This work quantifies cross-lingual skill inconsistency orthogonally from knowledge and general benchmark performance. We do this via multilingual self-play: two instances of the same model compete in a text-based game, each interacting through a different language interface. Since the model, opponent, rules, state space, and available actions remain fixed, this setting isolates the effect of language on the model's realized behavior. We build a multilingual extension to TextArena and evaluate three open-weight models across eight languages and six games covering spatial reasoning, imperfect information, resource allocation, and repeated interaction. We find that the same model can exhibit markedly different playing strength across languages, with systematic variation in win--loss margins, invalid actions, and strategic tendencies. Detailed analyses reveal language-specific failures in spatial reasoning, card-conditioned decisions, and optimal move selection. In some settings, changing only the intermediate reasoning",
+          "title": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
+          "link": "https://arxiv.org/abs/2608.25518",
+          "content": "A common strategy for scaling world models is to train on more crawled video with more compute. We argue that this strategy is inefficient: scaling world models also requires a recursive data engine that offers grounded reward signals. The success of code agents illustrates why this matters. As code is executable, compilers and runtimes can provide high-quality rewards for Reinforcement Learning (RL) post-training of LLMs. By contrast, spatial generation still relies largely on fuzzy proxies such as CLIP scores. These signals are fuzzy and biased, making them hard to support RL post-training. Compared with these, game development provides a missing reward environment for spatial world models. A scene encoded by a game engine is an executable world specification: the engine can efficiently check collision, physics, navigability and bounded playability, while the developer provides the global verification signal by judging whether the scene should be accepted. Game development also provides real-world long-horizon trajectory data for RL post-training. We therefore propose Reinforcement Learning with Human-Engine Verification (RLHEV), a post-training paradigm that combines dense engin",
           "pub_date": "2026-08-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -175,9 +175,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Prefix Sliding for efficient test-time scaling",
-          "link": "https://arxiv.org/abs/2608.26070",
-          "content": "Test-time scaling uses extra test-time compute to improve performance, such as letting language models reason longer when solving a problem. As models keep the entire reasoning trace in memory via full attention, hard tasks that need long thinking can be prohibitively expensive. However, we find most intermediate reasoning tokens lose importance as the model continues reasoning. This calls into question whether retaining them is worth the cost. Based on this insight, we propose Prefix Sliding, which discards tokens during reasoning that are not part of the prefix or the window of the last few thousand tokens. The prefix has key instructions and tools available to the model, while the most recent tokens are the current reasoning the model is working on. This caps the total memory requirement regardless of how long the model reasons, allowing for efficient long-horizon test-time scaling. Without training, Prefix Sliding can make existing models 3x faster while maintaining performance. Training with Prefix Sliding using reinforcement learning can achieve better performance by enabling scaling to reasoning traces beyond a hundred thousand tokens. Ablations show Prefix Sliding outperfor",
+          "title": "Procedura: Agentic 3D Modeling with Procedural Control",
+          "link": "https://arxiv.org/abs/2608.26238",
+          "content": "Native 3D generators now recover impressive mesh geometry from a single image. However, a dense mesh stays soft where a machined object should be sharp, it carries no part decomposition, and it exposes no parameter a user could edit. To address this, we explore the paradigm of 3D shape as code, leveraging and scaling the coding ability of an LLM for 3D modeling. We introduce Procedura, a novel 3D modeling agent framework that writes an object as a procedural assembly, a parametric program whose named parts are joined by typed, machine-checkable mates. From a text prompt, the agent plans the object as an assembly graph and writes the program part by part, solving each placement from the mated frames rather than guessing it, and admitting a part only once compile, mate, and connectivity checks pass. A decoupled vision critic then refines the assembly one diagnosed fix at a time. Moreover, the same graph carries per-part materials and a simulator-validated articulation. We evaluate on P3D-Bench under its assembly judge, and with the same judge on MechBench-36, our hard-surface benchmark. On both, Procedura outperforms state-of-the-art native 3D generators and every prior 3D-code agent",
           "pub_date": "2026-08-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1092,
-      "total_valid": 820,
+      "total_raw": 1044,
+      "total_valid": 643,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1215,
+          "id": 1156,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 548
         },
         {
-          "id": 1489,
+          "id": 1430,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 517
         },
         {
-          "id": 1213,
+          "id": 1154,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 511
         },
         {
-          "id": 1174,
+          "id": 1115,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 272
         },
         {
-          "id": 1292,
+          "id": 1233,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 222
         },
         {
-          "id": 1163,
+          "id": 1104,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 175
         },
         {
-          "id": 1481,
+          "id": 1422,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 168
         },
         {
-          "id": 1324,
+          "id": 1265,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 151
         },
         {
-          "id": 1206,
+          "id": 1147,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 122
         },
         {
-          "id": 1463,
+          "id": 1404,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 220
         },
         {
-          "id": 1397,
+          "id": 1338,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 216
         },
         {
-          "id": 1403,
+          "id": 1344,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 209
         },
         {
-          "id": 1094,
+          "id": 1046,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 237
         },
         {
-          "id": 1099,
+          "id": 1051,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 203
         },
         {
-          "id": 1093,
+          "id": 1045,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 466,
-      "total_valid": 330,
+      "total_raw": 455,
+      "total_valid": 320,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1591,
+          "id": 1532,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 225
         },
         {
-          "id": 1595,
+          "id": 1536,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 192
         },
         {
-          "id": 1585,
+          "id": 1526,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 1637,
+          "id": 1578,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1639,
+          "id": 1580,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1641,
+          "id": 1582,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1663,
+          "id": 1604,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 538
         },
         {
-          "id": 1619,
+          "id": 1560,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1620,
+          "id": 1561,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1179
         },
         {
-          "id": 1622,
+          "id": 1563,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1638,
+          "id": 1579,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1199
         },
         {
-          "id": 1215,
+          "id": 1156,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 548
         },
         {
-          "id": 1663,
+          "id": 1604,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 538
         },
         {
-          "id": 1211,
+          "id": 1152,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 532
         },
         {
-          "id": 1674,
+          "id": 1615,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 515
         },
         {
-          "id": 1210,
+          "id": 1151,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 503
         },
         {
-          "id": 1675,
+          "id": 1616,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 319
         },
         {
-          "id": 1174,
+          "id": 1115,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 272
         },
         {
-          "id": 1326,
+          "id": 1267,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 246
         },
         {
-          "id": 1159,
+          "id": 1100,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 60,
-      "total_valid": 53,
+      "total_raw": 58,
+      "total_valid": 51,
       "total_candidates": 10
     },
     "china": {
@@ -769,22 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1720,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "The Three Key Resilience Risks Often Missed in Strategy Talks",
-          "link": "https://www.finextra.com/videoarticle/3591/the-three-key-resilience-risks-often-missed-in-strategy-talks?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Joining the FinextraTV studio, Wayne Scott, Global Regulatory Compliance Lead, Escode described the things that underpin a resiliency discussion, growing in complexity. Scott explained how many have some idea about how to protect their software from harm, but are missing a strong focus across supply failure, service deterioration, and concentration risk. When going further into the top of concentration, Scott spoke about how leaders often use the adage 'too big to fail’ but have underestimated that many are too big to save. He said this is why resiliency is so crucial and described how, while some carry commonalities, global regulation is also extremely different. Scott defines these differences by explaining how the UK, India, Saudia Arabia, US and Switzerland approach regulation and what this might mean for finding the correct approach. At the centre of all of this, Scott emphasises the clear and evidential important of Escrow when reducing exposure and third-party risks.",
-          "pub_date": "Wed, 26 Aug 2026 15:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 988
-        },
-        {
-          "id": 1750,
+          "id": 1682,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +784,7 @@
           "word_count": 536
         },
         {
-          "id": 1687,
+          "id": 1631,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +799,22 @@
           "word_count": 513
         },
         {
-          "id": 1698,
+          "id": 1623,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Affirm and Shopify Take Shop Pay Installments to Australia",
+          "link": "https://www.pymnts.com/bnpl/2026/affirm-and-shopify-take-shop-pay-installments-to-australia/",
+          "content": "Australian shoppers can now select installment payments powered by Affirm when they click on Shopify’s Shop Pay button, Affirm said in a Thursday (Aug. 27) press release. This capability is enabled by the global partnership of Affirm and Shopify, in which the companies launch Shop Pay Installments powered exclusively by Affirm. Shop Pay Installments was [&#8230;] The post Affirm and Shopify Take Shop Pay Installments to Australia appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 28 Aug 2026 02:05:23 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 464
+        },
+        {
+          "id": 1637,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 294
         },
         {
-          "id": 1700,
+          "id": 1639,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 191
         },
         {
-          "id": 1697,
+          "id": 1636,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 184
         },
         {
-          "id": 1718,
+          "id": 1656,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 177
         },
         {
-          "id": 1702,
+          "id": 1641,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,22 @@
           "word_count": 149
         },
         {
-          "id": 1692,
+          "id": 1647,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Visa expands open-source AI cyber defence system",
+          "link": "https://www.finextra.com/pressarticle/110747/visa-expands-open-source-ai-cyber-defence-system?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Visa (NYSE: V) today announced enhancements to its cybersecurity portfolio to help organizations identify and fix vulnerabilities more effectively.",
+          "pub_date": "Thu, 27 Aug 2026 14:34:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 147
+        },
+        {
+          "id": 1633,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 107
         },
         {
-          "id": 1749,
+          "id": 1681,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -919,154 +934,139 @@
           "word_count": 154
         },
         {
-          "id": 515,
+          "id": 196,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Towards Expert Financial QA via Self-Improving RAG",
+          "link": "https://arxiv.org/abs/2608.26706",
+          "content": "arXiv:2608.26706v1 Announce Type: new Abstract: Expert-level financial question answering requires both grounded verification to catch numeric hallucinations and audit trails for regulatory compliance, attributes that standard single-pass RAG systems lack. We take a step toward this goal with Self-Improving RAG, a framework that decomposes document QA into three specialized agents (Retrieval, Reasoning, and Judge) coordinated by an orchestrator with feedback-driven self-correction. When the Judge Agent scores an answer below a dynamic threshold, the system triggers retry with escalated strategies: broader retrieval, more careful prompting, and relaxed acceptance criteria. We evaluate on FinanceBench (SEC filing QA), where Self-Improving RAG achieves 86% oracle-guided accuracy (measuring agreement with gold answers) with a 36.4% Lazarus Rate, recovering nearly 4 in 10 initially incorrect answers through targeted retry. A key finding is that a fixed retrieval pipeline with judge-driven retry achieves strong results without dynamic routing, providing full interpretability. Every decision is logged with confidence scores, enabling the audit trails required for regulated financial appli",
+          "pub_date": "Fri, 28 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 264,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "TEMPLAR Wales: A georeferenced environmental and toponymic dataset of Welsh settlements",
+          "link": "https://arxiv.org/abs/2608.26970",
+          "content": "arXiv:2608.26970v1 Announce Type: cross Abstract: Place names provide persistent records of how landscapes have been described and organised, but their quantitative reuse requires explicit separation between mapped places, lexical annotations and environmental measurements. TEMPLAR Wales is a georeferenced environmental-toponymy dataset comprising 3,757 settlement records across Wales. The resource links a reproducible settlement frame to deterministic lexical screening and settlement-level environmental attributes through stable identifiers. It contains 1,350 lexical detections across 1,294 settlements, generated from a frozen registry of 24 Welsh place-name elements, while retaining exact- and prefix-token matches and their provenance separately. Environmental attributes describe river and coastal proximity, elevation and local terrain context at multiple spatial scales, land cover and neighbourhood woody cover, with parallel terrain measurements derived from independent elevation products. The dataset is distributed as four relational tables accompanied by a field-level data dictionary, source-provenance register and licensing metadata. Technical validation confirms relational i",
+          "pub_date": "Fri, 28 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 265,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Terrain signatures in Welsh settlement names",
+          "link": "https://arxiv.org/abs/2608.26978",
+          "content": "arXiv:2608.26978v1 Announce Type: cross Abstract: Landscapes are named, but whether names retain measurable environmental information beyond broad geographic structure is rarely tested. We analysed 3,757 Welsh settlements using a frozen, source-audited 24-element lexical framework, preregistered outcome-specific models and geographically structured validation. The central comparison contrasted 101 settlements carrying high-terrain elements (\\textit{bryn} or \\textit{mynydd}) with 139 carrying low-terrain elements (\\textit{cwm} or \\textit{pant}). High-terrain names occupied locations 24.4 m higher relative to their 2-km surroundings (95\\% CI, 10.8--38.1 m; Holm-adjusted $p$ = 0.00137). The association remained positive across prespecified 1-, 2- and 5-km neighbourhood definitions and was reproduced using an independently produced elevation source (24.1 m; 95\\% CI, 10.6--37.6 m). Adding terrain-name polarity to a non-lexical spatial and settlement baseline reduced geographically held-out mean squared error by 4.63\\%, 6.22\\% and 7.30\\% under 10-, 25- and 50-km spatial blocking, respectively, although improvement varied among held-out regions. River-related names provided weaker, direct",
+          "pub_date": "Fri, 28 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 411,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "StrokeGuard: A Multi-Agent Guided System for Prehospital Stroke Assessment",
-          "link": "https://arxiv.org/abs/2608.24555",
-          "content": "arXiv:2608.24555v1 Announce Type: cross Abstract: Prehospital stroke assessment aims to accurately identify stroke symptoms and make rapid decisions through standardized procedures within an extremely narrow time window, thereby saving valuable time for subsequent treatment. In clinical practice, FAST-based scales are widely used for prehospital stroke assessment by issuing instructions that guide subjects to perform specific actions to screen facial, arm, and speech functions. However, in home and community settings, non-clinical users often encounter challenges such as inaccurate descriptions, incomplete symptom observation, and difficult operational procedures, which may lead to inaccurate or biased assessment results. To address these challenges, this paper presents StrokeGuard: a multi-agent guided system designed for prehospital stroke assessment that makes mobile FAST screening more standardized and executable. Specifically, to overcome the limitations of traditional single-agent systems in terms of procedural fault tolerance and user guidance capability, StrokeGuard adopts a dual-channel agent mechanism that separates formal assessment (i.e., facial palsy, arm weakness, spe",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
+          "title": "Graph-Guided Selective Unlearning for Language Models: Controlling Support Routes Beyond Forget Seeds",
+          "link": "https://arxiv.org/abs/2608.26743",
+          "content": "arXiv:2608.26743v1 Announce Type: new Abstract: Enterprises fine-tune language models on proprietary data that may later require removal due to privacy, contractual, or compliance obligations. Selective unlearning removes requested knowledge while preserving model utility, offering a practical alternative to full retraining, but existing methods treat the explicitly identified forget examples as the complete deletion scope. This is insufficient when target knowledge remains recoverable through paraphrases, aliases, or neighboring training examples. We propose GRAPHSU, a graph-guided controller that expands the deletion scope beyond forget seeds by constructing a weighted support-route graph, propagating deletion pressure through it, and applying graded forgetting strengths to high-risk neighbors. On the Task of Fictitious Unlearning (TOFU), a synthetic author-profile question-answering benchmark, and PISTOL, a structural-unlearning benchmark built around interconnected factual samples, with GPT-2 Medium and Llama-3.2-3B-Instruct, GRAPHSU achieves the lowest utility-feasible soft leakage across all deletion settings, reducing leakage by up to 49.5 percentage points over a matched se",
+          "pub_date": "Fri, 28 Aug 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 574,
+          "id": 657,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Highway Congestion Reduction through Reinforcement Learning Based Eulerian Headway Control",
-          "link": "https://arxiv.org/abs/2412.02520",
-          "content": "arXiv:2412.02520v4 Announce Type: replace-cross Abstract: Connected automated vehicles (CAVs) equipped with adaptive cruise control (ACC) create new opportunities for highway congestion mitigation. Traditional practice relies on Eulerian variable speed limits (VSL) which regulate traffic through roadside signs, but suffer from infrequent updates and limited driver compliance. Recent research explored Lagrangian strategies that directly control individual vehicles, offering high reactivity and compliance, yet in realistic multi-lane settings they depend on drivers' latent lane-change intentions, making robust vehicle-level decisions difficult. Hence, we propose an Eulerian control system optimized through reinforcement learning, that (i) leverages ACC for reactivity and compliance, and (ii) obviates dependence on latent driver intentions by regulating aggregate density near bottlenecks, crucially via headway commands rather than speed commands. We evaluate two variants of our system, time-headway and distance-headway control, in large-scale simulations across a range of traffic conditions. Both variants outperform baselines, improving traffic flow by up to 10.6% over human traffic a",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
+          "title": "Complexity Induction: Compositional Generalization via Structured Training Distortion",
+          "link": "https://arxiv.org/abs/2608.21464",
+          "content": "arXiv:2608.21464v2 Announce Type: replace-cross Abstract: We demonstrate that structured distortion of training data - which we term complexity induction - can induce compositional generalization in a standard CNN classifier without architectural modification. Using synthetic images of colored geometric shapes, we encode classes as flat string labels (e.g., \"red-circle\") with no explicit attribute decomposition, and exclude certain color-shape combinations from training entirely. We apply two distortion methods derived from Jaccard string similarity between class names: mixed labels (soft target distributions encoding inter-class overlap) and expanded dataset (false training samples with structurally motivated incorrect labels). Both methods induce the ability to predict unseen class combinations, and act at different levels: mixed labels activate the classifier for unseen combinations by exploiting the CNN's natural embedding structure, while expanded training improves the embedding factorization itself. A control with random (unstructured) false labels confirms that the effect depends on the structure of the distortion, not on noise per se. These results suggest that structured c",
+          "pub_date": "Fri, 28 Aug 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 605,
+          "id": 223,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "SCIT: Testing Causal Cache Carriers in Latent Chain-of-Thought Models",
+          "link": "https://arxiv.org/abs/2608.27265",
+          "content": "arXiv:2608.27265v1 Announce Type: new Abstract: Latent chain-of-thought models move intermediate reasoning from emitted text into continuous states, improving compactness but hiding the causal object. We introduce SCIT, the Suffix Cache Interchange Test, a causal protocol that constructs exact source-recipient counterfactuals, patches declared cache segments, and identifies which transformer object carries the counterfactual computation. SCIT combines sufficiency tests with K/V component splits, hidden-state controls, semantic source controls, decoded validation, and matched corruption. On CODI-GPT2 and a Sim-CoT-style GPT-2 reproduction, counterfactual arithmetic transfers primarily through value-cache suffix trajectories rather than hidden states, keys, reusable answer slots, or single-token triggers. Complete sufficiency-and-necessity evidence for the late-value-suffix mechanism holds for the main CODI-GPT2 checkpoint; the Sim-CoT-style checkpoint shows the same sufficiency and decoded-control pattern but insufficient matched-corruption evidence for a necessity call. Beyond these local arithmetic cells, SCIT reveals carrier-regime shifts: arithmetic-like GPT-2/1B cells preserve",
+          "pub_date": "Fri, 28 Aug 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 448,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "ADVERSA: Measuring Multi-Turn Guardrail Degradation and Judge Reliability in Large Language Models",
-          "link": "https://arxiv.org/abs/2603.10068",
-          "content": "arXiv:2603.10068v2 Announce Type: replace-cross Abstract: Most adversarial evaluations of large language model (LLM) safety assess single prompts and report binary pass/fail outcomes, which fails to capture how safety properties evolve under sustained adversarial interaction. We present ADVERSA, an automated red-teaming framework that measures guardrail degradation dynamics as continuous per-round compliance trajectories rather than discrete jailbreak events. ADVERSA uses a fine-tuned 70B attacker model (ADVERSA-Red, Llama-3.1-70B-Instruct with QLoRA) that eliminates the attacker-side safety refusals that render off-the-shelf models unreliable as attackers, scoring victim responses on a structured 5-point rubric that treats partial compliance as a distinct measurable state. We report a controlled experiment across three frontier victim models (Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.2) using a triple-judge consensus architecture in which judge reliability is measured as a first-class research outcome rather than assumed. Across 15 conversations of up to 10 adversarial rounds, we observe a 26.7% jailbreak rate with an average jailbreak round of 1.25, suggesting that in this evaluatio",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
+          "title": "Not All Eval-Awareness Is Equal: Capabilities Framing Predicts Compliance",
+          "link": "https://arxiv.org/abs/2608.27340",
+          "content": "arXiv:2608.27340v1 Announce Type: new Abstract: Steering interventions targeting eval-awareness, a model's recognition that it is being tested, are increasingly used in safety evaluation pipelines, where evaluation-awareness is treated as a single quantity to be suppressed. We show that verbalized eval-awareness in chain-of-thought can be identified as capabilities-flavored (\"the user is testing my ability to follow instructions\"), safety-flavored (\"the user is testing my boundaries\"), both, or neither: framings that predict compliance very differently. On Qwen3-32B over the FORTRESS dataset, capabilities-framing predicts compliance with a +24 to +46 percentage-point gap over safety-framing across all tested steering conditions. A CoT-prefill intervention on eval-awareness-negative rollouts suggests the link is causal, with 10 of 11 prefills shifting compliance in the predicted direction. Then, eval-awareness is not behaviorally uniform: aggregate suppression rates can move while the safety-relevant component does not, and the same \"X% suppression of eval-awareness\" can correspond to qualitatively different behavioral outcomes.",
+          "pub_date": "Fri, 28 Aug 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 1145
         },
         {
-          "id": 628,
-          "source": "arXiv cs.AI",
+          "id": 1629,
+          "source": "PYMNTS.com",
           "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution",
-          "link": "https://arxiv.org/abs/2607.08960",
-          "content": "arXiv:2607.08960v2 Announce Type: replace-cross Abstract: Warehouse operations are governed by Standard Operating Procedures (SOPs) that encode complex, multi-system decision logic, which must be executed reliably under strict time constraints, yet LLM agents lack mechanisms to enforce procedural compliance and degrade under the context overload full SOP specifications introduce. We present Eluna, a production-deployed agentic system for reliable SOP execution. Eluna is a graph-guided, multi-agent framework that encodes SOPs as directed acyclic graphs with progressive disclosure and delegates independent tasks to parallel sub-agents, each with persistent code execution and live data access. To meet production latency and accuracy needs, we use asymmetric episodic distillation where a strong teacher is improved through episodic error memories, then a smaller student is fine-tuned on the corrected trajectories with memory stripped, internalizing corrections without inference-time overhead. On a 13-task benchmark and two production applications, our fine-tuned models match or exceed their teacher, beat all larger off-the-shelf baselines, and reach 94% expert agreement on the ticket pr",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Thomson Reuters Taps Decades of Content to Train AI",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/thomson-reuters-taps-decades-of-content-to-train-ai/",
+          "content": "Thomson Reuters has launched a proprietary large language model that the company developed in-house and trained on its decades of content from Westlaw, Practical Law, Checkpoint and Reuters, the company said in a Monday (Aug. 24) press release. Dubbed “Thomson,” the LLM began with an open-source foundation and was trained on the company’s proprietary content and domain expertise, according to the release. As a result, Thomson is fully controlled [&#8230;] The post Thomson Reuters Taps Decades of Content to Train AI appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 27 Aug 2026 22:41:45 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 551
         },
         {
-          "id": 642,
-          "source": "arXiv cs.AI",
+          "id": 1626,
+          "source": "PYMNTS.com",
           "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Formal Verification of Romanov's Triplet Logic: A Verified Filter for Sliding-window 3-CNF with Application to Structured Formulas",
-          "link": "https://arxiv.org/abs/2608.18445",
-          "content": "arXiv:2608.18445v3 Announce Type: replace-cross Abstract: We present the first mechanised formalisation of Romanov's Triplet Logic (TLS) in the Rocq proof assistant. TLS is a combinatorial framework originally motivated by Boolean satisfiability, based on triplet structures and a filter that we call Simple Vertex Intersection (SVI). We formalise the core of TLS, including its translation from 3-CNF, the clearing procedure, and the SVI algorithm. For the well-formed sliding-window fragment, we prove explicit polynomial-time bounds for the filter stages and verify the translation and intersection operations. Our main contribution is a precise correctness boundary: for general formulas, SVI non-emptiness is necessary but not sufficient for satisfiability; for aligned structures, we prove a full bi-implication, extended to systems of structures. We also formalise the grouped-window translation and provide a formal counterexample to its completeness. We introduce VFR (Verified Filter for Romanov's triplet logic), an extracted OCaml prototype that implements a verified decision procedure for the sliding-window fragment and a sound filter for general 3-CNF, with a Python runtime and Docke",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Anthropic Previews Standard for AI Control of Physical Devices",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-previews-standard-for-ai-control-of-physical-devices/",
+          "content": "Anthropic is opening a research preview of a shared specification for artificial intelligence agents to operate physical devices, specifically lab and manufacturing instruments, the company said in a Thursday (Aug. 27) announcement. The Model Hardware Standard (MHS) enables agents to operate instruments such as microscopes, liquid handlers and robotic arms; perform tasks ranging from routine [&#8230;] The post Anthropic Previews Standard for AI Control of Physical Devices appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 28 Aug 2026 00:37:41 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 673,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Clearing the Underbrush: AI-Enhanced RF Interference Suppression",
-          "link": "https://arxiv.org/abs/2608.24974",
-          "content": "arXiv:2608.24974v1 Announce Type: new Abstract: AI-based structured interference rejection has grown more popular because deep learning approaches can outperform traditional methods by jointly considering the signal of interest (SOI) and the signal mixture (SOI plus interference). This work builds on a previous AI-enabled approach utilizing autoregressive transformer-based models by adding a Finite Scalar Quantization (FSQ) tokenizer layer which aims to improve the interference rejection performance while keeping overall latency to a minimum. Additionally, we experiment with other inference optimization techniques with the goal of speeding up inference without much accuracy loss. We explore this space with an experiment where the SOI is a digitally modulated radio frequency (RF) signal and the structured interference is a digital television signal, an extremely common type of Orthogonal Frequency-Division Multiplexing (OFDM) transmission. Our results achieve low latency and increased interference rejection over traditional techniques and prior work with other AI-enabled methods. We demonstrate the benefits of the AI-enabled approaches via audio metrics such as Perceptual Evaluation",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 749,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "CEDAR: Controlled and Event-Driven Demand Forecasting via Residual Decomposition",
-          "link": "https://arxiv.org/abs/2608.25871",
-          "content": "arXiv:2608.25871v1 Announce Type: new Abstract: Forecasting in large-scale e-commerce marketplaces is increasingly required to support planning: merchants need to evaluate sales outcomes under future action sequences such as budget schedules, rather than passively predicting what happens next. However, most existing time series forecasting (TSF) approaches remain inherently passive. Even when incorporating operational decisions as auxiliary covariates, they typically optimize for correlation-based extrapolation under historical policies. This design suffers from autoregressive inertia and conflates endogenous market evolution with decision-induced transitions, leading to policy-insensitive rollouts and unreliable counterfactual analysis. To bridge this gap, we propose CEDAR (Controlled and Event-Driven Demand forecasting via Action-aware Residual decomposition), a two-stage framework for robust decision-conditioned simulation. In Stage I, an Action-Interleaved Transformer learns controllable action-conditioned state transitions for rollout under planned interventions. In Stage II, a Residual Correction Module leverages external event signals and LLM-assisted text representations to",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 779,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "EncoTESS: Age-Sensitive Encodings from Raw TESS Light Curves",
-          "link": "https://arxiv.org/abs/2608.25019",
-          "content": "arXiv:2608.25019v1 Announce Type: cross Abstract: Main sequence stars of spectral types late F through M exhibit systematic variability in photometric light curves, particularly when they are young. Rotational modulation of starspots manifests as quasi-sinusoidal variability, which enables the measurement of rotation periods. Variability can also be stochastic, as in stellar flaring. However, since measurements of stochastic processes depend on the time of observation, they are typically noisier. Considering that different manifestations of variability have unique observational nuances, models that naturally unify these are incredibly useful for stellar characterization. Towards this goal, we have developed EncoTESS: a Time Series Foundation Model (TSFM) trained on a subset of TESS 2-min light curves. EncoTESS is specifically designed to handle the observational noise, heteroskedastic measurements, irregular sampling, and large data gaps common to TESS data. It is also ~1% of the size of a typical literature TSFM, so can be run easily on a modern laptop. EncoTESS encodes light curves into a fixed-size latent parameter space, which can be used to infer physical stellar properties an",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 812,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "A Hierarchical Synergistic Deep Learning Framework Integrating Composition, Structure, and Ionic Transport for Solid-State Electrolyte Discovery",
-          "link": "https://arxiv.org/abs/2608.25592",
-          "content": "arXiv:2608.25592v1 Announce Type: cross Abstract: Inorganic solid-state electrolytes must combine high room-temperature ionic conductivity, a wide electrochemical window, excellent electronic insulation, and favorable mechanical compliance. Single models struggle to support reliable multi-objective screening across vast chemical spaces because of training-data distribution mismatch, cross-property dataset heterogeneity, and scarce kinetic transport data. To overcome these limitations, we develop a hierarchical synergistic deep-learning framework that sequentially coordinates efficiency, accuracy, and reliability through four complementary modules. The in-house-developed L-G-DCNN and a multi-fidelity implementation built on DenseGNN serve as compositional and structural experts for thermodynamic coarse screening and multi-property evaluation, respectively; MatterSim and system-specific DeePMD models provide transport pre-assessment and kinetic validation. Systematic benchmarks show that each module outperforms mainstream counterparts in its task, while retrospective validation establishes dual closed-loop verification of module-level accuracy and end-to-end workflow reliability. App",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 816,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Unsupervised Anatomical Feature Learning via Diffusion Models: Enhanced Medical Image Segmentation with Denoising Diffusion Probabilistic Models",
-          "link": "https://arxiv.org/abs/2608.25693",
-          "content": "arXiv:2608.25693v1 Announce Type: cross Abstract: Acquiring pixel-level annotations for medical image segmentation is a severe bottleneck. Traditional U-Net architectures, while effective, learn local texture patterns and lack awareness of global anatomical structures, leading to boundary delineation failures in low-data regimes. This research paper proposes utilizing unsupervised Denoising Diffusion Probabilistic Models (DDPMs) to extract anatomical features. We train a DDPM on 21 unlabeled abdominal CT scans to learn structural representations, transferring the encoder weights to a downstream segmentation task evaluated on the BTCV multi-organ dataset. Diffusion pretraining significantly improved liver segmentation: Dice increased from $0.75\\pm0.36$ to $0.93\\pm0.16$ ($p 80% of fine-tuned performance without exposure to segmentation labels, proving the existence of learned anatomical priors. In low-data scenarios, diffusion-pretrained models maintained robust performance with only 50% (Dice: 0.92 liver, 0.94 kidney), 25%, and even 10% (Dice: 0.89 liver, 0.71 kidney) of labeled data. Using unlabeled images for diffusion-based pretraining successfully embeds robust anatomical featur",
-          "pub_date": "Thu, 27 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
+          "word_count": 507
         }
       ],
       "quota": {
@@ -1074,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 242,
-      "total_valid": 64,
+      "total_raw": 226,
+      "total_valid": 55,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1909,
-    "dup": 307,
-    "nocontent": 376,
+    "total_raw": 1841,
+    "dup": 430,
+    "nocontent": 374,
     "noise": 7
   }
 }
