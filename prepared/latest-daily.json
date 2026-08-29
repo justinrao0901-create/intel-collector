@@ -65,22 +65,37 @@
           "word_count": 179
         },
         {
-          "id": 92,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
           "priority": 4,
-          "title": "Plaud’s new earphones come with an eSIM-enabled case for talking to AI agents",
-          "link": "https://techcrunch.com/2026/08/27/plauds-new-earphones-come-with-an-esim-enabled-case-for-talking-to-ai-agents/",
-          "content": "Called Plaud One, these adopt the simple bare-bones style of Apple's AirPods, and can record calls, while their case can be used to record in-person conversations or take notes.",
-          "pub_date": "Thu, 27 Aug 2026 13:00:00 +0000",
+          "title": "An Anthropic researcher just gave us a peek at self-improving AI",
+          "link": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+          "content": "Given 10 benchmarks for specific misaligned behaviors, the automated systems were able to improve performance on every single one without degrading overall performance.",
+          "pub_date": "Fri, 28 Aug 2026 19:30:38 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 177
+          "word_count": 168
         },
         {
           "id": 65,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Luce: Relightable Gaussians for 3D Asset Generation",
+          "link": "https://arxiv.org/abs/2608.23943",
+          "content": "High-fidelity image-to-3D generation requires a 3D representation that captures both geometry and appearance. To support relighting and integration into standard rendering pipelines, the representation should include physically based rendering (PBR) modalities such as albedo, metallic-roughness, and surface normals. We propose Luce, a 3D representation that unifies geometry and PBR materials within a voxelized multimodal Gaussian cloud, using dedicated Gaussian primitives for each modality. A variational autoencoder compresses this representation into a unified material-aware latent space. A rectified-flow transformer generates this latent from a single image, conditioned on multi-layer features from a pretrained image encoder that preserve both semantic context and fine spatial detail. The latent then decodes into relightable PBR Gaussians and an optional textured mesh with a tangent-space normal map. On Toys4K, Luce achieves state-of-the-art single-image-to-3D generation, improving FID by 28% over the strongest baseline. We further introduce a benchmark of AI-generated images, on which Luce improves the CLIP image-alignment score over the best baseline (0.8519 vs. 0.8299). Luce g",
+          "pub_date": "2026-08-24T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,22 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 72,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Thinking on Shots: Consistent Multi-Shot Video Editing with Agentic Reasoning",
-          "link": "https://arxiv.org/abs/2608.26809",
-          "content": "While generative AI has significantly advanced video editing, existing methods primarily focus on single-shot or short video clips. Editing long videos with multiple instructions remains a formidable challenge. Naive chunking strategies, e.g., fixed-duration segmentation, often lead to entity fragmentation, severe editing hallucinations, and disrupted temporal continuity. To bridge this gap, we introduce the Multi-Instruction Multi-Shot Long-Video Editing (MMLVE) task, which is structured around three core objectives: Cross-Shot Editing Consistency (CSEC), Multi-Instruction Decoupling (MID), and Zero-Destruction on Spatiotemporal Structure (ZDSS). To tackle these three unique challenges, we introduce an agentic editing framework that leverages the synergy of Large Language Models (LLMs) and Vision-Language Models (VLMs) to achieve shot-level video decoupling and precise instruction parsing. Furthermore, to comprehensively evaluate this task, we construct MMLVE-Bench, which is an MMLVE-focused dataset characterized by complex real-world spatiotemporal dynamics, high-density heterogeneous instructions, and sparse, random entity distributions. Three MMLVE-focused evaluation metrics ar",
-          "pub_date": "2026-08-26T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 937,
+          "id": 936,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1199
         },
         {
-          "id": 938,
+          "id": 937,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 676
         },
         {
-          "id": 924,
+          "id": 923,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 173
         },
         {
-          "id": 923,
+          "id": 922,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1038,
+      "total_raw": 1037,
       "total_valid": 626,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1192,
+          "id": 1189,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 385
         },
         {
-          "id": 1476,
+          "id": 1473,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 372
         },
         {
-          "id": 1078,
+          "id": 1075,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 222
         },
         {
-          "id": 1080,
+          "id": 1077,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 201
         },
         {
-          "id": 1470,
+          "id": 1467,
           "source": "Science Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 55
         },
         {
-          "id": 1349,
+          "id": 1346,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 297
         },
         {
-          "id": 1351,
+          "id": 1348,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 264
         },
         {
-          "id": 1352,
+          "id": 1349,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 226
         },
         {
-          "id": 1039,
+          "id": 1038,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 219
         },
         {
-          "id": 1491,
+          "id": 1488,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 216
         },
         {
-          "id": 1041,
+          "id": 1040,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 207
         },
         {
-          "id": 1040,
+          "id": 1039,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 202
         },
         {
-          "id": 1074,
+          "id": 1072,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 176
         },
         {
-          "id": 1073,
+          "id": 1071,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 144
         },
         {
-          "id": 1068,
+          "id": 1066,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 487,
-      "total_valid": 338,
+      "total_raw": 485,
+      "total_valid": 336,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1556,
+          "id": 1553,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 272
         },
         {
-          "id": 1574,
+          "id": 1571,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 201
         },
         {
-          "id": 1544,
+          "id": 1541,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 189
         },
         {
-          "id": 1622,
+          "id": 1619,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1623,
+          "id": 1620,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1629,
+          "id": 1626,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1640,
+          "id": 1637,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 516
         },
         {
-          "id": 1641,
+          "id": 1638,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 474
         },
         {
-          "id": 1533,
+          "id": 1530,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 388
         },
         {
-          "id": 1579,
+          "id": 1576,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 384
         },
         {
-          "id": 1600,
+          "id": 1597,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 380
         },
         {
-          "id": 1534,
+          "id": 1531,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1475,
+          "id": 1472,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 396
         },
         {
-          "id": 1472,
+          "id": 1469,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 390
         },
         {
-          "id": 1533,
+          "id": 1530,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 388
         },
         {
-          "id": 1579,
+          "id": 1576,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 384
         },
         {
-          "id": 1534,
+          "id": 1531,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 326
         },
         {
-          "id": 1645,
+          "id": 1642,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 311
         },
         {
-          "id": 1083,
+          "id": 1080,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 258
         },
         {
-          "id": 1161,
+          "id": 1158,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 252
         },
         {
-          "id": 1091,
+          "id": 1088,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 201
         },
         {
-          "id": 1648,
+          "id": 1645,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1661,
+          "id": 1659,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 571
         },
         {
-          "id": 1710,
+          "id": 1701,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 562
         },
         {
-          "id": 1656,
+          "id": 1654,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 513
         },
         {
-          "id": 1655,
+          "id": 1653,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 482
         },
         {
-          "id": 1657,
+          "id": 1655,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 447
         },
         {
-          "id": 1659,
+          "id": 1657,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 397
         },
         {
-          "id": 1677,
+          "id": 1673,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 289
         },
         {
-          "id": 1676,
+          "id": 1672,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 257
         },
         {
-          "id": 1663,
+          "id": 1660,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 171
         },
         {
-          "id": 1667,
+          "id": 1664,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 160
         },
         {
-          "id": 1668,
+          "id": 1665,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 154
         },
         {
-          "id": 1681,
+          "id": 1677,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 131
         },
         {
-          "id": 1670,
+          "id": 1667,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 125
         },
         {
-          "id": 67,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 954
         },
         {
-          "id": 1708,
+          "id": 1700,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,22 +1024,22 @@
           "word_count": 137
         },
         {
-          "id": 1662,
+          "id": 1652,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "California Moves Into Federal Consumer Protection Void Under Chopra",
-          "link": "https://www.pymnts.com/legal/2026/california-moves-into-federal-consumer-protection-void-under-chopra/",
-          "content": "California is positioning itself to fill the regulatory space left by Washington’s retreat from consumer financial oversight, with former Consumer Financial Protection Bureau Director Rohit Chopra bringing his enforcement philosophy to the nation’s largest state economy. Nearly two months into Chopra’s leadership of California’s Business and Consumer Services Agency, the implications for banks, FinTechs, lenders [&#8230;] The post California Moves Into Federal Consumer Protection Void Under Chopra appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 28 Aug 2026 17:23:37 +0000",
+          "title": "OCC Rewrites Enforcement Playbook to Focus on Big Bank Risks",
+          "link": "https://www.pymnts.com/legal/bank-regulation/2026/occ-rewrites-enforcement-playbook-to-focus-on-big-bank-risks/",
+          "content": "The Office of the Comptroller of the Currency (OCC) issued two revised policies and procedures manuals and proposed amendments to Violations of Laws and Regulations framework Thursday (Aug. 27), saying in a press release that these moves will focus supervisory attention on the most significant risks and violations. Announcing these materials in a Thursday post on X, Comptroller of the [&#8230;] The post OCC Rewrites Enforcement Playbook to Focus on Big Bank Risks appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 28 Aug 2026 22:12:36 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 533
+          "word_count": 498
         },
         {
-          "id": 1664,
+          "id": 1661,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 127
         },
         {
-          "id": 1666,
+          "id": 1663,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1074,14 +1074,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 219,
+      "total_raw": 213,
       "total_valid": 41,
       "total_candidates": 18
     }
   },
   "meta": {
-    "total_raw": 1870,
-    "dup": 465,
+    "total_raw": 1861,
+    "dup": 458,
     "nocontent": 374,
     "noise": 6
   }
