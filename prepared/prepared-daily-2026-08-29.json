@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 1,
+          "id": 2,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 154
         },
         {
-          "id": 11,
+          "id": 12,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,22 @@
           "word_count": 149
         },
         {
-          "id": 83,
+          "id": 1,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Our decision on Cursor following its acquisition by SpaceX",
+          "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+          "content": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+          "pub_date": "Fri, 28 Aug 2026 06:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 109
+        },
+        {
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +65,7 @@
           "word_count": 184
         },
         {
-          "id": 80,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 179
         },
         {
-          "id": 81,
+          "id": 82,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 168
         },
         {
-          "id": 65,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 936,
+          "id": 934,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +155,7 @@
           "word_count": 1199
         },
         {
-          "id": 937,
+          "id": 935,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 676
         },
         {
-          "id": 923,
+          "id": 921,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 173
-        },
-        {
-          "id": 922,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Lovable CTO: The Future of SaaS Is Apps That Agents Can Use",
-          "link": "https://www.latent.space/p/lovable-future-of-saas",
-          "content": "Lovable is branching out from AI-powered web app creation and into MCP-powered &#8216;capabilities&#8217;. We talk to CTO Fabian Hedin.",
-          "pub_date": "Wed, 26 Aug 2026 16:16:25 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 135
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1037,
-      "total_valid": 626,
+      "total_raw": 1035,
+      "total_valid": 624,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1189,
+          "id": 1177,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 385
         },
         {
-          "id": 1473,
+          "id": 1461,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 372
         },
         {
-          "id": 1075,
+          "id": 1063,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 222
         },
         {
-          "id": 1077,
+          "id": 1065,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 201
         },
         {
-          "id": 1467,
+          "id": 1455,
           "source": "Science Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 55
         },
         {
-          "id": 1346,
+          "id": 1334,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 297
         },
         {
-          "id": 1348,
+          "id": 1336,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 264
         },
         {
-          "id": 1349,
+          "id": 1337,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 226
         },
         {
-          "id": 1038,
+          "id": 1036,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 219
         },
         {
-          "id": 1488,
+          "id": 1476,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 216
         },
         {
-          "id": 1040,
+          "id": 1038,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 207
         },
         {
-          "id": 1039,
+          "id": 1037,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,37 +377,7 @@
           "word_count": 202
         },
         {
-          "id": 1072,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "RFK Jr. said a Samoa trip had nothing to do with vaccines. New documents refute that",
-          "link": "https://www.statnews.com/2026/08/27/kennedy-samoa-trip-mmr-vaccine-new-documents/?utm_campaign=rss",
-          "content": "Health secretary Robert F. Kennedy Jr. said a Samoa trip had nothing to do with vaccines. New documents obtained by The Associated Press and The Guardian refute that testimony.",
-          "pub_date": "Thu, 27 Aug 2026 13:16:38 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 176
-        },
-        {
-          "id": 1071,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: Pharmalittle: We’re reading about a pancreatic cancer drug approval, a Trump deal with biotechs, and more",
-          "link": "https://www.statnews.com/pharmalot/2026/08/27/pancreatic-cancer-drug-approved-trump-deal-with-biotechs/?utm_campaign=rss",
-          "content": "The FDA approved a life-extending treatment for advanced pancreatic cancer from Revolution Medicines that is the first to attack a genetic cause",
-          "pub_date": "Thu, 27 Aug 2026 13:20:27 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 144
-        },
-        {
-          "id": 1066,
+          "id": 1059,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -420,6 +390,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 137
+        },
+        {
+          "id": 1056,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Vaccines take center stage at federal autism advisory committee",
+          "link": "https://www.statnews.com/2026/08/28/vaccines-autism-advisory-committee-strategic-plan-boost-research-funding/?utm_campaign=rss",
+          "content": "Comments about vaccines overshadowed an advisory committee meeting to discuss a plan for boosting federal funding for autism research.",
+          "pub_date": "Fri, 28 Aug 2026 08:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 134
+        },
+        {
+          "id": 1052,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "At a federal autism advisory committee meeting, members double down on long-debunked theories",
+          "link": "https://www.statnews.com/2026/08/28/health-news-federal-autism-adcomm-doubles-down-on-debunked-theory/?utm_campaign=rss",
+          "content": "RFK Jr.'s vaccine questions in Samoa, former Stanford president rebuts fraud allegations, and more health news from Morning Rounds",
+          "pub_date": "Fri, 28 Aug 2026 13:15:46 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 130
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 485,
-      "total_valid": 336,
+      "total_raw": 475,
+      "total_valid": 327,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1553,
+          "id": 1541,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 272
         },
         {
-          "id": 1571,
+          "id": 1559,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 201
         },
         {
-          "id": 1541,
+          "id": 1529,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 189
         },
         {
-          "id": 1619,
+          "id": 1607,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1620,
+          "id": 1608,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1626,
+          "id": 1614,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1637,
+          "id": 1625,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 516
         },
         {
-          "id": 1638,
+          "id": 1626,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 474
         },
         {
-          "id": 1530,
+          "id": 1518,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 388
         },
         {
-          "id": 1576,
+          "id": 1564,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 384
         },
         {
-          "id": 1597,
+          "id": 1585,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 380
         },
         {
-          "id": 1531,
+          "id": 1519,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1472,
+          "id": 1460,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 396
         },
         {
-          "id": 1469,
+          "id": 1457,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 390
         },
         {
-          "id": 1530,
+          "id": 1518,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 388
         },
         {
-          "id": 1576,
+          "id": 1564,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 384
         },
         {
-          "id": 1531,
+          "id": 1519,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 326
         },
         {
-          "id": 1642,
+          "id": 1630,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 311
         },
         {
-          "id": 1080,
+          "id": 1068,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 258
         },
         {
-          "id": 1158,
+          "id": 1146,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 252
         },
         {
-          "id": 1088,
+          "id": 1076,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 201
         },
         {
-          "id": 1645,
+          "id": 1633,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 51,
-      "total_valid": 43,
+      "total_raw": 50,
+      "total_valid": 42,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1659,
+          "id": 1647,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 571
         },
         {
-          "id": 1701,
+          "id": 1685,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 562
         },
         {
-          "id": 1654,
+          "id": 1642,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 513
         },
         {
-          "id": 1653,
+          "id": 1641,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 482
         },
         {
-          "id": 1655,
+          "id": 1643,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 447
         },
         {
-          "id": 1657,
+          "id": 1645,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 397
         },
         {
-          "id": 1673,
+          "id": 1657,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 289
         },
         {
-          "id": 1672,
+          "id": 1656,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 257
         },
         {
-          "id": 1660,
+          "id": 1648,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 171
         },
         {
-          "id": 1664,
+          "id": 1650,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 160
         },
         {
-          "id": 1665,
+          "id": 1651,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,22 +964,7 @@
           "word_count": 154
         },
         {
-          "id": 1677,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "MoonPay adds Kamino to PayBox",
-          "link": "https://www.finextra.com/pressarticle/110746/moonpay-adds-kamino-to-paybox?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "PayBox, MoonPay’s payment vault built for AI, now supports Kamino, one of Solana's largest decentralized finance lending protocols.",
-          "pub_date": "Thu, 27 Aug 2026 14:30:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 131
-        },
-        {
-          "id": 1667,
+          "id": 1653,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,22 @@
           "word_count": 125
         },
         {
-          "id": 68,
+          "id": 1673,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "AI in payments: Short-term gains, long-term transformation",
+          "link": "https://www.finextra.com/event-info/635/ai-in-payments-short-term-gains-long-term-transformation?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "In five years’ time, will AI make payments more efficient, or will it fundamentally change how money moves around the world?",
+          "pub_date": "Wed, 21 Oct 2026 15:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 124
+        },
+        {
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 954
         },
         {
-          "id": 1700,
+          "id": 1684,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,7 +1024,7 @@
           "word_count": 137
         },
         {
-          "id": 1652,
+          "id": 1640,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1039,7 @@
           "word_count": 498
         },
         {
-          "id": 1661,
+          "id": 1649,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1052,21 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 127
-        },
-        {
-          "id": 1663,
-          "source": "PaymentsDive",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Is the nickel nearing a revamp?",
-          "link": "https://www.paymentsdive.com/news/is-the-nickel-nearing-a-revamp/828935/",
-          "content": "It costs 13 cents to produce the five-cent coin. Congress wants the U.S. to explore more cost-effective methods.",
-          "pub_date": "Thu, 27 Aug 2026 10:29:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 112
         }
       ],
       "quota": {
@@ -1074,13 +1059,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 213,
-      "total_valid": 41,
-      "total_candidates": 18
+      "total_raw": 209,
+      "total_valid": 36,
+      "total_candidates": 17
     }
   },
   "meta": {
-    "total_raw": 1861,
+    "total_raw": 1845,
     "dup": 458,
     "nocontent": 374,
     "noise": 6
