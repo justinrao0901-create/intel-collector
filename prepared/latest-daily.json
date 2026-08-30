@@ -35,19 +35,19 @@
           "word_count": 134
         },
         {
-          "id": 88,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
           "priority": 4,
-          "title": "Meta executive leaves for OpenAI as the social media giant faces growing scrutiny in India",
-          "link": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
-          "content": "Sandhya Devanathan will oversee some OpenAI operations across Southeast Asia and Australia in her new role.",
-          "pub_date": "Fri, 28 Aug 2026 12:21:06 +0000",
+          "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+          "link": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+          "content": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
+          "pub_date": "Sat, 29 Aug 2026 18:41:59 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 107
+          "word_count": 88
         },
         {
           "id": 74,
@@ -95,7 +95,22 @@
           "word_count": 1200
         },
         {
-          "id": 120,
+          "id": 131,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Introducing Hy4 Preview",
+          "link": "https://simonwillison.net/2026/Aug/29/hy4/",
+          "content": "Introducing Hy4 Preview New open weight text input (no vision) LLM from Chinese company Tencent today: 770B total parameters, 49B active parameters, 1M token context window, 1.56TB on Hugging Face . This is a big size increase from their previous Hy3 in July, which was 295B, 21B active, 256,000 context, 598GB. I recently started using model chat templates to better understand their capabilities. Here's Hy4's chat_template.jinja on Hugging Face, which includes this section: {% - if not reasoning_effort is defined %} {% - set reasoning_effort = 'high' %} {% - elif reasoning_effort not in [ 'high' , 'no_think' ] %} {% - if reasoning_effort is none %} {{- raise_exception('reasoning_effort error : None, should be no_think/high') }} {% - else %} {{- raise_exception('reasoning_effort error : ' + reasoning_effort + ', should be no_think/high') }} {% - endif %} {% - endif %} So it looks like there are just two reasoning effort levels: \"high\" (the default) and \"no_think\" (reason by disabled). I tried my \"Generate an SVG of a pelican riding a bicycle\" prompt with the default high reasoning via OpenRouter and got this : Quoting the reasoning trace: [...] Let's maybe add a helmet? It could impr",
+          "pub_date": "2026-08-29T23:53:13+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 119,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +125,7 @@
           "word_count": 135
         },
         {
-          "id": 119,
+          "id": 118,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 970
-        },
-        {
-          "id": 138,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Your executable is a SQLite database",
-          "link": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
-          "content": "Your executable is a SQLite database Farid Zakaria describes a neat Linux pattern for creating a SQLite database file that can be directly used as an executable binary. The trick sets the SQLite file format's 4-byte application ID (68 bytes into the file) to SELF, standing for Structured Executable & Linkable Format. The various components of the ELF executable format are then arranged into a number of different SQLite tables, using this schema . Their self-exec interpreter ( C code here ) can then extract and execute the necessary pieces. You can additionally use a Linux mechanism called binfmt_misc to teach the kernel to execute that any time it encounters an executable matching that binary pattern. Farid uses NixOS here, but without NixOS I think registration looks something like this: printf '%s\\n' ':self:M:68:SELF::/usr/local/bin/self-exec:' \\ > /proc/sys/fs/binfmt_misc/register Via Hacker News Tags: c , linux , sqlite",
-          "pub_date": "2026-08-24T11:38:15+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 937
         }
       ],
       "quota": {
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 850,
+          "id": 849,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 118
         },
         {
-          "id": 844,
+          "id": 843,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 114
         },
         {
-          "id": 853,
+          "id": 852,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 103
         },
         {
-          "id": 846,
+          "id": 845,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 100
         },
         {
-          "id": 860,
+          "id": 859,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -934,7 +934,7 @@
           "word_count": 179
         },
         {
-          "id": 840,
+          "id": 839,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -969,14 +969,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 200,
+      "total_raw": 199,
       "total_valid": 16,
       "total_candidates": 12
     }
   },
   "meta": {
-    "total_raw": 1021,
-    "dup": 294,
+    "total_raw": 1020,
+    "dup": 293,
     "nocontent": 376,
     "noise": 6
   }
