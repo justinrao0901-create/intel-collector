@@ -65,6 +65,21 @@
           "word_count": 1200
         },
         {
+          "id": 129,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Understanding ChatGPT Work",
+          "link": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+          "content": "OpenAI announced ChatGPT Work on July 9th, and have been furiously iterating on it ever since. It is an extraordinarily confusing and very powerful product. Here's what I've figured out about it so far. ChatGPT Work is actually two products The more interesting version of ChatGPT Work is the one that runs in the cloud. This can be accessed via chatgpt.com or through the ChatGPT mobile apps. Let's call it Work Cloud . If you install the ChatGPT desktop app - the app that used to be called Codex - you gain access to a thing called ChatGPT Work that can access files and run programs directly on your computer. Let's call that one Work Local . This one feels more like regular Codex re-skinned to be less intimidating to non-software-developers. For the rest of this article I'm going to talk exclusively about Work Cloud. Work is for paid subscribers only Right now, ChatGPT Work (in both flavors) is available only to $20/month and up subscribers. Free users and $8/month Go users do not have access. Work has features that aren't available in Chat The interface for accessing Work is a tab selector, which presents it as an alternative to Chat: The obvious question is when should I use Chat, a",
+          "pub_date": "2026-08-30T23:59:47+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
@@ -80,7 +95,7 @@
           "word_count": 285
         },
         {
-          "id": 136,
+          "id": 137,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -100,14 +115,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 227,
-      "total_valid": 8,
-      "total_candidates": 6
+      "total_raw": 228,
+      "total_valid": 9,
+      "total_candidates": 7
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 233,
+          "id": 234,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -122,7 +137,7 @@
           "word_count": 201
         },
         {
-          "id": 540,
+          "id": 541,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -137,7 +152,7 @@
           "word_count": 403
         },
         {
-          "id": 552,
+          "id": 553,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -152,7 +167,7 @@
           "word_count": 379
         },
         {
-          "id": 562,
+          "id": 563,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -167,7 +182,7 @@
           "word_count": 287
         },
         {
-          "id": 230,
+          "id": 231,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -182,7 +197,7 @@
           "word_count": 104
         },
         {
-          "id": 399,
+          "id": 400,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -197,7 +212,7 @@
           "word_count": 1101
         },
         {
-          "id": 410,
+          "id": 411,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +227,7 @@
           "word_count": 1026
         },
         {
-          "id": 413,
+          "id": 414,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +242,7 @@
           "word_count": 925
         },
         {
-          "id": 326,
+          "id": 327,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +257,7 @@
           "word_count": 562
         },
         {
-          "id": 322,
+          "id": 323,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +272,7 @@
           "word_count": 554
         },
         {
-          "id": 312,
+          "id": 313,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 535
         },
         {
-          "id": 427,
+          "id": 428,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 445
         },
         {
-          "id": 348,
+          "id": 349,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 404
         },
         {
-          "id": 607,
+          "id": 608,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 398
         },
         {
-          "id": 432,
+          "id": 433,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -344,7 +359,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 696,
+          "id": 697,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -359,7 +374,7 @@
           "word_count": 174
         },
         {
-          "id": 700,
+          "id": 701,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -374,7 +389,7 @@
           "word_count": 171
         },
         {
-          "id": 697,
+          "id": 698,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -389,7 +404,7 @@
           "word_count": 127
         },
         {
-          "id": 753,
+          "id": 754,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -404,7 +419,7 @@
           "word_count": 1199
         },
         {
-          "id": 748,
+          "id": 749,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -419,7 +434,7 @@
           "word_count": 1156
         },
         {
-          "id": 738,
+          "id": 739,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -434,7 +449,7 @@
           "word_count": 1126
         },
         {
-          "id": 720,
+          "id": 721,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 716,
+          "id": 717,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +479,7 @@
           "word_count": 1199
         },
         {
-          "id": 711,
+          "id": 712,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -491,7 +506,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 233,
+          "id": 234,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +521,7 @@
           "word_count": 201
         },
         {
-          "id": 292,
+          "id": 293,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +536,7 @@
           "word_count": 131
         },
         {
-          "id": 236,
+          "id": 237,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +551,7 @@
           "word_count": 128
         },
         {
-          "id": 367,
+          "id": 368,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +566,7 @@
           "word_count": 60
         },
         {
-          "id": 696,
+          "id": 697,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +581,7 @@
           "word_count": 174
         },
         {
-          "id": 505,
+          "id": 506,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +596,7 @@
           "word_count": 139
         },
         {
-          "id": 459,
+          "id": 460,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 460,
+          "id": 461,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 471,
+          "id": 472,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 720,
+          "id": 721,
           "source": "bioRxiv SynBio",
           "section": "cross",
           "tier": "T1",
@@ -664,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 775,
+          "id": 776,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +694,7 @@
           "word_count": 482
         },
         {
-          "id": 776,
+          "id": 777,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +709,7 @@
           "word_count": 454
         },
         {
-          "id": 781,
+          "id": 782,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +724,7 @@
           "word_count": 188
         },
         {
-          "id": 785,
+          "id": 786,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +739,7 @@
           "word_count": 113
         },
         {
-          "id": 779,
+          "id": 780,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +754,7 @@
           "word_count": 493
         },
         {
-          "id": 777,
+          "id": 778,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 481
         },
         {
-          "id": 774,
+          "id": 775,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 428
         },
         {
-          "id": 778,
+          "id": 779,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 426
         },
         {
-          "id": 782,
+          "id": 783,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 139
         },
         {
-          "id": 793,
+          "id": 794,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 98
         },
         {
-          "id": 796,
+          "id": 797,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 51
         },
         {
-          "id": 791,
+          "id": 792,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -855,7 +870,7 @@
     }
   },
   "meta": {
-    "total_raw": 961,
+    "total_raw": 962,
     "dup": 289,
     "nocontent": 375,
     "noise": 6
