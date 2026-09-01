@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 1,
+          "id": 2,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,22 @@
           "word_count": 152
         },
         {
-          "id": 82,
+          "id": 1,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Polimill builds Japan's next-generation public AI infrastructure",
+          "link": "https://openai.com/index/polimill",
+          "content": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
+          "pub_date": "Mon, 31 Aug 2026 07:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 136
+        },
+        {
+          "id": 80,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +50,7 @@
           "word_count": 179
         },
         {
-          "id": 80,
+          "id": 78,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +65,7 @@
           "word_count": 161
         },
         {
-          "id": 81,
+          "id": 79,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 124
         },
         {
-          "id": 64,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 65,
+          "id": 63,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 114,
+          "id": 112,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 116,
+          "id": 114,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 118,
+          "id": 116,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 269,
+          "id": 267,
           "source": "arXiv cs.AI",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 270,
-          "source": "arXiv cs.AI",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Rating the Raters: Rasch Measurement Theory for LLM Evaluation",
-          "link": "https://arxiv.org/abs/2608.27463",
-          "content": "arXiv:2608.27463v1 Announce Type: new Abstract: LLMs now sit on every side of evaluation: as examinees scored on benchmarks, judges of other models' outputs, and raters of human-generated content. Each paradigm can be viewed as a measurement problem, where a latent property of an object is probed with items from an instrument (e.g., benchmark) by raters. Standard evaluation practices often neglect the contributions of each core component to the end result, limiting our understanding of what is being measured. Rasch measurement theory (RMT) is well-suited to this kind of problem. RMT decomposes ordinal ratings into separable facets on a common scale. It further provides a battery of diagnostics that can identify miscalibrated measurements and rater biases. We present a case study of RMT applied to the LLM-as-rater paradigm using the Measuring Hate Speech corpus, whose construct was itself built under RMT. We fit a series of many-facet Rasch models to annotations from nine LLMs spanning families and capability levels. Our analyses show that LLMs systematically differ from human raters in severity, item-level calibration, question-order robustness, target-identity sensitivity, and rat",
-          "pub_date": "Mon, 31 Aug 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 894,
-      "total_valid": 521,
+      "total_raw": 891,
+      "total_valid": 522,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1134,
+          "id": 1078,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 332
         },
         {
-          "id": 1277,
+          "id": 1212,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 192
         },
         {
-          "id": 1254,
+          "id": 1189,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 340
         },
         {
-          "id": 1246,
+          "id": 1181,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 298
         },
         {
-          "id": 1190,
+          "id": 1125,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 261
         },
         {
-          "id": 908,
+          "id": 905,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -287,7 +287,7 @@
           "word_count": 145
         },
         {
-          "id": 905,
+          "id": 902,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -302,22 +302,7 @@
           "word_count": 101
         },
         {
-          "id": 1100,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Reelin’ in the YEARS",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2851622",
-          "content": "Patients with cancer are known to have increased rates of pulmonary embolism (PE) from their prothrombotic state, and computed tomographic (CT) pulmonary angiography has long served as the standard diagnostic test when PE is suspected. Professional guidelines and consensus documents have cautioned against applying clinical decision rules and D-dimer to exclude PE in patients with cancer, and the usual practice is to proceed directly to CT pulmonary angiography in this population. This practice carries several disadvantages. CT pulmonary angiography exposes patients to radiation, increases emergency department length of stay, requires exposure to iodinated contrast in patients who may have kidney impairment, and increases costs of care.",
-          "pub_date": "Tue, 25 Aug 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 745
-        },
-        {
-          "id": 998,
+          "id": 982,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +317,7 @@
           "word_count": 528
         },
         {
-          "id": 1001,
+          "id": 985,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +332,7 @@
           "word_count": 525
         },
         {
-          "id": 1005,
+          "id": 989,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -362,37 +347,7 @@
           "word_count": 509
         },
         {
-          "id": 1095,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Breast Density Masking and Precision Screening",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2851957",
-          "content": "To the Editor In response to the recent Viewpoint on breast density masking and precision screening, we want to highlight the Health Resources and Services Administration (HRSA)–supported Women’s Preventive Services guidelines, which include breast cancer screening for average-risk women. Under section 2713 of the Public Health Service Act, most private health insurance plans must cover HRSA’s recommended preventive services without patient cost sharing.",
-          "pub_date": "Tue, 25 Aug 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 458
-        },
-        {
-          "id": 1092,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Evolocumab and Cardiovascular Events in Patients With Diabetes Without Known Significant Atherosclerosis",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2852003",
-          "content": "To the Editor In the VESALIUS-CV trial, Dr Marston and colleagues reported that evolocumab reduced first major adverse cardiovascular events (MACE) in patients with diabetes taking optimized lipid-lowering therapy and without known significant atherosclerosis over 5 years of follow-up. While the results are reassuring, additional context regarding absolute benefit and economic considerations may help inform clinical and policy interpretation.",
-          "pub_date": "Tue, 25 Aug 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 446
-        },
-        {
-          "id": 1316,
+          "id": 1251,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +362,7 @@
           "word_count": 442
         },
         {
-          "id": 1315,
+          "id": 1250,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +375,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 427
+        },
+        {
+          "id": 1268,
+          "source": "Cell Reports Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Cortical-to-pallidal beta cascade underlies network pathophysiology in Parkinson’s disease",
+          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00418-0?rss=yes",
+          "content": "Although beta synchrony is a hallmark of Parkinson’s disease, its interactions across motor circuit nodes remain unclear. Choi et al. show that GPe-led high-beta coupling with M1 triggers GPi low-beta amplification and that dopaminergic therapy attenuates this cortical-to-pallidal cascade, revealing a circuit-level mechanism underlying motor dysfunction and its therapeutic modulation.",
+          "pub_date": "2026-08-21",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 387
+        },
+        {
+          "id": 1008,
+          "source": "Cell Host Microbe",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Mouth-to-gut microbial transmission signatures enable robust, non-invasive diagnosis of gastrointestinal cancers",
+          "link": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(26)00308-2?rss=yes",
+          "content": "Jang et al. show that disruption of oral-gut microbial compartmentalization characterizes gastrointestinal cancers. By quantifying mouth-to-feces microbial transmission, they identify robust diagnostic signatures that accurately classify gastric and colorectal cancers across seven independent cohorts, highlighting a new non-invasive framework for microbiome-based cancer detection.",
+          "pub_date": "2026-08-20",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 383
+        },
+        {
+          "id": 1269,
+          "source": "Cell Reports Medicine",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Long-term outcomes of anti-CD19 CAR T cell therapy in refractory myasthenia gravis: A case series",
+          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00417-9?rss=yes",
+          "content": "Hegelmaier et al. present 2-year follow-up data from three patients with treatment-refractory myasthenia gravis receiving CAR T cells. All patients show sustained clinical remission. The long-lasting improvement in functional outcomes underscores the impact on daily living and suggests potential clinical benefit of CAR T cell therapy in selected severe neuroimmunological diseases.",
+          "pub_date": "2026-08-21",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 383
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 477,
-      "total_valid": 284,
+      "total_raw": 412,
+      "total_valid": 242,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1429,
+          "id": 1359,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1397,
+          "id": 1329,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 124
         },
         {
-          "id": 1430,
+          "id": 1360,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1199
         },
         {
-          "id": 1457,
+          "id": 1387,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 536
         },
         {
-          "id": 1439,
+          "id": 1369,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 442
         },
         {
-          "id": 1421,
+          "id": 1352,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 406
         },
         {
-          "id": 1410,
+          "id": 1341,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -544,14 +544,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 93,
+      "total_raw": 91,
       "total_valid": 7,
       "total_candidates": 7
     },
     "cross": {
       "candidates": [
         {
-          "id": 1469,
+          "id": 1399,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 521
         },
         {
-          "id": 1468,
+          "id": 1398,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 416
         },
         {
-          "id": 1015,
+          "id": 999,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 380
         },
         {
-          "id": 1016,
+          "id": 1000,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 347
         },
         {
-          "id": 1471,
+          "id": 1401,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 321
         },
         {
-          "id": 1321,
+          "id": 1256,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 321
         },
         {
-          "id": 913,
+          "id": 910,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 245
         },
         {
-          "id": 914,
+          "id": 911,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 186
         },
         {
-          "id": 1119,
+          "id": 1064,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -686,19 +686,19 @@
           "word_count": 186
         },
         {
-          "id": 980,
-          "source": "Nature",
+          "id": 1278,
+          "source": "BioPharma Dive",
           "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Assessing students in the AI era",
-          "link": "https://www.nature.com/articles/d41586-026-02632-z",
-          "content": "Nature, Published online: 25 August 2026; doi:10.1038/d41586-026-02632-z Assessing students in the AI era",
-          "pub_date": "2026-08-25",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The next frontier: Advancing foundation models with multimodal data",
+          "link": "https://www.biopharmadive.com/spons/the-next-frontier-advancing-foundation-models-with-multimodal-data/828675/",
+          "content": "What's possible when AI models can learn from additional health data modalities to create a more complete understanding of human health?",
+          "pub_date": "Mon, 31 Aug 2026 05:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 105
+          "word_count": 136
         }
       ],
       "quota": {
@@ -706,8 +706,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 30,
-      "total_valid": 23,
+      "total_raw": 26,
+      "total_valid": 19,
       "total_candidates": 10
     },
     "china": {
@@ -724,7 +724,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1476,
+          "id": 1406,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 491
         },
         {
-          "id": 1487,
+          "id": 1417,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 482
         },
         {
-          "id": 1488,
+          "id": 1418,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 479
         },
         {
-          "id": 1480,
+          "id": 1410,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 450
         },
         {
-          "id": 1498,
+          "id": 1428,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 212
         },
         {
-          "id": 1500,
+          "id": 1430,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 168
         },
         {
-          "id": 1491,
+          "id": 1421,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 137
         },
         {
-          "id": 1495,
+          "id": 1425,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 111
         },
         {
-          "id": 1516,
+          "id": 1446,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 103
         },
         {
-          "id": 1519,
+          "id": 1449,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 103
         },
         {
-          "id": 1494,
+          "id": 1424,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 96
         },
         {
-          "id": 1492,
+          "id": 1422,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 83
         },
         {
-          "id": 83,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 77
         },
         {
-          "id": 183,
+          "id": 181,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 431,
+          "id": 429,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 478,
+          "id": 476,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 186,
+          "id": 184,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 997
         },
         {
-          "id": 222,
+          "id": 220,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 788
         },
         {
-          "id": 1478,
+          "id": 1408,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 553
         },
         {
-          "id": 1479,
+          "id": 1409,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1035,9 +1035,9 @@
     }
   },
   "meta": {
-    "total_raw": 1679,
-    "dup": 463,
-    "nocontent": 375,
+    "total_raw": 1609,
+    "dup": 436,
+    "nocontent": 373,
     "noise": 6
   }
 }
