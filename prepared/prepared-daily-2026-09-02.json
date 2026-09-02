@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1621,
+          "id": 1620,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,19 +170,19 @@
           "word_count": 1199
         },
         {
-          "id": 1623,
+          "id": 1622,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
           "title": "GeoJSON Map Viewer",
           "link": "https://simonwillison.net/2026/Sep/1/geojson/",
-          "content": "Tool: GeoJSON Map Viewer I was helping Natalie gather some maps of local political boundaries (for the Granada Community Services District and the Midcoast Community Council and found a need to display some GeoJSON files on a map and export that as a PNG. I asked GPT-5.6-Sol for suggestions of tools and it proactively built one. After some iterations using Claude Code for web and Fable 5.1 we got to this finished tool. As for the GeoJSON.. it turns out if you ask ChatGPT Work to provide boundaries for almost anything it will churn away extracting and combining files from different Government data sources and build exactly what you need. I got this polygon from: I want a polygon that represents the exact boundary of the El Granada GCSD And this one from: Get me a GeoJSON file for the boundary (or boundaries if that makes sense) for the MCC - Midcoast Community Council - that operates near Half Moon Bay CA Here's a link that displays both of them at the same time on the new GeoJSON map viewing tool. Tags: geospatial , tools , geojson",
+          "content": "Tool: GeoJSON Map Viewer I was helping Natalie gather some maps of local political boundaries (for the Granada Community Services District and the Midcoast Community Council and found a need to display some GeoJSON files on a map and export that as a PNG. I asked GPT-5.6-Sol for suggestions of tools and it proactively built one. After some iterations using Claude Code for web and Fable 5.1 we got to this finished tool. As for the GeoJSON.. it turns out if you ask ChatGPT Work to provide boundaries for almost anything it will churn away extracting and combining files from different Government data sources and build exactly what you need. I got this polygon from: I want a polygon that represents the exact boundary of the El Granada GCSD And this one from: Get me a GeoJSON file for the boundary (or boundaries if that makes sense) for the MCC - Midcoast Community Council - that operates near Half Moon Bay CA Here's a link that displays both of them at the same time on the new GeoJSON map viewing tool. Tags: geospatial , tools , geojson , chatgpt",
           "pub_date": "2026-09-01T18:05:45+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1047
+          "word_count": 1057
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1724,
+      "total_raw": 1723,
       "total_valid": 1400,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1897,
+          "id": 1895,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 738
         },
         {
-          "id": 1935,
+          "id": 1933,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 514
         },
         {
-          "id": 1829,
+          "id": 1827,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 442
         },
         {
-          "id": 2140,
+          "id": 2138,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 405
         },
         {
-          "id": 1892,
+          "id": 1890,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 353
         },
         {
-          "id": 1903,
+          "id": 1901,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 286
         },
         {
-          "id": 2058,
+          "id": 2056,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 262
         },
         {
-          "id": 2056,
+          "id": 2054,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 249
         },
         {
-          "id": 2060,
+          "id": 2058,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 248
         },
         {
-          "id": 1730,
+          "id": 1729,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 214
         },
         {
-          "id": 1746,
+          "id": 1745,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 100
         },
         {
-          "id": 2110,
+          "id": 2108,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 545
         },
         {
-          "id": 1812,
+          "id": 1810,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 478
         },
         {
-          "id": 1932,
+          "id": 1930,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 477
         },
         {
-          "id": 1828,
+          "id": 1826,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 464,
+      "total_raw": 463,
       "total_valid": 296,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2218,
+          "id": 2216,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 292
         },
         {
-          "id": 2215,
+          "id": 2213,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 225
         },
         {
-          "id": 2216,
+          "id": 2214,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 204
         },
         {
-          "id": 2236,
+          "id": 2234,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 572
         },
         {
-          "id": 2276,
+          "id": 2274,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 380
         },
         {
-          "id": 2195,
+          "id": 2193,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 334
         },
         {
-          "id": 2242,
+          "id": 2240,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 329
         },
         {
-          "id": 2223,
+          "id": 2221,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 306
         },
         {
-          "id": 2194,
+          "id": 2192,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 303
         },
         {
-          "id": 2227,
+          "id": 2225,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 2228,
+          "id": 2226,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1087
         },
         {
-          "id": 2229,
+          "id": 2227,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1918,
+          "id": 1916,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 2110,
+          "id": 2108,
           "source": "Nature Rev Drug Discovery",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 545
         },
         {
-          "id": 1910,
+          "id": 1908,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 533
         },
         {
-          "id": 1932,
+          "id": 1930,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 477
         },
         {
-          "id": 1909,
+          "id": 1907,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 432
         },
         {
-          "id": 2140,
+          "id": 2138,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 405
         },
         {
-          "id": 1827,
+          "id": 1825,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 394
         },
         {
-          "id": 1940,
+          "id": 1938,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 359
         },
         {
-          "id": 2195,
+          "id": 2193,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 334
         },
         {
-          "id": 2138,
+          "id": 2136,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2289,
+          "id": 2287,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 491
         },
         {
-          "id": 2287,
+          "id": 2285,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 473
         },
         {
-          "id": 2292,
+          "id": 2290,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 458
         },
         {
-          "id": 2315,
+          "id": 2313,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 284
         },
         {
-          "id": 2326,
+          "id": 2324,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 253
         },
         {
-          "id": 2304,
+          "id": 2302,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 219
         },
         {
-          "id": 2325,
+          "id": 2323,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 213
         },
         {
-          "id": 2307,
+          "id": 2305,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 147
         },
         {
-          "id": 2321,
+          "id": 2319,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 133
         },
         {
-          "id": 2299,
+          "id": 2297,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 128
         },
         {
-          "id": 2347,
+          "id": 2345,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -964,7 +964,7 @@
           "word_count": 131
         },
         {
-          "id": 2348,
+          "id": 2346,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -979,7 +979,7 @@
           "word_count": 102
         },
         {
-          "id": 140,
+          "id": 139,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 174,
+          "id": 173,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 253,
+          "id": 252,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 337,
+          "id": 336,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 342,
+          "id": 341,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 375,
+          "id": 374,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 1033,
+          "id": 1032,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 1139,
+          "id": 1138,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1110,8 +1110,8 @@
     }
   },
   "meta": {
-    "total_raw": 2509,
-    "dup": 383,
+    "total_raw": 2507,
+    "dup": 381,
     "nocontent": 372,
     "noise": 4
   }
