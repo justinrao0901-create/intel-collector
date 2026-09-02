@@ -170,19 +170,19 @@
           "word_count": 1199
         },
         {
-          "id": 1622,
+          "id": 1623,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "Codex bundles LibreOffice",
-          "link": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
-          "content": "I was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime , including a full Python installation, a full Node.js installation, and native binaries for Poppler , git, and the LibreOffice open source office suite (which forked from OpenOffice.org in 2010): The ~/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/documents folder includes skills which tell Codex how to find and use those binaries. Tags: codex , generative-ai , openai , ai , llms , openoffice , open-source",
-          "pub_date": "2026-09-01T19:03:01+00:00",
+          "title": "GeoJSON Map Viewer",
+          "link": "https://simonwillison.net/2026/Sep/1/geojson/",
+          "content": "Tool: GeoJSON Map Viewer I was helping Natalie gather some maps of local political boundaries (for the Granada Community Services District and the Midcoast Community Council and found a need to display some GeoJSON files on a map and export that as a PNG. I asked GPT-5.6-Sol for suggestions of tools and it proactively built one. After some iterations using Claude Code for web and Fable 5.1 we got to this finished tool. As for the GeoJSON.. it turns out if you ask ChatGPT Work to provide boundaries for almost anything it will churn away extracting and combining files from different Government data sources and build exactly what you need. I got this polygon from: I want a polygon that represents the exact boundary of the El Granada GCSD And this one from: Get me a GeoJSON file for the boundary (or boundaries if that makes sense) for the MCC - Midcoast Community Council - that operates near Half Moon Bay CA Here's a link that displays both of them at the same time on the new GeoJSON map viewing tool. Tags: geospatial , tools , geojson",
+          "pub_date": "2026-09-01T18:05:45+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 682
+          "word_count": 1047
         }
       ],
       "quota": {
@@ -190,8 +190,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1723,
-      "total_valid": 1399,
+      "total_raw": 1724,
+      "total_valid": 1400,
       "total_candidates": 12
     },
     "vaccine": {
@@ -242,7 +242,7 @@
           "word_count": 442
         },
         {
-          "id": 2139,
+          "id": 2140,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 286
         },
         {
-          "id": 2057,
+          "id": 2058,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 262
         },
         {
-          "id": 2055,
+          "id": 2056,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 249
         },
         {
-          "id": 2059,
+          "id": 2060,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 248
         },
         {
-          "id": 1729,
+          "id": 1730,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 214
         },
         {
-          "id": 1745,
+          "id": 1746,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 100
         },
         {
-          "id": 2109,
+          "id": 2110,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 2217,
+          "id": 2218,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 292
         },
         {
-          "id": 2214,
+          "id": 2215,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 225
         },
         {
-          "id": 2215,
+          "id": 2216,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 204
         },
         {
-          "id": 2235,
+          "id": 2236,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 572
         },
         {
-          "id": 2275,
+          "id": 2276,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 380
         },
         {
-          "id": 2194,
+          "id": 2195,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 334
         },
         {
-          "id": 2241,
+          "id": 2242,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 329
         },
         {
-          "id": 2222,
+          "id": 2223,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 306
         },
         {
-          "id": 2193,
+          "id": 2194,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 303
         },
         {
-          "id": 2226,
+          "id": 2227,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 2227,
+          "id": 2228,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1087
         },
         {
-          "id": 2228,
+          "id": 2229,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 2109,
+          "id": 2110,
           "source": "Nature Rev Drug Discovery",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 432
         },
         {
-          "id": 2139,
+          "id": 2140,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 359
         },
         {
-          "id": 2194,
+          "id": 2195,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 334
         },
         {
-          "id": 2137,
+          "id": 2138,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2288,
+          "id": 2289,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 491
         },
         {
-          "id": 2286,
+          "id": 2287,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 473
         },
         {
-          "id": 2291,
+          "id": 2292,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 458
         },
         {
-          "id": 2314,
+          "id": 2315,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 284
         },
         {
-          "id": 2325,
+          "id": 2326,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 253
         },
         {
-          "id": 2303,
+          "id": 2304,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 219
         },
         {
-          "id": 2324,
+          "id": 2325,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 213
         },
         {
-          "id": 2306,
+          "id": 2307,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 147
         },
         {
-          "id": 2320,
+          "id": 2321,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 133
         },
         {
-          "id": 2298,
+          "id": 2299,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 128
         },
         {
-          "id": 2348,
+          "id": 2347,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -964,7 +964,7 @@
           "word_count": 131
         },
         {
-          "id": 2349,
+          "id": 2348,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 243,
+      "total_raw": 241,
       "total_valid": 62,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2510,
-    "dup": 385,
+    "total_raw": 2509,
+    "dup": 383,
     "nocontent": 372,
     "noise": 4
   }
