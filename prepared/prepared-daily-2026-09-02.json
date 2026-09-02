@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 56,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 149
         },
         {
-          "id": 79,
+          "id": 76,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 195
         },
         {
-          "id": 81,
+          "id": 78,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 189
         },
         {
-          "id": 88,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 159
         },
         {
-          "id": 64,
+          "id": 61,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 65,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,22 @@
           "word_count": 1200
         },
         {
-          "id": 1625,
+          "id": 1621,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Claude Fable 5.1 made me a really nice animated pelican",
+          "link": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
+          "content": "Today is Claude Fable (and Mythos) 5.1 day . Anthropic say that Fable 5.1 \"sets a new standard for coding, knowledge work, and long-running problem-solving tasks\". Their announcement spends a notable amount of time on scientific research, boasting of a 52.6% score on the brand new Terminal-Bench-Science 0.1 benchmark (first announced on August 27th ), up from 24.7% for Fable 5, 29.0% for Opus 5 and 22.4% for GPT-5.6 Sol. Other benchmarks show slightly improved scores, but none as impressive as the Science one. But how well can it pelican? Back in July I wrote about how I was losing faith in the pelican benchmark - its connection to how good the models were at other tasks didn't seem to hold as strongly as it did back in 2025 . The most interesting insights I get from it now are comparisons within model families, and particularly comparisons for the same prompt at different reasoning effort levels. Fable 5.1 has five reasoning levels: low, medium, high, xhigh, max - and no option to turn off reasoning entirely. I fixed an issue in llm-anthropic which caused reasoning traces not to be correctly recorded, then ran some prompts. Here's the full set of pelicans for all of the reasoning",
+          "pub_date": "2026-09-01T23:57:28+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 1622,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 682
-        },
-        {
-          "id": 1626,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting Tarn Adams",
-          "link": "https://simonwillison.net/2026/Sep/1/tarn-adams/",
-          "content": "They took the letters from me! I have to talk about dwarf behavior now. I can't even talk about dwarf AI. It doesn't exist. It's dwarf behavior , and they misbehave sometimes &mdash; Tarn Adams , co-creator of Dwarf Fortress Tags: ai , game-design",
-          "pub_date": "2026-09-01T17:01:11+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 247
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1726,
-      "total_valid": 1398,
+      "total_raw": 1723,
+      "total_valid": 1399,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1938,
+          "id": 1897,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 738
         },
         {
-          "id": 1976,
+          "id": 1935,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 514
         },
         {
-          "id": 1869,
+          "id": 1829,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 442
         },
         {
-          "id": 2184,
+          "id": 2139,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 405
         },
         {
-          "id": 1933,
+          "id": 1892,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 353
         },
         {
-          "id": 1944,
+          "id": 1903,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 286
         },
         {
-          "id": 2102,
+          "id": 2057,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 262
         },
         {
-          "id": 2100,
+          "id": 2055,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 249
         },
         {
-          "id": 2104,
+          "id": 2059,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 248
         },
         {
-          "id": 1732,
+          "id": 1729,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 214
         },
         {
-          "id": 1747,
+          "id": 1745,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 100
         },
         {
-          "id": 2154,
+          "id": 2109,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 545
         },
         {
-          "id": 1852,
+          "id": 1812,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 478
         },
         {
-          "id": 1973,
+          "id": 1932,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 477
         },
         {
-          "id": 1868,
+          "id": 1828,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 509,
-      "total_valid": 327,
+      "total_raw": 464,
+      "total_valid": 296,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2267,
+          "id": 2217,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 292
         },
         {
-          "id": 2264,
+          "id": 2214,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 225
         },
         {
-          "id": 2265,
+          "id": 2215,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 204
         },
         {
-          "id": 2292,
+          "id": 2235,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 572
         },
         {
-          "id": 2334,
+          "id": 2275,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 380
         },
         {
-          "id": 2244,
+          "id": 2194,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 334
         },
         {
-          "id": 2300,
+          "id": 2241,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 329
         },
         {
-          "id": 2272,
+          "id": 2222,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 306
         },
         {
-          "id": 2243,
+          "id": 2193,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 303
         },
         {
-          "id": 2278,
+          "id": 2226,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 2279,
+          "id": 2227,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1087
         },
         {
-          "id": 2280,
+          "id": 2228,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 101,
+      "total_raw": 90,
       "total_valid": 13,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1959,
+          "id": 1918,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 2154,
+          "id": 2109,
           "source": "Nature Rev Drug Discovery",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 545
         },
         {
-          "id": 1951,
+          "id": 1910,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 533
         },
         {
-          "id": 1973,
+          "id": 1932,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 477
         },
         {
-          "id": 1950,
+          "id": 1909,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 432
         },
         {
-          "id": 2184,
+          "id": 2139,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 405
         },
         {
-          "id": 1867,
+          "id": 1827,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 394
         },
         {
-          "id": 1981,
+          "id": 1940,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 359
         },
         {
-          "id": 2244,
+          "id": 2194,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 334
         },
         {
-          "id": 2182,
+          "id": 2137,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2346,
+          "id": 2288,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,22 +814,22 @@
           "word_count": 491
         },
         {
-          "id": 2354,
+          "id": 2286,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Stripe Adds Online Legal Services Firm Clerky to Its Fold",
-          "link": "https://www.pymnts.com/news/acquiring/2026/stripe-adds-online-legal-services-firm-clerky-to-its-fold/",
-          "content": "Online legal services company Clerky says it is now part of payments giant Stripe. The company announced the deal last week, though terms have not been disclosed. Launched more than a decade ago, Clerky provides startups and their lawyers with tools to automate legal paperwork for things like hiring, fundraising or incorporation. “As startup attorneys in Silicon Valley, we saw [&#8230;] The post Stripe Adds Online Legal Services Firm Clerky to Its Fold appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 01 Sep 2026 19:18:11 +0000",
+          "title": "Incore Bank’s AI Hits 99% Accuracy on KYC Checks",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/incore-banks-ai-hits-99-accuracy-on-kyc-checks/",
+          "content": "Know-your-customer (KYC) checks are expensive partly because a bank isn’t simply verifying an identity. Compliance teams have to collect information from documents, reconcile it across systems, investigate potential risk factors and build an auditable record explaining how they reached a decision. Incore Bank, a Swiss B2B transaction bank, is testing how much of that work [&#8230;] The post Incore Bank’s AI Hits 99% Accuracy on KYC Checks appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 01 Sep 2026 23:56:06 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 487
+          "word_count": 473
         },
         {
-          "id": 2349,
+          "id": 2291,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 458
         },
         {
-          "id": 2373,
+          "id": 2314,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 284
         },
         {
-          "id": 2384,
+          "id": 2325,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 253
         },
         {
-          "id": 2362,
+          "id": 2303,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 219
         },
         {
-          "id": 2383,
+          "id": 2324,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 213
         },
         {
-          "id": 2365,
+          "id": 2306,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 147
         },
         {
-          "id": 2379,
+          "id": 2320,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 133
         },
         {
-          "id": 2357,
+          "id": 2298,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 128
         },
         {
-          "id": 2407,
+          "id": 2348,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -964,7 +964,7 @@
           "word_count": 131
         },
         {
-          "id": 2408,
+          "id": 2349,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -979,7 +979,7 @@
           "word_count": 102
         },
         {
-          "id": 144,
+          "id": 140,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 178,
+          "id": 174,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 257,
+          "id": 253,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 341,
+          "id": 337,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 346,
+          "id": 342,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 379,
+          "id": 375,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 1037,
+          "id": 1033,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 1143,
+          "id": 1139,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1110,9 +1110,9 @@
     }
   },
   "meta": {
-    "total_raw": 2569,
-    "dup": 413,
-    "nocontent": 376,
+    "total_raw": 2510,
+    "dup": 385,
+    "nocontent": 372,
     "noise": 4
   }
 }
