@@ -70,6 +70,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
+          "title": "RealSWE: A Compositional Evaluation of Coding Agents under Realistic User Requests",
+          "link": "https://arxiv.org/abs/2608.27831",
+          "content": "Coding agents are now commonly evaluated on the SWE-bench family of benchmarks, whose tasks are built from curated GitHub issues: long, structured, and information-rich. Real user requests, however, are typically far shorter and less structured. To characterize this gap, we define a six-category information taxonomy and four dimensions of linguistic style, and apply them to real user prompts from SWE-chat and problem statements from SWE-bench Verified and Pro. We find that requests carrying only a problem statement, alone or with limited additional context, account for 88% of real prompts but just 7% of benchmark problems. Furthermore, 87% of real prompts are casually written whereas 94% of benchmark problems are formal. Guided by these observations, we introduce RealSWE, 381 multi-variant task families derived from SWE-bench Verified and Pro. Variants within each family share the same underlying task and gold patch while differing only in information composition and linguistic style. Evaluating seven contemporary LLMs with RealSWE, we find that i) realistic inputs reduce resolution rates by 6.4 pp on average and can change model rankings. Controlled analysis further shows that ii)",
+          "pub_date": "2026-08-30T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 62,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
           "title": "Agent Memory Is a Surface for Endogenous Authorization Laundering",
           "link": "https://arxiv.org/abs/2609.01836",
           "content": "Long-running LLM agents rely on persistent memory to carry state across interactions, including permissions, restrictions, and revocations. When memory misrepresents this evolving authorization state, the agent's own records can grant authority that the underlying history never permitted, resulting in misaligned behavior without any external attacks. We term this failure endogenous authorization laundering, where spurious permissions written into memory lead to unauthorized actions as their provenance is washed away. We then introduce EAL-Bench, which measures how accurately persistent memory preserves evolving authorization state and whether errors propagate to downstream unauthorized actions. We evaluate five LLMs as memory writers and two as executors across procurement, cybersecurity, and finance. We find that under incremental memory updates, writers create false authority for up to 50.2% of unauthorized requests; once false authority is present, executors act on it in 98.6% of trials. Two safeguards, requiring stored permissions to be backed by valid source events, and tracking permission changes through bounded event sourcing, substantially reduce laundering, but both also r",
@@ -80,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 63,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -89,21 +104,6 @@
           "link": "https://arxiv.org/abs/2609.01532",
           "content": "Logit-based knowledge distillation (KD) is used to train smaller language models (LMs) via supervision from stronger teachers, but whether its benefits are consistent across training stages remains unclear. Through controlled experiments, we find that forward Kullback-Leibler (KL) distillation--the standard KD formulation--with post-trained teachers behaves fundamentally differently during mid-training, an intermediate phase of self-supervised learning on curated corpora. Surprisingly, while forward KD simultaneously improves reasoning and factual recall during pre-training relative to standard next-token prediction (NTP), it instead slows factual recall acquisition during mid-training despite continued reasoning gains. We trace this stage dependence to an asymmetry in teacher confidence across data domains and the student's evolving knowledge state: teachers are more confident on procedural than knowledge-intensive data, while students acquire low-entropy factual knowledge earlier in training. To mitigate this imbalance, we propose Switch Distillation, a simple mid-training objective that distills on tokens where the teacher is confident, using teacher predictive entropy as a ligh",
           "pub_date": "2026-08-31T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 65,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
-          "link": "https://arxiv.org/abs/2608.31082",
-          "content": "Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every knowledge worker. Agents can do this today, but at prohibitive cost. Each question repeatedly opens large documents to recover scattered evidence, consuming up to a million tokens. However, if the data were already structured, the same question would reduce to a cheap database lookup. For example, on FanOutQA benchmark, reasoning over an ideal pre-structured store is 28X cheaper, and the gap grows to orders of magnitude as questions fan out over more documents. Yet structuring everything in advance is not viable: documents hold vastly more possible structure than any workload will use, and the useful structure and documents are unknown until queries arrive. We propose agentic data cracking, a method that structures unstructured data adaptively and speculatively as a byproduct of reasoning itself. Structuring is adaptive because observed queries decide when it happens and what matters, and speculative because it goes beyond the current question. W",
-          "pub_date": "2026-08-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 1314,
-      "total_valid": 804,
+      "total_valid": 805,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1387,
+          "id": 1386,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 470
         },
         {
-          "id": 1459,
+          "id": 1458,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 346
         },
         {
-          "id": 1754,
+          "id": 1753,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 346
         },
         {
-          "id": 1767,
+          "id": 1766,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 342
         },
         {
-          "id": 1768,
+          "id": 1767,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 338
         },
         {
-          "id": 1458,
+          "id": 1457,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 330
         },
         {
-          "id": 1354,
+          "id": 1353,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 280
         },
         {
-          "id": 1521,
+          "id": 1520,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 275
         },
         {
-          "id": 1543,
+          "id": 1542,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 257
         },
         {
-          "id": 1542,
+          "id": 1541,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 240
         },
         {
-          "id": 1365,
+          "id": 1364,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 233
         },
         {
-          "id": 1724,
+          "id": 1723,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 212
         },
         {
-          "id": 1725,
+          "id": 1724,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 212
         },
         {
-          "id": 1737,
+          "id": 1736,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 70
         },
         {
-          "id": 1669,
+          "id": 1668,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 506,
-      "total_valid": 335,
+      "total_raw": 505,
+      "total_valid": 334,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1860,
+          "id": 1859,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 359
         },
         {
-          "id": 1854,
+          "id": 1853,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 187
         },
         {
-          "id": 1837,
+          "id": 1836,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 150
         },
         {
-          "id": 1853,
+          "id": 1852,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 83
         },
         {
-          "id": 1880,
+          "id": 1879,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1881,
+          "id": 1880,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1882,
+          "id": 1881,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1873,
+          "id": 1872,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 515
         },
         {
-          "id": 1861,
+          "id": 1860,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 343
         },
         {
-          "id": 1859,
+          "id": 1858,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1562,
+          "id": 1561,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 413
         },
         {
-          "id": 1361,
+          "id": 1360,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 395
         },
         {
-          "id": 1921,
+          "id": 1920,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 365
         },
         {
-          "id": 1459,
+          "id": 1458,
           "source": "Cell Host Microbe",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 346
         },
         {
-          "id": 1861,
+          "id": 1860,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 343
         },
         {
-          "id": 1358,
+          "id": 1357,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 326
         },
         {
-          "id": 1357,
+          "id": 1356,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 317
         },
         {
-          "id": 1553,
+          "id": 1552,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 298
         },
         {
-          "id": 1922,
+          "id": 1921,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 283
         },
         {
-          "id": 1527,
+          "id": 1526,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 52,
-      "total_valid": 47,
+      "total_raw": 51,
+      "total_valid": 46,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1936,
+          "id": 1935,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 517
         },
         {
-          "id": 1933,
+          "id": 1932,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 493
         },
         {
-          "id": 1937,
+          "id": 1936,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 478
         },
         {
-          "id": 1931,
+          "id": 1930,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 450
         },
         {
-          "id": 1987,
+          "id": 1986,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 327
         },
         {
-          "id": 1988,
+          "id": 1987,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 327
         },
         {
-          "id": 1989,
+          "id": 1988,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 327
         },
         {
-          "id": 1964,
+          "id": 1963,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 258
         },
         {
-          "id": 1959,
+          "id": 1958,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 253
         },
         {
-          "id": 1955,
+          "id": 1954,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 232
         },
         {
-          "id": 1966,
+          "id": 1965,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 229
         },
         {
-          "id": 1948,
+          "id": 1947,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 224
         },
         {
-          "id": 1960,
+          "id": 1959,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 208
         },
         {
-          "id": 1939,
+          "id": 1938,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 152
         },
         {
-          "id": 1940,
+          "id": 1939,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 140
         },
         {
-          "id": 1941,
+          "id": 1940,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1007,6 +1007,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 122
+        },
+        {
+          "id": 1989,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes Champions Ethical Global Payments with its 2026 United Nations Global Compact Commitment",
+          "link": "https://www.thunes.com/news/united-nations-global-compact-commitment-2026/",
+          "content": "Thunes’ latest Communication on Progress outlines how the company reinforces responsible business practices across its global operations, supporting sustainable growth, strong governance and greater financial inclusion. SINGAPORE &#8211; September 2, 2026 – Thunes, the Smart Superhighway to move money around the world, today published its 2026 Communication on Progress for the United Nations Global Compact, ... Read more &#187; The post Thunes Champions Ethical Global Payments with its 2026 United Nations Global Compact Commitment first appeared on Thunes.com .",
+          "pub_date": "Wed, 02 Sep 2026 07:58:25 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 567
         },
         {
           "id": 408,
@@ -1052,21 +1067,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 154,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "From Tool Use to Technological Agency: LoopCAT as a Local-First, Open-Source Tool for Translation Technology Education",
-          "link": "https://arxiv.org/abs/2609.00344",
-          "content": "arXiv:2609.00344v1 Announce Type: new Abstract: Translation students need to learn both how to use translation technologies and how to judge the choices those technologies make available. This article presents LoopCAT, an Apache-2.0-licensed, local-first computer-assisted translation environment co-created with OpenAI Codex using GPT-5.5 and GPT-5.6, and proposes a framework connecting workflow competence, evaluative judgement, and technological agency. The account draws on repository history, implementation inspection, and the verification records of an identified development build. LoopCAT combines local project storage, translation memories, terminology, quality assurance, document exchange, and optional connections to local or hosted AI services. Its English, Catalan, and Turkish interface catalogs also make the application itself available as teaching material: students can translate English UI strings into another language, review the existing automatically generated target drafts, import their revisions, and test the interface. We organize these opportunities around four forms of participation: operating a workflow, evaluating outputs, inspecting and configuring mechanisms,",
-          "pub_date": "Wed, 02 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1199
         }
       ],
       "quota": {
@@ -1074,13 +1074,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 228,
-      "total_valid": 50,
+      "total_raw": 230,
+      "total_valid": 51,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2151,
+    "total_raw": 2152,
     "dup": 579,
     "nocontent": 374,
     "noise": 4
