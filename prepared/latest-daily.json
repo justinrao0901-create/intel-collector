@@ -65,7 +65,22 @@
           "word_count": 215
         },
         {
-          "id": 62,
+          "id": 61,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Agent Memory Is a Surface for Endogenous Authorization Laundering",
+          "link": "https://arxiv.org/abs/2609.01836",
+          "content": "Long-running LLM agents rely on persistent memory to carry state across interactions, including permissions, restrictions, and revocations. When memory misrepresents this evolving authorization state, the agent's own records can grant authority that the underlying history never permitted, resulting in misaligned behavior without any external attacks. We term this failure endogenous authorization laundering, where spurious permissions written into memory lead to unauthorized actions as their provenance is washed away. We then introduce EAL-Bench, which measures how accurately persistent memory preserves evolving authorization state and whether errors propagate to downstream unauthorized actions. We evaluate five LLMs as memory writers and two as executors across procurement, cybersecurity, and finance. We find that under incremental memory updates, writers create false authority for up to 50.2% of unauthorized requests; once false authority is present, executors act on it in 98.6% of trials. Two safeguards, requiring stored permissions to be backed by valid source events, and tracking permission changes through bounded event sourcing, substantially reduce laundering, but both also r",
+          "pub_date": "2026-08-31T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 63,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 64,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -88,21 +103,6 @@
           "title": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
           "link": "https://arxiv.org/abs/2608.31082",
           "content": "Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every knowledge worker. Agents can do this today, but at prohibitive cost. Each question repeatedly opens large documents to recover scattered evidence, consuming up to a million tokens. However, if the data were already structured, the same question would reduce to a cheap database lookup. For example, on FanOutQA benchmark, reasoning over an ideal pre-structured store is 28X cheaper, and the gap grows to orders of magnitude as questions fan out over more documents. Yet structuring everything in advance is not viable: documents hold vastly more possible structure than any workload will use, and the useful structure and documents are unknown until queries arrive. We propose agentic data cracking, a method that structures unstructured data adaptively and speculatively as a byproduct of reasoning itself. Structuring is adaptive because observed queries decide when it happens and what matters, and speculative because it goes beyond the current question. W",
-          "pub_date": "2026-08-30T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 65,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Adapting Without Gradients: Affine Statistics Transport and What Its Certificate Can Tell You",
-          "link": "https://arxiv.org/abs/2609.00374",
-          "content": "Test-time adaptation (TTA) typically assumes that model parameters can be updated at inference time. This assumption is restrictive for inference-only accelerators, frozen or third-party models, and memory-constrained deployments, and standard BatchNorm-based TTA configurations may also become inactive on architectures without BatchNorm. We study adaptation when the learned model must remain frozen. We introduce CASTER, a gradient-free method that stores source class statistics in a discriminative subspace, estimates a class-shared affine transformation from target-batch moments, and analytically transports the source class distributions before classification. CASTER requires no backward pass, optimizer state, or stored source feature bank. Across four backbones and seven datasets, it outperforms k-NN on identical frozen features in 27 of 28 backbone-dataset settings while retaining a median of 18x less state. Affine transport is not always reliable. On ImageNet-C, where batches contain only 64 samples for 1000 classes, unconditional transport loses 21.2 top-1 points. We therefore introduce an empirical residual-to-margin transportability certificate. Across 307 evaluation cells, e",
           "pub_date": "2026-08-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 1314,
-      "total_valid": 803,
+      "total_valid": 804,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1388,
+          "id": 1387,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 470
         },
         {
-          "id": 1460,
+          "id": 1459,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 346
         },
         {
-          "id": 1755,
+          "id": 1754,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 346
         },
         {
-          "id": 1768,
+          "id": 1767,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 342
         },
         {
-          "id": 1769,
+          "id": 1768,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 338
         },
         {
-          "id": 1459,
+          "id": 1458,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 330
         },
         {
-          "id": 1355,
+          "id": 1354,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 280
         },
         {
-          "id": 1522,
+          "id": 1521,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 275
         },
         {
-          "id": 1544,
+          "id": 1543,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 257
         },
         {
-          "id": 1543,
+          "id": 1542,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 240
         },
         {
-          "id": 1366,
+          "id": 1365,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 233
         },
         {
-          "id": 1725,
+          "id": 1724,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 212
         },
         {
-          "id": 1726,
+          "id": 1725,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 212
         },
         {
-          "id": 1738,
+          "id": 1737,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 70
         },
         {
-          "id": 1670,
+          "id": 1669,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 507,
-      "total_valid": 336,
+      "total_raw": 506,
+      "total_valid": 335,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1861,
+          "id": 1860,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 359
         },
         {
-          "id": 1855,
+          "id": 1854,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 187
         },
         {
-          "id": 1838,
+          "id": 1837,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 150
         },
         {
-          "id": 1854,
+          "id": 1853,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 83
         },
         {
-          "id": 1881,
+          "id": 1880,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1882,
+          "id": 1881,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1883,
+          "id": 1882,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1874,
+          "id": 1873,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 515
         },
         {
-          "id": 1862,
+          "id": 1861,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 343
         },
         {
-          "id": 1860,
+          "id": 1859,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1563,
+          "id": 1562,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 413
         },
         {
-          "id": 1362,
+          "id": 1361,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 395
         },
         {
-          "id": 1922,
+          "id": 1921,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 365
         },
         {
-          "id": 1460,
+          "id": 1459,
           "source": "Cell Host Microbe",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 346
         },
         {
-          "id": 1862,
+          "id": 1861,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 343
         },
         {
-          "id": 1359,
+          "id": 1358,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 326
         },
         {
-          "id": 1358,
+          "id": 1357,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 317
         },
         {
-          "id": 1554,
+          "id": 1553,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 298
         },
         {
-          "id": 1923,
+          "id": 1922,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 283
         },
         {
-          "id": 1528,
+          "id": 1527,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 53,
-      "total_valid": 48,
+      "total_raw": 52,
+      "total_valid": 47,
       "total_candidates": 10
     },
     "china": {
@@ -782,21 +782,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 517
-        },
-        {
-          "id": 1939,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "TabaPay Aims to Become TabaBank After Raising $155 Million",
-          "link": "https://www.pymnts.com/news/acquiring/2026/tabapay-aims-to-become-tababank-after-raising-155-million/",
-          "content": "Payment infrastructure platform TabaPay says it plans to acquire Colorado’s Transact Bank. The company announced that deal Wednesday (Sept. 2) along with the news that it had secured a $155 million strategic growth financing led by growth equity firm FTV Capital. The deal is expected to close during the fourth quarter of the year, pending regulatory approval. Following the acquisition. [&#8230;] The post TabaPay Aims to Become TabaBank After Raising $155 Million appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 02 Sep 2026 18:05:38 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 497
         },
         {
           "id": 1933,
@@ -844,7 +829,7 @@
           "word_count": 450
         },
         {
-          "id": 1988,
+          "id": 1987,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 327
         },
         {
-          "id": 1989,
+          "id": 1988,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 327
         },
         {
-          "id": 1990,
+          "id": 1989,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 327
         },
         {
-          "id": 1965,
+          "id": 1964,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 258
         },
         {
-          "id": 1960,
+          "id": 1959,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 253
         },
         {
-          "id": 1956,
+          "id": 1955,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 232
         },
         {
-          "id": 1967,
+          "id": 1966,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 229
         },
         {
-          "id": 1949,
+          "id": 1948,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 224
         },
         {
-          "id": 1961,
+          "id": 1960,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 208
         },
         {
-          "id": 1940,
+          "id": 1939,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,7 @@
           "word_count": 152
         },
         {
-          "id": 1941,
+          "id": 1940,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +994,7 @@
           "word_count": 140
         },
         {
-          "id": 1942,
+          "id": 1941,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1022,21 +1007,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 122
-        },
-        {
-          "id": 1991,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Thunes Champions Ethical Global Payments with its 2026 United Nations Global Compact Commitment",
-          "link": "https://www.thunes.com/news/united-nations-global-compact-commitment-2026/",
-          "content": "Thunes’ latest Communication on Progress outlines how the company reinforces responsible business practices across its global operations, supporting sustainable growth, strong governance and greater financial inclusion. SINGAPORE &#8211; September 2, 2026 – Thunes, the Smart Superhighway to move money around the world, today published its 2026 Communication on Progress for the United Nations Global Compact, ... Read more &#187; The post Thunes Champions Ethical Global Payments with its 2026 United Nations Global Compact Commitment first appeared on Thunes.com .",
-          "pub_date": "Wed, 02 Sep 2026 07:58:25 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 567
         },
         {
           "id": 408,
@@ -1067,6 +1037,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 674,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "From Truncation to Commitment: Persistent Context in Uniform Discrete Diffusion",
+          "link": "https://arxiv.org/abs/2609.01043",
+          "content": "arXiv:2609.01043v1 Announce Type: cross Abstract: Uniform-state discrete diffusion models update all tokens in parallel while keeping every position revisable. Even when the commonly used top-$p$ rule leaves only one candidate at a position, that choice affects only the current reverse step and can be revised at the next sampling step. We ask what changes when selected hypotheses instead become persistent context for later predictions. We therefore propose committed reveal sampling (CRS), a training-free sampler that stores selected argmax tokens and inserts them into subsequent model inputs. Our analysis gives a rationale for selecting later and for keeping selected tokens visible. Under the exact forward process, the Bayes error of selecting a clean token cannot increase as noise decreases, while in a simple latent-mode model, keeping the selected token visible helps later parallel predictions agree on the same sequence-level choice. Empirically, paired experiments on Duo-distilled then separate this persistent effect from single-step top-$p$ restriction and scalar temperature scaling. Under the same finalization rule, CRS without top-$p$ truncation reaches lower generative perpl",
+          "pub_date": "Wed, 02 Sep 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 154,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "From Tool Use to Technological Agency: LoopCAT as a Local-First, Open-Source Tool for Translation Technology Education",
+          "link": "https://arxiv.org/abs/2609.00344",
+          "content": "arXiv:2609.00344v1 Announce Type: new Abstract: Translation students need to learn both how to use translation technologies and how to judge the choices those technologies make available. This article presents LoopCAT, an Apache-2.0-licensed, local-first computer-assisted translation environment co-created with OpenAI Codex using GPT-5.5 and GPT-5.6, and proposes a framework connecting workflow competence, evaluative judgement, and technological agency. The account draws on repository history, implementation inspection, and the verification records of an identified development build. LoopCAT combines local project storage, translation memories, terminology, quality assurance, document exchange, and optional connections to local or hosted AI services. Its English, Catalan, and Turkish interface catalogs also make the application itself available as teaching material: students can translate English UI strings into another language, review the existing automatically generated target drafts, import their revisions, and test the interface. We organize these opportunities around four forms of participation: operating a workflow, evaluating outputs, inspecting and configuring mechanisms,",
+          "pub_date": "Wed, 02 Sep 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
         }
       ],
       "quota": {
@@ -1074,14 +1074,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 231,
-      "total_valid": 51,
+      "total_raw": 228,
+      "total_valid": 50,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2155,
-    "dup": 582,
+    "total_raw": 2151,
+    "dup": 579,
     "nocontent": 374,
     "noise": 4
   }
