@@ -13,7 +13,7 @@
       "link": "https://arxiv.org/abs/2609.02749",
       "upvotes": 512,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-09-01",
       "is_survey": false,
@@ -27,7 +27,7 @@
       "link": "https://arxiv.org/abs/2609.01591",
       "upvotes": 479,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-31",
       "is_survey": false,
@@ -39,14 +39,14 @@
       "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
       "abstract": "We present Qwen-Drive-1.0, an initial step towards a vision-language foundation model for autonomous driving. Qwen-Drive-1.0 retains the architecture of the pretrained vision-language model (VLM) and integrates 3D perception, visual question answering, and motion planning within a unified framework. An external bird's-eye-view (BEV) perception head jointly performs 3D object detection, semantic occupancy prediction, and BEV map segmentation. It serves as a probe of the 3D information accessible from the shared representations and provides an explicit, inspectable interface to 3D scene structure. A Planning Expert conditions on shared VLM representations to generate future ego trajectories. A staged training recipe combines driving supervision with general-purpose vision-language data to acquire driving-specific competence while helping preserve broad visual understanding and instruction-following capabilities. Experiments demonstrate strong 3D perception and driving scene understanding while largely preserving general vision-language capability. Comprehensive evaluations across open-loop, pseudo-closed-loop, and closed-loop settings further show highly competitive motion-planning p",
       "link": "https://arxiv.org/abs/2609.00111",
-      "upvotes": 367,
+      "upvotes": 368,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-08-30",
       "is_survey": false,
       "is_china": true,
-      "score": 1136
+      "score": 1139
     },
     {
       "title": "Small Models Have Arrived",
@@ -70,7 +70,7 @@
       "upvotes": 234,
       "hn_points": 0,
       "citations": null,
-      "source": "HF Daily+alphaXiv",
+      "source": "HF Daily",
       "pub": "2026-08-31",
       "is_survey": false,
       "is_china": false,
@@ -125,7 +125,7 @@
       "link": "https://arxiv.org/abs/2609.04148",
       "upvotes": 122,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily+alphaXiv+arXiv",
       "pub": "2026-09-02",
       "is_survey": false,
@@ -139,7 +139,7 @@
       "link": "https://arxiv.org/abs/2609.02783",
       "upvotes": 113,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-09-01",
       "is_survey": false,
@@ -180,7 +180,7 @@
       "hn_points": 300,
       "id": "2608.21590",
       "upvotes": 0,
-      "citations": null,
+      "citations": 0,
       "abstract": "",
       "source": "HN",
       "pub": "2026-08-25",
@@ -194,13 +194,27 @@
       "hn_points": 294,
       "id": "2608.29530",
       "upvotes": 0,
-      "citations": null,
-      "abstract": "",
+      "citations": 1,
+      "abstract": "It is shown that the vector representations of a variety of neural networks can be closely approximated with symbolic structures, providing a potential way to reconcile longstanding symbolic conceptions of intelligence with the vector-based nature of modern AI.",
       "source": "HN",
       "pub": "2026-09-02",
       "is_survey": false,
       "is_china": false,
-      "score": 294
+      "score": 294.5
+    },
+    {
+      "id": "2609.03796",
+      "title": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+      "abstract": "We introduce LLaDA-Image, a unified framework that pairs a 6B Diffusion Transformer (DiT) trained from scratch with a frozen vision-language understanding module built on the LLaDA2.0-Mini diffusion language model backbone. Instead of relying heavily on paired image-text data from the beginning, we first build a strong visual generative prior through image-only pre-training and mid-training. The generation pipeline comprises 220M samples, 98 of which are real images. For efficient and scalable optimization, we use parameter-free RMSNorm throughout the DiT together with the Muon optimizer. The resulting unified model produces highly photorealistic images while accurately following fine-grained editing instructions. We further distill LLaDA-Image into LLaDA-Image-Turbo, enabling fast inference in 2-4 sampling steps. On Qwen-Image-Bench, LLaDA-Image achieves overall scores of 53.53 and 53.38 on the English and Chinese tracks, respectively, setting a new state-of-the-art among open-source models on both tracks. To support further research on capable and efficient generative models, we release our model weights, training code, and detailed recipes.",
+      "link": "https://arxiv.org/abs/2609.03796",
+      "upvotes": 86,
+      "hn_points": 0,
+      "citations": 0,
+      "source": "HF Daily+alphaXiv+arXiv",
+      "pub": "2026-09-02",
+      "is_survey": false,
+      "is_china": true,
+      "score": 293
     },
     {
       "id": "2608.31106",
@@ -217,32 +231,32 @@
       "score": 291
     },
     {
-      "id": "2609.03796",
-      "title": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
-      "abstract": "We introduce LLaDA-Image, a unified framework that pairs a 6B Diffusion Transformer (DiT) trained from scratch with a frozen vision-language understanding module built on the LLaDA2.0-Mini diffusion language model backbone. Instead of relying heavily on paired image-text data from the beginning, we first build a strong visual generative prior through image-only pre-training and mid-training. The generation pipeline comprises 220M samples, 98 of which are real images. For efficient and scalable optimization, we use parameter-free RMSNorm throughout the DiT together with the Muon optimizer. The resulting unified model produces highly photorealistic images while accurately following fine-grained editing instructions. We further distill LLaDA-Image into LLaDA-Image-Turbo, enabling fast inference in 2-4 sampling steps. On Qwen-Image-Bench, LLaDA-Image achieves overall scores of 53.53 and 53.38 on the English and Chinese tracks, respectively, setting a new state-of-the-art among open-source models on both tracks. To support further research on capable and efficient generative models, we release our model weights, training code, and detailed recipes.",
-      "link": "https://arxiv.org/abs/2609.03796",
-      "upvotes": 84,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+arXiv",
-      "pub": "2026-09-02",
-      "is_survey": false,
-      "is_china": true,
-      "score": 287
-    },
-    {
       "id": "2608.18524",
       "title": "DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents",
       "abstract": "Equipping Large Language Models (LLMs) with multi-turn tool-calling capabilities is essential for building autonomous agents. However, progress is fundamentally limited by the reliance on full-length trajectory imitation. For tasks involving multiple order-independent sub-goals, the optimal solution space forms a vast combinatorial diamond lattice. Forcing this rich topology into monolithic trajectories causes a severe topological collapse, indiscriminately penalizing valid alternative explorations and severely degrading policy diversity. To address this, we propose DART-SD (Diamond-topology Aware Retrieval and Tuning for Self-Distillation), a novel framework that shifts the paradigm from global forcing to topology-guided localized correction. DART-SD first models the execution process as a converging Interaction-State Transition Graph (ISTG), faithfully capturing the inherent diamond topology of successful and failed exploratory paths. During autonomous rollouts, the framework identifies the Critical Topological Breakpoint (CTB) and retrieves success-supported recovery references. Finally, we introduce a progressive self-distillation paradigm through CTB-guided localized supervisi",
       "link": "https://arxiv.org/abs/2608.18524",
       "upvotes": 91,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-18",
       "is_survey": false,
       "is_china": false,
       "score": 273
+    },
+    {
+      "id": "2609.01343",
+      "title": "SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers",
+      "abstract": "Looped Transformers increase effective depth by iterating a shared block of layers, but most evaluations compare at fixed model size, conflating architectural advantage with extra FLOPs. We study looping on Mixture-of-Experts Transformers while closely matching per-token FLOPs, total non-embedding parameters, and KV cache. Through a series of ablations, we arrive at a recipe we call SMELT (Sparse MoE Transformer, middle layers Loop Twice), which loops the middle half of layers twice while matching the unlooped Baseline on all three budgets. We scale SMELT across four sizes up to 54B non-embedding parameters and fit a separate Chinchilla-style scaling law for each architecture. SMELT's loss drops faster with compute, saving 6.8--18.0\\% of training FLOPs on the compute-optimal frontier. The advantage transfers to downstream benchmarks beyond what validation loss predicts, is largest on Code, and grows with sample length and the number of in-context examples. Mechanistic analysis shows that the second visit reduces the attention sink and redirects mass toward content-relevant tokens, an inductive bias that may underlie the observed performance gains. These results show that looping ca",
+      "link": "https://arxiv.org/abs/2609.01343",
+      "upvotes": 90,
+      "hn_points": 0,
+      "citations": 1,
+      "source": "HF Daily+alphaXiv",
+      "pub": "2026-08-31",
+      "is_survey": false,
+      "is_china": false,
+      "score": 270.5
     },
     {
       "id": "2608.27550",
@@ -251,26 +265,12 @@
       "link": "https://arxiv.org/abs/2608.27550",
       "upvotes": 90,
       "hn_points": 0,
-      "citations": 1,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-08-26",
       "is_survey": false,
       "is_china": false,
-      "score": 270.5
-    },
-    {
-      "id": "2609.01343",
-      "title": "SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers",
-      "abstract": "Looped Transformers increase effective depth by iterating a shared block of layers, but most evaluations compare at fixed model size, conflating architectural advantage with extra FLOPs. We study looping on Mixture-of-Experts Transformers while closely matching per-token FLOPs, total non-embedding parameters, and KV cache. Through a series of ablations, we arrive at a recipe we call SMELT (Sparse MoE Transformer, middle layers Loop Twice), which loops the middle half of layers twice while matching the unlooped Baseline on all three budgets. We scale SMELT across four sizes up to 54B non-embedding parameters and fit a separate Chinchilla-style scaling law for each architecture. SMELT's loss drops faster with compute, saving 6.8--18.0\\% of training FLOPs on the compute-optimal frontier. The advantage transfers to downstream benchmarks beyond what validation loss predicts, is largest on Code, and grows with sample length and the number of in-context examples. Mechanistic analysis shows that the second visit reduces the attention sink and redirects mass toward content-relevant tokens, an inductive bias that may underlie the observed performance gains. These results show that looping ca",
-      "link": "https://arxiv.org/abs/2609.01343",
-      "upvotes": 88,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+alphaXiv",
-      "pub": "2026-08-31",
-      "is_survey": false,
-      "is_china": false,
-      "score": 264
+      "score": 270
     },
     {
       "id": "2608.28122",
@@ -279,12 +279,26 @@
       "link": "https://arxiv.org/abs/2608.28122",
       "upvotes": 65,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-08-27",
       "is_survey": true,
       "is_china": false,
       "score": 255
+    },
+    {
+      "id": "2608.26730",
+      "title": "Knowing When Not to Reuse: Conditional Experience Transfer in Autonomous LLM Post-Training",
+      "abstract": "Large language models offer broad capabilities, but adapting them to evolving domains, tools, and requirements often entails repeated post-training. Autonomous systems automate parts of this process by proposing updates, training candidates, and using evaluation feedback to select subsequent proposals. As evidence accumulates, a central problem emerges: which past update evidence remains actionable after subsequent training has changed the parent model? An update's effect depends on its parent, data, and training stage. Treating past success as context-free permission can waste compute. If the resulting child is promoted, it can also degrade the subsequent training trajectory. We formulate this problem as conditional experience transfer and introduce Boundary-Calibrated Intervention Transfer (BCIT), a method that authorizes experience reuse before weight-changing training. BCIT binds an observed effect to its source context, checks applicability conditions, vetoes candidates with named hard conflicts, and obtains current-state evidence through a bounded training trial when needed. Fully trained candidates still face a shared adoption rule, and only observed events extend memory. On",
+      "link": "https://arxiv.org/abs/2608.26730",
+      "upvotes": 77,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily",
+      "pub": "2026-08-26",
+      "is_survey": false,
+      "is_china": false,
+      "score": 231
     },
     {
       "title": "Mathematics in the age of AI",
@@ -317,7 +331,7 @@
     {
       "title": "Longest Straight Line Paths on Water or Land on the Earth (2018)",
       "link": "https://arxiv.org/abs/1804.07389",
-      "hn_points": 207,
+      "hn_points": 208,
       "id": "1804.07389",
       "upvotes": 0,
       "citations": null,
@@ -326,26 +340,26 @@
       "pub": "2026-08-30",
       "is_survey": false,
       "is_china": false,
-      "score": 207
+      "score": 208
     },
     {
       "id": "2609.00638",
       "title": "It Takes Two to Match: Co-Evolving Generative Retriever with Reinforcement Learning",
       "abstract": "Retrieval is the first stage of modern search and advertising systems, selecting a candidate set from a large item universe for downstream ranking and auction. Recent work increasingly leverages LLMs to improve retrieval through query expansion, data synthesis, and retrieval-feedback training. However, the generative component is typically used for query-side augmentation, while final matching is still delegated to a downstream retriever. We introduce CoGR, a retrieval framework that instead trains LLMs to directly construct retrieval representations on both query and item sides. Each generator produces a compact set of keywords, which are matched directly through an inverted index, preserving compatibility with existing keyword-based retrieval infrastructure. CoGR uses a two-stage training pipeline. Supervised fine-tuning first establishes an aligned keyword space, after which co-evolving reinforcement learning alternately optimizes the query- and item-side generators with GRPO against the opposite side's frozen index. Both sides optimize the same query-to-item retrieval F_1 objective: the query side receives retrieval F_1 directly, while the item side receives a counterfactual ma",
       "link": "https://arxiv.org/abs/2609.00638",
-      "upvotes": 67,
+      "upvotes": 68,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-08-31",
       "is_survey": false,
       "is_china": false,
-      "score": 201
+      "score": 204
     },
     {
       "title": "Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development",
       "link": "https://www.norirobotics.com/",
-      "hn_points": 199,
+      "hn_points": 200,
       "id": "https://www.norirobotics.com/",
       "upvotes": 0,
       "citations": null,
@@ -354,7 +368,21 @@
       "pub": "2026-09-01",
       "is_survey": false,
       "is_china": false,
-      "score": 199
+      "score": 200
+    },
+    {
+      "id": "2609.04098",
+      "title": "Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM",
+      "abstract": "Hybrid LLMs pair softmax attention with linear-attention layers such as Gated DeltaNet (GDN), whose recurrent state summarizes the context in fixed size. Early community 4-bit quantizations of Qwen3.8-27B (48 GDN layers, 16 attention layers) left the GDN block in 8- or 16-bit precision -- especially its decay and write-strength gates -- on the intuition that errors in a recurrence accumulate over long contexts. We test that intuition by building Minima: NVFP4 W4A4 on all 496 linear layers, GDN included. Across perplexity at 4K/32K, MMLU-Pro, GSM8K, AIME'25, GPQA-Diamond, LiveCodeBench, and RULER retrieval to 64K, Minima matches BF16 within seed noise (5-task average -0.52) while being the smallest (17.5 GiB) and fastest-prefill (+14-19%) recipe we compare, and its 32K perplexity gap shrinks with position. A four-part mechanism study explains why: (i) NVFP4's 16-element block scaling localizes the residual stream's extreme outliers, equalizing activation error across layer roles; (ii) the supposedly fragile gate projections are the least sensitive -- softplus/exponential and sigmoid parameterizations compress ~11% GEMM error to ~2% output error; (iii) the delta-rule recurrence holds",
+      "link": "https://arxiv.org/abs/2609.04098",
+      "upvotes": 54,
+      "hn_points": 0,
+      "citations": 0,
+      "source": "HF Daily+arXiv",
+      "pub": "2026-09-02",
+      "is_survey": false,
+      "is_china": true,
+      "score": 197
     },
     {
       "id": "2608.29335",
@@ -369,20 +397,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 195
-    },
-    {
-      "id": "2609.04098",
-      "title": "Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM",
-      "abstract": "Hybrid LLMs pair softmax attention with linear-attention layers such as Gated DeltaNet (GDN), whose recurrent state summarizes the context in fixed size. Early community 4-bit quantizations of Qwen3.8-27B (48 GDN layers, 16 attention layers) left the GDN block in 8- or 16-bit precision -- especially its decay and write-strength gates -- on the intuition that errors in a recurrence accumulate over long contexts. We test that intuition by building Minima: NVFP4 W4A4 on all 496 linear layers, GDN included. Across perplexity at 4K/32K, MMLU-Pro, GSM8K, AIME'25, GPQA-Diamond, LiveCodeBench, and RULER retrieval to 64K, Minima matches BF16 within seed noise (5-task average -0.52) while being the smallest (17.5 GiB) and fastest-prefill (+14-19%) recipe we compare, and its 32K perplexity gap shrinks with position. A four-part mechanism study explains why: (i) NVFP4's 16-element block scaling localizes the residual stream's extreme outliers, equalizing activation error across layer roles; (ii) the supposedly fragile gate projections are the least sensitive -- softplus/exponential and sigmoid parameterizations compress ~11% GEMM error to ~2% output error; (iii) the delta-rule recurrence holds",
-      "link": "https://arxiv.org/abs/2609.04098",
-      "upvotes": 53,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+arXiv",
-      "pub": "2026-09-02",
-      "is_survey": false,
-      "is_china": true,
-      "score": 194
     },
     {
       "title": "Two German airport workers die of malaria after 'mosquito arrives on plane'",
@@ -405,7 +419,7 @@
       "link": "https://arxiv.org/abs/2608.30320",
       "upvotes": 51,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-08-30",
       "is_survey": false,
@@ -433,7 +447,7 @@
       "link": "https://arxiv.org/abs/2609.00028",
       "upvotes": 59,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-08-26",
       "is_survey": false,
@@ -459,14 +473,14 @@
       "title": "LatentPress: Context Compression Beyond Text and Vision",
       "abstract": "Compressed context is usually carried as human-readable text or as rendered images that must be decoded, even when its consumer is a language model. We introduce LatentPress, which writes conversational histories and long documents into a third representation: continuous memory tokens that a frozen decoder reads directly through its input-embedding interface, with no text reconstruction at inference. A small reader-matched writer compresses 4-16times while training only an adapter (4.2M-26.2M parameters, sim!0.1% of the decoder). On LongMemEval, LatentPress reaches 0.504 accuracy at 7.70times compression versus 0.490 for uncompressed evidence, outperforming text summaries (0.184) and OCR-based compression (0.426 to 0.312). On LongBench-QA, in-domain writers match or exceed raw-context reading at 4-8times compression, while 16times trails raw. Writing takes 43ms per conversation, roughly an order of magnitude faster than text summarization or OCR reconstruction, and reading is 5-9times faster than raw context or cached OCR. We validate the interface under two transfer settings, zero-shot from UltraChat to LongMemEval memory QA and from LongMemEval-derived QA to unseen LongBench docu",
       "link": "https://arxiv.org/abs/2609.01507",
-      "upvotes": 56,
+      "upvotes": 57,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-08-31",
       "is_survey": false,
       "is_china": false,
-      "score": 168
+      "score": 171
     },
     {
       "title": "DiffusionGemma Technical Report",
@@ -474,8 +488,8 @@
       "hn_points": 165,
       "id": "2608.00146",
       "upvotes": 0,
-      "citations": 0,
-      "abstract": "DiffusionGemma, an experimental open-weight language model that uses discrete diffusion to generate text at exceptionally high speed, is introduced, establishing a new Pareto frontier for the trade-off between generation speed and model capability.",
+      "citations": null,
+      "abstract": "",
       "source": "HN",
       "pub": "2026-08-20",
       "is_survey": false,
@@ -495,20 +509,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 165
-    },
-    {
-      "title": "Chain-of-Thought Reasoning in the Wild Is Not Always Faithful (2025)",
-      "link": "https://arxiv.org/abs/2503.08679",
-      "hn_points": 66,
-      "id": "2503.08679",
-      "upvotes": 0,
-      "citations": 182,
-      "abstract": "It is shown that unfaithful CoT also occurs on naturally worded, non-adversarial prompts without adding artificial biases or editing model outputs, and that while CoT can be useful for assessing outputs, it is not a complete account of the internal process that produced the model's answer and should be used with caution in agentic or safety-critical settings.",
-      "source": "HN",
-      "pub": "2026-08-19",
-      "is_survey": false,
-      "is_china": false,
-      "score": 157.0
     },
     {
       "id": "2608.24804",
@@ -595,6 +595,20 @@
       "score": 143
     },
     {
+      "id": "2609.04199",
+      "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+      "abstract": "Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote model for every input introduces repeated cost, latency, and dependency on a provider. We present compile by training, which turns a natural-language specification into a reusable neural function. At compile time, teacher models generate task-specific examples that are used to train a small adapter for a compact interpreter. The resulting function runs without the teachers and can be stored, versioned, and composed like ordinary software. On FuzzyBench-Hard, a subset on which the Program-as-Weights fast compiler produced no exact matches, compile by training reaches 83.6% semantic accuracy. This higher accuracy comes with a higher compile-time cost: roughly a minute rather than seconds for the fast compiler. We deploy the compiler in a public interactive service and demonstrate compiled functions in a multi-site website helper, a language-controlled 3D avatar, and a bidirectional English-Claudish translator.",
+      "link": "https://arxiv.org/abs/2609.04199",
+      "upvotes": 45,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+arXiv",
+      "pub": "2026-09-02",
+      "is_survey": false,
+      "is_china": false,
+      "score": 135
+    },
+    {
       "id": "2609.00188",
       "title": "ZimaBlue: Evolving Generalizable World Action Models through Scalable Video Pre-training",
       "abstract": "Robotic manipulation faces a fundamental scaling challenge: robust generalization demands broad physical experience, yet action-labeled robot trajectories are expensive to collect and inherently limited in diversity. Egocentric videos offer a far more scalable source of embodied experience, capturing object interactions, contact dynamics, tool use, and long-horizon behaviors across diverse environments. The central challenge is how to convert this abundant but action-free experience into effective robot control. We introduce ZimaBlue, a scalable framework for learning generalizable World Action Models (WAMs) from large-scale video. ZimaBlue follows a three-stage training curriculum: it first performs causal embodied video pre-training on large-scale human and robot egocentric videos, then grounds the learned visual dynamics in heterogeneous robot trajectories through video-action mid-training with a unified action representation, and finally specializes the model to a target robot for deployment. To make generative WAMs practical for real-time control, ZimaBluefurther adopts an asynchronous Slow-Fast dual-system architecture, where a high-capacity Slow world model provides generali",
@@ -621,6 +635,20 @@
       "is_survey": false,
       "is_china": false,
       "score": 129
+    },
+    {
+      "id": "2609.04196",
+      "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+      "abstract": "We propose Puffin-World, a unified multimodal architecture that integrates physical understanding, spatial simulation, and 3D world generation and reconstruction without relying on external offline modules. To reliably construct and interact with 3D worlds, our framework jointly models three native world states: physics (gravity field and latitude), geometry (depth), and appearance (image), together with a unified Omni-Camera representation that supports diverse tasks and flexible motions. Beyond modeling these states, we introduce a strategy for propagating physical dynamics across future frames. By grounding absolute camera properties in the real world, Puffin-World enables physically consistent and visually stable world generation. We further couple appearance and geometry within a single generative process, jointly synthesizing each future view and reconstructing its underlying geometry. This unified paradigm enables interleaved closed-loop applications requiring synergy across multiple tasks, including mimic and self-calibrated world exploration. To scale Puffin-World to complex scenarios, we construct Puffin-16M, comprising 15 million vision-language-camera triplets and 1 mil",
+      "link": "https://arxiv.org/abs/2609.04196",
+      "upvotes": 41,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+alphaXiv+arXiv",
+      "pub": "2026-09-02",
+      "is_survey": false,
+      "is_china": false,
+      "score": 123
     },
     {
       "title": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
@@ -677,34 +705,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 118
-    },
-    {
-      "title": "Higher Multipoles of the Cow",
-      "link": "https://arxiv.org/abs/2504.00506",
-      "hn_points": 117,
-      "id": "2504.00506",
-      "upvotes": 0,
-      "citations": null,
-      "abstract": "",
-      "source": "HN",
-      "pub": "2026-09-01",
-      "is_survey": false,
-      "is_china": false,
-      "score": 117
-    },
-    {
-      "title": "Every Model Cheats",
-      "link": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/",
-      "hn_points": 117,
-      "id": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/",
-      "upvotes": 0,
-      "citations": null,
-      "abstract": "",
-      "source": "HN",
-      "pub": "2026-08-20",
-      "is_survey": false,
-      "is_china": false,
-      "score": 117
     }
   ]
 }
