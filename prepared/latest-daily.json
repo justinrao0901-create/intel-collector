@@ -95,7 +95,7 @@
           "word_count": 158
         },
         {
-          "id": 83,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 249
         },
         {
-          "id": 86,
+          "id": 87,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 209
         },
         {
-          "id": 82,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1616,
+          "id": 1618,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,22 @@
           "word_count": 522
         },
         {
-          "id": 1618,
+          "id": 1615,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The 4 New Working-Capital Levers CFOs Can Pull in Real Time",
+          "link": "https://www.pymnts.com/back-office/cfo/2026/the-4-new-working-capital-levers-cfos-can-pull-in-real-time/",
+          "content": "The next generation of payment infrastructure is giving CFOs something more valuable than speed. It’s giving them optionality. Real-time rails, richer ISO 20022 data, virtual accounts, embedded FX and automated treasury systems are providing finance teams with new levers over four variables CFOs have historically struggled to control with precision: when liquidity leaves, where it sits, [&#8230;] The post The 4 New Working-Capital Levers CFOs Can Pull in Real Time appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 04 Sep 2026 00:57:07 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 499
+        },
+        {
+          "id": 1620,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 497
         },
         {
-          "id": 1622,
+          "id": 1624,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 490
         },
         {
-          "id": 1621,
+          "id": 1623,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 93
         },
         {
-          "id": 1674,
+          "id": 1671,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1067,21 +1082,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
-        },
-        {
-          "id": 643,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Act More, Decide Less: Skill-Guided Adaptive Action Chunking for Long-Horizon LLM Agents",
-          "link": "https://arxiv.org/abs/2609.02042",
-          "content": "arXiv:2609.02042v1 Announce Type: new Abstract: Large language model (LLM) agents for long-horizon interactive tasks typically follow a ReAct-style protocol, issuing one primitive action per LLM round. While this enables frequent replanning, it is inefficient for long-horizon tasks where many rounds are spent on routine action sequences. A natural alternative is to let the agent emit variable-length action chunks. However, naively training such policies with standard reinforcement learning fails: the agent either collapses to single-action behavior or over-commits to excessively long sequences. Both failures share a common root cause: the inability to learn chunk boundaries. We propose SPACE, which addresses this challenge by distilling chunk-boundary supervision from trajectory-induced programmatic skills. We induce two-level programmatic skills from successful trajectories, where subskill boundaries serve as direct chunk-boundary supervision. This temporal structure is then distilled into a primitive-chunk policy via hybrid on-/off-policy optimization with chunk-aware credit assignment. Experiments on ALFWorld and ScienceWorld show that SPACE improves success rates by 7.0%-31.3%",
-          "pub_date": "Thu, 03 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1199
         }
       ],
       "quota": {
@@ -1089,14 +1089,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 228,
+      "total_raw": 225,
       "total_valid": 47,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1834,
-    "dup": 461,
+    "total_raw": 1831,
+    "dup": 458,
     "nocontent": 379,
     "noise": 7
   }
