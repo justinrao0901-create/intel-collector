@@ -250,8 +250,8 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 14,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -358,8 +358,8 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Absci Blog": {
       "section": "synbio",
@@ -507,7 +507,9 @@
       "ClinicalTrials.gov",
       "Import AI",
       "NEJM",
-      "NEJM AI"
+      "NEJM AI",
+      "bioRxiv SynBio",
+      "medRxiv Infectious"
     ],
     "sudden_drop": [
       "Thunes"

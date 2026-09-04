@@ -227,7 +227,7 @@
           "word_count": 578
         },
         {
-          "id": 1443,
+          "id": 1429,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 169
         },
         {
-          "id": 1376,
+          "id": 1362,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 243
         },
         {
-          "id": 1400,
+          "id": 1386,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 243
         },
         {
-          "id": 1364,
+          "id": 1350,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 233
         },
         {
-          "id": 1468,
+          "id": 1454,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 179
         },
         {
-          "id": 1470,
+          "id": 1456,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 489,
-      "total_valid": 327,
+      "total_raw": 475,
+      "total_valid": 313,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1537,
+          "id": 1523,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 185
         },
         {
-          "id": 1529,
+          "id": 1515,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 167
         },
         {
-          "id": 1530,
+          "id": 1516,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 146
         },
         {
-          "id": 1564,
+          "id": 1543,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1565,
+          "id": 1544,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1563,
+          "id": 1542,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1199
         },
         {
-          "id": 1509,
+          "id": 1495,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 362
         },
         {
-          "id": 1510,
+          "id": 1496,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -552,51 +552,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 351
-        },
-        {
-          "id": 1551,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Evolutionary stabilisation of stressful metabolism via integrated biocomputing and essential-gene metabolic locking circuits",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.01.748751v1?rss=1",
-          "content": "Synthetic genetic circuits enable microbial differentiation from growth to production, yet metabolic burden, imbalance and toxicity frequently drive strain degeneration. Yeast strains engineered to produce different terpene products exhibited divergent genetic responses to metabolic stresses, but commonly underwent progressive loss of induction of synthetic GAL regulatory circuits, either across the entire population or within subpopulations. Using di- and tri-input biocomputing circuits, the essential glutamine synthetase gene GLN1 was coupled to GAL induction, thereby enabling stabilisation and evolutionary adaptation of the synthetic genetic circuits and stressful heterologous terpene synthetic pathways. The integrated biocomputing and metabolic coupling circuit systems not only prevent strain degeneration but also enable interrogation of non-degenerative evolutionary shifts, providing a platform for metabolic engineering optimisation.",
-          "pub_date": "2026-09-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 952
-        },
-        {
-          "id": 1549,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Unbiased and scalable reduction of diverse bacterial genomes",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.02.748983v1?rss=1",
-          "content": "The genome is a complex, integrated system where the functions and regulatory interactions of its many components remain poorly understood. Genome minimization aims to reduce genomic complexity by removing non-essential elements to reveal the fundamental building blocks of cellular life. However, current minimization strategies are often slow and species-specific due to a reliance on prior information, and limited to producing single, isolated strains, which obscures the diverse ways a genome can adapt to large-scale DNA removal. Here we show the development and application of Stochastic Lineage-based Iterative Minimization (SLIM) a modular, high-throughput platform for unbiased genome reduction across phylogenetically diverse bacteria. We apply SLIM to generate a library of genome-reduced Escherichia coli lineages. We then interrogate the lineages, identifying both universal and lineage-specific transcriptional and translational reprogramming in response to deletions. We demonstrate that these expression dynamics drive environment-dependent fitness, allowing us to pinpoint a single gene deletion in one genome-reduced lineage as the driver of a measurable environmental growth defec",
-          "pub_date": "2026-09-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1550,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Living electronic transistors with tunable conductivity",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.01.748419v1?rss=1",
-          "content": "Electroactive bacteria, like Shewanella oneidensis, can couple the oxidation of organic electron donors to the reduction of external conductive surfaces, such as minerals and electrodes, by utilizing multiheme cytochromes to carry charge from within the cell to external surfaces. Additionally, multiheme cytochromes facilitate gateable, long-distance (micrometer-scale) redox conduction along the outer membrane and across multiple cells bridging electrodes. While electroactive microbes are being used to develop bioelectrochemical devices, there have been limited efforts to use synthetic biology to exert additional control over microbes serving as device components. Thus, this work implements an optogenetic biofilm patterning gene circuit and a small molecule sensor in S. oneidensis to simultaneously control cell deposition and cytochrome expression. This allows for photolithographic patterning of biofilms possessing tunable electrical properties controlled with small molecules. This system demonstrates tunable electrochemical activity, redox conduction, intrinsic biofilm conductivity, and negative differential transconductance as a function of cytochrome expression. Additionally, tem",
-          "pub_date": "2026-09-03",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -604,9 +559,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 105,
-      "total_valid": 13,
-      "total_candidates": 11
+      "total_raw": 98,
+      "total_valid": 10,
+      "total_candidates": 8
     },
     "cross": {
       "candidates": [
@@ -626,7 +581,7 @@
           "word_count": 670
         },
         {
-          "id": 1607,
+          "id": 1586,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +611,7 @@
           "word_count": 520
         },
         {
-          "id": 1452,
+          "id": 1438,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +626,7 @@
           "word_count": 390
         },
         {
-          "id": 1509,
+          "id": 1495,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +641,7 @@
           "word_count": 362
         },
         {
-          "id": 1510,
+          "id": 1496,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -766,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 48,
-      "total_valid": 42,
+      "total_raw": 45,
+      "total_valid": 39,
       "total_candidates": 10
     },
     "china": {
@@ -784,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1618,
+          "id": 1597,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +754,7 @@
           "word_count": 522
         },
         {
-          "id": 1615,
+          "id": 1594,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +769,7 @@
           "word_count": 499
         },
         {
-          "id": 1620,
+          "id": 1599,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +784,7 @@
           "word_count": 497
         },
         {
-          "id": 1624,
+          "id": 1603,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +799,7 @@
           "word_count": 490
         },
         {
-          "id": 1623,
+          "id": 1602,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +814,7 @@
           "word_count": 470
         },
         {
-          "id": 1645,
+          "id": 1624,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +829,7 @@
           "word_count": 262
         },
         {
-          "id": 1634,
+          "id": 1613,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +844,7 @@
           "word_count": 219
         },
         {
-          "id": 1633,
+          "id": 1612,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +859,7 @@
           "word_count": 169
         },
         {
-          "id": 1644,
+          "id": 1623,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +874,7 @@
           "word_count": 163
         },
         {
-          "id": 1625,
+          "id": 1604,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +889,7 @@
           "word_count": 157
         },
         {
-          "id": 1637,
+          "id": 1616,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +904,7 @@
           "word_count": 148
         },
         {
-          "id": 1626,
+          "id": 1605,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +919,7 @@
           "word_count": 134
         },
         {
-          "id": 1664,
+          "id": 1643,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +934,7 @@
           "word_count": 103
         },
         {
-          "id": 1627,
+          "id": 1606,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +949,7 @@
           "word_count": 93
         },
         {
-          "id": 1671,
+          "id": 1650,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1095,8 +1050,8 @@
     }
   },
   "meta": {
-    "total_raw": 1831,
-    "dup": 458,
+    "total_raw": 1810,
+    "dup": 454,
     "nocontent": 379,
     "noise": 7
   }
