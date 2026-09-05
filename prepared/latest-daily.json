@@ -889,21 +889,6 @@
           "word_count": 127
         },
         {
-          "id": 1615,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "How Modern PSPs Can Scale Cross-Border Payouts Securely",
-          "link": "https://www.thunes.com/insights/learn/how-modern-psps-can-scale-cross-border-payouts-securely/",
-          "content": "As global digital commerce undergoes geographic expansion, PSPs are discovering that scaling cross-border payout networks involves hurdles far beyond basic software connectivity. True operational durability relies on two critical foundations: resilient liquidity management and integrated compliance frameworks. In an ecosystem where real-time transactions are the baseline, managing capital efficiency and regulatory demands has become a ... Read more &#187; The post How Modern PSPs Can Scale Cross-Border Payouts Securely first appeared on Thunes.com .",
-          "pub_date": "Fri, 04 Sep 2026 09:34:03 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 555
-        },
-        {
           "id": 203,
           "source": "arXiv cs.CL",
           "section": "payment",
@@ -1007,6 +992,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 138,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "No country for old linguists: LLM-brain alignment underdetermines neural computation",
+          "link": "https://arxiv.org/abs/2609.03160",
+          "content": "arXiv:2609.03160v1 Announce Type: new Abstract: Nastase et al. (2026) argue that large language models (LLMs) may illuminate language processing because both rely on distributed, context-sensitive representations shaped by statistical learning. Their rejection of simple cortical \"boxology\" is persuasive, and they articulate a strong case for the value of LLM-brain alignment research. The key question is what kind of inference LLM-brain alignment licenses. My claim here will be narrow: representational alignment can in principle constrain mechanistic hypotheses, but it does not by itself identify a mechanism. Nastase et al. acknowledge that an encoding model can capture features represented in neural activity without establishing a shared architecture or algorithm. Yet the authors sometime move from alignment to \"shared computational principles\" and ultimately to LLMs as mechanistic models of natural language. Indeed, their methodological caveat that alignment does not establish a shared architecture or algorithm sits uneasily with their conclusion that LLMs might instantiate the same computational principles as biological brains and provide a \"fully mechanistic model\" of language.",
+          "pub_date": "Fri, 04 Sep 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
         }
       ],
       "quota": {
@@ -1014,14 +1014,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 225,
-      "total_valid": 44,
+      "total_raw": 222,
+      "total_valid": 43,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1777,
-    "dup": 432,
+    "total_raw": 1774,
+    "dup": 430,
     "nocontent": 378,
     "noise": 6
   }
