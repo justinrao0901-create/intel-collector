@@ -20,7 +20,7 @@
           "word_count": 155
         },
         {
-          "id": 82,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,22 @@
           "word_count": 482
         },
         {
-          "id": 83,
+          "id": 80,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "OpenAI’s rogue agents keep escaping, with no formal process to investigate them",
+          "link": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
+          "content": "OpenAI’s latest agent swarm incident adds urgency to calls for independent investigations as researchers and lawmakers question whether AI labs should control the scope of their own safety reviews.",
+          "pub_date": "Fri, 04 Sep 2026 23:15:11 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 197
+        },
+        {
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,22 +65,22 @@
           "word_count": 178
         },
         {
-          "id": 85,
-          "source": "TechCrunch AI",
+          "id": 64,
+          "source": "HuggingFace Daily Papers",
           "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "The sameness problem behind those unappetizing AI-generated menus",
-          "link": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
-          "content": "While restaurant owners might look to generative AI as a shortcut to sprucing up their menu, customers can viscerally sense that something is wrong with the food.",
-          "pub_date": "Fri, 04 Sep 2026 04:21:03 +0000",
+          "tier": "T1",
+          "priority": 5,
+          "title": "A Common Measure of Communication for Speech Brain-Computer Interfaces",
+          "link": "https://arxiv.org/abs/2609.02887",
+          "content": "Speech brain-computer interfaces (speech BCIs) translate neural activity into language, offering a path towards restoring speech for people with paralysis and, more broadly, enabling new forms of natural human-computer interaction. Despite this promise, the field lacks a common measure of progress because systems use different datasets, recording methods, types of speech, and vocabularies, so their reported scores are rarely comparable. Underlying this measurement problem are two unresolved questions: (i) what distribution of words should a speech BCI enable a user to communicate, and (ii) how much information from this distribution can a system convey. We address both by deriving open-vocabulary mutual information (OVMI), an information-theoretic quantity that measures the information conveyed by a decoder relative to a reference distribution over the words a user may wish to communicate. This allows capabilities measured under different conditions, such as distinct vocabularies, to be evaluated on a common communication scale. We show that ordinarily reported accuracy, word error rate (WER), and other metrics computed only over the words a system supports can overstate how much o",
+          "pub_date": "2026-09-01T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 162
+          "word_count": 1200
         },
         {
-          "id": 64,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 65,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,22 +110,22 @@
           "word_count": 1200
         },
         {
-          "id": 66,
-          "source": "HuggingFace Daily Papers",
+          "id": 860,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
+          "tier": "T2",
           "priority": 5,
-          "title": "DRACO: Fine-Grained Credit Assignment with Dynamic Rubrics for Long-Horizon Agent Training",
-          "link": "https://arxiv.org/abs/2609.04094",
-          "content": "Reinforcement Learning from Verifiable Rewards works well when a task has a programmatic checker, but most long-horizon agent domains have none. We work in the outcome-blind setting, where ground-truth success signals are not available. Multi-criteria rubrics are a popular way to supply such a reward; they are scored once per trajectory, but a single scalar is a poor signal across tens of steps. We propose DRACO: Distributing Rubric-based Advantage for Credit Optimization. It generates rubrics dynamically during training to track the policy's evolving capability, scores those rubrics once per completed trajectory, and redistributes that judgment over the steps responsible for annotated rubrics to produce differentiated per-step advantages in GRPO. The redistribution is closed-form and does not introduce any trained attribution module. On AppWorld, DRACO gains 15.9 points over the base model and 5.3 points over GRPO trained with a sparse ground-truth reward, despite not using any verifiers itself. On out-of-domain Tau-Bench, it gains 5.3 points over the base model even without a frontier judge, beating both ground-truth-reward training and other rubric-based training settings. The c",
-          "pub_date": "2026-09-02T20:00:00.000Z",
+          "title": "The Pelican comparison grid for Astra is pretty interesting",
+          "link": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
+          "content": "I got access to GPT-6 Astra this afternoon, so naturally I used it to generate SVGs of pelicans riding bicycles - at low, medium, high, xhigh and max reasoning levels (Astra doesn't support reasoning=none). Then I rendered those pelicans in a comparison grid with GPT-5.6 Sol, Terra, and Luna, and beyond being fun the result was surprisingly useful. See the grid for full quality images. Here's the transcript that created the GPT-6 Nova pelicans. There are a few interesting things that stand out from this grid. The Astra pelicans are much better . The very best GPT-5.6-Sol pelican (I liked xhigh better than max) is still pretty clearly a bunch of abstract shapes. Every single one of the Astra pelicans, from low to xhigh, looks better than that. The Astra max one is really good. Astra below max still doesn't reliably get the pelican legs on both sides of the frame. In terms of cost, Astra may be around twice the price of Sol ($10/million input, $50/million output, compared to $5/$30 for Sol), but it uses significantly less tokens at each of the levels, making the prices at the different levels closer than they might otherwise be. Astra low produces a better pelican than ANY of the GPT",
+          "pub_date": "2026-09-04T23:59:05+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 861,
+          "id": 863,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 859,
+          "id": 861,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,22 +155,7 @@
           "word_count": 1199
         },
         {
-          "id": 866,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Codex bundles LibreOffice",
-          "link": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
-          "content": "I was poking around in my ~/.cache/ folder using OmniDiskSweeper when I spotted something interesting. The OpenAI Codex desktop app (since rebranded to just ChatGPT) has 1.7GB of stuff in there in a folder called codex-primary-runtime , including a full Python installation, a full Node.js installation, and native binaries for Poppler , git, and the LibreOffice open source office suite (which forked from OpenOffice.org in 2010): The ~/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/documents folder includes skills which tell Codex how to find and use those binaries. Tags: codex , generative-ai , openai , ai , llms , openoffice , open-source",
-          "pub_date": "2026-09-01T19:03:01+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 682
-        },
-        {
-          "id": 843,
+          "id": 845,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 179
         },
         {
-          "id": 844,
+          "id": 846,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 965,
-      "total_valid": 593,
+      "total_raw": 967,
+      "total_valid": 596,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1097,
+          "id": 1098,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 389
         },
         {
-          "id": 1340,
+          "id": 1344,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 203
         },
         {
-          "id": 1154,
+          "id": 1155,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 166
         },
         {
-          "id": 1341,
+          "id": 1345,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 165
         },
         {
-          "id": 1381,
+          "id": 1385,
           "source": "Science Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 58
         },
         {
-          "id": 1382,
+          "id": 1386,
           "source": "Science Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 58
         },
         {
-          "id": 1269,
+          "id": 1273,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 609
         },
         {
-          "id": 1274,
+          "id": 1278,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 404
         },
         {
-          "id": 1273,
+          "id": 1277,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 396
         },
         {
-          "id": 968,
+          "id": 970,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 223
         },
         {
-          "id": 973,
+          "id": 975,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 219
         },
         {
-          "id": 966,
+          "id": 968,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 210
         },
         {
-          "id": 1413,
+          "id": 1417,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 134
         },
         {
-          "id": 987,
+          "id": 988,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 100
         },
         {
-          "id": 1168,
+          "id": 1169,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 473,
-      "total_valid": 315,
+      "total_raw": 475,
+      "total_valid": 317,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1474,
+          "id": 1478,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 194
         },
         {
-          "id": 1475,
+          "id": 1479,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 126
         },
         {
-          "id": 1502,
+          "id": 1506,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1503,
+          "id": 1507,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1504,
+          "id": 1508,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 1489,
+          "id": 1493,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -536,7 +536,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1504,
+          "id": 1508,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 1199
         },
         {
-          "id": 1385,
+          "id": 1389,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 341
         },
         {
-          "id": 1192,
+          "id": 1193,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 337
         },
         {
-          "id": 1554,
+          "id": 1558,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 256
         },
         {
-          "id": 998,
+          "id": 999,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 249
         },
         {
-          "id": 1024,
+          "id": 1025,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 243
         },
         {
-          "id": 1059,
+          "id": 1060,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 207
         },
         {
-          "id": 1193,
+          "id": 1194,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 190
         },
         {
-          "id": 1195,
+          "id": 1196,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 180
         },
         {
-          "id": 1553,
+          "id": 1557,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -709,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1564,
+          "id": 1570,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 555
         },
         {
-          "id": 1563,
+          "id": 1569,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,22 @@
           "word_count": 495
         },
         {
-          "id": 1562,
+          "id": 1561,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "PayPal Pauses Venture Capital Portfolio Sale After Lowball Offers",
+          "link": "https://www.pymnts.com/news/investment-tracker/2026/paypal-pauses-venture-capital-portfolio-sale-after-lowball-offers/",
+          "content": "PayPal has paused its planned sale of its venture capital portfolio after offers came in at no higher than 60 cents on the dollar, Seeking Alpha reported Friday (Sept. 4), citing a paywalled article by Axios that was based on unnamed sources. The investments in PayPal’s portfolio include shopping app Tabby and crypto platform Anchorage, and the company’s attempt to sell the [&#8230;] The post PayPal Pauses Venture Capital Portfolio Sale After Lowball Offers appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 04 Sep 2026 23:48:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 492
+        },
+        {
+          "id": 1568,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 491
         },
         {
-          "id": 1558,
+          "id": 1564,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 462
         },
         {
-          "id": 1590,
+          "id": 1592,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 235
         },
         {
-          "id": 1587,
+          "id": 1589,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 201
         },
         {
-          "id": 1589,
+          "id": 1591,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 187
         },
         {
-          "id": 1573,
+          "id": 1577,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 157
         },
         {
-          "id": 1575,
+          "id": 1579,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 137
         },
         {
-          "id": 1576,
+          "id": 1580,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 129
         },
         {
-          "id": 1568,
+          "id": 1572,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 127
         },
         {
-          "id": 1612,
+          "id": 1614,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 555
         },
         {
-          "id": 202,
+          "id": 204,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -904,7 +919,7 @@
           "word_count": 1200
         },
         {
-          "id": 213,
+          "id": 215,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -919,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 396,
+          "id": 398,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 480,
+          "id": 482,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 628,
+          "id": 630,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 671,
+          "id": 673,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 823,
+          "id": 825,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -992,21 +1007,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 137,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "No country for old linguists: LLM-brain alignment underdetermines neural computation",
-          "link": "https://arxiv.org/abs/2609.03160",
-          "content": "arXiv:2609.03160v1 Announce Type: new Abstract: Nastase et al. (2026) argue that large language models (LLMs) may illuminate language processing because both rely on distributed, context-sensitive representations shaped by statistical learning. Their rejection of simple cortical \"boxology\" is persuasive, and they articulate a strong case for the value of LLM-brain alignment research. The key question is what kind of inference LLM-brain alignment licenses. My claim here will be narrow: representational alignment can in principle constrain mechanistic hypotheses, but it does not by itself identify a mechanism. Nastase et al. acknowledge that an encoding model can capture features represented in neural activity without establishing a shared architecture or algorithm. Yet the authors sometime move from alignment to \"shared computational principles\" and ultimately to LLMs as mechanistic models of natural language. Indeed, their methodological caveat that alignment does not establish a shared architecture or algorithm sits uneasily with their conclusion that LLMs might instantiate the same computational principles as biological brains and provide a \"fully mechanistic model\" of language.",
-          "pub_date": "Fri, 04 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1199
         }
       ],
       "quota": {
@@ -1014,14 +1014,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 227,
-      "total_valid": 46,
+      "total_raw": 225,
+      "total_valid": 44,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1774,
-    "dup": 433,
+    "total_raw": 1776,
+    "dup": 432,
     "nocontent": 378,
     "noise": 6
   }
