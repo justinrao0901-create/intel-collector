@@ -197,21 +197,6 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 880,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Vaccination with conserved TSA56 blocks accelerates bacterial clearance in a rhesus macaque scrub typhus model",
-          "link": "https://www.nature.com/articles/s41541-026-01572-z",
-          "content": "npj Vaccines, Published online: 05 September 2026; doi:10.1038/s41541-026-01572-z Vaccination with conserved TSA56 blocks accelerates bacterial clearance in a rhesus macaque scrub typhus model",
-          "pub_date": "2026-09-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 192
-        },
-        {
           "id": 873,
           "source": "Vaccine (journal)",
           "section": "vaccine",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 419
+        },
+        {
+          "id": 559,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Aquatic invertebrates contribute substantially to global nutrient supplies",
+          "link": "https://www.nature.com/articles/d41586-026-02541-1",
+          "content": "Nature, Published online: 02 September 2026; doi:10.1038/d41586-026-02541-1 An analysis of the nutritional content of aquatic invertebrate species suggests that their global production is a rich source of nutrients that are crucial for human health. The work provides a foundation for better recognition of these valuable invertebrate nutrients and incorporate them into conservation, management and policy efforts.",
+          "pub_date": "2026-09-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 415
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 470,
-      "total_valid": 297,
+      "total_valid": 296,
       "total_candidates": 15
     },
     "synbio": {
@@ -536,21 +536,6 @@
           "word_count": 196
         },
         {
-          "id": 880,
-          "source": "npj Vaccines",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Vaccination with conserved TSA56 blocks accelerates bacterial clearance in a rhesus macaque scrub typhus model",
-          "link": "https://www.nature.com/articles/s41541-026-01572-z",
-          "content": "npj Vaccines, Published online: 05 September 2026; doi:10.1038/s41541-026-01572-z Vaccination with conserved TSA56 blocks accelerates bacterial clearance in a rhesus macaque scrub typhus model",
-          "pub_date": "2026-09-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 192
-        },
-        {
           "id": 566,
           "source": "Nature",
           "section": "cross",
@@ -654,6 +639,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 254
+        },
+        {
+          "id": 809,
+          "source": "Vaccine (journal)",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Mucosal adjuvant activity of a PAR-2–activating peptide enhances lymph node immune cell recruitment and promotes immune cell activation in a prime–boost influenza vaccination model",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26009199?dgcid=rss_sd_all",
+          "content": "Publication date: 24 October 2026 Source: Vaccine, Volume 92 Author(s): Claudia A. Kornuta, Gang Zhou, Kevin P. Kane, Harissios Vliagoftis",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 138
         }
       ],
       "quota": {
@@ -661,8 +661,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 39,
-      "total_valid": 37,
+      "total_raw": 38,
+      "total_valid": 36,
       "total_candidates": 10
     },
     "china": {
@@ -707,21 +707,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 63
-        },
-        {
-          "id": 1128,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "How Modern PSPs Can Scale Cross-Border Payouts Securely",
-          "link": "https://www.thunes.com/insights/learn/how-modern-psps-can-scale-cross-border-payouts-securely/",
-          "content": "As global digital commerce undergoes geographic expansion, PSPs are discovering that scaling cross-border payout networks involves hurdles far beyond basic software connectivity. True operational durability relies on two critical foundations: resilient liquidity management and integrated compliance frameworks. In an ecosystem where real-time transactions are the baseline, managing capital efficiency and regulatory demands has become a ... Read more &#187; The post How Modern PSPs Can Scale Cross-Border Payouts Securely first appeared on Thunes.com .",
-          "pub_date": "Fri, 04 Sep 2026 09:34:03 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 555
         },
         {
           "id": 1104,
@@ -879,14 +864,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 194,
-      "total_valid": 13,
-      "total_candidates": 13
+      "total_raw": 191,
+      "total_valid": 12,
+      "total_candidates": 12
     }
   },
   "meta": {
-    "total_raw": 1289,
-    "dup": 293,
+    "total_raw": 1286,
+    "dup": 292,
     "nocontent": 377,
     "noise": 6
   }
