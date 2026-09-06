@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 5,
       "ok": true
     },
     "WHO News": {
@@ -431,13 +431,13 @@
       "section": "payment",
       "method": "rss",
       "count": 0,
-      "ok": true
+      "ok": false
     },
     "Thunes": {
       "section": "payment",
       "method": "rss",
       "count": 0,
-      "ok": true
+      "ok": false
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -507,11 +507,12 @@
       "ClinicalTrials.gov",
       "Import AI",
       "NEJM",
-      "NEJM AI"
+      "NEJM AI",
+      "Payments Cards & Mobile",
+      "Thunes"
     ],
     "sudden_drop": [
       "Cointelegraph Payments",
-      "Payments Cards & Mobile",
       "arXiv cs.CL",
       "arXiv cs.LG"
     ],
@@ -520,7 +521,6 @@
       "Lancet Digital Health",
       "Ledger Insights",
       "Sequoia Capital",
-      "Thunes",
       "WHO News"
     ]
   }
