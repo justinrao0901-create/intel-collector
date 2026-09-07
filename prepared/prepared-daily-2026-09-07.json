@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 581,
+          "id": 539,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 192
         },
         {
-          "id": 572,
+          "id": 530,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 369
         },
         {
-          "id": 577,
+          "id": 535,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 366
         },
         {
-          "id": 576,
+          "id": 534,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 528
         },
         {
-          "id": 624,
+          "id": 582,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 383
         },
         {
-          "id": 636,
+          "id": 594,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 433,
-      "total_valid": 258,
+      "total_raw": 391,
+      "total_valid": 216,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 688,
+          "id": 646,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -454,14 +454,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 98,
+      "total_raw": 92,
       "total_valid": 1,
       "total_candidates": 1
     },
     "cross": {
       "candidates": [
         {
-          "id": 581,
+          "id": 539,
           "source": "npj Vaccines",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 130
         },
         {
-          "id": 771,
+          "id": 723,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 126
         },
         {
-          "id": 770,
+          "id": 722,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 123
         },
         {
-          "id": 769,
+          "id": 721,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 99
         },
         {
-          "id": 559,
+          "id": 517,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 131
         },
         {
-          "id": 516,
+          "id": 474,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -579,36 +579,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 97
-        },
-        {
-          "id": 461,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Intestinal uptake regulates T cell responses to dietary antigens",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.01.748748v1?rss=1",
-          "content": "Dietary proteins induce antigen-specific immune responses, leading to oral tolerance or food allergies. While mouse models of allergic sensitization rely on antigen context and adjuvant signaling, exposure to purified proteins is usually sufficient for tolerance development in studies with soluble model antigens. In previous work, we discovered that the maize protein zein induces robust antigen-specific intestinal Tregs following normal chow exposure, but unexpectedly does not elicit a T cell response when delivered as a purified protein. Here, we investigated the mechanisms underlying these differential T cell responses, considering both biochemical properties of zein and its food matrix, as well as intestinal antigen processing. We focused on three zein preparations that induced different frequencies of antigen-specific intestinal T cells. While in vitro studies showed comparable presentation by dendritic cells, in vivo studies revealed stark differences in intestinal uptake. We identified differences in protein solubility and active sampling mechanisms as cooperative drivers of intestinal zein uptake. Different zein preparations could be sampled by either goblet cells, a route p",
-          "pub_date": "2026-09-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 462,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Modeling how memory CD8 T cells can elicit post-treatment control of HIV infection",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.01.748582v1?rss=1",
-          "content": "While most people living with HIV suffer progressive disease following cessation of antiretroviral therapy, a small fraction elicits lasting post-treatment control. Understanding the mechanisms underlying this control is key to devising effective HIV remission strategies. Although recent studies implicate memory CD8 T cells, how these cells establish lasting viremic control remains unknown. Here, we combine mathematical modeling and analysis of data from SIV-infected non-human primates to elucidate the underlying mechanisms. We recognized that sustained antigenic stimulation leads to heritable epigenetic remodeling of the CD8 T cell pool, impairing memory cell survivability. Antiretroviral therapy rapidly suppresses viremia, thereby arresting antigenic stimulation and preserving memory potential. The greater this preservation is, the better would be the memory recall response following viral rebound post-treatment. Our mathematical model based on this hypothesis predicts that post-treatment control is an alternative steady state to progressive infection, realized by strong memory-driven recall responses. Our model fits longitudinal virological data spanning the pre-, during-, and p",
-          "pub_date": "2026-09-04",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -616,9 +586,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 23,
-      "total_valid": 18,
-      "total_candidates": 10
+      "total_raw": 13,
+      "total_valid": 8,
+      "total_candidates": 8
     },
     "china": {
       "candidates": [],
@@ -634,7 +604,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 781,
+          "id": 733,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -649,7 +619,7 @@
           "word_count": 468
         },
         {
-          "id": 778,
+          "id": 730,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -664,7 +634,7 @@
           "word_count": 431
         },
         {
-          "id": 797,
+          "id": 749,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +649,7 @@
           "word_count": 356
         },
         {
-          "id": 798,
+          "id": 750,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +664,7 @@
           "word_count": 331
         },
         {
-          "id": 799,
+          "id": 751,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +679,7 @@
           "word_count": 326
         },
         {
-          "id": 792,
+          "id": 744,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +709,7 @@
           "word_count": 93
         },
         {
-          "id": 779,
+          "id": 731,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +724,7 @@
           "word_count": 465
         },
         {
-          "id": 777,
+          "id": 729,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +739,7 @@
           "word_count": 458
         },
         {
-          "id": 780,
+          "id": 732,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +754,7 @@
           "word_count": 450
         },
         {
-          "id": 782,
+          "id": 734,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +769,7 @@
           "word_count": 446
         },
         {
-          "id": 783,
+          "id": 735,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +784,7 @@
           "word_count": 202
         },
         {
-          "id": 787,
+          "id": 739,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -834,14 +804,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 186,
+      "total_raw": 183,
       "total_valid": 13,
       "total_candidates": 13
     }
   },
   "meta": {
-    "total_raw": 961,
-    "dup": 282,
+    "total_raw": 910,
+    "dup": 273,
     "nocontent": 377,
     "noise": 5
   }
