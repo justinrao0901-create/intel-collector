@@ -40,7 +40,7 @@
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 23,
+      "count": 26,
       "ok": true
     },
     "Hacker News AI": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 58,
       "ok": true
     },
     "NEJM": {
@@ -190,13 +190,13 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 2,
       "ok": true
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
+      "count": 5,
       "ok": true
     },
     "Immunity": {
@@ -214,7 +214,7 @@
     "JAMA": {
       "section": "vaccine",
       "method": "rss",
-      "count": 46,
+      "count": 0,
       "ok": true
     },
     "Nature Medicine": {
@@ -226,19 +226,19 @@
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 4,
       "ok": true
     },
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 7,
       "ok": true
     },
     "Nature Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 7,
       "ok": true
     },
     "bioRxiv Immunology": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 12,
+      "count": 10,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -268,7 +268,7 @@
     "npj Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true
     },
     "Sci Transl Med": {
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 19,
+      "count": 18,
       "ok": true
     },
     "BioPharma Dive": {
@@ -328,7 +328,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true
     },
     "Nature Machine Intel": {
@@ -358,7 +358,7 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 6,
+      "count": 4,
       "ok": true
     },
     "Absci Blog": {
@@ -376,7 +376,7 @@
     "Nucleic Acids Research": {
       "section": "synbio",
       "method": "rss",
-      "count": 30,
+      "count": 23,
       "ok": true
     },
     "Nature Reviews Bioengineering": {
@@ -437,7 +437,7 @@
       "section": "payment",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -507,16 +507,18 @@
       "ClinicalTrials.gov",
       "Import AI",
       "NEJM",
-      "NEJM AI",
-      "Thunes"
+      "NEJM AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "JAMA"
+    ],
     "persistent_zero": [
       "Interconnects",
       "Lancet Digital Health",
       "Ledger Insights",
       "PaymentsDive",
       "Sequoia Capital",
+      "Thunes",
       "WHO News"
     ]
   }

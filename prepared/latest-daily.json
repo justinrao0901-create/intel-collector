@@ -20,7 +20,7 @@
           "word_count": 148
         },
         {
-          "id": 80,
+          "id": 79,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 168
         },
         {
-          "id": 65,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,6 +95,21 @@
           "word_count": 766
         },
         {
+          "id": 814,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "llm 0.34",
+          "link": "https://simonwillison.net/2026/Sep/2/llm/",
+          "content": "Release: llm 0.34 One new feature: llm logs --usage Markdown output now includes the response duration in milliseconds and as a human-readable duration. llm logs --short includes a new duration_ms field. #1653 Plus several contributed bug fixes, and a significant performance improvement to llm logs thanks to waveplate on GitHub, see also llm-openrouter 0.7.1 . Tags: llm",
+          "pub_date": "2026-09-02T19:23:52+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 372
+        },
+        {
           "id": 801,
           "source": "Simon Willison",
           "section": "ai",
@@ -110,22 +125,7 @@
           "word_count": 363
         },
         {
-          "id": 802,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Mercator ↔ Equal Earth",
-          "link": "https://simonwillison.net/2026/Sep/7/equal-earth/",
-          "content": "Tool: Mercator ↔ Equal Earth I got curious about the Equal Earth map projection that was recently voted on at the UN so I had GPT-6 Astra (medium) in ChatGPT Work build me this animated transition between Mercator and Equal Earth using D3. Tags: geospatial , d3 , vibe-coding , gpt-6-astra",
-          "pub_date": "2026-09-07T16:24:16+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 289
-        },
-        {
-          "id": 785,
+          "id": 784,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 105
         },
         {
-          "id": 110,
+          "id": 109,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 111,
+          "id": 110,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 112,
+          "id": 111,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 913,
-      "total_valid": 551,
+      "total_raw": 915,
+      "total_valid": 555,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1025,
+          "id": 1004,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 504
         },
         {
-          "id": 1026,
+          "id": 1005,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 482
         },
         {
-          "id": 1319,
+          "id": 1244,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 355
         },
         {
-          "id": 1306,
+          "id": 1231,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 343
         },
         {
-          "id": 1117,
+          "id": 1050,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 190
         },
         {
-          "id": 1124,
+          "id": 1057,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 172
         },
         {
-          "id": 1192,
+          "id": 1118,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 486
         },
         {
-          "id": 1235,
+          "id": 1161,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 412
         },
         {
-          "id": 1258,
+          "id": 1184,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 346
         },
         {
-          "id": 914,
+          "id": 916,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 215
         },
         {
-          "id": 1304,
+          "id": 1229,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 434
         },
         {
-          "id": 1290,
+          "id": 1215,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 426
         },
         {
-          "id": 1019,
+          "id": 999,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 384
         },
         {
-          "id": 1336,
+          "id": 1261,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,15 +407,15 @@
           "word_count": 360
         },
         {
-          "id": 1014,
-          "source": "Cell",
+          "id": 1255,
+          "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
-          "title": "Oxygen-responsive bacterial glycosphingolipid links symbiont fitness and immune development in neonatal host",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)00938-4?rss=yes",
-          "content": "How do maternal gut bacteria seed the rapidly developing neonatal gut? Heo et al. show that Bacteroides fragilis produces a distinct membrane lipid that enables this strict anaerobe to tolerate a microaerobic environment. This finding highlights divergent evolutionary strategies among related species, most of which rely on lipids conferring broader fitness.",
-          "pub_date": "2026-09-01",
+          "title": "Lysyl oxidase inhibition disrupts mitochondrial homeostasis to create vulnerability to ferroptosis in TNBC",
+          "link": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00432-5?rss=yes",
+          "content": "Saatci-Ulukan et al. show that lysyl oxidase (LOX) has non-canonical intracellular functions in promoting glucose metabolism, inhibiting mitophagy, and sustaining redox homeostasis and that inhibiting LOX creates a targetable vulnerability to DHODH-inhibition-mediated ferroptosis in chemo-free setting in triple-negative breast cancer, the deadliest subtype.",
+          "pub_date": "2026-08-31",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 450,
-      "total_valid": 260,
+      "total_raw": 372,
+      "total_valid": 219,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1419,
+          "id": 1340,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 362
         },
         {
-          "id": 1394,
+          "id": 1317,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 166
         },
         {
-          "id": 1426,
+          "id": 1347,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1457,
+          "id": 1371,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 542
         },
         {
-          "id": 1456,
+          "id": 1370,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 483
         },
         {
-          "id": 1418,
+          "id": 1339,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 327
         },
         {
-          "id": 1371,
+          "id": 1294,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -544,14 +544,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 100,
+      "total_raw": 90,
       "total_valid": 7,
       "total_candidates": 7
     },
     "cross": {
       "candidates": [
         {
-          "id": 1456,
+          "id": 1370,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 483
         },
         {
-          "id": 1290,
+          "id": 1215,
           "source": "Nature Rev Drug Discovery",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 426
         },
         {
-          "id": 1019,
+          "id": 999,
           "source": "Cell Host Microbe",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 384
         },
         {
-          "id": 1116,
+          "id": 1049,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 316
         },
         {
-          "id": 1371,
+          "id": 1294,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 293
         },
         {
-          "id": 924,
+          "id": 926,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 249
         },
         {
-          "id": 1464,
+          "id": 1378,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 246
         },
         {
-          "id": 926,
+          "id": 928,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 193
         },
         {
-          "id": 1191,
+          "id": 1117,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 171
         },
         {
-          "id": 288,
+          "id": 287,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -724,7 +724,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1474,
+          "id": 1388,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 516
         },
         {
-          "id": 1475,
+          "id": 1389,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 478
         },
         {
-          "id": 1491,
+          "id": 1405,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 338
         },
         {
-          "id": 1512,
+          "id": 1426,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 332
         },
         {
-          "id": 1513,
+          "id": 1427,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 325
         },
         {
-          "id": 1492,
+          "id": 1406,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 266
         },
         {
-          "id": 1493,
+          "id": 1407,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 202
         },
         {
-          "id": 1483,
+          "id": 1397,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 129
         },
         {
-          "id": 1504,
+          "id": 1418,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 118
         },
         {
-          "id": 1507,
+          "id": 1421,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 103
         },
         {
-          "id": 67,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -889,7 +889,7 @@
           "word_count": 1200
         },
         {
-          "id": 294,
+          "id": 293,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -904,7 +904,7 @@
           "word_count": 1200
         },
         {
-          "id": 559,
+          "id": 558,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -919,7 +919,7 @@
           "word_count": 1200
         },
         {
-          "id": 642,
+          "id": 641,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 671,
+          "id": 670,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 752,
+          "id": 751,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 351,
+          "id": 350,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1199
         },
         {
-          "id": 364,
+          "id": 363,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1199
         },
         {
-          "id": 333,
+          "id": 332,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 999
         },
         {
-          "id": 1480,
+          "id": 1394,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1035,9 +1035,9 @@
     }
   },
   "meta": {
-    "total_raw": 1675,
-    "dup": 448,
-    "nocontent": 378,
+    "total_raw": 1589,
+    "dup": 403,
+    "nocontent": 374,
     "noise": 5
   }
 }
