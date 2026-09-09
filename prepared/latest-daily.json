@@ -145,6 +145,21 @@
           "section": "ai",
           "tier": "T2",
           "priority": 5,
+          "title": "On the Navier–Stokes Millennium Prize Problem",
+          "link": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+          "content": "On the Navier–Stokes Millennium Prize Problem Impressive result from OpenAI, who used an unreleased model to produce a resolution to the Navier–Stokes existence and smoothness problem , one of the seven Millennium Prize Problems that have been subject to a $1,000,000 prize since May 24th, 2000. The discovery is somewhat overshadowed by accusations of skulduggery from Tristan Buckmaster, an NYU mathematics professor who was collaborating on related problems with Levent Alpöge, an accomplished mathematician who currently works for Anthropic. Tristan's complaint accompanied a hastily published version of their own results. Here's the PDF describing what happened . The very short version is that Tristan and Levent worked on the problem for almost a year, making extensive use of Claude and Codex (mainly GPT-5.6 Sol), then had a breakthrough on August 15th. The mathematical rumour mill kicked into gear and Tristan and Levent heard that OpenAI had heard that Anthropic had resolved \"a major open problem\", so they reached out and learned that OpenAI had a team working on a related problem, with a similar approach. Quoting Tristan: I asked when the first prompt had been sent by them. This qu",
+          "pub_date": "2026-09-08T23:55:12+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 133,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
           "title": "Introducing ChatGPT Images 2.5",
           "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
           "content": "Introducing ChatGPT Images 2.5 OpenAI's image generation models are apparently used \"more than 3 billion images across ChatGPT Images and the GPT‑Image models in the API\". This latest release improves their instruction-following ability across multiple turns, responds faster, and \"is better at preserving the subjects in your reference photos\". There are two new model IDs in the API: gpt-image-2.5-sunburst and gpt-image-2.5-flare . Based on this I think Sunburst is the stronger option: Choose Sunburst for workflows where editing precision matters most, and Flare for fast, high-quality everyday image generation. I upgraded my openai_image.py CLI tool to support passing in one or more reference images, so now this works: uv run https://tools.simonwillison.net/python/openai_image.py \\ ' add a raccoon scientist studying the chart thoughtfully ' \\ -i https://static.simonwillison.net/static/2026/openai-agent-usage.webp \\ -m gpt-image-2.5-sunburst This is the original image , and here's what I got back from that prompt to \"add a raccoon scientist studying the chart thoughtfully\": Tags: tools , ai , openai , generative-ai , uv , text-to-image",
@@ -155,7 +170,7 @@
           "word_count": 1151
         },
         {
-          "id": 137,
+          "id": 138,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 289
-        },
-        {
-          "id": 150,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "llm-anthropic 0.28",
-          "link": "https://simonwillison.net/2026/Sep/2/llm-anthropic/",
-          "content": "Release: llm-anthropic 0.28 Claude Fable 5.1 , reasoning traces are now displayed by default for models that support them, plus a new llm_anthropic.ClaudeRefusal exception for when Claude throws a refusal. Tags: llm , anthropic , claude , claude-mythos-fable",
-          "pub_date": "2026-09-02T17:59:32+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 258
         }
       ],
       "quota": {
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 245,
-      "total_valid": 39,
+      "total_valid": 40,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 452,
+          "id": 408,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 614
         },
         {
-          "id": 484,
+          "id": 436,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 366
         },
         {
-          "id": 488,
+          "id": 440,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 347
         },
         {
-          "id": 454,
+          "id": 410,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 338
         },
         {
-          "id": 486,
+          "id": 438,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 315
         },
         {
-          "id": 443,
+          "id": 399,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 266
         },
         {
-          "id": 292,
+          "id": 291,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 139
         },
         {
-          "id": 616,
+          "id": 565,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 327
         },
         {
-          "id": 619,
+          "id": 568,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 322
         },
         {
-          "id": 552,
+          "id": 501,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 473,
-      "total_valid": 308,
+      "total_raw": 423,
+      "total_valid": 278,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 782,
+          "id": 728,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 784,
+          "id": 730,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 783,
+          "id": 729,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1199
         },
         {
-          "id": 774,
+          "id": 720,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 349
         },
         {
-          "id": 756,
+          "id": 703,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 231
         },
         {
-          "id": 757,
+          "id": 704,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 172
         },
         {
-          "id": 737,
+          "id": 684,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 135
         },
         {
-          "id": 797,
+          "id": 743,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 546
         },
         {
-          "id": 772,
+          "id": 718,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 419
         },
         {
-          "id": 773,
+          "id": 719,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 80,
+      "total_raw": 76,
       "total_valid": 19,
       "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 780,
+          "id": 726,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 784,
+          "id": 730,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 789,
+          "id": 735,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 797,
+          "id": 743,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 546
         },
         {
-          "id": 659,
+          "id": 608,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 437
         },
         {
-          "id": 487,
+          "id": 439,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 355
         },
         {
-          "id": 800,
+          "id": 746,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 323
         },
         {
-          "id": 376,
+          "id": 336,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 307
         },
         {
-          "id": 443,
+          "id": 399,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 266
         },
         {
-          "id": 801,
+          "id": 747,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 30,
-      "total_valid": 25,
+      "total_raw": 31,
+      "total_valid": 26,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 808,
+          "id": 754,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 545
         },
         {
-          "id": 811,
+          "id": 757,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 489
         },
         {
-          "id": 817,
+          "id": 763,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 485
         },
         {
-          "id": 809,
+          "id": 755,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 484
         },
         {
-          "id": 816,
+          "id": 762,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 466
         },
         {
-          "id": 863,
+          "id": 809,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 346
         },
         {
-          "id": 835,
+          "id": 781,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 226
         },
         {
-          "id": 841,
+          "id": 787,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 199
         },
         {
-          "id": 845,
+          "id": 791,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 179
         },
         {
-          "id": 824,
+          "id": 770,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 176
         },
         {
-          "id": 839,
+          "id": 785,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 163
         },
         {
-          "id": 829,
+          "id": 775,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 160
         },
         {
-          "id": 819,
+          "id": 765,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 142
         },
         {
-          "id": 871,
+          "id": 817,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +994,7 @@
           "word_count": 143
         },
         {
-          "id": 872,
+          "id": 818,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1009,7 +1009,7 @@
           "word_count": 139
         },
         {
-          "id": 873,
+          "id": 819,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1039,7 +1039,7 @@
           "word_count": 59
         },
         {
-          "id": 815,
+          "id": 761,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 516
         },
         {
-          "id": 812,
+          "id": 758,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1080,9 +1080,9 @@
     }
   },
   "meta": {
-    "total_raw": 1033,
-    "dup": 238,
-    "nocontent": 378,
+    "total_raw": 979,
+    "dup": 215,
+    "nocontent": 374,
     "noise": 5
   }
 }
