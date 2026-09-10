@@ -110,7 +110,22 @@
           "word_count": 243
         },
         {
-          "id": 67,
+          "id": 66,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "StudyBench: Can Self-Evolution Squeeze Textbooks for Olympiad Capability?",
+          "link": "https://arxiv.org/abs/2609.00787",
+          "content": "Humans need to study only a handful of well-written textbooks to master a discipline and attempt its hardest problems. We argue that an ideal self-evolution method should share the same property, that is autonomously learning from raw training material for transferable problem-solving capability. However, we still lack a direct measurement for it. We introduce StudyBench, a controlled physics benchmark that directly measures how efficiently a self-evolution method converts training material into capability. We organise the test set into an Application Set, consisting of difficult textbook problems and evaluating absorption ability, and a Transfer Set, consisting of olympiad-level problems and evaluating transfer ability. Benchmarking representative self-evolution methods across three base models, we find that improvements on the Application Set rarely translate to the harder Transfer Set. A guidance ablation exposes a Guidance Gap: even the strongest method closes only a small fraction of what the same material unlocks when supplied as in-context guidance. Besides, every method hits a Compute Plateau, saturating well before exhausting its compute budget. The remaining gap is theref",
+          "pub_date": "2026-08-31T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -134,21 +149,6 @@
           "link": "https://arxiv.org/abs/2609.05738",
           "content": "We present 'RenderFormer-V2', a unified learned transformer-based neural rendering model, complementary to modern physics-based rendering systems, that can handle diverse light-transport effects such as caustics, volumetric scattering, environment lighting, textured and displaced surfaces and out-of-distribution materials without per-scene training or specialized code. RenderFormer-V2 models global light transport as a sequence-to-sequence transformation. Following its predecessor, RenderFormer-V2 also employs a two stage process: a view-independent stage that resolves intra-scene primitive to primitive transport, and a view-dependent stage that transforms the internal neural scene representation into image pixels. Different from RenderFormer, our model employs a novel combined windowed-attention and rendering-informed attention sink in the view-independent stage to improve scalability while maintaining render accuracy. To further improve versatility, RenderFormerV2 supports heterogeneous scene primitives, including environment maps and participating media, and it employs a material encoding independent of the underlying surface reflectance model that encodes material appearance vi",
           "pub_date": "2026-09-03T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 69,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "VDiff-Bench: A Challenging Benchmark for Fine-Grained Image Difference Identification",
-          "link": "https://arxiv.org/abs/2609.06245",
-          "content": "Multimodal Large Language Models (MLLMs) perform strongly on general visual understanding tasks such as visual question answering, yet they often struggle with a basic comparative skill: identifying what has changed between two similar images. We introduce VDiff-Bench, a challenging multiple-choice benchmark for fine-grained Image Difference Identification. VDiff-Bench contains 1,756 four-way questions over image pairs and covers 10 change categories: position, motion, regional image color, overall image color, appearance/disappearance, noise/resolution, texture, substitution/size, OCR/text, and illumination. Each question corresponds to two image inputs with 4 choices: the true difference, two hard negative descriptions, and a \"no difference\" distractor. To make the task challenging, we specifically curate ground-truth-conditioned negatives that require models to distinguish the actual change from nearby semantic alternatives. Experiments with 11 state-of-the-art open- and closed-source MLLMs show that fine-grained visual comparison remains brittle: models exhibit uneven performance across sources and change categories, with persistent failures on subtle low-level changes like noi",
-          "pub_date": "2026-09-04T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 2410,
+          "id": 2409,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 529
         },
         {
-          "id": 2556,
+          "id": 2555,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 380
         },
         {
-          "id": 2467,
+          "id": 2466,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 361
         },
         {
-          "id": 2567,
+          "id": 2566,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 317
         },
         {
-          "id": 2392,
+          "id": 2391,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 312
         },
         {
-          "id": 2554,
+          "id": 2553,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 283
         },
         {
-          "id": 2418,
+          "id": 2417,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 234
         },
         {
-          "id": 2536,
+          "id": 2535,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 229
         },
         {
-          "id": 2535,
+          "id": 2534,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 203
         },
         {
-          "id": 2544,
+          "id": 2543,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 201
         },
         {
-          "id": 2729,
+          "id": 2728,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 141
         },
         {
-          "id": 2722,
+          "id": 2721,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 70
         },
         {
-          "id": 2689,
+          "id": 2688,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 313
         },
         {
-          "id": 2629,
+          "id": 2628,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 306
         },
         {
-          "id": 2633,
+          "id": 2632,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 477,
-      "total_valid": 327,
+      "total_raw": 476,
+      "total_valid": 326,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2857,
+          "id": 2856,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 574
         },
         {
-          "id": 2849,
+          "id": 2848,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 344
         },
         {
-          "id": 2863,
+          "id": 2862,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 2865,
+          "id": 2864,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2874,
+          "id": 2873,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 2881,
+          "id": 2880,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 487
         },
         {
-          "id": 2858,
+          "id": 2857,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 410
         },
         {
-          "id": 2855,
+          "id": 2854,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 382
         },
         {
-          "id": 2875,
+          "id": 2874,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2881,
+          "id": 2880,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 487
         },
         {
-          "id": 2568,
+          "id": 2567,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 479
         },
         {
-          "id": 2414,
+          "id": 2413,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 450
         },
         {
-          "id": 2858,
+          "id": 2857,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 410
         },
         {
-          "id": 2467,
+          "id": 2466,
           "source": "Cell Host Microbe",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 361
         },
         {
-          "id": 2849,
+          "id": 2848,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 344
         },
         {
-          "id": 2375,
+          "id": 2374,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 343
         },
         {
-          "id": 2379,
+          "id": 2378,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 307
         },
         {
-          "id": 2883,
+          "id": 2882,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 215
         },
         {
-          "id": 2553,
+          "id": 2552,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
           "word_count": 516
         },
         {
-          "id": 2924,
+          "id": 2923,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 417
         },
         {
-          "id": 2922,
+          "id": 2921,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 349
         },
         {
-          "id": 2919,
+          "id": 2918,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 286
         },
         {
-          "id": 2920,
+          "id": 2919,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 272
         },
         {
-          "id": 2929,
+          "id": 2928,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 255
         },
         {
-          "id": 2926,
+          "id": 2925,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 231
         },
         {
-          "id": 2903,
+          "id": 2902,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 152
         },
         {
-          "id": 2902,
+          "id": 2901,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 147
         },
         {
-          "id": 2904,
+          "id": 2903,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 129
         },
         {
-          "id": 72,
+          "id": 73,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 243,
+      "total_raw": 245,
       "total_valid": 62,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3111,
-    "dup": 718,
+    "total_raw": 3112,
+    "dup": 720,
     "nocontent": 377,
     "noise": 5
   }
