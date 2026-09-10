@@ -155,34 +155,34 @@
           "word_count": 1200
         },
         {
-          "id": 2228,
+          "id": 2222,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "Mercator ↔ Equal Earth",
-          "link": "https://simonwillison.net/2026/Sep/7/equal-earth/",
-          "content": "Tool: Mercator ↔ Equal Earth I got curious about the Equal Earth map projection that was recently voted on at the UN so I had GPT-6 Astra (medium) in ChatGPT Work build me this animated transition between Mercator and Equal Earth using D3. Tags: geospatial , d3 , vibe-coding , gpt-6-astra",
-          "pub_date": "2026-09-07T16:24:16+00:00",
+          "title": ".blend URL Viewer",
+          "link": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+          "content": "Tool: .blend URL Viewer I'm continuing to have a lot of fun with GPT-6 Astra and Blender (see my TIL ). As a big fan of the Imperial Fabergé Easter eggs , I've always thought it would be fun to make some new ones that celebrate popular culture. Yesterday I decided to try out the new ChatGPT Images 2.5 by running this prompt : Generate a photo of a faberge egg that's themed after the TV show Pluribus - research first It gave me this - honestly not bad for a first attempt! Then, just to see what would happen, I pasted that image into Codex running GPT-6 Astra (high) and prompted: Use your blender local skill to create a blender model of this faverge egg (Here's the skill file , which I created like this .) It churned away for 17m51s and built me several .blend files . I already had this vibe-coded Blender viewing experiment lying around, so I added that to my tools collection and now you can use it to see my Pluribus blender model in your browser : Tags: 3d , javascript , tools , ai , generative-ai , llms , blender , coding-agents , codex , gpt-6-astra",
+          "pub_date": "2026-09-09T23:58:32+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 289
+          "word_count": 1066
         },
         {
-          "id": 2207,
-          "source": "Latent Space",
+          "id": 2221,
+          "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
-          "link": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
-          "content": "Overshadowing Cognition's $48B Series E, Mistral's $24B Series D, Meta's Muse agent, and GPT Image 2.5. The most jam packed, feel the AGI day in the history of AI.",
-          "pub_date": "Wed, 09 Sep 2026 05:04:51 GMT",
+          "title": "Quoting Calif Research",
+          "link": "https://simonwillison.net/2026/Sep/10/calif-research/",
+          "content": "Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...] The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. [...] Working with AI, our team found the bug and wrote the first remote code execution (RCE) exploit in about two days. Building the worm took one more week. A worm at this scale used to be the kind of thing that took a larger team months. AI can already do most of the work here. Our team provided the judgment about what to target and how to test it safely. &mdash; Calif Research , WeWorm Tags: ai-security-research , ai , llms , security , generative-ai",
+          "pub_date": "2026-09-10T00:56:41+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 163
+          "word_count": 743
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2329,
-      "total_valid": 1630,
+      "total_raw": 2331,
+      "total_valid": 1632,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2409,
+          "id": 2410,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 529
         },
         {
-          "id": 2555,
+          "id": 2556,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 380
         },
         {
-          "id": 2466,
+          "id": 2467,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 361
         },
         {
-          "id": 2566,
+          "id": 2567,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 317
         },
         {
-          "id": 2391,
+          "id": 2392,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 312
         },
         {
-          "id": 2553,
+          "id": 2554,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 283
         },
         {
-          "id": 2417,
+          "id": 2418,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 234
         },
         {
-          "id": 2535,
+          "id": 2536,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 229
         },
         {
-          "id": 2534,
+          "id": 2535,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 203
         },
         {
-          "id": 2543,
+          "id": 2544,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 201
         },
         {
-          "id": 2726,
+          "id": 2729,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 141
         },
         {
-          "id": 2719,
+          "id": 2722,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 70
         },
         {
-          "id": 2686,
+          "id": 2689,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 313
         },
         {
-          "id": 2626,
+          "id": 2629,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 306
         },
         {
-          "id": 2630,
+          "id": 2633,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 476,
-      "total_valid": 326,
+      "total_raw": 477,
+      "total_valid": 327,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2854,
+          "id": 2857,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 574
         },
         {
-          "id": 2846,
+          "id": 2849,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 344
         },
         {
-          "id": 2860,
+          "id": 2863,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 2862,
+          "id": 2865,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2871,
+          "id": 2874,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 2878,
+          "id": 2881,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 487
         },
         {
-          "id": 2855,
+          "id": 2858,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 410
         },
         {
-          "id": 2852,
+          "id": 2855,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 382
         },
         {
-          "id": 2872,
+          "id": 2875,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2878,
+          "id": 2881,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 487
         },
         {
-          "id": 2567,
+          "id": 2568,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 479
         },
         {
-          "id": 2413,
+          "id": 2414,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 450
         },
         {
-          "id": 2855,
+          "id": 2858,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 410
         },
         {
-          "id": 2466,
+          "id": 2467,
           "source": "Cell Host Microbe",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 361
         },
         {
-          "id": 2846,
+          "id": 2849,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 344
         },
         {
-          "id": 2374,
+          "id": 2375,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 343
         },
         {
-          "id": 2378,
+          "id": 2379,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 307
         },
         {
-          "id": 2880,
+          "id": 2883,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 215
         },
         {
-          "id": 2552,
+          "id": 2553,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 60,
-      "total_valid": 53,
+      "total_raw": 61,
+      "total_valid": 54,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2891,
+          "id": 2895,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 516
         },
         {
-          "id": 2921,
+          "id": 2924,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 417
         },
         {
-          "id": 2919,
+          "id": 2922,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 349
         },
         {
-          "id": 2916,
+          "id": 2919,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 286
         },
         {
-          "id": 2917,
+          "id": 2920,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 272
         },
         {
-          "id": 2926,
+          "id": 2929,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 255
         },
         {
-          "id": 2923,
+          "id": 2926,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 231
         },
         {
-          "id": 2900,
+          "id": 2903,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 152
         },
         {
-          "id": 2899,
+          "id": 2902,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 147
         },
         {
-          "id": 2901,
+          "id": 2904,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 245,
+      "total_raw": 243,
       "total_valid": 62,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3110,
-    "dup": 720,
+    "total_raw": 3111,
+    "dup": 718,
     "nocontent": 377,
     "noise": 5
   }
