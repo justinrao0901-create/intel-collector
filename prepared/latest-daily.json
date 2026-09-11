@@ -27,12 +27,12 @@
           "priority": 3,
           "title": "d-Matrix Adopts NVIDIA NVLink Fusion for Rack-Scale XPU Deployment",
           "link": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
-          "content": "AI inference chipmaker d-Matrix today announced it will use NVIDIA NVLink Fusion to connect its next-generation Raptor XPUs to NVIDIA’s AI infrastructure platform — joining a growing roster of ecosystem partners. By connecting Raptor to NVIDIA NVLink scale-up and Spectrum-X scale-out networking, the NVIDIA MGX rack architecture and the broader NVIDIA AI platform, NVLink Fusion [&#8230;]",
+          "content": "AI inference chipmaker d-Matrix today announced it will use NVLink Fusion to connect its next-generation Raptor XPUs to NVIDIA’s AI infrastructure platform — joining a growing roster of partners building on the NVIDIA AI platform. By connecting Raptor to NVIDIA NVLink scale-up and Spectrum-X scale-out networking, the NVIDIA MGX rack architecture and the broader NVIDIA [&#8230;]",
           "pub_date": "Thu, 10 Sep 2026 13:00:21 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 389
+          "word_count": 380
         },
         {
           "id": 61,
@@ -257,7 +257,7 @@
           "word_count": 405
         },
         {
-          "id": 1281,
+          "id": 1325,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 217
         },
         {
-          "id": 1251,
+          "id": 1295,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 118
         },
         {
-          "id": 1215,
+          "id": 1259,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 268
         },
         {
-          "id": 1208,
+          "id": 1252,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 261
         },
         {
-          "id": 1248,
+          "id": 1292,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 436,
-      "total_valid": 297,
+      "total_raw": 480,
+      "total_valid": 340,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1414,
+          "id": 1461,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 435
         },
         {
-          "id": 1365,
+          "id": 1409,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 192
         },
         {
-          "id": 1379,
+          "id": 1423,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 154
         },
         {
-          "id": 1402,
+          "id": 1449,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1199
         },
         {
-          "id": 1405,
+          "id": 1452,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1057
         },
         {
-          "id": 1408,
+          "id": 1455,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 556
         },
         {
-          "id": 1346,
+          "id": 1390,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 376
         },
         {
-          "id": 1388,
+          "id": 1435,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 350
         },
         {
-          "id": 1382,
+          "id": 1426,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 340
         },
         {
-          "id": 1390,
+          "id": 1437,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 333
         },
         {
-          "id": 1403,
+          "id": 1450,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -597,6 +597,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 299
+        },
+        {
+          "id": 1432,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Adaptive laboratory evolution of a yeast co-culture chassis for modular bioproduction",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.09.06.747466v1?rss=1",
+          "content": "Synthetic microbial consortia have the potential to bring novel architectures to biotechnological processes. They enable more flexible and efficient bioprocesses by reducing metabolic burden and supporting division of labour. Obligately mutualistic cross-feeding has been used to stabilise the population composition of artificially assembled consortia. However, many current strategies rely on the cross-feeding of metabolites with limited exchange rates, and this imposes a growth burden on the consortium members. Here, we used adaptive laboratory evolution (ALE) to address this growth bottleneck and create an optimised co-culture chassis to host bioproduction functions. Transcriptome analysis revealed how ALE alleviated stress responses associated with nutritional restrictions in the non-evolved cross-feeding system. Using a case-study split bioproduction pathway, we demonstrated that improvements in the chassis growth performance resulted in production improvements, surpassing the performance of a monoculture implementation by 1.5-fold. Our results show the potential of ALE to optimise the cross-feeding layer of yeast co-cultures, and how this enables the efficient implementation of",
+          "pub_date": "2026-09-10",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -604,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 74,
-      "total_valid": 12,
-      "total_candidates": 11
+      "total_raw": 77,
+      "total_valid": 15,
+      "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1408,
+          "id": 1455,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 556
         },
         {
-          "id": 1417,
+          "id": 1464,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +656,7 @@
           "word_count": 470
         },
         {
-          "id": 1414,
+          "id": 1461,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +686,7 @@
           "word_count": 429
         },
         {
-          "id": 1416,
+          "id": 1463,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +716,7 @@
           "word_count": 392
         },
         {
-          "id": 1346,
+          "id": 1390,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -766,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 50,
-      "total_valid": 44,
+      "total_raw": 63,
+      "total_valid": 57,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +814,7 @@
           "word_count": 148
         },
         {
-          "id": 1429,
+          "id": 1477,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 497
         },
         {
-          "id": 1426,
+          "id": 1474,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 461
         },
         {
-          "id": 1430,
+          "id": 1478,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 460
         },
         {
-          "id": 1482,
+          "id": 1528,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 379
         },
         {
-          "id": 1480,
+          "id": 1526,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 354
         },
         {
-          "id": 1481,
+          "id": 1527,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 332
         },
         {
-          "id": 1446,
+          "id": 1492,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 275
         },
         {
-          "id": 1463,
+          "id": 1509,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 270
         },
         {
-          "id": 1462,
+          "id": 1508,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 220
         },
         {
-          "id": 1442,
+          "id": 1488,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 198
         },
         {
-          "id": 1440,
+          "id": 1486,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 194
         },
         {
-          "id": 1457,
+          "id": 1503,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 190
         },
         {
-          "id": 1435,
+          "id": 1482,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 1485,
+          "id": 1533,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,7 +1039,7 @@
           "word_count": 152
         },
         {
-          "id": 1484,
+          "id": 1532,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1089,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 229,
+      "total_raw": 230,
       "total_valid": 50,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1646,
-    "dup": 352,
+    "total_raw": 1694,
+    "dup": 354,
     "nocontent": 374,
     "noise": 6
   }
