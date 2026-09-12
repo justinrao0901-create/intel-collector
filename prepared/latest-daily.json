@@ -140,7 +140,22 @@
           "word_count": 1200
         },
         {
-          "id": 818,
+          "id": 812,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "OpenAI agents attacked RubyGems back in May",
+          "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+          "content": "OpenAI agents carried out an undisclosed attack on RubyGems is a new bombshell report from Spencer Kitts, Thomas Larsen, and Sydney Von Arx - three of the four authors of the report on the agent attack on disused wikis ( previously ) last week. This time they're noting that it looks very likely that an OpenAI agent swarm was behind an attack against the RubyGems package repository first reported on May 12th by Maciej Mensfeld of the RubyGems security team : We're dealing with a major malicious attack on @rubygems right now. Signups are paused for the time being. Hundreds of packages involved - mostly targeting us, but some carrying exploits. The team has been on this for hours. More details to follow once we're through it. Those packages turned out to carry some very suspicious patterns: Many of them included \"oai\" in their name, or the author field, or the fake email address they provided. The files they were accessing were similar in character to the files retrieved by the wiki agents, using similar tricks (r.jina.ai) - and OpenAI have confirmed the wiki agents were theirs. The code in the packages appeared to be LLM-authored. I find point 2 the most convincing, given what we lea",
+          "pub_date": "2026-09-12T00:42:25+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 819,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 814,
+          "id": 815,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
-        },
-        {
-          "id": 812,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "So you want to use OpenRouter?",
-          "link": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
-          "content": "So you want to use OpenRouter? One of OpenRouter's selling points is that it \"handles fallbacks automatically and picks the most cost-effective option for each request\", so you can call a single API endpoint for a model and get routed to the best available backend provider. Mohamed Moustafa points out a whole set of ways that this can cause you problems. Different providers run different serving software with different optimizations and settings, which means that the same OpenRouter endpoint can serve model requests that behave in different ways. Some providers even lack vision capability for vision models, and the way the reasoning effort option is processed can differ as well. Thankfully you can control which provider is routed to using the provider.only option . The /endpoints method returns the list of available providers for a specific model ID. Via Hacker News Tags: ai , generative-ai , llms , openrouter",
-          "pub_date": "2026-09-11T22:49:18+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 923
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 931,
-      "total_valid": 680,
+      "total_raw": 932,
+      "total_valid": 681,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1343,
+          "id": 1344,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 517
         },
         {
-          "id": 1056,
+          "id": 1057,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 370
         },
         {
-          "id": 1063,
+          "id": 1064,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 357
         },
         {
-          "id": 1064,
+          "id": 1065,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 343
         },
         {
-          "id": 1047,
+          "id": 1048,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 220
         },
         {
-          "id": 1319,
+          "id": 1320,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 141
         },
         {
-          "id": 1123,
+          "id": 1124,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 137
         },
         {
-          "id": 1124,
+          "id": 1125,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 131
         },
         {
-          "id": 1361,
+          "id": 1362,
           "source": "Science Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 58
         },
         {
-          "id": 1274,
+          "id": 1275,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 250
         },
         {
-          "id": 1251,
+          "id": 1252,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 243
         },
         {
-          "id": 1281,
+          "id": 1282,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 230
         },
         {
-          "id": 963,
+          "id": 964,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 600
         },
         {
-          "id": 932,
+          "id": 933,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 233
         },
         {
-          "id": 934,
+          "id": 935,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1481,
+          "id": 1482,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1455,
+          "id": 1456,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 148
         },
         {
-          "id": 1453,
+          "id": 1454,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 1479,
+          "id": 1480,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1477,
+          "id": 1478,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 1500,
+          "id": 1501,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 538
         },
         {
-          "id": 1464,
+          "id": 1465,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1465,
+          "id": 1466,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1467,
+          "id": 1468,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1480,
+          "id": 1481,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1086
         },
         {
-          "id": 1500,
+          "id": 1501,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 538
         },
         {
-          "id": 1065,
+          "id": 1066,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 387
         },
         {
-          "id": 1366,
+          "id": 1367,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 383
         },
         {
-          "id": 1064,
+          "id": 1065,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 343
         },
         {
-          "id": 1006,
+          "id": 1007,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 328
         },
         {
-          "id": 984,
+          "id": 985,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 303
         },
         {
-          "id": 992,
+          "id": 993,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 277
         },
         {
-          "id": 1367,
+          "id": 1368,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 234
         },
         {
-          "id": 1503,
+          "id": 1504,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1520,
+          "id": 1521,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 546
         },
         {
-          "id": 1513,
+          "id": 1514,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 444
         },
         {
-          "id": 1545,
+          "id": 1546,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 205
         },
         {
-          "id": 1543,
+          "id": 1544,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 203
         },
         {
-          "id": 1530,
+          "id": 1531,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 162
         },
         {
-          "id": 1537,
+          "id": 1538,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 159
         },
         {
-          "id": 1522,
+          "id": 1523,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 148
         },
         {
-          "id": 1521,
+          "id": 1522,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 147
         },
         {
-          "id": 1536,
+          "id": 1537,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 132
         },
         {
-          "id": 1528,
+          "id": 1529,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 948
         },
         {
-          "id": 1569,
+          "id": 1570,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 543
         },
         {
-          "id": 1515,
+          "id": 1516,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 508
         },
         {
-          "id": 1517,
+          "id": 1518,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 488
         },
         {
-          "id": 1514,
+          "id": 1515,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 487
         },
         {
-          "id": 1516,
+          "id": 1517,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1039,7 @@
           "word_count": 469
         },
         {
-          "id": 1525,
+          "id": 1526,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1065,7 +1065,7 @@
     }
   },
   "meta": {
-    "total_raw": 1729,
+    "total_raw": 1730,
     "dup": 291,
     "nocontent": 372,
     "noise": 6
