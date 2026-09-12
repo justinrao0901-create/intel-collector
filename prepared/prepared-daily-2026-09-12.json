@@ -35,7 +35,7 @@
           "word_count": 145
         },
         {
-          "id": 6,
+          "id": 7,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 926,
-      "total_valid": 674,
+      "total_raw": 929,
+      "total_valid": 678,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1343,
+          "id": 1341,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 517
         },
         {
-          "id": 1053,
+          "id": 1054,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 370
         },
         {
-          "id": 1060,
+          "id": 1061,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 357
         },
         {
-          "id": 1061,
+          "id": 1062,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 343
         },
         {
-          "id": 1044,
+          "id": 1045,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 220
         },
         {
-          "id": 1319,
+          "id": 1317,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 141
         },
         {
-          "id": 1120,
+          "id": 1121,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 137
         },
         {
-          "id": 1121,
+          "id": 1122,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 131
         },
         {
-          "id": 1361,
+          "id": 1359,
           "source": "Science Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 58
         },
         {
-          "id": 1274,
+          "id": 1272,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 250
         },
         {
-          "id": 1251,
+          "id": 1249,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 243
         },
         {
-          "id": 1281,
+          "id": 1279,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 230
         },
         {
-          "id": 960,
+          "id": 961,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 600
         },
         {
-          "id": 927,
+          "id": 930,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 233
         },
         {
-          "id": 929,
+          "id": 932,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 491,
-      "total_valid": 338,
+      "total_raw": 486,
+      "total_valid": 334,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1482,
+          "id": 1474,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1456,
+          "id": 1453,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 148
         },
         {
-          "id": 1454,
+          "id": 1451,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 1480,
+          "id": 1472,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1478,
+          "id": 1470,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 1501,
+          "id": 1493,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -522,51 +522,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 538
-        },
-        {
-          "id": 1465,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Biocatalytic Production of Galantamine in Yeast through Cytochrome P450 Optimization",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.09.750345v1?rss=1",
-          "content": "Galantamine is a pharmaceutically relevant Amaryllidaceae alkaloid used for the treatment of Alzheimer's disease. Its structural complexity and low abundance in plants motivate the development of alternative manufacturing routes. Here, we established the first engineered yeast platform for the biocatalytic production of galantamine from 4OMe-norbelladine. Heterologous expression of the downstream pathway enzymes NtCYP96T6, NtNMT1, and NtAKR1 from Narcissus cv. Tete-a-Tete in Saccharomyces cerevisiae was complemented by optimization of cultivation temperature, carbon source, and medium pH enabling the first demonstration of galantamine production in yeast. Systematic screening of cytochrome P450 reductase and cytochrome b partners to boost NtCYP96T6 activity led to the identification of a novel reductase mined from the Narcissus pseudonarcissus transcriptome, NpCPR, which supported the highest pathway flux and yielded 7.0 {+/-} 0.6 mg/L galantamine, corresponding to a 7.6 % molar yield from 250 M 4OMe-norbelladine and an approximately 173-fold improvement over the parental strain. We further exploited this yeast cell factory for the precursor-directed biosynthesis of 7F-galantamine,",
-          "pub_date": "2026-09-11",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1466,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Full-length transcriptomics and proteomics reveal how genome minimization reshapes gene expression in synthetic bacteria",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.08.750226v1?rss=1",
-          "content": "JCVI-syn1.0 (Syn1.0) and JCVI-syn3A (Syn3A), genetically synthetic and genome-reduced versions of the naturally occurring bacterium Mycoplasma mycoides, are landmark platforms for defining the gene set required for life, yet how their genomes are expressed at the RNA level remains uncharacterized. We combined full-length PacBio and native long-read RNA sequencing with short-read quantification and complementary proteomics to map transcription, RNA processing, and protein abundance in both cells. In Syn1.0, full-length sequencing resolved 459 operons encompassing 911 genes, revealing pervasive RNA processing with a strong 3' bias. Analysis of the division and cell-wall cluster showed how transcriptional context explained the restoration of genes required for normal cell division in Syn3A. Most antisense and intergenic transcription in Syn1.0 reflected low-level transcriptional noise arising from inherited mis-annotation, read-through, and synthetic sequences. Much of that transcription was lost in Syn3A after genome minimization. Reducing the genome unexpectedly altered the expression of several retained genes by deleting promoters, most prominently reducing expression of the nucleo",
-          "pub_date": "2026-09-10",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1468,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Generative Language Modeling for Antibody CDR Grafting and Alignment-driven De Novo Design",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.06.749721v1?rss=1",
-          "content": "Antibodies recognise their targets through hypervariable complementarity-determining regions (CDRs), which are interleaved with conserved frameworks in sequence space, making de novo CDR design an infilling problem. Autoregressive models generate residues left-to-right, which precludes full framework context during CDR generation and conflates framework and CDR likelihoods, leaving no natural prompt-response interface for feedback to steer generation. We present GenCDR, a family of LLaMa-based autoregressive language models that read all frameworks as a conditioning prompt and generate all CDRs jointly as a variable-length response, making CDR likelihoods a clean, separable target for reward attribution. The family comprises IgGenCDR, p-IgGenCDR, and NanoGenCDR, trained on unpaired, paired, and nanobody chains, respectively. GenCDR achieves the highest CDR recovery among autoregressive models and produces natural, diverse, human-like CDRs whose likelihoods correlate with fitness and developability assays. The prompt-response boundary also enables principled alignment: reward signals for binding affinity, expression, or developability can be composed to steer CDR generation. Over fo",
-          "pub_date": "2026-09-10",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -574,14 +529,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 86,
-      "total_valid": 14,
-      "total_candidates": 9
+      "total_raw": 80,
+      "total_valid": 10,
+      "total_candidates": 6
     },
     "cross": {
       "candidates": [
         {
-          "id": 1481,
+          "id": 1473,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +551,7 @@
           "word_count": 1086
         },
         {
-          "id": 1501,
+          "id": 1493,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +566,7 @@
           "word_count": 538
         },
         {
-          "id": 1062,
+          "id": 1063,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +581,7 @@
           "word_count": 387
         },
         {
-          "id": 1366,
+          "id": 1364,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +596,7 @@
           "word_count": 383
         },
         {
-          "id": 1061,
+          "id": 1062,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +611,7 @@
           "word_count": 343
         },
         {
-          "id": 1003,
+          "id": 1004,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +626,7 @@
           "word_count": 328
         },
         {
-          "id": 981,
+          "id": 982,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +641,7 @@
           "word_count": 303
         },
         {
-          "id": 989,
+          "id": 990,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +656,7 @@
           "word_count": 277
         },
         {
-          "id": 1367,
+          "id": 1365,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +671,7 @@
           "word_count": 234
         },
         {
-          "id": 1504,
+          "id": 1496,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +691,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 54,
-      "total_valid": 47,
+      "total_raw": 50,
+      "total_valid": 43,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1520,
+          "id": 1513,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +724,7 @@
           "word_count": 546
         },
         {
-          "id": 1513,
+          "id": 1506,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +739,7 @@
           "word_count": 444
         },
         {
-          "id": 1548,
+          "id": 1540,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +754,7 @@
           "word_count": 205
         },
         {
-          "id": 1546,
+          "id": 1538,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +769,7 @@
           "word_count": 203
         },
         {
-          "id": 1531,
+          "id": 1523,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +784,7 @@
           "word_count": 162
         },
         {
-          "id": 1540,
+          "id": 1532,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +799,7 @@
           "word_count": 159
         },
         {
-          "id": 1523,
+          "id": 1515,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +814,7 @@
           "word_count": 148
         },
         {
-          "id": 1522,
+          "id": 1514,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +829,7 @@
           "word_count": 147
         },
         {
-          "id": 1539,
+          "id": 1531,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +844,7 @@
           "word_count": 132
         },
         {
-          "id": 1529,
+          "id": 1521,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +919,7 @@
           "word_count": 948
         },
         {
-          "id": 1573,
+          "id": 1562,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +934,7 @@
           "word_count": 543
         },
         {
-          "id": 1515,
+          "id": 1508,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +949,7 @@
           "word_count": 508
         },
         {
-          "id": 1517,
+          "id": 1510,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +964,7 @@
           "word_count": 488
         },
         {
-          "id": 1514,
+          "id": 1507,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +979,7 @@
           "word_count": 487
         },
         {
-          "id": 1516,
+          "id": 1509,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +994,7 @@
           "word_count": 469
         },
         {
-          "id": 1526,
+          "id": 1518,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1059,15 +1014,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 226,
+      "total_raw": 223,
       "total_valid": 38,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1733,
-    "dup": 295,
-    "nocontent": 373,
+    "total_raw": 1722,
+    "dup": 289,
+    "nocontent": 372,
     "noise": 6
   }
 }
