@@ -125,7 +125,22 @@
           "word_count": 1200
         },
         {
-          "id": 136,
+          "id": 129,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "commit-rewriter 0.1",
+          "link": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+          "content": "Release: commit-rewriter 0.1 I built this little web app the other day to help edit the commit messages for the Datasette security releases . The initial commits were full of coding agent cruft and references to issue IDs from our private repository, so they weren't fit for publication. If you want to edit the commit messages for a repository you can run it like this: uvx commit-rewriter path/to/repo Omit the path if you are already in the directory for that repo. When you submit your edits the tool creates a timestamped branch of your current repo state - to allow you to revert if you need to - and then rewrites every commit from the first one you edited to the most recent. Tags: git , projects , python , ai-assisted-programming",
+          "pub_date": "2026-09-14T00:28:10+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 739
+        },
+        {
+          "id": 138,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +155,7 @@
           "word_count": 411
         },
         {
-          "id": 155,
+          "id": 157,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -153,21 +168,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 289
-        },
-        {
-          "id": 140,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "datasette-publish-fly 1.4",
-          "link": "https://simonwillison.net/2026/Sep/11/datasette-publish-fly/",
-          "content": "Release: datasette-publish-fly 1.4 Sets force_https=true in fly.toml . #31 Fix for Volume could not be found bug. #32 Compatible with app-scoped deploy tokens. #34 Tags: datasette , fly",
-          "pub_date": "2026-09-11T02:58:52+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 185
         },
         {
           "id": 119,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 246,
-      "total_valid": 36,
+      "total_raw": 248,
+      "total_valid": 38,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 552,
+          "id": 554,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 381
         },
         {
-          "id": 543,
+          "id": 545,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 264
         },
         {
-          "id": 554,
+          "id": 556,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 226
         },
         {
-          "id": 436,
+          "id": 438,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 623
         },
         {
-          "id": 627,
+          "id": 629,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 586
         },
         {
-          "id": 429,
+          "id": 431,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 584
         },
         {
-          "id": 639,
+          "id": 641,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 562
         },
         {
-          "id": 336,
+          "id": 338,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 523
         },
         {
-          "id": 335,
+          "id": 337,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 510
         },
         {
-          "id": 339,
+          "id": 341,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 490
         },
         {
-          "id": 432,
+          "id": 434,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 485
         },
         {
-          "id": 314,
+          "id": 316,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 424
         },
         {
-          "id": 634,
+          "id": 636,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 419
         },
         {
-          "id": 442,
+          "id": 444,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 413
         },
         {
-          "id": 629,
+          "id": 631,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 731,
+          "id": 733,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 720,
+          "id": 722,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 754,
+          "id": 756,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 756,
+          "id": 758,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1199
         },
         {
-          "id": 760,
+          "id": 762,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -521,7 +521,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 440,
+          "id": 442,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 304
         },
         {
-          "id": 439,
+          "id": 441,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 262
         },
         {
-          "id": 295,
+          "id": 297,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 243
         },
         {
-          "id": 313,
+          "id": 315,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 229
         },
         {
-          "id": 287,
+          "id": 289,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 226
         },
         {
-          "id": 382,
+          "id": 384,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 65
         },
         {
-          "id": 469,
+          "id": 471,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 475,
+          "id": 477,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 478,
+          "id": 480,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 494,
+          "id": 496,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -694,7 +694,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 792,
+          "id": 796,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,37 @@
           "word_count": 517
         },
         {
-          "id": 810,
+          "id": 792,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Student Loan Borrowers Scramble to Pick New Repayment Plans",
+          "link": "https://www.pymnts.com/consumer-finance/2026/student-loan-borrowers-scramble-to-pick-new-repayment-plans/",
+          "content": "Millions of federal student loan borrowers are racing to pick new repayment options under the governmental rules. That’s according to a report Sunday (Sept. 13) from The Hill, which says borrowers on the now-defunct Biden-era SAVE Plan must choose a new repayment plan within 90 days of being notified, or automatically get transferred to an [&#8230;] The post Student Loan Borrowers Scramble to Pick New Repayment Plans appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 14 Sep 2026 00:28:55 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 451
+        },
+        {
+          "id": 791,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "PayPal’s New CEO Bets on Going It Alone After $50 Billion Buyout Stalls",
+          "link": "https://www.pymnts.com/consumer-payments/2026/paypals-new-ceo-bets-on-going-it-alone-after-50-billion-buyout-stalls/",
+          "content": "PayPal is moving forward without a buyer, at least for now. CEO Enrique Lores is building a plan to run the payments giant as a stand-alone company after a proposed $50 billion-plus sale fell apart this summer. Many investors still doubt he can turn the business around alone. According to The Wall Street Journal, Lores [&#8230;] The post PayPal’s New CEO Bets on Going It Alone After $50 Billion Buyout Stalls appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 14 Sep 2026 00:52:03 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 442
+        },
+        {
+          "id": 814,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +754,7 @@
           "word_count": 399
         },
         {
-          "id": 811,
+          "id": 815,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +769,7 @@
           "word_count": 319
         },
         {
-          "id": 809,
+          "id": 813,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +784,7 @@
           "word_count": 304
         },
         {
-          "id": 796,
+          "id": 800,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +799,7 @@
           "word_count": 137
         },
         {
-          "id": 799,
+          "id": 803,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +814,7 @@
           "word_count": 114
         },
         {
-          "id": 801,
+          "id": 805,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +829,7 @@
           "word_count": 100
         },
         {
-          "id": 789,
+          "id": 793,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +844,7 @@
           "word_count": 482
         },
         {
-          "id": 790,
+          "id": 794,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +859,7 @@
           "word_count": 461
         },
         {
-          "id": 791,
+          "id": 795,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -842,36 +872,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 457
-        },
-        {
-          "id": 793,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Consumers Feel Strained as Inflation Surpasses Wage Growth",
-          "link": "https://www.pymnts.com/economy/2026/consumers-feel-strained-as-inflation-surpasses-wage-growth/",
-          "content": "American consumers are facing added strain as inflation continues to outpace wage growth. “A substantial number of Americans are worse off, their incomes are not keeping up with the price increases right now,” Heather Long, chief economist at Navy Federal Credit Union, told CNBC in an interview Sunday (Sept. 13). Data released last week by [&#8230;] The post Consumers Feel Strained as Inflation Surpasses Wage Growth appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 13 Sep 2026 22:16:08 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 450
-        },
-        {
-          "id": 795,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "OpenAI Pauses IPO Plans Amid AI Safety Worries",
-          "link": "https://www.pymnts.com/news/2026/openai-pauses-ipo-plans-amid-ai-safety-worries/",
-          "content": "OpenAI has reportedly postponed plans to go public amid corporate concerns about artificial intelligence safety. The AI startup’s initial public offering (IPO) will not take place in 2026, CEO Sam Altman said in an interview with Fortune on Friday (Sept. 11), saying that OpenAI has long insisted it is in no rush to list. “I [&#8230;] The post OpenAI Pauses IPO Plans Amid AI Safety Worries appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 13 Sep 2026 21:34:31 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 422
         }
       ],
       "quota": {
@@ -879,14 +879,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 185,
-      "total_valid": 13,
+      "total_raw": 189,
+      "total_valid": 15,
       "total_candidates": 12
     }
   },
   "meta": {
-    "total_raw": 973,
-    "dup": 280,
+    "total_raw": 979,
+    "dup": 282,
     "nocontent": 367,
     "noise": 6
   }
