@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 554,
+          "id": 535,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 381
         },
         {
-          "id": 545,
+          "id": 526,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 264
         },
         {
-          "id": 556,
+          "id": 537,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 623
         },
         {
-          "id": 629,
+          "id": 610,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 584
         },
         {
-          "id": 641,
+          "id": 622,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 424
         },
         {
-          "id": 636,
+          "id": 617,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 413
         },
         {
-          "id": 631,
+          "id": 612,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 445,
-      "total_valid": 267,
+      "total_raw": 426,
+      "total_valid": 248,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 733,
+          "id": 714,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 722,
+          "id": 703,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 756,
+          "id": 737,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 758,
+          "id": 739,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1199
         },
         {
-          "id": 762,
+          "id": 743,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -654,21 +654,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 496,
-          "source": "medRxiv Infectious",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "A comparison of two forecasting models for COVID-19 hospitalizations using wastewater concentration data",
-          "link": "https://www.medrxiv.org/content/10.64898/2026.09.08.26362558v1?rss=1",
-          "content": "Wastewater surveillance has become a prominent part of public health efforts to track circulating pathogens and has been incorporated into disease forecasting models. We compared two recent wastewater forecasting models for forecasting COVID-19 hospitalizations using SARS-CoV-2 concentrations in wastewater: a generalized linear mixed model (GLMM) and a Bayesian mechanistic model known as wwinference. We retrospectively produced 1-week ahead forecasts using these two conceptually different models across 10 regions in New York state, from September 2022 to mid-April 2024. We compared the performance of forecasts produced from the two models fit with wastewater and clinical data to a version of each model fit to only clinical data. Models were scored against observations using Continuous Ranked Probability Scores for each forecast (n = 363 forecasts). Of the two models, the GLMM showed improved forecast performance across space and time when evaluated on a natural scale compared to the wwinference model, but no significant difference in forecast performance was found on a log-scale, which evaluates the relative rather than absolute error. Consequently, either model could be used to fo",
-          "pub_date": "2026-09-10",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -676,9 +661,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 28,
-      "total_valid": 20,
-      "total_candidates": 10
+      "total_raw": 26,
+      "total_valid": 18,
+      "total_candidates": 9
     },
     "china": {
       "candidates": [],
@@ -694,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 796,
+          "id": 777,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +694,7 @@
           "word_count": 517
         },
         {
-          "id": 792,
+          "id": 773,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +709,7 @@
           "word_count": 451
         },
         {
-          "id": 791,
+          "id": 772,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +724,7 @@
           "word_count": 442
         },
         {
-          "id": 814,
+          "id": 795,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +739,7 @@
           "word_count": 399
         },
         {
-          "id": 815,
+          "id": 796,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +754,7 @@
           "word_count": 319
         },
         {
-          "id": 813,
+          "id": 794,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +769,7 @@
           "word_count": 304
         },
         {
-          "id": 800,
+          "id": 781,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +784,7 @@
           "word_count": 137
         },
         {
-          "id": 803,
+          "id": 784,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +799,7 @@
           "word_count": 114
         },
         {
-          "id": 805,
+          "id": 786,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +814,7 @@
           "word_count": 100
         },
         {
-          "id": 793,
+          "id": 774,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 482
         },
         {
-          "id": 794,
+          "id": 775,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 461
         },
         {
-          "id": 795,
+          "id": 776,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -885,7 +870,7 @@
     }
   },
   "meta": {
-    "total_raw": 979,
+    "total_raw": 960,
     "dup": 282,
     "nocontent": 367,
     "noise": 6
