@@ -85,25 +85,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs",
-          "link": "https://arxiv.org/abs/2609.10895",
-          "content": "Reacting to sudden physical hazards (catching a slipping plate, dodging a falling knife) is both a meaningful test of embodied intelligence and a hard requirement for deploying multimodal large language models (MLLMs) as the decision coreof household robots. Existing evaluations, however, probe intuitive physics passively through question answering over videos, or target deliberate, long-horizon tasks such as navigation and rearrangement; none measure whether a model can turn physical understanding into immediate, safety-critical action. We introduce ReactHuman, the first physics-grounded benchmark for human-like reactive decision-making, in which the evaluated MLLM acts as the brain of a simulated humanoid facing sudden household hazards; it spans 17 event families and over 1,000 bit-for-bit reproducible scenes with exact, annotation-free ground truth derived from 240 Hz rigid-body simulation, including adversarial objects whose appearance contradicts their physics (a foam anvil, a steel apple). We further design a five-metric suite that scores each reaction along three axes: reasonable, safe, and physically grounded. We physically execute every committed plan so that decisions ha",
-          "pub_date": "2026-09-08T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 70,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Competence-Gated Pooling of Language Models and Priors for Event Forecasting",
-          "link": "https://arxiv.org/abs/2609.12101",
-          "content": "In hybrid forecasting, a language model is often one of several available signals. A system may already have a market, crowd, or statistical forecast and must decide whether the model adds useful information or should be ignored. The relevant target is therefore not standalone model accuracy, but relative competence, defined as the model's marginal value beyond the available external forecast. Under Brier loss, we characterize when model disagreement can improve an external forecast and derive the gain from using domain-specific rather than global pooling weights. We then introduce a competence gate that estimates domain-level source weights from resolved outcomes, shrinks uncertain estimates toward a global weight, and recalibrates the pooled forecast. Across 2,357 resolved binary questions and five language models, the gate improves the main external baseline from 0.0771 to 0.0732 Brier and significantly outperforms global forecast combinations. The gain remains significant under leakage controls and against a leakage-safe time-series prior on the pooled structured set, with separate evidence on FRED. In contrast, the gate gives no significant improvement on the official Forecast",
-          "pub_date": "2026-09-09T20:00:00.000Z",
+          "title": "ReMoMask-2: Latent Retrieval-Augmented Masked Motion Generation",
+          "link": "https://arxiv.org/abs/2609.08365",
+          "content": "Text-to-motion (T2M) generation maps natural language to human joint movements, aiding gaming, VR, and robotics. Retrieval-Augmented Text-to-Motion (RAG-T2M) improves generation on complex descriptions by conditioning on retrieved motion-text pairs. However, existing RAG-T2M models face two challenges: coarse-grained retrieval and fusion mechanisms overlook the hierarchical, spatial-temporal topology of human motion, and a representation gap exists because retrieved evidence resides in a semantic space separate from the generator's latents. To address the first, we present ReMoMask, a structure-aware RAG framework coupling Hierarchical Bidirectional Momentum (HBM) contrastive learning to align global and part-level features with text; Semantic Spatial-Temporal Attention (SSTA) for topology-aware fusion; and Topology Structured Masking (TSM) to force robust part-level grounding via adaptive masking. To address the second, we introduce ReMoMask-2, which rebuilds the retrieval database directly within the generator's pre-quantization latent space and aligns text queries via a distilled lightweight projector, allowing the generator to directly consume the retrieved motion's semantic co",
+          "pub_date": "2026-09-07T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -115,9 +100,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Feature Recovery for Object Understanding After Irreversible Fire Damage",
-          "link": "https://arxiv.org/abs/2609.12078",
-          "content": "Objects in post-fire environments often undergo irreversible physical transformations that change their geometry, material state, and visual appearance. Detecting and identifying these remnants is critical for locating hazards, reconstructing pre-incident contents, and inventorying losses. Unlike standard image corruptions, these degradations affect the physical structure of the object itself. To study this setting, we introduce TRACE, a transformation-aware benchmark for post-fire object understanding. TRACE contains 21.4K real-image-grounded synthetic scenes and paired object-level pristine-to-degraded progressions spanning 499 object identities across 189 categories. We define five tasks targeting localization and pre-degradation understanding: degraded-object detection, pristine-state recovery and retrieval, original material recovery, pristine description generation, and functional reasoning. Existing models degrade sharply with severity. From the least to the most severe level, RF-DETR mAP decreases by 71% relative, while InternVL3.5 retrieval R@1 falls from 93.85 to 28.11. To address this, we propose the Feature Recovery Module (FRM), a plug-and-play module that maps degrade",
+          "title": "Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work",
+          "link": "https://arxiv.org/abs/2609.11977",
+          "content": "Co-work agents execute complex workflows that combine information gathering, tool use, coding, and file manipulation across many model invocations. Because cost and latency accumulate over the full episode, their practical value depends not only on peak capability but also on how efficiently that capability is delivered. Yet many steps in everyday work emphasize state tracking, coordination, recovery, and follow-through rather than frontier-scale reasoning. We present Occamy-1.0, a cost-efficient co-work model obtained by further training the post-trained Qwen3.6-35B-A3B checkpoint. We construct execution-grounded data and environments, capture replayable long-horizon trajectories across multiple harnesses, and use staged post-training to develop and consolidate complementary execution capabilities. Across a broad suite of co-work benchmarks, Occamy-1.0 is consistently among the strongest comparably sized models and remains competitive with substantially larger frontier systems on several tasks. Under our stated evaluation and pricing protocol, its aggregate performance across four representative benchmarks places it at the low-cost knee of the observed cost--performance Pareto fro",
+          "pub_date": "2026-09-03T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 72,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Pelican-Sim 1.0: A General World Model Simulator for Embodied Intelligence",
+          "link": "https://arxiv.org/abs/2609.12036",
+          "content": "In this technical report, we propose Pelican-Sim 1.0, a general world model simulator for embodied intelligence that predicts future observations from visual context and robot actions to support downstream learning and decision making. The model incorporates four key design features: (1) Unified action representation: a 28-dimensional action value space covering most mainstream embodiments, keeping one model valid across heterogeneous devices. (2) Action-visual injection: URDF- and camera-rendered action videos bridge actions and pixels, giving markedly better controllability across embodiments, scenes, and tasks (PSNR +0.904 over alternative fusion baselines). (3) Sparse mixture-of-experts (MoE): sparse MoE layers add capacity for heterogeneous dynamics and absorb the action modality while reducing inter-modality conflict (FVD -6.530 vs. the dense backbone). (4) Efficient rollout generation: causal adaptation and few-step distillation yield a four-step autoregressive simulator, achieving a 5.67-fold speedup over the 35-step model. Benefiting from these designs, we train on approximately one million real-world and simulated trajectories and obtain large gains in action controllabil",
           "pub_date": "2026-09-09T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 901,
-      "total_valid": 545,
+      "total_valid": 543,
       "total_candidates": 12
     },
     "vaccine": {
@@ -479,21 +479,6 @@
           "word_count": 127
         },
         {
-          "id": 1409,
-          "source": "Nature Reviews Bioengineering",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Biomolecular condensates in cancer therapy",
-          "link": "https://www.nature.com/articles/s44222-026-00493-9",
-          "content": "Nature Reviews Bioengineering, Published online: 14 September 2026; doi:10.1038/s44222-026-00493-9 Liquid–liquid phase separation (LLPS) is emerging as a key mechanism in cancer, linking biomolecular condensates to oncogenic signalling and tumorigenesis. This Review discusses evidence for dysregulated LLPS and highlights bioengineering strategies that enable therapeutic targeting of previously undruggable cancer drivers.",
-          "pub_date": "2026-09-14",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 424
-        },
-        {
           "id": 1405,
           "source": "Nucleic Acids Research",
           "section": "synbio",
@@ -575,8 +560,8 @@
         "max": 5
       },
       "total_raw": 87,
-      "total_valid": 12,
-      "total_candidates": 9
+      "total_valid": 11,
+      "total_candidates": 8
     },
     "cross": {
       "candidates": [
@@ -759,6 +744,21 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
+          "title": "Paymentus Scales Bill Payment Platform Across Additional Sectors",
+          "link": "https://www.pymnts.com/news/payments-innovation/2026/paymentus-scales-bill-payment-platform-across-additional-sectors/",
+          "content": "Paymentus executives emphasized the company’s position as a specialized technology provider navigating bill payment modernization, agentic artificial intelligence and expansion into additional verticals during the Goldman Sachs 2026 Communacopia + Technology conference. Paymentus CEO Dushyant Sharma framed bill presentment and payment processing as a technology platform play rather than a transactional or financial exercise. Sharma [&#8230;] The post Paymentus Scales Bill Payment Platform Across Additional Sectors appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 15 Sep 2026 00:41:42 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 550
+        },
+        {
+          "id": 1426,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
           "title": "Mastercard CFO Outlines Growth Strategy Driven by Stablecoins and Value-Added Services",
           "link": "https://www.pymnts.com/mastercard/2026/mastercard-cfo-outlines-growth-strategy-driven-by-stablecoins-and-value-added-services/",
           "content": "Incoming Mastercard Chief Financial Officer Ling Hai, who assumed that role Aug. 3, outlined a growth-focused capital allocation strategy that includes frontline sales, targeted acquisition and infrastructure expansion Thursday (Sept. 10) during the Goldman Sachs 2026 Communacopia + Technology conference. Emphasizing Mastercard’s posture as a growth stock and a B2B technology provider, Hai detailed how [&#8230;] The post Mastercard CFO Outlines Growth Strategy Driven by Stablecoins and Value-Added Services appeared first on PYMNTS.com .",
@@ -769,7 +769,7 @@
           "word_count": 542
         },
         {
-          "id": 1432,
+          "id": 1433,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 535
         },
         {
-          "id": 1426,
+          "id": 1427,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 505
         },
         {
-          "id": 1428,
+          "id": 1429,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -935,21 +935,6 @@
         },
         {
           "id": 1481,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Thunes Launches Cross-Border Payouts Across Six New Middle East Markets",
-          "link": "https://www.thunes.com/news/thunes-launches-cross-border-payouts-across-six-new-middle-east-markets/",
-          "content": "Members of Thunes’ Direct Global Network gain faster, more transparent access to bank accounts, mobile wallets, and cash pickup locations across Bahrain, Lebanon, Oman, South Yemen, Syria and the UAE. Money20/20 Middle East, Riyadh; September 14, 2026: Thunes, the Smart Superhighway to move money around the world, today announced a major expansion of its Direct ... Read more &#187; The post Thunes Launches Cross-Border Payouts Across Six New Middle East Markets first appeared on Thunes.com .",
-          "pub_date": "Mon, 14 Sep 2026 05:55:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 496
-        },
-        {
-          "id": 1484,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1059,14 +1044,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 231,
-      "total_valid": 46,
+      "total_raw": 228,
+      "total_valid": 45,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1649,
-    "dup": 415,
+    "total_raw": 1646,
+    "dup": 416,
     "nocontent": 375,
     "noise": 6
   }
