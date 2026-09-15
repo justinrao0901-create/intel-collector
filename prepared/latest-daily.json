@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 61,
+          "id": 59,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 128
         },
         {
-          "id": 90,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 261
         },
         {
-          "id": 91,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 256
         },
         {
-          "id": 93,
+          "id": 91,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,22 @@
           "word_count": 239
         },
         {
-          "id": 71,
+          "id": 69,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs",
+          "link": "https://arxiv.org/abs/2609.10895",
+          "content": "Reacting to sudden physical hazards (catching a slipping plate, dodging a falling knife) is both a meaningful test of embodied intelligence and a hard requirement for deploying multimodal large language models (MLLMs) as the decision coreof household robots. Existing evaluations, however, probe intuitive physics passively through question answering over videos, or target deliberate, long-horizon tasks such as navigation and rearrangement; none measure whether a model can turn physical understanding into immediate, safety-critical action. We introduce ReactHuman, the first physics-grounded benchmark for human-like reactive decision-making, in which the evaluated MLLM acts as the brain of a simulated humanoid facing sudden household hazards; it spans 17 event families and over 1,000 bit-for-bit reproducible scenes with exact, annotation-free ground truth derived from 240 Hz rigid-body simulation, including adversarial objects whose appearance contradicts their physics (a foam anvil, a steel apple). We further design a five-metric suite that scores each reaction along three axes: reasonable, safe, and physically grounded. We physically execute every committed plan so that decisions ha",
+          "pub_date": "2026-09-08T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,22 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 73,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Towards a Deterministic Math Solver for Clinical Language Models",
-          "link": "https://arxiv.org/abs/2609.10728",
-          "content": "Large language models are unreliable at arithmetic, which is a problem for clinical calculators where a single numerical error changes the recommendation. The standard response is to hardcode each calculator as a validated function, one at a time. We test an alternative: the model does not calculate. Instead, it writes case-specific Python that a restricted local executor runs as a deterministic solver, and the model's task reduces to deciding how to use it. We evaluate this Program-Solve interface on MedCalc-Bench Verified (1,100 cases, 55 calculators) against direct model arithmetic and a hand-written 22-calculator library, using Qwen2.5-7B and Qwen2.5-32B-AWQ, after auditing the benchmark's formulas against current clinical guidelines and flagging 16 of 55 with version, use or coefficient concerns. With formulas and gold variables supplied and both routes reading the whole note, handing off to the solver is not a reliable advantage at 7B (75.31% against 72.02%, a paired +3.29 points with a 95% calculator-cluster interval of [-3.49, 10.38]) but is one at 32B (90.53% against 83.47%, +7.05 [0.47, 14.60], clear of zero). The hand-written library is exact on its 440 supported cases b",
-          "pub_date": "2026-09-08T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 786,
+          "id": 784,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 802,
+          "id": 800,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 185
         },
         {
-          "id": 772,
+          "id": 770,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 141
         },
         {
-          "id": 770,
+          "id": 768,
           "source": "Interconnects",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 905,
-      "total_valid": 547,
+      "total_raw": 901,
+      "total_valid": 545,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1337,
+          "id": 1286,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 335
         },
         {
-          "id": 946,
+          "id": 942,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 286
         },
         {
-          "id": 1234,
+          "id": 1183,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 281
         },
         {
-          "id": 1197,
+          "id": 1146,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 226
         },
         {
-          "id": 1252,
+          "id": 1201,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 226
         },
         {
-          "id": 906,
+          "id": 902,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -287,7 +287,7 @@
           "word_count": 244
         },
         {
-          "id": 908,
+          "id": 904,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -302,7 +302,7 @@
           "word_count": 211
         },
         {
-          "id": 912,
+          "id": 908,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 205
         },
         {
-          "id": 917,
+          "id": 913,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 154
         },
         {
-          "id": 919,
+          "id": 915,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 133
         },
         {
-          "id": 922,
+          "id": 918,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 108
         },
         {
-          "id": 1121,
+          "id": 1080,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 514
         },
         {
-          "id": 1122,
+          "id": 1081,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 499
         },
         {
-          "id": 1020,
+          "id": 1016,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,19 +407,19 @@
           "word_count": 477
         },
         {
-          "id": 1115,
-          "source": "JAMA",
+          "id": 1035,
+          "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
-          "title": "Discontinuation of Levothyroxine—Reply",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2852446",
-          "content": "In Reply We thank Dr Kaneda for this clinically relevant question dedicated to optimize thyroid treatment in adults aged 60 years or older. Given the debate about lifelong levothyroxine use in adults aged 60 years or older, we conducted an open-label, single-group, prospective study to determine the proportion of people who took thyroxine who could discontinue treatment while maintaining acceptable thyroid function.",
-          "pub_date": "Tue, 08 Sep 2026 00:00:00 GMT",
+          "title": "Hippuric acid metabolism by Corynebacterium glucuronolyticum-like bacteria promotes calcium oxalate crystallization",
+          "link": "https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(26)00349-5?rss=yes",
+          "content": "Qi et al. identify Corynebacterium glucuronolyticum-like (C. glucuronolyticum-like) bacteria enriched in the urine of calcium oxalate (CaOx) stone patients and show that they promote CaOx crystallization through hippuric acid degradation and biofilm formation. Hippuric acid or cranberry prevents C. glucuronolyticum-like bacteria-driven crystallization, providing a microbiota-based preventive strategy.",
+          "pub_date": "2026-09-08",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 419
+          "word_count": 404
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 478,
-      "total_valid": 285,
+      "total_raw": 428,
+      "total_valid": 257,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1419,
+          "id": 1363,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 174
         },
         {
-          "id": 1411,
+          "id": 1355,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 163
         },
         {
-          "id": 1420,
+          "id": 1364,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 127
         },
         {
-          "id": 1466,
+          "id": 1409,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 424
         },
         {
-          "id": 1462,
+          "id": 1405,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 266
         },
         {
-          "id": 1387,
+          "id": 1333,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 201
         },
         {
-          "id": 1441,
+          "id": 1384,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 125
         },
         {
-          "id": 1436,
+          "id": 1379,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 114
         },
         {
-          "id": 1438,
+          "id": 1381,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 90,
+      "total_raw": 87,
       "total_valid": 12,
       "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 1122,
+          "id": 1081,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 499
         },
         {
-          "id": 1123,
+          "id": 1082,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 362
         },
         {
-          "id": 1475,
+          "id": 1418,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 339
         },
         {
-          "id": 1474,
+          "id": 1417,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 233
         },
         {
-          "id": 938,
+          "id": 934,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 226
         },
         {
-          "id": 955,
+          "id": 951,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 203
         },
         {
-          "id": 1387,
+          "id": 1333,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 201
         },
         {
-          "id": 935,
+          "id": 931,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 191
         },
         {
-          "id": 1419,
+          "id": 1363,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 174
         },
         {
-          "id": 1247,
+          "id": 1196,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 30,
-      "total_valid": 24,
+      "total_raw": 29,
+      "total_valid": 23,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1488,
+          "id": 1425,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Mastercard CFO Outlines Growth Strategy Driven by Stablecoins and Value-Added Services",
+          "link": "https://www.pymnts.com/mastercard/2026/mastercard-cfo-outlines-growth-strategy-driven-by-stablecoins-and-value-added-services/",
+          "content": "Incoming Mastercard Chief Financial Officer Ling Hai, who assumed that role Aug. 3, outlined a growth-focused capital allocation strategy that includes frontline sales, targeted acquisition and infrastructure expansion Thursday (Sept. 10) during the Goldman Sachs 2026 Communacopia + Technology conference. Emphasizing Mastercard’s posture as a growth stock and a B2B technology provider, Hai detailed how [&#8230;] The post Mastercard CFO Outlines Growth Strategy Driven by Stablecoins and Value-Added Services appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 14 Sep 2026 23:53:37 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 542
+        },
+        {
+          "id": 1432,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 535
         },
         {
-          "id": 1482,
+          "id": 1426,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 505
         },
         {
-          "id": 1484,
+          "id": 1428,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 477
         },
         {
-          "id": 1515,
+          "id": 1458,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 330
         },
         {
-          "id": 1514,
+          "id": 1457,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 299
         },
         {
-          "id": 1509,
+          "id": 1452,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 295
         },
         {
-          "id": 1513,
+          "id": 1456,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 261
         },
         {
-          "id": 1516,
+          "id": 1459,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 254
         },
         {
-          "id": 1510,
+          "id": 1453,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 243
         },
         {
-          "id": 1492,
+          "id": 1435,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 129
         },
         {
-          "id": 1494,
+          "id": 1437,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,22 @@
           "word_count": 99
         },
         {
-          "id": 1538,
+          "id": 1481,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes Launches Cross-Border Payouts Across Six New Middle East Markets",
+          "link": "https://www.thunes.com/news/thunes-launches-cross-border-payouts-across-six-new-middle-east-markets/",
+          "content": "Members of Thunes’ Direct Global Network gain faster, more transparent access to bank accounts, mobile wallets, and cash pickup locations across Bahrain, Lebanon, Oman, South Yemen, Syria and the UAE. Money20/20 Middle East, Riyadh; September 14, 2026: Thunes, the Smart Superhighway to move money around the world, today announced a major expansion of its Direct ... Read more &#187; The post Thunes Launches Cross-Border Payouts Across Six New Middle East Markets first appeared on Thunes.com .",
+          "pub_date": "Mon, 14 Sep 2026 05:55:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 496
+        },
+        {
+          "id": 1484,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -934,7 +964,7 @@
           "word_count": 171
         },
         {
-          "id": 128,
+          "id": 126,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 327,
+          "id": 325,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 420,
+          "id": 418,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 552,
+          "id": 550,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 222,
+          "id": 220,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1039,7 @@
           "word_count": 1190
         },
         {
-          "id": 389,
+          "id": 387,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1022,36 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 290
-        },
-        {
-          "id": 1489,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Pinterest Boosts AI-Powered Search Speed Sevenfold With Nvidia Tech",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/pinterest-boosts-ai-powered-search-speed-sevenfold-with-nvidia-tech/",
-          "content": "Pinterest has built a new multimodal artificial intelligence infrastructure that will support the next generation of visual and conversational experiences across the company’s platform, the company said in a Monday (Sept. 14) press release. The new infrastructure, which was built with Nvidia, will support visual search, content understanding, safety systems and other products that rely [&#8230;] The post Pinterest Boosts AI-Powered Search Speed Sevenfold With Nvidia Tech appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 14 Sep 2026 20:11:58 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 506
-        },
-        {
-          "id": 1485,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "OpenAI Accelerates Device Plan With AI Camera Tech Acquisition",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-accelerates-device-plan-with-ai-camera-tech-acquisition/",
-          "content": "OpenAI has acquired Glass Imaging, a startup founded by former Apple employees that is developing artificial intelligence-enhanced cameras for smartphones, The Wall Street Journal reported Monday (Sept. 14), citing unnamed sources. Glass Imaging is working on AI technology that enables smartphone cameras to produce image quality similar to that of DLSR cameras, according to the [&#8230;] The post OpenAI Accelerates Device Plan With AI Camera Tech Acquisition appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 14 Sep 2026 21:56:18 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 493
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 228,
-      "total_valid": 45,
+      "total_raw": 231,
+      "total_valid": 46,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1703,
-    "dup": 439,
-    "nocontent": 376,
+    "total_raw": 1649,
+    "dup": 415,
+    "nocontent": 375,
     "noise": 6
   }
 }
