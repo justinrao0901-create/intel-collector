@@ -479,6 +479,21 @@
           "word_count": 127
         },
         {
+          "id": 1409,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Biomolecular condensates in cancer therapy",
+          "link": "https://www.nature.com/articles/s44222-026-00493-9",
+          "content": "Nature Reviews Bioengineering, Published online: 14 September 2026; doi:10.1038/s44222-026-00493-9 Liquid–liquid phase separation (LLPS) is emerging as a key mechanism in cancer, linking biomolecular condensates to oncogenic signalling and tumorigenesis. This Review discusses evidence for dysregulated LLPS and highlights bioengineering strategies that enable therapeutic targeting of previously undruggable cancer drivers.",
+          "pub_date": "2026-09-14",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 424
+        },
+        {
           "id": 1405,
           "source": "Nucleic Acids Research",
           "section": "synbio",
@@ -560,8 +575,8 @@
         "max": 5
       },
       "total_raw": 87,
-      "total_valid": 11,
-      "total_candidates": 8
+      "total_valid": 12,
+      "total_candidates": 9
     },
     "cross": {
       "candidates": [
@@ -1051,7 +1066,7 @@
   },
   "meta": {
     "total_raw": 1646,
-    "dup": 416,
+    "dup": 415,
     "nocontent": 375,
     "noise": 6
   }
