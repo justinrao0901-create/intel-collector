@@ -12,12 +12,12 @@
           "priority": 3,
           "title": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
           "link": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/",
-          "content": "Know everything. Do anything. That was the message NVIDIA founder and CEO Jensen Huang brought to Salesforce Dreamforce Tuesday, joining CEO Marc Benioff onstage in an appearance that coincided with the announcement of Koa — Salesforce&#8217;s first CRM reasoning model, built on NVIDIA Nemotron 3 Super. Huang didn&#8217;t just take the stage. He walked into [&#8230;]",
+          "content": "Know everything. Do anything. That was the message NVIDIA founder and CEO Jensen Huang brought to Salesforce Dreamforce Tuesday, joining CEO Marc Benioff onstage in an appearance that coincided with the announcement of Koa — Salesforce’s first CRM reasoning model, built on NVIDIA Nemotron 3 Super. Huang didn’t just take the stage. He walked into [&#8230;]",
           "pub_date": "Tue, 15 Sep 2026 22:24:34 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 369
+          "word_count": 357
         },
         {
           "id": 56,
@@ -140,6 +140,21 @@
           "word_count": 1200
         },
         {
+          "id": 1643,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Gemini Live audio",
+          "link": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+          "content": "Tool: Gemini Live audio Google released Gemini 3.8 Live and 3.8 Live Extended Thinking today - two new speech-to-speech models that are a similar shape to OpenAI's GPT-Live models. I pointed GPT-6 Astra Extra High at the documentation and had it build me this web UI for trying out the new models. You can select a model and voice preset, enter an optional system prompt and then start a voice conversation through your browser, including the ability to interrupt the model while it is talking. The implementation uses no libraries. It connects to the wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent?key=... WebSocket endpoint and uses a Web Audio API AudioContext for both capture and playback. Tags: google , tools , websockets , generative-ai , llms , gemini , llm-release , speech-to-text",
+          "pub_date": "2026-09-15T22:47:07+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 862
+        },
+        {
           "id": 1629,
           "source": "Latent Space",
           "section": "ai",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 61
-        },
-        {
-          "id": 1633,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "[AINews] DeepSeek v4.1-Flash: 763B-P8B-D16B novel causal Encoder–Decoder architecture with vision marks the Return of the Whale",
-          "link": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
-          "content": "We agree with Sebastian: this should have been DeepSeek v5",
-          "pub_date": "Sat, 12 Sep 2026 05:56:05 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 58
         }
       ],
       "quota": {
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 1759,
-      "total_valid": 1185,
+      "total_valid": 1186,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1996,
+          "id": 1950,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 531
         },
         {
-          "id": 2001,
+          "id": 1955,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 400
         },
         {
-          "id": 1994,
+          "id": 1948,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 321
         },
         {
-          "id": 1997,
+          "id": 1951,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 311
         },
         {
-          "id": 1903,
+          "id": 1860,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 204
         },
         {
-          "id": 2117,
+          "id": 2044,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 261
         },
         {
-          "id": 2096,
+          "id": 2023,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 223
         },
         {
-          "id": 2077,
+          "id": 2004,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 198
         },
         {
-          "id": 1782,
+          "id": 1779,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 136
         },
         {
-          "id": 2002,
+          "id": 1956,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 417
         },
         {
-          "id": 2007,
+          "id": 1961,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 404
         },
         {
-          "id": 2008,
+          "id": 1962,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 400
         },
         {
-          "id": 2196,
+          "id": 2121,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 498,
-      "total_valid": 320,
+      "total_raw": 423,
+      "total_valid": 264,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2314,
+          "id": 2237,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2297,
+          "id": 2219,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 401
         },
         {
-          "id": 2293,
+          "id": 2215,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 124
         },
         {
-          "id": 2313,
+          "id": 2236,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2311,
+          "id": 2234,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 2344,
+          "id": 2267,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 536
         },
         {
-          "id": 2303,
+          "id": 2226,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 371
         },
         {
-          "id": 2307,
+          "id": 2230,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 112
         },
         {
-          "id": 2308,
+          "id": 2231,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 89,
+      "total_raw": 87,
       "total_valid": 13,
       "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 1979,
+          "id": 1933,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 2312,
+          "id": 2235,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1199
         },
         {
-          "id": 2007,
+          "id": 1961,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 404
         },
         {
-          "id": 2297,
+          "id": 2219,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 401
         },
         {
-          "id": 2316,
+          "id": 2239,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 266
         },
         {
-          "id": 2000,
+          "id": 1954,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 255
         },
         {
-          "id": 1807,
+          "id": 1803,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 233
         },
         {
-          "id": 1829,
+          "id": 1825,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 176
         },
         {
-          "id": 1968,
+          "id": 1922,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 162
         },
         {
-          "id": 1831,
+          "id": 1827,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 35,
-      "total_valid": 27,
+      "total_raw": 29,
+      "total_valid": 21,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2365,
+          "id": 2288,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,22 +769,7 @@
           "word_count": 557
         },
         {
-          "id": 2364,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Waystar Considers Sale of Healthcare Payments Software Firm",
-          "link": "https://www.pymnts.com/healthcare/2026/waystar-considers-sale-of-healthcare-payments-software-firm/",
-          "content": "Healthcare industry payments management software company Waystar is reportedly considering a potential sale. Such a deal could return Waystar to private ownership two years after the company went public, according to a Tuesday (Sept. 15) Reuters report citing seven sources familiar with the matter. Sources say the company has hired bankers to advise on a possible sale, though the [&#8230;] The post Waystar Considers Sale of Healthcare Payments Software Firm appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 15 Sep 2026 18:47:15 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 492
-        },
-        {
-          "id": 2421,
+          "id": 2341,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +784,7 @@
           "word_count": 480
         },
         {
-          "id": 2359,
+          "id": 2283,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +799,7 @@
           "word_count": 438
         },
         {
-          "id": 2413,
+          "id": 2336,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +814,7 @@
           "word_count": 335
         },
         {
-          "id": 2412,
+          "id": 2335,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 334
         },
         {
-          "id": 2411,
+          "id": 2334,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 330
         },
         {
-          "id": 2388,
+          "id": 2311,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 304
         },
         {
-          "id": 2382,
+          "id": 2305,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 294
         },
         {
-          "id": 2372,
+          "id": 2295,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 282
         },
         {
-          "id": 2375,
+          "id": 2298,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 218
         },
         {
-          "id": 2379,
+          "id": 2302,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 210
         },
         {
-          "id": 2391,
+          "id": 2314,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 209
         },
         {
-          "id": 2366,
+          "id": 2289,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 150
         },
         {
-          "id": 2367,
+          "id": 2290,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -977,21 +962,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 137
-        },
-        {
-          "id": 2417,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Thunes Launches Cross-Border Payouts Across Six New Middle East Markets",
-          "link": "https://www.thunes.com/news/thunes-launches-cross-border-payouts-across-six-new-middle-east-markets/",
-          "content": "Members of Thunes’ Direct Global Network gain faster, more transparent access to bank accounts, mobile wallets, and cash pickup locations across Bahrain, Lebanon, Oman, South Yemen, Syria and the UAE. Money20/20 Middle East, Riyadh; September 14, 2026: Thunes, the Smart Superhighway to move money around the world, today announced a major expansion of its Direct ... Read more &#187; The post Thunes Launches Cross-Border Payouts Across Six New Middle East Markets first appeared on Thunes.com .",
-          "pub_date": "Mon, 14 Sep 2026 05:55:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 496
         },
         {
           "id": 215,
@@ -1052,6 +1022,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 524,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "AcquireBound: Runtime Authorization for Resources Acquired by AI Agents",
+          "link": "https://arxiv.org/abs/2609.14744",
+          "content": "arXiv:2609.14744v1 Announce Type: new Abstract: By acquiring compute, credentials, accounts, services, and other agents, autonomous AI agents can introduce new authority into a task. Payment, budget, OAuth, mandate, and fulfillment checks can validate transaction conditions without deciding whether a returned resource may become usable authority. This post-fulfillment activation gap spans tool-mediated creation, inter-agent delegation, and agentic commerce. We present AcquireBound, a provenance-bounded runtime authorization architecture. It quarantines acquired outputs, resolves their actual capabilities from authenticated provider evidence through a versioned resolver, and activates them only through a current activation transaction that checks the resolved manifest, provenance, epochs, and a downward-closed relational envelope over a typed resource-capability hypergraph. The envelope preserves correlated identity, effect, data, delegation, and graph-wide limits. Single-use effect permits are revalidated and consumed at effect linearization. Under explicit assumptions, we prove eight safety properties covering quarantine, backing, non-amplification, split non-evasion, crash/retry,",
+          "pub_date": "Tue, 15 Sep 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 702,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Graph-Transformer Fraud Detection with Self-Supervised Pretraining and Conformal Risk Control",
+          "link": "https://arxiv.org/abs/2609.14234",
+          "content": "arXiv:2609.14234v1 Announce Type: cross Abstract: Financial fraud in corporate transaction networks has grown more coordinated and harder to detect with rule-based engines and with classical learning models that treat each transaction in isolation. This paper presents GTFD, a graph-transformer fraud detector that fuses structural and temporal evidence from a corporation's payment graph. GTFD encodes the graph with a multi-head graph attention network, encodes ordered transaction sequences with a gated transformer, and combines both views through a cross-modal gating layer. A conformal risk-control head converts the fused representation into threshold-free anomaly scores with finite-sample coverage guarantees, and the network is trained with self-supervised link-mask pretraining plus adversarial augmentation so it remains stable under scarce labels and under adversarial perturbation. On a corporate transaction benchmark enriched with coordinated fraud rings, GTFD reaches an AUROC of 0.990, an F1-score of 96.1% (precision 96.3%, recall 95.9%), and an accuracy of 98.4%. It reduces the false-positive rate by about 29% relative to the strongest baseline while raising coordinated fraud-r",
+          "pub_date": "Tue, 15 Sep 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 244,
-      "total_valid": 60,
+      "total_raw": 241,
+      "total_valid": 59,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2585,
-    "dup": 640,
-    "nocontent": 377,
+    "total_raw": 2505,
+    "dup": 619,
+    "nocontent": 374,
     "noise": 6
   }
 }
