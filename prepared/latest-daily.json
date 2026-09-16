@@ -100,10 +100,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Learning to Solve Hard Problems in RL for LLMs by Never Giving Up",
-          "link": "https://arxiv.org/abs/2609.13443",
-          "content": "We demonstrate that training LLMs with RL does not improve performance equally across a dataset. RL shows large improvements on easy problems that an LLM is already good at solving, but small improvements on hard problems. We call this the Matthew Effect in RL for LLMs, after the phenomenon of cumulative advantage from economics and network science summarized as \"the rich get richer\". The naive explanation is that hard problems require more compute to find a solution. We argue that modern RL methods are exacerbating the issue by wasting too much compute on easy problems and instead should dynamically reallocate how they use compute. We introduce Never Give Up (NGU), a simple adaptive sampling method that keeps generating samples for a problem until one is correct. By leveraging asynchronous RL, this naturally uses fewer samples to filter out easy problems and allocates more compute to solving harder problems. We investigate the design choices that affect NGU, such as off-policy robustness, and develop a set of best practices. On the math benchmark Deepscaler, NGU improves performance per compute, especially on harder problems. On a recent coding task, Manufactoria, standard GRPO wi",
-          "pub_date": "2026-09-10T20:00:00.000Z",
+          "title": "Lightning Weave: Improving the Accuracy-Efficiency Frontier of Reasoning Models through Capability Composition",
+          "link": "https://arxiv.org/abs/2609.14708",
+          "content": "A core goal of efficient reasoning is to improve the accuracy-efficiency frontier. However, jointly improving reasoning accuracy and inference efficiency can be challenging, as the two objectives can favor different reasoning behaviors. Independently post-trained models already offer distinct strengths in accuracy and efficiency. We introduce Lightning Weave, a post-training framework that extracts and composes these independently learned capabilities in a single student through on-policy distillation. Each acquired capability is represented by the policy shift from the model before post-training to the resulting specialist. Lightning Weave combines aligned log-ratio shifts at shared student token states and uses Tilted-Target DOPD to convert the cached signals into a stable learning target. Each anchor pair scores the cached trajectories once, enabling subsequent student training without serving multiple live anchor models concurrently. Across diverse student models and benchmarks in mathematics and code, Lightning Weave substantially improves upon the base students and achieves a state-of-the-art accuracy-efficiency frontier. On Qwen3.5-4B, it raises HMMT 2025 accuracy from 59.2%",
+          "pub_date": "2026-09-12T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -115,9 +115,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures",
-          "link": "https://arxiv.org/abs/2609.13463",
-          "content": "The increasing deployment of AI agents in long-horizon tasks yields massive execution logs. Diagnosing failures within these records is crucial for reliability, as it transforms outcome-level signals into actionable interventions. The sheer scale of the data renders human review impractical, driving the need for automated root-cause attribution (RCA). However, automated RCA methods using LLMs suffer from low diagnostic accuracy, especially as execution traces grow larger. They struggle because relevant information is often sparse, distributed across distant actions, and disconnected from the visible failure, reducing root-cause attribution to a massive search problem. Existing RCA methods typically rely on one-shot LLM judgments to diagnose failures from execution traces. While effective for shorter trajectories, these judges tend to settle on a plausible diagnosis early, leaving critical evidence in longer traces unexamined. We introduce Continual Search, an iterative framework that nudges the judge, over successive turns, to keep searching for unresolved diagnostic evidence. We evaluate Continual Search across four existing RCA benchmarks. Recognizing the lack of massive executio",
+          "title": "Learning to Solve Hard Problems in RL for LLMs by Never Giving Up",
+          "link": "https://arxiv.org/abs/2609.13443",
+          "content": "We demonstrate that training LLMs with RL does not improve performance equally across a dataset. RL shows large improvements on easy problems that an LLM is already good at solving, but small improvements on hard problems. We call this the Matthew Effect in RL for LLMs, after the phenomenon of cumulative advantage from economics and network science summarized as \"the rich get richer\". The naive explanation is that hard problems require more compute to find a solution. We argue that modern RL methods are exacerbating the issue by wasting too much compute on easy problems and instead should dynamically reallocate how they use compute. We introduce Never Give Up (NGU), a simple adaptive sampling method that keeps generating samples for a problem until one is correct. By leveraging asynchronous RL, this naturally uses fewer samples to filter out easy problems and allocates more compute to solving harder problems. We investigate the design choices that affect NGU, such as off-policy robustness, and develop a set of best practices. On the math benchmark Deepscaler, NGU improves performance per compute, especially on harder problems. On a recent coding task, Manufactoria, standard GRPO wi",
           "pub_date": "2026-09-10T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "E2A-Bench: Benchmarking Evidence-to-Action Reliability in Financial Chart Reasoning",
-          "link": "https://arxiv.org/abs/2609.14302",
-          "content": "Can financial vision-language models (VLMs) turn chart evidence into reliable action recommendations? Existing hallucination evaluations are mostly claim-centric; they assess whether generated statements are supported, but not whether evidence remains traceable through rationale, confidence, and final action. We introduce E2A-Bench, a 969-query benchmark for financial chart reasoning, constructed from 323 HS300 constituents under three input modalities with deterministic OHLCV-derived evidence anchors. E2A-Bench evaluates grounding, reasoning-action consistency, evidence-confidence calibration, and directional coverage through UCR, RCI, ECI, and NDR, where NDR measures coverage-aware evidence-to-action reliability rather than realized trading performance. Evaluating 20 VLMs reveals three failures hidden by scalar hallucination scores: the lowest-UCR model ranks near the bottom by NDR due to only 6.4% directional coverage; oracle-aided verification reduces unsupported claims but can collapse coverage; and financial fine-tuning amplifies the BUY:SELL ratio by factors of 4.21 to 4.68 across strict base-fine-tuned pairs. These results show that financial VLM evaluation should trace the",
-          "pub_date": "2026-09-12T20:00:00.000Z",
+          "title": "Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures",
+          "link": "https://arxiv.org/abs/2609.13463",
+          "content": "The increasing deployment of AI agents in long-horizon tasks yields massive execution logs. Diagnosing failures within these records is crucial for reliability, as it transforms outcome-level signals into actionable interventions. The sheer scale of the data renders human review impractical, driving the need for automated root-cause attribution (RCA). However, automated RCA methods using LLMs suffer from low diagnostic accuracy, especially as execution traces grow larger. They struggle because relevant information is often sparse, distributed across distant actions, and disconnected from the visible failure, reducing root-cause attribution to a massive search problem. Existing RCA methods typically rely on one-shot LLM judgments to diagnose failures from execution traces. While effective for shorter trajectories, these judges tend to settle on a plausible diagnosis early, leaving critical evidence in longer traces unexamined. We introduce Continual Search, an iterative framework that nudges the judge, over successive turns, to keep searching for unresolved diagnostic evidence. We evaluate Continual Search across four existing RCA benchmarks. Recognizing the lack of massive executio",
+          "pub_date": "2026-09-10T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -784,7 +784,7 @@
           "word_count": 533
         },
         {
-          "id": 2363,
+          "id": 2366,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -994,6 +994,21 @@
           "word_count": 137
         },
         {
+          "id": 2362,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes Launches Cross-Border Payouts Across Six New Middle East Markets",
+          "link": "https://www.thunes.com/news/thunes-launches-cross-border-payouts-across-six-new-middle-east-markets/",
+          "content": "Members of Thunes’ Direct Global Network gain faster, more transparent access to bank accounts, mobile wallets, and cash pickup locations across Bahrain, Lebanon, Oman, South Yemen, Syria and the UAE. Money20/20 Middle East, Riyadh; September 14, 2026: Thunes, the Smart Superhighway to move money around the world, today announced a major expansion of its Direct ... Read more &#187; The post Thunes Launches Cross-Border Payouts Across Six New Middle East Markets first appeared on Thunes.com .",
+          "pub_date": "Mon, 14 Sep 2026 05:55:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 496
+        },
+        {
           "id": 215,
           "source": "arXiv cs.CL",
           "section": "payment",
@@ -1037,21 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 347,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "How Semantically Stable Are LLM Refusals? Measuring Confusion in Local Safety Boundaries",
-          "link": "https://arxiv.org/abs/2512.01037",
-          "content": "arXiv:2512.01037v3 Announce Type: replace Abstract: As safety alignment becomes standard in large language models, refusal behavior has become an important part of model reliability. However, models may still reject benign prompts, especially when the wording resembles risky content. Existing evaluations usually report global scores, such as false rejection rate or compliance rate. These scores are useful, but they treat each prompt independently. As a result, they miss local inconsistency, where a model accepts one phrasing of an intent but rejects a close paraphrase. This makes it difficult to understand whether refusals are only frequent or also semantically unstable. We address this gap by introducing Semantic Confusion, a failure mode that captures contradictory refusal decisions across meaning-preserving paraphrases. We build ParaGuard, a 10k-prompt corpus of controlled paraphrase clusters that keep intent fixed while varying surface form. We also propose three model-agnostic token-level metrics: Confusion Index, Confusion Rate, and Confusion Depth. These metrics compare each rejected prompt with its nearest accepted neighbors using token embeddings, next-token probabilities,",
-          "pub_date": "Tue, 15 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 241,
-      "total_valid": 59,
+      "total_raw": 244,
+      "total_valid": 60,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2527,
-    "dup": 618,
+    "total_raw": 2530,
+    "dup": 620,
     "nocontent": 374,
     "noise": 6
   }
