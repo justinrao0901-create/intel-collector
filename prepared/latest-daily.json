@@ -50,7 +50,7 @@
           "word_count": 332
         },
         {
-          "id": 82,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 190
         },
         {
-          "id": 83,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 179
         },
         {
-          "id": 93,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -147,12 +147,12 @@
           "priority": 5,
           "title": "Gemini Live audio",
           "link": "https://simonwillison.net/2026/Sep/15/gemini-live/",
-          "content": "Tool: Gemini Live audio Google released Gemini 3.8 Live and 3.8 Live Extended Thinking today - two new speech-to-speech models that are a similar shape to OpenAI's GPT-Live models. I pointed GPT-6 Astra Extra High at the documentation and had it build me this web UI for trying out the new models. You can select a model and voice preset, enter an optional system prompt and then start a voice conversation through your browser, including the ability to interrupt the model while it is talking. The implementation uses no libraries. It connects to the wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent?key=... WebSocket endpoint and uses a Web Audio API AudioContext for both capture and playback. Tags: google , tools , websockets , generative-ai , llms , gemini , llm-release , speech-to-text",
+          "content": "Tool: Gemini Live audio Google released Gemini 3.8 Live and 3.8 Live Extended Thinking today - two new speech-to-speech models that are a similar shape to OpenAI's GPT-Live family. I pointed GPT-6 Astra Extra High at the documentation and had it build me this web UI for trying out the new models. You can select a model and voice preset, enter an optional system prompt and then start a voice conversation through your browser, including the ability to interrupt the model while it is talking. The implementation uses no libraries. It connects to the wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent?key=... WebSocket endpoint and uses a Web Audio API AudioContext for both capture and playback. Here's the Gemini Live tutorial for getting started with that WebSockets API. Tags: google , tools , websockets , generative-ai , llms , gemini , llm-release , speech-to-text",
           "pub_date": "2026-09-15T22:47:07+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 862
+          "word_count": 940
         },
         {
           "id": 1629,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1759,
-      "total_valid": 1186,
+      "total_raw": 1758,
+      "total_valid": 1187,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1950,
+          "id": 1949,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 531
         },
         {
-          "id": 1955,
+          "id": 1954,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 400
         },
         {
-          "id": 1948,
+          "id": 1947,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 321
         },
         {
-          "id": 1951,
+          "id": 1950,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 311
         },
         {
-          "id": 1860,
+          "id": 1859,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 204
         },
         {
-          "id": 2044,
+          "id": 2066,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 261
         },
         {
-          "id": 2023,
+          "id": 2045,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 223
         },
         {
-          "id": 2004,
+          "id": 2026,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 218
         },
         {
-          "id": 1761,
+          "id": 1760,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 227
         },
         {
-          "id": 1776,
+          "id": 1775,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 198
         },
         {
-          "id": 1779,
+          "id": 1778,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 136
         },
         {
-          "id": 1956,
+          "id": 1955,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 417
         },
         {
-          "id": 1961,
+          "id": 1960,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 404
         },
         {
-          "id": 1962,
+          "id": 1961,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 400
         },
         {
-          "id": 2121,
+          "id": 2143,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 423,
-      "total_valid": 264,
+      "total_raw": 446,
+      "total_valid": 286,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2237,
+          "id": 2259,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2219,
+          "id": 2241,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 401
         },
         {
-          "id": 2215,
+          "id": 2237,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 124
         },
         {
-          "id": 2236,
+          "id": 2258,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2234,
+          "id": 2256,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 2267,
+          "id": 2289,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 536
         },
         {
-          "id": 2226,
+          "id": 2248,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 371
         },
         {
-          "id": 2230,
+          "id": 2252,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 112
         },
         {
-          "id": 2231,
+          "id": 2253,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1933,
+          "id": 1932,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 2235,
+          "id": 2257,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1199
         },
         {
-          "id": 1961,
+          "id": 1960,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 404
         },
         {
-          "id": 2219,
+          "id": 2241,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 401
         },
         {
-          "id": 2239,
+          "id": 2261,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 266
         },
         {
-          "id": 1954,
+          "id": 1953,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 255
         },
         {
-          "id": 1803,
+          "id": 1802,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 233
         },
         {
-          "id": 1825,
+          "id": 1824,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 176
         },
         {
-          "id": 1922,
+          "id": 1921,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 162
         },
         {
-          "id": 1827,
+          "id": 1826,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 29,
-      "total_valid": 21,
+      "total_raw": 35,
+      "total_valid": 27,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2288,
+          "id": 2310,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,22 @@
           "word_count": 557
         },
         {
-          "id": 2341,
+          "id": 2300,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Treasury Rethinks AML Rules for Banks That Know Their Customers",
+          "link": "https://www.pymnts.com/legal/bank-regulation/2026/treasury-rethinks-aml-rules-for-banks-that-know-their-customers/",
+          "content": "Treasury may raise longstanding bank reporting thresholds and take into account how long financial institutions have known their customers, Treasury Secretary Scott Bessent told lawmakers Tuesday (Sept. 15). House Financial Services Committee Chairman French Hill, R-Ark., asked Bessent about updating thresholds for Suspicious Activity Reports (SARs) and Currency Transaction Reports (CTRs), saying the thresholds were [&#8230;] The post Treasury Rethinks AML Rules for Banks That Know Their Customers appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 16 Sep 2026 00:46:07 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 533
+        },
+        {
+          "id": 2363,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,22 @@
           "word_count": 480
         },
         {
-          "id": 2283,
+          "id": 2301,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Revolut Secures Sixth Global Bank License in Colombia",
+          "link": "https://www.pymnts.com/legal/bank-regulation/2026/revolut-secures-sixth-global-bank-license-in-colombia/",
+          "content": "Revolut continued its global expansion by securing a bank license in Colombia, the company said in a Tuesday (Sept. 15) press release. The license to operate (licencia de funcionamiento) from the Superintendencia Financiera de Colombia (SFC) is the last of the regulatory requirements Revolut needs to launch as a regulated bank in the country, according [&#8230;] The post Revolut Secures Sixth Global Bank License in Colombia appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 16 Sep 2026 00:21:44 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 458
+        },
+        {
+          "id": 2308,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +829,7 @@
           "word_count": 438
         },
         {
-          "id": 2336,
+          "id": 2358,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +844,7 @@
           "word_count": 335
         },
         {
-          "id": 2335,
+          "id": 2357,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +859,7 @@
           "word_count": 334
         },
         {
-          "id": 2334,
+          "id": 2356,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +874,7 @@
           "word_count": 330
         },
         {
-          "id": 2311,
+          "id": 2333,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +889,7 @@
           "word_count": 304
         },
         {
-          "id": 2305,
+          "id": 2327,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +904,7 @@
           "word_count": 294
         },
         {
-          "id": 2295,
+          "id": 2317,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +919,7 @@
           "word_count": 282
         },
         {
-          "id": 2298,
+          "id": 2320,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +934,7 @@
           "word_count": 218
         },
         {
-          "id": 2302,
+          "id": 2324,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +949,7 @@
           "word_count": 210
         },
         {
-          "id": 2314,
+          "id": 2336,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +964,7 @@
           "word_count": 209
         },
         {
-          "id": 2289,
+          "id": 2311,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +979,7 @@
           "word_count": 150
         },
         {
-          "id": 2290,
+          "id": 2312,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1022,36 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 524,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "AcquireBound: Runtime Authorization for Resources Acquired by AI Agents",
-          "link": "https://arxiv.org/abs/2609.14744",
-          "content": "arXiv:2609.14744v1 Announce Type: new Abstract: By acquiring compute, credentials, accounts, services, and other agents, autonomous AI agents can introduce new authority into a task. Payment, budget, OAuth, mandate, and fulfillment checks can validate transaction conditions without deciding whether a returned resource may become usable authority. This post-fulfillment activation gap spans tool-mediated creation, inter-agent delegation, and agentic commerce. We present AcquireBound, a provenance-bounded runtime authorization architecture. It quarantines acquired outputs, resolves their actual capabilities from authenticated provider evidence through a versioned resolver, and activates them only through a current activation transaction that checks the resolved manifest, provenance, epochs, and a downward-closed relational envelope over a typed resource-capability hypergraph. The envelope preserves correlated identity, effect, data, delegation, and graph-wide limits. Single-use effect permits are revalidated and consumed at effect linearization. Under explicit assumptions, we prove eight safety properties covering quarantine, backing, non-amplification, split non-evasion, crash/retry,",
-          "pub_date": "Tue, 15 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 702,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Graph-Transformer Fraud Detection with Self-Supervised Pretraining and Conformal Risk Control",
-          "link": "https://arxiv.org/abs/2609.14234",
-          "content": "arXiv:2609.14234v1 Announce Type: cross Abstract: Financial fraud in corporate transaction networks has grown more coordinated and harder to detect with rule-based engines and with classical learning models that treat each transaction in isolation. This paper presents GTFD, a graph-transformer fraud detector that fuses structural and temporal evidence from a corporation's payment graph. GTFD encodes the graph with a multi-head graph attention network, encodes ordered transaction sequences with a gated transformer, and combines both views through a cross-modal gating layer. A conformal risk-control head converts the fused representation into threshold-free anomaly scores with finite-sample coverage guarantees, and the network is trained with self-supervised link-mask pretraining plus adversarial augmentation so it remains stable under scarce labels and under adversarial perturbation. On a corporate transaction benchmark enriched with coordinated fraud rings, GTFD reaches an AUROC of 0.990, an F1-score of 96.1% (precision 96.3%, recall 95.9%), and an accuracy of 98.4%. It reduces the false-positive rate by about 29% relative to the strongest baseline while raising coordinated fraud-r",
-          "pub_date": "Tue, 15 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1065,8 +1065,8 @@
     }
   },
   "meta": {
-    "total_raw": 2505,
-    "dup": 619,
+    "total_raw": 2527,
+    "dup": 618,
     "nocontent": 374,
     "noise": 6
   }
