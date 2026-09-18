@@ -272,7 +272,7 @@
           "word_count": 65
         },
         {
-          "id": 1363,
+          "id": 1348,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 319
         },
         {
-          "id": 1434,
+          "id": 1419,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 264
         },
         {
-          "id": 1374,
+          "id": 1359,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 237
         },
         {
-          "id": 1514,
+          "id": 1499,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 491,
-      "total_valid": 344,
+      "total_raw": 476,
+      "total_valid": 329,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1560,
+          "id": 1545,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 196
         },
         {
-          "id": 1558,
+          "id": 1543,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 178
         },
         {
-          "id": 1580,
+          "id": 1565,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 154
         },
         {
-          "id": 1635,
+          "id": 1612,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 524
         },
         {
-          "id": 1636,
+          "id": 1613,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 506
         },
         {
-          "id": 1611,
+          "id": 1588,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -522,51 +522,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 467
-        },
-        {
-          "id": 1593,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Coupling cell growth to protein secretion enables pooled screening at single-cell resolution in bioreactors",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.14.751527v1?rss=1",
-          "content": "Preserving the genotype-phenotype linkage is critical in high-throughput screens exploring large parameter spaces. Screening pooled libraries for recombinant protein secretion is therefore particularly difficult, since protein diffusion into the medium disrupts this linkage. Existing methods impose significant restrictions on the environment of the screened cells. Here, we present AutoGrowth, a growth-based screening strategy linking growth rate to secretion via a single-cell biosensor. We demonstrated the proportional modulation of growth rate by secretion and validated the approach on five model proteins. As proof of concept, we screened a signal peptide library in bioreactors for improved secretion of a single-chain variable fragment by coupling AutoGrowth with deep sequencing. Additionally, through spike-in experiments, we showed that AutoGrowth can identify favorable variants diluted at ratios as low as one in hundreds of millions in three days. Our growth-based strategy provides unprecedented throughput potential and ensures selection of genetic variants presenting advantageous secretion and fitness capabilities.",
-          "pub_date": "2026-09-17",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1136
-        },
-        {
-          "id": 1589,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "A methylome-guided toolkit for genetic engineering of the fast-growing cyanobacterium UTEX 3222",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.15.751560v1?rss=1",
-          "content": "Cyanobacterium aponinum UTEX 3222 is a fast-growing marine cyanobacterium that reaches high cell densities, making it an attractive chassis strain for low-cost biomanufacturing. However, past efforts to genetically engineer UTEX 3222 have been unsuccessful. We hypothesized that the complex restriction modification systems in the UTEX 3222 genome constitute a major barrier to genetic transformation. Using a combined methylation avoidance and methylation mimicking approach, we overcame this barrier and successfully transformed UTEX 3222 by natural transformation, generating a large panel of fully segregated axenic strains. Transformation method was also established for a novel shuttle vector that replicates in UTEX 3222. A large-scale promoter screen identified promoters which exhibited strong expression at high cell density. These advances establish the foundation for developing UTEX 3222 as a scalable platform for photosynthetic biomanufacturing.",
-          "pub_date": "2026-09-17",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 960
-        },
-        {
-          "id": 1591,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Universal donor plasmids for biallelic degron-tagging in mammalian cells and organoids",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.14.751494v1?rss=1",
-          "content": "Degron tags enable rapid, tuneable and reversible control of protein expression, and have become a critical tool for target validation and elucidating biological mechanisms. Tag engineering uses genome editing to generate biallelic gene fusions, though this process remains laborious and requires new donor vectors to be generated for each locus. Here, we have generated a series of universal donor vectors to enable biallelic integration of different degron tags (AID, dTAG, BromoTag, SMASh) using different selection strategies (FACS, drug selection). Using this system, tags can be fused in-frame to endogenous protein C-termini via homology-independent repair following Cas9-induced double strand breaks, as shown here using human lymphoma cells, mouse embryonic stem cells and colonic tumour organoids. This workflow simplifies the genetic engineering of degron tags and is applicable in contexts where homology-dependent repair is challenging.",
-          "pub_date": "2026-09-17",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 949
         }
       ],
       "quota": {
@@ -574,14 +529,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 96,
-      "total_valid": 15,
-      "total_candidates": 9
+      "total_raw": 88,
+      "total_valid": 9,
+      "total_candidates": 6
     },
     "cross": {
       "candidates": [
         {
-          "id": 1636,
+          "id": 1613,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +691,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 52,
-      "total_valid": 44,
+      "total_raw": 47,
+      "total_valid": 39,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1658,
+          "id": 1635,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +724,7 @@
           "word_count": 534
         },
         {
-          "id": 1654,
+          "id": 1631,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +739,7 @@
           "word_count": 524
         },
         {
-          "id": 1659,
+          "id": 1636,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +754,7 @@
           "word_count": 494
         },
         {
-          "id": 1651,
+          "id": 1628,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +769,7 @@
           "word_count": 493
         },
         {
-          "id": 1661,
+          "id": 1638,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +784,7 @@
           "word_count": 482
         },
         {
-          "id": 1653,
+          "id": 1630,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +799,7 @@
           "word_count": 474
         },
         {
-          "id": 1685,
+          "id": 1662,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +814,7 @@
           "word_count": 383
         },
         {
-          "id": 1707,
+          "id": 1684,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +829,7 @@
           "word_count": 354
         },
         {
-          "id": 1708,
+          "id": 1685,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +844,7 @@
           "word_count": 345
         },
         {
-          "id": 1686,
+          "id": 1663,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +859,7 @@
           "word_count": 342
         },
         {
-          "id": 1679,
+          "id": 1656,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +874,7 @@
           "word_count": 249
         },
         {
-          "id": 1682,
+          "id": 1659,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +889,7 @@
           "word_count": 245
         },
         {
-          "id": 1688,
+          "id": 1665,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +904,7 @@
           "word_count": 167
         },
         {
-          "id": 1663,
+          "id": 1640,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +919,7 @@
           "word_count": 142
         },
         {
-          "id": 1665,
+          "id": 1642,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +934,7 @@
           "word_count": 142
         },
         {
-          "id": 1670,
+          "id": 1647,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1059,13 +1014,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 244,
+      "total_raw": 246,
       "total_valid": 62,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1877,
+    "total_raw": 1856,
     "dup": 429,
     "nocontent": 373,
     "noise": 4
