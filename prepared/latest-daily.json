@@ -227,7 +227,7 @@
           "word_count": 448
         },
         {
-          "id": 1491,
+          "id": 1445,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 379
         },
         {
-          "id": 1463,
+          "id": 1417,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 169
         },
         {
-          "id": 1359,
+          "id": 1313,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 435
         },
         {
-          "id": 1360,
+          "id": 1314,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 304
         },
         {
-          "id": 1357,
+          "id": 1311,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 494,
-      "total_valid": 339,
+      "total_raw": 448,
+      "total_valid": 295,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1608,
+          "id": 1563,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1550,
+          "id": 1505,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 175
         },
         {
-          "id": 1568,
+          "id": 1523,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 167
         },
         {
-          "id": 1575,
+          "id": 1530,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 161
         },
         {
-          "id": 1604,
+          "id": 1559,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1605,
+          "id": 1560,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,22 @@
           "word_count": 1200
         },
         {
-          "id": 1584,
+          "id": 1496,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Cybernetics, interoception, and the art of embodiment",
+          "link": "https://www.nature.com/articles/s42256-026-01312-x",
+          "content": "Nature Machine Intelligence, Published online: 18 September 2026; doi:10.1038/s42256-026-01312-x Living organisms continuously monitor their internal physiological states while interacting with complex environments and adapt their actions in response to changes in these internal signals. New work combines such biological principles with cybernetics, reinforcement learning and neuroscience to develop a framework for autonomous and adaptive artificial embodied agents.",
+          "pub_date": "2026-09-18",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 470
+        },
+        {
+          "id": 1539,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1585,
+          "id": 1540,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1589,
+          "id": 1544,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 107,
-      "total_valid": 19,
-      "total_candidates": 9
+      "total_raw": 108,
+      "total_valid": 20,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 1604,
+          "id": 1559,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -594,6 +609,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 1496,
+          "source": "Nature Machine Intel",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Cybernetics, interoception, and the art of embodiment",
+          "link": "https://www.nature.com/articles/s42256-026-01312-x",
+          "content": "Nature Machine Intelligence, Published online: 18 September 2026; doi:10.1038/s42256-026-01312-x Living organisms continuously monitor their internal physiological states while interacting with complex environments and adapt their actions in response to changes in these internal signals. New work combines such biological principles with cybernetics, reinforcement learning and neuroscience to develop a framework for autonomous and adaptive artificial embodied agents.",
+          "pub_date": "2026-09-18",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 470
         },
         {
           "id": 1186,
@@ -611,7 +641,7 @@
           "word_count": 448
         },
         {
-          "id": 1492,
+          "id": 1446,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -714,21 +744,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 65
-        },
-        {
-          "id": 1237,
-          "source": "Science",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "In water fight, California to spend billions on ‘visionary’ plan to boost fish habitat",
-          "link": "https://www.science.org/doi/abs/10.1126/science.aem4442?af=R",
-          "content": "Science, Volume 393, Issue 6817 , Page 1177-1178, September 2026.",
-          "pub_date": "2026-09-17T06:00:11Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 65
         }
       ],
       "quota": {
@@ -736,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 50,
-      "total_valid": 42,
+      "total_raw": 38,
+      "total_valid": 30,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1688,
+          "id": 1643,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 403
         },
         {
-          "id": 1663,
+          "id": 1618,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 398
         },
         {
-          "id": 1686,
+          "id": 1641,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 236
         },
         {
-          "id": 1684,
+          "id": 1639,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 235
         },
         {
-          "id": 1687,
+          "id": 1642,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 232
         },
         {
-          "id": 1670,
+          "id": 1625,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 218
         },
         {
-          "id": 1689,
+          "id": 1644,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 154
         },
         {
-          "id": 1666,
+          "id": 1621,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 141
         },
         {
-          "id": 1709,
+          "id": 1664,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 1152
         },
         {
-          "id": 1711,
+          "id": 1666,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +1009,7 @@
           "word_count": 535
         },
         {
-          "id": 1659,
+          "id": 1614,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1024,7 @@
           "word_count": 507
         },
         {
-          "id": 1658,
+          "id": 1613,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1039,7 @@
           "word_count": 476
         },
         {
-          "id": 1656,
+          "id": 1611,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1054,7 @@
           "word_count": 452
         },
         {
-          "id": 1657,
+          "id": 1612,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1065,8 +1080,8 @@
     }
   },
   "meta": {
-    "total_raw": 1877,
-    "dup": 437,
+    "total_raw": 1832,
+    "dup": 435,
     "nocontent": 377,
     "noise": 4
   }
