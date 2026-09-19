@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 20,
+      "count": 21,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 22,
+      "count": 21,
       "ok": true
     },
     "Fierce Pharma": {
@@ -244,14 +244,14 @@
     "bioRxiv Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 30,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -268,7 +268,7 @@
     "npj Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
+      "count": 3,
       "ok": true
     },
     "Sci Transl Med": {
@@ -418,7 +418,7 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 5,
+      "count": 4,
       "ok": true
     },
     "Finextra": {
@@ -507,7 +507,9 @@
       "ClinicalTrials.gov",
       "Import AI",
       "NEJM",
-      "NEJM AI"
+      "NEJM AI",
+      "bioRxiv Immunology",
+      "medRxiv Infectious"
     ],
     "sudden_drop": [
       "PYMNTS Cross-Border",
