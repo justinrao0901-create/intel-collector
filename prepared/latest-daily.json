@@ -167,7 +167,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 585,
+          "id": 599,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -182,7 +182,7 @@
           "word_count": 221
         },
         {
-          "id": 528,
+          "id": 542,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -197,7 +197,7 @@
           "word_count": 376
         },
         {
-          "id": 491,
+          "id": 505,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 319
         },
         {
-          "id": 530,
+          "id": 544,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 543
         },
         {
-          "id": 606,
+          "id": 620,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -397,14 +397,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 424,
-      "total_valid": 248,
+      "total_raw": 438,
+      "total_valid": 262,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 677,
+          "id": 691,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -419,7 +419,7 @@
           "word_count": 216
         },
         {
-          "id": 690,
+          "id": 704,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -434,7 +434,7 @@
           "word_count": 194
         },
         {
-          "id": 689,
+          "id": 703,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 193
         },
         {
-          "id": 712,
+          "id": 726,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 137
         },
         {
-          "id": 530,
+          "id": 544,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 254
         },
         {
-          "id": 534,
+          "id": 548,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -551,6 +551,51 @@
           "word_count": 1200
         },
         {
+          "id": 486,
+          "source": "medRxiv Infectious",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Predicting parental Human papillomavirus vaccine hesitancy: development and internal validation of machine learning models",
+          "link": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363393v1?rss=1",
+          "content": "Objectives: Cervical cancer is Cameroon's second most common cancer among women. However, high parental Human papillomavirus (HPV) vaccine hesitancy impedes elimination, and no validated predictive tool exists. This study aimed to develop and internally validate machine learning models predicting parental HPV vaccine hesitancy in the Buea Health District and identify key predictors. Methods: This secondary analysis used cross-sectional survey data from 1,156 parents of children aged 9-18 years. Hesitancy was derived from self-reported vaccination status and intention. Twenty-six predictor groups were screened via group LASSO (17 retained for logistic regression; all 26 for tree-based models). Data were split 80/20 into training (n=925) and test (n=231) sets. Logistic regression, random forest, and XGBoost were tuned via repeated cross-validation while thresholds were set by Youden's J statistic. Discrimination, calibration, and Brier score were assessed on the test set. Predictions were interpreted using SHAP. Results: All models showed comparable discrimination (AUC-ROC 0.841-0.870). XGBoost had the highest AUC (0.870, vs 0.869 for logistic regression, DeLong p=0.965); logistic re",
+          "pub_date": "2026-09-20",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 491,
+          "source": "medRxiv Infectious",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Cost-Effectiveness of Sulbactam-durlobactam Compared with Colistin for Treating Carbapenem-Resistant Acinetobacter baumannii Infections in Critical Care Settings in the United States",
+          "link": "https://www.medrxiv.org/content/10.64898/2026.09.13.26362951v1?rss=1",
+          "content": "Objective: Carbapenem-resistant Acinetobacter baumannii (CRAB) infections present a significant public health challenge in the United States due to multidrug resistance, substantial added inpatient costs, and subsequently high mortality rates. Method: A decision-analytic model was developed to evaluate the cost-effectiveness of sulbactam-durlobactam compared to colistin for treating CRAB infections, using data from the Acinetobacter Treatment Trial Against Colistin (ATTACK) trial, in which patients received either sulbactam-durlobactam or colistin alongside imipenem-cilastatin. The model incorporated survival rates, clinical outcomes (complete or incomplete cure), and the incidence and costs of acute kidney injury, which is more frequent in colistin-treated patients. Deterministic sensitivity analysis and two scenario analyses were performed. Results: The base case analysis estimated an expected per-patient cost of $57,887 for sulbactam-durlobactam compared to $55,157 for colistin. Patients treated with sulbactam-durlobactam had higher survival than those treated with colistin (0.66 versus 0.46), corresponding to 0.19 additional life saved per patient. The incremental cost-effectiv",
+          "pub_date": "2026-09-17",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 492,
+          "source": "medRxiv Infectious",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Cost-Effectiveness of Ensitrelvir for COVID-19 Post-Exposure Prophylaxis Among High-Risk Household Contacts in Japan: A Model-Based Cost-Utility Analysis",
+          "link": "https://www.medrxiv.org/content/10.64898/2026.09.15.26361876v1?rss=1",
+          "content": "Background: Ensitrelvir reduced symptomatic COVID-19 after household exposure in the SCORPIO-PEP trial, but its economic value as post-exposure prophylaxis is unknown. Objective: To estimate the cost-effectiveness of ensitrelvir post-exposure prophylaxis for high-risk household contacts in Japan. Methods: We developed a decision-analytic cost-utility model from the Japanese public healthcare payer perspective. Trial risks of symptomatic COVID-19 through day 10 were linked to Japanese evidence on hospitalization, mortality, costs, quality of life, and life expectancy. Because the trial observed no COVID-19-related hospitalization or death, downstream outcomes were modeled only through prevention of symptomatic disease. We performed deterministic, probabilistic, structural, subgroup, and threshold analyses. Results: Ensitrelvir increased costs by JPY 54,945 and gained 0.003267 QALYs per exposed contact, yielding an ICER of JPY 16.82 million/QALY. None of 10,000 simulations was cost-effective at JPY 5 million/QALY. Applying the overall-trial relative risk to the high-risk baseline yielded JPY 19.24 million/QALY. Restricting post-acute utility loss to 6 months, halving it, or excluding",
+          "pub_date": "2026-09-16",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 471,
           "source": "bioRxiv Immunology",
           "section": "cross",
@@ -566,7 +611,7 @@
           "word_count": 1199
         },
         {
-          "id": 712,
+          "id": 726,
           "source": "bioRxiv SynBio",
           "section": "cross",
           "tier": "T1",
@@ -579,21 +624,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1163
-        },
-        {
-          "id": 473,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Efficacy of rDiHAVO as a potential vaccine antigen against heartworm infections in a mouse model",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.09.12.750983v1?rss=1",
-          "content": "Dirofilariasis, or heartworm disease, is a life-threatening parasitic infection caused by the nematode parasite Dirofilaria immitis. Mosquito vectors in tropical and subtropical regions transmit the infection. Current treatment options are expensive, have a short-term effect, and depend on anthelminthic therapy. There are no licensed vaccines available for preventing heartworm infections. The primary goal of this study was to identify potential vaccine candidates, develop a tetravalent fusion protein (rDiHAVO) vaccine antigen, and evaluate its immunogenicity and efficacy in a mouse model of D. immitis infection. Results show that the rDiHAVO is highly immunogenic in mice and confers over 95% protection against a challenge infection. These findings suggest that rDiHAVO is a potential vaccine candidate against Dirofilariasis. Additional testing in dogs can advance this vaccine candidate to clinical trials.",
-          "pub_date": "2026-09-17",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 917
         }
       ],
       "quota": {
@@ -601,9 +631,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 16,
-      "total_valid": 8,
-      "total_candidates": 8
+      "total_raw": 22,
+      "total_valid": 14,
+      "total_candidates": 10
     },
     "china": {
       "candidates": [],
@@ -619,7 +649,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 787,
+          "id": 801,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -634,7 +664,7 @@
           "word_count": 493
         },
         {
-          "id": 783,
+          "id": 797,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -649,7 +679,7 @@
           "word_count": 469
         },
         {
-          "id": 779,
+          "id": 793,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -664,7 +694,7 @@
           "word_count": 455
         },
         {
-          "id": 790,
+          "id": 804,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +709,7 @@
           "word_count": 153
         },
         {
-          "id": 789,
+          "id": 803,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +724,7 @@
           "word_count": 122
         },
         {
-          "id": 784,
+          "id": 798,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +739,7 @@
           "word_count": 496
         },
         {
-          "id": 781,
+          "id": 795,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +754,7 @@
           "word_count": 473
         },
         {
-          "id": 786,
+          "id": 800,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -744,14 +774,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 188,
+      "total_raw": 190,
       "total_valid": 11,
       "total_candidates": 8
     }
   },
   "meta": {
-    "total_raw": 966,
-    "dup": 300,
+    "total_raw": 982,
+    "dup": 302,
     "nocontent": 371,
     "noise": 4
   }
