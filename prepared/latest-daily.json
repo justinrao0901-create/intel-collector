@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Towards Full Pipeline FP8 Reinforcement Learning for LLMs",
-          "link": "https://arxiv.org/abs/2609.22870",
-          "content": "Reinforcement learning (RL) has become a key technique for improving the reasoning and agentic abilities of large language models (LLMs). Although FP8 quantization can accelerate RL training, maintaining stability throughout an FP8 RL pipeline remains challenging. While previous works have focused on resolving train-inference mismatches using correction techniques like TIS, we reveal that full-pipeline FP8 RL still suffers from severe training instability, manifesting as anomalous mid-training entropy surges and garbled outputs. We trace this instability to a previously overlooked cause: compounded FP8 quantization noise distorts the importance ratio, disproportionately pushing negative-advantage tokens outside the trust region and erroneously zeroing out their gradients. As a result, pathological outputs are not properly penalized and accumulate over the course of training. To address this, we propose Calibrated Clipping, a dynamic method that aligns the FP8 clipping bounds with high-precision BF16 distributions by matching the lower-bound clipping quantile and rebalancing the upper bound accordingly. Extensive experiments across GRPO and DAPO algorithms, model scales from 8B to 3",
-          "pub_date": "2026-09-18T20:00:00.000Z",
+          "title": "The information geometry of large language models is shared, learned, and controllable",
+          "link": "https://arxiv.org/abs/2609.11063",
+          "content": "Large language models learn similar behaviours, yet it remains unclear what structure they share or how to change one behaviour without disturbing others. The Fisher-Rao geometry of next-token probabilities connects these questions: behaviour determines this geometry up to output-preserving symmetries, whereas activation geometry depends on coordinates. Across transformer, state-space and recurrent models, output geometries agree more strongly than activation geometries, and shared geometry supports semantic-category transfer. Agreement with human word choices increases with predictive accuracy, scale and training, and improves further after model-only calibration. Token probabilities and read-out geometry jointly predict the spectrum and its effective dimension. Controlled language assignments show that geometry follows the language law across architectures. Pretraining corpus statistics predict held-out fact acquisition without recalibration, while randomised experiments show that deeper evidence substantially delays acquisition across every tested architecture and evidence construction. Finally, the geometry prescribes minimum-disturbance local interventions, predicts their rela",
+          "pub_date": "2026-09-09T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -160,10 +160,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "ACLArena: Agent Continue Learning in Multi-stage Post-training",
-          "link": "https://arxiv.org/abs/2609.23989",
-          "content": "Building general-purpose agents for industrial deployment requires integrating multiple capabilities, each typically acquired at a distinct stage of training. Yet there is currently no well-established recipe for Agent Continual Learning (ACL), with little understanding of the trade-offs among existing integration paradigms. To address this gap, we introduce ACLArena, a framework for comprehensively studying, analyzing, and evaluating ACL. We first build a sequential training pipeline and conduct an in-depth analysis that explains the mechanisms of forgetting and generalization from two complementary perspectives, the model level and the token level. Guided by these analyses, we systematically compare multi-teacher on-policy distillation, self-distilled fine-tuning, and model merging to assess their ability to recover previously learned capabilities while preserving newly acquired ones. Through extensive experiments, we develop a detailed understanding of how capabilities transfer across stages. Finally, we propose a new ACL recipe that combines offline replay over high-quality trajectories with a routed network of multiple LoRA experts each specialized via RL, substantially improv",
-          "pub_date": "2026-09-20T20:00:00.000Z",
+          "title": "Towards Full Pipeline FP8 Reinforcement Learning for LLMs",
+          "link": "https://arxiv.org/abs/2609.22870",
+          "content": "Reinforcement learning (RL) has become a key technique for improving the reasoning and agentic abilities of large language models (LLMs). Although FP8 quantization can accelerate RL training, maintaining stability throughout an FP8 RL pipeline remains challenging. While previous works have focused on resolving train-inference mismatches using correction techniques like TIS, we reveal that full-pipeline FP8 RL still suffers from severe training instability, manifesting as anomalous mid-training entropy surges and garbled outputs. We trace this instability to a previously overlooked cause: compounded FP8 quantization noise distorts the importance ratio, disproportionately pushing negative-advantage tokens outside the trust region and erroneously zeroing out their gradients. As a result, pathological outputs are not properly penalized and accumulate over the course of training. To address this, we propose Calibrated Clipping, a dynamic method that aligns the FP8 clipping bounds with high-precision BF16 distributions by matching the lower-bound clipping quantile and rebalancing the upper bound accordingly. Extensive experiments across GRPO and DAPO algorithms, model scales from 8B to 3",
+          "pub_date": "2026-09-18T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -175,10 +175,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SkillSpec: Intent-Masked Specification Reasoning for Agent Skill Correctness",
-          "link": "https://arxiv.org/abs/2609.06052",
-          "content": "Autonomous agent systems increasingly depend on reusable skill abstractions for consolidating experiential knowledge and domain expertise. These artifacts typically bundle free-form instructions with heterogeneous resources. However, ensuring their correctness remains challenging. Their failure modes transcend conventional code defects to subtle semantic inconsistencies such as intent conflicts, which manifest as silent failures masked by the underlying model. Moreover, skill correctness must be grounded in intended task boundaries and generalizability. We propose SkillSpec, a Hoare-style framework that formulates skill correctness as a specification reasoning problem. It transforms a heterogeneous skill repository into a unified graph representation that aligns descriptions, instructions and code artifacts. For each node, SkillSpec derives an ExpectSpec from the surrounding declared intent, and infers FactSpecs from encoded behavior under partially disclosed intent. An intent mask regulates access to holistic, lineage, neighborhood, and local views to balance the bias introduced by excessive context against unsupported inference caused by insufficient context. SkillSpec jointly re",
-          "pub_date": "2026-09-04T20:00:00.000Z",
+          "title": "ACLArena: Agent Continue Learning in Multi-stage Post-training",
+          "link": "https://arxiv.org/abs/2609.23989",
+          "content": "Building general-purpose agents for industrial deployment requires integrating multiple capabilities, each typically acquired at a distinct stage of training. Yet there is currently no well-established recipe for Agent Continual Learning (ACL), with little understanding of the trade-offs among existing integration paradigms. To address this gap, we introduce ACLArena, a framework for comprehensively studying, analyzing, and evaluating ACL. We first build a sequential training pipeline and conduct an in-depth analysis that explains the mechanisms of forgetting and generalization from two complementary perspectives, the model level and the token level. Guided by these analyses, we systematically compare multi-teacher on-policy distillation, self-distilled fine-tuning, and model merging to assess their ability to recover previously learned capabilities while preserving newly acquired ones. Through extensive experiments, we develop a detailed understanding of how capabilities transfer across stages. Finally, we propose a new ACL recipe that combines offline replay over high-quality trajectories with a routed network of multiple LoRA experts each specialized via RL, substantially improv",
+          "pub_date": "2026-09-20T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -257,7 +257,7 @@
           "word_count": 372
         },
         {
-          "id": 1673,
+          "id": 1674,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 271
         },
         {
-          "id": 1862,
+          "id": 1863,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 247
         },
         {
-          "id": 1823,
+          "id": 1824,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 234
         },
         {
-          "id": 1762,
+          "id": 1763,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 486
         },
         {
-          "id": 1799,
+          "id": 1800,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 412
         },
         {
-          "id": 1729,
+          "id": 1730,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 205
         },
         {
-          "id": 1880,
+          "id": 1881,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 438,
+      "total_raw": 439,
       "total_valid": 281,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1986,
+          "id": 1987,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1942,
+          "id": 1943,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 166
         },
         {
-          "id": 1985,
+          "id": 1986,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1989,
+          "id": 1990,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1999,
+          "id": 2000,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 542
         },
         {
-          "id": 1998,
+          "id": 1999,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 483
         },
         {
-          "id": 1977,
+          "id": 1978,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 408
         },
         {
-          "id": 1963,
+          "id": 1964,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1964,
+          "id": 1965,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1966,
+          "id": 1967,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1989,
+          "id": 1990,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1987,
+          "id": 1988,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1199
         },
         {
-          "id": 1991,
+          "id": 1992,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1116
         },
         {
-          "id": 1998,
+          "id": 1999,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 222
         },
         {
-          "id": 2002,
+          "id": 2003,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2021,
+          "id": 2022,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 515
         },
         {
-          "id": 2016,
+          "id": 2017,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 489
         },
         {
-          "id": 2020,
+          "id": 2021,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 487
         },
         {
-          "id": 2012,
+          "id": 2013,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 474
         },
         {
-          "id": 2017,
+          "id": 2018,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 468
         },
         {
-          "id": 2019,
+          "id": 2020,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 457
         },
         {
-          "id": 2011,
+          "id": 2012,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 435
         },
         {
-          "id": 2068,
+          "id": 2069,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 403
         },
         {
-          "id": 2045,
+          "id": 2046,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 319
         },
         {
-          "id": 2047,
+          "id": 2048,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 318
         },
         {
-          "id": 2042,
+          "id": 2043,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 314
         },
         {
-          "id": 2046,
+          "id": 2047,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 312
         },
         {
-          "id": 2048,
+          "id": 2049,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 211
         },
         {
-          "id": 2049,
+          "id": 2050,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 211
         },
         {
-          "id": 2023,
+          "id": 2024,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 126
         },
         {
-          "id": 2022,
+          "id": 2023,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 115
         },
         {
-          "id": 82,
+          "id": 83,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1039,6 +1039,21 @@
           "word_count": 1182
         },
         {
+          "id": 2073,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes Powers J.P. Morgan Payments’ Xpedite Remit Solution to Accelerate Global Payouts",
+          "link": "https://www.thunes.com/news/thunes-jpmorgan-payments-partnership/",
+          "content": "Expanded capabilities with Thunes will help J.P. Morgan Payments clients send faster payouts to bank accounts and mobile wallets across 100+ corridors. Singapore/New York, September&#160;22, 2026: Thunes has been selected by J.P. Morgan Payments&#160;to expand the business’ cross-border capabilities&#160;through&#160;its&#160;Xpedite Remit&#160;solutions suite. The new solutions&#160;leverage&#160;both J.P. Morgan Payments’ connectivity to&#160;local&#160;real-time payments rails&#160;and Thunes’ extensive Direct Global Network ... Read more &#187; The post Thunes Powers J.P. Morgan Payments’ Xpedite Remit Solution to Accelerate Global Payouts first appeared on Thunes.com .",
+          "pub_date": "Tue, 22 Sep 2026 12:01:08 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 682
+        },
+        {
           "id": 161,
           "source": "arXiv cs.CL",
           "section": "payment",
@@ -1052,21 +1067,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 390,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "MedGPT-oss: Training a General-Purpose Vision-Language Model for Biomedicine",
-          "link": "https://arxiv.org/abs/2603.00842",
-          "content": "arXiv:2603.00842v2 Announce Type: replace Abstract: Biomedical multimodal assistants have the potential to unify radiology, pathology, and clinical-text reasoning, yet a critical deployment gap remains: top-performing systems are either closed-source or computationally prohibitive, precluding the on-premises deployment required for patient privacy and PHI compliance. We introduce MEDGPT-OSS, an open-weight, 20B-parameter generalist vision-language model designed to facilitate open research in clinical AI. Rather than relying on architectural complexity, MEDGPT-OSS pairs the GPT-oss language backbone with a visual front-end via a optimized, three-stage training curriculum. By progressively domain-adapting these modules through rigorous data curation and long-context multimodal alignment, we demonstrate that a 20B model can bridge the capacity gap. It successfully outperforms larger open medical models on out-of-distribution (OOD) multimodal reasoning and complex text-only clinical tasks. By unifying diverse modalities under a single instruction-following interface, MEDGPT-OSS maintains a parameter-efficient footprint fully compatible with commodity GPUs. We release the complete trai",
-          "pub_date": "Tue, 22 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1074,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 240,
-      "total_valid": 52,
+      "total_raw": 243,
+      "total_valid": 53,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2240,
-    "dup": 364,
-    "nocontent": 384,
+    "total_raw": 2244,
+    "dup": 366,
+    "nocontent": 385,
     "noise": 5
   }
 }
