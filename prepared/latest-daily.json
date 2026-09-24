@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 64,
+          "id": 62,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,22 +65,7 @@
           "word_count": 140
         },
         {
-          "id": 46,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Advancing Private AI Compute with secure, server-side memory",
-          "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-          "content": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-          "pub_date": "Wed, 23 Sep 2026 16:00:57 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 78
-        },
-        {
-          "id": 93,
+          "id": 91,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +80,7 @@
           "word_count": 203
         },
         {
-          "id": 107,
+          "id": 105,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +95,7 @@
           "word_count": 199
         },
         {
-          "id": 103,
+          "id": 101,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +110,7 @@
           "word_count": 196
         },
         {
-          "id": 78,
+          "id": 76,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 79,
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 81,
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1022,
+          "id": 1020,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 1025,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+          "link": "https://simonwillison.net/2026/Sep/21/jev/",
+          "content": "Last week TypeSafe AI unveiled Jev , their first example of a new category of model that they are calling \"System One models\" (I'm with Maggie Appleton, I think \"decision models\" is a better name for these). Jev is an interesting variant on the usual LLM format: it still accepts text inputs, but instead of text output it returns floating point numbers corresponding to categories, yes/no questions, ratings, and associated confidence scores. TypeSafe describe Jev like this: Think of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out. It's also very fast, and really cheap . Regular LLMs are priced in terms of input and output tokens, with output generally charged at significantly higher rates. Jev charges only for input - output is free - and the input price of their first model is $0.042 per million tokens - cheaper even than OpenAI's GPT-5 Nano ($0.05/million). Jev lets you ask questions about text or semi-structured data. You compose a \"state\" object containing a string, array of strings, or set of name-value pairs - this might describe an article, or a customer, or any other kind of record. You then send that to their API with on",
+          "pub_date": "2026-09-21T23:09:20+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1132,
-      "total_valid": 732,
+      "total_raw": 1130,
+      "total_valid": 731,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1350,
+          "id": 1348,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 550
         },
         {
-          "id": 1330,
+          "id": 1328,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 415
         },
         {
-          "id": 1182,
+          "id": 1180,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 357
         },
         {
-          "id": 1172,
+          "id": 1170,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 333
         },
         {
-          "id": 1340,
+          "id": 1338,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 333
         },
         {
-          "id": 1183,
+          "id": 1181,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 326
         },
         {
-          "id": 1355,
+          "id": 1353,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 260
         },
         {
-          "id": 1520,
+          "id": 1518,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 234
         },
         {
-          "id": 1519,
+          "id": 1517,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 201
         },
         {
-          "id": 1530,
+          "id": 1528,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 70
         },
         {
-          "id": 1467,
+          "id": 1465,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 320
         },
         {
-          "id": 1429,
+          "id": 1427,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 202
         },
         {
-          "id": 1481,
+          "id": 1479,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 197
         },
         {
-          "id": 1135,
+          "id": 1133,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 235
         },
         {
-          "id": 1576,
+          "id": 1574,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1650,
+          "id": 1648,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 402
         },
         {
-          "id": 1620,
+          "id": 1618,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 221
         },
         {
-          "id": 1621,
+          "id": 1619,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 162
         },
         {
-          "id": 1628,
+          "id": 1626,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 135
         },
         {
-          "id": 1682,
+          "id": 1680,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1680,
+          "id": 1678,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1199
         },
         {
-          "id": 1676,
+          "id": 1674,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 350
         },
         {
-          "id": 1612,
+          "id": 1610,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 342
         },
         {
-          "id": 1655,
+          "id": 1653,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1656,
+          "id": 1654,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 1657,
+          "id": 1655,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -611,7 +611,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1357,
+          "id": 1355,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 509
         },
         {
-          "id": 1551,
+          "id": 1549,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 437
         },
         {
-          "id": 1358,
+          "id": 1356,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 407
         },
         {
-          "id": 1612,
+          "id": 1610,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 342
         },
         {
-          "id": 1192,
+          "id": 1190,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 338
         },
         {
-          "id": 1557,
+          "id": 1555,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 338
         },
         {
-          "id": 1185,
+          "id": 1183,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 322
         },
         {
-          "id": 1191,
+          "id": 1189,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 308
         },
         {
-          "id": 1356,
+          "id": 1354,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 307
         },
         {
-          "id": 1266,
+          "id": 1264,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -784,7 +784,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1707,
+          "id": 1765,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "MoonPay buys North Capital, including ATS for tokenized securities",
+          "link": "https://www.ledgerinsights.com/moonpay-buys-north-capital-including-ats-for-tokenized-securities/",
+          "content": "Crypto payments infrastructure firm MoonPay has agreed to acquire North Capital in an all stock deal that Coindesk said was worth more than $60 million, subject to regulatory approvals. The acquisition would give MoonPay a regulated securities infrastructure stack as it expands beyond crypto into tokenized assets. North Capital helps companies raise capital using exemptions [&#8230;] The post MoonPay buys North Capital, including ATS for tokenized securities appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Wed, 23 Sep 2026 15:18:20 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 526
+        },
+        {
+          "id": 1705,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 475
         },
         {
-          "id": 1710,
+          "id": 1708,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 475
         },
         {
-          "id": 1702,
+          "id": 1700,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 468
         },
         {
-          "id": 1759,
+          "id": 1757,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 350
         },
         {
-          "id": 1760,
+          "id": 1758,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 350
         },
         {
-          "id": 1739,
+          "id": 1737,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 234
         },
         {
-          "id": 1730,
+          "id": 1728,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 226
         },
         {
-          "id": 1731,
+          "id": 1729,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 207
         },
         {
-          "id": 1720,
+          "id": 1718,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 199
         },
         {
-          "id": 1723,
+          "id": 1721,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 185
         },
         {
-          "id": 1724,
+          "id": 1722,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 184
         },
         {
-          "id": 1712,
+          "id": 1710,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 155
         },
         {
-          "id": 1714,
+          "id": 1712,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 137
         },
         {
-          "id": 1717,
+          "id": 1715,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +1009,7 @@
           "word_count": 137
         },
         {
-          "id": 87,
+          "id": 85,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1111
         },
         {
-          "id": 1765,
+          "id": 1763,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,7 +1039,7 @@
           "word_count": 176
         },
         {
-          "id": 157,
+          "id": 155,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 361,
+          "id": 359,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 384,
+          "id": 382,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1062,21 +1077,6 @@
           "title": "EADC: Evaluation of Advanced and Deep-level Compliance in Large Language Models",
           "link": "https://arxiv.org/abs/2609.26175",
           "content": "arXiv:2609.26175v1 Announce Type: new Abstract: Large Language Models (LLMs) have been used in various industries. However, ensuring their compliance with complex laws and regulatory frameworks remains a great challenge. Existing evaluation paradigms mainly rely on static benchmarks that suffer from three severe limitations: First, the compliance rules being used do not comply with the requirements of Artificial Intelligence (AI) laws and regulations; Second, they only handle apparent, explicit compliance risks, leaving implicit and covert compliance risks undetected; Third, they fail to track the systematic propagation of risks along logical dependency chains or evaluate compliance within nuanced, context-based real-world scenarios. To bridge this critical gap, we introduce EADC, a novel advanced evaluation benchmark of LLMs based on an AI compliance knowledge graph and AI compliance legal experts. By mapping abstract legal rules into structured logical multi-relational graphs, our framework enables automated, evolving agents to distill and synthesize highly sophisticated adversarial scenarios. This compliance benchmark is reviewed and corrected by human AI legal experts throughou",
-          "pub_date": "Wed, 23 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 505,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Reducing Hallucinations in Large Language Models Through Integrated Self-Verification and Retrieval-Augmented Generation",
-          "link": "https://arxiv.org/abs/2609.26229",
-          "content": "arXiv:2609.26229v1 Announce Type: cross Abstract: Large Language Models (LLMs) are progressively used for advanced engineering tasks, includes Computer-Aided Design (CAD) documentation, standards compliance verification, and knowledge retrieval. Still, they are prone to produce hallucinations, outputs that seem convincing but aren't based on context that limit their trustworthiness in high-end engineering applications where precision and compliance are crucial. The paper introduces CoVe-RAG+, a unified framework that integrates Chain-of-Verification (CoVe) with Retrieval-Augmented Generation (RAG) to mitigate hallucinations in the results generated by large language models (LLMs). CoVe-RAG+ supports LLM verification in external sources of authority, such as engineering standards, CAD information, and simulation reports, while applying an iterative self-verification process to validate important claims. CoVe-RAG+ is assessed on engineering activities such as CAD model documentation, standards compliance verification, and the reutilization of historical design data. Experimental findings indicate a 28% improvement in factual accuracy relative to baseline CoVe and RAG methodologies. M",
           "pub_date": "Wed, 23 Sep 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1090,14 +1090,14 @@
         "max": 12
       },
       "total_raw": 247,
-      "total_valid": 59,
+      "total_valid": 60,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1935,
-    "dup": 422,
-    "nocontent": 387,
+    "total_raw": 1933,
+    "dup": 421,
+    "nocontent": 386,
     "noise": 5
   }
 }
