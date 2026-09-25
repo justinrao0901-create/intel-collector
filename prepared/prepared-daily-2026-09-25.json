@@ -50,22 +50,7 @@
           "word_count": 136
         },
         {
-          "id": 47,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Advancing Private AI Compute with secure, server-side memory",
-          "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-          "content": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-          "pub_date": "Wed, 23 Sep 2026 16:00:57 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 78
-        },
-        {
-          "id": 102,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +65,7 @@
           "word_count": 227
         },
         {
-          "id": 105,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +80,7 @@
           "word_count": 206
         },
         {
-          "id": 99,
+          "id": 96,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +95,7 @@
           "word_count": 191
         },
         {
-          "id": 81,
+          "id": 78,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 84,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 85,
+          "id": 82,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1003,
+          "id": 1000,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +155,7 @@
           "word_count": 1054
         },
         {
-          "id": 1005,
+          "id": 1002,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 975
+        },
+        {
+          "id": 1011,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "MCP was always a bad idea?",
+          "link": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
+          "content": "My comment on MCP was always a bad idea? &mdash; Hacker News. This article entirely misses the value that MCP brings today. Sure, there's almost no reason to use MCPs if you are running a full-blown terminal agent (Claude Code, Codex, Meta Muse, OpenClaw etc) with unfettered internet access - just let it call APIs directly. If you want to operate something that's less YOLO than that, you'll find yourself wanting: Control over exactly which external services it can access A way to handle authentication that doesn't allow the agent to directly access API keys A sensible UI to allow users to connect and authenticate further services Strong audit logging for what's going on MCP makes all of that so much easier to provide. Thinking MCP is obsolete because full coding agents don't need it misses out on all of the other things we might want to build. Tags: hacker-news , model-context-protocol",
+          "pub_date": "2026-09-20T20:24:41+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 898
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1113,
-      "total_valid": 849,
+      "total_raw": 1110,
+      "total_valid": 848,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1259,
+          "id": 1256,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 425
         },
         {
-          "id": 1523,
+          "id": 1520,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 402
         },
         {
-          "id": 1180,
+          "id": 1177,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 308
         },
         {
-          "id": 1535,
+          "id": 1532,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 281
         },
         {
-          "id": 1305,
+          "id": 1302,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 211
         },
         {
-          "id": 1338,
+          "id": 1335,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 188
         },
         {
-          "id": 1341,
+          "id": 1338,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 179
         },
         {
-          "id": 1156,
+          "id": 1153,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 175
         },
         {
-          "id": 1497,
+          "id": 1494,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 159
         },
         {
-          "id": 1476,
+          "id": 1473,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 434
         },
         {
-          "id": 1490,
+          "id": 1487,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 421
         },
         {
-          "id": 1482,
+          "id": 1479,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 418
         },
         {
-          "id": 1114,
+          "id": 1111,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 233
         },
         {
-          "id": 1115,
+          "id": 1112,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 223
         },
         {
-          "id": 1121,
+          "id": 1118,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1649,
+          "id": 1646,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1650,
+          "id": 1647,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 1664,
+          "id": 1661,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 349
         },
         {
-          "id": 1659,
+          "id": 1656,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 315
         },
         {
-          "id": 1641,
+          "id": 1638,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 189
         },
         {
-          "id": 1629,
+          "id": 1626,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 981
         },
         {
-          "id": 1630,
+          "id": 1627,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1635,
+          "id": 1632,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1359,
+          "id": 1356,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 460
         },
         {
-          "id": 1669,
+          "id": 1666,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 386
         },
         {
-          "id": 1536,
+          "id": 1533,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 384
         },
         {
-          "id": 1185,
+          "id": 1182,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 300
         },
         {
-          "id": 1249,
+          "id": 1246,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 296
         },
         {
-          "id": 1208,
+          "id": 1205,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 217
         },
         {
-          "id": 1670,
+          "id": 1667,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 212
         },
         {
-          "id": 1194,
+          "id": 1191,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 210
         },
         {
-          "id": 1267,
+          "id": 1264,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 65
         },
         {
-          "id": 1296,
+          "id": 1293,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1680,
+          "id": 1678,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 496
         },
         {
-          "id": 1678,
+          "id": 1676,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 487
         },
         {
-          "id": 1683,
+          "id": 1681,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 478
         },
         {
-          "id": 1684,
+          "id": 1682,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,22 @@
           "word_count": 474
         },
         {
-          "id": 1677,
+          "id": 1674,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Fed Proposes Stablecoin Reserve and Capital Rules Under GENIUS Act",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/fed-proposes-stablecoin-reserve-and-capital-rules-under-genius-act/",
+          "content": "The Federal Reserve Board is requesting public comment on two proposals related to establishing a regulatory framework for the payment stablecoin issuers it supervises under the GENIUS Act, it said in a Thursday (Sept. 24) press release. The agency released two notices of proposed rulemaking and will accept comment on them for 60 days after [&#8230;] The post Fed Proposes Stablecoin Reserve and Capital Rules Under GENIUS Act appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 25 Sep 2026 01:03:04 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 459
+        },
+        {
+          "id": 1675,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,22 +829,7 @@
           "word_count": 455
         },
         {
-          "id": 1682,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "FedNow Opens Door to Cross-Border Instant Payments",
-          "link": "https://www.pymnts.com/real-time-payments/2026/fednow-opens-door-to-cross-border-instant-payments/",
-          "content": "The Federal Reserve is taking its instant payment system global. Federal Reserve Financial Services said Wednesday (Sept. 23) that the FedNow® Service will soon support cross-border transactions. The move is the first major step beyond U.S. borders for FedNow since it launched in July 2023. Until now, the service has handled only domestic payments. The [&#8230;] The post FedNow Opens Door to Cross-Border Instant Payments appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 24 Sep 2026 23:15:01 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 455
-        },
-        {
-          "id": 1734,
+          "id": 1730,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 402
         },
         {
-          "id": 1733,
+          "id": 1729,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 360
         },
         {
-          "id": 1735,
+          "id": 1731,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 331
         },
         {
-          "id": 1709,
+          "id": 1705,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 283
         },
         {
-          "id": 1711,
+          "id": 1707,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 275
         },
         {
-          "id": 1714,
+          "id": 1710,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 257
         },
         {
-          "id": 1699,
+          "id": 1695,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 241
         },
         {
-          "id": 1715,
+          "id": 1711,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 226
         },
         {
-          "id": 1688,
+          "id": 1685,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 180
         },
         {
-          "id": 1697,
+          "id": 1693,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,22 +979,7 @@
           "word_count": 179
         },
         {
-          "id": 1689,
-          "source": "PaymentsDive",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Moov adds P2P competition",
-          "link": "https://www.paymentsdive.com/news/moov-adds-p2p-competition/831268/",
-          "content": "Using Mastercard and Visa&rsquo;s digital infrastructure, the tool facilitates peer-to-peer payments without requiring both parties to have the same app.",
-          "pub_date": "Thu, 24 Sep 2026 10:51:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 153
-        },
-        {
-          "id": 98,
+          "id": 95,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -1007,6 +992,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 104
+        },
+        {
+          "id": 1735,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Compliance becomes real-time for fiat and stablecoins",
+          "link": "https://www.thunes.com/insights/learn/compliance-becomes-real-time-for-fiat-and-stablecoins/",
+          "content": "Payment infrastructure is getting faster and more interconnected. Now, compliance has to keep up.&#160; Fiat payments can move funds in seconds, while stablecoins now support 24/7 settlement. Through interoperable payment infrastructure, the two can also form part of the same journey, with value moving between stablecoin and fiat rails before funds reach the recipient. That ... Read more &#187; The post Compliance becomes real-time for fiat and stablecoins first appeared on Thunes.com .",
+          "pub_date": "Wed, 23 Sep 2026 07:18:42 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 491
         },
         {
           "id": 1739,
@@ -1024,7 +1024,7 @@
           "word_count": 181
         },
         {
-          "id": 273,
+          "id": 270,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1044,15 +1044,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 246,
+      "total_raw": 249,
       "total_valid": 58,
       "total_candidates": 20
     }
   },
   "meta": {
     "total_raw": 1909,
-    "dup": 280,
-    "nocontent": 392,
+    "dup": 283,
+    "nocontent": 390,
     "noise": 5
   }
 }
