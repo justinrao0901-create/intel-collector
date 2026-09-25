@@ -50,7 +50,22 @@
           "word_count": 136
         },
         {
-          "id": 99,
+          "id": 47,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Advancing Private AI Compute with secure, server-side memory",
+          "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+          "content": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+          "pub_date": "Wed, 23 Sep 2026 16:00:57 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 78
+        },
+        {
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 227
         },
         {
-          "id": 102,
+          "id": 105,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 206
         },
         {
-          "id": 96,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +110,7 @@
           "word_count": 191
         },
         {
-          "id": 78,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 81,
+          "id": 84,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 82,
+          "id": 85,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1000,
+          "id": 1003,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 1054
         },
         {
-          "id": 1002,
+          "id": 1005,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 975
-        },
-        {
-          "id": 1011,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "MCP was always a bad idea?",
-          "link": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
-          "content": "My comment on MCP was always a bad idea? &mdash; Hacker News. This article entirely misses the value that MCP brings today. Sure, there's almost no reason to use MCPs if you are running a full-blown terminal agent (Claude Code, Codex, Meta Muse, OpenClaw etc) with unfettered internet access - just let it call APIs directly. If you want to operate something that's less YOLO than that, you'll find yourself wanting: Control over exactly which external services it can access A way to handle authentication that doesn't allow the agent to directly access API keys A sensible UI to allow users to connect and authenticate further services Strong audit logging for what's going on MCP makes all of that so much easier to provide. Thinking MCP is obsolete because full coding agents don't need it misses out on all of the other things we might want to build. Tags: hacker-news , model-context-protocol",
-          "pub_date": "2026-09-20T20:24:41+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 898
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1110,
-      "total_valid": 848,
+      "total_raw": 1113,
+      "total_valid": 849,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1257,
+          "id": 1260,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 425
         },
         {
-          "id": 1521,
+          "id": 1524,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 402
         },
         {
-          "id": 1178,
+          "id": 1181,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 308
         },
         {
-          "id": 1533,
+          "id": 1536,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 281
         },
         {
-          "id": 1303,
+          "id": 1306,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 211
         },
         {
-          "id": 1336,
+          "id": 1339,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 188
         },
         {
-          "id": 1339,
+          "id": 1342,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 179
         },
         {
-          "id": 1154,
+          "id": 1157,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 175
         },
         {
-          "id": 1495,
+          "id": 1498,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 159
         },
         {
-          "id": 1474,
+          "id": 1477,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 434
         },
         {
-          "id": 1488,
+          "id": 1491,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 421
         },
         {
-          "id": 1480,
+          "id": 1483,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 418
         },
         {
-          "id": 1111,
+          "id": 1114,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 233
         },
         {
-          "id": 1112,
+          "id": 1115,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 223
         },
         {
-          "id": 1118,
+          "id": 1121,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -428,13 +428,13 @@
         "max": 7
       },
       "total_raw": 471,
-      "total_valid": 327,
+      "total_valid": 328,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1647,
+          "id": 1650,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1648,
+          "id": 1651,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 1662,
+          "id": 1665,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 349
         },
         {
-          "id": 1657,
+          "id": 1660,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 315
         },
         {
-          "id": 1639,
+          "id": 1642,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 189
         },
         {
-          "id": 1627,
+          "id": 1630,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 981
         },
         {
-          "id": 1628,
+          "id": 1631,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1633,
+          "id": 1636,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1357,
+          "id": 1360,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 460
         },
         {
-          "id": 1667,
+          "id": 1670,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 386
         },
         {
-          "id": 1534,
+          "id": 1537,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 384
         },
         {
-          "id": 1183,
+          "id": 1186,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 300
         },
         {
-          "id": 1247,
+          "id": 1250,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 296
         },
         {
-          "id": 1206,
+          "id": 1209,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 217
         },
         {
-          "id": 1668,
+          "id": 1671,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 212
         },
         {
-          "id": 1192,
+          "id": 1195,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 210
         },
         {
-          "id": 1265,
+          "id": 1268,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 65
         },
         {
-          "id": 1294,
+          "id": 1297,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 50,
-      "total_valid": 43,
+      "total_raw": 51,
+      "total_valid": 44,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1676,
+          "id": 1681,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -759,6 +759,21 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
+          "title": "Buyers Want to Pay Later. Suppliers Want Cash Earlier. Who Funds the Difference?",
+          "link": "https://www.pymnts.com/news/b2b-payments/2026/buyers-want-to-pay-later-suppliers-want-cash-earlier-who-funds-the-difference/",
+          "content": "The oldest tension in B2B payments is becoming one of its newest business models. A dollar cannot simultaneously stay longer on the buyer’s balance sheet and arrive earlier on the supplier’s balance sheet unless somebody finances the interval. And while the modernization of B2B payments is well underway, with checks steadily losing ground to ACH, virtual [&#8230;] The post Buyers Want to Pay Later. Suppliers Want Cash Earlier. Who Funds the Difference? appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 25 Sep 2026 00:17:37 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 487
+        },
+        {
+          "id": 1684,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
           "title": "5 Things to Know as Banks Connect Tokenized Deposits",
           "link": "https://www.pymnts.com/cryptocurrency/2026/5-things-to-know-banks-connect-tokenized-deposits/",
           "content": "Tokenized deposits have reached the point where banks can begin finding out what works and what needs work. Seven banks in the United Kingdom participated in the first live customer transactions using tokenized sterling deposits, including two remortgage completions and a consumer marketplace purchase, according to a Thursday (Sept. 24) press release. The transactions were [&#8230;] The post 5 Things to Know as Banks Connect Tokenized Deposits appeared first on PYMNTS.com .",
@@ -769,7 +784,7 @@
           "word_count": 478
         },
         {
-          "id": 1680,
+          "id": 1685,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -789,6 +804,21 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
+          "title": "Revolut Wins Central Bank Approval to Acquire Argentine Bank",
+          "link": "https://www.pymnts.com/news/banking/2026/revolut-wins-central-bank-approval-to-acquire-argentine-bank/",
+          "content": "Revolut is moving ahead with the completion of its acquisition of Argentine bank Banco Cetelem Argentina S.A. after receiving approval from the Central Bank of Argentina, the company said in a Thursday (Sept. 24) press release. Revolut is acquiring the bank from BNP Paribas Personal Finance and is building its local operations in Argentina in [&#8230;] The post Revolut Wins Central Bank Approval to Acquire Argentine Bank appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 25 Sep 2026 00:41:08 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 455
+        },
+        {
+          "id": 1683,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
           "title": "FedNow Opens Door to Cross-Border Instant Payments",
           "link": "https://www.pymnts.com/real-time-payments/2026/fednow-opens-door-to-cross-border-instant-payments/",
           "content": "The Federal Reserve is taking its instant payment system global. Federal Reserve Financial Services said Wednesday (Sept. 23) that the FedNow® Service will soon support cross-border transactions. The move is the first major step beyond U.S. borders for FedNow since it launched in July 2023. Until now, the service has handled only domestic payments. The [&#8230;] The post FedNow Opens Door to Cross-Border Instant Payments appeared first on PYMNTS.com .",
@@ -799,7 +829,7 @@
           "word_count": 455
         },
         {
-          "id": 1732,
+          "id": 1735,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +844,7 @@
           "word_count": 402
         },
         {
-          "id": 1731,
+          "id": 1734,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +859,7 @@
           "word_count": 360
         },
         {
-          "id": 1733,
+          "id": 1736,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +874,7 @@
           "word_count": 331
         },
         {
-          "id": 1707,
+          "id": 1710,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +889,7 @@
           "word_count": 283
         },
         {
-          "id": 1709,
+          "id": 1712,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +904,7 @@
           "word_count": 275
         },
         {
-          "id": 1712,
+          "id": 1715,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +919,7 @@
           "word_count": 257
         },
         {
-          "id": 1697,
+          "id": 1700,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +934,7 @@
           "word_count": 241
         },
         {
-          "id": 1713,
+          "id": 1716,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +949,7 @@
           "word_count": 226
         },
         {
-          "id": 1686,
+          "id": 1689,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +964,7 @@
           "word_count": 180
         },
         {
-          "id": 1695,
+          "id": 1698,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +979,7 @@
           "word_count": 179
         },
         {
-          "id": 1687,
+          "id": 1690,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +994,7 @@
           "word_count": 153
         },
         {
-          "id": 95,
+          "id": 98,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +1009,7 @@
           "word_count": 104
         },
         {
-          "id": 1737,
+          "id": 1740,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +1024,7 @@
           "word_count": 491
         },
         {
-          "id": 1741,
+          "id": 1744,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1007,36 +1037,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 181
-        },
-        {
-          "id": 270,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Towards Expert Financial QA via Self-Improving RAG",
-          "link": "https://arxiv.org/abs/2608.26706",
-          "content": "arXiv:2608.26706v2 Announce Type: replace Abstract: Expert-level financial question answering requires both grounded verification to catch numeric hallucinations and audit trails for regulatory compliance, attributes that standard single-pass RAG systems lack. We take a step toward this goal with Self-Improving RAG, a framework that decomposes document QA into three specialized agents (Retrieval, Reasoning, and Judge) coordinated by an orchestrator with feedback-driven self-correction. When the Judge Agent scores an answer below a dynamic threshold, the system triggers retry with escalated strategies: broader retrieval, more careful prompting, and relaxed acceptance criteria. We evaluate on FinanceBench (SEC filing QA), where Self-Improving RAG achieves 86% oracle-guided accuracy (measuring agreement with gold answers) with a 36.4% Lazarus Rate, recovering nearly 4 in 10 initially incorrect answers through targeted retry. A key finding is that a fixed retrieval pipeline with judge-driven retry achieves strong results without dynamic routing, providing full interpretability. Every decision is logged with confidence scores, enabling the audit trails required for regulated financial a",
-          "pub_date": "Thu, 24 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 499,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Reducing Hallucinations in Large Language Models Through Integrated Self-Verification and Retrieval-Augmented Generation",
-          "link": "https://arxiv.org/abs/2609.26229",
-          "content": "arXiv:2609.26229v1 Announce Type: cross Abstract: Large Language Models (LLMs) are progressively used for advanced engineering tasks, includes Computer-Aided Design (CAD) documentation, standards compliance verification, and knowledge retrieval. Still, they are prone to produce hallucinations, outputs that seem convincing but aren't based on context that limit their trustworthiness in high-end engineering applications where precision and compliance are crucial. The paper introduces CoVe-RAG+, a unified framework that integrates Chain-of-Verification (CoVe) with Retrieval-Augmented Generation (RAG) to mitigate hallucinations in the results generated by large language models (LLMs). CoVe-RAG+ supports LLM verification in external sources of authority, such as engineering standards, CAD information, and simulation reports, while applying an iterative self-verification process to validate important claims. CoVe-RAG+ is assessed on engineering activities such as CAD model documentation, standards compliance verification, and the reutilization of historical design data. Experimental findings indicate a 28% improvement in factual accuracy relative to baseline CoVe and RAG methodologies. M",
-          "pub_date": "Thu, 24 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1050,9 +1050,9 @@
     }
   },
   "meta": {
-    "total_raw": 1912,
-    "dup": 284,
-    "nocontent": 390,
+    "total_raw": 1915,
+    "dup": 283,
+    "nocontent": 392,
     "noise": 5
   }
 }
