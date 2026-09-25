@@ -95,7 +95,22 @@
           "word_count": 191
         },
         {
-          "id": 79,
+          "id": 78,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
+          "link": "https://arxiv.org/abs/2609.28416",
+          "content": "Recent advances in large language models (LLMs) have enabled agents to tackle long-horizon tasks across diverse environments. To further improve agent performance, existing language world models typically predict environment observations, yet reconstructing high-entropy, execution-dependent tool responses offers limited value when real feedback is available. Meanwhile, agents suffer from task-state contamination, where unsupported assumptions and outdated plans persist in history and distort subsequent decisions. We propose the Agent-Editing World Model (AEWM), which models how reasoning and actions shape future task progress rather than simulating tool responses. AEWM combines Action Judge to distinguish Critical, Exploratory, and Noisy decisions with State Revision to edit noisy reasoning--action continuations from the same observed history. EditAct integrates these capabilities with real execution, directly changing the state underlying subsequent decisions rather than merely providing critiques. We train AEWM across Search, Terminal, and Software Engineering through mid-training and supervised fine-tuning. AEWM achieves 70.5\\% macro-F1 on our Action Judge benchmark, exceeding t",
+          "pub_date": "2026-09-22T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 82,
+          "id": 84,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -119,21 +134,6 @@
           "link": "https://arxiv.org/abs/2609.26637",
           "content": "The rapid capability gains of frontier language models are widely attributed to improved reasoning abilities, yet this cannot be verified as raw CoT traces in closed-source systems are hidden. By registering a simple custom tool through a standard API feature, we induce frontier models to externalize intermediate reasoning. Because these traces may reflect post-hoc rationalization rather than genuine reasoning, we first evaluate against native CoT on open-source models and extend to closed-source frontier models including GPT-6 Astra. We find that the extracted reasoning matches native reasoning performance and substantially outperforms no-reasoning baselines, across competition mathematics, science, and code generation. We then characterize how frontier models structure their intermediate reasoning. Across token efficiency, reasoning-step types, and induced reasoning trees, we identify systematic differences in how models externalize, compress, and organize reasoning. We find that Astra exhibits token-efficient directed reasoning, selecting a correct trajectory earlier, while resolving elementary steps internally and externalizing only crucial reasoning. These findings provide a b",
           "pub_date": "2026-09-21T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 83,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "X-Planner: Event-Structured Task Planning for Embodied Intelligence",
-          "link": "https://arxiv.org/abs/2609.25187",
-          "content": "Task planning bridges high-level instructions and executable behavior in long-horizon manipulation, yet modern Vision-Language-Action (VLA) systems often leave this intermediate structure implicit. Existing chain-of-thought (CoT) planners also tend to rely on coarse task-level annotations or serialize long reasoning traces token by token. We present X-Planner, a planning front-end that addresses both the supervision and representation of embodied reasoning. Our planning data combine Ego, UMI, and teleoperation under a hierarchy granularity with source-dependent annotation depth. Takeover-time annotations and human-designed failures supervise ongoing error recognition. On the model side, a shared VLM backbone exposes two event-structured plan forms: a discrete interface that emits interpretable event states and a latent interface that relays continuous CoT states across staggered Transformer depths through Staircase Decoding. A frozen latent-to-text reconstruction objective provides a semantic anchor for the latent representation. Offline two-step planning evaluation places X-Planner second among four evaluated models on both BERTScore-F1 and a judge-based Overall score. In real-rob",
-          "pub_date": "2026-09-20T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1111,
-      "total_valid": 849,
+      "total_valid": 848,
       "total_candidates": 12
     },
     "vaccine": {
@@ -979,6 +979,21 @@
           "word_count": 179
         },
         {
+          "id": 1685,
+          "source": "PaymentsDive",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Moov adds P2P competition",
+          "link": "https://www.paymentsdive.com/news/moov-adds-p2p-competition/831268/",
+          "content": "Using Mastercard and Visa&rsquo;s digital infrastructure, the tool facilitates peer-to-peer payments without requiring both parties to have the same app.",
+          "pub_date": "Thu, 24 Sep 2026 10:51:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 153
+        },
+        {
           "id": 95,
           "source": "TechCrunch AI",
           "section": "payment",
@@ -995,6 +1010,21 @@
         },
         {
           "id": 1734,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Compliance becomes real-time for fiat and stablecoins",
+          "link": "https://www.thunes.com/insights/learn/compliance-becomes-real-time-for-fiat-and-stablecoins/",
+          "content": "Payment infrastructure is getting faster and more interconnected. Now, compliance has to keep up.&#160; Fiat payments can move funds in seconds, while stablecoins now support 24/7 settlement. Through interoperable payment infrastructure, the two can also form part of the same journey, with value moving between stablecoin and fiat rails before funds reach the recipient. That ... Read more &#187; The post Compliance becomes real-time for fiat and stablecoins first appeared on Thunes.com .",
+          "pub_date": "Wed, 23 Sep 2026 07:18:42 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 491
+        },
+        {
+          "id": 1738,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1007,36 +1037,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 181
-        },
-        {
-          "id": 270,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Towards Expert Financial QA via Self-Improving RAG",
-          "link": "https://arxiv.org/abs/2608.26706",
-          "content": "arXiv:2608.26706v2 Announce Type: replace Abstract: Expert-level financial question answering requires both grounded verification to catch numeric hallucinations and audit trails for regulatory compliance, attributes that standard single-pass RAG systems lack. We take a step toward this goal with Self-Improving RAG, a framework that decomposes document QA into three specialized agents (Retrieval, Reasoning, and Judge) coordinated by an orchestrator with feedback-driven self-correction. When the Judge Agent scores an answer below a dynamic threshold, the system triggers retry with escalated strategies: broader retrieval, more careful prompting, and relaxed acceptance criteria. We evaluate on FinanceBench (SEC filing QA), where Self-Improving RAG achieves 86% oracle-guided accuracy (measuring agreement with gold answers) with a 36.4% Lazarus Rate, recovering nearly 4 in 10 initially incorrect answers through targeted retry. A key finding is that a fixed retrieval pipeline with judge-driven retry achieves strong results without dynamic routing, providing full interpretability. Every decision is logged with confidence scores, enabling the audit trails required for regulated financial a",
-          "pub_date": "Thu, 24 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 499,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Reducing Hallucinations in Large Language Models Through Integrated Self-Verification and Retrieval-Augmented Generation",
-          "link": "https://arxiv.org/abs/2609.26229",
-          "content": "arXiv:2609.26229v1 Announce Type: cross Abstract: Large Language Models (LLMs) are progressively used for advanced engineering tasks, includes Computer-Aided Design (CAD) documentation, standards compliance verification, and knowledge retrieval. Still, they are prone to produce hallucinations, outputs that seem convincing but aren't based on context that limit their trustworthiness in high-end engineering applications where precision and compliance are crucial. The paper introduces CoVe-RAG+, a unified framework that integrates Chain-of-Verification (CoVe) with Retrieval-Augmented Generation (RAG) to mitigate hallucinations in the results generated by large language models (LLMs). CoVe-RAG+ supports LLM verification in external sources of authority, such as engineering standards, CAD information, and simulation reports, while applying an iterative self-verification process to validate important claims. CoVe-RAG+ is assessed on engineering activities such as CAD model documentation, standards compliance verification, and the reutilization of historical design data. Experimental findings indicate a 28% improvement in factual accuracy relative to baseline CoVe and RAG methodologies. M",
-          "pub_date": "Thu, 24 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1044,14 +1044,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 245,
-      "total_valid": 57,
+      "total_raw": 249,
+      "total_valid": 59,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1904,
-    "dup": 280,
+    "total_raw": 1908,
+    "dup": 283,
     "nocontent": 390,
     "noise": 5
   }
