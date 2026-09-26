@@ -50,7 +50,22 @@
           "word_count": 116
         },
         {
-          "id": 99,
+          "id": 47,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Advancing Private AI Compute with secure, server-side memory",
+          "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+          "content": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+          "pub_date": "Wed, 23 Sep 2026 16:00:57 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 78
+        },
+        {
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 546
         },
         {
-          "id": 103,
+          "id": 106,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 546
         },
         {
-          "id": 96,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +110,7 @@
           "word_count": 278
         },
         {
-          "id": 79,
+          "id": 82,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 80,
+          "id": 83,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 82,
+          "id": 85,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1040,
+          "id": 1043,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 901
         },
         {
-          "id": 1049,
+          "id": 1052,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 618
-        },
-        {
-          "id": 1050,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting @therealcornpop",
-          "link": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
-          "content": "Hey, you know it's like super obvious if you're using AI to write your scripts for TikTok and YouTube, right? [...] It's not just the general AI-isms of \"it's not X, it's Y\", or the rule of three, or the really weird broken staccato-like way of writing where you just say a lot of things with all these punctuation marks. and it sounds really deep, but it's not. It's the lack of anything . It's the lack of a definitive sort of spear of your voice. It's the fact I can tell you don't have opinions about the thing that you're talking about. &mdash; @therealcornpop , on TikTok Tags: tiktok , ai , ai-misuse",
-          "pub_date": "2026-09-22T18:03:21+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 607
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1154,
-      "total_valid": 736,
+      "total_raw": 1157,
+      "total_valid": 737,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1292,
+          "id": 1294,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 745
         },
         {
-          "id": 1277,
+          "id": 1279,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 662
         },
         {
-          "id": 1398,
+          "id": 1400,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 355
         },
         {
-          "id": 1592,
+          "id": 1594,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 355
         },
         {
-          "id": 1593,
+          "id": 1595,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 335
         },
         {
-          "id": 1583,
+          "id": 1585,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 217
         },
         {
-          "id": 1373,
+          "id": 1375,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 127
         },
         {
-          "id": 1414,
+          "id": 1416,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 106
         },
         {
-          "id": 1589,
+          "id": 1591,
           "source": "Science Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 58
         },
         {
-          "id": 1544,
+          "id": 1546,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 369
         },
         {
-          "id": 1549,
+          "id": 1551,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 366
         },
         {
-          "id": 1548,
+          "id": 1550,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 365
         },
         {
-          "id": 1155,
+          "id": 1158,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 240
         },
         {
-          "id": 1172,
+          "id": 1175,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 225
         },
         {
-          "id": 1188,
+          "id": 1192,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 489,
-      "total_valid": 346,
+      "total_raw": 488,
+      "total_valid": 345,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1671,
+          "id": 1673,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 192
         },
         {
-          "id": 1655,
+          "id": 1657,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 144
         },
         {
-          "id": 1712,
+          "id": 1714,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1713,
+          "id": 1715,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1714,
+          "id": 1716,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1730,
+          "id": 1732,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 556
         },
         {
-          "id": 1704,
+          "id": 1706,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 487
         },
         {
-          "id": 1691,
+          "id": 1693,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1699,
+          "id": 1701,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1702,
+          "id": 1704,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1292,
+          "id": 1294,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 745
         },
         {
-          "id": 1285,
+          "id": 1287,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 610
         },
         {
-          "id": 1730,
+          "id": 1732,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 556
         },
         {
-          "id": 1282,
+          "id": 1284,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 426
         },
         {
-          "id": 1299,
+          "id": 1301,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 398
         },
         {
-          "id": 1594,
+          "id": 1596,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 373
         },
         {
-          "id": 1591,
+          "id": 1593,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 359
         },
         {
-          "id": 1736,
+          "id": 1738,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 276
         },
         {
-          "id": 1737,
+          "id": 1739,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 256
         },
         {
-          "id": 1253,
+          "id": 1255,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 54,
-      "total_valid": 47,
+      "total_raw": 53,
+      "total_valid": 46,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1744,
+          "id": 1746,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 520
         },
         {
-          "id": 1754,
+          "id": 1756,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 455
         },
         {
-          "id": 1781,
+          "id": 1783,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 266
         },
         {
-          "id": 1761,
+          "id": 1763,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 202
         },
         {
-          "id": 1783,
+          "id": 1785,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 190
         },
         {
-          "id": 1765,
+          "id": 1767,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 145
         },
         {
-          "id": 1770,
+          "id": 1772,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 131
         },
         {
-          "id": 1756,
+          "id": 1758,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 129
         },
         {
-          "id": 1788,
+          "id": 1790,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,22 +904,7 @@
           "word_count": 118
         },
         {
-          "id": 1805,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "How PSPs Can Reduce Integration Complexity Through Interoperability",
-          "link": "https://www.thunes.com/insights/learn/how-psps-can-reduce-integration-complexity-through-interoperability/",
-          "content": "Expanding payout coverage should create opportunities for Payment Service Providers (PSPs). But for a PSP that already has strong payout coverage across its home region, expansion beyond that footprint can create a new challenge. To compete for enterprise clients against global PSPs with broader existing reach, regional providers may need to add new markets, corridors ... Read more &#187; The post How PSPs Can Reduce Integration Complexity Through Interoperability first appeared on Thunes.com .",
-          "pub_date": "Fri, 25 Sep 2026 06:57:42 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 499
-        },
-        {
-          "id": 1020,
+          "id": 1023,
           "source": "Latent Space",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 161
         },
         {
-          "id": 324,
+          "id": 327,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 358,
+          "id": 361,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 401,
+          "id": 404,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 593,
+          "id": 596,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 707,
+          "id": 710,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 846,
+          "id": 849,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 208,
+          "id": 211,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1024,7 @@
           "word_count": 1199
         },
         {
-          "id": 588,
+          "id": 591,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1039,7 @@
           "word_count": 1108
         },
         {
-          "id": 412,
+          "id": 415,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1067,6 +1052,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1061
+        },
+        {
+          "id": 177,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "YODAS v3: Over 1 Million Hours of High-Bandwidth, Stereophonic, Multilingual Speech",
+          "link": "https://arxiv.org/abs/2609.29448",
+          "content": "arXiv:2609.29448v1 Announce Type: new Abstract: We present YODAS v3, a weakly-labeled speech corpus containing over 1.1 million hours of 48kHz multi-channel audio in 147 languages, released under a CC BY 3.0 license. YODAS v3 is not only the largest open speech dataset to date, but also the first truly large-scale speech corpus with high-fidelity stereo audio. We first provide the collection methodology for the corpus, where we introduce new techniques for gathering language-balanced speech data. The effectiveness of our approach is shown by the language distribution of the crawled data: 22 languages in YODAS v3 have over 10K hours and 73 languages have over 5K hours of data. We then conduct extensive analyses on the composition of the data, such as the distribution of languages, audio quality, and transcription quality. Finally, we train baseline speech recognition and neural codec models to show the effectiveness of the dataset. Download at https://huggingface.co/datasets/espnet/yodas3.",
+          "pub_date": "Fri, 25 Sep 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1003
         }
       ],
       "quota": {
@@ -1074,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 246,
-      "total_valid": 50,
+      "total_raw": 241,
+      "total_valid": 49,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1978,
-    "dup": 438,
-    "nocontent": 401,
+    "total_raw": 1975,
+    "dup": 434,
+    "nocontent": 403,
     "noise": 5
   }
 }
