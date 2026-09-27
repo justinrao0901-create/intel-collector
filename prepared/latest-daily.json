@@ -50,7 +50,22 @@
           "word_count": 106
         },
         {
-          "id": 109,
+          "id": 47,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Advancing Private AI Compute with secure, server-side memory",
+          "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+          "content": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+          "pub_date": "Wed, 23 Sep 2026 16:00:57 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 78
+        },
+        {
+          "id": 112,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 233
         },
         {
-          "id": 105,
+          "id": 108,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 156
         },
         {
-          "id": 108,
+          "id": 111,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +110,7 @@
           "word_count": 153
         },
         {
-          "id": 84,
+          "id": 87,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 85,
+          "id": 88,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 87,
+          "id": 90,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 489,
+          "id": 492,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 492,
+          "id": 495,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 274
-        },
-        {
-          "id": 478,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "🔬 An Oscar, Two Asteroids, and the Algorithm in Your sklearn: John Platt on AI for Science",
-          "link": "https://www.latent.space/p/john-platt",
-          "content": "We talked to Google&#8217;s Oscar winning &#8220;Giganerd&#8221; about automating science, solving climate change, and how future generations can contribute to science in the age of superintelligent AI",
-          "pub_date": "Tue, 22 Sep 2026 21:07:39 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 201
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 601,
-      "total_valid": 378,
+      "total_raw": 604,
+      "total_valid": 379,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 981,
+          "id": 983,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 200
         },
         {
-          "id": 982,
+          "id": 984,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 199
         },
         {
-          "id": 963,
+          "id": 965,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 346
         },
         {
-          "id": 896,
+          "id": 898,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 343
         },
         {
-          "id": 967,
+          "id": 969,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 327
         },
         {
-          "id": 629,
+          "id": 631,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 311
         },
         {
-          "id": 602,
+          "id": 605,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -302,7 +302,7 @@
           "word_count": 242
         },
         {
-          "id": 1044,
+          "id": 1046,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 176
         },
         {
-          "id": 624,
+          "id": 627,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 171
         },
         {
-          "id": 623,
+          "id": 626,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 153
         },
         {
-          "id": 627,
+          "id": 630,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 128
         },
         {
-          "id": 617,
+          "id": 620,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 58
         },
         {
-          "id": 801,
+          "id": 803,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 1200
         },
         {
-          "id": 812,
+          "id": 814,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 1200
         },
         {
-          "id": 815,
+          "id": 817,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 470,
-      "total_valid": 314,
+      "total_raw": 469,
+      "total_valid": 313,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1113,
+          "id": 1115,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 255
         },
         {
-          "id": 1114,
+          "id": 1116,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 175
         },
         {
-          "id": 1111,
+          "id": 1113,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 1145,
+          "id": 1147,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1124,
+          "id": 1126,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -521,7 +521,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 636,
+          "id": 638,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 209
         },
         {
-          "id": 637,
+          "id": 639,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 205
         },
         {
-          "id": 632,
+          "id": 634,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 197
         },
         {
-          "id": 952,
+          "id": 954,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 171
         },
         {
-          "id": 946,
+          "id": 948,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 170
         },
         {
-          "id": 900,
+          "id": 902,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 164
         },
         {
-          "id": 61,
+          "id": 64,
           "source": "NVIDIA Blog",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 364
         },
         {
-          "id": 1040,
+          "id": 1042,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -641,7 +641,7 @@
           "word_count": 199
         },
         {
-          "id": 612,
+          "id": 615,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -656,7 +656,7 @@
           "word_count": 80
         },
         {
-          "id": 257,
+          "id": 260,
           "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
@@ -694,7 +694,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1205,
+          "id": 1207,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 100
         },
         {
-          "id": 1176,
+          "id": 1178,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 522
         },
         {
-          "id": 1179,
+          "id": 1181,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 488
         },
         {
-          "id": 1177,
+          "id": 1179,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 469
         },
         {
-          "id": 1181,
+          "id": 1183,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 454
         },
         {
-          "id": 1183,
+          "id": 1185,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 452
         },
         {
-          "id": 1182,
+          "id": 1184,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 444
         },
         {
-          "id": 1190,
+          "id": 1192,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 314
         },
         {
-          "id": 1191,
+          "id": 1193,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 300
         },
         {
-          "id": 1192,
+          "id": 1194,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 248
         },
         {
-          "id": 1194,
+          "id": 1196,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 222
         },
         {
-          "id": 1189,
+          "id": 1191,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,19 +874,19 @@
           "word_count": 210
         },
         {
-          "id": 1184,
+          "id": 1186,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
           "title": "Kroger’s AI focus is on ‘flexibility and control’",
           "link": "https://www.paymentsdive.com/news/kroger-ai-technology-groceryshop/831391/",
-          "content": "From bridging the digital and physical shopping worlds to further ramping up effective personalization, the grocer&rsquo;s chief digital officer delved into the company&rsquo;s priorities.",
+          "content": "From bridging the digital and physical shopping worlds to further ramping effective personalization, the grocer&rsquo;s chief digital officer delved into the company&rsquo;s priorities.",
           "pub_date": "Fri, 25 Sep 2026 10:40:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 188
+          "word_count": 185
         }
       ],
       "quota": {
@@ -894,15 +894,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 211,
+      "total_raw": 206,
       "total_valid": 19,
       "total_candidates": 13
     }
   },
   "meta": {
-    "total_raw": 1384,
-    "dup": 264,
-    "nocontent": 399,
+    "total_raw": 1381,
+    "dup": 259,
+    "nocontent": 401,
     "noise": 5
   }
 }
