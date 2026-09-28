@@ -80,7 +80,22 @@
           "word_count": 108
         },
         {
-          "id": 90,
+          "id": 79,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+          "link": "https://arxiv.org/abs/2609.31620",
+          "content": "Representation autoencoders (RAEs) reuse features from a pretrained visual encoder as reconstruction and diffusion latents, integrating strong visual representations into image generation. However, RAEs still need to decide which encoder layers form the shared latent space for the generator and pixel decoder. This choice involves a trade-off. Shallower layers tend to preserve fine pixel details better, while deeper layers tend to yield better generation metrics. A fixed heuristic layer fusion therefore couples two stages that benefit from different information. We introduce FuseReg, which replaces heuristic feature selection with training over random subsets of encoder layers. We theoretically analyze the underlying mechanism: subset sampling explicitly penalizes sensitivity to cross-layer disagreement. On ImageNet-256 with DINOv3-L, a single FuseReg decoder reconstructs from full, sparse, and single-layer fusions without retraining, achieving higher PSNR than decoders specialized to fixed fusions. This flexibility also benefits generation: decoder replacement alone reduces unguided gFID by 27% with an unchanged RAEv2 DiT-XL generator. The same regularization principle extends to d",
+          "pub_date": "2026-09-24T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 91,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 91,
+          "id": 92,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -104,21 +119,6 @@
           "link": "https://arxiv.org/abs/2609.28923",
           "content": "Few-step autoregressive (AR) video diffusion enables low-latency streaming generation, but existing post-training methods predominantly rely on Distribution Matching Distillation (DMD), requiring both a large pretrained teacher and an online critic to estimate distributional discrepancies through diffusion scores. In this work, we ask whether this resource-intensive teacher--critic stack can be eliminated by post-training only the generator against a precomputed target distribution. Drawing inspiration from representation distribution matching (RDM) for one-step image generation, we systematically study its transfer to few-step causal video generation and identify three key barriers: a memory-intractable gradient path, a distinct video optimization regime, and representation distributions that underconstrain temporal dynamics. We introduce ViRDM, a teacher- and critic-free video post-training recipe that addresses these barriers sequentially. By coupling RDM with stochastically truncated clean-exit supervision, a lightweight VAE decoder, and staged vector--Jacobian products, ViRDM makes representation distribution matching memory-feasible for multi-step causal video rollouts. We fu",
           "pub_date": "2026-09-23T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 92,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "AgentKernel: The Trust-Native Agentic Operating System",
-          "link": "https://arxiv.org/abs/2609.29647",
-          "content": "Modern AI agents routinely cross trust boundaries: they ingest untrusted content, combine it with privileged instructions, persist intermediate beliefs in long-term memory, and invoke privileged tools. This creates an attack surface in which malicious payloads can enter through model inputs and cause harmful tool actions. Yet current governance stacks remain application-level middleware that share a process trust boundary with the agents they monitor. We argue that agents need an operating-system substrate providing mandatory, non-bypassable services for identity, input mediation, memory governance, and execution control. We introduce AgentKernel, a trust-native agent operating system built around the premise that security must be a first-class design constraint. AgentKernel wraps the agent lifecycle in a mandatory enforcement boundary organized into four pillars: Identity, Perception, Cognition, and Execution. Each pillar adapts classical OS security principles to failures at the semantic plane, including delegation abuse, prompt injection, memory poisoning, and tool misuse. AgentKernel treats structural security as a capability multiplier. Kernel-managed identity supports trustwo",
-          "pub_date": "2026-08-28T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -140,7 +140,7 @@
           "word_count": 180
         },
         {
-          "id": 154,
+          "id": 155,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 161
         },
         {
-          "id": 159,
+          "id": 160,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 256,
-      "total_valid": 32,
+      "total_raw": 257,
+      "total_valid": 33,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 537,
+          "id": 538,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 512
         },
         {
-          "id": 565,
+          "id": 566,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 499
         },
         {
-          "id": 566,
+          "id": 567,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 475
         },
         {
-          "id": 467,
+          "id": 468,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 1021
         },
         {
-          "id": 366,
+          "id": 367,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 705
         },
         {
-          "id": 453,
+          "id": 454,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 688
         },
         {
-          "id": 458,
+          "id": 459,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 610
         },
         {
-          "id": 375,
+          "id": 376,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 525
         },
         {
-          "id": 356,
+          "id": 357,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 518
         },
         {
-          "id": 374,
+          "id": 375,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 512
         },
         {
-          "id": 364,
+          "id": 365,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 499
         },
         {
-          "id": 479,
+          "id": 480,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 476
         },
         {
-          "id": 641,
+          "id": 642,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 457
         },
         {
-          "id": 307,
+          "id": 308,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 441
         },
         {
-          "id": 313,
+          "id": 314,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 735,
+          "id": 736,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 193
         },
         {
-          "id": 742,
+          "id": 743,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 189
         },
         {
-          "id": 722,
+          "id": 723,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -491,7 +491,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 272,
+          "id": 273,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 196
         },
         {
-          "id": 271,
+          "id": 272,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 195
         },
         {
-          "id": 308,
+          "id": 309,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 194
         },
         {
-          "id": 338,
+          "id": 339,
           "source": "NEJM",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 91
         },
         {
-          "id": 565,
+          "id": 566,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 499
         },
         {
-          "id": 500,
+          "id": 501,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 511,
+          "id": 512,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 518,
+          "id": 519,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 532,
+          "id": 533,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -631,7 +631,7 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 32,
+      "total_raw": 26,
       "total_valid": 17,
       "total_candidates": 9
     },
@@ -649,7 +649,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 836,
+          "id": 831,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -664,7 +664,7 @@
           "word_count": 364
         },
         {
-          "id": 837,
+          "id": 832,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +679,7 @@
           "word_count": 336
         },
         {
-          "id": 829,
+          "id": 824,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 124
         },
         {
-          "id": 821,
+          "id": 816,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 514
         },
         {
-          "id": 817,
+          "id": 812,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 476
         },
         {
-          "id": 815,
+          "id": 810,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 469
         },
         {
-          "id": 814,
+          "id": 809,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 468
         },
         {
-          "id": 816,
+          "id": 811,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 459
         },
         {
-          "id": 818,
+          "id": 813,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 449
         },
         {
-          "id": 823,
+          "id": 818,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 208
         },
         {
-          "id": 822,
+          "id": 817,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 112
         },
         {
-          "id": 830,
+          "id": 825,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 84
         },
         {
-          "id": 835,
+          "id": 830,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -849,15 +849,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 191,
+      "total_raw": 196,
       "total_valid": 15,
       "total_candidates": 13
     }
   },
   "meta": {
     "total_raw": 1004,
-    "dup": 262,
-    "nocontent": 405,
+    "dup": 267,
+    "nocontent": 399,
     "noise": 4
   }
 }
