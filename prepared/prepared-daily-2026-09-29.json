@@ -100,9 +100,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Diffusion Reward Models",
-          "link": "https://arxiv.org/abs/2609.33803",
-          "content": "Reward models underpin the alignment of large language models, yet the dominant designs reduce each prompt--response pair to a point estimate or to a distribution from a fixed parametric family. This is at odds with human preference, which is inherently multimodal: the same response can be reasonably judged in many ways, and no single family covers all of them. To better fit this structure, we introduce DRM, a Diffusion Reward Model that recasts reward modeling as conditional density estimation over p(rmid x,y). Conditioned on a frozen LLM encoder, a lightweight Diffusion Transformer denoises Gaussian noise into a reward vector, placing no parametric assumption on the output distribution and naturally representing its multimodal structure. A single architecture handles both multi-attribute regression and pairwise preference data, and at inference N samples form an empirical reward distribution that can be aggregated into a scalar, a variance, or quantiles. Across five benchmarks, DRM matches or surpasses baselines under matched data and backbone, stays competitive with much larger discriminative, distributional, and generative RMs despite its modest training scale, and recovers mul",
+          "title": "ControlScope: Workflow Revision and Reliability in LLM Agents",
+          "link": "https://arxiv.org/abs/2609.34313",
+          "content": "How much of a running workflow should a language model agent revise? ControlScope compares continuing generated code, editing the next tool call's data arguments, and replacing the unfinished workflow from the same public execution state. The nested permissions separate available repairs from the actions an agent selects. We evaluate one-time and repeated reviews across filesystem tasks, ALFWorld, and AppWorld. Across two source programs per task and three reasoning-reviewer draws on 20 filesystem tasks, FULL completes 15-16 tasks versus 13 for KEEP; across four fast draws it completes 10-13 versus 13. Fresh student-record confirmation reproduces a batch-read repair. ALFWorld fast panels yield KEEP/ARG/FULL scores of 85/86/87 on 87 tasks across 52 scenes and 134/134/127 on 134 tasks across four scenes; reasoning on the 87-task cohort also yields 85/86/87 with substantial review cost. An AppWorld V1 official-test panel of 585 task instances from 195 scenario templates shows small net differences. Frozen replays expose viable agent-written replacements interrupted by later revision in two failed file-organization runs. An offline source-trajectory midpoint comparison shows later revi",
+          "pub_date": "2026-09-27T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 71,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Program-Verified Self-Evolution for Vision-Language Models",
+          "link": "https://arxiv.org/abs/2609.33855",
+          "content": "Self-evolving vision-language models train on questions they generate from unlabeled images. Since these questions have no gold answers, prior methods label them by majority vote over sampled answers or by a model judge. In a human evaluation, we find that 24\\% of majority-vote labels and 18\\% of model-judge labels produced during self-evolution are wrong. To address this problem, we present Verifiable QA Generation for Self-Evolving Models (VQS), which changes how the model judges answers. Instead of voting on an answer, the model parses each image into a structured record, such as a scene graph, a chart table, or a diagram graph. Fixed programs then write a question from the record and compute its answer. The model still acts as a visual checker, but it only confirms the individual facts the program reads, one short claim at a time. These claim-level checks select the parser's training targets, so the parser also improves without labels. Human raters find 94\\% of VQS answers correct, against 76\\% for majority voting. Across ten benchmarks, VQS improves Qwen3-VL by up to 3.18 points at the 2B, 4B, and 8B scales and outperforms the strongest self-evolving baseline at each. Gains ke",
           "pub_date": "2026-09-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -115,25 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
-          "link": "https://arxiv.org/abs/2609.33757",
-          "content": "Symbolic models make melody, harmony, rhythm, and form explicit but typically stop before a finished recording; audio models produce complete songs while leaving composition implicit. We introduce YuE2, which unifies symbolic and audio music generation at frontier quality through symbolic planning. A single AR-NAR Mixture-of-Transformers (MoT) first writes a readable score specifying melody and harmony, expands it into semantic music tokens, and realizes it as full-song audio. In comparisons using the same checkpoint, experts prefer symbolic planning for overall quality and musicality, with 49.3% of overall preferences versus 34.6% without planning. Experts also favor the unified model over a separate language model and diffusion Transformer. On WildSongBench, YuE2 scores 6.73 on SongBench Global Avg, exceeding all evaluated public baselines. Selecting from eight candidates (best-of-8), YuE2 reaches 6.96, the highest observed mean among all evaluated systems. Expert listening further establishes its competitiveness with proprietary song generators, favoring best-of-8 over Suno v4.5 and yielding nearly balanced preferences against Suno v5. To learn this generation process from recor",
+          "title": "Diffusion Reward Models",
+          "link": "https://arxiv.org/abs/2609.33803",
+          "content": "Reward models underpin the alignment of large language models, yet the dominant designs reduce each prompt--response pair to a point estimate or to a distribution from a fixed parametric family. This is at odds with human preference, which is inherently multimodal: the same response can be reasonably judged in many ways, and no single family covers all of them. To better fit this structure, we introduce DRM, a Diffusion Reward Model that recasts reward modeling as conditional density estimation over p(rmid x,y). Conditioned on a frozen LLM encoder, a lightweight Diffusion Transformer denoises Gaussian noise into a reward vector, placing no parametric assumption on the output distribution and naturally representing its multimodal structure. A single architecture handles both multi-attribute regression and pairwise preference data, and at inference N samples form an empirical reward distribution that can be aggregated into a scalar, a variance, or quantiles. Across five benchmarks, DRM matches or surpasses baselines under matched data and backbone, stays competitive with much larger discriminative, distributional, and generative RMs despite its modest training scale, and recovers mul",
           "pub_date": "2026-09-26T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 73,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "AdaTutoRank: Learning to Rerank Document Sets via Adaptive Tutoring Optimization for RAG and Deep Research",
-          "link": "https://arxiv.org/abs/2609.32472",
-          "content": "Document rerankers determine what evidence reaches the downstream model in RAG and deep research, yet mainstream rerankers select by relevance matching, and individually relevant documents rarely constitute the complete, complementary, non-redundant set a complex information need demands. Prior work rewards a set by its aggregate rubric score, shifting the objective from ranking documents to composing sets. Yet that score is one scalar shared by every document in the set, so the supervision is sparse: a redundant document is rewarded with the rest whenever the set scores well, and a decisive one penalized with the rest whenever it does not; credit assignment leaves contributors indistinguishable from free riders. On-policy distillation could densify this supervision, but existing methods give every rollout the same fixed guidance, too prescriptive for strong rollouts and too abstract for weak ones. We therefore propose AdaTutoRank, a setwise reranker trained with Adaptive Tutoring Optimization (ATO) under a three-level hierarchy of nine rubric dimensions, which supplies silver labels for the cold start, rewards for reinforcement learning, and hints for distillation. ATO draws three",
-          "pub_date": "2026-09-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1060,
-      "total_valid": 695,
+      "total_valid": 696,
       "total_candidates": 12
     },
     "vaccine": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 450,
-      "total_valid": 282,
+      "total_valid": 281,
       "total_candidates": 15
     },
     "synbio": {
@@ -859,7 +859,7 @@
           "word_count": 442
         },
         {
-          "id": 1651,
+          "id": 1652,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 314
         },
         {
-          "id": 1652,
+          "id": 1653,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 300
         },
         {
-          "id": 1639,
+          "id": 1640,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 277
         },
         {
-          "id": 1640,
+          "id": 1641,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 243
         },
         {
-          "id": 1642,
+          "id": 1643,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 228
         },
         {
-          "id": 1637,
+          "id": 1638,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -984,6 +984,21 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
+          "title": "Payment revenue growth to slow",
+          "link": "https://www.paymentsdive.com/news/payment-revenue-growth-to-slow/831491/",
+          "content": "The rate of payments-related revenue growth in North America, and globally, will slow in the next four years, a major consulting firm predicts.",
+          "pub_date": "Mon, 28 Sep 2026 10:44:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 143
+        },
+        {
+          "id": 1635,
+          "source": "PaymentsDive",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
           "title": "Stripe alums spark new payments plays",
           "link": "https://www.paymentsdive.com/news/stripe-alums-spark-new-payments-plays/831410/",
           "content": "The digital processor has become a founders&rsquo; factory with former employees seeding startups across the financial technology field.",
@@ -994,7 +1009,7 @@
           "word_count": 136
         },
         {
-          "id": 1636,
+          "id": 1637,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1024,7 @@
           "word_count": 93
         },
         {
-          "id": 1673,
+          "id": 1674,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 483
-        },
-        {
-          "id": 1625,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Blockchain.com Seeks $6 Billion Valuation in IPO as Crypto Rallies",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/blockchain-com-seeks-6-billion-valuation-in-ipo-as-crypto-rallies/",
-          "content": "Crypto services company Blockchain.com aims to go public this year, raise about $500 million in the initial public offering and secure a valuation of between $4 billion and $6 billion in the listing, Bloomberg reported Monday (Sept. 28), citing unnamed sources. Blockchain.com is in talks with potential investors, and the details could change. The company [&#8230;] The post Blockchain.com Seeks $6 Billion Valuation in IPO as Crypto Rallies appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 28 Sep 2026 22:53:21 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 473
         }
       ],
       "quota": {
@@ -1104,13 +1104,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 225,
-      "total_valid": 36,
+      "total_raw": 226,
+      "total_valid": 37,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1842,
+    "total_raw": 1843,
     "dup": 407,
     "nocontent": 405,
     "noise": 4
