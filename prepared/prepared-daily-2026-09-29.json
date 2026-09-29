@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 2,
+          "id": 3,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 250
         },
         {
-          "id": 3,
+          "id": 4,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 166
         },
         {
-          "id": 1,
+          "id": 2,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 164
         },
         {
-          "id": 96,
+          "id": 97,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 323
         },
         {
-          "id": 90,
+          "id": 91,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 228
         },
         {
-          "id": 101,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,52 +95,52 @@
           "word_count": 207
         },
         {
-          "id": 69,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "LastOPD: Taming Collapse in Latent On-Policy Distillation",
-          "link": "https://arxiv.org/abs/2609.28845",
-          "content": "On-policy distillation (OPD) corrects a student on the responses it writes, but its signal is the teacher's next-token distribution: it tells the student what the teacher says but misses how it thinks. Latent supervision promises the missing part by aligning the student's latent states to the teacher's. Recent methods such as OPRD bring this signal into on-policy distillation. However, we observe two failures of this recipe when distilling Qwen3-4B and Qwen3-8B into Qwen3-1.7B-Base. Early gain, late collapse: latent supervision alone lifts MATH-500 accuracy from 25 to 46 in 10 steps, but subsequent training degrades performance down to 11 with no recovery. Better alignment, worse behavior: although the alignment metric steadily improves throughout this collapse, the most aligned model turns out to be the worst performing. Further analysis suggests a mismatch in how the latent signal is applied: layers paired by depth play different roles in the two models, so continued alignment may pull the student toward teacher states it cannot understand. To address this, we propose LastOPD, which applies the latent signal only at the last-layer state, the common interface both LM heads read, a",
-          "pub_date": "2026-09-22T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "TimeEvo: Failure-Driven Self-Evolution of a Time Series Agent",
-          "link": "https://arxiv.org/abs/2609.27277",
-          "content": "Time series agents answer analytical questions by calling external tools, and which tools they carry is decided by people before the agent runs. However, we identify two failures in this setup. Human-Agent Tool Misalignment: a library of 21 expert-curated tools helps on some tasks and hurts on others, dropping anomaly accuracy under every backbone we test. Silent Harm: one round of generic self-revision changes 147 answers and breaks 56 of them, while the final score moves by less than a point. Both follow from the same gap: whether a tool helps is decided question by question at runtime, while tools are supplied in advance and judged by a single average. To address this, we propose TimeEvo, which clusters an agent's diagnosed failures into capability gaps, plans a measurement for each, synthesizes evidence-only tools that fill them, and admits the candidate library only through a paired admission gate. Experiments on ten time series QA tasks and three backbones show that TimeEvo, starting from an empty library, improves accuracy on every task and every backbone, and that a library grown on a cheap model still gains when it is installed into stronger ones. Code is available at http",
-          "pub_date": "2026-09-22T20:00:00.000Z",
+          "title": "Diffusion Reward Models",
+          "link": "https://arxiv.org/abs/2609.33803",
+          "content": "Reward models underpin the alignment of large language models, yet the dominant designs reduce each prompt--response pair to a point estimate or to a distribution from a fixed parametric family. This is at odds with human preference, which is inherently multimodal: the same response can be reasonably judged in many ways, and no single family covers all of them. To better fit this structure, we introduce DRM, a Diffusion Reward Model that recasts reward modeling as conditional density estimation over p(rmid x,y). Conditioned on a frozen LLM encoder, a lightweight Diffusion Transformer denoises Gaussian noise into a reward vector, placing no parametric assumption on the output distribution and naturally representing its multimodal structure. A single architecture handles both multi-attribute regression and pairwise preference data, and at inference N samples form an empirical reward distribution that can be aggregated into a scalar, a variance, or quantiles. Across five benchmarks, DRM matches or surpasses baselines under matched data and backbone, stays competitive with much larger discriminative, distributional, and generative RMs despite its modest training scale, and recovers mul",
+          "pub_date": "2026-09-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 71,
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Not All Ranks Are Equal: Budget-Aware LoRA Merging Across Tasks",
-          "link": "https://arxiv.org/abs/2609.22237",
-          "content": "Merging low-rank adapters (LoRAs) promises to eliminate the overhead of swapping task-specific weights at inference time. However, existing merging methods assume every layer needs the same rank budget. Further, some methods assume that rank budget needs to be split equally among the tasks too. We show this uniform-budget assumption is a major source of the performance gap between merged and per-task LoRAs. However, rank selection is an NP hard problem. To this end, we introduce Net Utility, a data free metric that first decomposes every task LoRA by its Singular Value Decomposition (SVD) and scores each of those singular directions by its task utility and its interference with other tasks directions. Next, we globally pool these scores to select singular directions with the highest values with a constraint on the total number of directions selected. The proposed Net Utility metric is applied on top of five different merging methods across three different merging spaces. The merging is done over two sets of tasks, vision and language tasks. Net utility based rank allocation outperforms its counterparts without that allocation. On average, over vision tasks it achieves +2.1% improve",
-          "pub_date": "2026-09-02T20:00:00.000Z",
+          "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
+          "link": "https://arxiv.org/abs/2609.33757",
+          "content": "Symbolic models make melody, harmony, rhythm, and form explicit but typically stop before a finished recording; audio models produce complete songs while leaving composition implicit. We introduce YuE2, which unifies symbolic and audio music generation at frontier quality through symbolic planning. A single AR-NAR Mixture-of-Transformers (MoT) first writes a readable score specifying melody and harmony, expands it into semantic music tokens, and realizes it as full-song audio. In comparisons using the same checkpoint, experts prefer symbolic planning for overall quality and musicality, with 49.3% of overall preferences versus 34.6% without planning. Experts also favor the unified model over a separate language model and diffusion Transformer. On WildSongBench, YuE2 scores 6.73 on SongBench Global Avg, exceeding all evaluated public baselines. Selecting from eight candidates (best-of-8), YuE2 reaches 6.96, the highest observed mean among all evaluated systems. Expert listening further establishes its competitiveness with proprietary song generators, favoring best-of-8 over Suno v4.5 and yielding nearly balanced preferences against Suno v5. To learn this generation process from recor",
+          "pub_date": "2026-09-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 944,
+          "id": 73,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "AdaTutoRank: Learning to Rerank Document Sets via Adaptive Tutoring Optimization for RAG and Deep Research",
+          "link": "https://arxiv.org/abs/2609.32472",
+          "content": "Document rerankers determine what evidence reaches the downstream model in RAG and deep research, yet mainstream rerankers select by relevance matching, and individually relevant documents rarely constitute the complete, complementary, non-redundant set a complex information need demands. Prior work rewards a set by its aggregate rubric score, shifting the objective from ranking documents to composing sets. Yet that score is one scalar shared by every document in the set, so the supervision is sparse: a redundant document is rewarded with the rest whenever the set scores well, and a decisive one penalized with the rest whenever it does not; credit assignment leaves contributors indistinguishable from free riders. On-policy distillation could densify this supervision, but existing methods give every rollout the same fixed guidance, too prescriptive for strong rollouts and too abstract for weak ones. We therefore propose AdaTutoRank, a setwise reranker trained with Adaptive Tutoring Optimization (ATO) under a three-level hierarchy of nine rubric dimensions, which supplies silver labels for the cold start, rewards for reinforcement learning, and hints for distillation. ATO draws three",
+          "pub_date": "2026-09-25T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 946,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 945,
+          "id": 947,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1132
         },
         {
-          "id": 956,
+          "id": 958,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1058,
-      "total_valid": 690,
+      "total_raw": 1060,
+      "total_valid": 695,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1267,
+          "id": 1269,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 500
         },
         {
-          "id": 1442,
+          "id": 1443,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 458
         },
         {
-          "id": 1266,
+          "id": 1268,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 410
         },
         {
-          "id": 1462,
+          "id": 1463,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 377
         },
         {
-          "id": 1461,
+          "id": 1462,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,22 +272,7 @@
           "word_count": 351
         },
         {
-          "id": 1417,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Engineering a nutrient-uptake protein enhances neutralization and protection toward a gonococcal vaccine",
-          "link": "https://www.nature.com/articles/s41541-026-01570-1",
-          "content": "npj Vaccines, Published online: 28 September 2026; doi:10.1038/s41541-026-01570-1 Engineering a nutrient-uptake protein enhances neutralization and protection toward a gonococcal vaccine",
-          "pub_date": "2026-09-28",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 186
-        },
-        {
-          "id": 1268,
+          "id": 1270,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +287,7 @@
           "word_count": 173
         },
         {
-          "id": 1257,
+          "id": 1259,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +302,7 @@
           "word_count": 157
         },
         {
-          "id": 1406,
+          "id": 1408,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +317,7 @@
           "word_count": 322
         },
         {
-          "id": 1326,
+          "id": 1328,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +332,7 @@
           "word_count": 319
         },
         {
-          "id": 1361,
+          "id": 1363,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +347,7 @@
           "word_count": 306
         },
         {
-          "id": 1069,
+          "id": 1071,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +362,7 @@
           "word_count": 238
         },
         {
-          "id": 1064,
+          "id": 1066,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +377,7 @@
           "word_count": 214
         },
         {
-          "id": 1440,
+          "id": 1441,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +392,7 @@
           "word_count": 719
         },
         {
-          "id": 1181,
+          "id": 1183,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 454
+        },
+        {
+          "id": 1189,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] Cardiovascular outcomes in coronary microvascular dysfunction: the Multicenter FLOW-CMD Registry",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01668-5/fulltext?rss=yes",
+          "content": "The FLOW-CMD Registry1 represents one of the largest contemporary assessments of coronary microvascular dysfunction in a broad population undergoing invasive coronary physiological evaluation, including patients with acute coronary syndrome and those requiring percutaneous coronary intervention (PCI). The study expands awareness of coronary microvascular dysfunction beyond patients with non-obstructive coronary artery disease.",
+          "pub_date": "2026-09-26",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 430
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 451,
-      "total_valid": 283,
+      "total_raw": 450,
+      "total_valid": 282,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1557,
+          "id": 1558,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 1544,
+          "id": 1545,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 1575,
+          "id": 1576,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1576,
+          "id": 1577,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1579,
+          "id": 1580,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1097
         },
         {
-          "id": 1569,
+          "id": 1570,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 455
         },
         {
-          "id": 1517,
+          "id": 1518,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 345
         },
         {
-          "id": 1516,
+          "id": 1517,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 340
         },
         {
-          "id": 1570,
+          "id": 1571,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 340
         },
         {
-          "id": 1518,
+          "id": 1519,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 285
         },
         {
-          "id": 1564,
+          "id": 1565,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1561,
+          "id": 1562,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1267,
+          "id": 1269,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 500
         },
         {
-          "id": 1517,
+          "id": 1518,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 345
         },
         {
-          "id": 1516,
+          "id": 1517,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 340
         },
         {
-          "id": 1518,
+          "id": 1519,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 285
         },
         {
-          "id": 1441,
+          "id": 1442,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 240
         },
         {
-          "id": 1144,
+          "id": 1146,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 188
         },
         {
-          "id": 1098,
+          "id": 1100,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 183
         },
         {
-          "id": 1105,
+          "id": 1107,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 179
         },
         {
-          "id": 1269,
+          "id": 1271,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 146
         },
         {
-          "id": 1481,
+          "id": 1482,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1630,
+          "id": 1631,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 545
         },
         {
-          "id": 1631,
+          "id": 1632,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -830,6 +830,21 @@
         },
         {
           "id": 1621,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "U.S. Bank Launches Cards to Meet Small Business Rewards Demand",
+          "link": "https://www.pymnts.com/credit-cards/2026/u-s-bank-launches-cards-to-meet-small-business-rewards-demand/",
+          "content": "U.S. Bank has launched two new small business credit cards that are designed to deliver “straight-forward rewards” on everyday business purchases, the bank said in a Monday (Sept. 28) press release. The new U.S. Bank Business Essentials Visa Card has no annual fee, offers unlimited 2% cash back on everyday business purchases, offers up to [&#8230;] The post U.S. Bank Launches Cards to Meet Small Business Rewards Demand appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 29 Sep 2026 01:32:04 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 453
+        },
+        {
+          "id": 1623,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 225
         },
         {
-          "id": 1632,
+          "id": 1633,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 171
         },
         {
-          "id": 88,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -962,21 +977,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 158
-        },
-        {
-          "id": 1633,
-          "source": "PaymentsDive",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Payment revenue growth to slow",
-          "link": "https://www.paymentsdive.com/news/payment-revenue-growth-to-slow/831491/",
-          "content": "The rate of payments-related revenue growth in North America, and globally, will slow in the next four years, a major consulting firm predicts.",
-          "pub_date": "Mon, 28 Sep 2026 10:44:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 143
         },
         {
           "id": 1634,
@@ -1009,7 +1009,22 @@
           "word_count": 93
         },
         {
-          "id": 641,
+          "id": 1673,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Aljazira Bank Selects Thunes to Power Next-Generation Global Remittances from Saudi Arabia",
+          "link": "https://www.thunes.com/news/aljazira-bank-thunes-partnership/",
+          "content": "Strategic collaboration to boost remittance payment speed, transparency, and international coverage for Aljazira Bank customers through Thunes’ trusted Network. Riyadh, Saudi Arabia; September 28, 2026 — Thunes, the Smart Superhighway to move money around the world, has signed a new agreement with Aljazira Bank, one of Saudi Arabia’s leading financial institutions, to modernize and expand ... Read more &#187; The post Aljazira Bank Selects Thunes to Power Next-Generation Global Remittances from Saudi Arabia first appeared on Thunes.com .",
+          "pub_date": "Mon, 28 Sep 2026 06:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 543
+        },
+        {
+          "id": 642,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 327,
+          "id": 328,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 999
         },
         {
-          "id": 1625,
+          "id": 1627,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1054,22 +1069,7 @@
           "word_count": 495
         },
         {
-          "id": 1629,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "University of Michigan Says Trade Disputes and High Prices Squeeze Consumer Sentiment",
-          "link": "https://www.pymnts.com/economy/2026/university-of-michigan-says-trade-disputes-and-high-prices-squeeze-consumer-sentiment/",
-          "content": "Consumer sentiment slipped in September amid concerns about high prices and rekindled trade disputes, according to the University of Michigan’s Surveys of Consumers. The survey’s final results for September showed that the Index for Consumer Sentiment declined by 7% compared to a month ago and 12.7% compared to a year ago. Surveys of Consumers Director [&#8230;] The post University of Michigan Says Trade Disputes and High Prices Squeeze Consumer Sentiment appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 28 Sep 2026 19:11:35 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 490
-        },
-        {
-          "id": 1628,
+          "id": 1630,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 483
         },
         {
-          "id": 1623,
+          "id": 1625,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 221,
+      "total_raw": 225,
       "total_valid": 36,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1837,
-    "dup": 406,
+    "total_raw": 1842,
+    "dup": 407,
     "nocontent": 405,
     "noise": 4
   }
