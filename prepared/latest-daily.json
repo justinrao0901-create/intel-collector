@@ -50,7 +50,7 @@
           "word_count": 164
         },
         {
-          "id": 91,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 335
         },
         {
-          "id": 97,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 323
         },
         {
-          "id": 102,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,37 @@
           "word_count": 207
         },
         {
-          "id": 73,
+          "id": 69,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "LastOPD: Taming Collapse in Latent On-Policy Distillation",
+          "link": "https://arxiv.org/abs/2609.28845",
+          "content": "On-policy distillation (OPD) corrects a student on the responses it writes, but its signal is the teacher's next-token distribution: it tells the student what the teacher says but misses how it thinks. Latent supervision promises the missing part by aligning the student's latent states to the teacher's. Recent methods such as OPRD bring this signal into on-policy distillation. However, we observe two failures of this recipe when distilling Qwen3-4B and Qwen3-8B into Qwen3-1.7B-Base. Early gain, late collapse: latent supervision alone lifts MATH-500 accuracy from 25 to 46 in 10 steps, but subsequent training degrades performance down to 11 with no recovery. Better alignment, worse behavior: although the alignment metric steadily improves throughout this collapse, the most aligned model turns out to be the worst performing. Further analysis suggests a mismatch in how the latent signal is applied: layers paired by depth play different roles in the two models, so continued alignment may pull the student toward teacher states it cannot understand. To address this, we propose LastOPD, which applies the latent signal only at the last-layer state, the common interface both LM heads read, a",
+          "pub_date": "2026-09-22T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 70,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "TimeEvo: Failure-Driven Self-Evolution of a Time Series Agent",
+          "link": "https://arxiv.org/abs/2609.27277",
+          "content": "Time series agents answer analytical questions by calling external tools, and which tools they carry is decided by people before the agent runs. However, we identify two failures in this setup. Human-Agent Tool Misalignment: a library of 21 expert-curated tools helps on some tasks and hurts on others, dropping anomaly accuracy under every backbone we test. Silent Harm: one round of generic self-revision changes 147 answers and breaks 56 of them, while the final score moves by less than a point. Both follow from the same gap: whether a tool helps is decided question by question at runtime, while tools are supplied in advance and judged by a single average. To address this, we propose TimeEvo, which clusters an agent's diagnosed failures into capability gaps, plans a measurement for each, synthesizes evidence-only tools that fill them, and admits the candidate library only through a paired admission gate. Experiments on ten time series QA tasks and three backbones show that TimeEvo, starting from an empty library, improves accuracy on every task and every backbone, and that a library grown on a cheap model still gains when it is installed into stronger ones. Code is available at http",
+          "pub_date": "2026-09-22T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,37 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 74,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "D-JEPA: A Decision-Aligned Latent World Model",
-          "link": "https://arxiv.org/abs/2609.24749",
-          "content": "Latent world models predict the consequences of actions, but accurate prediction does not guarantee that latent distance reflects which candidate will execute successfully. We identify a decision-local prediction gap: among the few futures competing for execution, a candidate predicted closer to the goal can produce a worse realized outcome than an available alternative. We introduce D-JEPA, a decision-aligned latent world model that learns decision-relevant relations among candidate futures from executed outcomes. A bounded, permutation-equivariant operator jointly reasons over goal-relative predictive features and ordinal evidence, refining pretrained predictive geometry where action choices are most consequential. Restricted predictor adaptation and a shared ordinal interface extend this alignment across complementary predictive geometries. D-JEPA further realizes the learned decision structure in JEPA-compatible future representations, enabling deployment through native latent-distance planning. Evaluations across latent control, manipulation, pretrained action-producing models, physical robots and autonomous driving demonstrate improved action selection, including 87.89% succe",
-          "pub_date": "2026-09-21T11:17:32.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 75,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Disaggregated Quantization: Specializing LLM Prefill and Decode",
-          "link": "https://arxiv.org/abs/2609.26333",
-          "content": "Prefill and decode reward different approaches to quantization: low-precision arithmetic accelerates prompt processing, while compact weights reduce memory traffic during generation. We propose \"disaggregated quantization\" (DQ), which specializes computation formats, weights and storage placement to both of these phases. On Qwen 3 and Gemma 3, removing activation quantization specifically on decode improves accuracy on decode-heavy tasks without increasing inference cost. Training separate compute-native prefill weights accelerates prompt processing relative to weight-only inference while matching or exceeding its accuracy at 2-3-bit decode on both decode-heavy and prefill-heavy tasks. With released Qwen3.8-27B GGUF decoders, training an NVFP4 prefiller improves 1-bit accuracy by 32.5 points on MMLU-Pro and 35.3 on MMMU-Pro without modifying the decode checkpoint. To accommodate the additional checkpoint on a single device, offloaded disaggregated prefill (ODP) streams its weights from SSD, amortizing loading over prompt length. On the same 27B model, ODP delivers a 1.78x time-to-first-token speedup over the weight-only baseline at 8K prompt length in llama.cpp. We evaluate accurac",
-          "pub_date": "2026-09-21T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 946,
+          "id": 943,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 947,
+          "id": 944,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1132
         },
         {
-          "id": 958,
+          "id": 955,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1061,
-      "total_valid": 688,
+      "total_raw": 1057,
+      "total_valid": 689,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1311,
+          "id": 1265,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 500
         },
         {
-          "id": 1490,
+          "id": 1440,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 458
         },
         {
-          "id": 1310,
+          "id": 1264,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 410
         },
         {
-          "id": 1510,
+          "id": 1460,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 377
         },
         {
-          "id": 1509,
+          "id": 1459,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,22 @@
           "word_count": 351
         },
         {
-          "id": 1312,
+          "id": 1415,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Engineering a nutrient-uptake protein enhances neutralization and protection toward a gonococcal vaccine",
+          "link": "https://www.nature.com/articles/s41541-026-01570-1",
+          "content": "npj Vaccines, Published online: 28 September 2026; doi:10.1038/s41541-026-01570-1 Engineering a nutrient-uptake protein enhances neutralization and protection toward a gonococcal vaccine",
+          "pub_date": "2026-09-28",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 186
+        },
+        {
+          "id": 1266,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 173
         },
         {
-          "id": 1301,
+          "id": 1255,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 157
         },
         {
-          "id": 1455,
+          "id": 1404,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 322
         },
         {
-          "id": 1375,
+          "id": 1324,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 319
         },
         {
-          "id": 1410,
+          "id": 1359,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +362,7 @@
           "word_count": 306
         },
         {
-          "id": 1071,
+          "id": 1067,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +377,7 @@
           "word_count": 238
         },
         {
-          "id": 1066,
+          "id": 1062,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +392,7 @@
           "word_count": 214
         },
         {
-          "id": 1488,
+          "id": 1438,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -392,34 +407,19 @@
           "word_count": 719
         },
         {
-          "id": 1279,
-          "source": "JAMA",
+          "id": 1179,
+          "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
-          "title": "Intra-Arterial Alteplase After Successful Thrombectomy for Acute Ischemic Stroke—Reply",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2853150",
-          "content": "In Reply As described in the original report, the primary outcome was amended at month 12 to improve clinical relevance and interpretability, considering emerging randomized evidence and the established use of the blinded mRS score assessment. The amendment was implemented on February 10, 2025, after enrollment of 283 patients, of whom 214 had completed or were eligible for 90-day follow-up. No interim analyses had been conducted, and no outcome data by treatment group were available at the time of the amendment; therefore, the change was not informed by accumulating trial results.",
-          "pub_date": "Tue, 22 Sep 2026 00:00:00 GMT",
+          "title": "[Correspondence] Prison health as longitudinal care: lessons from Brazil",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01585-0/fulltext?rss=yes",
+          "content": "Talha Burki's World Report1 powerfully illustrates that prison health is shaped by complex, overlapping needs: multimorbidity, mental distress, substance use, premature ageing, and fragile access to care. From Brazil—home to the world's third-largest prison population, estimated at 850 000 individuals in 20242—we recognise this landscape and address an aspect that remains underexplored in the World Report: prisons as territories of longitudinal care.",
+          "pub_date": "2026-09-26",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 588
-        },
-        {
-          "id": 1286,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Suicide Mortality After Launch of the 988 Lifeline—Reply",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2852954",
-          "content": "In Reply We thank Dr Herring and Dr Purtle for their thoughtful comments. Our study found that suicide mortality among adolescents and young adults decreased after the national launch of the 988 Lifeline, that declines were largest in states where the 988 Lifeline uptake increased most, and that these patterns withstood prespecified falsification testing—analyses checking whether the same decline appeared in outcomes or periods that the 988 Lifeline could not have affected, which would have signaled a spurious result.",
-          "pub_date": "Tue, 22 Sep 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 523
+          "word_count": 454
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 497,
-      "total_valid": 308,
+      "total_raw": 450,
+      "total_valid": 282,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1606,
+          "id": 1555,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 1593,
+          "id": 1542,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 1634,
+          "id": 1573,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 1637,
+          "id": 1576,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1097
         },
         {
-          "id": 1635,
+          "id": 1574,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1089
         },
         {
-          "id": 1627,
+          "id": 1567,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 455
         },
         {
-          "id": 1566,
+          "id": 1515,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 345
         },
         {
-          "id": 1565,
+          "id": 1514,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 340
         },
         {
-          "id": 1628,
+          "id": 1568,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 340
         },
         {
-          "id": 1567,
+          "id": 1516,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 285
         },
         {
-          "id": 1614,
+          "id": 1562,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1611,
+          "id": 1559,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 104,
+      "total_raw": 94,
       "total_valid": 17,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1311,
+          "id": 1265,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 500
         },
         {
-          "id": 1566,
+          "id": 1515,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 345
         },
         {
-          "id": 1565,
+          "id": 1514,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 340
         },
         {
-          "id": 1567,
+          "id": 1516,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 285
         },
         {
-          "id": 1489,
+          "id": 1439,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 240
         },
         {
-          "id": 1146,
+          "id": 1142,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 188
         },
         {
-          "id": 1100,
+          "id": 1096,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 183
         },
         {
-          "id": 1107,
+          "id": 1103,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 179
         },
         {
-          "id": 1313,
+          "id": 1267,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 146
         },
         {
-          "id": 1530,
+          "id": 1479,
           "source": "BioPharma Dive",
           "section": "cross",
           "tier": "T2",
@@ -799,8 +799,8 @@
     "payment": {
       "candidates": [
         {
-          "id": 1686,
-          "source": "PYMNTS.com",
+          "id": 1627,
+          "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
@@ -814,7 +814,7 @@
           "word_count": 545
         },
         {
-          "id": 1689,
+          "id": 1628,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -829,22 +829,22 @@
           "word_count": 466
         },
         {
-          "id": 1687,
+          "id": 1617,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Ebanx Aims to Expand Payment Access for LatAm Gamers",
-          "link": "https://www.pymnts.com/news/2026/ebanx-aims-to-expand-payment-access-for-latam-gamers/",
-          "content": "Ebanx has teamed with NetEase Games Club to expand payment access for Latin America’s video game community. “Latin America is one of the fastest-growing video game markets in the world, yet millions of its players have long faced barriers to purchasing content because of how they pay,” the cross-border payments company said in a Monday [&#8230;] The post Ebanx Aims to Expand Payment Access for LatAm Gamers appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 28 Sep 2026 18:13:39 +0000",
+          "title": "Shopify Opens Store Checkouts to AI Agents",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/shopify-opens-store-checkouts-to-ai-agents/",
+          "content": "Shopify now enables browser agents to check out on the websites of all its eligible merchants, Gil Greenberg, staff product manager, checkout at Shopify, wrote in a Monday (Sept. 28) article on LinkedIn. Shopify already enabled agents to search products, browse collections and add items to a cart through structured tools via the platform’s support [&#8230;] The post Shopify Opens Store Checkouts to AI Agents appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 28 Sep 2026 23:51:57 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 440
+          "word_count": 442
         },
         {
-          "id": 1707,
+          "id": 1648,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 314
         },
         {
-          "id": 1708,
+          "id": 1649,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 300
         },
         {
-          "id": 1695,
+          "id": 1636,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 277
         },
         {
-          "id": 1696,
+          "id": 1637,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 243
         },
         {
-          "id": 1698,
+          "id": 1639,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,22 +919,22 @@
           "word_count": 228
         },
         {
-          "id": 1704,
+          "id": 1634,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "HSBC adopts Nasdaq's Calypso",
-          "link": "https://www.finextra.com/pressarticle/111036/hsbc-adopts-nasdaqs-calypso?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Partnering with Nasdaq, HSBC has adopted Nasdaq Calypso for the bank’s exchange-traded derivatives (ETD) clearing platform, providing HSBC with a fully integrated set of clearing capabilities.",
-          "pub_date": "Mon, 28 Sep 2026 09:47:00 GMT",
+          "title": "ECB invites expressions of interest for digital euro innovation workstreams",
+          "link": "https://www.finextra.com/newsarticle/48490/ecb-invites-expressions-of-interest-for-digital-euro-innovation-workstreams?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "The European central Bank is inviting private companies and organisations to join the digital euro innovation platform to collaborate on experiments with new value-added services and explore future technological developments.",
+          "pub_date": "Tue, 29 Sep 2026 00:01:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 192
+          "word_count": 225
         },
         {
-          "id": 1690,
+          "id": 1629,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 171
         },
         {
-          "id": 90,
+          "id": 87,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 158
         },
         {
-          "id": 1691,
+          "id": 1630,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 143
         },
         {
-          "id": 1692,
+          "id": 1631,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 136
         },
         {
-          "id": 1694,
+          "id": 1633,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 93
         },
         {
-          "id": 1729,
+          "id": 1670,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 543
         },
         {
-          "id": 643,
+          "id": 640,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 329,
+          "id": 326,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 999
         },
         {
-          "id": 1680,
+          "id": 1621,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 495
         },
         {
-          "id": 1684,
+          "id": 1625,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 490
         },
         {
-          "id": 1683,
+          "id": 1624,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 224,
-      "total_valid": 34,
+      "total_raw": 226,
+      "total_valid": 37,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1898,
-    "dup": 441,
-    "nocontent": 410,
+    "total_raw": 1839,
+    "dup": 409,
+    "nocontent": 405,
     "noise": 4
   }
 }
