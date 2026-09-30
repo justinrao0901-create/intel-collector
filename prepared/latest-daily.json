@@ -50,7 +50,7 @@
           "word_count": 157
         },
         {
-          "id": 90,
+          "id": 93,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 213
         },
         {
-          "id": 88,
+          "id": 91,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 208
         },
         {
-          "id": 97,
+          "id": 100,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,29 +95,14 @@
           "word_count": 196
         },
         {
-          "id": 66,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",
-          "link": "https://arxiv.org/abs/2609.34606",
-          "content": "Leveraging the paradigm of autoregressive diffusion, text-conditioned interactive video world models aim to simulate temporally coherent environments guided by textual instructions. While enabling low-latency, long-duration generation is pivotal for embodied AI and simulation-based planning, current frameworks primarily rely on sliding-window mechanisms to bound computational complexity. However, this approach inherently sacrifices historical context, undermining the long-range interactive capabilities. Conversely, maintaining a full-history cache remains computationally prohibitive and memory-intensive: the quadratic complexity of attention leads to excessive computational overhead, while the linear growth of the KV cache inevitably leads to GPU memory saturation. To overcome these limitations, we propose WorldAttention, a system-oriented attention architecture that achieves high efficiency through the co-design of specialized attention kernels and hierarchical KV cache management. First, we introduce Hybrid Sparse Attention (HSA), which integrates linear global attention supplemented with head-adaptive sparse attention. Additionally, we design a Hierarchical KV Cache (HKV) that o",
-          "pub_date": "2026-09-27T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Think Before You Score: Thinking Reward Model for Visual Generation",
-          "link": "https://arxiv.org/abs/2609.37372",
-          "content": "Visual reward models are essential for evaluating and improving visual generation models, yet existing approaches typically map task conditions and candidate outputs directly to scalar rewards, leaving implicit what should be evaluated for each individual case. We introduce Think Before You Score, a paradigm that explicitly determines what matters for each case before judging how well the candidate performs. Following this principle, we propose the Thinking Reward Model (TRM), which formulates case-adaptive rubrics, performs rubric-guided assessment, and produces fine-grained pointwise rewards. We further observe that conventional pairwise preference optimization can induce score polarization, and introduce Pairwise Dual-Group Relative Policy Optimization (PD-GRPO), which leverages pairwise supervision to improve reward discrimination while preserving fine-grained pointwise scoring. Extensive experiments on image generation and editing reward-modeling benchmarks demonstrate that TRM achieves state-of-the-art performance among open-source reward models while remaining highly competitive with proprietary alternatives. Moreover, using TRM as a reward for reinforcement learning consist",
+          "title": "Act First, Reason Later: Accelerating On-Policy Distillation for Multi-Turn Agents via Reference-Conditioned Inverse Dynamics",
+          "link": "https://arxiv.org/abs/2609.36608",
+          "content": "On-policy distillation (OPD) trains multi-turn language agents with dense teacher supervision on student-generated responses. However, standard think-then-act rollouts require lengthy reasoning before each short action, delaying environment transitions and experience collection. Generating actions directly reduces this delay but can degrade rollout quality. To address this, we propose ActFirst-OPD, an act-first, reason-later training framework that decouples environment interaction from full-response generation. The student infers and executes actions through reference-conditioned inverse dynamics using its current interaction context and a reference next observation, and switches to autonomous next-action prediction when the resulting transition deviates from the reference trajectory. From the collected interaction contexts, the student asynchronously generates full think-then-act responses for token-level teacher supervision. Experiments across 0.6B-, 1.7B-, and 4B-parameter Qwen3 students show that ActFirst-OPD achieves average wall-clock training speedups of 2.3times on ALFWorld, 1.8times on WebShop, and 4.9times on ScienceWorld over Vanilla OPD. It matches or exceeds all compa",
           "pub_date": "2026-09-28T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -125,22 +110,37 @@
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "TGRL: Temperature-Grouped Reinforcement Learning for Efficient Exploration in LLMs",
-          "link": "https://arxiv.org/abs/2609.33589",
-          "content": "Efficient exploration often remains a central bottleneck in reinforcement learning with verifiable rewards (RLVR). Although temperature control and test-time scaling strategies can increase rollout diversity of large language models (LLMs), they either expand the sample budget at rollout time or leave the benefit of exploration unquantified. To this end, we propose Temperature-Grouped Reinforcement Learning (TGRL), which turns temperature-induced diversity into an explicit training signal. For each prompt, TGRL partitions its rollout group into low- and high-temperature subsets, estimates exploration gain through their reward contrast, and allocates this group-level signal as token-level credit using Jensen--Shannon (JS) divergence between the corresponding temperature-scaled next-token distributions induced by the same logits. Notably, TGRL reaches equivalent accuracy up to 36% faster than strong RLVR baselines without expanding the rollout budget. Across 11 benchmarks from diverse domains, TGRL broadly improves over strong RLVR baselines: it improves the six-benchmark math average by 1.6% at 32B, raises CodeForces rating by 196.7 points and LiveCodeBench Pass@16 by 4.4%, and impr",
-          "pub_date": "2026-09-26T20:00:00.000Z",
+          "title": "OmniTaskonomy: When Does Visual Generation Improve Visual Understanding?",
+          "link": "https://arxiv.org/abs/2609.38079",
+          "content": "Training a model to generate visual content can encourage it to learn rich perceptual capabilities related to geometry, spatial relationships, and objectness; yet, its benefits for visual understanding remain unclear. We ask: when and how does visual generation supervision improve visual understanding? We study controlled pairs of image-to-image (I2I) generation and image-to-text (I2T) understanding tasks that express the same underlying problem in different output modalities. We find that under the correct recipe, I2I training improves downstream I2T performance, with larger gains as the amount of I2I training data increases. We next ask which generation tasks benefit which understanding capabilities. To study transfer beyond paired tasks, we introduce OmniTaskonomy, a unified taxonomy spanning 19 I2I generation tasks and 25 I2T understanding capabilities. The resulting transfer map reveals selective, task-dependent benefits. Some follow intuitive correspondences, e.g., depth prediction improving metric 3D reasoning, object pointing improving counting, and jigsaw reconstruction improving 2D ordering. Interestingly, we also uncover surprising connections: 2.5D segmentation improvin",
+          "pub_date": "2026-09-28T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 3740,
+          "id": 71,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "HiRAE: Hierarchical Representation Autoencoding with Residual Budgets",
+          "link": "https://arxiv.org/abs/2609.37775",
+          "content": "Pretrained visual representations support image generation, but may not fully preserve the fine-grained details needed for faithful reconstruction. Meanwhile, intermediate encoder layers contain complementary visual details, but learning to fuse them for reconstruction can produce a latent distribution that is difficult to model. Existing fusion methods require empirical tuning of layer selection or staged optimization of fusion and decoding, increasing configuration effort or training complexity. We introduce HiRAE (Hierarchical Representation Autoencoder), which learns a hierarchical fusion framework over the full encoder hierarchy to improve reconstruction fidelity while maintaining compatibility with generative modeling. HiRAE groups encoder layers by depth and learns residual corrections to the deepest representation. Group-wise norm caps bound these corrections relative to the deep anchor, with tighter budgets for shallower groups. Our HiRAE-24 preserves the latent token count and channel dimension. On ImageNet-256, HiRAE-24 reduces reconstruction FID from 0.299 to 0.209 relative to RAEv2 while maintaining competitive guided generation quality. For text-to-image generation, H",
+          "pub_date": "2026-09-28T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 3743,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 768
         },
         {
-          "id": 3735,
+          "id": 3738,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 594
         },
         {
-          "id": 3736,
+          "id": 3739,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 3847,
-      "total_valid": 2726,
+      "total_raw": 3850,
+      "total_valid": 2728,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 4210,
+          "id": 4212,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 392
         },
         {
-          "id": 4231,
+          "id": 4233,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 246
         },
         {
-          "id": 3922,
+          "id": 3924,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 240
         },
         {
-          "id": 4188,
+          "id": 4189,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,22 +257,7 @@
           "word_count": 192
         },
         {
-          "id": 4187,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Parental intent to accept postnatal RSV monoclonal antibody immunisation for infants in the UK",
-          "link": "https://www.nature.com/articles/s41541-026-01575-w",
-          "content": "npj Vaccines, Published online: 29 September 2026; doi:10.1038/s41541-026-01575-w Parental intent to accept postnatal RSV monoclonal antibody immunisation for infants in the UK",
-          "pub_date": "2026-09-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 176
-        },
-        {
-          "id": 4133,
+          "id": 4135,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +272,7 @@
           "word_count": 284
         },
         {
-          "id": 4092,
+          "id": 4094,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +287,7 @@
           "word_count": 278
         },
         {
-          "id": 4090,
+          "id": 4092,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +302,7 @@
           "word_count": 274
         },
         {
-          "id": 3850,
+          "id": 3853,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +317,7 @@
           "word_count": 235
         },
         {
-          "id": 4250,
+          "id": 4252,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +332,7 @@
           "word_count": 200
         },
         {
-          "id": 3856,
+          "id": 3859,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +347,7 @@
           "word_count": 193
         },
         {
-          "id": 3882,
+          "id": 3884,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +362,7 @@
           "word_count": 159
         },
         {
-          "id": 3878,
+          "id": 3880,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +377,7 @@
           "word_count": 145
         },
         {
-          "id": 3883,
+          "id": 3885,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +392,7 @@
           "word_count": 142
         },
         {
-          "id": 4203,
+          "id": 4205,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 451
+        },
+        {
+          "id": 3961,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] Cardiovascular outcomes in coronary microvascular dysfunction: the Multicenter FLOW-CMD Registry",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01668-5/fulltext?rss=yes",
+          "content": "The FLOW-CMD Registry1 represents one of the largest contemporary assessments of coronary microvascular dysfunction in a broad population undergoing invasive coronary physiological evaluation, including patients with acute coronary syndrome and those requiring percutaneous coronary intervention (PCI). The study expands awareness of coronary microvascular dysfunction beyond patients with non-obstructive coronary artery disease.",
+          "pub_date": "2026-09-26",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 430
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 437,
-      "total_valid": 278,
+      "total_raw": 436,
+      "total_valid": 276,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 4325,
+          "id": 4327,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 174
         },
         {
-          "id": 4317,
+          "id": 4319,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 163
         },
         {
-          "id": 4326,
+          "id": 4328,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 127
         },
         {
-          "id": 4352,
+          "id": 4354,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1089
         },
         {
-          "id": 4353,
+          "id": 4355,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1064
         },
         {
-          "id": 4374,
+          "id": 4376,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 424
         },
         {
-          "id": 4356,
+          "id": 4358,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 379
         },
         {
-          "id": 4339,
+          "id": 4341,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1045
         },
         {
-          "id": 4336,
+          "id": 4338,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 4337,
+          "id": 4339,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 4232,
+          "id": 4234,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 403
         },
         {
-          "id": 4210,
+          "id": 4212,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 392
         },
         {
-          "id": 3922,
+          "id": 3924,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 240
         },
         {
-          "id": 3901,
+          "id": 3903,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 216
         },
         {
-          "id": 3902,
+          "id": 3904,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 207
         },
         {
-          "id": 4325,
+          "id": 4327,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 174
         },
         {
-          "id": 3859,
+          "id": 3862,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -701,7 +701,7 @@
           "word_count": 223
         },
         {
-          "id": 3877,
+          "id": 3879,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -716,7 +716,7 @@
           "word_count": 138
         },
         {
-          "id": 160,
+          "id": 163,
           "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 1200
         },
         {
-          "id": 566,
+          "id": 569,
           "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 4395,
+          "id": 4397,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 537
         },
         {
-          "id": 4402,
+          "id": 4404,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 479
         },
         {
-          "id": 4427,
+          "id": 4429,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 414
         },
         {
-          "id": 4454,
+          "id": 4456,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 366
         },
         {
-          "id": 4453,
+          "id": 4455,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 363
         },
         {
-          "id": 4452,
+          "id": 4454,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 350
         },
         {
-          "id": 4426,
+          "id": 4428,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 303
         },
         {
-          "id": 4432,
+          "id": 4434,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 256
         },
         {
-          "id": 4428,
+          "id": 4430,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 255
         },
         {
-          "id": 4424,
+          "id": 4426,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 250
         },
         {
-          "id": 4425,
+          "id": 4427,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 237
         },
         {
-          "id": 4407,
+          "id": 4409,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 165
         },
         {
-          "id": 4406,
+          "id": 4408,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 130
         },
         {
-          "id": 4405,
+          "id": 4407,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 126
         },
         {
-          "id": 176,
+          "id": 179,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 179,
+          "id": 182,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 198,
+          "id": 201,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 295,
+          "id": 298,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 308,
+          "id": 311,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 636,
+          "id": 639,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1080,9 +1080,9 @@
     }
   },
   "meta": {
-    "total_raw": 4629,
+    "total_raw": 4631,
     "dup": 1160,
-    "nocontent": 404,
+    "nocontent": 406,
     "noise": 4
   }
 }
