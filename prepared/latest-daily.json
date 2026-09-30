@@ -12,12 +12,12 @@
           "priority": 3,
           "title": "Introducing dots",
           "link": "https://openai.com/index/introducing-dots",
-          "content": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
+          "content": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
           "pub_date": "Tue, 29 Sep 2026 00:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 172
+          "word_count": 171
         },
         {
           "id": 5,
@@ -50,7 +50,7 @@
           "word_count": 157
         },
         {
-          "id": 95,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 213
         },
         {
-          "id": 93,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 208
         },
         {
-          "id": 102,
+          "id": 101,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,15 +95,30 @@
           "word_count": 196
         },
         {
+          "id": 70,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "CineSubBench: Evaluating LLMs on Long-Form Narrative and Cultural Understanding from Multilingual Movie Subtitles",
+          "link": "https://arxiv.org/abs/2609.36218",
+          "content": "Large language models are increasingly evaluated in specialized domains such as law, medicine, software engineering, and cybersecurity, yet film remains comparatively underexplored despite requiring long-form narrative integration, multilingual interpretation, and culturally situated audience judgments. We introduce CineSubBench, a benchmark for evaluating long-context film understanding from multilingual movie subtitles. A subtitle track represents a film as thousands of short, temporally ordered utterances from which models must reconstruct characters, relationships, events, causal progression, and themes without explicit scene or event structure. CineSubBench contains 1,012 films with complete subtitle coverage in six languages, yielding 6,072 tracks and 8.13M timestamped subtitle entries. It provides a matched multi-task, multilingual, and multicultural (MultiX) evaluation setting: seven tasks span narrative reconstruction and abstraction, genre prediction, age suitability, country-specific motion-picture ratings across ten national classification systems, and subtitle-grounded language safety. Across nine LLMs, plot premises are recovered more reliably than event-complete syno",
+          "pub_date": "2026-09-27T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "NVAlign: Direct-Gradient Optimization for Non-Verbal Control in Continuous Autoregressive Flow Matching Text-to-Speech",
-          "link": "https://arxiv.org/abs/2609.31892",
-          "content": "While modern text-to-speech (TTS) systems generate highly natural speech and support inline non-verbal vocalization (NVV) tags, accurate control over these events remains challenging. A key gap is the lack of established post-training methods for non-verbal control in continuous autoregressive flow-matching TTS. To this end, we present NVAlign, a direct-gradient post-training framework for NVV tag-following in this architecture. We first perform supervised fine-tuning (SFT) of TTS models and an NVV-aware automatic speech recognition (NV-ASR) model on NVV-annotated speech, then freeze the NV-ASR model to serve as the reward model for post-training. A two-step gradient surrogate enables efficient reward backpropagation through the flow-matching sampler to jointly update the autoregressive backbone and acoustic flow head. Fidelity penalties and reference-velocity regularization help preserve speaker similarity and speech quality. Results from NVV-SuperBench and human listening evaluations show that NVAlign improves tag-following accuracy over SFT and Flow-GRPO baselines. These findings demonstrate that direct reward-gradient optimization can improve non-verbal control in continuous au",
-          "pub_date": "2026-09-24T20:00:00.000Z",
+          "title": "LeRF: Learning Reference Coordinate Frames for Perspective Taking Reasoning",
+          "link": "https://arxiv.org/abs/2609.36219",
+          "content": "Perspective taking is a fundamental component of spatial intelligence, requiring models interpret spatial relations from a specified viewpoint, such as that of another entity or an imagined observer. Despite the increasing spatial reasoning capabilities of Vision-Language Models (VLMs), they still struggle with perspective taking, often defaulting to the camera viewpoint when a query requires reasoning from a different perspective. We introduce Learning Reference Coordinate Frames for Perspective Taking (LeRF), a framework that trains VLMs to construct and use explicit reference frames for viewpoint-dependent reasoning. Given an image and a query, LeRF decides whether a coordinate frame is necessary. If so, it grounds the reference entity and predicts the frame's origin and entity-centered reference frame. A lightweight renderer overlays the frame onto the image, enabling subsequent reasoning over these visual cues without external perception models or explicit 3D reconstruction. To learn this process, we first perform supervised fine-tuning to teach selective tool invocation and reference coordinate frame prediction, followed by reinforcement learning on spatial VQA pairs to impro",
+          "pub_date": "2026-09-27T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -115,24 +130,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Do We Really Need KL Divergence for On-Policy Distillation of Large Language Models?",
-          "link": "https://arxiv.org/abs/2609.33791",
-          "content": "Since the advent of knowledge distillation, KL divergence has been the standard loss in distillation. Recently, on-policy distillation (OPD) has emerged as an efficient post-training paradigm for LLMs. As a distillation method, OPD naturally inherits KL divergence as its standard loss. However, in this work, we find that KL divergence may not be necessary for OPD. We show that simply preserving the update direction is sufficient for effective OPD. As long as the update direction is toward the teacher, OPD works. More precisely, it is not the direction of every token, but the direction of a small subset of tokens where the teacher and student disagree strongly. We first show that simply assigning a reward of (+1) to tokens where the teacher probability is higher than the student probability and (-1) where it is lower, which merely encourages updates toward the teacher, reproduces almost the same training mode as OPD with reverse KL. We further show that only the direction of a small subset of tokens with large teacher-student disagreement is critical, and training works as long as their update direction is toward the teacher, even if other tokens are pulled away from the teacher. An",
-          "pub_date": "2026-09-26T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 73,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "WhiteMatter: All-to-All Cross-Layer Connections via KV Source Mixing",
-          "link": "https://arxiv.org/abs/2608.18486",
-          "content": "When generating text, a Transformer produces representations of past tokens at every layer, but each layer can normally use only representations from the same depth. This restriction prevents the model from fully reusing information it has already computed. We introduce WhiteMatter, which allows every layer to draw on past-token representations from any depth. A learned mixer selects the most useful depths for the current context and combines their representations into shared key-value (KV) cache channels. Sharing these channels across layers can reduce the cache size. Given the same number of training tokens, WhiteMatter with a full-size cache performs comparably to a standard Transformer with 50% more layers. With half the KV cache, WhiteMatter outperforms matched standard Transformers at two model scales, up to 1.3B parameters. Cross-layer connections, however, introduce dependencies that slow training and prompt processing. We address this problem with cyclic iteration, which updates interleaved groups of tokens in turn while processing the tokens within each group in parallel. On a reference model trained with exact autoregressive execution, cyclic iteration converges 12.5x fa",
+          "title": "Selecting Diverse SFT Traces Improves Post-RL Generalization",
+          "link": "https://arxiv.org/abs/2609.33780",
+          "content": "Verified solutions are not equally useful for preparing reasoning models for reinforcement learning (RL). We present a comprehensive study of route diversity, the variation in the sequences of reasoning steps in supervised fine-tuning (SFT) data, and propose a lightweight, rule-based fingerprint to select for it. From one pool at one budget, with matched training recipes and checkpoints, selecting diverse rather than similar routes improves post-RL problem coverage across puzzles and mathematics, including on problems harder than those seen in either training stage. In synthetic experiments, route-diverse SFT improves OLMo3-7B's pass@8 by 16.9 points on environments held out from SFT. In a single-model condition, where one model writes every candidate, diverse selection gains up to 6.2 points of mean pass@8 across 10 mathematics benchmarks. Pre-RL diagnostics suggest why: diverse SFT can produce both successful and failed attempts on more prompts despite slightly lower mean accuracy, giving group-relative RL more prompts with a learning signal. On 3 open-source corpora, our CPU-only selector, without model calls, outperforms more expensive alternatives in every comparison of mean p",
           "pub_date": "2026-09-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -155,7 +155,7 @@
           "word_count": 768
         },
         {
-          "id": 3740,
+          "id": 3739,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,19 +170,19 @@
           "word_count": 594
         },
         {
-          "id": 3741,
+          "id": 3740,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "OpenAI DevDay 2026 live blog",
-          "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-          "content": "I'm at OpenAI DevDay today, in Fort Mason, San Francisco. Same as last year I'll be live blogging the keynote and some other notes during the day. OpenAI gave me a free ticket and a seat in the \"creator\" area for the keynote. Tags: ai , openai , generative-ai , llms , coding-agents , live-blog , openai-devday",
-          "pub_date": "2026-09-29T15:55:13+00:00",
+          "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "link": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+          "content": "My comment on GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price &mdash; Hacker News. I'm a bit late with the pelicans because I was live-blogging the keynote: https://simonwillison.net/2026/Sep/29/openai-devday-2026-liv... Here they are for GPT-6.1-Sol: https://tools.simonwillison.net/markdown-svg-renderer?url=ht... They're not notably different from the GPT-6 family pelicans: https://static.simonwillison.net/static/2026/gpt-pelicans-gr... Tags: ai , openai , generative-ai , llms , pelican-riding-a-bicycle , gpt",
+          "pub_date": "2026-09-29T18:27:48+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 310
+          "word_count": 529
         }
       ],
       "quota": {
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 3851,
-      "total_valid": 2722,
+      "total_valid": 2723,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 4213,
+          "id": 4214,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 392
         },
         {
-          "id": 4234,
+          "id": 4235,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 246
         },
         {
-          "id": 3925,
+          "id": 3926,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 240
         },
         {
-          "id": 4191,
+          "id": 4192,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 192
         },
         {
-          "id": 4190,
+          "id": 4191,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 176
         },
         {
-          "id": 4136,
+          "id": 4137,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 284
         },
         {
-          "id": 4095,
+          "id": 4096,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 278
         },
         {
-          "id": 4093,
+          "id": 4094,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 235
         },
         {
-          "id": 4253,
+          "id": 4254,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 142
         },
         {
-          "id": 4206,
+          "id": 4207,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 436,
-      "total_valid": 277,
+      "total_raw": 437,
+      "total_valid": 278,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 4328,
+          "id": 4329,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 174
         },
         {
-          "id": 4320,
+          "id": 4321,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 163
         },
         {
-          "id": 4329,
+          "id": 4330,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 127
         },
         {
-          "id": 4355,
+          "id": 4356,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1089
         },
         {
-          "id": 4356,
+          "id": 4357,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1064
         },
         {
-          "id": 4377,
+          "id": 4378,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 424
         },
         {
-          "id": 4359,
+          "id": 4360,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 379
         },
         {
-          "id": 4342,
+          "id": 4343,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1045
         },
         {
-          "id": 4339,
+          "id": 4340,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 4340,
+          "id": 4341,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 4235,
+          "id": 4236,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 403
         },
         {
-          "id": 4213,
+          "id": 4214,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 392
         },
         {
-          "id": 3925,
+          "id": 3926,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 240
         },
         {
-          "id": 3904,
+          "id": 3905,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 216
         },
         {
-          "id": 3905,
+          "id": 3906,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 207
         },
         {
-          "id": 4328,
+          "id": 4329,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 138
         },
         {
-          "id": 165,
+          "id": 164,
           "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 1200
         },
         {
-          "id": 571,
+          "id": 570,
           "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 4397,
+          "id": 4399,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 537
         },
         {
-          "id": 4405,
+          "id": 4406,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 479
         },
         {
-          "id": 4430,
+          "id": 4431,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 414
         },
         {
-          "id": 4457,
+          "id": 4458,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 366
         },
         {
-          "id": 4456,
+          "id": 4457,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 363
         },
         {
-          "id": 4455,
+          "id": 4456,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 350
         },
         {
-          "id": 4429,
+          "id": 4430,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 303
         },
         {
-          "id": 4435,
+          "id": 4436,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 256
         },
         {
-          "id": 4431,
+          "id": 4432,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 255
         },
         {
-          "id": 4427,
+          "id": 4428,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 250
         },
         {
-          "id": 4428,
+          "id": 4429,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 237
         },
         {
-          "id": 4410,
+          "id": 4411,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 165
         },
         {
-          "id": 4409,
+          "id": 4410,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 130
         },
         {
-          "id": 4408,
+          "id": 4409,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 126
         },
         {
-          "id": 181,
+          "id": 180,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 184,
+          "id": 183,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 203,
+          "id": 202,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 300,
+          "id": 299,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 313,
+          "id": 312,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 641,
+          "id": 640,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1080,8 +1080,8 @@
     }
   },
   "meta": {
-    "total_raw": 4632,
-    "dup": 1166,
+    "total_raw": 4633,
+    "dup": 1165,
     "nocontent": 406,
     "noise": 4
   }
