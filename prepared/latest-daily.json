@@ -95,7 +95,7 @@
           "word_count": 196
         },
         {
-          "id": 70,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 71,
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 73,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 3851,
-      "total_valid": 2723,
+      "total_valid": 2724,
       "total_candidates": 12
     },
     "vaccine": {
@@ -242,7 +242,7 @@
           "word_count": 240
         },
         {
-          "id": 4192,
+          "id": 4191,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -255,21 +255,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 192
-        },
-        {
-          "id": 4191,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Parental intent to accept postnatal RSV monoclonal antibody immunisation for infants in the UK",
-          "link": "https://www.nature.com/articles/s41541-026-01575-w",
-          "content": "npj Vaccines, Published online: 29 September 2026; doi:10.1038/s41541-026-01575-w Parental intent to accept postnatal RSV monoclonal antibody immunisation for infants in the UK",
-          "pub_date": "2026-09-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 176
         },
         {
           "id": 4137,
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 451
+        },
+        {
+          "id": 3963,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] Cardiovascular outcomes in coronary microvascular dysfunction: the Multicenter FLOW-CMD Registry",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01668-5/fulltext?rss=yes",
+          "content": "The FLOW-CMD Registry1 represents one of the largest contemporary assessments of coronary microvascular dysfunction in a broad population undergoing invasive coronary physiological evaluation, including patients with acute coronary syndrome and those requiring percutaneous coronary intervention (PCI). The study expands awareness of coronary microvascular dysfunction beyond patients with non-obstructive coronary artery disease.",
+          "pub_date": "2026-09-26",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 430
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 437,
-      "total_valid": 278,
+      "total_valid": 277,
       "total_candidates": 15
     },
     "synbio": {
