@@ -50,7 +50,7 @@
           "word_count": 157
         },
         {
-          "id": 90,
+          "id": 95,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 213
         },
         {
-          "id": 92,
+          "id": 93,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 208
         },
         {
-          "id": 99,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,22 @@
           "word_count": 196
         },
         {
-          "id": 68,
+          "id": 71,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "NVAlign: Direct-Gradient Optimization for Non-Verbal Control in Continuous Autoregressive Flow Matching Text-to-Speech",
+          "link": "https://arxiv.org/abs/2609.31892",
+          "content": "While modern text-to-speech (TTS) systems generate highly natural speech and support inline non-verbal vocalization (NVV) tags, accurate control over these events remains challenging. A key gap is the lack of established post-training methods for non-verbal control in continuous autoregressive flow-matching TTS. To this end, we present NVAlign, a direct-gradient post-training framework for NVV tag-following in this architecture. We first perform supervised fine-tuning (SFT) of TTS models and an NVV-aware automatic speech recognition (NV-ASR) model on NVV-annotated speech, then freeze the NV-ASR model to serve as the reward model for post-training. A two-step gradient surrogate enables efficient reward backpropagation through the flow-matching sampler to jointly update the autoregressive backbone and acoustic flow head. Fidelity penalties and reference-velocity regularization help preserve speaker similarity and speech quality. Results from NVV-SuperBench and human listening evaluations show that NVAlign improves tag-following accuracy over SFT and Flow-GRPO baselines. These findings demonstrate that direct reward-gradient optimization can improve non-verbal control in continuous au",
+          "pub_date": "2026-09-24T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 69,
+          "id": 73,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,22 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 70,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Can We Trust the Teacher? Decoupled Credit Direction-Magnitude for Self-Distillation",
-          "link": "https://arxiv.org/abs/2609.34848",
-          "content": "RLVR provides reliable trajectory-level credit, while OPSD offers dense supervision for token-level credit. This exposes a fundamental coupling when updating step-level credit direction and magnitude with teacher supervision, preventing steps from receiving reliable credit directions and contribution magnitudes, while making both vulnerable to teacher judgment errors and preference variance, as supported by our theoretical analysis. To separate credit direction from its contribution magnitude, we introduce Decoupled Credit Self-Distillation (DCSD), which theoretically decouples credit direction and magnitude into two reliable signals and uses them to calibrate privileged teacher supervision. Specifically, we design belief-margin probing to determine credit direction and marginal information gain to quantify credit magnitude, enabling step-to-token credit assignment for policy optimization. Across 11 benchmarks, DCSD achieves the best overall scores against GRPO, OPSD, RLSD, and RLCSD. Compared with base models, DCSD improves the overall score by 8.45 points on mathematical reasoning and 7.01 points on multimodal reasoning, while correcting the credit direction for 6\\% of tokens and",
-          "pub_date": "2026-09-27T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 3742,
+          "id": 3744,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 768
         },
         {
-          "id": 3738,
+          "id": 3740,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 594
         },
         {
-          "id": 3739,
+          "id": 3741,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 3850,
-      "total_valid": 2721,
+      "total_raw": 3851,
+      "total_valid": 2722,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 4258,
+          "id": 4213,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 392
         },
         {
-          "id": 4279,
+          "id": 4234,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 246
         },
         {
-          "id": 3924,
+          "id": 3925,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 240
         },
         {
-          "id": 4236,
+          "id": 4191,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 192
         },
         {
-          "id": 4235,
+          "id": 4190,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 176
         },
         {
-          "id": 4181,
+          "id": 4136,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 284
         },
         {
-          "id": 4140,
+          "id": 4095,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 278
         },
         {
-          "id": 4138,
+          "id": 4093,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 274
         },
         {
-          "id": 3853,
+          "id": 3854,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 235
         },
         {
-          "id": 4300,
+          "id": 4253,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 200
         },
         {
-          "id": 3859,
+          "id": 3860,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 193
         },
         {
-          "id": 3885,
+          "id": 3886,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 159
         },
         {
-          "id": 3881,
+          "id": 3882,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 145
         },
         {
-          "id": 3886,
+          "id": 3887,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 142
         },
         {
-          "id": 4251,
+          "id": 4206,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 484,
-      "total_valid": 309,
+      "total_raw": 436,
+      "total_valid": 277,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 4375,
+          "id": 4328,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 174
         },
         {
-          "id": 4367,
+          "id": 4320,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 163
         },
         {
-          "id": 4376,
+          "id": 4329,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 127
         },
         {
-          "id": 4405,
+          "id": 4355,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1089
         },
         {
-          "id": 4406,
+          "id": 4356,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1064
         },
         {
-          "id": 4427,
+          "id": 4377,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 424
         },
         {
-          "id": 4409,
+          "id": 4359,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 379
         },
         {
-          "id": 4390,
+          "id": 4342,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1045
         },
         {
-          "id": 4387,
+          "id": 4339,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 4388,
+          "id": 4340,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 98,
+      "total_raw": 94,
       "total_valid": 12,
       "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 4280,
+          "id": 4235,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 403
         },
         {
-          "id": 4258,
+          "id": 4213,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 392
         },
         {
-          "id": 3924,
+          "id": 3925,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 240
         },
         {
-          "id": 3903,
+          "id": 3904,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 216
         },
         {
-          "id": 3904,
+          "id": 3905,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 207
         },
         {
-          "id": 4375,
+          "id": 4328,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 174
         },
         {
-          "id": 3862,
+          "id": 3863,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -701,7 +701,7 @@
           "word_count": 223
         },
         {
-          "id": 3880,
+          "id": 3881,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -716,7 +716,7 @@
           "word_count": 138
         },
         {
-          "id": 163,
+          "id": 165,
           "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 1200
         },
         {
-          "id": 569,
+          "id": 571,
           "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 44,
-      "total_valid": 29,
+      "total_raw": 43,
+      "total_valid": 30,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +769,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 4458,
+          "id": 4397,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Citi Rewires Global Payments Through Single Swift Connection",
+          "link": "https://www.pymnts.com/news/cross-border-payments/2026/citi-rewires-global-payments-through-single-swift-connection/",
+          "content": "Citi now enables its bank clients to access multiple cross-border instant payment markets through a single account structure, the bank said in a Tuesday (Sept. 29) press release. This solution also eliminates the need for these bank clients to have separate local banking relationships, bilateral agreements or local technical infrastructure, according to the release. Citi’s offering operates on the Swift payments scheme and [&#8230;] The post Citi Rewires Global Payments Through Single Swift Connection appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 29 Sep 2026 23:05:56 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 537
+        },
+        {
+          "id": 4405,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,22 +799,7 @@
           "word_count": 479
         },
         {
-          "id": 4457,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Toast Courts Convenience Stores With Fuel Platform",
-          "link": "https://www.pymnts.com/news/retail/2026/toast-courts-convenience-stores-with-fuel-platform/",
-          "content": "Restaurant and retail digital technology platform Toast debuted Toast Fuel, new capabilities for gas stations and convenience stores, according to a Tuesday (Sept. 29) press release. Toast Fuel gives operators a single and connected platform for in-store and at-the-pump fuel payments as well as retail and food service, per the release. “Convenience stores sell an [&#8230;] The post Toast Courts Convenience Stores With Fuel Platform appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 29 Sep 2026 19:03:14 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 466
-        },
-        {
-          "id": 4483,
+          "id": 4430,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 414
         },
         {
-          "id": 4510,
+          "id": 4457,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 366
         },
         {
-          "id": 4509,
+          "id": 4456,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 363
         },
         {
-          "id": 4508,
+          "id": 4455,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 350
         },
         {
-          "id": 4482,
+          "id": 4429,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 303
         },
         {
-          "id": 4488,
+          "id": 4435,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 256
         },
         {
-          "id": 4484,
+          "id": 4431,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 255
         },
         {
-          "id": 4480,
+          "id": 4427,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 250
         },
         {
-          "id": 4481,
+          "id": 4428,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 237
         },
         {
-          "id": 4463,
+          "id": 4410,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 165
         },
         {
-          "id": 4462,
+          "id": 4409,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 130
         },
         {
-          "id": 4461,
+          "id": 4408,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 126
         },
         {
-          "id": 179,
+          "id": 181,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 182,
+          "id": 184,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 201,
+          "id": 203,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 298,
+          "id": 300,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 311,
+          "id": 313,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 639,
+          "id": 641,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1075,14 +1075,14 @@
         "max": 12
       },
       "total_raw": 268,
-      "total_valid": 72,
+      "total_valid": 75,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 4685,
-    "dup": 1193,
-    "nocontent": 405,
+    "total_raw": 4632,
+    "dup": 1166,
+    "nocontent": 406,
     "noise": 4
   }
 }

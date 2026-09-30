@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 19,
+      "count": 18,
       "ok": true
     },
     "Anthropic Blog": {
@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 3,
       "ok": true
     },
     "Meta AI Blog": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 19,
+      "count": 18,
       "ok": true
     },
     "Hacker News AI": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 36,
       "ok": true
     },
     "NEJM": {
@@ -190,7 +190,7 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 11,
       "ok": true
     },
     "Cell Host Microbe": {
@@ -232,7 +232,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
+      "count": 8,
       "ok": true
     },
     "Nature Immunology": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 2,
+      "count": 0,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 21,
+      "count": 19,
       "ok": true
     },
     "BioPharma Dive": {
@@ -352,13 +352,13 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true
     },
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 10,
+      "count": 9,
       "ok": true
     },
     "Absci Blog": {
@@ -370,7 +370,7 @@
     "Nature Chemical Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 6,
+      "count": 5,
       "ok": true
     },
     "Nucleic Acids Research": {
@@ -382,7 +382,7 @@
     "Nature Reviews Bioengineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 8,
+      "count": 7,
       "ok": true
     },
     "Lancet Digital Health": {
@@ -400,7 +400,7 @@
     "Nature Methods": {
       "section": "cross",
       "method": "rss",
-      "count": 8,
+      "count": 6,
       "ok": true
     },
     "PYMNTS.com": {
@@ -507,10 +507,11 @@
       "ClinicalTrials.gov",
       "Import AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "medRxiv Infectious"
+    ],
     "persistent_zero": [
       "Cointelegraph Payments",
-      "Google DeepMind",
       "JAMA",
       "Sequoia Capital",
       "WHO News"
