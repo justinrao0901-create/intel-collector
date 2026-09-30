@@ -50,7 +50,7 @@
           "word_count": 157
         },
         {
-          "id": 94,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 213
         },
         {
-          "id": 92,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 208
         },
         {
-          "id": 101,
+          "id": 97,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,14 +95,14 @@
           "word_count": 196
         },
         {
-          "id": 71,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CineSubBench: Evaluating LLMs on Long-Form Narrative and Cultural Understanding from Multilingual Movie Subtitles",
-          "link": "https://arxiv.org/abs/2609.36218",
-          "content": "Large language models are increasingly evaluated in specialized domains such as law, medicine, software engineering, and cybersecurity, yet film remains comparatively underexplored despite requiring long-form narrative integration, multilingual interpretation, and culturally situated audience judgments. We introduce CineSubBench, a benchmark for evaluating long-context film understanding from multilingual movie subtitles. A subtitle track represents a film as thousands of short, temporally ordered utterances from which models must reconstruct characters, relationships, events, causal progression, and themes without explicit scene or event structure. CineSubBench contains 1,012 films with complete subtitle coverage in six languages, yielding 6,072 tracks and 8.13M timestamped subtitle entries. It provides a matched multi-task, multilingual, and multicultural (MultiX) evaluation setting: seven tasks span narrative reconstruction and abstraction, genre prediction, age suitability, country-specific motion-picture ratings across ten national classification systems, and subtitle-grounded language safety. Across nine LLMs, plot premises are recovered more reliably than event-complete syno",
+          "title": "WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",
+          "link": "https://arxiv.org/abs/2609.34606",
+          "content": "Leveraging the paradigm of autoregressive diffusion, text-conditioned interactive video world models aim to simulate temporally coherent environments guided by textual instructions. While enabling low-latency, long-duration generation is pivotal for embodied AI and simulation-based planning, current frameworks primarily rely on sliding-window mechanisms to bound computational complexity. However, this approach inherently sacrifices historical context, undermining the long-range interactive capabilities. Conversely, maintaining a full-history cache remains computationally prohibitive and memory-intensive: the quadratic complexity of attention leads to excessive computational overhead, while the linear growth of the KV cache inevitably leads to GPU memory saturation. To overcome these limitations, we propose WorldAttention, a system-oriented attention architecture that achieves high efficiency through the co-design of specialized attention kernels and hierarchical KV cache management. First, we introduce Hybrid Sparse Attention (HSA), which integrates linear global attention supplemented with head-adaptive sparse attention. Additionally, we design a Hierarchical KV Cache (HKV) that o",
           "pub_date": "2026-09-27T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -110,29 +110,29 @@
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "LeRF: Learning Reference Coordinate Frames for Perspective Taking Reasoning",
-          "link": "https://arxiv.org/abs/2609.36219",
-          "content": "Perspective taking is a fundamental component of spatial intelligence, requiring models interpret spatial relations from a specified viewpoint, such as that of another entity or an imagined observer. Despite the increasing spatial reasoning capabilities of Vision-Language Models (VLMs), they still struggle with perspective taking, often defaulting to the camera viewpoint when a query requires reasoning from a different perspective. We introduce Learning Reference Coordinate Frames for Perspective Taking (LeRF), a framework that trains VLMs to construct and use explicit reference frames for viewpoint-dependent reasoning. Given an image and a query, LeRF decides whether a coordinate frame is necessary. If so, it grounds the reference entity and predicts the frame's origin and entity-centered reference frame. A lightweight renderer overlays the frame onto the image, enabling subsequent reasoning over these visual cues without external perception models or explicit 3D reconstruction. To learn this process, we first perform supervised fine-tuning to teach selective tool invocation and reference coordinate frame prediction, followed by reinforcement learning on spatial VQA pairs to impro",
-          "pub_date": "2026-09-27T20:00:00.000Z",
+          "title": "Think Before You Score: Thinking Reward Model for Visual Generation",
+          "link": "https://arxiv.org/abs/2609.37372",
+          "content": "Visual reward models are essential for evaluating and improving visual generation models, yet existing approaches typically map task conditions and candidate outputs directly to scalar rewards, leaving implicit what should be evaluated for each individual case. We introduce Think Before You Score, a paradigm that explicitly determines what matters for each case before judging how well the candidate performs. Following this principle, we propose the Thinking Reward Model (TRM), which formulates case-adaptive rubrics, performs rubric-guided assessment, and produces fine-grained pointwise rewards. We further observe that conventional pairwise preference optimization can induce score polarization, and introduce Pairwise Dual-Group Relative Policy Optimization (PD-GRPO), which leverages pairwise supervision to improve reward discrimination while preserving fine-grained pointwise scoring. Extensive experiments on image generation and editing reward-modeling benchmarks demonstrate that TRM achieves state-of-the-art performance among open-source reward models while remaining highly competitive with proprietary alternatives. Moreover, using TRM as a reward for reinforcement learning consist",
+          "pub_date": "2026-09-28T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 73,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Selecting Diverse SFT Traces Improves Post-RL Generalization",
-          "link": "https://arxiv.org/abs/2609.33780",
-          "content": "Verified solutions are not equally useful for preparing reasoning models for reinforcement learning (RL). We present a comprehensive study of route diversity, the variation in the sequences of reasoning steps in supervised fine-tuning (SFT) data, and propose a lightweight, rule-based fingerprint to select for it. From one pool at one budget, with matched training recipes and checkpoints, selecting diverse rather than similar routes improves post-RL problem coverage across puzzles and mathematics, including on problems harder than those seen in either training stage. In synthetic experiments, route-diverse SFT improves OLMo3-7B's pass@8 by 16.9 points on environments held out from SFT. In a single-model condition, where one model writes every candidate, diverse selection gains up to 6.2 points of mean pass@8 across 10 mathematics benchmarks. Pre-RL diagnostics suggest why: diverse SFT can produce both successful and failed attempts on more prompts despite slightly lower mean accuracy, giving group-relative RL more prompts with a learning signal. On 3 open-source corpora, our CPU-only selector, without model calls, outperforms more expensive alternatives in every comparison of mean p",
+          "title": "TGRL: Temperature-Grouped Reinforcement Learning for Efficient Exploration in LLMs",
+          "link": "https://arxiv.org/abs/2609.33589",
+          "content": "Efficient exploration often remains a central bottleneck in reinforcement learning with verifiable rewards (RLVR). Although temperature control and test-time scaling strategies can increase rollout diversity of large language models (LLMs), they either expand the sample budget at rollout time or leave the benefit of exploration unquantified. To this end, we propose Temperature-Grouped Reinforcement Learning (TGRL), which turns temperature-induced diversity into an explicit training signal. For each prompt, TGRL partitions its rollout group into low- and high-temperature subsets, estimates exploration gain through their reward contrast, and allocates this group-level signal as token-level credit using Jensen--Shannon (JS) divergence between the corresponding temperature-scaled next-token distributions induced by the same logits. Notably, TGRL reaches equivalent accuracy up to 36% faster than strong RLVR baselines without expanding the rollout budget. Across 11 benchmarks from diverse domains, TGRL broadly improves over strong RLVR baselines: it improves the six-benchmark math average by 1.6% at 32B, raises CodeForces rating by 196.7 points and LiveCodeBench Pass@16 by 4.4%, and impr",
           "pub_date": "2026-09-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 3744,
+          "id": 3740,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 768
         },
         {
-          "id": 3739,
+          "id": 3735,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 594
         },
         {
-          "id": 3740,
+          "id": 3736,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 3851,
-      "total_valid": 2724,
+      "total_raw": 3847,
+      "total_valid": 2726,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 4214,
+          "id": 4210,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 392
         },
         {
-          "id": 4235,
+          "id": 4231,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 246
         },
         {
-          "id": 3926,
+          "id": 3922,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 240
         },
         {
-          "id": 4191,
+          "id": 4188,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,22 @@
           "word_count": 192
         },
         {
-          "id": 4137,
+          "id": 4187,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Parental intent to accept postnatal RSV monoclonal antibody immunisation for infants in the UK",
+          "link": "https://www.nature.com/articles/s41541-026-01575-w",
+          "content": "npj Vaccines, Published online: 29 September 2026; doi:10.1038/s41541-026-01575-w Parental intent to accept postnatal RSV monoclonal antibody immunisation for infants in the UK",
+          "pub_date": "2026-09-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 176
+        },
+        {
+          "id": 4133,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 284
         },
         {
-          "id": 4096,
+          "id": 4092,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 278
         },
         {
-          "id": 4094,
+          "id": 4090,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 274
         },
         {
-          "id": 3854,
+          "id": 3850,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +332,7 @@
           "word_count": 235
         },
         {
-          "id": 4254,
+          "id": 4250,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +347,7 @@
           "word_count": 200
         },
         {
-          "id": 3860,
+          "id": 3856,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +362,7 @@
           "word_count": 193
         },
         {
-          "id": 3886,
+          "id": 3882,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +377,7 @@
           "word_count": 159
         },
         {
-          "id": 3882,
+          "id": 3878,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +392,7 @@
           "word_count": 145
         },
         {
-          "id": 3887,
+          "id": 3883,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +407,7 @@
           "word_count": 142
         },
         {
-          "id": 4207,
+          "id": 4203,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 451
-        },
-        {
-          "id": 3963,
-          "source": "The Lancet",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "[Correspondence] Cardiovascular outcomes in coronary microvascular dysfunction: the Multicenter FLOW-CMD Registry",
-          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01668-5/fulltext?rss=yes",
-          "content": "The FLOW-CMD Registry1 represents one of the largest contemporary assessments of coronary microvascular dysfunction in a broad population undergoing invasive coronary physiological evaluation, including patients with acute coronary syndrome and those requiring percutaneous coronary intervention (PCI). The study expands awareness of coronary microvascular dysfunction beyond patients with non-obstructive coronary artery disease.",
-          "pub_date": "2026-09-26",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 430
         }
       ],
       "quota": {
@@ -428,13 +428,13 @@
         "max": 7
       },
       "total_raw": 437,
-      "total_valid": 277,
+      "total_valid": 278,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 4329,
+          "id": 4325,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 174
         },
         {
-          "id": 4321,
+          "id": 4317,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 163
         },
         {
-          "id": 4330,
+          "id": 4326,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 127
         },
         {
-          "id": 4356,
+          "id": 4352,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1089
         },
         {
-          "id": 4357,
+          "id": 4353,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1064
         },
         {
-          "id": 4378,
+          "id": 4374,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 424
         },
         {
-          "id": 4360,
+          "id": 4356,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 379
         },
         {
-          "id": 4343,
+          "id": 4339,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1045
         },
         {
-          "id": 4340,
+          "id": 4336,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 4341,
+          "id": 4337,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 4236,
+          "id": 4232,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 403
         },
         {
-          "id": 4214,
+          "id": 4210,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 392
         },
         {
-          "id": 3926,
+          "id": 3922,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 240
         },
         {
-          "id": 3905,
+          "id": 3901,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 216
         },
         {
-          "id": 3906,
+          "id": 3902,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 207
         },
         {
-          "id": 4329,
+          "id": 4325,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 174
         },
         {
-          "id": 3863,
+          "id": 3859,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -701,7 +701,7 @@
           "word_count": 223
         },
         {
-          "id": 3881,
+          "id": 3877,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -716,7 +716,7 @@
           "word_count": 138
         },
         {
-          "id": 164,
+          "id": 160,
           "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 1200
         },
         {
-          "id": 570,
+          "id": 566,
           "source": "arXiv cs.CL",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 4399,
+          "id": 4395,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 537
         },
         {
-          "id": 4406,
+          "id": 4402,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 479
         },
         {
-          "id": 4431,
+          "id": 4427,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 414
         },
         {
-          "id": 4458,
+          "id": 4454,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 366
         },
         {
-          "id": 4457,
+          "id": 4453,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 363
         },
         {
-          "id": 4456,
+          "id": 4452,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 350
         },
         {
-          "id": 4430,
+          "id": 4426,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 303
         },
         {
-          "id": 4436,
+          "id": 4432,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 256
         },
         {
-          "id": 4432,
+          "id": 4428,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 255
         },
         {
-          "id": 4428,
+          "id": 4424,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 250
         },
         {
-          "id": 4429,
+          "id": 4425,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 237
         },
         {
-          "id": 4411,
+          "id": 4407,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 165
         },
         {
-          "id": 4410,
+          "id": 4406,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 130
         },
         {
-          "id": 4409,
+          "id": 4405,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 126
         },
         {
-          "id": 180,
+          "id": 176,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 183,
+          "id": 179,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 202,
+          "id": 198,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 299,
+          "id": 295,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 312,
+          "id": 308,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 640,
+          "id": 636,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1080,9 +1080,9 @@
     }
   },
   "meta": {
-    "total_raw": 4633,
-    "dup": 1165,
-    "nocontent": 406,
+    "total_raw": 4629,
+    "dup": 1160,
+    "nocontent": 404,
     "noise": 4
   }
 }
