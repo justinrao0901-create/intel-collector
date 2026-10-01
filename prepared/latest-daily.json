@@ -80,7 +80,7 @@
           "word_count": 93
         },
         {
-          "id": 88,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 273
         },
         {
-          "id": 89,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 230
         },
         {
-          "id": 84,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -130,6 +130,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
+          "title": "AgentTell: Behavioural Side-Channel Leakage in Browser-Use Agents",
+          "link": "https://arxiv.org/abs/2609.32915",
+          "content": "Browser-use agents often carry information in their context as they move between websites. While it may be necessary for task completion, it also creates a privacy risk, especially when the information contains a private fact regarding the user. For example, an agent may learn a user's affiliation after reading a membership record. If it later selects a registration option specific to that affiliation on another website instead of a general option, the information gets leaked. In this work, we define and study behavioural side-channel leakage in browser-use agents, where an agent's actions inadvertently reveal private information (secret) retained from a prior website, despite an explicit instruction not to disclose it. We introduce AgentTell, a benchmark of 20 scenarios and 100 tasks in which an agent acquires a secret on one website and then completes a task on another website that offers secret-specific actions alongside a general action that reveals nothing. Our evaluation across 9,760 sessions on six backbones shows that agents carrying a secret reveal it through their actions in 61.1% of sessions. Even when agents explicitly state in memory that the secret must not be shared,",
+          "pub_date": "2026-09-25T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 65,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
           "title": "PreviewDiff: Multimodal Critic-Guided Search over Diffusion Latents",
           "link": "https://arxiv.org/abs/2609.36199",
           "content": "Diffusion models can produce striking images and videos, but they still struggle with the compositional details that make a generation faithful to a prompt, such as object counts, attribute binding, spatial relations, and temporally grounded actions. A common way to improve prompt satisfaction is to spend more compute at test time through Best-of-N sampling, but final-sample selection is fixed. Best-of-N can only choose among completed outputs and cannot repair a promising trajectory before it fails. We introduce PreviewDiff, a training-free test-time search method that turns diffusion sampling from scalar search into a multimodal critic-guided search over intermediate latents. At selected denoising checkpoints, PreviewDiff decodes a partial preview, asks a multimodal judge to score and critique it, and uses the resulting natural-language feedback to branch over semantic prompt edits and locally re-noised latent continuations. These branches are then scored and selectively rolled forward, allowing verifier compute to guide generation while the sample is still editable. Across image and video generation benchmarks, PreviewDiff consistently improves over budget-matched Best-of-N sele",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,22 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Org-Agent: Beyond Personal Assistants Towards Organizational Agents",
-          "link": "https://arxiv.org/abs/2609.34392",
-          "content": "Language model agents serving organizations must coordinate requests from multiple users while using knowledge distributed across their interactions. We identify two complementary capabilities for this setting, namely cross-user interaction and decision-making, as well as cross-user memory and knowledge use. Both capabilities are governed by organizational constraints across three aspects: user identity, authority, and access permissions; the attribution and temporal validity of information; and rules for resolving conflicting requirements across users and completion requirements for joint decisions. These constraints shape what information or decisions must be obtained before an action can proceed and what conditions must be satisfied during its execution. Motivated by this, we introduce Org-Agent, a unified constraint-centric reasoning framework that organizes task execution in three stages. Specifically, Org-Agent decomposes a task into atomic subtasks and constructs a task dependency graph whose edges encode the dependencies among them. Building on this graph, it schedules the subtasks in dependency order through topological sorting. It then executes each subtask while accounti",
-          "pub_date": "2026-09-27T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 3016,
+          "id": 3015,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 3124,
-      "total_valid": 2668,
+      "total_raw": 3122,
+      "total_valid": 2667,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 3425,
+          "id": 3412,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 3429,
+          "id": 3416,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 3426,
+          "id": 3413,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 3360,
+          "id": 3350,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 329
         },
         {
-          "id": 3587,
+          "id": 3574,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 317
         },
         {
-          "id": 3362,
+          "id": 3352,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 295
         },
         {
-          "id": 3187,
+          "id": 3183,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 287
         },
         {
-          "id": 3201,
+          "id": 3197,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 234
         },
         {
-          "id": 3174,
+          "id": 3170,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 208
         },
         {
-          "id": 3553,
+          "id": 3540,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 70
         },
         {
-          "id": 3449,
+          "id": 3436,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 254
         },
         {
-          "id": 3455,
+          "id": 3442,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 243
         },
         {
-          "id": 3508,
+          "id": 3495,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 243
         },
         {
-          "id": 3129,
+          "id": 3127,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 279
         },
         {
-          "id": 3147,
+          "id": 3144,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 518,
-      "total_valid": 348,
+      "total_raw": 506,
+      "total_valid": 340,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 3693,
+          "id": 3679,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 324
         },
         {
-          "id": 3690,
+          "id": 3676,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 124
         },
         {
-          "id": 3717,
+          "id": 3701,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1200
         },
         {
-          "id": 3716,
+          "id": 3700,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1159
         },
         {
-          "id": 3715,
+          "id": 3699,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 801
         },
         {
-          "id": 3709,
+          "id": 3693,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 410
         },
         {
-          "id": 3652,
+          "id": 3638,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 372
         },
         {
-          "id": 3698,
+          "id": 3684,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 3699,
+          "id": 3685,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 3704,
+          "id": 3690,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 104,
+      "total_raw": 102,
       "total_valid": 11,
       "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 3437,
+          "id": 3424,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 523
         },
         {
-          "id": 3421,
+          "id": 3408,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 447
         },
         {
-          "id": 3291,
+          "id": 3282,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 414
         },
         {
-          "id": 3652,
+          "id": 3638,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 372
         },
         {
-          "id": 3588,
+          "id": 3575,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 361
         },
         {
-          "id": 3204,
+          "id": 3200,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 321
         },
         {
-          "id": 3197,
+          "id": 3193,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 292
         },
         {
-          "id": 3208,
+          "id": 3204,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 280
         },
         {
-          "id": 3754,
+          "id": 3738,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 189
         },
         {
-          "id": 3553,
+          "id": 3540,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 60,
-      "total_valid": 47,
+      "total_raw": 61,
+      "total_valid": 48,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 3764,
+          "id": 3750,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 552
         },
         {
-          "id": 3765,
+          "id": 3751,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 501
         },
         {
-          "id": 3832,
+          "id": 3816,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 500
         },
         {
-          "id": 3761,
+          "id": 3747,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,22 @@
           "word_count": 497
         },
         {
-          "id": 3766,
+          "id": 3745,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Treasury and Education Departments Launch Portal to Ease Student Debt Rehabilitation",
+          "link": "https://www.pymnts.com/consumer-finance/2026/treasury-and-education-departments-launch-portal-to-ease-student-debt-rehabilitation/",
+          "content": "The Treasury Department and the Education Department have launched a new online portal designed for Americans who have defaulted federal student loans, they said in a Wednesday (Sept. 30) press release. The new Defaulted Loans Support Center is designed to help these borrowers understand their options, address default and return to repayment, according to the [&#8230;] The post Treasury and Education Departments Launch Portal to Ease Student Debt Rehabilitation appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 30 Sep 2026 23:32:58 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 496
+        },
+        {
+          "id": 3752,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 473
         },
         {
-          "id": 3767,
+          "id": 3753,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 413
         },
         {
-          "id": 3821,
+          "id": 3805,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 365
         },
         {
-          "id": 3822,
+          "id": 3806,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 340
         },
         {
-          "id": 3795,
+          "id": 3779,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 289
         },
         {
-          "id": 3783,
+          "id": 3772,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 278
         },
         {
-          "id": 3792,
+          "id": 3776,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 226
         },
         {
-          "id": 3803,
+          "id": 3787,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 219
         },
         {
-          "id": 3773,
+          "id": 3757,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,22 +979,7 @@
           "word_count": 208
         },
         {
-          "id": 3788,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Circle and Volante partner to help banks integrate stablecoins into payment operations",
-          "link": "https://www.finextra.com/newsarticle/48496/circle-and-volante-partner-to-help-banks-integrate-stablecoins-into-payment-operations?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Payments-as-a-Service specialist Volante Technologies is working with USDC-issuer Circle to help financial institutions integrate stablecoin payment and settlement capabilities into their existing operations.",
-          "pub_date": "Wed, 30 Sep 2026 00:01:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 208
-        },
-        {
-          "id": 3798,
+          "id": 3782,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,22 @@
           "word_count": 203
         },
         {
-          "id": 3774,
+          "id": 3763,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Citi launches multi-market instant payments on Swift scheme",
+          "link": "https://www.finextra.com/newsarticle/48508/citi-launches-multi-market-instant-payments-on-swift-scheme?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Citi has gone live with multiple markets on the Swift payments scheme, enabling bank clients to access multiple cross-border instant payment markets through a single account structure.",
+          "pub_date": "Thu, 01 Oct 2026 00:01:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 184
+        },
+        {
+          "id": 3758,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1024,7 @@
           "word_count": 140
         },
         {
-          "id": 3831,
+          "id": 3815,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,7 +1039,7 @@
           "word_count": 152
         },
         {
-          "id": 657,
+          "id": 656,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 771,
+          "id": 770,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1047,21 +1062,6 @@
           "title": "An Empirical Study and Assessment of EU AI Act Compliance Checkers",
           "link": "https://arxiv.org/abs/2609.36228",
           "content": "arXiv:2609.36228v1 Announce Type: new Abstract: The EU AI Act introduces extensive compliance requirements for organizations that develop, deploy, or integrate AI systems. Many of these requirements are directly relevant to security and privacy, while also addressing closely related issues such as data governance, transparency, accuracy, and robustness. However, stakeholders such as small-to-medium businesses and individual developers often lack the legal expertise required to interpret these obligations and translate them into engineering and governance practices. This disconnect creates challenges for implementing the EU AI Act and may lead to missing safeguards or misdirected development and deployment efforts. To address this, various automated EU AI Act compliance checkers (AIACCs) have emerged, claiming to streamline compliance assessments and provide practical guidance. In this paper, we present the first empirical study and assessment of AIACCs. We characterize 12 mainstream AIACCs across multiple dimensions, evaluate their legal coverage and alignment, and analyze checker-generated compliance reports for structure, determinacy, and actionability. We find that the quality o",
-          "pub_date": "Wed, 30 Sep 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 869,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "When Tools Silently Lie: Evaluating and Mitigating Blind Compliance in Tool-Augmented Data Agents",
-          "link": "https://arxiv.org/abs/2609.37153",
-          "content": "arXiv:2609.37153v1 Announce Type: new Abstract: Tool-augmented data agents rely on tool outputs for analytical decisions. Yet successful execution can return plausible but incorrect evidence, requiring agents to decide whether to trust or verify it. Understanding this failure requires examining both the evidence obtained through checking and the answer ultimately adopted. We introduce ToxicBench to measure checking and adoption under numerical, label, schema, and retrieval errors, pairing clean and poisoned observations over fixed source data. In the 118-task GPT evaluation across three adapters, poisoning lowers task success by 26 to 39 percentage points. Ordinary retries help under one-shot poisoning, whereas repeated poisoning reveals wrong-answer adoption after checking. Controls on three public tables isolate how supplied evidence affects recovery. After freezing the scorer, we compare its judgments with human annotations on 200 trajectories, finding 96% task-success agreement. Human judgments support retry gains over Base and confirm adoption after checking on audited tasks. We release trajectories, versioned scoring, and reference and delivery audits. These findings highligh",
           "pub_date": "Wed, 30 Sep 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1080,8 +1080,8 @@
     }
   },
   "meta": {
-    "total_raw": 4000,
-    "dup": 510,
+    "total_raw": 3984,
+    "dup": 503,
     "nocontent": 414,
     "noise": 4
   }
