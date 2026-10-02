@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 57,
+          "id": 55,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 375
         },
         {
-          "id": 59,
+          "id": 57,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 138
         },
         {
-          "id": 90,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 200
         },
         {
-          "id": 83,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 187
         },
         {
-          "id": 88,
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,29 +125,14 @@
           "word_count": 177
         },
         {
-          "id": 67,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Scaling and Distilling Text Embeddings for Better Diffusibility",
-          "link": "https://arxiv.org/abs/2610.01016",
-          "content": "Diffusion language models (DLMs) offer a promising alternative to autoregressive (AR) language generation. Recent advances in continuous DLMs, which apply latent diffusion to continuous text embeddings, raise a practical question: which embedding makes the best latent space, i.e., the most diffusible? To answer this, we search through different embeddings and find that scaling the embedding model to stronger ones within the same family (T5 to T5Gemma-1 to T5Gemma-2) greatly improves generative performance. But the raw T5Gemma-2 embeddings are still not optimal. They are so discriminative that even the embeddings of plausible alternative words are separated, which makes the generation vulnerable to imperfect sampling. Consequently, continuous diffusion often fails to reach any of them and ends up at an invalid embedding instead. To address this, we distill T5Gemma-2 into a student encoder that learns the teacher's decoded probabilities as soft labels. Learning from such soft labels makes the student pull the alternative embeddings closer while maintaining the encoding-decoding mechanism. The distilled embeddings form a more connected and diffusible latent space, improving over the v",
-          "pub_date": "2026-09-30T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 68,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Learning Chaos Without Seeing Chaos: Extrapolation of Global Dynamics in Autoregressive Transformers",
-          "link": "https://arxiv.org/abs/2609.38814",
-          "content": "Autoregressive models are trained to predict a system's behavior one step at a time, and recursive generation allows the learned dynamics to unfold over long horizons. To what extent can such dynamics learned from local observations recover broader organization of an underlying system that was only partially observed during training? Here we study small autoregressive transformers trained from scratch on trajectories sampled from restricted parameter regimes of several non-linear dynamical systems, including logistic and sine maps, the Lorenz system, and the generalized Hopf system, with control parameters and state trajectories represented as sequences of continuous tokens. Under closed-loop evaluation at parameters far outside the training distribution, the models can recover self-similar period-doubling cascades, chaotic dynamics, and attractor structures with remarkable visual and numerical fidelity. For the logistic map, a transformer reproduces successive period doublings up to period 128, yielding a finite-order scaling ratio of 4.6687, matching the Feigenbaum constant to within 5times10^{-4}. We further investigate how these structures emerge over the course of training, an",
+          "title": "GraphForge: Training Working Agents with Graph-Anchored Workspace Synthesis",
+          "link": "https://arxiv.org/abs/2609.38923",
+          "content": "Working agents need to read diverse files, coordinate tools, and produce deliverables. Training such agents requires tasks built on many real files with verifiable results, but few pipelines exist to synthesize this kind of data. Existing pipelines either generate files with models, which lack realism and diversity, or build tasks on real files without task-specific verifiers, leaving result quality unchecked. We introduce GraphForge, an evidence-graph based framework that grounds both the task and its verification in real files. Starting from occupation-grounded seeds for controlled diversity, GraphForge assembles a workspace of real files for each seed and builds an evidence graph over their relations. Since the task statement and rubrics are both derived from this graph, task requirements are backed by the workspace files and each criterion is anchored to the files needed to verify it. An initial rollout further tests executability, and a revision agent repairs the task and rubrics against the original files before trajectories are collected. Fine-tuning Qwen3.6-27B on 2,169 GraphForge trajectories brings GDPVal to 1445.7 (+65.7) under OpenHands, and Workspace-Bench-Lite and Spr",
           "pub_date": "2026-09-29T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -155,22 +140,37 @@
           "word_count": 1200
         },
         {
-          "id": 69,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "PixelUMM: Encoder-Free Unified Image and Video Understanding and Generation",
-          "link": "https://arxiv.org/abs/2609.38597",
-          "content": "Unified Multimodal Models (UMMs) often rely on separate visual representations for understanding and generation, increasing visual context length and complicating integration with established vision-language pretraining pipelines. Recent advances in pixel-space modeling offer an encoder-free alternative, but extending this paradigm from images to videos is non-trivial: video understanding and generation adopt different temporal representations, leaving the design of a unified visual interface an open question. We present PixelUMM, an encoder-free model for unified image and video understanding and generation directly in pixel space. PixelUMM represents images as spatial patches and videos as spatiotemporal tubelets, connecting raw pixels to a shared multimodal backbone through single-layer linear projections. Its Mixture-of-Transformers architecture combines shared attention with task-specific parameters and extends clean-pixel prediction to video generation, jointly supporting autoregressive text prediction and pixel-space flow matching. Experiments show that PixelUMM achieves competitive performance across image and video understanding and generation tasks. We further conduct emp",
-          "pub_date": "2026-09-28T20:00:00.000Z",
+          "title": "It Takes Workflows to Evolve Better Workflows",
+          "link": "https://arxiv.org/abs/2610.01026",
+          "content": "Tackling complex real-world tasks can exceed the capabilities of a single large language model (LLM), motivating the use of multi-agent workflows that coordinate specialized agents to work together on these tasks. Recent methods train LLMs to construct better workflows from execution outcomes, but they optimize only the workflow generator, while the other agents that build or execute each workflow remain fixed even though every outcome depends on all of them. However, extending training beyond the generator is challenging: the agents are coupled, and a workflow's outcome is a single sparse score that cannot tell which agent causes a failure. We propose FloWright, which leverages the workflow as a harness to optimize workflows. By introducing a hierarchical, structure-aware reward paradigm, FloWright enables one role to self-evolve and two or more roles to co-evolve, with no additional models, labels, or executions. Considering the limitation that workflows are commonly trained and evaluated on data that a single agent can already handle, we further propose DataWright, an adaptive data hardening approach that converts existing datasets into workflow-level tasks with increased diffic",
+          "pub_date": "2026-09-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 1725,
+          "id": 67,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "AutoDataBench: A Data-centric Testbed for Accelerating Auto Research",
+          "link": "https://arxiv.org/abs/2609.40097",
+          "content": "Existing auto-research benchmarks often entangle multiple sources of improvement, including training frameworks, hyperparameters, compute budgets, and data, making it difficult to attribute why one frontier agent outperforms another to specific research capabilities. In this work, we isolate and systematically evaluate Data Intelligence: an agent's ability to understand, manipulate, and improve the data that shapes model capabilities. We introduce AutoDataBench, a controlled testbed built on a conceptual framework of data intelligence spanning data diagnosis, data organization, and data construction, instantiated through three highly curated optimization tasks while holding non-data factors fixed. Across tool use, retrieval, and knowledge injection, we evaluate frontier LLMs' ability to improve training data through iterative experimentation under task-specific resource budgets. Beyond optimization performance, we ask: do LLMs understand what their data interventions do? We compare predictions made before training with observed outcomes to seek evidence of data-effect reasoning beyond trial and error, and explore whether iterative feedback helps LLMs better understand how changes t",
+          "pub_date": "2026-09-29T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1723,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1833,
-      "total_valid": 1384,
+      "total_raw": 1830,
+      "total_valid": 1386,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2111,
+          "id": 2108,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1199
         },
         {
-          "id": 2130,
+          "id": 2127,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1199
         },
         {
-          "id": 2113,
+          "id": 2110,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1055
         },
         {
-          "id": 2031,
+          "id": 2028,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 501
         },
         {
-          "id": 1953,
+          "id": 1950,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 426
         },
         {
-          "id": 2277,
+          "id": 2274,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 410
         },
         {
-          "id": 1978,
+          "id": 1975,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 388
         },
         {
-          "id": 2263,
+          "id": 2260,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 385
         },
         {
-          "id": 1960,
+          "id": 1957,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 274
         },
         {
-          "id": 2236,
+          "id": 2233,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 203
         },
         {
-          "id": 2234,
+          "id": 2231,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 182
         },
         {
-          "id": 1872,
+          "id": 1869,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 174
         },
         {
-          "id": 2235,
+          "id": 2232,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 168
         },
         {
-          "id": 2220,
+          "id": 2217,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 273
         },
         {
-          "id": 2173,
+          "id": 2170,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 2364,
+          "id": 2361,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 284
         },
         {
-          "id": 2382,
+          "id": 2379,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 225
         },
         {
-          "id": 2367,
+          "id": 2364,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 217
         },
         {
-          "id": 2397,
+          "id": 2394,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 384
         },
         {
-          "id": 2339,
+          "id": 2336,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 371
         },
         {
-          "id": 2340,
+          "id": 2337,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 370
         },
         {
-          "id": 2412,
+          "id": 2409,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 331
         },
         {
-          "id": 2387,
+          "id": 2384,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2388,
+          "id": 2385,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2277,
+          "id": 2274,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 410
         },
         {
-          "id": 2339,
+          "id": 2336,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 371
         },
         {
-          "id": 2340,
+          "id": 2337,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 370
         },
         {
-          "id": 2437,
+          "id": 2434,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 360
         },
         {
-          "id": 1960,
+          "id": 1957,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 274
         },
         {
-          "id": 1933,
+          "id": 1930,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 266
         },
         {
-          "id": 1901,
+          "id": 1898,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 254
         },
         {
-          "id": 1890,
+          "id": 1887,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 250
         },
         {
-          "id": 2039,
+          "id": 2036,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 197
         },
         {
-          "id": 1950,
+          "id": 1947,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
           "word_count": 159
         },
         {
-          "id": 2446,
+          "id": 2443,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 506
         },
         {
-          "id": 2448,
+          "id": 2445,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 505
         },
         {
-          "id": 2447,
+          "id": 2444,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 495
         },
         {
-          "id": 2452,
+          "id": 2449,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 480
         },
         {
-          "id": 2503,
+          "id": 2500,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 366
         },
         {
-          "id": 2483,
+          "id": 2480,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 312
         },
         {
-          "id": 2480,
+          "id": 2477,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 300
         },
         {
-          "id": 2482,
+          "id": 2479,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 296
         },
         {
-          "id": 2478,
+          "id": 2475,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 294
         },
         {
-          "id": 2473,
+          "id": 2470,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 276
         },
         {
-          "id": 2475,
+          "id": 2472,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 258
         },
         {
-          "id": 88,
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 177
         },
         {
-          "id": 2458,
+          "id": 2455,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 156
         },
         {
-          "id": 2457,
+          "id": 2454,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,22 +979,7 @@
           "word_count": 136
         },
         {
-          "id": 2509,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absa and Thunes Deepen Alliance to Launch World-Class Cross-Border Payments Across Africa",
-          "link": "https://www.thunes.com/news/thunes-absa-multicurrency-clearing-partnership/",
-          "content": "Strategic collaboration expands across African markets to unlock seamless FX, scalable liquidity, and multi-rail cross-border clearing for Absa clients. Johannesburg, South Africa &#38; Singapore; October 1, 2026: Absa Group, one of Africa’s largest diversified financial services providers, has selected &#160;Thunes, the Smart Superhighway to move money around the world, as a strategic Multicurrency Clearing (MCC) ... Read more &#187; The post Absa and Thunes Deepen Alliance to Launch World-Class Cross-Border Payments Across Africa first appeared on Thunes.com .",
-          "pub_date": "Thu, 01 Oct 2026 07:00:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 568
-        },
-        {
-          "id": 2515,
+          "id": 2506,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1009,7 +994,7 @@
           "word_count": 180
         },
         {
-          "id": 232,
+          "id": 230,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 248,
+          "id": 246,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 272,
+          "id": 270,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1052,6 +1037,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 329,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Authority Bias in Language Models: Source Deference and User Agreement Are Not Interchangeable",
+          "link": "https://arxiv.org/abs/2609.37616",
+          "content": "arXiv:2609.37616v1 Announce Type: cross Abstract: Language models tend to agree with whatever a user asserts, and post-training increasingly targets this sycophancy so that models evaluate claims on their merits rather than deferring to the user. Yet the same models are far more compliant when a wrong answer is attributed to a verified source, which is how retrieval results, tool outputs, and grounded-search content often present information. We measure this gap across five open-weight families and three closed APIs. A single verified-source note endorsing a wrong answer flips 45-88% of baseline-correct responses in seven of eight models, and compliance rises with how authoritative the note sounds. Source deference and user agreement are not behaviorally interchangeable inside the model: on matched items with the same wrong answer, causal interventions can selectively suppress one without equally affecting the other. In three open-weight families, removing a fitted source direction lowers source compliance by 65-80 percentage points while removing a user or assistant direction has far smaller effects, and removing the user direction shows the reverse preference. A separately fitted",
+          "pub_date": "Thu, 01 Oct 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 263,
-      "total_valid": 63,
+      "total_raw": 257,
+      "total_valid": 62,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2684,
-    "dup": 500,
-    "nocontent": 393,
+    "total_raw": 2675,
+    "dup": 491,
+    "nocontent": 392,
     "noise": 6
   }
 }
