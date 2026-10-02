@@ -130,10 +130,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Predictive Credit: Measuring What Scientific Explanations Add to Experimental Forecasts",
-          "link": "https://arxiv.org/abs/2610.00314",
-          "content": "Research agents explain planned experiments. We measure predictive credit with paired forecasts sharing an intervention, forecaster, and outcome while varying description, matched explanation, and donor context. Five checks track commitment, delivery, predictive gain, alignment, and known-signal uptake. Across 336 prospective states in controlled learning, 12 Tox21 endpoints, and 24 OpenML tasks, v5's frozen credit decision was inconclusive. Tox21's preregistered ROC AUC interval-score harm test was unmet (D-M=-.0026, 95 percent interval [-.0174, .0104]); OpenML's joint formation, point-equivalence, and repeatability rule was unmet. Matched point-accuracy gains over description remained unconfirmed, and Tox21/OpenML seed-donor intervals spanned zero. Under requested DeepSeek V4 Pro, matched and donor cards reduced secondary Tox21 drift by 64.5 and 59.1 percent. A DeepSeek V4 Flash replay raised matched point MAE from .01823 to .02020 and missed matched-donor interval-score equivalence. OpenML full-card assignment widened nominal 80 percent intervals by 21 percent, with 49.3 percent coverage versus 51.4 percent for description and content in 66/144 cards. Direct-text Flash delivered",
-          "pub_date": "2026-09-28T20:00:00.000Z",
+          "title": "ActiveSaddler: Automated Curriculum Learning for Agent Harness Optimization",
+          "link": "https://arxiv.org/abs/2610.00906",
+          "content": "Automated harness optimization can substantially improve LLM agents by iteratively updating their prompts, tool interfaces, and control logic from execution feedback. However, existing methods primarily optimize how the harness is updated while largely fixing which training scenarios generate the feedback that drives those updates. As the harness evolves, the scenarios most useful for further optimization can change, suggesting that the training curriculum itself should adapt alongside the harness. We formulate this missing dimension of harness optimization as an automated curriculum learning problem and introduce ActiveSaddler. ActiveSaddler models the evolving curriculum as a non-stationary bandit with dynamically instantiated optimization targets. It abstracts recurring failures into reusable failure-pattern arms, estimates the potential learning progress from further targeting each pattern, and adaptively balances revisiting known weaknesses with exploring unseen scenarios for new ones. Optimization outcomes continually update both the set of discovered failure patterns and their priorities, allowing the curriculum to co-evolve with the harness. Experiments on GAIA2 and Termina",
+          "pub_date": "2026-09-30T21:36:03.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "ROWBench: Do Video Models Render What the Program Specifies?",
+          "link": "https://arxiv.org/abs/2610.02205",
+          "content": "Programmable world models separate executable dynamics from visual generation, offering a promising foundation for next-generation game engines. However, their visual adherence to explicit rules and interactions remains insufficiently evaluated. Existing benchmarks assess visual quality, controllability, and instruction or physical adherence, but rarely test fidelity to fine-grained, program-specified world events. We introduce PROWBench, comprising 170 programmatically constructed episodes and 600 proxy videos covering diverse scenes and interactions. PROWBench logs entity states and timestamped events, including those outside the camera's field of view, as replayable world records, from which it renders synchronized views and proxy representations. This enables generated videos to be checked against the observable consequences of program execution. An extensible framework constructs scenes, controls behaviors, and can render each camera view in different representations, such as coarse 3D, and bounding boxes. The benchmark covers first- and third-person perspectives, with synchronized multi-view observations available for a subset of episodes. Grounded in these records, PROWBench",
+          "pub_date": "2026-09-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,32 +160,17 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Hierarchical Continuous Diffusion Language Models",
-          "link": "https://arxiv.org/abs/2610.02193",
-          "content": "Discrete diffusion language models offer a compelling alternative to autoregressive generation for tasks demanding bidirectional reasoning and global constraint satisfaction. Yet they share a structural bottleneck: when decoding in parallel, each token is sampled independently from its marginal, severing the statistical dependencies among the tokens decoded together. Continuous diffusion language models avoid this by denoising a shared continuous state, but their denoiser sees only that state, so nothing ties it to a valid token configuration until it is finally decoded. To address this, we propose Hierarchical Continuous Diffusion Language Models (HC-DLM), which couple discrete token generation with a continuous latent trajectory in a single, principled denoising process, whose training objective is derived from a variational bound on the token likelihood. In contrast to recent methods that attach continuous context to a self-contained discrete chain, HC-DLM makes the latent the only persistent generative state: tokens are read out from it at every step and feed back as a scaffold for the next latent update. On structured reasoning (Sudoku), mathematical planning (Countdown) and l",
-          "pub_date": "2026-09-30T20:00:00.000Z",
+          "title": "Learning What to Recall: Adaptive Multi-Cue Episodic Memory for World Models",
+          "link": "https://arxiv.org/abs/2609.34677",
+          "content": "World models predict future observations from current experience and actions, yet prediction can depend on observations seen far in the past. Episodic memory preserves past observations for later recall; however, as memory accumulates, it raises a fundamental question: which memories are useful for the current prediction, and which available retrieval cues should be trusted to find them? This is challenging because fixed criteria based on recency, pose overlap, or visual similarity can be unreliable across environments and queries. We propose Future-Aware Recall (FAR), a framework that learns episodic recall from future-aware predictive supervision and adaptive multi-cue scoring. During training, FAR measures predictive utility by the conditional log-likelihood of the realized future given recalled context, approximated by negative diffusion prediction loss, and uses it to train a retriever that remains future-blind at inference. The retriever learns cue-specific relevance and automatically determines which available retrieval cues, such as time, pose, vision, and audio, to trust for each query when selecting memories. Across three complementary settings, FAR outperforms hand-desig",
+          "pub_date": "2026-09-27T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 70,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "GraphForge: Training Working Agents with Graph-Anchored Workspace Synthesis",
-          "link": "https://arxiv.org/abs/2609.38923",
-          "content": "Working agents need to read diverse files, coordinate tools, and produce deliverables. Training such agents requires tasks built on many real files with verifiable results, but few pipelines exist to synthesize this kind of data. Existing pipelines either generate files with models, which lack realism and diversity, or build tasks on real files without task-specific verifiers, leaving result quality unchecked. We introduce GraphForge, an evidence-graph based framework that grounds both the task and its verification in real files. Starting from occupation-grounded seeds for controlled diversity, GraphForge assembles a workspace of real files for each seed and builds an evidence graph over their relations. Since the task statement and rubrics are both derived from this graph, task requirements are backed by the workspace files and each criterion is anchored to the files needed to verify it. An initial rollout further tests executability, and a revision agent repairs the task and rubrics against the original files before trajectories are collected. Fine-tuning Qwen3.6-27B on 2,169 GraphForge trajectories brings GDPVal to 1445.7 (+65.7) under OpenHands, and Workspace-Bench-Lite and Spr",
-          "pub_date": "2026-09-29T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1725,
+          "id": 1668,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1832,
-      "total_valid": 1387,
+      "total_raw": 1775,
+      "total_valid": 1168,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2109,
+          "id": 2052,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1199
         },
         {
-          "id": 2128,
+          "id": 2071,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1199
         },
         {
-          "id": 2111,
+          "id": 2054,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1055
         },
         {
-          "id": 2029,
+          "id": 1972,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 501
         },
         {
-          "id": 1951,
+          "id": 1894,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 426
         },
         {
-          "id": 2275,
+          "id": 2218,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 410
         },
         {
-          "id": 1976,
+          "id": 1919,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 388
         },
         {
-          "id": 2261,
+          "id": 2204,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 385
         },
         {
-          "id": 1958,
+          "id": 1901,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,37 +332,7 @@
           "word_count": 274
         },
         {
-          "id": 2234,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Extended intrahepatic development of <i>Plasmodium</i> parasites overcomes age-associated loss of malaria vaccine efficacy in mice",
-          "link": "https://www.nature.com/articles/s41541-026-01588-5",
-          "content": "npj Vaccines, Published online: 01 October 2026; doi:10.1038/s41541-026-01588-5 Extended intrahepatic development of Plasmodium parasites overcomes age-associated loss of malaria vaccine efficacy in mice",
-          "pub_date": "2026-10-01",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 203
-        },
-        {
-          "id": 2232,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Adsorption sequence shapes antigen distribution and antibody binding on adjuvants in bivalent vaccines",
-          "link": "https://www.nature.com/articles/s41541-026-01592-9",
-          "content": "npj Vaccines, Published online: 02 October 2026; doi:10.1038/s41541-026-01592-9 Adsorption sequence shapes antigen distribution and antibody binding on adjuvants in bivalent vaccines",
-          "pub_date": "2026-10-02",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 182
-        },
-        {
-          "id": 1870,
+          "id": 1813,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +347,7 @@
           "word_count": 174
         },
         {
-          "id": 2233,
+          "id": 2175,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +362,7 @@
           "word_count": 168
         },
         {
-          "id": 2218,
+          "id": 2161,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +377,7 @@
           "word_count": 273
         },
         {
-          "id": 2171,
+          "id": 2114,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +390,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 226
+        },
+        {
+          "id": 2162,
+          "source": "Vaccine (journal)",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Corrigendum to ‘Factors predicting response to hepatitis B vaccination in patients with inflammatory bowel disease’ [Vaccine 31 (2013) 3065–3071]",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26009497?dgcid=rss_sd_all",
+          "content": "Publication date: Available online 28 September 2026 Source: Vaccine Author(s): Laura Sempere, Isabel Almenta, Julio Barrenengoa, Ana Gutiérrez, Cesar O. Villanueva, Enrique de-Madaria, Vicente García-Román, José Sánchez-Payá",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 225
+        },
+        {
+          "id": 1785,
+          "source": "Endpoints News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Sanofi builds on immunology alliance with Regeneron for $1B upfront",
+          "link": "https://endpoints.news/sanofi-builds-on-immunology-alliance-with-regeneron-for-1b-upfront/",
+          "content": "As the patent cliff for Dupixent draws closer, Sanofi is turning back to the partnership that built the megablockbuster. The French pharma will pay $1 billion upfront to expand its antibody collaboration with Regeneron. There’s ...",
+          "pub_date": "Thu, 01 Oct 2026 09:53:38 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 231
         }
       ],
       "quota": {
@@ -428,13 +428,13 @@
         "max": 7
       },
       "total_raw": 496,
-      "total_valid": 350,
+      "total_valid": 348,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2362,
+          "id": 2305,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 284
         },
         {
-          "id": 2380,
+          "id": 2323,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 225
         },
         {
-          "id": 2365,
+          "id": 2308,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 217
         },
         {
-          "id": 2395,
+          "id": 2338,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 384
         },
         {
-          "id": 2337,
+          "id": 2280,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 371
         },
         {
-          "id": 2338,
+          "id": 2281,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 370
         },
         {
-          "id": 2410,
+          "id": 2353,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 331
         },
         {
-          "id": 2385,
+          "id": 2328,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2386,
+          "id": 2329,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2275,
+          "id": 2218,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 410
         },
         {
-          "id": 2337,
+          "id": 2280,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 371
         },
         {
-          "id": 2338,
+          "id": 2281,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 370
         },
         {
-          "id": 2435,
+          "id": 2378,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 360
         },
         {
-          "id": 1958,
+          "id": 1901,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 274
         },
         {
-          "id": 1931,
+          "id": 1874,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 266
         },
         {
-          "id": 1899,
+          "id": 1842,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 254
         },
         {
-          "id": 1888,
+          "id": 1831,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 250
         },
         {
-          "id": 2037,
+          "id": 1980,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 197
         },
         {
-          "id": 1948,
+          "id": 1891,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
           "word_count": 159
         },
         {
-          "id": 2444,
+          "id": 2387,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 506
         },
         {
-          "id": 2446,
+          "id": 2389,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 505
         },
         {
-          "id": 2445,
+          "id": 2388,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 495
         },
         {
-          "id": 2450,
+          "id": 2393,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 480
         },
         {
-          "id": 2501,
+          "id": 2442,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 366
         },
         {
-          "id": 2481,
+          "id": 2422,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 312
         },
         {
-          "id": 2478,
+          "id": 2419,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 300
         },
         {
-          "id": 2480,
+          "id": 2421,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 296
         },
         {
-          "id": 2476,
+          "id": 2417,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 294
         },
         {
-          "id": 2471,
+          "id": 2412,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 276
         },
         {
-          "id": 2473,
+          "id": 2414,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 177
         },
         {
-          "id": 2456,
+          "id": 2399,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 156
         },
         {
-          "id": 2455,
+          "id": 2398,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,22 @@
           "word_count": 136
         },
         {
-          "id": 2507,
+          "id": 2448,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Absa and Thunes Deepen Alliance to Launch World-Class Cross-Border Payments Across Africa",
+          "link": "https://www.thunes.com/news/thunes-absa-multicurrency-clearing-partnership/",
+          "content": "Strategic collaboration expands across African markets to unlock seamless FX, scalable liquidity, and multi-rail cross-border clearing for Absa clients. Johannesburg, South Africa &#38; Singapore; October 1, 2026: Absa Group, one of Africa’s largest diversified financial services providers, has selected &#160;Thunes, the Smart Superhighway to move money around the world, as a strategic Multicurrency Clearing (MCC) ... Read more &#187; The post Absa and Thunes Deepen Alliance to Launch World-Class Cross-Border Payments Across Africa first appeared on Thunes.com .",
+          "pub_date": "Thu, 01 Oct 2026 07:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 568
+        },
+        {
+          "id": 2454,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,14 +1009,14 @@
           "word_count": 180
         },
         {
-          "id": 232,
+          "id": 255,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Evaluating Bounded Autonomy in Regulated Agentic AI: A Diagnostic Harness with Constitutional Rewards, Escalation Labels, and Runtime Governance",
-          "link": "https://arxiv.org/abs/2609.37501",
-          "content": "arXiv:2609.37501v1 Announce Type: new Abstract: We propose RegLLM, a diagnostic harness for bounded autonomy in regulated agentic workflows. It instruments six trustworthiness signals: citation validity, source grounding, schema compliance, escalation correctness, constitutional alignment, and unsafe-action rate. Signals are distinguished by their source of supervision: programmatic verifiers, task-level escalation labels, or AI-judge scores. A deterministic runtime supervisor blocks ungrounded answers and forces escalation, logging interventions. The same domain constitution informs evaluation, training rewards, and serving guardrails. Task-level should-escalate labels make the act-versus-defer decision a measurable training signal. We demonstrate the harness at smoke scale. An offline reference run (n=12) lifts escalation recall from 0 to 0.67 and reduces unsafe-action rate from 0.33 to 0.08 when governance is enabled. Two single-GPU Qwen2.5-3B LoRA/DPO pilots (n=8, same seed and evaluation split) expose substantial variation: nominally identical RL-base configurations yield task success of 0.25 versus 0.12 and escalation recall of 1.0 versus 0.5. An answer-quality adapter change",
+          "title": "What Was Said, Not What Was 'Thought': Type-6 Logic for CoT Verification",
+          "link": "https://arxiv.org/abs/2609.38420",
+          "content": "arXiv:2609.38420v1 Announce Type: cross Abstract: We introduce Type-6 logic, a variant of dynamic epistemic logic augmented with two operators (uncertainty and recurrence), designed to model the inferential dynamics of contemporary large language model (LLM) chain-of-thought (CoT) reasoning. Type-6 accounts for common LLM reasoning pathologies such as unlicensed revision, enthymemes, loopbacks, and unverifiable/incorrect claims. We propose a verifier based on Type-6 logic that builds a graph out the trace, and checks it against Type-6's axioms and inference rules. We evaluate our framework on LLM-generated CoTs four splits spanning formal and informal reasoning. Our verifier detects structurally unsound reasoning steps that surface-level heuristics miss, and allows for easy visualisation of the model's reasoning process. In our corpus, our verifier shows that derived contradiction is the most common hard-fail category in CoT, and that only about 3\\% of the propositions of a trace have impact on the final derivation. Ablation studies show that other verification methods (LLMs-as-judges, other neurosymbolic approaches, etc.) cannot be considered interchangeable: for example, agreemen",
           "pub_date": "Thu, 01 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1009,14 +1024,14 @@
           "word_count": 1200
         },
         {
-          "id": 248,
-          "source": "arXiv cs.CL",
+          "id": 415,
+          "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "CompOrca: Corpus-Scale Compliance Labelling of Instruction-Tuning Data",
-          "link": "https://arxiv.org/abs/2609.37807",
-          "content": "arXiv:2609.37807v1 Announce Type: new Abstract: Studying how fine-tuning shapes refusal and noncompliance behaviour requires identifying training examples that refuse, evade or otherwise fail to fulfil the requested task. But existing annotation covers evaluation sets of a few thousand prompts at most. We present CompOrca, a compliance labelling over the entirety of the 4,233,923-example OpenOrca corpus. Every example was classified as compliant or noncompliant by five independent passes of an open-weight LLM judge (LongCat-2.0, 1.6T parameters), and the corpus is released as unanimous compliance (94.75%), unanimous noncompliance (1.28%), and nonunanimous rows (3.97%) along with the raw vote counts. A single pass flags 2.7-3.2% of the corpus as noncompliant, while only 1.28% is flagged by all five, allowing for filtering the most ambiguous samples. Against 450 human-annotated examples, 150 of them annotated twice (human-human $\\kappa = 0.93$), the unanimous compliance and noncompliance labels are 97.3% and 86.7% precise, the latter a high-precision subset, not a complete enumeration, of noncompliance. Published refusal-detection methods recall only between 0.4% and 94.1% of the non",
+          "title": "VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation",
+          "link": "https://arxiv.org/abs/2609.38512",
+          "content": "arXiv:2609.38512v1 Announce Type: new Abstract: Voice agents in production must handle several requests, background speech, and customers who lose patience. We introduce VAmoS Energy, a benchmark that combines these challenges in 100 calls about utility billing and payment assistance. Each caller makes two to four requests. The agent has sixteen tools backed by a stateful Stripe billing twin and the Apache Fineract loan engine, with account access blocked until caller verification succeeds. The tasks use public household electricity data and a policy based on Pennsylvania's residential billing rules. An LLM-as-a-verifier checks the agent's actions and spoken figures against explicit requirements. On a calibration run, it agrees with a code verifier on 99.1% of checks. Across fourteen voice stacks and three repeats per task, completion ranges from 17.3% to 44.7%. Grok Voice leads, and Gemini 3.8 Live and GPT-Live follow at about the same cost per call. Background television reduces pooled completion from 38.7% to 8.6%. The simulated caller often accepts an incorrect result because it hears the agent's words but cannot inspect its actions. These findings show why voice agents need ev",
           "pub_date": "Thu, 01 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1024,29 +1039,14 @@
           "word_count": 1200
         },
         {
-          "id": 272,
-          "source": "arXiv cs.CL",
+          "id": 465,
+          "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Toward a Culturally Adapted Chinese Language Agent: A Wizard-of-Oz Study of Nonverbal Behavior in Chinese-German Intercultural Interaction",
-          "link": "https://arxiv.org/abs/2609.35150",
-          "content": "arXiv:2609.35150v1 Announce Type: cross Abstract: Successful intercultural communication requires more than grammatical competence. It demands sensitivity to culturally embedded social norms whose violation triggers subtle but meaningful nonverbal responses. For German learners of Mandarin Chinese, acquiring this sensitivity is critical yet poorly supported by existing language-learning agents. We present a Wizard-of-Oz (WoZ) study design and supporting real-time system for collecting multimodal behavioral data from native Chinese speakers reacting to social norm violations by German learners. The system features a photorealistic MetaHuman avatar driven by Live Link face capture and MediaPipe upper-body tracking, a wizard console for real-time behavior selection, and synchronized multimodal logging across agent and learner streams. A layered annotation framework, based on psychological theory and covering non-observable socioemotional reactions, norm interpretation, verbal, and observable behavior thereof, and future supervision targets enables the corpus to support training of future automated cultural interpretation and behavior generation models. Four ecologically valid interact",
-          "pub_date": "Thu, 01 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 331,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Authority Bias in Language Models: Source Deference and User Agreement Are Not Interchangeable",
-          "link": "https://arxiv.org/abs/2609.37616",
-          "content": "arXiv:2609.37616v1 Announce Type: cross Abstract: Language models tend to agree with whatever a user asserts, and post-training increasingly targets this sycophancy so that models evaluate claims on their merits rather than deferring to the user. Yet the same models are far more compliant when a wrong answer is attributed to a verified source, which is how retrieval results, tool outputs, and grounded-search content often present information. We measure this gap across five open-weight families and three closed APIs. A single verified-source note endorsing a wrong answer flips 45-88% of baseline-correct responses in seven of eight models, and compliance rises with how authoritative the note sounds. Source deference and user agreement are not behaviorally interchangeable inside the model: on matched items with the same wrong answer, causal interventions can selectively suppress one without equally affecting the other. In three open-weight families, removing a fitted source direction lowers source compliance by 65-80 percentage points while removing a user or assistant direction has far smaller effects, and removing the user direction shows the reverse preference. A separately fitted",
+          "title": "MASCRDM: Multi-Agent System for Compliance Risk Detection and Mitigation in Training Process of Large Language Models",
+          "link": "https://arxiv.org/abs/2609.39107",
+          "content": "arXiv:2609.39107v1 Announce Type: new Abstract: Large Language Models (LLMs) have been applied in various fields. However, ensuring compliance and safety of LLMs, such as avoiding discrimination and bias, still remains a challenge. Current efforts mainly focus on detecting and filtering inputs and outputs of the trained models, rather than studying the intrinsic architecture of the models in real-time. To tackle this challenge, we analyze the LLMs training process and discover two critical issues: 1) Most of the existing methods are predominantly static in their approach to detection and filtering, achieving only localized optimizations without systematically enhancing the compliance of LLMs. 2) Another issue with existing approaches is the lack of real-time risk detection and mitigation across the full training process, which leads to limited flexibility. Motivated by these, we propose MASCRDM (Multi-Agent System for Compliance Risk Detection and Mitigation) during the LLM training process. Firstly, we develop a set of compliance rules based on existing Artificial Intelligence (AI) laws and a compliance-specific LLM with the instruction of compliance law experts. Then, we deconstr",
           "pub_date": "Thu, 01 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 257,
-      "total_valid": 62,
+      "total_raw": 254,
+      "total_valid": 56,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2676,
-    "dup": 491,
+    "total_raw": 2623,
+    "dup": 658,
     "nocontent": 393,
     "noise": 6
   }
