@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "PixelUMM: Encoder-Free Unified Image and Video Understanding and Generation",
-          "link": "https://arxiv.org/abs/2609.38597",
-          "content": "Unified Multimodal Models (UMMs) often rely on separate visual representations for understanding and generation, increasing visual context length and complicating integration with established vision-language pretraining pipelines. Recent advances in pixel-space modeling offer an encoder-free alternative, but extending this paradigm from images to videos is non-trivial: video understanding and generation adopt different temporal representations, leaving the design of a unified visual interface an open question. We present PixelUMM, an encoder-free model for unified image and video understanding and generation directly in pixel space. PixelUMM represents images as spatial patches and videos as spatiotemporal tubelets, connecting raw pixels to a shared multimodal backbone through single-layer linear projections. Its Mixture-of-Transformers architecture combines shared attention with task-specific parameters and extends clean-pixel prediction to video generation, jointly supporting autoregressive text prediction and pixel-space flow matching. Experiments show that PixelUMM achieves competitive performance across image and video understanding and generation tasks. We further conduct emp",
-          "pub_date": "2026-09-28T20:00:00.000Z",
+          "title": "Scaling and Distilling Text Embeddings for Better Diffusibility",
+          "link": "https://arxiv.org/abs/2610.01016",
+          "content": "Diffusion language models (DLMs) offer a promising alternative to autoregressive (AR) language generation. Recent advances in continuous DLMs, which apply latent diffusion to continuous text embeddings, raise a practical question: which embedding makes the best latent space, i.e., the most diffusible? To answer this, we search through different embeddings and find that scaling the embedding model to stronger ones within the same family (T5 to T5Gemma-1 to T5Gemma-2) greatly improves generative performance. But the raw T5Gemma-2 embeddings are still not optimal. They are so discriminative that even the embeddings of plausible alternative words are separated, which makes the generation vulnerable to imperfect sampling. Consequently, continuous diffusion often fails to reach any of them and ends up at an invalid embedding instead. To address this, we distill T5Gemma-2 into a student encoder that learns the teacher's decoded probabilities as soft labels. Learning from such soft labels makes the student pull the alternative embeddings closer while maintaining the encoding-decoding mechanism. The distilled embeddings form a more connected and diffusible latent space, improving over the v",
+          "pub_date": "2026-09-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,9 +145,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Training LLM Judges from Language Feedback via Position-Selective Self-Distillation",
-          "link": "https://arxiv.org/abs/2609.38792",
-          "content": "We study training LLM judges from natural language feedback, especially for subjective tasks where the verdict depends strongly on which evaluation criteria the judge invokes and how it weighs them. The dominant approach, outcome-supervised RL (e.g., GRPO), credits every token in the rollout with a single scalar determined only by the accuracy of the final verdict, providing no separate credit at the criterion-choice tokens and ignoring the rich language feedback (e.g., preference rationales) that naturally accompanies preference labels. Self-Distillation (SD) is one natural way to use this language feedback: the same model, conditioned on this feedback, acts as a teacher providing dense, position-level supervision. However, not all positions carry equally useful signal. Using the per-position entropy shift between teacher and student, we identify two regimes: context sharpening, where the teacher concentrates probability on a particular feedback-aligned criterion expression, and context spreading, where the teacher distributes probability across multiple feedback-aligned alternatives. We interpret these patterns as follows: sharpening encourages memorization of a particular criter",
+          "title": "Learning Chaos Without Seeing Chaos: Extrapolation of Global Dynamics in Autoregressive Transformers",
+          "link": "https://arxiv.org/abs/2609.38814",
+          "content": "Autoregressive models are trained to predict a system's behavior one step at a time, and recursive generation allows the learned dynamics to unfold over long horizons. To what extent can such dynamics learned from local observations recover broader organization of an underlying system that was only partially observed during training? Here we study small autoregressive transformers trained from scratch on trajectories sampled from restricted parameter regimes of several non-linear dynamical systems, including logistic and sine maps, the Lorenz system, and the generalized Hopf system, with control parameters and state trajectories represented as sequences of continuous tokens. Under closed-loop evaluation at parameters far outside the training distribution, the models can recover self-similar period-doubling cascades, chaotic dynamics, and attractor structures with remarkable visual and numerical fidelity. For the logistic map, a transformer reproduces successive period doublings up to period 128, yielding a finite-order scaling ratio of 4.6687, matching the Feigenbaum constant to within 5times10^{-4}. We further investigate how these structures emerge over the course of training, an",
           "pub_date": "2026-09-29T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -160,10 +160,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Aligning One-Step Generative Models with Reward-Weighted Transport Distillation",
-          "link": "https://arxiv.org/abs/2609.30840",
-          "content": "One-step generators enable high-quality visual generation with a single network evaluation, but their post-training is difficult: general implicit generators provide neither tractable likelihoods nor denoising trajectories, and many rewards are non-differentiable. We introduce Reward-Weighted Transport Distillation (RWTD), a post-training method that requires only generated samples and scalar reward evaluations. Rather than aligning solely to the conventional reward-tilted reference distribution, RWTD constructs an adaptive target that mixes separately tilted current and reference distributions. The current component incorporates improvements discovered during training, while the reference component anchors the target to the pretrained generator. RWTD realizes this target through feature-space optimal transport and fixed-point regression. Theoretical analysis shows that the fixed-point distributions of RWTD interpolate between off-policy reward tilting of the reference and on-policy tilting of the current model, providing a principled approach to balancing reward adaptation with retention of prior knowledge. Empirically, RWTD substantially improves the GenEval score of the one-step",
-          "pub_date": "2026-09-24T20:00:00.000Z",
+          "title": "PixelUMM: Encoder-Free Unified Image and Video Understanding and Generation",
+          "link": "https://arxiv.org/abs/2609.38597",
+          "content": "Unified Multimodal Models (UMMs) often rely on separate visual representations for understanding and generation, increasing visual context length and complicating integration with established vision-language pretraining pipelines. Recent advances in pixel-space modeling offer an encoder-free alternative, but extending this paradigm from images to videos is non-trivial: video understanding and generation adopt different temporal representations, leaving the design of a unified visual interface an open question. We present PixelUMM, an encoder-free model for unified image and video understanding and generation directly in pixel space. PixelUMM represents images as spatial patches and videos as spatiotemporal tubelets, connecting raw pixels to a shared multimodal backbone through single-layer linear projections. Its Mixture-of-Transformers architecture combines shared attention with task-specific parameters and extends clean-pixel prediction to video generation, jointly supporting autoregressive text prediction and pixel-space flow matching. Experiments show that PixelUMM achieves competitive performance across image and video understanding and generation tasks. We further conduct emp",
+          "pub_date": "2026-09-28T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1833,
-      "total_valid": 1383,
+      "total_valid": 1384,
       "total_candidates": 12
     },
     "vaccine": {
@@ -774,6 +774,21 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
+          "title": "Fiserv Digital Asset Platform Goes Live With Bank of North Dakota Stablecoin",
+          "link": "https://www.pymnts.com/blockchain/2026/fiserv-digital-asset-platform-goes-live-with-bank-of-north-dakota-stablecoin/",
+          "content": "Fiserv’s digital asset platform is now live with financial institution clients, the global provider of payments and financial services said in a Thursday (Oct. 1) press release. The platform’s first live use case Bank of North Dakota’s Roughrider Coin, a dollar-backed stablecoin designed to enable more efficient money movement across North Dakota’s interbank network, according [&#8230;] The post Fiserv Digital Asset Platform Goes Live With Bank of North Dakota Stablecoin appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 02 Oct 2026 01:03:44 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 506
+        },
+        {
+          "id": 2448,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
           "title": "The Alphabet Soup of Agentic Standards: A Vocab Playbook for Merchants and PSPs",
           "link": "https://www.pymnts.com/news/artificial-intelligence/2026/the-alphabet-soup-of-agentic-standards-a-vocab-playbook-for-merchants-and-psps/",
           "content": "The biggest mistake merchants could make in agentic commerce may be waiting for one protocol to win. There probably won’t be one. The emerging infrastructure for artificial intelligence (AI)-driven shopping is beginning to look less like the early browser wars and more like the internet stack itself, comprised of multiple protocols performing different jobs simultaneously. [&#8230;] The post The Alphabet Soup of Agentic Standards: A Vocab Playbook for Merchants and PSPs appeared first on PYMNTS.com .",
@@ -784,7 +799,7 @@
           "word_count": 505
         },
         {
-          "id": 2445,
+          "id": 2447,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 495
         },
         {
-          "id": 2450,
+          "id": 2452,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -812,21 +827,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 480
-        },
-        {
-          "id": 2454,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "DoorDash Slides Into Your DMs With Dinner",
-          "link": "https://www.pymnts.com/news/delivery/2026/doordash-slides-into-your-dms-with-dinner/",
-          "content": "DoorDash customers can now order dinner by sending a text. The company’s new artificial intelligence (AI) agent works inside Apple’s Messages, builds the cart and handles checkout without the DoorDash app ever opening. DoorDash unveiled the text-to-order agent on Wednesday (Sept. 30) and opened a waitlist for a U.S. beta. The agent matches a texter’s [&#8230;] The post DoorDash Slides Into Your DMs With Dinner appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 01 Oct 2026 19:40:53 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 444
         },
         {
           "id": 2503,
@@ -980,6 +980,21 @@
         },
         {
           "id": 2509,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Absa and Thunes Deepen Alliance to Launch World-Class Cross-Border Payments Across Africa",
+          "link": "https://www.thunes.com/news/thunes-absa-multicurrency-clearing-partnership/",
+          "content": "Strategic collaboration expands across African markets to unlock seamless FX, scalable liquidity, and multi-rail cross-border clearing for Absa clients. Johannesburg, South Africa &#38; Singapore; October 1, 2026: Absa Group, one of Africa’s largest diversified financial services providers, has selected &#160;Thunes, the Smart Superhighway to move money around the world, as a strategic Multicurrency Clearing (MCC) ... Read more &#187; The post Absa and Thunes Deepen Alliance to Launch World-Class Cross-Border Payments Across Africa first appeared on Thunes.com .",
+          "pub_date": "Thu, 01 Oct 2026 07:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 568
+        },
+        {
+          "id": 2515,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1037,21 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 331,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Authority Bias in Language Models: Source Deference and User Agreement Are Not Interchangeable",
-          "link": "https://arxiv.org/abs/2609.37616",
-          "content": "arXiv:2609.37616v1 Announce Type: cross Abstract: Language models tend to agree with whatever a user asserts, and post-training increasingly targets this sycophancy so that models evaluate claims on their merits rather than deferring to the user. Yet the same models are far more compliant when a wrong answer is attributed to a verified source, which is how retrieval results, tool outputs, and grounded-search content often present information. We measure this gap across five open-weight families and three closed APIs. A single verified-source note endorsing a wrong answer flips 45-88% of baseline-correct responses in seven of eight models, and compliance rises with how authoritative the note sounds. Source deference and user agreement are not behaviorally interchangeable inside the model: on matched items with the same wrong answer, causal interventions can selectively suppress one without equally affecting the other. In three open-weight families, removing a fitted source direction lowers source compliance by 65-80 percentage points while removing a user or assistant direction has far smaller effects, and removing the user direction shows the reverse preference. A separately fitted",
-          "pub_date": "Thu, 01 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 257,
-      "total_valid": 62,
+      "total_raw": 263,
+      "total_valid": 63,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2678,
-    "dup": 496,
+    "total_raw": 2684,
+    "dup": 500,
     "nocontent": 393,
     "noise": 6
   }
