@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 55,
+          "id": 57,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 375
         },
         {
-          "id": 57,
+          "id": 59,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 138
         },
         {
-          "id": 88,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 200
         },
         {
-          "id": 81,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 187
         },
         {
-          "id": 86,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,37 @@
           "word_count": 177
         },
         {
-          "id": 65,
+          "id": 67,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Predictive Credit: Measuring What Scientific Explanations Add to Experimental Forecasts",
+          "link": "https://arxiv.org/abs/2610.00314",
+          "content": "Research agents explain planned experiments. We measure predictive credit with paired forecasts sharing an intervention, forecaster, and outcome while varying description, matched explanation, and donor context. Five checks track commitment, delivery, predictive gain, alignment, and known-signal uptake. Across 336 prospective states in controlled learning, 12 Tox21 endpoints, and 24 OpenML tasks, v5's frozen credit decision was inconclusive. Tox21's preregistered ROC AUC interval-score harm test was unmet (D-M=-.0026, 95 percent interval [-.0174, .0104]); OpenML's joint formation, point-equivalence, and repeatability rule was unmet. Matched point-accuracy gains over description remained unconfirmed, and Tox21/OpenML seed-donor intervals spanned zero. Under requested DeepSeek V4 Pro, matched and donor cards reduced secondary Tox21 drift by 64.5 and 59.1 percent. A DeepSeek V4 Flash replay raised matched point MAE from .01823 to .02020 and missed matched-donor interval-score equivalence. OpenML full-card assignment widened nominal 80 percent intervals by 21 percent, with 49.3 percent coverage versus 51.4 percent for description and content in 66/144 cards. Direct-text Flash delivered",
+          "pub_date": "2026-09-28T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 69,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Hierarchical Continuous Diffusion Language Models",
+          "link": "https://arxiv.org/abs/2610.02193",
+          "content": "Discrete diffusion language models offer a compelling alternative to autoregressive generation for tasks demanding bidirectional reasoning and global constraint satisfaction. Yet they share a structural bottleneck: when decoding in parallel, each token is sampled independently from its marginal, severing the statistical dependencies among the tokens decoded together. Continuous diffusion language models avoid this by denoising a shared continuous state, but their denoiser sees only that state, so nothing ties it to a valid token configuration until it is finally decoded. To address this, we propose Hierarchical Continuous Diffusion Language Models (HC-DLM), which couple discrete token generation with a continuous latent trajectory in a single, principled denoising process, whose training objective is derived from a variational bound on the token likelihood. In contrast to recent methods that attach continuous context to a self-contained discrete chain, HC-DLM makes the latent the only persistent generative state: tokens are read out from it at every step and feed back as a scaffold for the next latent update. On structured reasoning (Sudoku), mathematical planning (Countdown) and l",
+          "pub_date": "2026-09-30T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,37 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "It Takes Workflows to Evolve Better Workflows",
-          "link": "https://arxiv.org/abs/2610.01026",
-          "content": "Tackling complex real-world tasks can exceed the capabilities of a single large language model (LLM), motivating the use of multi-agent workflows that coordinate specialized agents to work together on these tasks. Recent methods train LLMs to construct better workflows from execution outcomes, but they optimize only the workflow generator, while the other agents that build or execute each workflow remain fixed even though every outcome depends on all of them. However, extending training beyond the generator is challenging: the agents are coupled, and a workflow's outcome is a single sparse score that cannot tell which agent causes a failure. We propose FloWright, which leverages the workflow as a harness to optimize workflows. By introducing a hierarchical, structure-aware reward paradigm, FloWright enables one role to self-evolve and two or more roles to co-evolve, with no additional models, labels, or executions. Considering the limitation that workflows are commonly trained and evaluated on data that a single agent can already handle, we further propose DataWright, an adaptive data hardening approach that converts existing datasets into workflow-level tasks with increased diffic",
-          "pub_date": "2026-09-30T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "AutoDataBench: A Data-centric Testbed for Accelerating Auto Research",
-          "link": "https://arxiv.org/abs/2609.40097",
-          "content": "Existing auto-research benchmarks often entangle multiple sources of improvement, including training frameworks, hyperparameters, compute budgets, and data, making it difficult to attribute why one frontier agent outperforms another to specific research capabilities. In this work, we isolate and systematically evaluate Data Intelligence: an agent's ability to understand, manipulate, and improve the data that shapes model capabilities. We introduce AutoDataBench, a controlled testbed built on a conceptual framework of data intelligence spanning data diagnosis, data organization, and data construction, instantiated through three highly curated optimization tasks while holding non-data factors fixed. Across tool use, retrieval, and knowledge injection, we evaluate frontier LLMs' ability to improve training data through iterative experimentation under task-specific resource budgets. Beyond optimization performance, we ask: do LLMs understand what their data interventions do? We compare predictions made before training with observed outcomes to seek evidence of data-effect reasoning beyond trial and error, and explore whether iterative feedback helps LLMs better understand how changes t",
-          "pub_date": "2026-09-29T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1723,
+          "id": 1725,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1830,
-      "total_valid": 1386,
+      "total_raw": 1832,
+      "total_valid": 1387,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2108,
+          "id": 2109,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1199
         },
         {
-          "id": 2127,
+          "id": 2128,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1199
         },
         {
-          "id": 2110,
+          "id": 2111,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1055
         },
         {
-          "id": 2028,
+          "id": 2029,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 501
         },
         {
-          "id": 1950,
+          "id": 1951,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 426
         },
         {
-          "id": 2274,
+          "id": 2275,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 410
         },
         {
-          "id": 1975,
+          "id": 1976,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 388
         },
         {
-          "id": 2260,
+          "id": 2261,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 385
         },
         {
-          "id": 1957,
+          "id": 1958,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 274
         },
         {
-          "id": 2233,
+          "id": 2234,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 203
         },
         {
-          "id": 2231,
+          "id": 2232,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 182
         },
         {
-          "id": 1869,
+          "id": 1870,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 174
         },
         {
-          "id": 2232,
+          "id": 2233,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 168
         },
         {
-          "id": 2217,
+          "id": 2218,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 273
         },
         {
-          "id": 2170,
+          "id": 2171,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 497,
-      "total_valid": 351,
+      "total_raw": 496,
+      "total_valid": 350,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2361,
+          "id": 2362,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 284
         },
         {
-          "id": 2379,
+          "id": 2380,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 225
         },
         {
-          "id": 2364,
+          "id": 2365,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 217
         },
         {
-          "id": 2394,
+          "id": 2395,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 384
         },
         {
-          "id": 2336,
+          "id": 2337,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 371
         },
         {
-          "id": 2337,
+          "id": 2338,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 370
         },
         {
-          "id": 2409,
+          "id": 2410,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 331
         },
         {
-          "id": 2384,
+          "id": 2385,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2385,
+          "id": 2386,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2274,
+          "id": 2275,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 410
         },
         {
-          "id": 2336,
+          "id": 2337,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 371
         },
         {
-          "id": 2337,
+          "id": 2338,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 370
         },
         {
-          "id": 2434,
+          "id": 2435,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 360
         },
         {
-          "id": 1957,
+          "id": 1958,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 274
         },
         {
-          "id": 1930,
+          "id": 1931,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 266
         },
         {
-          "id": 1898,
+          "id": 1899,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 254
         },
         {
-          "id": 1887,
+          "id": 1888,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 250
         },
         {
-          "id": 2036,
+          "id": 2037,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 197
         },
         {
-          "id": 1947,
+          "id": 1948,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
           "word_count": 159
         },
         {
-          "id": 2443,
+          "id": 2444,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 506
         },
         {
-          "id": 2445,
+          "id": 2446,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 505
         },
         {
-          "id": 2444,
+          "id": 2445,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 495
         },
         {
-          "id": 2449,
+          "id": 2450,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 480
         },
         {
-          "id": 2500,
+          "id": 2501,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 366
         },
         {
-          "id": 2480,
+          "id": 2481,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 312
         },
         {
-          "id": 2477,
+          "id": 2478,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 300
         },
         {
-          "id": 2479,
+          "id": 2480,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 296
         },
         {
-          "id": 2475,
+          "id": 2476,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 294
         },
         {
-          "id": 2470,
+          "id": 2471,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 276
         },
         {
-          "id": 2472,
+          "id": 2473,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 258
         },
         {
-          "id": 86,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 177
         },
         {
-          "id": 2455,
+          "id": 2456,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 156
         },
         {
-          "id": 2454,
+          "id": 2455,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 136
         },
         {
-          "id": 2506,
+          "id": 2507,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +994,7 @@
           "word_count": 180
         },
         {
-          "id": 230,
+          "id": 232,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 246,
+          "id": 248,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 270,
+          "id": 272,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 329,
+          "id": 331,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1065,9 +1065,9 @@
     }
   },
   "meta": {
-    "total_raw": 2675,
+    "total_raw": 2676,
     "dup": 491,
-    "nocontent": 392,
+    "nocontent": 393,
     "noise": 6
   }
 }
