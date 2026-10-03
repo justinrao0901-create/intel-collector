@@ -95,7 +95,22 @@
           "word_count": 247
         },
         {
-          "id": 71,
+          "id": 70,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
+          "link": "https://arxiv.org/abs/2610.01092",
+          "content": "Video generation models are increasingly being explored as world simulators for embodied planning and learning. To do so effectively, these models must not only generate visually appealing frames, but also predict how environments dynamically evolve when executing goal-directed actions. While evaluating these capabilities is crucial, existing benchmarks focus mainly on single short actions or step-by-step instructions. This leaves multi-step physical reasoning underexplored, especially in egocentric video generation that requires planning to simulate proper execution to accomplish high-level goals by carrying out multiple real-world manipulations. We introduce Ego2Act, a goal-directed benchmark featuring 2,640 videos from 110 real-world tasks across day-to-day settings, varying object clutter and multi-step complexity. Given an initial scene image and a high-level goal, Ego2Act evaluates whether video generation models can produce realistic egocentric videos of a hand manipulating objects to carry out the task. To support scalable evaluation, we also introduce Ego2ActJudge, a reference-free evaluation pipeline that achieves better task completion and physics plausibility evaluation",
+          "pub_date": "2026-09-30T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 74,
+          "id": 75,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -119,21 +134,6 @@
           "link": "https://arxiv.org/abs/2609.37690",
           "content": "Video world models require persistent scene memory to maintain consistency during long-horizon video generation. Existing spatial memories accumulate RGB observations or latent features, increasing storage requirements as generation proceeds. We introduce Honeycomb, a video world model built on HexMemory, our proposed low-rank representation for storing scene features in a fixed-size memory with a total of six spatial and spatiotemporal planes. A feed-forward writer maps each generated chunk into new plane features. As the spatial coverage or temporal range expands, we warp the previous planes while preserving their dimensions, then fuse them with the new features through confidence-weighted pooling and a learned residual correction. A reader retrieves latents from HexMemory to condition subsequent video generation. The writer processes only observations from the new chunk, avoiding per-scene optimization and repeated processing of the full history. Experiments on WorldScore and RealEstate10K demonstrate strong video generation quality and robust revisit consistency while keeping HexMemory feature storage constant throughout generation. Code and additional visualizations are availa",
           "pub_date": "2026-09-29T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 75,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "X-Tree: Tokenizing Reusable Experience for Efficient Agent Generalization",
-          "link": "https://arxiv.org/abs/2609.32993",
-          "content": "Multi-step agents are trained on flat action streams: SFT and RLVR weight every token uniformly and ignore the sub-procedures that recur across tasks, the hierarchy that lets humans plan top-down from reusable routines. This structure sits unused, and flat training uses each scarce trajectory less fully than its content allows. Recent agents do use that structure, but only as LLM-written skills in context, never in the weights, so their gains do not generalize beyond retrieval. We instead recover this hierarchy from the data itself and train on it, with no LLM calls. Following text tokenizers, which build a vocabulary by counting alone, we score action spans by reusability and merge canonicalized actions into a reusable eXperience tree (X-Tree). Each X-Tree node captures how a frequent and success-bearing skill is composed from sub-skills, guiding efficient generalization. We integrate X-Tree into three training settings: offline RL, with each node as a training instance; online RLVR, with an adaptive skill bonus; and on-policy self-distillation, with X-Tree as the self-teacher's privileged context. Across WebArena, ScienceWorld, and WebShop at three model scales, X-Tree improves o",
-          "pub_date": "2026-09-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 2011,
+          "id": 2009,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2012,
+          "id": 2010,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2020,
+          "id": 2018,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1932,
+          "id": 1931,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 365
         },
         {
-          "id": 2139,
+          "id": 2137,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 203
         },
         {
-          "id": 2136,
+          "id": 2134,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 196
         },
         {
-          "id": 2137,
+          "id": 2135,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 182
         },
         {
-          "id": 1829,
+          "id": 1828,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 88
         },
         {
-          "id": 2040,
+          "id": 2038,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 396
         },
         {
-          "id": 2076,
+          "id": 2074,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 319
         },
         {
-          "id": 2039,
+          "id": 2037,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 223
         },
         {
-          "id": 2202,
+          "id": 2200,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 518,
-      "total_valid": 369,
+      "total_raw": 516,
+      "total_valid": 367,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2249,
+          "id": 2246,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 198
         },
         {
-          "id": 2265,
+          "id": 2262,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 196
         },
         {
-          "id": 2263,
+          "id": 2260,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 178
         },
         {
-          "id": 2337,
+          "id": 2334,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 524
         },
         {
-          "id": 2338,
+          "id": 2335,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 506
         },
         {
-          "id": 2304,
+          "id": 2301,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 459
         },
         {
-          "id": 2289,
+          "id": 2286,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 343
         },
         {
-          "id": 2288,
+          "id": 2285,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 338
         },
         {
-          "id": 2292,
+          "id": 2289,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 2293,
+          "id": 2290,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 110,
+      "total_raw": 109,
       "total_valid": 11,
       "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 2031,
+          "id": 2029,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 2338,
+          "id": 2335,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 506
         },
         {
-          "id": 2304,
+          "id": 2301,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 459
         },
         {
-          "id": 2178,
+          "id": 2176,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 367
         },
         {
-          "id": 2289,
+          "id": 2286,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 343
         },
         {
-          "id": 1931,
+          "id": 1930,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 338
         },
         {
-          "id": 2288,
+          "id": 2285,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 338
         },
         {
-          "id": 2179,
+          "id": 2177,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 296
         },
         {
-          "id": 1774,
+          "id": 1773,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 232
         },
         {
-          "id": 1784,
+          "id": 1783,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 2361,
+          "id": 2355,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "BNY and Kraken Parent Payward Eye Global Financial Infrastructure Partnership",
+          "link": "https://www.pymnts.com/partnerships/2026/bny-and-kraken-parent-payward-eye-global-financial-infrastructure-partnership/",
+          "content": "BNY and Kraken parent company Payward are discussing a partnership that would span digital assets and financial market infrastructure, CoinDesk reported Friday (Oct. 2), citing unnamed sources. The agreement could include crypto products, custody, wealth management, trading, payments and infrastructure offerings that are provided by Payward’s B2B platform for banks, exchanges and asset managers, Payward Services, according to the report. The discussions remain underway, [&#8230;] The post BNY and Kraken Parent Payward Eye Global Financial Infrastructure Partnership appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 02 Oct 2026 23:42:09 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 602
+        },
+        {
+          "id": 2360,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 509
         },
         {
-          "id": 2359,
+          "id": 2358,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,22 +814,7 @@
           "word_count": 491
         },
         {
-          "id": 2366,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "OCC Grants Clean Bill of Health to 13 Banks in Latest Community Lending Audit",
-          "link": "https://www.pymnts.com/legal/bank-regulation/2026/occ-grants-clean-bill-health-13-banks-latest-community-lending-audit/",
-          "content": "The Office of the Comptroller of the Currency rated three banks “outstanding” and 10 “satisfactory” in its latest list of banks examined for Community Reinvestment Act (CRA) compliance, the OCC said in a Thursday (Oct. 1) press release. Among the OCC’s performance evaluations that became public in September, no banks received the regulator’s other ratings [&#8230;] The post OCC Grants Clean Bill of Health to 13 Banks in Latest Community Lending Audit appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 02 Oct 2026 17:06:21 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 485
-        },
-        {
-          "id": 2390,
+          "id": 2386,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 475
         },
         {
-          "id": 2363,
+          "id": 2362,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 469
         },
         {
-          "id": 2395,
+          "id": 2391,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 393
         },
         {
-          "id": 2389,
+          "id": 2385,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 307
         },
         {
-          "id": 2396,
+          "id": 2392,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 300
         },
         {
-          "id": 2394,
+          "id": 2390,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 278
         },
         {
-          "id": 2392,
+          "id": 2388,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 235
         },
         {
-          "id": 2371,
+          "id": 2368,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 150
         },
         {
-          "id": 2370,
+          "id": 2367,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 113
         },
         {
-          "id": 2423,
+          "id": 2419,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1074,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 255,
-      "total_valid": 56,
+      "total_raw": 254,
+      "total_valid": 55,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2593,
+    "total_raw": 2589,
     "dup": 633,
-    "nocontent": 400,
+    "nocontent": 399,
     "noise": 6
   }
 }
