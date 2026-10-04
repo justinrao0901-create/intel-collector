@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 90,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +20,7 @@
           "word_count": 204
         },
         {
-          "id": 94,
+          "id": 96,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 202
         },
         {
-          "id": 96,
+          "id": 98,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 177
         },
         {
-          "id": 76,
+          "id": 78,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 1200
         },
         {
-          "id": 77,
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 78,
+          "id": 80,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,22 @@
           "word_count": 1200
         },
         {
-          "id": 145,
+          "id": 147,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "We're going to need default hard budget caps on pretty much everything",
+          "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+          "content": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps . I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and return errors\". These need to be hard limits. Soft caps, \"after $X/month, send me a warning email\", will not cut it. Coding agents, and personal agents (coding agents wrapped in a less threatening UI), greatly reduce the friction of spinning up code that can do useful things. Sometimes those things cost money - calls to paid APIs, or hosted web applications, or systems that can bill for additional storage and compute. Nobody wants to wake up to an email sent at midnight warning about a budget limit and find that, while they slept, their rogue service had consumed several hundred (or several thousand) more dollars of usage. An argument against this is that businesses don't want their hosted applications to start throwing errors because some budget was exceeded. I expect that most businesses and individuals would prefer errors to a surprise $10,000+ bill. I think hard budget caps need to be the default. If someone wants to live",
+          "pub_date": "2026-10-03T23:34:02+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 148,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +125,7 @@
           "word_count": 559
         },
         {
-          "id": 129,
+          "id": 131,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 132
         },
         {
-          "id": 130,
+          "id": 132,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +155,7 @@
           "word_count": 129
         },
         {
-          "id": 134,
+          "id": 136,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 80
         },
         {
-          "id": 124,
+          "id": 126,
           "source": "Interconnects",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 57
-        },
-        {
-          "id": 60,
-          "source": "NVIDIA Blog",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "NVIDIA Opens Applications for 2027–2028 Graduate Fellowships With Awards Up to $60,000",
-          "link": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2026/",
-          "content": "Bringing together the world’s brightest minds and the latest accelerated computing technology leads to powerful breakthroughs that help tackle some of the biggest research problems. To foster such innovation, the NVIDIA Graduate Fellowship Program provides grants, mentors and technical support to doctoral students doing outstanding research relevant to NVIDIA technologies. The program, in its 26th [&#8230;]",
-          "pub_date": "Wed, 30 Sep 2026 17:00:21 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 410
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 253,
-      "total_valid": 39,
+      "total_raw": 255,
+      "total_valid": 40,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 534,
+          "id": 532,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 546,
+          "id": 544,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 526,
+          "id": 524,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 648,
+          "id": 646,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 203
         },
         {
-          "id": 551,
+          "id": 549,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 616
         },
         {
-          "id": 627,
+          "id": 625,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 435
         },
         {
-          "id": 586,
+          "id": 584,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 304
         },
         {
-          "id": 257,
+          "id": 259,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,22 +317,7 @@
           "word_count": 197
         },
         {
-          "id": 268,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "How big is Pennsylvania’s measles outbreak?",
-          "link": "https://www.statnews.com/2026/10/02/health-news-how-big-is-pennsylvania-measles-outbreak/?utm_campaign=rss",
-          "content": "News of a fifth measles death in Pennsylvania underscores a longstanding issue about the disease. The full scope of the outbreak — in the state and in the country —&#8230;",
-          "pub_date": "Fri, 02 Oct 2026 11:53:43 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 171
-        },
-        {
-          "id": 264,
+          "id": 266,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +332,7 @@
           "word_count": 166
         },
         {
-          "id": 715,
+          "id": 714,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +347,7 @@
           "word_count": 138
         },
         {
-          "id": 365,
+          "id": 366,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +362,7 @@
           "word_count": 559
         },
         {
-          "id": 371,
+          "id": 372,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +377,7 @@
           "word_count": 555
         },
         {
-          "id": 370,
+          "id": 371,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +392,7 @@
           "word_count": 525
         },
         {
-          "id": 468,
+          "id": 469,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 452
+        },
+        {
+          "id": 676,
+          "source": "Nature Reviews Microbiology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Cities cannot go green without soil microorganisms",
+          "link": "https://www.nature.com/articles/s41579-026-01380-1",
+          "content": "Nature Reviews Microbiology, Published online: 02 October 2026; doi:10.1038/s41579-026-01380-1 Urban soils must move from providing single, engineered functions to supporting multifunctionality. Managing their microbiomes could simultaneously strengthen climate regulation, water retention, pollutant removal, biodiversity and human health, but only if biological restoration is coupled to risk assessment, long-term monitoring and equitable access.",
+          "pub_date": "2026-10-02",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 449
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 489,
-      "total_valid": 324,
+      "total_raw": 486,
+      "total_valid": 321,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 769,
+          "id": 768,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 175
         },
         {
-          "id": 787,
+          "id": 786,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 167
         },
         {
-          "id": 763,
+          "id": 762,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -491,7 +491,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 282,
+          "id": 283,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 212
         },
         {
-          "id": 303,
+          "id": 304,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 210
         },
         {
-          "id": 293,
+          "id": 294,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 194
         },
         {
-          "id": 661,
+          "id": 659,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 70
         },
         {
-          "id": 407,
+          "id": 408,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 59
         },
         {
-          "id": 434,
+          "id": 435,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 59
         },
         {
-          "id": 435,
+          "id": 436,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 59
         },
         {
-          "id": 769,
+          "id": 768,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 175
         },
         {
-          "id": 255,
+          "id": 257,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -626,7 +626,7 @@
           "word_count": 187
         },
         {
-          "id": 265,
+          "id": 267,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -664,22 +664,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 880,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "WealthAi launches AI agents to oversee client onboarding and KYC process",
-          "link": "https://www.finextra.com/pressarticle/111111/wealthai-launches-ai-agents-to-oversee-client-onboarding-and-kyc-process?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "WealthAi, the AI operating system OS for wealth managers and advisers, has launched a new suite of AI agents designed to oversee the client onboarding and KYC process end-to-end.",
-          "pub_date": "Fri, 02 Oct 2026 11:50:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 178
-        },
-        {
-          "id": 887,
+          "id": 884,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +679,7 @@
           "word_count": 100
         },
         {
-          "id": 895,
+          "id": 892,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +694,7 @@
           "word_count": 88
         },
         {
-          "id": 867,
+          "id": 866,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +709,7 @@
           "word_count": 501
         },
         {
-          "id": 874,
+          "id": 873,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +724,7 @@
           "word_count": 498
         },
         {
-          "id": 870,
+          "id": 869,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +739,7 @@
           "word_count": 481
         },
         {
-          "id": 872,
+          "id": 871,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +754,7 @@
           "word_count": 454
         },
         {
-          "id": 866,
+          "id": 865,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +769,7 @@
           "word_count": 448
         },
         {
-          "id": 869,
+          "id": 868,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -804,21 +789,6 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Lloyds survey reveals 71% of UK FIs believe tokenisation will reshape financial services",
-          "link": "https://www.finextra.com/newsarticle/48526/lloyds-survey-reveals-71-of-uk-fis-believe-tokenisation-will-reshape-financial-services?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Lloyds' 10th annual Financial Institutions Sentiment Survey, conducted between April and May 2026, showed that 71% of the 100 senior leaders surveyed across UK banks, insurers, financial sponsors and asset and wealth managers, expect tokenisation to transform how money and assets move through the financial system.",
-          "pub_date": "Fri, 02 Oct 2026 11:07:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 315
-        },
-        {
-          "id": 882,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
           "title": "InDebted names Chris McNamara CEO",
           "link": "https://www.finextra.com/pressarticle/111114/indebted-names-chris-mcnamara-ceo?utm_medium=rssfinextra&utm_source=finextrafeed",
           "content": "InDebted, the global AI-native collections infrastructure company, today announced the appointment of Chris McNamara as Chief Executive Officer and Brendan Lee as Chief Financial Officer, both effective 1 October 2026.",
@@ -829,7 +799,7 @@
           "word_count": 218
         },
         {
-          "id": 878,
+          "id": 877,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -842,6 +812,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 187
+        },
+        {
+          "id": 883,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "How Can Digital Assets Bridge the Bank Modernisation Gap?",
+          "link": "https://www.finextra.com/videoarticle/3603/how-can-digital-assets-bridge-the-bank-modernisation-gap?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "At Sibos 2026, Capgemini’s Gareth Wilson talks about the ongoing challenges with modernisation in banking as customer expectations, regulation and competition continue to evolve.",
+          "pub_date": "Fri, 02 Oct 2026 15:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 178
         }
       ],
       "quota": {
@@ -849,15 +834,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 203,
-      "total_valid": 13,
-      "total_candidates": 12
+      "total_raw": 201,
+      "total_valid": 11,
+      "total_candidates": 11
     }
   },
   "meta": {
-    "total_raw": 1068,
+    "total_raw": 1065,
     "dup": 288,
-    "nocontent": 396,
+    "nocontent": 397,
     "noise": 6
   }
 }
