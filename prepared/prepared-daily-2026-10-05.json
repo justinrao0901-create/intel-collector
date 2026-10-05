@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 86,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +20,7 @@
           "word_count": 158
         },
         {
-          "id": 84,
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 76
         },
         {
-          "id": 83,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,44 +50,14 @@
           "word_count": 74
         },
         {
-          "id": 67,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "World Embedding Benchmark",
-          "link": "https://arxiv.org/abs/2610.03632",
-          "content": "Physical fidelity has received increasing attention in world models and video generation, yet how video representations encode physical information remains less understood. We introduce the World Embedding Benchmark, comprising 8,000 controlled simulation cases from 80 families spanning fluid mechanics, solid mechanics, dynamics, and optics & electromagnetism. Each case pairs a rendered video with simulation-derived physical annotations, supporting three complementary tasks: text-video retrieval, physical-property regression, and multiple-choice video-description pair classification. We use these tasks to distinguish cross-modal physical alignment from the recoverability of quantitative physical information. Evaluated pre-trained omnimodal embedding models show weak retrieval and near-chance within-family pair classification, while lightweight probes recover useful physical information from frozen video embeddings. Continual contrastive training with physics-specific video-text pairs improves retrieval and pair classification but degrades physical-property regression, revealing a trade-off between alignment and quantitative information recoverability. Finally, we use the embeddings",
-          "pub_date": "2026-10-01T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 68,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "GTR: Gated Token Recurrence for Efficient Dense Prediction",
-          "link": "https://arxiv.org/abs/2609.26590",
-          "content": "Self-attention-based vision backbones perform well on dense prediction, but the quadratic computational cost of global softmax attention limits their efficiency as image resolution increases. We introduce Gated Token Recurrence (GTR), a softmax-free recurrent vision backbone that combines gated linear attention, alternating spatial scan directions, and spatially enhanced SwiGLU blocks. GTR is distilled from a detection-specialized DINOv3 teacher using only final-layer patch-token alignment through a linear projection and squared ell_2 loss, without masked-token prediction or intermediate-layer supervision. With Objects365 detector pre-training, GTR-L achieves 58.9 box AP on COCO val2017 with 1.908\\,ms median batch-one latency under compiled FP16 execution on an RTX~4090. The same backbone also transfers to instance segmentation, pose estimation, oriented detection, semantic segmentation, and monocular depth estimation. In an isolated kernel benchmark, our specialized chunkwise CUDA operator is 4.0times faster than FLA v0.5.0 at 1.6K tokens on RTX~4090. TensorRT deployment on DRIVE AGX Thor achieves 2.282--8.769\\,ms median batch-one latency across the evaluated models. These results",
-          "pub_date": "2026-09-22T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 79,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
-          "link": "https://arxiv.org/abs/2610.02202",
-          "content": "What makes great scientists great? Even as AI systems start to make progress on open problems, scientists remain far ahead of them at sensing which prior idea, buried in an ever-growing archive of research, a new problem needs. To study this skill, we draw on researchers who know firsthand which earlier work advanced their completed projects, with papers serving as pointers to the ideas within. Using our automated pipeline that makes author annotation scalable, we build ScholarCatalyst by having 184 lead authors of 207 recent computer science papers label which candidates did or could have advanced their project, each with a detailed rationale. We introduce a retrieval task with author-provided judgments: given an initial research question, retrieve these papers from only the literature available when the project began. Agentic search does no better than embedding retrieval (0.42 vs. 0.48 Recall@20) despite calling that same retriever as a tool. Even an agent built on Claude Fable 5.1, which may have seen the completed papers during training, reaches only 0.51 R@20. These results highlight the need for new training recipes that equip models with expert intuition for searching broad",
+          "title": "Octrees as an Explicit 3D Language",
+          "link": "https://arxiv.org/abs/2610.02388",
+          "content": "Existing 3D large language models (LLMs) compromise on two fronts: they compress shapes into latent codebook indices or coordinate text, which removes spatial structure from what the model observes, and they acquire the 3D modality by fine-tuning the backbone, which overwrites its general language ability. We present OctLLM, which addresses both limitations. Geometry enters as an explicit 3D sequence of octree occupancy tokens. However, full octree sequences grow rapidly with depth; OctLLM therefore randomly empties penultimate-level nodes and omits descendants while preserving shape, yielding a shorter coordinate- and depth-anchored Sparse Octree (S-Octree) for position-aware mask-modeling generation and 3D understanding. On the other front, existing methods introduce a new modality with full fine-tuning or LoRA, but full fine-tuning is costly, LoRA limits 3D capacity, and both modify the language pathway. OctLLM instead adds 3D capacity in parameters separate from the pretrained ones: mesh tokens are routed through independent trainable branches in a subset of blocks while text and image tokens retain the frozen vision-language pathway, and the two streams interact through shared",
           "pub_date": "2026-09-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -95,7 +65,37 @@
           "word_count": 1200
         },
         {
-          "id": 130,
+          "id": 72,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation",
+          "link": "https://arxiv.org/abs/2610.02788",
+          "content": "Transferring robotic skills from simulation to reality requires task knowledge that remains usable across differences in perception, dynamics, and embodiment. We introduce Skill2Real, an agentic policy framework that learns executable skills through a shared application programming interface (API). A Proposer-Verifier-Governor (PVG) loop uses privileged simulation evidence to diagnose outcomes and validate updates, while keeping learned skills grounded in public observations and API semantics. The Cerebellum first acquires local manipulation skills; the Brain then learns task-level composition with the Cerebellum frozen. Both memories transfer to the real robot without task-policy fine-tuning or skill-memory updates. As GPT-5.6 Sol learns skills on LIBERO-90, evaluating each frozen checkpoint with GPT-6 Astra raises LIBERO-Pro Long success from 2.0% to 56.3%, without training on Pro Long. Independent Robosuite training reaches 85.1% and 89.4% mean success with Sol and Opus 5 across seven tasks, respectively. Frozen Sol-trained LIBERO-90 skills achieve 78.75% mean completion across four real-world manipulation tasks with Astra. Removing the Verifier or Governor during LIBERO-90 trai",
+          "pub_date": "2026-10-01T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 73,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite",
+          "link": "https://arxiv.org/abs/2610.02826",
+          "content": "Successful trajectories on difficult tasks provide valuable supervision for model improvement, but specialized harnesses introduce interventions that may be unavailable during deployment. We propose Recursive Self-Rewrite (RSR), a framework that uses one base model, Qwen-3.8-27B, to discover successful solutions under diverse harnesses and reconstruct them as training trajectories under a general harness. A planner extracts procedures into runbooks, a critic screens for verifier and solution leakage and guides recursive revision, and an executor follows qualified runbooks in fresh sandboxes. Across approximately 3K self-curated terminal tasks, three harnesses jointly solve 759 tasks, 34.3% more than the strongest individual harness in the recorded pool. RSR expands 2,001 successful source trajectories into 11,094 rewritten trajectories for supervised finetuning. Training on these trajectories outperforms both the base model and direct trajectory SFT. Compared with the base model, pass@3 increases from 57.0% to 74.2% on Terminal-Bench 2, from 1.5% to 9.1% on Terminal-Bench 4, from 39.0% to 63.0% on our self-curated Terminal-Bench Hard, and from 3.0% to 6.0% on our Software Terminal-",
+          "pub_date": "2026-10-01T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 132,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 52
         },
         {
-          "id": 58,
+          "id": 60,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 410
         },
         {
-          "id": 56,
+          "id": 58,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 350
         },
         {
-          "id": 136,
+          "id": 138,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 277
         },
         {
-          "id": 127,
+          "id": 129,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 153
         },
         {
-          "id": 117,
+          "id": 119,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 239,
-      "total_valid": 22,
+      "total_raw": 241,
+      "total_valid": 24,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 491,
+          "id": 494,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1199
         },
         {
-          "id": 497,
+          "id": 500,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1199
         },
         {
-          "id": 499,
+          "id": 502,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 977
         },
         {
-          "id": 582,
+          "id": 585,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 609
         },
         {
-          "id": 601,
+          "id": 604,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 404
         },
         {
-          "id": 586,
+          "id": 589,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 396
         },
         {
-          "id": 639,
+          "id": 642,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 450
         },
         {
-          "id": 626,
+          "id": 629,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 443
         },
         {
-          "id": 362,
+          "id": 365,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 428
         },
         {
-          "id": 646,
+          "id": 649,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 428
         },
         {
-          "id": 644,
+          "id": 647,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 423
         },
         {
-          "id": 367,
+          "id": 370,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 416
         },
         {
-          "id": 299,
+          "id": 302,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 413
         },
         {
-          "id": 423,
+          "id": 426,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 412
         },
         {
-          "id": 343,
+          "id": 346,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 460,
-      "total_valid": 282,
+      "total_raw": 462,
+      "total_valid": 284,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 724,
+          "id": 728,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 184
         },
         {
-          "id": 735,
+          "id": 739,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 150
         },
         {
-          "id": 746,
+          "id": 750,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -491,7 +491,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 271,
+          "id": 274,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 188
         },
         {
-          "id": 270,
+          "id": 273,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 186
         },
         {
-          "id": 302,
+          "id": 305,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 173
         },
         {
-          "id": 415,
+          "id": 418,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 57
         },
         {
-          "id": 598,
+          "id": 601,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 232
         },
         {
-          "id": 720,
+          "id": 724,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 130
         },
         {
-          "id": 454,
+          "id": 457,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 457,
+          "id": 460,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 458,
+          "id": 461,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 481,
+          "id": 484,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -664,7 +664,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 818,
+          "id": 822,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +679,7 @@
           "word_count": 432
         },
         {
-          "id": 834,
+          "id": 838,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 55
         },
         {
-          "id": 824,
+          "id": 828,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 487
         },
         {
-          "id": 821,
+          "id": 825,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 471
         },
         {
-          "id": 822,
+          "id": 826,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 459
         },
         {
-          "id": 823,
+          "id": 827,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 459
         },
         {
-          "id": 817,
+          "id": 821,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 441
         },
         {
-          "id": 828,
+          "id": 832,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 98
         },
         {
-          "id": 832,
+          "id": 836,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 51
         },
         {
-          "id": 826,
+          "id": 830,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -825,9 +825,9 @@
     }
   },
   "meta": {
-    "total_raw": 1009,
-    "dup": 284,
-    "nocontent": 400,
+    "total_raw": 1013,
+    "dup": 283,
+    "nocontent": 401,
     "noise": 6
   }
 }
