@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 88,
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +20,7 @@
           "word_count": 158
         },
         {
-          "id": 86,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 76
         },
         {
-          "id": 85,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -48,6 +48,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 74
+        },
+        {
+          "id": 67,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "World Embedding Benchmark",
+          "link": "https://arxiv.org/abs/2610.03632",
+          "content": "Physical fidelity has received increasing attention in world models and video generation, yet how video representations encode physical information remains less understood. We introduce the World Embedding Benchmark, comprising 8,000 controlled simulation cases from 80 families spanning fluid mechanics, solid mechanics, dynamics, and optics & electromagnetism. Each case pairs a rendered video with simulation-derived physical annotations, supporting three complementary tasks: text-video retrieval, physical-property regression, and multiple-choice video-description pair classification. We use these tasks to distinguish cross-modal physical alignment from the recoverability of quantitative physical information. Evaluated pre-trained omnimodal embedding models show weak retrieval and near-chance within-family pair classification, while lightweight probes recover useful physical information from frozen video embeddings. Continual contrastive training with physics-specific video-text pairs improves retrieval and pair classification but degrades physical-property regression, revealing a trade-off between alignment and quantitative information recoverability. Finally, we use the embeddings",
+          "pub_date": "2026-10-01T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "GTR: Gated Token Recurrence for Efficient Dense Prediction",
+          "link": "https://arxiv.org/abs/2609.26590",
+          "content": "Self-attention-based vision backbones perform well on dense prediction, but the quadratic computational cost of global softmax attention limits their efficiency as image resolution increases. We introduce Gated Token Recurrence (GTR), a softmax-free recurrent vision backbone that combines gated linear attention, alternating spatial scan directions, and spatially enhanced SwiGLU blocks. GTR is distilled from a detection-specialized DINOv3 teacher using only final-layer patch-token alignment through a linear projection and squared ell_2 loss, without masked-token prediction or intermediate-layer supervision. With Objects365 detector pre-training, GTR-L achieves 58.9 box AP on COCO val2017 with 1.908\\,ms median batch-one latency under compiled FP16 execution on an RTX~4090. The same backbone also transfers to instance segmentation, pose estimation, oriented detection, semantic segmentation, and monocular depth estimation. In an isolated kernel benchmark, our specialized chunkwise CUDA operator is 4.0times faster than FLA v0.5.0 at 1.6K tokens on RTX~4090. TensorRT deployment on DRIVE AGX Thor achieves 2.282--8.769\\,ms median batch-one latency across the evaluated models. These results",
+          "pub_date": "2026-09-22T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         },
         {
           "id": 79,
@@ -65,37 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 80,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics",
-          "link": "https://arxiv.org/abs/2609.35259",
-          "content": "On-policy learning has been argued to reduce catastrophic forgetting, produce sparser parameter updates, and improve generalisation. However, existing comparisons between supervised fine-tuning and reinforcement learning vary many factors simultaneously, making the contribution of rollout policy difficult to isolate. We study the effect of rollout policy in a controlled strong-to-weak distillation setting, by independently varying rollout policy, token-level KL direction, and learning rate across the Llama3 and Qwen2.5 model families and reasoning tasks spanning scientific, medical, and arithmetic domains. Our analysis reveals a nuanced picture of distillation dynamics in which rollout policy does not necessarily play a central role. Instead, token-level KL direction more clearly shapes task performance and output coverage, while learning rate governs forgetting and update sparsity. Analysis of KL gradients and experiments along a continuous student-teacher rollout-policy spectrum explain this pattern: forward KL is remarkably robust to rollout policy, with its performance stable and strong despite changes to the rollout policy, whereas reverse KL is substantially more sensitive an",
-          "pub_date": "2026-09-27T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 81,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "RLE-Bench: A Qualifying Exam for Coding Agents as Robot Learning Engineers",
-          "link": "https://arxiv.org/abs/2609.34210",
-          "content": "Coding agents are beginning to move beyond purely digital tasks to tackle physical-world challenges, particularly in robotics. Existing robotics benchmarks, however, primarily focus on the performance of individual artifacts, such as policies or controllers, offering limited coverage of coding agents' broader engineering capabilities. Real-world robotics extends beyond control: agents must build, integrate, diagnose, and improve heterogeneous artifacts under resource constraints and reason from multimodal feedback. To evaluate these broader capabilities, we introduce RLE-Bench, a benchmark of robot-learning tasks spanning four representative robotics development workflows: interactive control, policy learning, perception and estimation, and mechanical design. We use diverse task-specific metrics to evaluate the artifacts submitted by the coding agents, from the success rate the agents achieved to the policy agents trained, the harness agent built, and the mechanical structures the agent designed. We aggregate these metrics into an overall RLE Index and report workflow-specific capability profiles, enabling systematic comparison of coding agents' capabilities across multiple capabil",
-          "pub_date": "2026-09-28T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 133,
+          "id": 130,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 52
         },
         {
-          "id": 60,
+          "id": 58,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 410
         },
         {
-          "id": 58,
+          "id": 56,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 350
         },
         {
-          "id": 139,
+          "id": 136,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 277
         },
         {
-          "id": 130,
+          "id": 127,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 153
         },
         {
-          "id": 120,
+          "id": 117,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 242,
+      "total_raw": 239,
       "total_valid": 22,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 494,
+          "id": 491,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1199
         },
         {
-          "id": 500,
+          "id": 497,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1199
         },
         {
-          "id": 502,
+          "id": 499,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 977
         },
         {
-          "id": 585,
+          "id": 582,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 609
         },
         {
-          "id": 604,
+          "id": 601,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 404
         },
         {
-          "id": 589,
+          "id": 586,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 396
         },
         {
-          "id": 642,
+          "id": 639,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 450
         },
         {
-          "id": 629,
+          "id": 626,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 443
         },
         {
-          "id": 365,
+          "id": 362,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 428
         },
         {
-          "id": 649,
+          "id": 646,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 428
         },
         {
-          "id": 647,
+          "id": 644,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 423
         },
         {
-          "id": 370,
+          "id": 367,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 416
         },
         {
-          "id": 302,
+          "id": 299,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 413
         },
         {
-          "id": 426,
+          "id": 423,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 412
         },
         {
-          "id": 346,
+          "id": 343,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 727,
+          "id": 724,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 184
         },
         {
-          "id": 738,
+          "id": 735,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 150
         },
         {
-          "id": 749,
+          "id": 746,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -491,7 +491,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 274,
+          "id": 271,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 188
         },
         {
-          "id": 273,
+          "id": 270,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 186
         },
         {
-          "id": 305,
+          "id": 302,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 173
         },
         {
-          "id": 418,
+          "id": 415,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 57
         },
         {
-          "id": 601,
+          "id": 598,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 232
         },
         {
-          "id": 723,
+          "id": 720,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 130
         },
         {
-          "id": 457,
+          "id": 454,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 460,
+          "id": 457,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 461,
+          "id": 458,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 484,
+          "id": 481,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -664,7 +664,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 821,
+          "id": 818,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +679,7 @@
           "word_count": 432
         },
         {
-          "id": 837,
+          "id": 834,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 55
         },
         {
-          "id": 827,
+          "id": 824,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 487
         },
         {
-          "id": 824,
+          "id": 821,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 471
         },
         {
-          "id": 825,
+          "id": 822,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 459
         },
         {
-          "id": 826,
+          "id": 823,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 459
         },
         {
-          "id": 820,
+          "id": 817,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 441
         },
         {
-          "id": 831,
+          "id": 828,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 98
         },
         {
-          "id": 835,
+          "id": 832,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 51
         },
         {
-          "id": 829,
+          "id": 826,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -819,15 +819,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 188,
+      "total_raw": 193,
       "total_valid": 12,
       "total_candidates": 10
     }
   },
   "meta": {
-    "total_raw": 1007,
-    "dup": 281,
-    "nocontent": 401,
+    "total_raw": 1009,
+    "dup": 284,
+    "nocontent": 400,
     "noise": 6
   }
 }
