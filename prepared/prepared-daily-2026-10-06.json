@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 52,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 147
         },
         {
-          "id": 82,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 287
         },
         {
-          "id": 81,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 267
         },
         {
-          "id": 90,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,37 @@
           "word_count": 190
         },
         {
-          "id": 66,
+          "id": 67,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation",
+          "link": "https://arxiv.org/abs/2610.02840",
+          "content": "World action models jointly learn to forecast world dynamics and predict robot actions, such that the learned internal world dynamics guide accurate actions. Existing approaches typically represent the world as RGB frames or latent counterparts while predicting actions as end-effector poses or joint angles, but they often struggle to capture the 3D spatial structure and contact geometry central to dexterous manipulation. We introduce Point World Action Model (PointWAM), a 3D world action model that decomposes the world into a scene (i.e., environment) and hands (i.e., actor), and jointly forecasts both as 3D point trajectories within a shared space-time coordinate frame. This explicit, disentangled representation enables effective pre-training on large-scale human demonstration videos without requiring any task-specific object or keypoint selection. Given a colored point cloud and a language instruction, PointWAM predicts how the scene and hands co-evolve in 3D space over time, then retargets the forecast hand motion to robot actions. Pre-training on human videos improves average DexJoCo success by 56.9 percentage points, and scene-trajectory supervision adds 10.9 points over forec",
+          "pub_date": "2026-10-01T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 69,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts",
+          "link": "https://arxiv.org/abs/2610.00722",
+          "content": "World models enable agents to plan by predicting future states of the environment, but their predictions can become unreliable when test-time dynamics differ from those seen during training. We present JEPA-TTT, which adapts the latent dynamics predictor of a pretrained action-conditioned Joint-Embedding Predictive Architecture world model throughout test time. Self-supervised updates accumulate across episodes, while the visual encoder and reward head remain fixed, preserving the pretrained representation and task objective. Planning requires neither a goal image nor online environment reward. JEPA-TTT uses dense replay, which forms prediction windows at every temporal offset, retains them in a growing buffer, and samples minibatches from that buffer for predictor updates. Across eight dynamics shifts in four continuous-control environments, JEPA-TTT improves planning on every shift. After 500 test-time episodes, it reduces autoregressive latent prediction error by 83% on average and improves planning performance by 153% over the frozen JEPA world model. These results show that persistent self-supervised test-time training can adapt a pretrained latent world model under changed dy",
+          "pub_date": "2026-09-29T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,37 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Self-Supervised Scaling of Terminal Environments for Scientific Domains",
-          "link": "https://arxiv.org/abs/2610.02710",
-          "content": "Terminal agents are increasingly deployed beyond software engineering in science and other specialized domains. Constructing training environments requires executable reference behavior and a domain-specific verifier that distinguishes semantic correctness from superficially plausible artifacts. Authoring these components for each task requires repeated engineering and limits reuse. We introduce software-in-the-loop reconstruction, a self-supervised framework that obtains reference outputs and verification targets from existing software workflows, executable programs mapping structured inputs to outputs. For each workflow, we execute multiple input configurations and partition cases into public observations and hidden evaluations. Given the instruction, input schema, and public input--output observations, an agent constructs an editable program without access to the source workflow. The candidate is evaluated on hidden configurations against workflow outputs. A hierarchical verifier combines domain-specific semantic comparison, structural validity, and anti-shortcut checks, while public feedback supports iterative revision. The construction admits additional workflows and configura",
-          "pub_date": "2026-10-01T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 69,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
-          "link": "https://arxiv.org/abs/2610.03710",
-          "content": "Inspired by human vision, we introduce a framework using active gaze to enable fine-grained bimanual manipulation with only a single stereo camera. EyeRobot 2.0 physically attends to a 3D fixation point in the scene by swiveling two eye viewpoints to center their gaze on it. The resulting images are processed foveally by allocating more visual tokens to the image centers, focusing computation on task-relevant features. Such Active Visual Fixation (AVF) requires carefully coordinated gaze during task execution, which we accomplish hierarchically by first training a low-level gaze servoing policy conditioned on a goal object, then training a target selector which emits fixation goals based on task progress. Both modules are trained with RL on real-world data: the first is trained with a dense geometric reward and the second co-trains with the BC gripper policy which allows it to discover fixation sequences that can resemble a human's fixation sequence while performing the task. EyeRobot 2.0 further takes advantage of fixation by canonicalizing gripper information into a fixation-relative SE(3) frame, which compacts the size of the action distribution to learn. We collect teleoperatio",
-          "pub_date": "2026-10-01T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1183,
+          "id": 1186,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,22 @@
           "word_count": 1199
         },
         {
-          "id": 1187,
+          "id": 1185,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Quoting Felix Rieseberg",
+          "link": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
+          "content": "The \"old\" version of Cowork runs model inference in the cloud, executing tool calls in an Anthropic-provided VM we shipped to your computer. We added the VM for capability, safety, and security reasons - mapping in just the data you explicitly added to your session. People loved what they were able to do with Claude but didn't love the disk, battery, and performance cost of running the VM locally. Also, people didn't love that closing your laptop means the work stops. The \"new\" version of Cowork runs model inference and the VM in the cloud. Each session gets its own sandbox, not sharing state with other sessions. When the VM needs something on the users' device (like a file), the desktop app is responsible for that file access tool call. [...] We think this solves a lot of problems we've heard about (like using Cowork from a phone, keeping work running, or getting all the same power without losing battery to the VM) &mdash; Felix Rieseberg , Anthropic, see also this help page Tags: claude-cowork , anthropic , claude , generative-ai , ai , general-agents , llms",
+          "pub_date": "2026-10-05T23:56:47+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1076
+        },
+        {
+          "id": 1190,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 921
-        },
-        {
-          "id": 120,
-          "source": "arXiv cs.CL",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 6,
-          "title": "HakemBench: A Turkish Benchmark of Typed Decisions",
-          "link": "https://arxiv.org/abs/2610.02293",
-          "content": "arXiv:2610.02293v1 Announce Type: new Abstract: HakemBench is a Turkish benchmark of typed decisions, in which the model under test reads a text, a question and a fixed set of options and returns a probability for every option. Version 1.0 is released fully open under CC BY 4.0, with 2,346 items and 4,275 choice, yes/no and score questions in seven tracks (fact-check triage, education, guardrails, legal routing, moderation, spam and phishing, and customer support). One harness scores decision quality (macro F1), calibration (from the normalised Brier score) and selective automation (from the normalised area under the generalised risk-coverage curve), combines them by a geometric mean and reports intervals from 2,000 bootstrap draws; probes for option order, paraphrase, English translation and substituted names are reported alongside. Most gold labels come from blind passes of one AI model family compared with the votes of a panel of large language models from other model families; they are not human-verified. On a board of 16 rows the leader scores a composite of 0.888 and the lab's own model is 7th at 0.660. Its numbers are not blind. Earlier runs' test results shaped its training",
-          "pub_date": "Mon, 05 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1287,
-      "total_valid": 836,
+      "total_raw": 1290,
+      "total_valid": 837,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1560,
+          "id": 1563,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1564,
+          "id": 1567,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1565,
+          "id": 1568,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1721,
+          "id": 1724,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 359
         },
         {
-          "id": 1695,
+          "id": 1698,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,22 @@
           "word_count": 259
         },
         {
-          "id": 1693,
+          "id": 1682,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Multi-omics and bioinformatics pipelines for personalized neoantigen discovery: current frameworks, challenges, and clinical translation",
+          "link": "https://www.nature.com/articles/s41541-026-01593-8",
+          "content": "npj Vaccines, Published online: 05 October 2026; doi:10.1038/s41541-026-01593-8 Multi-omics and bioinformatics pipelines for personalized neoantigen discovery: current frameworks, challenges, and clinical translation",
+          "pub_date": "2026-10-05",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 216
+        },
+        {
+          "id": 1696,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 163
         },
         {
-          "id": 1645,
+          "id": 1648,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 376
         },
         {
-          "id": 1614,
+          "id": 1617,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 319
         },
         {
-          "id": 1616,
+          "id": 1619,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 256
         },
         {
-          "id": 1297,
+          "id": 1300,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +362,7 @@
           "word_count": 229
         },
         {
-          "id": 1742,
+          "id": 1745,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +377,7 @@
           "word_count": 217
         },
         {
-          "id": 1291,
+          "id": 1294,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +392,7 @@
           "word_count": 215
         },
         {
-          "id": 1307,
+          "id": 1310,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +407,7 @@
           "word_count": 162
         },
         {
-          "id": 1312,
+          "id": 1315,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 158
-        },
-        {
-          "id": 1306,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: Pharmalittle: We’re reading about a Vaxcyte pneumococcal shot, increasing pharma M&A, and more",
-          "link": "https://www.statnews.com/pharmalot/2026/10/05/vaxcyte-pneumococcal-vaccine-rising-pharma-mergers-acquisitions/?utm_campaign=rss",
-          "content": "Vaxcyte said its pneumococcal vaccine hit the primary endpoints in a Phase 3 clinical trial, setting up a competition with Pfizer and Merck",
-          "pub_date": "Mon, 05 Oct 2026 13:10:03 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 139
         }
       ],
       "quota": {
@@ -428,13 +428,13 @@
         "max": 7
       },
       "total_raw": 482,
-      "total_valid": 297,
+      "total_valid": 299,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1845,
+          "id": 1848,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1199
         },
         {
-          "id": 1798,
+          "id": 1801,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 216
         },
         {
-          "id": 1811,
+          "id": 1814,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 194
         },
         {
-          "id": 1810,
+          "id": 1813,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 193
         },
         {
-          "id": 1844,
+          "id": 1847,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1846,
+          "id": 1849,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1868,
+          "id": 1871,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 515
         },
         {
-          "id": 1869,
+          "id": 1872,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 291
         },
         {
-          "id": 1827,
+          "id": 1830,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1826,
+          "id": 1829,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1565,
+          "id": 1568,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1483,
+          "id": 1486,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 342
         },
         {
-          "id": 1321,
+          "id": 1324,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 242
         },
         {
-          "id": 1881,
+          "id": 1884,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 215
         },
         {
-          "id": 1320,
+          "id": 1323,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 174
         },
         {
-          "id": 1647,
+          "id": 1650,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 254
         },
         {
-          "id": 1650,
+          "id": 1653,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 138
         },
         {
-          "id": 1289,
+          "id": 1292,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -716,7 +716,7 @@
           "word_count": 241
         },
         {
-          "id": 1311,
+          "id": 1314,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -731,7 +731,7 @@
           "word_count": 165
         },
         {
-          "id": 1304,
+          "id": 1307,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1898,
+          "id": 1901,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 529
         },
         {
-          "id": 1888,
+          "id": 1891,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 492
         },
         {
-          "id": 1897,
+          "id": 1900,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 473
         },
         {
-          "id": 1944,
+          "id": 1947,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 413
         },
         {
-          "id": 1945,
+          "id": 1948,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 372
         },
         {
-          "id": 1946,
+          "id": 1949,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 345
         },
         {
-          "id": 1916,
+          "id": 1919,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 326
         },
         {
-          "id": 1914,
+          "id": 1917,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 320
         },
         {
-          "id": 1904,
+          "id": 1907,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 263
         },
         {
-          "id": 1913,
+          "id": 1916,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 230
         },
         {
-          "id": 1908,
+          "id": 1911,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 199
         },
         {
-          "id": 1911,
+          "id": 1914,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 151
         },
         {
-          "id": 1900,
+          "id": 1903,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 131
         },
         {
-          "id": 83,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 127
         },
         {
-          "id": 1901,
+          "id": 1904,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 123
         },
         {
-          "id": 1952,
+          "id": 1955,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1009,7 +1009,7 @@
           "word_count": 164
         },
         {
-          "id": 232,
+          "id": 234,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 245,
+          "id": 247,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 550,
+          "id": 552,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 739,
+          "id": 741,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1080,9 +1080,9 @@
     }
   },
   "meta": {
-    "total_raw": 2120,
-    "dup": 520,
-    "nocontent": 402,
+    "total_raw": 2123,
+    "dup": 519,
+    "nocontent": 403,
     "noise": 6
   }
 }
