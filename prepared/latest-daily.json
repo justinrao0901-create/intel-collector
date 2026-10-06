@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 53,
+          "id": 52,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 147
         },
         {
-          "id": 83,
+          "id": 82,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 287
         },
         {
-          "id": 82,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 267
         },
         {
-          "id": 91,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 190
         },
         {
-          "id": 67,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1184,
+          "id": 1183,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1199
         },
         {
-          "id": 1188,
+          "id": 1187,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,19 +170,19 @@
           "word_count": 921
         },
         {
-          "id": 1195,
-          "source": "Simon Willison",
+          "id": 120,
+          "source": "arXiv cs.CL",
           "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "llm-anthropic 0.30",
-          "link": "https://simonwillison.net/2026/Sep/28/llm-anthropic/",
-          "content": "Release: llm-anthropic 0.30 In addition to Claude Sonnet 5.5, this release adds the ability to run llm anthropic refresh to refresh the list of Anthropic models directly from their API - which means I don't need to push a new release just to add support for a newly released model. I also added an llm anthropic count command which can use their free token counting API to return a count of tokens that will be used by any prompt, before you send that prompt. Tags: llm , anthropic",
-          "pub_date": "2026-09-28T23:06:21+00:00",
+          "tier": "T1",
+          "priority": 6,
+          "title": "HakemBench: A Turkish Benchmark of Typed Decisions",
+          "link": "https://arxiv.org/abs/2610.02293",
+          "content": "arXiv:2610.02293v1 Announce Type: new Abstract: HakemBench is a Turkish benchmark of typed decisions, in which the model under test reads a text, a question and a fixed set of options and returns a probability for every option. Version 1.0 is released fully open under CC BY 4.0, with 2,346 items and 4,275 choice, yes/no and score questions in seven tracks (fact-check triage, education, guardrails, legal routing, moderation, spam and phishing, and customer support). One harness scores decision quality (macro F1), calibration (from the normalised Brier score) and selective automation (from the normalised area under the generalised risk-coverage curve), combines them by a geometric mean and reports intervals from 2,000 bootstrap draws; probes for option order, paraphrase, English translation and substituted names are reported alongside. Most gold labels come from blind passes of one AI model family compared with the votes of a panel of large language models from other model families; they are not human-verified. On a board of 16 rows the leader scores a composite of 0.888 and the lab's own model is 7th at 0.660. Its numbers are not blind. Earlier runs' test results shaped its training",
+          "pub_date": "Mon, 05 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 481
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1289,
-      "total_valid": 837,
+      "total_raw": 1287,
+      "total_valid": 836,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1581,
+          "id": 1560,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1585,
+          "id": 1564,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1586,
+          "id": 1565,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1742,
+          "id": 1721,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 359
         },
         {
-          "id": 1716,
+          "id": 1695,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -272,22 +272,7 @@
           "word_count": 259
         },
         {
-          "id": 1700,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Multi-omics and bioinformatics pipelines for personalized neoantigen discovery: current frameworks, challenges, and clinical translation",
-          "link": "https://www.nature.com/articles/s41541-026-01593-8",
-          "content": "npj Vaccines, Published online: 05 October 2026; doi:10.1038/s41541-026-01593-8 Multi-omics and bioinformatics pipelines for personalized neoantigen discovery: current frameworks, challenges, and clinical translation",
-          "pub_date": "2026-10-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 216
-        },
-        {
-          "id": 1714,
+          "id": 1693,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +287,7 @@
           "word_count": 163
         },
         {
-          "id": 1666,
+          "id": 1645,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +302,7 @@
           "word_count": 376
         },
         {
-          "id": 1635,
+          "id": 1614,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +317,7 @@
           "word_count": 319
         },
         {
-          "id": 1637,
+          "id": 1616,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +332,7 @@
           "word_count": 256
         },
         {
-          "id": 1299,
+          "id": 1297,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +347,7 @@
           "word_count": 229
         },
         {
-          "id": 1765,
+          "id": 1742,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +362,7 @@
           "word_count": 217
         },
         {
-          "id": 1293,
+          "id": 1291,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +377,7 @@
           "word_count": 215
         },
         {
-          "id": 1309,
+          "id": 1307,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +392,7 @@
           "word_count": 162
         },
         {
-          "id": 1314,
+          "id": 1312,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 158
+        },
+        {
+          "id": 1306,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: Pharmalittle: We’re reading about a Vaxcyte pneumococcal shot, increasing pharma M&A, and more",
+          "link": "https://www.statnews.com/pharmalot/2026/10/05/vaxcyte-pneumococcal-vaccine-rising-pharma-mergers-acquisitions/?utm_campaign=rss",
+          "content": "Vaxcyte said its pneumococcal vaccine hit the primary endpoints in a Phase 3 clinical trial, setting up a competition with Pfizer and Merck",
+          "pub_date": "Mon, 05 Oct 2026 13:10:03 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 139
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 503,
-      "total_valid": 316,
+      "total_raw": 482,
+      "total_valid": 297,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1872,
+          "id": 1845,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1199
         },
         {
-          "id": 1822,
+          "id": 1798,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 216
         },
         {
-          "id": 1835,
+          "id": 1811,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 194
         },
         {
-          "id": 1834,
+          "id": 1810,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 193
         },
         {
-          "id": 1871,
+          "id": 1844,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1873,
+          "id": 1846,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1903,
+          "id": 1868,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 515
         },
         {
-          "id": 1904,
+          "id": 1869,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 291
         },
         {
-          "id": 1851,
+          "id": 1827,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1850,
+          "id": 1826,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 118,
+      "total_raw": 106,
       "total_valid": 17,
       "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 1586,
+          "id": 1565,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1496,
+          "id": 1483,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 342
         },
         {
-          "id": 1323,
+          "id": 1321,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 242
         },
         {
-          "id": 1916,
+          "id": 1881,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 215
         },
         {
-          "id": 1322,
+          "id": 1320,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,22 +671,7 @@
           "word_count": 174
         },
         {
-          "id": 1393,
-          "source": "Nature",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Why AI-authorship debates miss a deeper shift in how scholarly knowledge is produced",
-          "link": "https://www.nature.com/articles/d41586-026-03055-6",
-          "content": "Nature, Published online: 29 September 2026; doi:10.1038/d41586-026-03055-6 Why AI-authorship debates miss a deeper shift in how scholarly knowledge is produced",
-          "pub_date": "2026-09-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 160
-        },
-        {
-          "id": 1668,
+          "id": 1647,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +686,7 @@
           "word_count": 254
         },
         {
-          "id": 1671,
+          "id": 1650,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +701,7 @@
           "word_count": 138
         },
         {
-          "id": 1291,
+          "id": 1289,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -731,7 +716,7 @@
           "word_count": 241
         },
         {
-          "id": 1313,
+          "id": 1311,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -744,6 +729,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 165
+        },
+        {
+          "id": 1304,
+          "source": "STAT News",
+          "section": "cross",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: Utah plows ahead with more health AI pilots for prescriptions, women’s health",
+          "link": "https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors/?utm_campaign=rss",
+          "content": "Utah plans to allow an AI product to evaluate patients and write new drug prescriptions without prior human review.",
+          "pub_date": "Mon, 05 Oct 2026 16:00:14 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 115
         }
       ],
       "quota": {
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 43,
-      "total_valid": 30,
+      "total_raw": 40,
+      "total_valid": 28,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1934,
+          "id": 1898,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,22 @@
           "word_count": 529
         },
         {
-          "id": 1930,
+          "id": 1888,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "TikTok Kicks Off Agentic Commerce Push With AI Shopping Assistant",
+          "link": "https://www.pymnts.com/commerce/social-commerce/2026/tiktok-kicks-off-agentic-commerce-push-with-ai-shopping-assistant/",
+          "content": "TikTok has introduced an in-app checkout solution and an artificial intelligence (AI) shopping assistant, saying in a Monday (Oct. 5) press release that these are the first of several agentic commerce experiences the company is adding to its platform. The in-app checkout solution, Buy Direct, allows users to buy from a brand without leaving TikTok, according to the release. [&#8230;] The post TikTok Kicks Off Agentic Commerce Push With AI Shopping Assistant appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 05 Oct 2026 23:55:24 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 492
+        },
+        {
+          "id": 1897,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 473
         },
         {
-          "id": 1978,
+          "id": 1944,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 413
         },
         {
-          "id": 1979,
+          "id": 1945,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 372
         },
         {
-          "id": 1980,
+          "id": 1946,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 345
         },
         {
-          "id": 1950,
+          "id": 1916,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 326
         },
         {
-          "id": 1948,
+          "id": 1914,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,22 @@
           "word_count": 320
         },
         {
-          "id": 1947,
+          "id": 1904,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Anchorage Digital expands global services with Standard Chartered",
+          "link": "https://www.finextra.com/newsarticle/48535/anchorage-digital-expands-global-services-with-standard-chartered?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Digital asset custody services provider Anchorage Digital has formed a partnership with Standard Chartered through which it will offer USD accounts and access to Swift wires, including transfers to and from third parties, to eligible non-US institutional clients.",
+          "pub_date": "Tue, 06 Oct 2026 00:01:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 263
+        },
+        {
+          "id": 1913,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +919,7 @@
           "word_count": 230
         },
         {
-          "id": 1942,
+          "id": 1908,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +934,7 @@
           "word_count": 199
         },
         {
-          "id": 1945,
+          "id": 1911,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,22 +949,7 @@
           "word_count": 151
         },
         {
-          "id": 1939,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Morgan Stanley sets up digital asset lab",
-          "link": "https://www.finextra.com/newsarticle/48536/morgan-stanley-sets-up-digital-asset-lab?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Morgan Stanley has built a digital asset lab where it can test things like stablecoins, tokenisation and decentralised finance applications.",
-          "pub_date": "Mon, 05 Oct 2026 18:24:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 140
-        },
-        {
-          "id": 1936,
+          "id": 1900,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 131
         },
         {
-          "id": 84,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 127
         },
         {
-          "id": 1937,
+          "id": 1901,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 123
         },
         {
-          "id": 1981,
+          "id": 1952,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +1009,7 @@
           "word_count": 164
         },
         {
-          "id": 233,
+          "id": 232,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 246,
+          "id": 245,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 551,
+          "id": 550,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 740,
+          "id": 739,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1052,21 +1067,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 836,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "RIPPLE in Still Water: Zero-Shot Clustering in Federated Learning with Wavelet Scattering Transform",
-          "link": "https://arxiv.org/abs/2610.03054",
-          "content": "arXiv:2610.03054v1 Announce Type: new Abstract: Clustered Federated Learning (FL) partitions a client population into groups of similar local distributions and trains one specialized model per cluster, mitigating client drift that degrades single-model methods under non-IID data. Prior methods discover cluster structure inside the training loop through gradient similarity, loss evaluation, or EM-style updates, thus increasing communication overhead, exposing gradients to inversion attacks, and providing no mechanism to assign clients absent from training. We propose RIPPLE, a clustered FL framework in which cluster assignment is computed entirely offline from a spectral characterization of each client's local data: a variance-weighted principal-component prototype embedded via the Wavelet Scattering Transform and decoded by a Gaussian Mixture VAE trained server-side on synthetic client populations before federation begins. Per-round communication cost matches FedAvg exactly, and a client absent from training obtains a personalized model from a single forward pass, without gradient computation, model evaluation, or extra communication round. We prove that the gap between RIPPLE's su",
-          "pub_date": "Mon, 05 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1074,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 236,
-      "total_valid": 51,
+      "total_raw": 243,
+      "total_valid": 53,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2149,
-    "dup": 529,
-    "nocontent": 404,
+    "total_raw": 2120,
+    "dup": 520,
+    "nocontent": 402,
     "noise": 6
   }
 }
