@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1186,
+          "id": 1185,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1199
         },
         {
-          "id": 1185,
+          "id": 1184,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1076
         },
         {
-          "id": 1190,
+          "id": 1189,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1290,
+      "total_raw": 1289,
       "total_valid": 838,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1563,
+          "id": 1562,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1567,
+          "id": 1566,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1568,
+          "id": 1567,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1724,
+          "id": 1723,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 359
         },
         {
-          "id": 1698,
+          "id": 1697,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,22 @@
           "word_count": 259
         },
         {
-          "id": 1696,
+          "id": 1681,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Multi-omics and bioinformatics pipelines for personalized neoantigen discovery: current frameworks, challenges, and clinical translation",
+          "link": "https://www.nature.com/articles/s41541-026-01593-8",
+          "content": "npj Vaccines, Published online: 05 October 2026; doi:10.1038/s41541-026-01593-8 Multi-omics and bioinformatics pipelines for personalized neoantigen discovery: current frameworks, challenges, and clinical translation",
+          "pub_date": "2026-10-05",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 216
+        },
+        {
+          "id": 1695,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 163
         },
         {
-          "id": 1648,
+          "id": 1647,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 376
         },
         {
-          "id": 1617,
+          "id": 1616,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 319
         },
         {
-          "id": 1619,
+          "id": 1618,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 256
         },
         {
-          "id": 1300,
+          "id": 1299,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +362,7 @@
           "word_count": 229
         },
         {
-          "id": 1745,
+          "id": 1744,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +377,7 @@
           "word_count": 217
         },
         {
-          "id": 1294,
+          "id": 1293,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +392,7 @@
           "word_count": 215
         },
         {
-          "id": 1310,
+          "id": 1309,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +407,7 @@
           "word_count": 162
         },
         {
-          "id": 1315,
+          "id": 1314,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 158
-        },
-        {
-          "id": 1309,
-          "source": "STAT News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "STAT+: Pharmalittle: We’re reading about a Vaxcyte pneumococcal shot, increasing pharma M&A, and more",
-          "link": "https://www.statnews.com/pharmalot/2026/10/05/vaxcyte-pneumococcal-vaccine-rising-pharma-mergers-acquisitions/?utm_campaign=rss",
-          "content": "Vaxcyte said its pneumococcal vaccine hit the primary endpoints in a Phase 3 clinical trial, setting up a competition with Pfizer and Merck",
-          "pub_date": "Mon, 05 Oct 2026 13:10:03 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 139
         }
       ],
       "quota": {
@@ -428,13 +428,13 @@
         "max": 7
       },
       "total_raw": 482,
-      "total_valid": 298,
+      "total_valid": 299,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1848,
+          "id": 1847,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1199
         },
         {
-          "id": 1801,
+          "id": 1800,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 216
         },
         {
-          "id": 1814,
+          "id": 1813,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 194
         },
         {
-          "id": 1813,
+          "id": 1812,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 193
         },
         {
-          "id": 1847,
+          "id": 1846,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1849,
+          "id": 1848,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1871,
+          "id": 1870,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 515
         },
         {
-          "id": 1872,
+          "id": 1871,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 291
         },
         {
-          "id": 1830,
+          "id": 1829,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1829,
+          "id": 1828,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1568,
+          "id": 1567,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1486,
+          "id": 1485,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 342
         },
         {
-          "id": 1324,
+          "id": 1323,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 242
         },
         {
-          "id": 1884,
+          "id": 1883,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 215
         },
         {
-          "id": 1323,
+          "id": 1322,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 174
         },
         {
-          "id": 1650,
+          "id": 1649,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 254
         },
         {
-          "id": 1653,
+          "id": 1652,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 138
         },
         {
-          "id": 1292,
+          "id": 1291,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -716,7 +716,7 @@
           "word_count": 241
         },
         {
-          "id": 1314,
+          "id": 1313,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -731,7 +731,7 @@
           "word_count": 165
         },
         {
-          "id": 1307,
+          "id": 1306,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1901,
+          "id": 1900,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 529
         },
         {
-          "id": 1891,
+          "id": 1890,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 492
         },
         {
-          "id": 1900,
+          "id": 1899,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 473
         },
         {
-          "id": 1947,
+          "id": 1946,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 413
         },
         {
-          "id": 1948,
+          "id": 1947,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 372
         },
         {
-          "id": 1949,
+          "id": 1948,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 345
         },
         {
-          "id": 1919,
+          "id": 1918,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 326
         },
         {
-          "id": 1917,
+          "id": 1916,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 320
         },
         {
-          "id": 1907,
+          "id": 1906,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 263
         },
         {
-          "id": 1916,
+          "id": 1915,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 230
         },
         {
-          "id": 1911,
+          "id": 1910,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 199
         },
         {
-          "id": 1914,
+          "id": 1913,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 151
         },
         {
-          "id": 1903,
+          "id": 1902,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 127
         },
         {
-          "id": 1904,
+          "id": 1903,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 123
         },
         {
-          "id": 1955,
+          "id": 1949,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1009,7 +1009,7 @@
           "word_count": 164
         },
         {
-          "id": 234,
+          "id": 233,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 247,
+          "id": 246,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 552,
+          "id": 551,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 741,
+          "id": 740,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1074,14 +1074,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 243,
+      "total_raw": 238,
       "total_valid": 53,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2123,
-    "dup": 519,
+    "total_raw": 2117,
+    "dup": 512,
     "nocontent": 403,
     "noise": 6
   }
