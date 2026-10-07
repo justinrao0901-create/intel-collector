@@ -155,19 +155,19 @@
           "word_count": 1200
         },
         {
-          "id": 2362,
+          "id": 2361,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "EmbeddingGemma 2",
-          "link": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
-          "content": "My comment on EmbeddingGemma 2 &mdash; Hacker News. I really appreciate that EmbeddingGemma 2 is under the Apache 2.0 license. For embedding models in particular, I don't think it makes sense to use a closed, proprietary, hosted-only model. Most applications of embedding models involve calculating thousands or even millions of embedding vectors and storing them for later comparison. If your model is proprietary, the vendor is likely someday going to decide to stop offering that model. They'll have a better model to replace it, but you still need to pay to re-calculate those millions of stored existing vectors. (In April 2024 OpenAI offered to \"cover the financial cost of users re-embedding content with these new models\" - https://openai.com/index/gpt-4-api-general-availability/ - but I don't think that's something we can rely on from every provider.) Notably, I don't want to host the model myself . I'd much rather pay a provider for a hosted model while knowing that if they ever stop hosting it I can run the open weights version myself - or find another vendor who can do that for me. Tags: google , ai , generative-ai , embeddings , gemma",
-          "pub_date": "2026-10-06T20:37:53+00:00",
+          "title": "OpenAI “rogue” agent activities found on Wikimedia projects",
+          "link": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
+          "content": "OpenAI “rogue” agent activities found on Wikimedia projects Given how tempting a target wikis are for rogue agent swarms, it's not a huge surprise that Wikipedia found evidence of that activity once they went looking: The Wikimedia Foundation conducted its own investigation to see whether Wikimedia websites had been similarly affected by AI agents, focusing on those operated by OpenAI. We can confirm that we have discovered some activity by these “rogue” OpenAI agents on Wikimedia platforms. The unauthorized bot activities included edits to our wikis, some unsuccessful attempts to exploit a public note-taking tool we host, and heavy traffic, which are described more below. They found evidence of agents editing sandbox pages, trying to use pieces of infrastructure such as Etherpad to help proxy content from elsewhere, and saw widespread crawling and \"hundreds of thousands of data queries\" to their Wikidata Query Service. My best guess is that most of this was a similar (or the same) swarm of agents as those that defaced that German wiki while training for research tasks. The Wikipedia sandbox wiki edits appear to have started on May 12th, and the initial test edits to the UseModWiki",
+          "pub_date": "2026-10-07T00:16:45+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1155
+          "word_count": 1200
         },
         {
           "id": 2363,
@@ -175,14 +175,14 @@
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "Introducing Mistral Large 4: Le chonk",
-          "link": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-          "content": "Introducing Mistral Large 4: Le chonk Mistral are back in the game. Today they're releasing a preview of Mistral Large 4, a 1 trillion parameter, 49 billion active parameter model trained on their own cluster of 3,800 NVIDIA Grace Blackwell GPUs. The preview is available via their API. They promise to release the open weights model at the \"end of this month\". The model only supports two reasoning levels - \"none\" and \"high\" - via the Mistral API. Here are both pelicans - the \"high\" one looks better, though surprisingly it only used 2,717 output tokens compared to \"none\" which used 3,275: On Artificial Analysis it scores 38 , just behind DeepSeek 4.1 Flash, which is a 552B model. It's a huge improvement on last December's Mistral Large 3, which drew this terrible pelican and scored 9 on AA . It's certainly not a Fable-class model, but it's great to see Mistral put out a model that's back to being maybe about 6 months behind the frontier. Via Hacker News Tags: ai , generative-ai , llms , mistral , pelican-riding-a-bicycle , llm-release",
-          "pub_date": "2026-10-06T20:18:19+00:00",
+          "title": "llm-openai-decisions 0.1a0",
+          "link": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
+          "content": "Release: llm-openai-decisions 0.1a0 OpenAI released their new Jev-style Decisions API , as previously announced at last week's DevDay. Since I already have an llm-typesafe plugin for talking to Jev, I had GPT-6 Astra read the new OpenAI API documentation and build an llm-openai-decisions plugin inspired by llm-typesafe . Unlike Jev, the new gpt-6-luna decision model supports image input in addition to text. Both models charge for input it and not for output: OpenAI's is 10 cents per million input tokens, Jev's is 4.2 cents per million. Otherwise the API shape is very similar to Jev, at least conceptually. Jev supports three question types for yes/no, choices, or scores. OpenAI Decisions supports the same three types. Install the plugin like this: llm install llm-openai-decisions Here's an example query against an image attachment: llm -m openai-decisions/gpt-6-luna \\ -a https://static.simonwillison.net/static/2025/two-pelicans.jpg \\ -s ' Does this image contain any mammals? ' And example output: { \"type\" : \" predicate \" , \"name\" : \" evaluation \" , \"probability\" : 0.0 } Consult the README for full details of how to run the other types of questions. Tags: openai , llm , coding-agents",
+          "pub_date": "2026-10-06T23:04:13+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1048
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2469,
-      "total_valid": 1704,
+      "total_raw": 2472,
+      "total_valid": 1707,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2770,
+          "id": 2772,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2774,
+          "id": 2776,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2778,
+          "id": 2780,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2686,
+          "id": 2688,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 939
         },
         {
-          "id": 2689,
+          "id": 2691,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 926
         },
         {
-          "id": 2671,
+          "id": 2673,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 752
         },
         {
-          "id": 2588,
+          "id": 2590,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 249
         },
         {
-          "id": 2893,
+          "id": 2895,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 165
         },
         {
-          "id": 2796,
+          "id": 2798,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 357
         },
         {
-          "id": 2886,
+          "id": 2888,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 303
         },
         {
-          "id": 2798,
+          "id": 2800,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 284
         },
         {
-          "id": 2477,
+          "id": 2480,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 249
         },
         {
-          "id": 2478,
+          "id": 2481,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 231
         },
         {
-          "id": 2957,
+          "id": 2959,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 202
         },
         {
-          "id": 2492,
+          "id": 2495,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 519,
+      "total_raw": 518,
       "total_valid": 348,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 3063,
+          "id": 3065,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 3021,
+          "id": 3023,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 234
         },
         {
-          "id": 3009,
+          "id": 3011,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 3019,
+          "id": 3021,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 116
         },
         {
-          "id": 3071,
+          "id": 3073,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 3072,
+          "id": 3074,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,22 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 3090,
-          "source": "Nature Reviews Bioengineering",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Fibre-architected intelligent permeable bioelectronics",
-          "link": "https://www.nature.com/articles/s44222-026-00500-z",
-          "content": "Nature Reviews Bioengineering, Published online: 06 October 2026; doi:10.1038/s44222-026-00500-z Fibre-architected intelligent permeable bioelectronics (FIPEB) use soft, porous and multiscale fibre networks to overcome the rigidity and impermeability of conventional bioelectronics, enabling stable interfaces with dynamic biological tissues. This Review highlights how FIPEB materials, properties and scalable fabrication strategies can advance digital health care through continuous monitoring, personalized diagnosis and closed-loop therapeutic systems.",
-          "pub_date": "2026-10-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 556
-        },
-        {
-          "id": 3057,
+          "id": 3059,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +539,7 @@
           "word_count": 364
         },
         {
-          "id": 3055,
+          "id": 3057,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +554,7 @@
           "word_count": 351
         },
         {
-          "id": 3056,
+          "id": 3058,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +569,7 @@
           "word_count": 305
         },
         {
-          "id": 3045,
+          "id": 3047,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 3046,
+          "id": 3048,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -612,6 +597,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 3050,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Biotin-operated ligand trapping enables dynamic spatial redistribution of protein and organelle in living cells",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.10.02.756291v1?rss=1",
+          "content": "Controlling protein localization through chemical biology tools is essential for mechanistic interrogations, functional perturbations, and therapeutic development. While existing tools cover a wide range of applications, no single approach simultaneously enables inducible trapping, controlled release, and visualization of a protein of interest (POI). To address this gap, we developed Biotin-Operated Ligand Trapping (BOLT), which combines a HaloTag-fused POI with a streptavidin trap. Desthiobiotin-conjugated Janelia Fluor HaloTag ligands enable POI visualization, trapping, and biotin-operated release. We demonstrate BOLT's capacity in synchronized secretory cargo release, microtubule-directed organelle movement and hitchhiking, and ectopically localizing nuclear transcription factor. Importantly, pulse-chase BOLT further reveals bidirectional endoplasmic reticulum-Golgi trafficking of an endogenous Golgi enzyme and distinguishes recycled from newly synthesized enzyme populations using distinct HTLs. Altogether, BOLT provides an all-in-one platform to interrogate how subcellular localization regulates protein function across HaloTag-compatible systems.",
+          "pub_date": "2026-10-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1168
         }
       ],
       "quota": {
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 109,
-      "total_valid": 19,
+      "total_raw": 108,
+      "total_valid": 18,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 2782,
+          "id": 2784,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 561
         },
         {
-          "id": 3103,
+          "id": 3104,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 475
         },
         {
-          "id": 2692,
+          "id": 2694,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 419
         },
         {
-          "id": 2591,
+          "id": 2593,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 409
         },
         {
-          "id": 3056,
+          "id": 3058,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 305
         },
         {
-          "id": 2660,
+          "id": 2662,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 264
         },
         {
-          "id": 2935,
+          "id": 2937,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 261
         },
         {
-          "id": 2524,
+          "id": 2526,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 245
         },
         {
-          "id": 2701,
+          "id": 2703,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 227
         },
         {
-          "id": 2509,
+          "id": 2511,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -799,22 +799,37 @@
     "payment": {
       "candidates": [
         {
-          "id": 3120,
+          "id": 3182,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "StanChart, Circle, Ripple back crypto exchange OKX at unchanged $25bn valuation",
+          "link": "https://www.ledgerinsights.com/stanchart-circle-ripple-back-crypto-exchange-okx-at-unchanged-25bn-valuation/",
+          "content": "Circle, Qube Research &#38; Technologies (QRT), Ripple and SC Ventures by Standard Chartered have invested in crypto exchange OKX at a $25 billion pre-money valuation. The deal extends a round led by NYSE owner Intercontinental Exchange (ICE) in March. The amount raised was not disclosed. Each investor already has a business relationship with OKX. Circle [&#8230;] The post StanChart, Circle, Ripple back crypto exchange OKX at unchanged $25bn valuation appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Tue, 06 Oct 2026 16:46:19 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 519
+        },
+        {
+          "id": 3112,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Anchorage Buys Routable to Link Stablecoin and Fiat Infrastructure",
-          "link": "https://www.pymnts.com/blockchain/2026/anchorage-buys-routable-to-link-stablecoin-and-fiat-infrastructure/",
-          "content": "Anchorage Digital has acquired payments company Routable in a bid to extend its rails to the world’s biggest companies. Founded in 2017, Routable helps businesses onboard payees, automate compliance, and orchestrate high-volume payouts globally, Anchorage said in a news release Tuesday (Oct. 6). “Behind every streaming platform paying millions of artists, every marketplace paying millions [&#8230;] The post Anchorage Buys Routable to Link Stablecoin and Fiat Infrastructure appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 06 Oct 2026 19:41:45 +0000",
+          "title": "Treasury Program Blocks $175 Million in Federal Payments Bound for Dead People",
+          "link": "https://www.pymnts.com/disbursements/2026/treasury-program-blocks-175-million-in-federal-payments-bound-for-dead-people/",
+          "content": "The Treasury Department’s new payment verification process stopped $175 million in payments that would have gone to deceased individuals during the past fiscal year, the department said in a Tuesday (Oct. 6) press release. That process is one of several improvements Treasury made during fiscal year 2026 to prevent fraud and improper payments, according to [&#8230;] The post Treasury Program Blocks $175 Million in Federal Payments Bound for Dead People appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 07 Oct 2026 00:50:54 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 508
+          "word_count": 486
         },
         {
-          "id": 3114,
+          "id": 3116,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 471
         },
         {
-          "id": 3117,
+          "id": 3119,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 443
         },
         {
-          "id": 3171,
+          "id": 3172,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 361
         },
         {
-          "id": 3170,
+          "id": 3171,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 343
         },
         {
-          "id": 3172,
+          "id": 3173,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 341
         },
         {
-          "id": 3149,
+          "id": 3150,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 276
         },
         {
-          "id": 3141,
+          "id": 3142,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 270
         },
         {
-          "id": 3143,
+          "id": 3144,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 266
         },
         {
-          "id": 3140,
+          "id": 3141,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 225
         },
         {
-          "id": 3139,
+          "id": 3140,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 177
         },
         {
-          "id": 3129,
+          "id": 3130,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 156
         },
         {
-          "id": 3123,
+          "id": 3124,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +1009,7 @@
           "word_count": 152
         },
         {
-          "id": 3122,
+          "id": 3123,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1024,7 @@
           "word_count": 126
         },
         {
-          "id": 2362,
+          "id": 2365,
           "source": "Simon Willison",
           "section": "payment",
           "tier": "T2",
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 472,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Every Token Leaves a Ripple in the Stream of Thought: Eliciting Model-Internal Token Saliency for Chain-of-Thought Compression",
-          "link": "https://arxiv.org/abs/2608.31066",
-          "content": "arXiv:2608.31066v2 Announce Type: replace Abstract: Chain-of-thought (CoT) reasoning improves multi-step problem solving, but long reasoning traces inflate inference cost. Token-level CoT compression reduces this cost by pruning full reasoning chains into shorter traces for model adaptation, making token selection the central challenge. Existing methods often rely on external scorers or heuristic signals only indirectly tied to the model's internal answer computation. We instead adopt a model-internal perspective: as the model forms an answer, each reasoning token induces a ripple in the residual stream whose effect on the answer reflects the token's contribution to the underlying computation. Building on this view, we propose \\textsc{MIST} (Model-Internal Saliency for Token-level CoT compression), which defines token importance along two complementary axes: \\emph{necessity}, the drop in answer likelihood when a token's internal contribution is removed, and \\emph{sufficiency}, the gain in answer likelihood when that contribution alone is provided. Combining the two yields a unified importance score for pruning. Across four reasoning benchmarks and four models, \\textsc{MIST} consist",
-          "pub_date": "Tue, 06 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 260,
-      "total_valid": 65,
+      "total_raw": 261,
+      "total_valid": 66,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3348,
-    "dup": 827,
+    "total_raw": 3350,
+    "dup": 826,
     "nocontent": 404,
     "noise": 6
   }
