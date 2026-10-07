@@ -115,10 +115,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "When Does Selection Replace Extraction? A Pre-Registered Test of Agent Memory with a Typed Decision Model",
-          "link": "https://arxiv.org/abs/2609.34227",
-          "content": "Does conversational memory need LLM-extracted facts, or is selecting the right raw turns enough? Published results disagree. Extraction-based systems report gains from distilled facts. Recent studies find raw history with good ranking does as well, but disagree about whether ranking matters. We ran a pre-registered study on held-out LoCoMo conversations and LongMemEval. At a tight budget on LoCoMo, raw turns selected by a single call to Jev, a typed decision model, are non-inferior to an LLM-extraction memory (one-sided 95% bound -3.0 points against a -5-point margin). Blind human grading narrows the margin but does not change the result. Raw turns cost 3,061 times less to write, and the result holds with a second answer model. Within this study, reranking's gain shrinks as the budget grows. It adds 17.4 points on LoCoMo and 9.1 on LongMemEval when three of 30 candidates are kept. At generous budgets it adds 1.5 and 1.1, and extraction systems are more accurate. This suggests why published results disagree. At matched context, Jev selects as accurately as an LLM reranker (non-inferiority bound -2.0) at a third of the latency, and more accurately than a multi-call graph traversal. R",
-          "pub_date": "2026-09-27T20:00:00.000Z",
+          "title": "UnAct: Gradient-Free Unlearning via Targeted Activation Intervention",
+          "link": "https://arxiv.org/abs/2610.04426",
+          "content": "Machine unlearning seeks to remove the influence of designated training data from a trained model without retraining from scratch. Retrain-free methods such as Selective Synaptic Dampening (SSD) and its label-free variant LFSSD avoid full retraining but still require backpropagation and parameter importance computed over the entire dataset. We ask: what happens when a deletion request arrives with only a few images of the class to be forgotten? To answer this question, we introduce UnAct, a gradient-free class-unlearning method that needs only forward passes over the forget images. UnAct scores late-layer units by their responses, attenuates the most responsive connections, and repeats this for up to 20 rounds using no gradients, no labels, and no retained data. On ResNet-18 trained with CIFAR-10, CIFAR-20, and CIFAR-100, UnAct is competitive with SSD and LFSSD when forgetting entire classes and, unlike them, never collapses the network when forget data is scarce. On ResNet-18, across all tested sizes, UnAct's retain accuracy stays within 2.5 points of retraining, while SSD and LFSSD, at their full-class operating points, lose up to 86 points on some classes. With five forget image",
+          "pub_date": "2026-10-02T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,24 +130,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "The Numerical Linear Algebra of Large Language Models",
-          "link": "https://arxiv.org/abs/2610.04631",
-          "content": "Numerical Linear Algebra (NLA) has consistently played a vital role in advancing science by providing tools to solve fundamental problems encountered in scientific and engineering applications. Over the decades, it has continually evolved to meet the demands driven by successive waves of scientific discovery. For instance, during the 1950s and 1960s, substantial efforts were devoted to developing methods for solving eigenvalue problems that emerged from the rapidly growing field of aerodynamics. This led to the discovery of the LR and QR algorithms. Later the attention turned to the solution of sparse linear systems that were common in applications like computational aerodynamics. Today we are experiencing yet another wave of major scientific advancement and NLA is once more at the heart of its development. This Machine Learning (ML) wave is proving to be utterly disruptive in science and engineering. Many tools in ML particularly Large Language Models (LLMs) are grounded in matrix and tensor methods. As we are approaching Artificial General Intelligence (AGI), it is clear that matrix methods will be called to play an even more significant role. For the numerical linear practitione",
-          "pub_date": "2026-10-02T20:00:00.000Z",
+          "title": "The AI Theorist reveals excitonic structure in α-RuCl_3",
+          "link": "https://arxiv.org/abs/2610.02417",
+          "content": "Advances in experimental instrumentation and automation generate increasingly rich datasets, but turning experimental observations into microscopic understanding remains a bottleneck in scientific discovery. To accelerate this process, we introduce AI Theorist, a system of artificial intelligence (AI) agents for autonomous discovery of physical models through hypothesis generation, first-principles calculations and evidence-driven refinement. We apply the framework to α-RuCl_3, a leading candidate material for realizing a Kitaev quantum spin liquid, to investigate its electronic structure through optical spectra. AI Theorist develops a new interpretation of the optical and photocurrent observations, identifying distinct excitonic states with contrasting optical selection rules and real-space distributions. To our knowledge, this is the first demonstration of an AI system autonomously developing a physical model to explain previously unpublished experimental observations in a quantum material, utilizing first-principles electronic-structure and many-body calculations. Our results establish a route to autonomous theoretical discovery in materials science, in which AI agents use first",
+          "pub_date": "2026-09-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 73,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Closing the Context Gap: Activation Alignment for Tabular In-Context Learning",
-          "link": "https://arxiv.org/abs/2610.06679",
-          "content": "Tabular foundation models perform in-context learning (ICL) by conditioning predictions on labeled training examples provided as context. Unlike traditional models that separate training from inference, these models must process all training examples in every forward pass, making each prediction expensive. Restricting the number of training examples reduces this cost but substantially degrades performance. Instead of discarding context, we propose activation alignment, a method that leverages the full context to teach a model how to behave when seeing only a subset. This is achieved by training a lightweight linear transformation on synthetic unlabeled data to map the intermediate activations of a data-constrained \"student\" (using partial context) toward those of a full-context \"teacher\" (using all data). Training the aligner requires no GPU and converges in seconds to minutes on commodity hardware. We evaluate on 38 classification datasets from the TabArena benchmark using the leading two tabular foundation models, TabPFN-3 and TabFM. Across all context budgets, the aligned student yields broad, statistically significant improvements over the unaligned baseline for both models. In",
+          "title": "Capability-Driven Self-Evolution of Agent Memory",
+          "link": "https://arxiv.org/abs/2610.06361",
+          "content": "Memory self-evolution uses task feedback to iteratively improve executable memory programs that store and retrieve information from past interactions. Existing approaches typically adopt holistic evolution, deriving revision directions from mixed feedback and judging progress by overall performance. This can obscure optimization directions and hide capability-specific gains offset by regressions elsewhere, leaving promising directions underexplored. We introduce capability-driven evolution, which extends search guidance from overall performance to individual capability dimensions, preserving promising revisions and expanding exploration beyond the boundaries of holistic evolution. We propose PrisMem, which uses dependency-aware capability selection to prioritize targets with potential cross-capability benefits and history-guided diagnosis to refine capability specialists. Trace-guided integration compares evaluated programs on paired differential cases, using their behavioral differences to consolidate complementary gains into a unified memory program. Experiments show that PrisMem outperforms the strongest baselines by 10.54 and 7.83 percentage points on BEAM-1M and LongMemEval-M,",
           "pub_date": "2026-10-04T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 2472,
-      "total_valid": 1707,
+      "total_valid": 1704,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2772,
+          "id": 2771,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2776,
+          "id": 2775,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2780,
+          "id": 2779,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2688,
+          "id": 2687,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 939
         },
         {
-          "id": 2691,
+          "id": 2690,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 926
         },
         {
-          "id": 2673,
+          "id": 2672,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 752
         },
         {
-          "id": 2590,
+          "id": 2589,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 249
         },
         {
-          "id": 2895,
+          "id": 2894,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 165
         },
         {
-          "id": 2798,
+          "id": 2797,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 357
         },
         {
-          "id": 2888,
+          "id": 2887,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 303
         },
         {
-          "id": 2800,
+          "id": 2799,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 231
         },
         {
-          "id": 2959,
+          "id": 2958,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 518,
-      "total_valid": 348,
+      "total_raw": 517,
+      "total_valid": 347,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 3065,
+          "id": 3064,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 3023,
+          "id": 3022,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 234
         },
         {
-          "id": 3011,
+          "id": 3010,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 3021,
+          "id": 3020,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 116
         },
         {
-          "id": 3073,
+          "id": 3072,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 3074,
+          "id": 3073,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,22 @@
           "word_count": 1200
         },
         {
-          "id": 3059,
+          "id": 3091,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Fibre-architected intelligent permeable bioelectronics",
+          "link": "https://www.nature.com/articles/s44222-026-00500-z",
+          "content": "Nature Reviews Bioengineering, Published online: 06 October 2026; doi:10.1038/s44222-026-00500-z Fibre-architected intelligent permeable bioelectronics (FIPEB) use soft, porous and multiscale fibre networks to overcome the rigidity and impermeability of conventional bioelectronics, enabling stable interfaces with dynamic biological tissues. This Review highlights how FIPEB materials, properties and scalable fabrication strategies can advance digital health care through continuous monitoring, personalized diagnosis and closed-loop therapeutic systems.",
+          "pub_date": "2026-10-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 556
+        },
+        {
+          "id": 3058,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +554,7 @@
           "word_count": 364
         },
         {
-          "id": 3057,
+          "id": 3056,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +569,7 @@
           "word_count": 351
         },
         {
-          "id": 3058,
+          "id": 3057,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +584,7 @@
           "word_count": 305
         },
         {
-          "id": 3047,
+          "id": 3046,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 3048,
+          "id": 3047,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -597,21 +612,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 3050,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Biotin-operated ligand trapping enables dynamic spatial redistribution of protein and organelle in living cells",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.10.02.756291v1?rss=1",
-          "content": "Controlling protein localization through chemical biology tools is essential for mechanistic interrogations, functional perturbations, and therapeutic development. While existing tools cover a wide range of applications, no single approach simultaneously enables inducible trapping, controlled release, and visualization of a protein of interest (POI). To address this gap, we developed Biotin-Operated Ligand Trapping (BOLT), which combines a HaloTag-fused POI with a streptavidin trap. Desthiobiotin-conjugated Janelia Fluor HaloTag ligands enable POI visualization, trapping, and biotin-operated release. We demonstrate BOLT's capacity in synchronized secretory cargo release, microtubule-directed organelle movement and hitchhiking, and ectopically localizing nuclear transcription factor. Importantly, pulse-chase BOLT further reveals bidirectional endoplasmic reticulum-Golgi trafficking of an endogenous Golgi enzyme and distinguishes recycled from newly synthesized enzyme populations using distinct HTLs. Altogether, BOLT provides an all-in-one platform to interrogate how subcellular localization regulates protein function across HaloTag-compatible systems.",
-          "pub_date": "2026-10-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1168
         }
       ],
       "quota": {
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 108,
-      "total_valid": 18,
+      "total_raw": 109,
+      "total_valid": 19,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 2784,
+          "id": 2783,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 475
         },
         {
-          "id": 2694,
+          "id": 2693,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 419
         },
         {
-          "id": 2593,
+          "id": 2592,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 409
         },
         {
-          "id": 3058,
+          "id": 3057,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 305
         },
         {
-          "id": 2662,
+          "id": 2661,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 264
         },
         {
-          "id": 2937,
+          "id": 2936,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 261
         },
         {
-          "id": 2526,
+          "id": 2525,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 245
         },
         {
-          "id": 2703,
+          "id": 2702,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 227
         },
         {
-          "id": 2511,
+          "id": 2510,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -1111,7 +1111,7 @@
   },
   "meta": {
     "total_raw": 3350,
-    "dup": 826,
+    "dup": 829,
     "nocontent": 404,
     "noise": 6
   }
