@@ -115,10 +115,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "UnAct: Gradient-Free Unlearning via Targeted Activation Intervention",
-          "link": "https://arxiv.org/abs/2610.04426",
-          "content": "Machine unlearning seeks to remove the influence of designated training data from a trained model without retraining from scratch. Retrain-free methods such as Selective Synaptic Dampening (SSD) and its label-free variant LFSSD avoid full retraining but still require backpropagation and parameter importance computed over the entire dataset. We ask: what happens when a deletion request arrives with only a few images of the class to be forgotten? To answer this question, we introduce UnAct, a gradient-free class-unlearning method that needs only forward passes over the forget images. UnAct scores late-layer units by their responses, attenuates the most responsive connections, and repeats this for up to 20 rounds using no gradients, no labels, and no retained data. On ResNet-18 trained with CIFAR-10, CIFAR-20, and CIFAR-100, UnAct is competitive with SSD and LFSSD when forgetting entire classes and, unlike them, never collapses the network when forget data is scarce. On ResNet-18, across all tested sizes, UnAct's retain accuracy stays within 2.5 points of retraining, while SSD and LFSSD, at their full-class operating points, lose up to 86 points on some classes. With five forget image",
-          "pub_date": "2026-10-02T20:00:00.000Z",
+          "title": "Hiding Tool Latency in On-Device Cascaded Voice Agent through Speculative Execution",
+          "link": "https://arxiv.org/abs/2610.07641",
+          "content": "Tool-augmented speech assistants typically serialize automatic speech recognition, large language model inference, and external tool execution. As a result, tool latency is incurred only after the user has finished speaking and the LLM has identified the required tool calls. We present speculative tool execution for on-device cascaded voice agents, which predicts tool requests from partial ASR hypotheses and initiates tool execution while speech is still being received, thereby reducing end-to-end response latency. Our approach introduces a Predictor module that anticipates tool calls during speech recognition, executes them speculatively, and caches the results. The cached outputs are then injected into the LLM prompt, enabling faster responses. Additionally, to mitigate errors caused by user self-corrections during speech, we employ a rule-based validation mechanism that selectively injects only valid cached results. As a final safeguard, the LLM retains the ability to issue tool calls directly, ensuring that the latency of our framework is upper-bounded by the baseline serial execution pipeline in the worst case. We evaluate our method using live measurements from a fully implem",
+          "pub_date": "2026-10-05T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,25 +130,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "The AI Theorist reveals excitonic structure in α-RuCl_3",
-          "link": "https://arxiv.org/abs/2610.02417",
-          "content": "Advances in experimental instrumentation and automation generate increasingly rich datasets, but turning experimental observations into microscopic understanding remains a bottleneck in scientific discovery. To accelerate this process, we introduce AI Theorist, a system of artificial intelligence (AI) agents for autonomous discovery of physical models through hypothesis generation, first-principles calculations and evidence-driven refinement. We apply the framework to α-RuCl_3, a leading candidate material for realizing a Kitaev quantum spin liquid, to investigate its electronic structure through optical spectra. AI Theorist develops a new interpretation of the optical and photocurrent observations, identifying distinct excitonic states with contrasting optical selection rules and real-space distributions. To our knowledge, this is the first demonstration of an AI system autonomously developing a physical model to explain previously unpublished experimental observations in a quantum material, utilizing first-principles electronic-structure and many-body calculations. Our results establish a route to autonomous theoretical discovery in materials science, in which AI agents use first",
-          "pub_date": "2026-09-30T20:00:00.000Z",
+          "title": "DiVeR: Decision-Critical Verifier Learning for VLA Test-Time Scaling",
+          "link": "https://arxiv.org/abs/2610.04933",
+          "content": "Scaling robot data and model capacity has improved Vision-Language-Action (VLA) policies, but further progress is constrained by the high cost of robotic data. Verifier-guided test-time scaling offers an efficient alternative by sampling multiple action candidates and selecting the one most likely to lead to task success at inference time. Existing classification-based verifiers learn from trajectory-level outcomes but treat all visited states equally, even though their value for candidate discrimination can vary across a trajectory. At many states, plausible actions are similar and provide limited discrimination signal, while only a sparse set of decision-critical states admits meaningfully different actions that can substantially affect downstream outcomes. To address this, we propose DiVeR, which estimates decision criticality from the dispersion of sampled action representations. DiVeR then uses this signal to reweight verifier learning toward states where action selection is most consequential, without requiring step-level annotations or additional environment interaction. Across LIBERO, RoboCasa, and real-world experiments on a Franka Research 3 robot, DiVeR consistently impr",
+          "pub_date": "2026-10-03T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 73,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Capability-Driven Self-Evolution of Agent Memory",
-          "link": "https://arxiv.org/abs/2610.06361",
-          "content": "Memory self-evolution uses task feedback to iteratively improve executable memory programs that store and retrieve information from past interactions. Existing approaches typically adopt holistic evolution, deriving revision directions from mixed feedback and judging progress by overall performance. This can obscure optimization directions and hide capability-specific gains offset by regressions elsewhere, leaving promising directions underexplored. We introduce capability-driven evolution, which extends search guidance from overall performance to individual capability dimensions, preserving promising revisions and expanding exploration beyond the boundaries of holistic evolution. We propose PrisMem, which uses dependency-aware capability selection to prioritize targets with potential cross-capability benefits and history-guided diagnosis to refine capability specialists. Trace-guided integration compares evaluated programs on paired differential cases, using their behavioral differences to consolidate complementary gains into a unified memory program. Experiments show that PrisMem outperforms the strongest baselines by 10.54 and 7.83 percentage points on BEAM-1M and LongMemEval-M,",
-          "pub_date": "2026-10-04T20:00:00.000Z",
+          "title": "Making LLMs Say What They Think: Measuring and Improving CoT-Interpretability Alignment",
+          "link": "https://arxiv.org/abs/2609.38972",
+          "content": "Chain-of-thought (CoT) traces often serve as a proxy for how Large Language Models (LLMs) arrive at their answers. However, growing evidence shows that models' CoT often fails to reflect their internal computations and can be changed without affecting their final answers. In this work, we measure and improve the alignment between the reasoning described in an LLM's CoT and what it computes internally. We propose CoT-Interpretability Alignment (CIA), a metric that measures the agreement between a model's CoT traces and its internal reasoning strategies as detected by interpretability tools. We evaluate CIA on three tasks (two-hop question answering, hint intervention, and integer multiplication) across three LLMs, finding that LLMs exhibit limited alignment across all tasks (44.8-75.9%). We then experiment with improving CIA via post-training, setting both the task accuracy and parametric faithfulness signals as a reward. Experiments show that we can substantially improve CoT parametric faithfulness while maintaining or improving the task accuracy. We provide rich analysis, such as their generalization patterns. Our work provides both a framework for auditing CoT parametric faithful",
+          "pub_date": "2026-09-29T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 2472,
-      "total_valid": 1704,
+      "total_valid": 1707,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2771,
+          "id": 2769,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2775,
+          "id": 2773,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2779,
+          "id": 2777,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2687,
+          "id": 2685,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 939
         },
         {
-          "id": 2690,
+          "id": 2688,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 926
         },
         {
-          "id": 2672,
+          "id": 2670,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 752
         },
         {
-          "id": 2589,
+          "id": 2587,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 249
         },
         {
-          "id": 2894,
+          "id": 2892,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 165
         },
         {
-          "id": 2797,
+          "id": 2795,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 357
         },
         {
-          "id": 2887,
+          "id": 2885,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 303
         },
         {
-          "id": 2799,
+          "id": 2797,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 231
         },
         {
-          "id": 2958,
+          "id": 2956,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 202
         },
         {
-          "id": 2495,
+          "id": 2494,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 517,
-      "total_valid": 347,
+      "total_raw": 515,
+      "total_valid": 345,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 3064,
+          "id": 3063,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 3022,
+          "id": 3020,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 234
         },
         {
-          "id": 3010,
+          "id": 3008,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 3020,
+          "id": 3018,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 116
         },
         {
-          "id": 3072,
+          "id": 3071,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 3073,
+          "id": 3072,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 3091,
+          "id": 3090,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 556
         },
         {
-          "id": 3058,
+          "id": 3057,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 364
         },
         {
-          "id": 3056,
+          "id": 3055,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 351
         },
         {
-          "id": 3057,
+          "id": 3056,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,22 @@
           "word_count": 305
         },
         {
-          "id": 3046,
+          "id": 3044,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "SynBioCrow: provenance-preserving integration of complementary retrosynthesis engines for biosynthetic pathway design",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.10.06.756997v1?rss=1",
+          "content": "Motivation: Retrobiosynthesis tools use different reaction rules, search strategies and biochemical priors, so each can recover transformations missed by others. Integrating their outputs could broaden pathway coverage, but ensembling can also worsen ranking. Results: SynBioCrow runs independent retrosynthesis engines, normalizes predictions into a provenance-preserving reaction graph, and separates route generation from biochemical evidence, sequence design and bounded learning. On the frozen 65-path Galaxy-SynBioCAD literature benchmark used for SynBioCrow 2.3, connectivity-level partial recovery was 19/65 for the ensemble, 13/65 for RetroBioCat2, 9/65 for RetroPath and 0/65 for DORAnet; the ensemble preserved two exact RetroPath routes but worsened their ranks. SynBioCrow 2.4 subsequently repaired structured-reaction parsing and target-connected Candidate generation and prospectively locked two new external targets, 1,3-propanediol and 1,4-butanediol, before pathway truth was examined. RetroBioCat2 produced 3 and 2 backend-internal SOLVED search outcomes, respectively, whereas DORAnet produced none; however, neither backend recovered any predeclared explicit literature intermedi",
+          "pub_date": "2026-10-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 3045,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -597,21 +612,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 3047,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Targeted tumor desialylation by engineered probiotic reprograms the tumor microenvironment to potentiate immunotherapy",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.10.04.756258v1?rss=1",
-          "content": "Tumor hypersialylation drives immunosuppression and limits immunotherapy efficacy by shielding tumor cells and engaging inhibitory immune receptors. Here, we engineered Escherichia coli Nissle 1917 (EcN{Delta}pgi-SAS) as a metabolically confined \"desialylation catalyst\" to remodel the tumor microenvironment. This strain combines HER2-directed adhesion, hypoxia-inducible surface sialidase display for targeted glycan cleavage, and sialic acid catabolism to prevent glycolytic recycling. Critically, disrupting glucose metabolism ({Delta}pgi) restricts bacterial proliferation to sialic acid-rich tumor microenvironment, significantly enhancing biosafety. In mice, EcN{Delta}pgi-SAS colonized tumors and effectively desialylated tumor cells, synergizing with anti-PD-L1 to suppress growth of immunologically \"cold\" tumors. Mechanistically, desialylation reversed immunosuppression by broadly enhancing antitumor immunity. Orally administered EcN{Delta}pgi-SAS substantially inhibited colorectal carcinogenesis, repaired epithelial barrier integrity by restoring tight junctions, and prevented adenoma formation. This integrated strategy establishes a clinically translatable platform for reversing i",
-          "pub_date": "2026-10-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 109,
-      "total_valid": 19,
+      "total_raw": 110,
+      "total_valid": 20,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 2783,
+          "id": 2781,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 561
         },
         {
-          "id": 3104,
+          "id": 3103,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 475
         },
         {
-          "id": 2693,
+          "id": 2691,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 419
         },
         {
-          "id": 2592,
+          "id": 2590,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 409
         },
         {
-          "id": 3057,
+          "id": 3056,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 305
         },
         {
-          "id": 2661,
+          "id": 2659,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 264
         },
         {
-          "id": 2936,
+          "id": 2934,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 261
         },
         {
-          "id": 2525,
+          "id": 2523,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 245
         },
         {
-          "id": 2702,
+          "id": 2700,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 227
         },
         {
-          "id": 2510,
+          "id": 2508,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 3182,
+          "id": 3180,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -844,6 +844,21 @@
           "word_count": 471
         },
         {
+          "id": 3111,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Meta and Sierra Build Standard for How Personal Agents Interact With Businesses",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/meta-and-sierra-build-standard-for-how-personal-agents-interact-with-businesses/",
+          "content": "An open standard that defines how personal agents interact with businesses is being developed by Sierra, Meta, Genesys, Instinct, Rocket, Shopify, Stripe and Walmart, Sierra Co-Founders Bret Taylor and Clay Bavor said in a Tuesday (Oct. 6) blog post. Set to be published by the end of the month, the Personal Agent Protocol will handle [&#8230;] The post Meta and Sierra Build Standard for How Personal Agents Interact With Businesses appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 07 Oct 2026 01:58:59 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 465
+        },
+        {
           "id": 3119,
           "source": "PYMNTS.com",
           "section": "payment",
@@ -859,7 +874,7 @@
           "word_count": 443
         },
         {
-          "id": 3172,
+          "id": 3170,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 361
         },
         {
-          "id": 3171,
+          "id": 3169,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 343
         },
         {
-          "id": 3173,
+          "id": 3171,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 341
         },
         {
-          "id": 3150,
+          "id": 3148,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 276
         },
         {
-          "id": 3142,
+          "id": 3140,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 270
         },
         {
-          "id": 3144,
+          "id": 3142,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 266
         },
         {
-          "id": 3141,
+          "id": 3139,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 225
         },
         {
-          "id": 3140,
+          "id": 3138,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 177
         },
         {
-          "id": 3130,
+          "id": 3128,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +1009,7 @@
           "word_count": 156
         },
         {
-          "id": 3124,
+          "id": 3123,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1024,7 @@
           "word_count": 152
         },
         {
-          "id": 3123,
+          "id": 3122,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 438,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Who Checks the Citations? Benchmarking Legal Hallucination Detection",
-          "link": "https://arxiv.org/abs/2606.21155",
-          "content": "arXiv:2606.21155v3 Announce Type: replace Abstract: Attorneys, judges, and pro se filers increasingly use AI to draft legal documents, yet these tools frequently fabricate citations. Despite predictions that newer models would hallucinate less or that court sanctions would deter negligent filers, we found over 1,000 filings containing fabricated citations---with this number growing year-over-year. This study evaluates whether AI-based systems can mitigate these errors by automatically detecting hallucinations. We propose a taxonomy of legal citation hallucinations grounded in actual court filings and introduce a dataset of 1,300 brief excerpts containing injected errors. Benchmarking five models in agentic and non-agentic settings as well as Claude Code reveals that while the latest iterations perform better---GPT-5 achieves 84.4% recall and a 55.0% F1 score in an agentic framework---all models struggle with subtle error categories. Agentic verification remains resource-intensive, with GPT-5 averaging 15.3 steps per excerpt. Furthermore, restricted information access limits the efficacy of even the best agents. This gap creates policy concerns, as it disadvantages both AI systems a",
-          "pub_date": "Tue, 06 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 261,
+      "total_raw": 260,
       "total_valid": 66,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3350,
-    "dup": 829,
+    "total_raw": 3348,
+    "dup": 825,
     "nocontent": 404,
     "noise": 6
   }
