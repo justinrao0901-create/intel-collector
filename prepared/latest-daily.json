@@ -110,14 +110,14 @@
           "word_count": 175
         },
         {
-          "id": 69,
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "World Models' Last Exam in Physics",
-          "link": "https://arxiv.org/abs/2610.08791",
-          "content": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides",
+          "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
+          "link": "https://arxiv.org/abs/2610.07969",
+          "content": "Scaling robotic foundation models requires diverse training data and reliable evaluation environments. Simulation offers a scalable solution, yet existing generation pipelines remain constrained by predefined assets and skills, a disconnect between scene generation and task generation, and limited support for complex embodiments and physics. We introduce EmbodiedSmith, a framework for scalable embodied data generation through recursive self-improvement (RSI). EmbodiedSmith unifies asset, scene, and task generation in a pipeline that supports autonomous creation and language-driven customization. Its core is an agentic refinement loop: scene generation anticipates downstream task requirements, while task generation guides targeted scene edits, allowing scenes and tasks to iteratively improve one another. This joint refinement improves task generation success, including for long-horizon tasks. The framework further supports mobile manipulators, humanoids, and dexterous hands, as well as interactions involving deformable objects and fluids, broadening the range of behaviors and physical phenomena represented in generated data. Together, these capabilities provide a flexible simulation",
           "pub_date": "2026-10-05T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -125,15 +125,15 @@
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
-          "link": "https://arxiv.org/abs/2610.05140",
-          "content": "As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth answer are constructed and verified. Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration. Experience distilled from completed refinement trajectories further g",
-          "pub_date": "2026-10-03T20:00:00.000Z",
+          "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
+          "link": "https://arxiv.org/abs/2610.08761",
+          "content": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute in embodied reasoning, where reliable evaluation must account for spatial grounding, causal reasoning, and safety-aware decision-making. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge. The Policy Improvement Loop uses a rubric judge to diagnose recurring failures, construct an adaptive curriculum, and optimize the policy. When progress plateaus and verification becomes a bottleneck, the Judge Improvement Loop selectively queries human guidance on informative failure cases and refines the judge through coactive calibration, in which humans and agents resolve disagreements and converge toward the objective rubric of physical reasoning. The revised judge then guides the next stage of data selection and policy optimization. Experiments on driving and robot navigation tasks demonstrate continuous",
+          "pub_date": "2026-10-05T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "EVISKILL: Grounding Skill Evolution in Replayable Evidence",
-          "link": "https://arxiv.org/abs/2610.05030",
-          "content": "Continual skill evolution enables LLM agents to accumulate and refine reusable procedural knowledge from interaction experience without updating model parameters. Its effectiveness depends on determining not only what to change, but also why a change is justified and when it should become persistent guidance. However, existing experience-driven methods can lose the behavioral evidence and task contexts supporting edits. Moreover, a global validation outcome provides an incomplete judgment of its constituent changes: locally supported corrections may be discarded with a rejected revision, while evidence may require further experience to inform useful updates. To this end, we introduce EVISKILL, an evidence-driven framework that organizes execution observations into Replayable Evidence Cards and synthesizes edits with explicit links to their supporting contexts. Targeted replay verifies these edits through re-execution and provides feedback for correction. Across epochs, EVISKILL preserves evidence and provisionally retains supported edits for further refinement, while global validation governs their incorporation into the final skill. Experiments on three interactive benchmarks acro",
-          "pub_date": "2026-10-03T20:00:00.000Z",
+          "title": "World Models' Last Exam in Physics",
+          "link": "https://arxiv.org/abs/2610.08791",
+          "content": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides",
+          "pub_date": "2026-10-05T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 2472,
-      "total_valid": 1710,
+      "total_valid": 1712,
       "total_candidates": 12
     },
     "vaccine": {
@@ -307,21 +307,6 @@
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
-          "title": "RBD-down stabilization of SARS-CoV-2 spike enhances cross-neutralizing antibody responses by redirecting immunodominance toward conserved epitopes",
-          "link": "https://www.nature.com/articles/s41541-026-01598-3",
-          "content": "npj Vaccines, Published online: 07 October 2026; doi:10.1038/s41541-026-01598-3 RBD-down stabilization of SARS-CoV-2 spike enhances cross-neutralizing antibody responses by redirecting immunodominance toward conserved epitopes",
-          "pub_date": "2026-10-07",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 226
-        },
-        {
-          "id": 2891,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
           "title": "Mandates without backlash: COVID-19 vaccine policies and the uptake of other vaccines",
           "link": "https://www.nature.com/articles/s41541-026-01597-4",
           "content": "npj Vaccines, Published online: 06 October 2026; doi:10.1038/s41541-026-01597-4 Mandates without backlash: COVID-19 vaccine policies and the uptake of other vaccines",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 202
+        },
+        {
+          "id": 2492,
+          "source": "STAT News",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: Pharmalittle: We’re reading about U.S.-funded psychedelic trials, an AstraZeneca R&D center, and more",
+          "link": "https://www.statnews.com/pharmalot/2026/10/06/us-funded-psychedelic-trials-astrazeneca-research-center/?utm_campaign=rss",
+          "content": "The Trump administration is advancing the first government-funded clinical trials of the psychedelic drug ibogaine to treat opioid addiction and PTSD",
+          "pub_date": "Tue, 06 Oct 2026 13:36:42 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 149
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 513,
-      "total_valid": 344,
+      "total_valid": 343,
       "total_candidates": 15
     },
     "synbio": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 3174,
+          "id": 3178,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 256,
+      "total_raw": 260,
       "total_valid": 66,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3342,
-    "dup": 817,
+    "total_raw": 3346,
+    "dup": 820,
     "nocontent": 404,
     "noise": 6
   }
