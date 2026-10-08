@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 55,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 150
         },
         {
-          "id": 91,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 236
         },
         {
-          "id": 85,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 216
         },
         {
-          "id": 92,
+          "id": 91,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,30 +110,30 @@
           "word_count": 200
         },
         {
-          "id": 69,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Structuring MoE Expert Selection for Agentic Reinforcement Learning",
-          "link": "https://arxiv.org/abs/2610.07332",
-          "content": "Long-horizon LLM agents are frequently implemented using sparse mixture-of-experts (MoE) models, yet the co-design of agentic behavior and MoE structures remains underexplored. In this work, we comprehensively study the connections between agentic post-training and MoE expert selection. In off-the-shelf MoE models, we observe expert selection exhibits a specialized structure that naturally aligns with agentic trajectories. Specifically, expert routing overlaps more between turns where the agent performs semantically similar operations (e.g., READ, UPDATE) than between turns with differing operations. However, standard RL algorithms ignore this specialization, allowing the MoE routing to go uncontrolled during training, which empirically limit task performance and inference efficiency. To address this, we introduce a hierarchical routing control framework for agentic tasks. We explicitly encourage turn-level expert selections to align with agentic operations while regularizing token-level expert selections to maintain local consistency. To resolve stability issues that arise during post-training with the proposed methods, we further introduce an entropy-gated control mechanism. Over",
-          "pub_date": "2026-10-04T20:00:00.000Z",
+          "title": "WorldSonus: Bringing Sound to Worlds",
+          "link": "https://arxiv.org/abs/2610.08760",
+          "content": "Recent advances in world models have enabled increasingly realistic visual synthesis. However, these generated environments remain largely silent. Bringing sound to world models poses three core challenges: real-time generation to keep pace with interactive video streams, interactive control to respond to mid-stream sound instructions, and spatially aligned stereo to reflect scene geometry and camera motion. To address these demands, we introduce WorldSonus, an interactive video-to-audio framework designed for real-time spatial sound synthesis in world models. For real-time generation, WorldSonus employs a streaming causal autoregressive diffusion architecture that synthesizes audio chunks at a low real-time factor (RTF) of 0.41. For interactive control, we incorporate an audio-centric captioning pipeline with chunk-indexed prompt scheduling, enabling dynamic manipulation of sound events during generation. For spatial alignment, we leverage high-quality stereo supervision curated from diverse stereo and ambisonic data. Extensive experiments demonstrate that while tailored for world models, WorldSonus generalizes effectively to open-domain video-to-audio benchmarks, matching or outp",
+          "pub_date": "2026-10-05T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "TRIAGE: Direction-Aware Mismatch Stabilization of Native NVFP4 Reinforcement Learning",
-          "link": "https://arxiv.org/abs/2610.07043",
-          "content": "Low-precision execution can substantially accelerate reinforcement learning (RL) for large language models, but discrepancies between learner and sampler execution can destabilize policy optimization. In this paper, we characterize the interaction between mismatch and the policy-gradient direction, distinguishing locally amplifying from contracting update contributions that mismatch magnitude alone cannot identify. In native NVFP4 runs, we observe an early imbalance between the two amplifying regions, favoring negative-advantage, negative-gap updates. Their tail tokens become concentrated in a small fraction of response segments before mismatch spreads globally. Motivated by these findings, we introduce TRIAGE, a direction-aware stabilization method that uses segment-level diagnosis to selectively rebalance policy-gradient updates and applies bounded repair to residual severe mismatch. TRIAGE modifies the optimization objective while retaining native NVFP4 weight-and activation 4-bit (W4A4) forward execution on both the sampler and learner. Experiments on Qwen3-4B and Qwen3-30B-A3B show stable optimization throughout the evaluated training horizon and achieve full precision level p",
-          "pub_date": "2026-10-04T20:00:00.000Z",
+          "title": "AdSpark: A Large-Scale Dataset and Benchmark for Product-Centric Advertisement Video Generation",
+          "link": "https://arxiv.org/abs/2610.10047",
+          "content": "Product-centric advertisement video generation aims to create promotional videos that preserve fine-grained product identity while presenting selling points through coherent multi-shot narratives. However, this emerging task remains underexplored due to the lack of large-scale advertisement-specific datasets and comprehensive evaluation frameworks. To address this gap, we introduce AdSpark, a large-scale dataset and benchmark for product-centric advertisement video generation, based on data from a major e-commerce platform. AdSpark-300K contains approximately 300K reference image--prompt--video triplets, comprising a real-world subset and a synthetic subset. Each sample provides structured advertisement annotations, including product identity annotations, selling-point descriptions, creative plans, and aligned audio scripts, enabling models to learn product preservation and advertisement-oriented visual storytelling. We further propose AdSpark-Bench, a diagnostic benchmark that evaluates generated advertisements across six dimensions, including visual quality, product fidelity, instruction adherence, temporal coherence, audio alignment, and advertisement effectiveness. Based on AdS",
+          "pub_date": "2026-10-06T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,17 +145,17 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Technical Report on the Turba Fertilizer Machine Learning Stack in Morocco",
-          "link": "https://arxiv.org/abs/2610.05949",
-          "content": "Site-specific fertilizer recommendation systems adapt nutrient advice to location, soil properties, crop type, and production targets, but scientific reuse is constrained when recommendation functions remain accessible mainly through interactive interfaces, outputs are not versioned, and trained approximations cannot be independently loaded or benchmarked. This technical report presents the Turba fertilizer machine learning stack, a three-layer open-source implementation for reproducible site-specific fertilizer recommendation in Morocco. turba-client provides programmatic access to publicly accessible site profiles, crop-specific target-yield spaces, and N, P_2O_5, and K_2O recommendation workflows; turba-data distributes analysis-ready snapshots; and turba-models packages crop-specific machine learning surrogates of recommendation outputs. The architecture links upstream retrieval, versioned analytical snapshots, reproducible cross-model benchmarking, and loadable offline surrogates while preserving the distinction between recommendation-system outputs, observed agricultural data, and model-generated predictions. The first dataset was constructed from 44,096 unique ESA WorldCerea",
-          "pub_date": "2026-10-05T04:04:09.000Z",
+          "title": "Recurrent Looped Transformer",
+          "link": "https://arxiv.org/abs/2610.07591",
+          "content": "State tracking requires an update at every input, but the depth a Transformer applies to each token is fixed regardless of sequence length. We introduce the Recurrent Looped Transformer (RLT), which splits its layers between a parallel causal encoder and a recurrent decoder. At each token, the decoder merges the encoder output with the previous token's final decoder state, so the computation path grows with sequence length at a fixed per-token cost. On six algorithmic tasks, we compare five splits of eight layers with an eight-layer Transformer over three seeds. Trained on at most 40 bits, two RLT splits generalize parity to 256 bits with 100% accuracy in every seed, while the Transformer stays at chance. On swap-based S_5 permutation tracking at eight times the training length, RLT reaches 97% final-state accuracy versus under 1% for the Transformer, and accuracy increases with decoder depth. On modular arithmetic beyond the training lengths, RLT reaches up to 93% versus 33% for the Transformer. Ablations show that these gains depend on the feedback: removing it drops parity and swap-based S_5 to chance at every split. Updating the feedback once per four-token chunk lets known tok",
+          "pub_date": "2026-10-05T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 1754,
+          "id": 1753,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1199
         },
         {
-          "id": 1753,
+          "id": 1752,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1867,
-      "total_valid": 1568,
+      "total_raw": 1866,
+      "total_valid": 1569,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2157,
+          "id": 2182,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2159,
+          "id": 2184,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2170,
+          "id": 2195,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2298,
+          "id": 2323,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 473
         },
         {
-          "id": 2073,
+          "id": 2068,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 411
         },
         {
-          "id": 2100,
+          "id": 2095,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 408
         },
         {
-          "id": 2326,
+          "id": 2351,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 390
         },
         {
-          "id": 2329,
+          "id": 2354,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 363
         },
         {
-          "id": 2314,
+          "id": 2339,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 360
         },
         {
-          "id": 1948,
+          "id": 1943,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 343
         },
         {
-          "id": 2327,
+          "id": 2352,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 321
         },
         {
-          "id": 1921,
+          "id": 1916,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 267
         },
         {
-          "id": 2281,
+          "id": 2306,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 226
         },
         {
-          "id": 2104,
+          "id": 2099,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 215
         },
         {
-          "id": 2280,
+          "id": 2305,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 513,
-      "total_valid": 348,
+      "total_raw": 539,
+      "total_valid": 375,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2451,
+          "id": 2485,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1199
         },
         {
-          "id": 2438,
+          "id": 2463,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 238
         },
         {
-          "id": 2437,
+          "id": 2462,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 181
         },
         {
-          "id": 2429,
+          "id": 2454,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 166
         },
         {
-          "id": 2453,
+          "id": 2487,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 2455,
+          "id": 2489,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1199
         },
         {
-          "id": 2391,
+          "id": 2416,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 459
         },
         {
-          "id": 2443,
+          "id": 2477,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 401
         },
         {
-          "id": 2392,
+          "id": 2417,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 341
         },
         {
-          "id": 2442,
+          "id": 2476,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -582,6 +582,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 191
+        },
+        {
+          "id": 2467,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Releasing Protein Cargo from Synthetic Cells by Coupling Cell-Free Expression to Osmotic Actuation",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.10.06.757017v1?rss=1",
+          "content": "Macromolecular release from synthetic cells often relies on membrane pores or channels. We explored whether internally generated osmotic stress could increase membrane permeability and promote release. Using double-emulsion microfluidics, we encapsulated an Escherichia coli cell-free expression system in Pluronic L121 polymersomes to co-express the fluorescent protein mScarlet3 and the dextranase PsDex1711 in the presence of dextran. PsDex1711-mediated dextran hydrolysis produced a greater increase in bulk osmolality than reactions without PsDex1711 DNA. Tracking hundreds of individual polymersomes showed that PsDex1711-containing populations expanded, whereas control populations contracted. The distribution of normalized fluorescence revealed a subset with lower residual fluorescence than the main population. In selected expanded polymersomes, integrated internal mScarlet3 fluorescence declined to 18-22% of peak levels, without visible membrane disruption, consistent with protein release. These findings support a proof of concept for using internal gene expression to promote macromolecular release through osmotic actuation without introducing dedicated membrane pores.",
+          "pub_date": "2026-10-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1187
+        },
+        {
+          "id": 2470,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Targeted tumor desialylation by engineered probiotic reprograms the tumor microenvironment to potentiate immunotherapy",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.10.04.756258v1?rss=1",
+          "content": "Tumor hypersialylation drives immunosuppression and limits immunotherapy efficacy by shielding tumor cells and engaging inhibitory immune receptors. Here, we engineered Escherichia coli Nissle 1917 (EcN{Delta}pgi-SAS) as a metabolically confined \"desialylation catalyst\" to remodel the tumor microenvironment. This strain combines HER2-directed adhesion, hypoxia-inducible surface sialidase display for targeted glycan cleavage, and sialic acid catabolism to prevent glycolytic recycling. Critically, disrupting glucose metabolism ({Delta}pgi) restricts bacterial proliferation to sialic acid-rich tumor microenvironment, significantly enhancing biosafety. In mice, EcN{Delta}pgi-SAS colonized tumors and effectively desialylated tumor cells, synergizing with anti-PD-L1 to suppress growth of immunologically \"cold\" tumors. Mechanistically, desialylation reversed immunosuppression by broadly enhancing antitumor immunity. Orally administered EcN{Delta}pgi-SAS substantially inhibited colorectal carcinogenesis, repaired epithelial barrier integrity by restoring tight junctions, and prevented adenoma formation. This integrated strategy establishes a clinically translatable platform for reversing i",
+          "pub_date": "2026-10-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -589,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 106,
-      "total_valid": 16,
-      "total_candidates": 10
+      "total_raw": 115,
+      "total_valid": 20,
+      "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 2450,
+          "id": 2484,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +641,7 @@
           "word_count": 1083
         },
         {
-          "id": 2391,
+          "id": 2416,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +656,7 @@
           "word_count": 459
         },
         {
-          "id": 2326,
+          "id": 2351,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +671,7 @@
           "word_count": 390
         },
         {
-          "id": 2314,
+          "id": 2339,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +686,7 @@
           "word_count": 360
         },
         {
-          "id": 1948,
+          "id": 1943,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +701,7 @@
           "word_count": 343
         },
         {
-          "id": 2392,
+          "id": 2417,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +716,7 @@
           "word_count": 341
         },
         {
-          "id": 1945,
+          "id": 1940,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +731,7 @@
           "word_count": 337
         },
         {
-          "id": 2325,
+          "id": 2350,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +746,7 @@
           "word_count": 315
         },
         {
-          "id": 1943,
+          "id": 1938,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +761,7 @@
           "word_count": 273
         },
         {
-          "id": 2496,
+          "id": 2530,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 51,
-      "total_valid": 43,
+      "total_raw": 61,
+      "total_valid": 53,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2540,
+          "id": 2574,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,22 +814,7 @@
           "word_count": 585
         },
         {
-          "id": 2566,
-          "source": "Ledger Insights",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Community bankers are interested in tokenized deposits, stablecoins, but not rushed",
-          "link": "https://www.ledgerinsights.com/community-bankers-are-interested-in-tokenized-deposits-stablecoins-but-not-rushed/",
-          "content": "The Conference of State Bank Supervisors (CSBS) has released its 2026 community bank survey, which now includes questions about the adoption of tokenized deposits, stablecoins and cryptocurrencies. If all banks that plan to launch within the next 12 months follow through, then by this time next year roughly 20% of community banks will offer tokenized [&#8230;] The post Community bankers are interested in tokenized deposits, stablecoins, but not rushed appeared first on Ledger Insights - blockchain for enterprise .",
-          "pub_date": "Wed, 07 Oct 2026 15:40:04 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 519
-        },
-        {
-          "id": 2510,
+          "id": 2544,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,22 @@
           "word_count": 500
         },
         {
-          "id": 2500,
+          "id": 2534,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Ripple Wins Wall Street Business With Brevan Howard Deal",
+          "link": "https://www.pymnts.com/blockchain/2026/ripple-wins-wall-street-business-with-brevan-howard-deal/",
+          "content": "Ripple Prime will provide multi-asset prime brokerage, clearing and financing services to Brevan Howard funds, Ripple said in a Tuesday (Oct. 6) press release. This agreement represents a deepening of the relationship between Ripple, a provider of blockchain solutions across traditional and digital finance, and Brevan Howard, a global alternative investment manager specializing in global [&#8230;] The post Ripple Wins Wall Street Business With Brevan Howard Deal appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 08 Oct 2026 01:27:57 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 497
+        },
+        {
+          "id": 2535,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +859,7 @@
           "word_count": 460
         },
         {
-          "id": 2505,
+          "id": 2540,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +874,7 @@
           "word_count": 457
         },
         {
-          "id": 2539,
+          "id": 2573,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +889,7 @@
           "word_count": 382
         },
         {
-          "id": 2533,
+          "id": 2567,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +904,7 @@
           "word_count": 309
         },
         {
-          "id": 2532,
+          "id": 2566,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +919,7 @@
           "word_count": 305
         },
         {
-          "id": 2535,
+          "id": 2569,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +934,7 @@
           "word_count": 197
         },
         {
-          "id": 2513,
+          "id": 2547,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +949,7 @@
           "word_count": 149
         },
         {
-          "id": 2511,
+          "id": 2545,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +964,7 @@
           "word_count": 146
         },
         {
-          "id": 2542,
+          "id": 2576,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +979,7 @@
           "word_count": 144
         },
         {
-          "id": 2512,
+          "id": 2546,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +994,7 @@
           "word_count": 140
         },
         {
-          "id": 2564,
+          "id": 2598,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -979,7 +1009,7 @@
           "word_count": 168
         },
         {
-          "id": 2565,
+          "id": 2599,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +1024,7 @@
           "word_count": 155
         },
         {
-          "id": 135,
+          "id": 134,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 367,
+          "id": 366,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 523,
+          "id": 522,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 558,
+          "id": 557,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 566,
+          "id": 565,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1075,14 +1105,14 @@
         "max": 12
       },
       "total_raw": 254,
-      "total_valid": 63,
+      "total_valid": 62,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2734,
-    "dup": 347,
-    "nocontent": 406,
+    "total_raw": 2768,
+    "dup": 351,
+    "nocontent": 405,
     "noise": 6
   }
 }
