@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 56,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 150
         },
         {
-          "id": 92,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 236
         },
         {
-          "id": 86,
+          "id": 84,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 216
         },
         {
-          "id": 93,
+          "id": 91,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,37 @@
           "word_count": 200
         },
         {
+          "id": 67,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Structuring MoE Expert Selection for Agentic Reinforcement Learning",
+          "link": "https://arxiv.org/abs/2610.07332",
+          "content": "Long-horizon LLM agents are frequently implemented using sparse mixture-of-experts (MoE) models, yet the co-design of agentic behavior and MoE structures remains underexplored. In this work, we comprehensively study the connections between agentic post-training and MoE expert selection. In off-the-shelf MoE models, we observe expert selection exhibits a specialized structure that naturally aligns with agentic trajectories. Specifically, expert routing overlaps more between turns where the agent performs semantically similar operations (e.g., READ, UPDATE) than between turns with differing operations. However, standard RL algorithms ignore this specialization, allowing the MoE routing to go uncontrolled during training, which empirically limit task performance and inference efficiency. To address this, we introduce a hierarchical routing control framework for agentic tasks. We explicitly encourage turn-level expert selections to align with agentic operations while regularizing token-level expert selections to maintain local consistency. To resolve stability issues that arise during post-training with the proposed methods, we further introduce an entropy-gated control mechanism. Over",
+          "pub_date": "2026-10-04T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "TRIAGE: Direction-Aware Mismatch Stabilization of Native NVFP4 Reinforcement Learning",
+          "link": "https://arxiv.org/abs/2610.07043",
+          "content": "Low-precision execution can substantially accelerate reinforcement learning (RL) for large language models, but discrepancies between learner and sampler execution can destabilize policy optimization. In this paper, we characterize the interaction between mismatch and the policy-gradient direction, distinguishing locally amplifying from contracting update contributions that mismatch magnitude alone cannot identify. In native NVFP4 runs, we observe an early imbalance between the two amplifying regions, favoring negative-advantage, negative-gap updates. Their tail tokens become concentrated in a small fraction of response segments before mismatch spreads globally. Motivated by these findings, we introduce TRIAGE, a direction-aware stabilization method that uses segment-level diagnosis to selectively rebalance policy-gradient updates and applies bounded repair to residual severe mismatch. TRIAGE modifies the optimization objective while retaining native NVFP4 weight-and activation 4-bit (W4A4) forward execution on both the sampler and learner. Experiments on Qwen3-4B and Qwen3-30B-A3B show stable optimization throughout the evaluated training horizon and achieve full precision level p",
+          "pub_date": "2026-10-04T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,37 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 69,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "JumpStart Your Policy Learning with Lessons from 160,000 Training Runs",
-          "link": "https://arxiv.org/abs/2609.13730",
-          "content": "Reliable progress in offline policy learning depends on careful reporting, well-tuned baselines, and evaluation across diverse conditions. Prior work has shown that results can be sensitive to reporting choices, hyperparameter tuning, and dataset properties, but these sources of variability have not been systematically investigated together at the scale needed to understand how they shape conclusions. To address this gap, we present a large-scale empirical study of offline reinforcement and imitation learning, training over 160,000 policies across 114 datasets. At this scale, no algorithm dominates: aggregate performance among the strongest methods is often close, but the leaders differ substantially across environments. We find that proper hyperparameter tuning frequently reshuffles perceived algorithm rankings and that benchmark composition can produce conflicting conclusions. We also study hyperparameter sensitivity and transfer across environments, identifying a simple strategy for deriving strong default configurations. We use our findings to develop a dataset-conditioned recommender that provides task-specific algorithm recommendations for practitioners. Finally, we release J",
-          "pub_date": "2026-09-24T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 70,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
-          "link": "https://arxiv.org/abs/2610.02188",
-          "content": "Distribution Matching Distillation (DMD) trains a few-step student from the difference between separately estimated target and student scores, so it must keep an auxiliary diffusion model fitted to the student's evolving distribution at extra memory and computation cost. We introduce DMAD, Distribution Matching as Adversarial Distillation, which recasts distribution matching as classification and learns the required log-density ratios directly. Two discriminator heads on a shared backbone distinguish real data and teacher samples from the student's, and linear losses on their logits train the student without auxiliary score fitting. We prove that at the discriminator optimum these losses recover the distribution-matching gradient underlying DMD, through the classical identity linking discriminator logits to log-density ratios. We further introduce gap-based reweighting, which adapts teacher supervision across noise levels from the real-data head's empirical logit gap between real and teacher samples. DMAD reaches a Fréchet Inception Distance (FID) of 1.04 with one-step generation on ImageNet-64x64, 14.47 with four-step SDXL on COCO-10K, and a VBench total score of 85.15 with four-s",
-          "pub_date": "2026-09-30T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1754,
+          "id": 1753,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,19 +170,19 @@
           "word_count": 1199
         },
         {
-          "id": 1762,
+          "id": 1752,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "Introducing Mistral Large 4: Le chonk",
-          "link": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-          "content": "Introducing Mistral Large 4: Le chonk Mistral are back in the game. Today they're releasing a preview of Mistral Large 4, a 1 trillion parameter, 49 billion active parameter model trained on their own cluster of 3,800 NVIDIA Grace Blackwell GPUs. The preview is available via their API. They promise to release the open weights model at the \"end of this month\". The model only supports two reasoning levels - \"none\" and \"high\" - via the Mistral API. Here are both pelicans - the \"high\" one looks better, though surprisingly it only used 2,717 output tokens compared to \"none\" which used 3,275: On Artificial Analysis it scores 38 , just behind DeepSeek 4.1 Flash, which is a 552B model. It's a huge improvement on last December's Mistral Large 3, which drew this terrible pelican and scored 9 on AA . It's certainly not a Fable-class model, but it's great to see Mistral put out a model that's back to being maybe about 6 months behind the frontier. Via Hacker News Tags: ai , generative-ai , llms , mistral , pelican-riding-a-bicycle , llm-release",
-          "pub_date": "2026-10-06T20:18:19+00:00",
+          "title": "Quoting Ben Affleck",
+          "link": "https://simonwillison.net/2026/Oct/7/ben-affleck/",
+          "content": "I've always been kind of into computers since I was young. And then when film started to move from analog film to digital, I became more interested in that aspect of it. And the visual effects workflow for many years has included machine learning. So I can write like pretty shitty Python scripts and stuff like that because with convolutional neural networks, which were the sort of precursors to what the transformer can do, which is just much more computation simultaneously, you would do things like look at what's called a tensor, which is just the numerical translation of a visual image in numbers — like the batch number, the frame number, the red, green, and blue values of each pixel in each frame. And a tensor, you use a convolutional neural network to identify patterns in that that would reveal what's called edge detection or feature extraction, which is just identifying patterns enough to know like this is where the window ledge is, so we can more easily take the green screen image out and replace it with something. &mdash; Ben Affleck , Pythonista Tags: machine-learning , python",
+          "pub_date": "2026-10-07T23:14:58+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1048
+          "word_count": 1100
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1867,
-      "total_valid": 1569,
+      "total_raw": 1866,
+      "total_valid": 1568,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2197,
+          "id": 2187,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2199,
+          "id": 2189,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2210,
+          "id": 2200,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2338,
+          "id": 2328,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 473
         },
         {
-          "id": 2077,
+          "id": 2073,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 411
         },
         {
-          "id": 2104,
+          "id": 2100,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 408
         },
         {
-          "id": 2366,
+          "id": 2356,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 390
         },
         {
-          "id": 2369,
+          "id": 2359,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 363
         },
         {
-          "id": 2354,
+          "id": 2344,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 360
         },
         {
-          "id": 1951,
+          "id": 1948,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 343
         },
         {
-          "id": 2367,
+          "id": 2357,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 321
         },
         {
-          "id": 1924,
+          "id": 1921,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 267
         },
         {
-          "id": 2321,
+          "id": 2311,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 226
         },
         {
-          "id": 2108,
+          "id": 2104,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 215
         },
         {
-          "id": 2320,
+          "id": 2310,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 556,
-      "total_valid": 384,
+      "total_raw": 544,
+      "total_valid": 379,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2506,
+          "id": 2490,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1199
         },
         {
-          "id": 2481,
+          "id": 2468,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 238
         },
         {
-          "id": 2480,
+          "id": 2467,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 181
         },
         {
-          "id": 2472,
+          "id": 2459,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 166
         },
         {
-          "id": 2508,
+          "id": 2492,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 2510,
+          "id": 2494,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1199
         },
         {
-          "id": 2434,
+          "id": 2421,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 459
         },
         {
-          "id": 2497,
+          "id": 2482,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 401
         },
         {
-          "id": 2435,
+          "id": 2422,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,22 @@
           "word_count": 341
         },
         {
-          "id": 2485,
+          "id": 2481,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Retraction Note: α-Ketoglutarate dictates AMPK protein synthesis for energy sensing in human cancers",
+          "link": "https://www.nature.com/articles/s41589-026-02346-3",
+          "content": "Nature Chemical Biology, Published online: 07 October 2026; doi:10.1038/s41589-026-02346-3 Retraction Note: α-Ketoglutarate dictates AMPK protein synthesis for energy sensing in human cancers",
+          "pub_date": "2026-10-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 191
+        },
+        {
+          "id": 2472,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +599,7 @@
           "word_count": 1187
         },
         {
-          "id": 2488,
+          "id": 2475,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -597,21 +612,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 2490,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Biotin-operated ligand trapping enables dynamic spatial redistribution of protein and organelle in living cells",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.10.02.756291v1?rss=1",
-          "content": "Controlling protein localization through chemical biology tools is essential for mechanistic interrogations, functional perturbations, and therapeutic development. While existing tools cover a wide range of applications, no single approach simultaneously enables inducible trapping, controlled release, and visualization of a protein of interest (POI). To address this gap, we developed Biotin-Operated Ligand Trapping (BOLT), which combines a HaloTag-fused POI with a streptavidin trap. Desthiobiotin-conjugated Janelia Fluor HaloTag ligands enable POI visualization, trapping, and biotin-operated release. We demonstrate BOLT's capacity in synchronized secretory cargo release, microtubule-directed organelle movement and hitchhiking, and ectopically localizing nuclear transcription factor. Importantly, pulse-chase BOLT further reveals bidirectional endoplasmic reticulum-Golgi trafficking of an endogenous Golgi enzyme and distinguishes recycled from newly synthesized enzyme populations using distinct HTLs. Altogether, BOLT provides an all-in-one platform to interrogate how subcellular localization regulates protein function across HaloTag-compatible systems.",
-          "pub_date": "2026-10-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1168
         }
       ],
       "quota": {
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 120,
-      "total_valid": 19,
+      "total_raw": 115,
+      "total_valid": 20,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 2505,
+          "id": 2489,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1083
         },
         {
-          "id": 2434,
+          "id": 2421,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 459
         },
         {
-          "id": 2366,
+          "id": 2356,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 390
         },
         {
-          "id": 2354,
+          "id": 2344,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 360
         },
         {
-          "id": 1951,
+          "id": 1948,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 343
         },
         {
-          "id": 2435,
+          "id": 2422,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 341
         },
         {
-          "id": 1948,
+          "id": 1945,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 337
         },
         {
-          "id": 2365,
+          "id": 2355,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 315
         },
         {
-          "id": 1946,
+          "id": 1943,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 273
         },
         {
-          "id": 2553,
+          "id": 2535,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 63,
-      "total_valid": 55,
+      "total_raw": 62,
+      "total_valid": 54,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2597,
+          "id": 2579,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,22 @@
           "word_count": 585
         },
         {
-          "id": 2567,
+          "id": 2608,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Community bankers are interested in tokenized deposits, stablecoins, but not rushed",
+          "link": "https://www.ledgerinsights.com/community-bankers-are-interested-in-tokenized-deposits-stablecoins-but-not-rushed/",
+          "content": "The Conference of State Bank Supervisors (CSBS) has released its 2026 community bank survey, which now includes questions about the adoption of tokenized deposits, stablecoins and cryptocurrencies. If all banks that plan to launch within the next 12 months follow through, then by this time next year roughly 20% of community banks will offer tokenized [&#8230;] The post Community bankers are interested in tokenized deposits, stablecoins, but not rushed appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Wed, 07 Oct 2026 15:40:04 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 519
+        },
+        {
+          "id": 2549,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 500
         },
         {
-          "id": 2559,
+          "id": 2543,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 465
         },
         {
-          "id": 2596,
+          "id": 2578,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 382
         },
         {
-          "id": 2590,
+          "id": 2572,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 309
         },
         {
-          "id": 2589,
+          "id": 2571,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 305
         },
         {
-          "id": 2592,
+          "id": 2574,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 197
         },
         {
-          "id": 2570,
+          "id": 2552,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 149
         },
         {
-          "id": 2568,
+          "id": 2550,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 146
         },
         {
-          "id": 2599,
+          "id": 2581,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 144
         },
         {
-          "id": 2569,
+          "id": 2551,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 140
         },
         {
-          "id": 2625,
+          "id": 2606,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -979,7 +994,7 @@
           "word_count": 168
         },
         {
-          "id": 2626,
+          "id": 2607,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +1009,7 @@
           "word_count": 155
         },
         {
-          "id": 136,
+          "id": 134,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 368,
+          "id": 366,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 524,
+          "id": 522,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 559,
+          "id": 557,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 567,
+          "id": 565,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 839,
+          "id": 837,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 847,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Ramp Metering Control via Hybrid State Deep Reinforcement Learning in Partially Observable Connected Vehicle Environments",
-          "link": "https://arxiv.org/abs/2610.06266",
-          "content": "arXiv:2610.06266v1 Announce Type: cross Abstract: Freeway on-ramp merges are major sources of congestion, causing significant economic and environmental costs. While Deep Reinforcement Learning (DRL) offers a promising solution for ramp metering, existing approaches rely primarily on aggregated macroscopic data. Connected vehicles (CVs) provide vehicle-level observations that can complement aggregate traffic measurements, but their limited penetration produces incomplete microscopic information. This paper proposes a hybrid observation representation combining macroscopic traffic measurements with a two-channel grid encoding observed CV presence and speed. A Dueling Double Deep Q-Network processes these inputs to select ramp-metering green durations. The controller is trained under varying traffic demands and CV penetration rates and evaluated against ALINEA and macroscopic-only DRL variants in SUMO. Across 50 matched evaluation scenarios, the hybrid controller under partial CV visibility reduces the reported total travel time by 11.4 % and mean spillback duration by 84.9 % relative to ALINEA. Evaluating the same trained policy with full CV visibility yields a further travel-time r",
-          "pub_date": "Wed, 07 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 258,
+      "total_raw": 257,
       "total_valid": 63,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2795,
-    "dup": 366,
-    "nocontent": 408,
+    "total_raw": 2776,
+    "dup": 355,
+    "nocontent": 405,
     "noise": 6
   }
 }
