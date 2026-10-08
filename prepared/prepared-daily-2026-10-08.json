@@ -110,7 +110,7 @@
           "word_count": 200
         },
         {
-          "id": 68,
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 69,
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -814,6 +814,21 @@
           "word_count": 585
         },
         {
+          "id": 2231,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Community bankers are interested in tokenized deposits, stablecoins, but not rushed",
+          "link": "https://www.ledgerinsights.com/community-bankers-are-interested-in-tokenized-deposits-stablecoins-but-not-rushed/",
+          "content": "The Conference of State Bank Supervisors (CSBS) has released its 2026 community bank survey, which now includes questions about the adoption of tokenized deposits, stablecoins and cryptocurrencies. If all banks that plan to launch within the next 12 months follow through, then by this time next year roughly 20% of community banks will offer tokenized [&#8230;] The post Community bankers are interested in tokenized deposits, stablecoins, but not rushed appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Wed, 07 Oct 2026 15:40:04 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 519
+        },
+        {
           "id": 2175,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
@@ -964,21 +979,6 @@
           "word_count": 146
         },
         {
-          "id": 2205,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "How Can Banks Serve SME’s Growing Cross-Border Needs?",
-          "link": "https://www.finextra.com/videoarticle/3606/how-can-banks-serve-smes-growing-cross-border-needs?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "At Sibos 2026, Mastercard’s Pratik Khowala reveals how banks and fintechs can retain SME loyalty through trust, speed, and value-added services.",
-          "pub_date": "Tue, 06 Oct 2026 15:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 144
-        },
-        {
           "id": 2177,
           "source": "PaymentsDive",
           "section": "payment",
@@ -994,7 +994,22 @@
           "word_count": 140
         },
         {
-          "id": 2230,
+          "id": 2190,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Circle, Ripple and Standard Chartered invest in OKX",
+          "link": "https://www.finextra.com/newsarticle/48543/circle-ripple-and-standard-chartered-invest-in-okx?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Crypto exchange OKX has secured strategic investment from Circle, QRT, Ripple and SC Ventures at a $25 billion valuation.",
+          "pub_date": "Tue, 06 Oct 2026 18:02:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 121
+        },
+        {
+          "id": 2229,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1009,7 +1024,7 @@
           "word_count": 168
         },
         {
-          "id": 2231,
+          "id": 2230,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 1056,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Beyond Marginals: A Multi-Dimensional Evaluation Framework for Multi-Table Synthetic Data Generation",
-          "link": "https://arxiv.org/abs/2610.06854",
-          "content": "arXiv:2610.06854v1 Announce Type: cross Abstract: Synthetic data generation is critical for privacy compliance, machine learning augmentation, and software testing. While single-table evaluation is well established, multi-table (relational) synthesis, the dominant enterprise use case, lacks a unified evaluation framework. Existing approaches assess marginal column distributions in isolation, overlooking joint distributions, cross-table structural integrity, downstream utility, and production-readiness edge cases. We present SynEval, a six-dimensional evaluation framework for multi-table synthetic databases. SynEval jointly assesses per-column fidelity, multivariate structure preservation including a novel conditional distribution check, cross-table integrity, ML utility, privacy protection, and edge-case robustness. The framework produces a unified weighted quality score with per-table and per-dimension drill-down, and is generator-agnostic, operating on any pair of real and synthetic CSV folders with automatic schema inference. SynEval is a framework to combine conditional distribution checks P(Y|X), cross-table cardinality validation, and production-readiness edge-case testing wi",
-          "pub_date": "Wed, 07 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 244,
+      "total_raw": 243,
       "total_valid": 51,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2400,
-    "dup": 588,
+    "total_raw": 2399,
+    "dup": 587,
     "nocontent": 406,
     "noise": 6
   }
