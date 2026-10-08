@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 1,
       "ok": true
     },
     "Meta AI Blog": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 14,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 15,
       "ok": true
     },
     "WHO News": {
@@ -250,8 +250,8 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -418,7 +418,7 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 4,
+      "count": 3,
       "ok": true
     },
     "Finextra": {
@@ -504,11 +504,10 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "medRxiv Infectious"
     ],
-    "sudden_drop": [
-      "Google DeepMind"
-    ],
+    "sudden_drop": [],
     "persistent_zero": [
       "Sequoia Capital",
       "WHO News"
