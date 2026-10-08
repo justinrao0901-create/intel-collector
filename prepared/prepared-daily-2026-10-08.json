@@ -110,15 +110,30 @@
           "word_count": 200
         },
         {
+          "id": 66,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "GRACE: Generation-aware latent compression for efficient video generation",
+          "link": "https://arxiv.org/abs/2610.10524",
+          "content": "Highly compressed video autoencoders offer an effective way to accelerate video diffusion models, as the Diffusion Transformer (DiT) operates on far fewer tokens. However, such autoencoders are challenging to train, since a higher compression ratio degrades reconstruction quality and recovering it requires more channels, which is known to slow the convergence of the DiT. The compressed latent also differs from the one the DiT was trained on, so the pretrained DiT must be either retrained from scratch or adapted at considerable cost. Compressing the autoencoder the DiT was trained with appears to preserve compatibility, yet optimizing it for reconstruction alone still shifts the latent away from the distribution the DiT has learned. To address this, we propose Generation-Aware Latent Compression for Efficient Video Generation (GRACE), a two-stage framework that compresses a pretrained video autoencoder while keeping it compatible with the pretrained DiT. Specifically, we keep a frozen base latent from the pretrained encoder and learn a residual latent for the information lost under stronger compression, while aligning the compressed latent with the pretrained latent in the feature s",
+          "pub_date": "2026-10-06T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "WorldSonus: Bringing Sound to Worlds",
-          "link": "https://arxiv.org/abs/2610.08760",
-          "content": "Recent advances in world models have enabled increasingly realistic visual synthesis. However, these generated environments remain largely silent. Bringing sound to world models poses three core challenges: real-time generation to keep pace with interactive video streams, interactive control to respond to mid-stream sound instructions, and spatially aligned stereo to reflect scene geometry and camera motion. To address these demands, we introduce WorldSonus, an interactive video-to-audio framework designed for real-time spatial sound synthesis in world models. For real-time generation, WorldSonus employs a streaming causal autoregressive diffusion architecture that synthesizes audio chunks at a low real-time factor (RTF) of 0.41. For interactive control, we incorporate an audio-centric captioning pipeline with chunk-indexed prompt scheduling, enabling dynamic manipulation of sound events during generation. For spatial alignment, we leverage high-quality stereo supervision curated from diverse stereo and ambisonic data. Extensive experiments demonstrate that while tailored for world models, WorldSonus generalizes effectively to open-domain video-to-audio benchmarks, matching or outp",
-          "pub_date": "2026-10-05T20:00:00.000Z",
+          "title": "VIEScore2: Unified Image Evaluation with Spatially Grounded Explanations",
+          "link": "https://arxiv.org/abs/2610.00994",
+          "content": "Existing synthetic image evaluators typically provide only a scalar quality score and do not identify the image regions that support it. We introduce VIEScore2, a unified evaluator for image generation and editing tasks with optional conditioning images. VIEScore2 represents an image as an N x N grid and jointly predicts quality scores and defect locations in a single model pass. Its text-native grid representation provides a common interface for heterogeneous spatial supervision and enables directly verifiable post-training objectives. We train on 38K examples spanning score-only, localization-only, and joint supervision across generation and editing tasks. Starting from supervised fine-tuning, we further apply GRPO to improve defect localization using rewards that combine cell-level Dice overlap, score accuracy, and output-format validity. A parameter-free parser converts the structured predictions into readable explanations. On the primary suite, VIEScore2 achieves an overall-score SRCC of 0.601, compared with 0.491 for Gemini-3-Flash, the strongest zero-shot general-purpose VLM baseline under matched inputs. For defect localization, VIEScore2 outperforms both general-purpose VL",
+          "pub_date": "2026-09-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,9 +145,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "AdSpark: A Large-Scale Dataset and Benchmark for Product-Centric Advertisement Video Generation",
-          "link": "https://arxiv.org/abs/2610.10047",
-          "content": "Product-centric advertisement video generation aims to create promotional videos that preserve fine-grained product identity while presenting selling points through coherent multi-shot narratives. However, this emerging task remains underexplored due to the lack of large-scale advertisement-specific datasets and comprehensive evaluation frameworks. To address this gap, we introduce AdSpark, a large-scale dataset and benchmark for product-centric advertisement video generation, based on data from a major e-commerce platform. AdSpark-300K contains approximately 300K reference image--prompt--video triplets, comprising a real-world subset and a synthetic subset. Each sample provides structured advertisement annotations, including product identity annotations, selling-point descriptions, creative plans, and aligned audio scripts, enabling models to learn product preservation and advertisement-oriented visual storytelling. We further propose AdSpark-Bench, a diagnostic benchmark that evaluates generated advertisements across six dimensions, including visual quality, product fidelity, instruction adherence, temporal coherence, audio alignment, and advertisement effectiveness. Based on AdS",
+          "title": "Long-WAM: Scaling the Context of World-Action Models",
+          "link": "https://arxiv.org/abs/2610.10528",
+          "content": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including fu",
           "pub_date": "2026-10-06T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -140,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 71,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Recurrent Looped Transformer",
-          "link": "https://arxiv.org/abs/2610.07591",
-          "content": "State tracking requires an update at every input, but the depth a Transformer applies to each token is fixed regardless of sequence length. We introduce the Recurrent Looped Transformer (RLT), which splits its layers between a parallel causal encoder and a recurrent decoder. At each token, the decoder merges the encoder output with the previous token's final decoder state, so the computation path grows with sequence length at a fixed per-token cost. On six algorithmic tasks, we compare five splits of eight layers with an eight-layer Transformer over three seeds. Trained on at most 40 bits, two RLT splits generalize parity to 256 bits with 100% accuracy in every seed, while the Transformer stays at chance. On swap-based S_5 permutation tracking at eight times the training length, RLT reaches 97% final-state accuracy versus under 1% for the Transformer, and accuracy increases with decoder depth. On modular arithmetic beyond the training lengths, RLT reaches up to 93% versus 33% for the Transformer. Ablations show that these gains depend on the feedback: removing it drops parity and swap-based S_5 to chance at every split. Updating the feedback once per four-token chunk lets known tok",
-          "pub_date": "2026-10-05T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1753,
+          "id": 1403,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1199
         },
         {
-          "id": 1752,
+          "id": 1402,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1866,
-      "total_valid": 1569,
+      "total_raw": 1516,
+      "total_valid": 984,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2182,
+          "id": 1831,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2184,
+          "id": 1833,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2195,
+          "id": 1844,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2323,
+          "id": 1972,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 473
         },
         {
-          "id": 2068,
+          "id": 1717,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 411
         },
         {
-          "id": 2095,
+          "id": 1744,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 408
         },
         {
-          "id": 2351,
+          "id": 2000,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 390
         },
         {
-          "id": 2354,
+          "id": 2003,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 363
         },
         {
-          "id": 2339,
+          "id": 1988,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 360
         },
         {
-          "id": 1943,
+          "id": 1592,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 343
         },
         {
-          "id": 2352,
+          "id": 2001,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 321
         },
         {
-          "id": 1916,
+          "id": 1565,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 267
         },
         {
-          "id": 2306,
+          "id": 1954,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 226
         },
         {
-          "id": 2099,
+          "id": 1748,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -407,19 +407,19 @@
           "word_count": 215
         },
         {
-          "id": 2305,
-          "source": "npj Vaccines",
+          "id": 1558,
+          "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
           "priority": 2,
-          "title": "Prior immunization with an acellular pertussis vaccine suppresses protective immunity to a more effective vaccine",
-          "link": "https://www.nature.com/articles/s41541-026-01524-7",
-          "content": "npj Vaccines, Published online: 07 October 2026; doi:10.1038/s41541-026-01524-7 Prior immunization with an acellular pertussis vaccine suppresses protective immunity to a more effective vaccine",
+          "title": "Why sound, strong science alone isn’t enough in pandemic preparedness",
+          "link": "https://www.nature.com/articles/d41586-026-02985-5",
+          "content": "Nature, Published online: 07 October 2026; doi:10.1038/d41586-026-02985-5 Comparable data are key to protecting the world from the next epidemic, says bioengineer Polina Brangel.",
           "pub_date": "2026-10-07",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 193
+          "word_count": 178
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 539,
-      "total_valid": 375,
+      "total_raw": 538,
+      "total_valid": 373,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2485,
+          "id": 2134,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1199
         },
         {
-          "id": 2463,
+          "id": 2112,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 238
         },
         {
-          "id": 2462,
+          "id": 2111,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 181
         },
         {
-          "id": 2454,
+          "id": 2103,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 166
         },
         {
-          "id": 2487,
+          "id": 2136,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 2489,
+          "id": 2138,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1199
         },
         {
-          "id": 2416,
+          "id": 2065,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 459
         },
         {
-          "id": 2477,
+          "id": 2126,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 401
         },
         {
-          "id": 2417,
+          "id": 2066,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 341
         },
         {
-          "id": 2476,
+          "id": 2125,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 191
         },
         {
-          "id": 2467,
+          "id": 2116,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1187
         },
         {
-          "id": 2470,
+          "id": 2119,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2484,
+          "id": 2133,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1083
         },
         {
-          "id": 2416,
+          "id": 2065,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 459
         },
         {
-          "id": 2351,
+          "id": 2000,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 390
         },
         {
-          "id": 2339,
+          "id": 1988,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 360
         },
         {
-          "id": 1943,
+          "id": 1592,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 343
         },
         {
-          "id": 2417,
+          "id": 2066,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 341
         },
         {
-          "id": 1940,
+          "id": 1589,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 337
         },
         {
-          "id": 2350,
+          "id": 1999,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 315
         },
         {
-          "id": 1938,
+          "id": 1587,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 273
         },
         {
-          "id": 2530,
+          "id": 2179,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 61,
-      "total_valid": 53,
+      "total_raw": 59,
+      "total_valid": 51,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2574,
+          "id": 2222,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 585
         },
         {
-          "id": 2544,
+          "id": 2193,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 500
         },
         {
-          "id": 2534,
+          "id": 2183,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 497
         },
         {
-          "id": 2535,
+          "id": 2184,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 460
         },
         {
-          "id": 2540,
+          "id": 2189,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 457
         },
         {
-          "id": 2573,
+          "id": 2221,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 382
         },
         {
-          "id": 2567,
+          "id": 2215,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 309
         },
         {
-          "id": 2566,
+          "id": 2214,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 305
         },
         {
-          "id": 2569,
+          "id": 2217,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 197
         },
         {
-          "id": 2547,
+          "id": 2196,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 149
         },
         {
-          "id": 2545,
+          "id": 2194,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 146
         },
         {
-          "id": 2576,
+          "id": 2224,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 144
         },
         {
-          "id": 2546,
+          "id": 2195,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 140
         },
         {
-          "id": 2598,
+          "id": 2249,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1009,7 +1009,7 @@
           "word_count": 168
         },
         {
-          "id": 2599,
+          "id": 2250,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1039,14 +1039,14 @@
           "word_count": 1200
         },
         {
-          "id": 366,
+          "id": 571,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "The Cost of a Hop: Benchmarking NLIP and A2A",
-          "link": "https://arxiv.org/abs/2610.04053",
-          "content": "arXiv:2610.04053v1 Announce Type: new Abstract: Autonomous agents built on Large Language Models (LLMs) need standardized protocols to interoperate across systems. Several now exist (A2A, MCP, ACP, ANP, NLIP), but the Natural Language Interaction Protocol (NLIP) has not appeared in any controlled performance study, and no work has measured where an agent protocol's latency is spent. We compare NLIP and the Agent-to-Agent (A2A) protocol empirically, decomposing latency into message creation, connection, and send phases across three independent hardware environments. For lightweight coordination, NLIP is 8.4-9.6x faster than the baseline A2A SDK implementation on two environments and about 4x on a third; the direction of the advantage is consistent, its magnitude depends on the hardware. The advantage is stage-specific: for the end-to-end pipeline, where LLM inference dominates, the protocols are near parity. The difference comes almost entirely from connection setup. To test A2A at its best, we also ran A2A SDK with connection caching enabled; caching narrows its gap with NLIP by a hardware-dependent amount, from 2.75x on one machine to near-parity on faster hardware, where at scale",
+          "title": "Active Feature Acquisition for Cost-Efficient Temporal Prediction with Reduced Participant Burden",
+          "link": "https://arxiv.org/abs/2610.07452",
+          "content": "arXiv:2610.07452v1 Announce Type: cross Abstract: Accurate forecasting of pathological outcomes is a central problem in psychology. To do so, psychologists often collect intensive longitudinal data. However, in such studies, the desire to acquire a large number of variables for the sake of accurate prediction is often counteracted by the need to minimize participant burden. Acquiring more variables per occasion can yield better predictions, but having too many acquisitions increase the risk of non-response and attrition. Longitudinal Active Feature Acquisition (LAFA) is a principled approach to resolve this conundrum. Instead of requiring responses to every item at every acquisition occasion, LAFA produces a policy that seeks to optimally select dynamic subsets of items to be acquired at each timepoint while preserving our ability to forecast a specific outcome. However, existing LAFA methods are mostly based on Neural Networks (NN) that are difficult to interpret in practice. In this work, we introduce a tree distillation method for learning an interpretable policy from NN-based LAFA networks. We validated our method through both a simulation and an empirical EMA dataset on foreca",
           "pub_date": "Wed, 07 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1054,14 +1054,14 @@
           "word_count": 1200
         },
         {
-          "id": 522,
+          "id": 578,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Agentic-ZTA: A Multi-Agent Architecture for Autonomous Zero Trust Enforcement",
-          "link": "https://arxiv.org/abs/2610.05782",
-          "content": "arXiv:2610.05782v1 Announce Type: new Abstract: Agentic AI is emerging as a promising paradigm for automating complex cybersecurity decisions, yet its use in enforcing zero trust introduces significant challenges in safety, reliability, and policy compliance. This paper presents Agentic AI based zero trust architecture (Agentic-ZTA) that operationalizes the NIST SP 800-207 ZTA architecture control loop through coordinated multi- agent decision pipeline. In the proposed framework, policy knowledge is embedded into a retrieval-augmented generation pipeline and retrieved at inference time as top-k relevant policies. Access requests are intercepted by the Policy Enforcement Point (PEP), enriched with contextual metadata. The request context is routed to a policy engine agent which invokes domain-specialized core agents first followed by supporting agents, if further evaluation needed. AI agents reason over access context, policy constraints and determine trust. The retrieved policies are embedded into agent prompt during inference time and agentic trust scores are aggregated and evaluated by a trust-algorithm, producing the final access decision for enforcement under continuous verific",
+          "title": "Harmful SFT Leaves a Continuous Trace in LLM Checkpoint Updates",
+          "link": "https://arxiv.org/abs/2610.07518",
+          "content": "arXiv:2610.07518v1 Announce Type: cross Abstract: Safety auditing of post-trained large language models typically relies on model behavior, requiring model execution and depending on the coverage of available evaluations. This work asks a different question: Do the target behaviors optimized during supervised fine-tuning (SFT) leave readable evidence directly in checkpoint updates? We find that harmful-compliance SFT induces a continuous, objective-dependent ordering in checkpoint-update space. Using a reference geometry defined by pure harmful-compliance, safety-targeted, and benign-utility SFT, we find that a checkpoint-level coordinate s_H tracks controlled harmful-objective composition with Spearman correlations of 0.986-0.992 across four 7-8B backbones, with the same ordering persisting at larger model scales. Matched compliance-versus-refusal controls show that this checkpoint trace reflects the SFT objective rather than harmful-input exposure, while additional controls rule out simple explanations based on harmful-example count or generic training intensity. Building on this structure, we introduce TRACE, a weights-only auditing method that localizes an unknown checkpoint up",
           "pub_date": "Wed, 07 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1069,14 +1069,14 @@
           "word_count": 1200
         },
         {
-          "id": 557,
+          "id": 725,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "From Benchmark to Bench: Can Agents Survive Real-World Drug Discovery?",
-          "link": "https://arxiv.org/abs/2610.06411",
-          "content": "arXiv:2610.06411v1 Announce Type: new Abstract: Agentic systems increasingly coordinate molecular-design tools, but it is unclear which layer of the stack limits outcomes on real projects. We developed MAGI, an open modular agent that authors objectives, launches and monitors optimization, interprets structure--activity relationships, and revises its strategy accordingly. MAGI generates molecules either directly through the LLM or by delegating to REINVENT 4, with scoring services interchangeable behind a common contract. We tested it across nine retrospective lead-optimization campaigns from three pharmaceutical companies, replayed under fixed temporal cutoffs. Both routes produced valid structures: LLM proposals stayed closer to local chemistry and reached comparable or higher primary activity in fewer operations, whereas REINVENT explored broader chemical space. Whether a campaign met its objective depended on the predictive models, not on the generation route: attainment followed model accuracy on the chemistry proposed, dropping once that chemistry moved outside the model's applicability domain. Separately, a blinded evaluation asked whether the MAGI's output could pass as exp",
+          "title": "Benchmarking the Personalization Capabilities of Large Language Models",
+          "link": "https://arxiv.org/abs/2607.20471",
+          "content": "arXiv:2607.20471v2 Announce Type: replace Abstract: Personalization is classically a two-party problem: a sender chooses what to say, and a receiver with independent objectives decides whether to act. A salesperson pitching the same analytics product leads with HIPAA compliance for a hospital and real-time reporting for a retailer, expecting a different argument to work on each. Existing LLM personalization benchmarks measure a narrower, one-party property: whether output matches the preferences of the same user it serves-sender and receiver being the same, as when RLHF aligns an assistant to its own user. The two-party case is harder to study automatically, since it needs ground truth linking specific content to an observed receiver action. Sales outreach provides this: a message written for one prospect, recorded against whether it produced a reply, a call, or a closed deal. We introduce SDR-Arena, a framework for benchmarking two-party generative personalization at scale, and SDR-Bench, a public corpus of 50,000 customer success stories across 22 industries and 3500 enterprises. Given only pre-outcome information, an agent must reconstruct the arguments that won the deal, scored",
           "pub_date": "Wed, 07 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1084,14 +1084,14 @@
           "word_count": 1200
         },
         {
-          "id": 565,
-          "source": "arXiv cs.AI",
+          "id": 1055,
+          "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Proof-Grounded Patient-Specific Clinical Explanations from Knowledge-Graph Reasoning",
-          "link": "https://arxiv.org/abs/2610.06549",
-          "content": "arXiv:2610.06549v1 Announce Type: new Abstract: Clinical decision-support outputs can lack an au- ditable link between patient observations, encoded knowledge, conclusions, and recommendations. We present the CKG Clinical Explanation Engine, a downstream layer for a frozen, training-free clinical knowledge-graph reasoner that converts patient inference states and disease knowledge into typed facts, explicit rule-application traces, provenance-linked conclusions, and policy-licensed recommendations. The design separates measurement availability, representation completeness, and disease-specific activation; consequently, observed zero-activation evience is not treated as missing and partial representation is distinct from unobserved evidence. Optional language generation is restricted to symbolically licensed content. Across five usable workbooks (6,720 patients; 20,160 patient-disease traces; 1,021,440 feature-evidence rows), IG-range validity and knowledge provenance were 100%, numerical cross-sheet fidelity was 100% (120,960/120,960), and exported logical/report trace completeness was 100% (20,160/20,160). Availability representation consistency was 99.7028% (1,018,404/1,021,440);",
+          "title": "Beyond Marginals: A Multi-Dimensional Evaluation Framework for Multi-Table Synthetic Data Generation",
+          "link": "https://arxiv.org/abs/2610.06854",
+          "content": "arXiv:2610.06854v1 Announce Type: cross Abstract: Synthetic data generation is critical for privacy compliance, machine learning augmentation, and software testing. While single-table evaluation is well established, multi-table (relational) synthesis, the dominant enterprise use case, lacks a unified evaluation framework. Existing approaches assess marginal column distributions in isolation, overlooking joint distributions, cross-table structural integrity, downstream utility, and production-readiness edge cases. We present SynEval, a six-dimensional evaluation framework for multi-table synthetic databases. SynEval jointly assesses per-column fidelity, multivariate structure preservation including a novel conditional distribution check, cross-table integrity, ML utility, privacy protection, and edge-case robustness. The framework produces a unified weighted quality score with per-table and per-dimension drill-down, and is generator-agnostic, operating on any pair of real and synthetic CSV folders with automatic schema inference. SynEval is a framework to combine conditional distribution checks P(Y|X), cross-table cardinality validation, and production-readiness edge-case testing wi",
           "pub_date": "Wed, 07 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 254,
-      "total_valid": 62,
+      "total_raw": 245,
+      "total_valid": 51,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2768,
-    "dup": 351,
+    "total_raw": 2419,
+    "dup": 589,
     "nocontent": 405,
     "noise": 6
   }
