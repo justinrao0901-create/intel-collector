@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 56,
+          "id": 55,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 142
         },
         {
-          "id": 90,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 276
         },
         {
-          "id": 89,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 254
         },
         {
-          "id": 93,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -108,6 +108,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 246
+        },
+        {
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "LEGO: A Lifting-Free Approach for Exocentric-to-Egocentric Video Generation",
+          "link": "https://arxiv.org/abs/2610.12442",
+          "content": "Generating an egocentric video from a single exocentric recording is a challenging case of novel view synthesis, as the two cameras share little overlap and much of the target view is unobserved. Current state-of-the-art methods reconstruct the scene explicitly by estimating depth, lifting the video into a point cloud, and re-rendering it from the egocentric camera to condition a video diffusion model. This deterministic mapping assigns each pixel to a single reprojected location, which preserves texture but translates depth errors into misplaced content. We ask what a video diffusion model should receive as its condition and propose a lifting-free answer: a learned view synthesizer, an LVSM-style transformer fine-tuned to render the egocentric view directly without depth, point clouds, or reprojection, resolving cross-view correspondence internally. In contrast, its probabilistic mapping averages each region over candidate source locations according to a learned correspondence distribution, preserving structure while fine texture is averaged away. We argue that this trade-off suits a diffusion generator, whose denoising training excels at restoring detail, so an effective conditio",
+          "pub_date": "2026-10-07T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         },
         {
           "id": 69,
@@ -140,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 72,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Reasoning-Informed Visual Editing",
-          "link": "https://arxiv.org/abs/2610.12343",
-          "content": "Large Multi-modality Models (LMMs) have made significant progress in visual understanding and generation, but still face challenges in visual editing, particularly in following complex instructions, preserving appearance consistency, and supporting flexible input formats. To study this gap, we introduce RISEBench, the first benchmark for evaluating Reasoning-Informed viSual Editing (RISE), and extend it to RISEBench++, a more comprehensive and fine-grained benchmark for this emerging task. RISEBench++ extends the taxonomy into a hierarchical scheme spanning six reasoning dimensions: Temporal, Causal, Spatial, Logical, and Counterfactual Reasoning, together with Hybrid Reasoning integrating multiple reasoning types across multi-turn edits. These dimensions are further decomposed into 12 subcategories and 65 fine-grained task types. We expand input formats to include multi-image conditioning and scale the benchmark to 1000 human-annotated test cases, released in English and Chinese. We also improve our evaluation framework, assessing Instruction Reasoning, Appearance Consistency, and Visual Plausibility with human judges and an LMM-as-a-judge approach for more reliable and calibrated",
-          "pub_date": "2026-10-07T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1308,
+          "id": 1307,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1048
         },
         {
-          "id": 1312,
+          "id": 1311,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1412,
+      "total_raw": 1411,
       "total_valid": 927,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1741,
+          "id": 1740,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1742,
+          "id": 1741,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1743,
+          "id": 1742,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1870,
+          "id": 1869,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 384
         },
         {
-          "id": 1867,
+          "id": 1866,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 372
         },
         {
-          "id": 1578,
+          "id": 1577,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 361
         },
         {
-          "id": 1555,
+          "id": 1554,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 356
         },
         {
-          "id": 1866,
+          "id": 1865,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 334
         },
         {
-          "id": 1821,
+          "id": 1820,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 208
         },
         {
-          "id": 1662,
+          "id": 1661,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 192
         },
         {
-          "id": 1820,
+          "id": 1819,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 192
         },
         {
-          "id": 1471,
+          "id": 1470,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 178
         },
         {
-          "id": 1642,
+          "id": 1641,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 165
         },
         {
-          "id": 1530,
+          "id": 1529,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 88
         },
         {
-          "id": 1542,
+          "id": 1541,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1950,
+          "id": 1949,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 221
         },
         {
-          "id": 1978,
+          "id": 1977,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 207
         },
         {
-          "id": 1977,
+          "id": 1976,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 199
         },
         {
-          "id": 1999,
+          "id": 1998,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2000,
+          "id": 1999,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 2001,
+          "id": 2000,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,22 @@
           "word_count": 1200
         },
         {
-          "id": 1991,
+          "id": 2031,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Anticipatory intelligence in clinical microbiology",
+          "link": "https://www.nature.com/articles/s44222-026-00502-x",
+          "content": "Nature Reviews Bioengineering, Published online: 08 October 2026; doi:10.1038/s44222-026-00502-x Clinical microbiology needs an artificial intelligence system that predicts pathogen evolution and resistance to enable prevention. Laboratories should connect forecasts to confirmatory experiments and defined actions, then test them prospectively across time and populations, as well as govern false alarms, model updates and inequitable performance as carefully as diagnostic errors.",
+          "pub_date": "2026-10-08",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 482
+        },
+        {
+          "id": 1990,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +554,7 @@
           "word_count": 345
         },
         {
-          "id": 1989,
+          "id": 1988,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +569,7 @@
           "word_count": 1168
         },
         {
-          "id": 1988,
+          "id": 1987,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 116,
-      "total_valid": 21,
-      "total_candidates": 9
+      "total_raw": 117,
+      "total_valid": 22,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 1754,
+          "id": 1753,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 2000,
+          "id": 1999,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 2001,
+          "id": 2000,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1552,
+          "id": 1551,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +656,22 @@
           "word_count": 504
         },
         {
-          "id": 1551,
+          "id": 2031,
+          "source": "Nature Reviews Bioengineering",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Anticipatory intelligence in clinical microbiology",
+          "link": "https://www.nature.com/articles/s44222-026-00502-x",
+          "content": "Nature Reviews Bioengineering, Published online: 08 October 2026; doi:10.1038/s44222-026-00502-x Clinical microbiology needs an artificial intelligence system that predicts pathogen evolution and resistance to enable prevention. Laboratories should connect forecasts to confirmatory experiments and defined actions, then test them prospectively across time and populations, as well as govern false alarms, model updates and inequitable performance as carefully as diagnostic errors.",
+          "pub_date": "2026-10-08",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 482
+        },
+        {
+          "id": 1550,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +701,7 @@
           "word_count": 249
         },
         {
-          "id": 1470,
+          "id": 1469,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +716,7 @@
           "word_count": 222
         },
         {
-          "id": 1473,
+          "id": 1472,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +731,7 @@
           "word_count": 222
         },
         {
-          "id": 1821,
+          "id": 1820,
           "source": "npj Vaccines",
           "section": "cross",
           "tier": "T1",
@@ -714,21 +744,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 208
-        },
-        {
-          "id": 1523,
-          "source": "Nature",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Why smart glasses are about to create a major privacy crisis",
-          "link": "https://www.nature.com/articles/d41586-026-03131-x",
-          "content": "Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-03131-x As AI wearables become discreet, cheap and mainstream, they risk normalizing non-consensual recording in everyday spaces.",
-          "pub_date": "2026-10-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 195
         }
       ],
       "quota": {
@@ -736,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 44,
-      "total_valid": 41,
+      "total_raw": 45,
+      "total_valid": 42,
       "total_candidates": 10
     },
     "china": {
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 327,
+          "id": 326,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 345,
+          "id": 344,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 444,
+          "id": 443,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 510,
+          "id": 509,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1060,14 +1075,14 @@
         "max": 12
       },
       "total_raw": 244,
-      "total_valid": 54,
+      "total_valid": 53,
       "total_candidates": 20
     }
   },
   "meta": {
     "total_raw": 2279,
-    "dup": 510,
-    "nocontent": 403,
+    "dup": 511,
+    "nocontent": 402,
     "noise": 7
   }
 }
