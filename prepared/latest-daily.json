@@ -115,24 +115,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SanSi: A Looped Typed Decision Model for System 1.5 Thinking",
-          "link": "https://arxiv.org/abs/2610.07730",
-          "content": "Typed decision models answer a declared question without generating text: a decision head returns a probability for each of the declared options in a single forward pass. A single pass is fast, intuitive System 1 thinking. We study what lies between one pass and generated reasoning: looping, in which the same layers are recursively applied several times before one typed readout. Each loop lets the model revise its hidden state before it commits to an answer, without generating a token; we call this System 1.5 thinking. We propose SanSi, which turns a pre-trained looped language model into a typed decision model. The option probabilities are read after every loop, and every loop is trained with a proper scoring rule, so that one model serves every budget from one loop to eight in a single run. On 10,027 test decisions from 59 sources, SanSi reaches 72.0% accuracy: 13.5 points above a non-looped model of the same shape trained with the same recipe, 5.3 points above a newer non-looped model of its size, and 1.8 points below one with three times the parameters. On two depth-controlled tasks, loops extend the solvable depth beyond the depths seen in training, where the larger single-pas",
-          "pub_date": "2026-10-05T20:00:00.000Z",
+          "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
+          "link": "https://arxiv.org/abs/2610.12242",
+          "content": "Large language model (LLM) routing distributes inference work across different models, advancing the cost-quality Pareto frontier of LLM serving. While coarse-grained routing at the session or query level has been widely adopted in production systems, recent algorithmic work shows that fine-grained token-level routing can yield substantial efficiency and quality gains. However, efficiently serving token-level routed inference poses significant challenges to existing systems. Built on single-LLM assumptions, current systems suffer from severe step desynchronization and frequent batch admission delays under token-level routing, and they also impose high implementation complexity on developers. To address these challenges, we design TokenRouter, an efficient and developer-friendly serving system for token-level routed LLM inference. TokenRouter follows the principle of request-centric programming, model-centric execution: developers describe routing logic from the perspective of a single request, while the runtime launches a subserver for each LLM and dispatches requests asynchronously. Each subserver employs a delayed-batching scheduler, whose optimal hyperparameters are derived from",
+          "pub_date": "2026-10-07T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 71,
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference",
-          "link": "https://arxiv.org/abs/2610.12327",
-          "content": "The memory-bound nature of the decoding stage of large language model (LLM) inference incurs significant latency. Layer-wise training-free network pruning approaches guided by the Hessian have been a prominent solution to this problem, as pruning reduces the number of nonzero parameters read from memory during decoding. Nevertheless, typical methods in this line compute the Hessian using pre-collected natural sequences, whereas the model is fed self-generated tokens during decoding, creating a distribution shift between the two sequences. The Hessian calculated on the natural sequence is different from that calculated on the generated sequence. We observe that this discrepancy causes the activation distribution during generation to deviate from that used for pruning, further hurting the pruned model performance. Moreover, most existing LLM pruning methods that bring actual speedup primarily target the sparse matrix-matrix (SpMM) multiplication, providing limited support for the sparse matrix-vector (SpMV) operations, which dominate decoding. To solve these problems, we introduce SparseDecoding, a principled decoding-aware pruning framework tailored for accurate and efficient LLM de",
+          "title": "Scaling to Tens of Thousands of Test-Time Iterations with Loop-Native Attention Residuals",
+          "link": "https://arxiv.org/abs/2610.11570",
+          "content": "In this paper, we argue that looped Transformers need their own residual connections to prevent performance degradation as the number of iterations grows. We observe that increasing loop iterations can reduce reasoning accuracy: noisy state updates overwrite correct intermediate deductions and even undo completed solutions. This leaves subsequent iterations to recover lost information from an already degraded representation: once an error arises in an earlier loop, often as a result of long-range propagation through the recurrence, later loops find it difficult to correct. In this paper, we introduce InfiLoop, a loop-native residual connection that learns which past computations to retain and how much to accept from each new update. InfiLoop combines content-based weighting with learned temporal decay to maintain a running summary of recurrent states. An exact streaming recurrence keeps its persistent aggregation memory constant as the loop count grows. The resulting adaptive update suppresses unreliable proposals and preserves useful intermediate states. Across extensive reasoning tasks, a 7M-parameter InfiLoop model outperforms existing recursive architectures, reaching 97.9% exa",
           "pub_date": "2026-10-07T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Retrieval-Centric Deep Learning in Growing Nonparametric Neural Networks",
-          "link": "https://arxiv.org/abs/2610.03858",
-          "content": "We investigate a general-purpose layer for deep learning that, instead of compressing arbitrary-size training data into fixed-size weight matrices, stores a new pair of key-value representations for every data point during training, and retrieves and recombines these representations through an attention mechanism at inference time - resulting in a growing neural net (NN). While Irie et al. (arXiv:2202.05798) have put forward this perspective from the classic duality expressing any linear layer in a deep NN trained by gradient descent as linear attention (LA) over the training data points, replacing LA by more powerful attention functions, as they suggest, turns out to be non-trivial: we show that naively applying learning rules from the LA case to advanced kernels does not lead to principled optimization. Here we fill this gap and develop functional gradient-based learning rules for kernelized attention layers, based on radial basis function (RBF) and softmax-like kernels - establishing the principled \"retrieval-centric deep learning\" (RCDL) paradigm. Empirically, we demonstrate the promising performance and learning-efficiency of RCDL on image classification and synthetic teacher-",
-          "pub_date": "2026-10-01T20:00:00.000Z",
+          "title": "Reasoning-Informed Visual Editing",
+          "link": "https://arxiv.org/abs/2610.12343",
+          "content": "Large Multi-modality Models (LMMs) have made significant progress in visual understanding and generation, but still face challenges in visual editing, particularly in following complex instructions, preserving appearance consistency, and supporting flexible input formats. To study this gap, we introduce RISEBench, the first benchmark for evaluating Reasoning-Informed viSual Editing (RISE), and extend it to RISEBench++, a more comprehensive and fine-grained benchmark for this emerging task. RISEBench++ extends the taxonomy into a hierarchical scheme spanning six reasoning dimensions: Temporal, Causal, Spatial, Logical, and Counterfactual Reasoning, together with Hybrid Reasoning integrating multiple reasoning types across multi-turn edits. These dimensions are further decomposed into 12 subcategories and 65 fine-grained task types. We expand input formats to include multi-image conditioning and scale the benchmark to 1000 human-annotated test cases, released in English and Chinese. We also improve our evaluation framework, assessing Instruction Reasoning, Appearance Consistency, and Visual Plausibility with human judges and an LMM-as-a-judge approach for more reliable and calibrated",
+          "pub_date": "2026-10-07T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1412,
-      "total_valid": 925,
+      "total_valid": 927,
       "total_candidates": 12
     },
     "vaccine": {
@@ -524,21 +524,6 @@
           "word_count": 1200
         },
         {
-          "id": 2032,
-          "source": "Nature Reviews Bioengineering",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Anticipatory intelligence in clinical microbiology",
-          "link": "https://www.nature.com/articles/s44222-026-00502-x",
-          "content": "Nature Reviews Bioengineering, Published online: 08 October 2026; doi:10.1038/s44222-026-00502-x Clinical microbiology needs an artificial intelligence system that predicts pathogen evolution and resistance to enable prevention. Laboratories should connect forecasts to confirmatory experiments and defined actions, then test them prospectively across time and populations, as well as govern false alarms, model updates and inequitable performance as carefully as diagnostic errors.",
-          "pub_date": "2026-10-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 482
-        },
-        {
           "id": 1991,
           "source": "Nature Chemical Biology",
           "section": "synbio",
@@ -589,9 +574,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 117,
-      "total_valid": 22,
-      "total_candidates": 10
+      "total_raw": 116,
+      "total_valid": 21,
+      "total_candidates": 9
     },
     "cross": {
       "candidates": [
@@ -656,21 +641,6 @@
           "word_count": 504
         },
         {
-          "id": 2032,
-          "source": "Nature Reviews Bioengineering",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Anticipatory intelligence in clinical microbiology",
-          "link": "https://www.nature.com/articles/s44222-026-00502-x",
-          "content": "Nature Reviews Bioengineering, Published online: 08 October 2026; doi:10.1038/s44222-026-00502-x Clinical microbiology needs an artificial intelligence system that predicts pathogen evolution and resistance to enable prevention. Laboratories should connect forecasts to confirmatory experiments and defined actions, then test them prospectively across time and populations, as well as govern false alarms, model updates and inequitable performance as carefully as diagnostic errors.",
-          "pub_date": "2026-10-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 482
-        },
-        {
           "id": 1551,
           "source": "The Lancet",
           "section": "cross",
@@ -686,7 +656,7 @@
           "word_count": 356
         },
         {
-          "id": 2041,
+          "id": 2040,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -744,6 +714,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 208
+        },
+        {
+          "id": 1523,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Why smart glasses are about to create a major privacy crisis",
+          "link": "https://www.nature.com/articles/d41586-026-03131-x",
+          "content": "Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-03131-x As AI wearables become discreet, cheap and mainstream, they risk normalizing non-consensual recording in everyday spaces.",
+          "pub_date": "2026-10-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 195
         }
       ],
       "quota": {
@@ -751,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 45,
-      "total_valid": 42,
+      "total_raw": 44,
+      "total_valid": 41,
       "total_candidates": 10
     },
     "china": {
@@ -784,21 +769,6 @@
           "word_count": 563
         },
         {
-          "id": 2058,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "SAP and Samsung Shift Stablecoin Competition From Issuance to Distribution",
-          "link": "https://www.pymnts.com/blockchain/2026/sap-and-samsung-shift-stablecoin-competition-from-issuance-to-distribution/",
-          "content": "The stablecoin industry has traditionally measured progress through issuance, transaction volume and blockchain activity. The headlines this week, however, point to another metric that may matter just as much: access to existing customers. SAP is bringing stablecoin settlement into enterprise software. Samsung is expanding access to USDC through mobile wallets. FinTechs are seeking federal banking [&#8230;] The post SAP and Samsung Shift Stablecoin Competition From Issuance to Distribution appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 08 Oct 2026 21:07:37 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 525
-        },
-        {
           "id": 2053,
           "source": "PYMNTS.com",
           "section": "payment",
@@ -814,7 +784,7 @@
           "word_count": 522
         },
         {
-          "id": 2083,
+          "id": 2079,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +799,7 @@
           "word_count": 514
         },
         {
-          "id": 2059,
+          "id": 2058,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +814,22 @@
           "word_count": 477
         },
         {
-          "id": 2072,
+          "id": 2048,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "OCC and Fed Fine American Express $350 Million Over AML Deficiencies",
+          "link": "https://www.pymnts.com/legal/aml/2026/occ-and-fed-fine-american-express-350-million-over-aml-deficiencies/",
+          "content": "American Express takes its responsibility to fight financial crime seriously and is committed to addressing concerns outlined by banking regulators, Chairman and CEO Stephen J. Squeri said in a statement released Thursday (Oct. 8). Squeri issued the statement on the same day the Office of the Comptroller of the Currency (OCC) and the Federal Reserve [&#8230;] The post OCC and Fed Fine American Express $350 Million Over AML Deficiencies appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 09 Oct 2026 02:52:02 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 470
+        },
+        {
+          "id": 2068,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 365
         },
         {
-          "id": 2109,
+          "id": 2105,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 346
         },
         {
-          "id": 2088,
+          "id": 2084,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 339
         },
         {
-          "id": 2108,
+          "id": 2104,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 314
         },
         {
-          "id": 2110,
+          "id": 2106,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 303
         },
         {
-          "id": 2084,
+          "id": 2080,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 273
         },
         {
-          "id": 2087,
+          "id": 2083,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 188
         },
         {
-          "id": 2091,
+          "id": 2087,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 159
         },
         {
-          "id": 2062,
+          "id": 2060,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 149
         },
         {
-          "id": 2064,
+          "id": 2062,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,7 @@
           "word_count": 138
         },
         {
-          "id": 73,
+          "id": 82,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1074,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 249,
+      "total_raw": 246,
       "total_valid": 55,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2285,
-    "dup": 516,
+    "total_raw": 2281,
+    "dup": 511,
     "nocontent": 403,
     "noise": 7
   }
