@@ -110,7 +110,7 @@
           "word_count": 246
         },
         {
-          "id": 68,
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 71,
+          "id": 73,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1411,
-      "total_valid": 919,
+      "total_valid": 920,
       "total_candidates": 12
     },
     "vaccine": {
@@ -524,6 +524,21 @@
           "word_count": 1200
         },
         {
+          "id": 2032,
+          "source": "Nature Reviews Bioengineering",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Anticipatory intelligence in clinical microbiology",
+          "link": "https://www.nature.com/articles/s44222-026-00502-x",
+          "content": "Nature Reviews Bioengineering, Published online: 08 October 2026; doi:10.1038/s44222-026-00502-x Clinical microbiology needs an artificial intelligence system that predicts pathogen evolution and resistance to enable prevention. Laboratories should connect forecasts to confirmatory experiments and defined actions, then test them prospectively across time and populations, as well as govern false alarms, model updates and inequitable performance as carefully as diagnostic errors.",
+          "pub_date": "2026-10-08",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 482
+        },
+        {
           "id": 1991,
           "source": "Nature Chemical Biology",
           "section": "synbio",
@@ -574,9 +589,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 116,
-      "total_valid": 21,
-      "total_candidates": 9
+      "total_raw": 117,
+      "total_valid": 22,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
@@ -641,6 +656,21 @@
           "word_count": 504
         },
         {
+          "id": 2032,
+          "source": "Nature Reviews Bioengineering",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Anticipatory intelligence in clinical microbiology",
+          "link": "https://www.nature.com/articles/s44222-026-00502-x",
+          "content": "Nature Reviews Bioengineering, Published online: 08 October 2026; doi:10.1038/s44222-026-00502-x Clinical microbiology needs an artificial intelligence system that predicts pathogen evolution and resistance to enable prevention. Laboratories should connect forecasts to confirmatory experiments and defined actions, then test them prospectively across time and populations, as well as govern false alarms, model updates and inequitable performance as carefully as diagnostic errors.",
+          "pub_date": "2026-10-08",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 482
+        },
+        {
           "id": 1551,
           "source": "The Lancet",
           "section": "cross",
@@ -656,7 +686,7 @@
           "word_count": 356
         },
         {
-          "id": 2040,
+          "id": 2041,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -714,21 +744,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 208
-        },
-        {
-          "id": 1523,
-          "source": "Nature",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Why smart glasses are about to create a major privacy crisis",
-          "link": "https://www.nature.com/articles/d41586-026-03131-x",
-          "content": "Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-03131-x As AI wearables become discreet, cheap and mainstream, they risk normalizing non-consensual recording in everyday spaces.",
-          "pub_date": "2026-10-06",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 195
         }
       ],
       "quota": {
@@ -736,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 44,
-      "total_valid": 41,
+      "total_raw": 45,
+      "total_valid": 42,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2048,
+          "id": 2051,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 563
         },
         {
-          "id": 2054,
+          "id": 2057,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 525
         },
         {
-          "id": 2049,
+          "id": 2052,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 522
         },
         {
-          "id": 2081,
+          "id": 2082,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 514
         },
         {
-          "id": 2058,
+          "id": 2059,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 477
         },
         {
-          "id": 2070,
+          "id": 2071,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 365
         },
         {
-          "id": 2107,
+          "id": 2108,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 346
         },
         {
-          "id": 2086,
+          "id": 2087,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 339
         },
         {
-          "id": 2106,
+          "id": 2107,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 314
         },
         {
-          "id": 2108,
+          "id": 2109,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 303
         },
         {
-          "id": 2082,
+          "id": 2083,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 273
         },
         {
-          "id": 2085,
+          "id": 2086,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 188
         },
         {
-          "id": 2089,
+          "id": 2090,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 159
         },
         {
-          "id": 2060,
+          "id": 2061,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 149
         },
         {
-          "id": 2062,
+          "id": 2063,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1065,7 +1080,7 @@
     }
   },
   "meta": {
-    "total_raw": 2283,
+    "total_raw": 2284,
     "dup": 522,
     "nocontent": 402,
     "noise": 7
