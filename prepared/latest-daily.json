@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 56,
+          "id": 55,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -18,6 +18,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 405
+        },
+        {
+          "id": 3,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "link": "https://openai.com/index/legalon-halves-codex-costs",
+          "content": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+          "pub_date": "Thu, 08 Oct 2026 12:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 159
         },
         {
           "id": 1,
@@ -35,7 +50,7 @@
           "word_count": 142
         },
         {
-          "id": 7,
+          "id": 8,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -50,22 +65,7 @@
           "word_count": 142
         },
         {
-          "id": 3,
-          "source": "OpenAI News",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Disrupting AI-enabled “false front” operations",
-          "link": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-          "content": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-          "pub_date": "Thu, 08 Oct 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 137
-        },
-        {
-          "id": 91,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 276
         },
         {
-          "id": 90,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 254
         },
         {
-          "id": 94,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,22 @@
           "word_count": 246
         },
         {
-          "id": 71,
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "LongTake: Learning to Sustain Dynamics in Long-Horizon Video Generation",
+          "link": "https://arxiv.org/abs/2609.38562",
+          "content": "World models, game simulators, and long-take video creation require coherent scene evolution and sustained dynamics over extended durations. Autoregressive (AR) video diffusion provides a natural framework for long-horizon generation, yet extended rollouts often become near-static or lose visual quality. We hypothesize that these failures reflect the limited guidance provided by short-video supervision on how ongoing scene dynamics develops over longer durations. This motivates us to introduce LongTake, a two-stage training pipeline built around Long-Horizon Teacher Forcing (TF) on curated real long videos. Long-Horizon TF trains the AR model to predict later frames conditioned on long ground-truth video prefixes, extending direct supervision beyond the short training horizon. This supervision is designed to help the model sustain dynamics and preserve visual quality during long-horizon generation. Our central finding is that this training stage strengthens direct initialization for distribution matching distillation (DMD) under student self-rollout, without the intermediate few-step distillation stage used in standard pipelines. Under the same five-second DMD training setup, our i",
+          "pub_date": "2026-09-28T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 73,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "RoboJEPA: Scaling Robotic Latent World Models",
-          "link": "https://arxiv.org/abs/2610.10515",
-          "content": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to",
-          "pub_date": "2026-10-06T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1308,
+          "id": 1307,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1048
         },
         {
-          "id": 1312,
+          "id": 1311,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1412,
-      "total_valid": 918,
+      "total_raw": 1411,
+      "total_valid": 919,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1757,
+          "id": 1741,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1758,
+          "id": 1742,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1759,
+          "id": 1743,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1886,
+          "id": 1870,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 384
         },
         {
-          "id": 1883,
+          "id": 1867,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 372
         },
         {
-          "id": 1582,
+          "id": 1578,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 361
         },
         {
-          "id": 1559,
+          "id": 1555,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 356
         },
         {
-          "id": 1882,
+          "id": 1866,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 334
         },
         {
-          "id": 1837,
+          "id": 1821,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 208
         },
         {
-          "id": 1667,
+          "id": 1662,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 192
         },
         {
-          "id": 1836,
+          "id": 1820,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 192
         },
         {
-          "id": 1475,
+          "id": 1471,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 178
         },
         {
-          "id": 1647,
+          "id": 1642,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 165
         },
         {
-          "id": 1534,
+          "id": 1530,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 88
         },
         {
-          "id": 1546,
+          "id": 1542,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 530,
-      "total_valid": 384,
+      "total_raw": 511,
+      "total_valid": 372,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1972,
+          "id": 1950,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 221
         },
         {
-          "id": 2000,
+          "id": 1978,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 207
         },
         {
-          "id": 1999,
+          "id": 1977,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 199
         },
         {
-          "id": 2023,
+          "id": 1999,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2024,
+          "id": 2000,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 2025,
+          "id": 2001,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,22 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 2060,
-          "source": "Nature Reviews Bioengineering",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Anticipatory intelligence in clinical microbiology",
-          "link": "https://www.nature.com/articles/s44222-026-00502-x",
-          "content": "Nature Reviews Bioengineering, Published online: 08 October 2026; doi:10.1038/s44222-026-00502-x Clinical microbiology needs an artificial intelligence system that predicts pathogen evolution and resistance to enable prevention. Laboratories should connect forecasts to confirmatory experiments and defined actions, then test them prospectively across time and populations, as well as govern false alarms, model updates and inequitable performance as carefully as diagnostic errors.",
-          "pub_date": "2026-10-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 482
-        },
-        {
-          "id": 2015,
+          "id": 1991,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +539,7 @@
           "word_count": 345
         },
         {
-          "id": 2011,
+          "id": 1989,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +554,7 @@
           "word_count": 1168
         },
         {
-          "id": 2010,
+          "id": 1988,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 125,
-      "total_valid": 22,
-      "total_candidates": 10
+      "total_raw": 116,
+      "total_valid": 21,
+      "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 1770,
+          "id": 1754,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 2024,
+          "id": 2000,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 2025,
+          "id": 2001,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1556,
+          "id": 1552,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -656,22 +641,7 @@
           "word_count": 504
         },
         {
-          "id": 2060,
-          "source": "Nature Reviews Bioengineering",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Anticipatory intelligence in clinical microbiology",
-          "link": "https://www.nature.com/articles/s44222-026-00502-x",
-          "content": "Nature Reviews Bioengineering, Published online: 08 October 2026; doi:10.1038/s44222-026-00502-x Clinical microbiology needs an artificial intelligence system that predicts pathogen evolution and resistance to enable prevention. Laboratories should connect forecasts to confirmatory experiments and defined actions, then test them prospectively across time and populations, as well as govern false alarms, model updates and inequitable performance as carefully as diagnostic errors.",
-          "pub_date": "2026-10-08",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 482
-        },
-        {
-          "id": 1555,
+          "id": 1551,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +656,7 @@
           "word_count": 356
         },
         {
-          "id": 2069,
+          "id": 2040,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +671,7 @@
           "word_count": 249
         },
         {
-          "id": 1474,
+          "id": 1470,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +686,7 @@
           "word_count": 222
         },
         {
-          "id": 1477,
+          "id": 1473,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +701,7 @@
           "word_count": 222
         },
         {
-          "id": 1837,
+          "id": 1821,
           "source": "npj Vaccines",
           "section": "cross",
           "tier": "T1",
@@ -744,6 +714,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 208
+        },
+        {
+          "id": 1523,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Why smart glasses are about to create a major privacy crisis",
+          "link": "https://www.nature.com/articles/d41586-026-03131-x",
+          "content": "Nature, Published online: 06 October 2026; doi:10.1038/d41586-026-03131-x As AI wearables become discreet, cheap and mainstream, they risk normalizing non-consensual recording in everyday spaces.",
+          "pub_date": "2026-10-06",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 195
         }
       ],
       "quota": {
@@ -751,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 48,
-      "total_valid": 45,
+      "total_raw": 44,
+      "total_valid": 41,
       "total_candidates": 10
     },
     "china": {
@@ -769,12 +754,27 @@
     "payment": {
       "candidates": [
         {
-          "id": 2081,
+          "id": 2048,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "SAP and Samsung Shift Stablecoin Competition From Issuance to Distribution",
+          "title": "CFOs Risk Losing Control of Working Capital One Sales Contract at a Time",
+          "link": "https://www.pymnts.com/loans/working-capital/2026/cfos-risk-losing-control-of-working-capital-one-sales-contract-at-a-time/",
+          "content": "The biggest threat to a company’s working capital strategy is now commonly hiding in a perfectly drawn up sales contract, not an overdue invoice. Finance departments can automate collections, optimize cash forecasts and accelerate reconciliation. But when commercial teams negotiate longer payment terms to win customers, the cost of financing growth gets decided before treasury enters the conversation. Longer payment terms have become an [&#8230;] The post CFOs Risk Losing Control of Working Capital One Sales Contract at a Time appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 08 Oct 2026 23:27:34 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 563
+        },
+        {
+          "id": 2054,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "SAP and Samsung Shift Stablecoin Competition From Issuance to Distribution",
           "link": "https://www.pymnts.com/blockchain/2026/sap-and-samsung-shift-stablecoin-competition-from-issuance-to-distribution/",
           "content": "The stablecoin industry has traditionally measured progress through issuance, transaction volume and blockchain activity. The headlines this week, however, point to another metric that may matter just as much: access to existing customers. SAP is bringing stablecoin settlement into enterprise software. Samsung is expanding access to USDC through mobile wallets. FinTechs are seeking federal banking [&#8230;] The post SAP and Samsung Shift Stablecoin Competition From Issuance to Distribution appeared first on PYMNTS.com .",
           "pub_date": "Thu, 08 Oct 2026 21:07:37 +0000",
@@ -784,7 +784,22 @@
           "word_count": 525
         },
         {
-          "id": 2110,
+          "id": 2049,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "NFL Urges Supreme Court to Allow State Oversight of Prediction Markets",
+          "link": "https://www.pymnts.com/economy/markets/2026/nfl-urges-supreme-court-to-allow-state-oversight-of-prediction-markets/",
+          "content": "The National Football League (NFL) told the Supreme Court that the league wants local gambling regulators to oversee prediction markets, CoinBase reported Thursday (Oct. 8). The NFL submitted an amicus brief to the U.S. Supreme Court Thursday, according to the Supreme Court docket for a case in which Mary Jo Flaherty, interim director of the New Jersey Division of Gaming Enforcement, and others are [&#8230;] The post NFL Urges Supreme Court to Allow State Oversight of Prediction Markets appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 08 Oct 2026 23:13:56 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 522
+        },
+        {
+          "id": 2081,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 514
         },
         {
-          "id": 2087,
+          "id": 2058,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 477
         },
         {
-          "id": 2098,
+          "id": 2070,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 365
         },
         {
-          "id": 2137,
+          "id": 2107,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 346
         },
         {
-          "id": 2115,
+          "id": 2086,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 339
         },
         {
-          "id": 2136,
+          "id": 2106,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 314
         },
         {
-          "id": 2138,
+          "id": 2108,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 303
         },
         {
-          "id": 2111,
+          "id": 2082,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 273
         },
         {
-          "id": 2114,
+          "id": 2085,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 188
         },
         {
-          "id": 2118,
+          "id": 2089,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 159
         },
         {
-          "id": 2089,
+          "id": 2060,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 149
         },
         {
-          "id": 2091,
+          "id": 2062,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 138
         },
         {
-          "id": 328,
+          "id": 326,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 346,
+          "id": 344,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 445,
+          "id": 443,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 511,
+          "id": 509,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 640,
+          "id": 638,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1037,36 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 918,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Robust Decentralized Fairness Auditing",
-          "link": "https://arxiv.org/abs/2610.10199",
-          "content": "arXiv:2610.10199v1 Announce Type: new Abstract: Emerging legislation requires large language models (LLMs) to be audited for compliance with regulatory standards, particularly fairness. Such black-box audits typically assume a single auditor with access to a large, representative set of queries. In practice, it can be difficult for an auditor to obtain such a query set, but multiple auditors can together cover the relevant demographic groups by auditing the LLM collaboratively with their individual query sets. However, relying on multiple auditors raises a fundamental trust problem, as they may act on behalf of the LLM provider to portray a misleading appearance of fairness, i.e., fairwashing. We propose Auditopus, a novel approach for robust decentralized fairness auditing. In Auditopus, auditing proceeds in rounds without a central server. In each round, every auditor issues a fixed number of queries to the LLM, and sends only cumulative statistics vectors of its query results to other auditors instead of sensitive queries in clear. The fairness of the audited LLM is then estimated by aggregating all the vectors. We show theoretically and empirically that even a single adversaria",
-          "pub_date": "Thu, 08 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1042,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Scalable Logistic Gaussian Process Density Regression with Kinetic Langevin Sampling",
-          "link": "https://arxiv.org/abs/2610.09591",
-          "content": "arXiv:2610.09591v1 Announce Type: cross Abstract: Conditional density estimation targets the full distribution of a response given covariates, as required, for example, for per-galaxy photometric redshifts. We develop a scalable Bayesian estimator based on the logistic Gaussian process. The log conditional density has a separable covariance: a Mat\\'ern kernel along the response, represented in a truncated Fourier basis on a circle, and a covariate kernel represented by Nystr\\\"om features, which accommodate non-stationary kernels with input-dependent amplitudes and length scales. Instead of a Laplace or variational approximation, we sample the latent field of this finite-feature model. Given the hyperparameters, its posterior is strongly log-concave with a uniformly bounded Hessian, and we draw from it by simulating kinetic Langevin dynamics with symmetric minibatch splitting in Kronecker-whitened coordinates. Marginal-likelihood gradients follow from Fisher's identity as posterior expectations. Under the conditions of our analysis their bias is controlled by the sampler's step size and run length, and the predictive averages over the non-Gaussian latent posterior instead of a Gauss",
-          "pub_date": "Thu, 08 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1074,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 246,
-      "total_valid": 53,
+      "total_raw": 247,
+      "total_valid": 52,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2311,
-    "dup": 535,
-    "nocontent": 404,
+    "total_raw": 2283,
+    "dup": 522,
+    "nocontent": 402,
     "noise": 7
   }
 }
