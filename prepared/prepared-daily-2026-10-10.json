@@ -95,7 +95,22 @@
           "word_count": 236
         },
         {
-          "id": 69,
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "The Lattice of Transition Laws",
+          "link": "https://arxiv.org/abs/2610.11216",
+          "content": "Diffusion and autoregression (AR) have long been seen as different categories of generative models, with diffusion specialising in continuous fields and AR specialising in discrete tokens. Recent work seeks to combine the advantages of the two models, and each hybrid fixes its decoding schedule by design. In this paper, we ask whether the performance of decoding schedules of one model can be predicted before decoding at a fixed number of steps. We describe diffusion, AR, and models in between as paths on one corruption lattice, and define the cost of a schedule as the dependence its parallel steps discard. The cost shows that the fewest steps of a zero-cost schedule are set by the geometry of the data, in the same way for tokens and for continuous fields. In particular, for data that are Markov on a graph and dependent along its paths, the fewest steps equal the graph's treedepth, which is logarithmic in the length of a sequence and linear in the side length of a grid. With fewer steps than the treedepth, every schedule pays a positive cost, whose ranking we predict before decoding with a kernel of pairwise dependence estimated from pretrained weights. Across text generation, image",
+          "pub_date": "2026-10-07T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 70,
+          "id": 71,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,22 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 73,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
-          "link": "https://arxiv.org/abs/2606.03335",
-          "content": "GPU-parallel simulation provides abundant robot interaction, but existing benchmarks rarely combine this scale with heterogeneous manipulation tasks and standardized multi-task RL evaluation. We introduce Hebero (Heterogeneous Benchmark for Robot Learning), a GPU-parallel Isaac Lab benchmark that enables efficient joint training and evaluation of a single policy across all 40 heterogeneous tasks. Scaling experiments show that increasing parallel replicas per task improves success under a fixed wall-clock budget. To support learning with sparse rewards and limited demonstrations, we propose Demonstration-Guided Policy Optimization (DGPO), which reuses demonstrations for dense tracking rewards and asymmetric value learning. Its shared stack supports controlled comparisons of learner-specific demonstration interfaces within PPO. Within DGPO framework, we introduce IW-ABC, which uses a lightweight per-task learning progress signal to coordinate adaptive behavior cloning (ABC), relaxing demonstration guidance with task progress, and importance weighting (IW), emphasizing lagging tasks in PPO updates. With 50 demonstrations per task, IW-ABC achieves 90.1% state-input mean success, outper",
-          "pub_date": "2026-10-05T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1321,
+          "id": 1320,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1323,
+          "id": 1322,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1199
         },
         {
-          "id": 1324,
+          "id": 1323,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1439,
+      "total_raw": 1438,
       "total_valid": 957,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1776,
+          "id": 1774,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1777,
+          "id": 1775,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1779,
+          "id": 1777,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1608,
+          "id": 1606,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 444
         },
         {
-          "id": 1912,
+          "id": 1910,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 317
         },
         {
-          "id": 1887,
+          "id": 1885,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 209
         },
         {
-          "id": 1862,
+          "id": 1860,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 181
         },
         {
-          "id": 1873,
+          "id": 1871,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 68
         },
         {
-          "id": 1877,
+          "id": 1875,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 68
         },
         {
-          "id": 1831,
+          "id": 1829,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 427
         },
         {
-          "id": 1855,
+          "id": 1853,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 421
         },
         {
-          "id": 1847,
+          "id": 1845,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 418
         },
         {
-          "id": 1941,
+          "id": 1938,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 194
         },
         {
-          "id": 1445,
+          "id": 1444,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 190
         },
         {
-          "id": 1676,
+          "id": 1674,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 533,
-      "total_valid": 382,
+      "total_raw": 531,
+      "total_valid": 381,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2028,
+          "id": 2025,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 180
         },
         {
-          "id": 2029,
+          "id": 2026,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 176
         },
         {
-          "id": 2002,
+          "id": 1999,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 162
         },
         {
-          "id": 2056,
+          "id": 2053,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2057,
+          "id": 2054,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 2062,
+          "id": 2059,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 2091,
+          "id": 2088,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 367
         },
         {
-          "id": 2048,
+          "id": 2045,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 269
         },
         {
-          "id": 2036,
+          "id": 2033,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 2037,
+          "id": 2034,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 2038,
+          "id": 2035,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -611,7 +611,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1608,
+          "id": 1606,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 444
         },
         {
-          "id": 1913,
+          "id": 1911,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 404
         },
         {
-          "id": 1695,
+          "id": 1693,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 301
         },
         {
-          "id": 1488,
+          "id": 1487,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 193
         },
         {
-          "id": 2100,
+          "id": 2097,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 186
         },
         {
-          "id": 1697,
+          "id": 1695,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 181
         },
         {
-          "id": 1492,
+          "id": 1491,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 169
         },
         {
-          "id": 1515,
+          "id": 1514,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 152
         },
         {
-          "id": 2104,
+          "id": 2101,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 131
         },
         {
-          "id": 2103,
+          "id": 2100,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2115,
+          "id": 2112,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 544
         },
         {
-          "id": 2109,
+          "id": 2106,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 442
         },
         {
-          "id": 2142,
+          "id": 2138,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 375
         },
         {
-          "id": 2128,
+          "id": 2125,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 258
         },
         {
-          "id": 2119,
+          "id": 2116,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 248
         },
         {
-          "id": 2145,
+          "id": 2141,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 185
         },
         {
-          "id": 2126,
+          "id": 2123,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 184
         },
         {
-          "id": 2118,
+          "id": 2115,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 144
         },
         {
-          "id": 2130,
+          "id": 2127,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 143
         },
         {
-          "id": 2129,
+          "id": 2126,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 137
         },
         {
-          "id": 1321,
+          "id": 1320,
           "source": "Simon Willison",
           "section": "payment",
           "tier": "T2",
@@ -1089,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 239,
+      "total_raw": 240,
       "total_valid": 51,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2332,
+    "total_raw": 2330,
     "dup": 528,
-    "nocontent": 401,
+    "nocontent": 400,
     "noise": 7
   }
 }
