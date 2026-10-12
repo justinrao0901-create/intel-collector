@@ -50,29 +50,14 @@
           "word_count": 102
         },
         {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "SoloQ: Calibration-Free Quantization for Diffusion Language Models",
-          "link": "https://arxiv.org/abs/2610.07121",
-          "content": "Diffusion large language models dLLMs) have emerged as a promising alternative to autoregressive language models through bidirectional diffusion-based token generation. However, their growing model sizes and high inference costs make efficient deployment challenging: full-sequence denoising repeatedly invokes compute-intensive forward passes, while block-diffusion models additionally introduce a memory-intensive KV-cache. Low-bit weight-activation quantization is therefore attractive, yet existing dLLM post-training quantization methods rely on calibration data despite activation distributions shifting across masking states and denoising steps. We present SoloQ, a calibration-free quantization framework that maps weights and activations into a normalized rotated basis with a predictable marginal distribution, enabling data-independent quantization. SoloQ combines a structured K-RPBH rotation with a lightweight rescaling correction for calibration-free quantization. Its predictable post-rotation distribution supports both distribution-matched codebooks and hardware-native NVFP4. For block-diffusion models, SoloQ further applies commit-time KV-cache quantization to compress persisten",
-          "pub_date": "2026-10-04T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "ProgramGym: Scaling Training Environments for Long-Horizon Program Reproduction Agents",
-          "link": "https://arxiv.org/abs/2610.13395",
-          "content": "Coding agents are increasingly used to build programs from scratch as software engineers do rather than to resolve issues within a repository or to generate a repository from a given requirements document. However, scalable verifiable training environments that force agents to discover what is required and to decide how the system should be designed remain scarce. Moreover, existing agent workflows also cannot sustain long-horizon development in which the agent explores the reference program before implementation. To address these challenges, we introduce ProgramGym, a framework consisting of Program-Env and Program-Agent for scalable training environments of long-horizon program reproduction agents. Specifically, Program-Env constructs verifiable training environments from repositories through a feedback-driven loop that repairs runtime sandbox builds and the quality of black-box tests. Using this novel pipeline, we obtain 1,648 training environments spanning C, C++, Go, and Rust. Program-Agent combines a role-isolated workflow of analysis, implementation, and review with revision management for compilation checks and failure recovery. Experiments on ProgramBench show that both Pr",
+          "title": "Rethinking Relative Policy Differences Transfer of On-Policy Distillation",
+          "link": "https://arxiv.org/abs/2610.13205",
+          "content": "On-policy distillation (OPD) trains a target policy on its own rollouts using token-level supervision from a stronger teacher, but typically relies on the teacher being substantially more capable than the target. Recent work relaxes this requirement by transferring the relative policy difference between an expert and a reference policy rather than the expert's absolute distribution. Yet it remains unclear which differences provide useful supervision and which targets can benefit from them. We develop a unified view in which the log-probability ratio between a proxy expert and a proxy reference defines an implicit reward for KL-regularized policy optimization. This formulation induces an on-policy update for the target, recovers conventional OPD as a special case, and enables any-to-any transfer across models that differ in scale, training stage or generation. Our systematic experiments yield three findings. First, a stronger expert is not necessarily a better source of supervision: differences induced by task-specific training, including reinforcement learning and supervised fine-tuning, transfer consistently, whereas those arising from model scale alone transfer weakly or not at a",
           "pub_date": "2026-10-08T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -80,22 +65,37 @@
           "word_count": 1200
         },
         {
-          "id": 79,
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction",
-          "link": "https://arxiv.org/abs/2610.10549",
-          "content": "Tool-calling agents have become central to enterprise AI, yet training and evaluating them at scale remains severely constrained due to business and legal restrictions on enterprise systems, data, and database schemas. Tabular data synthesis offers a natural alternative, but its effectiveness is fundamentally limited by structural validity and schema availability, while procedure-based approaches yield the opposite weakness, typically lacking distributional fidelity without per-domain authoring. We introduce **Synthesis Through Simulation** (STS), a **schema--free** data synthesis paradigm in which an LLM agent generates data by executing operations against policy-enforcing APIs within simulated enterprise environments. Because data is generated through the same environment that defines what is valid, STS guarantees structural validity by construction while decoupling validity enforcement from distribution modeling, allowing each to be addressed independently. The **Generalist Populator** (GP), STS's domain-agnostic agent, addresses the remaining challenges of distributional fidelity and synthesis scalability: GP achieves **0.88** average marginal fidelity and **100\\% constraint sa",
-          "pub_date": "2026-09-23T20:00:00.000Z",
+          "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
+          "link": "https://arxiv.org/abs/2610.13021",
+          "content": "Continual learning requires models to accumulate past experience and transfer it to new tasks. Despite substantial research on continual learning, existing work remains largely confined to non-embodied settings, without extending to embodied environments. To address this gap, we introduce EmbodiedCLBench, the first benchmark in embodied simulation for evaluating the continual learning capability of self-evolving agents. With compositional generalization as the core evaluation principle, our benchmark evaluates whether agents can first learn from basic tasks and then recombine the acquired skills to solve complex, unseen advanced tasks. Based on EmbodiedCLBench, we conduct extensive experiments across multiple agent harnesses and learning methods, revealing consistent limitations and distinctive behaviors. Our results show that while advanced tasks can be hardly solved under zero-shot setting, the experience from basic tasks enables consistent improvement. Such benefit from the experience remains stable even if the task complexity increases. However, this improvement does not scale accordingly with the number of learning samples, and current agents cannot extract meaningful informat",
+          "pub_date": "2026-10-08T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 145,
+          "id": 70,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Judging in Latent Space: Efficient Generative Reward Modeling via Semantics-Preserving Compression",
+          "link": "https://arxiv.org/abs/2610.09788",
+          "content": "Reward modeling often requires jointly representing and reasoning over multiple evaluation criteria, yet verbalizing this process token by token can incur substantial inference cost. Recent work on latent reasoning suggests that continuous states may support this computation more compactly. We introduce LatentGRM, a latent evaluation framework built on semantic chunking, compression, and reconstruction. By using the structure of rubric-guided evaluations to guide compression, LatentGRM learns compact continuous trajectories that support autonomous pairwise judgments without generating textual assessments. A separate interpreter reconstructs evaluation text from these trajectories, providing an offline view of the information retained under compression. Under matched training data and backbones, LatentGRM achieves competitive aggregate preference accuracy relative to explicit Supervised Fine-Tuning (SFT) judges at both 4B and 8B scales. Across four benchmark domains, LatentGRM-8B compresses evaluation trajectories by 8.9--9.2x and reduces total judge inference time by 6.1--7.0x at vote@5. Controlled rubric interventions show that criterion-dependent preference information is carried",
+          "pub_date": "2026-10-07T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 144,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 484
         },
         {
-          "id": 144,
+          "id": 143,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 418
         },
         {
-          "id": 151,
+          "id": 150,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 413
         },
         {
-          "id": 118,
+          "id": 117,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 150
         },
         {
-          "id": 124,
+          "id": 123,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 255,
-      "total_valid": 31,
+      "total_raw": 254,
+      "total_valid": 34,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 566,
+          "id": 565,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 902
         },
         {
-          "id": 557,
+          "id": 556,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 891
         },
         {
-          "id": 565,
+          "id": 564,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 823
         },
         {
-          "id": 639,
+          "id": 638,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 178
         },
         {
-          "id": 575,
+          "id": 574,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 416
         },
         {
-          "id": 621,
+          "id": 620,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 346
         },
         {
-          "id": 609,
+          "id": 608,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 343
         },
         {
-          "id": 258,
+          "id": 257,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 600
         },
         {
-          "id": 361,
+          "id": 360,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 487
         },
         {
-          "id": 675,
+          "id": 674,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 478
         },
         {
-          "id": 665,
+          "id": 664,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 442
         },
         {
-          "id": 283,
+          "id": 282,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 436
         },
         {
-          "id": 297,
+          "id": 296,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 430
         },
         {
-          "id": 366,
+          "id": 365,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 419
         },
         {
-          "id": 360,
+          "id": 359,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 761,
+          "id": 760,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 244
         },
         {
-          "id": 762,
+          "id": 761,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 164
         },
         {
-          "id": 794,
+          "id": 793,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 143
         },
         {
-          "id": 836,
+          "id": 835,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1199
         },
         {
-          "id": 837,
+          "id": 836,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 825,
+          "id": 824,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -536,7 +536,22 @@
     "cross": {
       "candidates": [
         {
-          "id": 510,
+          "id": 498,
+          "source": "bioRxiv Immunology",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Intracellular complement Factor B couples inflammatory sensing to metabolism, chromatin regulation and maladaptive tissue repair",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.10.04.756581v1?rss=1",
+          "content": "Inflammatory signals are broadly conserved, yet how tissue context converts them into programs of recovery or maladaptive repair remains unclear. Using kidney injury as a model of inflammation-to-repair transitions, we identify an injury-induced proximal-tubule complement program in which cell-intrinsic complement proteins are repurposed across subcellular compartments to couple inflammation to metabolic and chromatin regulation and promote maladaptive fibrotic remodeling. Mechanistically, myeloid-derived IL-1b; signals through IL-1R1 on injured tubular cells to recruit NF-kB and AP-1 to C3 and Cfb, coordinately inducing complement component 3 (C3) and Factor B (FB). Cytoplasmic FB drives cleavage-activation of cell-intrinsic C3, which supports tubular cell mitochondrial metabolic adaptation to stress and accumulation of C3aR-expressing macrophages around injured tubules. Nuclear FB, on the other hand, binds chromatin through a previously unrecognized DNA-binding interface and mediates histone H3 proteolysis and the preferential remodeling of chromatin promotors enriched in transcriptional programs relevant to maladaptive repair. Key features of this injury-associated C3-FB respons",
+          "pub_date": "2026-10-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 512,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +566,7 @@
           "word_count": 1200
         },
         {
-          "id": 522,
+          "id": 524,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -566,22 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 525,
-          "source": "bioRxiv Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "C3a receptor signalling in ObRb-expressing neurons promotes leptin resistance and obesity-associated cardiac remodelling",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.10.05.756676v1?rss=1",
-          "content": "Obesity is associated with hypothalamic inflammation, leptin resistance and increased cardiometabolic risk, but the neuroimmune signals linking nutrient excess to these outcomes remain incompletely defined. Here we show that diet-induced obesity is accompanied by local complement activation in the mouse hypothalamus, leading to C3a generation that signals through C3a receptor (C3aR) on leptin receptor (ObRb)-expressing neurons and blunts leptin signaling. Deletion of C3aR in ObRb-expressing neurons preserves leptin responsiveness, reduces food intake and weight gain, and improves glucose homeostasis during dietary challenge. Systemic pharmacological C3aR targeting induces weight loss and improves leptin responsiveness in established obesity. Genetic or pharmacological C3aR targeting also attenuates obesity-associated diastolic dysfunction and myocardial fibrosis; pair-feeding experiments reveal an additional component of cardiac protection beyond reduced weight gain, associated with lower cardiac sympathetic innervation. In humans, circulating complement activation markers are elevated in obesity and decline after bariatric surgery. Together, our findings identify C3aR signaling in",
-          "pub_date": "2026-10-07",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 531,
+          "id": 530,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -601,8 +601,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 15,
-      "total_valid": 6,
+      "total_raw": 14,
+      "total_valid": 5,
       "total_candidates": 4
     },
     "china": {
@@ -619,7 +619,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 886,
+          "id": 885,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -634,7 +634,7 @@
           "word_count": 376
         },
         {
-          "id": 887,
+          "id": 886,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -649,7 +649,7 @@
           "word_count": 332
         },
         {
-          "id": 888,
+          "id": 887,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -664,7 +664,7 @@
           "word_count": 300
         },
         {
-          "id": 885,
+          "id": 884,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +679,7 @@
           "word_count": 100
         },
         {
-          "id": 867,
+          "id": 866,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 494
         },
         {
-          "id": 874,
+          "id": 873,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 469
         },
         {
-          "id": 866,
+          "id": 865,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 457
         },
         {
-          "id": 870,
+          "id": 869,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 445
         },
         {
-          "id": 868,
+          "id": 867,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 443
         },
         {
-          "id": 875,
+          "id": 874,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 441
         },
         {
-          "id": 876,
+          "id": 875,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 132
         },
         {
-          "id": 884,
+          "id": 883,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -804,14 +804,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 193,
+      "total_raw": 191,
       "total_valid": 16,
       "total_candidates": 12
     }
   },
   "meta": {
-    "total_raw": 1058,
-    "dup": 298,
+    "total_raw": 1055,
+    "dup": 292,
     "nocontent": 400,
     "noise": 7
   }
