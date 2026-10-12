@@ -50,30 +50,30 @@
           "word_count": 102
         },
         {
-          "id": 77,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction",
-          "link": "https://arxiv.org/abs/2610.10549",
-          "content": "Tool-calling agents have become central to enterprise AI, yet training and evaluating them at scale remains severely constrained due to business and legal restrictions on enterprise systems, data, and database schemas. Tabular data synthesis offers a natural alternative, but its effectiveness is fundamentally limited by structural validity and schema availability, while procedure-based approaches yield the opposite weakness, typically lacking distributional fidelity without per-domain authoring. We introduce **Synthesis Through Simulation** (STS), a **schema--free** data synthesis paradigm in which an LLM agent generates data by executing operations against policy-enforcing APIs within simulated enterprise environments. Because data is generated through the same environment that defines what is valid, STS guarantees structural validity by construction while decoupling validity enforcement from distribution modeling, allowing each to be addressed independently. The **Generalist Populator** (GP), STS's domain-agnostic agent, addresses the remaining challenges of distributional fidelity and synthesis scalability: GP achieves **0.88** average marginal fidelity and **100\\% constraint sa",
-          "pub_date": "2026-09-23T20:00:00.000Z",
+          "title": "SoloQ: Calibration-Free Quantization for Diffusion Language Models",
+          "link": "https://arxiv.org/abs/2610.07121",
+          "content": "Diffusion large language models dLLMs) have emerged as a promising alternative to autoregressive language models through bidirectional diffusion-based token generation. However, their growing model sizes and high inference costs make efficient deployment challenging: full-sequence denoising repeatedly invokes compute-intensive forward passes, while block-diffusion models additionally introduce a memory-intensive KV-cache. Low-bit weight-activation quantization is therefore attractive, yet existing dLLM post-training quantization methods rely on calibration data despite activation distributions shifting across masking states and denoising steps. We present SoloQ, a calibration-free quantization framework that maps weights and activations into a normalized rotated basis with a predictable marginal distribution, enabling data-independent quantization. SoloQ combines a structured K-RPBH rotation with a lightweight rescaling correction for calibration-free quantization. Its predictable post-rotation distribution supports both distribution-matched codebooks and hardware-native NVFP4. For block-diffusion models, SoloQ further applies commit-time KV-cache quantization to compress persisten",
+          "pub_date": "2026-10-04T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 78,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SpecFold: Folding Multi-Branch Redundancy for Faster Speculative Decoding in Diffusion Language Models",
-          "link": "https://arxiv.org/abs/2610.04875",
-          "content": "Diffusion large language models (DLLMs) generate text through iterative block denoising, and multi-branch speculative decoding accelerates this process by verifying a main branch together with multiple draft branches in a single forward pass. While prior DLLM acceleration methods primarily exploit temporal redundancy across denoising steps, we identify a complementary redundancy axis within each speculative verification step: multi-branch computational redundancy. During speculative verification, draft branches inherit most tokens from their parents while unmasking a small set of additional positions, causing large portions of hidden states to remain highly similar across branches. We propose SpecFold, an algorithm-system co-design that exploits this multi-branch redundancy to reduce the cost of multi-branch speculative verification. Algorithmically, SpecFold performs token-level residual gating and selectively reuses parent computation through folded attention and FFN while preserving residual hidden states. Systemically, a Triton kernel implementation translates this fine-grained reuse into end-to-end throughput gains through efficient sparse multi-branch execution. SpecFold is o",
-          "pub_date": "2026-10-05T20:00:00.000Z",
+          "title": "ProgramGym: Scaling Training Environments for Long-Horizon Program Reproduction Agents",
+          "link": "https://arxiv.org/abs/2610.13395",
+          "content": "Coding agents are increasingly used to build programs from scratch as software engineers do rather than to resolve issues within a repository or to generate a repository from a given requirements document. However, scalable verifiable training environments that force agents to discover what is required and to decide how the system should be designed remain scarce. Moreover, existing agent workflows also cannot sustain long-horizon development in which the agent explores the reference program before implementation. To address these challenges, we introduce ProgramGym, a framework consisting of Program-Env and Program-Agent for scalable training environments of long-horizon program reproduction agents. Specifically, Program-Env constructs verifiable training environments from repositories through a feedback-driven loop that repairs runtime sandbox builds and the quality of black-box tests. Using this novel pipeline, we obtain 1,648 training environments spanning C, C++, Go, and Rust. Program-Agent combines a role-isolated workflow of analysis, implementation, and review with revision management for compilation checks and failure recovery. Experiments on ProgramBench show that both Pr",
+          "pub_date": "2026-10-08T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -85,10 +85,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "MIRA: A Musical Intent Refinement Agent for Aligning Text-to-Music Generation with User Intent",
-          "link": "https://arxiv.org/abs/2610.10355",
-          "content": "Text-to-music systems produce increasingly convincing audio, yet evaluation reveals little about whether the result matches user intent. A global text-audio relevance score can overlook the implicit intent in underspecified prompts and mask failures in specific requirements, such as instrumentation, structure, rhythm, or mood progression. To bridge this gap, we formulate text-to-music intent alignment as satisfying a per-request rubric of independently verifiable items covering both a request's explicit requirements and its implied musical intent. Scoring items individually makes evaluation diagnostic by intent source and musical dimension, rather than a single opaque score. We instantiate this as MuRA-Bench, a benchmark of real-world platform requests curated by music experts. We further propose MIRA (Musical Intent Refinement Agent), a test-time agent that first grounds a request's intent into rubrics, then searches over prompt revisions for a black-box generator under a bounded budget, iteratively generating music, verifying it against the rubrics, and using this feedback to guide a trajectory-aware tree search. Experiments across open-source and commercial backends show that MI",
-          "pub_date": "2026-10-06T20:00:00.000Z",
+          "title": "Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction",
+          "link": "https://arxiv.org/abs/2610.10549",
+          "content": "Tool-calling agents have become central to enterprise AI, yet training and evaluating them at scale remains severely constrained due to business and legal restrictions on enterprise systems, data, and database schemas. Tabular data synthesis offers a natural alternative, but its effectiveness is fundamentally limited by structural validity and schema availability, while procedure-based approaches yield the opposite weakness, typically lacking distributional fidelity without per-domain authoring. We introduce **Synthesis Through Simulation** (STS), a **schema--free** data synthesis paradigm in which an LLM agent generates data by executing operations against policy-enforcing APIs within simulated enterprise environments. Because data is generated through the same environment that defines what is valid, STS guarantees structural validity by construction while decoupling validity enforcement from distribution modeling, allowing each to be addressed independently. The **Generalist Populator** (GP), STS's domain-agnostic agent, addresses the remaining challenges of distributional fidelity and synthesis scalability: GP achieves **0.88** average marginal fidelity and **100\\% constraint sa",
+          "pub_date": "2026-09-23T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -536,7 +536,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 509,
+          "id": 510,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 1200
         },
         {
-          "id": 521,
+          "id": 522,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 1200
         },
         {
-          "id": 524,
+          "id": 525,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -619,7 +619,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 885,
+          "id": 886,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -634,7 +634,7 @@
           "word_count": 376
         },
         {
-          "id": 886,
+          "id": 887,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -649,7 +649,7 @@
           "word_count": 332
         },
         {
-          "id": 887,
+          "id": 888,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -664,7 +664,7 @@
           "word_count": 300
         },
         {
-          "id": 884,
+          "id": 885,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +679,7 @@
           "word_count": 100
         },
         {
-          "id": 866,
+          "id": 867,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 494
         },
         {
-          "id": 873,
+          "id": 874,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,22 @@
           "word_count": 469
         },
         {
-          "id": 869,
+          "id": 866,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Amazon Weighs $7 Billion Purchase of AI Startup Decart",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/amazon-weighs-7-billion-purchase-of-ai-startup-decart/",
+          "content": "Amazon is reportedly in discussions to purchase artificial intelligence startup Decart in a roughly $7 billion deal. That’s according to a report Sunday (Oct. 11) by The Wall Street Journal (WSJ), citing sources familiar with the matter. Those sources say a deal could come together soon, provided the talks don’t collapse and another contender doesn’t [&#8230;] The post Amazon Weighs $7 Billion Purchase of AI Startup Decart appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 12 Oct 2026 01:02:37 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 457
+        },
+        {
+          "id": 870,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +739,7 @@
           "word_count": 445
         },
         {
-          "id": 867,
+          "id": 868,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +754,7 @@
           "word_count": 443
         },
         {
-          "id": 874,
+          "id": 875,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,22 +769,7 @@
           "word_count": 441
         },
         {
-          "id": 870,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Microsoft CEO Calls for Safeguards Against Rogue AI",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-ceo-calls-for-safeguards-against-rogue-ai/",
-          "content": "Microsoft’s CEO says companies should assume powerful artificial intelligence models could be compromised and create an “emergency brake” to rein them in. In comments posted to X on Saturday (Oct. 10) Satya Nadella argued that it is not enough to depend on assurances from the makers of AI models. “We must assume a model is [&#8230;] The post Microsoft CEO Calls for Safeguards Against Rogue AI appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 11 Oct 2026 23:33:19 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 426
-        },
-        {
-          "id": 875,
+          "id": 876,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 132
         },
         {
-          "id": 883,
+          "id": 884,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -804,13 +804,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 192,
-      "total_valid": 15,
+      "total_raw": 193,
+      "total_valid": 16,
       "total_candidates": 12
     }
   },
   "meta": {
-    "total_raw": 1057,
+    "total_raw": 1058,
     "dup": 298,
     "nocontent": 400,
     "noise": 7
