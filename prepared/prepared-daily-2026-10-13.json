@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 55,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 383
         },
         {
-          "id": 86,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 320
         },
         {
-          "id": 80,
+          "id": 79,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 219
         },
         {
-          "id": 84,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 162
         },
         {
-          "id": 65,
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,22 @@
           "word_count": 1200
         },
         {
-          "id": 94,
+          "id": 1041,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "web-edit 0.1a0",
+          "link": "https://simonwillison.net/2026/Oct/12/web-edit/",
+          "content": "Release: web-edit 0.1a0 I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials through the LLM itself. So... I had Codex and GPT-6 Astra Extra High build this Python web app which provides a web UI for viewing and editing files in a folder. It's intended to be run over Tailscale, so I can have an agent start this running and then edit files via my Tailscale network directly from my phone. Here's the interface for browsing files in a folder: Editing uses CodeMirror 6 - I was going to use Monaco but that still doesn't have a great mobile experience yet. Tags: projects , python , ai , tailscale , generative-ai , llms , codex",
+          "pub_date": "2026-10-12T15:54:36+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 730
+        },
+        {
+          "id": 93,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 205
         },
         {
-          "id": 1021,
+          "id": 1020,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 141
         },
         {
-          "id": 95,
+          "id": 94,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 137
-        },
-        {
-          "id": 92,
-          "source": "Sequoia Capital",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Partnering with Catalyst: Turning Ideas into Trades",
-          "link": "https://www.sequoiacap.com/article/partnering-with-catalyst-turning-ideas-into-trades",
-          "content": "Dylan and Justin’s AI agents are making sophisticated investments available to anyone.",
-          "pub_date": "Thu, 08 Oct 2026 00:00:00 -0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 86
         }
       ],
       "quota": {
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1160,
-      "total_valid": 745,
+      "total_valid": 746,
       "total_candidates": 12
     },
     "vaccine": {
@@ -434,6 +434,21 @@
     "synbio": {
       "candidates": [
         {
+          "id": 1685,
+          "source": "Nucleic Acids Research",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Development of CRISPR/Cas13-based analytical tools to study RNA–protein interactions",
+          "link": "https://academic.oup.com/nar/article/doi/10.1093/nar/gkag928/8872624?rss=1",
+          "content": "Abstract RNA–protein interactions (RPIs) are as important as protein–protein interactions (PPIs) for the formation of membraneless organelles (MLOs) and play vital roles in diverse biological processes. Despite remarkable advances in PPI analysis technologies, the development of tools for RPI analysis has lagged behind. To address this challenge, we integrated three established PPI technologies—bimolecular fluorescence complementation (BiFC), NanoBiT, and split-TurboID—with RNA-targeting CRISPR/dCas13. We applied these platforms to paraspeckles, a representative MLO formed through interactions between the long non-coding RNA NEAT1 and the RNA-binding protein NONO. BiFC-dCas13 functions as a fluorescence-based recorder that enables quantitative detection of NEAT1 –NONO interaction events. NanoBiT-dCas13 precisely monitors dynamic changes in the NEAT1 –NONO interaction through a reversible luminescence readout. Split-TurboID-dCas13 induces proximity-dependent biotinylation of proteins surrounding paraspeckles, identifying the N6-methyladenosine reader YTHDC1 as a paraspeckle-associated protein. Furthermore, BiFC-dCas13 was readily reconfigured to detect additional RPI pairs, demonstr",
+          "pub_date": "Tue, 13 Oct 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 1648,
           "source": "Metabolic Engineering",
           "section": "synbio",
@@ -479,7 +494,7 @@
           "word_count": 137
         },
         {
-          "id": 1697,
+          "id": 1698,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +539,7 @@
           "word_count": 344
         },
         {
-          "id": 1706,
+          "id": 1707,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -574,9 +589,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 112,
-      "total_valid": 10,
-      "total_candidates": 9
+      "total_raw": 113,
+      "total_valid": 11,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
@@ -671,7 +686,7 @@
           "word_count": 206
         },
         {
-          "id": 1722,
+          "id": 1723,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +701,7 @@
           "word_count": 199
         },
         {
-          "id": 334,
+          "id": 333,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +716,7 @@
           "word_count": 1200
         },
         {
-          "id": 342,
+          "id": 341,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +731,7 @@
           "word_count": 1200
         },
         {
-          "id": 581,
+          "id": 580,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1738,
+          "id": 1739,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 566
         },
         {
-          "id": 1734,
+          "id": 1735,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 474
         },
         {
-          "id": 1730,
+          "id": 1731,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 468
         },
         {
-          "id": 1732,
+          "id": 1733,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 442
         },
         {
-          "id": 1731,
+          "id": 1732,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 398
         },
         {
-          "id": 1758,
+          "id": 1759,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 362
         },
         {
-          "id": 1755,
+          "id": 1756,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 339
         },
         {
-          "id": 1753,
+          "id": 1754,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 320
         },
         {
-          "id": 1751,
+          "id": 1752,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 295
         },
         {
-          "id": 1750,
+          "id": 1751,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 294
         },
         {
-          "id": 1759,
+          "id": 1760,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 184
         },
         {
-          "id": 1742,
+          "id": 1743,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 137
         },
         {
-          "id": 1741,
+          "id": 1742,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 97
         },
         {
-          "id": 1743,
+          "id": 1744,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 90
         },
         {
-          "id": 137,
+          "id": 136,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 196,
+          "id": 195,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 238,
+          "id": 237,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 804,
+          "id": 803,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 970,
+          "id": 969,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1039,19 +1054,19 @@
           "word_count": 1200
         },
         {
-          "id": 1737,
-          "source": "PYMNTS.com",
+          "id": 1779,
+          "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "PayJoy Acquires Mexico’s Finia to Gain Deeper Credit Insights",
-          "link": "https://www.pymnts.com/financial-inclusion-3/2026/payjoy-acquires-mexicos-finia-to-gain-deeper-credit-insights/",
-          "content": "PayJoy, a financial service provider for underserved consumers in emerging markets, has acquired Mexican FinTech Finia. The deal is designed to let PayJoy apply Finia’s technology and expertise to its platform, enhancing its underwriting capabilities and expanding its services for customers with limited access to formal credit, the company announced in a news release Monday (Oct. 12). “Finia [&#8230;] The post PayJoy Acquires Mexico’s Finia to Gain Deeper Credit Insights appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 12 Oct 2026 19:54:53 +0000",
+          "title": "EU finance ministers want DLT Pilot Regime cap raised to €300bn. Lagarde objects",
+          "link": "https://www.ledgerinsights.com/eu-finance-ministers-wants-dlt-pilot-regime-cap-raised-to-e300bn-lagarde-objects/",
+          "content": "On Friday the Council of the EU agreed the main elements of its negotiating position on the market integration and supervision package (MISP), aimed at integrating European capital markets. The European Commission had proposed raising the limit for the DLT Pilot Regime that supports tokenization from the current €6 billion to €100 billion per DLT [&#8230;] The post EU finance ministers want DLT Pilot Regime cap raised to €300bn. Lagarde objects appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Mon, 12 Oct 2026 14:34:00 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 506
+          "word_count": 512
         }
       ],
       "quota": {
@@ -1060,14 +1075,14 @@
         "max": 12
       },
       "total_raw": 222,
-      "total_valid": 36,
+      "total_valid": 37,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1946,
-    "dup": 475,
-    "nocontent": 403,
+    "total_raw": 1947,
+    "dup": 474,
+    "nocontent": 402,
     "noise": 7
   }
 }
