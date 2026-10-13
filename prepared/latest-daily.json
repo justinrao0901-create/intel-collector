@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 55,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 383
         },
         {
-          "id": 86,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 320
         },
         {
-          "id": 80,
+          "id": 79,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 219
         },
         {
-          "id": 84,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -63,6 +63,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 162
+        },
+        {
+          "id": 64,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed",
+          "link": "https://arxiv.org/abs/2609.39600",
+          "content": "Autoregressive (AR) grounding models serialize spatial predictions, introducing sequential latency and imposing a causal order on output tokens. We view grounding as visual evidence extraction: objects, locations, and spatial relations are jointly constrained by the image and query, yet their dependencies do not imply an intrinsic left-to-right generation order. This distinction makes bidirectional diffusion a natural fit, allowing spatial hypotheses to emerge in parallel and be jointly refined through iterative denoising. We introduce GroundAnything, a 4B-parameter grounding foundation model that reconciles fast parallel decoding with precise localization through blockwise denoising. Training combines grounding pretraining from public datasets and dedicated data engines, direct AR-to-diffusion conversion with joint AR and diffusion objectives, supervised fine-tuning, and GRPO-based reinforcement post-training. Across 30 grounding benchmarks, our autoregressive variant, GroundAnything-VLM, establishes a new overall state of the art among similarly sized models at 72.42%, remaining competitive with GPT-6 Astra (71.35%). With entropy-guided decoding, GroundAnything also surpasses the",
+          "pub_date": "2026-09-29T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         },
         {
           "id": 66,
@@ -95,22 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 69,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents",
-          "link": "https://arxiv.org/abs/2609.33304",
-          "content": "Personal Graphical User Interface (GUI) agents rely on interaction history to infer what a user wants from ambiguous instructions and to anticipate recurring routines. Existing approaches retrieve task-relevant history and append it to the policy's context, implicitly assuming that experience relevant to a task remains useful for each decision within it. We find that this help is largely spent at the first decision: retrieved history strongly improves the opening step of an episode, yet provides little sustained benefit over the remaining 90\\% of steps, and offers weak guidance on whether a proactive suggestion is warranted. A relevant record may tell the agent where to begin, but not which past action applies to the current screen or whether a routine is due now. The underlying issue is that relevance does not imply applicability}: relevance is determined at the task level, whereas applicability depends on the situation at decision time. We therefore recast personalization as experience activation and introduce ExpActivator, a training-free framework that activates only the experience applicable to the current situation. During execution, ExpActivator matches each new screen to hi",
-          "pub_date": "2026-09-26T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1039,
+          "id": 1038,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 730
         },
         {
-          "id": 93,
+          "id": 92,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 205
         },
         {
-          "id": 1020,
+          "id": 1019,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 152
         },
         {
-          "id": 1057,
+          "id": 1056,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 141
         },
         {
-          "id": 94,
+          "id": 93,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1158,
+      "total_raw": 1157,
       "total_valid": 745,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1420,
+          "id": 1419,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 792
         },
         {
-          "id": 1429,
+          "id": 1428,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 791
         },
         {
-          "id": 1426,
+          "id": 1425,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 760
         },
         {
-          "id": 1554,
+          "id": 1553,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 419
         },
         {
-          "id": 1292,
+          "id": 1291,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 348
         },
         {
-          "id": 1171,
+          "id": 1170,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 197
         },
         {
-          "id": 1177,
+          "id": 1176,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 146
         },
         {
-          "id": 1474,
+          "id": 1473,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 512
         },
         {
-          "id": 1492,
+          "id": 1491,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 327
         },
         {
-          "id": 1448,
+          "id": 1447,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 282
         },
         {
-          "id": 1160,
+          "id": 1159,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 192
         },
         {
-          "id": 1283,
+          "id": 1282,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 525
         },
         {
-          "id": 1282,
+          "id": 1281,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 512
         },
         {
-          "id": 1564,
+          "id": 1563,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 415
         },
         {
-          "id": 1336,
+          "id": 1335,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1685,
+          "id": 1684,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1647,
+          "id": 1646,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 193
         },
         {
-          "id": 1654,
+          "id": 1653,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 189
         },
         {
-          "id": 1634,
+          "id": 1633,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 137
         },
         {
-          "id": 1698,
+          "id": 1697,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 873
         },
         {
-          "id": 1678,
+          "id": 1677,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 388
         },
         {
-          "id": 1677,
+          "id": 1676,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 344
         },
         {
-          "id": 1707,
+          "id": 1706,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 102
         },
         {
-          "id": 1668,
+          "id": 1667,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1669,
+          "id": 1668,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 1670,
+          "id": 1669,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -611,7 +611,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1336,
+          "id": 1335,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 411
         },
         {
-          "id": 1677,
+          "id": 1676,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 344
         },
         {
-          "id": 1175,
+          "id": 1174,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 251
         },
         {
-          "id": 1174,
+          "id": 1173,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 227
         },
         {
-          "id": 1523,
+          "id": 1522,
           "source": "Nature Rev Drug Discovery",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 216
         },
         {
-          "id": 1178,
+          "id": 1177,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 206
         },
         {
-          "id": 1723,
+          "id": 1722,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 199
         },
         {
-          "id": 333,
+          "id": 332,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 1200
         },
         {
-          "id": 341,
+          "id": 340,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 1200
         },
         {
-          "id": 580,
+          "id": 579,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1739,
+          "id": 1738,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 559
         },
         {
-          "id": 1735,
+          "id": 1734,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 474
         },
         {
-          "id": 1731,
+          "id": 1730,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 468
         },
         {
-          "id": 1733,
+          "id": 1732,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 442
         },
         {
-          "id": 1732,
+          "id": 1731,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 398
         },
         {
-          "id": 1759,
+          "id": 1758,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 362
         },
         {
-          "id": 1756,
+          "id": 1755,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 339
         },
         {
-          "id": 1754,
+          "id": 1753,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 320
         },
         {
-          "id": 1752,
+          "id": 1751,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 295
         },
         {
-          "id": 1751,
+          "id": 1750,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 294
         },
         {
-          "id": 1760,
+          "id": 1759,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 184
         },
         {
-          "id": 1743,
+          "id": 1742,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 137
         },
         {
-          "id": 1742,
+          "id": 1741,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 97
         },
         {
-          "id": 1744,
+          "id": 1743,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 90
         },
         {
-          "id": 136,
+          "id": 135,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 195,
+          "id": 194,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 237,
+          "id": 236,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 803,
+          "id": 802,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 969,
+          "id": 968,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 1779,
+          "id": 1778,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -1095,9 +1095,9 @@
     }
   },
   "meta": {
-    "total_raw": 1947,
+    "total_raw": 1946,
     "dup": 475,
-    "nocontent": 401,
+    "nocontent": 400,
     "noise": 7
   }
 }
