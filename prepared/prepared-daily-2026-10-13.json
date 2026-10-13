@@ -70,25 +70,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Humanity's Sixth Sense: Benchmarking Intuitive Visual Reasoning in Multimodal Models",
-          "link": "https://arxiv.org/abs/2610.08966",
-          "content": "Humans perceive far more in a scene than what is explicitly depicted: a single glance captures past causes and future trajectories; a quick peek determines if a vehicle can fit between two parked cars; a few seconds of video reveals who holds authority in a room; and a fleeting clip highlights subtle abstract patterns like unwritten rules or hidden labels. This capacity reflects a form of humanity's sixth sense: an intuitive reasoning mechanism that recovers implicit information beyond raw sensory perception. Crucially, this rapid, zero-shot visual intuition underpins everyday navigation and social interaction, making it a vital capability for Multimodal Large Language Models (MLLMs) deployed alongside people. Existing visual benchmarks, however, target either deliberate expert-level analysis in academic and mathematical domains or low-level perception, leaving the intuitive reasoning that people perform largely untested. To bridge this gap, we introduce Humanity's Sixth Sense (HSS), a benchmark for intuitive visual reasoning. HSS spans diverse image and video inputs, organizes items under a structured taxonomy, and pairs each with human-written prompts probing the implicit tempora",
-          "pub_date": "2026-10-07T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 65,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Mental-Models for Multi-Agent Systems",
-          "link": "https://arxiv.org/abs/2610.12453",
-          "content": "Large foundation models have accelerated progress toward general-purpose agents that interact with humans and other agents through language and multimodal signals. However, robust multi-agent decision-making requires reasoning about what other agents know, intend, and are likely to do under partial observability. Current agentic systems often operate through prompt design, memory, or end-to-end behavioral shaping, but typically do not learn an explicit partner-state representation that can be reused as a decision variable across tasks. We introduce mental-model-enabled agents, a framework that equips an agent with a latent mental model of its counterpart, allowing it to infer hidden beliefs, intentions, and likely reactions from the observed history and use these inferences to guide action selection. Our method learns an amortized recursive Theory-of-Mind representation, with first- and second-order mental-state structure, jointly with a belief-conditioned reward model that evaluates candidate actions relative to the inferred partner state. A policy is then learned under this belief-aware signal, yielding an agent that can act independently at inference time while retaining the ben",
-          "pub_date": "2026-10-07T20:00:00.000Z",
+          "title": "T3lescope: Arbitrary-Resolution High-Fidelity Generative Surface Reconstruction from Images",
+          "link": "https://arxiv.org/abs/2610.03308",
+          "content": "We reconstruct high-fidelity 3D scene meshes from posed multi-view images without per-scene optimization, across scales ranging from single objects to large outdoor scenes. Per-scene optimization methods lack the learned 3D prior needed when observations are sparse or surfaces are glossy or transparent. Existing generative methods leverage such priors to complete geometry in sparsely observed regions, but typically operate at a fixed resolution over a limited spatial extent, trading spatial coverage against detail. Reconstructing a large scene therefore often requires partitioning it into independently processed overlapping local regions, making it difficult to maintain global geometric consistency. To address these issues, we propose T3lescope, which applies a single fixed-resolution generator across scene scales in an inference-time coarse-to-fine cascade. A coarse level establishes the scene layout, and finer levels perturb and denoise geometry inherited from the coarser level within progressively finer spatial cells to recover surface detail. The model is trained on individual cells at multiple scales and shares its weights across all levels, so no hierarchy is fixed during tra",
+          "pub_date": "2026-10-01T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -100,9 +85,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "BudgetPix: Compute-Adaptive Tokenization for Pixel-Space Image Diffusion",
-          "link": "https://arxiv.org/abs/2610.12307",
-          "content": "Most image generation models rely on uniform tokenization, allocating the exact same computational budget to equally-sized image patches. This static paradigm cannot adapt to different resource constraints at inference time, and yields suboptimal quality-cost tradeoff by devoting the same effort to both plain backgrounds and intricate details. We propose BudgetPix, an adaptive tokenization framework that dynamically allocates compute based on visual complexity and spatial layout, enabling flexible computational budgeting at inference time. BudgetPix comprises three key components: (1) an adaptive encoder that maps a fixed-size image to a variable-length token sequence using an entropy-guided quadtree alongside a multi-scale patch embedder; (2) a scale-aware decoder reconstructs fixed-resolution images from multi-scale token sets; and (3) a flexible training and sampling schedule that enables pixel-space denoisers to operate across variable token counts. BudgetPix seamlessly integrates with existing pixel-space diffusion architectures, enabling a single checkpoint to be operated at a wide range of compute budgets. Evaluated on text-to-image generation, BudgetPix matches the fidelity",
+          "title": "Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents",
+          "link": "https://arxiv.org/abs/2609.33304",
+          "content": "Personal Graphical User Interface (GUI) agents rely on interaction history to infer what a user wants from ambiguous instructions and to anticipate recurring routines. Existing approaches retrieve task-relevant history and append it to the policy's context, implicitly assuming that experience relevant to a task remains useful for each decision within it. We find that this help is largely spent at the first decision: retrieved history strongly improves the opening step of an episode, yet provides little sustained benefit over the remaining 90\\% of steps, and offers weak guidance on whether a proactive suggestion is warranted. A relevant record may tell the agent where to begin, but not which past action applies to the current screen or whether a routine is due now. The underlying issue is that relevance does not imply applicability}: relevance is determined at the task level, whereas applicability depends on the situation at decision time. We therefore recast personalization as experience activation and introduce ExpActivator, a training-free framework that activates only the experience applicable to the current situation. During execution, ExpActivator matches each new screen to hi",
+          "pub_date": "2026-09-26T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 67,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Thinking Inertia: LLMs Keep Thinking When Told Not To",
+          "link": "https://arxiv.org/abs/2610.11765",
+          "content": "Large Language Models (LLMs) increasingly ship with explicit \"thinking modes\", yet their counterpart, \"no-thinking\", has received far less attention. We study LLMs' no-thinking behavior along two axes. a. How to measure no-thinking? Prior work typically defines no-thinking through proxies such as a disabled thinking mode or the absence of long traces. These proxies are unreliable: disabled thinking modes may still emit reasoning, while long traces may contain filler rather than genuine inference. We instead normalize each response into a pre-answer trace and final answer, and evaluate it at three levels: (i) Empty-Thinking Rate for strict answer-only compliance; (ii) instruction-aware Question-Pre-answer Relevance for similarity between the question and pre-answer trace; and (iii) LLM-as-judge Explicit Inference Rate for visible explicit inference. Together, these metrics distinguish answer-only output, relevant but non-inferential text, and explicit inference. b. How does no-thinking vary across tasks and models? We evaluate six prompting interventions on six LLMs across Boolean, multiple-choice, and open-ended questions. We find that explicit no-think controls cannot reliably eli",
           "pub_date": "2026-10-07T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 1041,
+          "id": 1038,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 730
         },
         {
-          "id": 93,
+          "id": 92,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 205
         },
         {
-          "id": 1020,
+          "id": 1019,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 152
         },
         {
-          "id": 1059,
+          "id": 1056,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 141
         },
         {
-          "id": 94,
+          "id": 93,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1160,
+      "total_raw": 1157,
       "total_valid": 746,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1421,
+          "id": 1419,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 792
         },
         {
-          "id": 1430,
+          "id": 1428,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 791
         },
         {
-          "id": 1427,
+          "id": 1425,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 760
         },
         {
-          "id": 1555,
+          "id": 1553,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 419
         },
         {
-          "id": 1294,
+          "id": 1291,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 348
         },
         {
-          "id": 1173,
+          "id": 1170,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 197
         },
         {
-          "id": 1179,
+          "id": 1176,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 146
         },
         {
-          "id": 1475,
+          "id": 1473,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 512
         },
         {
-          "id": 1493,
+          "id": 1491,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 327
         },
         {
-          "id": 1449,
+          "id": 1447,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 282
         },
         {
-          "id": 1162,
+          "id": 1159,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 192
         },
         {
-          "id": 1285,
+          "id": 1282,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 525
         },
         {
-          "id": 1284,
+          "id": 1281,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 512
         },
         {
-          "id": 1565,
+          "id": 1563,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 415
         },
         {
-          "id": 1338,
+          "id": 1335,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 448,
-      "total_valid": 277,
+      "total_raw": 449,
+      "total_valid": 278,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1685,
+          "id": 1684,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1648,
+          "id": 1646,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 193
         },
         {
-          "id": 1655,
+          "id": 1653,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 189
         },
         {
-          "id": 1635,
+          "id": 1633,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 137
         },
         {
-          "id": 1698,
+          "id": 1697,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 873
         },
         {
-          "id": 1678,
+          "id": 1677,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 388
         },
         {
-          "id": 1677,
+          "id": 1676,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 344
         },
         {
-          "id": 1707,
+          "id": 1706,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,22 @@
           "word_count": 102
         },
         {
-          "id": 1669,
+          "id": 1667,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "How Bacterial Growth-Phase Reshapes Synthetic Gene Circuit Function",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.10.09.752898v1?rss=1",
+          "content": "The development of biological engineering tools have improved the ability to embed novel functions into living organisms. Concurrently, our understanding of the interface between synthetic genetic circuits and their host has accelerated in the past decade, enabling the development of context-aware predictive models. However, long-term circuit function remains difficult to predict when designs operate in field-relevant conditions. Specifically, while synthetic genetic circuits are typically characterized during exponential growth, these must operate for extended periods of time in nutrient-limited conditions and where bacteria enter stationary growth phase. In this work, we construct a mathematical model that captures the dynamics of a genetic circuit as cells transition into stationary growth phase. To achieve this, we construct synthetic genetic circuits with fluorescent reporter output and measure plasmid DNA copy number, mRNA level, protein level, and live cell count over the course of one week in stationary growth phase. We find that transcription rates plummet shortly after entering stationary phase but settle at a basal value that depends on both the promoter and ribosome bin",
+          "pub_date": "2026-10-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1668,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 1670,
+          "id": 1669,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +604,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 113,
-      "total_valid": 11,
-      "total_candidates": 10
+      "total_raw": 114,
+      "total_valid": 12,
+      "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 1338,
+          "id": 1335,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 411
         },
         {
-          "id": 1677,
+          "id": 1676,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 344
         },
         {
-          "id": 1177,
+          "id": 1174,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +656,7 @@
           "word_count": 251
         },
         {
-          "id": 1176,
+          "id": 1173,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +671,7 @@
           "word_count": 227
         },
         {
-          "id": 1524,
+          "id": 1522,
           "source": "Nature Rev Drug Discovery",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +686,7 @@
           "word_count": 216
         },
         {
-          "id": 1180,
+          "id": 1177,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +701,7 @@
           "word_count": 206
         },
         {
-          "id": 1723,
+          "id": 1722,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +716,7 @@
           "word_count": 199
         },
         {
-          "id": 333,
+          "id": 332,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +731,7 @@
           "word_count": 1200
         },
         {
-          "id": 341,
+          "id": 340,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +746,7 @@
           "word_count": 1200
         },
         {
-          "id": 580,
+          "id": 579,
           "source": "arXiv cs.AI",
           "section": "cross",
           "tier": "T1",
@@ -751,8 +766,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 24,
-      "total_valid": 16,
+      "total_raw": 26,
+      "total_valid": 18,
       "total_candidates": 10
     },
     "china": {
@@ -769,22 +784,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1739,
+          "id": 1738,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Why 42% of Companies Rely on Layered Defense Stacks to Combat Payments Fraud",
-          "link": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/why-42percent-companies-layered-defense-stacks-combat-payments-fraud/",
-          "content": "Forty-two percent of corporate finance departments deploy a stack of three or more artificial intelligence (AI) tools to secure their outgoing payments, according to the PYMNTS Intelligence and Bottomline collaboration “Prevention First: Building a Smarter Defense Against Payments Fraud.” This adoption reflects a broader evolution in how businesses safeguard capital against sophisticated financial crimes without sacrificing transaction [&#8230;] The post Why 42% of Companies Rely on Layered Defense Stacks to Combat Payments Fraud appeared first on PYMNTS.com .",
+          "title": "PYMNTS Finds 42% of Companies Rely on Layered Defense to Combat Fraud",
+          "link": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/pymnts-finds-42percent-companies-layered-defense-combat-fraud/",
+          "content": "Forty-two percent of corporate finance departments deploy a stack of three or more artificial intelligence (AI) tools to secure their outgoing payments, according to the PYMNTS Intelligence and Bottomline collaboration “Prevention First: Building a Smarter Defense Against Payments Fraud.” This adoption reflects a broader evolution in how businesses safeguard capital against sophisticated financial crimes without sacrificing transaction [&#8230;] The post PYMNTS Finds 42% of Companies Rely on Layered Defense to Combat Fraud appeared first on PYMNTS.com .",
           "pub_date": "Mon, 12 Oct 2026 19:35:43 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 566
+          "word_count": 559
         },
         {
-          "id": 1735,
+          "id": 1734,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 474
         },
         {
-          "id": 1731,
+          "id": 1730,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 468
         },
         {
-          "id": 1733,
+          "id": 1732,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 442
         },
         {
-          "id": 1732,
+          "id": 1731,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 398
         },
         {
-          "id": 1759,
+          "id": 1758,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 362
         },
         {
-          "id": 1756,
+          "id": 1755,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 339
         },
         {
-          "id": 1754,
+          "id": 1753,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 320
         },
         {
-          "id": 1752,
+          "id": 1751,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 295
         },
         {
-          "id": 1751,
+          "id": 1750,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 294
         },
         {
-          "id": 1760,
+          "id": 1759,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 184
         },
         {
-          "id": 1743,
+          "id": 1742,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 137
         },
         {
-          "id": 1742,
+          "id": 1741,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +979,7 @@
           "word_count": 97
         },
         {
-          "id": 1744,
+          "id": 1743,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +994,7 @@
           "word_count": 90
         },
         {
-          "id": 136,
+          "id": 135,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 195,
+          "id": 194,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 237,
+          "id": 236,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 803,
+          "id": 802,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 969,
+          "id": 968,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1074,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 222,
+      "total_raw": 223,
       "total_valid": 37,
       "total_candidates": 20
     }
   },
   "meta": {
     "total_raw": 1947,
-    "dup": 474,
-    "nocontent": 402,
+    "dup": 475,
+    "nocontent": 400,
     "noise": 7
   }
 }
