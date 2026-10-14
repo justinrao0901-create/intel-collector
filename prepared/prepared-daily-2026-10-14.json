@@ -110,7 +110,7 @@
           "word_count": 218
         },
         {
-          "id": 65,
+          "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -964,7 +964,37 @@
           "word_count": 121
         },
         {
-          "id": 941,
+          "id": 939,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Payments in Slovakia: What Global Businesses Need to Know",
+          "link": "https://www.thunes.com/insights/learn/payments-in-slovakia-what-global-businesses-need-to-know/",
+          "content": "Slovakia has strong financial and labour links with markets across Europe, creating regular flows of money into the country. Slovaks working abroad receive earnings across borders and send money home, while businesses also need to pay suppliers, freelancers, insurance claimants and gig-economy workers in the market. For PSPs, MTOs and global businesses facilitating these payments, ... Read more &#187; The post Payments in Slovakia: What Global Businesses Need to Know first appeared on Thunes.com .",
+          "pub_date": "Tue, 13 Oct 2026 15:06:47 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 502
+        },
+        {
+          "id": 940,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes Secures Double Win at the Pay360 Awards 2026",
+          "link": "https://www.thunes.com/news/thunes-secures-double-win-at-the-pay360-awards-2026/",
+          "content": "Best FX Initiative and Best Business Payments Product wins recognise Thunes’ capabilities in global liquidity management and cross-border business payments London, UK, 12 October, 2026 – Thunes, the Smart Superhighway to move money around the world, today announced that it has won Best FX Initiative and Best Business Payments Product at the Pay360 Awards 2026. ... Read more &#187; The post Thunes Secures Double Win at the Pay360 Awards 2026 first appeared on Thunes.com .",
+          "pub_date": "Tue, 13 Oct 2026 07:12:25 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 475
+        },
+        {
+          "id": 944,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -1022,36 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 521
-        },
-        {
-          "id": 883,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "ServiceNow Denies Reports of Takeover Interest in AI Agent Startup Decagon",
-          "link": "https://www.pymnts.com/news/acquiring/2026/servicenow-denies-reports-of-takeover-interest-in-ai-agent-startup-decagon/",
-          "content": "ServiceNow denied Tuesday (Oct. 13) media reports suggesting it has shown interest in purchasing Decagon, a developer of artificial intelligence (AI) agents. Seeking Alpha reported Tuesday (Oct. 13), citing a paywalled article by Business Insider, that Decagon has hired a bank to evaluate purchase interest and has talked with ServiceNow and other companies about a potential sale. The talks [&#8230;] The post ServiceNow Denies Reports of Takeover Interest in AI Agent Startup Decagon appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 13 Oct 2026 23:40:22 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 517
-        },
-        {
-          "id": 884,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Google Says New Frontier Model Excels at Deep Work Across Domains",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/google-says-new-frontier-model-excels-at-deep-work-across-domains/",
-          "content": "Google’s new frontier model, Gemini 4 Argon, is now available to developers, enterprises, scientists and consumers, the company said in a Tuesday (Oct. 13) blog post. “Argon excels at deep work in complex, real-world tasks across domains including coding, finance, legal, cybersecurity and science,” Google said in the post. Google announced Gemini 4 Argon in a Sept. 30 blog post, saying [&#8230;] The post Google Says New Frontier Model Excels at Deep Work Across Domains appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 13 Oct 2026 23:07:48 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 504
         }
       ],
       "quota": {
@@ -1059,14 +1059,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 229,
-      "total_valid": 44,
+      "total_raw": 232,
+      "total_valid": 46,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1109,
-    "dup": 251,
+    "total_raw": 1112,
+    "dup": 252,
     "nocontent": 403,
     "noise": 7
   }
