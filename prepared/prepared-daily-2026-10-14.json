@@ -100,25 +100,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
-          "link": "https://arxiv.org/abs/2609.35291",
-          "content": "Modern AI models are aligned through post-training to adapt them to downstream tasks. Recent work shows that fine-tuning language models on narrow tasks can induce emergent misalignment (EM), causing broadly harmful behaviors beyond the training task. However, EM has been studied almost entirely in text-only tasks, leaving its manifestation in multimodal models unclear. In this paper, we define and analyze EM in the context of vision-language models. We first induce EM via fine-tuning on narrow multimodal tasks targeting vulnerable code, careless household-object use, and conspiratorial interpretations of ordinary scenes. Across fifteen commercial and open-source models with different scales, we find that narrow multimodal fine-tuning can induce coherent and broadly misaligned behavior that transfers to unrelated tasks, including misaligned opinions, visual factual dishonesty, unsafe image generation, vulnerability to visual jailbreaks, and risky agentic actions. We further find that multimodal EM does not depend on the apparent harmfulness of training data but is sensitive to training-evaluation modality alignment. EM can arise under both supervised fine-tuning and preference opti",
-          "pub_date": "2026-09-27T20:00:00.000Z",
+          "title": "PhyProbe: Rethinking Physical Consistency Evaluation in Generated Videos",
+          "link": "https://arxiv.org/abs/2609.38377",
+          "content": "Evaluating the physical consistency of generated videos remains a fundamental challenge. Existing approaches rely on off-the-shelf vision-language models, which can often be myopic to physical dynamics, or fine-tuned evaluators trained on human annotations, which overfit to dataset-specific cues and fail to generalize. A key challenge is that existing supervision sources provide either relative ordering or absolute scores, but not both reliably and consistently across varied settings. To this end, we introduce PhyProbe, an evaluator that extracts features from a frozen pretrained spatio-temporal encoder and maps them to a scalar physical consistency violation score via a lightweight scoring head. PhyProbe is trained through a unified objective combining pairwise ranking, regression on noisy scalar annotations, and anchor-based calibration over a curated set of heterogeneous supervision sources. Experiments show that PhyProbe outperforms prior methods on most pairwise benchmarks spanning real-generated and generated-generated pairs under varying correspondence, with the largest gains in no-correspondence and generated-generated settings where existing fine-tuned evaluators degrade s",
+          "pub_date": "2026-09-28T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 67,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning",
-          "link": "https://arxiv.org/abs/2609.36642",
-          "content": "Language-model agents are usually trained by reinforcement learning from one reward per episode, and privileged self-distillation enriches it by letting the same policy, given a skill, teach its skill-free self through token probabilities. However, we identify two phenomena that question this channel. Invisible Advantage: a skill in context lifts WebShop success from 42.2% to 56.2%, yet changes the probabilities of fewer than a quarter of the sampled tokens. Much to Align: a skill changes the hidden states of over 80% of response tokens, in a way that linear probes can trace back to the specific skill. To exploit this, we propose Privileged Representation On-policy Self-Distillation (PR-OPD). After a GRPO warm start, the policy writes a hindsight skill for each trajectory, re-reads its own responses with that skill as a stop-gradient teacher, and aligns its projected hidden states to the teacher's at every layer alongside the reward objective, with no external skill library, separate teacher, or inference overhead. On ALFWorld and WebShop with two backbones, PR-OPD achieves the best overall results in every setting, improving over GRPO by up to 4.7 points in ALFWorld success and 14",
-          "pub_date": "2026-09-28T20:00:00.000Z",
+          "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
+          "link": "https://arxiv.org/abs/2609.35291",
+          "content": "Modern AI models are aligned through post-training to adapt them to downstream tasks. Recent work shows that fine-tuning language models on narrow tasks can induce emergent misalignment (EM), causing broadly harmful behaviors beyond the training task. However, EM has been studied almost entirely in text-only tasks, leaving its manifestation in multimodal models unclear. In this paper, we define and analyze EM in the context of vision-language models. We first induce EM via fine-tuning on narrow multimodal tasks targeting vulnerable code, careless household-object use, and conspiratorial interpretations of ordinary scenes. Across fifteen commercial and open-source models with different scales, we find that narrow multimodal fine-tuning can induce coherent and broadly misaligned behavior that transfers to unrelated tasks, including misaligned opinions, visual factual dishonesty, unsafe image generation, vulnerability to visual jailbreaks, and risky agentic actions. We further find that multimodal EM does not depend on the apparent harmfulness of training data but is sensitive to training-evaluation modality alignment. EM can arise under both supervised fine-tuning and preference opti",
+          "pub_date": "2026-09-27T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
-          "link": "https://arxiv.org/abs/2610.12099",
-          "content": "World action models (WAMs) aim to answer a coupled physical question: given a task instruction, what motion should the robot execute, and how will that motion change the surrounding world? Most existing WAMs build on pretrained video generators and represent world evolution through images or visual latents. Robotic interaction, however, takes place in metric three-dimensional space, while images are view-dependent projections whose pixel distances do not directly encode physical distances. We introduce UNITAS, to our knowledge the first 3D-native world action model that unifies observations, actions, and scene dynamics in a shared metric 3D frame within each interaction, using a common representation across robot embodiments and human hands. Action flow represents human hands and robot grippers as 3D point trajectories, while scene flow describes scene-point displacements conditioned on these trajectories. World-aligned 3D positional embeddings ground visual tokens with or without depth input, and a physical-time trajectory tokenizer encodes each point trajectory as one token anchored at its current 3D position. This interface supports both direct action execution and action-condit",
-          "pub_date": "2026-10-07T20:00:00.000Z",
+          "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning",
+          "link": "https://arxiv.org/abs/2609.36642",
+          "content": "Language-model agents are usually trained by reinforcement learning from one reward per episode, and privileged self-distillation enriches it by letting the same policy, given a skill, teach its skill-free self through token probabilities. However, we identify two phenomena that question this channel. Invisible Advantage: a skill in context lifts WebShop success from 42.2% to 56.2%, yet changes the probabilities of fewer than a quarter of the sampled tokens. Much to Align: a skill changes the hidden states of over 80% of response tokens, in a way that linear probes can trace back to the specific skill. To exploit this, we propose Privileged Representation On-policy Self-Distillation (PR-OPD). After a GRPO warm start, the policy writes a hindsight skill for each trajectory, re-reads its own responses with that skill as a stop-gradient teacher, and aligns its projected hidden states to the teacher's at every layer alongside the reward objective, with no external skill library, separate teacher, or inference overhead. On ALFWorld and WebShop with two backbones, PR-OPD achieves the best overall results in every setting, improving over GRPO by up to 4.7 points in ALFWorld success and 14",
+          "pub_date": "2026-09-28T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 883,
+          "id": 884,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 491
         },
         {
-          "id": 888,
+          "id": 889,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 531
         },
         {
-          "id": 885,
+          "id": 886,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -994,22 +994,7 @@
           "word_count": 527
         },
         {
-          "id": 889,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Albertsons Presses Reset Button as Inflation Presses Its Customers",
-          "link": "https://www.pymnts.com/earnings/2026/albertsons-presses-reset-button-as-inflation-presses-its-customers/",
-          "content": "Grocery giant Albertsons is planning an extensive overhaul as inflation continues to hinder consumer spending. The company released quarterly earnings Tuesday (Oct. 13) showing a sales dip of 0.8%, and said it was pausing its financial guidance as it undertakes a sweeping business review. “Sales and earnings growth have not met our expectations,” Meg Whitman, Albertsons’ recently appointed executive chair, [&#8230;] The post Albertsons Presses Reset Button as Inflation Presses Its Customers appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 13 Oct 2026 19:47:04 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 526
-        },
-        {
-          "id": 880,
+          "id": 881,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1024,7 @@
           "word_count": 521
         },
         {
-          "id": 881,
+          "id": 882,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1052,6 +1037,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 517
+        },
+        {
+          "id": 883,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Google Says New Frontier Model Excels at Deep Work Across Domains",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/google-says-new-frontier-model-excels-at-deep-work-across-domains/",
+          "content": "Google’s new frontier model, Gemini 4 Argon, is now available to developers, enterprises, scientists and consumers, the company said in a Tuesday (Oct. 13) blog post. “Argon excels at deep work in complex, real-world tasks across domains including coding, finance, legal, cybersecurity and science,” Google said in the post. Google announced Gemini 4 Argon in a Sept. 30 blog post, saying [&#8230;] The post Google Says New Frontier Model Excels at Deep Work Across Domains appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 13 Oct 2026 23:07:48 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 504
         }
       ],
       "quota": {
