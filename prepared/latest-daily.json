@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 54,
+          "id": 55,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 405
         },
         {
-          "id": 53,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -33,6 +33,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 307
+        },
+        {
+          "id": 35,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
+          "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+          "content": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+          "pub_date": "Wed, 14 Oct 2026 02:00:14 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 167
         },
         {
           "id": 1,
@@ -50,7 +65,7 @@
           "word_count": 140
         },
         {
-          "id": 86,
+          "id": 87,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 274
         },
         {
-          "id": 87,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 246
         },
         {
-          "id": 82,
+          "id": 83,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +110,22 @@
           "word_count": 218
         },
         {
-          "id": 64,
+          "id": 65,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "ShellElastic: Scalable Elastic Pretraining with Simultaneous Maximal Updates and Hyperparameter Transfer",
+          "link": "https://arxiv.org/abs/2610.15124",
+          "content": "Foundation models need to support diverse inference budgets, yet training a separate model for each budget duplicates pretraining effort. Elastic models train several nested sub-networks inside one weight-shared supernet, but existing recipes face three obstacles: variable per-step workloads that hinder distributed scaling, limited hyperparameter (HP) transfer across model sizes, and no guarantee that all sub-networks are maximally updated at once. We present \\Ours, an elastic transformer that organizes hidden dimensions into a dense core and successive shells, so that every hidden matrix is block lower triangular. One full-width forward pass contains every sub-network's exact hidden states as prefixes, so joint training keeps a fixed computation graph and costs about as much per step as training the widest sub-network alone. We further introduce \\muE, an extension of maximal update parameterization (\\mup) to \\Ours and other elastic architectures. Its scaling rules provably keep all sub-networks of a supernet maximally updated simultaneously (\\muI), and keep doing so when the supernet is widened or given more shells; sweeps confirm that HPs tuned on a small non-elastic proxy stay n",
+          "pub_date": "2026-10-09T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 65,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning",
-          "link": "https://arxiv.org/abs/2609.36642",
-          "content": "Language-model agents are usually trained by reinforcement learning from one reward per episode, and privileged self-distillation enriches it by letting the same policy, given a skill, teach its skill-free self through token probabilities. However, we identify two phenomena that question this channel. Invisible Advantage: a skill in context lifts WebShop success from 42.2% to 56.2%, yet changes the probabilities of fewer than a quarter of the sampled tokens. Much to Align: a skill changes the hidden states of over 80% of response tokens, in a way that linear probes can trace back to the specific skill. To exploit this, we propose Privileged Representation On-policy Self-Distillation (PR-OPD). After a GRPO warm start, the policy writes a hindsight skill for each trajectory, re-reads its own responses with that skill as a stop-gradient teacher, and aligns its projected hidden states to the teacher's at every layer alongside the reward objective, with no external skill library, separate teacher, or inference overhead. On ALFWorld and WebShop with two backbones, PR-OPD achieves the best overall results in every setting, improving over GRPO by up to 4.7 points in ALFWorld success and 14",
-          "pub_date": "2026-09-28T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 151,
+          "id": 152,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 152,
+          "id": 153,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 155,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "llm-meta-ai 0.2",
-          "link": "https://simonwillison.net/2026/Oct/12/llm-meta-ai/",
-          "content": "Release: llm-meta-ai 0.2 Meta AI release Muse Wonder (and Muse Wonder Full), their new \"most capable models\". These look like they may be Meta's first Fable class models - Artificial Analysis scores Muse Wonder (Max) as equivalent to GPT-6.1 Sol. I updated my llm-meta-ai plugin for the new model. Here are pelicans for Muse Wonder for the six reasoning levels: minimal, low, medium, high, xhigh, max. This is the max one: For comparison, here are pelicans for Muse 1.3 (released September 2nd) and Muse 1.2 (released August 5th). Meta AI are putting out a new model a month, and the improvements between each model (at least in terms of drawing pelicans) are material. Tags: ai , generative-ai , llms , meta , pelican-riding-a-bicycle , llm-release",
-          "pub_date": "2026-10-12T23:58:46+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 749
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 267,
-      "total_valid": 58,
+      "total_raw": 268,
+      "total_valid": 59,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 562,
+          "id": 563,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 563,
+          "id": 564,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 564,
+          "id": 565,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 468,
+          "id": 469,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 743
         },
         {
-          "id": 476,
+          "id": 477,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 568
         },
         {
-          "id": 689,
+          "id": 690,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 553
         },
         {
-          "id": 469,
+          "id": 470,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 487
         },
         {
-          "id": 688,
+          "id": 689,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 458
         },
         {
-          "id": 482,
+          "id": 483,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 328
         },
         {
-          "id": 489,
+          "id": 490,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 220
         },
         {
-          "id": 490,
+          "id": 491,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 196
         },
         {
-          "id": 586,
+          "id": 587,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 464
         },
         {
-          "id": 588,
+          "id": 589,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 411
         },
         {
-          "id": 645,
+          "id": 646,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 322
         },
         {
-          "id": 269,
+          "id": 270,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 816,
+          "id": 817,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 803,
+          "id": 804,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 813,
+          "id": 814,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 119
         },
         {
-          "id": 831,
+          "id": 832,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 432
         },
         {
-          "id": 830,
+          "id": 831,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 339
         },
         {
-          "id": 766,
+          "id": 767,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 334
         },
         {
-          "id": 819,
+          "id": 820,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 820,
+          "id": 821,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 821,
+          "id": 822,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 570,
+          "id": 571,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 481,
+          "id": 482,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 493
         },
         {
-          "id": 506,
+          "id": 507,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 449
         },
         {
-          "id": 483,
+          "id": 484,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 377
         },
         {
-          "id": 766,
+          "id": 767,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 334
         },
         {
-          "id": 687,
+          "id": 688,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 240
         },
         {
-          "id": 873,
+          "id": 874,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 233
         },
         {
-          "id": 344,
+          "id": 345,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 231
         },
         {
-          "id": 309,
+          "id": 310,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 196
         },
         {
-          "id": 326,
+          "id": 327,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 884,
+          "id": 885,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 508
         },
         {
-          "id": 890,
+          "id": 891,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 491
         },
         {
-          "id": 889,
+          "id": 890,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 392
         },
         {
-          "id": 933,
+          "id": 934,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 326
         },
         {
-          "id": 932,
+          "id": 933,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 317
         },
         {
-          "id": 934,
+          "id": 935,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 305
         },
         {
-          "id": 914,
+          "id": 915,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 273
         },
         {
-          "id": 913,
+          "id": 914,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 270
         },
         {
-          "id": 907,
+          "id": 908,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 226
         },
         {
-          "id": 926,
+          "id": 927,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 171
         },
         {
-          "id": 905,
+          "id": 906,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 165
         },
         {
-          "id": 893,
+          "id": 894,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 142
         },
         {
-          "id": 918,
+          "id": 919,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 124
         },
         {
-          "id": 894,
+          "id": 895,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 121
         },
         {
-          "id": 940,
+          "id": 941,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 531
         },
         {
-          "id": 886,
+          "id": 887,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 527
         },
         {
-          "id": 881,
+          "id": 882,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 521
         },
         {
-          "id": 891,
+          "id": 892,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 521
         },
         {
-          "id": 882,
+          "id": 883,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1039,7 @@
           "word_count": 517
         },
         {
-          "id": 883,
+          "id": 884,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1065,7 +1065,7 @@
     }
   },
   "meta": {
-    "total_raw": 1108,
+    "total_raw": 1109,
     "dup": 251,
     "nocontent": 403,
     "noise": 7
