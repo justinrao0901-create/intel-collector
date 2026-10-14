@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 55,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 405
         },
         {
-          "id": 54,
+          "id": 53,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 140
         },
         {
-          "id": 84,
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 274
         },
         {
-          "id": 85,
+          "id": 87,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 246
         },
         {
-          "id": 80,
+          "id": 82,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,22 @@
           "word_count": 218
         },
         {
-          "id": 65,
+          "id": 64,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
+          "link": "https://arxiv.org/abs/2609.35291",
+          "content": "Modern AI models are aligned through post-training to adapt them to downstream tasks. Recent work shows that fine-tuning language models on narrow tasks can induce emergent misalignment (EM), causing broadly harmful behaviors beyond the training task. However, EM has been studied almost entirely in text-only tasks, leaving its manifestation in multimodal models unclear. In this paper, we define and analyze EM in the context of vision-language models. We first induce EM via fine-tuning on narrow multimodal tasks targeting vulnerable code, careless household-object use, and conspiratorial interpretations of ordinary scenes. Across fifteen commercial and open-source models with different scales, we find that narrow multimodal fine-tuning can induce coherent and broadly misaligned behavior that transfers to unrelated tasks, including misaligned opinions, visual factual dishonesty, unsafe image generation, vulnerability to visual jailbreaks, and risky agentic actions. We further find that multimodal EM does not depend on the apparent harmfulness of training data but is sensitive to training-evaluation modality alignment. EM can arise under both supervised fine-tuning and preference opti",
+          "pub_date": "2026-09-27T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 68,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,22 +140,37 @@
           "word_count": 1200
         },
         {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
+          "id": 151,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
+          "tier": "T2",
           "priority": 5,
-          "title": "Visual Grounding Safety in Vision-Language Models",
-          "link": "https://arxiv.org/abs/2610.05637",
-          "content": "Vision-language models (VLMs) are increasingly trained to generate structured outputs like points and bounding boxes that downstream interfaces, agents, and robots can act on, yet safety alignment of this output channel has not been systematically analyzed. We study visual grounding safety by repurposing three safety benchmarks spanning direct harm (VLSU), social bias (BBQ-V), and situational safety (Asimov-2.0) into 15,401 matched pairs of harmful requests that differ only in the requested output: a free-text answer (VQA) or a grounding (point or bounding box). Across five VLMs, models that refuse a harmful request posed as a question often comply when the same request asks for a grounding: averaged over models, grounding refusal trails VQA refusal by 31-59 percentage points, depending on the domain, and safety system prompts do not close this gap. We propose a fine-tuning approach that combines grounding-form refusals with capability grounding data and self-distilled benign data to counter over-refusal. For Qwen3-VL-8B and VisionReasoner-7B, it improves grounding refusal by 77-95 percentage points on VLSU and BBQ-V and by 64-85 points on the held-out Asimov-2.0 domain, while also",
-          "pub_date": "2026-10-04T20:00:00.000Z",
+          "title": "Redesigning source control at Anthropic",
+          "link": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+          "content": "Redesigning source control at Anthropic Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months. In May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. They included a chart showing those changes. I had Claude modify their chart ( code here ) to add markers for the public releases of each of their models in 2026: This shows public release dates, not the date when models became available for Anthropic's internal use. My guess is that the introduction of Fable/Mythos class models is a key factor in the increased coding velocity. \"Antique\" is their new code review system. The source control system is called Scion, and sounds to me like a reinvention of centralized source control along the lines of Subversion. They had some pretty extreme requirements: The history of our main branch alone is almost 100 GB, and a compressed working copy is over 25 GB. We perform on the order of 25 million code checkouts per day for CI, before counting developer environments, agent sandboxes, and resear",
+          "pub_date": "2026-10-13T23:00:06+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 153,
+          "id": 152,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "llm-gemini 0.35",
+          "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
+          "content": "Release: llm-gemini 0.35 I added support to llm-gemini for the new Gemini 4 Argon model, made available today via the Gemini API and for customers of their $100/month subscription plan. Here are the low, medium and high pelicans . As expected, they are all excellent: Gemini has a track record of producing great SVGs, and are the only lab where I know their staff have invested in SVG specifically (and who have boasted about their pelicans before.) Here's the \"high\" illustration, which cost me 17.166 cents: The pricing is interesting. At launch, Argon is $2/million input and $10/million output - the same price as GPT-6 Sol, half the price of Claude Opus 5.5 and 1/5th the price of Claude Fable 5.1 and GPT-6 Astra. But on December 1st Argon is set to double in price - so it will be the same price as Opus 5.5. Prices like this aren't really comparable these days since what really matters is how many tokens a model takes to achieve a goal within an agentic harness. One useful clue for that comes from Artificial Analysis, who publish the total cost to run their benchmark using each model. Argon is looking very good there - costing $2,407 to run the benchmark, putting it close to GLM-5.3 a",
+          "pub_date": "2026-10-13T22:28:54+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 155,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -153,36 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 749
-        },
-        {
-          "id": 152,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting Geoffrey Huntley",
-          "link": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
-          "content": "If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library. All of a sudden it's ten out of ten. &mdash; Geoffrey Huntley , nobody should type code by hand anymore. here's what's left. Tags: coding-agents , generative-ai , git , agentic-engineering , ai , geoffrey-huntley , llms",
-          "pub_date": "2026-10-13T13:32:00+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 579
-        },
-        {
-          "id": 155,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Profiling web-edit with Python 3.15: flame graphs and source heatmaps",
-          "link": "https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/",
-          "content": "Research: Profiling web-edit with Python 3.15: flame graphs and source heatmaps I put the new Python 3.15 profiler through its paces by having GPT-6 Astra Extra High in Codex run it against my new web-edit app : I need a Python 3.15 flame graph and heatmap demo of the \"web-edit\" app from PyPI - research first then make me those demos Here's the resulting example flame graph and heatmap . Tags: profiling , python , codex",
-          "pub_date": "2026-10-12T16:58:00+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 423
         }
       ],
       "quota": {
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 268,
-      "total_valid": 52,
+      "total_valid": 58,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 597,
+          "id": 563,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 598,
+          "id": 564,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 599,
+          "id": 565,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 497,
+          "id": 469,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 743
         },
         {
-          "id": 505,
+          "id": 477,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 568
         },
         {
-          "id": 724,
+          "id": 690,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 553
         },
         {
-          "id": 498,
+          "id": 470,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 487
         },
         {
-          "id": 723,
+          "id": 689,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 458
         },
         {
-          "id": 511,
+          "id": 483,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 328
         },
         {
-          "id": 518,
+          "id": 490,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 220
         },
         {
-          "id": 519,
+          "id": 491,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 196
         },
         {
-          "id": 621,
+          "id": 587,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 464
         },
         {
-          "id": 623,
+          "id": 589,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 411
         },
         {
-          "id": 680,
+          "id": 646,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 528,
-      "total_valid": 359,
+      "total_raw": 492,
+      "total_valid": 335,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 856,
+          "id": 817,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 843,
+          "id": 804,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 853,
+          "id": 814,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 119
         },
         {
-          "id": 872,
+          "id": 832,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 432
         },
         {
-          "id": 871,
+          "id": 831,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 339
         },
         {
-          "id": 805,
+          "id": 767,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 334
         },
         {
-          "id": 859,
+          "id": 820,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 860,
+          "id": 821,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 861,
+          "id": 822,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 119,
+      "total_raw": 111,
       "total_valid": 10,
       "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 605,
+          "id": 571,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 510,
+          "id": 482,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 493
         },
         {
-          "id": 535,
+          "id": 507,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 449
         },
         {
-          "id": 512,
+          "id": 484,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 377
         },
         {
-          "id": 805,
+          "id": 767,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 334
         },
         {
-          "id": 722,
+          "id": 688,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 240
         },
         {
-          "id": 918,
+          "id": 874,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 925,
+          "id": 883,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,22 +769,22 @@
           "word_count": 508
         },
         {
-          "id": 935,
+          "id": 891,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Citi CEO Says Corporate Finance Wants Tokenized Deposits, Not Stablecoins",
-          "link": "https://www.pymnts.com/earnings/2026/citi-ceo-says-corporate-finance-wants-tokenized-deposits-not-stablecoins/",
-          "content": "The race to modernize corporate payments is becoming a contest over where businesses want their money to live, rather than how quickly they can move it. This was made evident during Citigroup’s third-quarter 2026 earnings, reported Tuesday (Oct. 13). While the bank beat Wall Street expectations, the most consequential numbers for corporate finance executives weren’t [&#8230;] The post Citi CEO Says Corporate Finance Wants Tokenized Deposits, Not Stablecoins appeared first on PYMNTS.com .",
+          "title": "Citi’s Fraser Says Enterprises Value Tokenized Deposits Over Stablecoins",
+          "link": "https://www.pymnts.com/earnings/2026/citi-ceo-fraser-says-enterprises-value-tokenized-deposits-over-stablecoins/",
+          "content": "The race to modernize corporate payments is becoming a contest over where businesses want their money to live, rather than how quickly they can move it. This was made evident during Citigroup’s third-quarter 2026 earnings, reported Tuesday (Oct. 13). While the bank beat Wall Street expectations, the most consequential numbers for corporate finance executives weren’t [&#8230;] The post Citi’s Fraser Says Enterprises Value Tokenized Deposits Over Stablecoins appeared first on PYMNTS.com .",
           "pub_date": "Tue, 13 Oct 2026 18:31:11 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 492
+          "word_count": 491
         },
         {
-          "id": 932,
+          "id": 890,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 464
         },
         {
-          "id": 930,
+          "id": 888,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 392
         },
         {
-          "id": 982,
+          "id": 937,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 326
         },
         {
-          "id": 981,
+          "id": 936,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 317
         },
         {
-          "id": 983,
+          "id": 938,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 305
         },
         {
-          "id": 962,
+          "id": 918,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 273
         },
         {
-          "id": 961,
+          "id": 917,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 270
         },
         {
-          "id": 955,
+          "id": 911,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 226
         },
         {
-          "id": 975,
+          "id": 930,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 171
         },
         {
-          "id": 953,
+          "id": 909,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 165
         },
         {
-          "id": 938,
+          "id": 894,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 142
         },
         {
-          "id": 967,
+          "id": 922,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 124
         },
         {
-          "id": 939,
+          "id": 895,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 121
         },
         {
-          "id": 987,
+          "id": 942,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 502
         },
         {
-          "id": 988,
+          "id": 943,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1009,22 +1009,7 @@
           "word_count": 475
         },
         {
-          "id": 933,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "UnitedHealth Says Chart Review Time Falls 33% With AI Usage",
-          "link": "https://www.pymnts.com/earnings/2026/unitedhealth-says-chart-review-time-falls-33percent-with-ai-usage/",
-          "content": "UnitedHealth Group is using artificial intelligence and streamlined digital tools to tackle rising consumer demand and long-standing operational bottlenecks across the healthcare ecosystem. Speaking during the company’s third-quarter earnings call Tuesday (Oct. 13), CEO Steve Hemsley stressed a company-wide effort to develop modern “agentic infrastructure” designed to care simpler, faster, and more supportive for both consumers and clinicians [&#8230;] The post UnitedHealth Says Chart Review Time Falls 33% With AI Usage appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 13 Oct 2026 19:33:01 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 556
-        },
-        {
-          "id": 992,
+          "id": 947,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1024,7 @@
           "word_count": 531
         },
         {
-          "id": 927,
+          "id": 885,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1052,6 +1037,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 527
+        },
+        {
+          "id": 889,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Albertsons Presses Reset Button as Inflation Presses Its Customers",
+          "link": "https://www.pymnts.com/earnings/2026/albertsons-presses-reset-button-as-inflation-presses-its-customers/",
+          "content": "Grocery giant Albertsons is planning an extensive overhaul as inflation continues to hinder consumer spending. The company released quarterly earnings Tuesday (Oct. 13) showing a sales dip of 0.8%, and said it was pausing its financial guidance as it undertakes a sweeping business review. “Sales and earnings growth have not met our expectations,” Meg Whitman, Albertsons’ recently appointed executive chair, [&#8230;] The post Albertsons Presses Reset Button as Inflation Presses Its Customers appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 13 Oct 2026 19:47:04 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 526
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 236,
+      "total_raw": 235,
       "total_valid": 48,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1160,
-    "dup": 280,
-    "nocontent": 405,
+    "total_raw": 1115,
+    "dup": 254,
+    "nocontent": 403,
     "noise": 7
   }
 }
