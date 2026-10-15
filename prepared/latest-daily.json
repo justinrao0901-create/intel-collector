@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 52,
+          "id": 56,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 383
         },
         {
-          "id": 53,
+          "id": 57,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 129
         },
         {
-          "id": 76,
+          "id": 81,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,22 @@
           "word_count": 394
         },
         {
-          "id": 81,
+          "id": 80,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
+          "link": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+          "content": "The founders detailed how their startup is developing AI that can design chips, learn from each iteration, and improve subsequent designs, all with the goal of automating and accelerating the chip design process.",
+          "pub_date": "Thu, 15 Oct 2026 01:01:32 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 212
+        },
+        {
+          "id": 86,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,22 +125,22 @@
           "word_count": 205
         },
         {
-          "id": 86,
-          "source": "TechCrunch AI",
+          "id": 65,
+          "source": "HuggingFace Daily Papers",
           "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-          "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
-          "content": "Max Hodak, the former president and co-founder of Neuralink, detailed onstage at TechCrunch Disrupt how his company's work with PRIMA is part of its path toward a novel brain-computer interface (BCI).",
-          "pub_date": "Tue, 13 Oct 2026 23:13:31 +0000",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Beyond Perfect Teammates: Multi-Agent Collaboration with Unreliable Colleagues",
+          "link": "https://arxiv.org/abs/2610.16117",
+          "content": "LLM-based multi-agent collaboration is increasingly used to solve complex tasks by dividing work among specialized agents and integrating complementary expertise. Yet existing systems and evaluations largely rest on an implicit perfect-colleague assumption: collaborators provide correct and complete information and respond promptly to requests. In realistic teamwork, however, collaborators may return information that does not answer the intended question, provide insufficient detail to support a decision, or fail to respond to a request. To separate task-solving competence from the ability to recover an unreliable evidence-gathering process, we introduce the Unreliable Colleagues Benchmark (UnCoBench), which organizes behavioral failures through Misaligned, Incomplete, and Missed settings. The main agent need to verify contextual correctness, diagnose information gap and track unresolved dependencies in order to obtain the correct evidence for solving the task. We also introduce a verifiable and scalable automated generation pipeline that pairs LLM-based scenario generation with executable checks of answer uniqueness and role necessity. Results across ten models show that similar r",
+          "pub_date": "2026-10-11T23:31:54.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 200
+          "word_count": 1200
         },
         {
-          "id": 64,
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 66,
+          "id": 72,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,22 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Privacy-Preserving Intent Fulfilment and Assurance for 6G RAN",
-          "link": "https://arxiv.org/abs/2607.08809",
-          "content": "Intent-based network management automates 6G service lifecycles, but existing fulfilment and assurance approaches require traffic inspection, per-flow tracking, or vendor-internal telemetry. These requirements conflict with privacy constraints in multi-tenant networks and vendor opacity in O-RAN deployments. We present an architecture that provisions resources from declared intent categories without traffic inspection and verifies fulfilment using only cell-level standardised PM counters at the O1 interface. A data-processing inequality bounds resource-allocation leakage about traffic content by log_2 K bits for K categories. Intent-traffic unlinkability and node-opaque verification hold by construction. If verification requires at least q cells per category among M cells, the ceiling becomes log_2 lfloor M/q rfloor bits. This bound covers the category/resource channel, not total inference from PM counters. When individual records add state-independent noise to the category aggregate, the category-mean verifier is at least as powerful as any per-agent verifier. We map the architecture to the 3GPP intent lifecycle and O-RAN Non-RT RIC. On production PM data from four operator networ",
-          "pub_date": "2026-10-08T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 3488,
+          "id": 3492,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 3601,
+      "total_raw": 3605,
       "total_valid": 2549,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 3914,
+          "id": 3918,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 3922,
+          "id": 3926,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 3927,
+          "id": 3931,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 3833,
+          "id": 3837,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 593
         },
         {
-          "id": 3802,
+          "id": 3806,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 438
         },
         {
-          "id": 3832,
+          "id": 3836,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 422
         },
         {
-          "id": 4039,
+          "id": 4043,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 392
         },
         {
-          "id": 3854,
+          "id": 3858,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 385
         },
         {
-          "id": 3855,
+          "id": 3859,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 325
         },
         {
-          "id": 3804,
+          "id": 3808,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 321
         },
         {
-          "id": 3812,
+          "id": 3816,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 269
         },
         {
-          "id": 4008,
+          "id": 4012,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 232
         },
         {
-          "id": 4009,
+          "id": 4013,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 195
         },
         {
-          "id": 4019,
+          "id": 4023,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 68
         },
         {
-          "id": 4025,
+          "id": 4029,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 4209,
+          "id": 4213,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 4196,
+          "id": 4200,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1199
         },
         {
-          "id": 4162,
+          "id": 4166,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 174
         },
         {
-          "id": 4154,
+          "id": 4158,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 163
         },
         {
-          "id": 4163,
+          "id": 4167,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 127
         },
         {
-          "id": 4197,
+          "id": 4201,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 4188,
+          "id": 4192,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 479
         },
         {
-          "id": 4170,
+          "id": 4174,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 428
         },
         {
-          "id": 4174,
+          "id": 4178,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 4175,
+          "id": 4179,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 4176,
+          "id": 4180,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -611,7 +611,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 4198,
+          "id": 4202,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 4199,
+          "id": 4203,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 4201,
+          "id": 4205,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1117
         },
         {
-          "id": 4221,
+          "id": 4225,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 428
         },
         {
-          "id": 4170,
+          "id": 4174,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 428
         },
         {
-          "id": 4039,
+          "id": 4043,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 392
         },
         {
-          "id": 3677,
+          "id": 3681,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 377
         },
         {
-          "id": 3673,
+          "id": 3677,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 349
         },
         {
-          "id": 4220,
+          "id": 4224,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 317
         },
         {
-          "id": 3676,
+          "id": 3680,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 4233,
+          "id": 4238,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 530
         },
         {
-          "id": 4266,
+          "id": 4270,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 351
         },
         {
-          "id": 4265,
+          "id": 4269,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 264
         },
         {
-          "id": 4256,
+          "id": 4260,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 253
         },
         {
-          "id": 4257,
+          "id": 4261,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 235
         },
         {
-          "id": 4258,
+          "id": 4262,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 234
         },
         {
-          "id": 4251,
+          "id": 4255,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 194
         },
         {
-          "id": 4239,
+          "id": 4243,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 164
         },
         {
-          "id": 4240,
+          "id": 4244,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 144
         },
         {
-          "id": 4293,
+          "id": 4297,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -934,7 +934,7 @@
           "word_count": 148
         },
         {
-          "id": 4292,
+          "id": 4296,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -949,7 +949,7 @@
           "word_count": 87
         },
         {
-          "id": 157,
+          "id": 161,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 172,
+          "id": 176,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 371,
+          "id": 375,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 587,
+          "id": 591,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 629,
+          "id": 633,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 687,
+          "id": 691,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 932,
+          "id": 936,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 988,
+          "id": 992,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 1020,
+          "id": 1024,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1089,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 265,
-      "total_valid": 74,
+      "total_raw": 264,
+      "total_valid": 73,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 4462,
-    "dup": 1084,
-    "nocontent": 396,
+    "total_raw": 4465,
+    "dup": 1085,
+    "nocontent": 399,
     "noise": 7
   }
 }
