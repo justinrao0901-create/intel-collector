@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 12,
+      "count": 11,
       "ok": true
     },
     "Anthropic Blog": {
@@ -40,7 +40,7 @@
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 20,
+      "count": 19,
       "ok": true
     },
     "Hacker News AI": {
@@ -190,7 +190,7 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 11,
+      "count": 7,
       "ok": true
     },
     "Cell Host Microbe": {
@@ -202,7 +202,7 @@
     "Immunity": {
       "section": "vaccine",
       "method": "rss",
-      "count": 5,
+      "count": 4,
       "ok": true
     },
     "Science": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 20,
+      "count": 16,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 22,
+      "count": 21,
       "ok": true
     },
     "BioPharma Dive": {
@@ -334,7 +334,7 @@
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 5,
+      "count": 3,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -424,7 +424,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 44,
+      "count": 43,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 0,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -506,7 +506,9 @@
       "Absci Blog",
       "Import AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "Thunes"
+    ],
     "persistent_zero": [
       "WHO News"
     ]
