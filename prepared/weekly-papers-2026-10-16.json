@@ -13,12 +13,12 @@
       "link": "https://arxiv.org/abs/2610.18615",
       "upvotes": 342,
       "hn_points": 0,
-      "citations": null,
+      "citations": 1,
       "source": "HF Daily+alphaXiv",
       "pub": "2026-10-12",
       "is_survey": false,
       "is_china": false,
-      "score": 1026
+      "score": 1026.5
     },
     {
       "id": "2610.20571",
@@ -27,7 +27,7 @@
       "link": "https://arxiv.org/abs/2610.20571",
       "upvotes": 339,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily+alphaXiv",
       "pub": "2026-10-13",
       "is_survey": false,
@@ -83,7 +83,7 @@
       "link": "https://arxiv.org/abs/2610.13527",
       "upvotes": 296,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-09",
       "is_survey": false,
@@ -109,14 +109,28 @@
       "title": "OmniCompass: A Holistic Benchmark for Omni-Modal Video Grounding and Understanding",
       "abstract": "With the rapid development of multimodal large language models (MLLMs), evaluating their video understanding capabilities has become increasingly important. Existing video understanding benchmarks cover only part of the evaluation dimensions, limiting systematic diagnosis of omni-modal video understanding. We introduce OmniCompass, a holistic benchmark for omni-modal video grounding and understanding. OmniCompass defines two evaluation tracks: OmniCompass-VL assesses vision-language models on tasks requiring visual evidence, while OmniCompass-AV assesses omni-modal models on tasks requiring joint audio-visual evidence. Each track includes three complementary tasks: temporal grounding (TG), spatial grounding (SG), and question answering (QA), assessing when a referenced target appears, where it is, and what happens. QA covers five perception and three reasoning categories in OmniCompass-VL, and three perception and two reasoning categories in OmniCompass-AV. OmniCompass-VL contains 820 videos and 2,460 instances across domains and three duration types: short, medium, and long. A narrative- and audio-rich subset forms OmniCompass-AV with 240 videos and 720 instances. Each instance is",
       "link": "https://arxiv.org/abs/2610.18829",
-      "upvotes": 255,
+      "upvotes": 281,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-12",
       "is_survey": false,
       "is_china": false,
-      "score": 765
+      "score": 843
+    },
+    {
+      "id": "2610.21601",
+      "title": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
+      "abstract": "Policy-shift distillation reuses the difference between a teacher's log probabilities before and after reinforcement learning (RL) as supervision on student-generated trajectories. However, this endpoint policy shift cannot reveal whether local action preferences evolved consistently during teacher training. The same endpoint shift can result from early and late shifts that reinforce or partially cancel each other. We investigate whether agreement between early and late teacher policy shifts can guide selective transfer. We introduce Waypoint-guided On-Policy Distillation (Waypoint-OPD), which uses an intermediate teacher checkpoint from the same RL run to compare early and late shifts in relative action preferences at student-visited prefixes. We gate the endpoint shift according to the directional agreement between the early and late shifts, suppressing it when they point in opposing directions. Compared with endpoint-only transfer, our method requires only one additional frozen-teacher scoring pass. Using RL-trained Qwen3-4B teachers, we evaluate our method with Qwen3-8B, Qwen3-14B, and Qwen3-30B-A3B as student models in mathematical and code reasoning. In all six domain--studen",
+      "link": "https://arxiv.org/abs/2610.21601",
+      "upvotes": 239,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+arXiv",
+      "pub": "2026-10-14",
+      "is_survey": false,
+      "is_china": true,
+      "score": 752
     },
     {
       "id": "2610.11765",
@@ -125,7 +139,7 @@
       "link": "https://arxiv.org/abs/2610.11765",
       "upvotes": 247,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-07",
       "is_survey": false,
@@ -161,32 +175,18 @@
       "score": 696
     },
     {
-      "id": "2610.21601",
-      "title": "Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation",
-      "abstract": "Policy-shift distillation reuses the difference between a teacher's log probabilities before and after reinforcement learning (RL) as supervision on student-generated trajectories. However, this endpoint policy shift cannot reveal whether local action preferences evolved consistently during teacher training. The same endpoint shift can result from early and late shifts that reinforce or partially cancel each other. We investigate whether agreement between early and late teacher policy shifts can guide selective transfer. We introduce Waypoint-guided On-Policy Distillation (Waypoint-OPD), which uses an intermediate teacher checkpoint from the same RL run to compare early and late shifts in relative action preferences at student-visited prefixes. We gate the endpoint shift according to the directional agreement between the early and late shifts, suppressing it when they point in opposing directions. Compared with endpoint-only transfer, our method requires only one additional frozen-teacher scoring pass. Using RL-trained Qwen3-4B teachers, we evaluate our method with Qwen3-8B, Qwen3-14B, and Qwen3-30B-A3B as student models in mathematical and code reasoning. In all six domain--studen",
-      "link": "https://arxiv.org/abs/2610.21601",
-      "upvotes": 208,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+arXiv",
-      "pub": "2026-10-14",
-      "is_survey": false,
-      "is_china": true,
-      "score": 659
-    },
-    {
       "id": "2610.17665",
       "title": "RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment",
       "abstract": "Can vision-language models turn 2D observations into 3D understanding that supports precise action? This requires inferring object geometry, anticipating the effects of rotation, and refining actions through visual feedback. We introduce RoTA-Bench to evaluate these abilities through interactive 3D-to-2D projection alignment. Given a target silhouette, a model observes a rotated object and chooses successive rotations to recover the target projection within a limited action budget. Our automated pipeline constructs silhouette-preserving 3D objects from 2D icons and uses reversible initialization to guarantee solvability, yielding 674 tasks and a stratified 100-task test set. Empirically, we find that (i) a substantial human-model gap persists: GPT-5.6-Sol succeeds on only 17% of tasks, whereas 20 undergraduate participants collectively complete the test set four times with a 100% success rate; (ii) image-space and pose-space progress can diverge: at matched states, the model more often improves silhouette overlap while worsening pose alignment than humans (19.4% vs. 10.9%); and (iii) fine-grained control is sensitive to interaction history: removing it leaves 96.8% of the model's a",
       "link": "https://arxiv.org/abs/2610.17665",
-      "upvotes": 196,
+      "upvotes": 197,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-13",
       "is_survey": false,
       "is_china": false,
-      "score": 588
+      "score": 591
     },
     {
       "id": "2610.17953",
@@ -217,6 +217,20 @@
       "score": 552
     },
     {
+      "id": "2610.22350",
+      "title": "FDE-Gym: The Last Mile of AI Delivery",
+      "abstract": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constraints. We introduce FDE-Gym, a benchmark of 95 end-to-end delivery tasks from 20 customer scenarios across 18 sectors, each adapted by industry experts from real-world delivery projects. In simulated customer environments with scripted stakeholders and modifiable customer systems, agents interact with stakeholders and operate on production-like systems to deliver working solutions. FDE-Gym scores a delivery by how much it improves the customer's own success metric, normalized between 0 (unchanged system) and 1 (reference solution), with penalties for stakeholder interactions (messages, trial runs, and waiting time). An online platform lets humans practice FDE skills under the same grading criteria. We evaluate 13 model configurations from seven providers. In the realistic setting, where unstated constraints must be discovered, the best configuration achieves a mean FDE-Gym score of 0.56 an",
+      "link": "https://arxiv.org/abs/2610.22350",
+      "upvotes": 162,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+arXiv",
+      "pub": "2026-10-14",
+      "is_survey": false,
+      "is_china": false,
+      "score": 486
+    },
+    {
       "id": "2610.13166",
       "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
       "abstract": "Terminal agents are moving beyond local operations toward completing real-world professional tasks. Short trajectories can demonstrate commands and tool calls, but they do not fully show how agents accumulate evidence through exploration, use it to inform judgments, continually adjust strategies based on feedback, and turn intermediate results into final deliverables. High-quality long-horizon trajectories capture these agentic behavioral patterns and their connections within a single problem-solving process, providing richer experience for sustained autonomous work. However, environment synthesis may complete or simplify the key work underlying these patterns in advance and thus remove the need for exploration, implementation, and verification that the agent was meant to perform. To address this, we introduce TerminalHorizon, a fully automated data synthesis engine for long-horizon terminal agents. Starting from real-world professional work, it uses independent execution to identify key work omitted during construction and uses the resulting evidence to guide environment reconstruction. To extend these patterns across stages, it progressively expands tasks under the same goal, int",
@@ -245,32 +259,32 @@
       "score": 459
     },
     {
-      "id": "2610.22350",
-      "title": "FDE-Gym: The Last Mile of AI Delivery",
-      "abstract": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constraints. We introduce FDE-Gym, a benchmark of 95 end-to-end delivery tasks from 20 customer scenarios across 18 sectors, each adapted by industry experts from real-world delivery projects. In simulated customer environments with scripted stakeholders and modifiable customer systems, agents interact with stakeholders and operate on production-like systems to deliver working solutions. FDE-Gym scores a delivery by how much it improves the customer's own success metric, normalized between 0 (unchanged system) and 1 (reference solution), with penalties for stakeholder interactions (messages, trial runs, and waiting time). An online platform lets humans practice FDE skills under the same grading criteria. We evaluate 13 model configurations from seven providers. In the realistic setting, where unstated constraints must be discovered, the best configuration achieves a mean FDE-Gym score of 0.56 an",
-      "link": "https://arxiv.org/abs/2610.22350",
-      "upvotes": 144,
+      "id": "2610.22200",
+      "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+      "abstract": "Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users' computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model chooses how to observe, act, and organize its work across visual and programmatic interfaces. Yet frontier implementations, such as GPT-6 Astra's computer-use system, remain largely closed, limiting systematic study of their design. We introduce Open Generalist CUA (OpenGCUA), an ongoing project to develop and open the full stack for GCUAs with the community. This report presents the first release of OpenGCUA. Code execution is a key feature of our agent design: it lets intermediate results determine subsequent operations and enables models to apply their existing programming capabilities directly to computer interaction. We also propose harness-to-model decision transfer, moving selected observations and task-state decisions from fixed harness rules to the model. On OSWorld-v2, our full configuration improves task scores across all eight evaluated models, including GPT-6 Astra and Claude Opus 5, raising mean partial sco",
+      "link": "https://arxiv.org/abs/2610.22200",
+      "upvotes": 145,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-10-14",
       "is_survey": false,
       "is_china": false,
-      "score": 432
+      "score": 435
     },
     {
       "id": "2610.22276",
       "title": "MJev-Spatial: System One Spatial Intelligence via Native Attention Matching",
       "abstract": "Spatial intelligence lets an agent perceive and act in the physical world, and many of its judgments must be made at interaction rates: which spatial relation holds, how far an object is, or where to place it. Vision-language models (VLMs) produce these answers by free-form text generation, paying for autoregressive decoding and answer parsing even though the output space is compact: one of a few options, a scalar, or a 2D point. In light of this, we introduce MJev-Spatial, a System 1 multimodal decision model that tackles all three types of spatial understanding tasks within a unified classification framework. Specifically, MJev-Spatial treats each candidate as a class and scores it using the backbone's pretrained query and key projections, without adding parameters. The candidates are the given options for choice tasks, or value bins and image regions refined through coarse-to-fine classification for numerical and point prediction, respectively. At inference, each classification decision takes a single forward pass and generates no answer tokens. To train on heterogeneous spatial data efficiently, we supervise all coarse-to-fine stages jointly with teacher forcing in one forward ",
       "link": "https://arxiv.org/abs/2610.22276",
-      "upvotes": 130,
+      "upvotes": 135,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-10-14",
       "is_survey": false,
       "is_china": false,
-      "score": 390
+      "score": 405
     },
     {
       "id": "2610.14993",
@@ -279,7 +293,7 @@
       "link": "https://arxiv.org/abs/2610.14993",
       "upvotes": 130,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-09",
       "is_survey": false,
@@ -321,7 +335,7 @@
       "link": "https://arxiv.org/abs/2610.18356",
       "upvotes": 120,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-12",
       "is_survey": false,
@@ -341,20 +355,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 351
-    },
-    {
-      "id": "2610.22200",
-      "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
-      "abstract": "Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users' computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model chooses how to observe, act, and organize its work across visual and programmatic interfaces. Yet frontier implementations, such as GPT-6 Astra's computer-use system, remain largely closed, limiting systematic study of their design. We introduce Open Generalist CUA (OpenGCUA), an ongoing project to develop and open the full stack for GCUAs with the community. This report presents the first release of OpenGCUA. Code execution is a key feature of our agent design: it lets intermediate results determine subsequent operations and enables models to apply their existing programming capabilities directly to computer interaction. We also propose harness-to-model decision transfer, moving selected observations and task-state decisions from fixed harness rules to the model. On OSWorld-v2, our full configuration improves task scores across all eight evaluated models, including GPT-6 Astra and Claude Opus 5, raising mean partial sco",
-      "link": "https://arxiv.org/abs/2610.22200",
-      "upvotes": 116,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+arXiv",
-      "pub": "2026-10-14",
-      "is_survey": false,
-      "is_china": false,
-      "score": 348
     },
     {
       "id": "2610.20341",
@@ -389,14 +389,14 @@
       "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
       "abstract": "Long-horizon agents have drawn growing attention for their ability to work autonomously -- from hours to days -- on economically valuable tasks, a capability essential to automated discovery and recursive self-improvement (RSI). Yet open-source models still struggle on long-horizon tasks, largely for lack of both training data and a working recipe, and scaling both is hard: long, complex tasks are difficult to curate and verify, and their rewards are sparse. We address both. First, we introduce Tev-Gym, the first long-horizon agent training dataset with verifiable, dense, progressive rewards -- 1,170 verified task environments across 7 domains. It is built on a latent-world-first approach that first constructs a latent world: a complete and correct hidden specification of the task domain, workflow, and expected state after each step. Each task is then progressively rendered from this specification into an agent-facing environment, enabling controllable complexity and a natural progress metric. Second, we turn this metric into a training recipe: via progress-potential reward shaping (PPRS), we convert progress into a dense per-step reward that improves training efficiency and makes ",
       "link": "https://arxiv.org/abs/2610.18868",
-      "upvotes": 104,
+      "upvotes": 105,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-12",
       "is_survey": false,
       "is_china": false,
-      "score": 312
+      "score": 315
     },
     {
       "title": "ArXiv receives multiyear commitments to support it as an independent nonprofit",
@@ -461,7 +461,7 @@
       "link": "https://arxiv.org/abs/2610.14224",
       "upvotes": 96,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-08",
       "is_survey": false,
@@ -628,13 +628,13 @@
       "hn_points": 245,
       "id": "2609.16338",
       "upvotes": 0,
-      "citations": null,
-      "abstract": "",
+      "citations": 1,
+      "abstract": "ITCOS, a simple distribution-adaptive layout comprised of a dense presence bitmap plus a compacted sign vector, and costs $2 - z bits per weight element given a zero density in the model's weights is introduced.",
       "source": "HN",
       "pub": "2026-09-16",
       "is_survey": false,
       "is_china": false,
-      "score": 245
+      "score": 245.5
     },
     {
       "id": "2610.18067",
