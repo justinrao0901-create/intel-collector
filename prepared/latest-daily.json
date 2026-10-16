@@ -347,7 +347,7 @@
           "word_count": 236
         },
         {
-          "id": 2861,
+          "id": 2860,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 224
         },
         {
-          "id": 2862,
+          "id": 2861,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -390,21 +390,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 195
-        },
-        {
-          "id": 2860,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Genome-wide association study of conjugated pneumococcal vaccine antibody responses in South African infants",
-          "link": "https://www.nature.com/articles/s41541-026-01585-8",
-          "content": "npj Vaccines, Published online: 15 October 2026; doi:10.1038/s41541-026-01585-8 Genome-wide association study of conjugated pneumococcal vaccine antibody responses in South African infants",
-          "pub_date": "2026-10-15",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 188
         },
         {
           "id": 2642,
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 179
+        },
+        {
+          "id": 2670,
+          "source": "JAMA",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Daily Zinc Supplementation for Infection Prevention in Children With Sickle Cell Anemia",
+          "link": "https://jamanetwork.com/journals/jama/fullarticle/2853064",
+          "content": "This randomized clinical trial examines the safety and effectiveness of daily zinc supplementation to prevent all-cause infection in children with sickle cell anemia in Uganda.",
+          "pub_date": "Tue, 13 Oct 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 176
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 553,
-      "total_valid": 410,
+      "total_valid": 409,
       "total_candidates": 15
     },
     "synbio": {
@@ -1051,7 +1051,7 @@
   },
   "meta": {
     "total_raw": 3310,
-    "dup": 348,
+    "dup": 349,
     "nocontent": 399,
     "noise": 9
   }
