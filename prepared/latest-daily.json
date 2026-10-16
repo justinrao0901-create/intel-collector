@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 59,
+          "id": 60,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 426
         },
         {
-          "id": 57,
+          "id": 58,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 376
         },
         {
-          "id": 56,
+          "id": 57,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -80,22 +80,22 @@
           "word_count": 149
         },
         {
-          "id": 4,
+          "id": 3,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
           "priority": 3,
-          "title": "SentinelOne cuts malware analysis from weeks to hours",
-          "link": "https://openai.com/index/sentinelone",
-          "content": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-          "pub_date": "Wed, 14 Oct 2026 12:00:00 GMT",
+          "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+          "link": "https://openai.com/index/sullivan-cromwell",
+          "content": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+          "pub_date": "Thu, 15 Oct 2026 00:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 121
+          "word_count": 135
         },
         {
-          "id": 96,
+          "id": 97,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 309
         },
         {
-          "id": 91,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 208
         },
         {
-          "id": 89,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,37 @@
           "word_count": 191
         },
         {
+          "id": 73,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "CoTranslator: Reverse to Forward Chain-of-Thought Translator for Reasoning Distillation",
+          "link": "https://arxiv.org/abs/2610.20828",
+          "content": "Reasoning distillation requires chain-of-thought (CoT) data with correct answers, but obtaining such data efficiently remains challenging. Forward CoT generation (FCG) followed by rejection sampling (RS) produces verified, question-only responses, yet may require many teacher calls for difficult problems. Reverse CoT generation (RCG) is cheaper because it conditions on the known answer, but access to this answer can lead to post-hoc rationalization and a mismatch with the student's answer-free inference setting. We propose CoTranslator, which learns to translate reverse CoT responses toward the distribution of verified forward responses. Trained on a small set of paired reverse and rejection-sampled forward responses, it supports large-scale generation and verification of student training data. Across six student models evaluated on six mathematics benchmarks, CoTranslator improves average accuracy over semantic suppression by up to 5.82 percentage points. For two 4B students, it retains 95.0% of rejection sampling's average accuracy while using 35.9% of its estimated compute. Without retraining, the same translator transfers to a new mathematics dataset, a different teacher, and S",
+          "pub_date": "2026-10-13T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 74,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Speculative Sampling in Interactive Video Generation",
+          "link": "https://arxiv.org/abs/2610.20556",
+          "content": "Interactive video generation commonly relies on small bidirectional chunks to reduce response latency. Yet our preliminary experiments show that larger chunks improve video quality and better utilize GPU parallelism, allowing more latents to be sampled with only a modest increase in sampling time. Motivated by these observations, we propose Speculative Sampling, a strategy that combines the modeling power of large bidirectional windows with the low-latency interaction of small ones. It expands the modeling window by appending noise latents as padding and caches the resulting predictions for reuse when the condition remains unchanged. Predictions are delivered incrementally, while the uncommitted future remains replaceable. Our latency analysis shows that this removes the waiting-time lower bound imposed by chunk boundaries, shifting the optimization focus from reducing chunk size to accelerating per-chunk sampling. Bidirectional window size thus becomes a decision variable for jointly optimizing visual quality and sampling time, rather than a necessary constraint on low-latency interaction. This opens a path to serving large bidirectional models in interactive streaming systems wit",
+          "pub_date": "2026-10-13T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -153,36 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 75,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Looking Complete Is Not Being Grounded: Evaluating LLM Sitreps Against Human-Authored Situation Reports",
-          "link": "https://arxiv.org/abs/2610.18762",
-          "content": "Evaluation for automatic crisis reporting should measure what practitioners need, not what is convenient to compare. Through LLM-assisted, author-approved content analysis, we derive a 15-slot information schema from professional humanitarian situation reports using qualitative content analysis, then evaluate 121 human and 261 LLM-generated reports across five disasters and three hazard types. Under google/gemini-3.7-flash on Cyclone Idai, the best machine arm is nominally above the empirical human ceiling (0.827 vs. 0.821), but the difference is statistically indistinguishable from zero (95\\% bootstrap CI [-.049,.059]; permutation p=.852), and the ordering does not replicate under openai/gpt-5.6-luna. On a blind 100-item Idai sample, the author agrees with the Gemini judge at 0.910 accuracy and unweighted Cohen's κ=.799. All four judges clear the plan's raw-agreement criterion of .7; only Gemini reaches .7 on chance-corrected κ. Across the three primary events, machine reports reproduce 5.4-11.0% of same-day official figures. Across those same events, raw exact-number matching links 14.3-19.6% of official figures and 85.4-90.1% of machine figures to the social stream; manual audit",
-          "pub_date": "2026-10-13T13:23:19.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 76,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "When Left Is Right? Camera-Motion Understanding beyond Screen",
-          "link": "https://arxiv.org/abs/2610.17242",
-          "content": "Can a vision-language model tell left from right? Modern VLMs solve visual puzzles and follow hour-long videos, yet when asked whether the camera moved left or right, most do no better than a coin flip. Adding camera-motion data or geometric representations has been tried, separately, and neither closes the gap. We argue that camera-motion understanding needs two conditions at once: the representation must couple off-screen camera motion with on-screen flow dynamics, and it must be interpreted by the language model rather than trained as a standalone pose or depth estimator. We propose CameraVLM, which pairs a motion-state representation with state-language alignment. Camera tokens capture how the camera moves off screen, flow tokens capture how the subject and background move on screen, and a two-stage training strategy keeps language in the loop so that both are learned together with camera-motion semantics. With only 9B parameters, CameraVLM outperforms all open-source and camera-motion-specific models by a wide margin across three benchmarks and more than 20 baselines, and matches or surpasses GPT-6 Astra as well as human viewers in a 48-participant study. Project page: https:/",
-          "pub_date": "2026-10-11T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 2412,
-      "total_valid": 2076,
+      "total_valid": 2079,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2759,
+          "id": 2758,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2760,
+          "id": 2759,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2765,
+          "id": 2764,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2572,
+          "id": 2571,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 709
         },
         {
-          "id": 2573,
+          "id": 2572,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 598
         },
         {
-          "id": 2582,
+          "id": 2581,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 404
         },
         {
-          "id": 2595,
+          "id": 2594,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 385
         },
         {
-          "id": 2561,
+          "id": 2560,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 356
         },
         {
-          "id": 2680,
+          "id": 2679,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 293
         },
         {
-          "id": 2676,
+          "id": 2675,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 236
         },
         {
-          "id": 2862,
+          "id": 2861,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 232
         },
         {
-          "id": 2912,
+          "id": 2911,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 224
         },
         {
-          "id": 2863,
+          "id": 2862,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 195
         },
         {
-          "id": 2861,
+          "id": 2860,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 188
         },
         {
-          "id": 2643,
+          "id": 2642,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 554,
-      "total_valid": 411,
+      "total_raw": 553,
+      "total_valid": 410,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2983,
+          "id": 2982,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 313
         },
         {
-          "id": 3017,
+          "id": 3016,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 124
         },
         {
-          "id": 3019,
+          "id": 3018,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 83
         },
         {
-          "id": 3042,
+          "id": 3041,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 3043,
+          "id": 3042,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 3051,
+          "id": 3050,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 3034,
+          "id": 3033,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 337
         },
         {
-          "id": 3024,
+          "id": 3023,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 3042,
+          "id": 3041,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 2571,
+          "id": 2570,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 743
         },
         {
-          "id": 2572,
+          "id": 2571,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 709
         },
         {
-          "id": 2556,
+          "id": 2555,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 579
         },
         {
-          "id": 2582,
+          "id": 2581,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 404
         },
         {
-          "id": 2584,
+          "id": 2583,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 314
         },
         {
-          "id": 2580,
+          "id": 2579,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 305
         },
         {
-          "id": 2487,
+          "id": 2486,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 292
         },
         {
-          "id": 2683,
+          "id": 2682,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 278
         },
         {
-          "id": 2507,
+          "id": 2506,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 3110,
+          "id": 3109,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 506
         },
         {
-          "id": 3086,
+          "id": 3085,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -799,22 +799,7 @@
           "word_count": 477
         },
         {
-          "id": 3085,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "FIS and Anthropic Debut Money Laundering Investigation Agent",
-          "link": "https://www.pymnts.com/legal/aml/2026/fis-anthropic-debut-money-laundering-investigation-agent/",
-          "content": "An artificial intelligence agent developed by FIS and Anthropic is now commercially available to any bank based in the United States, according to a Thursday (Oct. 15) press release. The FIS AML Investigations Agent was first announced in May, PYMNTS reported, although at that time it was called the Financial Crimes AI Agent. It is [&#8230;] The post FIS and Anthropic Debut Money Laundering Investigation Agent appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 15 Oct 2026 19:16:28 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 444
-        },
-        {
-          "id": 3107,
+          "id": 3106,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +814,7 @@
           "word_count": 397
         },
         {
-          "id": 3109,
+          "id": 3108,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 355
         },
         {
-          "id": 3137,
+          "id": 3136,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 350
         },
         {
-          "id": 3136,
+          "id": 3135,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 335
         },
         {
-          "id": 3111,
+          "id": 3110,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 334
         },
         {
-          "id": 3135,
+          "id": 3134,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 313
         },
         {
-          "id": 3112,
+          "id": 3111,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 272
         },
         {
-          "id": 3116,
+          "id": 3115,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 208
         },
         {
-          "id": 3087,
+          "id": 3086,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 144
         },
         {
-          "id": 3141,
+          "id": 3140,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 478
         },
         {
-          "id": 3144,
+          "id": 3143,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -979,7 +964,7 @@
           "word_count": 190
         },
         {
-          "id": 284,
+          "id": 285,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 288,
+          "id": 289,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 311,
+          "id": 312,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 690,
+          "id": 691,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1032,6 +1017,21 @@
           "title": "Get In, Decide, Prove: A Merchant-Side Readiness Benchmark for Agentic Commerce",
           "link": "https://arxiv.org/abs/2610.17378",
           "content": "arXiv:2610.17378v1 Announce Type: new Abstract: AI agents now browse and buy on people's behalf, and benchmarks measure how well the agents perform. Far less is known about the other side of the transaction: whether a merchant's website lets an agent in, publishes terms precise enough to decide a purchase, and leaves evidence of what was agreed. This paper presents a merchant-side benchmark built on those three questions and reports a pilot of it. The central measurement, decision sufficiency, rates each criterion of a concrete buyer mandate (total cost, cancellation or return terms, service date, variant identity) as determinate, indeterminate, or unknown from the merchant's own published evidence. Readiness scores carry their evidence coverage and missingness bounds; access is reported separately for a declared bot, a declared headless browser, and a user-present browser; and each observed term is mapped to the RAILS admissibility class of the evidence that could support it in a dispute. Four large merchants received the full assessment: three refused the declared profiles at their offer pages, and no mandate could be confirmed as met, because each merchant left a total or a refu",
+          "pub_date": "Thu, 15 Oct 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 782,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "AgentStripes: An Evidence-Graded Maturity Model for AI Agents",
+          "link": "https://arxiv.org/abs/2610.18603",
+          "content": "arXiv:2610.18603v1 Announce Type: new Abstract: Benchmarks report what an Artificial Intelligence (AI) agent can do on a task suite, but not whether one released version has been engineered with the controls that make it reliable, safe and observable, or how strongly that is shown. This paper proposes AgentStripes, an evidence-graded maturity model for AI agents. It defines levels (0 to 7 stripes), process areas (12 areas holding 40 capabilities), three gates (basic, safety, proof) that hold an agent at a level however high its score, and evidence grades E0 to E5. Each applicable capability receives a rating from 0 to 3 and a separate evidence level; these are combined into a credit, aggregated into a severity-weighted score and converted into stripes that the gates limit. Instruments gather evidence, language-model judges interpret it under explicit criteria, and the arithmetic is deterministic. The model is compared with standards at topic level without a claim of conformance, and an unexecuted validation protocol is specified. An empirical evaluation (exploratory, non-confirmatory) of 30 public Python agent repositories, with static evidence only, is a demonstration and not a va",
           "pub_date": "Thu, 15 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1050,8 +1050,8 @@
     }
   },
   "meta": {
-    "total_raw": 3311,
-    "dup": 351,
+    "total_raw": 3310,
+    "dup": 348,
     "nocontent": 399,
     "noise": 9
   }
