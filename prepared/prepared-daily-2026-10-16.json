@@ -145,9 +145,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CoTranslator: Reverse to Forward Chain-of-Thought Translator for Reasoning Distillation",
-          "link": "https://arxiv.org/abs/2610.20828",
-          "content": "Reasoning distillation requires chain-of-thought (CoT) data with correct answers, but obtaining such data efficiently remains challenging. Forward CoT generation (FCG) followed by rejection sampling (RS) produces verified, question-only responses, yet may require many teacher calls for difficult problems. Reverse CoT generation (RCG) is cheaper because it conditions on the known answer, but access to this answer can lead to post-hoc rationalization and a mismatch with the student's answer-free inference setting. We propose CoTranslator, which learns to translate reverse CoT responses toward the distribution of verified forward responses. Trained on a small set of paired reverse and rejection-sampled forward responses, it supports large-scale generation and verification of student training data. Across six student models evaluated on six mathematics benchmarks, CoTranslator improves average accuracy over semantic suppression by up to 5.82 percentage points. For two 4B students, it retains 95.0% of rejection sampling's average accuracy while using 35.9% of its estimated compute. Without retraining, the same translator transfers to a new mathematics dataset, a different teacher, and S",
+          "title": "Intern Lumina U2: A Multi-Codebook Diffusion Large Language Model for Omni-Visual Understanding and Image Generation",
+          "link": "https://arxiv.org/abs/2610.20818",
+          "content": "Unified multimodal generation covers discrete, continuous, and hybrid paradigms. Discrete approaches with single-codebook visual tokenizers align naturally with text modeling but have limited representational capacity. Continuous and hybrid approaches retain richer visual representations, but they model text and images in heterogeneous spaces with different training objectives, potentially introducing optimization conflicts between modalities with misaligned representation spaces. These choices expose a central question: how to efficiently model high-capacity visual representations alongside textual content in a shared optimization space within a single backbone. We present Intern Lumina U2, to our knowledge the first diffusion language model to represent multi-codebook visual tokens in a fully discrete space. Each visual position is represented by a group of codes from complementary codebooks, increasing its representational capacity while preserving compatibility with discrete text modeling. At the input, the embeddings are concatenated at each position; at the output, a lightweight multi-codebook autoregressive head predicts the codes within each position sequentially, while the",
           "pub_date": "2026-10-13T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -160,24 +160,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Speculative Sampling in Interactive Video Generation",
-          "link": "https://arxiv.org/abs/2610.20556",
-          "content": "Interactive video generation commonly relies on small bidirectional chunks to reduce response latency. Yet our preliminary experiments show that larger chunks improve video quality and better utilize GPU parallelism, allowing more latents to be sampled with only a modest increase in sampling time. Motivated by these observations, we propose Speculative Sampling, a strategy that combines the modeling power of large bidirectional windows with the low-latency interaction of small ones. It expands the modeling window by appending noise latents as padding and caches the resulting predictions for reuse when the condition remains unchanged. Predictions are delivered incrementally, while the uncommitted future remains replaceable. Our latency analysis shows that this removes the waiting-time lower bound imposed by chunk boundaries, shifting the optimization focus from reducing chunk size to accelerating per-chunk sampling. Bidirectional window size thus becomes a decision variable for jointly optimizing visual quality and sampling time, rather than a necessary constraint on low-latency interaction. This opens a path to serving large bidirectional models in interactive streaming systems wit",
-          "pub_date": "2026-10-13T20:00:00.000Z",
+          "title": "SWE-at-Scale: Scalable Issue Synthesis from Historical Bug Fixes",
+          "link": "https://arxiv.org/abs/2610.21359",
+          "content": "As coding agents become increasingly capable, robust evaluation requires a broader and more diverse supply of verifiable software engineering (SWE) tasks. However, real-world tasks are constrained by the natural frequency of issue reporting and the substantial cost of manual curation. Furthermore, existing synthetic approaches rely primarily on the pretrained knowledge of large models coupled with heuristic prompting, often failing to capture the authentic, complex mechanics of software failures. To exponentially scale SWE task production, we introduce SWE-at-Scale, a framework that automatically synthesizes realistic issues by reverse-engineering real-world software fixes. Our key insight is that historical fixes encapsulate deep mechanistic knowledge of bug formation: inverting a fix transforms repair supervision into bug-induction supervision grounded in actual development scenarios. SWE-at-Scale transfers these learned bug patterns to novel code contexts, repeatedly sampling diverse bug typologies to construct executable SWE tasks. Extensive experiments show that SWE-at-Scale generates more diverse and realistic SWE tasks than current synthesis baselines while posing greater ch",
+          "pub_date": "2026-10-14T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 70,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Lluna: Collaborative Unimodal Models for Missing-Modality Inference",
-          "link": "https://arxiv.org/abs/2610.20526",
-          "content": "Pretrained unimodal models offer a flexible route to multimodal prediction through collaboration, but this collaboration can become less accurate than a surviving unimodal model when modalities are missing. We study this setting using fixed surviving-model anchors and find that collaborative gains can weaken or reverse as inputs disappear, even when the anchor's own input is unchanged. Our diagnostics further reveal reduced recovery of modality-specific information after aggregation and state-dependent collaborative representations. We propose Lluna, which combines a direct private prediction path from adapted unimodal features with a common graph-based collaboration branch that provides a residual correction. Progressive Collaboration Consistency organizes richer-to-poorer guidance along single-modality removals, aligning normalized common representations while task supervision adapts predictions to the available evidence. Across eight datasets spanning affective computing, scene understanding, and medical prediction, Lluna achieves the best evaluated average performance over non-full input states, improving Mean-Missing by 4.26\\% on average relative to the strongest evaluated bas",
+          "title": "CoTranslator: Reverse to Forward Chain-of-Thought Translator for Reasoning Distillation",
+          "link": "https://arxiv.org/abs/2610.20828",
+          "content": "Reasoning distillation requires chain-of-thought (CoT) data with correct answers, but obtaining such data efficiently remains challenging. Forward CoT generation (FCG) followed by rejection sampling (RS) produces verified, question-only responses, yet may require many teacher calls for difficult problems. Reverse CoT generation (RCG) is cheaper because it conditions on the known answer, but access to this answer can lead to post-hoc rationalization and a mismatch with the student's answer-free inference setting. We propose CoTranslator, which learns to translate reverse CoT responses toward the distribution of verified forward responses. Trained on a small set of paired reverse and rejection-sampled forward responses, it supports large-scale generation and verification of student training data. Across six student models evaluated on six mathematics benchmarks, CoTranslator improves average accuracy over semantic suppression by up to 5.82 percentage points. For two 4B students, it retains 95.0% of rejection sampling's average accuracy while using 35.9% of its estimated compute. Without retraining, the same translator transfers to a new mathematics dataset, a different teacher, and S",
           "pub_date": "2026-10-13T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -347,7 +347,7 @@
           "word_count": 236
         },
         {
-          "id": 2855,
+          "id": 2856,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 224
         },
         {
-          "id": 2856,
+          "id": 2857,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -390,6 +390,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 195
+        },
+        {
+          "id": 2855,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Genome-wide association study of conjugated pneumococcal vaccine antibody responses in South African infants",
+          "link": "https://www.nature.com/articles/s41541-026-01585-8",
+          "content": "npj Vaccines, Published online: 15 October 2026; doi:10.1038/s41541-026-01585-8 Genome-wide association study of conjugated pneumococcal vaccine antibody responses in South African infants",
+          "pub_date": "2026-10-15",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 188
         },
         {
           "id": 2637,
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 179
-        },
-        {
-          "id": 2665,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Daily Zinc Supplementation for Infection Prevention in Children With Sickle Cell Anemia",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2853064",
-          "content": "This randomized clinical trial examines the safety and effectiveness of daily zinc supplementation to prevent all-cause infection in children with sickle cell anemia in Uganda.",
-          "pub_date": "Tue, 13 Oct 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 176
         }
       ],
       "quota": {
@@ -428,13 +428,13 @@
         "max": 7
       },
       "total_raw": 553,
-      "total_valid": 409,
+      "total_valid": 410,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2977,
+          "id": 2978,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 313
         },
         {
-          "id": 3011,
+          "id": 3012,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 124
         },
         {
-          "id": 3013,
+          "id": 3014,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 83
         },
         {
-          "id": 3036,
+          "id": 3037,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 3037,
+          "id": 3038,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 3045,
+          "id": 3046,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 3028,
+          "id": 3029,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 337
         },
         {
-          "id": 3018,
+          "id": 3019,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -559,14 +559,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 99,
+      "total_raw": 100,
       "total_valid": 16,
       "total_candidates": 8
     },
     "cross": {
       "candidates": [
         {
-          "id": 3036,
+          "id": 3037,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 3104,
+          "id": 3071,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Personal Shopping Platform Glance Adds PayPal Native Checkout",
+          "link": "https://www.pymnts.com/commerce/ecommerce/2026/personal-shopping-platform-glance-adds-paypal-native-checkout/",
+          "content": "Glance has added real-time product data and native checkout to its personal shopping platform through a new agentic commerce integration with PayPal, Glance said in a Thursday (Oct. 15) press release. Glance, which is backed by global technology company InMobi, is embedded on 60 million phones and connected TVs through relationships with device manufacturers. The platform brings artificial intelligence (AI)-powered shopping [&#8230;] The post Personal Shopping Platform Glance Adds PayPal Native Checkout appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 16 Oct 2026 01:35:53 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 539
+        },
+        {
+          "id": 3105,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 506
         },
         {
-          "id": 3080,
+          "id": 3081,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 491
         },
         {
-          "id": 3074,
+          "id": 3076,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 487
         },
         {
-          "id": 3073,
+          "id": 3075,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 477
         },
         {
-          "id": 3101,
+          "id": 3102,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 397
         },
         {
-          "id": 3103,
+          "id": 3104,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 355
         },
         {
-          "id": 3131,
+          "id": 3132,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 350
         },
         {
-          "id": 3130,
+          "id": 3131,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 335
         },
         {
-          "id": 3105,
+          "id": 3106,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 334
         },
         {
-          "id": 3129,
+          "id": 3130,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 313
         },
         {
-          "id": 3106,
+          "id": 3107,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 272
         },
         {
-          "id": 3110,
+          "id": 3111,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 208
         },
         {
-          "id": 3081,
+          "id": 3082,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 144
         },
         {
-          "id": 3135,
+          "id": 3136,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1022,21 +1037,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 1078,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Force-Modulated Dexterity: Unified Compliance for Contact-Rich Manipulation",
-          "link": "https://arxiv.org/abs/2610.17161",
-          "content": "arXiv:2610.17161v1 Announce Type: cross Abstract: Teleoperation is widely used to collect high-quality demonstrations for robot learning. Dexterous manipulation, however, requires coordinated control of motion and contact forces. Operators can specify motion, but struggle to reproduce the subtle force adjustments of human manipulation without feeling the robot's contacts. We introduce Force-Modulated Dexterity (FOMO-Dex), a unified compliance formulation for contact-rich manipulation. FOMO-Dex expresses nominal actions in coordinates defined by task geometry and contact structure. It applies force-driven motion corrections along selected directions while leaving the remaining command components unchanged. Across card picking, paper cutting, screwdriving, and nut-and-bolt assembly, FOMO-Dex reduces excessive contact forces compared with stiff control. A user study shows that operators collect more successful demonstration data per hour after brief practice. For policy learning, imitating the corrected actions improves card-picking success over imitating raw operator commands. Policies trained on FOMO-Dex demonstrations also achieve more rotation in nut-and-bolt manipulation and scre",
-          "pub_date": "Thu, 15 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1050,9 +1050,9 @@
     }
   },
   "meta": {
-    "total_raw": 3302,
-    "dup": 346,
-    "nocontent": 396,
+    "total_raw": 3303,
+    "dup": 345,
+    "nocontent": 397,
     "noise": 9
   }
 }
