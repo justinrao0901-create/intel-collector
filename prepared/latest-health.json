@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "sources": {
     "OpenAI News": {
       "section": "ai",
@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 5,
       "ok": true
     },
     "Meta AI Blog": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 10,
+      "count": 5,
       "ok": true
     },
     "Sequoia Capital": {
@@ -76,7 +76,7 @@
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 453,
+      "count": 0,
       "ok": true
     },
     "arXiv cs.LG": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 17,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 0,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,13 +148,13 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 5,
+      "count": 0,
       "ok": true
     },
     "WHO News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
+      "count": 1,
       "ok": true
     },
     "FDA 审批动态": {
@@ -172,13 +172,13 @@
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 20,
       "ok": true
     },
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 23,
+      "count": 22,
       "ok": true
     },
     "Lancet Infect Dis": {
@@ -262,7 +262,7 @@
     "Vaccine (journal)": {
       "section": "vaccine",
       "method": "rss",
-      "count": 82,
+      "count": 84,
       "ok": true
     },
     "npj Vaccines": {
@@ -310,7 +310,7 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
+      "count": 4,
       "ok": true
     },
     "Fierce Biotech": {
@@ -346,7 +346,7 @@
     "Metabolic Engineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 48,
+      "count": 49,
       "ok": true
     },
     "Cell Systems": {
@@ -358,7 +358,7 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 16,
+      "count": 17,
       "ok": true
     },
     "Absci Blog": {
@@ -406,31 +406,31 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 10,
+      "count": 3,
       "ok": true
     },
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
+      "count": 0,
       "ok": true
     },
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 0,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 15,
+      "count": 10,
       "ok": true
     },
     "Payments Cards & Mobile": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 0,
       "ok": true
     },
     "Thunes": {
@@ -507,14 +507,18 @@
       "Import AI"
     ],
     "sudden_drop": [
-      "Cointelegraph Payments",
-      "Google DeepMind",
-      "arXiv cs.CL",
-      "arXiv cs.LG"
+      "Endpoints News",
+      "PYMNTS Cross-Border",
+      "Payments Cards & Mobile",
+      "PaymentsDive",
+      "STAT News",
+      "arXiv cs.AI"
     ],
     "persistent_zero": [
+      "Cointelegraph Payments",
       "Ledger Insights",
-      "WHO News"
+      "arXiv cs.CL",
+      "arXiv cs.LG"
     ]
   }
 }
