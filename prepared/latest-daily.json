@@ -50,7 +50,37 @@
           "word_count": 108
         },
         {
-          "id": 86,
+          "id": 76,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+          "link": "https://arxiv.org/abs/2610.23839",
+          "content": "Scientific discovery requires developing worthwhile hypotheses into practical investigations, yet learning from this evolving research process remains challenging. We introduce an operational definition of valuable and testable research hypotheses: evidence-grounded claims about consequential uncertainties, coupled with feasible investigations, explicit decision criteria, and alternative explanations. Our DiscoveryRSI framework develops hypothesis trees through multi-agent evolutionary search, compiles selected investigations into executable Harbor tasks, and recursively learns through three mechanisms: hypothesis credit optimization attributes scientific assessments to documented research contributions; harness replay identifies productive strategies and recurring failures to refine research workflows; and rediscovery applies accepted improvements to new investigations, generating further experience for subsequent learning. We also introduce DFM-Bench, which provides comprehensive assessment of hypothesis quality and cumulative research progress at the levels of hypotheses, revisions, development paths and research runs. Across four life-science domains, automated evaluation shows",
+          "pub_date": "2026-10-15T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 78,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "PRISM: PRIvileged Sibling-guided Multi-Agent Topology Design",
+          "link": "https://arxiv.org/abs/2610.20628",
+          "content": "Multi-agent systems (MAS) based on large language models (LLMs) have become a powerful way to address complex problems, and their effectiveness depends critically on the collaboration topology that decides which agents participate and how they communicate. Recent work learns to generate this topology from the task query, fitting the generator to corpora of execution-verified graphs. The post-training method for such generators remains a limitation: a corpus lists the graphs that solved a query but never ranks them, leaving continued supervised fine-tuning (SFT) with no per-query preference to exploit. Without such a preference, the generator drifts toward the topologies the corpus contains most often rather than those that suit each query, so a gain on one task can come at a cost on another. We propose PRISM, which recovers per-query signal from the same corpus by learning with privileged information: a teacher reads, through a zero-initialized low-rank branch, a sibling graph that also solved the query and is unavailable at deployment, and the student matches its per-decision targets on trajectories the student samples itself. Across six diverse benchmarks PRISM improves over ever",
+          "pub_date": "2026-09-28T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 89,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -59,36 +89,6 @@
           "link": "https://arxiv.org/abs/2610.22127",
           "content": "Personalization of Large Language Models (LLMs) is increasingly important for user-centric applications, yet prior methods mainly adapt dense LLMs, whose polysemantic neurons, each encoding multiple unrelated concepts, hinder localizing the components behind personalization, and thus understanding and controlling it. We propose to personalize Mixture-of-Experts (MoE) LLMs, which sparsely route each token to a few specialized experts, reducing polysemanticity and enabling such localization. We adapt three open-weight MoE LLMs on a large-scale personalization dataset and train crosscoders on paired activations of the personalized and non-personalized models to learn interpretable personalized latents, from which we identify the experts encoding distinct personalization features. The personalized MoE LLMs perform competitively with dense LLMs while activating only a fraction of their parameters, exhibit lower polysemanticity than dense LLMs with similar active parameters, and, within the same model family, yield personalized latents that are less shared with the non-personalized model. Causal interventions show that these latents suffice to recover the personalized model's behavior an",
           "pub_date": "2026-10-14T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 87,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "PAIR: Bridging Perception and Action in Vision-Language-Action Models",
-          "link": "https://arxiv.org/abs/2610.09016",
-          "content": "Vision-language-action (VLA) models map visual observations and language instructions to continuous robot actions. This task requires a transition from representations that describe the scene and instruction to representations that support action generation. Many continuous-action VLAs leave this transition implicit and supervise it mainly through the final action-prediction loss. We introduce PAIR, a framework that learns a shared perception-action representation between these two spaces. During training, a Masked Action Autoencoder encodes expert action chunks into horizon-aligned Action Latent Tokens. A Bridge Module extracts task-relevant features from the current visual-language representations. PAIR aligns these features with the Action Latent Tokens to form Bridge Tokens that preserve task information and capture the structure of expert actions. The Bridge Tokens are then projected into the action-token space and injected into the initial Action Tokens, providing an action-ready starting point for Action Expert refinement. At inference, the autoencoder is removed, and the Bridge Tokens are generated only from the current observation and instruction. Experiments on LIBERO, LI",
-          "pub_date": "2026-10-05T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 88,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Beyond Policy Rollouts: Embedding-Space Directional Exploration with Anchored Noise for LLM RLVR",
-          "link": "https://arxiv.org/abs/2610.16105",
-          "content": "Reinforcement learning with verifiable rewards (RLVR) typically uses small rollout groups per prompt, where repeated sampling from the same policy can yield highly similar trajectories, reducing within-group reward variation and weakening group-relative advantage signals. Existing remedies such as higher sampling temperature, entropy bonuses, asymmetric clipping, and larger rollout budgets broaden sampling or modify policy updates but leave rollout conditioning unchanged. In this paper, we propose EDEN (Embedding-space Directional Exploration via anchored Noise), which intervenes at the rollout source through anchored input perturbations. EDEN explores beyond the policy's own rollouts. Within the same rollout budget, it replaces a small fraction of standard rollouts in each group with rollouts that the same policy generates from the prompt plus a single appended, perturbed embedding position, rather than from the prompt alone. Gaussian noise drives variation, while a shared anchor provides a common conditioning direction within each prompt group. Selected perturbed rollouts contribute to GRPO updates with downweighted advantages, and the model architecture, discrete decoding, and t",
-          "pub_date": "2026-10-11T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -709,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 894,
+          "id": 895,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 461
         },
         {
-          "id": 903,
+          "id": 904,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -744,6 +744,21 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
+          "title": "DeepSeek Deploys What It Calls Faster Version of Its Open-Source Model",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/deepseek-deploys-what-it-calls-faster-version-of-its-open-source-model/",
+          "content": "China’s DeepSeek has unveiled what it calls a faster and leaner version of its artificial intelligence model. The company describes the DeepSeek-V4.1-Flash-1017 model, announced Saturday (Oct. 17) as offering “[s]tronger benchmark performance, faster task completion, and shorter outputs than the previous version.” DeepSeek added that this model employs “reinforcement learning with self-feedback” to bolster end-to-end [&#8230;] The post DeepSeek Deploys What It Calls Faster Version of Its Open-Source Model appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 19 Oct 2026 01:31:52 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 541
+        },
+        {
+          "id": 891,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
           "title": "Sam Altman’s World Debuts ID Verification for AI Agents",
           "link": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/",
           "content": "Sam Altman’s iris-scanning project World is making what it calls its “first industry-specific push.” The company on Sunday (Oct. 18) announced World ID for banking and finance, designed to help businesses determine whether artificial intelligence agents are moving money and shopping on behalf of an actual person. World’s AgentKit, now in beta, lets a person [&#8230;] The post Sam Altman&#8217;s World Debuts ID Verification for AI Agents appeared first on PYMNTS.com .",
@@ -754,7 +769,7 @@
           "word_count": 471
         },
         {
-          "id": 896,
+          "id": 897,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 471
         },
         {
-          "id": 891,
+          "id": 892,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 464
         },
         {
-          "id": 892,
+          "id": 893,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,22 +814,7 @@
           "word_count": 458
         },
         {
-          "id": 893,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Crypto Hardware Wallets Become New Entry Point for Hackers",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/crypto-hardware-wallets-become-new-entry-point-for-hackers/",
-          "content": "Last week, cryptocurrency hardware wallet company Ledger said it was investigating a hack that drained $90 million from its devices. As Bloomberg News reported Sunday (Oct. 18), this reprsents the latest example of a vulnerability in what was once believed to be the safest tool for digital assets. Numerous hacks in recent months have illustrated [&#8230;] The post Crypto Hardware Wallets Become New Entry Point for Hackers appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 18 Oct 2026 23:15:29 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 456
-        },
-        {
-          "id": 898,
+          "id": 899,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 232
         },
         {
-          "id": 897,
+          "id": 898,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -849,13 +849,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 185,
-      "total_valid": 10,
+      "total_raw": 186,
+      "total_valid": 11,
       "total_candidates": 9
     }
   },
   "meta": {
-    "total_raw": 1074,
+    "total_raw": 1075,
     "dup": 287,
     "nocontent": 409,
     "noise": 7
