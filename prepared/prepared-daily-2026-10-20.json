@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 54,
+          "id": 59,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 388
         },
         {
-          "id": 55,
+          "id": 60,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -50,22 +50,22 @@
           "word_count": 156
         },
         {
-          "id": 91,
+          "id": 97,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
           "priority": 4,
           "title": "Embedded AI evaluators won’t be an easy solution, Hugging Face’s policy chief says",
           "link": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
-          "content": "AI labs have staked their reputations on model benchmarking — the supposedly neutral and accurate system of evaluations that are designed to measure whether one AI product is better than another. However, the methods behind these evaluations are complicated and still maturing, said Irene Solaiman, Hugging Face&#8217;s chief policy officer, during a discussion at TechCrunch [&#8230;]",
+          "content": "The idea of embedded evaluators — in which supposedly \"neutral\" third-party observers are placed inside AI organizations — has been popularized over the last several months, as AI labs grapple with a rash of safety incidents that have spurred concerns over the potential harms of their technology.",
           "pub_date": "Mon, 19 Oct 2026 22:49:27 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 385
+          "word_count": 297
         },
         {
-          "id": 100,
+          "id": 106,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 274
         },
         {
-          "id": 94,
+          "id": 100,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,22 @@
           "word_count": 270
         },
         {
-          "id": 76,
+          "id": 80,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
+          "link": "https://arxiv.org/abs/2610.22732",
+          "content": "Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motivates us to evaluate agents over sequences of realistic coding tasks, where we find that agents exhibit recurring environment-dependent token costs that existing methods struggle to reduce. To minimize these costs, we introduce TokenEconomizer, an external controller that cuts environment-specific token costs over a sequence of tasks. These cuts come from determining (i) which operational micro-skills to inject, (ii) which persistently irrelevant tools to prune, and (iii) when to intervene in unproductive failure loops. Across Claude Code, Codex, and GitHub Copilot CLI paired with frontier models, TokenEconomizer reduces the average token cost by 18.4-30.9% with comparable task success. Savings hold in every repository under every tested agent-model setting and generalize to diverse domains such as sequential web development and security auditing, where costs fall by 6.4-21.2% depending o",
+          "pub_date": "2026-10-14T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 82,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 79,
+          "id": 85,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,22 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 80,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications",
-          "link": "https://arxiv.org/abs/2610.16402",
-          "content": "Web application development often proceeds through successive requests that extend an existing implementation. Yet web-generation benchmarks primarily evaluate development toward fixed specifications. We introduce EvoWeb, a novel benchmark comprising 320 cumulative requests over 32 web applications, grounded in real-world product features and structured by functional dependency graphs. Agents iteratively modify a persistent codebase, while a multimodal web agent tests each intermediate application in a live browser, assessing newly requested functionality, cross-request integration, and previously requested functionality. To characterize reliability throughout development, we integrate trajectory performance across user-tolerance thresholds rather than impose a fixed stopping criterion. Experiments across open- and closed-source frontier models show that EvoWeb reveals clear performance differences between models, with cross-request integration emerging as a key challenge. Further analysis shows that later requests with deeper or more numerous dependencies are solved less accurately, while runtime errors become more frequent over successive requests. EvoWeb provides a testbed for e",
-          "pub_date": "2026-10-11T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 772,
+          "id": 778,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,22 +155,7 @@
           "word_count": 971
         },
         {
-          "id": 786,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "web-edit 0.1a1",
-          "link": "https://simonwillison.net/2026/Oct/13/web-edit/",
-          "content": "Release: web-edit 0.1a1 Includes performance optimizations written by Claude Opus 5.5 after I fed it this Python 3.15 profiling report generated by GPT-6 Astra. Tags: profiling , projects",
-          "pub_date": "2026-10-13T01:40:05+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 187
-        },
-        {
-          "id": 103,
+          "id": 109,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 132
+        },
+        {
+          "id": 765,
+          "source": "Latent Space",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics",
+          "link": "https://www.latent.space/p/dyna",
+          "content": "Our first robotics pod with Dyna&#8217;s Chief Scientist on their big bet on World Action Models & the Next Frontier of Physical AI",
+          "pub_date": "Tue, 13 Oct 2026 22:25:55 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 131
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 881,
+      "total_raw": 886,
       "total_valid": 605,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1164,
+          "id": 1169,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1174,
+          "id": 1179,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1176,
+          "id": 1181,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1112,
+          "id": 1117,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 364
         },
         {
-          "id": 1272,
+          "id": 1277,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 201
         },
         {
-          "id": 1273,
+          "id": 1278,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 177
         },
         {
-          "id": 1233,
+          "id": 1238,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 278
         },
         {
-          "id": 1231,
+          "id": 1236,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 274
         },
         {
-          "id": 1192,
+          "id": 1197,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 273
         },
         {
-          "id": 888,
+          "id": 893,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 247
         },
         {
-          "id": 894,
+          "id": 899,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 213
         },
         {
-          "id": 905,
+          "id": 910,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 168
         },
         {
-          "id": 899,
+          "id": 904,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 133
         },
         {
-          "id": 1023,
+          "id": 1028,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 613
         },
         {
-          "id": 1012,
+          "id": 1017,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1404,
+          "id": 1409,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 184
         },
         {
-          "id": 1426,
+          "id": 1431,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 167
         },
         {
-          "id": 1401,
+          "id": 1406,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 150
         },
         {
-          "id": 1461,
+          "id": 1466,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1462,
+          "id": 1467,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 1463,
+          "id": 1468,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1199
         },
         {
-          "id": 1382,
+          "id": 1387,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 354
         },
         {
-          "id": 1383,
+          "id": 1388,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 351
         },
         {
-          "id": 1455,
+          "id": 1460,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 124
         },
         {
-          "id": 1457,
+          "id": 1462,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 118
         },
         {
-          "id": 1458,
+          "id": 1463,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 108
         },
         {
-          "id": 1438,
+          "id": 1443,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1176,
+          "id": 1181,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1179,
+          "id": 1184,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1185,
+          "id": 1190,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 1382,
+          "id": 1387,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 354
         },
         {
-          "id": 1383,
+          "id": 1388,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 351
         },
         {
-          "id": 1100,
+          "id": 1105,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 320
         },
         {
-          "id": 1494,
+          "id": 1499,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 284
         },
         {
-          "id": 919,
+          "id": 924,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 250
         },
         {
-          "id": 912,
+          "id": 917,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 203
         },
         {
-          "id": 1400,
+          "id": 1405,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1510,
+          "id": 1515,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 533
         },
         {
-          "id": 1509,
+          "id": 1514,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 516
         },
         {
-          "id": 1506,
+          "id": 1511,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 494
         },
         {
-          "id": 1508,
+          "id": 1513,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 481
         },
         {
-          "id": 1505,
+          "id": 1510,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 462
         },
         {
-          "id": 1511,
+          "id": 1516,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 439
         },
         {
-          "id": 1527,
+          "id": 1532,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 330
         },
         {
-          "id": 1526,
+          "id": 1531,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 326
         },
         {
-          "id": 1535,
+          "id": 1540,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 282
         },
         {
-          "id": 1530,
+          "id": 1535,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 277
         },
         {
-          "id": 1529,
+          "id": 1534,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 209
         },
         {
-          "id": 1534,
+          "id": 1539,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 199
         },
         {
-          "id": 1514,
+          "id": 1519,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 95
         },
         {
-          "id": 1553,
+          "id": 1558,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 533
         },
         {
-          "id": 1557,
+          "id": 1562,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,7 +1024,7 @@
           "word_count": 145
         },
         {
-          "id": 1558,
+          "id": 1563,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1039,7 +1039,7 @@
           "word_count": 137
         },
         {
-          "id": 175,
+          "id": 181,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 515,
+          "id": 521,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 566,
+          "id": 572,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 676,
+          "id": 682,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1110,9 +1110,9 @@
     }
   },
   "meta": {
-    "total_raw": 1721,
-    "dup": 326,
-    "nocontent": 411,
+    "total_raw": 1726,
+    "dup": 328,
+    "nocontent": 414,
     "noise": 7
   }
 }
