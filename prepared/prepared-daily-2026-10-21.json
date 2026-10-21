@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 56,
+          "id": 55,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 166
         },
         {
-          "id": 106,
+          "id": 107,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,6 +80,21 @@
           "word_count": 224
         },
         {
+          "id": 78,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning",
+          "link": "https://arxiv.org/abs/2610.26754",
+          "content": "Expert human readers process large inputs (e.g., code repositories and long documents) by skimming to closely read only what matters. On the other hand, language models process all input tokens through each model layer, resulting in significant processing costs for long-context inputs. We introduce TokenGate, a small, drop-in component that extends existing trained models to enable end-to-end learnable token pruning over long-context inputs for fast and memory-efficient prefill. To enable end-to-end learning despite the non-differentiable top-K operator for token pruning, we introduce token-gated attention, a mechanism inspired by Mixture-of-Experts that re-weights attention logits using token importance scores. Across diverse tasks, TokenGate achieves 1.4-11.3times faster time-to-first token (TTFT) and 1.5-3.4times lower peak memory at no accuracy degradation for prefill in transformers. Compared to the best-performing prior methods for token-pruning, TokenGate gives up to 6.4times faster prefill and 2times lower peak memory. TokenGate natively extends both standard transformers (e.g., Qwen3) and hybrid-attention models (e.g., Qwen3.5) with simple lightweight adaptation comparable",
+          "pub_date": "2026-10-18T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
@@ -110,29 +125,14 @@
           "word_count": 1200
         },
         {
-          "id": 82,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "First Passage Attention",
-          "link": "https://arxiv.org/abs/2610.22714",
-          "content": "Augmenting softmax attention with forget gates typically relies on summing decay contributions along the key--query path. Because such accumulation is monotonic, these mechanisms cannot selectively erase intermediate context while preserving older, structurally relevant tokens. We propose First Passage Attention (FPA), which shifts from path summation to path extrema by lowering a key's logit proportionally to the deepest dip of a learned scalar field below that key's level over the intervening span. FPA encompasses the Forgetting Transformer (FoX) as a special case, and when the field and levels follow a shared learned walk, the alive keys with unpenalised logits naturally form a stack. We show that a constant-dimension FPA head realises any subset of keys left alive by subsequent dips, whereas softmax heads with positional biases or token-level forget gates require a head dimension linear in the number of keys. In synthetic experiments, one-layer FPA heads converge to these target sets while comparable softmax and FoX baselines fail on every seed. Scaling to a 110M-parameter language model, FPA matches FoX in perplexity and uniquely achieves perfect passkey retrieval at 8times th",
-          "pub_date": "2026-10-14T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 2208,
+          "id": 2207,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
           "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
           "link": "https://simonwillison.net/2026/Oct/20/battledrones/",
-          "content": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way. Battle Drones How I built this v1: the initial prototype v2: full sprites v3: varied terrain v4: the fun update v5: Battle Drones goes 3D v8: Archipelago v10: Goliath, and agent battles Agent battles v11: Random Maps v12: Multiplayer via sound Some thoughts Battle Drones My initial goal was to build an RTS game I could play on my phone, in the style of Command & Conquer . I have fond memories of the 1995 original (I liked Red Alert too) and wanted to recapture a little bit of the magic. After 12 major iterations (and 321 commits by coding agents, mainly Claude Code) I now have a browser-based game that works on mobile and desktop, has multiple play modes, several maps (including a random map generator) and even supports",
+          "content": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way. Battle Drones How I built this v1: the initial prototype v2: full sprites v3: varied terrain v4: the fun update v5: Battle Drones goes 3D v8: Archipelago v10: Goliath, and agent battles Agent battles v11: Random Maps v12: Multiplayer via sound Some thoughts Update: Online multiplayer support Battle Drones My initial goal was to build an RTS game I could play on my phone, in the style of Command & Conquer . I have fond memories of the 1995 original (I liked Red Alert too) and wanted to recapture a little bit of the magic. After 12 major iterations (and 321 commits by coding agents, mainly Claude Code) I now have a browser-based game that works on mobile and desktop, has multiple play modes, several maps (including a rand",
           "pub_date": "2026-10-20T19:34:19+00:00",
           "is_duplicate": false,
           "has_content": true,
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 2189,
+          "id": 2187,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 149
         },
         {
-          "id": 117,
+          "id": 116,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 86
         },
         {
-          "id": 2188,
+          "id": 2186,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2314,
+      "total_raw": 2313,
       "total_valid": 1578,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2654,
+          "id": 2616,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2656,
+          "id": 2618,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2659,
+          "id": 2621,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2563,
+          "id": 2529,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 402
         },
         {
-          "id": 2574,
+          "id": 2540,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 306
         },
         {
-          "id": 2570,
+          "id": 2536,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 213
         },
         {
-          "id": 2576,
+          "id": 2542,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 202
         },
         {
-          "id": 2785,
+          "id": 2747,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 163
         },
         {
-          "id": 2694,
+          "id": 2656,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 266
         },
         {
-          "id": 2697,
+          "id": 2659,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 266
         },
         {
-          "id": 2709,
+          "id": 2671,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 266
         },
         {
-          "id": 2319,
+          "id": 2318,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 218
         },
         {
-          "id": 2317,
+          "id": 2316,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 214
         },
         {
-          "id": 2338,
+          "id": 2336,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 189
         },
         {
-          "id": 2820,
+          "id": 2782,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 537,
-      "total_valid": 363,
+      "total_raw": 500,
+      "total_valid": 332,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2889,
+          "id": 2849,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 216
         },
         {
-          "id": 2903,
+          "id": 2863,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 194
         },
         {
-          "id": 2902,
+          "id": 2862,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 193
         },
         {
-          "id": 2971,
+          "id": 2927,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 515
         },
         {
-          "id": 2918,
+          "id": 2878,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 409
         },
         {
-          "id": 2862,
+          "id": 2823,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 376
         },
         {
-          "id": 2863,
+          "id": 2824,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 325
         },
         {
-          "id": 2972,
+          "id": 2928,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 291
         },
         {
-          "id": 2861,
+          "id": 2822,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 282
         },
         {
-          "id": 2943,
+          "id": 2899,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 104
         },
         {
-          "id": 2940,
+          "id": 2896,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 103
         },
         {
-          "id": 2927,
+          "id": 2887,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 121,
+      "total_raw": 115,
       "total_valid": 21,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 2553,
+          "id": 2519,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 481
         },
         {
-          "id": 2918,
+          "id": 2878,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 409
         },
         {
-          "id": 2565,
+          "id": 2531,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 393
         },
         {
-          "id": 2564,
+          "id": 2530,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 384
         },
         {
-          "id": 2862,
+          "id": 2823,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 376
         },
         {
-          "id": 2863,
+          "id": 2824,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 325
         },
         {
-          "id": 2861,
+          "id": 2822,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 282
         },
         {
-          "id": 2360,
+          "id": 2358,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 250
         },
         {
-          "id": 2350,
+          "id": 2348,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 235
         },
         {
-          "id": 2359,
+          "id": 2357,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 56,
-      "total_valid": 39,
+      "total_raw": 55,
+      "total_valid": 38,
       "total_candidates": 10
     },
     "china": {
@@ -814,22 +814,7 @@
           "word_count": 166
         },
         {
-          "id": 2997,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Payment Data Can Keep Merchants Tied to Their Processors",
-          "link": "https://www.pymnts.com/news/payment-methods/2026/payment-data-can-keep-merchants-tied-processors/",
-          "content": "A merchant can negotiate a better payment processing rate and still face an expensive move if its saved customer credentials are tied to its existing provider. That tension sits at the center of payment orchestration’s promise. The technology connects businesses to multiple payment providers and directs transactions among them, giving merchants more choices about who [&#8230;] The post Payment Data Can Keep Merchants Tied to Their Processors appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 20 Oct 2026 18:57:12 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 476
-        },
-        {
-          "id": 3047,
+          "id": 3003,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 369
         },
         {
-          "id": 3020,
+          "id": 2976,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 363
         },
         {
-          "id": 3046,
+          "id": 3002,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 361
         },
         {
-          "id": 3026,
+          "id": 2982,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 344
         },
         {
-          "id": 3048,
+          "id": 3004,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 315
         },
         {
-          "id": 3015,
+          "id": 2971,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 249
         },
         {
-          "id": 3025,
+          "id": 2981,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,22 +919,7 @@
           "word_count": 246
         },
         {
-          "id": 3014,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Pay by Bank sector poised for growth says survey",
-          "link": "https://www.finextra.com/newsarticle/48612/pay-by-bank-sector-poised-for-growth-says-survey?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Pay by Bank, the digital payment method that allows consumers to pay directly from their bank account without the use of a credit or debit card or typing a PIN, is gaining traction in Europe and the UK suggests recently published research.",
-          "pub_date": "Tue, 20 Oct 2026 10:22:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 239
-        },
-        {
-          "id": 3028,
+          "id": 2984,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +934,22 @@
           "word_count": 220
         },
         {
-          "id": 3000,
+          "id": 2972,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Finsei selects Thredd to power new debit offering",
+          "link": "https://www.finextra.com/pressarticle/111366/finsei-selects-thredd-to-power-new-debit-offering?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Thredd, the AI-first issuer processing platform, today announced a new partnership with Finsei, a London-based payments company, to power the processing infrastructure behind Finsei’s new Mastercard debit offering.",
+          "pub_date": "Tue, 20 Oct 2026 13:32:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 214
+        },
+        {
+          "id": 2956,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 143
         },
         {
-          "id": 2999,
+          "id": 2955,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,7 @@
           "word_count": 136
         },
         {
-          "id": 3050,
+          "id": 3006,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +994,7 @@
           "word_count": 553
         },
         {
-          "id": 3049,
+          "id": 3005,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1009,7 @@
           "word_count": 442
         },
         {
-          "id": 2188,
+          "id": 2186,
           "source": "Latent Space",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1024,7 @@
           "word_count": 86
         },
         {
-          "id": 149,
+          "id": 147,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 176,
+          "id": 174,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 218,
+          "id": 216,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 259,
+          "id": 257,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1092,6 +1077,21 @@
           "title": "Measurement Validity and Representation Dynamics of Confidence Signals in Large Language Models",
           "link": "https://arxiv.org/abs/2610.25846",
           "content": "arXiv:2610.25846v1 Announce Type: new Abstract: Whether a language model \"knows what it knows\" matters for trustworthy deployment and for deciding when it should abstain. Prior work usually measures this through one channel: verbalized confidence, a linear probe on hidden states, or agreement among sampled answers (semantic entropy), and often treats these as interchangeable. We compare all three in a pre-registered audit of five Qwen2.5 models (0.5B-7B, including a base/instruct pair at 7B) on factual retrieval (PopQA, SimpleQA) and multi-step reasoning (GSM8K, MATH). First, probes trained on prefill states to predict whether sampled answers will disagree become informative earlier for retrieval (about 7% of layer depth on average) than for reasoning (about 28%). The pre-registered five-layer test supported this only marginally; a finer 21-layer follow-up, designed after those results, supports it more clearly. In most retrieval cells, however, a prompt-only TF-IDF classifier matches the probe, so the early signal may reflect surface features of the question. Second, verbalized confidence is unstable: slightly different prompt templates yield scores that barely correlate. Third, E",
+          "pub_date": "Tue, 20 Oct 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 272,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "VISAGENT: An Agent-Based End-to-End Voice Interaction System",
+          "link": "https://arxiv.org/abs/2610.26168",
+          "content": "arXiv:2610.26168v1 Announce Type: new Abstract: Voice-based public services have evolved from manual switchboards to intelligent platforms to meet modern user needs. However, current systems remain constrained by rigid menu-driven interaction, fragmented vertical services, and limited extensibility. To address these issues, we present VISAGENT, an agent-based end-to-end voice interaction system for large-scale public services that integrates end-to-end speech interaction, hierarchical agent routing, a scalable voice-agent marketplace, and user memory support. The system replaces menu-driven workflows with natural speech and dynamically dispatches user requests to either a general conversational model or specialized domain agents via a two-level routing paradigm that achieves sub-second intent-to-agent selection over hundreds of agents. User memory informs preference-aware agent selection and supplies relevant preferences and context to selected agents, supporting personalized task execution and reducing the need for users to repeat previously provided information. A voice-agent registration mechanism converts task agents into conversational entities, enabling dynamic onboarding and",
           "pub_date": "Tue, 20 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1110,9 +1110,9 @@
     }
   },
   "meta": {
-    "total_raw": 3218,
-    "dup": 791,
-    "nocontent": 413,
+    "total_raw": 3174,
+    "dup": 781,
+    "nocontent": 409,
     "noise": 7
   }
 }
