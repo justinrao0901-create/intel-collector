@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 53,
+          "id": 54,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 388
         },
         {
-          "id": 2,
+          "id": 3,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -35,22 +35,22 @@
           "word_count": 166
         },
         {
-          "id": 104,
-          "source": "TechCrunch AI",
+          "id": 2,
+          "source": "OpenAI News",
           "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool",
-          "link": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
-          "content": "Meeting note-taking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst&#8217;s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend. Otter.ai said that it will use these funds for enterprise growth, go-to-market strategy, international expansion, and product innovation. [&#8230;]",
-          "pub_date": "Tue, 20 Oct 2026 11:00:00 +0000",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+          "link": "https://openai.com/index/terminal-x",
+          "content": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+          "pub_date": "Tue, 20 Oct 2026 07:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 402
+          "word_count": 137
         },
         {
-          "id": 95,
+          "id": 96,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 239
         },
         {
-          "id": 99,
+          "id": 100,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,22 @@
           "word_count": 224
         },
         {
-          "id": 76,
+          "id": 94,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Anthropic’s cloud partnerships are getting messy",
+          "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+          "content": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO.",
+          "pub_date": "Tue, 20 Oct 2026 21:25:22 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 201
+        },
+        {
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 77,
+          "id": 78,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 78,
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 2205,
+          "id": 2206,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 2185,
+          "id": 2186,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 149
         },
         {
-          "id": 114,
+          "id": 115,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 86
-        },
-        {
-          "id": 2184,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "The Programmable Data Center — Evan Conrad, SF Compute",
-          "link": "https://www.latent.space/p/sfcompute2",
-          "content": "From GPU trading to physical settlement, independent markets, and programmable compute",
-          "pub_date": "Tue, 20 Oct 2026 19:31:57 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 86
         }
       ],
       "quota": {
@@ -190,8 +190,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2311,
-      "total_valid": 1577,
+      "total_raw": 2312,
+      "total_valid": 1578,
       "total_candidates": 12
     },
     "vaccine": {
@@ -362,7 +362,7 @@
           "word_count": 266
         },
         {
-          "id": 2316,
+          "id": 2317,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 218
         },
         {
-          "id": 2314,
+          "id": 2315,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 214
         },
         {
-          "id": 2332,
+          "id": 2333,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 496,
-      "total_valid": 331,
+      "total_raw": 495,
+      "total_valid": 330,
       "total_candidates": 15
     },
     "synbio": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2,
+          "id": 3,
           "source": "OpenAI News",
           "section": "payment",
           "tier": "T1",
@@ -812,6 +812,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 166
+        },
+        {
+          "id": 3001,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Mastercard launches early access for Agent Pay for Machines",
+          "link": "https://www.ledgerinsights.com/mastercard-launches-early-access-for-agent-pay-for-machines/",
+          "content": "Mastercard is starting to roll out its agentic payment solution with Agent Pay for Machines now in early access. What&#8217;s more interesting is how the Mastercard solution works. In May 2025 Coinbase unveiled the x402 protocol for AI stablecoin payments, which essentially involves a direct payment to a web-based service from a user&#8217;s wallet. While [&#8230;] The post Mastercard launches early access for Agent Pay for Machines appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Tue, 20 Oct 2026 17:38:42 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 500
         },
         {
           "id": 2997,
@@ -979,37 +994,7 @@
           "word_count": 136
         },
         {
-          "id": 3000,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Thunes Expands Real-Time Payouts to Venezuela, Strengthening Cross-Border Financial Access in Latin America",
-          "link": "https://www.thunes.com/news/thunes-expands-real-time-payouts-to-venezuela-strengthening-cross-border-financial-access-in-latin-america/",
-          "content": "Members of Thunes’ Direct Global Network gain faster, transparent, and direct payment capabilities to bank accounts, mobile wallets, and cash pickup locations across Venezuela. SINGAPORE/CARACAS; October 20, 2026 — Thunes, the Smart Superhighway to move money around the world, today announced the expansion of its Direct Global Network into Venezuela, one of Latin America’s critical ... Read more &#187; The post Thunes Expands Real-Time Payouts to Venezuela, Strengthening Cross-Border Financial Access in Latin America first appeared on Thunes.com .",
-          "pub_date": "Tue, 20 Oct 2026 13:00:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 553
-        },
-        {
-          "id": 2999,
-          "source": "Thunes",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 5,
-          "title": "6 Stablecoin Trends Shaping Global Payments in 2027",
-          "link": "https://www.thunes.com/insights/trends/stablecoin-trends-shaping-global-payments/",
-          "content": "2026 was the year stablecoins went to work. 2027 is the year they have to scale. Stablecoin supply has levelled off, but usage volumes are reaching record highs, with business payments leading the way. The focus is shifting from how many stablecoins are in circulation to how they&#8217;re being used to move money. Regulation is ... Read more &#187; The post 6 Stablecoin Trends Shaping Global Payments in 2027 first appeared on Thunes.com .",
-          "pub_date": "Tue, 20 Oct 2026 14:28:30 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 442
-        },
-        {
-          "id": 2184,
+          "id": 2185,
           "source": "Latent Space",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1009,7 @@
           "word_count": 86
         },
         {
-          "id": 145,
+          "id": 146,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 172,
+          "id": 173,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 214,
+          "id": 215,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 255,
+          "id": 256,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 270,
+          "id": 271,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1097,6 +1082,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 347,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "The Missing Compliance Class: LLM Graders That Collapse Jailbreak Success, and a Free Check",
+          "link": "https://arxiv.org/abs/2610.24872",
+          "content": "arXiv:2610.24872v1 Announce Type: cross Abstract: Jailbreak papers report an attack success rate, the share of responses that deliver the harmful request, and read it as a property of the target model. We hold the target model, the prompts and the responses fixed and change only the grader. Three dense graders of 8B and 9B parameters, from three model families, move compliant responses to the neighbouring class, evasion, instead of scattering them across classes. One of them assigns the compliance label zero times in 900 responses. This class collapse also appears on new harmful requests, on a target model from a third family, and in a held-out 7B grader from a fourth family. Per-class label counts expose it at no cost and without human labels. The collapse decides how the rate behaves under a change of grader. On two corpora of 900 responses and eight graders, the compliance rate differs by a factor of 22 to 25, while the non-refusal rate differs by 18 to 23 percentage points. Without the three collapsing graders, compliance differs by a factor of 1.7 to 2.8 on all four corpora, and non-refusal still differs by 10 to 22 points. These results do not change when every grader is call",
+          "pub_date": "Tue, 20 Oct 2026 00:00:00 -0400",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 254,
-      "total_valid": 75,
+      "total_raw": 248,
+      "total_valid": 73,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3168,
-    "dup": 779,
+    "total_raw": 3162,
+    "dup": 775,
     "nocontent": 407,
     "noise": 7
   }
