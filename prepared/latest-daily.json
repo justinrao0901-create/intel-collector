@@ -100,25 +100,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning",
-          "link": "https://arxiv.org/abs/2610.26754",
-          "content": "Expert human readers process large inputs (e.g., code repositories and long documents) by skimming to closely read only what matters. On the other hand, language models process all input tokens through each model layer, resulting in significant processing costs for long-context inputs. We introduce TokenGate, a small, drop-in component that extends existing trained models to enable end-to-end learnable token pruning over long-context inputs for fast and memory-efficient prefill. To enable end-to-end learning despite the non-differentiable top-K operator for token pruning, we introduce token-gated attention, a mechanism inspired by Mixture-of-Experts that re-weights attention logits using token importance scores. Across diverse tasks, TokenGate achieves 1.4-11.3times faster time-to-first token (TTFT) and 1.5-3.4times lower peak memory at no accuracy degradation for prefill in transformers. Compared to the best-performing prior methods for token-pruning, TokenGate gives up to 6.4times faster prefill and 2times lower peak memory. TokenGate natively extends both standard transformers (e.g., Qwen3) and hybrid-attention models (e.g., Qwen3.5) with simple lightweight adaptation comparable",
-          "pub_date": "2026-10-18T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 78,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Harness-Delta Attribution: Dissecting Gains From Harness Evolution",
-          "link": "https://arxiv.org/abs/2610.22466",
-          "content": "Harness evolution automatically optimizes the prompts, skills, tools, and orchestration code around a fixed-weight model, offering a way to improve agentic systems without updating model weights. The agent harness is iteratively optimized to achieve higher performance on the search set. But how much of this gain reflects benchmark-specific overfitting or additional inference-time compute, and how much may generalize beyond the search set? In this work, we introduce Harness-Delta Attribution (HDA), an evaluation protocol that dissects an evolution gain into artifact-driven overfitting, gains explained by test-time scaling, and the remainder, which gives an upper bound on residual generalizable improvement. We apply HDA to 11 executor models and three harness-evolution frameworks across math, coding, creativity, and agentic tasks. In 21 of these settings that show statistically significant search-set gains, we find that a large share of the improvement is explained by overfitting or test-time scaling. Specifically, among these 21 settings, overfitting and test-time scaling account for 54% and 14% of the gain on average; their combined share exceeds 50% in 14 settings. The residual an",
-          "pub_date": "2026-10-14T20:00:00.000Z",
+          "title": "MMEnterprise-Bench: Evaluating Enterprise Agents over Evolving Multimodal Records",
+          "link": "https://arxiv.org/abs/2610.27911",
+          "content": "Enterprise agents answer questions over workplace records that evolve through team collaboration. As information is shared, corrected, and revised across documents, chats, and figures, multiple versions of the same information accumulate in the workspace. Reliable question answering therefore requires agents to reason over sufficient evidence, resolve cross-source and temporal conflicts, and recognize when the available evidence is insufficient to establish an answer. To systematically evaluate these capabilities, we introduce MMEnterprise-Bench, a benchmark comprising 1,613 questions grounded in evolving multimodal records from simulated collaboration projects, covering three categories: Evidence Reasoning, Conflict Resolution, and Unanswerability. We evaluate 10 proprietary and open-source multimodal LLMs and find that even the strongest models struggle when evidence contains cross-source or temporal conflicts or spans multiple images. Moreover, increasing the retrieval budget or employing a larger retriever improves evidence recall but does not consistently translate into higher answer accuracy. These findings highlight the persistent challenges of reasoning over evolving workpl",
+          "pub_date": "2026-10-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,10 +115,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Vision as Proprioception: Estimating Humanoid Robot Pose from Video",
-          "link": "https://arxiv.org/abs/2610.25288",
-          "content": "Estimating a humanoid robot's internal state from video has a wide range of real-world applications but remains unexplored. During interactions with a robot, its onboard state information may be unavailable due to privacy, ownership, or communication constraints. Meanwhile, online and AI-generated robot videos provide rich sources of data but typically lack corresponding joint configurations, limiting their direct use in robot learning. To address these issues, we present HumanoidPose, a new framework that treats vision as proprioception to recover full-body joint configurations in world space from video alone. Specifically, we combine pretrained human-pose features with robot kinematics in a unified model that predicts each embodiment's joint configurations. We retarget human motions to sixteen different humanoid embodiments, enabling scalable learning entirely from synthetic data. To improve real-world generalization, we further leverage unlabeled online videos through self-training to develop a 2D robot-pose detector. In our evaluation, HumanoidPose improves joint-angle and joint-position accuracy over the evaluated baselines and reduces joint-angle error by 18-32% relative to t",
-          "pub_date": "2026-10-17T20:00:00.000Z",
+          "title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning",
+          "link": "https://arxiv.org/abs/2610.26754",
+          "content": "Expert human readers process large inputs (e.g., code repositories and long documents) by skimming to closely read only what matters. On the other hand, language models process all input tokens through each model layer, resulting in significant processing costs for long-context inputs. We introduce TokenGate, a small, drop-in component that extends existing trained models to enable end-to-end learnable token pruning over long-context inputs for fast and memory-efficient prefill. To enable end-to-end learning despite the non-differentiable top-K operator for token pruning, we introduce token-gated attention, a mechanism inspired by Mixture-of-Experts that re-weights attention logits using token importance scores. Across diverse tasks, TokenGate achieves 1.4-11.3times faster time-to-first token (TTFT) and 1.5-3.4times lower peak memory at no accuracy degradation for prefill in transformers. Compared to the best-performing prior methods for token-pruning, TokenGate gives up to 6.4times faster prefill and 2times lower peak memory. TokenGate natively extends both standard transformers (e.g., Qwen3) and hybrid-attention models (e.g., Qwen3.5) with simple lightweight adaptation comparable",
+          "pub_date": "2026-10-18T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 80,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Harness-Delta Attribution: Dissecting Gains From Harness Evolution",
+          "link": "https://arxiv.org/abs/2610.22466",
+          "content": "Harness evolution automatically optimizes the prompts, skills, tools, and orchestration code around a fixed-weight model, offering a way to improve agentic systems without updating model weights. The agent harness is iteratively optimized to achieve higher performance on the search set. But how much of this gain reflects benchmark-specific overfitting or additional inference-time compute, and how much may generalize beyond the search set? In this work, we introduce Harness-Delta Attribution (HDA), an evaluation protocol that dissects an evolution gain into artifact-driven overfitting, gains explained by test-time scaling, and the remainder, which gives an upper bound on residual generalizable improvement. We apply HDA to 11 executor models and three harness-evolution frameworks across math, coding, creativity, and agentic tasks. In 21 of these settings that show statistically significant search-set gains, we find that a large share of the improvement is explained by overfitting or test-time scaling. Specifically, among these 21 settings, overfitting and test-time scaling account for 54% and 14% of the gain on average; their combined share exceeds 50% in 14 settings. The residual an",
+          "pub_date": "2026-10-14T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 2312,
-      "total_valid": 1578,
+      "total_valid": 1577,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2610,
+          "id": 2609,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2612,
+          "id": 2611,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2615,
+          "id": 2614,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2523,
+          "id": 2522,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 402
         },
         {
-          "id": 2534,
+          "id": 2533,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 306
         },
         {
-          "id": 2530,
+          "id": 2529,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 213
         },
         {
-          "id": 2536,
+          "id": 2535,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 202
         },
         {
-          "id": 2741,
+          "id": 2740,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 163
         },
         {
-          "id": 2650,
+          "id": 2649,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 266
         },
         {
-          "id": 2653,
+          "id": 2652,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 266
         },
         {
-          "id": 2665,
+          "id": 2664,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 189
         },
         {
-          "id": 2776,
+          "id": 2775,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 495,
+      "total_raw": 494,
       "total_valid": 330,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2843,
+          "id": 2842,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 216
         },
         {
-          "id": 2857,
+          "id": 2856,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 194
         },
         {
-          "id": 2856,
+          "id": 2855,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 193
         },
         {
-          "id": 2921,
+          "id": 2920,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 515
         },
         {
-          "id": 2872,
+          "id": 2871,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 409
         },
         {
-          "id": 2817,
+          "id": 2816,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 376
         },
         {
-          "id": 2818,
+          "id": 2817,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 325
         },
         {
-          "id": 2922,
+          "id": 2921,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 291
         },
         {
-          "id": 2816,
+          "id": 2815,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 282
         },
         {
-          "id": 2893,
+          "id": 2892,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 104
         },
         {
-          "id": 2890,
+          "id": 2889,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 103
         },
         {
-          "id": 2881,
+          "id": 2880,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2513,
+          "id": 2512,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 481
         },
         {
-          "id": 2872,
+          "id": 2871,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 409
         },
         {
-          "id": 2525,
+          "id": 2524,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 393
         },
         {
-          "id": 2524,
+          "id": 2523,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 384
         },
         {
-          "id": 2817,
+          "id": 2816,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 376
         },
         {
-          "id": 2818,
+          "id": 2817,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 325
         },
         {
-          "id": 2816,
+          "id": 2815,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 282
         },
         {
-          "id": 2354,
+          "id": 2353,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 250
         },
         {
-          "id": 2344,
+          "id": 2343,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 235
         },
         {
-          "id": 2353,
+          "id": 2352,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -814,22 +814,7 @@
           "word_count": 166
         },
         {
-          "id": 3001,
-          "source": "Ledger Insights",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Mastercard launches early access for Agent Pay for Machines",
-          "link": "https://www.ledgerinsights.com/mastercard-launches-early-access-for-agent-pay-for-machines/",
-          "content": "Mastercard is starting to roll out its agentic payment solution with Agent Pay for Machines now in early access. What&#8217;s more interesting is how the Mastercard solution works. In May 2025 Coinbase unveiled the x402 protocol for AI stablecoin payments, which essentially involves a direct payment to a web-based service from a user&#8217;s wallet. While [&#8230;] The post Mastercard launches early access for Agent Pay for Machines appeared first on Ledger Insights - blockchain for enterprise .",
-          "pub_date": "Tue, 20 Oct 2026 17:38:42 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 500
-        },
-        {
-          "id": 2997,
+          "id": 2996,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 369
         },
         {
-          "id": 2970,
+          "id": 2969,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 363
         },
         {
-          "id": 2996,
+          "id": 2995,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 361
         },
         {
-          "id": 2976,
+          "id": 2975,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 344
         },
         {
-          "id": 2998,
+          "id": 2997,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 315
         },
         {
-          "id": 2965,
+          "id": 2964,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 249
         },
         {
-          "id": 2975,
+          "id": 2974,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 246
         },
         {
-          "id": 2978,
+          "id": 2977,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 220
         },
         {
-          "id": 2966,
+          "id": 2965,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 214
         },
         {
-          "id": 2950,
+          "id": 2949,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 143
         },
         {
-          "id": 2949,
+          "id": 2948,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -992,6 +977,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 136
+        },
+        {
+          "id": 2999,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes Expands Real-Time Payouts to Venezuela, Strengthening Cross-Border Financial Access in Latin America",
+          "link": "https://www.thunes.com/news/thunes-expands-real-time-payouts-to-venezuela-strengthening-cross-border-financial-access-in-latin-america/",
+          "content": "Members of Thunes’ Direct Global Network gain faster, transparent, and direct payment capabilities to bank accounts, mobile wallets, and cash pickup locations across Venezuela. SINGAPORE/CARACAS; October 20, 2026 — Thunes, the Smart Superhighway to move money around the world, today announced the expansion of its Direct Global Network into Venezuela, one of Latin America’s critical ... Read more &#187; The post Thunes Expands Real-Time Payouts to Venezuela, Strengthening Cross-Border Financial Access in Latin America first appeared on Thunes.com .",
+          "pub_date": "Tue, 20 Oct 2026 13:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 553
+        },
+        {
+          "id": 2998,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "6 Stablecoin Trends Shaping Global Payments in 2027",
+          "link": "https://www.thunes.com/insights/trends/stablecoin-trends-shaping-global-payments/",
+          "content": "2026 was the year stablecoins went to work. 2027 is the year they have to scale. Stablecoin supply has levelled off, but usage volumes are reaching record highs, with business payments leading the way. The focus is shifting from how many stablecoins are in circulation to how they&#8217;re being used to move money. Regulation is ... Read more &#187; The post 6 Stablecoin Trends Shaping Global Payments in 2027 first appeared on Thunes.com .",
+          "pub_date": "Tue, 20 Oct 2026 14:28:30 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 442
         },
         {
           "id": 2185,
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 347,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "The Missing Compliance Class: LLM Graders That Collapse Jailbreak Success, and a Free Check",
-          "link": "https://arxiv.org/abs/2610.24872",
-          "content": "arXiv:2610.24872v1 Announce Type: cross Abstract: Jailbreak papers report an attack success rate, the share of responses that deliver the harmful request, and read it as a property of the target model. We hold the target model, the prompts and the responses fixed and change only the grader. Three dense graders of 8B and 9B parameters, from three model families, move compliant responses to the neighbouring class, evasion, instead of scattering them across classes. One of them assigns the compliance label zero times in 900 responses. This class collapse also appears on new harmful requests, on a target model from a third family, and in a held-out 7B grader from a fourth family. Per-class label counts expose it at no cost and without human labels. The collapse decides how the rate behaves under a change of grader. On two corpora of 900 responses and eight graders, the compliance rate differs by a factor of 22 to 25, while the non-refusal rate differs by 18 to 23 percentage points. Without the three collapsing graders, compliance differs by a factor of 1.7 to 2.8 on all four corpora, and non-refusal still differs by 10 to 22 points. These results do not change when every grader is call",
-          "pub_date": "Tue, 20 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 248,
-      "total_valid": 73,
+      "total_raw": 254,
+      "total_valid": 75,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3162,
-    "dup": 775,
+    "total_raw": 3167,
+    "dup": 779,
     "nocontent": 407,
     "noise": 7
   }
