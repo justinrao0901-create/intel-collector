@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "sources": {
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 18,
+      "count": 19,
       "ok": true
     },
     "Anthropic Blog": {
@@ -70,19 +70,19 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 435,
+      "count": 221,
       "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 473,
+      "count": 370,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 817,
+      "count": 379,
       "ok": true
     },
     "Import AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 13,
+      "count": 21,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 19,
+      "count": 20,
       "ok": true
     },
     "WHO News": {
@@ -172,7 +172,7 @@
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 5,
+      "count": 19,
       "ok": true
     },
     "The Lancet": {
@@ -190,13 +190,13 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
+      "count": 12,
       "ok": true
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 5,
+      "count": 6,
       "ok": true
     },
     "Immunity": {
@@ -208,7 +208,7 @@
     "Science": {
       "section": "vaccine",
       "method": "rss",
-      "count": 38,
+      "count": 39,
       "ok": true
     },
     "JAMA": {
@@ -226,7 +226,7 @@
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 5,
+      "count": 7,
       "ok": true
     },
     "Nature Vaccines": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
+      "count": 19,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -262,7 +262,7 @@
     "Vaccine (journal)": {
       "section": "vaccine",
       "method": "rss",
-      "count": 88,
+      "count": 90,
       "ok": true
     },
     "npj Vaccines": {
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 10,
+      "count": 11,
       "ok": true
     },
     "BioPharma Dive": {
@@ -328,7 +328,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 12,
+      "count": 14,
       "ok": true
     },
     "Nature Machine Intel": {
@@ -346,7 +346,7 @@
     "Metabolic Engineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 49,
+      "count": 50,
       "ok": true
     },
     "Cell Systems": {
@@ -376,13 +376,13 @@
     "Nucleic Acids Research": {
       "section": "synbio",
       "method": "rss",
-      "count": 22,
+      "count": 25,
       "ok": true
     },
     "Nature Reviews Bioengineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 5,
+      "count": 6,
       "ok": true
     },
     "Lancet Digital Health": {
@@ -412,7 +412,7 @@
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 3,
       "ok": true
     },
     "PaymentsDive": {
@@ -430,13 +430,13 @@
     "Payments Cards & Mobile": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 6,
       "ok": true
     },
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 6,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -478,7 +478,7 @@
     "ECB Press": {
       "section": "payment",
       "method": "rss",
-      "count": 9,
+      "count": 7,
       "ok": true
     },
     "Visa Navigate": {
@@ -496,7 +496,7 @@
     "a16z crypto": {
       "section": "payment",
       "method": "scrape",
-      "count": 25,
+      "count": 11,
       "ok": true
     }
   },
@@ -506,12 +506,9 @@
       "Absci Blog",
       "Import AI"
     ],
-    "sudden_drop": [
-      "Cointelegraph Payments",
-      "Thunes"
-    ],
+    "sudden_drop": [],
     "persistent_zero": [
-      "PYMNTS Cross-Border"
+      "Cointelegraph Payments"
     ]
   }
 }
