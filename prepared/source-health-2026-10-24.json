@@ -1,0 +1,516 @@
+{
+  "date": "2026-10-24",
+  "sources": {
+    "OpenAI News": {
+      "section": "ai",
+      "method": "rss",
+      "count": 19,
+      "ok": true
+    },
+    "Anthropic Blog": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Google DeepMind": {
+      "section": "ai",
+      "method": "rss",
+      "count": 1,
+      "ok": true
+    },
+    "Meta AI Blog": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 12,
+      "ok": true
+    },
+    "Microsoft AI Blog": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 2,
+      "ok": true
+    },
+    "NVIDIA Blog": {
+      "section": "ai",
+      "method": "rss",
+      "count": 18,
+      "ok": true
+    },
+    "HuggingFace Blog": {
+      "section": "ai",
+      "method": "rss",
+      "count": 12,
+      "ok": true
+    },
+    "HuggingFace Daily Papers": {
+      "section": "ai",
+      "method": "api",
+      "count": 15,
+      "ok": true
+    },
+    "TechCrunch AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 15,
+      "ok": true
+    },
+    "Sequoia Capital": {
+      "section": "ai",
+      "method": "rss",
+      "count": 3,
+      "ok": true
+    },
+    "a16z AI": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "arXiv cs.CL": {
+      "section": "ai",
+      "method": "rss",
+      "count": 183,
+      "ok": true
+    },
+    "arXiv cs.AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 366,
+      "ok": true
+    },
+    "arXiv cs.LG": {
+      "section": "ai",
+      "method": "rss",
+      "count": 339,
+      "ok": true
+    },
+    "Import AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": false
+    },
+    "Interconnects": {
+      "section": "ai",
+      "method": "rss",
+      "count": 2,
+      "ok": true
+    },
+    "Latent Space": {
+      "section": "ai",
+      "method": "rss",
+      "count": 20,
+      "ok": true
+    },
+    "Simon Willison": {
+      "section": "ai",
+      "method": "rss",
+      "count": 14,
+      "ok": true
+    },
+    "Hacker News AI": {
+      "section": "ai",
+      "method": "api",
+      "count": 20,
+      "ok": true
+    },
+    "Mistral AI": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Epoch AI": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Artificial Analysis": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Endpoints News": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 24,
+      "ok": true
+    },
+    "Fierce Pharma": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 25,
+      "ok": true
+    },
+    "STAT News": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 20,
+      "ok": true
+    },
+    "WHO News": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 1,
+      "ok": true
+    },
+    "FDA 审批动态": {
+      "section": "vaccine",
+      "method": "api",
+      "count": 1,
+      "ok": true
+    },
+    "Nature": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 75,
+      "ok": true
+    },
+    "NEJM": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 21,
+      "ok": true
+    },
+    "The Lancet": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 20,
+      "ok": true
+    },
+    "Lancet Infect Dis": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 9,
+      "ok": true
+    },
+    "Cell": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 15,
+      "ok": true
+    },
+    "Cell Host Microbe": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 7,
+      "ok": true
+    },
+    "Immunity": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 5,
+      "ok": true
+    },
+    "Science": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 39,
+      "ok": true
+    },
+    "JAMA": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 42,
+      "ok": true
+    },
+    "Nature Medicine": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Nature Biotech": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 7,
+      "ok": true
+    },
+    "Nature Vaccines": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Nature Immunology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "bioRxiv Immunology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 30,
+      "ok": true
+    },
+    "medRxiv Infectious": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 21,
+      "ok": true
+    },
+    "ClinicalTrials.gov": {
+      "section": "vaccine",
+      "method": "api",
+      "count": 25,
+      "ok": true
+    },
+    "Vaccine (journal)": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 49,
+      "ok": true
+    },
+    "npj Vaccines": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Sci Transl Med": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Nature Rev Drug Discovery": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Nature Reviews Immunology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Nature Reviews Microbiology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Science Immunology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 4,
+      "ok": true
+    },
+    "Cell Reports Medicine": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 11,
+      "ok": true
+    },
+    "BioPharma Dive": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 10,
+      "ok": true
+    },
+    "Fierce Biotech": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 25,
+      "ok": true
+    },
+    "EMA": {
+      "section": "vaccine",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Nature Synthetic Biology": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 14,
+      "ok": true
+    },
+    "Nature Machine Intel": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "ACS Synthetic Biology": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 0,
+      "ok": false
+    },
+    "Metabolic Engineering": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 51,
+      "ok": true
+    },
+    "Cell Systems": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 1,
+      "ok": true
+    },
+    "bioRxiv SynBio": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 13,
+      "ok": true
+    },
+    "Absci Blog": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 0,
+      "ok": false
+    },
+    "Nature Chemical Biology": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Nucleic Acids Research": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 29,
+      "ok": true
+    },
+    "Nature Reviews Bioengineering": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 6,
+      "ok": true
+    },
+    "Lancet Digital Health": {
+      "section": "cross",
+      "method": "rss",
+      "count": 1,
+      "ok": true
+    },
+    "NEJM AI": {
+      "section": "cross",
+      "method": "rss",
+      "count": 12,
+      "ok": true
+    },
+    "Nature Methods": {
+      "section": "cross",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "PYMNTS.com": {
+      "section": "payment",
+      "method": "rss",
+      "count": 10,
+      "ok": true
+    },
+    "PYMNTS Cross-Border": {
+      "section": "payment",
+      "method": "rss",
+      "count": 4,
+      "ok": true
+    },
+    "PaymentsDive": {
+      "section": "payment",
+      "method": "rss",
+      "count": 5,
+      "ok": true
+    },
+    "Finextra": {
+      "section": "payment",
+      "method": "rss",
+      "count": 39,
+      "ok": true
+    },
+    "Payments Cards & Mobile": {
+      "section": "payment",
+      "method": "rss",
+      "count": 4,
+      "ok": true
+    },
+    "Thunes": {
+      "section": "payment",
+      "method": "rss",
+      "count": 0,
+      "ok": true
+    },
+    "Cointelegraph Payments": {
+      "section": "payment",
+      "method": "rss",
+      "count": 0,
+      "ok": true
+    },
+    "Ledger Insights": {
+      "section": "payment",
+      "method": "rss",
+      "count": 1,
+      "ok": true
+    },
+    "Chainalysis Blog": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Stripe Blog": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Checkout.com Blog": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Fed Reserve": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "ECB Press": {
+      "section": "payment",
+      "method": "rss",
+      "count": 8,
+      "ok": true
+    },
+    "Visa Navigate": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 3,
+      "ok": true
+    },
+    "Circle Blog": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "a16z crypto": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 11,
+      "ok": true
+    }
+  },
+  "alarms": {
+    "fail": [
+      "ACS Synthetic Biology",
+      "Absci Blog",
+      "Import AI"
+    ],
+    "sudden_drop": [
+      "Thunes"
+    ],
+    "persistent_zero": [
+      "Cointelegraph Payments"
+    ]
+  }
+}
