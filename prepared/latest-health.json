@@ -358,8 +358,8 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 11,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Absci Blog": {
       "section": "synbio",
@@ -382,7 +382,7 @@
     "Nature Reviews Bioengineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 6,
+      "count": 5,
       "ok": true
     },
     "Lancet Digital Health": {
@@ -504,7 +504,8 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "bioRxiv SynBio"
     ],
     "sudden_drop": [],
     "persistent_zero": [
