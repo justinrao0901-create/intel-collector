@@ -362,21 +362,6 @@
           "word_count": 173
         },
         {
-          "id": 1557,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "SARS-CoV-2 breakthrough infections imprint signatures of enhanced immunity against COVID-19",
-          "link": "https://www.nature.com/articles/s41541-026-01595-6",
-          "content": "npj Vaccines, Published online: 23 October 2026; doi:10.1038/s41541-026-01595-6 SARS-CoV-2 breakthrough infections imprint signatures of enhanced immunity against COVID-19",
-          "pub_date": "2026-10-23",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 171
-        },
-        {
           "id": 1217,
           "source": "Nature",
           "section": "vaccine",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 256
+        },
+        {
+          "id": 1533,
+          "source": "Vaccine (journal)",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Longitudinal SARS-CoV-2 mRNA vaccine immunogenicity in inflammatory bowel disease in relation to anti-TNF therapy and age: a prospective cohort study",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26010339?dgcid=rss_sd_all",
+          "content": "Publication date: 20 December 2026 Source: Vaccine, Volume 94 Author(s): Wolfram Mayr, Astrid I. Knell, Anna K. Boehm, Michael Jäger, Lilly Ennemoser, Andrea Griesmacher, Rosa Bellmann-Weiler, Robert Koch, Herbert Tilg, Wilfried Posch, Günter Weiss",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 248
         }
       ],
       "quota": {
@@ -428,7 +428,7 @@
         "max": 7
       },
       "total_raw": 481,
-      "total_valid": 353,
+      "total_valid": 352,
       "total_candidates": 15
     },
     "synbio": {
@@ -1111,7 +1111,7 @@
   },
   "meta": {
     "total_raw": 2009,
-    "dup": 457,
+    "dup": 458,
     "nocontent": 402,
     "noise": 5
   }
