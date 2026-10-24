@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "sources": {
     "OpenAI News": {
       "section": "ai",
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 13,
+      "count": 7,
       "ok": true
     },
     "Sequoia Capital": {
@@ -76,13 +76,13 @@
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 366,
+      "count": 0,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 339,
+      "count": 0,
       "ok": true
     },
     "Import AI": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 14,
+      "count": 13,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 23,
+      "count": 13,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,13 +148,13 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 20,
+      "count": 16,
       "ok": true
     },
     "WHO News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 1,
+      "count": 0,
       "ok": true
     },
     "FDA 审批动态": {
@@ -172,7 +172,7 @@
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 21,
+      "count": 24,
       "ok": true
     },
     "The Lancet": {
@@ -214,8 +214,8 @@
     "JAMA": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 42,
+      "ok": true
     },
     "Nature Medicine": {
       "section": "vaccine",
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 21,
+      "count": 23,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -262,7 +262,7 @@
     "Vaccine (journal)": {
       "section": "vaccine",
       "method": "rss",
-      "count": 49,
+      "count": 52,
       "ok": true
     },
     "npj Vaccines": {
@@ -310,7 +310,7 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 10,
+      "count": 7,
       "ok": true
     },
     "Fierce Biotech": {
@@ -376,7 +376,7 @@
     "Nucleic Acids Research": {
       "section": "synbio",
       "method": "rss",
-      "count": 29,
+      "count": 3,
       "ok": true
     },
     "Nature Reviews Bioengineering": {
@@ -394,7 +394,7 @@
     "NEJM AI": {
       "section": "cross",
       "method": "rss",
-      "count": 12,
+      "count": 13,
       "ok": true
     },
     "Nature Methods": {
@@ -412,19 +412,19 @@
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 4,
+      "count": 1,
       "ok": true
     },
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 5,
+      "count": 3,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 37,
+      "count": 26,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -478,7 +478,7 @@
     "ECB Press": {
       "section": "payment",
       "method": "rss",
-      "count": 8,
+      "count": 9,
       "ok": true
     },
     "Visa Navigate": {
@@ -504,10 +504,13 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI",
-      "JAMA"
+      "Import AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "WHO News",
+      "arXiv cs.AI",
+      "arXiv cs.LG"
+    ],
     "persistent_zero": [
       "Cointelegraph Payments"
     ]
