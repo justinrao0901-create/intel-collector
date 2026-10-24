@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 66,
+          "id": 67,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 385
         },
         {
-          "id": 65,
+          "id": 66,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 384
         },
         {
-          "id": 63,
+          "id": 64,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,7 @@
           "word_count": 147
         },
         {
-          "id": 106,
+          "id": 107,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 301
         },
         {
-          "id": 108,
+          "id": 109,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 159
         },
         {
-          "id": 114,
+          "id": 115,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 153
         },
         {
-          "id": 89,
+          "id": 91,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 90,
+          "id": 92,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 93,
+          "id": 95,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -190,8 +190,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1165,
-      "total_valid": 739,
+      "total_raw": 1166,
+      "total_valid": 740,
       "total_candidates": 12
     },
     "vaccine": {
@@ -362,21 +362,6 @@
           "word_count": 173
         },
         {
-          "id": 1559,
-          "source": "npj Vaccines",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "SARS-CoV-2 breakthrough infections imprint signatures of enhanced immunity against COVID-19",
-          "link": "https://www.nature.com/articles/s41541-026-01595-6",
-          "content": "npj Vaccines, Published online: 23 October 2026; doi:10.1038/s41541-026-01595-6 SARS-CoV-2 breakthrough infections imprint signatures of enhanced immunity against COVID-19",
-          "pub_date": "2026-10-23",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 171
-        },
-        {
           "id": 1219,
           "source": "Nature",
           "section": "vaccine",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 256
+        },
+        {
+          "id": 1535,
+          "source": "Vaccine (journal)",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Longitudinal SARS-CoV-2 mRNA vaccine immunogenicity in inflammatory bowel disease in relation to anti-TNF therapy and age: a prospective cohort study",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26010339?dgcid=rss_sd_all",
+          "content": "Publication date: 20 December 2026 Source: Vaccine, Volume 94 Author(s): Wolfram Mayr, Astrid I. Knell, Anna K. Boehm, Michael Jäger, Lilly Ennemoser, Andrea Griesmacher, Rosa Bellmann-Weiler, Robert Koch, Herbert Tilg, Wilfried Posch, Günter Weiss",
+          "pub_date": "",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 248
         }
       ],
       "quota": {
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 482,
-      "total_valid": 354,
+      "total_raw": 481,
+      "total_valid": 352,
       "total_candidates": 15
     },
     "synbio": {
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 69,
-      "total_valid": 50,
+      "total_raw": 68,
+      "total_valid": 49,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1799,
+          "id": 1802,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 506
         },
         {
-          "id": 1803,
+          "id": 1806,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,22 @@
           "word_count": 496
         },
         {
-          "id": 1802,
+          "id": 1798,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Fiserv Appoints Mastercard Senior Strategic Advisor Raj Seshadri to Board",
+          "link": "https://www.pymnts.com/personnel/2026/fiserv-appoints-mastercard-senior-strategic-advisor-raj-seshadri-to-board/",
+          "content": "Fiserv has announced that Raj Seshadri, senior strategic advisor to the CEO of Mastercard, will join Fiserv’s board of directors and enhance its collective expertise around uniting commerce and finance. She will join the board Nov. 30. Seshadri has been with Mastercard for more than a decade and, before her current role, served as chief commercial payments officer, [&#8230;] The post Fiserv Appoints Mastercard Senior Strategic Advisor Raj Seshadri to Board appeared first on PYMNTS.com .",
+          "pub_date": "Sat, 24 Oct 2026 00:36:14 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 491
+        },
+        {
+          "id": 1805,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 489
         },
         {
-          "id": 1800,
+          "id": 1803,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,22 +874,7 @@
           "word_count": 481
         },
         {
-          "id": 1804,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Shoppers Would Send AI Agents to Marketplaces Over Brand Sites",
-          "link": "https://www.pymnts.com/commerce/ecommerce/2026/shoppers-would-send-ai-agents-to-marketplaces-over-brand-sites/",
-          "content": "Artificial intelligence (AI) shopping agents could make it easier for consumers to compare products and complete purchases, but they may not change where shoppers spend their money. Even when an autonomous AI assistant can purchase the same product from competing merchants at identical prices, with identical shipping and return terms, 40.2% of U.S. consumers would [&#8230;] The post Shoppers Would Send AI Agents to Marketplaces Over Brand Sites appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 23 Oct 2026 19:15:49 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 479
-        },
-        {
-          "id": 1797,
+          "id": 1800,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 456
         },
         {
-          "id": 1858,
+          "id": 1857,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 455
         },
         {
-          "id": 1854,
+          "id": 1853,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 341
         },
         {
-          "id": 1834,
+          "id": 1833,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 300
         },
         {
-          "id": 1826,
+          "id": 1825,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 245
         },
         {
-          "id": 1833,
+          "id": 1832,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 214
         },
         {
-          "id": 1836,
+          "id": 1835,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 175
         },
         {
-          "id": 1827,
+          "id": 1826,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 172
         },
         {
-          "id": 1045,
+          "id": 1046,
           "source": "Latent Space",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 86
         },
         {
-          "id": 206,
+          "id": 207,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 208,
+          "id": 209,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 336,
+          "id": 337,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 411,
+          "id": 412,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 424,
+          "id": 425,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 220,
-      "total_valid": 51,
+      "total_raw": 219,
+      "total_valid": 50,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2005,
-    "dup": 453,
+    "total_raw": 2004,
+    "dup": 454,
     "nocontent": 402,
     "noise": 5
   }
