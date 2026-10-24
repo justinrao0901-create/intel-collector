@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 67,
+          "id": 66,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 385
         },
         {
-          "id": 66,
+          "id": 65,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 384
         },
         {
-          "id": 64,
+          "id": 63,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -140,6 +140,21 @@
           "word_count": 153
         },
         {
+          "id": 89,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
+          "link": "https://arxiv.org/abs/2610.04184",
+          "content": "Recursive self-improvement (RSI) relies on evaluation feedback to assess progress and guide further research, yet repeatedly running complex benchmarks is costly and slows iteration. Human experts reduce this cost by selecting benchmark subsets or designing compact suites. We ask whether AI agents can automate this design process and introduce EvalResearchBench (ERB), a benchmark for autonomous evaluation research. Given target materials, development references, candidate APIs, and fixed time and API budgets, an agent called the researcher selects or synthesizes tasks, implements graders, and revises them in pilot tests before freezing an executable evaluator for coding, co-work, and reasoning. We study 9 researchers and 13 candidate models and compare each frozen evaluator with 14 target benchmarks on score concordance and pairwise agreement. The best evaluators order about 75\\% of candidate pairs as the targets do, below the 91\\% ceiling set by disagreements among the targets. No researcher leads on every metric, and the best evaluator on development targets is not the best on sealed targets hidden from the researcher. A human-designed sample of public tasks remains a strong base",
+          "pub_date": "2026-10-15T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 90,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 96,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
-          "link": "https://arxiv.org/abs/2610.31651",
-          "content": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconnected parts. We argue that providing agents with tools for assembling builds and verifying their physical feasibility is sufficient for them to produce physically valid assemblies that still adhere to input prompts. Focusing on the domain of LEGO brick builds, we present BrickWright, a framework for generating physically feasible brick builds from text or image prompts using pre-trained agents, where a build is physically feasible if it uses only real parts, has no colliding or floating parts, and forms a connected structure if possible. BrickWright guides agents to create builds by writing code with BrickLayer, a Python toolkit with two main components: an ergonomic brick assembly API that halves inference cost compared to working in raw LDraw, and a validator that provides feedback on physical feasibility. Whereas baseline agents achieve physical validity rates ranging from only 9% (GPT-6 Luna) to 69% (GPT-6 Astra), BrickWright-guided agents ac",
-          "pub_date": "2026-10-21T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1166,
+      "total_raw": 1165,
       "total_valid": 739,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1530,
+          "id": 1486,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1532,
+          "id": 1488,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1540,
+          "id": 1496,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 1448,
+          "id": 1405,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 585
         },
         {
-          "id": 1449,
+          "id": 1406,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 510
         },
         {
-          "id": 1314,
+          "id": 1313,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 504
         },
         {
-          "id": 1450,
+          "id": 1407,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 490
         },
         {
-          "id": 1469,
+          "id": 1425,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 332
         },
         {
-          "id": 1226,
+          "id": 1225,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 256
         },
         {
-          "id": 1328,
+          "id": 1327,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 222
         },
         {
-          "id": 1217,
+          "id": 1216,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,22 @@
           "word_count": 173
         },
         {
-          "id": 1220,
+          "id": 1559,
+          "source": "npj Vaccines",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "SARS-CoV-2 breakthrough infections imprint signatures of enhanced immunity against COVID-19",
+          "link": "https://www.nature.com/articles/s41541-026-01595-6",
+          "content": "npj Vaccines, Published online: 23 October 2026; doi:10.1038/s41541-026-01595-6 SARS-CoV-2 breakthrough infections imprint signatures of enhanced immunity against COVID-19",
+          "pub_date": "2026-10-23",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 171
+        },
+        {
+          "id": 1219,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +392,7 @@
           "word_count": 168
         },
         {
-          "id": 1602,
+          "id": 1558,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +407,7 @@
           "word_count": 148
         },
         {
-          "id": 1599,
+          "id": 1555,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 256
-        },
-        {
-          "id": 1579,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Longitudinal SARS-CoV-2 mRNA vaccine immunogenicity in inflammatory bowel disease in relation to anti-TNF therapy and age: a prospective cohort study",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26010339?dgcid=rss_sd_all",
-          "content": "Publication date: 20 December 2026 Source: Vaccine, Volume 94 Author(s): Wolfram Mayr, Astrid I. Knell, Anna K. Boehm, Michael Jäger, Lilly Ennemoser, Andrea Griesmacher, Rosa Bellmann-Weiler, Robert Koch, Herbert Tilg, Wilfried Posch, Günter Weiss",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 248
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 525,
-      "total_valid": 384,
+      "total_raw": 482,
+      "total_valid": 354,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1731,
+          "id": 1686,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 221
         },
         {
-          "id": 1718,
+          "id": 1673,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 199
         },
         {
-          "id": 1719,
+          "id": 1674,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 191
         },
         {
-          "id": 1788,
+          "id": 1742,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1789,
+          "id": 1743,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1790,
+          "id": 1744,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1818,
+          "id": 1772,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 482
         },
         {
-          "id": 1706,
+          "id": 1661,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 392
         },
         {
-          "id": 1707,
+          "id": 1662,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 337
         },
         {
-          "id": 1767,
+          "id": 1722,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1199
         },
         {
-          "id": 1766,
+          "id": 1721,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1773,
+          "id": 1728,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 130,
+      "total_raw": 128,
       "total_valid": 18,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1789,
+          "id": 1743,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1790,
+          "id": 1744,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1818,
+          "id": 1772,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 482
         },
         {
-          "id": 1447,
+          "id": 1404,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 382
         },
         {
-          "id": 1707,
+          "id": 1662,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 337
         },
         {
-          "id": 1271,
+          "id": 1270,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 269
         },
         {
-          "id": 1255,
+          "id": 1254,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 268
         },
         {
-          "id": 1835,
+          "id": 1789,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 250
         },
         {
-          "id": 1446,
+          "id": 1403,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 245
         },
         {
-          "id": 1235,
+          "id": 1234,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 72,
-      "total_valid": 53,
+      "total_raw": 69,
+      "total_valid": 50,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1846,
+          "id": 1799,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "eInvoicing Mandates Turn Bills Into B2B Payment Data",
+          "link": "https://www.pymnts.com/news/b2b-payments/2026/einvoicing-mandates-turn-bills-into-b2b-payment-data/",
+          "content": "European eInvoicing mandates seek to standardize how businesses deliver the information used to approve and collect payments. Invoice amounts, tax details and transaction references enter defined fields that accounting software reads and processes, establishing a common basis for exchange between suppliers, buyers and their providers. The rollout extends across companies of different sizes and across [&#8230;] The post eInvoicing Mandates Turn Bills Into B2B Payment Data appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 23 Oct 2026 23:03:54 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 506
+        },
+        {
+          "id": 1803,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,22 +829,7 @@
           "word_count": 496
         },
         {
-          "id": 1851,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "LSEG Pays $3.5 Billion to Feed Wall Street’s AI",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/lseg-pays-3-billion-dollars-feed-wall-street-ai/",
-          "content": "Artificial intelligence is reducing the time and cost of financial research, but the data behind that research is becoming more valuable. Two investments announced Thursday (Oct. 22) illustrate the shift. London Stock Exchange Group (LSEG) announced that it is acquiring credit intelligence provider Octus for $3.535 billion. Cognitive Credit, a provider of corporate debt-market intelligence, [&#8230;] The post LSEG Pays $3.5 Billion to Feed Wall Street’s AI appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 23 Oct 2026 17:21:40 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 491
-        },
-        {
-          "id": 1845,
+          "id": 1802,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 489
         },
         {
-          "id": 1843,
+          "id": 1800,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 481
         },
         {
-          "id": 1847,
+          "id": 1804,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,22 +874,22 @@
           "word_count": 479
         },
         {
-          "id": 1852,
+          "id": 1797,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "States Move to Centralize Digital IDs as More Services Go Online",
-          "link": "https://www.pymnts.com/authentication/digital-identity/2026/states-move-to-centralize-digital-ids-as-more-services-go-online/",
-          "content": "Your phone can already hold your credit cards, your boarding pass and your insurance card. In a growing number of states, it can hold your driver’s license, too. Now, state leaders are asking a bigger question. Should residents have one digital identity that works across every government service? More states are leaning toward yes, according [&#8230;] The post States Move to Centralize Digital IDs as More Services Go Online appeared first on PYMNTS.com .",
-          "pub_date": "Fri, 23 Oct 2026 17:11:36 +0000",
+          "title": "Polygon Secures US Money Transmitter Licenses",
+          "link": "https://www.pymnts.com/blockchain/2026/polygon-secures-us-money-transmitter-licenses/",
+          "content": "Polygon has completed its acquisition of Coinme, making Polygon Open Money Stack a U.S.-regulated payments platform, the company said in an Oct. 14 blog post. “This is a huge step for Polygon,” the company said in the post. “We’ve spent years building infrastructure that moves money onchain. Now Polygon has more of what it takes to support the whole payment: [&#8230;] The post Polygon Secures US Money Transmitter Licenses appeared first on PYMNTS.com .",
+          "pub_date": "Fri, 23 Oct 2026 23:41:22 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 458
+          "word_count": 456
         },
         {
-          "id": 1905,
+          "id": 1858,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 455
         },
         {
-          "id": 1901,
+          "id": 1854,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 341
         },
         {
-          "id": 1881,
+          "id": 1834,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 300
         },
         {
-          "id": 1873,
+          "id": 1826,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 245
         },
         {
-          "id": 1880,
+          "id": 1833,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 214
         },
         {
-          "id": 1883,
+          "id": 1836,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 206
         },
         {
-          "id": 1862,
+          "id": 1816,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 175
         },
         {
-          "id": 1874,
+          "id": 1827,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 172
         },
         {
-          "id": 1046,
+          "id": 1045,
           "source": "Latent Space",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 86
         },
         {
-          "id": 207,
+          "id": 206,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 209,
+          "id": 208,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 337,
+          "id": 336,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1069,7 @@
           "word_count": 1200
         },
         {
-          "id": 412,
+          "id": 411,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1084,7 @@
           "word_count": 1200
         },
         {
-          "id": 425,
+          "id": 424,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 221,
-      "total_valid": 52,
+      "total_raw": 220,
+      "total_valid": 51,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2052,
-    "dup": 467,
-    "nocontent": 405,
+    "total_raw": 2005,
+    "dup": 453,
+    "nocontent": 402,
     "noise": 5
   }
 }

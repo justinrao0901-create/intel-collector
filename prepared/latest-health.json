@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 1,
+      "count": 0,
       "ok": true
     },
     "Meta AI Blog": {
@@ -52,13 +52,13 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 16,
       "ok": true
     },
     "Sequoia Capital": {
       "section": "ai",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true
     },
     "a16z AI": {
@@ -214,8 +214,8 @@
     "JAMA": {
       "section": "vaccine",
       "method": "rss",
-      "count": 42,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Medicine": {
       "section": "vaccine",
@@ -232,7 +232,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 7,
       "ok": true
     },
     "Nature Immunology": {
@@ -328,7 +328,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 14,
+      "count": 13,
       "ok": true
     },
     "Nature Machine Intel": {
@@ -358,7 +358,7 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 13,
+      "count": 12,
       "ok": true
     },
     "Absci Blog": {
@@ -424,7 +424,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 39,
+      "count": 38,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -504,9 +504,11 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "JAMA"
     ],
     "sudden_drop": [
+      "Google DeepMind",
       "Thunes"
     ],
     "persistent_zero": [
