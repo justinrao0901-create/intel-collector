@@ -679,7 +679,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 875,
+          "id": 879,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Riksbank reignites e-krona debate",
+          "link": "https://www.finextra.com/newsarticle/48642/riksbank-reignites-e-krona-debate?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "With cash usage down, a digital euro on the horizon and stablecoins gathering momentum, Sweden's central bank has reignited a debate on whether the country should roll out its own e-krona.",
+          "pub_date": "Mon, 26 Oct 2026 00:01:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 188
+        },
+        {
+          "id": 876,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +709,7 @@
           "word_count": 484
         },
         {
-          "id": 873,
+          "id": 874,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +724,7 @@
           "word_count": 474
         },
         {
-          "id": 877,
+          "id": 878,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +739,22 @@
           "word_count": 464
         },
         {
-          "id": 872,
+          "id": 871,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Wonder Plans IPO and Aims to Be Fully Autonomous by 2040",
+          "link": "https://www.pymnts.com/news/investment-tracker/ipo/2026/wonder-plans-ipo-and-aims-to-be-fully-autonomous-by-2040/",
+          "content": "Food startup Wonder has reportedly set its sights on going public amid wider expansion plans. As CNBC reported Sunday (Oct. 25), the company is also eyeing an “aggressive” expansion in Texas and a subscription program that allows diners to operate their own “restaurants.” Launched in 2018, Wonder lets diners place takeout or delivery orders from [&#8230;] The post Wonder Plans IPO and Aims to Be Fully Autonomous by 2040 appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 26 Oct 2026 00:26:09 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 454
+        },
+        {
+          "id": 873,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +769,7 @@
           "word_count": 453
         },
         {
-          "id": 874,
+          "id": 875,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -752,21 +782,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 445
-        },
-        {
-          "id": 871,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Block’s Voice AI Wins Praise and Triggers Scam Concerns",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/blocks-voice-ai-wins-praise-and-triggers-scam-concerns/",
-          "content": "Payments company Block has introduced an artificial intelligence model trained solely using human conversation. Dessa, as the model is known, learned to hold real-time conversations just by listening, Block said in its announcement Friday (Oct. 23). “As far as we know, Dessa is the world’s first AI you can have a realistic live conversation with [&#8230;] The post Block&#8217;s Voice AI Wins Praise and Triggers Scam Concerns appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 25 Oct 2026 23:54:44 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 459
         }
       ],
       "quota": {
@@ -774,13 +789,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 174,
-      "total_valid": 7,
-      "total_candidates": 6
+      "total_raw": 176,
+      "total_valid": 9,
+      "total_candidates": 7
     }
   },
   "meta": {
-    "total_raw": 1044,
+    "total_raw": 1046,
     "dup": 267,
     "nocontent": 409,
     "noise": 5
