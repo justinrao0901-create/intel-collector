@@ -679,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 879,
+          "id": 880,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,22 @@
           "word_count": 188
         },
         {
-          "id": 876,
+          "id": 871,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Apollo Says AI Has Shown ‘Zero’ Payoff Outside Tech",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/apollo-says-ai-has-shown-zero-payoff-outside-tech/",
+          "content": "Corporate America has invested heavily in artificial intelligence in the last few years. So far, these efforts haven’t yielded much in the way of results, Apollo Global Management Chief Economist Torsten Slok wrote in a note Saturday (Oct. 24). “Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to [&#8230;] The post Apollo Says AI Has Shown &#8216;Zero&#8217; Payoff Outside Tech appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 26 Oct 2026 00:48:38 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 493
+        },
+        {
+          "id": 877,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +724,7 @@
           "word_count": 484
         },
         {
-          "id": 874,
+          "id": 875,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +739,7 @@
           "word_count": 474
         },
         {
-          "id": 878,
+          "id": 879,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +754,7 @@
           "word_count": 464
         },
         {
-          "id": 871,
+          "id": 872,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 454
         },
         {
-          "id": 873,
+          "id": 874,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -767,21 +782,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 453
-        },
-        {
-          "id": 875,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Anthropic Merges Claude Chat and Cowork for Enterprise Users",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-merges-claude-chat-and-cowork-for-enterprise-users/",
-          "content": "Anthropic says it has unified Claude chat and Cowork for its enterprise customers. The new offering combines chat and Cowork on web, desktop and mobile, meaning users don’t have to choose between the two services before starting, Anthropic announced Friday (Oct. 23). “Every conversation starts as a chat, and when a task needs to run [&#8230;] The post Anthropic Merges Claude Chat and Cowork for Enterprise Users appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 25 Oct 2026 22:51:49 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 445
         }
       ],
       "quota": {
@@ -789,14 +789,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 176,
-      "total_valid": 9,
+      "total_raw": 170,
+      "total_valid": 10,
       "total_candidates": 7
     }
   },
   "meta": {
-    "total_raw": 1046,
-    "dup": 267,
+    "total_raw": 1040,
+    "dup": 260,
     "nocontent": 409,
     "noise": 5
   }
