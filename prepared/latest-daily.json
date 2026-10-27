@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 80,
+          "id": 79,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 155
         },
         {
-          "id": 106,
+          "id": 105,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 248
         },
         {
-          "id": 107,
+          "id": 106,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 215
         },
         {
-          "id": 109,
+          "id": 108,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -108,6 +108,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 213
+        },
+        {
+          "id": 90,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents",
+          "link": "https://arxiv.org/abs/2610.33568",
+          "content": "Successful tool-use trajectories are not necessarily useful supervision. Even successful interactions may underrepresent multi-step dependencies or contain actions that are unjustified by the information visible to the agent at decision time. We identify two coupled requirements for effective trajectory supervision: compositional coverage, so that important observation-action dependencies are represented, and decision grounding, so that each supervised action is supported by the learner-visible interaction history. We introduce Trajectory2Gym, which constructs executable interactions around under-supported compositional structures and derives supervision only from grounded decisions in their realized executions. Structural-support selection allocates the resulting experience, while parent-normalized supervised fine-tuning preserves the semantic interaction as the unit of training weight. This reframes trajectory generation as the deliberate construction of learnable interaction experience, rather than the collection of successful trajectories. Across five Qwen3 scales, Trajectory2Gym improves Tau1, Tau2, and BFCL at every tested scale, increasing the equal-weight three-benchmark me",
+          "pub_date": "2026-10-23T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         },
         {
           "id": 91,
@@ -140,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 95,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution",
-          "link": "https://arxiv.org/abs/2610.32285",
-          "content": "LLM agents are increasingly used to solve real-world problems, and their effectiveness depends on both the underlying models and the harnesses that support their operation. However, most existing benchmarks focus on model capabilities and overall agent performance, with limited attention to the evaluation of agent harnesses. To address this gap, we introduce TraceTrial-Bench, which organizes harness reliability into seven components covering context, execution, governance, lifecycle, observability, tools, and verification. We construct 95 expert-level, mechanism-oriented tasks with executable or state-based ground truth to support semantically equivalent comparisons while preserving the native behavior of each harness. We design a Trajectory Tracing (TT) module to capture agent execution traces and introduce a two-layer evaluation framework that separately assesses agent performance and harness reliability. In addition, we design a Multi-source Evidence Acquisition (MEA) module to provide evidence from the agent context, harness, and execution environment for LLM-based evaluation, and develop a Failure Attribution (FA) module that uses explicit mechanism chains to support attributi",
-          "pub_date": "2026-10-22T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 972,
+          "id": 971,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 975,
+          "id": 974,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1080,
-      "total_valid": 677,
+      "total_raw": 1079,
+      "total_valid": 676,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1397,
+          "id": 1396,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1403,
+          "id": 1402,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1408,
+          "id": 1407,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1312,
+          "id": 1311,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 574
         },
         {
-          "id": 1521,
+          "id": 1520,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 410
         },
         {
-          "id": 1493,
+          "id": 1492,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 126
         },
         {
-          "id": 1447,
+          "id": 1446,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 416
         },
         {
-          "id": 1472,
+          "id": 1471,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 365
         },
         {
-          "id": 1459,
+          "id": 1458,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 346
         },
         {
-          "id": 1112,
+          "id": 1111,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 304
         },
         {
-          "id": 1090,
+          "id": 1089,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 246
         },
         {
-          "id": 1087,
+          "id": 1086,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 244
         },
         {
-          "id": 1085,
+          "id": 1084,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 214
         },
         {
-          "id": 1534,
+          "id": 1533,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 196
         },
         {
-          "id": 1103,
+          "id": 1102,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1629,
+          "id": 1628,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 433
         },
         {
-          "id": 1593,
+          "id": 1592,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 244
         },
         {
-          "id": 1594,
+          "id": 1593,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 164
         },
         {
-          "id": 1648,
+          "id": 1647,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1649,
+          "id": 1648,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1111
         },
         {
-          "id": 1653,
+          "id": 1652,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 478
         },
         {
-          "id": 1636,
+          "id": 1635,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -551,7 +551,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1411,
+          "id": 1410,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 1200
         },
         {
-          "id": 1265,
+          "id": 1264,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 441
         },
         {
-          "id": 1521,
+          "id": 1520,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 410
         },
         {
-          "id": 1674,
+          "id": 1673,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 185
         },
         {
-          "id": 1317,
+          "id": 1316,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 129
         },
         {
-          "id": 1306,
+          "id": 1305,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 61
         },
         {
-          "id": 1082,
+          "id": 1081,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -656,7 +656,7 @@
           "word_count": 203
         },
         {
-          "id": 1110,
+          "id": 1109,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -671,7 +671,7 @@
           "word_count": 146
         },
         {
-          "id": 737,
+          "id": 736,
           "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 1200
         },
         {
-          "id": 925,
+          "id": 924,
           "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
@@ -724,7 +724,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1685,
+          "id": 1684,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 452
         },
         {
-          "id": 1691,
+          "id": 1690,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 428
         },
         {
-          "id": 1714,
+          "id": 1713,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 393
         },
         {
-          "id": 1708,
+          "id": 1707,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 383
         },
         {
-          "id": 1738,
+          "id": 1737,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 363
         },
         {
-          "id": 1739,
+          "id": 1738,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 356
         },
         {
-          "id": 1709,
+          "id": 1708,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 331
         },
         {
-          "id": 1717,
+          "id": 1716,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 326
         },
         {
-          "id": 1737,
+          "id": 1736,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 318
         },
         {
-          "id": 1692,
+          "id": 1691,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 167
         },
         {
-          "id": 1705,
+          "id": 1704,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 146
         },
         {
-          "id": 1699,
+          "id": 1698,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 144
         },
         {
-          "id": 1693,
+          "id": 1692,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 137
         },
         {
-          "id": 1695,
+          "id": 1694,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 1199
         },
         {
-          "id": 1740,
+          "id": 1739,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 505
         },
         {
-          "id": 187,
+          "id": 186,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 203,
+          "id": 202,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 474,
+          "id": 473,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 525,
+          "id": 524,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1035,7 +1035,7 @@
     }
   },
   "meta": {
-    "total_raw": 1897,
+    "total_raw": 1896,
     "dup": 429,
     "nocontent": 416,
     "noise": 5
