@@ -70,6 +70,21 @@
           "section": "ai",
           "tier": "T2",
           "priority": 4,
+          "title": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing",
+          "link": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
+          "content": "An AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while researchers say it’s probably a training quirk and not espionage, the whole thing has people asking how much to trust free Chinese AI.",
+          "pub_date": "Tue, 27 Oct 2026 01:12:21 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 248
+        },
+        {
+          "id": 107,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
           "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
           "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
           "content": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier.",
@@ -80,7 +95,7 @@
           "word_count": 215
         },
         {
-          "id": 108,
+          "id": 109,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,30 +110,30 @@
           "word_count": 213
         },
         {
-          "id": 107,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "SpaceX locks in $40B GPU financing deal with Apollo",
-          "link": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
-          "content": "The financing gives SpaceX another way to fund its rapidly expanding AI ambitions without relying solely on traditional debt markets.",
-          "pub_date": "Mon, 26 Oct 2026 16:46:36 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 133
-        },
-        {
-          "id": 92,
+          "id": 91,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows",
-          "link": "https://arxiv.org/abs/2610.21109",
-          "content": "When humans collaborate with AI agents on long-horizon tasks, what happens to the agents' contributions? For solving long-horizon tasks, humans place greater importance on ongoing interaction with AI agents (e.g., revising plans) than on an agent's ability to complete the task in a single attempt. However, most agentic benchmarks have focused more on automation. Strong performance on such benchmarks does not imply effective real-world collaboration. Professional workflows offer a useful setting, as they often involve interdependent steps. To address this gap, we introduce Kolab, a new dataset of 115+ hours of screen recordings of 50 professionals from 40 occupations collaborating with agents on realistic, long-horizon problems. Kolab also contains participants' collaboration and output quality judgments. Our analysis reveals diverse collaboration patterns, highlighting the importance of when and how professionals coordinate with agents. A collaborative agent must do two things that automation benchmarks never test: anticipate whether experts will adopt, modify, or reject its contribution once it leaves the chat window to guide its next steps, and assess collaboration quality from t",
-          "pub_date": "2026-10-14T20:00:00.000Z",
+          "title": "Steering Black-Box Large Language Model Agents with Pitfall Anticipation World Model",
+          "link": "https://arxiv.org/abs/2610.29139",
+          "content": "Frontier black-box Large Language Model (LLM) agents are proficient at long-horizon reasoning and precise action generation. However, when it comes to a specific agentic task, they have no internalized knowledge of how that particular environment unfolds. A world model offers a natural remedy, providing the agent with environment specific knowledge by foreseeing how the environment will respond to the action it is about to take. Prior world models for LLM agents mainly predict next observations at each step, which is costly and often uninformative because individual observations provide limited task-relevant guidance and not every step requires call for foresight. This raises a key question: what a world model should predict and when should it be invoked for agentic tasks? Our pilot study suggests that world model guidance is most useful when it anticipates pitfalls within a bounded multi-step future. Motivated by this, we introduce Pitfall Anticipation World Model (PAWM), which selectively intervenes when a potential pitfall arises and predicts the impending failure to steer the agent away from it. PAWM is trained in two stages: Supervised Fine-Tuning (SFT) on synthetic data label",
+          "pub_date": "2026-10-20T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 93,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "WORTH Benchmark: Evidence Discovery under Not-Fully-Cooperative Information -- A Two-Episode Pilot",
+          "link": "https://arxiv.org/abs/2610.27597",
+          "content": "Existing reasoning evaluations typically provide task-relevant information to models as available premises, rarely examining concurrently how models discover evidence autonomously and how information presentation within narratives guides or obscures judgment. This paper proposes the WORTH Benchmark: models read original mystery narratives without clue annotations, autonomously select key clue sentences, identify case participants, and explain their reasoning process. The narrative materials are designed by professional authors such that evidence facilitating reasoning coexists with narrative arrangements that delay the revelation of truth. We report a pilot experiment under full-story conditions across two episodes, conducting a total of 70 formal runs on models, of which 67 runs are content-scorable. Scoring separately records hits on author-designated key clue sentences and participant selections; natural language explanations are used for case diagnosis and are not scored independently. The results show that clue hits and participant judgments are not synchronized; across 37 content-scorable runs in Episode 02, 31 runs simultaneously selected the same set of incorrect participan",
+          "pub_date": "2026-10-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,32 +145,17 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Judging the Justification: Decision Certificate Supervision for Generative Reward Models",
-          "link": "https://arxiv.org/abs/2610.27528",
-          "content": "Generative reward models (GenRMs) generate natural language rationales to justify preference judgments, yet a correct verdict does not guarantee a sound justification. Existing approaches often rely on reference explanations to supervise rationales, but obtaining such references can be costly and does not necessarily establish whether generated rationales support the resulting verdict. To address these limitations, we propose DeCert, a framework that evaluates the validity and verdict consistency of generated rationales without requiring reference explanations. Crucially, DeCert translates these assessments into preference supervision that accounts for both verdict correctness and justification quality. In particular, when multiple sampled judgments share the same correct verdict, differences in certificate quality enable DeCert to construct rationale preference pairs that distinguish stronger from weaker justifications. Extensive empirical studies across two model families and multiple in- and out-of-distribution benchmarks demonstrate that DeCert consistently outperforms strong generative judge baselines while improving rationale quality. Moreover, DeCert effectively mitigates po",
-          "pub_date": "2026-10-19T20:00:00.000Z",
+          "title": "DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning",
+          "link": "https://arxiv.org/abs/2610.32093",
+          "content": "Behavior cloning for robotic manipulation is highly sensitive to the coverage of its training data, yet collecting diverse successful demonstrations remains costly. We study reinforcement learning (RL) not as a deployable controller, but as a data generator for downstream visuomotor imitation learning. Our key premise is that multiple successful solution modes cover a broader range of successful trajectories than repeatedly collecting a single narrow solution. We introduce DiscoDemo, which trains a privileged latent-conditioned RL generator with a parallel reverse curriculum and a success-gated diversity objective to discover diverse solutions while preserving task success. The trained generator produces multiple successful closed-loop behaviors, which are safety-filtered and exported as a static dataset for downstream imitation learning. Across four manipulation tasks, DiscoDemo produces broader successful-state coverage and improves downstream visuomotor policies in both simulation and the real world. Averaged across tasks, downstream success increases to 62% from 40% for the strongest baseline in simulation, and to 78% from 39% on the real robot, respectively. These results sugg",
+          "pub_date": "2026-10-22T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 95,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "On the Token Collapse Phenomenon in Textual Graph Soft Prompting",
-          "link": "https://arxiv.org/abs/2610.31572",
-          "content": "Recent methods for injecting graph structure into LLM prompts include graph soft prompting, in which a graph neural network (GNN) learns graph-specific tokens that capture relational information among entities in textual prompts. G-Retriever combines graph soft prompts with a verbalized description of the same graph to strengthen the textual prompt signal. We conduct an in-depth analysis of G-Retriever and uncover a pathological behavior we term token collapse. Across three benchmarks, three graph encoders, two LLM families, and both frozen and LoRA-adapted models, G-Retriever's graph tokens become almost indistinguishable across inputs. We provide evidence that the same failure is inherited by subsequent methods, even with multi-token pooling. Under the standard setup, swapping a token with the dataset mean, a token from another example, or one derived from a corrupted graph produces no resolved answer-level effect in accuracy. Moreover, a learned constant prompt that never accesses the graph matches or surpasses G-Retriever on all three benchmarks. These findings indicate that, rather than conveying graph content as intended, the collapsed token functions primarily as a generic s",
-          "pub_date": "2026-10-21T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 972,
+          "id": 973,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 975,
+          "id": 976,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1080,
-      "total_valid": 675,
+      "total_raw": 1081,
+      "total_valid": 678,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1397,
+          "id": 1398,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1403,
+          "id": 1404,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1408,
+          "id": 1409,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1312,
+          "id": 1313,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 574
         },
         {
-          "id": 1521,
+          "id": 1522,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 410
         },
         {
-          "id": 1493,
+          "id": 1494,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 126
         },
         {
-          "id": 1447,
+          "id": 1448,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 416
         },
         {
-          "id": 1472,
+          "id": 1473,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 365
         },
         {
-          "id": 1459,
+          "id": 1460,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 346
         },
         {
-          "id": 1112,
+          "id": 1113,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 304
         },
         {
-          "id": 1090,
+          "id": 1091,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 246
         },
         {
-          "id": 1087,
+          "id": 1088,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 244
         },
         {
-          "id": 1085,
+          "id": 1086,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 214
         },
         {
-          "id": 1534,
+          "id": 1535,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 196
         },
         {
-          "id": 1103,
+          "id": 1104,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1629,
+          "id": 1630,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 433
         },
         {
-          "id": 1593,
+          "id": 1594,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 244
         },
         {
-          "id": 1594,
+          "id": 1595,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 164
         },
         {
-          "id": 1648,
+          "id": 1649,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1649,
+          "id": 1650,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1111
         },
         {
-          "id": 1653,
+          "id": 1654,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 478
         },
         {
-          "id": 1636,
+          "id": 1637,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -551,7 +551,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1411,
+          "id": 1412,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 1200
         },
         {
-          "id": 1265,
+          "id": 1266,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 441
         },
         {
-          "id": 1521,
+          "id": 1522,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 410
         },
         {
-          "id": 1674,
+          "id": 1675,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 185
         },
         {
-          "id": 1317,
+          "id": 1318,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 129
         },
         {
-          "id": 1306,
+          "id": 1307,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 61
         },
         {
-          "id": 1082,
+          "id": 1083,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -656,7 +656,7 @@
           "word_count": 203
         },
         {
-          "id": 1110,
+          "id": 1111,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -671,7 +671,7 @@
           "word_count": 146
         },
         {
-          "id": 737,
+          "id": 738,
           "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 1200
         },
         {
-          "id": 925,
+          "id": 926,
           "source": "arXiv cs.LG",
           "section": "cross",
           "tier": "T1",
@@ -724,7 +724,37 @@
     "payment": {
       "candidates": [
         {
-          "id": 1704,
+          "id": 1686,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "First Internet Bank Bets AI Means More Loans, Not Fewer People",
+          "link": "https://www.pymnts.com/news/banking/2026/first-internet-bank-bets-ai-means-more-loans-not-fewer-people/",
+          "content": "First Internet Bank of Indiana has cut compliance review times for Small Business Administration (SBA) loan applicants by 87% using AI agents, according to a case study from artificial intelligence compliance company Bretton AI. Reviews that took eight to 10 hours now take less than an hour. The $6 billion-asset digital bank plans to use [&#8230;] The post First Internet Bank Bets AI Means More Loans, Not Fewer People appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 26 Oct 2026 22:38:56 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 452
+        },
+        {
+          "id": 1692,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Court Orders Fed to Rewrite Debit Card Swipe Fee Rule",
+          "link": "https://www.pymnts.com/legal/2026/feds-debit-card-swipe-fee-rule-quashed-by-appeals-court/",
+          "content": "A federal appeals court has upheld a lower court ruling striking down the Federal Reserve’s 21-cent cap on debit card interchange fees. This latest decision was handed down Monday (Oct. 26) by a three-judge panel of the 8th U.S. Circuit Court of Appeals, affirming a ruling last year that vacated the cap. The decision stems [&#8230;] The post Court Orders Fed to Rewrite Debit Card Swipe Fee Rule appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 26 Oct 2026 19:56:49 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 428
+        },
+        {
+          "id": 1715,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +769,7 @@
           "word_count": 393
         },
         {
-          "id": 1698,
+          "id": 1709,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +784,7 @@
           "word_count": 383
         },
         {
-          "id": 1728,
+          "id": 1739,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +799,7 @@
           "word_count": 363
         },
         {
-          "id": 1729,
+          "id": 1740,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +814,7 @@
           "word_count": 356
         },
         {
-          "id": 1699,
+          "id": 1710,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +829,7 @@
           "word_count": 331
         },
         {
-          "id": 1707,
+          "id": 1718,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +844,7 @@
           "word_count": 326
         },
         {
-          "id": 1727,
+          "id": 1738,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +859,7 @@
           "word_count": 318
         },
         {
-          "id": 1682,
+          "id": 1693,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +874,7 @@
           "word_count": 167
         },
         {
-          "id": 1695,
+          "id": 1706,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +889,7 @@
           "word_count": 146
         },
         {
-          "id": 1689,
+          "id": 1700,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +904,7 @@
           "word_count": 144
         },
         {
-          "id": 1683,
+          "id": 1694,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +919,7 @@
           "word_count": 137
         },
         {
-          "id": 1685,
+          "id": 1696,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +934,7 @@
           "word_count": 75
         },
         {
-          "id": 99,
+          "id": 104,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -919,7 +949,22 @@
           "word_count": 1200
         },
         {
-          "id": 187,
+          "id": 1741,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "A Treasury Field Guide to Seven Global Stablecoin Regulatory Regimes",
+          "link": "https://www.thunes.com/insights/trends/a-treasury-field-guide-to-seven-global-stablecoin-regulatory-regimes/",
+          "content": "Whether a stablecoin is regulated depends entirely on where you&#8217;re asking, and increasingly, which currency the token references. By mid-2026, seven jurisdictions, the US (GENIUS Act), the EU (MiCA), the UK (FCA), Hong Kong, Singapore, Canada, and the UAE (VARA), have each built a different definition of stablecoin legitimacy, with their own reserve rules, redemption ... Read more &#187; The post A Treasury Field Guide to Seven Global Stablecoin Regulatory Regimes first appeared on Thunes.com .",
+          "pub_date": "Mon, 26 Oct 2026 08:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 505
+        },
+        {
+          "id": 188,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 203,
+          "id": 204,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 474,
+          "id": 475,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 525,
+          "id": 526,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -977,51 +1022,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 604,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "From Review to Authorization: Key-Isolated Threshold Signing for LLM Agents",
-          "link": "https://arxiv.org/abs/2609.05901",
-          "content": "arXiv:2609.05901v2 Announce Type: replace-cross Abstract: Autonomous LLM agents can turn semantic judgments into consequential actions such as payments and permission changes. If the same process makes these judgments and controls a reusable signing credential, a mistaken judgment can reach execution without further approval. To make LLM review govern execution, we present KITA, an authorization architecture that keeps the user's personal signing key and every threshold signing-key share outside all LLM processes. Under threshold-signature unforgeability and our system assumptions, an adversary controlling the proposer and fewer than t reviewer-signer domains cannot produce a valid authorization for a new action without signing contributions from t distinct domains. This execution-bound authorization integrity ensures that each accepted authorization includes a share from an uncompromised domain, bound to the canonical action and released only after authenticated reviewer approval. We implement an in-process prototype of KITA with a structured-output LLM adapter and threshold BLS. Six system tests validate quorum gating and message binding, seven controlled baseline scenarios compa",
-          "pub_date": "Mon, 26 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 617,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "S$^2$-MAS: A Society-Scale Multi-Agent Simulation Framework with 500 Million Household Persona Agents",
-          "link": "https://arxiv.org/abs/2610.27746",
-          "content": "arXiv:2610.27746v4 Announce Type: replace-cross Abstract: Simulating economic responses at society scale requires agents whose decisions reflect household circumstances. We introduce S$^2$-MAS, a society-scale multi-agent simulation framework built on 500 million synthetic household personas grounded in real-survey data. Its Genese engine separates decisions from state updates, while reusable financial scenarios and application ledgers track consumption, cash, debt and payments. Trained with SFT + RLCD on 2.93 million examples, sharp-421m-mlx achieves 74.55% accuracy and 38.37% question-macro F1 on one-shot consumer financial-choice tasks derived from held-out survey responses. Its accuracy exceeds GLM-5.3-Flash, Jev 1.13, DeepSeek-V4.1-Flash, GPT-6-Luna and GPT-6-Astra in the common benchmark (full test for the first four; matched 500-group sample for Astra). We evaluate eight financial task families and simulate 12 million distinct household agents in paired purchase-funding conditions. Jointly raising purchase goals and approved credit limits increases consumption, with responses differing across age and income groups. Education, employment and household-size differences persist",
-          "pub_date": "Mon, 26 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 632,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Towards Adversarially Robust Multigraph Neural Networks for Financial Crime Analysis",
-          "link": "https://arxiv.org/abs/2610.31718",
-          "content": "arXiv:2610.31718v1 Announce Type: new Abstract: Financial transaction networks are naturally represented as multigraphs, where repeated transactions between the same pair of accounts are modeled as distinct edges. Recently proposed multigraph neural network architectures leverage this structure explicitly to achieve a strong performance on anti-money laundering (AML) tasks. However, their robustness to adversaries that manipulate transaction structures to evade detection remains largely unexplored. We present the first scalable framework for structural attacks and adversarial training of multigraph neural networks using node-edge incidence matrices, adapting projected gradient descent and projected randomized block coordinate descent methods to optimize structural perturbations over such matrices. We further introduce a cycle-based regularizer that penalizes changes in the global counts of directed 2- and 3-cycles, providing a structural measure of attack plausibility. Experiments on synthetic pattern-detection and realistic AML datasets show that our learned attacks substantially outperform non-learnable perturbation baselines in reducing detection performance (PR-AUC), while adve",
-          "pub_date": "Mon, 26 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1029,14 +1029,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 208,
-      "total_valid": 43,
+      "total_raw": 226,
+      "total_valid": 54,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1879,
-    "dup": 424,
+    "total_raw": 1898,
+    "dup": 429,
     "nocontent": 416,
     "noise": 5
   }
