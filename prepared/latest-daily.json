@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 66,
+          "id": 64,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,22 +65,7 @@
           "word_count": 154
         },
         {
-          "id": 50,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Genie 4: A new generation of world simulation",
-          "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-          "content": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-          "pub_date": "Tue, 27 Oct 2026 16:01:38 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 85
-        },
-        {
-          "id": 116,
+          "id": 114,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +80,7 @@
           "word_count": 196
         },
         {
-          "id": 109,
+          "id": 107,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +95,7 @@
           "word_count": 165
         },
         {
-          "id": 110,
+          "id": 108,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +110,7 @@
           "word_count": 156
         },
         {
-          "id": 93,
+          "id": 91,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 95,
+          "id": 93,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 99,
+          "id": 97,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1192,
+          "id": 1955,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 757
+        },
+        {
+          "id": 1961,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Quick Study",
+          "link": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+          "content": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no external libraries beyond Google Fonts. Tags: tools",
+          "pub_date": "2026-10-23T21:35:13+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 407
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1299,
-      "total_valid": 970,
+      "total_raw": 2062,
+      "total_valid": 1410,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1626,
+          "id": 2389,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1632,
+          "id": 2395,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1641,
+          "id": 2404,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1540,
+          "id": 2303,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 907
         },
         {
-          "id": 1520,
+          "id": 2283,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 793
         },
         {
-          "id": 1531,
+          "id": 2294,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 607
         },
         {
-          "id": 1752,
+          "id": 2515,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 313
         },
         {
-          "id": 1549,
+          "id": 2312,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 310
         },
         {
-          "id": 1344,
+          "id": 2107,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 197
         },
         {
-          "id": 1651,
+          "id": 2414,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 422
         },
         {
-          "id": 1696,
+          "id": 2459,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 327
         },
         {
-          "id": 1657,
+          "id": 2420,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 252
         },
         {
-          "id": 1305,
+          "id": 2068,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 235
         },
         {
-          "id": 1325,
+          "id": 2088,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 163
         },
         {
-          "id": 1420,
+          "id": 2183,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1847,
+          "id": 2610,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 193
         },
         {
-          "id": 1855,
+          "id": 2618,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 189
         },
         {
-          "id": 1833,
+          "id": 2596,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 144
         },
         {
-          "id": 1883,
+          "id": 2646,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1884,
+          "id": 2647,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1870,
+          "id": 2633,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1871,
+          "id": 2634,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -551,7 +551,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1640,
+          "id": 2403,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 615
         },
         {
-          "id": 1521,
+          "id": 2284,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1524,
+          "id": 2287,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 937
         },
         {
-          "id": 1532,
+          "id": 2295,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 894
         },
         {
-          "id": 1752,
+          "id": 2515,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 313
         },
         {
-          "id": 1350,
+          "id": 2113,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 173
         },
         {
-          "id": 1337,
+          "id": 2100,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 140
         },
         {
-          "id": 1341,
+          "id": 2104,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 140
         },
         {
-          "id": 1303,
+          "id": 2066,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -686,7 +686,7 @@
           "word_count": 215
         },
         {
-          "id": 1300,
+          "id": 2063,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -706,8 +706,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 59,
-      "total_valid": 37,
+      "total_raw": 63,
+      "total_valid": 41,
       "total_candidates": 10
     },
     "china": {
@@ -724,7 +724,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1923,
+          "id": 2686,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 511
         },
         {
-          "id": 1920,
+          "id": 2683,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 499
         },
         {
-          "id": 1926,
+          "id": 2689,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 468
         },
         {
-          "id": 1922,
+          "id": 2685,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 463
         },
         {
-          "id": 1918,
+          "id": 2681,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 418
         },
         {
-          "id": 1945,
+          "id": 2708,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 383
         },
         {
-          "id": 1947,
+          "id": 2710,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 290
         },
         {
-          "id": 1935,
+          "id": 2698,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 240
         },
         {
-          "id": 1946,
+          "id": 2709,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 220
         },
         {
-          "id": 1934,
+          "id": 2697,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 169
         },
         {
-          "id": 1929,
+          "id": 2692,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 147
         },
         {
-          "id": 1938,
+          "id": 2701,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 140
         },
         {
-          "id": 1928,
+          "id": 2691,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 123
         },
         {
-          "id": 1978,
+          "id": 2741,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 511
         },
         {
-          "id": 1985,
+          "id": 2748,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -949,7 +949,7 @@
           "word_count": 97
         },
         {
-          "id": 315,
+          "id": 312,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 383,
+          "id": 380,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,14 +979,14 @@
           "word_count": 1200
         },
         {
-          "id": 823,
+          "id": 816,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "From Review to Authorization: Key-Isolated Threshold Signing for LLM Agents",
-          "link": "https://arxiv.org/abs/2609.05901",
-          "content": "arXiv:2609.05901v2 Announce Type: replace-cross Abstract: Autonomous LLM agents can turn semantic judgments into consequential actions such as payments and permission changes. If the same process makes these judgments and controls a reusable signing credential, a mistaken judgment can reach execution without further approval. To make LLM review govern execution, we present KITA, an authorization architecture that keeps the user's personal signing key and every threshold signing-key share outside all LLM processes. Under threshold-signature unforgeability and our system assumptions, an adversary controlling the proposer and fewer than t reviewer-signer domains cannot produce a valid authorization for a new action without signing contributions from t distinct domains. This execution-bound authorization integrity ensures that each accepted authorization includes a share from an uncompromised domain, bound to the canonical action and released only after authenticated reviewer approval. We implement an in-process prototype of KITA with a structured-output LLM adapter and threshold BLS. Six system tests validate quorum gating and message binding, seven controlled baseline scenarios compa",
+          "title": "Recovering Business Rules as Cascade Lookups for Enterprise Field Prediction",
+          "link": "https://arxiv.org/abs/2610.34258",
+          "content": "arXiv:2610.34258v1 Announce Type: cross Abstract: Enterprise sales-order systems rely on manually maintained configuration rules to determine fields such as payment terms, shipping points, and sales ownership. When these rules are incomplete or stale, operators must enter values by hand, and downstream errors spread into billing, logistics, and reporting. This paper studies whether missing or outdated rules can be recovered from historical transactions instead of being relearned as opaque statistical patterns. We introduce a knowledge-graph-guided workflow in which an LLM agent proposes candidate business keys, meaning column combinations such as customer and document type, validates them through SQL profiling, and compiles the resulting evidence into deterministic cascade lookups. The LLM is used only during offline rule discovery. At inference time, prediction is a transparent key lookup with no model-serving requirement. Experiments on enterprise sales-order prediction and public relational benchmarks show that cascades are most effective when fields follow stable business rules, while learned graph models remain preferable when prediction depends on temporal or neighborhood pat",
           "pub_date": "Tue, 27 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -994,14 +994,14 @@
           "word_count": 1200
         },
         {
-          "id": 836,
+          "id": 925,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "S$^2$-MAS: A Society-Scale Multi-Agent Simulation Framework with 500 Million Household Persona Agents",
-          "link": "https://arxiv.org/abs/2610.27746",
-          "content": "arXiv:2610.27746v4 Announce Type: replace-cross Abstract: Simulating economic responses at society scale requires agents whose decisions reflect household circumstances. We introduce S$^2$-MAS, a society-scale multi-agent simulation framework built on 500 million synthetic household personas grounded in real-survey data. Its Genese engine separates decisions from state updates, while reusable financial scenarios and application ledgers track consumption, cash, debt and payments. Trained with SFT + RLCD on 2.93 million examples, sharp-421m-mlx achieves 74.55% accuracy and 38.37% question-macro F1 on one-shot consumer financial-choice tasks derived from held-out survey responses. Its accuracy exceeds GLM-5.3-Flash, Jev 1.13, DeepSeek-V4.1-Flash, GPT-6-Luna and GPT-6-Astra in the common benchmark (full test for the first four; matched 500-group sample for Astra). We evaluate eight financial task families and simulate 12 million distinct household agents in paired purchase-funding conditions. Jointly raising purchase goals and approved credit limits increases consumption, with responses differing across age and income groups. Education, employment and household-size differences persist",
+          "title": "Governing Enterprise AI Traffic at Scale: Design and Operation of a Policy-Driven, Multi-Vendor LLM Gateway on Envoy",
+          "link": "https://arxiv.org/abs/2610.35509",
+          "content": "arXiv:2610.35509v1 Announce Type: cross Abstract: Large organizations consume large language models (LLMs) from several vendors at once, each with its own API dialect, credential model, streaming protocol and pricing. Integrated directly, this heterogeneity yields credential sprawl, format lock-in, unbounded spend and inconsistent governance. We present the design and production operation of the Cosmos LLM Gateway, the governed entry point for enterprise LLM traffic at PayPal. Built on Envoy, it splits work by latency profile: I/O-bound control decisions (authentication, credential brokering, policy and budget evaluation) run in an out-of-process external-processing service, while wire-format translation, token metering and prompt-cache shaping run in-proxy as a Rust WebAssembly filter, so that, by default, streamed response body chunks never wait on an out-of-process call. Models, providers and prices are largely validated data rather than code. Governance is declarative policy evaluated by Open Policy Agent and managed through a control plane with role-scoped authoring, approvals, pilots, shadow-mode rollout, usage notifications and versioned policy bundles. For use cases that re",
           "pub_date": "Tue, 27 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1009,14 +1009,14 @@
           "word_count": 1200
         },
         {
-          "id": 851,
-          "source": "arXiv cs.LG",
+          "id": 992,
+          "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Towards Adversarially Robust Multigraph Neural Networks for Financial Crime Analysis",
-          "link": "https://arxiv.org/abs/2610.31718",
-          "content": "arXiv:2610.31718v1 Announce Type: new Abstract: Financial transaction networks are naturally represented as multigraphs, where repeated transactions between the same pair of accounts are modeled as distinct edges. Recently proposed multigraph neural network architectures leverage this structure explicitly to achieve a strong performance on anti-money laundering (AML) tasks. However, their robustness to adversaries that manipulate transaction structures to evade detection remains largely unexplored. We present the first scalable framework for structural attacks and adversarial training of multigraph neural networks using node-edge incidence matrices, adapting projected gradient descent and projected randomized block coordinate descent methods to optimize structural perturbations over such matrices. We further introduce a cycle-based regularizer that penalizes changes in the global counts of directed 2- and 3-cycles, providing a structural measure of attack plausibility. Experiments on synthetic pattern-detection and realistic AML datasets show that our learned attacks substantially outperform non-learnable perturbation baselines in reducing detection performance (PR-AUC), while adve",
+          "title": "Measurement Without Validity: The Compounding Reliability Problem in Agentic AI Evaluation",
+          "link": "https://arxiv.org/abs/2608.00794",
+          "content": "arXiv:2608.00794v5 Announce Type: replace Abstract: Agentic AI evaluation pipelines produce benchmark scores that justify deployment decisions, safety certifications, and regulatory compliance claims. No formal framework has characterized how validity degrades across these stages. We present a knowledge-based three-layer compounding validity model, $V_{\\rm total} \\leq V_1 \\times V_2 \\times V_3$, that captures multiplicative degradation across task generation ($V_1$), human-simulator calibration ($V_2$), and automated judgment ($V_3$). Applying it to five widely-used agentic benchmark configurations, we find $V_1$ and $V_2$ independently measurable and both degraded, but $V_3$ not currently quantifiable for any: three of the four benchmarks score with a single deterministic rule, so no second rater exists and reliability is undefined, and the fourth's partial LLM grader has no published grader-vs-human measurement. A structured survey of 55 published agentic evaluation papers finds that 26 of them report no chance-corrected inter-rater statistic of any kind, a determination four independent raters recover at Krippendorff's $\\alpha = 0.834$. On the broader judgment of whether a repor",
           "pub_date": "Tue, 27 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1029,14 +1029,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 225,
-      "total_valid": 50,
+      "total_raw": 232,
+      "total_valid": 57,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2135,
-    "dup": 342,
+    "total_raw": 2898,
+    "dup": 665,
     "nocontent": 416,
     "noise": 5
   }
