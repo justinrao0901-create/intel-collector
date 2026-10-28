@@ -125,7 +125,37 @@
           "word_count": 156
         },
         {
+          "id": 93,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+          "link": "https://arxiv.org/abs/2610.24520",
+          "content": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence",
+          "pub_date": "2026-10-19T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 95,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "SearchHorizonBench: A Benchmark for Search Value in AI Agents",
+          "link": "https://arxiv.org/abs/2610.34714",
+          "content": "AI agents must decide when another search is worth its cost. Answer-success probabilities capture question difficulty, while this decision requires estimating the additional benefit of search. We introduce SearchHorizonBench, a benchmark for learning and evaluating search value from execution experience. Paired continuations and repeated executions separate expected search gain from generation noise and connect prediction quality to decision utility. The resource contains 45,632 executions across 3,168 questions. On 1,632 held-out questions, historical calibration reduces Brier error by 16.2%, with the improvement concentrated in success-level information. Search gains have a standard deviation of 21.4 percentage points, and tested historical estimators explain less than 2% of this variance in point estimates. Matched-configuration learning curves probe this distinction across training scales. At the reference token price, free selection observations yield a 2.49-point utility opportunity over the best constant action, driven primarily by gain information. Reusable histories, frozen splits, strong baselines and scoring tools provide a common foundation for developing and evaluating",
+          "pub_date": "2026-10-25T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 99,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -133,36 +163,6 @@
           "title": "What Effort Level Should I Choose? On the Economics of Reasoning Effort in LLM Agents",
           "link": "https://arxiv.org/abs/2610.34491",
           "content": "Generative models increasingly expose a reasoning effort setting that lets users scale inference-time compute, trading higher cost for potentially improved performance. Users must choose an effort level before knowing whether extra reasoning will help, and even a successful run does not reveal whether the effort purchased was necessary. Reasoning effort is therefore a credence good: buyers observe the outcome but cannot assess the marginal value of the computation they paid for. In this work, we measure the counterfactual effect of effort levels on both proprietary and open-weight models on four benchmarks, spanning single-call reasoning and long-horizon agentic tasks. Effort, it turns out, does not consistently preserve tasks that lower effort solves, can overspend, and can change trajectory behavior. First, we find that although higher effort can raise accuracy in aggregate, it frequently fails on tasks that lower effort solved. Second, on the subset of easy tasks that every effort level solves, higher effort is generally more costly, with the highest effort level costing up to 42x as much as the lowest. Lastly, effort changes not only how many tokens are used, but also how agent",
-          "pub_date": "2026-10-24T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 97,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
-          "link": "https://arxiv.org/abs/2610.33624",
-          "content": "Can AI agents autonomously train useful language models and improve them using feedback from users? We introduce RSI Arena, a two-stage study of autonomous post-training as a step toward recursive self-improvement. Ten frontier models act as training agents, each starting from NVIDIA Nemotron 3.5 Lightning 30B-A3B Base. During a six-day first stage, each agent has 1,000 GPU-hours and $300 in API credit on a shared 64-GPU cluster, independently selecting data, implementing training procedures, and choosing checkpoints. We evaluate their models on 20 benchmarks and through blind human evaluations. All ten agents produce working assistants, with the strongest model, trained by GPT-6 Astra, closing a median of 76% of the base-to-Instruct gap across 12 capability benchmarks. Its human-preference rating is also close to NVIDIA Instruct after statistical adjustment for answer length and formatting. In Stage 2, each agent receives the comparison records and votes involving its Stage 1 model and is given three additional days for further training. Using NVIDIA Instruct as a common reference across the two evaluation rounds, we observe an improvement from Stage 1 to Stage 2 in the style-adju",
-          "pub_date": "2026-10-23T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 98,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence",
-          "link": "https://arxiv.org/abs/2610.34283",
-          "content": "Training a spatial VLM to answer which side an object lies on does not require it to preserve the metric displacement that determines that answer, while supervision for a distance estimate may leave categorical relations largely unconstrained. When post-training emphasizes one readout, improvements can therefore concentrate on that interface while transfer to others remains weak or even degrades; we call this observed specialization interface lock-in. ChronoReplay addresses it by replaying heterogeneous spatial supervision as chronologically ordered episodes, retaining source-native targets, and balancing supervision across families. Under the same observation access, a single ChronoReplay checkpoint improves OVO-S-Bench, OST-Bench, and UCS-Bench together, including a 13.41-point gain on OST-Bench, and achieves the highest three-benchmark mean among the supervision settings compared here. Same-data controls further separate the ingredients of this transfer: answer serialization redistributes gains across OST and UCS, family-balanced learning improves over ordinary joint SFT and natural turn weighting, and chronological replay exceeds a shifted-order control by about 2.41 OST points",
           "pub_date": "2026-10-24T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 1627,
+          "id": 1626,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1633,
+          "id": 1632,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1642,
+          "id": 1641,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1541,
+          "id": 1540,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 907
         },
         {
-          "id": 1521,
+          "id": 1520,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 793
         },
         {
-          "id": 1532,
+          "id": 1531,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 607
         },
         {
-          "id": 1753,
+          "id": 1752,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 313
         },
         {
-          "id": 1550,
+          "id": 1549,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 310
         },
         {
-          "id": 1345,
+          "id": 1344,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 197
         },
         {
-          "id": 1652,
+          "id": 1651,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 422
         },
         {
-          "id": 1697,
+          "id": 1696,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 327
         },
         {
-          "id": 1658,
+          "id": 1657,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 235
         },
         {
-          "id": 1326,
+          "id": 1325,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 163
         },
         {
-          "id": 1421,
+          "id": 1420,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 499,
+      "total_raw": 498,
       "total_valid": 349,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1848,
+          "id": 1847,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 193
         },
         {
-          "id": 1856,
+          "id": 1855,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 189
         },
         {
-          "id": 1834,
+          "id": 1833,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 144
         },
         {
-          "id": 1884,
+          "id": 1883,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1885,
+          "id": 1884,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1871,
+          "id": 1870,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1872,
+          "id": 1871,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -551,7 +551,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1641,
+          "id": 1640,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 615
         },
         {
-          "id": 1522,
+          "id": 1521,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1525,
+          "id": 1524,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 937
         },
         {
-          "id": 1533,
+          "id": 1532,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 894
         },
         {
-          "id": 1753,
+          "id": 1752,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 313
         },
         {
-          "id": 1351,
+          "id": 1350,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 173
         },
         {
-          "id": 1338,
+          "id": 1337,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 140
         },
         {
-          "id": 1342,
+          "id": 1341,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -724,7 +724,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1924,
+          "id": 1923,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 511
         },
         {
-          "id": 1921,
+          "id": 1920,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 499
         },
         {
-          "id": 1927,
+          "id": 1926,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 468
         },
         {
-          "id": 1923,
+          "id": 1922,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 463
         },
         {
-          "id": 1919,
+          "id": 1918,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 418
         },
         {
-          "id": 1947,
+          "id": 1945,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 383
         },
         {
-          "id": 1949,
+          "id": 1947,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 290
         },
         {
-          "id": 1936,
+          "id": 1935,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 240
         },
         {
-          "id": 1948,
+          "id": 1946,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 220
         },
         {
-          "id": 1935,
+          "id": 1934,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 169
         },
         {
-          "id": 1930,
+          "id": 1929,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 147
         },
         {
-          "id": 1939,
+          "id": 1938,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 140
         },
         {
-          "id": 1929,
+          "id": 1928,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 123
         },
         {
-          "id": 1980,
+          "id": 1978,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 511
         },
         {
-          "id": 1987,
+          "id": 1985,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1029,14 +1029,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 226,
-      "total_valid": 51,
+      "total_raw": 225,
+      "total_valid": 50,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2137,
-    "dup": 343,
+    "total_raw": 2135,
+    "dup": 342,
     "nocontent": 416,
     "noise": 5
   }
