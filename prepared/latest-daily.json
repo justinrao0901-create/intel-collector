@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 64,
+          "id": 66,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,22 @@
           "word_count": 154
         },
         {
-          "id": 114,
+          "id": 50,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Genie 4: A new generation of world simulation",
+          "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "content": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+          "pub_date": "Tue, 27 Oct 2026 16:01:38 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 85
+        },
+        {
+          "id": 116,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 196
         },
         {
-          "id": 107,
+          "id": 109,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +110,7 @@
           "word_count": 165
         },
         {
-          "id": 108,
+          "id": 110,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,52 +125,52 @@
           "word_count": 156
         },
         {
-          "id": 92,
+          "id": 95,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
-          "link": "https://arxiv.org/abs/2610.36068",
-          "content": "Action-conditioned world models offer a scalable alternative to costly real-world interaction for improving robot policies. However, existing world-model-based methods largely treat world models as forward-only surrogates of the physical environment, leaving untapped a capability no physical environment affords: rewinding to past decision points to explore counterfactual futures. We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions. This concentrates imagination where it matters most and distills counterfactual outcomes into fine-grained, action-level supervision without a separately learned value model. We build a scalable training system that unifies distributed world-model search with asynchronous real-robot execution, forming a self-reinforcing cycle: real-world experience continually sharpens the world model, and a sharper world model in turn drives further policy improvement. We term the world-model side of this cycle test-time physics grounding, a ca",
-          "pub_date": "2026-10-25T20:00:00.000Z",
+          "title": "What Effort Level Should I Choose? On the Economics of Reasoning Effort in LLM Agents",
+          "link": "https://arxiv.org/abs/2610.34491",
+          "content": "Generative models increasingly expose a reasoning effort setting that lets users scale inference-time compute, trading higher cost for potentially improved performance. Users must choose an effort level before knowing whether extra reasoning will help, and even a successful run does not reveal whether the effort purchased was necessary. Reasoning effort is therefore a credence good: buyers observe the outcome but cannot assess the marginal value of the computation they paid for. In this work, we measure the counterfactual effect of effort levels on both proprietary and open-weight models on four benchmarks, spanning single-call reasoning and long-horizon agentic tasks. Effort, it turns out, does not consistently preserve tasks that lower effort solves, can overspend, and can change trajectory behavior. First, we find that although higher effort can raise accuracy in aggregate, it frequently fails on tasks that lower effort solved. Second, on the subset of easy tasks that every effort level solves, higher effort is generally more costly, with the highest effort level costing up to 42x as much as the lowest. Lastly, effort changes not only how many tokens are used, but also how agent",
+          "pub_date": "2026-10-24T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 93,
+          "id": 97,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "OpenESM: Energy-Steered Models Are Scalable Foundation Learners",
-          "link": "https://arxiv.org/abs/2610.33005",
-          "content": "Energy-based models have shown promising properties for domain-specific tasks but remain challenging in modeling general-purpose scenarios. To bridge this gap, we design energy-steered models (ESMs) for foundational language modeling. ESMs integrate energy steering and token generation within a single architecture to leverage the energy-guided search to refine token generation. Specifically, ESMs first optimize a latent state over the energy landscape, then leverages the refined latent state for token generation. By performing such energy-guided pre-training on large-scale corpora, ESMs learn generally effective energy landscape where favorable tokens correspond to lower energy values. To explore the scaling behavior of ESMs, we pre-train ESMs on three large-scale corpora, then evaluate across 26 downstream tasks spanning a broad range of domains. Our results demonstrate that ESMs have promising scaling behaviors with increasing model size and training data, and outperform GPTs on most downstream tasks. These findings highlight ESMs as a promising architecture for large-scale pre-training and general purpose problem solving. We fully release the model weights and training infrastru",
-          "pub_date": "2026-10-06T20:00:00.000Z",
+          "title": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
+          "link": "https://arxiv.org/abs/2610.33624",
+          "content": "Can AI agents autonomously train useful language models and improve them using feedback from users? We introduce RSI Arena, a two-stage study of autonomous post-training as a step toward recursive self-improvement. Ten frontier models act as training agents, each starting from NVIDIA Nemotron 3.5 Lightning 30B-A3B Base. During a six-day first stage, each agent has 1,000 GPU-hours and $300 in API credit on a shared 64-GPU cluster, independently selecting data, implementing training procedures, and choosing checkpoints. We evaluate their models on 20 benchmarks and through blind human evaluations. All ten agents produce working assistants, with the strongest model, trained by GPT-6 Astra, closing a median of 76% of the base-to-Instruct gap across 12 capability benchmarks. Its human-preference rating is also close to NVIDIA Instruct after statistical adjustment for answer length and formatting. In Stage 2, each agent receives the comparison records and votes involving its Stage 1 model and is given three additional days for further training. Using NVIDIA Instruct as a common reference across the two evaluation rounds, we observe an improvement from Stage 1 to Stage 2 in the style-adju",
+          "pub_date": "2026-10-23T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 94,
+          "id": 98,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models",
-          "link": "https://arxiv.org/abs/2610.31566",
-          "content": "Large language models have shown outstanding performance on text-first tasks such as coding, math, and writing. Recent efforts are shifting models' training to include scientific problems that often live in highly specialized domains beyond text, such as protein structure and biological images. However, in these scenarios, their general-purpose accuracy compared with specialized algorithms remains in question. One such domain is cell tracking, which requires spatiotemporal awareness of cell dynamics. To evaluate this, we created a new benchmark, CellTrack-Bench, which assesses Vision-Language Models' (VLMs) cell-tracking-related performance against specialized trackers. The full benchmark draws from 15 standard cell-tracking datasets across four imaging modalities and comprises 1,537 problems corresponding to 9,041 cell-linking decisions. We selected a hard subset requiring greater reasoning effort by identifying failures shared across distinct algorithmic trackers. With this proposed dataset, we: (i) evaluated different environment harnesses for VLMs; (ii) benchmarked 9 frontier closed-source models and 13 open-weight models; and (iii) provided a detailed analysis of their failure",
-          "pub_date": "2026-10-21T20:00:00.000Z",
+          "title": "ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence",
+          "link": "https://arxiv.org/abs/2610.34283",
+          "content": "Training a spatial VLM to answer which side an object lies on does not require it to preserve the metric displacement that determines that answer, while supervision for a distance estimate may leave categorical relations largely unconstrained. When post-training emphasizes one readout, improvements can therefore concentrate on that interface while transfer to others remains weak or even degrades; we call this observed specialization interface lock-in. ChronoReplay addresses it by replaying heterogeneous spatial supervision as chronologically ordered episodes, retaining source-native targets, and balancing supervision across families. Under the same observation access, a single ChronoReplay checkpoint improves OVO-S-Bench, OST-Bench, and UCS-Bench together, including a 13.41-point gain on OST-Bench, and achieves the highest three-benchmark mean among the supervision settings compared here. Same-data controls further separate the ingredients of this transfer: answer serialization redistributes gains across OST and UCS, family-balanced learning improves over ordinary joint SFT and natural turn weighting, and chronological replay exceeds a shifted-order control by about 2.41 OST points",
+          "pub_date": "2026-10-24T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 1190,
+          "id": 1192,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 757
-        },
-        {
-          "id": 1196,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quick Study",
-          "link": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
-          "content": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no external libraries beyond Google Fonts. Tags: tools",
-          "pub_date": "2026-10-23T21:35:13+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 407
         }
       ],
       "quota": {
@@ -190,8 +190,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1297,
-      "total_valid": 968,
+      "total_raw": 1299,
+      "total_valid": 970,
       "total_candidates": 12
     },
     "vaccine": {
@@ -377,7 +377,7 @@
           "word_count": 252
         },
         {
-          "id": 1303,
+          "id": 1305,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 235
         },
         {
-          "id": 1325,
+          "id": 1326,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 501,
-      "total_valid": 351,
+      "total_raw": 499,
+      "total_valid": 349,
       "total_candidates": 15
     },
     "synbio": {
@@ -671,7 +671,7 @@
           "word_count": 140
         },
         {
-          "id": 1301,
+          "id": 1303,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -686,7 +686,7 @@
           "word_count": 215
         },
         {
-          "id": 1298,
+          "id": 1300,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 97
         },
         {
-          "id": 313,
+          "id": 315,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 381,
+          "id": 383,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 821,
+          "id": 823,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 834,
+          "id": 836,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 849,
+          "id": 851,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
