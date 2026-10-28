@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 66,
+          "id": 64,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,22 +65,7 @@
           "word_count": 154
         },
         {
-          "id": 50,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Genie 4: A new generation of world simulation",
-          "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-          "content": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-          "pub_date": "Tue, 27 Oct 2026 16:01:38 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 85
-        },
-        {
-          "id": 115,
+          "id": 114,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +80,7 @@
           "word_count": 196
         },
         {
-          "id": 108,
+          "id": 107,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +95,7 @@
           "word_count": 165
         },
         {
-          "id": 109,
+          "id": 108,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +110,37 @@
           "word_count": 156
         },
         {
+          "id": 92,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+          "link": "https://arxiv.org/abs/2610.36068",
+          "content": "Action-conditioned world models offer a scalable alternative to costly real-world interaction for improving robot policies. However, existing world-model-based methods largely treat world models as forward-only surrogates of the physical environment, leaving untapped a capability no physical environment affords: rewinding to past decision points to explore counterfactual futures. We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions. This concentrates imagination where it matters most and distills counterfactual outcomes into fine-grained, action-level supervision without a separately learned value model. We build a scalable training system that unifies distributed world-model search with asynchronous real-robot execution, forming a self-reinforcing cycle: real-world experience continually sharpens the world model, and a sharper world model in turn drives further policy improvement. We term the world-model side of this cycle test-time physics grounding, a ca",
+          "pub_date": "2026-10-25T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 93,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "OpenESM: Energy-Steered Models Are Scalable Foundation Learners",
+          "link": "https://arxiv.org/abs/2610.33005",
+          "content": "Energy-based models have shown promising properties for domain-specific tasks but remain challenging in modeling general-purpose scenarios. To bridge this gap, we design energy-steered models (ESMs) for foundational language modeling. ESMs integrate energy steering and token generation within a single architecture to leverage the energy-guided search to refine token generation. Specifically, ESMs first optimize a latent state over the energy landscape, then leverages the refined latent state for token generation. By performing such energy-guided pre-training on large-scale corpora, ESMs learn generally effective energy landscape where favorable tokens correspond to lower energy values. To explore the scaling behavior of ESMs, we pre-train ESMs on three large-scale corpora, then evaluate across 26 downstream tasks spanning a broad range of domains. Our results demonstrate that ESMs have promising scaling behaviors with increasing model size and training data, and outperform GPTs on most downstream tasks. These findings highlight ESMs as a promising architecture for large-scale pre-training and general purpose problem solving. We fully release the model weights and training infrastru",
+          "pub_date": "2026-10-06T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 94,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,37 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 94,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "SO-101 Bench: Accessible Spatial Manipulation",
-          "link": "https://arxiv.org/abs/2610.36420",
-          "content": "Low-cost arms such as the SO-101 have become the most common entry point to robot learning, yet no released policy performs spatially constrained, language-conditioned tasks on them out of the box, and existing SO-101 benchmarks run only on physical hardware with simple tasks and few held-out objects. We introduce SO-101 Bench, a simulated benchmark for language-conditioned spatial manipulation built on an Isaac Lab digital twin of a real SO-101 setup. It has four tasks scored as five families, 138 objects in seen, unseen-instance and unseen-class splits, 916 evaluation episodes with subsets for held-out appearances, rotate-to-fit planning and occlusion memory, and 3,629 simulated demonstrations on which every learned policy is fine-tuned under an equal compute budget. The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000), although simulation overestimates success. Across nine VLAs and world-action models, the best learned policies score near 61%, with spatial placement,",
-          "pub_date": "2026-10-26T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 95,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Ψ-0.6: Adaptive Streams of Thought in a Unified Vision-Language World Model",
-          "link": "https://arxiv.org/abs/2610.32177",
-          "content": "Humans reason about the physical world by flexibly combining different forms of inference as a problem unfolds. Achieving this flexibility is a major open challenge in AI: capabilities often remain separated across specialized models, limiting how they can be composed and jointly adapted to a task. We introduce Ψ-0.6, a unified vision-language world model that adaptively composes perception, language, geometry, and simulation within a shared reasoning process we call streams of thought. These streams interleave images, text, and explicit representations of geometry and motion, all of which the model can generate and interpret through a shared token interface. Ψ-0.6 surpasses leading open-weight models zero-shot on multi-view spatial reasoning, with further gains from reasoning through geometric intermediates. It also supports counterfactual simulation: generating and interpreting imagined scenes to determine, for example, whether moving an object would obstruct a pathway. Reinforcement learning from task feedback jointly optimizes the selection, generation, and use of intermediate representations, improving visual question-answering accuracy with gains that transfer to unseen bench",
-          "pub_date": "2026-10-22T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1191,
+          "id": 1190,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 757
+        },
+        {
+          "id": 1196,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Quick Study",
+          "link": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+          "content": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no external libraries beyond Google Fonts. Tags: tools",
+          "pub_date": "2026-10-23T21:35:13+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 407
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1298,
+      "total_raw": 1297,
       "total_valid": 968,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1631,
+          "id": 1627,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1637,
+          "id": 1633,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1646,
+          "id": 1642,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1545,
+          "id": 1541,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 907
         },
         {
-          "id": 1525,
+          "id": 1521,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 793
         },
         {
-          "id": 1536,
+          "id": 1532,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 607
         },
         {
-          "id": 1757,
+          "id": 1753,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 313
         },
         {
-          "id": 1554,
+          "id": 1550,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 310
         },
         {
-          "id": 1349,
+          "id": 1345,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 197
         },
         {
-          "id": 1656,
+          "id": 1652,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 422
         },
         {
-          "id": 1701,
+          "id": 1697,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 327
         },
         {
-          "id": 1662,
+          "id": 1658,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 252
         },
         {
-          "id": 1304,
+          "id": 1303,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 235
         },
         {
-          "id": 1327,
+          "id": 1325,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 163
         },
         {
-          "id": 1425,
+          "id": 1421,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 504,
-      "total_valid": 353,
+      "total_raw": 501,
+      "total_valid": 351,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1852,
+          "id": 1848,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 193
         },
         {
-          "id": 1860,
+          "id": 1856,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 189
         },
         {
-          "id": 1838,
+          "id": 1834,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 144
         },
         {
-          "id": 1888,
+          "id": 1884,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1889,
+          "id": 1885,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1875,
+          "id": 1871,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1876,
+          "id": 1872,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -551,7 +551,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1645,
+          "id": 1641,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 615
         },
         {
-          "id": 1526,
+          "id": 1522,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1529,
+          "id": 1525,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 937
         },
         {
-          "id": 1537,
+          "id": 1533,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 894
         },
         {
-          "id": 1757,
+          "id": 1753,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 313
         },
         {
-          "id": 1355,
+          "id": 1351,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 173
         },
         {
-          "id": 1342,
+          "id": 1338,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 140
         },
         {
-          "id": 1346,
+          "id": 1342,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 140
         },
         {
-          "id": 1302,
+          "id": 1301,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -686,7 +686,7 @@
           "word_count": 215
         },
         {
-          "id": 1299,
+          "id": 1298,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -724,7 +724,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1927,
+          "id": 1924,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 511
         },
         {
-          "id": 1924,
+          "id": 1921,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 499
         },
         {
-          "id": 1930,
+          "id": 1927,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 468
         },
         {
-          "id": 1926,
+          "id": 1923,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,22 @@
           "word_count": 463
         },
         {
-          "id": 1951,
+          "id": 1919,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Stripe Pay Targets Instant B2B Payments",
+          "link": "https://www.pymnts.com/news/b2b-payments/2026/stripe-pay-targets-instant-b2b-payments/",
+          "content": "Stripe now enables instant B2B transfers through a “stripe pay” plug-in, the company said in a Tuesday (Oct. 27) post on LinkedIn. “Find companies using their Stripe profile handle and send funds for free,” Stripe said in the post. “Available in the Dashboard and CLI.” Using the “stripe pay” plug-in requires the sender to have [&#8230;] The post Stripe Pay Targets Instant B2B Payments appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 28 Oct 2026 01:34:37 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 418
+        },
+        {
+          "id": 1947,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 383
         },
         {
-          "id": 1953,
+          "id": 1949,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 290
         },
         {
-          "id": 1940,
+          "id": 1936,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 240
         },
         {
-          "id": 1952,
+          "id": 1948,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 220
         },
         {
-          "id": 1939,
+          "id": 1935,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 169
         },
         {
-          "id": 1934,
+          "id": 1930,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 147
         },
         {
-          "id": 1943,
+          "id": 1939,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 140
         },
         {
-          "id": 1933,
+          "id": 1929,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 123
         },
         {
-          "id": 1984,
+          "id": 1980,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 511
         },
         {
-          "id": 1991,
+          "id": 1987,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -934,7 +949,7 @@
           "word_count": 97
         },
         {
-          "id": 314,
+          "id": 313,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 382,
+          "id": 381,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 822,
+          "id": 821,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 835,
+          "id": 834,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 850,
+          "id": 849,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1002,21 +1017,6 @@
           "title": "Towards Adversarially Robust Multigraph Neural Networks for Financial Crime Analysis",
           "link": "https://arxiv.org/abs/2610.31718",
           "content": "arXiv:2610.31718v1 Announce Type: new Abstract: Financial transaction networks are naturally represented as multigraphs, where repeated transactions between the same pair of accounts are modeled as distinct edges. Recently proposed multigraph neural network architectures leverage this structure explicitly to achieve a strong performance on anti-money laundering (AML) tasks. However, their robustness to adversaries that manipulate transaction structures to evade detection remains largely unexplored. We present the first scalable framework for structural attacks and adversarial training of multigraph neural networks using node-edge incidence matrices, adapting projected gradient descent and projected randomized block coordinate descent methods to optimize structural perturbations over such matrices. We further introduce a cycle-based regularizer that penalizes changes in the global counts of directed 2- and 3-cycles, providing a structural measure of attack plausibility. Experiments on synthetic pattern-detection and realistic AML datasets show that our learned attacks substantially outperform non-learnable perturbation baselines in reducing detection performance (PR-AUC), while adve",
-          "pub_date": "Tue, 27 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 972,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "TRACE: Data-Free Text Reconstruction Attacks against Approximate Unlearning in LLMs",
-          "link": "https://arxiv.org/abs/2610.31995",
-          "content": "arXiv:2610.31995v1 Announce Type: cross Abstract: As large language models (LLMs) face growing demands for data removal driven by regulatory compliance, copyright concerns, and privacy protection, approximate unlearning has emerged as a practical alternative to expensive full retraining. In practice, pre- and post-unlearning model snapshots are often maintained for auditing and rollback, introducing a previously overlooked side channel. This paper demonstrates that approximate unlearning in LLM can leave residual traces within model snapshots, which may be recoverable and thus enable the privacy breaches that approximate unlearning is intended to prevent. Here, we propose TRACE, a framework that reconstructs unlearned training data given access to pre- and post-unlearning model snapshots, without any data-specific prior knowledge. To achieve this, TRACE identifies a compact set of candidate tokens from embedding-level parameter differences to constrain the search space, and assembles sequences via a contrastive scoring mechanism based on the perplexity gap between the two models. A two-stage exploration-then-completion strategy enables the recovery of multiple distinct samples. Ext",
           "pub_date": "Tue, 27 Oct 2026 00:00:00 -0400",
           "is_duplicate": false,
           "has_content": true,
@@ -1035,8 +1035,8 @@
     }
   },
   "meta": {
-    "total_raw": 2141,
-    "dup": 345,
+    "total_raw": 2137,
+    "dup": 343,
     "nocontent": 416,
     "noise": 5
   }
