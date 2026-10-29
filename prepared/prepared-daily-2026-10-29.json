@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
-          "link": "https://arxiv.org/abs/2509.05512",
-          "content": "This paper introduces Quaternion Approximate Networks (QUAN), a novel deep learning framework that leverages quaternion algebra for rotation equivariant image classification and object detection. Unlike conventional quaternion neural networks attempting to operate entirely in the quaternion domain, QUAN approximates quaternion convolution through Hamilton product decomposition using real-valued operations. This approach preserves geometric properties while enabling efficient implementation with custom CUDA kernels. We introduce Independent Quaternion Batch Normalization (IQBN) for training stability and extend quaternion operations to spatial attention mechanisms. QUAN is evaluated on image classification (CIFAR-10/100, ImageNet), object detection (COCO, DOTA), and robotic perception tasks. In classification tasks, QUAN achieves higher accuracy with fewer parameters and faster convergence compared to existing convolution and quaternion-based models. For objection detection, QUAN demonstrates improved parameter efficiency and rotation handling over standard Convolutional Neural Networks (CNNs) while establishing the SOTA for quaternion CNNs in this downstream task. These results hig",
-          "pub_date": "2026-10-26T20:00:00.000Z",
+          "title": "AdaPRA: Process Reward Agents with Adaptive Rubrics for Data Science",
+          "link": "https://arxiv.org/abs/2610.33245",
+          "content": "Data science agents can automate end-to-end machine learning workflows, yet they remain far from competitive on human leaderboards. Agents make process errors such as insufficient exploration, unsound validation, coding bugs, and poor use of a fixed budget (re-running the same exploratory data analysis and baseline models in every attempt). We propose AdaPRA to address these issues: a persistent coding agent harness that accumulates knowledge across attempts on the same task, with rubric-guided process supervision that identifies and corrects errors. Our process reward agent audits the agent's trajectory and workspace by executing checks, and adapts its rubrics to each task. We find that rubrics seeded from easier tasks generalize to harder tasks, with rubric adaptation further improving performance. With five attempts per task, AdaPRA improves an 80B Qwen model's leaderboard percentile by 24.5 points on DSPredict-Easy and 14.8 points on DSPredict-Hard while reducing process errors. We also show that supervision with rubrics mined from one base model's runs improves another (DeepSeek-V3.2), and that AdaPRA beats DataPRM, a competitive PRM for data science. We also share our code fo",
+          "pub_date": "2026-10-22T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,25 +145,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
-          "link": "https://arxiv.org/abs/2610.22684",
-          "content": "Forecasting an unresolved event requires finding relevant evidence and deciding how strongly it supports each outcome. Yet outcome-based training of Large Language Model (LLM) forecasters often begins with preassembled evidence at a single prediction date, leaving evidence acquisition outside the learning loop. We introduce AlphaBet, an agentic reinforcement learning (RL) framework that trains a single LLM policy to search, reason, and report probabilities across multiple pre-resolution dates. Each dated forecast is scored by a proper scoring rule against the eventual outcome, allowing one resolved event to supervise decisions under different information states. We decompose forecasting regret into an evidence-acquisition gap and a probability-reporting gap, and show that Group Relative Policy Optimization (GRPO)'s standard-deviation normalization can distort the reporting target under multi-class proper scores. On GLM-4.5-Air, AlphaBet reduces the Brier score from 0.731 to 0.626 on Forecast-Dojo and from 0.612 to 0.528 on FutureX. Controlled ablations attribute these gains to multi-date training and show that they come from improvements in both information acquisition and probabil",
-          "pub_date": "2026-10-14T20:00:00.000Z",
+          "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
+          "link": "https://arxiv.org/abs/2610.30435",
+          "content": "Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search. To address this limitation, we propose Self-Assessment Reinforcement Learning (SARL), a reinforcement learning framework in which models learn to recognize their own search state during training and improve their search behavior accordingly, without requiring additional assessment at test time. SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive reliance on it, jointly encouraging effective and efficient search trajectories. Under this setup, SARL achieves a 24.3% relative improvement over the strongest baseline, with average gains of 35.9% on multi-hop reasoning and 27.9% on deep research benchmarks against the strongest per-benchmark baselines. SARL further surpasses methods built on auxiliary supervision or multi-agent coordination, des",
+          "pub_date": "2026-10-20T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 83,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Beyond the Estimate: Wiener-Informed Decoding for Easier Training of Pixel-Space Flow Models",
-          "link": "https://arxiv.org/abs/2610.36192",
-          "content": "Learning velocity fields directly in pixel space is difficult and slow. We show that coarse second-order image statistics can ease this task: frozen Wiener estimates improve velocity learning, with gains extending beyond the linear predictions they explicitly provide. Moreover, we observe similar but complementary gains from frozen bases and pixel decoding. These observations motivate Wiener-informed Decoding (WiD), which uses statistical knowledge both for direct prediction and to organize decoder computation without modifying native blocks. WiD combines a trainable Wiener prediction path with coefficient interfaces that inject features into the native decoder and return its predicted coefficient corrections, with these components initialized with data statistics. All introduced parameters, including the spectrum and coordinate transforms, are trained jointly under the original pixel-space velocity objective. Across model scales and decoder architectures, WiD accelerates training and improves generation quality with modest parameter overhead. It also yields smoother gradient trajectories and remains effective with representation alignment. WiD improves class-conditional and text-t",
-          "pub_date": "2026-10-25T20:00:00.000Z",
+          "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
+          "link": "https://arxiv.org/abs/2509.05512",
+          "content": "This paper introduces Quaternion Approximate Networks (QUAN), a novel deep learning framework that leverages quaternion algebra for rotation equivariant image classification and object detection. Unlike conventional quaternion neural networks attempting to operate entirely in the quaternion domain, QUAN approximates quaternion convolution through Hamilton product decomposition using real-valued operations. This approach preserves geometric properties while enabling efficient implementation with custom CUDA kernels. We introduce Independent Quaternion Batch Normalization (IQBN) for training stability and extend quaternion operations to spatial attention mechanisms. QUAN is evaluated on image classification (CIFAR-10/100, ImageNet), object detection (COCO, DOTA), and robotic perception tasks. In classification tasks, QUAN achieves higher accuracy with fewer parameters and faster convergence compared to existing convolution and quaternion-based models. For objection detection, QUAN demonstrates improved parameter efficiency and rotation handling over standard Convolutional Neural Networks (CNNs) while establishing the SOTA for quaternion CNNs in this downstream task. These results hig",
+          "pub_date": "2026-10-26T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 1649,
+          "id": 1648,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1653,
+          "id": 1652,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1149
         },
         {
-          "id": 1648,
+          "id": 1647,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1142
         },
         {
-          "id": 1764,
+          "id": 1763,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 553
         },
         {
-          "id": 1519,
+          "id": 1518,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 443
         },
         {
-          "id": 1473,
+          "id": 1472,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 367
         },
         {
-          "id": 1472,
+          "id": 1471,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 359
         },
         {
-          "id": 1368,
+          "id": 1367,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 335
         },
         {
-          "id": 1558,
+          "id": 1557,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 255
         },
         {
-          "id": 1526,
+          "id": 1525,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 225
         },
         {
-          "id": 1349,
+          "id": 1348,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 192
         },
         {
-          "id": 1354,
+          "id": 1353,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 188
         },
         {
-          "id": 1573,
+          "id": 1572,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 152
         },
         {
-          "id": 1741,
+          "id": 1740,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 68
         },
         {
-          "id": 1742,
+          "id": 1741,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 523,
-      "total_valid": 371,
+      "total_raw": 522,
+      "total_valid": 370,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1889,
+          "id": 1888,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 1874,
+          "id": 1873,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 1884,
+          "id": 1883,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 165
         },
         {
-          "id": 1892,
+          "id": 1891,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 394
         },
         {
-          "id": 1891,
+          "id": 1890,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 366
         },
         {
-          "id": 1900,
+          "id": 1899,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 331
         },
         {
-          "id": 1890,
+          "id": 1889,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 279
         },
         {
-          "id": 1894,
+          "id": 1893,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1536,
+          "id": 1535,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 703
         },
         {
-          "id": 1540,
+          "id": 1539,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 550
         },
         {
-          "id": 1460,
+          "id": 1459,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 536
         },
         {
-          "id": 1535,
+          "id": 1534,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 532
         },
         {
-          "id": 1352,
+          "id": 1351,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 423
         },
         {
-          "id": 1892,
+          "id": 1891,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 394
         },
         {
-          "id": 1938,
+          "id": 1937,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 368
         },
         {
-          "id": 1473,
+          "id": 1472,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 367
         },
         {
-          "id": 1891,
+          "id": 1890,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 366
         },
         {
-          "id": 1371,
+          "id": 1370,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1945,
+          "id": 1946,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 471
         },
         {
-          "id": 2002,
+          "id": 2001,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 374
         },
         {
-          "id": 2001,
+          "id": 2000,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 343
         },
         {
-          "id": 2000,
+          "id": 1999,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 325
         },
         {
-          "id": 1963,
+          "id": 1962,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 282
         },
         {
-          "id": 1973,
+          "id": 1972,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 256
         },
         {
-          "id": 1977,
+          "id": 1976,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 234
         },
         {
-          "id": 1953,
+          "id": 1952,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 198
         },
         {
-          "id": 1972,
+          "id": 1971,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 194
         },
         {
-          "id": 1971,
+          "id": 1970,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 182
         },
         {
-          "id": 1994,
+          "id": 1993,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 171
         },
         {
-          "id": 1954,
+          "id": 1953,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -932,6 +932,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 148
+        },
+        {
+          "id": 2005,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes and Juniper Research Study Highlights Powerful Opportunities to Unlock Global Commerce Growth in China",
+          "link": "https://www.thunes.com/news/thunes-and-juniper-research-study-highlights-powerful-opportunities-to-unlock-global-commerce-growth-in-china/",
+          "content": "Inaugural Asia Pacific ‘Interoperability Index’ reveals how Chinese consumers are embracing super-apps and digital banks, opening new pathways to optimise international transaction experiences. Singapore, October 29, 2026 — Thunes, the Smart Superhighway to move money around the world today released consumer data on cross-border payments in China from its Cross-Border Payments Interoperability Index: Asia Pacific ... Read more &#187; The post Thunes and Juniper Research Study Highlights Powerful Opportunities to Unlock Global Commerce Growth in China first appeared on Thunes.com .",
+          "pub_date": "Thu, 29 Oct 2026 01:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 587
         },
         {
           "id": 278,
@@ -1022,21 +1037,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 759,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Confidence Is Not a Promise: A Reference Audit of Typed Decision Models",
-          "link": "https://arxiv.org/abs/2610.36311",
-          "content": "arXiv:2610.36311v1 Announce Type: new Abstract: Typed decision models return a probability distribution over options supplied by the caller, and software tends to act on that number as if it were a guarantee. We measure what it licenses, comparing the open-weight Laya, in five checkpoints, with Jev 1.13, available only through an API. A probability licenses a statement about groups of decisions, not about one decision, and a gate that promises an accuracy among the cases it decides alone keeps that promise only with a lower bound checked on data like its traffic. Across 190 exchangeable evaluations, a threshold chosen by point estimate breaks the promise in 147, Learn then Test keeps it in all of them, and a Beta lower-bound rule decides more items on average than Learn then Test in 128 and fewer in none, without its guarantee. Calibrated in English, Jev keeps a promise of 95% in 8 of 51 locales. Ordinary typing noise breaks a promise calibrated on clean text, and, in exploratory runs, training with noise raises the noisy accuracy with no loss on clean text. In four further domains, a fine-tuned Laya needs from 250 to 8,000 labels to be non-inferior to Jev, and does not get there o",
-          "pub_date": "Wed, 28 Oct 2026 00:00:00 -0400",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1044,8 +1044,8 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 233,
-      "total_valid": 57,
+      "total_raw": 234,
+      "total_valid": 58,
       "total_candidates": 20
     }
   },
