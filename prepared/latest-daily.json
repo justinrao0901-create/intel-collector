@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
-          "link": "https://arxiv.org/abs/2610.35201",
-          "content": "Diffusion language models (DLMs) generate text through iterative denoising, enabling bidirectional context modeling and parallel token refinement. Recent studies have applied reinforcement learning (RL) to DLMs and improved their reasoning performance. However, the iterative denoising process makes credit assignment more challenging, as final outcome rewards provide limited information about how different tokens contribute to the final output. In this paper, we propose Denoising Token Credit Assignment (DTCA), a framework for token-level credit assignment in reinforcement learning for diffusion language models. DTCA estimates token contributions by measuring the improvement in prediction confidence of remaining masked positions after token commitment and groups these signals according to part-of-speech (POS) categories. These contribution weights are used to select informative denoising timesteps and assign token-level learning signals during RL training. DTCA further calibrates these learning signals according to token-level entropy changes induced by policy updates. Experiments on LLaDA-8B-Instruct show that DTCA consistently improves mathematical reasoning performance across dif",
-          "pub_date": "2026-10-25T20:00:00.000Z",
+          "title": "Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes",
+          "link": "https://arxiv.org/abs/2610.32749",
+          "content": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers ac",
+          "pub_date": "2026-10-22T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "AdaPRA: Process Reward Agents with Adaptive Rubrics for Data Science",
-          "link": "https://arxiv.org/abs/2610.33245",
-          "content": "Data science agents can automate end-to-end machine learning workflows, yet they remain far from competitive on human leaderboards. Agents make process errors such as insufficient exploration, unsound validation, coding bugs, and poor use of a fixed budget (re-running the same exploratory data analysis and baseline models in every attempt). We propose AdaPRA to address these issues: a persistent coding agent harness that accumulates knowledge across attempts on the same task, with rubric-guided process supervision that identifies and corrects errors. Our process reward agent audits the agent's trajectory and workspace by executing checks, and adapts its rubrics to each task. We find that rubrics seeded from easier tasks generalize to harder tasks, with rubric adaptation further improving performance. With five attempts per task, AdaPRA improves an 80B Qwen model's leaderboard percentile by 24.5 points on DSPredict-Easy and 14.8 points on DSPredict-Hard while reducing process errors. We also show that supervision with rubrics mined from one base model's runs improves another (DeepSeek-V3.2), and that AdaPRA beats DataPRM, a competitive PRM for data science. We also share our code fo",
-          "pub_date": "2026-10-22T20:00:00.000Z",
+          "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
+          "link": "https://arxiv.org/abs/2610.35201",
+          "content": "Diffusion language models (DLMs) generate text through iterative denoising, enabling bidirectional context modeling and parallel token refinement. Recent studies have applied reinforcement learning (RL) to DLMs and improved their reasoning performance. However, the iterative denoising process makes credit assignment more challenging, as final outcome rewards provide limited information about how different tokens contribute to the final output. In this paper, we propose Denoising Token Credit Assignment (DTCA), a framework for token-level credit assignment in reinforcement learning for diffusion language models. DTCA estimates token contributions by measuring the improvement in prediction confidence of remaining masked positions after token commitment and groups these signals according to part-of-speech (POS) categories. These contribution weights are used to select informative denoising timesteps and assign token-level learning signals during RL training. DTCA further calibrates these learning signals according to token-level entropy changes induced by policy updates. Experiments on LLaDA-8B-Instruct show that DTCA consistently improves mathematical reasoning performance across dif",
+          "pub_date": "2026-10-25T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -160,10 +160,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
-          "link": "https://arxiv.org/abs/2610.30435",
-          "content": "Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search. To address this limitation, we propose Self-Assessment Reinforcement Learning (SARL), a reinforcement learning framework in which models learn to recognize their own search state during training and improve their search behavior accordingly, without requiring additional assessment at test time. SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive reliance on it, jointly encouraging effective and efficient search trajectories. Under this setup, SARL achieves a 24.3% relative improvement over the strongest baseline, with average gains of 35.9% on multi-hop reasoning and 27.9% on deep research benchmarks against the strongest per-benchmark baselines. SARL further surpasses methods built on auxiliary supervision or multi-agent coordination, des",
-          "pub_date": "2026-10-20T20:00:00.000Z",
+          "title": "AdaPRA: Process Reward Agents with Adaptive Rubrics for Data Science",
+          "link": "https://arxiv.org/abs/2610.33245",
+          "content": "Data science agents can automate end-to-end machine learning workflows, yet they remain far from competitive on human leaderboards. Agents make process errors such as insufficient exploration, unsound validation, coding bugs, and poor use of a fixed budget (re-running the same exploratory data analysis and baseline models in every attempt). We propose AdaPRA to address these issues: a persistent coding agent harness that accumulates knowledge across attempts on the same task, with rubric-guided process supervision that identifies and corrects errors. Our process reward agent audits the agent's trajectory and workspace by executing checks, and adapts its rubrics to each task. We find that rubrics seeded from easier tasks generalize to harder tasks, with rubric adaptation further improving performance. With five attempts per task, AdaPRA improves an 80B Qwen model's leaderboard percentile by 24.5 points on DSPredict-Easy and 14.8 points on DSPredict-Hard while reducing process errors. We also show that supervision with rubrics mined from one base model's runs improves another (DeepSeek-V3.2), and that AdaPRA beats DataPRM, a competitive PRM for data science. We also share our code fo",
+          "pub_date": "2026-10-22T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 1642,
+          "id": 1640,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1646,
+          "id": 1644,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1149
         },
         {
-          "id": 1641,
+          "id": 1639,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1142
         },
         {
-          "id": 1757,
+          "id": 1755,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 553
         },
         {
-          "id": 1512,
+          "id": 1510,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 443
         },
         {
-          "id": 1466,
+          "id": 1464,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 367
         },
         {
-          "id": 1465,
+          "id": 1463,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 359
         },
         {
-          "id": 1363,
+          "id": 1361,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 335
         },
         {
-          "id": 1551,
+          "id": 1549,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 255
         },
         {
-          "id": 1519,
+          "id": 1517,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 225
         },
         {
-          "id": 1344,
+          "id": 1342,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 192
         },
         {
-          "id": 1349,
+          "id": 1347,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 188
         },
         {
-          "id": 1566,
+          "id": 1564,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 152
         },
         {
-          "id": 1734,
+          "id": 1732,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 68
         },
         {
-          "id": 1735,
+          "id": 1733,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 516,
-      "total_valid": 366,
+      "total_raw": 514,
+      "total_valid": 365,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1882,
+          "id": 1880,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 229
         },
         {
-          "id": 1867,
+          "id": 1865,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 1877,
+          "id": 1875,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 165
         },
         {
-          "id": 1885,
+          "id": 1883,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 394
         },
         {
-          "id": 1884,
+          "id": 1882,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 366
         },
         {
-          "id": 1893,
+          "id": 1891,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 331
         },
         {
-          "id": 1883,
+          "id": 1881,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 279
         },
         {
-          "id": 1887,
+          "id": 1885,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1529,
+          "id": 1527,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 703
         },
         {
-          "id": 1533,
+          "id": 1531,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 550
         },
         {
-          "id": 1453,
+          "id": 1451,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 536
         },
         {
-          "id": 1528,
+          "id": 1526,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 532
         },
         {
-          "id": 1347,
+          "id": 1345,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 423
         },
         {
-          "id": 1885,
+          "id": 1883,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 394
         },
         {
-          "id": 1931,
+          "id": 1929,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 368
         },
         {
-          "id": 1466,
+          "id": 1464,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 367
         },
         {
-          "id": 1884,
+          "id": 1882,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 366
         },
         {
-          "id": 1366,
+          "id": 1364,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1943,
+          "id": 1941,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 471
         },
         {
-          "id": 1993,
+          "id": 1990,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 374
         },
         {
-          "id": 1992,
+          "id": 1989,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 343
         },
         {
-          "id": 1991,
+          "id": 1988,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 325
         },
         {
-          "id": 1955,
+          "id": 1952,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 282
         },
         {
-          "id": 1964,
+          "id": 1961,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 256
         },
         {
-          "id": 1968,
+          "id": 1965,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 234
         },
         {
-          "id": 1946,
+          "id": 1944,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 198
         },
         {
-          "id": 1963,
+          "id": 1960,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 194
         },
         {
-          "id": 1962,
+          "id": 1959,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 182
         },
         {
-          "id": 1985,
+          "id": 1982,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 171
         },
         {
-          "id": 1947,
+          "id": 1945,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 148
         },
         {
-          "id": 1997,
+          "id": 1994,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1044,14 +1044,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 232,
+      "total_raw": 231,
       "total_valid": 58,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2154,
-    "dup": 449,
+    "total_raw": 2151,
+    "dup": 447,
     "nocontent": 415,
     "noise": 5
   }
