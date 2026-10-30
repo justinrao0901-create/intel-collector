@@ -1,7 +1,7 @@
 {
   "end": "2026-10-30",
   "days": 7,
-  "total": 1738,
+  "total": 1739,
   "pool_size": 50,
   "surveys": 1,
   "china": 7,
@@ -83,7 +83,7 @@
       "link": "https://arxiv.org/abs/2610.32285",
       "upvotes": 299,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-22",
       "is_survey": false,
@@ -95,14 +95,14 @@
       "title": "Intrinsic Distribution Matching",
       "abstract": "One-step and few-step text-to-image generation must accurately render the details specified in the prompt despite limited opportunities for refinement. Distribution matching distillation (DMD) uses score differences to bring the generated distribution closer to a reference distribution. Following prior work, we estimate this difference with internal velocity branches, avoiding a separate fake-score network. We ask whether an explicit moment constraint improves this learned score supervision. A decomposition of the reverse-KL field into a Gaussian moment component and a non-Gaussian residual identifies statistics that can be constrained explicitly. We introduce Intrinsic Distribution Matching (IDM), which retains the full DMD correction and matches feature means and per-coordinate standard deviations using the generator's exponential-moving-average (EMA) copy, requiring no external feature encoder. Experiments use full-parameter and low-rank adaptation (LoRA) tuning on Z-Image-Turbo 6B and Qwen-Image 20B. At two network evaluations, IDM reaches 94.25% and 90.20% on Chinese and English LongText-Bench, the highest scores among the compared methods at this budget. Controlled ablations ",
       "link": "https://arxiv.org/abs/2610.39633",
-      "upvotes": 229,
+      "upvotes": 233,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily+alphaXiv+arXiv",
       "pub": "2026-10-28",
       "is_survey": false,
       "is_china": true,
-      "score": 722
+      "score": 734
     },
     {
       "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
@@ -125,7 +125,7 @@
       "link": "https://arxiv.org/abs/2610.34662",
       "upvotes": 172,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-10-25",
       "is_survey": false,
@@ -133,18 +133,32 @@
       "score": 516
     },
     {
+      "id": "2610.32749",
+      "title": "Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes",
+      "abstract": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers ac",
+      "link": "https://arxiv.org/abs/2610.32749",
+      "upvotes": 158,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily",
+      "pub": "2026-10-22",
+      "is_survey": false,
+      "is_china": false,
+      "score": 474
+    },
+    {
       "id": "2610.34073",
       "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
       "abstract": "Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in many cases, indicating a negative net value. Taking RAG as a reference, we dissect the net value of memory into the gains and losses over direct retrieval, termed memory benefit and memory tax. These gains and losses arise because memory process changes how the raw information is organized and accessed. We view such changes as the double-edged deviations from the raw history. They are originally designed and introduced to benefit the task, for example by reorganizing facts or distilling preferences, but some may also remove or obscure evidence, giving rise to memory tax. Since memory benefit reflects the expected gains of its design, we then focus more on the overlooked memory tax, study how it arises from the system and evaluation side, and generalize the concept to more application scenarios of memory. We hope the notion of memory tax can provide a new lens and shift more attention from ",
       "link": "https://arxiv.org/abs/2610.34073",
-      "upvotes": 156,
+      "upvotes": 157,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-24",
       "is_survey": false,
       "is_china": false,
-      "score": 468
+      "score": 471
     },
     {
       "id": "2610.34467",
@@ -153,26 +167,12 @@
       "link": "https://arxiv.org/abs/2610.34467",
       "upvotes": 143,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily+arXiv",
       "pub": "2026-10-24",
       "is_survey": false,
       "is_china": true,
       "score": 464
-    },
-    {
-      "id": "2610.32749",
-      "title": "Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes",
-      "abstract": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers ac",
-      "link": "https://arxiv.org/abs/2610.32749",
-      "upvotes": 152,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily",
-      "pub": "2026-10-22",
-      "is_survey": false,
-      "is_china": false,
-      "score": 456
     },
     {
       "id": "2610.37381",
@@ -189,13 +189,27 @@
       "score": 441
     },
     {
+      "id": "2610.38568",
+      "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
+      "abstract": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the per",
+      "link": "https://arxiv.org/abs/2610.38568",
+      "upvotes": 143,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+arXiv",
+      "pub": "2026-10-27",
+      "is_survey": false,
+      "is_china": false,
+      "score": 429
+    },
+    {
       "id": "2610.19687",
       "title": "Function-Space Temporal Self-Distillation for Policy Optimization",
       "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) improves reasoning in language models, but scalar outcomes provide coarse supervision over response trajectories. Self-distillation offers denser token-level guidance by comparing an unassisted policy with a feedback-informed self-teacher, yet the teacher evolves with the student, creating unstable targets and motivating additional regularization. We introduce Function-Space Policy Optimization (FSPO), a single-policy framework that combines current privileged adaptation with function-space temporal consolidation. FSPO stores sparse historical next-token distributions as fixed temporal targets, providing temporal separation without maintaining a persistent teacher model. It further introduces privileged disagreement correction to explicitly suppress locally overvalued actions, reliability-adaptive grounding that strengthens reference supervision when self-generated evidence repeatedly fails, and quality and coverage-aware temporal memory that retains verified behaviors and improves privileged demonstrations. Across reasoning and tool-use benchmarks, FSPO achieves the highest average accuracy under a 5-hour training budget, impro",
       "link": "https://arxiv.org/abs/2610.19687",
       "upvotes": 140,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-13",
       "is_survey": false,
@@ -223,7 +237,7 @@
       "link": "https://arxiv.org/abs/2610.36729",
       "upvotes": 126,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-26",
       "is_survey": false,
@@ -237,7 +251,7 @@
       "link": "https://arxiv.org/abs/2610.33966",
       "upvotes": 126,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-24",
       "is_survey": false,
@@ -249,14 +263,14 @@
       "title": "Can Test-Time Memory Evolution Outperform Test-Time Training for Scientific Discovery?",
       "abstract": "Recent test-time training (TTT) frameworks have enabled open-weight large language models (LLMs) to outperform inference-only frameworks powered by frontier models on scientific discovery tasks. However, TTT introduces additional computational cost for online weight updates during the discovery process, making computational efficiency an important consideration when scaling to larger models. This motivates us to explore an efficient test-time adaptation method for scientific discovery. We introduce Test-Time Memory Evolution (TTME), a plug-and-play test-time adaptation method, as an alternative to TTT. TTME continually updates the external memory by distilling the experience to guide subsequent discovery without updating model weights. To have a clean comparison, we evaluate TTME and TTT under the same discovery framework, replacing only the test-time adaptation method. Our evaluation shows that TTME outperforms TTT on all five mathematical tasks, while reducing computational cost by 82.8-84.6% in FLOPs and 47.7-58.4% in runtime. These results establish TTME as an effective and computationally efficient alternative to TTT in the evaluated discovery settings.",
       "link": "https://arxiv.org/abs/2610.32046",
-      "upvotes": 122,
+      "upvotes": 123,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-22",
       "is_survey": false,
       "is_china": false,
-      "score": 366
+      "score": 369
     },
     {
       "title": "Navier–Stokes Lost in Translation",
@@ -293,7 +307,7 @@
       "link": "https://arxiv.org/abs/2610.35845",
       "upvotes": 119,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-25",
       "is_survey": false,
@@ -319,14 +333,14 @@
       "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
       "abstract": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence",
       "link": "https://arxiv.org/abs/2610.24520",
-      "upvotes": 90,
+      "upvotes": 91,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-19",
       "is_survey": false,
       "is_china": true,
-      "score": 305
+      "score": 308
     },
     {
       "title": "With most information hidden, the game Stratego had stumped AI until now",
@@ -348,13 +362,13 @@
       "hn_points": 282,
       "id": "2610.13928",
       "upvotes": 0,
-      "citations": 1,
-      "abstract": "Backdoor attacks are constructed that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trigger, revealing a limit of elicitation-based capability audits.",
+      "citations": null,
+      "abstract": "",
       "source": "HN",
       "pub": "2026-10-13",
       "is_survey": false,
       "is_china": false,
-      "score": 282.5
+      "score": 282
     },
     {
       "id": "2610.35864",
@@ -363,7 +377,7 @@
       "link": "https://arxiv.org/abs/2610.35864",
       "upvotes": 89,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-26",
       "is_survey": false,
@@ -377,7 +391,7 @@
       "link": "https://arxiv.org/abs/2610.36068",
       "upvotes": 88,
       "hn_points": 0,
-      "citations": null,
+      "citations": 0,
       "source": "HF Daily",
       "pub": "2026-10-25",
       "is_survey": false,
@@ -385,13 +399,27 @@
       "score": 264
     },
     {
+      "id": "2610.36671",
+      "title": "Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs",
+      "abstract": "Diffusion vision-language models (DVLMs) process their entire input at every denoising step. Since visual tokens make up 89-97% of this input on the benchmarks we study, most of the decoding computation is spent repeatedly processing the same image. Visual token pruning methods partially relieve this burden by removing part of the visual tokens, but they lose the removed information and still process the remaining image at every step. To measure how often the image is actually needed, we compare LLaDA-V's predictions with and without the image at every decoding step and find that removing the image changes a token being unmasked at only 22.8% of steps on average and at as few as 7.9%. We therefore propose LOWN, a decoding method that decides at every step whether to process the image and how many tokens to unmask. LOWN predicts the masked tokens without the image and processes the image only when this prediction disagrees with the last image-conditioned prediction. Agreement certifies the earlier prediction for reuse, and the number of certified tokens sets how many are unmasked in that step. We further observe that the need for the image differs across benchmarks, so LOWN's adapti",
+      "link": "https://arxiv.org/abs/2610.36671",
+      "upvotes": 87,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily",
+      "pub": "2026-10-26",
+      "is_survey": false,
+      "is_china": false,
+      "score": 261
+    },
+    {
       "title": "Why is AI generated language so hard to understand?",
       "link": "https://arxiv.org/abs/2610.29162",
       "hn_points": 258,
       "id": "2610.29162",
       "upvotes": 0,
-      "citations": null,
-      "abstract": "",
+      "citations": 0,
+      "abstract": "This study investigates a set of psycholinguistic features that are known to correlate with human processing difficulty (e.g., object relative clauses, long syntactic dependencies, low-frequency n-grams), and finds that AI models use these difficult features more often than paraphrases generated by round-trip translation.",
       "source": "HN",
       "pub": "2026-10-24",
       "is_survey": false,
@@ -399,9 +427,23 @@
       "score": 258
     },
     {
+      "id": "2610.37662",
+      "title": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?",
+      "abstract": "Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally limiting the semantic fidelity of discrete visual tokens and positioning continuous visual representations as an intrinsic upper bound. Using multimodal understanding as a proxy for semantic fidelity, we revisit this assumption and find quantization error unreliable, as discrete representations with substantially larger errors can achieve better understanding. Instead, the effective bit budget of discrete indices emerges as a key determinant of downstream performance. However, existing quantizers eventually saturate as additional codebooks contribute progressively less semantic information. As one approach to alleviating this saturation, we introduce Factorized Vector Quantization, which quantizes complementary, fixed-dimensional views of the visual feature with symmetric parallel codebooks. It continues to improve at larger bit budgets, ultimately matching continuous visual representations in multimodal unde",
+      "link": "https://arxiv.org/abs/2610.37662",
+      "upvotes": 83,
+      "hn_points": 0,
+      "citations": 0,
+      "source": "HF Daily",
+      "pub": "2026-10-26",
+      "is_survey": false,
+      "is_china": false,
+      "score": 249
+    },
+    {
       "title": "The alien space of science: Coherent but cognitively unavailable directions",
       "link": "https://arxiv.org/abs/2603.01092",
-      "hn_points": 213,
+      "hn_points": 214,
       "id": "2603.01092",
       "upvotes": 0,
       "citations": null,
@@ -410,26 +452,12 @@
       "pub": "2026-10-22",
       "is_survey": false,
       "is_china": false,
-      "score": 213
-    },
-    {
-      "id": "2610.36671",
-      "title": "Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs",
-      "abstract": "Diffusion vision-language models (DVLMs) process their entire input at every denoising step. Since visual tokens make up 89-97% of this input on the benchmarks we study, most of the decoding computation is spent repeatedly processing the same image. Visual token pruning methods partially relieve this burden by removing part of the visual tokens, but they lose the removed information and still process the remaining image at every step. To measure how often the image is actually needed, we compare LLaDA-V's predictions with and without the image at every decoding step and find that removing the image changes a token being unmasked at only 22.8% of steps on average and at as few as 7.9%. We therefore propose LOWN, a decoding method that decides at every step whether to process the image and how many tokens to unmask. LOWN predicts the masked tokens without the image and processes the image only when this prediction disagrees with the last image-conditioned prediction. Agreement certifies the earlier prediction for reuse, and the number of certified tokens sets how many are unmasked in that step. We further observe that the need for the image differs across benchmarks, so LOWN's adapti",
-      "link": "https://arxiv.org/abs/2610.36671",
-      "upvotes": 68,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily",
-      "pub": "2026-10-26",
-      "is_survey": false,
-      "is_china": false,
-      "score": 204
+      "score": 214
     },
     {
       "title": "Attention Is Not What You Need (2025)",
       "link": "https://arxiv.org/abs/2512.19428",
-      "hn_points": 194,
+      "hn_points": 196,
       "id": "2512.19428",
       "upvotes": 0,
       "citations": null,
@@ -438,7 +466,7 @@
       "pub": "2026-10-25",
       "is_survey": false,
       "is_china": false,
-      "score": 194
+      "score": 196
     },
     {
       "id": "2610.30932",
@@ -447,12 +475,26 @@
       "link": "https://arxiv.org/abs/2610.30932",
       "upvotes": 64,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-21",
       "is_survey": false,
       "is_china": false,
       "score": 192
+    },
+    {
+      "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
+      "link": "https://arxiv.org/abs/2110.01834",
+      "hn_points": 177,
+      "id": "2110.01834",
+      "upvotes": 0,
+      "citations": 24,
+      "abstract": "It is argued that a better study of the mechanisms that allow humans to have these capabilities can help to understand how to imbue AI systems with these competencies, and a multi-agent AI architecture is proposed, focusing especially on D. Kahneman's theory of thinking fast and slow.",
+      "source": "HN",
+      "pub": "2026-09-28",
+      "is_survey": false,
+      "is_china": false,
+      "score": 189.0
     },
     {
       "id": "2610.21240",
@@ -495,20 +537,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 178
-    },
-    {
-      "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
-      "link": "https://arxiv.org/abs/2110.01834",
-      "hn_points": 177,
-      "id": "2110.01834",
-      "upvotes": 0,
-      "citations": null,
-      "abstract": "",
-      "source": "HN",
-      "pub": "2026-09-28",
-      "is_survey": false,
-      "is_china": false,
-      "score": 177
     },
     {
       "id": "2610.31162",
@@ -581,20 +609,6 @@
       "score": 162
     },
     {
-      "id": "2610.37662",
-      "title": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?",
-      "abstract": "Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally limiting the semantic fidelity of discrete visual tokens and positioning continuous visual representations as an intrinsic upper bound. Using multimodal understanding as a proxy for semantic fidelity, we revisit this assumption and find quantization error unreliable, as discrete representations with substantially larger errors can achieve better understanding. Instead, the effective bit budget of discrete indices emerges as a key determinant of downstream performance. However, existing quantizers eventually saturate as additional codebooks contribute progressively less semantic information. As one approach to alleviating this saturation, we introduce Factorized Vector Quantization, which quantizes complementary, fixed-dimensional views of the visual feature with symmetric parallel codebooks. It continues to improve at larger bit budgets, ultimately matching continuous visual representations in multimodal unde",
-      "link": "https://arxiv.org/abs/2610.37662",
-      "upvotes": 53,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily",
-      "pub": "2026-10-26",
-      "is_survey": false,
-      "is_china": false,
-      "score": 159
-    },
-    {
       "id": "2610.33472",
       "title": "Qwen-Image-PE: Learning Visual Design for Text-to-Image Prompt Enhancement",
       "abstract": "Learning visual design is essential for prompt enhancement (PE) to turn underspecified user requests into coherent visual specifications for text-to-image (T2I) generation. Existing methods preserve user intent and improve overall visual appeal, with less explicit emphasis on fine-grained design dimensions. To address this gap, we introduce Qwen-Image-PE, which learns visual design through two-stage training. Supervised fine-tuning with Caption-Based Reverse Distillation (CRD) uses dense captions of well-designed images as design supervision. Reinforcement learning with Groupwise Design Reward (GDR) jointly compares all candidate images for the same request to refine lighting, composition, layout, and detail. On Qwen-Image-Bench with Qwen-Image-2.1, Qwen-Image-PE-397B improves over original requests by 7.81 points, while Qwen-Image-PE-9B outperforms all evaluated PE baselines. Further evaluations show gains in visual design, aesthetics, image quality, and human preference. We find that PE scales along three axes: training data, model size, and information density, with sufficient information density as a prerequisite for effective enhancement. Moreover, we demonstrate that Qwen-Ima",
@@ -607,6 +621,20 @@
       "is_survey": false,
       "is_china": true,
       "score": 158
+    },
+    {
+      "id": "2610.37341",
+      "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
+      "abstract": "Video captioning aims to preserve visual information through compact descriptions, predominantly using natural language. However, precisely expressing fine-grained spatial structures and temporal dynamics in natural language often leads to lengthy and potentially ambiguous descriptions. In this work, we explore Code as Video Caption, a paradigm where executable programs serve as a complementary representation of visual content through graphical primitives, layout rules, and functions of time. To examine whether code captions effectively preserve video information, we compare them with natural language captions on downstream question answering and video reconstruction tasks. Our results show that code captions achieve superior reasoning accuracy and reconstruction fidelity. Despite these advantages, realizing the potential of code captioning depends on whether current multimodal large language models (MLLMs) can generate faithful code captions. To systematically assess this capability, we introduce CodeCap-Bench, which comprises 323 videos spanning five categories of structured 2D content, along with fine-grained annotations and a multi-level evaluation framework. Extensive experime",
+      "link": "https://arxiv.org/abs/2610.37341",
+      "upvotes": 52,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily",
+      "pub": "2026-10-26",
+      "is_survey": false,
+      "is_china": false,
+      "score": 156
     },
     {
       "id": "2610.27103",
@@ -623,15 +651,15 @@
       "score": 155
     },
     {
-      "id": "2610.37341",
-      "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
-      "abstract": "Video captioning aims to preserve visual information through compact descriptions, predominantly using natural language. However, precisely expressing fine-grained spatial structures and temporal dynamics in natural language often leads to lengthy and potentially ambiguous descriptions. In this work, we explore Code as Video Caption, a paradigm where executable programs serve as a complementary representation of visual content through graphical primitives, layout rules, and functions of time. To examine whether code captions effectively preserve video information, we compare them with natural language captions on downstream question answering and video reconstruction tasks. Our results show that code captions achieve superior reasoning accuracy and reconstruction fidelity. Despite these advantages, realizing the potential of code captioning depends on whether current multimodal large language models (MLLMs) can generate faithful code captions. To systematically assess this capability, we introduce CodeCap-Bench, which comprises 323 videos spanning five categories of structured 2D content, along with fine-grained annotations and a multi-level evaluation framework. Extensive experime",
-      "link": "https://arxiv.org/abs/2610.37341",
+      "id": "2610.35684",
+      "title": "OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images",
+      "abstract": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus",
+      "link": "https://arxiv.org/abs/2610.35684",
       "upvotes": 51,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
-      "pub": "2026-10-26",
+      "pub": "2026-10-25",
       "is_survey": false,
       "is_china": false,
       "score": 153
@@ -677,34 +705,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 152
-    },
-    {
-      "id": "2610.35684",
-      "title": "OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images",
-      "abstract": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus",
-      "link": "https://arxiv.org/abs/2610.35684",
-      "upvotes": 50,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily",
-      "pub": "2026-10-25",
-      "is_survey": false,
-      "is_china": false,
-      "score": 150
-    },
-    {
-      "id": "2610.32253",
-      "title": "RSIHub: A Composable Framework for Agent-Evolution Methods",
-      "abstract": "Agent-evolution methods use execution feedback to improve prompts, skills, tools, and orchestration, but their implementations often rebuild the same experimental machinery. We present RSIHub, an open-source framework for building, comparing, and extending these methods on shared infrastructure. Recipes compose reusable operators and declare mutable resources; RSIHub supplies execution, evaluation, recovery, and lineage. Researchers can focus on evolution policy while evaluation stays outside the mutable surface and results remain tied to candidates and evaluation conditions. We instantiate AHE, Hyperagents, A-Evolve, and GEPA without modifying the framework core, keeping method-specific logic in recipes and operators. We evaluate them with MiniSWE and Codex on Terminal Bench 2 and τ^3 Banking under fixed model and evaluator configurations. The largest observed overall pass@1 gain is 13.5 percentage points, while method rankings vary across settings and optimization gains do not always transfer to held-out tasks. RSIHub provides a common protocol for comparing evolution policies, inspectable candidate histories, and reusable components for developing new methods.",
-      "link": "https://arxiv.org/abs/2610.32253",
-      "upvotes": 49,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily",
-      "pub": "2026-10-22",
-      "is_survey": false,
-      "is_china": false,
-      "score": 147
     }
   ]
 }
