@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 60,
+          "id": 58,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 149
         },
         {
-          "id": 95,
+          "id": 93,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 232
         },
         {
-          "id": 91,
+          "id": 89,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 210
         },
         {
-          "id": 87,
+          "id": 85,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -108,6 +108,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 192
+        },
+        {
+          "id": 69,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training",
+          "link": "https://arxiv.org/abs/2610.37161",
+          "content": "Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constructing coherent and executable professional tasks. Starting from professional intents, information-level planning builds an information support graph to guide task instantiation, explicitly representing the dependencies and locations of information required for the intended outputs. Probe executions then identify support failures and guide repairs while preserving the intended work. We construct 112,686 tasks spanning 612 occupations and use the collected teacher trajectories to fine-tune Qwen models at 4B, 27B, and 35B-A3B scales, yielding the WorkPilot family. All three models improve over their respective base models across four professional-work benchmarks, with WorkPilot-35B-A3B improving from 879 to 1565 Elo on GDPval-AA v2.1. Scaling analyses reveal model-dependent diminishing returns, with execution length first increasing and then decreasing. Controlled component analyses show t",
+          "pub_date": "2026-10-26T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         },
         {
           "id": 71,
@@ -140,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 73,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models",
-          "link": "https://arxiv.org/abs/2610.27100",
-          "content": "Realistic market impact is essential for generative limit order book (LOB) models to serve as world models for trading agents. If a simulator misprices this mechanism, agents learn policies that are optimal in the simulator but wrong in the real market. Existing metrics assess generated streams purely through distributional comparison with historical data, leaving counterfactual response to an agent's own orders largely unexplored. Here, we show that market impact emerges naturally in neural LOB generators trained solely for next-token prediction. We inject execution-style metaorders into the generated message flow of five autoregressive models across five NASDAQ stocks and measure the response using estimators from the empirical impact literature, validated on baselines whose physics is known in advance. Our benchmark evaluates any message-level generator in three phases: free generation (reading order-flow persistence against price diffusivity); metaorder injection (yielding the impact law's exponent and amplitude); and a post-execution window (measuring relaxation). In addition, comparing each visible injection to a blind, simulator-only control isolates the model's learned resp",
-          "pub_date": "2026-10-18T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 569,
+          "id": 567,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 565,
+          "id": 563,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 673,
-      "total_valid": 466,
+      "total_raw": 671,
+      "total_valid": 465,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1041,
+          "id": 1038,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1048,
+          "id": 1045,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1052,
+          "id": 1049,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 831,
+          "id": 828,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 528
         },
         {
-          "id": 833,
+          "id": 830,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 423
         },
         {
-          "id": 953,
+          "id": 950,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 202
         },
         {
-          "id": 945,
+          "id": 942,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 197
         },
         {
-          "id": 933,
+          "id": 930,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 193
         },
         {
-          "id": 821,
+          "id": 818,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 146
         },
         {
-          "id": 1107,
+          "id": 1104,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 68
         },
         {
-          "id": 899,
+          "id": 896,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 61
         },
         {
-          "id": 1085,
+          "id": 1082,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 322
         },
         {
-          "id": 1063,
+          "id": 1060,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 283
         },
         {
-          "id": 1090,
+          "id": 1087,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 243
         },
         {
-          "id": 676,
+          "id": 674,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 507,
-      "total_valid": 378,
+      "total_raw": 506,
+      "total_valid": 377,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1248,
+          "id": 1245,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 329
         },
         {
-          "id": 1247,
+          "id": 1244,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 263
         },
         {
-          "id": 1242,
+          "id": 1239,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 174
         },
         {
-          "id": 1277,
+          "id": 1274,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1278,
+          "id": 1275,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1279,
+          "id": 1276,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1254,
+          "id": 1251,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 397
         },
         {
-          "id": 1269,
+          "id": 1266,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 360
         },
         {
-          "id": 1253,
+          "id": 1250,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 335
         },
         {
-          "id": 1190,
+          "id": 1187,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 316
         },
         {
-          "id": 1260,
+          "id": 1257,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1263,
+          "id": 1260,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1062,
+          "id": 1059,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1277,
+          "id": 1274,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1278,
+          "id": 1275,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 1279,
+          "id": 1276,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 1200
         },
         {
-          "id": 829,
+          "id": 826,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 522
         },
         {
-          "id": 923,
+          "id": 920,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 489
         },
         {
-          "id": 930,
+          "id": 927,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 440
         },
         {
-          "id": 1254,
+          "id": 1251,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 397
         },
         {
-          "id": 958,
+          "id": 955,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 382
         },
         {
-          "id": 739,
+          "id": 736,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 80,
-      "total_valid": 70,
+      "total_raw": 79,
+      "total_valid": 69,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1327,
+          "id": 1324,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 525
         },
         {
-          "id": 1326,
+          "id": 1323,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 519
         },
         {
-          "id": 1316,
+          "id": 1313,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 471
         },
         {
-          "id": 1351,
+          "id": 1347,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 466
         },
         {
-          "id": 1357,
+          "id": 1353,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 457
         },
         {
-          "id": 1355,
+          "id": 1351,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 385
         },
         {
-          "id": 1376,
+          "id": 1372,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 355
         },
         {
-          "id": 1377,
+          "id": 1373,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 339
         },
         {
-          "id": 1378,
+          "id": 1374,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 337
         },
         {
-          "id": 1346,
+          "id": 1342,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 328
         },
         {
-          "id": 1356,
+          "id": 1352,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 253
         },
         {
-          "id": 1347,
+          "id": 1343,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 252
         },
         {
-          "id": 1331,
+          "id": 1328,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 141
         },
         {
-          "id": 1330,
+          "id": 1327,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 135
         },
         {
-          "id": 1389,
+          "id": 1385,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1024,7 +1024,7 @@
           "word_count": 164
         },
         {
-          "id": 271,
+          "id": 269,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 555
         },
         {
-          "id": 1391,
+          "id": 1387,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 550
         },
         {
-          "id": 1320,
+          "id": 1317,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 524
         },
         {
-          "id": 1325,
+          "id": 1322,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 500
         },
         {
-          "id": 1317,
+          "id": 1314,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 230,
-      "total_valid": 51,
+      "total_raw": 229,
+      "total_valid": 50,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1544,
+    "total_raw": 1540,
     "dup": 204,
-    "nocontent": 407,
+    "nocontent": 406,
     "noise": 8
   }
 }
