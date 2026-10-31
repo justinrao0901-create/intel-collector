@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 2,
       "ok": true
     },
     "Meta AI Blog": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 19,
+      "count": 18,
       "ok": true
     },
     "Fierce Pharma": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 28,
+      "count": 26,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -268,7 +268,7 @@
     "npj Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true
     },
     "Sci Transl Med": {
@@ -418,7 +418,7 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 5,
+      "count": 6,
       "ok": true
     },
     "Finextra": {
@@ -436,8 +436,8 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 7,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -504,11 +504,10 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "Thunes"
     ],
-    "sudden_drop": [
-      "Google DeepMind"
-    ],
+    "sudden_drop": [],
     "persistent_zero": [
       "WHO News"
     ]
