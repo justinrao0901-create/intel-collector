@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "sources": {
     "OpenAI News": {
       "section": "ai",
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 13,
+      "count": 6,
       "ok": true
     },
     "Sequoia Capital": {
@@ -76,7 +76,7 @@
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 605,
+      "count": 0,
       "ok": true
     },
     "arXiv cs.LG": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
+      "count": 0,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 2,
+      "count": 0,
       "ok": true
     },
     "WHO News": {
@@ -172,7 +172,7 @@
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 17,
       "ok": true
     },
     "The Lancet": {
@@ -262,7 +262,7 @@
     "Vaccine (journal)": {
       "section": "vaccine",
       "method": "rss",
-      "count": 39,
+      "count": 44,
       "ok": true
     },
     "npj Vaccines": {
@@ -310,7 +310,7 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 4,
       "ok": true
     },
     "Fierce Biotech": {
@@ -406,7 +406,7 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 10,
+      "count": 2,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -424,13 +424,13 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 18,
+      "count": 11,
       "ok": true
     },
     "Payments Cards & Mobile": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 0,
       "ok": true
     },
     "Thunes": {
@@ -507,14 +507,18 @@
       "Import AI"
     ],
     "sudden_drop": [
-      "PYMNTS Cross-Border",
-      "PaymentsDive",
-      "arXiv cs.CL",
-      "arXiv cs.LG"
+      "Endpoints News",
+      "Payments Cards & Mobile",
+      "STAT News",
+      "arXiv cs.AI"
     ],
     "persistent_zero": [
       "Cointelegraph Payments",
-      "WHO News"
+      "PYMNTS Cross-Border",
+      "PaymentsDive",
+      "WHO News",
+      "arXiv cs.CL",
+      "arXiv cs.LG"
     ]
   }
 }
