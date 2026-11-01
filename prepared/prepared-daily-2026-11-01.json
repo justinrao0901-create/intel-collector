@@ -50,7 +50,7 @@
           "word_count": 65
         },
         {
-          "id": 99,
+          "id": 101,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 169
         },
         {
-          "id": 103,
+          "id": 105,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 152
         },
         {
-          "id": 97,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 139
         },
         {
-          "id": 79,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 80,
+          "id": 82,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 81,
+          "id": 83,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,22 @@
           "word_count": 1200
         },
         {
-          "id": 761,
+          "id": 762,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "How We Took Over ChatGPT Accounts",
+          "link": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+          "content": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data. Parameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its own virtual keyboard , which can be triggered in the parent page via postMessage() from the sandboxed iframe. That message receiving code uses innerHTML , so anything that sends a message can add custom HTML to the parent - and there was no mechanism to prevent other sandboxed frames, including HTML preview frames, from calling that method. This meant untrusted code in an iframe could insert HTML, and while innerHTML doesn't directly execute script elements it could be used to inject a new iframe without sandbox restrictions. OpenAI’s CSP rules blocked inline scripts entirely, and only allowed",
+          "pub_date": "2026-10-31T23:15:22+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 764,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 746
         },
         {
-          "id": 767,
+          "id": 770,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 490
-        },
-        {
-          "id": 763,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting Ben Hylak",
-          "link": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
-          "content": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our product, customers love the ui and love us very much. we're special that way. &mdash; Ben Hylak Tags: model-context-protocol , ai",
-          "pub_date": "2026-10-29T14:06:27+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 303
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 867,
-      "total_valid": 647,
+      "total_raw": 870,
+      "total_valid": 648,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1211,
+          "id": 1213,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1225,
+          "id": 1227,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1202,
+          "id": 1204,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 1286,
+          "id": 1288,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 296
         },
         {
-          "id": 1229,
+          "id": 1231,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 278
         },
         {
-          "id": 1246,
+          "id": 1248,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 218
         },
         {
-          "id": 1264,
+          "id": 1266,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 194
         },
         {
-          "id": 1076,
+          "id": 1078,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 1200
         },
         {
-          "id": 1100,
+          "id": 1102,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 1200
         },
         {
-          "id": 990,
+          "id": 992,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 753
         },
         {
-          "id": 1095,
+          "id": 1097,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 734
         },
         {
-          "id": 981,
+          "id": 983,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 646
         },
         {
-          "id": 1287,
+          "id": 1289,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 561
         },
         {
-          "id": 993,
+          "id": 995,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 556
         },
         {
-          "id": 1007,
+          "id": 1009,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 482,
-      "total_valid": 331,
+      "total_raw": 481,
+      "total_valid": 330,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1401,
+          "id": 1403,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 284
         },
         {
-          "id": 1381,
+          "id": 1383,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 217
         },
         {
-          "id": 1404,
+          "id": 1406,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 217
         },
         {
-          "id": 1450,
+          "id": 1452,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1452,
+          "id": 1454,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1456,
+          "id": 1458,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1434,
+          "id": 1436,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1174
         },
         {
-          "id": 1435,
+          "id": 1437,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1073
         },
         {
-          "id": 1432,
+          "id": 1434,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1134,
+          "id": 1136,
           "source": "Nature Immunology",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 412
         },
         {
-          "id": 1492,
+          "id": 1494,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 300
         },
         {
-          "id": 1286,
+          "id": 1288,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 296
         },
         {
-          "id": 1083,
+          "id": 1085,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 293
         },
         {
-          "id": 1082,
+          "id": 1084,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 280
         },
         {
-          "id": 939,
+          "id": 941,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 262
         },
         {
-          "id": 1094,
+          "id": 1096,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 262
         },
         {
-          "id": 1306,
+          "id": 1308,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 252
         },
         {
-          "id": 921,
+          "id": 923,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 236
         },
         {
-          "id": 1489,
+          "id": 1491,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1507,
+          "id": 1509,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 149
         },
         {
-          "id": 1514,
+          "id": 1513,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 103
         },
         {
-          "id": 1521,
+          "id": 1520,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 100
         },
         {
-          "id": 670,
+          "id": 672,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -814,7 +814,7 @@
           "word_count": 1137
         },
         {
-          "id": 541,
+          "id": 543,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -829,7 +829,7 @@
           "word_count": 1128
         },
         {
-          "id": 257,
+          "id": 259,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -844,7 +844,7 @@
           "word_count": 852
         },
         {
-          "id": 1495,
+          "id": 1497,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 509
         },
         {
-          "id": 1502,
+          "id": 1504,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 487
         },
         {
-          "id": 1499,
+          "id": 1501,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 482
         },
         {
-          "id": 1496,
+          "id": 1498,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 481
         },
         {
-          "id": 1501,
+          "id": 1503,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 468
         },
         {
-          "id": 1498,
+          "id": 1500,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 432
         },
         {
-          "id": 1513,
+          "id": 1512,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,34 +949,34 @@
           "word_count": 198
         },
         {
-          "id": 1509,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Apple Pay and Google Pay launch in Uzbekistan",
-          "link": "https://www.finextra.com/newsarticle/48676/apple-pay-and-google-pay-launch-in-uzbekistan?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Uzbekistan has announced the arrival of Apple Pay and Google Pay into its banking system as the central Asian nation looks to open up its financial services.",
-          "pub_date": "Fri, 30 Oct 2026 11:35:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 157
-        },
-        {
           "id": 1510,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Singahi issues business continuity guide for Indian banks",
-          "link": "https://www.finextra.com/pressarticle/111518/singahi-issues-business-continuity-guide-for-indian-banks?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Software, cloud and IT companies that sell to Indian banks should expect closer questions about how their service recovers from an outage.",
-          "pub_date": "Fri, 30 Oct 2026 11:06:00 GMT",
+          "title": "Sustainable Finance Live: Wonky Harvest and Lloyds Banking Group win 2026 Hackathon",
+          "link": "https://www.finextra.com/newsarticle/48677/sustainable-finance-live-wonky-harvest-and-lloyds-banking-group-win-2026-hackathon?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Team 8: Wonky Harvest and Team 9: Lloyds Banking Group have been crowned the winners of the Sustainable Finance Hackathon 2026.",
+          "pub_date": "Fri, 30 Oct 2026 12:28:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 138
+          "word_count": 127
+        },
+        {
+          "id": 1518,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Beyond fraud detection: Why dispute management needs an overhaul",
+          "link": "https://www.finextra.com/event-info/643/beyond-fraud-detection-why-dispute-management-needs-an-overhaul?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Post-incident fraud management needs to adapt. But how?",
+          "pub_date": "Wed, 18 Nov 2026 15:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 55
         }
       ],
       "quota": {
@@ -984,15 +984,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 212,
-      "total_valid": 18,
+      "total_raw": 209,
+      "total_valid": 16,
       "total_candidates": 15
     }
   },
   "meta": {
-    "total_raw": 1702,
+    "total_raw": 1701,
     "dup": 274,
-    "nocontent": 405,
+    "nocontent": 406,
     "noise": 8
   }
 }
