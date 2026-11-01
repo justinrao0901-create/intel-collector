@@ -50,7 +50,7 @@
           "word_count": 65
         },
         {
-          "id": 101,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,22 +65,7 @@
           "word_count": 169
         },
         {
-          "id": 105,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
-          "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
-          "content": "Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.",
-          "pub_date": "Fri, 30 Oct 2026 13:00:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 152
-        },
-        {
-          "id": 99,
+          "id": 97,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +80,22 @@
           "word_count": 139
         },
         {
-          "id": 81,
+          "id": 91,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+          "link": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+          "content": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
+          "pub_date": "Sat, 31 Oct 2026 01:20:05 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 123
+        },
+        {
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 82,
+          "id": 80,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 83,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 762,
+          "id": 758,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 764,
+          "id": 761,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,19 +170,19 @@
           "word_count": 746
         },
         {
-          "id": 770,
+          "id": 759,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
           "priority": 5,
-          "title": "Quoting Terk Terkowitz",
-          "link": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
-          "content": "If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work to find solutions. An engineer who can explain where AI does not yet help their work is demonstrating the judgement we are asking for. &mdash; Terk Terkowitz , An update from Amazon engineering leadership on the role of the developer in the age of AI Tags: amazon , generative-ai , agentic-engineering , ai , llms",
-          "pub_date": "2026-10-28T10:09:07+00:00",
+          "title": "datasette-llm 0.1a9",
+          "link": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+          "content": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db --internal internal.db Previously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra . Tags: datasette , llm , datasette-agent",
+          "pub_date": "2026-10-31T22:10:01+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 490
+          "word_count": 565
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 870,
-      "total_valid": 648,
+      "total_raw": 867,
+      "total_valid": 647,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1213,
+          "id": 1209,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1227,
+          "id": 1223,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1204,
+          "id": 1200,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,22 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 1288,
-          "source": "Nature Reviews Immunology",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Priming systemic immunity against glioblastoma",
-          "link": "https://www.nature.com/articles/s41577-026-01371-6",
-          "content": "Nature Reviews Immunology, Published online: 29 October 2026; doi:10.1038/s41577-026-01371-6 A preprint by Wisdom et al. shows that combining radiotherapy with intramuscular mRNA vaccination supports better T cell priming and produces complete responses in glioblastoma transplant models in mice.",
-          "pub_date": "2026-10-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 296
-        },
-        {
-          "id": 1231,
+          "id": 1227,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +257,7 @@
           "word_count": 278
         },
         {
-          "id": 1248,
+          "id": 1244,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +272,7 @@
           "word_count": 218
         },
         {
-          "id": 1266,
+          "id": 1262,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +287,7 @@
           "word_count": 194
         },
         {
-          "id": 1078,
+          "id": 1074,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +302,7 @@
           "word_count": 1200
         },
         {
-          "id": 1102,
+          "id": 1098,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +317,7 @@
           "word_count": 1200
         },
         {
-          "id": 992,
+          "id": 988,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +332,7 @@
           "word_count": 753
         },
         {
-          "id": 1097,
+          "id": 1093,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +347,7 @@
           "word_count": 734
         },
         {
-          "id": 983,
+          "id": 979,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +362,7 @@
           "word_count": 646
         },
         {
-          "id": 1289,
+          "id": 1284,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +377,7 @@
           "word_count": 561
         },
         {
-          "id": 995,
+          "id": 991,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +392,7 @@
           "word_count": 556
         },
         {
-          "id": 1009,
+          "id": 1005,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 534
+        },
+        {
+          "id": 1287,
+          "source": "Nature Reviews Immunology",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "LAG3 checkpoint function and its mechanism of action in therapeutic targeting",
+          "link": "https://www.nature.com/articles/s41577-026-01359-2",
+          "content": "Nature Reviews Immunology, Published online: 09 October 2026; doi:10.1038/s41577-026-01359-2 This Review explores how the immune checkpoint receptor lymphocyte activation gene 3 (LAG3) suppresses T cell activity through newly defined signalling mechanisms, including tonic and ligand-induced pathways. The Review highlights therapeutic advances, biomarker strategies and emerging opportunities to target LAG3 in cancer and autoimmune disease.",
+          "pub_date": "2026-10-09",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 442
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 481,
-      "total_valid": 330,
+      "total_raw": 479,
+      "total_valid": 328,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1403,
+          "id": 1398,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 284
         },
         {
-          "id": 1383,
+          "id": 1378,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 217
         },
         {
-          "id": 1406,
+          "id": 1401,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 217
         },
         {
-          "id": 1452,
+          "id": 1447,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1454,
+          "id": 1449,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1458,
+          "id": 1453,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1436,
+          "id": 1431,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1174
         },
         {
-          "id": 1437,
+          "id": 1432,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1073
         },
         {
-          "id": 1434,
+          "id": 1429,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,22 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1136,
-          "source": "Nature Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Autophagy limits steady-state IL-1α expression to restrain innate immunity",
-          "link": "https://www.nature.com/articles/s41590-026-02701-5",
-          "content": "Nature Immunology, Published online: 30 October 2026; doi:10.1038/s41590-026-02701-5 Autophagy controls pulmonary innate immunity at the steady-state by restraining IL-1α expression by alveolar macrophages. Disrupting this regulatory pathway primes lung innate immunity and enhances resistance to distinct respiratory infections, identifying an unexpected role for autophagy in determining host immune readiness.",
-          "pub_date": "2026-10-30",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 412
-        },
-        {
-          "id": 1494,
+          "id": 1489,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,22 +596,7 @@
           "word_count": 300
         },
         {
-          "id": 1288,
-          "source": "Nature Reviews Immunology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Priming systemic immunity against glioblastoma",
-          "link": "https://www.nature.com/articles/s41577-026-01371-6",
-          "content": "Nature Reviews Immunology, Published online: 29 October 2026; doi:10.1038/s41577-026-01371-6 A preprint by Wisdom et al. shows that combining radiotherapy with intramuscular mRNA vaccination supports better T cell priming and produces complete responses in glioblastoma transplant models in mice.",
-          "pub_date": "2026-10-29",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 296
-        },
-        {
-          "id": 1085,
+          "id": 1081,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +611,7 @@
           "word_count": 293
         },
         {
-          "id": 1084,
+          "id": 1080,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +626,7 @@
           "word_count": 280
         },
         {
-          "id": 941,
+          "id": 937,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +641,7 @@
           "word_count": 262
         },
         {
-          "id": 1096,
+          "id": 1092,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +656,7 @@
           "word_count": 262
         },
         {
-          "id": 1308,
+          "id": 1303,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +671,7 @@
           "word_count": 252
         },
         {
-          "id": 923,
+          "id": 919,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +686,7 @@
           "word_count": 236
         },
         {
-          "id": 1491,
+          "id": 1486,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -729,6 +699,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 221
+        },
+        {
+          "id": 908,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Meta-study sparks questions about what it means to be good at regulating emotions",
+          "link": "https://www.nature.com/articles/d41586-026-03262-1",
+          "content": "Nature, Published online: 28 October 2026; doi:10.1038/d41586-026-03262-1 A first-of-its kind consortium reveals a lack of correlation between behavioural and neural measures of a person’s emotional regulation.",
+          "pub_date": "2026-10-28",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 210
+        },
+        {
+          "id": 1488,
+          "source": "Nature Methods",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Advancing morphological profiling with self-supervised learning through comparative insights into representation learning of cellular perturbations",
+          "link": "https://www.nature.com/articles/s41592-026-03270-z",
+          "content": "Nature Methods, Published online: 29 October 2026; doi:10.1038/s41592-026-03270-z This Article presents a large-scale analysis of self-supervised learning methods for high-content morphological profiling.",
+          "pub_date": "2026-10-29",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 204
         }
       ],
       "quota": {
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 57,
-      "total_valid": 47,
+      "total_raw": 54,
+      "total_valid": 44,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1509,
+          "id": 1504,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 149
         },
         {
-          "id": 1513,
+          "id": 1507,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 103
         },
         {
-          "id": 1520,
+          "id": 1514,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 100
         },
         {
-          "id": 672,
+          "id": 668,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -814,7 +814,7 @@
           "word_count": 1137
         },
         {
-          "id": 543,
+          "id": 539,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -829,7 +829,7 @@
           "word_count": 1128
         },
         {
-          "id": 259,
+          "id": 255,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -844,7 +844,7 @@
           "word_count": 852
         },
         {
-          "id": 1497,
+          "id": 1492,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 509
         },
         {
-          "id": 1504,
+          "id": 1499,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 487
         },
         {
-          "id": 1501,
+          "id": 1496,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 482
         },
         {
-          "id": 1498,
+          "id": 1493,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 481
         },
         {
-          "id": 1503,
+          "id": 1498,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 468
         },
         {
-          "id": 1500,
+          "id": 1495,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 432
         },
         {
-          "id": 1512,
+          "id": 1506,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,22 +949,7 @@
           "word_count": 198
         },
         {
-          "id": 1510,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Sustainable Finance Live: Wonky Harvest and Lloyds Banking Group win 2026 Hackathon",
-          "link": "https://www.finextra.com/newsarticle/48677/sustainable-finance-live-wonky-harvest-and-lloyds-banking-group-win-2026-hackathon?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Team 8: Wonky Harvest and Team 9: Lloyds Banking Group have been crowned the winners of the Sustainable Finance Hackathon 2026.",
-          "pub_date": "Fri, 30 Oct 2026 12:28:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 127
-        },
-        {
-          "id": 1518,
+          "id": 1512,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -984,15 +969,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 209,
-      "total_valid": 16,
-      "total_candidates": 15
+      "total_raw": 207,
+      "total_valid": 15,
+      "total_candidates": 14
     }
   },
   "meta": {
-    "total_raw": 1701,
-    "dup": 274,
-    "nocontent": 406,
+    "total_raw": 1694,
+    "dup": 273,
+    "nocontent": 404,
     "noise": 8
   }
 }
