@@ -5,22 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 20,
-          "source": "OpenAI News",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Introducing GPT-6.1 Terra",
-          "link": "https://openai.com/index/introducing-gpt-6-1-terra",
-          "content": "Bringing fast and capable computer use to everyone",
-          "pub_date": "Mon, 26 Oct 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 50
-        },
-        {
-          "id": 93,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +20,7 @@
           "word_count": 84
         },
         {
-          "id": 89,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +35,7 @@
           "word_count": 77
         },
         {
-          "id": 91,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +50,7 @@
           "word_count": 76
         },
         {
-          "id": 85,
+          "id": 84,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +65,7 @@
           "word_count": 1200
         },
         {
-          "id": 86,
+          "id": 85,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 87,
+          "id": 86,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +125,7 @@
           "word_count": 303
         },
         {
-          "id": 134,
+          "id": 133,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +140,7 @@
           "word_count": 255
         },
         {
-          "id": 122,
+          "id": 121,
           "source": "Interconnects",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +155,7 @@
           "word_count": 222
         },
         {
-          "id": 143,
+          "id": 142,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 162
+        },
+        {
+          "id": 137,
+          "source": "Latent Space",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "AI Is Getting Good at Math. Here’s Why.",
+          "link": "https://latent.space/p/ai-is-getting-good-at-math/",
+          "content": "AI models are solving more mathematical problems. A pattern is emerging in their successes that could help us predict which problems they’ll solve next.",
+          "pub_date": "Fri, 23 Oct 2026 15:19:48 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 152
         }
       ],
       "quota": {
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 602,
+          "id": 585,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 883
         },
         {
-          "id": 595,
+          "id": 578,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 860
         },
         {
-          "id": 592,
+          "id": 575,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 834
         },
         {
-          "id": 628,
+          "id": 611,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 375
         },
         {
-          "id": 606,
+          "id": 589,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 244
         },
         {
-          "id": 607,
+          "id": 590,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 228
         },
         {
-          "id": 474,
+          "id": 473,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 709
         },
         {
-          "id": 471,
+          "id": 470,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 518
         },
         {
-          "id": 673,
+          "id": 654,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 442
         },
         {
-          "id": 399,
+          "id": 398,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 434
         },
         {
-          "id": 470,
+          "id": 469,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 473,
-      "total_valid": 299,
+      "total_raw": 452,
+      "total_valid": 282,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 754,
+          "id": 729,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 204
         },
         {
-          "id": 762,
+          "id": 737,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 198
         },
         {
-          "id": 778,
+          "id": 753,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 196
         },
         {
-          "id": 840,
+          "id": 811,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 842,
+          "id": 813,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 843,
+          "id": 814,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -529,14 +529,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 129,
+      "total_raw": 121,
       "total_valid": 16,
       "total_candidates": 6
     },
     "cross": {
       "candidates": [
         {
-          "id": 452,
+          "id": 451,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 210
         },
         {
-          "id": 870,
+          "id": 841,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 196
         },
         {
-          "id": 499,
+          "id": 498,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 184
         },
         {
-          "id": 490,
+          "id": 489,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 167
         },
         {
-          "id": 872,
+          "id": 843,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 163
         },
         {
-          "id": 869,
+          "id": 840,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 144
         },
         {
-          "id": 659,
+          "id": 640,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -691,8 +691,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 43,
-      "total_valid": 31,
+      "total_raw": 38,
+      "total_valid": 26,
       "total_candidates": 10
     },
     "china": {
@@ -709,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 883,
+          "id": 856,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 62
         },
         {
-          "id": 873,
+          "id": 846,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 478
         },
         {
-          "id": 874,
+          "id": 847,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,37 @@
           "word_count": 471
         },
         {
-          "id": 875,
+          "id": 844,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Binance Says It Replaced 95% of Stolen Crypto for Users",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/binance-says-it-replaced-95-percent-of-stolen-crypto-for-users/",
+          "content": "Binance began restoring withdrawals in phases Sunday (Nov. 1) at 06:00 UTC (1 a.m. EST), and by about 6½ hours later resumed withdrawals for the 15 networks and assets in the first phase, the company said in a post on X. Binance had paused withdrawals after hackers stole $6.3 billion from its cryptocurrency exchange late [&#8230;] The post Binance Says It Replaced 95% of Stolen Crypto for Users appeared first on PYMNTS.com .",
+          "pub_date": "Sun, 01 Nov 2026 23:46:03 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 428
+        },
+        {
+          "id": 845,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "OPay Halts $4 Billion NYSE IPO on Listing Day",
+          "link": "https://www.pymnts.com/news/investment-tracker/ipo/2026/opay-halts-4-billion-nyse-ipo-on-listing-day/",
+          "content": "OPay, a digital financial platform built for emerging markets, has decided to postpone its planned initial public offering due to “an ongoing inquiry by a regulatory authority,” the company said in a public statement shared Saturday (Oct. 31) in post on X. OPay had been set to begin trading on the New York Stock Exchange [&#8230;] The post OPay Halts $4 Billion NYSE IPO on Listing Day appeared first on PYMNTS.com .",
+          "pub_date": "Sun, 01 Nov 2026 23:02:39 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 418
+        },
+        {
+          "id": 848,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +799,7 @@
           "word_count": 84
         },
         {
-          "id": 893,
+          "id": 866,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -789,15 +819,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 183,
-      "total_valid": 5,
-      "total_candidates": 5
+      "total_raw": 185,
+      "total_valid": 7,
+      "total_candidates": 7
     }
   },
   "meta": {
-    "total_raw": 1055,
-    "dup": 283,
-    "nocontent": 404,
+    "total_raw": 1028,
+    "dup": 274,
+    "nocontent": 401,
     "noise": 8
   }
 }
