@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 90,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +20,7 @@
           "word_count": 84
         },
         {
-          "id": 86,
+          "id": 88,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 77
         },
         {
-          "id": 88,
+          "id": 90,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,22 @@
           "word_count": 76
         },
         {
-          "id": 82,
+          "id": 73,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
+          "link": "https://arxiv.org/abs/2610.40373",
+          "content": "Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones, and final goal states through a Hierarchical Dependency Mask (HDM), establishing dependencies across temporal horizons. Building upon these predictions, Structure-Aware Latent World Modeling organizes future latent representations along the horizon, view, and spatial dimensions to facilitate fine-grained retrieval. Furthermore, Action-Guided Factorized World Retrieval adaptively retrieves relevan",
+          "pub_date": "2026-10-28T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 85,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 83,
+          "id": 86,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,22 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 84,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "PhysInsert: Physically Plausible Object Insertion with Geometric Priors and Bidirectional Object-Scene Interactions",
-          "link": "https://arxiv.org/abs/2610.40453",
-          "content": "We present PhysInsert, a framework for physically plausible reference-based object insertion that jointly adapts objects and their surrounding scenes. Existing methods often rely on masked inputs, generation-based pairs, or training pairs with limited viewpoint variation, leaving pose and illumination adaptation and bidirectional object-scene interactions insufficiently constrained. We construct the Insert World dataset with strictly aligned Blender-rendered counterfactual pairs and object references across viewpoints and lighting conditions. Building on these data, Geometry-Guided Adaptation couples a VGGT geometry stream with image and text streams under target-scene feature supervision to guide spatially consistent insertion. Complementary 2D Object-Scene Spatial Supervision jointly supervises object occupancy and environmental changes while grounding spatial instructions in object regions through image-text attention. We introduce PhysInsert-Bench with dedicated cross-environment and cross-view cases requiring illumination and pose adaptation beyond appearance copying. Experiments on PhysInsert-Bench and DreamBooth demonstrate improved image fidelity; a user study further shows",
-          "pub_date": "2026-10-28T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 154,
+          "id": 156,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 490
         },
         {
-          "id": 150,
+          "id": 152,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 303
         },
         {
-          "id": 131,
+          "id": 133,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 255
         },
         {
-          "id": 119,
+          "id": 121,
           "source": "Interconnects",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 242
         },
         {
-          "id": 140,
+          "id": 142,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 162
         },
         {
-          "id": 135,
+          "id": 137,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 253,
+      "total_raw": 255,
       "total_valid": 40,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 587,
+          "id": 589,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 883
         },
         {
-          "id": 580,
+          "id": 582,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 860
         },
         {
-          "id": 577,
+          "id": 579,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 834
         },
         {
-          "id": 255,
+          "id": 257,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 182
         },
         {
-          "id": 613,
+          "id": 615,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 375
         },
         {
-          "id": 591,
+          "id": 593,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 244
         },
         {
-          "id": 592,
+          "id": 594,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 228
         },
         {
-          "id": 471,
+          "id": 473,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 709
         },
         {
-          "id": 468,
+          "id": 470,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 523
         },
         {
-          "id": 367,
+          "id": 369,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 519
         },
         {
-          "id": 368,
+          "id": 370,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 518
         },
         {
-          "id": 656,
+          "id": 658,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 442
         },
         {
-          "id": 396,
+          "id": 398,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 434
         },
         {
-          "id": 467,
+          "id": 469,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 433
         },
         {
-          "id": 355,
+          "id": 357,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 456,
-      "total_valid": 285,
+      "total_raw": 455,
+      "total_valid": 284,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 731,
+          "id": 732,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 204
         },
         {
-          "id": 739,
+          "id": 740,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 198
         },
         {
-          "id": 755,
+          "id": 756,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 196
         },
         {
-          "id": 813,
+          "id": 814,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 815,
+          "id": 816,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 816,
+          "id": 817,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -536,7 +536,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 449,
+          "id": 451,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 238
         },
         {
-          "id": 285,
+          "id": 287,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 210
         },
         {
-          "id": 843,
+          "id": 844,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 204
         },
         {
-          "id": 303,
+          "id": 305,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 196
         },
         {
-          "id": 496,
+          "id": 498,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 184
         },
         {
-          "id": 487,
+          "id": 489,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 168
         },
         {
-          "id": 278,
+          "id": 280,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 167
         },
         {
-          "id": 845,
+          "id": 846,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 163
         },
         {
-          "id": 842,
+          "id": 843,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 144
         },
         {
-          "id": 642,
+          "id": 644,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -691,8 +691,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 40,
-      "total_valid": 28,
+      "total_raw": 39,
+      "total_valid": 27,
       "total_candidates": 10
     },
     "china": {
@@ -709,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 848,
+          "id": 849,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 451
         },
         {
-          "id": 865,
+          "id": 866,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 62
         },
         {
-          "id": 868,
+          "id": 869,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 559
         },
         {
-          "id": 850,
+          "id": 851,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 490
         },
         {
-          "id": 849,
+          "id": 850,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 479
         },
         {
-          "id": 854,
+          "id": 855,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 478
         },
         {
-          "id": 855,
+          "id": 856,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 471
         },
         {
-          "id": 851,
+          "id": 852,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 461
         },
         {
-          "id": 856,
+          "id": 857,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 248
         },
         {
-          "id": 857,
+          "id": 858,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 84
         },
         {
-          "id": 876,
+          "id": 877,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -885,9 +885,9 @@
     }
   },
   "meta": {
-    "total_raw": 1038,
-    "dup": 275,
-    "nocontent": 401,
+    "total_raw": 1039,
+    "dup": 276,
+    "nocontent": 402,
     "noise": 8
   }
 }
