@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 10,
+      "count": 11,
       "ok": true
     },
     "Sequoia Capital": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 14,
       "ok": true
     },
     "Hacker News AI": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 70,
       "ok": true
     },
     "NEJM": {
@@ -190,13 +190,13 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 12,
+      "count": 11,
       "ok": true
     },
     "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
+      "count": 5,
       "ok": true
     },
     "Immunity": {
@@ -214,7 +214,7 @@
     "JAMA": {
       "section": "vaccine",
       "method": "rss",
-      "count": 47,
+      "count": 0,
       "ok": true
     },
     "Nature Medicine": {
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
+      "count": 8,
       "ok": true
     },
     "BioPharma Dive": {
@@ -328,13 +328,13 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 9,
+      "count": 8,
       "ok": true
     },
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 4,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -352,13 +352,13 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 6,
+      "count": 5,
       "ok": true
     },
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 12,
+      "count": 10,
       "ok": true
     },
     "Absci Blog": {
@@ -412,7 +412,7 @@
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 1,
       "ok": true
     },
     "PaymentsDive": {
@@ -506,9 +506,10 @@
       "Absci Blog",
       "Import AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "JAMA"
+    ],
     "persistent_zero": [
-      "PYMNTS Cross-Border",
       "Payments Cards & Mobile",
       "WHO News"
     ]
