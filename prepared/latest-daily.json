@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 3,
+          "id": 5,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -35,22 +35,52 @@
           "word_count": 154
         },
         {
-          "id": 4,
+          "id": 3,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
           "priority": 3,
-          "title": "Qodo builds context into AI code review with Codex",
-          "link": "https://openai.com/index/qodo-codex-plugin",
-          "content": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
-          "pub_date": "Mon, 02 Nov 2026 00:00:00 GMT",
+          "title": "Rewarding defenders with bigger bug bounties",
+          "link": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+          "content": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+          "pub_date": "Mon, 02 Nov 2026 18:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 148
+          "word_count": 154
         },
         {
-          "id": 87,
+          "id": 45,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Speeding up planning decisions with AI",
+          "link": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+          "content": "Google DeepMind and UK government work together to reduce planning assessment times",
+          "pub_date": "Fri, 30 Oct 2026 14:18:30 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 83
+        },
+        {
+          "id": 91,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+          "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+          "content": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his passion.",
+          "pub_date": "Tue, 03 Nov 2026 00:35:52 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 269
+        },
+        {
+          "id": 95,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +95,7 @@
           "word_count": 209
         },
         {
-          "id": 85,
+          "id": 93,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,67 +110,52 @@
           "word_count": 199
         },
         {
-          "id": 88,
-          "source": "TechCrunch AI",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 4,
-          "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
-          "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-          "content": "Here's a question straight out of sci-fi: What if AI could predict what you were going to do before you decided to, even in a completely new situation?",
-          "pub_date": "Mon, 02 Nov 2026 16:30:00 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 151
-        },
-        {
-          "id": 69,
+          "id": 74,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding",
-          "link": "https://arxiv.org/abs/2610.36384",
-          "content": "Perceiving human body motion is critical for multimodal systems that understand and assist people. Yet current evaluations of Multimodal Large Language Models (MLLMs) largely focus on objects, scenes, and coarse actions, leaving their ability to reason about the body itself poorly assessed. This is especially challenging from the egocentric perspective, in which the body is only partially visible and motion must be inferred from occluded and temporally distributed cues. We introduce SOMA, a benchmark for fine-grained body-motion understanding from egocentric video, comprising 1,632 human-verified questions across three capability axes: body configuration, motion dynamics, and temporal reasoning. We evaluate 37 leading closed-source, open-source, and specialized egocentric MLLMs, complemented by an extensive human evaluation. We find that humans also find this task difficult from video alone (68.5% accuracy), yet clearly outperform the strongest MLLM (Qwen3.6-27B), which reaches 50.0% zero-shot accuracy. Our error analysis shows that MLLMs often misread the wearer's own body, misjudge events in time, and are prone to biases such as favoring the right hand or under-counting repetitio",
-          "pub_date": "2026-10-25T20:00:00.000Z",
+          "title": "TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents",
+          "link": "https://arxiv.org/abs/2610.41216",
+          "content": "Robot agents built on vision-language models depend on both the planner and its harness: the tools, feedback, memory, and recovery logic around it. Can improvements to a large teacher's harness be carried into a compact agent with lower inference compute cost? We present TinyAstral, a two-stage approach. We first freeze an open-weight teacher and improve its harness through recursive self-improvement (RSI): frontier LLM agents read the teacher's trajectories and propose harness edits, and each edit is accepted only if it passes a paired statistical test. We then freeze the final harness, collect teacher trajectories with reasoning and failure recovery, and distill a small student that replaces the teacher in the same harness. On RoboTwin, harness evolution raises the teacher's success from 33.4% to 63.6%; the final 4B student reaches 62.8%. Across four harness versions, distilled 4B students score close to their corresponding teachers, and later versions yield stronger students, showing that harness evolution gains carry into compact models. The harness gains also transfer to other frozen planners without retraining. On identical episodes, the final 4B student outperforms open 4B a",
+          "pub_date": "2026-10-29T23:53:42.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 71,
+          "id": 75,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "AuditFL: A Contract-Backed Clearing Layer for Open Federated Learning",
-          "link": "https://arxiv.org/abs/2610.41278",
-          "content": "Federated learning (FL) keeps raw data local, but most deployments still rely on a trusted coordinator for client admission, checkpoint distribution, update collection, aggregation, and rewards. This paper presents AuditFL, a contract-backed clearing layer for auditable FL in open settings. AuditFL keeps training and aggregation off chain, stores model artifacts in an assumed reliable off-chain artifact store, and records only content identifiers and economic state on chain. Clients reserve update tickets with deposits, publish update identifiers, and later claim refunds or rewards; the task coordinator publishes global checkpoints and finalizes rounds through deterministic settlement rules. The design does not remove the aggregator, but makes its on-chain round decisions attributable, replayable, auditable, and economically constrained. We implement AuditFL as both a deterministic state-machine prototype and a Solidity contract on a local Ethereum-compatible Anvil chain. On full MNIST with Dirichlet non-IID splits, 12 rounds, and up to 200 clients, AuditFL preserves the Plain FL learning trajectory while its overhead follows closed-form control-plane models. At 200 clients, the co",
-          "pub_date": "2026-10-29T20:00:00.000Z",
+          "title": "Lost in Recovery: Demystifying Recovery Behavior of Computer-Use Agents via Goal-Oriented Action Replay",
+          "link": "https://arxiv.org/abs/2610.27954",
+          "content": "Recent advances in large (vision) language models have enabled computer-use agents that automate digital workflows via fine-grained keyboard and mouse operations. However, such agents remain fragile in long-horizon settings, where errors accumulate and executed actions leave unintended side effects, making the ability to recover from failures critical. Yet, existing remedies remain inadequate: environment resets are infeasible in proprietary settings, action replay is prohibitively expensive over long horizons, and API-based rollback is limited to web environments, leaving model-based recovery largely unexplored. To address this gap, we present ReTrace, a scalable evaluation framework for systematically studying recovery behavior in computer-use agents. We formalize Transition-Consistent Recovery: identical downstream actions from the recovered and target states must yield identical outcomes. We operationalize this criterion through goal-oriented action replay following controlled error injection. Using ReTrace, we present the first systematic study of autonomous, model-based recovery, revealing that (i) ideal recovery can unlock model's latent task completion capabilities, (ii) cu",
+          "pub_date": "2026-10-19T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 72,
+          "id": 76,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
-          "link": "https://arxiv.org/abs/2610.37481",
-          "content": "Fine-tuning Large Language Models (LLMs) on instruction data can quietly erode their safety, even when no training example looks harmful. Because this safety-degrading data looks benign, standard content filters struggle to catch it. We tackle this problem by developing SimpleLoRIF, a scalable gradient embedding method that identifies fine-tuning examples whose gradients align with unsafe behavior. By simplifying a low-rank attribution method and restricting backpropagation to the final four transformer blocks, SimpleLoRIF can embed datasets on the order of a million examples, boosting gradient attribution from a small-scale analysis tool into a practical filter for full post-training datasets. We first validate it on emergent misalignment, where we find that gradients can connect insecure-code training data to the broadly harmful behaviors that appear after fine-tuning, with AUC as high as 0.865 in the gradient space of misaligned models. We then use SimpleLoRIF to build SafeTulu, a version of Tulu 3 with the 20% of examples most gradient-aligned with unsafe responses removed. Training on SafeTulu reduces GCG attack success rate by up to 22% across Qwen, Llama, and Olmo, outperfor",
-          "pub_date": "2026-10-26T20:00:00.000Z",
+          "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+          "link": "https://arxiv.org/abs/2610.40191",
+          "content": "Video generation is shifting from end-to-end synthesis toward agentic generation, where planning, tool use, and feedback enable coherent, controllable multi-shot videos. In parallel, video world models provide action-conditioned observations and predicted futures, serving as interactive environments for agents. We study their intersection through the agent harness: an executable runtime that constructs context, exposes tools, maintains state, routes feedback, and manages budgets around video models. This report examines three directions. First, agentic video generation, where harnesses coordinate scripting, shot planning, asset management, production, and editing, alongside the evaluation challenges of these systems. Second, agentic world modeling, where harnesses mediate observation, control, execution, and state. We discuss hybrid designs in which game engines or agent-written programs maintain world state while video models render observations, and how agents and world models can mutually evaluate and improve one another. Third, recursive self-improvement (RSI) in video model development, distinguishing output revisions, updates to harness state, generator parameters, and evalua",
+          "pub_date": "2026-10-29T10:47:39.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 918,
+          "id": 926,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 919,
+          "id": 927,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 899,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
-          "link": "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/",
-          "content": "Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work? Jacob Lauritzen is the CTO of Legora, one of the fastest-growing companies...",
-          "pub_date": "Mon, 02 Nov 2026 22:54:03 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 255
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1027,
-      "total_valid": 652,
+      "total_raw": 1035,
+      "total_valid": 655,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1311,
+          "id": 1320,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1312,
+          "id": 1321,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1317,
+          "id": 1326,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1232,
+          "id": 1240,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 282
         },
         {
-          "id": 1051,
+          "id": 1059,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 212
         },
         {
-          "id": 1354,
+          "id": 1363,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 190
         },
         {
-          "id": 1348,
+          "id": 1357,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 184
         },
         {
-          "id": 1352,
+          "id": 1361,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 181
         },
         {
-          "id": 1029,
+          "id": 1037,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 200
         },
         {
-          "id": 1174,
+          "id": 1182,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 426
         },
         {
-          "id": 1407,
+          "id": 1416,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 425
         },
         {
-          "id": 1258,
+          "id": 1266,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 422
         },
         {
-          "id": 1077,
+          "id": 1085,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 419
         },
         {
-          "id": 1166,
+          "id": 1174,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 419
         },
         {
-          "id": 1188,
+          "id": 1196,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 429,
-      "total_valid": 279,
+      "total_raw": 430,
+      "total_valid": 281,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1475,
+          "id": 1484,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 375
         },
         {
-          "id": 1472,
+          "id": 1481,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 179
         },
         {
-          "id": 1498,
+          "id": 1507,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 178
         },
         {
-          "id": 1547,
+          "id": 1556,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1548,
+          "id": 1557,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1550,
+          "id": 1559,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1199
         },
         {
-          "id": 1571,
+          "id": 1580,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 552
         },
         {
-          "id": 1539,
+          "id": 1548,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 417
         },
         {
-          "id": 1465,
+          "id": 1474,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 407
         },
         {
-          "id": 1540,
+          "id": 1549,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 390
         },
         {
-          "id": 1541,
+          "id": 1550,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 334
         },
         {
-          "id": 1529,
+          "id": 1538,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1312,
+          "id": 1321,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1548,
+          "id": 1557,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1571,
+          "id": 1580,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 552
         },
         {
-          "id": 1539,
+          "id": 1548,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 417
         },
         {
-          "id": 1465,
+          "id": 1474,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 407
         },
         {
-          "id": 1586,
+          "id": 1595,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 299
         },
         {
-          "id": 1167,
+          "id": 1175,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 276
         },
         {
-          "id": 1053,
+          "id": 1061,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 234
         },
         {
-          "id": 1219,
+          "id": 1227,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 61
         },
         {
-          "id": 1221,
+          "id": 1229,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 48,
-      "total_valid": 34,
+      "total_raw": 49,
+      "total_valid": 35,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1594,
+          "id": 1606,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 526
         },
         {
-          "id": 1655,
+          "id": 1663,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 523
         },
         {
-          "id": 1599,
+          "id": 1611,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,22 +844,22 @@
           "word_count": 514
         },
         {
-          "id": 1596,
+          "id": 1608,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Google Wallet Tests Letting Users Confirm Identity Before Every Contactless Payment",
+          "title": "Google Wallet Tests Asking Users to Confirm Identity Before Every Payment",
           "link": "https://www.pymnts.com/authentication/2026/google-wallet-tests-letting-users-confirm-identity-before-every-contactless-payment/",
-          "content": "The latest Google Wallet update includes a new Tap to pay option in the verification settings that may control how often the app asks users to verify their identity before making contactless payments, Android Authority reported Sunday (Nov. 1). The report is based on work-in-progress code that may help predict future features, or that may [&#8230;] The post Google Wallet Tests Letting Users Confirm Identity Before Every Contactless Payment appeared first on PYMNTS.com .",
+          "content": "The latest Google Wallet update includes a new Tap to pay option in the verification settings that may control how often the app asks users to verify their identity before making contactless payments, Android Authority reported Sunday (Nov. 1). The report is based on work-in-progress code that may help predict future features, or that may [&#8230;] The post Google Wallet Tests Asking Users to Confirm Identity Before Every Payment appeared first on PYMNTS.com .",
           "pub_date": "Mon, 02 Nov 2026 22:54:01 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 474
+          "word_count": 464
         },
         {
-          "id": 1598,
+          "id": 1610,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 452
         },
         {
-          "id": 1627,
+          "id": 1636,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 226
         },
         {
-          "id": 1624,
+          "id": 1633,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 195
         },
         {
-          "id": 1626,
+          "id": 1635,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 181
         },
         {
-          "id": 1622,
+          "id": 1631,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 163
         },
         {
-          "id": 1605,
+          "id": 1614,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 152
         },
         {
-          "id": 1610,
+          "id": 1619,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 152
         },
         {
-          "id": 1629,
+          "id": 1638,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 129
         },
         {
-          "id": 71,
+          "id": 88,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 1646,
+          "id": 1655,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 568
         },
         {
-          "id": 208,
+          "id": 216,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 350,
+          "id": 358,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 1597,
+          "id": 1609,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 584
         },
         {
-          "id": 1600,
+          "id": 1612,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 497
         },
         {
-          "id": 1606,
+          "id": 1615,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 157
         },
         {
-          "id": 1607,
+          "id": 1616,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 227,
-      "total_valid": 43,
+      "total_raw": 226,
+      "total_valid": 42,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1817,
-    "dup": 415,
-    "nocontent": 405,
+    "total_raw": 1825,
+    "dup": 418,
+    "nocontent": 406,
     "noise": 8
   }
 }
