@@ -160,8 +160,8 @@
     "FDA 审批动态": {
       "section": "vaccine",
       "method": "api",
-      "count": 0,
-      "ok": false
+      "count": 1,
+      "ok": true
     },
     "Nature": {
       "section": "vaccine",
@@ -442,8 +442,8 @@
     "Cointelegraph Payments": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 1,
+      "ok": true
     },
     "Ledger Insights": {
       "section": "payment",
@@ -504,8 +504,6 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Cointelegraph Payments",
-      "FDA 审批动态",
       "Import AI"
     ],
     "sudden_drop": [
