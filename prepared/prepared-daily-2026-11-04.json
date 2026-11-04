@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 66,
+          "id": 63,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 369
         },
         {
-          "id": 65,
+          "id": 62,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -33,21 +33,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 336
-        },
-        {
-          "id": 48,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Agentic cheminformatics with Google Antigravity",
-          "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-          "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
-          "pub_date": "Tue, 03 Nov 2026 17:01:49 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 156
         },
         {
           "id": 19,
@@ -95,7 +80,7 @@
           "word_count": 148
         },
         {
-          "id": 97,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +95,7 @@
           "word_count": 157
         },
         {
-          "id": 114,
+          "id": 111,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +110,7 @@
           "word_count": 151
         },
         {
-          "id": 102,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -138,6 +123,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 148
+        },
+        {
+          "id": 79,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding",
+          "link": "https://arxiv.org/abs/2611.02501",
+          "content": "Speculative decoding accelerates memory-bound LLM decoding with a lightweight drafter, and parallel drafters extend this speedup by drafting a whole block in one forward pass. However, it remains unclear whether their released systems (stock) attain the full speedup that parallel drafting permits. We identify three challenges. First, with one request, each step accepts few tokens but reads every target weight. Second, with batching, per-request verification work roughly halves the speedup over autoregressive (AR) decoding. Third, speculative decoding is deployment-specific, and no universal optimization fits every serving regime, drafter, target model and GPU. To address these challenges, we present SpecPilot, an autonomous agentic loop that discovers algorithms and systems optimizations for each deployment. In each round, a cost model locates the largest gaps between the current system and its ceiling. Parallel agents explore directions and integrate the successful ones. Token forcing checks every output token against stock to detect reward hacking. A structured memory carries validated mechanisms to new rounds and deployments. SpecPilot discovered a general lossless 12-bit weight",
+          "pub_date": "2026-11-01T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         },
         {
           "id": 82,
@@ -170,15 +170,15 @@
           "word_count": 1200
         },
         {
-          "id": 84,
-          "source": "HuggingFace Daily Papers",
+          "id": 2230,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
+          "tier": "T2",
           "priority": 5,
-          "title": "StreamDuo: A Live Commentator and a Research Agent for Unseen Games",
-          "link": "https://arxiv.org/abs/2611.01120",
-          "content": "Streaming video LLMs can now commentate live gameplay, but they are trained and tested on the same games. We study cross-game streaming commentary, in which a model trained on one game commentates games it has never seen, and find that current commentators transfer their timing but not their knowledge of the game world. We propose StreamDuo, which pairs a trainable commentator with a frozen research agent that reads the wiki of the game being played. When the commentator sees something it cannot name, it sends the current frames, and the research agent returns a few wiki entries two seconds later while the stream continues. We train only the commentator, on a single game, in two stages. Information-gain labels teach it to ask only where an answer would help it say what the human caster said, and on-policy self-distillation from a copy of itself that sees the ideal answer teaches it to use noisy answers. Trained on Baldur's Gate 3 and tested on ten unseen games, StreamDuo raises entity recall from 0.082 to 0.116 over Proact-VL trained on the same data, cuts source-game leakage from 9.9% to 1.0%, and achieves the best timing and the highest judged liveliness and overall quality among",
-          "pub_date": "2026-10-30T20:00:00.000Z",
+          "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+          "link": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+          "content": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well! Weight-Space Programming Here's the highlight from their abstract, describing impressive capabilities for GPT-6 Astra and coining the term Weight-Space Programming for when LLMs analyze and modify model weights: Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do . And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps. Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its we",
+          "pub_date": "2026-11-03T16:29:48+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2344,
-      "total_valid": 1677,
+      "total_raw": 2341,
+      "total_valid": 1675,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2646,
+          "id": 2642,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2655,
+          "id": 2651,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2657,
+          "id": 2653,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2546,
+          "id": 2542,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 1128
         },
         {
-          "id": 2551,
+          "id": 2547,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 579
         },
         {
-          "id": 2571,
+          "id": 2567,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 496
         },
         {
-          "id": 2554,
+          "id": 2550,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 438
         },
         {
-          "id": 2380,
+          "id": 2376,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 211
         },
         {
-          "id": 2734,
+          "id": 2730,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 165
         },
         {
-          "id": 2674,
+          "id": 2670,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 462
         },
         {
-          "id": 2671,
+          "id": 2667,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 332
         },
         {
-          "id": 2684,
+          "id": 2680,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 175
         },
         {
-          "id": 2351,
+          "id": 2348,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 239
         },
         {
-          "id": 2345,
+          "id": 2342,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 187
         },
         {
-          "id": 2365,
+          "id": 2361,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 458,
-      "total_valid": 308,
+      "total_raw": 457,
+      "total_valid": 307,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2853,
+          "id": 2849,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 197
         },
         {
-          "id": 2836,
+          "id": 2832,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 184
         },
         {
-          "id": 2839,
+          "id": 2835,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 175
         },
         {
-          "id": 2892,
+          "id": 2888,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2909,
+          "id": 2905,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 2893,
+          "id": 2889,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1155
         },
         {
-          "id": 2921,
+          "id": 2917,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 552
         },
         {
-          "id": 2874,
+          "id": 2870,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2873,
+          "id": 2869,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2660,
+          "id": 2656,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 528
         },
         {
-          "id": 2921,
+          "id": 2917,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 552
         },
         {
-          "id": 2934,
+          "id": 2930,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 463
         },
         {
-          "id": 2936,
+          "id": 2932,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 344
         },
         {
-          "id": 2935,
+          "id": 2931,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 294
         },
         {
-          "id": 2742,
+          "id": 2738,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 283
         },
         {
-          "id": 2381,
+          "id": 2377,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 214
         },
         {
-          "id": 2378,
+          "id": 2374,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 146
         },
         {
-          "id": 2839,
+          "id": 2835,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 175
         },
         {
-          "id": 2680,
+          "id": 2676,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 56,
-      "total_valid": 44,
+      "total_raw": 55,
+      "total_valid": 43,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2946,
+          "id": 2942,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 576
         },
         {
-          "id": 2952,
+          "id": 2948,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 538
         },
         {
-          "id": 2947,
+          "id": 2943,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 432
         },
         {
-          "id": 2950,
+          "id": 2946,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 428
         },
         {
-          "id": 2999,
+          "id": 2994,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 375
         },
         {
-          "id": 2998,
+          "id": 2993,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 348
         },
         {
-          "id": 2997,
+          "id": 2992,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 345
         },
         {
-          "id": 2976,
+          "id": 2971,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 280
         },
         {
-          "id": 2982,
+          "id": 2977,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 234
         },
         {
-          "id": 2963,
+          "id": 2959,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 168
         },
         {
-          "id": 2972,
+          "id": 2967,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 167
         },
         {
-          "id": 2956,
+          "id": 2952,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 149
         },
         {
-          "id": 2957,
+          "id": 2953,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 147
         },
         {
-          "id": 2954,
+          "id": 2950,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 146
         },
         {
-          "id": 2983,
+          "id": 2978,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 132
         },
         {
-          "id": 2984,
+          "id": 2979,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,22 @@
           "word_count": 88
         },
         {
-          "id": 271,
+          "id": 2995,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "The Operational Challenges of Scaling Business Payments Across Global Markets",
+          "link": "https://www.thunes.com/insights/learn/the-operational-challenges-of-scaling-business-payments/",
+          "content": "Expanding business payments into new markets can expose the limitations of existing payment infrastructure. Businesses may already rely on payment service providers or correspondent banking networks, but these arrangements don&#8217;t always offer the coverage, cost efficiency or visibility they need. New payment relationships. Local payment requirements. Additional currencies. Liquidity tied up in prefunded accounts. Limited ... Read more &#187; The post The Operational Challenges of Scaling Business Payments Across Global Markets first appeared on Thunes.com .",
+          "pub_date": "Mon, 02 Nov 2026 12:24:45 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 568
+        },
+        {
+          "id": 268,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 286,
+          "id": 283,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 300,
+          "id": 297,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1037,21 +1052,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 590,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Constraint Dependency Graph Retrieval for Compliance Detection on Long SKILL Documents",
-          "link": "https://arxiv.org/abs/2611.01042",
-          "content": "arXiv:2611.01042v1 Announce Type: new Abstract: Large Language Model (LLM) agents carry out business operations under enterprise documents we refer to as SKILL documents, which take the form of standard operating procedures (SOPs) that state the conditions to verify and the actions to take before an operation proceeds. Long, densely cross-referenced SKILL documents exceed the context budget of small deployed auditors. Similarity-based retrieval then brings in irrelevant rules while omitting mandatory prerequisites, and the two-stage audit policy provides no trainable signal for the retrieval stage. We present SkillCDG, a compliance detection framework that reformulates each SKILL document as a constraint dependency graph, shifting rule retrieval from similarity-based matching to closure-based selection under the deployment's context budget. Each atomic rule is anchored to its source text span as a graph node, and mandatory prerequisite relations form the sole edge type. Policy-generated retrieval keywords activate seed rules, whose dependency closure yields a compact and conditionally complete rule context within that budget. The same graph also supports a joint optimization scheme",
-          "pub_date": "Tue, 03 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 244,
+      "total_raw": 249,
       "total_valid": 66,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3162,
-    "dup": 700,
-    "nocontent": 405,
+    "total_raw": 3163,
+    "dup": 705,
+    "nocontent": 404,
     "noise": 8
   }
 }
