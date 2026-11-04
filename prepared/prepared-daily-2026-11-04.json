@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 66,
+          "id": 63,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 369
         },
         {
-          "id": 65,
+          "id": 62,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -33,21 +33,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 336
-        },
-        {
-          "id": 48,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Agentic cheminformatics with Google Antigravity",
-          "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-          "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
-          "pub_date": "Tue, 03 Nov 2026 17:01:49 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 156
         },
         {
           "id": 19,
@@ -95,7 +80,7 @@
           "word_count": 148
         },
         {
-          "id": 97,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +95,7 @@
           "word_count": 157
         },
         {
-          "id": 114,
+          "id": 111,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +110,7 @@
           "word_count": 151
         },
         {
-          "id": 102,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +125,22 @@
           "word_count": 148
         },
         {
-          "id": 80,
+          "id": 78,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "SeMo3D: Unifying 3D Generation, Editing, and Completion via Selective Modeling",
+          "link": "https://arxiv.org/abs/2611.02568",
+          "content": "3D generation, editing, and completion are typically treated as regenerating the complete 3D asset under task-specific constraints, even when only a local region needs modification. This leads to task isolation, inconsistency in content that should remain unchanged, and dependence on task-specific paired data. We address these issues with a key observation: the three tasks all synthesize a designated region while keeping the rest intact---the full region for generation, the target region for editing, and the missing region for completion. We term this paradigm Selective Modeling and build SeMo3D upon it; it naturally unifies the three tasks, preserves unchanged content by construction, and enables training without paired editing or completion data, since any 3D asset can be partitioned into a selected region and its context. For training, we propose region-selective denoising, which randomly selects regions of varying sizes on standard 3D assets and applies noise and loss only to them, jointly learning all three tasks. For architecture, we propose Omni3DiT, a multi-condition 3D diffusion transformer that distinguishes regions to create from those to retain and fuses image, text, an",
+          "pub_date": "2026-11-01T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 81,
+          "id": 80,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,15 +170,15 @@
           "word_count": 1200
         },
         {
-          "id": 82,
-          "source": "HuggingFace Daily Papers",
+          "id": 2230,
+          "source": "Simon Willison",
           "section": "ai",
-          "tier": "T1",
+          "tier": "T2",
           "priority": 5,
-          "title": "A Tutorial on Generative Models for Music Audio",
-          "link": "https://arxiv.org/abs/2610.38252",
-          "content": "Music audio generation spans instrumental clips, full songs with vocals, edits of existing recordings, and systems that play alongside a musician in real time. This monograph explains the methods behind these systems for readers familiar with neural-network training who are new to music generation. It introduces neural audio codecs and autoencoders, autoregressive and masked token models, diffusion and flow matching, sampling acceleration, and preference optimization in a shared notation. Worked examples connect training objectives and sampling procedures to published systems. The application sections relate the musical requirements of instrumental generation, songs, editing, and live performance to model design. Comparison tables record representations, methods, inputs, tasks, and release information documented in papers and official sources. Symbolic composition, speech, and sound effects are included where they connect to music audio. We explain how to interpret automatic metrics and learned judges, design and report listening tests, and assess evidence about data provenance, memorization, attribution, and output detection. Selected legal decisions and disputes illustrate the im",
-          "pub_date": "2026-10-27T20:00:00.000Z",
+          "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+          "link": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+          "content": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well! Weight-Space Programming Here's the highlight from their abstract, describing impressive capabilities for GPT-6 Astra and coining the term Weight-Space Programming for when LLMs analyze and modify model weights: Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do . And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps. Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its we",
+          "pub_date": "2026-11-03T16:29:48+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2344,
-      "total_valid": 1677,
+      "total_raw": 2341,
+      "total_valid": 1676,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2646,
+          "id": 2643,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2655,
+          "id": 2652,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2657,
+          "id": 2654,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2546,
+          "id": 2543,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 1128
         },
         {
-          "id": 2551,
+          "id": 2548,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 579
         },
         {
-          "id": 2571,
+          "id": 2568,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 496
         },
         {
-          "id": 2554,
+          "id": 2551,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 438
         },
         {
-          "id": 2380,
+          "id": 2377,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 211
         },
         {
-          "id": 2734,
+          "id": 2731,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 165
         },
         {
-          "id": 2674,
+          "id": 2671,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 462
         },
         {
-          "id": 2671,
+          "id": 2668,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 332
         },
         {
-          "id": 2684,
+          "id": 2681,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 175
         },
         {
-          "id": 2351,
+          "id": 2348,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 239
         },
         {
-          "id": 2345,
+          "id": 2342,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 187
         },
         {
-          "id": 2365,
+          "id": 2362,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 2853,
+          "id": 2850,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 197
         },
         {
-          "id": 2836,
+          "id": 2833,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 184
         },
         {
-          "id": 2839,
+          "id": 2836,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 175
         },
         {
-          "id": 2892,
+          "id": 2889,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2909,
+          "id": 2906,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 2893,
+          "id": 2890,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1155
         },
         {
-          "id": 2921,
+          "id": 2918,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 552
         },
         {
-          "id": 2874,
+          "id": 2871,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2873,
+          "id": 2870,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2660,
+          "id": 2657,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 528
         },
         {
-          "id": 2921,
+          "id": 2918,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 552
         },
         {
-          "id": 2934,
+          "id": 2931,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 463
         },
         {
-          "id": 2936,
+          "id": 2933,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 344
         },
         {
-          "id": 2935,
+          "id": 2932,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 294
         },
         {
-          "id": 2742,
+          "id": 2739,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 283
         },
         {
-          "id": 2381,
+          "id": 2378,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 214
         },
         {
-          "id": 2378,
+          "id": 2375,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 146
         },
         {
-          "id": 2839,
+          "id": 2836,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 175
         },
         {
-          "id": 2680,
+          "id": 2677,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2946,
+          "id": 2943,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 576
         },
         {
-          "id": 2952,
+          "id": 2949,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 538
         },
         {
-          "id": 2947,
+          "id": 2944,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 432
         },
         {
-          "id": 2950,
+          "id": 2947,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 428
         },
         {
-          "id": 3000,
+          "id": 2997,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 375
         },
         {
-          "id": 2999,
+          "id": 2996,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 348
         },
         {
-          "id": 2998,
+          "id": 2995,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 345
         },
         {
-          "id": 2976,
+          "id": 2973,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 280
         },
         {
-          "id": 2982,
+          "id": 2979,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 234
         },
         {
-          "id": 2963,
+          "id": 2960,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 168
         },
         {
-          "id": 2972,
+          "id": 2969,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 167
         },
         {
-          "id": 2956,
+          "id": 2953,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 149
         },
         {
-          "id": 2957,
+          "id": 2954,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 147
         },
         {
-          "id": 2954,
+          "id": 2951,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +964,7 @@
           "word_count": 146
         },
         {
-          "id": 2983,
+          "id": 2980,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 132
         },
         {
-          "id": 2985,
+          "id": 2982,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 88
         },
         {
-          "id": 3001,
+          "id": 2998,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1009,7 @@
           "word_count": 568
         },
         {
-          "id": 271,
+          "id": 268,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 286,
+          "id": 283,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 300,
+          "id": 297,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1065,9 +1065,9 @@
     }
   },
   "meta": {
-    "total_raw": 3169,
-    "dup": 706,
-    "nocontent": 405,
+    "total_raw": 3166,
+    "dup": 705,
+    "nocontent": 404,
     "noise": 8
   }
 }
