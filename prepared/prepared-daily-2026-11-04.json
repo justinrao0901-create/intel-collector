@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 63,
+          "id": 66,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 369
         },
         {
-          "id": 62,
+          "id": 65,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -33,6 +33,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 336
+        },
+        {
+          "id": 48,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Agentic cheminformatics with Google Antigravity",
+          "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+          "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+          "pub_date": "Tue, 03 Nov 2026 17:01:49 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 156
         },
         {
           "id": 19,
@@ -80,14 +95,14 @@
           "word_count": 148
         },
         {
-          "id": 94,
+          "id": 97,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
           "priority": 4,
           "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
           "link": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
-          "content": "Cybersecurity focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.",
+          "content": "Cybersecurity-focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.",
           "pub_date": "Tue, 03 Nov 2026 21:43:08 +0000",
           "is_duplicate": false,
           "has_content": true,
@@ -95,7 +110,7 @@
           "word_count": 157
         },
         {
-          "id": 111,
+          "id": 114,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +125,7 @@
           "word_count": 151
         },
         {
-          "id": 99,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 148
         },
         {
-          "id": 77,
+          "id": 80,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 78,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 79,
+          "id": 82,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 2232,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-          "link": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-          "content": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well! Weight-Space Programming Here's the highlight from their abstract, describing impressive capabilities for GPT-6 Astra and coining the term Weight-Space Programming for when LLMs analyze and modify model weights: Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do . And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps. Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its we",
-          "pub_date": "2026-11-03T16:29:48+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2343,
-      "total_valid": 1678,
+      "total_raw": 2344,
+      "total_valid": 1677,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2694,
+          "id": 2648,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2703,
+          "id": 2657,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2705,
+          "id": 2659,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2589,
+          "id": 2548,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 1128
         },
         {
-          "id": 2594,
+          "id": 2553,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 579
         },
         {
-          "id": 2614,
+          "id": 2573,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 496
         },
         {
-          "id": 2597,
+          "id": 2556,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 211
         },
         {
-          "id": 2782,
+          "id": 2736,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 165
         },
         {
-          "id": 2722,
+          "id": 2676,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 462
         },
         {
-          "id": 2719,
+          "id": 2673,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 332
         },
         {
-          "id": 2732,
+          "id": 2686,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 175
         },
         {
-          "id": 2350,
+          "id": 2351,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 239
         },
         {
-          "id": 2344,
+          "id": 2345,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 509,
-      "total_valid": 344,
+      "total_raw": 460,
+      "total_valid": 310,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2907,
+          "id": 2855,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 197
         },
         {
-          "id": 2890,
+          "id": 2838,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 184
         },
         {
-          "id": 2893,
+          "id": 2841,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 175
         },
         {
-          "id": 2947,
+          "id": 2894,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 2964,
+          "id": 2911,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 2948,
+          "id": 2895,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1155
         },
         {
-          "id": 2976,
+          "id": 2923,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 552
         },
         {
-          "id": 2928,
+          "id": 2876,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2927,
+          "id": 2875,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -574,14 +574,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 131,
+      "total_raw": 124,
       "total_valid": 23,
       "total_candidates": 9
     },
     "cross": {
       "candidates": [
         {
-          "id": 2708,
+          "id": 2662,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 528
         },
         {
-          "id": 2976,
+          "id": 2923,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 552
         },
         {
-          "id": 2991,
+          "id": 2936,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 463
         },
         {
-          "id": 2993,
+          "id": 2938,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 344
         },
         {
-          "id": 2992,
+          "id": 2937,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 294
         },
         {
-          "id": 2790,
+          "id": 2744,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 146
         },
         {
-          "id": 2893,
+          "id": 2841,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 175
         },
         {
-          "id": 2728,
+          "id": 2682,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -736,8 +736,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 57,
-      "total_valid": 45,
+      "total_raw": 56,
+      "total_valid": 44,
       "total_candidates": 10
     },
     "china": {
@@ -754,7 +754,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 3009,
+          "id": 2954,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 538
         },
         {
-          "id": 3003,
+          "id": 2951,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,37 +784,22 @@
           "word_count": 513
         },
         {
-          "id": 3007,
+          "id": 2944,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Truist Debuts Enhancements For Merchant Services Solutions",
-          "link": "https://www.pymnts.com/news/b2b-payments/2026/truist-debuts-enhancements-for-merchant-services-solutions/",
-          "content": "Truist has announced several new enhancements to its merchant services offerings. These enhancements cover how “businesses select solutions, onboard, access insights, manage payments and serve customers across multiple channels,” the bank said in a news release Tuesday (Nov. 3). “The investment reflects clients’ increasing need for merchant services to bring together payments, software, data and [&#8230;] The post Truist Debuts Enhancements For Merchant Services Solutions appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 03 Nov 2026 20:40:36 +0000",
+          "title": "Former Visa CEO Joseph Saunders, Who Led Company’s Record IPO, Dies",
+          "link": "https://www.pymnts.com/credit-cards/2026/former-visa-ceo-joseph-saunders-who-led-companys-record-ipo-dies/",
+          "content": "Joseph W. Saunders, the former chairman and CEO who took Visa public in what was then the largest initial public offering in U.S. history, died Nov. 2, according to an official obituary. He was 81. Saunders became chairman and CEO of Visa Inc. in May 2007. He oversaw the company’s shift from a private association [&#8230;] The post Former Visa CEO Joseph Saunders, Who Led Company’s Record IPO, Dies appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 03 Nov 2026 23:55:14 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 507
+          "word_count": 432
         },
         {
-          "id": 3008,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Revolve Reports Breach of Fashion Retail Platform",
-          "link": "https://www.pymnts.com/cybersecurity/2026/revolve-reports-breach-fashion-retail-platform/",
-          "content": "Online fashion retailer Revolve is the latest company to suffer a data breach, Security Week reported Monday (Nov. 2). Revolve notified at least 200,000 people that their personal and payment card information was stolen in the September breach, the report said. Immediately after learning of the cyberattack, which involved unauthorized access to systems including the [&#8230;] The post Revolve Reports Breach of Fashion Retail Platform appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 03 Nov 2026 20:25:45 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 468
-        },
-        {
-          "id": 2999,
+          "id": 2947,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +814,7 @@
           "word_count": 428
         },
         {
-          "id": 3060,
+          "id": 3003,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 375
         },
         {
-          "id": 3059,
+          "id": 3002,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 348
         },
         {
-          "id": 3058,
+          "id": 3001,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 345
         },
         {
-          "id": 3034,
+          "id": 2978,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 280
         },
         {
-          "id": 3040,
+          "id": 2984,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 234
         },
         {
-          "id": 3020,
+          "id": 2964,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 168
         },
         {
-          "id": 3030,
+          "id": 2974,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 167
         },
         {
-          "id": 3013,
+          "id": 2958,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 149
         },
         {
-          "id": 3014,
+          "id": 2959,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 147
         },
         {
-          "id": 3011,
+          "id": 2956,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 146
         },
         {
-          "id": 3041,
+          "id": 2985,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,7 @@
           "word_count": 132
         },
         {
-          "id": 3045,
+          "id": 2988,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +994,7 @@
           "word_count": 88
         },
         {
-          "id": 3061,
+          "id": 3004,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1009,7 @@
           "word_count": 568
         },
         {
-          "id": 270,
+          "id": 271,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 285,
+          "id": 286,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1052,6 +1037,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 300,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "HistGramBench: Measuring Structural Recovery When Multimodal Models Redraw Historical Mathematical Diagrams as TikZ",
+          "link": "https://arxiv.org/abs/2611.00081",
+          "content": "arXiv:2611.00081v1 Announce Type: cross Abstract: Digital libraries preserve mathematical books printed from the sixteenth to the twentieth century, but the lettered diagrams in them, the figures on which Euclidean proofs depend, remain scanned images whose content cannot be searched. Redrawing such a diagram as a short drawing program would record which points lie on which lines and circles. But a printed plate offers no source code against which the redrawing could be checked. We introduce HistGramBench, a benchmark of 2,507 diagrams from 95 works printed between 1551 and 1933 in eight languages. For each diagram, two AI models from different providers agree on the facts a reader takes from the figure, such as which lines are parallel or where two lines meet, and every redrawing is checked against those facts on the model's own drawing. We evaluate six affordable AI models. The best recovers about three fifths of these facts, and most of what the models miss comes from programs that never produce a drawing. Parallels and tangencies are the hardest relations to reproduce. HistGramBench gives historians and librarians a way to measure when such tools can make old mathematical diagr",
+          "pub_date": "Tue, 03 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 254,
-      "total_valid": 69,
+      "total_raw": 252,
+      "total_valid": 68,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3229,
-    "dup": 724,
-    "nocontent": 409,
+    "total_raw": 3172,
+    "dup": 706,
+    "nocontent": 405,
     "noise": 8
   }
 }
