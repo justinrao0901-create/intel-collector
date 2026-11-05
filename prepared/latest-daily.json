@@ -110,30 +110,15 @@
           "word_count": 180
         },
         {
-          "id": 76,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs",
-          "link": "https://arxiv.org/abs/2611.04391",
-          "content": "Pretrained Vision-Language-Action (VLA) policies provide a strong starting point for deployment, but adapting them to a target robot and environment still requires costly embodiment-specific demonstrations. Human demonstrations are far easier to collect, yet directly leveraging them is challenging due to the substantial human-robot embodiment gap, particularly when the underlying VLA has been pretrained primarily on robot data. We introduce H2RB (Human-To-Robot Bridge), a human-robot co-training framework for adapting pretrained VLA policies from unpaired human and robot demonstrations. H2RB bridges the embodiment gap at both interfaces: geometry-anchored alignment grounds human and robot observations in a compatible representation, while a decoupled-decoder tokenizer shares action latents without forcing both domains through a single action mapping. This design allows human demonstrations to provide useful behavioral supervision while retaining the rich visual, semantic, and control priors of the pretrained VLA. Across real-world tasks, H2RB substantially improves object transfer performance from 8.0 to 51.8 and enables skill transfer to score 62.7, in settings where co-train base",
-          "pub_date": "2026-11-02T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
-          "link": "https://arxiv.org/abs/2610.37257",
-          "content": "Recent advances in interactive world models have made it possible to generate controllable, dynamic environments from action inputs. Yet current models struggle to maintain coherence beyond roughly one minute of rollout, a limitation rooted not in model capacity but in the scarcity of long-horizon training data. Existing gameplay video datasets typically consist of clips under ten seconds, with captions that describe whole clips in coarse and undifferentiated text, which is insufficient for controllable long-horizon generation. We address this with GameVerse, a minute-scale gameplay video dataset purpose-built for long-horizon interactive world modeling. GameVerse contains 69.7K clips spanning 1,655 hours and 349.6 million frames across diverse first- and third-person gameplay, including 1,358 hours of continuous two-minute sequences, an order of magnitude longer than prior datasets. Clips pass through a unified pipeline of scene-consistent segmentation, quality filtering, camera pose estimation, and event-based caption annotation. Each clip is paired with a temporally stable camera trajectory that remains coherent across minutes, together with captions that separate static scene c",
-          "pub_date": "2026-10-30T20:00:00.000Z",
+          "title": "SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding",
+          "link": "https://arxiv.org/abs/2611.02846",
+          "content": "Speculative decoding (SD) accelerates large language model inference by reducing the sequential cost of token-by-token generation. Advanced SD methods reduce proposal cost with parallel drafters that predict entire blocks in one forward pass, but overall speedup still depends on acceptance length. On-policy distillation (OPD) can push well-trained drafters beyond acceptance-length plateaus, yet conventional pipelines collect supervision through sequential draft-and-verify rollouts. Our key insight is that on-policy supervision need not inherit these dependencies: a draft block can be supervised using only its reference prefix and draft-sampled history. We propose SpecOPD, a branch-parallel OPD framework that parallelizes draft sampling and target supervision across independent branches drawn from the evolving drafter policy at reference anchors. We pack these branches into proposal trees to share target-prefix computation, using tree masks for full attention, branch-consistent indexer groups for sparse attention, and indexed state replay for linear attention to preserve each branch's history. We train the drafter with an E2E-TV surrogate that directly targets acceptance length. Our",
+          "pub_date": "2026-11-01T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,9 +130,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs",
-          "link": "https://arxiv.org/abs/2611.04166",
-          "content": "Reasoning vision-language-action (VLA) models pair physical control with natural-language rationales that supervisors can read to monitor embodied safety. Prior attacks on VLA reasoning corrupt the rationale itself and leave visible evidence in the text. We show that visual perturbations can instead alter the physical action while keeping the generated rationale word-for-word identical. At the shared text/action interface of Alpamayo for driving and InstructVLA for manipulation, our text-neutral action-subspace (TNAS) diagnostic shows that the locally most action-sensitive direction is nearly orthogonal to the active text-loss gradients, with 1.87% and 5.28% norm overlap. At equal hidden-state perturbation norms across both models, interventions along this text-neutral residual shift actions 4.64x to 47.8x more than text-gradient perturbations, whereas text-gradient perturbations induce 21.2x to 277x more text drift. Steering visual perturbations along this direction reaches the same decoupling from the image. Across 154 obstacle-annotated driving scenes in Alpamayo, TNAS-guided attacks induce a new collision under a word-for-word identical rationale in 52.6% of scenes under full-i",
+          "title": "VeriSpoof: Beyond Real or Fake with One Audio LLM",
+          "link": "https://arxiv.org/abs/2611.04634",
+          "content": "A speech deepfake detector estimates whether a recording is synthetic, but a forensic analyst also asks which system produced it, whether recordings share a source, and what evidence supports each conclusion. We present VeriSpoof, an audio language model that unifies five tasks with shared weights: deepfake detection, generator attribution (generator, acoustic model and vocoder), recording-condition analysis, synthesized-span localisation, and source verification. Each decision is supported by grounded rationales whose statements can be independently verified. Answers are scored by sentence likelihood, allowing detection and source verification to be thresholded without separate heads. Rationale statements can be checked against waveform measurements, span labels, or generator metadata. Counterfactual examples train decisions to follow the stated evidence. Across the 14 Speech-DF-Arena test sets, VeriSpoof-Plus achieves 2.14% pooled EER, ranking third of 28 systems and first among open-weight systems. VeriSpoof-Base, trained only on official training splits of eight corpora, achieves 4.43% EER, less than half that of the next open-weight detector. With the same weights, VeriSpoof-P",
+          "pub_date": "2026-11-02T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 79,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs",
+          "link": "https://arxiv.org/abs/2611.04391",
+          "content": "Pretrained Vision-Language-Action (VLA) policies provide a strong starting point for deployment, but adapting them to a target robot and environment still requires costly embodiment-specific demonstrations. Human demonstrations are far easier to collect, yet directly leveraging them is challenging due to the substantial human-robot embodiment gap, particularly when the underlying VLA has been pretrained primarily on robot data. We introduce H2RB (Human-To-Robot Bridge), a human-robot co-training framework for adapting pretrained VLA policies from unpaired human and robot demonstrations. H2RB bridges the embodiment gap at both interfaces: geometry-anchored alignment grounds human and robot observations in a compatible representation, while a decoupled-decoder tokenizer shares action latents without forcing both domains through a single action mapping. This design allows human demonstrations to provide useful behavioral supervision while retaining the rich visual, semantic, and control priors of the pretrained VLA. Across real-world tasks, H2RB substantially improves object transfer performance from 8.0 to 51.8 and enables skill transfer to score 62.7, in settings where co-train base",
           "pub_date": "2026-11-02T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 1293,
-      "total_valid": 875,
+      "total_valid": 876,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1640,
+          "id": 1637,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1190
         },
         {
-          "id": 1645,
+          "id": 1642,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1162
         },
         {
-          "id": 1646,
+          "id": 1643,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1101
         },
         {
-          "id": 1555,
+          "id": 1552,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 418
         },
         {
-          "id": 1378,
+          "id": 1375,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 406
         },
         {
-          "id": 1459,
+          "id": 1456,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 387
         },
         {
-          "id": 1551,
+          "id": 1548,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 248
         },
         {
-          "id": 1544,
+          "id": 1541,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 241
         },
         {
-          "id": 1363,
+          "id": 1360,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 204
         },
         {
-          "id": 1708,
+          "id": 1705,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 200
         },
         {
-          "id": 1358,
+          "id": 1355,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 162
         },
         {
-          "id": 1520,
+          "id": 1517,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 123
         },
         {
-          "id": 1714,
+          "id": 1711,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 69
         },
         {
-          "id": 1655,
+          "id": 1652,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 407
         },
         {
-          "id": 1654,
+          "id": 1651,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 496,
-      "total_valid": 345,
+      "total_raw": 493,
+      "total_valid": 343,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1830,
+          "id": 1827,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 216
         },
         {
-          "id": 1845,
+          "id": 1842,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 194
         },
         {
-          "id": 1844,
+          "id": 1841,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 193
         },
         {
-          "id": 1881,
+          "id": 1878,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1882,
+          "id": 1879,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1883,
+          "id": 1880,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1872,
+          "id": 1869,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 388
         },
         {
-          "id": 1873,
+          "id": 1870,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 323
         },
         {
-          "id": 1874,
+          "id": 1871,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 318
         },
         {
-          "id": 1863,
+          "id": 1860,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1140
         },
         {
-          "id": 1864,
+          "id": 1861,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1866,
+          "id": 1863,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1641,
+          "id": 1638,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 865
         },
         {
-          "id": 1884,
+          "id": 1881,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1880,
+          "id": 1877,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1199
         },
         {
-          "id": 1929,
+          "id": 1926,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 572
         },
         {
-          "id": 1872,
+          "id": 1869,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 388
         },
         {
-          "id": 1390,
+          "id": 1387,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 348
         },
         {
-          "id": 1374,
+          "id": 1371,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 339
         },
         {
-          "id": 1382,
+          "id": 1379,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 330
         },
         {
-          "id": 1873,
+          "id": 1870,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 323
         },
         {
-          "id": 1928,
+          "id": 1925,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 59,
-      "total_valid": 46,
+      "total_raw": 58,
+      "total_valid": 45,
       "total_candidates": 10
     },
     "china": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1936,
+          "id": 1934,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 469
         },
         {
-          "id": 1970,
+          "id": 1966,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 361
         },
         {
-          "id": 1969,
+          "id": 1965,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 334
         },
         {
-          "id": 1959,
+          "id": 1955,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 306
         },
         {
-          "id": 1960,
+          "id": 1956,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 273
         },
         {
-          "id": 1971,
+          "id": 1967,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 215
         },
         {
-          "id": 1976,
+          "id": 1972,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 167
         },
         {
-          "id": 1949,
+          "id": 1946,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 136
         },
         {
-          "id": 1947,
+          "id": 1944,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 1939,
+          "id": 1937,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 538
         },
         {
-          "id": 1940,
+          "id": 1938,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 505
         },
         {
-          "id": 1944,
+          "id": 1942,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1104,14 +1104,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 230,
+      "total_raw": 234,
       "total_valid": 48,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2156,
-    "dup": 461,
+    "total_raw": 2157,
+    "dup": 463,
     "nocontent": 403,
     "noise": 8
   }
