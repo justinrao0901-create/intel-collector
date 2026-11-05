@@ -5,6 +5,21 @@
     "ai": {
       "candidates": [
         {
+          "id": 48,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Agentic cheminformatics with Google Antigravity",
+          "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+          "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+          "pub_date": "Tue, 03 Nov 2026 17:01:49 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 156
+        },
+        {
           "id": 3,
           "source": "OpenAI News",
           "section": "ai",
@@ -50,7 +65,7 @@
           "word_count": 139
         },
         {
-          "id": 93,
+          "id": 96,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 373
         },
         {
-          "id": 95,
+          "id": 98,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 373
         },
         {
-          "id": 91,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +110,22 @@
           "word_count": 180
         },
         {
-          "id": 73,
+          "id": 76,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "FinForesight: A Diagnostic Backtesting Benchmark for Deep Research Systems in Financial Forecasting",
+          "link": "https://arxiv.org/abs/2611.01621",
+          "content": "Anticipating financial outcomes requires synthesizing evolving evidence and reasoning under uncertainty, making deep research systems promising tools for forecasting. Yet evaluating forecasting ability is challenging because historical backtests may reward memorized outcomes or information retrieved after the forecast date. Live forecasting avoids direct access to realized outcomes, but feedback arrives only after events resolve. To obtain timely feedback and assess historical scores, we introduce FinForesight, a diagnostic backtesting benchmark for financial deep research systems. Across the Chinese, U.S., and Hong Kong markets, the benchmark evaluates four forecasting tasks: valuation, return ranking, event direction, and future financial fundamentals. Two capability diagnostic tasks assess counterfactual reasoning and financial calculation, scored separately from forecasting performance. Our harness-compatible framework restricts retrieved evidence to information available at the forecast date. We compare pretraining-era, resolved post-cutoff, and live evaluations to test whether controlled backtests approximate future performance. Pretraining-era scores exceed post-cutoff score",
+          "pub_date": "2026-10-31T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 74,
+          "id": 78,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 78,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
-          "link": "https://arxiv.org/abs/2611.05345",
-          "content": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points",
-          "pub_date": "2026-11-02T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1180,
+          "id": 1183,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 959
         },
         {
-          "id": 1181,
+          "id": 1184,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 519
-        },
-        {
-          "id": 1185,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "October sponsors-only newsletter",
-          "link": "https://simonwillison.net/2026/Nov/3/october-newsletter/",
-          "content": "I sent out the October edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: The October inflection point for vibe game development The vulnerability apocalypse gets hot LLM releases API credits for $100+/month subscriptions What I'm using right now My software releases My September newsletter can now be seen here , as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy! Tags: newsletter",
-          "pub_date": "2026-11-03T05:28:59+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 503
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1290,
-      "total_valid": 871,
+      "total_raw": 1293,
+      "total_valid": 873,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1638,
+          "id": 1640,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1190
         },
         {
-          "id": 1643,
+          "id": 1645,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1162
         },
         {
-          "id": 1644,
+          "id": 1646,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1101
         },
         {
-          "id": 1553,
+          "id": 1555,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 418
         },
         {
-          "id": 1376,
+          "id": 1378,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 406
         },
         {
-          "id": 1457,
+          "id": 1459,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 387
         },
         {
-          "id": 1549,
+          "id": 1551,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 248
         },
         {
-          "id": 1542,
+          "id": 1544,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 241
         },
         {
-          "id": 1361,
+          "id": 1363,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 204
         },
         {
-          "id": 1706,
+          "id": 1708,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 200
         },
         {
-          "id": 1356,
+          "id": 1358,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 162
         },
         {
-          "id": 1518,
+          "id": 1520,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 123
         },
         {
-          "id": 1712,
+          "id": 1714,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 69
         },
         {
-          "id": 1653,
+          "id": 1655,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 407
         },
         {
-          "id": 1652,
+          "id": 1654,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 497,
-      "total_valid": 346,
+      "total_raw": 496,
+      "total_valid": 345,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1828,
+          "id": 1830,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 216
         },
         {
-          "id": 1843,
+          "id": 1845,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 194
         },
         {
-          "id": 1842,
+          "id": 1844,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 193
         },
         {
-          "id": 1879,
+          "id": 1881,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1880,
+          "id": 1882,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1881,
+          "id": 1883,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1870,
+          "id": 1872,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 388
         },
         {
-          "id": 1871,
+          "id": 1873,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 323
         },
         {
-          "id": 1872,
+          "id": 1874,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 318
         },
         {
-          "id": 1861,
+          "id": 1863,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1140
         },
         {
-          "id": 1862,
+          "id": 1864,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1864,
+          "id": 1866,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1639,
+          "id": 1641,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 865
         },
         {
-          "id": 1882,
+          "id": 1884,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1878,
+          "id": 1880,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1199
         },
         {
-          "id": 1927,
+          "id": 1929,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 572
         },
         {
-          "id": 1870,
+          "id": 1872,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 388
         },
         {
-          "id": 1388,
+          "id": 1390,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 348
         },
         {
-          "id": 1372,
+          "id": 1374,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 339
         },
         {
-          "id": 1380,
+          "id": 1382,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 330
         },
         {
-          "id": 1871,
+          "id": 1873,
           "source": "Nature Chemical Biology",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 323
         },
         {
-          "id": 1926,
+          "id": 1928,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -799,22 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1942,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Tron, Tether and TRM Pivot to New Crypto Crime-Fighting Alliances After T3 Shutdown",
-          "link": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/tron-tether-and-trm-pivot-to-new-crypto-crime-fighting-alliances-after-t3-shutdown/",
-          "content": "An initiative that brought together four crypto industry companies to fight financial crime was quietly dissolved in August, Bloomberg reported Wednesday (Nov. 4), citing unnamed sources. The T3 Financial Crime Unit (T3 FCU) was set up by Tron, Tether and TRM Labs in September 2024 and added Binance a year later, according to the report. The initiative was dedicated to creating a “safer and [&#8230;] The post Tron, Tether and TRM Pivot to New Crypto Crime-Fighting Alliances After T3 Shutdown appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 04 Nov 2026 20:23:11 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 527
-        },
-        {
-          "id": 1939,
+          "id": 1944,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +814,7 @@
           "word_count": 457
         },
         {
-          "id": 1968,
+          "id": 1970,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 361
         },
         {
-          "id": 1967,
+          "id": 1969,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 334
         },
         {
-          "id": 1956,
+          "id": 1959,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 306
         },
         {
-          "id": 1957,
+          "id": 1960,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 273
         },
         {
-          "id": 1969,
+          "id": 1971,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 215
         },
         {
-          "id": 1974,
+          "id": 1976,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 167
         },
         {
-          "id": 1946,
+          "id": 1948,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 136
         },
         {
-          "id": 1944,
+          "id": 1946,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 112
         },
         {
-          "id": 150,
+          "id": 153,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 192,
+          "id": 195,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 253,
+          "id": 256,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 369,
+          "id": 372,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 389,
+          "id": 392,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 430,
+          "id": 433,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 1033,
+          "id": 1036,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 1069,
+          "id": 1072,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1074,6 +1059,36 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
+          "title": "Tencent Targets Financial Analysis With Hy4 AI Model",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/tencent-targets-financial-analysis-with-hy4-ai-model/",
+          "content": "Tencent has released its latest generation large language model, Hy4, saying in a Wednesday (Nov. 4) press release that it “now ranks among the world’s leading open-source AI models.” Hy4 introduces visual understanding capabilities for the first time; introduces computer-use capabilities for the first time; provides major improvements in instruction following, long-context comprehension and long-horizon agentic tasks; and delivers [&#8230;] The post Tencent Targets Financial Analysis With Hy4 AI Model appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 05 Nov 2026 01:00:56 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 538
+        },
+        {
+          "id": 1937,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Warren Poised to Lead Senate Banking as FinTechs Weigh Launch Risks",
+          "link": "https://www.pymnts.com/legal/2026/warren-poised-to-lead-senate-banking-as-fintechs-weigh-launch-risks/",
+          "content": "Sen. Elizabeth Warren, D-Mass., is expected to chair Senate Banking Committee after Democrats won both chambers in the midterms. In recent months, Warren has urged regulators to withdraw three bank capital proposals, opposed a House-passed bill that would ease some merger and supervisory requirements, and pressed the Consumer Financial Protection Bureau (CFPB) over dropped enforcement [&#8230;] The post Warren Poised to Lead Senate Banking as FinTechs Weigh Launch Risks appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 05 Nov 2026 00:46:33 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 505
+        },
+        {
+          "id": 1941,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
           "title": "Adobe Integrates Marketing AI Agent in ChatGPT and Claude",
           "link": "https://www.pymnts.com/news/artificial-intelligence/2026/adobe-integrates-marketing-ai-agent-in-chatgpt-and-claude/",
           "content": "Adobe’s agentic teammate for customer experience orchestration, CX Enterprise Coworker, is now available within several leading artificial intelligence platforms, the company said in a Thursday (Nov. 4) press release. CX Enterprise Coworker is now available within ChatGPT, Claude, Databricks Genie, Gemini for business and Microsoft Copilot. Adobe expects the agentic teammate to be added to [&#8230;] The post Adobe Integrates Marketing AI Agent in ChatGPT and Claude appeared first on PYMNTS.com .",
@@ -1082,21 +1097,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 500
-        },
-        {
-          "id": 1934,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Meta Acquires AI Coding Startup Conductor",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/meta-acquires-ai-coding-startup-conductor/",
-          "content": "Meta has acquired artificial intelligence (AI) coding startup Conductor, Axios reported Wednesday (Nov. 4). Conductor enables software engineers to manage multiple coding agents at the same time, and Meta’s acquisition of the company will help its own models and ecosystem compete for coders, according to the report. Conductor Founder and CEO Charlie Holtz said in a Wednesday post on X that Conductor is [&#8230;] The post Meta Acquires AI Coding Startup Conductor appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 04 Nov 2026 23:57:54 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 497
         }
       ],
       "quota": {
@@ -1105,12 +1105,12 @@
         "max": 12
       },
       "total_raw": 230,
-      "total_valid": 47,
+      "total_valid": 48,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2154,
+    "total_raw": 2156,
     "dup": 463,
     "nocontent": 403,
     "noise": 8
