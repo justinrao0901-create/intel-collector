@@ -65,7 +65,7 @@
           "word_count": 139
         },
         {
-          "id": 96,
+          "id": 98,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 373
         },
         {
-          "id": 98,
+          "id": 100,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 373
         },
         {
-          "id": 94,
+          "id": 96,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -115,10 +115,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "FinForesight: A Diagnostic Backtesting Benchmark for Deep Research Systems in Financial Forecasting",
-          "link": "https://arxiv.org/abs/2611.01621",
-          "content": "Anticipating financial outcomes requires synthesizing evolving evidence and reasoning under uncertainty, making deep research systems promising tools for forecasting. Yet evaluating forecasting ability is challenging because historical backtests may reward memorized outcomes or information retrieved after the forecast date. Live forecasting avoids direct access to realized outcomes, but feedback arrives only after events resolve. To obtain timely feedback and assess historical scores, we introduce FinForesight, a diagnostic backtesting benchmark for financial deep research systems. Across the Chinese, U.S., and Hong Kong markets, the benchmark evaluates four forecasting tasks: valuation, return ranking, event direction, and future financial fundamentals. Two capability diagnostic tasks assess counterfactual reasoning and financial calculation, scored separately from forecasting performance. Our harness-compatible framework restricts retrieved evidence to information available at the forecast date. We compare pretraining-era, resolved post-cutoff, and live evaluations to test whether controlled backtests approximate future performance. Pretraining-era scores exceed post-cutoff score",
-          "pub_date": "2026-10-31T20:00:00.000Z",
+          "title": "Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs",
+          "link": "https://arxiv.org/abs/2611.04391",
+          "content": "Pretrained Vision-Language-Action (VLA) policies provide a strong starting point for deployment, but adapting them to a target robot and environment still requires costly embodiment-specific demonstrations. Human demonstrations are far easier to collect, yet directly leveraging them is challenging due to the substantial human-robot embodiment gap, particularly when the underlying VLA has been pretrained primarily on robot data. We introduce H2RB (Human-To-Robot Bridge), a human-robot co-training framework for adapting pretrained VLA policies from unpaired human and robot demonstrations. H2RB bridges the embodiment gap at both interfaces: geometry-anchored alignment grounds human and robot observations in a compatible representation, while a decoupled-decoder tokenizer shares action latents without forcing both domains through a single action mapping. This design allows human demonstrations to provide useful behavioral supervision while retaining the rich visual, semantic, and control priors of the pretrained VLA. Across real-world tasks, H2RB substantially improves object transfer performance from 8.0 to 51.8 and enables skill transfer to score 62.7, in settings where co-train base",
+          "pub_date": "2026-11-02T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -130,10 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing",
-          "link": "https://arxiv.org/abs/2610.35497",
-          "content": "Reinforcement learning (RL) has shown promise for training multimodal agents to reason and use tools. However, it remains unclear when fine-grained credit assignment improves learning and when it fails to improve task performance. Video editing provides a useful testbed for this question, combining multimodal perception, long-horizon planning, and tool use with delayed outcome feedback. We construct four movie-trailer editing task types---Content Selection, Narrative Sequencing, Rough Cut, and Fine Cut---that reflect real-world editing workflows and span different levels of task complexity and interaction horizon. Decaying process rewards provides the largest benefit on Fine Cut, with a 45.4% relative gain over outcome-only GRPO on tasks averaging more than 60 turns under outcome-only GRPO. On the three shorter-horizon task types averaging 30--40 turns under the same baseline, outcome-only GRPO remains competitive, with decaying process rewards yielding at most a 10.4% relative gain. Process rewards from an LLM judge initially improve tool use and encourage visual inspection. As training progresses, however, GRPO+PRM with a fixed process-reward weight increasingly exhibits excessiv",
-          "pub_date": "2026-10-25T20:00:00.000Z",
+          "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
+          "link": "https://arxiv.org/abs/2610.37257",
+          "content": "Recent advances in interactive world models have made it possible to generate controllable, dynamic environments from action inputs. Yet current models struggle to maintain coherence beyond roughly one minute of rollout, a limitation rooted not in model capacity but in the scarcity of long-horizon training data. Existing gameplay video datasets typically consist of clips under ten seconds, with captions that describe whole clips in coarse and undifferentiated text, which is insufficient for controllable long-horizon generation. We address this with GameVerse, a minute-scale gameplay video dataset purpose-built for long-horizon interactive world modeling. GameVerse contains 69.7K clips spanning 1,655 hours and 349.6 million frames across diverse first- and third-person gameplay, including 1,358 hours of continuous two-minute sequences, an order of magnitude longer than prior datasets. Clips pass through a unified pipeline of scene-consistent segmentation, quality filtering, camera pose estimation, and event-based caption annotation. Each clip is paired with a temporally stable camera trajectory that remains coherent across minutes, together with captions that separate static scene c",
+          "pub_date": "2026-10-30T20:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Cross-Prompt Reuse of Entity-Replacement Responses",
-          "link": "https://arxiv.org/abs/2611.00352",
-          "content": "With model weights fixed, we measure how much of an entity-replacement response transfers between English factual questions, beyond whether answers change. We add the hidden-state change from two source questions to a target question about the same entity, comparing the predicted log-probability shift between two relations' published answers, given known answer prefixes, with the measured one. Hidden reuse injects the aligned change at 50% depth before the target's remaining layers; direct reuse adds source output-score changes. With other-relation sources, hidden reuse removes 45% and 49% of no-change error on 0.5-1B Qwen and Llama. Gemma-2-2B removes 22% and passes one of three comparisons in plain text without its default beginning-of-sequence (BOS) token. A later protocol restoring it yields 58-68%, passing every comparison on three cohorts. Larger checkpoints, chat format and new entities show replication and format- or cohort-dependent failures. On small plain-format checkpoints, other-relation hidden reuse mainly reproduces the shift both relations' questions share, without reliably lowering relation-selective error. With target-relation sources, hidden reuse's post hoc adva",
-          "pub_date": "2026-10-29T20:00:00.000Z",
+          "title": "Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs",
+          "link": "https://arxiv.org/abs/2611.04166",
+          "content": "Reasoning vision-language-action (VLA) models pair physical control with natural-language rationales that supervisors can read to monitor embodied safety. Prior attacks on VLA reasoning corrupt the rationale itself and leave visible evidence in the text. We show that visual perturbations can instead alter the physical action while keeping the generated rationale word-for-word identical. At the shared text/action interface of Alpamayo for driving and InstructVLA for manipulation, our text-neutral action-subspace (TNAS) diagnostic shows that the locally most action-sensitive direction is nearly orthogonal to the active text-loss gradients, with 1.87% and 5.28% norm overlap. At equal hidden-state perturbation norms across both models, interventions along this text-neutral residual shift actions 4.64x to 47.8x more than text-gradient perturbations, whereas text-gradient perturbations induce 21.2x to 277x more text drift. Steering visual perturbations along this direction reaches the same decoupling from the image. Across 154 obstacle-annotated driving scenes in Alpamayo, TNAS-guided attacks induce a new collision under a word-for-word identical rationale in 52.6% of scenes under full-i",
+          "pub_date": "2026-11-02T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 1293,
-      "total_valid": 873,
+      "total_valid": 875,
       "total_candidates": 12
     },
     "vaccine": {
@@ -799,19 +799,19 @@
     "payment": {
       "candidates": [
         {
-          "id": 1944,
+          "id": 1936,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Microsoft Clarity Helps Merchants Welcome AI Shopping Agents",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-clarity-helps-merchants-welcome-ai-shopping-agents/",
-          "content": "Microsoft has introduced three features for its website and app analytics tool, Clarity, that are designed to help website owners understand how people and artificial intelligence agents are using their site, the company said in a Wednesday (Nov. 4) blog post. The new Agentic Analytics feature allows website owners to see what support AI agents [&#8230;] The post Microsoft Clarity Helps Merchants Welcome AI Shopping Agents appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 04 Nov 2026 20:41:35 +0000",
+          "title": "Western Union Fights Revenue Slump With Stablecoin Card",
+          "link": "https://www.pymnts.com/earnings/2026/western-union-fights-revenue-slump-with-stablecoin-card/",
+          "content": "Western Union is investing in growth through digital capabilities, artificial intelligence and stablecoins even as it continues to streamline its cost structure, President and CEO Devin McGranahan said Wednesday (Nov. 4) during the company’s third quarter earnings call. Western Union’s revenue declined 2% year over year to $1 billion in the third quarter due to [&#8230;] The post Western Union Fights Revenue Slump With Stablecoin Card appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 05 Nov 2026 02:08:16 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 457
+          "word_count": 469
         },
         {
           "id": 1970,
@@ -904,7 +904,7 @@
           "word_count": 167
         },
         {
-          "id": 1948,
+          "id": 1949,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 136
         },
         {
-          "id": 1946,
+          "id": 1947,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 1936,
+          "id": 1939,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 538
         },
         {
-          "id": 1937,
+          "id": 1940,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 505
         },
         {
-          "id": 1941,
+          "id": 1944,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1111,7 +1111,7 @@
   },
   "meta": {
     "total_raw": 2156,
-    "dup": 463,
+    "dup": 461,
     "nocontent": 403,
     "noise": 8
   }
