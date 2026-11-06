@@ -124,13 +124,13 @@
       "hn_points": 282,
       "id": "2610.13928",
       "upvotes": 0,
-      "citations": 1,
-      "abstract": "Backdoor attacks are constructed that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trigger, revealing a limit of elicitation-based capability audits.",
+      "citations": null,
+      "abstract": "",
       "source": "HN",
       "pub": "2026-10-13",
       "is_survey": false,
       "is_china": false,
-      "score": 282.5
+      "score": 282
     },
     {
       "title": "Sleep framework: A new way for LLMs to retain knowledge in continual learning",
@@ -181,12 +181,26 @@
       "link": "https://arxiv.org/abs/2611.05275",
       "upvotes": 85,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-11-02",
       "is_survey": false,
       "is_china": false,
       "score": 255
+    },
+    {
+      "id": "2611.08449",
+      "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+      "abstract": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive's type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially, spatial accuracy need not require reproducing an autoregressive model's exact token sequence. VFlash therefore trains on annotated primitives and directly accepts structurally valid predictions without target-token agreement. Across the evaluated 2D and 3D robot trajectory tasks, VFlash consistently reduces prediction errors relative to autoregressive decoding. Preliminary single-rollout measurement",
+      "link": "https://arxiv.org/abs/2611.08449",
+      "upvotes": 78,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily+alphaXiv+arXiv",
+      "pub": "2026-11-04",
+      "is_survey": false,
+      "is_china": false,
+      "score": 234
     },
     {
       "id": "2610.40191",
@@ -201,20 +215,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 234
-    },
-    {
-      "id": "2611.08449",
-      "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
-      "abstract": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive's type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially, spatial accuracy need not require reproducing an autoregressive model's exact token sequence. VFlash therefore trains on annotated primitives and directly accepts structurally valid predictions without target-token agreement. Across the evaluated 2D and 3D robot trajectory tasks, VFlash consistently reduces prediction errors relative to autoregressive decoding. Preliminary single-rollout measurement",
-      "link": "https://arxiv.org/abs/2611.08449",
-      "upvotes": 77,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily+alphaXiv+arXiv",
-      "pub": "2026-11-04",
-      "is_survey": false,
-      "is_china": false,
-      "score": 231
     },
     {
       "id": "2611.00617",
@@ -236,13 +236,13 @@
       "hn_points": 222,
       "id": "2409.02292",
       "upvotes": 0,
-      "citations": 7,
-      "abstract": "It is shown that malware on a compromised computer can generate radio signals from memory buses (RAM) using software-generated radio signals, which can encode sensitive information such as files, images, keylogging, biometric information, and encryption keys.",
+      "citations": null,
+      "abstract": "",
       "source": "HN",
       "pub": "2026-11-01",
       "is_survey": false,
       "is_china": false,
-      "score": 225.5
+      "score": 222
     },
     {
       "id": "2611.02737",
@@ -259,20 +259,6 @@
       "score": 222
     },
     {
-      "title": "The alien space of science: Coherent but cognitively unavailable directions",
-      "link": "https://arxiv.org/abs/2603.01092",
-      "hn_points": 214,
-      "id": "2603.01092",
-      "upvotes": 0,
-      "citations": 7,
-      "abstract": "By separating scientific plausibility from community availability, this framework points toward AI ideation that complements rather than merely accelerates human science, expanding exploration into coherent directions the community may overlook.",
-      "source": "HN",
-      "pub": "2026-10-22",
-      "is_survey": false,
-      "is_china": false,
-      "score": 217.5
-    },
-    {
       "id": "2611.06910",
       "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
       "abstract": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
@@ -285,6 +271,20 @@
       "is_survey": true,
       "is_china": false,
       "score": 216
+    },
+    {
+      "title": "The alien space of science: Coherent but cognitively unavailable directions",
+      "link": "https://arxiv.org/abs/2603.01092",
+      "hn_points": 214,
+      "id": "2603.01092",
+      "upvotes": 0,
+      "citations": null,
+      "abstract": "",
+      "source": "HN",
+      "pub": "2026-10-22",
+      "is_survey": false,
+      "is_china": false,
+      "score": 214
     },
     {
       "id": "2611.04916",
@@ -455,6 +455,20 @@
       "score": 152
     },
     {
+      "id": "2611.00883",
+      "title": "Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand",
+      "abstract": "Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we derive an accurate analytical approximation to the error distribution when estimating full-benchmark scores from a subset, showing that most subsets yield small errors, while a few produce much larger errors, resulting in a long-tailed distribution. This means random sampling alone can achieve surprisingly strong performance with high probability, but remains unstable due to rare large errors. We further show that this instability is inherent to modern foundation models and persists even as more models are evaluated. Based on these findings, we introduce BestRand, a stable and low-cost benchmark compression method that preserves the efficiency of random sampling while substantially reducing its high-error tail. We validate BestRand on 70+ text, multimodal, and agent benchmarks, and further extend it to VLA evaluation. Compared with competitive methods, BestRand reduces high-error risk by 50.2% and estimation error by 16.4% on average, while requiring only 51.3% of the cons",
+      "link": "https://arxiv.org/abs/2611.00883",
+      "upvotes": 48,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily",
+      "pub": "2026-10-30",
+      "is_survey": false,
+      "is_china": false,
+      "score": 144
+    },
+    {
       "id": "2611.03233",
       "title": "Axion 1.0: Open Agent Foundation Models, Simplified",
       "abstract": "We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD). The first SFT stage develops strong self-contained reasoning through model-aware data construction, where we synthesize challenging problems and adversarially strengthen them based on the base model's own successful solution strategies. The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in real-world data sources and deterministic computation. Finally, reinforcement learning further strengthens long-horizon reasoning and interaction with external tools and environments. Despite this compact training recipe, Axion 1.0 achieves strong performance across a broad suite of agentic benchmarks and is competitive with leading commercial models on several of them. Equally importantly, Axion 1.0 is op",
@@ -509,20 +523,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 142
-    },
-    {
-      "id": "2611.00883",
-      "title": "Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand",
-      "abstract": "Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we derive an accurate analytical approximation to the error distribution when estimating full-benchmark scores from a subset, showing that most subsets yield small errors, while a few produce much larger errors, resulting in a long-tailed distribution. This means random sampling alone can achieve surprisingly strong performance with high probability, but remains unstable due to rare large errors. We further show that this instability is inherent to modern foundation models and persists even as more models are evaluated. Based on these findings, we introduce BestRand, a stable and low-cost benchmark compression method that preserves the efficiency of random sampling while substantially reducing its high-error tail. We validate BestRand on 70+ text, multimodal, and agent benchmarks, and further extend it to VLA evaluation. Compared with competitive methods, BestRand reduces high-error risk by 50.2% and estimation error by 16.4% on average, while requiring only 51.3% of the cons",
-      "link": "https://arxiv.org/abs/2611.00883",
-      "upvotes": 47,
-      "hn_points": 0,
-      "citations": null,
-      "source": "HF Daily",
-      "pub": "2026-10-30",
-      "is_survey": false,
-      "is_china": false,
-      "score": 141
     },
     {
       "id": "2611.05193",
@@ -665,20 +665,6 @@
       "score": 120
     },
     {
-      "title": "Subquadratic 3SUM and Subcubic APSP",
-      "link": "https://arxiv.org/abs/2610.06783",
-      "hn_points": 110,
-      "id": "2610.06783",
-      "upvotes": 0,
-      "citations": 18,
-      "abstract": "The first polynomial improvements over the textbook algorithms for 3-SUM and All-Pairs Shortest Paths are given, and the Exact Triangle hypothesis is refuted, and the All-Edges Sparse Triangle problem is solved in truly subquadratic time on sparse lopsided tripartite graphs.",
-      "source": "HN",
-      "pub": "2026-10-06",
-      "is_survey": false,
-      "is_china": false,
-      "score": 119.0
-    },
-    {
       "id": "2611.03219",
       "title": "Can Coding Agents Sustain Continual Evolution without Forgetting?",
       "abstract": "Recently, harness self-evolution has emerged as an important paradigm for improving agent performance. Prior studies show that evolving the agent harness can effectively enhance agent capabilities without modifying the foundation model's parameters. We find that existing approaches largely study agent evolution on a single task. In practice, coding agents may need to handle multiple task types over time. Whether an agent harness can continuously evolve across multiple tasks without suffering from catastrophic forgetting remains an important open question. In this paper, we investigate this open question through a comprehensive empirical study of continual harness self-evolution. We organize three software engineering task datasets into six different evolution directions and apply two representative harness evolution methods to perform continual evolution along these directions. Our experimental results show that evolution on a subsequent dataset can substantially undermine the performance on previously seen datasets. For example, with DeepSeek-V4-Flash-0731, Meta-Harness improves its performance on SWE-Bench to 94.0% after evolution. However, after further evolution on FeatureBench",
@@ -702,6 +688,20 @@
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-11-03",
+      "is_survey": false,
+      "is_china": false,
+      "score": 114
+    },
+    {
+      "id": "2611.02897",
+      "title": "PhotoGuider: Composition-Aware Cropping and 360^{circ} View Framing with Explainable Photographic Assessments",
+      "abstract": "Traditional image cropping assumes the photograph already contains the composition worth keeping, and asks only where to crop. A full 360^{circ} scene offers no such guarantee: the viewing direction in a scene has to be discovered before anything can be framed. We present PhotoGuider, a measure-then-frame method that answers both questions with compact learned scorers over one shared set of composition-aware features. The designed features are extracted using foundation and task-specific vision models and structured into four photographic tokens: Subject, Composition, Aesthetics, and Integrity. Our MLLM explainer is fine-tuned to generate composition-related explanations conditioned on images and measured token assessments. To our knowledge, PhotoGuider is the first method to combine explicit composition-based direction selection in 360^{circ} panoramas with refined framing, camera-parameter output for native re-rendering, and measurement-conditioned explanations. On two standard 2D cropping benchmarks, PhotoGuider achieves the highest average mIoU performance against ground-truth crops. In a blind ranking study, 120 participants ranked three cropping methods over 100 panoramic sce",
+      "link": "https://arxiv.org/abs/2611.02897",
+      "upvotes": 38,
+      "hn_points": 0,
+      "citations": null,
+      "source": "HF Daily",
+      "pub": "2026-11-01",
       "is_survey": false,
       "is_china": false,
       "score": 114
