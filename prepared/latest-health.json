@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "sources": {
     "OpenAI News": {
       "section": "ai",
@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 2,
       "ok": true
     },
     "Meta AI Blog": {
@@ -40,7 +40,7 @@
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -76,13 +76,13 @@
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 359,
+      "count": 361,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 445,
+      "count": 417,
       "ok": true
     },
     "Import AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 12,
+      "count": 13,
       "ok": true
     },
     "Fierce Pharma": {
@@ -226,7 +226,7 @@
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 1,
+      "count": 2,
       "ok": true
     },
     "Nature Vaccines": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
+      "count": 21,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -262,7 +262,7 @@
     "Vaccine (journal)": {
       "section": "vaccine",
       "method": "rss",
-      "count": 58,
+      "count": 60,
       "ok": true
     },
     "npj Vaccines": {
@@ -286,7 +286,7 @@
     "Nature Reviews Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "Nature Reviews Microbiology": {
@@ -298,13 +298,13 @@
     "Science Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 5,
+      "count": 4,
       "ok": true
     },
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 13,
+      "count": 18,
       "ok": true
     },
     "BioPharma Dive": {
@@ -328,13 +328,13 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 10,
+      "count": 11,
       "ok": true
     },
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 3,
+      "count": 4,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -346,7 +346,7 @@
     "Metabolic Engineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 57,
+      "count": 58,
       "ok": true
     },
     "Cell Systems": {
@@ -358,7 +358,7 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "Absci Blog": {
@@ -382,7 +382,7 @@
     "Nature Reviews Bioengineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 6,
+      "count": 7,
       "ok": true
     },
     "Lancet Digital Health": {
@@ -394,7 +394,7 @@
     "NEJM AI": {
       "section": "cross",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true
     },
     "Nature Methods": {
@@ -412,31 +412,31 @@
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 4,
+      "count": 5,
       "ok": true
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 35,
+      "count": 40,
       "ok": true
     },
     "Payments Cards & Mobile": {
       "section": "payment",
       "method": "rss",
-      "count": 6,
+      "count": 3,
       "ok": true
     },
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 6,
+      "count": 5,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -504,11 +504,10 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "PYMNTS Cross-Border"
     ],
-    "sudden_drop": [
-      "Google DeepMind"
-    ],
+    "sudden_drop": [],
     "persistent_zero": [
       "WHO News"
     ]
