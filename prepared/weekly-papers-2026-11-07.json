@@ -329,6 +329,20 @@
       "score": 192
     },
     {
+      "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
+      "link": "https://arxiv.org/abs/2110.01834",
+      "hn_points": 177,
+      "id": "2110.01834",
+      "upvotes": 0,
+      "citations": 24,
+      "abstract": "It is argued that a better study of the mechanisms that allow humans to have these capabilities can help to understand how to imbue AI systems with these competencies, and a multi-agent AI architecture is proposed, focusing especially on D. Kahneman's theory of thinking fast and slow.",
+      "source": "HN",
+      "pub": "2026-09-28",
+      "is_survey": false,
+      "is_china": false,
+      "score": 189.0
+    },
+    {
       "title": "Context Language Models",
       "link": "https://arxiv.org/abs/2609.37725",
       "hn_points": 178,
@@ -341,20 +355,6 @@
       "is_survey": false,
       "is_china": false,
       "score": 178
-    },
-    {
-      "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
-      "link": "https://arxiv.org/abs/2110.01834",
-      "hn_points": 177,
-      "id": "2110.01834",
-      "upvotes": 0,
-      "citations": null,
-      "abstract": "",
-      "source": "HN",
-      "pub": "2026-09-28",
-      "is_survey": false,
-      "is_china": false,
-      "score": 177
     },
     {
       "id": "2611.04814",
@@ -385,6 +385,20 @@
       "score": 176
     },
     {
+      "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
+      "link": "https://arxiv.org/abs/2610.39302",
+      "hn_points": 171,
+      "id": "2610.39302",
+      "upvotes": 0,
+      "citations": null,
+      "abstract": "",
+      "source": "HN",
+      "pub": "2026-11-01",
+      "is_survey": false,
+      "is_china": false,
+      "score": 171
+    },
+    {
       "id": "2611.06918",
       "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
       "abstract": "Vision-language-action models are typically built on a simple premise: perception is first compressed by visual encoders, and action reasoning begins only afterwards. Yet manipulation often hinges on precisely the visual signals most vulnerable to this abstraction, e.g., local geometry, boundaries, depth, and subtle state changes. This raises a fundamental question: should action policies inherit a fixed visual endpoint, or directly access evolving visual computation? We introduce NEO-VLA, a structurally encoder-free vision-language-action framework. Images are tokenized by lightweight patch convolutional layers and evolve jointly with language throughout the backbone, allowing a flow-matching action expert to draw from instruction-conditioned visual representations at different depths. This simple change reveals a consistent pattern. Native architectures outperform encoder-based counterparts under controlled comparisons; full fine-tuning reduces but does not erase the gap, and additional scale alone cannot recover it. More strikingly, layer-wise probing shows that the action-critical signals often peak well before the final visual representation. Across diverse manipulation settin",
@@ -405,26 +419,12 @@
       "link": "https://arxiv.org/abs/2611.05377",
       "upvotes": 57,
       "hn_points": 0,
-      "citations": 0,
+      "citations": null,
       "source": "HF Daily",
       "pub": "2026-11-02",
       "is_survey": false,
       "is_china": false,
       "score": 171
-    },
-    {
-      "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
-      "link": "https://arxiv.org/abs/2610.39302",
-      "hn_points": 170,
-      "id": "2610.39302",
-      "upvotes": 0,
-      "citations": null,
-      "abstract": "",
-      "source": "HN",
-      "pub": "2026-11-01",
-      "is_survey": false,
-      "is_china": false,
-      "score": 170
     },
     {
       "id": "2611.04277",
@@ -459,14 +459,14 @@
       "title": "Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand",
       "abstract": "Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we derive an accurate analytical approximation to the error distribution when estimating full-benchmark scores from a subset, showing that most subsets yield small errors, while a few produce much larger errors, resulting in a long-tailed distribution. This means random sampling alone can achieve surprisingly strong performance with high probability, but remains unstable due to rare large errors. We further show that this instability is inherent to modern foundation models and persists even as more models are evaluated. Based on these findings, we introduce BestRand, a stable and low-cost benchmark compression method that preserves the efficiency of random sampling while substantially reducing its high-error tail. We validate BestRand on 70+ text, multimodal, and agent benchmarks, and further extend it to VLA evaluation. Compared with competitive methods, BestRand reduces high-error risk by 50.2% and estimation error by 16.4% on average, while requiring only 51.3% of the cons",
       "link": "https://arxiv.org/abs/2611.00883",
-      "upvotes": 48,
+      "upvotes": 49,
       "hn_points": 0,
       "citations": null,
       "source": "HF Daily",
       "pub": "2026-10-30",
       "is_survey": false,
       "is_china": false,
-      "score": 144
+      "score": 147
     },
     {
       "id": "2611.03233",
