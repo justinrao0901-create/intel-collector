@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 72,
+          "id": 69,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 394
         },
         {
-          "id": 71,
+          "id": 68,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 374
         },
         {
-          "id": 70,
+          "id": 67,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,7 @@
           "word_count": 156
         },
         {
-          "id": 102,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 211
         },
         {
-          "id": 108,
+          "id": 105,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 204
         },
         {
-          "id": 104,
+          "id": 101,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,22 @@
           "word_count": 184
         },
         {
-          "id": 83,
+          "id": 80,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand",
+          "link": "https://arxiv.org/abs/2611.00883",
+          "content": "Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we derive an accurate analytical approximation to the error distribution when estimating full-benchmark scores from a subset, showing that most subsets yield small errors, while a few produce much larger errors, resulting in a long-tailed distribution. This means random sampling alone can achieve surprisingly strong performance with high probability, but remains unstable due to rare large errors. We further show that this instability is inherent to modern foundation models and persists even as more models are evaluated. Based on these findings, we introduce BestRand, a stable and low-cost benchmark compression method that preserves the efficiency of random sampling while substantially reducing its high-error tail. We validate BestRand on 70+ text, multimodal, and agent benchmarks, and further extend it to VLA evaluation. Compared with competitive methods, BestRand reduces high-error risk by 50.2% and estimation error by 16.4% on average, while requiring only 51.3% of the cons",
+          "pub_date": "2026-10-30T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 85,
+          "id": 83,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 87,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "TaoMate-HD: Progressive-Resolution Autoregressive Audio-Video Generation",
-          "link": "https://arxiv.org/abs/2611.03394",
-          "content": "Streaming digital humans produce detailed video while continuing speech as new text arrives. High-resolution denoising is costly, and text updates can cause repeated or interrupted speech. We present TaoMate-HD, an autoregressive model for high-resolution audio-video streaming. For each short segment, or chunk, two denoising steps establish coarse video structure at low resolution. A final step refines the video to high resolution, with audio generated throughout the same trajectory. Each stage passes its audiovisual predictions to the same stage of the next chunk as history. Across text updates, the model retains this history to infer what has already been spoken. Continuation training utilizes asymmetric text conditioning, with separate text windows for generation and distillation. Experiments show a 1.6x speedup over direct high-resolution generation with the same model and hardware. Optimized stage-parallel deployment provides a further 1.9x overall speedup over serial progressive generation. Our continuation training reduces character error rate by 11.18 percentage points relative to the baseline. The model also supports hour-long audiovisual generation. Our project page is ht",
-          "pub_date": "2026-11-01T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1240,
+      "total_raw": 1237,
       "total_valid": 977,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1582,
+          "id": 1577,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1586,
+          "id": 1581,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1583,
+          "id": 1578,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 1385,
+          "id": 1380,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 567
         },
         {
-          "id": 1682,
+          "id": 1677,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 415
         },
         {
-          "id": 1698,
+          "id": 1693,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 390
         },
         {
-          "id": 1696,
+          "id": 1691,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 389
         },
         {
-          "id": 1700,
+          "id": 1695,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 361
         },
         {
-          "id": 1379,
+          "id": 1374,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 254
         },
         {
-          "id": 1519,
+          "id": 1514,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 251
         },
         {
-          "id": 1296,
+          "id": 1291,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 220
         },
         {
-          "id": 1387,
+          "id": 1382,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 165
         },
         {
-          "id": 1376,
+          "id": 1371,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 163
         },
         {
-          "id": 1602,
+          "id": 1597,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 244
         },
         {
-          "id": 1600,
+          "id": 1595,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 502,
-      "total_valid": 360,
+      "total_raw": 500,
+      "total_valid": 358,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1788,
+          "id": 1783,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 234
         },
         {
-          "id": 1798,
+          "id": 1793,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 183
         },
         {
-          "id": 1804,
+          "id": 1799,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 167
         },
         {
-          "id": 1833,
+          "id": 1828,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1834,
+          "id": 1829,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1835,
+          "id": 1830,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1753,
+          "id": 1748,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 345
         },
         {
-          "id": 1820,
+          "id": 1815,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1833,
+          "id": 1828,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1835,
+          "id": 1830,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 1377,
+          "id": 1372,
           "source": "The Lancet",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 628
         },
         {
-          "id": 1882,
+          "id": 1877,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 493
         },
         {
-          "id": 1699,
+          "id": 1694,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 377
         },
         {
-          "id": 1753,
+          "id": 1748,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 345
         },
         {
-          "id": 1341,
+          "id": 1336,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 330
         },
         {
-          "id": 1337,
+          "id": 1332,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 318
         },
         {
-          "id": 1885,
+          "id": 1880,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 308
         },
         {
-          "id": 1332,
+          "id": 1327,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1889,
+          "id": 1884,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 506
         },
         {
-          "id": 1895,
+          "id": 1890,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 448
         },
         {
-          "id": 1898,
+          "id": 1893,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 430
         },
         {
-          "id": 1894,
+          "id": 1889,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 416
         },
         {
-          "id": 1941,
+          "id": 1936,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 363
         },
         {
-          "id": 1939,
+          "id": 1934,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 349
         },
         {
-          "id": 1940,
+          "id": 1935,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 320
         },
         {
-          "id": 1922,
+          "id": 1917,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 287
         },
         {
-          "id": 1923,
+          "id": 1918,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 280
         },
         {
-          "id": 1914,
+          "id": 1909,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 269
         },
         {
-          "id": 1915,
+          "id": 1910,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 237
         },
         {
-          "id": 1924,
+          "id": 1919,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 212
         },
         {
-          "id": 1906,
+          "id": 1901,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 208
         },
         {
-          "id": 1112,
+          "id": 1109,
           "source": "Latent Space",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 113
         },
         {
-          "id": 174,
+          "id": 171,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 283,
+          "id": 280,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 506,
+          "id": 503,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 538,
+          "id": 535,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 423,
+          "id": 420,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1182
         },
         {
-          "id": 319,
+          "id": 316,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1050,9 +1050,9 @@
     }
   },
   "meta": {
-    "total_raw": 2114,
-    "dup": 306,
-    "nocontent": 400,
+    "total_raw": 2109,
+    "dup": 304,
+    "nocontent": 399,
     "noise": 6
   }
 }
