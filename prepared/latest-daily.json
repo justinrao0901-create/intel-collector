@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 65,
+          "id": 66,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 394
         },
         {
-          "id": 64,
+          "id": 65,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 374
         },
         {
-          "id": 63,
+          "id": 64,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 352
         },
         {
-          "id": 2,
+          "id": 3,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -63,6 +63,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 178
+        },
+        {
+          "id": 2,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Merge builds product and business tools with OpenAI technology",
+          "link": "https://openai.com/index/merge-builds-with-openai",
+          "content": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+          "pub_date": "Thu, 05 Nov 2026 08:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 163
         },
         {
           "id": 1,
@@ -80,22 +95,7 @@
           "word_count": 156
         },
         {
-          "id": 8,
-          "source": "OpenAI News",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Accelerating engineering for the physical world",
-          "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-          "content": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
-          "pub_date": "Tue, 03 Nov 2026 12:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 139
-        },
-        {
-          "id": 95,
+          "id": 96,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 211
         },
         {
-          "id": 101,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 204
         },
         {
-          "id": 97,
+          "id": 98,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 184
         },
         {
-          "id": 76,
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 78,
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 79,
+          "id": 80,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1233,
-      "total_valid": 973,
+      "total_raw": 1234,
+      "total_valid": 975,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1592,
+          "id": 1579,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1596,
+          "id": 1583,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1593,
+          "id": 1580,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,22 @@
           "word_count": 1199
         },
         {
-          "id": 1695,
+          "id": 1383,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Department of Error] Department of Error",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02203-8/fulltext?rss=yes",
+          "content": "Boeddinghaus J, Bima P, Crisanti L, et al, PRESC1SE-MI investigators. Safety and efficacy of the 0/1 h pathway for myocardial infarction in the emergency department: an international, pragmatic, stepped-wedge, cluster-randomised, controlled trial. Lancet 2026; 408: 1941–52—In this Article, the affiliations of Paolo Bima and Prof Fulvio Morello should have been “Department of Medical Sciences, University of Turin, Turin, Italy” and “Azienda Ospedaliero-Universitaria Città della Salute e della Scienza di Torino, Turin, Italy”, and the appendix has been corrected.",
+          "pub_date": "2026-11-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 567
+        },
+        {
+          "id": 1679,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +272,7 @@
           "word_count": 415
         },
         {
-          "id": 1711,
+          "id": 1695,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 390
         },
         {
-          "id": 1709,
+          "id": 1693,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 389
         },
         {
-          "id": 1713,
+          "id": 1697,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,22 @@
           "word_count": 361
         },
         {
-          "id": 1528,
+          "id": 1377,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Perspectives] Tobacco exposure: online exhibitions at CSTS",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02205-1/fulltext?rss=yes",
+          "content": "Even as smoking prevalence among adults in many high-income countries has fallen, the global burden of mortality attributed to tobacco has been estimated at 1 billion lives for the 21st century. We remain in the midst of an entirely preventable pandemic.",
+          "pub_date": "2026-11-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 254
+        },
+        {
+          "id": 1516,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +362,7 @@
           "word_count": 220
         },
         {
-          "id": 1393,
+          "id": 1385,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +377,22 @@
           "word_count": 165
         },
         {
-          "id": 1612,
+          "id": 1374,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[World Report] Bundibugyo vaccine trial begins",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02239-7/fulltext?rss=yes",
+          "content": "The Tumaini trial is hoping to find effective vaccines against Bundibugyo virus infection, which has killed more than 5000 people in DR Congo. Talha Burki reports.",
+          "pub_date": "2026-11-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 163
+        },
+        {
+          "id": 1599,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +407,7 @@
           "word_count": 244
         },
         {
-          "id": 1610,
+          "id": 1597,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -375,51 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 208
-        },
-        {
-          "id": 1611,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Adult immunization program infrastructure and vaccine access across state, local, and territorial immunization programs, United States, 2024<img class=\"glyph\" src=\"https://sdfestaticassets-us-east-1.sciencedirectassets.com/shared-assets/16/entities/sbnd\" />25",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26011060?dgcid=rss_sd_all",
-          "content": "Publication date: 15 January 2027 Source: Vaccine, Volume 96 Author(s): Christopher Wells, Amy Parker Fiebelkorn, David L. DuBois, Charleigh Granade, Sam Graitcer, Julianne Gee",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 176
-        },
-        {
-          "id": 1236,
-          "source": "Endpoints News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Head of family physician group seeks ACIP 'guardrails'",
-          "link": "https://endpoints.news/head-of-family-physician-group-seeks-acip-guardrails/",
-          "content": "After more than a year of turmoil for CDC’s panel of vaccine experts, one external member is calling on Congress to fortify it. Shawn Martin, CEO of the American Academy of Family Physicians, plans to ...",
-          "pub_date": "Thu, 05 Nov 2026 19:19:22 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 204
-        },
-        {
-          "id": 1241,
-          "source": "Endpoints News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Alethio clinches $90M to advance antibody for essential thrombocythemia",
-          "link": "https://endpoints.news/alethio-clinches-90m-to-advance-antibody-for-essential-thrombocythemia/",
-          "content": "About a year after emerging from stealth, University of Oxford spinout Alethio Therapeutics has collected $90 million in a Series A raise to support its lead rare blood cancer program. The ...",
-          "pub_date": "Thu, 05 Nov 2026 08:00:50 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 192
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 522,
+      "total_raw": 505,
       "total_valid": 364,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1803,
+          "id": 1785,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 234
         },
         {
-          "id": 1813,
+          "id": 1795,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 183
         },
         {
-          "id": 1819,
+          "id": 1801,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 167
         },
         {
-          "id": 1850,
+          "id": 1830,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1851,
+          "id": 1831,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1852,
+          "id": 1832,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1766,
+          "id": 1750,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 345
         },
         {
-          "id": 1835,
+          "id": 1817,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -559,14 +559,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 138,
+      "total_raw": 134,
       "total_valid": 24,
       "total_candidates": 8
     },
     "cross": {
       "candidates": [
         {
-          "id": 1850,
+          "id": 1830,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1852,
+          "id": 1832,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,22 @@
           "word_count": 1200
         },
         {
-          "id": 1899,
+          "id": 1375,
+          "source": "The Lancet",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Perspectives] Jemilah Mahmood: Malaysian leadership in planetary health",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02081-7/fulltext?rss=yes",
+          "content": "In 2000, Professor Jemilah Mahmood watched television images of devastating floods in Mozambique as a helicopter rescued a woman giving birth in a tree. As an obstetrician and gynaecologist, the image stayed with her for nearly two decades. In 2019, while visiting clinics established after the floods, a midwife pointed to a young adult and said, “Their mother gave birth in a tree in the last flood.” Mahmood recalls: “It really hit me…we’ve been putting band aids on gaping wounds all these years.” She continues: “We just respond and we react and we don’t look at the underlying drivers of why women are in these situations.",
+          "pub_date": "2026-11-07",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 628
+        },
+        {
+          "id": 1879,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 493
         },
         {
-          "id": 1712,
+          "id": 1696,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 377
         },
         {
-          "id": 1766,
+          "id": 1750,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +686,7 @@
           "word_count": 318
         },
         {
-          "id": 1902,
+          "id": 1882,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -699,21 +714,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 307
-        },
-        {
-          "id": 1903,
-          "source": "Nature Methods",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "abcFISH enables multiplexed, single-molecule visualization of circular RNA spatial heterogeneity",
-          "link": "https://www.nature.com/articles/s41592-026-03299-0",
-          "content": "Nature Methods, Published online: 05 November 2026; doi:10.1038/s41592-026-03299-0 abcFISH is an imaging method for multiplexed, single‑molecule circular RNA detection in cells and in vivo, revealing single-cell expression heterogeneity and direct therapeutic efficacy of circular aptamers.",
-          "pub_date": "2026-11-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 290
         }
       ],
       "quota": {
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 64,
-      "total_valid": 60,
+      "total_raw": 66,
+      "total_valid": 61,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1912,
+          "id": 1894,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 489
         },
         {
-          "id": 1911,
+          "id": 1893,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 468
         },
         {
-          "id": 1906,
+          "id": 1888,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 448
         },
         {
-          "id": 1909,
+          "id": 1891,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,22 @@
           "word_count": 429
         },
         {
-          "id": 1962,
+          "id": 1887,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Payment Processors Compete on Checkout With Passkeys",
+          "link": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/payment-processors-compete-on-checkout-with-passkeys/",
+          "content": "A shopper taps “Pay” with a card they’ve already saved. The retailer has the card details, but the purchase may still require the shopper to confirm it’s really them. The requirement might typically demand a series of steps, such as entering a code sent by text, opening a banking app or, on an eligible purchase, [&#8230;] The post Payment Processors Compete on Checkout With Passkeys appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 05 Nov 2026 23:05:15 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 416
+        },
+        {
+          "id": 1942,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 363
         },
         {
-          "id": 1960,
+          "id": 1940,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 349
         },
         {
-          "id": 1961,
+          "id": 1941,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 320
         },
         {
-          "id": 1942,
+          "id": 1922,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 287
         },
         {
-          "id": 1943,
+          "id": 1923,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 280
         },
         {
-          "id": 1934,
+          "id": 1914,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 269
         },
         {
-          "id": 1935,
+          "id": 1915,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 237
         },
         {
-          "id": 1944,
+          "id": 1924,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 212
         },
         {
-          "id": 1922,
+          "id": 1902,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 208
         },
         {
-          "id": 1105,
+          "id": 1106,
           "source": "Latent Space",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 113
         },
         {
-          "id": 167,
+          "id": 168,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 276,
+          "id": 277,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 499,
+          "id": 500,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 531,
+          "id": 532,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 416,
+          "id": 417,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1022,21 +1037,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1182
-        },
-        {
-          "id": 312,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Anduin: A sybil-resistant agentic marketplace reputation system",
-          "link": "https://arxiv.org/abs/2611.05586",
-          "content": "arXiv:2611.05586v1 Announce Type: new Abstract: As autonomous AI agents enter permissionless onchain markets, selecting new service providers remains a core challenge. Existing reputation systems depend on scarce resources like human curation, identity credentials, or voluntary reviews, while naive volume rankings are vulnerable to Sybil attacks. We evaluate whether existing onchain payment histories can yield provider ratings that are resilient against Sybil attacks. Using a 157-day dataset comprising 66M agentic transactions worth $6.1M across 16 blockchains, we model payment flows as a bipartite graph between buyers and providers. A provider's rating is derived from graph paths linked to a buyer's existing trusted network. We propose three Sybil-resistant rating algorithms: a max-flow rating and two relaxed algorithms optimized for stronger rating performance. Evaluating these algorithms against simulated adversaries across 813 buyers, we show that rating manipulation costs 20% of those buyers' total spend and is around 23x harder to manipulate than the standard similarity rule (collaborative filtering).",
-          "pub_date": "Thu, 05 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1124
         }
       ],
       "quota": {
@@ -1050,9 +1050,9 @@
     }
   },
   "meta": {
-    "total_raw": 2134,
-    "dup": 323,
-    "nocontent": 399,
-    "noise": 8
+    "total_raw": 2114,
+    "dup": 304,
+    "nocontent": 398,
+    "noise": 6
   }
 }
