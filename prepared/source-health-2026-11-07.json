@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 2,
       "ok": true
     },
     "Meta AI Blog": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 14,
+      "count": 13,
       "ok": true
     },
     "Fierce Pharma": {
@@ -430,8 +430,8 @@
     "Payments Cards & Mobile": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 3,
+      "ok": true
     },
     "Thunes": {
       "section": "payment",
@@ -442,7 +442,7 @@
     "Cointelegraph Payments": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
+      "count": 0,
       "ok": true
     },
     "Ledger Insights": {
@@ -504,14 +504,13 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI",
-      "Payments Cards & Mobile"
+      "Import AI"
     ],
     "sudden_drop": [
+      "Cointelegraph Payments",
       "PYMNTS Cross-Border"
     ],
     "persistent_zero": [
-      "Google DeepMind",
       "WHO News"
     ]
   }

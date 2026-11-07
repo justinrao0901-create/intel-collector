@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 65,
+          "id": 67,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 387
         },
         {
-          "id": 66,
+          "id": 68,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 147
         },
         {
-          "id": 99,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 351
         },
         {
-          "id": 100,
+          "id": 103,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 351
         },
         {
-          "id": 101,
+          "id": 104,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,22 @@
           "word_count": 173
         },
         {
-          "id": 82,
+          "id": 83,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
+          "link": "https://arxiv.org/abs/2611.06500",
+          "content": "Large language model (LLM) agents typically append raw tool outputs to their context. Over multi-step interactions, long and noisy observations incur substantial context overhead and dilute the agent's attention to task-relevant information. Existing token pruning and summarization methods remain constrained by discrete text representations, limiting the achievable compression ratios. In this work, we challenge the prevailing assumption that agents must consume tool observations as explicit text tokens. To this end, we propose Coca-Cola, a continuous latent context compression model for LLM agents. Coca-Cola compresses tool observations into latent tokens and embeds them into the input embedding space of the agent. We further introduce Action-Preserving Training, which aligns the agent's next-action distributions under full and compressed observations. This trains the compression model to learn action-sufficient latent tokens that retain decision-critical information. Experiments with web-search agents on four QA benchmarks and two model families show that Coca-Cola reduces the agent's token consumption by 70.01%-89.24% and end-to-end runtime by 24.45%-55.97%, while consistently im",
+          "pub_date": "2026-11-03T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 85,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 84,
+          "id": 87,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,22 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 85,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
-          "link": "https://arxiv.org/abs/2611.08237",
-          "content": "Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible reference and physically feasible; existing benchmarks either score solver fragments or grade reports with an LLM judge, leaving those numbers unchecked. We introduce TB-MathModel (the Terminal-style Mathematical Modeling Bench), the first benchmark to make complete contest-style modeling problems agentic, verifiable, and terminal at once, over 18 real CUMCM and MCM problems (2023--2025). Each task ships the verbatim statement, official attachments, and figures in a containerized terminal; the agent returns one JSON artifact, scored on the numeric core of the final question against a reproduction of the Outstanding-award paper. Two design choices distinguish it: direction-aware, one-sided scoring, which never penalises beating the anchor, and two-layer feasibility verification---a programmatic gate over six decidable invariant forms plus 624 Lean~4 obligations---with a hard gate that zeroes infeasible answers. Each task is scored against a panel of human outstanding papers rather than one,",
-          "pub_date": "2026-11-05T11:18:35.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1103,
+          "id": 1105,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1212,
+      "total_raw": 1214,
       "total_valid": 872,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1558,
+          "id": 1559,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1561,
+          "id": 1562,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1563,
+          "id": 1564,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1669,
+          "id": 1670,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 394
         },
         {
-          "id": 1670,
+          "id": 1671,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 365
         },
         {
-          "id": 1649,
+          "id": 1650,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 330
         },
         {
-          "id": 1249,
+          "id": 1250,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 176
         },
         {
-          "id": 1573,
+          "id": 1574,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 331
         },
         {
-          "id": 1576,
+          "id": 1577,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 176
         },
         {
-          "id": 1594,
+          "id": 1595,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 171
         },
         {
-          "id": 1215,
+          "id": 1217,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 219
         },
         {
-          "id": 1218,
+          "id": 1220,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 208
         },
         {
-          "id": 1222,
+          "id": 1224,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 204
         },
         {
-          "id": 1691,
+          "id": 1692,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 159
         },
         {
-          "id": 1243,
+          "id": 1244,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 509,
-      "total_valid": 361,
+      "total_raw": 508,
+      "total_valid": 360,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1852,
+          "id": 1853,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 402
         },
         {
-          "id": 1748,
+          "id": 1749,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 230
         },
         {
-          "id": 1744,
+          "id": 1745,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 204
         },
         {
-          "id": 1779,
+          "id": 1780,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 184
         },
         {
-          "id": 1827,
+          "id": 1828,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 933
         },
         {
-          "id": 1829,
+          "id": 1830,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 490
         },
         {
-          "id": 1855,
+          "id": 1856,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 488
         },
         {
-          "id": 1733,
+          "id": 1734,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 442
         },
         {
-          "id": 1808,
+          "id": 1809,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 420
         },
         {
-          "id": 1824,
+          "id": 1825,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 416
         },
         {
-          "id": 1800,
+          "id": 1801,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -611,7 +611,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1561,
+          "id": 1562,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1733,
+          "id": 1734,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 442
         },
         {
-          "id": 1673,
+          "id": 1674,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 347
         },
         {
-          "id": 1472,
+          "id": 1473,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 312
         },
         {
-          "id": 1866,
+          "id": 1867,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 290
         },
         {
-          "id": 1674,
+          "id": 1675,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 282
         },
         {
-          "id": 1253,
+          "id": 1254,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 267
         },
         {
-          "id": 1303,
+          "id": 1304,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 266
         },
         {
-          "id": 1290,
+          "id": 1291,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 264
         },
         {
-          "id": 1863,
+          "id": 1864,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -766,8 +766,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 68,
-      "total_valid": 62,
+      "total_raw": 67,
+      "total_valid": 61,
       "total_candidates": 10
     },
     "china": {
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1872,
+          "id": 1873,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 487
         },
         {
-          "id": 1871,
+          "id": 1872,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 449
         },
         {
-          "id": 1899,
+          "id": 1900,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 336
         },
         {
-          "id": 1897,
+          "id": 1898,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 325
         },
         {
-          "id": 1902,
+          "id": 1903,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 308
         },
         {
-          "id": 1896,
+          "id": 1897,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 262
         },
         {
-          "id": 1898,
+          "id": 1899,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 250
         },
         {
-          "id": 1900,
+          "id": 1901,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 216
         },
         {
-          "id": 1879,
+          "id": 1880,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 126
         },
         {
-          "id": 306,
+          "id": 308,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 441,
+          "id": 443,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 527,
+          "id": 529,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 776,
+          "id": 778,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 913,
+          "id": 915,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 401,
+          "id": 403,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1199
         },
         {
-          "id": 356,
+          "id": 358,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1185
         },
         {
-          "id": 179,
+          "id": 181,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 987
         },
         {
-          "id": 1870,
+          "id": 1871,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 505
         },
         {
-          "id": 1873,
+          "id": 1874,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 486
         },
         {
-          "id": 1927,
+          "id": 1930,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -1089,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 230,
-      "total_valid": 48,
+      "total_raw": 232,
+      "total_valid": 47,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2089,
-    "dup": 385,
-    "nocontent": 399,
+    "total_raw": 2092,
+    "dup": 389,
+    "nocontent": 400,
     "noise": 6
   }
 }
