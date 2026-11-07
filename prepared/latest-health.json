@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
+      "count": 0,
       "ok": true
     },
     "Meta AI Blog": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 13,
+      "count": 14,
       "ok": true
     },
     "Fierce Pharma": {
@@ -382,7 +382,7 @@
     "Nature Reviews Bioengineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 5,
+      "count": 6,
       "ok": true
     },
     "Lancet Digital Health": {
@@ -424,14 +424,14 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 40,
+      "count": 38,
       "ok": true
     },
     "Payments Cards & Mobile": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Thunes": {
       "section": "payment",
@@ -504,12 +504,14 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "Payments Cards & Mobile"
     ],
     "sudden_drop": [
       "PYMNTS Cross-Border"
     ],
     "persistent_zero": [
+      "Google DeepMind",
       "WHO News"
     ]
   }
