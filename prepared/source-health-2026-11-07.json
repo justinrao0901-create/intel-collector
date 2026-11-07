@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 21,
+      "count": 18,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -268,7 +268,7 @@
     "npj Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 2,
+      "count": 1,
       "ok": true
     },
     "Sci Transl Med": {
@@ -376,13 +376,13 @@
     "Nucleic Acids Research": {
       "section": "synbio",
       "method": "rss",
-      "count": 38,
+      "count": 35,
       "ok": true
     },
     "Nature Reviews Bioengineering": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 5,
       "ok": true
     },
     "Lancet Digital Health": {
@@ -413,7 +413,7 @@
       "section": "payment",
       "method": "rss",
       "count": 0,
-      "ok": false
+      "ok": true
     },
     "PaymentsDive": {
       "section": "payment",
@@ -504,10 +504,11 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI",
+      "Import AI"
+    ],
+    "sudden_drop": [
       "PYMNTS Cross-Border"
     ],
-    "sudden_drop": [],
     "persistent_zero": [
       "WHO News"
     ]
