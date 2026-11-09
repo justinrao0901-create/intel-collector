@@ -50,7 +50,22 @@
           "word_count": 122
         },
         {
-          "id": 92,
+          "id": 79,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Sketchpad: certified exact arithmetic with a small vision-language model",
+          "link": "https://arxiv.org/abs/2611.04434",
+          "content": "Language models are accurate on most long-arithmetic problems, but their accuracy is estimated on samples and carries no guarantee for an unseen input; tool use is exact but moves the computation outside the network. We show that exactness at all input lengths becomes a finite, checkable property of a network when each of its steps reads only a bounded view of an external working memory. In Sketchpad, Qwen3.5-0.8B with a low-rank adapter executes arithmetic procedures on a rendered sheet. Each forward pass reads a three-cell view and emits one step: a digit, a carry or borrow, and the next operation. A fixed runtime moves the view and writes no digit of a result. We prove in Lean that the model is then exact on all inputs of any length if and only if it is exact on the finite set of views the runtime presents, that no finite test suffices when steps also read earlier steps, and that the guarantee tolerates bounded numerical perturbation and extends to compositions of procedures. All 2,446 views pass on the deployment device, a laptop GPU running the model in a web browser. The certified model performs signed addition and subtraction, long multiplication and division, square roots a",
+          "pub_date": "2026-11-03T02:25:42.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 91,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 93,
+          "id": 92,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,22 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 94,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Decoupled Predictive Decision Making: A Shared Conditional Predictor for Agents",
-          "link": "https://arxiv.org/abs/2611.02075",
-          "content": "Agent decisions depend on empirical relationships that deployment observations reveal and task descriptions alone may leave unresolved. We introduce Decoupled Predictive Decision Making (DPDM), an architecture that formulates heterogeneous agent decisions as conditional prediction with a shared pretrained learner. Language models provide semantic representations of current and historical records, while a general-purpose conditional predictor predicts task-defined targets from the represented evidence. Pretraining supplies reusable inference capability; deployment evidence instantiates problem-specific predictions without updating either model's neural parameters. Tool judgments, candidate preferences, and reasoning assessments share an evidence-and-query interface, with predictions mapped to choices by a decision rule. This architecture establishes complementary sources of agent capability: semantic knowledge acquired through language pretraining and empirical inference acquired through structured-data pretraining. A single frozen LimiX-2 predictor serves all five task categories. With Qwen3.5-27B as the semantic encoder, DPDM raises mean accuracy across 50 benchmarks from 78.80% w",
-          "pub_date": "2026-10-31T20:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 149,
+          "id": 147,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 130,
+          "id": 128,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 255
         },
         {
-          "id": 99,
+          "id": 97,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 185
         },
         {
-          "id": 131,
+          "id": 129,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 136
         },
         {
-          "id": 142,
+          "id": 140,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 136
         },
         {
-          "id": 156,
+          "id": 154,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 256,
+      "total_raw": 254,
       "total_valid": 44,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 575,
+          "id": 570,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 834
         },
         {
-          "id": 582,
+          "id": 577,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 784
         },
         {
-          "id": 562,
+          "id": 557,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 771
         },
         {
-          "id": 491,
+          "id": 486,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 417
         },
         {
-          "id": 644,
+          "id": 639,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 421
         },
         {
-          "id": 636,
+          "id": 631,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 418
         },
         {
-          "id": 627,
+          "id": 622,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 397
         },
         {
-          "id": 479,
+          "id": 474,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 859
         },
         {
-          "id": 477,
+          "id": 472,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 759
         },
         {
-          "id": 458,
+          "id": 453,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 647
         },
         {
-          "id": 490,
+          "id": 485,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 432
         },
         {
-          "id": 392,
+          "id": 387,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 420
         },
         {
-          "id": 378,
+          "id": 373,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 414
         },
         {
-          "id": 340,
+          "id": 335,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 379
         },
         {
-          "id": 688,
+          "id": 683,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 473,
-      "total_valid": 290,
+      "total_raw": 470,
+      "total_valid": 287,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 758,
+          "id": 753,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 173
         },
         {
-          "id": 756,
+          "id": 751,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 172
         },
         {
-          "id": 752,
+          "id": 747,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 168
         },
         {
-          "id": 811,
+          "id": 806,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -506,7 +506,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 273,
+          "id": 268,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 226
         },
         {
-          "id": 296,
+          "id": 291,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 223
         },
         {
-          "id": 295,
+          "id": 290,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 207
         },
         {
-          "id": 859,
+          "id": 854,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 201
         },
         {
-          "id": 432,
+          "id": 427,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 62
         },
         {
-          "id": 442,
+          "id": 437,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 62
         },
         {
-          "id": 767,
+          "id": 762,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 130
         },
         {
-          "id": 260,
+          "id": 257,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -626,7 +626,7 @@
           "word_count": 173
         },
         {
-          "id": 263,
+          "id": 260,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -641,7 +641,7 @@
           "word_count": 119
         },
         {
-          "id": 261,
+          "id": 258,
           "source": "STAT News",
           "section": "cross",
           "tier": "T2",
@@ -679,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 866,
+          "id": 861,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 444
         },
         {
-          "id": 881,
+          "id": 876,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 352
         },
         {
-          "id": 880,
+          "id": 875,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 339
         },
         {
-          "id": 882,
+          "id": 877,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 294
         },
         {
-          "id": 874,
+          "id": 869,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 84
         },
         {
-          "id": 871,
+          "id": 866,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 55
         },
         {
-          "id": 863,
+          "id": 858,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 535
         },
         {
-          "id": 864,
+          "id": 859,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 476
         },
         {
-          "id": 868,
+          "id": 863,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 466
         },
         {
-          "id": 865,
+          "id": 860,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 463
         },
         {
-          "id": 869,
+          "id": 864,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 444
         },
         {
-          "id": 876,
+          "id": 871,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -870,9 +870,9 @@
     }
   },
   "meta": {
-    "total_raw": 1049,
-    "dup": 284,
-    "nocontent": 404,
+    "total_raw": 1044,
+    "dup": 283,
+    "nocontent": 403,
     "noise": 6
   }
 }
