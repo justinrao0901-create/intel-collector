@@ -244,14 +244,14 @@
     "bioRxiv Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 30,
+      "ok": true
     },
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 17,
+      "ok": true
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -358,8 +358,8 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 7,
+      "ok": true
     },
     "Absci Blog": {
       "section": "synbio",
@@ -504,10 +504,7 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI",
-      "bioRxiv Immunology",
-      "bioRxiv SynBio",
-      "medRxiv Infectious"
+      "Import AI"
     ],
     "sudden_drop": [
       "Google DeepMind",
