@@ -95,7 +95,7 @@
           "word_count": 140
         },
         {
-          "id": 103,
+          "id": 104,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 200
         },
         {
-          "id": 102,
+          "id": 103,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 147
         },
         {
-          "id": 106,
+          "id": 107,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -145,10 +145,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
-          "link": "https://arxiv.org/abs/2611.08175",
-          "content": "Automating printed circuit board (PCB) routing requires coordinating board-level connectivity decisions with geometric execution under strict design rules. Although recent agents can interact with native routing tools, reliable routing on complex boards remains challenging. We present PCBRouteAgent, a multimodal PCB routing agent inspired by how human engineers coordinate global strategy with local execution. A Global Routing Planner combines board images and structured electrical and geometric information to specify connection topology, routing order, corridors, and layer transitions. A Detailed Routing Executor realizes these guides through KiCad's native routing engine and performs bounded local recovery. Unresolved failures are returned as structured feedback, enabling targeted guide revisions while preserving accepted routes. We evaluate PCBRouteAgent on 247 synthetic and real-world boards from four PCBWorld-Bench test splits. It achieves clean-pass rates of 100%, 94.9%, 100%, and 40% on D2, D3-A, D3-B, and D3-C, respectively. On the three real-world subsets, PCBRouteAgent outperforms the best evaluated baseline in clean-pass rate by 13.9, 36, and 10 percentage points, respect",
-          "pub_date": "2026-11-05T10:31:15.000Z",
+          "title": "JoVox: Joint Hierarchical Flow Matching for Lightweight Voxel Generation",
+          "link": "https://arxiv.org/abs/2611.10690",
+          "content": "Generating high-fidelity voxels while keeping their lightweight nature remains an open problem in computer vision. Current generators are either high-fidelity but computationally heavy, or lightweight but of lower fidelity. Hierarchical methods keep the lightweight nature of voxels. However, their coarse levels, which decide where all finer cells can appear, are generated with the least information about the shape and are never revisited, so they are often plausible but wrong. Our key insight is to let finer cells take part in deciding coarse cells. To this end, we propose JoVox, a discrete flow matching framework that learns the joint distribution of all levels of the voxel hierarchy, instead of a separate distribution for each level, so that coarse cells can be predicted with finer cells already generated nearby. Within this framework, we further introduce a two-level prediction, which outputs the cells two levels finer at once instead of one level finer, halving the number of levels that the network processes and yielding voxels of higher fidelity. We also introduce an unmasking strategy that revisits early decisions once finer cells are generated and corrects inconsistencies in",
+          "pub_date": "2026-11-07T07:21:25.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -160,25 +160,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection",
-          "link": "https://arxiv.org/abs/2611.08647",
-          "content": "Intra-weight injection lets one model change another model's behaviour by editing its weights directly, without gradients. Such edits can range from altering lexical associations to enforcing output formats or updating factual knowledge. Despite growing interest in these approaches, there has been no systematic way to evaluate how well models perform them. We introduce IWIBench, which measures a large editor model's ability to modify the weights of a smaller target model (typically Gemma 3 4B IT) to achieve one of ten classical text-editing objectives while preserving its other capabilities. Editors are limited to four tools for reading and writing weights, with bounded tensor access and a fixed budget for generating and inspecting rollouts. A validator applies each proposed patch in a clean environment and compares the edited model against the unmodified target. Evaluating frontier closed- and open-weight models reveals sharply diverging capabilities, both across models and across tasks. A small number of models, most notably Astra and GPT-6.1 Sol, perform far ahead of the rest. The recency of this ability (little of it is evident in GPT-5.6 Sol, for instance), together with quali",
-          "pub_date": "2026-11-04T19:00:00.000Z",
+          "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+          "link": "https://arxiv.org/abs/2610.42148",
+          "content": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existing generation-oriented inference engines fail to support these workloads effectively, suffering from severe prefix recomputation overheads or distorted output probabilities. To address this challenge, we propose Flide, an efficient and exact inference engine that decouples the logical tree structure of a decision request from its physical execution within a single flattened token stream. Through ForkAttention, Flide navigates request dependencies using GPU-resident indices across both standard attention and recurrent Gated DeltaNet layers, guaranteeing in exact arithmetic that every query branch evaluates identically to an isolated forward pass. By expressing branch topologies directly in GPU-resident metadata, Flide accommodates diverse request mixtures with a compact set of pre-recorded execution graphs while enabling expanding agent histories to resume from checkpoints saved in earlier passes. Extensive evaluations on public hybrid and decision models demonstrate that Flide answers q",
+          "pub_date": "2026-10-30T13:59:38.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 88,
+          "id": 86,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "LowRAM: Low-Rank Keys and Amortised Values for Composable KV Cache Compression at Test-Time",
-          "link": "https://arxiv.org/abs/2611.07025",
-          "content": "Autoregressive decoding relies on the KV cache, whose memory footprint grows linearly with context length and caps batch size and throughput. Existing post-training methods exploit redundancy across tokens, layers, and feature dimensions, or lower numerical precision. We identify a complementary axis: within each attention head, values are largely predictable from their corresponding keys. We exploit this with value cache amortisation, which fits a lightweight per-head predictor at test time and stores residuals only for the tokens it reconstructs worst, giving 4times near-lossless value compression. The predictor can be initialised by meta-learning for substantially reduced prefill overhead, or fitted from scratch in settings that allow a one-off cost, such as multi-query inference. We pair value amortisation with cross-layer low-rank key compression to produce LowRAM, an asymmetric compression pipeline that stays close to lossless across three model families. By reconstructing only a selected subset of KV pairs at each decoding step, LowRAM can keep decoding overhead minimal and achieve up to 5times higher peak decode throughput at 4times compression. LowRAM further composes with",
-          "pub_date": "2026-11-04T14:00:06.000Z",
+          "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+          "link": "https://arxiv.org/abs/2611.10771",
+          "content": "Visual generative models increasingly blur the line between synthesizing observations and simulating environments. Yet visual plausibility alone does not constitute successful world modeling: compelling outputs may lack persistent state, physical dynamics, or causally consistent responses to interactions. We define a generative world model as a predictive dynamical system that maintains a persistent, history-conditioned representation of an environment, updates that representation in response to actions or interventions, and generates temporally coherent trajectories that reflect outcomes under observed and counterfactual interventions. From this definition, we derive an intelligence-oriented framework spanning perceptual grounding, persistent state modeling, controllable transformation, dynamics-aware prediction, and closed-loop interaction. We present WorldFoundry, open-source infrastructure for reproducible inference and evaluation across video, 3D and 4D, embodied action, and interactive world systems. WorldFoundry unifies model and benchmark discovery, runtime and asset preparation, execution orchestration, artifact management, and interactive visualization, while modality-spe",
+          "pub_date": "2026-11-07T09:59:22.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1231,
-      "total_valid": 780,
+      "total_raw": 1232,
+      "total_valid": 782,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1470,
+          "id": 1522,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1473,
+          "id": 1525,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1483,
+          "id": 1535,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1565,
+          "id": 1617,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 528
         },
         {
-          "id": 1564,
+          "id": 1616,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 423
         },
         {
-          "id": 1460,
+          "id": 1461,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 231
         },
         {
-          "id": 1264,
+          "id": 1265,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 165
         },
         {
-          "id": 1533,
+          "id": 1585,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 379
         },
         {
-          "id": 1547,
+          "id": 1599,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 369
         },
         {
-          "id": 1552,
+          "id": 1604,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 366
         },
         {
-          "id": 1232,
+          "id": 1233,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 232
         },
         {
-          "id": 1237,
+          "id": 1238,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 222
         },
         {
-          "id": 1613,
+          "id": 1665,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 128
         },
         {
-          "id": 1247,
+          "id": 1248,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 126
         },
         {
-          "id": 1389,
+          "id": 1390,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 408,
-      "total_valid": 235,
+      "total_raw": 459,
+      "total_valid": 286,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1748,
+          "id": 1807,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 549
         },
         {
-          "id": 1696,
+          "id": 1748,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 192
         },
         {
-          "id": 1684,
+          "id": 1736,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 162
         },
         {
-          "id": 1679,
+          "id": 1731,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 150
         },
         {
-          "id": 1708,
+          "id": 1767,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 488
         },
         {
-          "id": 1707,
+          "id": 1766,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 388
         },
         {
-          "id": 1651,
+          "id": 1703,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 309
         },
         {
-          "id": 1747,
+          "id": 1806,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -552,6 +552,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 255
+        },
+        {
+          "id": 1761,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Targeted Deletions Uncover Previously Uncharacterised C1-fixing Cluster Genes as Essential for Autotrophy in Clostridium autoethanogenum",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.11.07.765054v1?rss=1",
+          "content": "Recycling carbon oxides from industrial off-gases and gasified organic waste using gas fermentation offers a sustainable route for biomanufacturing of fuels and chemicals. Acetogens are attractive biocatalysts here and fix CO and CO2 via the Wood-Ljungdahl pathway (WLP). However, the incomplete functional annotation of the associated C1-fixing gene cluster limits rational engineering of acetogen cell factories. Here, we investigated five highly conserved but previously uncharacterised C1-fixing cluster genes to quantify their contributions to the growth of the model-acetogen Clostridium autoethanogenum using targeted CRISPR/Cas9-mediated single-gene deletions, physiological characterisation, comparative computational structural analyses, CRISPRi, and functional genomics. Importantly, we identified acsV, lpdA, cooC, and cooC2 as essential for autotrophy but not heterotrophy, whereas deletion of gcvH reduced autotrophic growth and shifted carbon flux from acetate towards 2,3-butanediol. Amino acid supplementation experiments and computational analyses indicate that lpdA and gcvH do not primarily function in glycine or serine biosynthesis but instead fulfil specialised roles in WLP-as",
+          "pub_date": "2026-11-09",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1762,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Programmable interphyla communication for Staphylococcus aureus by transferability of homoserine lactone sensors between Bacillales bacteria",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.11.05.764691v1?rss=1",
+          "content": "Staphylococcus aureus is a Gram-positive opportunistic pathogen of the order Bacillales and a frequent member of human-associated microbiomes. Despite its clinical relevance, engineering S. aureus and the communities it inhabits remains limited by a shortage of well-characterized genetic tools for precise control of gene expression and intercellular signaling. Biosensors for homoserine lactones (HSLs) are widely used in Gram-negative bacteria, as HSLs are small, passively diffusible signaling molecules for and their sensors are tightly regulated. Here, we show that synthetically designed HSL sensors using LuxR-family regulators are highly functional in S. aureus. Notably, synthetic designs previously built for the Gram-positive model Bacillus subtilis, a distantly related Bacillales, transferred functionally and establish repurposing the genetic toolbox as an effective strategy for importing these functions into S. aureus. Sensor performance correlated strongly between the two Bacillales, and activation in S. aureus reached 55-fold, exceeding the dynamic range of reported inducible systems. We further demonstrate tightly regulated, programmable interphyla communication between Gram",
+          "pub_date": "2026-11-09",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1759,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "DIALECT: DNA-Programmable Synthetic Cells Communicate with Mammalian Cells through Synthetic Receptors",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.11.06.764853v1?rss=1",
+          "content": "Synthetic cells can regulate mammalian signalling through the controlled release of diffusible protein ligands, but coupling programmable synthetic-cell senders to orthogonal, engineered mammalian receptors remains challenging. Here we present DIALECT (DNA-Instructed Assembly of Ligands for Engineered Cellular Transduction), a platform in which proteinosome-based synthetic cells translate sequence-defined DNA inputs into coiled-coil signalling ligand outputs for engineered mammalian receptors. DNA-ligand conjugates are localized within semipermeable proteinosomes through DNA hybridization and released by toehold-mediated DNA strand displacement (TMSD). The released ligands diffuse to neighbouring mammalian cells and activate cognate CC-GEMS receptors, inducing JAK/STAT3 signalling and reporter activation, with a higher response in cognate than non-cognate receiver cells under activation conditions. We further implement distributed Boolean AND logic using two independently programmed proteinosome populations that respond to distinct DNA inputs and release complementary ligand components. Simultaneous addition of both inputs produces substantially higher reporter activity than the re",
+          "pub_date": "2026-11-09",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -559,14 +604,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 114,
-      "total_valid": 14,
-      "total_candidates": 8
+      "total_raw": 121,
+      "total_valid": 18,
+      "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 1470,
+          "id": 1522,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1444,
+          "id": 1445,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +641,7 @@
           "word_count": 488
         },
         {
-          "id": 1651,
+          "id": 1703,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +656,7 @@
           "word_count": 309
         },
         {
-          "id": 1760,
+          "id": 1819,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +671,7 @@
           "word_count": 260
         },
         {
-          "id": 1266,
+          "id": 1267,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +686,7 @@
           "word_count": 211
         },
         {
-          "id": 1269,
+          "id": 1270,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +701,7 @@
           "word_count": 208
         },
         {
-          "id": 1761,
+          "id": 1820,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +716,7 @@
           "word_count": 176
         },
         {
-          "id": 1294,
+          "id": 1295,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +731,7 @@
           "word_count": 175
         },
         {
-          "id": 1759,
+          "id": 1818,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +746,7 @@
           "word_count": 163
         },
         {
-          "id": 1233,
+          "id": 1234,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -721,8 +766,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 28,
-      "total_valid": 17,
+      "total_raw": 45,
+      "total_valid": 34,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1767,
+          "id": 1826,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +799,7 @@
           "word_count": 503
         },
         {
-          "id": 1776,
+          "id": 1835,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +814,7 @@
           "word_count": 481
         },
         {
-          "id": 1769,
+          "id": 1828,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +829,7 @@
           "word_count": 465
         },
         {
-          "id": 1775,
+          "id": 1834,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +844,7 @@
           "word_count": 458
         },
         {
-          "id": 1794,
+          "id": 1853,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +859,7 @@
           "word_count": 254
         },
         {
-          "id": 1793,
+          "id": 1852,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +874,7 @@
           "word_count": 249
         },
         {
-          "id": 1797,
+          "id": 1856,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +889,7 @@
           "word_count": 214
         },
         {
-          "id": 1789,
+          "id": 1848,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +904,7 @@
           "word_count": 184
         },
         {
-          "id": 1800,
+          "id": 1859,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +919,7 @@
           "word_count": 136
         },
         {
-          "id": 1779,
+          "id": 1838,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +934,7 @@
           "word_count": 135
         },
         {
-          "id": 1777,
+          "id": 1836,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +949,7 @@
           "word_count": 127
         },
         {
-          "id": 1780,
+          "id": 1839,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,22 +964,7 @@
           "word_count": 124
         },
         {
-          "id": 92,
-          "source": "HuggingFace Daily Papers",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use",
-          "link": "https://arxiv.org/abs/2611.09113",
-          "content": "LLM agents can exceed their authorization boundaries while pursuing user goals without an adversary. We formalize this phenomenon as authorization drift across data, tool, scope, and time, and introduce the Authorization Drift Benchmark (ADB): 648 samples across seven domains, each pairing a sufficient compliant path with an attractive unauthorized shortcut. To ensure executable tasks, tempting shortcuts, and feasible compliant paths, Staged Execution-Reflective Synthesis (SERS) grounds benchmark validation in real agent rollouts rather than LLM self-critique. Across 13 LLMs and three frameworks (25,207 trajectories), greater capability accompanies greater drift, with frontier-capable models exhibiting drift rates of 0.43 to 0.61. Yet 86.18% of tasks admit an observed clean-success trajectory, showing that drift is avoidable. Drift is persistent and dominated by early data over-collection; apparent improvements under agentic scaffolds coincide with collapsing clean-completion performance. To understand potential harms to individuals and society, we map drift points to legal provisions across four jurisdictions, connecting overreach to privacy and information-security concerns. Data",
-          "pub_date": "2026-11-06T02:47:25.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1823,
+          "id": 1882,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -949,7 +979,7 @@
           "word_count": 141
         },
         {
-          "id": 189,
+          "id": 190,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 201,
+          "id": 202,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 315,
+          "id": 316,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 355,
+          "id": 356,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 478,
+          "id": 479,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 712,
+          "id": 713,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1032,6 +1062,21 @@
           "title": "Reconstructing LLM Lineage Trees via Fine-Tuning Path Inference",
           "link": "https://arxiv.org/abs/2611.08866",
           "content": "arXiv:2611.08866v1 Announce Type: new Abstract: Fine-tuned (FT) derivatives of large language models (LLMs) are now released in large numbers, yet their provenance relies on self-reports and cannot be verified. Misattributed lineage leaves a verifier unable to audit outsourced fine-tuning, confirm license compliance of derived models, or trace vulnerabilities that a parent passes to its children. All three require the direction of derivation, not merely its presence. Existing output-only methods are limited to pairwise derivation tests or undirected lineage estimation, while recovering a directed tree requires white-box access to model weights. We formalize the problem of reconstructing a directed model tree, including internal nodes, under gray-box access, where only teacher-forced log-likelihoods are observed and weights are never inspected. Fine-tuning raises the log-likelihood of the training data, and a child inherits this increase from its parent. Building on this property, we define an asymmetric per-task log-likelihood deviation between any two models as a trace of fine-tuning history, and derive from it an edge weight for each ordered pair of models. We propose TRACE-Edge,",
+          "pub_date": "Mon, 09 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 916,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Designing Service Systems from Textual Evidence",
+          "link": "https://arxiv.org/abs/2601.21471",
+          "content": "arXiv:2601.21471v2 Announce Type: replace Abstract: In service system design, it is often the case that the main evidence of system performance appears in textual form, such as customer support transcripts, complaint narratives, and compliance review reports. With the increasing use of large language models (LLMs), these textual trajectories can be converted into low-cost proxy scores that support comparison and optimization of candidate service configurations. However, LLM-based evaluations can exhibit systematic bias and require human audits for correction. To this end, this research studies how to identify the best service configuration with high confidence while minimizing the use of expensive human audits. We formulate the problem as fixed-confidence best arm identification with an always-observed, potentially biased proxy and selectively acquired human-verified outcomes. Moreover, several configurations can run on one case. A human audit can provide a case label that scores all their outputs. We show that sharing this reference and deciding whether to audit after observing proxy scores can each strictly reduce asymptotic identification cost. The selected configurations determ",
           "pub_date": "Mon, 09 Nov 2026 00:00:00 -0500",
           "is_duplicate": false,
           "has_content": true,
@@ -1050,8 +1095,8 @@
     }
   },
   "meta": {
-    "total_raw": 1984,
-    "dup": 511,
+    "total_raw": 2043,
+    "dup": 513,
     "nocontent": 404,
     "noise": 6
   }
