@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 67,
+          "id": 64,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 376
         },
         {
-          "id": 63,
+          "id": 60,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 364
         },
         {
-          "id": 69,
+          "id": 66,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 362
         },
         {
-          "id": 4,
+          "id": 5,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 160
         },
         {
-          "id": 1,
+          "id": 2,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 152
         },
         {
-          "id": 3,
+          "id": 4,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -95,37 +95,7 @@
           "word_count": 140
         },
         {
-          "id": 47,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-          "link": "https://deepmind.google/blog/introducing-alphaproof-code/",
-          "content": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
-          "pub_date": "Tue, 10 Nov 2026 12:02:28 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 102
-        },
-        {
-          "id": 48,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
-          "link": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
-          "content": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
-          "pub_date": "Mon, 09 Nov 2026 19:51:47 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 95
-        },
-        {
-          "id": 101,
+          "id": 98,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +110,7 @@
           "word_count": 233
         },
         {
-          "id": 114,
+          "id": 111,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +125,7 @@
           "word_count": 232
         },
         {
-          "id": 105,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +140,22 @@
           "word_count": 223
         },
         {
-          "id": 86,
+          "id": 81,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "EmoHarness: Boosting Multimodal Emotion Understanding with Meta-Harness Evolving",
+          "link": "https://arxiv.org/abs/2611.11994",
+          "content": "Small multimodal models can misjudge emotion when words, voice, and visual cues conflict. We present EmoHarness, which runs such a model, the frozen student, inside a harness: the prompts, settings, and verification code around its calls. A human-written starting harness, the scaffold, numbers the student's visual observations, transcript, and prosody descriptions as citable evidence and has the student weigh candidate emotions against it. In Meta-Harness Evolving (MHE), a stronger LLM, the Builder, reads the student's errors and execution traces offline and edits the harness; static checks and validation gates decide which edits are kept, and the Builder never sees evaluation items. On 5,507 MME-Emotion items, EmoHarness raises task-macro Recognition by 7.6-13.4 points over a single video-only call for all four students and both Builders. Transcripts and prosody descriptions supply most of this boost (+5.38 to +10.71); the scaffold changes the audio-augmented call by -0.79 to +2.54, partly through extra multi-label predictions, and evolved edits add at most +0.95, although no evolved increment survives Holm correction. The harness's emotion context also transfers to IntentQA, with",
+          "pub_date": "2026-11-08T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 84,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 87,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "RidgeFill: Training-Free Late-Layer Cache Fill for Faster Prefill",
+          "link": "https://arxiv.org/abs/2611.09709",
+          "content": "RidgeFill shortens prefill by not computing most of a model's upper layers for the prompt. The lower layers run exactly up to a split; from the split layer's state a per-layer map predicts every later layer's input, and each late layer writes its cache from that prediction. The design follows YOCO and DeepSeek-V4.1-Flash, where the projection is trained into the model. RidgeFill retrofits it onto models that were never trained for it: the map is a ridge regression fitted once in closed form from one pass over calibration text, the layer's own projections run unchanged, and a chosen set of rows, the last few thousand tokens, and every decoding step run the full model. Nothing is trained and no token is dropped. Most of the work was in measurement, finding a repeatable methodology. Loss averaged over all tokens hides RidgeFill's error. Needle retrieval in the filled region, loss on tokens that depend on distant context, and splice tests that swap filled keys or values for exact ones show which component carries it: the keys on Llama-3.1-8B, half of it in their scale, and the values and the recurrent state on Qwen3.5-9B. On Qwen3.8-27B in a llama.cpp fork on an A100, time to first tok",
+          "pub_date": "2026-11-05T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2555,
-      "total_valid": 1778,
+      "total_raw": 2551,
+      "total_valid": 1776,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2859,
+          "id": 2855,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2862,
+          "id": 2858,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2865,
+          "id": 2861,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2775,
+          "id": 2771,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 382
         },
         {
-          "id": 2743,
+          "id": 2739,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 234
         },
         {
-          "id": 2777,
+          "id": 2773,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 225
         },
         {
-          "id": 2943,
+          "id": 2939,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 365
         },
         {
-          "id": 2930,
+          "id": 2926,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 346
         },
         {
-          "id": 2885,
+          "id": 2881,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 220
         },
         {
-          "id": 2598,
+          "id": 2594,
           "source": "FDA 审批动态",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 600
         },
         {
-          "id": 2565,
+          "id": 2561,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 233
         },
         {
-          "id": 2560,
+          "id": 2556,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 223
         },
         {
-          "id": 2584,
+          "id": 2580,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 171
         },
         {
-          "id": 2686,
+          "id": 2682,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 550
         },
         {
-          "id": 2973,
+          "id": 2969,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 3120,
+          "id": 3116,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 3116,
+          "id": 3112,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1199
         },
         {
-          "id": 3058,
+          "id": 3054,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 424
         },
         {
-          "id": 3074,
+          "id": 3070,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 244
         },
         {
-          "id": 3075,
+          "id": 3071,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 164
         },
         {
-          "id": 3118,
+          "id": 3114,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 3130,
+          "id": 3126,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 478
         },
         {
-          "id": 3108,
+          "id": 3104,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 348
         },
         {
-          "id": 3104,
+          "id": 3100,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -581,7 +581,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2870,
+          "id": 2866,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 3118,
+          "id": 3114,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 3119,
+          "id": 3115,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 3121,
+          "id": 3117,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 732
         },
         {
-          "id": 2753,
+          "id": 2749,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 543
         },
         {
-          "id": 2983,
+          "id": 2979,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 321
         },
         {
-          "id": 2751,
+          "id": 2747,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 318
         },
         {
-          "id": 2764,
+          "id": 2760,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 313
         },
         {
-          "id": 2985,
+          "id": 2981,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 305
         },
         {
-          "id": 2619,
+          "id": 2615,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -754,8 +754,8 @@
     "payment": {
       "candidates": [
         {
-          "id": 3152,
-          "source": "PYMNTS.com",
+          "id": 3150,
+          "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
@@ -769,7 +769,7 @@
           "word_count": 534
         },
         {
-          "id": 3155,
+          "id": 3151,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -784,22 +784,7 @@
           "word_count": 534
         },
         {
-          "id": 3153,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "What Skydance’s $6 Billion Bet Teaches CFOs About One-Time Charges",
-          "link": "https://www.pymnts.com/back-office/cfo/2026/what-skydances-6-billion-bet-teaches-cfos-about-one-time-charges/",
-          "content": "Corporate America is spending billions to make itself cheaper. Across media, technology and financial services, mergers and restructuring programs are producing a familiar combination of severance payments, technology migrations, consulting expenses and asset write-downs. But there is a problem with the economics of corporate reinvention: The expenses are immediate, while the benefits are conditional. Executives [&#8230;] The post What Skydance’s $6 Billion Bet Teaches CFOs About One-Time Charges appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 10 Nov 2026 20:19:51 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 532
-        },
-        {
-          "id": 3149,
+          "id": 3147,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +799,7 @@
           "word_count": 483
         },
         {
-          "id": 3144,
+          "id": 3142,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +814,7 @@
           "word_count": 469
         },
         {
-          "id": 3150,
+          "id": 3148,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 462
         },
         {
-          "id": 3181,
+          "id": 3176,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 417
         },
         {
-          "id": 3179,
+          "id": 3174,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 407
         },
         {
-          "id": 3204,
+          "id": 3199,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 357
         },
         {
-          "id": 3202,
+          "id": 3197,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 345
         },
         {
-          "id": 3203,
+          "id": 3198,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 339
         },
         {
-          "id": 3177,
+          "id": 3172,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 293
         },
         {
-          "id": 3175,
+          "id": 3170,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 283
         },
         {
-          "id": 3168,
+          "id": 3164,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +949,7 @@
           "word_count": 282
         },
         {
-          "id": 3174,
+          "id": 3169,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +964,7 @@
           "word_count": 276
         },
         {
-          "id": 3157,
+          "id": 3153,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,7 @@
           "word_count": 158
         },
         {
-          "id": 3156,
+          "id": 3152,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +994,7 @@
           "word_count": 96
         },
         {
-          "id": 97,
+          "id": 95,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 311,
+          "id": 308,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 341,
+          "id": 338,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1052,6 +1037,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 482,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "PolicyGuide: From Guarding One Action to Guiding the Whole Workflow for Policy-Compliant LLM Agents",
+          "link": "https://arxiv.org/abs/2608.19861",
+          "content": "arXiv:2608.19861v2 Announce Type: replace-cross Abstract: Customer-service LLM agents must follow organizational policy when acting on a user's behalf. Compliance failures arise from either forbidden actions, such as granting an ineligible change, or omitted procedural requirements, such as identification or confirmation. Runtime safeguards can intervene on risky actions, but action-local checks do not guide an agent through a multi-step procedure. Workflow-following systems support prescribed process execution, but primarily target workflow completion rather than safeguarding agent behavior. PolicyGuide instead compiles each domain policy into a workflow graph and invokes a proactive verifier at user-turn boundaries. From persisted graph state, the verifier reconciles open requests and returns step-specific remediation along a policy-compliant path. Across the $\\tau^2$-bench airline, retail, and telecom domains with a GPT 5.4 agent and verifier, PolicyGuide raises mean $\\mathrm{Pass}^4$ from $0.42$ to $0.62$, with the largest gain on telecom ($0.19$ to $0.61$), the most workflow-structured domain. The same workflows transfer to Claude Sonnet 4.6 and Gemini 2.5 Pro agents. Compleme",
+          "pub_date": "Tue, 10 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1059,15 +1059,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 254,
-      "total_valid": 67,
+      "total_raw": 253,
+      "total_valid": 68,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3373,
-    "dup": 795,
-    "nocontent": 408,
+    "total_raw": 3368,
+    "dup": 793,
+    "nocontent": 406,
     "noise": 6
   }
 }
