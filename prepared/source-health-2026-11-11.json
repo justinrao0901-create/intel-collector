@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 22,
+      "count": 20,
       "ok": true
     },
     "Anthropic Blog": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 16,
+      "count": 15,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 23,
+      "count": 22,
       "ok": true
     },
     "Fierce Pharma": {
@@ -166,7 +166,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 75,
+      "count": 36,
       "ok": true
     },
     "NEJM": {
@@ -190,7 +190,7 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
+      "count": 3,
       "ok": true
     },
     "Cell Host Microbe": {
@@ -232,7 +232,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 5,
       "ok": true
     },
     "Nature Immunology": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 22,
+      "count": 19,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 21,
+      "count": 20,
       "ok": true
     },
     "BioPharma Dive": {
@@ -352,13 +352,13 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 5,
+      "count": 2,
       "ok": true
     },
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 7,
+      "count": 5,
       "ok": true
     },
     "Absci Blog": {
@@ -412,8 +412,8 @@
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true
     },
     "PaymentsDive": {
       "section": "payment",
@@ -442,7 +442,7 @@
     "Cointelegraph Payments": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
+      "count": 0,
       "ok": true
     },
     "Ledger Insights": {
@@ -504,10 +504,11 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI",
-      "PYMNTS Cross-Border"
+      "Import AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "Cointelegraph Payments"
+    ],
     "persistent_zero": [
       "WHO News"
     ]
