@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 4,
+      "count": 0,
       "ok": true
     },
     "Meta AI Blog": {
@@ -437,7 +437,7 @@
       "section": "payment",
       "method": "rss",
       "count": 0,
-      "ok": true
+      "ok": false
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -504,13 +504,14 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "Thunes"
     ],
     "sudden_drop": [
       "Cointelegraph Payments"
     ],
     "persistent_zero": [
-      "Thunes",
+      "Google DeepMind",
       "WHO News"
     ]
   }
