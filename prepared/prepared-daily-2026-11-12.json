@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 64,
+          "id": 63,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,22 @@
           "word_count": 252
         },
         {
-          "id": 87,
+          "id": 86,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
+          "link": "https://arxiv.org/abs/2611.13001",
+          "content": "Generation, imputation, and prediction query different aspects of the same tabular distribution, but are usually evaluated separately. This leaves unclear which capabilities they share, how their training objectives interact, and whether one model can perform all three well. We introduce the One Table Benchmark (), spanning 56 datasets, 46 registered methods, and 20 capability axes under aligned data splits and explicit task contracts. We compare task ranks on aligned support, train five backbones under all seven non-empty objective combinations on five datasets with three seeds, and contrast fixed-model profiles with specialist portfolios. Rank comparisons connect imputation and prediction through numerical recovery and dependence preservation, and link generation to both through predictive utility; distributional fidelity follows different, sometimes opposing, rankings. Objective interventions show the largest pooled gains from including the recipient's own objective. Generation has the broadest coverage of positive pooled auxiliary effects, while prediction shows potential to improve imputation and synthetic-data utility, with responses that vary across backbones. Cross-addition",
+          "pub_date": "2026-11-07T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 88,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 88,
+          "id": 89,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 89,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Embodied First Exam",
-          "link": "https://arxiv.org/abs/2611.12177",
-          "content": "Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor policy learning, leaving it open whether coding agents can reliably control diverse robots under physical-world constraints. We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control. We hope it serves as a first exam for coding agents before they enter the physical world, with 1,156 tasks in 35 suites on 47 robots, including 9 new suites that go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control, and sim-to-sim engineering. Each task can be run in up to three evaluation settings. The Standard Setting mimics the real world: the agent receives only sensor observations and, by default, cannot reset the environment. Its Realtime variant keeps the environment running while the agent reasons. The Privileged Setting gives the agent access to the full simulator state and unlimite",
-          "pub_date": "2026-11-08T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1112,
+          "id": 1111,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 1116,
+          "id": 1115,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1224,
-      "total_valid": 795,
+      "total_raw": 1223,
+      "total_valid": 796,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1560,
+          "id": 1555,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1562,
+          "id": 1557,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1565,
+          "id": 1560,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1679,
+          "id": 1674,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 412
         },
         {
-          "id": 1680,
+          "id": 1675,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 387
         },
         {
-          "id": 1313,
+          "id": 1308,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 191
         },
         {
-          "id": 1651,
+          "id": 1646,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 164
         },
         {
-          "id": 1432,
+          "id": 1427,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 127
         },
         {
-          "id": 1431,
+          "id": 1426,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 121
         },
         {
-          "id": 1644,
+          "id": 1639,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 69
         },
         {
-          "id": 1645,
+          "id": 1640,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 69
         },
         {
-          "id": 1612,
+          "id": 1607,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 422
         },
         {
-          "id": 1572,
+          "id": 1567,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 366
         },
         {
-          "id": 1629,
+          "id": 1624,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 327
         },
         {
-          "id": 1701,
+          "id": 1696,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 510,
-      "total_valid": 347,
+      "total_raw": 506,
+      "total_valid": 344,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1795,
+          "id": 1790,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 302
         },
         {
-          "id": 1790,
+          "id": 1785,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 193
         },
         {
-          "id": 1789,
+          "id": 1784,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 150
         },
         {
-          "id": 1812,
+          "id": 1808,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1813,
+          "id": 1809,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1814,
+          "id": 1810,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,52 @@
           "word_count": 1200
         },
         {
-          "id": 1747,
+          "id": 1805,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Temperature dependence of binding entropy drives evolution in LacI family proteins",
+          "link": "https://www.nature.com/articles/s41589-026-02371-2",
+          "content": "Nature Chemical Biology, Published online: 11 November 2026; doi:10.1038/s41589-026-02371-2 Transcription factors of the LacI/GalR family have been diverging for over 2 billion years. Ancestral reconstruction, isothermal titration calorimetry and structural analysis have now been used to show that ligand binding switched from entropy-driven, in an ancient repressor that binds ligand in an open and disordered state, to enthalpy-driven and ordered in Escherichia coli LacI.",
+          "pub_date": "2026-11-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 475
+        },
+        {
+          "id": 1802,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "A chemical key to the brain",
+          "link": "https://www.nature.com/articles/s41589-026-02384-x",
+          "content": "Nature Chemical Biology, Published online: 11 November 2026; doi:10.1038/s41589-026-02384-x Receptor-mediated transcytosis is gaining clinical momentum for brain delivery of biotherapeutics, yet it remains mostly limited by protein ligands targeting receptors with broad tissue distribution. Repurposing an FDA-approved small molecule that binds carbonic anhydrase IV introduces a strategy to selectively shuttle large therapeutics across the blood–brain barrier.",
+          "pub_date": "2026-11-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 463
+        },
+        {
+          "id": 1803,
+          "source": "Nature Chemical Biology",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "FlAsH-ID enables live-cell photoproximity labeling with a short peptide tag",
+          "link": "https://www.nature.com/articles/s41589-026-02366-z",
+          "content": "Nature Chemical Biology, Published online: 11 November 2026; doi:10.1038/s41589-026-02366-z Commonly used proximity labeling methods implement large fusions of a protein of interest to a proximity labeling enzyme, which can block key protein interactions and disrupt native biology. Now, a method called FlAsH-ID has been developed that enables photoproximity labeling of a protein of interest using a 6-aa peptide tag to bind a small-molecule photocatalyst.",
+          "pub_date": "2026-11-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 458
+        },
+        {
+          "id": 1742,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -537,6 +582,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 326
+        },
+        {
+          "id": 1794,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "A High-Efficiency Geranylation Platform Enabled by Rational Tuning of a Single-Residue-Coded Chemo- and Regioselective Switch in Aromatic Prenyltransferases",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.11.09.764520v1?rss=1",
+          "content": "Geranylation is an efficient post-modification strategy for enhancing or introducing new properties to molecules; however, achieving both high efficiency and precision remains challenging. Aromatic prenyltransferases (PTs) provide a mild and sustainable approach, yet their practical application is often limited by the trade-off between broad substrate scope and low selectivity, and successfully balancing these properties is rare. Here, using the pharmaceutically relevant cannabigerol framework as a model, we identify a single-residue switch in a prenyltransferase from Aspergillus terreus (AtaPT) that governs both chemo- and regioselectivity. Rational tuning of this switch preserves broad substrate scope while enhancing selectivity, enabling the selective formation of each of the three possible mono-geranylated products in the model reaction. Structural analysis reveals that this residue modulates the selectivity and activity through coupled steric and electrostatic effects. Notably, transplantation of this site into three homologous PTs similarly reprogrammed selectivity, establishing a conserved and generalizable control mechanism. Leveraging these insights, we achieved selective",
+          "pub_date": "2026-11-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
         }
       ],
       "quota": {
@@ -544,14 +604,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 99,
-      "total_valid": 20,
-      "total_candidates": 7
+      "total_raw": 100,
+      "total_valid": 27,
+      "total_candidates": 11
     },
     "cross": {
       "candidates": [
         {
-          "id": 1815,
+          "id": 1811,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1378,
+          "id": 1373,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +641,7 @@
           "word_count": 420
         },
         {
-          "id": 1312,
+          "id": 1307,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +656,7 @@
           "word_count": 375
         },
         {
-          "id": 1294,
+          "id": 1289,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +671,7 @@
           "word_count": 348
         },
         {
-          "id": 1471,
+          "id": 1466,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +686,7 @@
           "word_count": 314
         },
         {
-          "id": 1309,
+          "id": 1304,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +701,7 @@
           "word_count": 287
         },
         {
-          "id": 1437,
+          "id": 1432,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +716,7 @@
           "word_count": 206
         },
         {
-          "id": 1840,
+          "id": 1836,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +731,7 @@
           "word_count": 202
         },
         {
-          "id": 1839,
+          "id": 1835,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +746,7 @@
           "word_count": 197
         },
         {
-          "id": 1463,
+          "id": 1458,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -706,8 +766,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 56,
-      "total_valid": 45,
+      "total_raw": 54,
+      "total_valid": 43,
       "total_candidates": 10
     },
     "china": {
@@ -724,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1846,
+          "id": 1842,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +799,7 @@
           "word_count": 498
         },
         {
-          "id": 1855,
+          "id": 1851,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +814,7 @@
           "word_count": 483
         },
         {
-          "id": 1853,
+          "id": 1849,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +829,7 @@
           "word_count": 455
         },
         {
-          "id": 1851,
+          "id": 1847,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +844,7 @@
           "word_count": 454
         },
         {
-          "id": 1886,
+          "id": 1877,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +859,7 @@
           "word_count": 278
         },
         {
-          "id": 1885,
+          "id": 1876,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,21 +874,6 @@
           "word_count": 267
         },
         {
-          "id": 1874,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Standard Chartered powered bank Mox appoints Anshul Sabherwal as CEO",
-          "link": "https://www.finextra.com/newsarticle/48734/standard-chartered-powered-bank-mox-appoints-anshul-sabherwal-as-ceo?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The former head of product and payment of Standard Chartered Hong Kong Anshul Sabherwal has been appointed CEO of Mox, a digital bank licensed in Hong Kong, powered by Standard Chartered in partnership with PCCW, HKT and Trip.com.",
-          "pub_date": "Tue, 10 Nov 2026 13:12:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 230
-        },
-        {
           "id": 107,
           "source": "TechCrunch AI",
           "section": "payment",
@@ -836,15 +881,15 @@
           "priority": 4,
           "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
           "link": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
-          "content": "CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
+          "content": "CoreWeave is increasingly asking customers to pay up front, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
           "pub_date": "Wed, 11 Nov 2026 19:54:00 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 218
+          "word_count": 219
         },
         {
-          "id": 1877,
+          "id": 1868,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +904,7 @@
           "word_count": 202
         },
         {
-          "id": 1869,
+          "id": 1864,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +919,7 @@
           "word_count": 193
         },
         {
-          "id": 1883,
+          "id": 1874,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,22 +934,22 @@
           "word_count": 188
         },
         {
-          "id": 1905,
-          "source": "Thunes",
+          "id": 1862,
+          "source": "Finextra",
           "section": "payment",
           "tier": "T2",
-          "priority": 5,
-          "title": "Turning Compliance into a Competitive Advantage in Cross-Border Payments",
-          "link": "https://www.thunes.com/insights/learn/turning-compliance-into-a-competitive-advantage-in-cross-border-payments/",
-          "content": "The Evolving Regulatory Landscape Compliance and regulatory oversight have long represented a structural advantage for established commercial banks compared to fintech startups. However, this institutional advantage is coming under pressure as regulatory requirements evolve and the popularity of non-traditional banking channels grows. Compliance frameworks were originally designed specifically around batch-processed Swift messages moving between regulated ... Read more &#187; The post Turning Compliance into a Competitive Advantage in Cross-Border Payments first appeared on Thunes.com .",
-          "pub_date": "Wed, 11 Nov 2026 05:27:40 +0000",
+          "priority": 4,
+          "title": "Deutsche Bank and Ant set out roadmap for integrating agentic AI into wholesale banking",
+          "link": "https://www.finextra.com/newsarticle/48740/deutsche-bank-and-ant-set-out-roadmap-for-integrating-agentic-ai-into-wholesale-banking?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "A new research report released by Deutsche Bank and Ant Digital Technologies highlights the potential of agentic AI across institutional treasury, cross border payments and trade finance.",
+          "pub_date": "Wed, 11 Nov 2026 11:13:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 593
+          "word_count": 187
         },
         {
-          "id": 167,
+          "id": 166,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -919,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 174,
+          "id": 173,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 215,
+          "id": 214,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 219,
+          "id": 218,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 296,
+          "id": 295,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 410,
+          "id": 409,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 518,
+          "id": 517,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 581,
+          "id": 580,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1022,6 +1067,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 722,
+          "source": "arXiv cs.LG",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "INTENT: Out-of-Sample, Out-of-Time, and Cold-Start Evaluation on User Event Sequences",
+          "link": "https://arxiv.org/abs/2611.13069",
+          "content": "arXiv:2611.13069v1 Announce Type: new Abstract: Banks now train foundation models on ordered sequences of customer events such as transactions, app sessions, and authorizations. Deployed, such a model predicts forward in time, often for customers and merchants absent from training, yet each is evaluated on private data, so no two can be compared. Public benchmarks for such sequences rarely test a period the model has not seen; recommendation studies usually hold out each user's last events instead. We present INTENT (INTEraction, Novelty, and Transfer evaluation for next-action prediction), a public benchmark that scores a model in seven cells defined by whether the user, the period, and the target item appeared in training. An audit of 59 public dataset families retains five datasets; the most common defect is the lack of a calendar timestamp that orders events. No date lies within the time span of all five datasets, so each is split at its own cutoff, chosen by one rule fixed before any model is evaluated. Summed over the datasets, every cell holds at least 111,769 users. In reference results the cell determines the best model: a transformer leads on seen items after the cutoff b",
+          "pub_date": "Wed, 11 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1029,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 237,
-      "total_valid": 51,
+      "total_raw": 228,
+      "total_valid": 45,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2070,
-    "dup": 453,
-    "nocontent": 410,
+    "total_raw": 2057,
+    "dup": 442,
+    "nocontent": 409,
     "noise": 6
   }
 }
