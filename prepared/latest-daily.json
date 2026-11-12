@@ -115,6 +115,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
+          "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+          "link": "https://arxiv.org/abs/2610.39671",
+          "content": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled context. We study self-learning -- autonomously retrieving, studying, and applying knowledge from long-form reference materials on the fly. To investigate this capability, we formulate a textbook-based mathematical problem-solving task. LLMs must navigate textbook exposition, learn and apply relevant principles, and construct proofs for exercises, with reference solutions withheld. We introduce a BookNavigator interface to support this human-inspired study process and incentivize self-learning through reinforcement learning (RL) with fine-grained rewards. Experiments show that our method improves performance across in-domain and out-of-domain textbooks and subjects, raising Intern-S2-Preview-35B's overall proof accuracy from 51.5% to 79.5% and outperforming RL-trained textbook-free and fixed-retrieval baselines. These gains extend to complex long-context benchmarks in",
+          "pub_date": "2026-10-28T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 86,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
           "title": "GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
           "link": "https://arxiv.org/abs/2611.13028",
           "content": "AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). We introduce GTAGym, an environment and framework for evaluation and RL on GTA V tasks. Its evaluation benchmark, GTAVBench, derived from GTA V main-story missions, contains 103 online tasks reconstructed across nine task families, alongside 47 image-based shooting and sniping tasks using GTA V imagery. A web server provides access to the online environment and evaluation interface, supporting parallel testing through screenshots and keyboard-mouse actions with automatic engine-state outcome checks. We evaluate six frontier LLMs on GTAVBench with textual task instructions and on its GTAVBench-AGI branch, where instructions appear only in the first screenshot and a harness automatically compresses interaction history. The best configuration achieves 70.9% overall accuracy in GTAVBench-AGI, yet aerial navigation, evasion and interception remain difficult. GTAGym also prov",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 87,
+          "id": 88,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -134,21 +149,6 @@
           "link": "https://arxiv.org/abs/2611.13001",
           "content": "Generation, imputation, and prediction query different aspects of the same tabular distribution, but are usually evaluated separately. This leaves unclear which capabilities they share, how their training objectives interact, and whether one model can perform all three well. We introduce the One Table Benchmark (), spanning 56 datasets, 46 registered methods, and 20 capability axes under aligned data splits and explicit task contracts. We compare task ranks on aligned support, train five backbones under all seven non-empty objective combinations on five datasets with three seeds, and contrast fixed-model profiles with specialist portfolios. Rank comparisons connect imputation and prediction through numerical recovery and dependence preservation, and link generation to both through predictive utility; distributional fidelity follows different, sometimes opposing, rankings. Objective interventions show the largest pooled gains from including the recipient's own objective. Generation has the broadest coverage of positive pooled auxiliary effects, while prediction shows potential to improve imputation and synthetic-data utility, with responses that vary across backbones. Cross-addition",
           "pub_date": "2026-11-07T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 89,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Prompt2Echo (P2Echo): Text-Prompted Multi-View Echocardiography Segmentation with One Model",
-          "link": "https://arxiv.org/abs/2611.13425",
-          "content": "Automated segmentation in multi-view echocardiography is essential for comprehensive cardiac assessment, yet remains challenging due to substantial anatomical and appearance variability across standard acoustic windows. In this paper, we present P2Echo, a unified framework capable of segmenting diverse cardiac structures across multiple standard echocardiographic views using a single model controlled by structured view-aware text prompts. Unlike recent foundation model adaptations that rely on implicit latent priors, P2Echo explicitly conditions the segmentation process via a novel Dynamic Image-Text Alignment (DyITA) module. DyITA integrates a differentiable routing mechanism and token differential operators to dynamically modulate decoder features according to the requested view and target structure. This allows the network to adaptively switch its processing pathways for different views without architectural changes. Extensive experiments on a large-scale internal dataset (seen during training) and held-out evaluation on three external datasets demonstrate that P2Echo matches or exceeds both view-specific specialists and state-of-the-art universal models at a fraction of their c",
-          "pub_date": "2026-11-09T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 1553,
+          "id": 1552,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1555,
+          "id": 1554,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1558,
+          "id": 1557,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1672,
+          "id": 1671,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 412
         },
         {
-          "id": 1673,
+          "id": 1672,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 387
         },
         {
-          "id": 1306,
+          "id": 1305,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 191
         },
         {
-          "id": 1644,
+          "id": 1643,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 164
         },
         {
-          "id": 1425,
+          "id": 1424,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 127
         },
         {
-          "id": 1424,
+          "id": 1423,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 121
         },
         {
-          "id": 1637,
+          "id": 1636,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 69
         },
         {
-          "id": 1638,
+          "id": 1637,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 69
         },
         {
-          "id": 1605,
+          "id": 1604,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 422
         },
         {
-          "id": 1565,
+          "id": 1564,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 366
         },
         {
-          "id": 1622,
+          "id": 1621,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 327
         },
         {
-          "id": 1694,
+          "id": 1693,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 504,
-      "total_valid": 342,
+      "total_raw": 503,
+      "total_valid": 341,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1788,
+          "id": 1787,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 302
         },
         {
-          "id": 1783,
+          "id": 1782,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 193
         },
         {
-          "id": 1782,
+          "id": 1781,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 150
         },
         {
-          "id": 1806,
+          "id": 1805,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1807,
+          "id": 1806,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1808,
+          "id": 1807,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1803,
+          "id": 1802,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 475
         },
         {
-          "id": 1800,
+          "id": 1799,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 463
         },
         {
-          "id": 1801,
+          "id": 1800,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 458
         },
         {
-          "id": 1740,
+          "id": 1739,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 326
         },
         {
-          "id": 1792,
+          "id": 1791,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -611,7 +611,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1809,
+          "id": 1808,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1371,
+          "id": 1370,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 420
         },
         {
-          "id": 1305,
+          "id": 1304,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 375
         },
         {
-          "id": 1287,
+          "id": 1286,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 348
         },
         {
-          "id": 1464,
+          "id": 1463,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 314
         },
         {
-          "id": 1302,
+          "id": 1301,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 287
         },
         {
-          "id": 1430,
+          "id": 1429,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 206
         },
         {
-          "id": 1834,
+          "id": 1833,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 202
         },
         {
-          "id": 1833,
+          "id": 1832,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 197
         },
         {
-          "id": 1456,
+          "id": 1455,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1840,
+          "id": 1839,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 498
         },
         {
-          "id": 1849,
+          "id": 1848,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 483
         },
         {
-          "id": 1847,
+          "id": 1846,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 455
         },
         {
-          "id": 1845,
+          "id": 1844,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 454
         },
         {
-          "id": 1871,
+          "id": 1870,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 278
         },
         {
-          "id": 1870,
+          "id": 1869,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 219
         },
         {
-          "id": 1862,
+          "id": 1861,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 202
         },
         {
-          "id": 1860,
+          "id": 1859,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 193
         },
         {
-          "id": 1868,
+          "id": 1867,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 188
         },
         {
-          "id": 1858,
+          "id": 1857,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 187
         },
         {
-          "id": 1888,
+          "id": 1887,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1095,7 +1095,7 @@
     }
   },
   "meta": {
-    "total_raw": 2053,
+    "total_raw": 2052,
     "dup": 443,
     "nocontent": 408,
     "noise": 6
