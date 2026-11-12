@@ -110,7 +110,22 @@
           "word_count": 252
         },
         {
-          "id": 86,
+          "id": 85,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
+          "link": "https://arxiv.org/abs/2611.13028",
+          "content": "AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). We introduce GTAGym, an environment and framework for evaluation and RL on GTA V tasks. Its evaluation benchmark, GTAVBench, derived from GTA V main-story missions, contains 103 online tasks reconstructed across nine task families, alongside 47 image-based shooting and sniping tasks using GTA V imagery. A web server provides access to the online environment and evaluation interface, supporting parallel testing through screenshots and keyboard-mouse actions with automatic engine-state outcome checks. We evaluate six frontier LLMs on GTAVBench with textual task instructions and on its GTAVBench-AGI branch, where instructions appear only in the first screenshot and a harness automatically compresses interaction history. The best configuration achieves 70.9% overall accuracy in GTAVBench-AGI, yet aerial navigation, evasion and interception remain difficult. GTAGym also prov",
+          "pub_date": "2026-11-08T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 87,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 88,
+          "id": 89,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -134,21 +149,6 @@
           "link": "https://arxiv.org/abs/2611.13425",
           "content": "Automated segmentation in multi-view echocardiography is essential for comprehensive cardiac assessment, yet remains challenging due to substantial anatomical and appearance variability across standard acoustic windows. In this paper, we present P2Echo, a unified framework capable of segmenting diverse cardiac structures across multiple standard echocardiographic views using a single model controlled by structured view-aware text prompts. Unlike recent foundation model adaptations that rely on implicit latent priors, P2Echo explicitly conditions the segmentation process via a novel Dynamic Image-Text Alignment (DyITA) module. DyITA integrates a differentiable routing mechanism and token differential operators to dynamically modulate decoder features according to the requested view and target structure. This allows the network to adaptively switch its processing pathways for different views without architectural changes. Extensive experiments on a large-scale internal dataset (seen during training) and held-out evaluation on three external datasets demonstrate that P2Echo matches or exceeds both view-specific specialists and state-of-the-art universal models at a fraction of their c",
           "pub_date": "2026-11-09T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 89,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
-          "link": "https://arxiv.org/abs/2611.10486",
-          "content": "Diffusion language models (DLMs) generate text through iterative denoising, where decisions about which tokens to commit or remask strongly affect output quality. Existing certainty-aware strategies rely on instantaneous confidence or entropy, but these local signals can be misleading on difficult reasoning problems. We formulate DLM test-time scaling as adaptive allocation of both inference compute and decoding strategies. Our two-stage approach uses a fast base sampler to solve easy questions, then applies frequency-aware remasking to the remaining hard questions. This strategy tracks how often each token's prediction changes across denoising steps and preferentially commits frequently changing tokens, encouraging samples to explore alternative reasoning paths rather than collapse onto the model's preferred trajectory. Experiments with LLaDA-8B-Instruct and Dream-7B-Instruct show consistent improvements over a strong adaptive allocation baseline, with absolute accuracy gains of up to 3.73 percentage points (LLaDA) and 7.33 percentage points (Dream) on MATH-500, and absolute coverage gains of up to 11.39 percentage points (LLaDA) and 10.98 percentage points (Dream) on HumanEval. O",
-          "pub_date": "2026-11-06T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 1223,
-      "total_valid": 796,
+      "total_valid": 795,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1555,
+          "id": 1554,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1557,
+          "id": 1556,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1560,
+          "id": 1559,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1674,
+          "id": 1673,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 412
         },
         {
-          "id": 1675,
+          "id": 1674,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 387
         },
         {
-          "id": 1308,
+          "id": 1307,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 191
         },
         {
-          "id": 1646,
+          "id": 1645,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 164
         },
         {
-          "id": 1427,
+          "id": 1426,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 127
         },
         {
-          "id": 1426,
+          "id": 1425,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 121
         },
         {
-          "id": 1639,
+          "id": 1638,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 69
         },
         {
-          "id": 1640,
+          "id": 1639,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 69
         },
         {
-          "id": 1607,
+          "id": 1606,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 422
         },
         {
-          "id": 1567,
+          "id": 1566,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 366
         },
         {
-          "id": 1624,
+          "id": 1623,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 327
         },
         {
-          "id": 1696,
+          "id": 1695,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 506,
-      "total_valid": 344,
+      "total_raw": 505,
+      "total_valid": 343,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1790,
+          "id": 1789,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 302
         },
         {
-          "id": 1785,
+          "id": 1784,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 193
         },
         {
-          "id": 1784,
+          "id": 1783,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 150
         },
         {
-          "id": 1808,
+          "id": 1807,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1809,
+          "id": 1808,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1810,
+          "id": 1809,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1805,
+          "id": 1804,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 475
         },
         {
-          "id": 1802,
+          "id": 1801,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 463
         },
         {
-          "id": 1803,
+          "id": 1802,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 458
         },
         {
-          "id": 1742,
+          "id": 1741,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 326
         },
         {
-          "id": 1794,
+          "id": 1793,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -611,7 +611,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1811,
+          "id": 1810,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1373,
+          "id": 1372,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 420
         },
         {
-          "id": 1307,
+          "id": 1306,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 375
         },
         {
-          "id": 1289,
+          "id": 1288,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 348
         },
         {
-          "id": 1466,
+          "id": 1465,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 314
         },
         {
-          "id": 1304,
+          "id": 1303,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 287
         },
         {
-          "id": 1432,
+          "id": 1431,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 206
         },
         {
-          "id": 1836,
+          "id": 1835,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 202
         },
         {
-          "id": 1835,
+          "id": 1834,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 197
         },
         {
-          "id": 1458,
+          "id": 1457,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -784,7 +784,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1842,
+          "id": 1841,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 498
         },
         {
-          "id": 1851,
+          "id": 1850,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 483
         },
         {
-          "id": 1849,
+          "id": 1848,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 455
         },
         {
-          "id": 1847,
+          "id": 1846,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 454
         },
         {
-          "id": 1877,
+          "id": 1872,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 278
         },
         {
-          "id": 1876,
+          "id": 1871,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 219
         },
         {
-          "id": 1868,
+          "id": 1863,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 202
         },
         {
-          "id": 1864,
+          "id": 1861,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 193
         },
         {
-          "id": 1874,
+          "id": 1869,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 188
         },
         {
-          "id": 1862,
+          "id": 1859,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -947,6 +947,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 187
+        },
+        {
+          "id": 1889,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Turning Compliance into a Competitive Advantage in Cross-Border Payments",
+          "link": "https://www.thunes.com/insights/learn/turning-compliance-into-a-competitive-advantage-in-cross-border-payments/",
+          "content": "The Evolving Regulatory Landscape Compliance and regulatory oversight have long represented a structural advantage for established commercial banks compared to fintech startups. However, this institutional advantage is coming under pressure as regulatory requirements evolve and the popularity of non-traditional banking channels grows. Compliance frameworks were originally designed specifically around batch-processed Swift messages moving between regulated ... Read more &#187; The post Turning Compliance into a Competitive Advantage in Cross-Border Payments first appeared on Thunes.com .",
+          "pub_date": "Wed, 11 Nov 2026 05:27:40 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 593
         },
         {
           "id": 166,
@@ -1067,21 +1082,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 722,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "INTENT: Out-of-Sample, Out-of-Time, and Cold-Start Evaluation on User Event Sequences",
-          "link": "https://arxiv.org/abs/2611.13069",
-          "content": "arXiv:2611.13069v1 Announce Type: new Abstract: Banks now train foundation models on ordered sequences of customer events such as transactions, app sessions, and authorizations. Deployed, such a model predicts forward in time, often for customers and merchants absent from training, yet each is evaluated on private data, so no two can be compared. Public benchmarks for such sequences rarely test a period the model has not seen; recommendation studies usually hold out each user's last events instead. We present INTENT (INTEraction, Novelty, and Transfer evaluation for next-action prediction), a public benchmark that scores a model in seven cells defined by whether the user, the period, and the target item appeared in training. An audit of 59 public dataset families retains five datasets; the most common defect is the lack of a calendar timestamp that orders events. No date lies within the time span of all five datasets, so each is split at its own cutoff, chosen by one rule fixed before any model is evaluated. Summed over the datasets, every cell holds at least 111,769 users. In reference results the cell determines the best model: a transformer leads on seen items after the cutoff b",
-          "pub_date": "Wed, 11 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1089,15 +1089,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 228,
-      "total_valid": 45,
+      "total_raw": 226,
+      "total_valid": 44,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2057,
-    "dup": 442,
-    "nocontent": 409,
+    "total_raw": 2054,
+    "dup": 443,
+    "nocontent": 408,
     "noise": 6
   }
 }
