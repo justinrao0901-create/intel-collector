@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 160,
+          "id": 162,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 167,
+          "id": 169,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 170,
+          "id": 172,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,7 +190,7 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 272,
+      "total_raw": 274,
       "total_valid": 74,
       "total_candidates": 12
     },
@@ -392,7 +392,7 @@
           "word_count": 174
         },
         {
-          "id": 282,
+          "id": 284,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 526,
-      "total_valid": 371,
+      "total_raw": 524,
+      "total_valid": 369,
       "total_candidates": 15
     },
     "synbio": {
@@ -479,7 +479,7 @@
           "word_count": 148
         },
         {
-          "id": 882,
+          "id": 885,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 887,
+          "id": 890,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 888,
+          "id": 891,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 863,
+          "id": 864,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 443
         },
         {
-          "id": 877,
+          "id": 880,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 434
         },
         {
-          "id": 878,
+          "id": 881,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,22 @@
           "word_count": 393
         },
         {
-          "id": 881,
+          "id": 863,
+          "source": "Cell Systems",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "ULK1 knockout increases recombinant transcript abundance and improves recombinant membrane protein expression",
+          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00261-9?rss=yes",
+          "content": "The authors present an ULK1 knockout Expi293 cell line that, through transcriptomic analyses, indicated suitability for membrane protein production. Production of three model membrane proteins generated up to a doubling in titer. Additional transcriptomics confirm ULK1 as a target for modulation of autophagy and stress-response pathways with effects for protein production.",
+          "pub_date": "2026-11-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 375
+        },
+        {
+          "id": 884,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +599,7 @@
           "word_count": 326
         },
         {
-          "id": 864,
+          "id": 865,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -597,21 +612,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 865,
-          "source": "bioRxiv SynBio",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Sense-to-sense changes in bacterial genetic codes: Experimental validation by cell-free translation and native-host proteomics",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.11.10.764470v1?rss=1",
-          "content": "In the sixty years since the publication of the complete genetic code [1], many variants of the classical codon table [2] have been observed to occur naturally, including both stop codon and sense-to-sense reassignment, but in bacteria the only experimentally validated variants are stop-codon reassignments. Recently, computational analysis with Codetta predicted bacterial genetic codes containing sense-to-sense changes. Using an Escherichia coli cell-free protein synthesis (CFPS) system, we tested tRNAs predicted to reassign arginine codons to tryptophan. These candidate CGG-decoding tRNAs from bacteria phylogenetically distant from E. coli restored cyan fluorescence from an sfGFP Y66R reporter in a dose-dependent manner when added to CFPS extracts containing canonical tRNAArg(CCG). Reactions lacking the CGG-to-Trp candidate tRNA remained near background. Reassignment was also observed with firefly luciferase and NanoLuc reporters, in which Trp incorporation restored activity and solubility. Intact-protein mass spectrometry yielded masses consistent with Arg-to-Trp substitution. Deep data-independent acquisition (DIA) proteomics of Anaerococcus prevotii, a species for which Codetta",
-          "pub_date": "2026-11-12",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -619,8 +619,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 106,
-      "total_valid": 27,
+      "total_raw": 109,
+      "total_valid": 30,
       "total_candidates": 12
     },
     "cross": {
@@ -656,7 +656,7 @@
           "word_count": 502
         },
         {
-          "id": 863,
+          "id": 864,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 425
         },
         {
-          "id": 907,
+          "id": 910,
           "source": "Lancet Digital Health",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,22 @@
           "word_count": 423
         },
         {
-          "id": 908,
+          "id": 863,
+          "source": "Cell Systems",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "ULK1 knockout increases recombinant transcript abundance and improves recombinant membrane protein expression",
+          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(26)00261-9?rss=yes",
+          "content": "The authors present an ULK1 knockout Expi293 cell line that, through transcriptomic analyses, indicated suitability for membrane protein production. Production of three model membrane proteins generated up to a doubling in titer. Additional transcriptomics confirm ULK1 as a target for modulation of autophagy and stress-response pathways with effects for protein production.",
+          "pub_date": "2026-11-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 375
+        },
+        {
+          "id": 911,
           "source": "Lancet Digital Health",
           "section": "cross",
           "tier": "T1",
@@ -759,21 +774,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 261
-        },
-        {
-          "id": 437,
-          "source": "Cell",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Sub-second dopamine reinforcement shapes juvenile social play",
-          "link": "https://www.cell.com/cell/fulltext/S0092-8674(26)01327-9?rss=yes",
-          "content": "Dopamine acts moment by moment to reinforce the specific actions that make up juvenile social play. Disrupted reinforcement underlies social deficits in a Shank3-deficient autism model, and correcting it in real time restores normal play.",
-          "pub_date": "2026-11-12",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 238
         }
       ],
       "quota": {
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 928,
+          "id": 931,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 442
         },
         {
-          "id": 930,
+          "id": 933,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 434
         },
         {
-          "id": 972,
+          "id": 974,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 365
         },
         {
-          "id": 974,
+          "id": 976,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 364
         },
         {
-          "id": 973,
+          "id": 975,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 335
         },
         {
-          "id": 953,
+          "id": 955,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 333
         },
         {
-          "id": 956,
+          "id": 958,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 318
         },
         {
-          "id": 950,
+          "id": 952,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 317
         },
         {
-          "id": 948,
+          "id": 950,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 264
         },
         {
-          "id": 947,
+          "id": 949,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 229
         },
         {
-          "id": 955,
+          "id": 957,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +979,7 @@
           "word_count": 189
         },
         {
-          "id": 932,
+          "id": 935,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +994,7 @@
           "word_count": 142
         },
         {
-          "id": 981,
+          "id": 983,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -1009,7 +1009,7 @@
           "word_count": 135
         },
         {
-          "id": 921,
+          "id": 924,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +1024,7 @@
           "word_count": 525
         },
         {
-          "id": 922,
+          "id": 925,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +1039,7 @@
           "word_count": 508
         },
         {
-          "id": 927,
+          "id": 930,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1054,7 @@
           "word_count": 481
         },
         {
-          "id": 923,
+          "id": 926,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1069,7 +1069,7 @@
           "word_count": 457
         },
         {
-          "id": 929,
+          "id": 932,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1084,7 +1084,7 @@
           "word_count": 457
         },
         {
-          "id": 933,
+          "id": 936,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 222,
-      "total_valid": 45,
+      "total_raw": 221,
+      "total_valid": 44,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1140,
+    "total_raw": 1142,
     "dup": 214,
-    "nocontent": 402,
+    "nocontent": 404,
     "noise": 8
   }
 }

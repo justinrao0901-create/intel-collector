@@ -88,8 +88,8 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true
     },
     "Interconnects": {
       "section": "ai",
@@ -142,13 +142,13 @@
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
+      "count": 16,
       "ok": true
     },
     "WHO News": {
@@ -316,8 +316,8 @@
     "Fierce Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "EMA": {
       "section": "vaccine",
@@ -352,7 +352,7 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 1,
+      "count": 2,
       "ok": true
     },
     "bioRxiv SynBio": {
@@ -364,8 +364,8 @@
     "Absci Blog": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true
     },
     "Nature Chemical Biology": {
       "section": "synbio",
@@ -424,7 +424,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 37,
+      "count": 36,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -503,8 +503,8 @@
   "alarms": {
     "fail": [
       "ACS Synthetic Biology",
-      "Absci Blog",
-      "Import AI"
+      "Fierce Biotech",
+      "Fierce Pharma"
     ],
     "sudden_drop": [
       "Google DeepMind",
