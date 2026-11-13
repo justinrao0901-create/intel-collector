@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 5,
       "ok": true
     },
     "Meta AI Blog": {
@@ -40,7 +40,7 @@
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 10,
+      "count": 9,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
+      "count": 16,
       "ok": true
     },
     "Fierce Pharma": {
@@ -178,7 +178,7 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 18,
       "ok": true
     },
     "Lancet Infect Dis": {
@@ -232,13 +232,13 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true
     },
     "Nature Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 5,
       "ok": true
     },
     "bioRxiv Immunology": {
@@ -250,8 +250,8 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 22,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 23,
+      "count": 22,
       "ok": true
     },
     "BioPharma Dive": {
@@ -328,7 +328,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 13,
+      "count": 12,
       "ok": true
     },
     "Nature Machine Intel": {
@@ -358,8 +358,8 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 11,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Absci Blog": {
       "section": "synbio",
@@ -388,7 +388,7 @@
     "Lancet Digital Health": {
       "section": "cross",
       "method": "rss",
-      "count": 1,
+      "count": 4,
       "ok": true
     },
     "NEJM AI": {
@@ -424,7 +424,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 40,
+      "count": 38,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -504,10 +504,11 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "bioRxiv SynBio",
+      "medRxiv Infectious"
     ],
     "sudden_drop": [
-      "Google DeepMind",
       "arXiv cs.AI",
       "arXiv cs.CL",
       "arXiv cs.LG"
