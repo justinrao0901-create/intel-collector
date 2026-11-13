@@ -88,8 +88,8 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Interconnects": {
       "section": "ai",
@@ -142,8 +142,8 @@
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "STAT News": {
       "section": "vaccine",
@@ -316,8 +316,8 @@
     "Fierce Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "EMA": {
       "section": "vaccine",
@@ -364,8 +364,8 @@
     "Absci Blog": {
       "section": "synbio",
       "method": "rss",
-      "count": 2,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Chemical Biology": {
       "section": "synbio",
@@ -503,8 +503,8 @@
   "alarms": {
     "fail": [
       "ACS Synthetic Biology",
-      "Fierce Biotech",
-      "Fierce Pharma"
+      "Absci Blog",
+      "Import AI"
     ],
     "sudden_drop": [
       "Google DeepMind",
