@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 5,
+      "count": 0,
       "ok": true
     },
     "Meta AI Blog": {
@@ -88,8 +88,8 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Interconnects": {
       "section": "ai",
@@ -136,19 +136,19 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 13,
       "ok": true
     },
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 19,
+      "count": 18,
       "ok": true
     },
     "WHO News": {
@@ -250,8 +250,8 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 20,
+      "ok": true
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -310,7 +310,7 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
+      "count": 10,
       "ok": true
     },
     "Fierce Biotech": {
@@ -424,7 +424,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 38,
+      "count": 37,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -504,10 +504,10 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Fierce Pharma",
-      "medRxiv Infectious"
+      "Import AI"
     ],
     "sudden_drop": [
+      "Google DeepMind",
       "arXiv cs.AI",
       "arXiv cs.CL",
       "arXiv cs.LG"
