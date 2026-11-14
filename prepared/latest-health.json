@@ -112,8 +112,8 @@
     "Hacker News AI": {
       "section": "ai",
       "method": "api",
-      "count": 20,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Mistral AI": {
       "section": "ai",
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
+      "count": 16,
       "ok": true
     },
     "Fierce Pharma": {
@@ -328,7 +328,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 12,
+      "count": 11,
       "ok": true
     },
     "Nature Machine Intel": {
@@ -436,8 +436,8 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -504,7 +504,9 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Hacker News AI",
+      "Import AI",
+      "Thunes"
     ],
     "sudden_drop": [],
     "persistent_zero": [
