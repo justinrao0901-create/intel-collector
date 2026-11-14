@@ -115,6 +115,21 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
+          "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
+          "link": "https://arxiv.org/abs/2611.10439",
+          "content": "Self-evolving agents improve their own skills, memory, and harness code from experience without retraining the base LLM, and group-evolving agents go further by sharing these lessons across agents. Yet most such systems overlook that sharing across users and heterogeneous agents requires deciding who can benefit from each lesson and what information must remain private. We present MixUA, a memory system that distills independent user-agent trajectories into lessons and assigns each lesson to a user-agent pair, user, agent, or global scope according to whom it benefits and what it may disclose. For evaluation, we introduce CrossLearnBench, a mixed-user-agent benchmark that pairs established agent tasks with user preferences and privacy probes that test whether private facts leak into memory other users can read. With five users and seven agents, MixUA raises pass rates by up to 16 points over no memory and 5 over a single global memory, even on tasks previously tried only by other users on other agents. It retains up to 90% of previously stated preferences, and at most 0.02% of privacy probes find a planted private fact in a forbidden scope. We hope MixUA offers a scalable path towa",
+          "pub_date": "2026-11-06T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 79,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
           "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
           "link": "https://arxiv.org/abs/2611.16728",
           "content": "Generalist manipulation policies can benefit from the complementary experience of humans, real robots, and simulated agents. However, differences in morphology, sensing, and control interfaces make it difficult to learn effectively from their combined demonstrations. We introduce EgoX, an egocentric cross-embodiment learning framework that organizes heterogeneous demonstrations through semantically corresponding observation and action modalities. EgoX pretrains a Modularized Cross-Embodiment Transformer with Embodiment Dreaming (MXT+) on this mixture and fine-tunes it on target-embodiment demonstrations. Within each embodiment, MXT+ assigns a dedicated tokenizer to each observation modality and a dedicated expert to each action modality, with a Transformer trunk shared across embodiments. A training-only embodiment-dreaming objective predicts latent representations of future visual and proprioceptive states, encouraging the shared trunk to model each embodiment's dynamics. Across 13 task-embodiment pairs spanning five tasks and six robot embodiments, including five physical robots and one simulated humanoid, cross-embodiment pretraining raises MXT+'s average normalized task progres",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 80,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -133,21 +148,6 @@
           "title": "Consensus Capture in Reference-Based UAV Video Stabilization: A Benchmark on Dynamic Urban Scenes",
           "link": "https://arxiv.org/abs/2611.17190",
           "content": "Reference-frame stabilization registers every frame of a hovering-drone video onto one reference frame, keeping object positions comparable. The registration pipelines it relies on are selected on feature-matching benchmarks in which only the camera moves. Over a busy intersection, vehicles moving together supply mutually consistent correspondences that can draw the robust homography estimate toward their motion: consensus capture, which inlier statistics cannot flag. A two-part benchmark measures it and the object masking meant to prevent it. A static protocol scores ten pipelines under exactly known homographies on 4K aerial frames, tuned on a site-disjoint split at a matched resolution and feature budget. A dynamic protocol scores them at an offline and a real-time budget on hovers selected from the video alone to span the amount and coherence of moving foreground, plus a stationary control. It measures background alignment, object position error and the share of a moving group's displacement an estimate follows, against a pseudo-ground-truth reference audited with manually annotated ground control points, which also score every candidate. On static scenes, tuned AKAZE, RootSIFT",
-          "pub_date": "2026-11-11T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 82,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
-          "link": "https://arxiv.org/abs/2611.16961",
-          "content": "Existing adaptive-reasoning methods shorten the explicit reasoning a model writes, or skip it by switching modes; either way the answer is still written out token by token. Rather than deciding how much to think, we explore a different paradigm, zero-or-T thinking: a single model either answers from the implicit thinking inside one forward pass, generating no token, or performs full autoregressive reasoning at a cost of T tokens when that is worth paying. We realise it in a hybrid decision model (HDM), where one frozen backbone serves both modes and a lightweight self-routing block chooses between them. The block estimates the value of thinking, the utility the slow mode is expected to add over the fast one, from what that implicit thinking has already produced, and the slow mode runs only where that value exceeds a price λ set per request. Where no per-decision label exists, as in episodic agentic tasks, we introduce Calibrated Decision Policy Optimisation (CDPO), a reinforcement-learning recipe that trains the block from episode-level returns. We evaluate HDM on MMLU-Pro, AGIEval, GPQA-Diamond, JevBench, BANKING77 and MiniWoB. Specifically, on JevBench HDM-4B scores 0.857 against",
           "pub_date": "2026-11-11T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 2005,
+          "id": 2002,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2011,
+          "id": 2008,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2028,
+          "id": 2025,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2118,
+          "id": 2115,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 536
         },
         {
-          "id": 1835,
+          "id": 1832,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 476
         },
         {
-          "id": 1947,
+          "id": 1944,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 455
         },
         {
-          "id": 2123,
+          "id": 2120,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 437
         },
         {
-          "id": 2116,
+          "id": 2113,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 279
         },
         {
-          "id": 1923,
+          "id": 1920,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 278
         },
         {
-          "id": 2030,
+          "id": 2027,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 323
         },
         {
-          "id": 2096,
+          "id": 2093,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 322
         },
         {
-          "id": 2070,
+          "id": 2067,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 541,
-      "total_valid": 368,
+      "total_raw": 538,
+      "total_valid": 367,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2220,
+          "id": 2217,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 320
         },
         {
-          "id": 2222,
+          "id": 2219,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 253
         },
         {
-          "id": 2242,
+          "id": 2239,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 144
         },
         {
-          "id": 2295,
+          "id": 2292,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1199
         },
         {
-          "id": 2302,
+          "id": 2299,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 623
         },
         {
-          "id": 2264,
+          "id": 2261,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 391
         },
         {
-          "id": 2301,
+          "id": 2298,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 387
         },
         {
-          "id": 2279,
+          "id": 2276,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 376
         },
         {
-          "id": 2281,
+          "id": 2278,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 126
         },
         {
-          "id": 2280,
+          "id": 2277,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 113
         },
         {
-          "id": 2268,
+          "id": 2265,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 2270,
+          "id": 2267,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2010,
+          "id": 2007,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 513
         },
         {
-          "id": 2264,
+          "id": 2261,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 391
         },
         {
-          "id": 1828,
+          "id": 1825,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 238
         },
         {
-          "id": 1732,
+          "id": 1731,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 232
         },
         {
-          "id": 1729,
+          "id": 1728,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 210
         },
         {
-          "id": 2318,
+          "id": 2315,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 181
         },
         {
-          "id": 1699,
+          "id": 1698,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 171
         },
         {
-          "id": 1784,
+          "id": 1783,
           "source": "NEJM",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 90
         },
         {
-          "id": 2113,
+          "id": 2110,
           "source": "Sci Transl Med",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 69
         },
         {
-          "id": 1842,
+          "id": 1839,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +799,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2330,
+          "id": 2328,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 429
         },
         {
-          "id": 2361,
+          "id": 2357,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 256
         },
         {
-          "id": 2346,
+          "id": 2343,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 177
         },
         {
-          "id": 2372,
+          "id": 2368,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 171
         },
         {
-          "id": 2359,
+          "id": 2355,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 168
         },
         {
-          "id": 2347,
+          "id": 2344,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 165
         },
         {
-          "id": 2337,
+          "id": 2334,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 132
         },
         {
-          "id": 2336,
+          "id": 2333,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 122
         },
         {
-          "id": 2351,
+          "id": 2348,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1104,15 +1104,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 231,
+      "total_raw": 229,
       "total_valid": 49,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2541,
-    "dup": 589,
-    "nocontent": 401,
+    "total_raw": 2536,
+    "dup": 587,
+    "nocontent": 399,
     "noise": 8
   }
 }
