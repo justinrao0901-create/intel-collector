@@ -1,10 +1,10 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "sources": {
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 19,
+      "count": 21,
       "ok": true
     },
     "Anthropic Blog": {
@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 6,
       "ok": true
     },
     "Meta AI Blog": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 9,
+      "count": 6,
       "ok": true
     },
     "Sequoia Capital": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 19,
+      "count": 18,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 1,
       "ok": true
     },
     "Fierce Pharma": {
@@ -148,7 +148,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
+      "count": 1,
       "ok": true
     },
     "WHO News": {
@@ -232,7 +232,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 9,
       "ok": true
     },
     "Nature Immunology": {
@@ -262,7 +262,7 @@
     "Vaccine (journal)": {
       "section": "vaccine",
       "method": "rss",
-      "count": 80,
+      "count": 87,
       "ok": true
     },
     "npj Vaccines": {
@@ -310,7 +310,7 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
+      "count": 3,
       "ok": true
     },
     "Fierce Biotech": {
@@ -406,7 +406,7 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 10,
+      "count": 2,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -418,7 +418,7 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 2,
+      "count": 0,
       "ok": true
     },
     "Finextra": {
@@ -430,7 +430,7 @@
     "Payments Cards & Mobile": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 0,
       "ok": true
     },
     "Thunes": {
@@ -508,16 +508,17 @@
       "Import AI"
     ],
     "sudden_drop": [
-      "Google DeepMind",
-      "Ledger Insights",
-      "arXiv cs.AI",
-      "arXiv cs.CL",
-      "arXiv cs.LG"
+      "Payments Cards & Mobile",
+      "PaymentsDive"
     ],
     "persistent_zero": [
       "Cointelegraph Payments",
+      "Ledger Insights",
       "PYMNTS Cross-Border",
-      "WHO News"
+      "WHO News",
+      "arXiv cs.AI",
+      "arXiv cs.CL",
+      "arXiv cs.LG"
     ]
   }
 }
