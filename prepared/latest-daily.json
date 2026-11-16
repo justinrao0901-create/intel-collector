@@ -50,7 +50,7 @@
           "word_count": 140
         },
         {
-          "id": 102,
+          "id": 103,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 122
         },
         {
-          "id": 103,
+          "id": 104,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -78,6 +78,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 75
+        },
+        {
+          "id": 102,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Apple launches new app to study how people use AI for health",
+          "link": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+          "content": "Apple's new app for a study will answer everyday medical questions",
+          "pub_date": "Mon, 16 Nov 2026 01:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 66
         },
         {
           "id": 99,
@@ -104,6 +119,21 @@
           "link": "https://arxiv.org/abs/2611.08318",
           "content": "Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark's success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by imitation learning, often demand more than the corresponding language instructions, so a score from such a verifier may not faithfully reflect whether the instructed task was completed, especially for robot-control programs written by an agent. As embodied coding agents report ever higher benchmark scores, a natural question arises: when a coding agent is exposed to the benchmark's criteria, does it generate code that better performs the instructed task, or code that simply overfits to the verification criteria? We conduct controlled experiments with a self-improving agent with and without CE, and find that with CE the agent quickly produces code with a higher success rate under the given criteria, but this advantage disappears when the criteria are changed slightly without departing from the original instructions. More importantly, the skills the agent develops under CE transfer poorly",
           "pub_date": "2026-11-04T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 159,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "datasette-maplibre 0.1a0",
+          "link": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+          "content": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built most of this with a single prompt to Claude Fable 5.2: Look at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outside the box for other useful features the plugin might have \"Be creative and think outside the box\" resulted in a few neat ideas - my favorite is that it displays SVG previews of GeoJSON shapes, then loads a WebGL preview only when they scroll into view. I also had Claude build a comprehensive demo which works in the latest Datasette Lite, so you can visit this link to load the plugin and a demo database in your browser via Pyodide and WebAssembly. I like this demo page showing both GeoJSON shapes and lat/lon points on the same map: Tags: visualization , generative-ai , datasette-lite , claude-myt",
+          "pub_date": "2026-11-15T23:58:36+00:00",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -153,36 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1057
-        },
-        {
-          "id": 164,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "datasette-llm 0.1a11",
-          "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-          "content": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this: wget https://datasette.io/content.db uvx --with datasette-agent datasette \\ --root --secret 1 \\ -s plugins.datasette-llm.default_model ' { \"model\": \"lmstudio-qwen\", \"model_name\": \"qwen/qwen3.8-27b\", \"api_base\": \"http://localhost:1234/v1\" } ' content.db And you'll get a local server running a Datasette Agent instance powered by your local model! Tags: uv , datasette-agent , llm , datasette , llms , ai , generative-ai",
-          "pub_date": "2026-11-14T23:59:28+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 896
-        },
-        {
-          "id": 147,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Designing for Agents — Zeno Rocha, Resend",
-          "link": "https://latent.space/p/resend/",
-          "content": "Where does answer engine optimization (AEO) end and agent experience begin? Inside Resend, from the docs that help Claude Code pick an email API to the tools it uses to send.",
-          "pub_date": "Tue, 10 Nov 2026 20:05:17 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 174
         }
       ],
       "quota": {
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 276,
-      "total_valid": 53,
+      "total_valid": 55,
       "total_candidates": 12
     },
     "vaccine": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 490,
+      "total_raw": 489,
       "total_valid": 295,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 819,
+          "id": 818,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 284
         },
         {
-          "id": 799,
+          "id": 798,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 217
         },
         {
-          "id": 822,
+          "id": 821,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 217
         },
         {
-          "id": 842,
+          "id": 848,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1199
         },
         {
-          "id": 859,
+          "id": 865,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,34 +509,34 @@
           "word_count": 328
         },
         {
-          "id": 832,
-          "source": "Absci Blog",
+          "id": 836,
+          "source": "bioRxiv SynBio",
           "section": "synbio",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absci Reports Business Updates and Third Quarter 2026 Financial and Operating Results",
-          "link": "https://investors.absci.com/news-releases/news-release-details/absci-reports-business-updates-and-third-quarter-2026-financial",
-          "content": "ABS-201™ HEADLINE™ trial progressing on track; 13-week interim proof-of-concept data for pattern hair loss (PHL) anticipated next month Announced preliminary details for Phase 2 STORYLINE™ trial of ABS-201 for endometriosis Appointed former Galderma executive Gerry Muhle as Chief Commercial Officer",
-          "pub_date": "Thu, 12 Nov 2026 07:05:50 -0500",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Self-organized criticality in a mammalian RNA-interference circuit",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.11.09.765295v1?rss=1",
+          "content": "Living systems have been argued to operate near critical points, but their relevance at the cellular level is poorly understood. Critical states allow for a high sensitivity to external inputs and maximal information transfer and display fluctuations at all scales. Critical points are very special, and require the fine tuning of a control parameter, which is hard to reconcile with the robustness of living cells. Self-organized criticality (SOC) proposes that feedback, rather than tuning, brings a system to its critical point. Here we show that RNA interference, in which messenger RNAs compete for shared silencing machinery and so queue for service, together with negative feedback gives rise to SOC in mammalian cells. In a synthetic circuit, a protein repressor whose mRNA competes with the mRNA of a fluorescent reporter that it represses senses the congestion of the queue, closing the feedback loop. Theory and stochastic simulations show that the loop holds the queue near its critical point despite changes in its parameters, and that expression becomes intermittent, with scale-free bursts. Measurements in human cell lines show the predicted power-law distributions of single-cell flu",
+          "pub_date": "2026-11-12",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 299
+          "word_count": 1200
         },
         {
-          "id": 833,
-          "source": "Absci Blog",
+          "id": 837,
+          "source": "bioRxiv SynBio",
           "section": "synbio",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absci Appoints Gerry Muhle as Chief Commercial Officer to Build Category-Defining Brands for ABS-201 and Its Broader Pipeline",
-          "link": "https://investors.absci.com/news-releases/news-release-details/absci-appoints-gerry-muhle-chief-commercial-officer-build",
-          "content": "Global commercial executive brings a track record of launching prescription biologics and building consumer-driven brands at Galderma, Allergan and GSK VANCOUVER, Wash. and NEW YORK, Nov. 12, 2026 (GLOBE NEWSWIRE) -- Absci Corporation (Nasdaq: ABSI), a clinical-stage biopharmaceutical company",
-          "pub_date": "Thu, 12 Nov 2026 07:00:24 -0500",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Associative Learning and Memory Erasure in a Synthetic Multicellular System",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.11.09.765282v1?rss=1",
+          "content": "Learning is a basic form of adaptation that organisms display from neural systems to single cells. In associative learning, the pairing of two stimuli lets one of them evoke the response to the other. Engineering this behavior in a living cell is difficult, because coincidence detection, memory, and conditional readout must be wired into a single regulatory network. Here we build a consortium of five E. coli strains that distributes the operations of associative learning and communicates through one diffusible quorum-sensing signal. The same signal acts as the memory trace. One strain detects the coincidence of the two inputs, a second maintains the memory through positive feedback in the shared medium, a third reads it out on the conditioned stimulus, a fourth reports the unconditioned response, and a fifth erases the memory on command. We show experimentally that the assembled consortium learns the association, since a stimulus that is silent before training evokes a strong response after pairing. Memory is retained through a medium exchange in which both stimuli are removed, and then the conditioned stimulus alone evokes the response. The reporter is not produced without its inp",
+          "pub_date": "2026-11-12",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 293
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -544,7 +544,7 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 102,
+      "total_raw": 109,
       "total_valid": 11,
       "total_candidates": 7
     },
@@ -564,6 +564,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 296
+        },
+        {
+          "id": 278,
+          "source": "STAT News",
+          "section": "cross",
+          "tier": "T2",
+          "priority": 4,
+          "title": "STAT+: Apple and OpenEvidence launch experimental health chat app",
+          "link": "https://www.statnews.com/2026/11/15/apple-openevidence-launch-health-chat-app-experiment-ai/?utm_campaign=rss",
+          "content": "Apple and OpenEvidence are launching a study based around an experimental AI-powered health chat app, hinting at possible new directions for both companies.",
+          "pub_date": "Mon, 16 Nov 2026 01:25:43 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 156
         },
         {
           "id": 544,
@@ -611,6 +626,21 @@
           "word_count": 1200
         },
         {
+          "id": 837,
+          "source": "bioRxiv SynBio",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Associative Learning and Memory Erasure in a Synthetic Multicellular System",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.11.09.765282v1?rss=1",
+          "content": "Learning is a basic form of adaptation that organisms display from neural systems to single cells. In associative learning, the pairing of two stimuli lets one of them evoke the response to the other. Engineering this behavior in a living cell is difficult, because coincidence detection, memory, and conditional readout must be wired into a single regulatory network. Here we build a consortium of five E. coli strains that distributes the operations of associative learning and communicates through one diffusible quorum-sensing signal. The same signal acts as the memory trace. One strain detects the coincidence of the two inputs, a second maintains the memory through positive feedback in the shared medium, a third reads it out on the conditioned stimulus, a fourth reports the unconditioned response, and a fifth erases the memory on command. We show experimentally that the assembled consortium learns the association, since a stimulus that is silent before training evokes a strong response after pairing. Memory is retained through a medium exchange in which both stimuli are removed, and then the conditioned stimulus alone evokes the response. The reporter is not produced without its inp",
+          "pub_date": "2026-11-12",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 563,
           "source": "medRxiv Infectious",
           "section": "cross",
@@ -631,9 +661,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 20,
-      "total_valid": 5,
-      "total_candidates": 5
+      "total_raw": 22,
+      "total_valid": 7,
+      "total_candidates": 7
     },
     "china": {
       "candidates": [],
@@ -649,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 889,
+          "id": 898,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -664,7 +694,7 @@
           "word_count": 480
         },
         {
-          "id": 885,
+          "id": 894,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +709,7 @@
           "word_count": 477
         },
         {
-          "id": 887,
+          "id": 896,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +724,7 @@
           "word_count": 463
         },
         {
-          "id": 891,
+          "id": 900,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -702,14 +732,29 @@
           "title": "Thunes Expands Real-Time Payouts to Bhutan, Unlocking the Nation’s Remittance Market",
           "link": "https://www.thunes.com/news/thunes-expands-real-time-payouts-to-bhutan-unlocking-the-nations-remittance-market/",
           "content": "Thunes’ Direct Global Network enables instant, 24/7 payments to all bank accounts in Bhutan, empowering Members to support the nation’s rapidly expanding remittance corridor. Singapore and Thimphu, Bhutan, November 16, 2026 — Thunes, the Smart Superhighway to move money around the world, today announced the expansion of its Direct Global Network into the Kingdom of ... Read more &#187; The post Thunes Expands Real-Time Payouts to Bhutan, Unlocking the Nation’s Remittance Market first appeared on Thunes.com .",
-          "pub_date": "Mon, 16 Nov 2026 01:00:00 +0000",
+          "pub_date": "Mon, 16 Nov 2026 01:12:51 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 513
         },
         {
-          "id": 890,
+          "id": 891,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Amex Projects 14-Year High for Small Business Holiday Spend",
+          "link": "https://www.pymnts.com/news/2026/amex-projects-14-year-high-for-small-business-holiday-spend/",
+          "content": "American Express is projecting that 88% of American consumers will patronize a small business during this year’s holiday season. That’s the highest level since 2012, according to the company’s Shop Small Impact Study, released Thursday (Nov. 12). “Small businesses bring character and connection to our communities, and the holidays are an important opportunity to show [&#8230;] The post Amex Projects 14-Year High for Small Business Holiday Spend appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 16 Nov 2026 01:39:53 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 479
+        },
+        {
+          "id": 899,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -724,34 +769,19 @@
           "word_count": 463
         },
         {
-          "id": 884,
+          "id": 892,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Binance Aims to Reopen Withdrawals After $6.3 Billion Hack",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/binance-aims-to-reopen-withdrawals-after-6-3-billion-hack/",
-          "content": "Binance says activity is returning to normal for the cryptocurrency platform following last month’s historic heist. “This week, we reopened withdrawals for 87 networks,” the company said in an X post on Saturday (Nov. 14). “We will aim to reopen withdrawals for all remaining networks and assets by the end of next week. Thank you [&#8230;] The post Binance Aims to Reopen Withdrawals After $6.3 Billion Hack appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 16 Nov 2026 00:44:47 +0000",
+          "title": "Crypto Firms Expect Few Gifts From Lame Duck Congress",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/crypto-firms-expect-few-gifts-from-lame-duck-congress/",
+          "content": "There was a time when the cryptocurrency sector thought that Congress might make progress on industry legislation before the year’s end. But that time has now passed, CoinDesk reported Sunday (Nov. 15), citing industry experts as Congress’ lame duck session unfolds. Cody Carbone, CEO of The Digital Chamber, told the news outlet he sees “little [&#8230;] The post Crypto Firms Expect Few Gifts From Lame Duck Congress appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 16 Nov 2026 01:19:18 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 439
-        },
-        {
-          "id": 888,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Block Global Sales Head Molnar to Step Down at End of Year",
-          "link": "https://www.pymnts.com/personnel/2026/block-global-sales-head-molnar-to-step-down-at-end-of-year/",
-          "content": "Nick Molnar, co-founder of Block-owned pay later provider Afterpay, is leaving the company. “I don’t often post personal updates on LinkedIn, but wanted to share that after 13 years, I’m stepping away from Afterpay and Block to focus on my family,” Molnar, global head of sales and marketing at Block, wrote on the social media [&#8230;] The post Block Global Sales Head Molnar to Step Down at End of Year appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 15 Nov 2026 23:08:42 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 436
+          "word_count": 449
         }
       ],
       "quota": {
@@ -759,15 +789,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 166,
-      "total_valid": 8,
+      "total_raw": 169,
+      "total_valid": 11,
       "total_candidates": 7
     }
   },
   "meta": {
-    "total_raw": 1049,
-    "dup": 283,
-    "nocontent": 392,
+    "total_raw": 1058,
+    "dup": 290,
+    "nocontent": 389,
     "noise": 8
   }
 }

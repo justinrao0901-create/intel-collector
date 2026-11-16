@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 7,
+      "count": 8,
       "ok": true
     },
     "Sequoia Capital": {
@@ -88,8 +88,8 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Interconnects": {
       "section": "ai",
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 22,
+      "count": 23,
       "ok": true
     },
     "Hacker News AI": {
@@ -142,13 +142,13 @@
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 1,
+      "count": 2,
       "ok": true
     },
     "WHO News": {
@@ -172,7 +172,7 @@
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
+      "count": 17,
       "ok": true
     },
     "The Lancet": {
@@ -310,14 +310,14 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true
     },
     "Fierce Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "EMA": {
       "section": "vaccine",
@@ -358,14 +358,14 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 9,
+      "ok": true
     },
     "Absci Blog": {
       "section": "synbio",
       "method": "rss",
-      "count": 2,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Chemical Biology": {
       "section": "synbio",
@@ -406,7 +406,7 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 7,
+      "count": 10,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -503,10 +503,9 @@
   "alarms": {
     "fail": [
       "ACS Synthetic Biology",
-      "Fierce Biotech",
-      "Fierce Pharma",
+      "Absci Blog",
       "Finextra",
-      "bioRxiv SynBio"
+      "Import AI"
     ],
     "sudden_drop": [
       "Payments Cards & Mobile",
