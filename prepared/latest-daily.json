@@ -5,6 +5,21 @@
     "ai": {
       "candidates": [
         {
+          "id": 66,
+          "source": "NVIDIA Blog",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+          "link": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+          "content": "Over two days at COEX, more than 2,000 attendees converged for AI Day Seoul, bringing together Korea’s industry leaders, startups and developer communities advancing physical AI and AI agents. At the plenary sessions, Deepu Talla, vice president of robotics and edge AI at NVIDIA, said Korea is “punching above its weight,” with Doosan Robotics, Hyundai [&#8230;]",
+          "pub_date": "Mon, 16 Nov 2026 00:00:28 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 363
+        },
+        {
           "id": 2,
           "source": "OpenAI News",
           "section": "ai",
@@ -35,7 +50,22 @@
           "word_count": 140
         },
         {
-          "id": 101,
+          "id": 102,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+          "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+          "content": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+          "pub_date": "Sun, 15 Nov 2026 23:30:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 122
+        },
+        {
+          "id": 103,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +80,7 @@
           "word_count": 75
         },
         {
-          "id": 98,
+          "id": 99,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 99,
+          "id": 100,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +110,22 @@
           "word_count": 1200
         },
         {
-          "id": 92,
+          "id": 160,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "datasette 1.0a43",
+          "link": "https://simonwillison.net/2026/Nov/15/datasette/",
+          "content": "Release: datasette 1.0a43 I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone , which is now 53% complete. The biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mechanisms now use this as well, and plugins can register themselves as capable of streaming every row in a table in one go via the new Response.stream() method. There are a couple of security fixes, one of which I deemed deserving of a GitHub advisory : private stored queries could be exposed, granting access to the title and SQL of the query (but not allowing that query to be executed). There are dozens of smaller improvements. The row page JSON representation finally has a design suitable for 1.0 . A new <datasette-copy-button> Web Component provides copy-schema in various places. JSON in columns on the row page can be pretty-printed. There's a new DatasetteModal.confirm() JavaScript utility method. Plus dozens of bug fixes, including contributions by Zihan Dai , Peter Olkhovets , Ilya Khalafi , and Ankita Advitot . The feature I'm most excited about is a pretty tiny one: I've added CSS multi-page view transitions to Datasette!",
+          "pub_date": "2026-11-15T23:20:27+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 93,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +140,7 @@
           "word_count": 1199
         },
         {
-          "id": 172,
+          "id": 180,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +155,7 @@
           "word_count": 1057
         },
         {
-          "id": 156,
+          "id": 164,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,22 +170,7 @@
           "word_count": 896
         },
         {
-          "id": 162,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "aws-emulator",
-          "link": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
-          "content": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog. It currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other languages and on other platforms. Tags: amazon , amazon-web-services , testing , werner-vogels , ai , rust , docker , generative-ai , llms , agentic-engineering",
-          "pub_date": "2026-11-11T21:18:30+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 753
-        },
-        {
-          "id": 143,
+          "id": 147,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -153,36 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 174
-        },
-        {
-          "id": 140,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
-          "link": "https://latent.space/p/jev-revolution/",
-          "content": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
-          "pub_date": "Thu, 12 Nov 2026 05:08:20 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 156
-        },
-        {
-          "id": 142,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
-          "link": "https://latent.space/p/codex-work/",
-          "content": "On the first day of AIE Code Summit, OpenAI showed how developers can steer Codex by voice, hand off work to the cloud, and make use of dots.",
-          "pub_date": "Wed, 11 Nov 2026 04:49:48 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 141
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 268,
-      "total_valid": 47,
+      "total_raw": 276,
+      "total_valid": 53,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 567,
+          "id": 566,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 881
         },
         {
-          "id": 585,
+          "id": 584,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 821
         },
         {
-          "id": 584,
+          "id": 583,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 804
         },
         {
-          "id": 701,
+          "id": 700,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 296
         },
         {
-          "id": 596,
+          "id": 595,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 418
         },
         {
-          "id": 638,
+          "id": 637,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 278
         },
         {
-          "id": 658,
+          "id": 657,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 272
         },
         {
-          "id": 464,
+          "id": 471,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 904
         },
         {
-          "id": 477,
+          "id": 484,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 817
         },
         {
-          "id": 465,
+          "id": 472,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 705
         },
         {
-          "id": 702,
+          "id": 701,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 561
         },
         {
-          "id": 375,
+          "id": 383,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 551
         },
         {
-          "id": 380,
+          "id": 388,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 520
         },
         {
-          "id": 373,
+          "id": 381,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 498
         },
         {
-          "id": 495,
+          "id": 502,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 499,
-      "total_valid": 302,
+      "total_raw": 490,
+      "total_valid": 295,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 821,
+          "id": 819,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 284
         },
         {
-          "id": 801,
+          "id": 799,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 217
         },
         {
-          "id": 824,
+          "id": 822,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 217
         },
         {
-          "id": 855,
+          "id": 842,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1199
         },
         {
-          "id": 872,
+          "id": 859,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,34 +509,34 @@
           "word_count": 328
         },
         {
-          "id": 839,
-          "source": "bioRxiv SynBio",
+          "id": 832,
+          "source": "Absci Blog",
           "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Self-organized criticality in a mammalian RNA-interference circuit",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.11.09.765295v1?rss=1",
-          "content": "Living systems have been argued to operate near critical points, but their relevance at the cellular level is poorly understood. Critical states allow for a high sensitivity to external inputs and maximal information transfer and display fluctuations at all scales. Critical points are very special, and require the fine tuning of a control parameter, which is hard to reconcile with the robustness of living cells. Self-organized criticality (SOC) proposes that feedback, rather than tuning, brings a system to its critical point. Here we show that RNA interference, in which messenger RNAs compete for shared silencing machinery and so queue for service, together with negative feedback gives rise to SOC in mammalian cells. In a synthetic circuit, a protein repressor whose mRNA competes with the mRNA of a fluorescent reporter that it represses senses the congestion of the queue, closing the feedback loop. Theory and stochastic simulations show that the loop holds the queue near its critical point despite changes in its parameters, and that expression becomes intermittent, with scale-free bursts. Measurements in human cell lines show the predicted power-law distributions of single-cell flu",
-          "pub_date": "2026-11-12",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Absci Reports Business Updates and Third Quarter 2026 Financial and Operating Results",
+          "link": "https://investors.absci.com/news-releases/news-release-details/absci-reports-business-updates-and-third-quarter-2026-financial",
+          "content": "ABS-201™ HEADLINE™ trial progressing on track; 13-week interim proof-of-concept data for pattern hair loss (PHL) anticipated next month Announced preliminary details for Phase 2 STORYLINE™ trial of ABS-201 for endometriosis Appointed former Galderma executive Gerry Muhle as Chief Commercial Officer",
+          "pub_date": "Thu, 12 Nov 2026 07:05:50 -0500",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 299
         },
         {
-          "id": 840,
-          "source": "bioRxiv SynBio",
+          "id": 833,
+          "source": "Absci Blog",
           "section": "synbio",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Associative Learning and Memory Erasure in a Synthetic Multicellular System",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.11.09.765282v1?rss=1",
-          "content": "Learning is a basic form of adaptation that organisms display from neural systems to single cells. In associative learning, the pairing of two stimuli lets one of them evoke the response to the other. Engineering this behavior in a living cell is difficult, because coincidence detection, memory, and conditional readout must be wired into a single regulatory network. Here we build a consortium of five E. coli strains that distributes the operations of associative learning and communicates through one diffusible quorum-sensing signal. The same signal acts as the memory trace. One strain detects the coincidence of the two inputs, a second maintains the memory through positive feedback in the shared medium, a third reads it out on the conditioned stimulus, a fourth reports the unconditioned response, and a fifth erases the memory on command. We show experimentally that the assembled consortium learns the association, since a stimulus that is silent before training evokes a strong response after pairing. Memory is retained through a medium exchange in which both stimuli are removed, and then the conditioned stimulus alone evokes the response. The reporter is not produced without its inp",
-          "pub_date": "2026-11-12",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Absci Appoints Gerry Muhle as Chief Commercial Officer to Build Category-Defining Brands for ABS-201 and Its Broader Pipeline",
+          "link": "https://investors.absci.com/news-releases/news-release-details/absci-appoints-gerry-muhle-chief-commercial-officer-build",
+          "content": "Global commercial executive brings a track record of launching prescription biologics and building consumer-driven brands at Galderma, Allergan and GSK VANCOUVER, Wash. and NEW YORK, Nov. 12, 2026 (GLOBE NEWSWIRE) -- Absci Corporation (Nasdaq: ABSI), a clinical-stage biopharmaceutical company",
+          "pub_date": "Thu, 12 Nov 2026 07:00:24 -0500",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 293
         }
       ],
       "quota": {
@@ -544,14 +544,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 114,
+      "total_raw": 102,
       "total_valid": 11,
       "total_candidates": 7
     },
     "cross": {
       "candidates": [
         {
-          "id": 701,
+          "id": 700,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 296
         },
         {
-          "id": 539,
+          "id": 544,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 544,
+          "id": 549,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 1200
         },
         {
-          "id": 560,
+          "id": 565,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -611,22 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 840,
-          "source": "bioRxiv SynBio",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Associative Learning and Memory Erasure in a Synthetic Multicellular System",
-          "link": "https://www.biorxiv.org/content/10.64898/2026.11.09.765282v1?rss=1",
-          "content": "Learning is a basic form of adaptation that organisms display from neural systems to single cells. In associative learning, the pairing of two stimuli lets one of them evoke the response to the other. Engineering this behavior in a living cell is difficult, because coincidence detection, memory, and conditional readout must be wired into a single regulatory network. Here we build a consortium of five E. coli strains that distributes the operations of associative learning and communicates through one diffusible quorum-sensing signal. The same signal acts as the memory trace. One strain detects the coincidence of the two inputs, a second maintains the memory through positive feedback in the shared medium, a third reads it out on the conditioned stimulus, a fourth reports the unconditioned response, and a fifth erases the memory on command. We show experimentally that the assembled consortium learns the association, since a stimulus that is silent before training evokes a strong response after pairing. Memory is retained through a medium exchange in which both stimuli are removed, and then the conditioned stimulus alone evokes the response. The reporter is not produced without its inp",
-          "pub_date": "2026-11-12",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 558,
+          "id": 563,
           "source": "medRxiv Infectious",
           "section": "cross",
           "tier": "T1",
@@ -639,21 +624,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
-        },
-        {
-          "id": 566,
-          "source": "medRxiv Infectious",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Electricity Free LAMP: A Protocol for Loop-Mediated Isothermal Amplification Using an Exothermic Chemical Reaction and Lyophilized Reagents",
-          "link": "https://www.medrxiv.org/content/10.64898/2026.11.06.26365637v1?rss=1",
-          "content": "Loop-mediated isothermal amplification (LAMP) offers a promising alternative to PCR for low-resource settings, but practical barriers remain. For example, there is often the need for reliable electricity, precision heating equipment, and cold-chain storage of reagents. Here, we describe a rudimentary but functional platform that integrates (i) a non-electric, chemically driven water bath capable of sustaining LAMP-relevant temperatures and (ii) lyophilized LAMP assays compatible with simple sample inputs such as diluted saliva or oral rinse. We demonstrate successful LAMP amplification under multiple heating configurations, including a thermos-based chemical bath and field-mimicking setups. This work provides proof-of-concept for a low-cost, portable molecular diagnostic workflow that minimizes infrastructure requirements while maintaining analytical performance.",
-          "pub_date": "2026-11-09",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 875
         }
       ],
       "quota": {
@@ -661,9 +631,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 22,
-      "total_valid": 7,
-      "total_candidates": 7
+      "total_raw": 20,
+      "total_valid": 5,
+      "total_candidates": 5
     },
     "china": {
       "candidates": [],
@@ -679,7 +649,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 897,
+          "id": 889,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +664,52 @@
           "word_count": 480
         },
         {
-          "id": 898,
+          "id": 885,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Family Dollar Will Pay $63 Million for Inflated Price Claims",
+          "link": "https://www.pymnts.com/news/retail/2026/family-dollar-will-pay-63-million-for-inflated-price-claims/",
+          "content": "Family Dollar will pay $63 million to settle allegations that it overcharged its customers. That’s according to the Federal Trade Commission (FTC), which announced Thursday (Nov. 12) that the settlement stems from the discount retailer’s practice of charging shoppers more at the register than the prices displayed on shelves, price tags and advertisements. “The FTC [&#8230;] The post Family Dollar Will Pay $63 Million for Inflated Price Claims appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 16 Nov 2026 00:28:46 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 477
+        },
+        {
+          "id": 887,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "UK Tests Cross-Border Settlement With Singapore and Thailand",
+          "link": "https://www.pymnts.com/news/cross-border-payments/2026/uk-tests-cross-border-settlement-with-singapore-and-thailand/",
+          "content": "The central banks of England, Singapore and Thailand say they’ve found a new way to streamline foreign exchange (FX) transactions. The Bank of England, Monetary Authority of Singapore and Bank of Thailand published the results of their efforts Friday (Nov. 13), part of what’s known as Project Meridian FX APAC. “The project showed that synchronization [&#8230;] The post UK Tests Cross-Border Settlement With Singapore and Thailand appeared first on PYMNTS.com .",
+          "pub_date": "Sun, 15 Nov 2026 23:36:45 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 463
+        },
+        {
+          "id": 891,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes Expands Real-Time Payouts to Bhutan, Unlocking the Nation’s Remittance Market",
+          "link": "https://www.thunes.com/news/thunes-expands-real-time-payouts-to-bhutan-unlocking-the-nations-remittance-market/",
+          "content": "Thunes’ Direct Global Network enables instant, 24/7 payments to all bank accounts in Bhutan, empowering Members to support the nation’s rapidly expanding remittance corridor. Singapore and Thimphu, Bhutan, November 16, 2026 — Thunes, the Smart Superhighway to move money around the world, today announced the expansion of its Direct Global Network into the Kingdom of ... Read more &#187; The post Thunes Expands Real-Time Payouts to Bhutan, Unlocking the Nation’s Remittance Market first appeared on Thunes.com .",
+          "pub_date": "Mon, 16 Nov 2026 01:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 513
+        },
+        {
+          "id": 890,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -707,6 +722,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 463
+        },
+        {
+          "id": 884,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Binance Aims to Reopen Withdrawals After $6.3 Billion Hack",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/binance-aims-to-reopen-withdrawals-after-6-3-billion-hack/",
+          "content": "Binance says activity is returning to normal for the cryptocurrency platform following last month’s historic heist. “This week, we reopened withdrawals for 87 networks,” the company said in an X post on Saturday (Nov. 14). “We will aim to reopen withdrawals for all remaining networks and assets by the end of next week. Thank you [&#8230;] The post Binance Aims to Reopen Withdrawals After $6.3 Billion Hack appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 16 Nov 2026 00:44:47 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 439
+        },
+        {
+          "id": 888,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Block Global Sales Head Molnar to Step Down at End of Year",
+          "link": "https://www.pymnts.com/personnel/2026/block-global-sales-head-molnar-to-step-down-at-end-of-year/",
+          "content": "Nick Molnar, co-founder of Block-owned pay later provider Afterpay, is leaving the company. “I don’t often post personal updates on LinkedIn, but wanted to share that after 13 years, I’m stepping away from Afterpay and Block to focus on my family,” Molnar, global head of sales and marketing at Block, wrote on the social media [&#8230;] The post Block Global Sales Head Molnar to Step Down at End of Year appeared first on PYMNTS.com .",
+          "pub_date": "Sun, 15 Nov 2026 23:08:42 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 436
         }
       ],
       "quota": {
@@ -714,14 +759,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 161,
-      "total_valid": 2,
-      "total_candidates": 2
+      "total_raw": 166,
+      "total_valid": 8,
+      "total_candidates": 7
     }
   },
   "meta": {
-    "total_raw": 1057,
-    "dup": 297,
+    "total_raw": 1049,
+    "dup": 283,
     "nocontent": 392,
     "noise": 8
   }

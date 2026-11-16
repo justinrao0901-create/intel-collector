@@ -34,7 +34,7 @@
     "NVIDIA Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 10,
+      "count": 11,
       "ok": true
     },
     "HuggingFace Blog": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 6,
+      "count": 7,
       "ok": true
     },
     "Sequoia Capital": {
@@ -88,8 +88,8 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true
     },
     "Interconnects": {
       "section": "ai",
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 18,
+      "count": 22,
       "ok": true
     },
     "Hacker News AI": {
@@ -142,8 +142,8 @@
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "STAT News": {
       "section": "vaccine",
@@ -190,7 +190,7 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 5,
+      "count": 4,
       "ok": true
     },
     "Cell Host Microbe": {
@@ -232,7 +232,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 9,
+      "count": 7,
       "ok": true
     },
     "Nature Immunology": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 19,
+      "count": 13,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -316,8 +316,8 @@
     "Fierce Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "EMA": {
       "section": "vaccine",
@@ -334,7 +334,7 @@
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 5,
+      "count": 4,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -358,14 +358,14 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 13,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Absci Blog": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true
     },
     "Nature Chemical Biology": {
       "section": "synbio",
@@ -406,7 +406,7 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 2,
+      "count": 7,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -503,9 +503,10 @@
   "alarms": {
     "fail": [
       "ACS Synthetic Biology",
-      "Absci Blog",
+      "Fierce Biotech",
+      "Fierce Pharma",
       "Finextra",
-      "Import AI"
+      "bioRxiv SynBio"
     ],
     "sudden_drop": [
       "Payments Cards & Mobile",
