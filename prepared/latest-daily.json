@@ -95,7 +95,22 @@
           "word_count": 66
         },
         {
-          "id": 93,
+          "id": 82,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
+          "link": "https://arxiv.org/abs/2611.07226",
+          "content": "Looped Transformers reduce parameter count by repeatedly applying shared blocks, but parameter sharing alone does not determine how the results of repeated computation are reused. We take the depth-memory view of residual connections and analyze which representation is stored after each block application and how later reads weight it. A full block output contains both its input and its new update, so weighting that output also reweights the history already carried by the input. Reading individual updates instead, with the shared stack's input kept on a separate path, gives separate controls over input strength, total update weight, and allocation across updates. The Loopback Transformer implements these controls: geometric decay sets the total update weight and supplies a recency prior, and attention learns how to allocate that weight. On ClimbMix, Loopback reaches lower validation loss than standard Transformer baselines with 40-75% of their Transformer parameters (excluding token embeddings and the output head) at reference scales from 191M to 3B, with training tokens and executed depth matched. It also has higher mean accuracy over thirteen downstream tasks at 1.4B and 3B. At 19",
+          "pub_date": "2026-11-03T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 95,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -104,21 +119,6 @@
           "link": "https://arxiv.org/abs/2611.14256",
           "content": "Recent work shows that multimodal agents increasingly self-improve without recurring human annotation. However, each self-improvement mechanism is designed and evaluated within a single scenario, leaving its preconditions unverified under cross-scenario transfer. This survey investigates the structural source of asymmetric mechanism transfer across four scenarios: multimodal reasoning, multimodal generation, GUI and Web navigation, and embodied manipulation. We first formalize the self-evolving multimodal agent by four criteria and a differentia of self-reference, and adopt the three-stage self-evolving loop of experience generation, feedback acquisition, and update consolidation as our analytical framework to position the scenarios along ceilings on rollout count and feedback fidelity. Comparing self-evolving with fixed loops within each scenario separates the limitations that the scenario imposes from those inherent in the self-evolving design. We then recast each mechanism as a trade-off that raises a scarce factor by presupposing a task-structural resource, such as output equivalence or checkable outcomes, and judge it portable, conditional, blocked, or redundant across scenari",
           "pub_date": "2026-11-09T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 94,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
-          "link": "https://arxiv.org/abs/2611.08318",
-          "content": "Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark's success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by imitation learning, often demand more than the corresponding language instructions, so a score from such a verifier may not faithfully reflect whether the instructed task was completed, especially for robot-control programs written by an agent. As embodied coding agents report ever higher benchmark scores, a natural question arises: when a coding agent is exposed to the benchmark's criteria, does it generate code that better performs the instructed task, or code that simply overfits to the verification criteria? We conduct controlled experiments with a self-improving agent with and without CE, and find that with CE the agent quickly produces code with a higher success rate under the given criteria, but this advantage disappears when the criteria are changed slightly without departing from the original instructions. More importantly, the skills the agent develops under CE transfer poorly",
-          "pub_date": "2026-11-04T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 87,
+          "id": 89,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -724,6 +724,21 @@
           "word_count": 463
         },
         {
+          "id": 895,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes Expands Real-Time Payouts to Bhutan, Unlocking the Nation’s Remittance Market",
+          "link": "https://www.thunes.com/news/thunes-expands-real-time-payouts-to-bhutan-unlocking-the-nations-remittance-market/",
+          "content": "Thunes’ Direct Global Network enables instant, 24/7 payments to all bank accounts in Bhutan, empowering Members to support the nation’s rapidly expanding remittance corridor. Singapore and Thimphu, Bhutan, November 16, 2026 — Thunes, the Smart Superhighway to move money around the world, today announced the expansion of its Direct Global Network into the Kingdom of ... Read more &#187; The post Thunes Expands Real-Time Payouts to Bhutan, Unlocking the Nation’s Remittance Market first appeared on Thunes.com .",
+          "pub_date": "Mon, 16 Nov 2026 01:12:51 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 513
+        },
+        {
           "id": 886,
           "source": "PYMNTS.com",
           "section": "payment",
@@ -774,14 +789,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 166,
-      "total_valid": 10,
-      "total_candidates": 6
+      "total_raw": 169,
+      "total_valid": 11,
+      "total_candidates": 7
     }
   },
   "meta": {
-    "total_raw": 1050,
-    "dup": 285,
+    "total_raw": 1053,
+    "dup": 287,
     "nocontent": 387,
     "noise": 8
   }
