@@ -27,11 +27,15 @@ jobs:
     timeout-minutes: 20
     env:
       TZ: Asia/Shanghai
+      DISCOVERY_ARCHIVE_PROFILE: payment
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Set immutable discovery date
+        run: echo "DISCOVERY_ARCHIVE_DATE=$(date +%F)" >> "$GITHUB_ENV"
 
       - name: 抓深度文章在线池(run_payment --online-only;跳间隔+跳本地聚合,events 空属正常)
         run: |
@@ -44,9 +48,22 @@ jobs:
           cd prepared
           python3 -c "import json; d=json.load(open('prepared-payment-$DATE.json')); d['date']='$DATE'; json.dump(d, open('latest-payment.json','w'), ensure_ascii=False)"
 
+      - name: Encrypt full discovery evidence before any public step
+        if: always()
+        run: python tools/seal_discovery.py --collection-status "${{ job.status }}"
+
+      - name: Retain only encrypted discovery evidence on success or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-payment-${{ github.run_id }}-${{ github.run_attempt }}
+          path: prepared/discovery/${{ env.DISCOVERY_ARCHIVE_PROFILE }}/${{ env.DISCOVERY_ARCHIVE_DATE }}/${{ github.run_id }}-${{ github.run_attempt }}/
+          if-no-files-found: error
+
       - name: 提交在线池回仓库
         run: |
           DATE=$(date +%F)
+          git add prepared/discovery/ prepared/latest-discovery-payment.json
           git config user.name  "intel-collector-bot"
           git config user.email "intel-collector-bot@users.noreply.github.com"
           git add prepared/prepared-payment-"$DATE".json prepared/latest-payment.json 2>/dev/null || true
@@ -71,6 +88,7 @@ jobs:
           rm -rf _site
           mkdir -p _site/prepared
           cp prepared/latest-*.json _site/prepared/ 2>/dev/null || true
+          cp -R prepared/discovery _site/prepared/discovery
           echo "发布到 Pages 的 latest-*:"; ls -1 _site/prepared/
 
       - name: 配置 Pages

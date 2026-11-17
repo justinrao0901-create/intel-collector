@@ -10,3 +10,6 @@ payment/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Never commit raw evidence or local encryption working files.
+.discovery-private/
