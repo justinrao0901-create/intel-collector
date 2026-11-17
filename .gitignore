@@ -13,3 +13,10 @@ __pycache__/
 
 # Never commit raw evidence or local encryption working files.
 .discovery-private/
+
+# Publish only the sealed discovery envelope and authenticated ciphertext.
+# The legacy daily/weekly/monthly/payment rules match nested names too.
+prepared/discovery/**
+!prepared/discovery/**/
+!prepared/discovery/**/envelope.json
+!prepared/discovery/**/evidence.cms
