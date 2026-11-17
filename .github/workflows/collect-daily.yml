@@ -81,6 +81,9 @@ jobs:
           git config user.name  "intel-collector-bot"
           git config user.email "intel-collector-bot@users.noreply.github.com"
           git add -A prepared/
+          # Refuse a successful commit/Pages deploy that loses its encrypted archive.
+          DISCOVERY_PUBLIC_DIR="prepared/discovery/${DISCOVERY_ARCHIVE_PROFILE}/${DISCOVERY_ARCHIVE_DATE}/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git ls-files --error-unmatch -- "$DISCOVERY_PUBLIC_DIR/envelope.json" "$DISCOVERY_PUBLIC_DIR/evidence.cms" "prepared/latest-discovery-${DISCOVERY_ARCHIVE_PROFILE}.json" >/dev/null
           if git diff --cached --quiet; then
             echo "本次 prepared 无变化"
           else
