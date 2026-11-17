@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 25,
+      "count": 26,
       "ok": true
     },
     "Anthropic Blog": {
@@ -88,8 +88,8 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Interconnects": {
       "section": "ai",
@@ -100,13 +100,13 @@
     "Latent Space": {
       "section": "ai",
       "method": "rss",
-      "count": 20,
+      "count": 19,
       "ok": true
     },
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 19,
+      "count": 18,
       "ok": true
     },
     "Hacker News AI": {
@@ -142,8 +142,8 @@
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "STAT News": {
       "section": "vaccine",
@@ -310,14 +310,14 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 9,
       "ok": true
     },
     "Fierce Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "EMA": {
       "section": "vaccine",
@@ -364,8 +364,8 @@
     "Absci Blog": {
       "section": "synbio",
       "method": "rss",
-      "count": 2,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Nature Chemical Biology": {
       "section": "synbio",
@@ -503,9 +503,9 @@
   "alarms": {
     "fail": [
       "ACS Synthetic Biology",
-      "Fierce Biotech",
-      "Fierce Pharma",
-      "Finextra"
+      "Absci Blog",
+      "Finextra",
+      "Import AI"
     ],
     "sudden_drop": [
       "JAMA"

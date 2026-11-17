@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 74,
+          "id": 75,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 401
         },
         {
-          "id": 73,
+          "id": 74,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 391
         },
         {
-          "id": 70,
+          "id": 71,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 383
         },
         {
-          "id": 5,
+          "id": 7,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -65,37 +65,37 @@
           "word_count": 169
         },
         {
-          "id": 7,
+          "id": 5,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
           "priority": 3,
-          "title": "More ways to move care forward with ChatGPT for Healthcare",
-          "link": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
-          "content": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
-          "pub_date": "Mon, 16 Nov 2026 06:00:00 GMT",
+          "title": "How Revolut raises ambition without lowering the bar",
+          "link": "https://openai.com/business/customer-stories/revolut",
+          "content": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+          "pub_date": "Mon, 16 Nov 2026 09:30:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 146
+          "word_count": 161
         },
         {
-          "id": 4,
+          "id": 1,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
           "priority": 3,
-          "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
-          "link": "https://openai.com/index/lvmh-media-division-partnership",
-          "content": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
-          "pub_date": "Mon, 16 Nov 2026 09:00:00 GMT",
+          "title": "Strengthening NATO and allied cyber defenses with AI",
+          "link": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+          "content": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+          "pub_date": "Tue, 17 Nov 2026 00:00:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 144
+          "word_count": 147
         },
         {
-          "id": 112,
+          "id": 113,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 200
         },
         {
-          "id": 109,
+          "id": 110,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 177
         },
         {
-          "id": 115,
+          "id": 116,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,15 +140,30 @@
           "word_count": 154
         },
         {
+          "id": 91,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "UMM-JEPA: Generative Pretraining via Masked Next-Scale Representation Prediction for Unified Multimodal Models",
+          "link": "https://arxiv.org/abs/2611.18668",
+          "content": "Unified multimodal models can support both visual understanding and generation, yet generative training does not necessarily improve understanding. We argue that this limitation may arise from a mismatch between the representation targeted by generation and the perceptual representation used for understanding. Conventional generation objectives primarily optimize synthesis-oriented spaces such as discrete visual codes or generative latents. We therefore introduce UMM-JEPA, which reformulates generation as progressive prediction of continuous visual-understanding representations. The model constructs a multi-scale representation hierarchy from coarse to fine, while pixel rendering is decoupled from representation pretraining and attached only afterward. Controlled comparisons show that the representation-prediction objective accounts for most of the understanding improvement, while a data-matched control leaves the group means nearly unchanged. UMM-JEPA reaches a 16-benchmark visual mean of 51.71, against 46.36 for the understanding-only Qwen-VL baseline, and the text mean also rises. Compared with discrete-code and latent-flow generation objectives, perceptual representation predic",
+          "pub_date": "2026-10-25T20:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 93,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
-          "link": "https://arxiv.org/abs/2611.18550",
-          "content": "Distilling diffusion models into few-step student models substantially reduces sampling latency, but induces severe diversity collapse: samples generated from different random seeds show minimal variation. In this work, we investigate the root cause of this failure by probing the internal representations of student models relative to their teachers. We find that distilled students maintain total activation variance comparable to their teachers, but concentrate it into substantially fewer directions. This directional collapse is localized to an identifiable intermediate block at the initial denoising step. Consequently, diversity collapse stems from a misallocation of activation variance rather than an inherent loss of generative capacity. Guided by this finding, we propose ReDiverse to reinstate the missing variance directions. At training time, ReDiverse-FT fine-tunes a lightweight adapter that regresses student activations onto the teacher's, reviving the teacher's feature variance characteristic. At inference time, ReDiverse-TF introduces a training-free mechanism that steers activations along precomputed teacher principal directions. Across image and video distillation benchmar",
-          "pub_date": "2026-11-12T19:00:00.000Z",
+          "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+          "link": "https://arxiv.org/abs/2611.21607",
+          "content": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment. Despite its scale, ScaleVLA achieves 216 ms median latency per action chunk. Our findings suggest that frontier VLMs can serve not only as reasoning agents, but",
+          "pub_date": "2026-11-15T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -160,25 +175,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
-          "link": "https://arxiv.org/abs/2611.14487",
-          "content": "Research ideation is iterative: researchers refine their ideas step by step based on feedback. Yet existing evaluations obscure this search process, making it difficult to understand how LLMs explore the space of research ideas and what limits their progress. We introduce Re-Search, which adapts the format of Twenty Questions to research ideation: given only the research problem of a published paper, a model must rediscover the paper's core idea by asking yes-or-no questions. Built from 200 ICML 2026 papers, Re-Search tracks how a model's idea evolves as it asks questions and receives binary oracle feedback, isolating ideation from execution. Across six recent LLMs, nearly all progress happens within the first 30 of 100 questions, which largely decide how the game ends; after that, most models plateau. Through controlled interventions on the candidate questions and the hypothesis space, we find that the bottleneck is generation, not judgment: models recognize a good idea or a good question when one is offered, but often cannot produce it on their own. We further analyze the ideation traces and find that models fail by either over-exploiting one direction or over-exploring too many.",
-          "pub_date": "2026-11-09T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 95,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Dual Flow: Joint Image-Measurement Interpolation for Inverse Problems",
-          "link": "https://arxiv.org/abs/2611.05843",
-          "content": "Generative model-based approaches to linear inverse problems typically use the acquired noisy measurement to condition or guide sampling in the image domain. In this work, we introduce Dual Flow, a novel joint-flow model for solving linear inverse problems by jointly estimating the clean image and corresponding noise-free measurement from the observation. Specifically, Dual Flow formulates image reconstruction and measurement denoising as a coupled estimation problem, using coupled flows in the image and measurement domains. The acquired noisy measurement is used only to initialize the measurement state; thereafter, image and measurement states are jointly updated based on their current values. By construction, the final image and measurement estimates are guaranteed to satisfy the underlying forward model. We derive the sampling updates for the joint-flow which involves the conditional mean of the clean image given the joint state. We further derive a closed-form expression for a sufficient statistic of the joint state and show that the required conditional mean can be obtained by solving an image-domain Gaussian denoising problem involving operator-dependent, correlated noise. We",
-          "pub_date": "2026-11-11T19:00:00.000Z",
+          "title": "MovieRoll: A Systematic Framework for Rolling Out Long-Form Videos",
+          "link": "https://arxiv.org/abs/2611.21339",
+          "content": "Streaming video generation must sustain quality beyond the training horizon while handling self-generated history and growing cache costs. To address these challenges, we present MovieRoll, a base-to-distilled framework that connects streaming fine-tuning, long-rollout distillation, and long-horizon inference. We first establish a robust multi-step base through Window-wise Teacher Forcing (WinTF), which jointly denoises chunks at progressive noise levels with bidirectional attention within each window and causal access to preceding history. To retain historical context efficiently, hierarchical KV-cache compression (HieraKV) exploits layer-wise attention patterns, retaining full history in shallow layers and sink--recent history in deeper layers. This reduces cache memory by up to 78% while improving generation quality. Building on this base, cumulative long tuning with distribution matching distillation (CuLT-DMD) holds parameters fixed throughout each long self-rollout and averages local gradients before updating. Each update therefore combines supervision across temporal positions while retaining only one local computation graph, enabling efficient long-rollout training of a few",
+          "pub_date": "2026-11-15T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 561,
-      "total_valid": 348,
+      "total_raw": 558,
+      "total_valid": 352,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 838,
+          "id": 835,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 840,
+          "id": 837,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 841,
+          "id": 838,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 784,
+          "id": 781,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 289
         },
         {
-          "id": 908,
+          "id": 905,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 368
         },
         {
-          "id": 900,
+          "id": 897,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 244
         },
         {
-          "id": 861,
+          "id": 858,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 230
         },
         {
-          "id": 564,
+          "id": 561,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 265
         },
         {
-          "id": 575,
+          "id": 572,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 152
         },
         {
-          "id": 582,
+          "id": 579,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,7 +347,7 @@
           "word_count": 122
         },
         {
-          "id": 962,
+          "id": 959,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 522
         },
         {
-          "id": 972,
+          "id": 969,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 448
         },
         {
-          "id": 629,
+          "id": 626,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 434
         },
         {
-          "id": 632,
+          "id": 629,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 431
         },
         {
-          "id": 959,
+          "id": 956,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 477,
-      "total_valid": 301,
+      "total_raw": 478,
+      "total_valid": 302,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1067,
+          "id": 1065,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 204
         },
         {
-          "id": 1075,
+          "id": 1073,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 198
         },
         {
-          "id": 1091,
+          "id": 1089,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 196
         },
         {
-          "id": 1049,
+          "id": 1047,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -494,37 +494,7 @@
           "word_count": 355
         },
         {
-          "id": 1115,
-          "source": "Absci Blog",
-          "section": "synbio",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absci Reports Business Updates and Third Quarter 2026 Financial and Operating Results",
-          "link": "https://investors.absci.com/news-releases/news-release-details/absci-reports-business-updates-and-third-quarter-2026-financial",
-          "content": "ABS-201™ HEADLINE™ trial progressing on track; 13-week interim proof-of-concept data for pattern hair loss (PHL) anticipated next month Announced preliminary details for Phase 2 STORYLINE™ trial of ABS-201 for endometriosis Appointed former Galderma executive Gerry Muhle as Chief Commercial Officer",
-          "pub_date": "Thu, 12 Nov 2026 07:05:50 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 299
-        },
-        {
-          "id": 1116,
-          "source": "Absci Blog",
-          "section": "synbio",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absci Appoints Gerry Muhle as Chief Commercial Officer to Build Category-Defining Brands for ABS-201 and Its Broader Pipeline",
-          "link": "https://investors.absci.com/news-releases/news-release-details/absci-appoints-gerry-muhle-chief-commercial-officer-build",
-          "content": "Global commercial executive brings a track record of launching prescription biologics and building consumer-driven brands at Galderma, Allergan and GSK VANCOUVER, Wash. and NEW YORK, Nov. 12, 2026 (GLOBE NEWSWIRE) -- Absci Corporation (Nasdaq: ABSI), a clinical-stage biopharmaceutical company",
-          "pub_date": "Thu, 12 Nov 2026 07:00:24 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 293
-        },
-        {
-          "id": 1105,
+          "id": 1103,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -544,14 +514,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 113,
-      "total_valid": 12,
-      "total_candidates": 7
+      "total_raw": 111,
+      "total_valid": 10,
+      "total_candidates": 5
     },
     "cross": {
       "candidates": [
         {
-          "id": 842,
+          "id": 839,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +536,7 @@
           "word_count": 1144
         },
         {
-          "id": 834,
+          "id": 831,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +551,7 @@
           "word_count": 626
         },
         {
-          "id": 853,
+          "id": 850,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +566,7 @@
           "word_count": 551
         },
         {
-          "id": 962,
+          "id": 959,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +581,7 @@
           "word_count": 522
         },
         {
-          "id": 1157,
+          "id": 1153,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +596,7 @@
           "word_count": 352
         },
         {
-          "id": 984,
+          "id": 981,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +611,7 @@
           "word_count": 340
         },
         {
-          "id": 617,
+          "id": 614,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +626,7 @@
           "word_count": 281
         },
         {
-          "id": 1158,
+          "id": 1154,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +641,7 @@
           "word_count": 218
         },
         {
-          "id": 1159,
+          "id": 1155,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +656,7 @@
           "word_count": 217
         },
         {
-          "id": 601,
+          "id": 598,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -724,7 +694,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1176,
+          "id": 1172,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +709,7 @@
           "word_count": 561
         },
         {
-          "id": 1175,
+          "id": 1171,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +724,7 @@
           "word_count": 519
         },
         {
-          "id": 1168,
+          "id": 1164,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +739,7 @@
           "word_count": 493
         },
         {
-          "id": 1167,
+          "id": 1163,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +754,7 @@
           "word_count": 462
         },
         {
-          "id": 1169,
+          "id": 1165,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +769,7 @@
           "word_count": 453
         },
         {
-          "id": 1172,
+          "id": 1168,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +784,7 @@
           "word_count": 433
         },
         {
-          "id": 1184,
+          "id": 1180,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +799,7 @@
           "word_count": 367
         },
         {
-          "id": 1185,
+          "id": 1181,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +814,7 @@
           "word_count": 355
         },
         {
-          "id": 1186,
+          "id": 1182,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +829,7 @@
           "word_count": 353
         },
         {
-          "id": 115,
+          "id": 116,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +844,7 @@
           "word_count": 154
         },
         {
-          "id": 1179,
+          "id": 1175,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +859,7 @@
           "word_count": 143
         },
         {
-          "id": 1180,
+          "id": 1176,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +874,7 @@
           "word_count": 141
         },
         {
-          "id": 1182,
+          "id": 1178,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +889,7 @@
           "word_count": 92
         },
         {
-          "id": 1183,
+          "id": 1179,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +904,7 @@
           "word_count": 91
         },
         {
-          "id": 1177,
+          "id": 1173,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +919,7 @@
           "word_count": 90
         },
         {
-          "id": 1191,
+          "id": 1187,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -964,7 +934,7 @@
           "word_count": 147
         },
         {
-          "id": 1189,
+          "id": 1185,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -979,7 +949,7 @@
           "word_count": 143
         },
         {
-          "id": 1190,
+          "id": 1186,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -994,7 +964,7 @@
           "word_count": 130
         },
         {
-          "id": 192,
+          "id": 193,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 293,
+          "id": 294,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1035,9 +1005,9 @@
     }
   },
   "meta": {
-    "total_raw": 1348,
-    "dup": 264,
-    "nocontent": 390,
+    "total_raw": 1344,
+    "dup": 259,
+    "nocontent": 388,
     "noise": 6
   }
 }
