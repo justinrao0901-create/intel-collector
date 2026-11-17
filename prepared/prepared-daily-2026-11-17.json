@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 69,
+          "id": 74,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 401
         },
         {
-          "id": 68,
+          "id": 73,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 391
         },
         {
-          "id": 65,
+          "id": 70,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,7 @@
           "word_count": 144
         },
         {
-          "id": 108,
+          "id": 111,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 200
         },
         {
-          "id": 105,
+          "id": 108,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 177
         },
         {
-          "id": 111,
+          "id": 114,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 154
         },
         {
-          "id": 88,
+          "id": 91,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 89,
+          "id": 92,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 90,
+          "id": 93,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 966,
-      "total_valid": 593,
+      "total_valid": 594,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1295,
+          "id": 1243,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1297,
+          "id": 1245,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1298,
+          "id": 1246,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1239,
+          "id": 1190,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 289
         },
         {
-          "id": 1365,
+          "id": 1313,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 368
         },
         {
-          "id": 1357,
+          "id": 1305,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 244
         },
         {
-          "id": 1318,
+          "id": 1266,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 265
         },
         {
-          "id": 980,
+          "id": 981,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 152
         },
         {
-          "id": 987,
+          "id": 988,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -347,52 +347,7 @@
           "word_count": 122
         },
         {
-          "id": 1194,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Intravenous Vitamin C and Mortality and Organ Dysfunction in Severe Burn Injury—Reply",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2855362",
-          "content": "In Reply We thank Dr Hemilä and Ms Chalker for their interest in our VICTORY trial. They propose that the increased mortality in the vitamin C group reflected a rebound effect following abrupt discontinuation of therapy after 96 hours, rather than a direct effect of the drug itself. While one can never definitively rule out that different timing or dosing of a treatment could result in different outcomes, based on a post hoc analysis of the precise timing of treatment and subsequent mortality, we do not believe the VICTORY study provides evidence to suggest that the higher mortality rate observed in the vitamin C group was due to its abrupt termination.",
-          "pub_date": "Tue, 10 Nov 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 661
-        },
-        {
-          "id": 1185,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Lifestyle and Metformin Interventions and Risk of Multimorbidity in Individuals With Prediabetes",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2855383",
-          "content": "To the Editor A recent study documented the long-term health benefits of the 25-year-old Diabetes Prevention Program (DPP). Results demonstrated that the highly motivated DPP cohort derived significant benefit from the original intervention’s 16 individualized, hour-long health coaching sessions during 6 months, reinforced by monthly group and individualized follow-up meetings during the next 1.5 years. However, when the Centers for Disease Control and Prevention later assumed management of the program, this staff-intensive individualized coaching was eliminated for budgetary efficiency, altering a motivationally core feature of the intervention.",
-          "pub_date": "Tue, 10 Nov 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 654
-        },
-        {
-          "id": 1195,
-          "source": "JAMA",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Etiology",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2855360",
-          "content": "What is it? is it arsenic in pearls of white rice you relish is it incense you burnt for your parents, black on your fingertips blooming dust on the wall is it something like a rite of passage a routine procedure, nothing to worry about is it a neoplastic transformation, or some other terminology hiding behind abbreviations and poor penmanship is it a bad fortune stick at the start of the year or your apartment facing the wrong way, feng shui knocked out of balance within you is it only the toxins of a life well-lived",
-          "pub_date": "Tue, 10 Nov 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 523
-        },
-        {
-          "id": 1419,
+          "id": 1367,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +362,7 @@
           "word_count": 522
         },
         {
-          "id": 1429,
+          "id": 1377,
           "source": "Nature Reviews Microbiology",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +375,51 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 448
+        },
+        {
+          "id": 1034,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Cacti are severely threatened by drought in a warming world",
+          "link": "https://www.nature.com/articles/d41586-026-03496-z",
+          "content": "Nature, Published online: 11 November 2026; doi:10.1038/d41586-026-03496-z Forecasts of the effects that climate change will have on biodiversity typically rely on long-term climate averages while excluding extreme events. Projections that include severe drought predict that a majority of the 993 cactus species assessed will see large losses of suitable climatic area: more than 25% of species could lose at least 80% of it by 2100.",
+          "pub_date": "2026-11-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 434
+        },
+        {
+          "id": 1037,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Proteins that form the nuclear pore barrier move like liquids",
+          "link": "https://www.nature.com/articles/d41586-026-03428-x",
+          "content": "Nature, Published online: 11 November 2026; doi:10.1038/d41586-026-03428-x Nuclear pores control molecular traffic into and out of the cell nucleus. Measurements in living cells, together with molecular-dynamics simulations, show that flexible protein chains that form the selectivity barriers of nuclear pores are highly mobile, and that a sugar modification and the carrier protein importin-β help to preserve this dynamic state.",
+          "pub_date": "2026-11-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 431
+        },
+        {
+          "id": 1364,
+          "source": "Nature Rev Drug Discovery",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "The expansion of kinase drug discovery: new targets, platforms and indications",
+          "link": "https://www.nature.com/articles/s41573-026-01551-y",
+          "content": "Nature Reviews Drug Discovery, Published online: 11 November 2026; doi:10.1038/s41573-026-01551-y Over the past 25 years, kinase drug discovery has been one of the most active areas in pharmaceutical research and development. This article provides a comprehensive analysis of the kinase therapeutic landscape, covering drug platforms, new targeting approaches, the expanding target spectrum, approvals and clinical trends.",
+          "pub_date": "2026-11-11",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 422
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 531,
-      "total_valid": 334,
+      "total_raw": 478,
+      "total_valid": 300,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1527,
+          "id": 1473,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 204
         },
         {
-          "id": 1535,
+          "id": 1481,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 198
         },
         {
-          "id": 1551,
+          "id": 1497,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 196
         },
         {
-          "id": 1509,
+          "id": 1455,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -499,14 +499,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 111,
+      "total_raw": 110,
       "total_valid": 9,
       "total_candidates": 4
     },
     "cross": {
       "candidates": [
         {
-          "id": 1299,
+          "id": 1247,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 1144
         },
         {
-          "id": 1291,
+          "id": 1239,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 626
         },
         {
-          "id": 1310,
+          "id": 1258,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 551
         },
         {
-          "id": 1419,
+          "id": 1367,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 522
         },
         {
-          "id": 1616,
+          "id": 1560,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 352
         },
         {
-          "id": 1441,
+          "id": 1389,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 281
         },
         {
-          "id": 1617,
+          "id": 1561,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 218
         },
         {
-          "id": 1618,
+          "id": 1562,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -661,7 +661,7 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 33,
+      "total_raw": 31,
       "total_valid": 21,
       "total_candidates": 10
     },
@@ -679,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1635,
+          "id": 1579,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -694,8 +694,8 @@
           "word_count": 561
         },
         {
-          "id": 1632,
-          "source": "PYMNTS.com",
+          "id": 1578,
+          "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
@@ -709,22 +709,22 @@
           "word_count": 519
         },
         {
-          "id": 1652,
-          "source": "Finextra",
+          "id": 1569,
+          "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Sokin announces UAE expansion following license approval from Dubai Financial Services Authority",
-          "link": "https://www.finextra.com/pressarticle/111671/sokin-announces-uae-expansion-following-license-approval-from-dubai-financial-services-authority?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Sokin, the financial infrastructure global business runs on, today announced its UAE expansion following license approval from the Dubai Financial Services Authority (DFSA). Businesses can now receive dirhams into a Sokin AED account, while platform partners gain embedded local payment rails to move money into and out of the UAE and in over 70 other currencies on behalf of their business clients.",
-          "pub_date": "Mon, 16 Nov 2026 11:23:00 GMT",
+          "title": "PayPal Tracks $53 Billion in Treasury Cash With an AI Agent",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/paypal-tracks-53-billion-in-treasury-cash-with-an-ai-agent/",
+          "content": "Ask PayPal’s treasury team where its cash sits, and the answer now comes from a chat window. A Deutsche Bank case study describes how that change unfolded inside the company. The system handles $53 billion in corporate cash and customer funds, and the team once relied on 90 spreadsheets to track it. Cash visibility across [&#8230;] The post PayPal Tracks $53 Billion in Treasury Cash With an AI Agent appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 16 Nov 2026 23:21:16 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 399
+          "word_count": 433
         },
         {
-          "id": 1678,
+          "id": 1587,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 367
         },
         {
-          "id": 1679,
+          "id": 1588,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 355
         },
         {
-          "id": 1680,
+          "id": 1589,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -769,82 +769,7 @@
           "word_count": 353
         },
         {
-          "id": 1646,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Central banks of England, Thailand and Singapore test synchronised FX settlement",
-          "link": "https://www.finextra.com/newsarticle/48764/central-banks-of-england-thailand-and-singapore-test-synchronised-fx-settlement?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The Bank of England, the Monetary Authority of Singapore, and the Bank of Thailand say that their research shows that synchronisation – a service that coordinates movements of central bank money – could support interoperability across wholesale FX settlement environments built on different technologies and operating models.",
-          "pub_date": "Mon, 16 Nov 2026 15:17:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 325
-        },
-        {
-          "id": 1651,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "African cryptocurrency platform Luno calls for stronger financial connectivity",
-          "link": "https://www.finextra.com/pressarticle/111670/african-cryptocurrency-platform-luno-calls-for-stronger-financial-connectivity?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Luno, the global cryptocurrency platform founded in Africa, has called for stronger financial connectivity across African markets, highlighting the need for greater regulatory collaboration, currency interoperability and more efficient settlement infrastructure to address persistent challenges in cross-border payments.",
-          "pub_date": "Mon, 16 Nov 2026 11:20:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 320
-        },
-        {
-          "id": 1659,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Beacon Bank unifies post-merger payments tech on Finastra",
-          "link": "https://www.finextra.com/pressarticle/111678/beacon-bank-unifies-post-merger-payments-tech-on-finastra?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Finastra today announced that Beacon Bank has successfully implemented Finastra's Payments To Go, a cloud-native SaaS payment solution, to modernize and unify its payments operations following the merger of equals of Berkshire Hills Bancorp and Brookline Bancorp, which formed Beacon Bank in September 2025.",
-          "pub_date": "Mon, 16 Nov 2026 18:07:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 307
-        },
-        {
-          "id": 1658,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "HKMA and Swift explore tokenised deposits for cross-border payments",
-          "link": "https://www.finextra.com/pressarticle/111677/hkma-and-swift-explore-tokenised-deposits-for-cross-border-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "The Hong Kong Monetary Authority (HKMA) announced today (16 November) a strengthened collaboration with Swift to explore the use of tokenised deposits in enhancing the efficiency and end-to-end experience of cross-border transactions.",
-          "pub_date": "Mon, 16 Nov 2026 15:13:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 234
-        },
-        {
-          "id": 1657,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Adyen wins deal with UK energy supplier OVO",
-          "link": "https://www.finextra.com/pressarticle/111676/adyen-wins-deal-with-uk-energy-supplier-ovo?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Adyen, the global financial technology platform of choice for leading businesses, is partnering with OVO, one of the UK's largest energy suppliers, to process all of its consumer card payments.",
-          "pub_date": "Mon, 16 Nov 2026 15:07:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 193
-        },
-        {
-          "id": 111,
+          "id": 114,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +784,7 @@
           "word_count": 154
         },
         {
-          "id": 1638,
+          "id": 1582,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +799,7 @@
           "word_count": 143
         },
         {
-          "id": 1639,
+          "id": 1583,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +814,7 @@
           "word_count": 141
         },
         {
-          "id": 1641,
+          "id": 1585,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +829,7 @@
           "word_count": 92
         },
         {
-          "id": 1642,
+          "id": 1586,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +844,7 @@
           "word_count": 91
         },
         {
-          "id": 1636,
+          "id": 1580,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +859,7 @@
           "word_count": 90
         },
         {
-          "id": 1685,
+          "id": 1594,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -949,7 +874,7 @@
           "word_count": 147
         },
         {
-          "id": 1683,
+          "id": 1592,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -964,7 +889,7 @@
           "word_count": 143
         },
         {
-          "id": 1684,
+          "id": 1593,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -977,6 +902,81 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 130
+        },
+        {
+          "id": 308,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "SWIFT: Sample-Wise Instance Fine-Tuning of Time-Series Foundation Models for Forecasting",
+          "link": "https://arxiv.org/abs/2611.17915",
+          "content": "arXiv:2611.17915v1 Announce Type: new Abstract: While current few-shot adaptation strategies for time series forecasting foundation models are predominantly dataset-centric, the necessity of obtaining an additional dataset for the finetuning process poses a significant hurdle for adoption. To address this constraint, we propose Sample-Wise Instance Fine-Tuning (SWIFT), a novel forecasting adaptation framework that achieves fine-grained specialization by leveraging structural priors from the target instance's own history. This shift allows the fine-tuning process to be entirely transparent to the end-user, which significantly enhances the ease of adoption. To implement this framework, SWIFT synergizes Self-Retrieval for historical mining and Frequency-Aware Loss for spectral consistency, while employing Deviation-Aware Dynamic Fusion to balance adaptation with general knowledge preservation. Extensive experiments across four TSFM backbones and three long-history benchmark subsets validate SWIFT, yielding average MASE and WQL reductions of 6.41% and 4.83% across 24 combinations of four backbones and six Chronos Benchmark II datasets. To the best of our knowledge, SWIFT is the first f",
+          "pub_date": "Mon, 16 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 409,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "From Bytes to Behavior: Request-Level Attribution from Live GPU Hidden States",
+          "link": "https://arxiv.org/abs/2611.18272",
+          "content": "arXiv:2611.18272v1 Announce Type: cross Abstract: Existing memory forensics for machine learning systems typically targets static artifacts, such as model weights or prompt logs, rather than the transient computational states of a live inference process. This gap limits an examiner's ability to analyze the specific behavior of a running large language model (LLM) service that cannot be restarted or modified. We present a method for acquiring per-layer residual-stream activations from a live GPU process using a non-modifying debugger, without requiring prior knowledge of the model's architecture parameters or weights. The approach employs a general six-stage process with platform-specific adapters, utilizing either a PyTorch allocator clock or a kernel-launch clock to identify and read tensor allocations from video memory. We validate this acquisition on 33 open-source decoder-only models across nine architecture classes, demonstrating that the recovered bytes are byte-exact and usable for downstream analysis. As a use case, we apply linear probes trained on standard framework activations to the recovered states, successfully distinguishing refusal from compliance with an AUROC of 0",
+          "pub_date": "Mon, 16 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 418,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Between Obligations and Evidence: A Participatory Study of Translating the EU AI Act into Technical Requirements",
+          "link": "https://arxiv.org/abs/2611.18439",
+          "content": "arXiv:2611.18439v1 Announce Type: cross Abstract: The EU AI Act imposes technical and organizational requirements for high-risk AI systems, but applying these requirements involves contextual choices about what to measure and what evidence supports a compliance claim. We investigate these challenges through a participatory workshop involving 32 researchers, policymakers, and practitioners from different disciplines, using realistic scenarios in healthcare, recruitment, and public transport to examine how regulatory obligations are interpreted, translated into technical requirements, and evaluated in practice. Through a thematic analysis of workshop data, we identify recurring tensions between how regulatory obligations are translated into measurable system properties, how responsibility and human oversight are exercised in practice, and how the validity of compliance evidence is affected by changing operational conditions and system uses. For example, participants highlighted how fairness metrics could conceal discrimination in recruitment, how time pressure and limited information could undermine human oversight in public transport, and how changes in patient populations could inv",
+          "pub_date": "Mon, 16 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 441,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "From Regulation to Implementation: A Critical Evaluation of LLM-Assisted Regulatory Compliance in Industry",
+          "link": "https://arxiv.org/abs/2608.21317",
+          "content": "arXiv:2608.21317v2 Announce Type: replace Abstract: The European Union (EU) has emerged as a leading regulatory body in the development of sustainability and privacy regulations. While new regulation requirements vary, many include a documentation artifact to ensure compliance. Notably, the Ecodesign for Sustainable Products Regulation (ESPR) introduces Digital Product Passports (DPPs) for life cycle transparency, while the General Data Protection Regulation (GDPR) mandates Data Protection Impact Assessments (DPIAs) to mitigate privacy risks. Creating these compliance artifacts, however, is challenging. Industrial data, which often exists in heterogeneous formats and is scattered across company and supplier systems, is required for DPPs and can be difficult to extract into compliant DPP formatting. Furthermore, DPIA documents require interdisciplinary expertise and follow no standardized format, making development difficult for novel systems. To address the particular complexity of compliance artifact creation for both regulations, researchers have proposed the use of LLMs in the generation process; however, the impact of the aforementioned problems on the output of these systems i",
+          "pub_date": "Mon, 16 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 445,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Proof-Grounded Patient-Specific Clinical Explanations from Knowledge-Graph Reasoning",
+          "link": "https://arxiv.org/abs/2610.06549",
+          "content": "arXiv:2610.06549v2 Announce Type: replace Abstract: Clinical decision support can lack auditable links from observations and encoded knowledge to conclusions and recommendations. Downstream of a frozen, training-free clinical knowledge-graph reasoner, the CKG Clinical Explanation Engine converts patient inference states and disease knowledge into typed facts, explicit rule traces, provenance-linked conclusions, and policy-licensed recommendations. Separate availability, representation completeness, and disease-specific activation distinguish observed zero-activation and partial evidence from unobserved evidence. Language-generation evaluation remains future work. Across six usable workbooks (11,289 patients, 33,867 patient-disease traces, 1,715,928 feature-evidence rows), IG-range validity, knowledge provenance, cross-sheet numerical fidelity (203,202/203,202), and exported fact/report field presence (33,867/33,867) reached 100.00%. Availability-representation consistency reached 99.29% (1,703,811/1,715,928), with 12,117 disagreements across five systematic feature-cohort patterns. Observed zero-activation and partial instances numbered 111,488 and 226,880, respectively. A separate",
+          "pub_date": "Mon, 16 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -984,15 +984,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 226,
-      "total_valid": 55,
+      "total_raw": 191,
+      "total_valid": 32,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1842,
-    "dup": 454,
-    "nocontent": 395,
-    "noise": 7
+    "total_raw": 1751,
+    "dup": 427,
+    "nocontent": 388,
+    "noise": 6
   }
 }

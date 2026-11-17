@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 26,
+      "count": 25,
       "ok": true
     },
     "Anthropic Blog": {
@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
+      "count": 5,
       "ok": true
     },
     "Meta AI Blog": {
@@ -34,13 +34,13 @@
     "NVIDIA Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 12,
+      "count": 13,
       "ok": true
     },
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 10,
+      "count": 8,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -58,7 +58,7 @@
     "Sequoia Capital": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
+      "count": 1,
       "ok": true
     },
     "a16z AI": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 21,
+      "count": 19,
       "ok": true
     },
     "Hacker News AI": {
@@ -190,7 +190,7 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
+      "count": 2,
       "ok": true
     },
     "Cell Host Microbe": {
@@ -214,7 +214,7 @@
     "JAMA": {
       "section": "vaccine",
       "method": "rss",
-      "count": 42,
+      "count": 0,
       "ok": true
     },
     "Nature Medicine": {
@@ -226,7 +226,7 @@
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 3,
       "ok": true
     },
     "Nature Vaccines": {
@@ -250,7 +250,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 12,
       "ok": true
     },
     "ClinicalTrials.gov": {
@@ -304,13 +304,13 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 24,
+      "count": 22,
       "ok": true
     },
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 9,
       "ok": true
     },
     "Fierce Biotech": {
@@ -328,7 +328,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 11,
+      "count": 10,
       "ok": true
     },
     "Nature Machine Intel": {
@@ -388,7 +388,7 @@
     "Lancet Digital Health": {
       "section": "cross",
       "method": "rss",
-      "count": 3,
+      "count": 1,
       "ok": true
     },
     "NEJM AI": {
@@ -424,8 +424,8 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 35,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Payments Cards & Mobile": {
       "section": "payment",
@@ -504,11 +504,13 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
+      "Finextra",
       "Import AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "JAMA"
+    ],
     "persistent_zero": [
-      "Google DeepMind",
       "Ledger Insights",
       "WHO News"
     ]
