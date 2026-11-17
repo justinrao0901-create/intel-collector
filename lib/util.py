@@ -110,16 +110,34 @@ def recency_flags(md, end_date, default_limit=3, topj_limit=7):
 # ─── HTTP ────────────────────────────────────────────────────────────────
 def http_get(url, timeout=15, retries=2, ua="IntelBot/1.0", max_bytes=None):
     """返回 (text, ok)。失败返回 ("", False)。"""
-    last = None
+    from . import discovery_archive
+    archive = discovery_archive.active_root() is not None
     for attempt in range(retries + 1):
+        error = None
+        status, headers, final_url = None, [], url
         try:
             req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "*/*"})
             with urllib.request.urlopen(req, timeout=timeout, context=_SSL) as resp:
-                raw = resp.read(max_bytes) if max_bytes else resp.read()
-            return raw.decode("utf-8", errors="replace"), True
+                status, headers, final_url = resp.status, list(resp.headers.items()), resp.geturl()
+                raw = resp.read() if archive or not max_bytes else resp.read(max_bytes)
         except Exception as e:
-            last = e
-            time.sleep(1.2 * (attempt + 1))
+            error = repr(e)
+            raw = getattr(e, "partial", b"")
+            if isinstance(e, urllib.error.HTTPError):
+                status, headers, final_url = e.code, list(e.headers.items()) if e.headers else [], e.geturl()
+                with e:
+                    try: raw = e.read()
+                    except Exception as body_error:
+                        raw = getattr(body_error, "partial", b"")
+                        error += "; body read failed: " + repr(body_error)
+        # Archive errors propagate: never reinterpret lost evidence as a source retry.
+        if archive:
+            discovery_archive.record(url, raw, status=status, headers=headers, final_url=final_url,
+                                     attempt=attempt, max_bytes=max_bytes, error=error)
+        if error is None:
+            visible = raw[:max_bytes] if max_bytes else raw
+            return visible.decode("utf-8", errors="replace"), True
+        time.sleep(1.2 * (attempt + 1))
     return "", False
 
 # ─── RSS / Atom / RDF 解析(内联，取代 rss_proxy) ─────────────────────────
