@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 73,
+          "id": 75,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 365
         },
         {
-          "id": 68,
+          "id": 70,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 354
         },
         {
-          "id": 65,
+          "id": 67,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,7 @@
           "word_count": 146
         },
         {
-          "id": 107,
+          "id": 109,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 217
         },
         {
-          "id": 113,
+          "id": 115,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 169
         },
         {
-          "id": 112,
+          "id": 114,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,30 +140,15 @@
           "word_count": 168
         },
         {
-          "id": 85,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Regularized Score Centering",
-          "link": "https://arxiv.org/abs/2611.21791",
-          "content": "Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical mismatch between training and inference can destabilize learning. To stabilize off-policy learning, score centering (SC) removes the effect of reward baselines on the expected update. Our gradient diagnostics show less extreme gradients with SC than with importance sampling (IS), but SC can still fail when the learner moves far from the behavior policy that generated the data. To limit this policy mismatch, we introduce Regularized Score Centering (RSC), which adds a reverse Kullback-Leibler (KL) penalty to encourage the learner's next-token distribution to stay close to the behavior policy's next-token distribution. RSC works with or without truncated importance sampling (TIS), which caps token importance weights. Our theoretical analysis supports this approach, showing that KL regularization improves convergence guarantees. We evaluate dense and mixture-of-experts models on mathematical reasoning and agentic tasks, including online shopping, tool use, games, and fully asynchronous software engineering. RSC with TIS substantially improves sample efficiency across all agent",
-          "pub_date": "2026-11-15T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 86,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
-          "link": "https://arxiv.org/abs/2611.19559",
-          "content": "World-action models (WAMs) augment vision-language-action policies (VLAs) with future prediction so that the policy can anticipate how its actions will affect the physical world. Existing WAMs supervise complete future observations. However, observations typically change little over an action chunk, so the future loss is dominated by copying static background content rather than learning task-relevant robot and object motion, limiting policy learning. Moreover, existing WAMs rely on large video generation models or separate world models, incurring heavy training and inference compute that hinders closed-loop deployment. To improve policy performance, we propose visual residual learning, supervising only the feature change from the current frame to the future frame in a frozen DINOv3 space. Compared with complete future features, this residual learning target yields a higher feature rank with richer and more diverse representations of scene changes, and spatially concentrates on the robot arm and manipulated objects rather than the background. To further improve computational efficiency, we present ResWAM, a residual world-action model with 2.3B parameters in total, including a ligh",
-          "pub_date": "2026-11-13T19:00:00.000Z",
+          "title": "π^4: A Foundation Model for 4D Scene Geometry and Motion",
+          "link": "https://arxiv.org/abs/2611.23144",
+          "content": "π^4 is a unified foundation model for 4D scene perception. From diverse, uncalibrated RGB observations in the wild---a single image, an unordered collection, or a video sequence---it recovers dense geometry, camera poses, and metric scale, together with 2D/3D point tracks and moving-object masks for multi-image inputs. It couples a geometry branch with a geometry-conditioned motion branch, which predicts image-space correspondences that are lifted into 3D using reconstructed target-view geometry. Across diverse benchmarks, π^4 achieves the best overall average rank in geometry evaluation, alongside competitive performance in single- and multiview 2D/3D point tracking and moving-object segmentation. With a shared backbone, the full geometry-and-motion system contains approximately 0.5B parameters---less than half the size of most baselines. It produces joint reconstructions and tracks in one forward pass, including large-scale scenes with thousands of input images despite training with contexts of at most 64 views. We further present the data and training recipe underlying these capabilities, together with empirical studies of key design choices. Code and models are available at htt",
+          "pub_date": "2026-11-16T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -175,10 +160,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Weight-Space Programming Doesn't Need Transformers",
-          "link": "https://arxiv.org/abs/2611.22055",
-          "content": "Standard neural architectures such as the Transformer were chosen because they train well with gradient descent and run fast on GPUs. In weight-space programming, a large language model (LLM) writes target weights by hand without gradient-based training, so those reasons no longer apply. Should we keep the Transformer? Given minimal guidance, ten labeled examples, and a sandbox, mainly on multiple-choice questions, we task three frontier LLMs with either generating the weights of a fixed architecture or designing the architecture themselves. When free to design, all three compile plain-text facts into a sparse table queried by a fixed procedure, reaching up to 54.4% test accuracy. An LLM-designed model achieves higher test accuracy than the most accurate released Transformer that the same LLM wrote while using about 1,800x fewer parameters. Without gradients, they choose a table, in which the LLM can state what each weight means and can find and rewrite a wrong one. Each wrong answer points to one row, and removing a row changes about one other answer. From this, we propose an associative-memory-based model up to 17x faster on GPUs than a same-sized Transformer. We also test pretra",
-          "pub_date": "2026-11-16T19:00:00.000Z",
+          "title": "MPEG-Diffusion: Mixed-Resolution Video Generation",
+          "link": "https://arxiv.org/abs/2611.12069",
+          "content": "Video diffusion transformers (DiTs) generate realistic videos, but their heavy computational cost limits broader real-world applications. Mixed-resolution generation reduces this cost by generating the visually important region at high resolution (HR) and the rest at low resolution (LR), yet existing methods suffer a severe quality drop on videos and require knowing the HR region in advance. We show that these failures are not inherent to mixed resolution, and propose MPEG-Diffusion to address their three root causes: (1) dual-resolution attention to mitigate the curse of mixed resolution, where each query reads the K/V of its own resolution, (2) a mixed-resolution decoder to blend the HR and LR latents before decoding and resolve distortion, and (3) a self-selected HR region using the DiT's knowledge to find the visually important region without requiring it in advance. Processing only 30% of full-resolution tokens, MPEG-Diffusion speeds up denoising by 4.8times on Wan2.1 14B (3.8times on 1.3B), outperforming prior methods on nearly every metric. In the user study, we demonstrate the high quality of MPEG-Diffusion, with raters preferring it over prior mixed-resolution methods in o",
+          "pub_date": "2026-11-08T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 90,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Regularized Score Centering",
+          "link": "https://arxiv.org/abs/2611.21791",
+          "content": "Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical mismatch between training and inference can destabilize learning. To stabilize off-policy learning, score centering (SC) removes the effect of reward baselines on the expected update. Our gradient diagnostics show less extreme gradients with SC than with importance sampling (IS), but SC can still fail when the learner moves far from the behavior policy that generated the data. To limit this policy mismatch, we introduce Regularized Score Centering (RSC), which adds a reverse Kullback-Leibler (KL) penalty to encourage the learner's next-token distribution to stay close to the behavior policy's next-token distribution. RSC works with or without truncated importance sampling (TIS), which caps token importance weights. Our theoretical analysis supports this approach, showing that KL regularization improves convergence guarantees. We evaluate dense and mixture-of-experts models on mathematical reasoning and agentic tasks, including online shopping, tool use, games, and fully asynchronous software engineering. RSC with TIS substantially improves sample efficiency across all agent",
+          "pub_date": "2026-11-15T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -197,7 +197,7 @@
     "vaccine": {
       "candidates": [
         {
-          "id": 2426,
+          "id": 2425,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2441,
+          "id": 2440,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2447,
+          "id": 2446,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2339,
+          "id": 2338,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 717
         },
         {
-          "id": 2343,
+          "id": 2342,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 607
         },
         {
-          "id": 2552,
+          "id": 2551,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 486
         },
         {
-          "id": 2260,
+          "id": 2259,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 434
         },
         {
-          "id": 2318,
+          "id": 2317,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 303
         },
         {
-          "id": 2198,
+          "id": 2197,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 263
         },
         {
-          "id": 2179,
+          "id": 2178,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 190
         },
         {
-          "id": 2492,
+          "id": 2491,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 228
         },
         {
-          "id": 2535,
+          "id": 2534,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 220
         },
         {
-          "id": 2501,
+          "id": 2500,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 487,
-      "total_valid": 326,
+      "total_raw": 486,
+      "total_valid": 325,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2705,
+          "id": 2702,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2707,
+          "id": 2704,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 2730,
+          "id": 2727,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 295
         },
         {
-          "id": 2639,
+          "id": 2638,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 375
         },
         {
-          "id": 2675,
+          "id": 2674,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 327
         },
         {
-          "id": 2674,
+          "id": 2673,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 198
         },
         {
-          "id": 2706,
+          "id": 2703,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1129
         },
         {
-          "id": 2684,
+          "id": 2683,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,37 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2695,
-          "source": "Absci Blog",
-          "section": "synbio",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absci Reports Business Updates and Third Quarter 2026 Financial and Operating Results",
-          "link": "https://investors.absci.com/news-releases/news-release-details/absci-reports-business-updates-and-third-quarter-2026-financial",
-          "content": "ABS-201™ HEADLINE™ trial progressing on track; 13-week interim proof-of-concept data for pattern hair loss (PHL) anticipated next month Announced preliminary details for Phase 2 STORYLINE™ trial of ABS-201 for endometriosis Appointed former Galderma executive Gerry Muhle as Chief Commercial Officer",
-          "pub_date": "Thu, 12 Nov 2026 07:05:50 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 299
-        },
-        {
-          "id": 2696,
-          "source": "Absci Blog",
-          "section": "synbio",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absci Appoints Gerry Muhle as Chief Commercial Officer to Build Category-Defining Brands for ABS-201 and Its Broader Pipeline",
-          "link": "https://investors.absci.com/news-releases/news-release-details/absci-appoints-gerry-muhle-chief-commercial-officer-build",
-          "content": "Global commercial executive brings a track record of launching prescription biologics and building consumer-driven brands at Galderma, Allergan and GSK VANCOUVER, Wash. and NEW YORK, Nov. 12, 2026 (GLOBE NEWSWIRE) -- Absci Corporation (Nasdaq: ABSI), a clinical-stage biopharmaceutical company",
-          "pub_date": "Thu, 12 Nov 2026 07:00:24 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 293
-        },
-        {
-          "id": 2683,
+          "id": 2682,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 2682,
+          "id": 2681,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 120,
-      "total_valid": 22,
-      "total_candidates": 12
+      "total_raw": 118,
+      "total_valid": 20,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 2706,
+          "id": 2703,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +611,7 @@
           "word_count": 1129
         },
         {
-          "id": 2316,
+          "id": 2315,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +626,7 @@
           "word_count": 903
         },
         {
-          "id": 2334,
+          "id": 2333,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +641,7 @@
           "word_count": 648
         },
         {
-          "id": 2561,
+          "id": 2560,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +656,7 @@
           "word_count": 438
         },
         {
-          "id": 2260,
+          "id": 2259,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +671,7 @@
           "word_count": 434
         },
         {
-          "id": 2337,
+          "id": 2336,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +686,7 @@
           "word_count": 269
         },
         {
-          "id": 2255,
+          "id": 2254,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +701,7 @@
           "word_count": 261
         },
         {
-          "id": 2348,
+          "id": 2347,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +716,7 @@
           "word_count": 153
         },
         {
-          "id": 2174,
+          "id": 2173,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +731,7 @@
           "word_count": 138
         },
         {
-          "id": 2172,
+          "id": 2171,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2753,
+          "id": 2750,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +784,7 @@
           "word_count": 526
         },
         {
-          "id": 2758,
+          "id": 2755,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +799,7 @@
           "word_count": 469
         },
         {
-          "id": 2757,
+          "id": 2754,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +814,7 @@
           "word_count": 459
         },
         {
-          "id": 2761,
+          "id": 2758,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +829,7 @@
           "word_count": 147
         },
         {
-          "id": 2762,
+          "id": 2759,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +844,7 @@
           "word_count": 144
         },
         {
-          "id": 241,
+          "id": 243,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -889,7 +859,7 @@
           "word_count": 1200
         },
         {
-          "id": 261,
+          "id": 263,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -904,7 +874,7 @@
           "word_count": 1200
         },
         {
-          "id": 278,
+          "id": 280,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -919,7 +889,7 @@
           "word_count": 1200
         },
         {
-          "id": 319,
+          "id": 321,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +904,7 @@
           "word_count": 1200
         },
         {
-          "id": 470,
+          "id": 472,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +919,7 @@
           "word_count": 1200
         },
         {
-          "id": 582,
+          "id": 584,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 637,
+          "id": 639,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 681,
+          "id": 683,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 693,
+          "id": 695,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 915,
+          "id": 917,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 928,
+          "id": 930,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 1351,
+          "id": 1353,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 1358,
+          "id": 1360,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 1368,
+          "id": 1370,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 1430,
+          "id": 1432,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1104,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 199,
+      "total_raw": 198,
       "total_valid": 36,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2925,
+    "total_raw": 2921,
     "dup": 679,
-    "nocontent": 389,
+    "nocontent": 388,
     "noise": 6
   }
 }
