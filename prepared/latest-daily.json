@@ -140,45 +140,45 @@
           "word_count": 168
         },
         {
-          "id": 91,
+          "id": 86,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "More Agents, More Samples, or More Thinking? Untangling Coordination, Ensembling, and Test-Time Compute in Multi-Agent LLMs",
-          "link": "https://arxiv.org/abs/2611.17610",
-          "content": "Evaluations of multi-agent language models often compare communicating architectures against a single greedy pass. This practice confounds coordination with sample multiplicity and inference compute. We synthesize nine primary empirical evaluations comprising 516 unique multi-agent configurations organized along a resource vector R with six dimensions and a baseline ladder with four categories. Against baselines with a single pass (Category A), multi-agent accuracy differences are negative overall and near zero when omitting the largest contributing study. When evaluated against baselines matched on sample count (Category B) or resource budget (Category C), multi-agent systems average -0.042 in accuracy, and multilevel random effects modeling on the log odds scale remains negative across sensitivity checks. Multi-agent accuracy equals or falls below the baseline in 74% of these comparable contrasts, and study means are nonpositive in almost all evaluated studies. Across studies reporting both baselines, moving from a greedy pass to a sampled baseline shifts accuracy differences by -0.038 on average. Because communication adds no information when agents share identical evidence, pos",
-          "pub_date": "2026-11-12T19:00:00.000Z",
+          "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
+          "link": "https://arxiv.org/abs/2611.19559",
+          "content": "World-action models (WAMs) augment vision-language-action policies (VLAs) with future prediction so that the policy can anticipate how its actions will affect the physical world. Existing WAMs supervise complete future observations. However, observations typically change little over an action chunk, so the future loss is dominated by copying static background content rather than learning task-relevant robot and object motion, limiting policy learning. Moreover, existing WAMs rely on large video generation models or separate world models, incurring heavy training and inference compute that hinders closed-loop deployment. To improve policy performance, we propose visual residual learning, supervising only the feature change from the current frame to the future frame in a frozen DINOv3 space. Compared with complete future features, this residual learning target yields a higher feature rank with richer and more diverse representations of scene changes, and spatially concentrates on the robot arm and manipulated objects rather than the background. To further improve computational efficiency, we present ResWAM, a residual world-action model with 2.3B parameters in total, including a ligh",
+          "pub_date": "2026-11-13T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 92,
+          "id": 88,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Marimba: A System One Model for Speech",
-          "link": "https://arxiv.org/abs/2611.18330",
-          "content": "Speech applications require decisions about term presence, turn completion, and language within an audio window. We present Marimba, an interface for typed speech decisions built on frozen Qwen3-ASR 0.6B features. Lexical questions use zero-shot scoring of ASR transcripts; non-lexical questions use a question-conditioned head and a separate layer-18 turn-end readout. Language identification uses the ASR model's own language scores. On private conversational test sets, decoder AUROC is 0.80-0.92; on public read speech it is 0.92-0.97. Speech Commands four-way accuracy is 0.93; binary lexical ECE is at most 0.08. Personal-information detection, which passes the greedy transcript to a private, curated PII pipeline, reaches item-level F1 0.904 on synthetic Brazilian Portuguese speech (1.000 on reference transcripts). Layer-12 speaker readouts detect speaker change with AUROC 0.966-0.980 on AMI and VoxConverse, above an ECAPA baseline, and count speakers (0, 1, 2, or 3+) more accurately than pyannote 3.1. The turn-end readout reaches AUROC 0.930 versus Smart Turn v3.2 at 0.982 on Smart Turn's own test set. On a subset of ICSI meetings labeled by next speaker, AUROC is 0.716 versus 0.712",
-          "pub_date": "2026-11-12T19:00:00.000Z",
+          "title": "Weight-Space Programming Doesn't Need Transformers",
+          "link": "https://arxiv.org/abs/2611.22055",
+          "content": "Standard neural architectures such as the Transformer were chosen because they train well with gradient descent and run fast on GPUs. In weight-space programming, a large language model (LLM) writes target weights by hand without gradient-based training, so those reasons no longer apply. Should we keep the Transformer? Given minimal guidance, ten labeled examples, and a sandbox, mainly on multiple-choice questions, we task three frontier LLMs with either generating the weights of a fixed architecture or designing the architecture themselves. When free to design, all three compile plain-text facts into a sparse table queried by a fixed procedure, reaching up to 54.4% test accuracy. An LLM-designed model achieves higher test accuracy than the most accurate released Transformer that the same LLM wrote while using about 1,800x fewer parameters. Without gradients, they choose a table, in which the LLM can state what each weight means and can find and rewrite a wrong one. Each wrong answer points to one row, and removing a row changes about one other answer. From this, we propose an associative-memory-based model up to 17x faster on GPUs than a same-sized Transformer. We also test pretra",
+          "pub_date": "2026-11-16T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 94,
+          "id": 89,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision",
-          "link": "https://arxiv.org/abs/2611.16694",
-          "content": "When language models revise a decision after another agent disagrees, neither reversal counts nor final accuracy shows whether they are fixing mistakes or abandoning correct answers. We introduce a controlled two-pass audit that holds the question, the evidence, and the model's initial answer fixed and varies only the revision context: neutral reflection, anonymous disagreement, or disagreement attributed to a domain expert. For binary decisions the accounting is exact: revision raises accuracy only if it is selective enough, reversing wrong answers more than a/(1-a) times as often as correct ones, where a is initial accuracy (nine times at 90%). Across five models and 1,989 evidence-grounded decisions in medicine, science, and law, no model clears this bar under expert disagreement, and accuracy falls by up to 16.1 points. The expert label, a prestige cue, adds reversals for four of the five models, yet its effect on accuracy ranges from a 5.2-point loss to a 2.4-point gain, so reversal counts are a poor proxy for harm. With identical arguments from both sources, the label still raises reversal for three proprietary models and in a pooled analysis of four newer models. Models also",
-          "pub_date": "2026-11-11T19:00:00.000Z",
+          "title": "Multi-Branch Transformer",
+          "link": "https://arxiv.org/abs/2611.19800",
+          "content": "Transformer language models are commonly scaled by making their blocks wider or stacking them deeper. In this work, we explore a complementary path: branching, the parallel composition of full Transformer blocks. We introduce the Multi-Branch Transformer (MBT), which processes the input through shared initial layers, executes independently parameterized branches of sequential blocks in parallel, and fuses their outputs before shared final layers. At comparable training compute, we study three MBT variants: Wide-Shallow preserves block width, Narrow-Deep preserves sequential depth, and Balanced interpolates between them. In controlled pretraining experiments at four mixture-of-experts scales (0.8B to 2.1B total parameters), 2-branch Wide-Shallow MBTs consistently outperform sequential Transformers under matched parameter and training-compute budgets. Balanced MBTs improve further and retain comparable quality as the number of branches increases. To improve inference efficiency at long contexts, we introduce Joint-KV, which constructs a shared KV cache from branch representations at each depth. Our final recipe combines Balanced MBTs with Joint-KV, supported by an inference engine th",
+          "pub_date": "2026-11-14T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2128,
-      "total_valid": 1492,
+      "total_raw": 2127,
+      "total_valid": 1493,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2429,
+          "id": 2427,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2444,
+          "id": 2442,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2450,
+          "id": 2448,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 2342,
+          "id": 2340,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 717
         },
         {
-          "id": 2346,
+          "id": 2344,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 607
         },
         {
-          "id": 2263,
+          "id": 2261,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 434
         },
         {
-          "id": 2321,
+          "id": 2319,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 303
         },
         {
-          "id": 2201,
+          "id": 2199,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 263
         },
         {
-          "id": 2182,
+          "id": 2180,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 190
         },
         {
-          "id": 2495,
+          "id": 2493,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 228
         },
         {
-          "id": 2538,
+          "id": 2536,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 220
         },
         {
-          "id": 2504,
+          "id": 2502,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 489,
-      "total_valid": 327,
+      "total_raw": 488,
+      "total_valid": 326,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2705,
+          "id": 2703,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 2707,
+          "id": 2705,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 2730,
+          "id": 2728,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 295
         },
         {
-          "id": 2642,
+          "id": 2640,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 375
         },
         {
-          "id": 2678,
+          "id": 2676,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 327
         },
         {
-          "id": 2677,
+          "id": 2675,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 198
         },
         {
-          "id": 2706,
+          "id": 2704,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1129
         },
         {
-          "id": 2686,
+          "id": 2684,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 2685,
+          "id": 2683,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 2687,
+          "id": 2685,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2706,
+          "id": 2704,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1129
         },
         {
-          "id": 2319,
+          "id": 2317,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 903
         },
         {
-          "id": 2337,
+          "id": 2335,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 648
         },
         {
-          "id": 2564,
+          "id": 2562,
           "source": "Nature Reviews Microbiology",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 438
         },
         {
-          "id": 2263,
+          "id": 2261,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 434
         },
         {
-          "id": 2340,
+          "id": 2338,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 269
         },
         {
-          "id": 2258,
+          "id": 2256,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 261
         },
         {
-          "id": 2351,
+          "id": 2349,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 153
         },
         {
-          "id": 2177,
+          "id": 2175,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 138
         },
         {
-          "id": 2175,
+          "id": 2173,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2753,
+          "id": 2751,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 526
         },
         {
-          "id": 2758,
+          "id": 2756,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 469
         },
         {
-          "id": 2757,
+          "id": 2755,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,22 +814,7 @@
           "word_count": 459
         },
         {
-          "id": 121,
-          "source": "TechCrunch AI",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
-          "link": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/",
-          "content": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
-          "pub_date": "Tue, 17 Nov 2026 14:05:30 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 158
-        },
-        {
-          "id": 2762,
+          "id": 2760,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +829,7 @@
           "word_count": 147
         },
         {
-          "id": 2763,
+          "id": 2761,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,22 @@
           "word_count": 144
         },
         {
-          "id": 2772,
+          "id": 2768,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Thunes and PayerMax Deepen Strategic Collaboration to Enhance Global Payout Capabilities",
+          "link": "https://www.thunes.com/news/thunes-and-payermax-deepen-strategic-collaboration-to-enhance-global-payout-capabilities/",
+          "content": "The collaboration brings together PayerMax&#8217;s global payment expertise and merchant network with Thunes&#8217; cross-border payment infrastructure to support businesses expanding across international markets. Singapore; November 18, 2026: Thunes, the Smart Superhighway to move money around the world, today announced the deepening of its alliance with PayerMax, a Singapore-headquartered global payments company which provides integrated acquiring, ... Read more &#187; The post Thunes and PayerMax Deepen Strategic Collaboration to Enhance Global Payout Capabilities first appeared on Thunes.com .",
+          "pub_date": "Wed, 18 Nov 2026 01:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 604
+        },
+        {
+          "id": 2769,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 552
         },
         {
-          "id": 244,
+          "id": 243,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -889,7 +889,7 @@
           "word_count": 1200
         },
         {
-          "id": 264,
+          "id": 263,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -904,7 +904,7 @@
           "word_count": 1200
         },
         {
-          "id": 281,
+          "id": 280,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -919,7 +919,7 @@
           "word_count": 1200
         },
         {
-          "id": 322,
+          "id": 321,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 473,
+          "id": 472,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 585,
+          "id": 584,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 640,
+          "id": 639,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 684,
+          "id": 683,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 696,
+          "id": 695,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 918,
+          "id": 917,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 931,
+          "id": 930,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 1354,
+          "id": 1353,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 1361,
+          "id": 1360,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1074,14 +1074,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 207,
-      "total_valid": 39,
+      "total_raw": 204,
+      "total_valid": 38,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2932,
-    "dup": 687,
+    "total_raw": 2928,
+    "dup": 683,
     "nocontent": 388,
     "noise": 6
   }
