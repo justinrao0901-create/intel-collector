@@ -1,10 +1,10 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "sources": {
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 26,
+      "count": 30,
       "ok": true
     },
     "Anthropic Blog": {
@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
+      "count": 3,
       "ok": true
     },
     "Meta AI Blog": {
@@ -34,13 +34,13 @@
     "NVIDIA Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 12,
+      "count": 13,
       "ok": true
     },
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 7,
+      "count": 11,
       "ok": true
     },
     "HuggingFace Daily Papers": {
@@ -70,19 +70,19 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 353,
+      "count": 162,
       "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 717,
+      "count": 401,
       "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 774,
+      "count": 358,
       "ok": true
     },
     "Import AI": {
@@ -94,7 +94,7 @@
     "Interconnects": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
+      "count": 1,
       "ok": true
     },
     "Latent Space": {
@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 20,
+      "count": 17,
       "ok": true
     },
     "Hacker News AI": {
@@ -136,7 +136,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 19,
+      "count": 24,
       "ok": true
     },
     "Fierce Pharma": {
@@ -166,13 +166,13 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 40,
+      "count": 75,
       "ok": true
     },
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
+      "count": 5,
       "ok": true
     },
     "The Lancet": {
@@ -226,7 +226,7 @@
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 3,
+      "count": 4,
       "ok": true
     },
     "Nature Vaccines": {
@@ -262,7 +262,7 @@
     "Vaccine (journal)": {
       "section": "vaccine",
       "method": "rss",
-      "count": 88,
+      "count": 90,
       "ok": true
     },
     "npj Vaccines": {
@@ -304,7 +304,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 6,
+      "count": 10,
       "ok": true
     },
     "BioPharma Dive": {
@@ -334,7 +334,7 @@
     "Nature Machine Intel": {
       "section": "synbio",
       "method": "rss",
-      "count": 5,
+      "count": 6,
       "ok": true
     },
     "ACS Synthetic Biology": {
@@ -352,13 +352,13 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true
     },
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 13,
+      "count": 14,
       "ok": true
     },
     "Absci Blog": {
@@ -376,7 +376,7 @@
     "Nucleic Acids Research": {
       "section": "synbio",
       "method": "rss",
-      "count": 23,
+      "count": 30,
       "ok": true
     },
     "Nature Reviews Bioengineering": {
@@ -394,7 +394,7 @@
     "NEJM AI": {
       "section": "cross",
       "method": "rss",
-      "count": 6,
+      "count": 4,
       "ok": true
     },
     "Nature Methods": {
@@ -412,7 +412,7 @@
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 1,
+      "count": 0,
       "ok": true
     },
     "PaymentsDive": {
@@ -424,8 +424,8 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 39,
+      "ok": true
     },
     "Payments Cards & Mobile": {
       "section": "payment",
@@ -442,13 +442,13 @@
     "Cointelegraph Payments": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 1,
       "ok": true
     },
     "Ledger Insights": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
+      "count": 1,
       "ok": true
     },
     "Chainalysis Blog": {
@@ -478,7 +478,7 @@
     "ECB Press": {
       "section": "payment",
       "method": "rss",
-      "count": 10,
+      "count": 12,
       "ok": true
     },
     "Visa Navigate": {
@@ -504,17 +504,15 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Finextra",
       "Import AI"
     ],
     "sudden_drop": [
-      "Cointelegraph Payments",
-      "Lancet Digital Health",
-      "npj Vaccines"
+      "PYMNTS Cross-Border"
     ],
     "persistent_zero": [
-      "Ledger Insights",
-      "WHO News"
+      "Lancet Digital Health",
+      "WHO News",
+      "npj Vaccines"
     ]
   }
 }
