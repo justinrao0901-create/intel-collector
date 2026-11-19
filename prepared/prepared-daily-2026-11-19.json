@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 68,
+          "id": 71,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 364
         },
         {
-          "id": 76,
+          "id": 79,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 153
         },
         {
-          "id": 106,
+          "id": 109,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 268
         },
         {
-          "id": 119,
+          "id": 122,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 184
         },
         {
-          "id": 107,
+          "id": 110,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,37 @@
           "word_count": 167
         },
         {
-          "id": 91,
+          "id": 94,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Mechanistic Critics for Sample-Efficient NPU Design-Space Exploration",
+          "link": "https://arxiv.org/abs/2611.24733",
+          "content": "NPU design-space exploration for LLM inference mainly relies on an expensive simulator that often returns only scalar feedback such as latency and power. Such feedback can rank evaluated configurations, but gives little information for deciding why a configuration is slow or which architecture parameter should be changed next. This limitation is especially severe because prefill and decode workloads can be limited by different resources, including compute throughput and HBM bandwidth. We propose CriticNPU, a sample-efficient DSE framework built around an online-calibrated mechanistic critic for NPU architecture design. The critic uses explicit hardware limits to evaluate NPU configurations: before simulation, it estimates whether a proposed configuration is likely to improve over the current best and filters weak candidates; after simulation, it aggregates operator-level runtimes into prefill/decode bottleneck summaries and predicts the effect of candidate parameter changes. We instantiate the critic with a Roofline-style model that derives compute and memory limits from architecture parameters and calibrates per-operator-type effective limits using simulator observations. And Crit",
+          "pub_date": "2026-11-17T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 95,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Tideway: Phase-Aware Tiered Memory Management for MoE Inference on Consumer Devices",
+          "link": "https://arxiv.org/abs/2611.14848",
+          "content": "Large language model (LLM) agents are rapidly becoming a dominant paradigm for AI applications. Recently, there is a growing demand to deploy large-scale Mixture-of-Experts (MoE) models locally on consumer PCs to balance data privacy, API costs, and inference efficiency. However, unlike datacenter servers with abundant DRAM, consumer devices are tightly constrained in both GPU VRAM and host RAM, forcing massive MoE weights to spill across VRAM, host RAM, and SSD. Under such spilling, we observe that existing systems fail to fully utilize this memory hierarchy, treating the tiers as independent caches and thrashing in inference. We present TIDEWAY, a system for efficient inference of large MoE models on memory-constrained consumer devices. Our core insight is to manage host RAM and GPU VRAM as a unified memory pool. Within this pool, TIDEWAY couples phase-aware memory layouts, which adapt to the distinct access patterns of prefill and decode, with an execution engine that optimizes CUDA Graph execution under expert paging. Our evaluations on representative consumer hardware with frontier MoE models demonstrate that TIDEWAY significantly outperforms state-of-the-art systems. On avera",
+          "pub_date": "2026-11-09T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 96,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,37 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 92,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "VAE Rhythm: Temporal Decoding Traces for AI-Generated Video Detection",
-          "link": "https://arxiv.org/abs/2611.21114",
-          "content": "Visible artifacts are an unreliable cue for detecting generated videos, because newer generators learn to remove them. We instead detect a trace left by the generation pipeline itself. Most video generators decode latents with a 3D causal VAE that groups consecutive frames in time, so the fidelity of generated frames rises and falls periodically with their position in a group. We call this periodic trace VAE Rhythm. Real videos are captured frame by frame and do not have it. To reveal it without training, we propose a phase scan. The scan reconstructs a clip with an off-the-shelf VAE from successive start offsets and measures the periodicity of the reconstruction error across these offsets. We find VAE Rhythm in most of the 39 variants of 31 generators we test, including the closed-source Sora, Kling 3.0 and Seedance 2.0. We use the rhythm as a zero-shot score, as a plug-in for existing detectors and as a data engine that pairs real videos with their VAE reconstructions to train our detector CaDet. On DF26, the training-free rhythm score outperforms all 15 retrained baselines, and as a plug-in it improves all 19 tested detectors by 6.7% to 23.7% AUROC. CaDet achieves the best AUROC",
-          "pub_date": "2026-11-15T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 93,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
-          "link": "https://arxiv.org/abs/2611.24154",
-          "content": "Games are a rich testbed for visual agents, demanding perception, long-horizon planning, and precise control. However, collecting human gameplay is costly, and learning from gameplay videos requires inferring missing actions. Existing datasets also cover a limited range of games, often without explicit tasks or verifiable outcomes. To address these gaps, we introduce Game2Player, a framework that co-develops game environments and players to collect diverse and verifiable gameplay experience at scale. In the Game2Player loop, a Builder agent adapts existing web games, exposes their internal state, and defines tasks with state-based progress measures and success checks. A Coding Player and a VLM Player then attempt the tasks and report problems to the Builder for repair, so that play serves as both environment validation and training data collection. With Game2Player, we build 568 verified web games with 3,436 tasks, collect 15.7K trajectories (307 hours of gameplay), and hold out 50 games as the benchmark PlayerBench. To evaluate the collected experience as training data, we train VLM agents with progress-weighted SFT, assigning greater weight to steps that advance task progress. Ga",
-          "pub_date": "2026-11-17T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1097,
+          "id": 1100,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1206,
+      "total_raw": 1209,
       "total_valid": 786,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1512,
+          "id": 1515,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1517,
+          "id": 1520,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1526,
+          "id": 1529,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1640,
+          "id": 1643,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 486
         },
         {
-          "id": 1437,
+          "id": 1440,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 302
         },
         {
-          "id": 1444,
+          "id": 1447,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 216
         },
         {
-          "id": 1412,
+          "id": 1415,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 161
         },
         {
-          "id": 1627,
+          "id": 1630,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 69
         },
         {
-          "id": 1630,
+          "id": 1633,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 69
         },
         {
-          "id": 1572,
+          "id": 1575,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 462
         },
         {
-          "id": 1569,
+          "id": 1572,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 332
         },
         {
-          "id": 1536,
+          "id": 1539,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 222
         },
         {
-          "id": 1675,
+          "id": 1678,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 183
         },
         {
-          "id": 1232,
+          "id": 1235,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 169
         },
         {
-          "id": 1419,
+          "id": 1422,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1791,
+          "id": 1794,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1128
         },
         {
-          "id": 1722,
+          "id": 1725,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 188
         },
         {
-          "id": 1747,
+          "id": 1750,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 184
         },
         {
-          "id": 1727,
+          "id": 1730,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 179
         },
         {
-          "id": 1789,
+          "id": 1792,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1790,
+          "id": 1793,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1822,
+          "id": 1825,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 552
         },
         {
-          "id": 1712,
+          "id": 1715,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 172
         },
         {
-          "id": 1771,
+          "id": 1774,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1775,
+          "id": 1778,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1534,
+          "id": 1537,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1794,
+          "id": 1797,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1788,
+          "id": 1791,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1199
         },
         {
-          "id": 1822,
+          "id": 1825,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 552
         },
         {
-          "id": 1829,
+          "id": 1832,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 457
         },
         {
-          "id": 1663,
+          "id": 1666,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 412
         },
         {
-          "id": 1665,
+          "id": 1668,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 388
         },
         {
-          "id": 1254,
+          "id": 1257,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 364
         },
         {
-          "id": 1262,
+          "id": 1265,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 344
         },
         {
-          "id": 1275,
+          "id": 1278,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1840,
+          "id": 1843,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 523
         },
         {
-          "id": 1845,
+          "id": 1848,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 481
         },
         {
-          "id": 1865,
+          "id": 1868,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 372
         },
         {
-          "id": 1864,
+          "id": 1867,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 344
         },
         {
-          "id": 1866,
+          "id": 1869,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 285
         },
         {
-          "id": 1857,
+          "id": 1860,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 233
         },
         {
-          "id": 1878,
+          "id": 1881,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 193
         },
         {
-          "id": 1856,
+          "id": 1859,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 190
         },
         {
-          "id": 1847,
+          "id": 1850,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 119
         },
         {
-          "id": 1891,
+          "id": 1894,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -919,7 +919,7 @@
           "word_count": 156
         },
         {
-          "id": 201,
+          "id": 204,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 233,
+          "id": 236,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 273,
+          "id": 276,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 368,
+          "id": 371,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 454,
+          "id": 457,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 609,
+          "id": 612,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 625,
+          "id": 628,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 691,
+          "id": 694,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 711,
+          "id": 714,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 719,
+          "id": 722,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1080,9 +1080,9 @@
     }
   },
   "meta": {
-    "total_raw": 2051,
+    "total_raw": 2054,
     "dup": 463,
-    "nocontent": 392,
+    "nocontent": 395,
     "noise": 6
   }
 }
