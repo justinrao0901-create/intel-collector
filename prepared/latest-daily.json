@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 68,
+          "id": 71,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 364
         },
         {
-          "id": 76,
+          "id": 79,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 153
         },
         {
-          "id": 106,
+          "id": 109,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 268
         },
         {
-          "id": 119,
+          "id": 122,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 184
         },
         {
-          "id": 107,
+          "id": 110,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,37 @@
           "word_count": 167
         },
         {
-          "id": 91,
+          "id": 94,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+          "link": "https://arxiv.org/abs/2611.24154",
+          "content": "Games are a rich testbed for visual agents, demanding perception, long-horizon planning, and precise control. However, collecting human gameplay is costly, and learning from gameplay videos requires inferring missing actions. Existing datasets also cover a limited range of games, often without explicit tasks or verifiable outcomes. To address these gaps, we introduce Game2Player, a framework that co-develops game environments and players to collect diverse and verifiable gameplay experience at scale. In the Game2Player loop, a Builder agent adapts existing web games, exposes their internal state, and defines tasks with state-based progress measures and success checks. A Coding Player and a VLM Player then attempt the tasks and report problems to the Builder for repair, so that play serves as both environment validation and training data collection. With Game2Player, we build 568 verified web games with 3,436 tasks, collect 15.7K trajectories (307 hours of gameplay), and hold out 50 games as the benchmark PlayerBench. To evaluate the collected experience as training data, we train VLM agents with progress-weighted SFT, assigning greater weight to steps that advance task progress. Ga",
+          "pub_date": "2026-11-17T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 95,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "LogT: Logically Think with Images for Visual Search",
+          "link": "https://arxiv.org/abs/2611.19200",
+          "content": "Thinking with images empowers vision-language models (VLMs) to use an external Zoom-in tool for fine-grained visual search. Recent works employ supervised fine-tuning (SFT) and reinforcement learning (RL) with tool-specific designs to enable such capabilities. However, achieving logical reasoning alongside accurate and efficient tool use remains a significant challenge. To address this, we shift the focus away from increasing RL complexity and instead identify SFT data quality as a key bottleneck. We then propose LogT (short for Logically Think with Images), a fully automated SFT data engine that explicitly enforces logic-chain-guided reasoning. LogT generates an SFT dataset featuring challenging, visually grounded questions and structured tool-use traces with human-like logic. We validate our approach by fine-tuning two base models, Qwen2.5-VL-7B and InternVL3.5-8B, on the dataset and evaluating them across seven benchmark test sets. We show that LogT-SFT based on Qwen2.5-VL-7B outperforms the state-of-the-art trained with both SFT and RL, despite using 3.1times less data and >120times fewer GPU hours. Furthermore, applying a simple RL recipe without tool-specific design on LogT-S",
+          "pub_date": "2026-11-13T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 96,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,37 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 95,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
-          "link": "https://arxiv.org/abs/2611.23068",
-          "content": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across seven evolution methods and six models (over 10M LLM calls), we find support for the hypothesis at both levels where evaluation scores are used. At the candidate level (choosing artifacts), helpful candidate artifacts exist, but selection is no better than random at telling them from harmful ones, so errors accumulate across rounds. At the method level (ranking methods), typical margins of a few percentage points are smaller than the difference between two independent runs of the same method, so published rankings often rest on luck. Together, these findings indicate that agent evolution is often bottlenecked by reliably identifying improvements. This calls for a shift in how we develop and",
-          "pub_date": "2026-11-16T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 97,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Learning Anisotropic Prediction Targets for Flow Models",
-          "link": "https://arxiv.org/abs/2611.17767",
-          "content": "Flow-based generative models are trained on a hand-chosen prediction target, such as the velocity, the noise, or the clean data. This choice strongly affects training and sample quality. We introduce Anisotropic Flow Models (AnisoFlow), which replaces a fixed prediction target with a fully learnable one. AnisoFlow learns to scale the noise component of the target anisotropically, assigning a separate nonnegative weight to each direction in a jointly learned basis. A closed-form map recovers the velocity from the network's prediction, leaving the architecture, flow-matching loss, and sampler unchanged. Since recovery is exact, training optimizes the target purely to make it easier for the network to predict. We theoretically analyze the resulting prediction error and predict that the preferred noise weight in each direction scales near-linearly with data variance, in agreement with the weights learned empirically in pixel space. AnisoFlow improves FID from 1.90 to 1.55 over the JiT baseline on ImageNet 256times256, by learning only the prediction target, without representation alignment or architectural changes. In pixel-space text-to-image generation, AnisoFlow improves image quali",
-          "pub_date": "2026-11-12T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1099,
+          "id": 1100,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,7 +190,7 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1208,
+      "total_raw": 1209,
       "total_valid": 784,
       "total_candidates": 12
     },
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 503,
-      "total_valid": 345,
+      "total_raw": 502,
+      "total_valid": 344,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1798,
+          "id": 1796,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 179
         },
         {
-          "id": 1796,
+          "id": 1794,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1797,
+          "id": 1795,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1829,
+          "id": 1827,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -552,36 +552,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 172
-        },
-        {
-          "id": 1785,
-          "source": "Absci Blog",
-          "section": "synbio",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absci Reports Business Updates and Third Quarter 2026 Financial and Operating Results",
-          "link": "https://investors.absci.com/news-releases/news-release-details/absci-reports-business-updates-and-third-quarter-2026-financial",
-          "content": "ABS-201™ HEADLINE™ trial progressing on track; 13-week interim proof-of-concept data for pattern hair loss (PHL) anticipated next month Announced preliminary details for Phase 2 STORYLINE™ trial of ABS-201 for endometriosis Appointed former Galderma executive Gerry Muhle as Chief Commercial Officer",
-          "pub_date": "Thu, 12 Nov 2026 07:05:50 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 299
-        },
-        {
-          "id": 1786,
-          "source": "Absci Blog",
-          "section": "synbio",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Absci Appoints Gerry Muhle as Chief Commercial Officer to Build Category-Defining Brands for ABS-201 and Its Broader Pipeline",
-          "link": "https://investors.absci.com/news-releases/news-release-details/absci-appoints-gerry-muhle-chief-commercial-officer-build",
-          "content": "Global commercial executive brings a track record of launching prescription biologics and building consumer-driven brands at Galderma, Allergan and GSK VANCOUVER, Wash. and NEW YORK, Nov. 12, 2026 (GLOBE NEWSWIRE) -- Absci Corporation (Nasdaq: ABSI), a clinical-stage biopharmaceutical company",
-          "pub_date": "Thu, 12 Nov 2026 07:00:24 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 293
         },
         {
           "id": 1776,
@@ -619,9 +589,9 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 120,
-      "total_valid": 25,
-      "total_candidates": 12
+      "total_raw": 118,
+      "total_valid": 23,
+      "total_candidates": 10
     },
     "cross": {
       "candidates": [
@@ -641,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 1801,
+          "id": 1799,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 1795,
+          "id": 1793,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +641,7 @@
           "word_count": 1199
         },
         {
-          "id": 1829,
+          "id": 1827,
           "source": "Nature Reviews Bioengineering",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +656,7 @@
           "word_count": 552
         },
         {
-          "id": 1836,
+          "id": 1834,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -799,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1847,
+          "id": 1845,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +784,7 @@
           "word_count": 523
         },
         {
-          "id": 1852,
+          "id": 1850,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +799,7 @@
           "word_count": 481
         },
         {
-          "id": 1873,
+          "id": 1870,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +814,7 @@
           "word_count": 372
         },
         {
-          "id": 1872,
+          "id": 1869,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +829,7 @@
           "word_count": 344
         },
         {
-          "id": 1874,
+          "id": 1871,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +844,7 @@
           "word_count": 285
         },
         {
-          "id": 1865,
+          "id": 1862,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +859,7 @@
           "word_count": 233
         },
         {
-          "id": 1886,
+          "id": 1883,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +874,7 @@
           "word_count": 193
         },
         {
-          "id": 1864,
+          "id": 1861,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +889,7 @@
           "word_count": 190
         },
         {
-          "id": 1854,
+          "id": 1852,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +904,7 @@
           "word_count": 119
         },
         {
-          "id": 1895,
+          "id": 1896,
           "source": "Cointelegraph Payments",
           "section": "payment",
           "tier": "T3",
@@ -949,7 +919,7 @@
           "word_count": 156
         },
         {
-          "id": 201,
+          "id": 204,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +934,7 @@
           "word_count": 1200
         },
         {
-          "id": 233,
+          "id": 236,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 273,
+          "id": 276,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 368,
+          "id": 371,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 454,
+          "id": 457,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 609,
+          "id": 612,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1039,7 +1009,7 @@
           "word_count": 1200
         },
         {
-          "id": 625,
+          "id": 628,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1054,7 +1024,7 @@
           "word_count": 1200
         },
         {
-          "id": 691,
+          "id": 694,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1069,7 +1039,7 @@
           "word_count": 1200
         },
         {
-          "id": 711,
+          "id": 714,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1084,7 +1054,7 @@
           "word_count": 1200
         },
         {
-          "id": 719,
+          "id": 722,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1104,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 226,
+      "total_raw": 229,
       "total_valid": 53,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2055,
-    "dup": 462,
-    "nocontent": 394,
+    "total_raw": 2056,
+    "dup": 465,
+    "nocontent": 395,
     "noise": 6
   }
 }
