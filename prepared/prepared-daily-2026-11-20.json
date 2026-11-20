@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 71,
+          "id": 73,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 144
         },
         {
-          "id": 116,
+          "id": 118,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 231
         },
         {
-          "id": 112,
+          "id": 114,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 200
         },
         {
-          "id": 120,
+          "id": 122,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,37 @@
           "word_count": 200
         },
         {
-          "id": 95,
+          "id": 96,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+          "link": "https://arxiv.org/abs/2611.21373",
+          "content": "Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning that overlooks brief or localized artifacts, or on predefined multi-agent workflows that offer limited flexibility in selecting relevant inspections. Even with adaptive investigation, optimizing the investigation policy alone does not directly improve the forensic capabilities of fixed experts. We introduce WeVisForensics, an agentic framework in which a main investigator agent coordinates a self-evolving library of forensic inspector sub-agents spanning visual and audio cues. The investigator learns which artifact type to examine, over which window, and when to conclude, and these interactions provide shared feedback for both levels of agents. Our dual-timescale policy optimization strategy, DTPO, closes this loop through fast reinforcement learning of the investigator and slower refinement of the inspectors, guided by annotated artifact intervals, to report subtle artifacts they once dismissed. Furthermore, we curate ForenCue-30K, combining role-specific forensic annotations and interaction traj",
+          "pub_date": "2026-11-15T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 97,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "On-Policy Morphing into Hybrid Attention Models",
+          "link": "https://arxiv.org/abs/2611.24809",
+          "content": "Hybrid attention models combine full and linear attention to achieve a better quality--efficiency trade-off. Converting pretrained Transformers into such models requires identifying which layers should retain full attention under a prescribed budget. We identify two off-policy mismatches in FlashMorph's layer selection: (i) continuous branch interpolation and teacher-forced hidden states differ from discrete hybrid computation; and (ii) frozen model weights fail to account for parameter adaptation during subsequent recovery. We introduce FlashMorph2, an on-policy layer-selection method that (I) evaluates sampled discrete hybrid architectures end to end using their own hidden states, and (II) jointly optimizes layer-selection scores and model weights under the recovery objective to reflect post-adaptation performance. Experiments across Qwen3 model scales and linear-attention variants show that FlashMorph2 consistently outperforms existing layer-selection methods, improving average scores over FlashMorph by +2.42 points on RULER, +1.08 on LongBench, and +0.76 on recall-intensive tasks, while completing layer selection in only 0.72--3.57 GPU hours across 0.6B--8B models, demonstratin",
+          "pub_date": "2026-11-17T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 99,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,37 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 96,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
-          "link": "https://arxiv.org/abs/2611.08136",
-          "content": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AUPRC (65.9%) among the compared methods. On MVTec AD and VisA, covering 27 visual categories, PRISM-V achieves mean image-level and pixel-level AUROCs of 90.4% and 96.4%, respectively. Notably, both models achieve these results without neural weight optimization or pretrained representations. A theoretical analysis further characterizes how nonlinear transformations affect the mean and covariance contributions to the Mahalanobis score gap, while empirical analyses examine the resulting score sepa",
-          "pub_date": "2026-11-08T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 97,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "General progress substitutes for specific training data in language models",
-          "link": "https://arxiv.org/abs/2611.24844",
-          "content": "Language models acquire their capabilities from training data, and developers withhold data during training to keep models from learning capabilities that could be misused. How long this delays a capability, and how much data is needed to acquire it later, is unknown. Here we show that the general progress a model makes on the rest of its training data substitutes for the data that was withheld. We withheld the training signal for individual skills in models of chess, Othello, molecular strings, bracket languages and web text. The delay of a withheld skill in larger models was predicted from smaller ones. A chess model never explicitly trained to respond to check ranked the legal responses almost as well as a model that was. When models were then trained on the withheld data, they acquired the skill with a small fraction of the data needed from initialization, and this fraction decreased as the models progressed. A control rule of equal difficulty was learned much more slowly. A programming language withheld from the training text of a 7-billion-parameter model was regained in the same way. Data filtering therefore delays a capability, and the data required to regain it decreases a",
-          "pub_date": "2026-11-17T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1042,
+          "id": 1044,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 1043,
+          "id": 1045,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1156,
-      "total_valid": 749,
+      "total_raw": 1158,
+      "total_valid": 748,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1480,
+          "id": 1482,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1481,
+          "id": 1483,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1482,
+          "id": 1484,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1316,
+          "id": 1318,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 537
         },
         {
-          "id": 1291,
+          "id": 1293,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 509
         },
         {
-          "id": 1315,
+          "id": 1317,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 392
         },
         {
-          "id": 1324,
+          "id": 1326,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 385
         },
         {
-          "id": 1301,
+          "id": 1303,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 357
         },
         {
-          "id": 1317,
+          "id": 1319,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 310
         },
         {
-          "id": 1211,
+          "id": 1213,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 240
         },
         {
-          "id": 1196,
+          "id": 1198,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 193
         },
         {
-          "id": 1197,
+          "id": 1199,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 186
         },
         {
-          "id": 1270,
+          "id": 1272,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 90
         },
         {
-          "id": 1356,
+          "id": 1358,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 62
         },
         {
-          "id": 1539,
+          "id": 1541,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1723,
+          "id": 1725,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 216
         },
         {
-          "id": 1725,
+          "id": 1727,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 178
         },
         {
-          "id": 1722,
+          "id": 1724,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 175
         },
         {
-          "id": 1765,
+          "id": 1767,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 1200
         },
         {
-          "id": 1764,
+          "id": 1766,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1199
         },
         {
-          "id": 1753,
+          "id": 1755,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 286
         },
         {
-          "id": 1744,
+          "id": 1746,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1199
         },
         {
-          "id": 1743,
+          "id": 1745,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1491,
+          "id": 1493,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1407,
+          "id": 1409,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 453
         },
         {
-          "id": 1801,
+          "id": 1803,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 424
         },
         {
-          "id": 1633,
+          "id": 1635,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 324
         },
         {
-          "id": 1405,
+          "id": 1407,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 317
         },
         {
-          "id": 1237,
+          "id": 1239,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 289
         },
         {
-          "id": 1617,
+          "id": 1619,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 283
         },
         {
-          "id": 1228,
+          "id": 1230,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 282
         },
         {
-          "id": 1802,
+          "id": 1804,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 269
         },
         {
-          "id": 1804,
+          "id": 1806,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1867,
+          "id": 1868,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 566
         },
         {
-          "id": 1820,
+          "id": 1822,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 540
         },
         {
-          "id": 1814,
+          "id": 1816,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 507
         },
         {
-          "id": 1819,
+          "id": 1821,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 501
         },
         {
-          "id": 1816,
+          "id": 1818,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 497
         },
         {
-          "id": 1818,
+          "id": 1820,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +829,7 @@
           "word_count": 484
         },
         {
-          "id": 1842,
+          "id": 1843,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 336
         },
         {
-          "id": 1835,
+          "id": 1836,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 272
         },
         {
-          "id": 1840,
+          "id": 1841,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 261
         },
         {
-          "id": 1841,
+          "id": 1842,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 226
         },
         {
-          "id": 1846,
+          "id": 1847,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 222
         },
         {
-          "id": 1834,
+          "id": 1835,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 165
         },
         {
-          "id": 1823,
+          "id": 1825,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 145
         },
         {
-          "id": 1861,
+          "id": 1862,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +949,7 @@
           "word_count": 574
         },
         {
-          "id": 384,
+          "id": 386,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 414,
+          "id": 416,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 593,
+          "id": 595,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -994,7 +994,7 @@
           "word_count": 1200
         },
         {
-          "id": 784,
+          "id": 786,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1009,7 +1009,7 @@
           "word_count": 1199
         },
         {
-          "id": 1004,
+          "id": 1006,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1024,7 +1024,7 @@
           "word_count": 1199
         },
         {
-          "id": 1813,
+          "id": 1815,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1044,15 +1044,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 221,
-      "total_valid": 48,
+      "total_raw": 220,
+      "total_valid": 47,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2024,
-    "dup": 449,
-    "nocontent": 385,
+    "total_raw": 2025,
+    "dup": 450,
+    "nocontent": 387,
     "noise": 9
   }
 }
