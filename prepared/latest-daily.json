@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 67,
+          "id": 70,
           "source": "NVIDIA Blog",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 405
         },
         {
-          "id": 6,
+          "id": 9,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -50,7 +50,7 @@
           "word_count": 150
         },
         {
-          "id": 18,
+          "id": 21,
           "source": "OpenAI News",
           "section": "ai",
           "tier": "T1",
@@ -65,7 +65,7 @@
           "word_count": 144
         },
         {
-          "id": 110,
+          "id": 113,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 231
         },
         {
-          "id": 106,
+          "id": 109,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 200
         },
         {
-          "id": 114,
+          "id": 117,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,22 @@
           "word_count": 200
         },
         {
-          "id": 90,
+          "id": 93,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "General progress substitutes for specific training data in language models",
+          "link": "https://arxiv.org/abs/2611.24844",
+          "content": "Language models acquire their capabilities from training data, and developers withhold data during training to keep models from learning capabilities that could be misused. How long this delays a capability, and how much data is needed to acquire it later, is unknown. Here we show that the general progress a model makes on the rest of its training data substitutes for the data that was withheld. We withheld the training signal for individual skills in models of chess, Othello, molecular strings, bracket languages and web text. The delay of a withheld skill in larger models was predicted from smaller ones. A chess model never explicitly trained to respond to check ranked the legal responses almost as well as a model that was. When models were then trained on the withheld data, they acquired the skill with a small fraction of the data needed from initialization, and this fraction decreased as the models progressed. A control rule of equal difficulty was learned much more slowly. A programming language withheld from the training text of a 7-billion-parameter model was regained in the same way. Data filtering therefore delays a capability, and the data required to regain it decreases a",
+          "pub_date": "2026-11-17T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 94,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 92,
+          "id": 96,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,22 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 93,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
-          "link": "https://arxiv.org/abs/2611.23779",
-          "content": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmark 23 models across classical baselines, gradient-boosted trees, neural tabular architectures, and tabular foundation models. Foundation models deliver the strongest family-level predictive performance. However, their gains are regime-dependent: tree-based models and tuned multilayer perceptrons remain highly competitive, often dominating under inference-time or training-cost constraints. Overall, TabBioMed shows that biomedical tabular learning is strongly context-dependent, with optimal model c",
-          "pub_date": "2026-11-17T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1038,
+          "id": 1041,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 1039,
+          "id": 1042,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1151,
-      "total_valid": 744,
+      "total_raw": 1154,
+      "total_valid": 747,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1476,
+          "id": 1480,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1477,
+          "id": 1481,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1478,
+          "id": 1482,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1309,
+          "id": 1317,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,22 @@
           "word_count": 537
         },
         {
-          "id": 1308,
+          "id": 1292,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Perspectives] Monica Geingos: advocate for adolescent health joins PMNCH",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02303-2/fulltext?rss=yes",
+          "content": "“Sexual and reproductive health and rights [SRHR] have been under a constant and coordinated attack”, notes Monica Geingos, former First Lady of Namibia, UNAIDS Special Ambassador for Adolescent Sexual and Reproductive Health and Rights, and Co-Chair of the UNAIDS Global Council on Inequality, AIDS and Pandemics. This month, Geingos brought her wide-ranging expertise to a new role as Board Chair of the Partnership for Maternal, Newborn and Child Health (PMNCH). Her leadership comes at a challenging time.",
+          "pub_date": "2026-11-21",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 509
+        },
+        {
+          "id": 1316,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 392
         },
         {
-          "id": 1317,
+          "id": 1325,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,22 @@
           "word_count": 385
         },
         {
-          "id": 1310,
+          "id": 1302,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] Defining success in kidney xenotransplantation – Authors' reply",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02235-X/fulltext?rss=yes",
+          "content": "We thank Christopher H Kim and colleagues for their thoughtful comments and agree that success in kidney xenotransplantation should ultimately extend beyond graft survival or dialysis independence alone. Their Correspondence highlights an important question as the field transitions from individual first-in-human experiences to prospective clinical trials.",
+          "pub_date": "2026-11-21",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 357
+        },
+        {
+          "id": 1318,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +332,7 @@
           "word_count": 310
         },
         {
-          "id": 1211,
+          "id": 1212,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +347,7 @@
           "word_count": 240
         },
         {
-          "id": 1196,
+          "id": 1197,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +362,7 @@
           "word_count": 193
         },
         {
-          "id": 1197,
+          "id": 1198,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +377,7 @@
           "word_count": 186
         },
         {
-          "id": 1270,
+          "id": 1271,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +392,7 @@
           "word_count": 90
         },
         {
-          "id": 1349,
+          "id": 1357,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +407,7 @@
           "word_count": 62
         },
         {
-          "id": 1535,
+          "id": 1539,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -390,36 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 407
-        },
-        {
-          "id": 1534,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Rationale and design of randomized, double-blind trial evaluating the efficacy of single-dose HPV vaccine efficacy in women aged 18 to 30: The PRISMA trial",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26010455?dgcid=rss_sd_all",
-          "content": "Publication date: 15 January 2027 Source: Vaccine, Volume 96 Author(s): Byron Romero, Danping Liu, Rebeca Ocampo, Loretto J. Carvajal, Romain Fantin, Gloriana Barrientos, Cindy Monge, Daniela Retana, Ariane Castrillo, Carlos Ávila, Karla Coronado, Cristian Montero, Mitchell H. Gail, Allan Hildesheim, Douglas R. Lowy, Casey L. Dagnall, Jean T. Cyr, Mónica S. Sierra, Daniela Mora, Daniela Ugalde-Araya",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 402
-        },
-        {
-          "id": 1499,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Misperceived norms and willingness to get a COVID-19 vaccine: a whole-population study of adults in rural Uganda",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26011606?dgcid=rss_sd_all",
-          "content": "Publication date: 15 January 2027 Source: Vaccine, Volume 96 Author(s): Jessica M. Perkins, Sarah Sowell Van Dyk, Charles Baguma, Calista B. Pointer, Sehee Jeon, Melissa Luong, Viola Kyokunda, Patrick Gumisiriza, Emily N. Satinsky, Bernard Kakuhikire",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 250
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 523,
-      "total_valid": 364,
+      "total_raw": 524,
+      "total_valid": 373,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1721,
+          "id": 1723,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 216
         },
         {
-          "id": 1723,
+          "id": 1725,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 178
         },
         {
-          "id": 1720,
+          "id": 1722,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 286
         },
         {
-          "id": 1742,
+          "id": 1744,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1199
         },
         {
-          "id": 1741,
+          "id": 1743,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -559,14 +559,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 122,
+      "total_raw": 118,
       "total_valid": 15,
       "total_candidates": 8
     },
     "cross": {
       "candidates": [
         {
-          "id": 1487,
+          "id": 1491,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1400,
+          "id": 1408,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 424
         },
         {
-          "id": 1629,
+          "id": 1633,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 324
         },
         {
-          "id": 1398,
+          "id": 1406,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 317
         },
         {
-          "id": 1237,
+          "id": 1238,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 289
         },
         {
-          "id": 1613,
+          "id": 1617,
           "source": "Nature Reviews Immunology",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 283
         },
         {
-          "id": 1228,
+          "id": 1229,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 65,
-      "total_valid": 59,
+      "total_raw": 64,
+      "total_valid": 58,
       "total_candidates": 10
     },
     "china": {
@@ -754,6 +754,21 @@
           "word_count": 540
         },
         {
+          "id": 1809,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Coinbase Eyes 2027 Launch for In-House Prediction Markets",
+          "link": "https://www.pymnts.com/economy/markets/2026/coinbase-eyes-2027-launch-for-in-house-prediction-markets/",
+          "content": "Coinbase aims to begin offering in-house event contracts to retail and institutional customers in the United States in the first half of 2027, Bloomberg reported Thursday (Nov. 19), citing an unnamed source. Coinbase currently partners with Kalshi to offer prediction markets, according to the report. Coinbase announced in December 2025 that it agreed to buy prediction markets startup The Clearing [&#8230;] The post Coinbase Eyes 2027 Launch for In-House Prediction Markets appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 19 Nov 2026 23:40:05 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 507
+        },
+        {
           "id": 1819,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
@@ -769,7 +784,7 @@
           "word_count": 501
         },
         {
-          "id": 1809,
+          "id": 1811,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 497
         },
         {
-          "id": 1811,
+          "id": 1813,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 484
         },
         {
-          "id": 1812,
+          "id": 1814,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 145
         },
         {
-          "id": 380,
+          "id": 383,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -934,7 +949,7 @@
           "word_count": 1200
         },
         {
-          "id": 410,
+          "id": 413,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -949,7 +964,7 @@
           "word_count": 1200
         },
         {
-          "id": 589,
+          "id": 592,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -964,7 +979,7 @@
           "word_count": 1200
         },
         {
-          "id": 780,
+          "id": 783,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -979,7 +994,7 @@
           "word_count": 1199
         },
         {
-          "id": 1000,
+          "id": 1003,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1014,29 +1029,14 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "OCC Head Says Reforms Unlock $64 Billion in Capital for Community Banks",
-          "link": "https://www.pymnts.com/news/banking/2026/occ-head-says-reforms-unlock-64-billion-in-capital-for-community-banks/",
-          "content": "Reforms made by the Office of the Comptroller of the Currency (OCC) over the last 16 months have freed up $64 billion in capital that community banks can deploy across local businesses and communities, Comptroller of the Currency Jonathan V. Gould said Wednesday (Nov. 18). In remarks delivered at the Exchequer Club, Gould highlighted the OCC’s refocusing of supervision on material financial [&#8230;] The post OCC Head Says Reforms Unlock $64 Billion in Capital for Community Banks appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 19 Nov 2026 20:01:50 +0000",
+          "title": "Uber Eats Adds AutoParts.Com to Its Delivery Menu",
+          "link": "https://www.pymnts.com/news/delivery/2026/uber-eats-adds-autoparts-delivery-menu/",
+          "content": "Uber teamed with AutoParts.com to bring automotive parts to its platform for the first time, according to a Thursday (Nov.19) press release. The partnership lets customers throughout the United States shop for inventory from the Autoparts.com marketplace and fulfillment network and have it delivered through Uber Eats, per the release. “People already turn to Uber [&#8230;] The post Uber Eats Adds AutoParts.Com to Its Delivery Menu appeared first on PYMNTS.com .",
+          "pub_date": "Thu, 19 Nov 2026 20:28:58 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 515
-        },
-        {
-          "id": 1817,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "AI Customer Support Startup Sierra Eyes $30 Billion Valuation",
-          "link": "https://www.pymnts.com/startups/2026/ai-customer-support-startup-sierra-eyes-30-billion-valuation/",
-          "content": "AI customer support startup Sierra is reportedly in talks to raise new funds at a roughly $30 billion valuation. That’s according to a report Wednesday (Nov. 18) by The Information, citing sources familiar with the matter. The $30 billion figure would nearly double the valuation Sierra achieved with its last round announced in May. The three-year-old startup, founded [&#8230;] The post AI Customer Support Startup Sierra Eyes $30 Billion Valuation appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 19 Nov 2026 20:07:41 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 481
+          "word_count": 465
         }
       ],
       "quota": {
@@ -1051,8 +1051,8 @@
   },
   "meta": {
     "total_raw": 2027,
-    "dup": 462,
-    "nocontent": 387,
-    "noise": 6
+    "dup": 449,
+    "nocontent": 385,
+    "noise": 9
   }
 }
