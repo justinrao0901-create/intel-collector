@@ -110,7 +110,37 @@
           "word_count": 200
         },
         {
-          "id": 94,
+          "id": 95,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
+          "link": "https://arxiv.org/abs/2611.17460",
+          "content": "AI agents are increasingly equipped with persistence toward task completion to run delegated work autonomously for long periods, under many unstated constraints from internal documents and other people's authority. When completion requires violating a rule, the agent must decide alone, yet benchmarks of instruction-rule conflicts state the rule in the prompt or keep it hidden and do not evaluate persistence. We present Unfinished-Bench, a benchmark that gives models persistence in autonomous runs without a user, in realistic work environments with embedded rules. In each of its 97 scenarios across 7 organizations and 7 risk categories, the goal and the rule cannot both hold. We find that persistence raised violations of a rule in an internal document from 32.2% to 43.6%, five times the 8.5% for the same rule stated by the user. Of the document-rule violations, 98.3% occurred after the rule was displayed, and in 89% of a judged sample the agent first wrote down the rule. Violations of rules placed in the environment without user oversight can lead to serious incidents, so persistence-driven risks need to be evaluated. Benchmark documentation: https://francis21c.github.io/unfinished-",
+          "pub_date": "2026-11-11T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 96,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+          "link": "https://arxiv.org/abs/2611.08136",
+          "content": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AUPRC (65.9%) among the compared methods. On MVTec AD and VisA, covering 27 visual categories, PRISM-V achieves mean image-level and pixel-level AUROCs of 90.4% and 96.4%, respectively. Notably, both models achieve these results without neural weight optimization or pretrained representations. A theoretical analysis further characterizes how nonlinear transformations affect the mean and covariance contributions to the Mahalanobis score gap, while empirical analyses examine the resulting score sepa",
+          "pub_date": "2026-11-08T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 97,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,37 +155,22 @@
           "word_count": 1200
         },
         {
-          "id": 95,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
-          "link": "https://arxiv.org/abs/2611.24059",
-          "content": "Frontier post-training follows a common recipe: train one expert per domain with reinforcement learning (RL), then consolidate the experts into one model via multi-teacher on-policy distillation (MOPD). Such consolidation is expensive: the student samples in every environment again, an expert scores every sampled token, and the student inherits the drift of the final experts. Yet we argue that the experts' RL runs have already produced what consolidation needs: rollouts with their sampling probabilities and rewards, in the order the experts learned from them. We propose multi-expert replay policy distillation (MRPD), which replays these training logs through the student in the experts' order. At each step, the policy gradient is recomputed on these scored trajectories, and the final experts' distributions are distilled at the logged prefixes. Following the experts' own trajectory reduces the training-inference mismatch and keeps the student within the clip range, so the replay is off-policy in origin but quasi-on-policy throughout consolidation. MRPD samples nothing and calls no environment or reward model: the trainer is the sole process, and consolidating the experts costs only a",
-          "pub_date": "2026-11-17T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 97,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Choosing Quantized Code LLMs by File Size and Energy per Solved Task",
-          "link": "https://arxiv.org/abs/2611.17605",
-          "content": "A developer running a code assistant on a laptop downloads one model file, and local inference moves the energy of every request onto that machine. A common rule says a larger model at lower precision tends to beat a smaller one at higher precision. We ran 24 GGUF files of Qwen2.5-Coder at four sizes on a fanless MacBook Air M2 and priced each in energy per solved task on 542 EvalPlus tasks. The result is a selection guide indexed by Ollama's listed file size, with an evidence label on each pick. At 1 and 2 GB it picks the q4_K_M files of the 1.5B and 3B models, both on the correctness and energy frontier under every accounting. At 3 GB as listed, the larger-model rule picks 7B-q2_K, the only measured 7B file that fits, and there it does not pay. That file brings no significant gain in solves over the 2 GB pick, 3B-q4_K_M, and the 90% CI limits any 3B-q4_K_M deficit to 2.4 points. Yet 7B-q2_K needs 2.03 times the energy per solved task on CPU, GPU and memory rails, or 1.66 to 1.81 times on whole-system power. On HumanEval+, five alternating session pairs give a ratio of 1.925 against 1.956 in the main grid. At 8 GB, 7B-q6_K buys a significant gain over the 2 GB pick at a higher ene",
-          "pub_date": "2026-11-12T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 1042,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Token fraud is here and it’s BAD (YouTube)",
+          "link": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+          "content": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this YouTube video (see also the accompanying Twitter post ) Claire describes the flood of token fraud she has seen from groups abusing the product's free trial, sometimes just to get free AI usage but often to resell tokens or run other commercial enterprises on top of the ChatPRD agent. I am funding a international Roblox and Fortnite map studio. They run a loop of free trials and promo codes and then tunnel to my agent and use it to build Roblox and Fortnite maps. Apparently one of the common prompts Claire saw running through her agent involved SVGs of pelicans riding bicycles! Presumably the token scammers are using that to help sniff the underlying models - different model families have a definite signature, and I've used it like this in the past to try and guess the identity of stealth preview models on platforms like OpenRouter. Claire is winding down her free trials entirely, which sadly looks like the right decision in the",
+          "pub_date": "2026-11-20T02:49:57+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1043,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 1043,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "llm-gemini 0.38",
-          "link": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
-          "content": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon and Carbon were the same price , and Hydrogen was 3/4 of that price now but will be 1/4 of that price when the other two double an 1st December once their initial discount pricing expires. The Neon announcement pretends that Argon doesn't exist. Here's their new image explaining the model line-up: So the lineup now, from most to least expensive, is Carbon, Neon, Hydrogen. Except Carbon is currently half price, so right now Neon ($3/million input, $15/million output) is the most expensive of the three - then Carbon ($2/$10), then Hydrogen ($1.50/$7.50). I guess this will make more sense when Carbon doubles to $4/$20 on December 1st. I ran some pelicans through the three reasoning levels for Neon - low, medium, high. I dropped Argon from my Gemini 4 comparison grid - here's the new Gemini 4 lineup, where the Neon pelicans do look better than Hydrogen and worse than Carbon: As I've done with several recent models , I also fired t",
-          "pub_date": "2026-11-18T23:59:20+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,8 +190,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1155,
-      "total_valid": 748,
+      "total_raw": 1156,
+      "total_valid": 749,
       "total_candidates": 12
     },
     "vaccine": {
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1317,
+          "id": 1316,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 537
         },
         {
-          "id": 1292,
+          "id": 1291,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 509
         },
         {
-          "id": 1316,
+          "id": 1315,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 392
         },
         {
-          "id": 1325,
+          "id": 1324,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 385
         },
         {
-          "id": 1302,
+          "id": 1301,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 357
         },
         {
-          "id": 1318,
+          "id": 1317,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 310
         },
         {
-          "id": 1212,
+          "id": 1211,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 240
         },
         {
-          "id": 1197,
+          "id": 1196,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 193
         },
         {
-          "id": 1198,
+          "id": 1197,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 186
         },
         {
-          "id": 1271,
+          "id": 1270,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 90
         },
         {
-          "id": 1357,
+          "id": 1356,
           "source": "Science",
           "section": "vaccine",
           "tier": "T1",
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 523,
-      "total_valid": 372,
+      "total_raw": 522,
+      "total_valid": 371,
       "total_candidates": 15
     },
     "synbio": {
@@ -581,7 +581,7 @@
           "word_count": 1200
         },
         {
-          "id": 1408,
+          "id": 1407,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 324
         },
         {
-          "id": 1406,
+          "id": 1405,
           "source": "Nature Medicine",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 317
         },
         {
-          "id": 1238,
+          "id": 1237,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 283
         },
         {
-          "id": 1229,
+          "id": 1228,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 64,
-      "total_valid": 58,
+      "total_raw": 63,
+      "total_valid": 57,
       "total_candidates": 10
     },
     "china": {
@@ -739,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1869,
+          "id": 1867,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 540
         },
         {
-          "id": 1812,
+          "id": 1814,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,7 @@
           "word_count": 501
         },
         {
-          "id": 1814,
+          "id": 1816,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +814,7 @@
           "word_count": 497
         },
         {
-          "id": 1816,
+          "id": 1818,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,22 +829,7 @@
           "word_count": 484
         },
         {
-          "id": 1817,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "MoonPay Joins Wave of Crypto Firms Seeking Banking Licenses",
-          "link": "https://www.pymnts.com/cryptocurrency/2026/moonpay-joins-wave-of-crypto-firms-seeking-banking-licenses/",
-          "content": "Cryptocurrency payments firm MoonPay has become the latest digital asset company aiming to become a licensed U.S. bank. The company filed for a banking charter Tuesday (Nov. 17) with the Office of the Comptroller of the Currency (OCC), saying the proposed MoonPay National Trust Bank would help the company expand its custody business and stablecoin [&#8230;] The post MoonPay Joins Wave of Crypto Firms Seeking Banking Licenses appeared first on PYMNTS.com .",
-          "pub_date": "Thu, 19 Nov 2026 21:03:23 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 459
-        },
-        {
-          "id": 1845,
+          "id": 1842,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 336
         },
         {
-          "id": 1838,
+          "id": 1835,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 272
         },
         {
-          "id": 1843,
+          "id": 1840,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 261
         },
         {
-          "id": 1844,
+          "id": 1841,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 226
         },
         {
-          "id": 1849,
+          "id": 1846,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -947,6 +932,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 145
+        },
+        {
+          "id": 1861,
+          "source": "Thunes",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Why Mobile Wallet Connectivity Is the New Imperative for Global Banks",
+          "link": "https://www.thunes.com/insights/learn/why-mobile-wallet-connectivity-is-the-new-imperative-for-global-banks/",
+          "content": "For decades, traditional correspondent banking has served as the foundational mechanism for international money movement, reliably supporting the flow of cross-border capital through a trusted network of bilateral banking relationships.&#160; As modern commercial demands evolve and global transaction patterns shift, forward-thinking financial institutions are actively seeking ways to expand and complement this established architecture. For ... Read more &#187; The post Why Mobile Wallet Connectivity Is the New Imperative for Global Banks first appeared on Thunes.com .",
+          "pub_date": "Fri, 20 Nov 2026 02:00:00 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 574
         },
         {
           "id": 384,
@@ -1024,7 +1024,7 @@
           "word_count": 1199
         },
         {
-          "id": 1811,
+          "id": 1813,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1044,13 +1044,13 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 223,
-      "total_valid": 50,
+      "total_raw": 221,
+      "total_valid": 48,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2026,
+    "total_raw": 2024,
     "dup": 449,
     "nocontent": 385,
     "noise": 9
