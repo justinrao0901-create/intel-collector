@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1210,
-      "total_valid": 802,
+      "total_raw": 1209,
+      "total_valid": 801,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1469,
+          "id": 1542,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1482,
+          "id": 1555,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1488,
+          "id": 1561,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1408,
+          "id": 1480,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 449
         },
         {
-          "id": 1410,
+          "id": 1482,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 328
         },
         {
-          "id": 1389,
+          "id": 1461,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 241
         },
         {
-          "id": 1388,
+          "id": 1460,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 231
         },
         {
-          "id": 1584,
+          "id": 1657,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,22 @@
           "word_count": 218
         },
         {
-          "id": 1290,
+          "id": 1257,
+          "source": "Nature",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Author Correction: SARS-CoV-2 mRNA vaccines sensitize tumours to immune checkpoint blockade",
+          "link": "https://www.nature.com/articles/s41586-026-10974-x",
+          "content": "Nature, Published online: 20 November 2026; doi:10.1038/s41586-026-10974-x Author Correction: SARS-CoV-2 mRNA vaccines sensitize tumours to immune checkpoint blockade",
+          "pub_date": "2026-11-20",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 166
+        },
+        {
+          "id": 1362,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 165
         },
         {
-          "id": 1526,
+          "id": 1599,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +362,7 @@
           "word_count": 402
         },
         {
-          "id": 1491,
+          "id": 1564,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +377,7 @@
           "word_count": 250
         },
         {
-          "id": 1525,
+          "id": 1598,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +392,7 @@
           "word_count": 244
         },
         {
-          "id": 1215,
+          "id": 1214,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +407,7 @@
           "word_count": 235
         },
         {
-          "id": 1219,
+          "id": 1218,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 232
-        },
-        {
-          "id": 1214,
-          "source": "Endpoints News",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Merck gets another Phase 3 win for sac-TMT, this time in gastric cancer",
-          "link": "https://endpoints.news/merck-gets-another-phase-3-win-for-sac-tmt-this-time-in-gastric-cancer/",
-          "content": "An experimental antibody-drug conjugate from Merck has succeeded in another Phase 3 cancer study, potentially helping offset Keytruda's looming patent cliff. Merck said Friday morning that a pivotal trial testing sacituzumab ...",
-          "pub_date": "Fri, 20 Nov 2026 15:31:58 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 228
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 458,
-      "total_valid": 303,
+      "total_raw": 532,
+      "total_valid": 369,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1752,
+          "id": 1829,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 395
         },
         {
-          "id": 1726,
+          "id": 1804,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 235
         },
         {
-          "id": 1715,
+          "id": 1793,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 234
         },
         {
-          "id": 1680,
+          "id": 1758,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 173
         },
         {
-          "id": 1749,
+          "id": 1826,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1751,
+          "id": 1828,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,22 @@
           "word_count": 1200
         },
         {
-          "id": 1731,
+          "id": 1749,
+          "source": "Nature Machine Intel",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Enabling lab autonomy with reward functions and executable workflows",
+          "link": "https://www.nature.com/articles/s42256-026-01339-0",
+          "content": "Nature Machine Intelligence, Published online: 20 November 2026; doi:10.1038/s42256-026-01339-0 Kalinin et al. argue that for self-driving laboratories to achieve autonomy in the physical world, large language model hypothesis generation needs to be complemented by bottom-up optimization translating hypotheses into executable workflows.",
+          "pub_date": "2026-11-20",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 338
+        },
+        {
+          "id": 1809,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -544,14 +559,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 122,
-      "total_valid": 16,
-      "total_candidates": 7
+      "total_raw": 125,
+      "total_valid": 17,
+      "total_candidates": 8
     },
     "cross": {
       "candidates": [
         {
-          "id": 1467,
+          "id": 1540,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +581,7 @@
           "word_count": 821
         },
         {
-          "id": 1621,
+          "id": 1694,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +596,37 @@
           "word_count": 372
         },
         {
-          "id": 1795,
+          "id": 1749,
+          "source": "Nature Machine Intel",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Enabling lab autonomy with reward functions and executable workflows",
+          "link": "https://www.nature.com/articles/s42256-026-01339-0",
+          "content": "Nature Machine Intelligence, Published online: 20 November 2026; doi:10.1038/s42256-026-01339-0 Kalinin et al. argue that for self-driving laboratories to achieve autonomy in the physical world, large language model hypothesis generation needs to be complemented by bottom-up optimization translating hypotheses into executable workflows.",
+          "pub_date": "2026-11-20",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 338
+        },
+        {
+          "id": 1278,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "How to make AI data centres more sustainable",
+          "link": "https://www.nature.com/articles/d41586-026-03708-6",
+          "content": "Nature, Published online: 18 November 2026; doi:10.1038/d41586-026-03708-6 Tech companies and governments face opposition over data centres’ expansion, in part because of their huge power requirements. They must not be powered with fossil fuels.",
+          "pub_date": "2026-11-18",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 245
+        },
+        {
+          "id": 1871,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +641,22 @@
           "word_count": 233
         },
         {
-          "id": 1800,
+          "id": 1284,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Glucose-powered implant brings devices for treating diabetes a step closer",
+          "link": "https://www.nature.com/articles/d41586-026-03377-5",
+          "content": "Nature, Published online: 18 November 2026; doi:10.1038/d41586-026-03377-5 A device that stimulates the main nerve between the brain and the internal organs when blood sugar is high is an effective therapy in rat models of diabetes.",
+          "pub_date": "2026-11-18",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 232
+        },
+        {
+          "id": 1876,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +671,22 @@
           "word_count": 230
         },
         {
-          "id": 1301,
+          "id": 1259,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Claude, find me a planet: amateur astronomers are using AI with mixed results",
+          "link": "https://www.nature.com/articles/d41586-026-03790-w",
+          "content": "Nature, Published online: 20 November 2026; doi:10.1038/d41586-026-03790-w Artificial-intelligence tools are helping citizen scientists to identify previously unknown exoplanet candidates — some more credible than others.",
+          "pub_date": "2026-11-20",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 221
+        },
+        {
+          "id": 1373,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +701,7 @@
           "word_count": 213
         },
         {
-          "id": 1396,
+          "id": 1468,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -639,66 +714,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 208
-        },
-        {
-          "id": 1380,
-          "source": "JAMA",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Multimodal Care for Obesity in the GLP-1 Therapy Era",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2854744",
-          "content": "This Perspective urges multimodal management of obesity that extends beyond pharmacological treatment to screening, early management, and intensive behavioral therapy across the life course.",
-          "pub_date": "Tue, 17 Nov 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 190
-        },
-        {
-          "id": 1794,
-          "source": "Nature Methods",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Computational methods for cell–cell communication via single cells",
-          "link": "https://www.nature.com/articles/s41592-026-03287-4",
-          "content": "Nature Methods, Published online: 20 November 2026; doi:10.1038/s41592-026-03287-4 This Review examines the diversity of algorithmic methods for cell–cell communication.",
-          "pub_date": "2026-11-20",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 169
-        },
-        {
-          "id": 1384,
-          "source": "JAMA",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "A Model Patient",
-          "link": "https://jamanetwork.com/journals/jama/fullarticle/2853687",
-          "content": "In this narrative medicine essay, a medical student is caught between a before-and-after identity crisis resulting from a dramatic weight loss.",
-          "pub_date": "Tue, 17 Nov 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 143
-        },
-        {
-          "id": 1340,
-          "source": "Science",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "AI rivals take on one of physics’ hardest math problems",
-          "link": "https://www.science.org/doi/abs/10.1126/science.aeo2673?af=R",
-          "content": "Science, Volume 394, Issue 6826 , Page 824-825, November 2026.",
-          "pub_date": "2026-11-19T07:00:11Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 62
         }
       ],
       "quota": {
@@ -706,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 46,
-      "total_valid": 39,
+      "total_raw": 56,
+      "total_valid": 49,
       "total_candidates": 10
     },
     "china": {
@@ -724,7 +739,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1803,
+          "id": 1880,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +754,7 @@
           "word_count": 521
         },
         {
-          "id": 1807,
+          "id": 1884,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 510
         },
         {
-          "id": 1806,
+          "id": 1883,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 448
         },
         {
-          "id": 1805,
+          "id": 1882,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 415
         },
         {
-          "id": 1857,
+          "id": 1933,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 375
         },
         {
-          "id": 1858,
+          "id": 1934,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 369
         },
         {
-          "id": 1856,
+          "id": 1932,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 341
         },
         {
-          "id": 1834,
+          "id": 1910,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 336
         },
         {
-          "id": 1840,
+          "id": 1916,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 314
         },
         {
-          "id": 1832,
+          "id": 1908,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 278
         },
         {
-          "id": 1821,
+          "id": 1897,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 257
         },
         {
-          "id": 1836,
+          "id": 1912,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 187
         },
         {
-          "id": 1814,
+          "id": 1890,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 168
         },
         {
-          "id": 1842,
+          "id": 1918,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 144
         },
         {
-          "id": 1815,
+          "id": 1891,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1035,8 +1050,8 @@
     }
   },
   "meta": {
-    "total_raw": 2021,
-    "dup": 461,
+    "total_raw": 2097,
+    "dup": 471,
     "nocontent": 388,
     "noise": 9
   }
