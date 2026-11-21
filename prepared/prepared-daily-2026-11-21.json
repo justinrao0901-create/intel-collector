@@ -50,7 +50,7 @@
           "word_count": 154
         },
         {
-          "id": 117,
+          "id": 119,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 186
         },
         {
-          "id": 123,
+          "id": 125,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 153
         },
         {
-          "id": 118,
+          "id": 120,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,15 +95,30 @@
           "word_count": 142
         },
         {
-          "id": 97,
+          "id": 95,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "In Situ Training of Optical Neural Networks by Coding Agents",
-          "link": "https://arxiv.org/abs/2611.23875",
-          "content": "Optical neural networks promise fast, energy-efficient computing, but every device departs from its design and must be trained with the hardware. In situ training relies on an expert-built calibrated digital model of each device or on gradient-free trial and error. Coding agents, large language models that write and run programs, have shown an emergent ability to understand and edit the weights of digital neural networks. Here we introduce optics as code, a method in which a coding agent trains an optical neural network from measurements alone, through a harness that returns camera images of its probes and requires a hypothesis per request. We discovered that the agent forms a physical understanding of the optics and reparametrizes the network with interpretable optical elements tuned on the hardware. It outperforms gradient-free methods in classification and image encoding, approaching backpropagation through a calibrated model at a fraction of the cost. Needing neither per-device calibration nor gradients through the hardware, and improving with more capable models, optics as code offers a practical route to large, scalable optical neural networks and a general tool for calibrati",
-          "pub_date": "2026-11-17T19:00:00.000Z",
+          "title": "Time Series Structure Learning with Local Causal Parent Discovery",
+          "link": "https://arxiv.org/abs/2611.26232",
+          "content": "Learning and inference on time series can pose significant statistical challenges, including autocorrelated observations, distribution shift over time, and the curse of dimensionality. These challenges complicate the practical application of causal discovery algorithms, which already suffer from high computational and sample complexity in the general case. To mitigate these issues, this work introduces Iterative Temporal Parent Discovery (ITPD): a sound and complete constraint-based procedure for causal structure learning on multivariate time series with causal nonstationarity. ITPD takes a local-to-global learning approach that discovers the global graph by sequentially discovering the parent set for each variable. ITPD exploits temporal structural priors, graph partitioning, and the local Markov condition to swap higher-order conditional independence tests for lower-order alternatives. With an exact oracle, ITPD performed the least number of tests and used the smallest average conditioning set sizes relative to baselines. In benchmarking simulations, ITPD sat on the Pareto frontier with respect to F1 and wall-clock time and was faster than baselines on large graphs (geq 1000 node",
+          "pub_date": "2026-11-18T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 96,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Teaching Vision-Language-Action Models to Stop Safely",
+          "link": "https://arxiv.org/abs/2611.26239",
+          "content": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across",
+          "pub_date": "2026-11-18T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -115,25 +130,10 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "AURA: AUdio-dRiven streaming Avatar",
-          "link": "https://arxiv.org/abs/2611.26540",
-          "content": "Current audio-driven video diffusion models can synthesize realistic talking-head videos but generally require dozens of diffusion denoising steps over multi-second video chunks, making them unsuitable for streaming applications such as voice assistants and virtual avatars, where low-latency and online causal generation are required properties. AURA generates video chunk by chunk with a rolling KV cache, requiring only the audio of the current chunk to start generating, rather than a multi-second audio look-ahead like bidirectional models. It comes in two sizes: AURA 1.3B streams 576p video in real time on a single GPU (20.7 fps for a 16 Hz playback rate), making it suited to interactive avatar applications, and AURA 5B streams 720p video at 9.7 fps. Our two-stage distillation pipeline first aligns the causal student with the teacher, by training it to match the teacher's trajectories with fewer diffusion steps and a chunk-wise sliding window causal attention mask, then applies Distribution Matching Distillation (DMD) with backward simulation to close the remaining quality gap. On standard talking-head benchmarks, AURA 1.3B runs 23x faster than its own bidirectional teacher and rea",
-          "pub_date": "2026-11-18T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 102,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "SpecWM: Turning Verification into Refinement for Streaming World Models",
-          "link": "https://arxiv.org/abs/2611.26211",
-          "content": "Recently, video world models have advanced interactive generation, with large models offering higher quality and smaller models enabling faster inference. Existing speculative methods combine their strengths through fast draft generation and selective target regeneration guided by rewards on decoded frames. However, verification covers only the external scorer's evaluation dimensions and adds decoding and scoring costs. Moreover, these scores provide no correction, requiring costly target regeneration for rejected drafts. To address these limitations, we propose Speculative World Model (SpecWM), a unified, training-free inference framework for streaming world models. It verifies draft chunks using the target's latent velocity field. Verification also yields a reusable correction; two thresholds select Accept, Refine, or Reject. Specifically, one-step refinement reuses it to improve perceptual quality, while three-step refinement strengthens camera following and trajectory consistency. These findings motivate transition-aware refinement. On WBench Navigation, SpecWM improves visual quality at 1.63times speedup over the target and raises NavScore from the draft's 75.99 to 85.63, achi",
-          "pub_date": "2026-11-18T19:00:00.000Z",
+          "title": "In Situ Training of Optical Neural Networks by Coding Agents",
+          "link": "https://arxiv.org/abs/2611.23875",
+          "content": "Optical neural networks promise fast, energy-efficient computing, but every device departs from its design and must be trained with the hardware. In situ training relies on an expert-built calibrated digital model of each device or on gradient-free trial and error. Coding agents, large language models that write and run programs, have shown an emergent ability to understand and edit the weights of digital neural networks. Here we introduce optics as code, a method in which a coding agent trains an optical neural network from measurements alone, through a harness that returns camera images of its probes and requires a hypothesis per request. We discovered that the agent forms a physical understanding of the optics and reparametrizes the network with interpretable optical elements tuned on the hardware. It outperforms gradient-free methods in classification and image encoding, approaching backpropagation through a calibrated model at a fraction of the cost. Needing neither per-device calibration nor gradients through the hardware, and improving with more capable models, optics as code offers a practical route to large, scalable optical neural networks and a general tool for calibrati",
+          "pub_date": "2026-11-17T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -191,13 +191,13 @@
         "max": 7
       },
       "total_raw": 1207,
-      "total_valid": 801,
+      "total_valid": 800,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1540,
+          "id": 1539,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1553,
+          "id": 1552,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1559,
+          "id": 1558,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1478,
+          "id": 1477,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 449
         },
         {
-          "id": 1480,
+          "id": 1479,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 328
         },
         {
-          "id": 1459,
+          "id": 1458,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 241
         },
         {
-          "id": 1458,
+          "id": 1457,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 231
         },
         {
-          "id": 1655,
+          "id": 1654,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 218
         },
         {
-          "id": 1255,
+          "id": 1254,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 166
         },
         {
-          "id": 1360,
+          "id": 1359,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 165
         },
         {
-          "id": 1597,
+          "id": 1596,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 402
         },
         {
-          "id": 1562,
+          "id": 1561,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 250
         },
         {
-          "id": 1596,
+          "id": 1595,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 244
         },
         {
-          "id": 1212,
+          "id": 1213,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 235
         },
         {
-          "id": 1216,
+          "id": 1217,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 532,
-      "total_valid": 369,
+      "total_raw": 531,
+      "total_valid": 368,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1827,
+          "id": 1826,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 395
         },
         {
-          "id": 1802,
+          "id": 1801,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 235
         },
         {
-          "id": 1791,
+          "id": 1790,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 234
         },
         {
-          "id": 1756,
+          "id": 1755,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 173
         },
         {
-          "id": 1824,
+          "id": 1823,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1200
         },
         {
-          "id": 1826,
+          "id": 1825,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 1200
         },
         {
-          "id": 1747,
+          "id": 1746,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 338
         },
         {
-          "id": 1807,
+          "id": 1806,
           "source": "bioRxiv SynBio",
           "section": "synbio",
           "tier": "T1",
@@ -566,7 +566,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1538,
+          "id": 1537,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 821
         },
         {
-          "id": 1692,
+          "id": 1691,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 372
         },
         {
-          "id": 1747,
+          "id": 1746,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 338
         },
         {
-          "id": 1276,
+          "id": 1275,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 245
         },
         {
-          "id": 1869,
+          "id": 1868,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 233
         },
         {
-          "id": 1282,
+          "id": 1281,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 232
         },
         {
-          "id": 1874,
+          "id": 1873,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 230
         },
         {
-          "id": 1257,
+          "id": 1256,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 221
         },
         {
-          "id": 1371,
+          "id": 1370,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 213
         },
         {
-          "id": 1466,
+          "id": 1465,
           "source": "Nature Biotech",
           "section": "cross",
           "tier": "T1",
@@ -721,8 +721,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 56,
-      "total_valid": 49,
+      "total_raw": 55,
+      "total_valid": 48,
       "total_candidates": 10
     },
     "china": {
@@ -738,6 +738,21 @@
     },
     "payment": {
       "candidates": [
+        {
+          "id": 1875,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "The Conference Board Says CEOs Should Be Prepared to Defend Algorithmic Pricing",
+          "link": "https://www.pymnts.com/news/retail/2026/the-conference-board-says-ceos-should-be-prepared-to-defend-algorithmic-pricing/",
+          "content": "Companies that use algorithmic pricing should consider how that practice would appear if publicly disclosed and should be ready to explain their rationale for the practice in straightforward terms, according to a policy backgrounder released Thursday (Nov. 19) by The Conference Board. “Legal compliance does not eliminate reputational risk,” David K. Young, John Gardner and PJ Tabit of The CEO Center at The Conference [&#8230;] The post The Conference Board Says CEOs Should Be Prepared to Defend Algorithmic Pricing appeared first on PYMNTS.com .",
+          "pub_date": "Sat, 21 Nov 2026 01:39:20 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 550
+        },
         {
           "id": 1877,
           "source": "PYMNTS.com",
@@ -814,7 +829,7 @@
           "word_count": 415
         },
         {
-          "id": 1931,
+          "id": 1923,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 375
         },
         {
-          "id": 1932,
+          "id": 1924,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 369
         },
         {
-          "id": 1930,
+          "id": 1922,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 341
         },
         {
-          "id": 1908,
+          "id": 1901,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 336
         },
         {
-          "id": 1914,
+          "id": 1907,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 314
         },
         {
-          "id": 1906,
+          "id": 1899,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +919,7 @@
           "word_count": 278
         },
         {
-          "id": 1895,
+          "id": 1891,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 257
         },
         {
-          "id": 1910,
+          "id": 1903,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 187
         },
         {
-          "id": 1888,
+          "id": 1886,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,22 +964,22 @@
           "word_count": 168
         },
         {
-          "id": 1916,
+          "id": 1896,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "What Controls Allow for Strong, Governable AI-Assisted Infrastructure Modernisation?",
-          "link": "https://www.finextra.com/videoarticle/3645/what-controls-allow-for-strong-governable-ai-assisted-infrastructure-modernisation?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "In this Sibos interview, ACI Worldwide's Bridget Hall discusses the progress of instant payments and AI modernisation, following a session talk.",
-          "pub_date": "Thu, 19 Nov 2026 15:00:00 GMT",
+          "title": "DBS and Circle partner to expand institutional access to USDC in Asia",
+          "link": "https://www.finextra.com/newsarticle/48786/dbs-and-circle-partner-to-expand-institutional-access-to-usdc-in-asia?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Circle has joined forces with Southeast Asia's largest bank, DBS, to expand institutional access to its USDC stablecoin in the region.",
+          "pub_date": "Thu, 19 Nov 2026 16:07:00 GMT",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 144
+          "word_count": 134
         },
         {
-          "id": 1889,
+          "id": 1887,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1022,21 +1037,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 436,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "VisAlloc: Allocating Visual Supervision for On-Policy Self-Distillation",
-          "link": "https://arxiv.org/abs/2611.25069",
-          "content": "arXiv:2611.25069v1 Announce Type: cross Abstract: On-policy self-distillation (OPSD) offers a promising approach to improving visual reasoning in multimodal large language models (MLLMs). However, not all samples benefit equally from privileged visual guidance, and uniform token supervision can dilute visually grounded signals. We propose VisAlloc, a dual-level framework combining sample-level visual filtering with token-level counterfactual reweighting. A fixed paired-teacher filter retains samples answered correctly from an evidence-centered positive crop but incorrectly from a spatially displaced negative crop. At the token level, both EMA teachers score the same student-generated response, and their absolute log-probability differences measure view sensitivity. Additional supervision targets tokens admitted by sensitivity or teacher-distribution disagreement, with shared frozen-prior, template-bigram, and student--teacher divergence gates. Inverse-frequency redistribution preserves the total additional weight within each micro-batch, while the positive teacher remains the sole distillation target. Inference requires only the full-image student. Across eight benchmarks, our 4B a",
-          "pub_date": "Fri, 20 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1044,15 +1044,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 227,
-      "total_valid": 53,
+      "total_raw": 225,
+      "total_valid": 48,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2090,
-    "dup": 466,
-    "nocontent": 386,
+    "total_raw": 2087,
+    "dup": 468,
+    "nocontent": 388,
     "noise": 9
   }
 }
