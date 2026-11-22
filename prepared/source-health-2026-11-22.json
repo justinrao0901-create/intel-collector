@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
+      "count": 0,
       "ok": true
     },
     "Meta AI Blog": {
@@ -88,8 +88,8 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true
     },
     "Interconnects": {
       "section": "ai",
@@ -142,8 +142,8 @@
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "STAT News": {
       "section": "vaccine",
@@ -316,8 +316,8 @@
     "Fierce Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "EMA": {
       "section": "vaccine",
@@ -364,8 +364,8 @@
     "Absci Blog": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true
     },
     "Nature Chemical Biology": {
       "section": "synbio",
@@ -424,7 +424,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 18,
+      "count": 16,
       "ok": true
     },
     "Payments Cards & Mobile": {
@@ -436,7 +436,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 5,
+      "count": 0,
       "ok": true
     },
     "Cointelegraph Payments": {
@@ -503,11 +503,13 @@
   "alarms": {
     "fail": [
       "ACS Synthetic Biology",
-      "Absci Blog",
-      "Import AI"
+      "Fierce Biotech",
+      "Fierce Pharma"
     ],
     "sudden_drop": [
+      "Google DeepMind",
       "PYMNTS Cross-Border",
+      "Thunes",
       "arXiv cs.AI",
       "arXiv cs.CL"
     ],
