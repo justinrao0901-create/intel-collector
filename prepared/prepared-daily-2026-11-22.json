@@ -50,7 +50,7 @@
           "word_count": 139
         },
         {
-          "id": 113,
+          "id": 111,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 187
         },
         {
-          "id": 112,
+          "id": 110,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 159
         },
         {
-          "id": 114,
+          "id": 112,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 140
         },
         {
-          "id": 105,
+          "id": 103,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 106,
+          "id": 104,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 107,
+          "id": 105,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +140,22 @@
           "word_count": 1200
         },
         {
-          "id": 526,
+          "id": 523,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "Muru",
+          "link": "https://simonwillison.net/2026/Nov/21/muru/",
+          "content": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process. Here's everything he's published so far, all in the last three weeks: 2026-11-04 — Twenty years of mod_wsgi, and what comes next 2026-11-05 — A first look at Muru 2026-11-07 — Muru: looking inside the workers 2026-11-08 — Muru: how it fits together 2026-11-09 — Muru: import once, fork many 2026-11-10 — Muru: HTTPS in development 2026-11-11 — Muru: WSGI and ASGI together 2026-11-11 — AI as a lifestyle choice 2026-11-12 — Muru: releases, not restarts 2026-11-13 — Muru: canaries without a service mesh 2026-11-14 — Muru: a better tenant in a container 2026-11-15 — Muru: working with Kubernetes, not around it 2026-11-16 — Muru: scaling from what the workers report 2026-11-17 — Muru: scaling to zero 2026-11-18 — Muru: overlays o",
+          "pub_date": "2026-11-21T23:56:28+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 525,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 881
         },
         {
-          "id": 538,
+          "id": 537,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 756
-        },
-        {
-          "id": 527,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "llm-gemini 0.38.1",
-          "link": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
-          "content": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in this dot release. The xhigh setting for Hydrogen makes a significant difference. I updated my Gemini 4 comparison grid - note how Hydrogen at high used 5,311 output tokens and cost 3.99 cents, but the same model at xhigh used 31,477 output tokens, cost 23.61 cents, and produced a pelican that's competitive with Gemini 4 Neon: Tags: gemini , llm , llm-reasoning , pelican-riding-a-bicycle , ai , llms , google , generative-ai",
-          "pub_date": "2026-11-20T03:01:57+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 684
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 638,
-      "total_valid": 424,
+      "total_raw": 637,
+      "total_valid": 425,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 949,
+          "id": 946,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 962,
+          "id": 959,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1199
         },
         {
-          "id": 961,
+          "id": 958,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1179
         },
         {
-          "id": 1084,
+          "id": 1081,
           "source": "Nature Reviews Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 330
         },
         {
-          "id": 967,
+          "id": 964,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 359
         },
         {
-          "id": 1000,
+          "id": 997,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 331
         },
         {
-          "id": 1026,
+          "id": 1023,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 211
         },
         {
-          "id": 644,
+          "id": 643,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -317,7 +317,7 @@
           "word_count": 228
         },
         {
-          "id": 648,
+          "id": 645,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -332,7 +332,7 @@
           "word_count": 118
         },
         {
-          "id": 850,
+          "id": 847,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 840
         },
         {
-          "id": 854,
+          "id": 851,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 613
         },
         {
-          "id": 765,
+          "id": 762,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 522
         },
         {
-          "id": 762,
+          "id": 759,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 521
         },
         {
-          "id": 756,
+          "id": 753,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 512
         },
         {
-          "id": 692,
+          "id": 689,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 507,
-      "total_valid": 328,
+      "total_raw": 505,
+      "total_valid": 327,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1268,
+          "id": 1265,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 402
         },
         {
-          "id": 1176,
+          "id": 1173,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 230
         },
         {
-          "id": 1172,
+          "id": 1169,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 204
         },
         {
-          "id": 1210,
+          "id": 1207,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 184
         },
         {
-          "id": 1231,
+          "id": 1228,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 1010
         },
         {
-          "id": 1234,
+          "id": 1231,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -536,7 +536,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 949,
+          "id": 946,
           "source": "ClinicalTrials.gov",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 1200
         },
         {
-          "id": 687,
+          "id": 684,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 209
         },
         {
-          "id": 666,
+          "id": 663,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 200
         },
         {
-          "id": 859,
+          "id": 856,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 190
         },
         {
-          "id": 659,
+          "id": 656,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 187
         },
         {
-          "id": 1274,
+          "id": 1271,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 169
         },
         {
-          "id": 1278,
+          "id": 1275,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 161
         },
         {
-          "id": 863,
+          "id": 860,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 143
         },
         {
-          "id": 819,
+          "id": 816,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 62
         },
         {
-          "id": 820,
+          "id": 817,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -709,7 +709,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 113,
+          "id": 111,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 187
         },
         {
-          "id": 1295,
+          "id": 1292,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 122
         },
         {
-          "id": 1308,
+          "id": 1305,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 100
         },
         {
-          "id": 1310,
+          "id": 1307,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,7 @@
           "word_count": 62
         },
         {
-          "id": 176,
+          "id": 174,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -784,7 +784,7 @@
           "word_count": 1200
         },
         {
-          "id": 204,
+          "id": 202,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -799,7 +799,7 @@
           "word_count": 1200
         },
         {
-          "id": 262,
+          "id": 260,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -814,7 +814,7 @@
           "word_count": 1200
         },
         {
-          "id": 180,
+          "id": 178,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -829,7 +829,7 @@
           "word_count": 958
         },
         {
-          "id": 1289,
+          "id": 1286,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +844,7 @@
           "word_count": 501
         },
         {
-          "id": 1284,
+          "id": 1281,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +859,7 @@
           "word_count": 477
         },
         {
-          "id": 1287,
+          "id": 1284,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +874,7 @@
           "word_count": 452
         },
         {
-          "id": 1282,
+          "id": 1279,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +889,7 @@
           "word_count": 445
         },
         {
-          "id": 1286,
+          "id": 1283,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +904,7 @@
           "word_count": 420
         },
         {
-          "id": 1307,
+          "id": 1304,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +919,7 @@
           "word_count": 400
         },
         {
-          "id": 1303,
+          "id": 1300,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +934,7 @@
           "word_count": 348
         },
         {
-          "id": 1299,
+          "id": 1296,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -954,15 +954,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 208,
+      "total_raw": 206,
       "total_valid": 20,
       "total_candidates": 16
     }
   },
   "meta": {
-    "total_raw": 1484,
-    "dup": 309,
-    "nocontent": 387,
+    "total_raw": 1479,
+    "dup": 308,
+    "nocontent": 383,
     "noise": 9
   }
 }
