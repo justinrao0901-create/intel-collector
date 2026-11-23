@@ -35,7 +35,7 @@
           "word_count": 135
         },
         {
-          "id": 105,
+          "id": 104,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,22 @@
           "word_count": 88
         },
         {
-          "id": 107,
+          "id": 103,
+          "source": "TechCrunch AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+          "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+          "content": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
+          "pub_date": "Mon, 23 Nov 2026 01:25:53 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 87
+        },
+        {
+          "id": 106,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,29 +80,14 @@
           "word_count": 87
         },
         {
-          "id": 103,
+          "id": 88,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
-          "link": "https://arxiv.org/abs/2611.26450",
-          "content": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and zero runtime hooks, while bounding per-layer normalization drift and preserving natural-language (NL) competence. Our construction combines three analytical mechanisms: (1) two-layer Mellin-GLU quadrature over bias-free SwiGLU/GeGLU layers, turning unknown per-token RMSNorm scaling into translation along a log-spaced gate grid (>250times dynamic range) with IEEE 754 error bounds; (2) cross-token scale cancellation via signed Chebyshev Indefinite-RoPE self-sink attention and memoryless SiLU-antisymmetric GatedDeltaNet shifts; and (3) axis-aligned width extension (d to d+K) with d/(d+K) norm compensation, Base-1000 canonical BPE emission, and differential (+254,-256) tied unembeddings. An automated 5-stage compiler synthesizes 4-8 digit signed {+,-,times} circuits in constant TC^0 depth alongside 3-literal Boolean (100%, N=1{,}728; plus 42-layer Gemma 4 E4B audits) and 5",
-          "pub_date": "2026-11-18T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 104,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks",
-          "link": "https://arxiv.org/abs/2611.25179",
-          "content": "Simulated manipulation benchmarks measure policy performance using hand-written success checkers that label each episode as a success or failure. Passing an expert demonstration shows that a checker accepts one way of completing the task. Learned policies, however, may stop after partial progress or complete the task in a different way. A checker may then accept an incomplete execution (phantom success) or reject an execution that satisfies the instruction (silent failure). In this paper, we introduce SimAudit, an LLM-based pipeline that audits success checkers against task instructions. SimAudit analyzes the instruction and checker code to identify scenarios where the two may disagree, recreates those scenarios in simulation, and runs the original checker. Multi-view renderings are then used to verify whether the observed behavior satisfies the instruction. Across RoboTwin 2.0, RoboCasa365, and RoboDojo, 183 simulated test cases produced the predicted checker verdict. Visual verification and deduplication yielded 61 distinct defects across 49 tasks, including 40 phantom successes and 21 silent failures. Most defects in RoboCasa365 accepted incomplete executions, most in RoboDojo r",
+          "title": "AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation",
+          "link": "https://arxiv.org/abs/2611.24077",
+          "content": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scale and rule-based planners cannot supply reliably. In this paper, we present AeroRSI, a recursive self-improvement framework in which an aerial navigation policy iteratively learns from its own failures. Our key insight is that a failing policy should judge its own repairs by flying on from them. Judged in this way, its sampled actions and even rule-based proposals that hurt it when imitated directly become reliable supervision. Moreover, an episode terminates at its first failure, concealing subsequent failures until the earlier ones are repaired. AeroRSI thus renews its supervision in every round, anchoring the failures of the current policy, verifying repairs by its continuation, and distilling them while keeping its behavior elsewhere. On TravelUAV, three rounds raise the success rate of a supervised 2B-parameter policy from 46.4% to 67.5% and reduce collisions by h",
           "pub_date": "2026-11-17T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -95,22 +95,37 @@
           "word_count": 1200
         },
         {
-          "id": 92,
+          "id": 89,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "PAD: Policy-Aware Data Valuation for Autonomous Driving",
-          "link": "https://arxiv.org/abs/2611.25604",
-          "content": "End-to-end autonomous driving increasingly depends on scaling training demonstrations, yet data growth does not guarantee proportional gains. However, additional data do not guarantee better policies: a demonstration that benefits one planner may be redundant or harmful to another. Existing curation methods typically infer data value from intrinsic sample properties or training-dependent proxies that do not measure downstream policy utility. To address this, we introduce Policy-Aware Data Valuation (PAD), a framework that assigns each candidate demonstration a utility specific to the target driving policy. PAD combines scene-level calibration feedback with projected policy gradients and a regularized approximation of local training geometry, producing scalable influence-based values for the policy. A controlled group-removal study establishes the directional fidelity of these values, while cross-planner analysis shows that the same candidate pool induces markedly different rankings across planner families. On DiffusionDrive, PAD improves EPDMS over real-only training by 3.5 points on NavTest and 5.0 points on NavHard. Policy-specific curation consistently outperforms real-only and",
+          "title": "Duopra: From Full-Duplex Conversation to Full-Duplex Agency",
+          "link": "https://arxiv.org/abs/2611.25773",
+          "content": "Full-duplex interaction models exhibit strong conversational agency, enabling natural, low-latency turn-taking, backchannels, and interruptions. However, completing tasks further requires task agency: timely tool invocation and argument revision following user corrections. Frontend-backend agents separate initiation from execution: the frontend decides whether and what to request, while the backend determines how. Execution can be offloaded, but unsent requests cannot be executed, and incomplete ones can misdirect the backend. On Full-Duplex-Bench v3 (FDB v3), most failures of Realtime-Venus-Audio + Harness in our streaming pipeline occur before a domain tool executes. We introduce Duopra, a full-duplex interaction model that learns task execution alongside conversational control. Duopra treats the backend as a tool, accepting a self-contained natural-language request. Direct calls and backend delegation share an action interface and requirements for faithful initiation and correct execution. Its three-stage training combines protocol SFT, full-duplex RL rewarding timely and complete execution, and projector-only repair of talker conditioning after thinker updates. With the same ba",
           "pub_date": "2026-11-18T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1199
+          "word_count": 1200
         },
         {
-          "id": 158,
+          "id": 90,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+          "link": "https://arxiv.org/abs/2611.21485",
+          "content": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit r",
+          "pub_date": "2026-11-15T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 157,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +140,7 @@
           "word_count": 941
         },
         {
-          "id": 162,
+          "id": 161,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +155,7 @@
           "word_count": 684
         },
         {
-          "id": 167,
+          "id": 166,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +170,7 @@
           "word_count": 637
         },
         {
-          "id": 154,
+          "id": 153,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 174
-        },
-        {
-          "id": 151,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
-          "link": "https://latent.space/p/jev-revolution/",
-          "content": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
-          "pub_date": "Thu, 12 Nov 2026 05:08:20 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 156
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 268,
-      "total_valid": 51,
+      "total_raw": 267,
+      "total_valid": 54,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 542,
+          "id": 556,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 873
         },
         {
-          "id": 559,
+          "id": 573,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 821
         },
         {
-          "id": 554,
+          "id": 568,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 723
         },
         {
-          "id": 663,
+          "id": 677,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 202
         },
         {
-          "id": 600,
+          "id": 614,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 280
         },
         {
-          "id": 661,
+          "id": 675,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 256
         },
         {
-          "id": 599,
+          "id": 613,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 246
         },
         {
-          "id": 462,
+          "id": 460,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 466
         },
         {
-          "id": 382,
+          "id": 380,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 463
         },
         {
-          "id": 328,
+          "id": 327,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 423
         },
         {
-          "id": 344,
+          "id": 343,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 418
         },
         {
-          "id": 342,
+          "id": 341,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 405
         },
         {
-          "id": 709,
+          "id": 723,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 398
         },
         {
-          "id": 383,
+          "id": 381,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 397
         },
         {
-          "id": 399,
+          "id": 397,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 475,
-      "total_valid": 277,
+      "total_raw": 490,
+      "total_valid": 293,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 789,
+          "id": 803,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 221
         },
         {
-          "id": 776,
+          "id": 790,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 199
         },
         {
-          "id": 777,
+          "id": 791,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -484,14 +484,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 115,
+      "total_raw": 123,
       "total_valid": 10,
       "total_candidates": 3
     },
     "cross": {
       "candidates": [
         {
-          "id": 315,
+          "id": 314,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 185
         },
         {
-          "id": 296,
+          "id": 295,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 183
         },
         {
-          "id": 279,
+          "id": 278,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 169
         },
         {
-          "id": 437,
+          "id": 435,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 62
         },
         {
-          "id": 573,
+          "id": 587,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 204
         },
         {
-          "id": 617,
+          "id": 631,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 164
         },
         {
-          "id": 574,
+          "id": 588,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 129
         },
         {
-          "id": 508,
+          "id": 506,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 524,
+          "id": 522,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 525,
+          "id": 523,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -646,8 +646,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 30,
-      "total_valid": 19,
+      "total_raw": 34,
+      "total_valid": 23,
       "total_candidates": 10
     },
     "china": {
@@ -664,22 +664,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 877,
+          "id": 901,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "GTCR Weighs Buyout of Global Payments Days After Earlier Effort Ended",
+          "title": "GTCR Weighs Another Bid for Global Payments",
           "link": "https://www.pymnts.com/news/acquiring/2026/gtcr-weighs-buyout-of-global-payments-days-after-earlier-effort-ended/",
-          "content": "Private equity firm GTCR is exploring a potential acquisition of payment processing solution provider Global Payments, according to GTCR’s Friday (Nov. 20) filing with the Securities and Exchange Commission. GTCR said in the filing that it is evaluating the move and has made no definitive decision. Bloomberg reported Friday, citing unnamed sources, that the transaction [&#8230;] The post GTCR Weighs Buyout of Global Payments Days After Earlier Effort Ended appeared first on PYMNTS.com .",
+          "content": "Private equity firm GTCR is exploring a potential acquisition of payment processing solution provider Global Payments, according to GTCR’s Friday (Nov. 20) filing with the Securities and Exchange Commission. GTCR said in the filing that it is evaluating the move and has made no definitive decision. Bloomberg reported Friday, citing unnamed sources, that the transaction [&#8230;] The post GTCR Weighs Another Bid for Global Payments appeared first on PYMNTS.com .",
           "pub_date": "Sun, 22 Nov 2026 21:14:53 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 491
+          "word_count": 465
         },
         {
-          "id": 872,
+          "id": 896,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +694,7 @@
           "word_count": 457
         },
         {
-          "id": 876,
+          "id": 900,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +709,7 @@
           "word_count": 444
         },
         {
-          "id": 886,
+          "id": 910,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +724,7 @@
           "word_count": 384
         },
         {
-          "id": 888,
+          "id": 912,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +739,7 @@
           "word_count": 362
         },
         {
-          "id": 887,
+          "id": 911,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +754,7 @@
           "word_count": 354
         },
         {
-          "id": 883,
+          "id": 907,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +769,22 @@
           "word_count": 116
         },
         {
-          "id": 874,
+          "id": 892,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Mexico’s Microlenders Targeted by Drug Cartels",
+          "link": "https://www.pymnts.com/loans/2026/mexicos-microlenders-targeted-by-drug-cartels/",
+          "content": "Mexican criminal organizations have reportedly begun targeting the country’s microlenders, seeking other revenue streams outside of drug trafficking. As The Wall Street Journal (WSJ) reported Sunday (Nov. 22), these lenders tend to service lower-income entrepreneurs, primarily women in Mexico’s poorest neighborhoods. Microlenders, the report said, provide $3.5 billion in loans, typically between $300 to $3,500, [&#8230;] The post Mexico&#8217;s Microlenders Targeted by Drug Cartels appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 23 Nov 2026 02:14:32 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 517
+        },
+        {
+          "id": 898,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,37 +799,22 @@
           "word_count": 473
         },
         {
-          "id": 873,
+          "id": 893,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "P&G Steps Up Use of Fully Autonomous Factory Shifts",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/pg-steps-up-use-of-fully-autonomous-factory-shifts/",
-          "content": "Procter &#38; Gamble (P&#38;G) is reportedly increasing the number of its factories that can operate fully autonomous shifts. Such a move would increase productivity and save the consumer product giant up to $10 billion in the next several years, The New York Times (NYT) reported Sunday (Nov. 22). P&#38;G, whose brands include Crest, Tide, Gillette [&#8230;] The post P&#038;G Steps Up Use of Fully Autonomous Factory Shifts appeared first on PYMNTS.com .",
-          "pub_date": "Sun, 22 Nov 2026 23:19:10 +0000",
+          "title": "Governors Want States to Have a Voice in Regulating AI",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/governors-want-states-to-have-a-voice-in-regulating-ai/",
+          "content": "America’s governors have announced a plan to ensure states continue to play a role in artificial intelligence regulation. The National Governors Association (NGA) on Sunday (Nov. 22) unveiled a set of principles designed to help states develop a “shared national approach” to AI regulations as the new Congress prepares to take office in January. “Governors [&#8230;] The post Governors Want States to Have a Voice in Regulating AI appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 23 Nov 2026 01:15:51 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 457
+          "word_count": 462
         },
         {
-          "id": 870,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "AI Competitors Team to Prevent Agentic Fragmentation",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-competitors-team-to-prevent-agentic-fragmentation/",
-          "content": "Artificial intelligence industry rivals are reportedly working together to create protocols for AI agents, warning that it’s essential these tools know how to talk with each other. That’s according to a report Sunday (Nov. 22) by CoinDesk on the progress of the Agentic AI Foundation (AAIF). Made up of members including OpenAI, Anthropic, Google, and [&#8230;] The post AI Competitors Team to Prevent Agentic Fragmentation appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 23 Nov 2026 00:54:05 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 454
-        },
-        {
-          "id": 882,
+          "id": 906,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -834,15 +834,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 183,
-      "total_valid": 13,
+      "total_raw": 185,
+      "total_valid": 15,
       "total_candidates": 11
     }
   },
   "meta": {
-    "total_raw": 1052,
-    "dup": 310,
-    "nocontent": 385,
+    "total_raw": 1076,
+    "dup": 316,
+    "nocontent": 382,
     "noise": 9
   }
 }

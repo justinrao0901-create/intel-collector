@@ -16,7 +16,7 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
+      "count": 0,
       "ok": true
     },
     "Meta AI Blog": {
@@ -52,7 +52,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 6,
+      "count": 7,
       "ok": true
     },
     "Sequoia Capital": {
@@ -172,7 +172,7 @@
     "NEJM": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 15,
       "ok": true
     },
     "The Lancet": {
@@ -250,8 +250,8 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 16,
+      "ok": true
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -358,8 +358,8 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 8,
+      "ok": true
     },
     "Absci Blog": {
       "section": "synbio",
@@ -406,7 +406,7 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 8,
+      "count": 10,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -504,9 +504,7 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI",
-      "bioRxiv SynBio",
-      "medRxiv Infectious"
+      "Import AI"
     ],
     "sudden_drop": [
       "Endpoints News",
@@ -517,6 +515,7 @@
     ],
     "persistent_zero": [
       "Cointelegraph Payments",
+      "Google DeepMind",
       "Lancet Digital Health",
       "PYMNTS Cross-Border",
       "WHO News",
