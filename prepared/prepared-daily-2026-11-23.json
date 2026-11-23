@@ -20,21 +20,6 @@
           "word_count": 144
         },
         {
-          "id": 30,
-          "source": "OpenAI News",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "The King’s Trust and OpenAI launch £1m partnership",
-          "link": "https://openai.com/index/the-kings-trust-and-openai",
-          "content": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
-          "pub_date": "Mon, 16 Nov 2026 00:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 136
-        },
-        {
           "id": 22,
           "source": "OpenAI News",
           "section": "ai",
@@ -50,7 +35,7 @@
           "word_count": 135
         },
         {
-          "id": 107,
+          "id": 105,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +50,7 @@
           "word_count": 88
         },
         {
-          "id": 109,
+          "id": 107,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +65,7 @@
           "word_count": 87
         },
         {
-          "id": 105,
+          "id": 103,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 106,
+          "id": 104,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 94,
+          "id": 92,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +110,7 @@
           "word_count": 1199
         },
         {
-          "id": 163,
+          "id": 161,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +125,7 @@
           "word_count": 684
         },
         {
-          "id": 168,
+          "id": 166,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +140,7 @@
           "word_count": 637
         },
         {
-          "id": 161,
+          "id": 159,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +155,7 @@
           "word_count": 518
         },
         {
-          "id": 156,
+          "id": 154,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -183,6 +168,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 174
+        },
+        {
+          "id": 151,
+          "source": "Latent Space",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
+          "link": "https://latent.space/p/jev-revolution/",
+          "content": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
+          "pub_date": "Thu, 12 Nov 2026 05:08:20 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 156
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 272,
-      "total_valid": 53,
+      "total_raw": 267,
+      "total_valid": 50,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 567,
+          "id": 557,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 873
         },
         {
-          "id": 584,
+          "id": 574,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 821
         },
         {
-          "id": 579,
+          "id": 569,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 723
         },
         {
-          "id": 688,
+          "id": 678,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 202
         },
         {
-          "id": 625,
+          "id": 615,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 280
         },
         {
-          "id": 686,
+          "id": 676,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 256
         },
         {
-          "id": 624,
+          "id": 614,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 246
         },
         {
-          "id": 467,
+          "id": 461,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 466
         },
         {
-          "id": 387,
+          "id": 381,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 463
         },
         {
-          "id": 333,
+          "id": 327,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 423
         },
         {
-          "id": 349,
+          "id": 343,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 418
         },
         {
-          "id": 347,
+          "id": 341,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 405
         },
         {
-          "id": 734,
+          "id": 724,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 398
         },
         {
-          "id": 388,
+          "id": 382,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 397
         },
         {
-          "id": 404,
+          "id": 398,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 496,
-      "total_valid": 297,
+      "total_raw": 491,
+      "total_valid": 293,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 815,
+          "id": 804,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 221
         },
         {
-          "id": 802,
+          "id": 791,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 199
         },
         {
-          "id": 803,
+          "id": 792,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -484,14 +484,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 125,
+      "total_raw": 123,
       "total_valid": 10,
       "total_candidates": 3
     },
     "cross": {
       "candidates": [
         {
-          "id": 320,
+          "id": 314,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +506,7 @@
           "word_count": 185
         },
         {
-          "id": 301,
+          "id": 295,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +521,7 @@
           "word_count": 183
         },
         {
-          "id": 284,
+          "id": 278,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +536,7 @@
           "word_count": 169
         },
         {
-          "id": 442,
+          "id": 436,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +551,7 @@
           "word_count": 62
         },
         {
-          "id": 598,
+          "id": 588,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +566,7 @@
           "word_count": 204
         },
         {
-          "id": 642,
+          "id": 632,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +581,7 @@
           "word_count": 164
         },
         {
-          "id": 599,
+          "id": 589,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +596,7 @@
           "word_count": 129
         },
         {
-          "id": 516,
+          "id": 507,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 1200
         },
         {
-          "id": 532,
+          "id": 523,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 533,
+          "id": 524,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -664,7 +664,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 908,
+          "id": 898,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +679,22 @@
           "word_count": 491
         },
         {
-          "id": 907,
+          "id": 893,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Wonder Shops Grubhub to Walmart and Other Potential Buyers",
+          "link": "https://www.pymnts.com/news/delivery/2026/wonder-shops-grubhub-to-walmart-and-other-potential-buyers/",
+          "content": "Wonder is reportedly weighing a sale of Grubhub two years after acquiring the fellow food delivery company. Bankers have been in touch with Walmart, Target, Kroger and other retailers about a possible sale, The Wall Street Journal (WSJ) reported Friday (Nov. 20), citing sources familiar with the matter. PYMNTS has contacted Wonder for comment but [&#8230;] The post Wonder Shops Grubhub to Walmart and Other Potential Buyers appeared first on PYMNTS.com .",
+          "pub_date": "Sun, 22 Nov 2026 23:49:14 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 457
+        },
+        {
+          "id": 897,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +709,7 @@
           "word_count": 444
         },
         {
-          "id": 917,
+          "id": 907,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +724,7 @@
           "word_count": 384
         },
         {
-          "id": 919,
+          "id": 909,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +739,7 @@
           "word_count": 362
         },
         {
-          "id": 918,
+          "id": 908,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +754,7 @@
           "word_count": 354
         },
         {
-          "id": 914,
+          "id": 904,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 116
         },
         {
-          "id": 905,
+          "id": 895,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,22 @@
           "word_count": 473
         },
         {
-          "id": 906,
+          "id": 894,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "P&G Steps Up Use of Fully Autonomous Factory Shifts",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/pg-steps-up-use-of-fully-autonomous-factory-shifts/",
+          "content": "Procter &#38; Gamble (P&#38;G) is reportedly increasing the number of its factories that can operate fully autonomous shifts. Such a move would increase productivity and save the consumer product giant up to $10 billion in the next several years, The New York Times (NYT) reported Sunday (Nov. 22). P&#38;G, whose brands include Crest, Tide, Gillette [&#8230;] The post P&#038;G Steps Up Use of Fully Autonomous Factory Shifts appeared first on PYMNTS.com .",
+          "pub_date": "Sun, 22 Nov 2026 23:19:10 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 457
+        },
+        {
+          "id": 896,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +814,7 @@
           "word_count": 453
         },
         {
-          "id": 913,
+          "id": 903,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -804,14 +834,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 179,
-      "total_valid": 9,
-      "total_candidates": 9
+      "total_raw": 181,
+      "total_valid": 11,
+      "total_candidates": 11
     }
   },
   "meta": {
-    "total_raw": 1083,
-    "dup": 323,
+    "total_raw": 1073,
+    "dup": 318,
     "nocontent": 385,
     "noise": 9
   }
