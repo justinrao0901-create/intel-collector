@@ -35,7 +35,7 @@
           "word_count": 135
         },
         {
-          "id": 104,
+          "id": 106,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 88
         },
         {
-          "id": 103,
+          "id": 105,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 87
         },
         {
-          "id": 106,
+          "id": 108,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,22 @@
           "word_count": 87
         },
         {
-          "id": 88,
+          "id": 90,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Reading the Unreadable: Text-Aware Image Super-Resolution Needs Reasoning",
+          "link": "https://arxiv.org/abs/2611.15449",
+          "content": "Text-aware image super-resolution (TAISR) aims to recover high-resolution images from low-resolution inputs while preserving textual content. Existing methods treat this as a visual restoration problem, yet severely degraded text often cannot be read from local visual evidence alone. Humans instead read it by reasoning over image context, logical patterns, and prior knowledge. This raises a fundamental question: Does TAISR need reasoning? To answer this, we introduce two diagnostic tools. The first, ReasonText, is a human-curated benchmark that separates reasoning-required text from locally recoverable text. The second, Ground-Truth Text-Crop Accuracy (GTTCA), is a recognition-based metric that measures text restoration quality without text detection errors. Evaluating twelve recent super-resolution (SR) models, we find a consistent and substantial performance drop on reasoning-required text, revealing a systematic blind spot. Two observations point to a remedy. One is that text-conditioned SR models restore text substantially better when given ground-truth text. The other is that multimodal large language models (MLLMs) can read degraded text in low-resolution images through reaso",
+          "pub_date": "2026-11-10T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 91,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 89,
+          "id": 92,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,22 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 90,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation",
-          "link": "https://arxiv.org/abs/2611.24077",
-          "content": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scale and rule-based planners cannot supply reliably. In this paper, we present AeroRSI, a recursive self-improvement framework in which an aerial navigation policy iteratively learns from its own failures. Our key insight is that a failing policy should judge its own repairs by flying on from them. Judged in this way, its sampled actions and even rule-based proposals that hurt it when imitated directly become reliable supervision. Moreover, an episode terminates at its first failure, concealing subsequent failures until the earlier ones are repaired. AeroRSI thus renews its supervision in every round, anchoring the failures of the current policy, verifying repairs by its continuation, and distilling them while keeping its behavior elsewhere. On TravelUAV, three rounds raise the success rate of a supervised 2B-parameter policy from 46.4% to 67.5% and reduce collisions by h",
-          "pub_date": "2026-11-17T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 157,
+          "id": 158,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 941
         },
         {
-          "id": 161,
+          "id": 162,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 684
         },
         {
-          "id": 166,
+          "id": 167,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 637
         },
         {
-          "id": 153,
+          "id": 154,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 267,
+      "total_raw": 268,
       "total_valid": 55,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 556,
+          "id": 557,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 873
         },
         {
-          "id": 573,
+          "id": 574,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 821
         },
         {
-          "id": 568,
+          "id": 569,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 723
         },
         {
-          "id": 677,
+          "id": 678,
           "source": "npj Vaccines",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 202
         },
         {
-          "id": 614,
+          "id": 615,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 280
         },
         {
-          "id": 675,
+          "id": 676,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 256
         },
         {
-          "id": 613,
+          "id": 614,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 246
         },
         {
-          "id": 460,
+          "id": 461,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 466
         },
         {
-          "id": 380,
+          "id": 381,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 463
         },
         {
-          "id": 327,
+          "id": 328,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 423
         },
         {
-          "id": 343,
+          "id": 344,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 418
         },
         {
-          "id": 341,
+          "id": 342,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 405
         },
         {
-          "id": 723,
+          "id": 724,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 398
         },
         {
-          "id": 381,
+          "id": 382,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 397
         },
         {
-          "id": 397,
+          "id": 398,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 803,
+          "id": 804,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 221
         },
         {
-          "id": 790,
+          "id": 791,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 199
         },
         {
-          "id": 791,
+          "id": 792,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -477,6 +477,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 191
+        },
+        {
+          "id": 825,
+          "source": "bioRxiv SynBio",
+          "section": "synbio",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Enhancing the Efficacy of Oncolytic Viruses by Engineering Virus Host Interactions Using CRISPR Cas13d",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.11.20.768134v1?rss=1",
+          "content": "Oncolytic herpes simplex virus type 1 (oHSV1) is a promising cancer therapy, but tumor cell antiviral responses can restrict viral replication. Strategies for temporally controlled targeting of antiviral factors remain limited. Here, we developed an inducible CRISPR Cas13d platform to modulate host responses during HSV1 infection. We screened 13 pharmacological inhibitors across tumor models to identify pathways associated with restricted infection. Reporter assays identified Cas13d as the preferred effector over Cas13b, while endogenous-target experiments demonstrated Cas13d mediated reductions in target protein abundance. We optimized guide RNA expression using RNA polymerase III promoters, selected p7SK, and established doxycycline-responsive Tet On and Tet Off systems. The platform was incorporated into HSV1 to generate a gRNA library targeting 15 host antiviral genes, together with two non-targeting controls. Doxycycline-dependent reporter readouts demonstrated inducible activity. Evaluation in EMT6, CT26, and 786 O cells revealed guide-dependent differences in fluorescence. These findings establish a programmable framework for investigating virus host interactions during onco",
+          "pub_date": "2026-11-22",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -484,14 +499,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 123,
-      "total_valid": 10,
-      "total_candidates": 3
+      "total_raw": 124,
+      "total_valid": 11,
+      "total_candidates": 4
     },
     "cross": {
       "candidates": [
         {
-          "id": 314,
+          "id": 315,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -506,7 +521,7 @@
           "word_count": 185
         },
         {
-          "id": 295,
+          "id": 296,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -521,7 +536,7 @@
           "word_count": 183
         },
         {
-          "id": 278,
+          "id": 279,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -536,7 +551,7 @@
           "word_count": 169
         },
         {
-          "id": 435,
+          "id": 436,
           "source": "Science",
           "section": "cross",
           "tier": "T1",
@@ -551,7 +566,7 @@
           "word_count": 62
         },
         {
-          "id": 587,
+          "id": 588,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -566,7 +581,7 @@
           "word_count": 204
         },
         {
-          "id": 631,
+          "id": 632,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -581,7 +596,7 @@
           "word_count": 164
         },
         {
-          "id": 588,
+          "id": 589,
           "source": "Vaccine (journal)",
           "section": "cross",
           "tier": "T1",
@@ -596,7 +611,7 @@
           "word_count": 129
         },
         {
-          "id": 506,
+          "id": 507,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +626,7 @@
           "word_count": 1200
         },
         {
-          "id": 522,
+          "id": 523,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 523,
+          "id": 524,
           "source": "bioRxiv Immunology",
           "section": "cross",
           "tier": "T1",
@@ -646,8 +661,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 34,
-      "total_valid": 23,
+      "total_raw": 35,
+      "total_valid": 24,
       "total_candidates": 10
     },
     "china": {
@@ -664,7 +679,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 901,
+          "id": 903,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -679,7 +694,7 @@
           "word_count": 465
         },
         {
-          "id": 896,
+          "id": 898,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -694,7 +709,7 @@
           "word_count": 457
         },
         {
-          "id": 900,
+          "id": 902,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -709,7 +724,7 @@
           "word_count": 444
         },
         {
-          "id": 910,
+          "id": 912,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -724,7 +739,7 @@
           "word_count": 384
         },
         {
-          "id": 912,
+          "id": 914,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -739,7 +754,7 @@
           "word_count": 362
         },
         {
-          "id": 911,
+          "id": 913,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -754,7 +769,7 @@
           "word_count": 354
         },
         {
-          "id": 907,
+          "id": 909,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -769,7 +784,7 @@
           "word_count": 116
         },
         {
-          "id": 892,
+          "id": 894,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +799,7 @@
           "word_count": 517
         },
         {
-          "id": 898,
+          "id": 900,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +814,7 @@
           "word_count": 473
         },
         {
-          "id": 893,
+          "id": 895,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 462
         },
         {
-          "id": 906,
+          "id": 908,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -840,9 +855,9 @@
     }
   },
   "meta": {
-    "total_raw": 1076,
-    "dup": 315,
-    "nocontent": 382,
+    "total_raw": 1078,
+    "dup": 314,
+    "nocontent": 384,
     "noise": 9
   }
 }
