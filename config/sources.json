@@ -80,7 +80,7 @@
   "synbio": [
     {"name":"Nature Synthetic Biology","section":"synbio","tier":"T1","priority":2,"method":"rss","url":"https://www.nature.com/subjects/synthetic-biology.rss","window_h":336,"enabled":true},
     {"name":"Nature Machine Intel","section":"synbio","tier":"T1","priority":2,"method":"rss","url":"https://www.nature.com/natmachintell.rss","window_h":336,"enabled":true},
-    {"name":"ACS Synthetic Biology","section":"synbio","tier":"T1","priority":2,"method":"rss","url":"https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=asbcd6","window_h":336,"enabled":true},
+    {"name":"ACS Synthetic Biology","section":"synbio","tier":"T1","priority":2,"method":"api","url":"https://api.crossref.org/journals/2161-5063/works?sort=published&order=desc&rows=25&select=DOI,title,URL,published,container-title","window_h":336,"enabled":true},
     {"name":"Metabolic Engineering","section":"synbio","tier":"T1","priority":2,"method":"rss","url":"https://rss.sciencedirect.com/publication/science/10967176","window_h":336,"enabled":true},
     {"name":"Cell Systems","section":"synbio","tier":"T1","priority":2,"method":"rss","url":"https://www.cell.com/cell-systems/inpress.rss","window_h":336,"enabled":true},
     {"name":"bioRxiv SynBio","section":"synbio","tier":"T1","priority":6,"method":"rss","url":"https://connect.biorxiv.org/biorxiv_xml.php?subject=synthetic_biology","window_h":168,"enabled":true},
