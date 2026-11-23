@@ -2,13 +2,17 @@
 
 method:
   rss    → http_get → parse_feed → 时间窗过滤
-  api    → 按 URL 派发(HF Daily Papers / OpenFDA / HN Algolia；其余交 papers.py)
+  api    → 按 URL 派发(HF Daily Papers / OpenFDA / HN Algolia / Crossref；其余交 papers.py)
   scrape → 抓首页 → 同域文章链接通用提取
   search → 本地不抓，写入 search-manifest.json 供 Cowork 模型 WebSearch
 """
 from __future__ import annotations
 import os, re, json, glob
+from datetime import datetime
 from . import util
+
+# 停更判定阈值: feed 最新条目距今超过 N 天视为"真停更"(需人工处理)
+STALE_DAYS = 14
 
 
 def _prior_health(date_str):
@@ -24,16 +28,29 @@ def _prior_health(date_str):
 
 
 def compute_alarms(health, prior):
-    """纯函数(可单测):按本次/上次产量分三类告警。
+    """纯函数(可单测):按本次健康状态分三类告警。
     fail            = 本次抓取失败(ok=False)
-    sudden_drop     = 本次0条 且 上次>0(疑似临时抓取失败,arXiv 6/13 型)
-    persistent_zero = 本次0条 且 上次也0/无记录(疑似死源,需在 Mac 端修)
+    sudden_drop     = 本次0条 且 上次>0(仅对无 latest_pub 的 scrape/api 源,疑似临时失败)
+    persistent_zero = 见下:
+      · 有 latest_pub 的源(RSS): feed 最新条目距今 > STALE_DAYS 天 → 真停更
+      · 无 latest_pub 的源(scrape/api): 本次0条 且 上次也0/无记录 → 疑似死源
+
+    (2026-11-23 修复: 原逻辑对 RSS 源用"时间窗过滤后的 count==0"判死源,导致早间触发时
+     窗口空档的活源被误报成 persistent_zero。改为: RSS 源用 feed 最新条目日期判停更,
+     不再用窗口内条数判死; scrape/api 源无时间窗过滤,保持原 count 判定不变。)
     """
     fail, drop, zero = [], [], []
     for name, h in health.items():
         if not h.get("ok", True):
             fail.append(name); continue
-        if h.get("count", 0) == 0:
+        if h.get("latest_pub"):
+            try:
+                d = datetime.strptime(h["latest_pub"], "%Y-%m-%d").date()
+                if (datetime.now().date() - d).days > STALE_DAYS:
+                    zero.append(name)
+            except (ValueError, TypeError):
+                pass  # 日期异常, 保守不判停更
+        elif h.get("count", 0) == 0:
             pc = (prior.get(name) or {}).get("count")
             if pc and pc > 0:
                 drop.append(name)
@@ -42,19 +59,40 @@ def compute_alarms(health, prior):
     return {"fail": sorted(fail), "sudden_drop": sorted(drop), "persistent_zero": sorted(zero)}
 
 
+_FEED_ROOTS = ("<rss", "<feed", "<rdf:RDF", "<RDF", "<?xml")
+
+
+def _looks_like_feed(txt):
+    """HTTP 200 不等于拿到 feed。Cloudflare 人机质询页、域名迁移落地页、编码异常
+    都是 200 + 非 XML,原先会被 parse_feed 静默吃成 0 条、health 记成
+    ok=True/count=0,再被 compute_alarms 误判成 persistent_zero(看着像源停更)。
+    这里对返回体做一次根元素体检,不含 feed 根就判抓取失败。"""
+    head = txt.lstrip()[:400]
+    return any(r in head for r in _FEED_ROOTS)
+
+
 def _fetch_rss(src, http):
     txt, ok = util.http_get(src["url"], http["timeout_s"], http["retries"], http["user_agent"])
     if not ok:
-        return [], False
+        return [], False, None
+    if not _looks_like_feed(txt):
+        return [], False, None
+    all_items = util.parse_feed(txt)
+    # 记录 feed 最新条目日期(窗口过滤前),供健康判定区分"活源但窗口空档" vs "真停更"
+    latest = None
+    for it in all_items:
+        pub = util.parse_date(it.get("pub"))
+        if pub and (latest is None or pub > latest):
+            latest = pub
+    latest_pub = latest.strftime("%Y-%m-%d") if latest else None
     items = []
-    now = None
-    for it in util.parse_feed(txt):
+    for it in all_items:
         pub = util.parse_date(it.get("pub"))
         if not util.within_window(pub, src.get("window_h")):
             continue
         items.append({"title": it["title"], "link": it["link"],
                       "content": it.get("summary", ""), "pub_date": it.get("pub", "")})
-    return items, True
+    return items, True, latest_pub
 
 
 def _fetch_scrape(src, http):
@@ -127,6 +165,18 @@ def _fetch_api(src, http):
                           "link": f"https://clinicaltrials.gov/study/{nct}" if nct else url,
                           "content": util.strip_html(body)[:1200],
                           "pub_date": (stm.get("lastUpdatePostDateStruct") or {}).get("date", "")})
+    elif "api.crossref.org" in url:
+        # Crossref REST：按期刊 ISSN 取最新文章(ACS Synthetic Biology 换源后的通道)。
+        for w in ((data.get("message") or {}).get("items") or [])[:25]:
+            title = (w.get("title") or [""])[0]
+            journal = (w.get("container-title") or [""])[0]
+            parts = ((w.get("published") or {}).get("date-parts") or [[]])[0]
+            pub = "-".join(f"{p:02d}" if i else str(p) for i, p in enumerate(parts[:3])) if parts else ""
+            doi = w.get("DOI", "")
+            items.append({"title": title,
+                          "link": w.get("URL") or (f"https://doi.org/{doi}" if doi else url),
+                          "content": f"{journal} | DOI: {doi}",
+                          "pub_date": pub})
     return items, True
 
 
@@ -138,7 +188,7 @@ def fetch_all(section_filter=None, date_str=None):
 
     by_section = {}     # section → {source_name → [items]}
     search_manifest = []
-    health = {}         # source_name → {section, method, count, ok}  (本地源产量体检)
+    health = {}         # source_name → {section, method, count, ok, latest_pub?}  (本地源产量体检)
     stats = {"ok": 0, "fail": 0, "skip_search": 0, "items": 0}
 
     for section, srclist in sources.items():
@@ -161,23 +211,28 @@ def fetch_all(section_filter=None, date_str=None):
                 continue
             try:
                 if method == "rss":
-                    items, ok = _fetch_rss(src, http)
+                    items, ok, latest_pub = _fetch_rss(src, http)
                 elif method == "scrape":
                     items, ok = _fetch_scrape(src, http)
+                    latest_pub = None
                 elif method == "api":
                     items, ok = _fetch_api(src, http)
+                    latest_pub = None
                 else:
-                    items, ok = [], False
+                    items, ok, latest_pub = [], False, None
             except Exception as e:
-                items, ok = [], False
+                items, ok, latest_pub = [], False, None
             if ok:
                 stats["ok"] += 1
                 stats["items"] += len(items)
                 by_section.setdefault(section, {}).setdefault(src["name"], []).extend(items)
             else:
                 stats["fail"] += 1
-            health[src["name"]] = {"section": section, "method": method,
-                                   "count": len(items) if ok else 0, "ok": ok}
+            h = {"section": section, "method": method,
+                 "count": len(items) if ok else 0, "ok": ok}
+            if latest_pub:
+                h["latest_pub"] = latest_pub
+            health[src["name"]] = h
             print(f"  [{section}] {src['name']:32} {'OK '+str(len(items)) if ok else 'FAIL':>8}")
 
     # 写 raw-data(每个 domain 一个文件，沿用旧目录结构便于聚合)
