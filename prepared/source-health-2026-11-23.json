@@ -106,7 +106,7 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 16,
       "ok": true
     },
     "Hacker News AI": {
@@ -250,8 +250,8 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -358,8 +358,8 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 8,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Absci Blog": {
       "section": "synbio",
@@ -406,7 +406,7 @@
     "PYMNTS.com": {
       "section": "payment",
       "method": "rss",
-      "count": 6,
+      "count": 8,
       "ok": true
     },
     "PYMNTS Cross-Border": {
@@ -504,7 +504,9 @@
     "fail": [
       "ACS Synthetic Biology",
       "Absci Blog",
-      "Import AI"
+      "Import AI",
+      "bioRxiv SynBio",
+      "medRxiv Infectious"
     ],
     "sudden_drop": [
       "Endpoints News",
