@@ -98,6 +98,19 @@
       "note": "付费墙"
     },
     {
+      "name": "xAI/Grok",
+      "section": "ai",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "xAI Grok model release",
+        "xAI news announcement"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": "重要AI玩家,无稳定RSS,转WebSearch"
+    },
+    {
       "name": "CIDRAP",
       "section": "vaccine",
       "method": "search",
@@ -159,6 +172,32 @@
       "note": ""
     },
     {
+      "name": "Moderna",
+      "section": "vaccine",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Moderna vaccine news",
+        "Moderna mRNA clinical trial"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": "mRNA疫苗大厂,newsroom URL变更,转WebSearch"
+    },
+    {
+      "name": "CDC ACIP",
+      "section": "vaccine",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "CDC ACIP vaccine recommendation",
+        "CDC immunization update"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": "美国免疫决策权威,官网反爬(403),转WebSearch"
+    },
+    {
       "name": "SynBioBeta",
       "section": "synbio",
       "method": "search",
@@ -198,6 +237,32 @@
       "dual_china": true,
       "window_h": 168,
       "note": ""
+    },
+    {
+      "name": "Ginkgo Bioworks",
+      "section": "synbio",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Ginkgo Bioworks news",
+        "Ginkgo Bioworks platform"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": "合成生物平台巨头,feed 404,转WebSearch"
+    },
+    {
+      "name": "Twist Bioscience",
+      "section": "synbio",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Twist Bioscience news",
+        "Twist DNA synthesis"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": "DNA合成龙头,feed 404,转WebSearch"
     },
     {
       "name": "AI制药公司(Isomorphic/Insilico/Recursion/Generate/Chai/NOETIK/EvolutionaryScale/Xaira)",
@@ -328,6 +393,84 @@
       "dual_china": false,
       "window_h": 72,
       "note": ""
+    },
+    {
+      "name": "SWIFT",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "SWIFT news announcement",
+        "SWIFT cross-border payment ISO 20022"
+      ],
+      "dual_china": false,
+      "window_h": 168,
+      "note": "跨境支付基础设施,官网反爬(403),转WebSearch"
+    },
+    {
+      "name": "Adyen",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Adyen latest news announcement",
+        "Adyen agentic payments partnership"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "欧洲支付巨头,无稳定RSS,转WebSearch"
+    },
+    {
+      "name": "Wise",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Wise news announcement",
+        "Wise cross-border payment update"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "跨境汇款巨头,Atom难定位,转WebSearch"
+    },
+    {
+      "name": "Airwallex",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Airwallex news announcement",
+        "Airwallex cross-border payment"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "跨境支付同业(亚太),转WebSearch"
+    },
+    {
+      "name": "Ripple",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Ripple stablecoin RLUSD news",
+        "Ripple cross-border payment"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "稳定币跨境支付,feed 404,转WebSearch"
+    },
+    {
+      "name": "Mastercard Newsroom",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "Mastercard news announcement",
+        "Mastercard payment innovation"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "卡组织官方,官网反爬(403),转WebSearch"
     }
   ]
 }

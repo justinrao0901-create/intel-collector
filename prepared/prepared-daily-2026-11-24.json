@@ -50,7 +50,67 @@
           "word_count": 137
         },
         {
-          "id": 101,
+          "id": 47,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Finding faster quantum algorithms with agents and formal verification",
+          "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+          "content": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+          "pub_date": "Mon, 23 Nov 2026 16:59:40 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 97
+        },
+        {
+          "id": 271,
+          "source": "Together AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Qwen4 Max is live on Together AI",
+          "link": "https://www.together.ai/blog/qwen4-max",
+          "content": "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026. We sent it a bug report and an entire repository in one request. Its patch passed the project's tests, for 69 cents.",
+          "pub_date": "Sat, 21 Nov 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 220
+        },
+        {
+          "id": 272,
+          "source": "Together AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Qwen3 TTS is now available on Together AI",
+          "link": "https://www.together.ai/blog/qwen3-tts",
+          "content": "Qwen3 TTS is now available on Together AI. Keep one voice across your product, change its tone with a plain-language instruction and move it between 10 languages, with first audio in as little as 97ms.",
+          "pub_date": "Fri, 20 Nov 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 201
+        },
+        {
+          "id": 274,
+          "source": "Together AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Introducing Together Storage Accelerator: fast, free data caching for your GPU cluster",
+          "link": "https://www.together.ai/blog/introducing-together-storage-accelerator",
+          "content": "Together Storage Accelerator is a distributed caching layer for Together GPU Clusters: about 20x faster warm reads, one origin fetch per cluster, no application changes, and it's included free.",
+          "pub_date": "Thu, 19 Nov 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 193
+        },
+        {
+          "id": 104,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +125,7 @@
           "word_count": 167
         },
         {
-          "id": 95,
+          "id": 98,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +140,7 @@
           "word_count": 163
         },
         {
-          "id": 91,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,94 +155,34 @@
           "word_count": 150
         },
         {
-          "id": 75,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
-          "link": "https://arxiv.org/abs/2611.27490",
-          "content": "Most established instance-retrieval benchmarks emphasise landmarks; small sculptures from visually similar series offer a complementary challenge. We introduce Doppeldwarf-306: 1,691 openly licensed photographs of 306 bronze dwarf statues in Wrocław, Poland, many made in themed series that share one style, with the photographer of each image recorded. With no training, nearest-neighbour search over frozen DINOv2 features names the right statue first for 93.1% of leave-one-out queries, and the best of thirteen backbones from seven pretraining paradigms reaches 94.7%. Accuracy falls slowly as candidates are added: for DINOv2, by about 0.8 points each time their number doubles. A natural design for a phone guide compares a photograph only with statues near the user. In simulation this helps, but less than an equal number of randomly chosen statues does, so random subsampling overstates its value; a permutation test ties the penalty to the real layout (p = 0.005). Used as a weight instead of a filter, location raises DINOv2 from 93.4% to 98.7% for a simulated user 25 m from the statue. With the query's photographer withheld, learned local-feature matching raises DINOv2 accuracy from 81",
-          "pub_date": "2026-11-19T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 76,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
-          "link": "https://arxiv.org/abs/2611.26954",
-          "content": "Video foresight reasoning requires vision-language models to anticipate future events or next actions from currently observed videos. Existing methods fit future captions, rationales, or full visual states, but face two limitations. First, they rely on annotations or external large models for supervision, limiting scalability. We address this with an on-policy self-distillation framework that turns past-future video pairs into a natural self-supervised signal without extra annotations or LLM supervision. Second, they treat the whole future clip as equally valuable, although most of it is irrelevant context information. We address this by defining a foresight score, from which we obtain a contrastive privilege advantage that drives the model to learn the most valuable future information. Since the score is intractable, we optimize a tractable lower-bound surrogate that interpolates this advantage, computed between the true and a random reference future, with a teacher-student distillation advantage; together, they amplify decision-relevant content information and suppress irrelevant context information. We call the resulting framework Future-OPSD. On open-ended prediction and closed",
-          "pub_date": "2026-11-19T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Taking Apart and Putting Together: Tracking Objects Through Physical Transformations",
-          "link": "https://arxiv.org/abs/2611.27398",
-          "content": "We introduce Transformation Tracking and Understanding (TTU), extending video object tracking to environments where objects undergo physical assemblies and disassemblies. TTU requires continuously tracking objects through transformations, identifying new entities, maintaining a state graph of their relationships, and assigning semantic labels to transformations. While foundation models (e.g., SAM 2/3) maintain tracklets through appearance changes, they cannot update semantic identities as objects physically evolve. Prior work addresses only disassemblies, relying on expensive searches triggered only when tracking fails. We propose Tracking Instances via Proposals and Overlaps (TIPO), a training-free framework that continuously infers transformations via a generate-evaluate-judge pipeline. TIPO generates split and merge proposals from disjoint mask components, scores them against mask-decoder priors using inner and external overlap, and queries an MLLM on the top proposal for visual verification and semantic labeling. To benchmark TTU, we curate Video Instances, States, and Transformation Annotations (VISTA), a dataset including state graphs with 124 assembly and 132 disassembly eve",
-          "pub_date": "2026-11-20T05:03:29.000Z",
+          "title": "Typhoon OCR 2: From Thai Document Transcription to Multilingual, Multi-Task OCR",
+          "link": "https://arxiv.org/abs/2611.27494",
+          "content": "Typhoon OCR 1.5 focused on reading Thai documents. However, in real-world workflows, users often need to extract specific information or preserve the structure of an entire page for further processing. Typhoon OCR 2 handles both tasks in a single model, with prompt-driven extraction and structured full-page parsing. Full-page parsing covers Thai, English, and Chinese. We release compact 2B and 0.8B models adapted from open document parsers through supervised fine-tuning on curated Thai and public multilingual data, followed by Group Relative Policy Optimization (GRPO) with task rewards and a rule penalizing unfinished responses. Among evaluated open models, Typhoon OCR 2 2B scores highest on Thai MDPBench (80.7 versus 68.9 for Typhoon OCR 1.5) and on ThaiOCRBench (59.91 versus 40.45), which covers recognition, extraction, and document understanding. The 2B model remains close to its base on English olmOCR-bench (84.7 versus 84.4) and on OmniDocBench, which evaluates English and Chinese together (90.97 versus 91.03). On MDPBench, GRPO reduces the mean share of pages with repetition loops for the 2B model from 3.2% to 0.7%, with a smaller and statistically uncertain score gain for th",
+          "pub_date": "2026-11-22T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 952,
-          "source": "Simon Willison",
+          "id": 81,
+          "source": "HuggingFace Daily Papers",
           "section": "ai",
-          "tier": "T2",
+          "tier": "T1",
           "priority": 5,
-          "title": "datasette-charts 0.1a0",
-          "link": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
-          "content": "Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Datasette Lite here . It looks like this: The new charts plugin works against any table or arbitrary SQL query in Datasette. It defines several different chart types (using vendored D3 , Observable Plot , and topojson-client ), each with a set of heuristics for identifying when they might be a good match for a specific set of rows. Those suggestion thumbnails at the top are actual visualizations driven by the data, and selecting one pulls up the full chart along with tools for modifying it. You can also manually construct a chart from scratch. As with other Datasette visualization plugins, the current state of your chart is persisted in a #fragment in the URL - so you can bookmark charts or share them with others. The most important feature is that the charts take all rows into account . Previous charting plugins like datasette-vega would only show charts for the current page of results, generally up to 100 rows. The new plugin compi",
-          "pub_date": "2026-11-23T00:37:20+00:00",
+          "title": "How Complete Must an Environment Be to Train a Capable GUI Agent?",
+          "link": "https://arxiv.org/abs/2611.23946",
+          "content": "Graphical user interface (GUI) agents are widely trained in executable GUI environments. To lower cost, build environments in batches, and reduce manual effort, each work trades away part of the environment through its construction choices. We describe these choices along three dimensions: reward coverage, the goal-reaching trajectories the verifier rewards; data coverage, the application data the agent is exposed to beyond what the task reads or writes; and feature coverage, the application features beyond what the task uses. Existing works set each dimension on engineering grounds, but they do not measure its effect on training. How complete must an environment be to train a capable agent, and along which dimensions? In MobileGym, we adjust each dimension separately, train Qwen3-VL-4B-Instruct, and evaluate every policy in the original full environment. A verifier that rewards only one reference path lowers success by 10.53 points, and removing unneeded records also lowers success. Pruning unneeded features instead raises success from 51.61% to 56.13%, entirely on tasks whose environments it left unchanged. The gain reverses when each episode is weighted equally and vanishes when",
+          "pub_date": "2026-11-17T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 950,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-          "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
-          "content": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight-shared layers runs for multiple iterations, refining the hidden states from the previous pass. This gives us a deeper network without increasing the parameter count. This is the second mention of looped transformers I've seen in the past week - the first was Inkling 2 Mini from Thinking Machines Lab on November 20th, who said: Inkling 2 Mini is a looped transformer, running the middle layers of the model three times for every token. This allows the model to apply more reasoning and reach the right answer with fewer tokens, especially on tasks such as agentic coding that depend on reasoning quality. GLM 5.4 is not (yet?) available as open weights. I tried it out using the Z.ai API, for which I had to sign up for their Coding Plan subscription because 5.4 cannot currently be accessed through the regular API. It turns out both coding plan and regular API share the same",
-          "pub_date": "2026-11-23T23:40:49+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1199
-        },
-        {
-          "id": 955,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting Ravi Vakil",
-          "link": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
-          "content": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft. &mdash; Ravi Vakil , Hurried Announcement: Alessandro Masullo GRH Tags: mathematics",
-          "pub_date": "2026-11-20T19:21:49+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 518
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1062,
-      "total_valid": 661,
+      "total_raw": 281,
+      "total_valid": 79,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1330,
+          "id": 549,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1332,
+          "id": 551,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1334,
+          "id": 553,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1284,
+          "id": 503,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 429
         },
         {
-          "id": 1493,
+          "id": 712,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 290
         },
         {
-          "id": 1211,
+          "id": 430,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 281
         },
         {
-          "id": 1286,
+          "id": 505,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 269
         },
         {
-          "id": 1450,
+          "id": 669,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 421
         },
         {
-          "id": 1442,
+          "id": 661,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 418
         },
         {
-          "id": 1429,
+          "id": 648,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 397
         },
         {
-          "id": 1065,
+          "id": 284,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 219
         },
         {
-          "id": 1068,
+          "id": 287,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 198
         },
         {
-          "id": 1084,
+          "id": 303,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 134
         },
         {
-          "id": 1080,
+          "id": 299,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 121
         },
         {
-          "id": 1221,
+          "id": 440,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1629,
+          "id": 848,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1633,
+          "id": 852,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 1630,
+          "id": 849,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1199
         },
         {
-          "id": 1634,
+          "id": 853,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 456
         },
         {
-          "id": 1548,
+          "id": 767,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 55
         },
         {
-          "id": 1547,
+          "id": 766,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 54
         },
         {
-          "id": 1549,
+          "id": 768,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 54
         },
         {
-          "id": 1580,
+          "id": 799,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 173
         },
         {
-          "id": 1578,
+          "id": 797,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 172
         },
         {
-          "id": 1574,
+          "id": 793,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1221,
+          "id": 440,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 498
         },
         {
-          "id": 1210,
+          "id": 429,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 374
         },
         {
-          "id": 1644,
+          "id": 863,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 313
         },
         {
-          "id": 1097,
+          "id": 316,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 230
         },
         {
-          "id": 1099,
+          "id": 318,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 185
         },
         {
-          "id": 1123,
+          "id": 342,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 162
         },
         {
-          "id": 1553,
+          "id": 772,
           "source": "ACS Synthetic Biology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 54
         },
         {
-          "id": 1558,
+          "id": 777,
           "source": "ACS Synthetic Biology",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 54
         },
         {
-          "id": 1589,
+          "id": 808,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 130
         },
         {
-          "id": 1066,
+          "id": 285,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 39,
-      "total_valid": 29,
+      "total_raw": 34,
+      "total_valid": 24,
       "total_candidates": 10
     },
     "china": {
@@ -769,37 +769,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 1704,
+          "id": 923,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Marex launches international payments platform, including stablecoins",
-          "link": "https://www.ledgerinsights.com/marex-launches-international-payments-platform-including-stablecoins/",
-          "content": "Marex, the institutional broker and market maker, is expanding into international payments after the UK&#8217;s FCA authorized it to provide payment services. The platform will cover more than 150 currencies, settling in both fiat and digital currencies, a phrase that covers stablecoins and leaves the door open to tokenized deposits. It is not the first [&#8230;] The post Marex launches international payments platform, including stablecoins appeared first on Ledger Insights - blockchain for enterprise .",
-          "pub_date": "Mon, 23 Nov 2026 14:33:39 +0000",
+          "title": "StraitsX partners OCBC for corporates to receive stablecoin payments into accounts",
+          "link": "https://www.ledgerinsights.com/straitsx-partners-ocbc-for-corporates-to-receive-stablecoin-payments-into-accounts/",
+          "content": "Singapore stablecoin issuer StraitsX is partnering with OCBC bank to pilot stablecoin cross border payments for corporates. Under the arrangement, a company receiving stablecoins will have the funds automatically credited to its bank account, removing the need to handle the stablecoin directly. StraitsX and OCBC are both participants in the BLOOM initiative for digital money [&#8230;] The post StraitsX partners OCBC for corporates to receive stablecoin payments into accounts appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Mon, 23 Nov 2026 19:05:38 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 508
+          "word_count": 543
         },
         {
-          "id": 1654,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Adyen Co-Founder to Retire and Hand Reins to Co-CEO Ingo Uytdehaage",
-          "link": "https://www.pymnts.com/personnel/2026/adyen-co-founder-to-retire-and-hand-reins-to-co-ceo-ingo-uytdehaage/",
-          "content": "Adyen has announced a leadership transition in which Co-Founder and Co-CEO Pieter van der Does will retire effective Dec. 31 and Co-CEO Ingo Uytdehaage will become the company’s sole CEO. van der Does will retire during Adyen’s 20th anniversary and will remain an advisor to the company, Adyen said in a Monday (Nov. 23) press release. “After 20 years, this is the right [&#8230;] The post Adyen Co-Founder to Retire and Hand Reins to Co-CEO Ingo Uytdehaage appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 23 Nov 2026 23:44:45 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 488
-        },
-        {
-          "id": 1656,
+          "id": 876,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +799,22 @@
           "word_count": 482
         },
         {
-          "id": 1655,
+          "id": 874,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Adyen Co-Founder van der Does Hands Reins to CEO Uytdehaage",
+          "link": "https://www.pymnts.com/personnel/2026/adyen-co-founder-to-retire-and-hand-reins-to-co-ceo-ingo-uytdehaage/",
+          "content": "Adyen has announced a leadership transition in which Co-Founder and Co-CEO Pieter van der Does will retire effective Dec. 31 and Co-CEO Ingo Uytdehaage will become the company’s sole CEO. van der Does will retire during Adyen’s 20th anniversary and will remain an advisor to the company, Adyen said in a Monday (Nov. 23) press release. “After 20 years, this is the right [&#8230;] The post Adyen Co-Founder van der Does Hands Reins to CEO Uytdehaage appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 23 Nov 2026 23:44:45 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 480
+        },
+        {
+          "id": 875,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,22 +829,7 @@
           "word_count": 468
         },
         {
-          "id": 1661,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "PayPal Sets Virtual Card Rules for Agentic Commerce",
-          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/paypal-sets-virtual-card-rules-for-agentic-commerce/",
-          "content": "PayPal’s terms applicable to a new payment type for agentic commerce took effect Monday (Nov. 23), according to updated terms posted by the company. PayPal announced Nov. 10 in a policy update that it would be adding terms applicable to the payment type known as PayPal Checkout — Agentic Virtual Card. This new payment type [&#8230;] The post PayPal Sets Virtual Card Rules for Agentic Commerce appeared first on PYMNTS.com .",
-          "pub_date": "Mon, 23 Nov 2026 20:30:29 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 426
-        },
-        {
-          "id": 1682,
+          "id": 901,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +844,7 @@
           "word_count": 281
         },
         {
-          "id": 1675,
+          "id": 894,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +859,7 @@
           "word_count": 263
         },
         {
-          "id": 1676,
+          "id": 895,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +874,7 @@
           "word_count": 243
         },
         {
-          "id": 1680,
+          "id": 899,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +889,7 @@
           "word_count": 201
         },
         {
-          "id": 93,
+          "id": 96,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +904,7 @@
           "word_count": 186
         },
         {
-          "id": 1671,
+          "id": 890,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +919,7 @@
           "word_count": 178
         },
         {
-          "id": 1669,
+          "id": 888,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +934,7 @@
           "word_count": 149
         },
         {
-          "id": 1663,
+          "id": 882,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,12 +949,12 @@
           "word_count": 142
         },
         {
-          "id": 1664,
+          "id": 883,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Fed president pitches FedNow",
+          "title": "Fed President pitches FedNow",
           "link": "https://www.paymentsdive.com/news/federal-reserve-president-faster-payments-fednow/875321/",
           "content": "Jeff Schmid, who leads the Kansas City Federal Reserve, nudged credit union executives last week to adopt faster payment options, like FedNow.",
           "pub_date": "Mon, 23 Nov 2026 09:20:00 -0500",
@@ -979,7 +964,7 @@
           "word_count": 142
         },
         {
-          "id": 1666,
+          "id": 885,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +979,7 @@
           "word_count": 115
         },
         {
-          "id": 97,
+          "id": 100,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +994,7 @@
           "word_count": 106
         },
         {
-          "id": 1665,
+          "id": 884,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1024,49 +1009,64 @@
           "word_count": 101
         },
         {
-          "id": 75,
-          "source": "HuggingFace Daily Papers",
+          "id": 871,
+          "source": "PYMNTS.com",
           "section": "payment",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
-          "link": "https://arxiv.org/abs/2611.27490",
-          "content": "Most established instance-retrieval benchmarks emphasise landmarks; small sculptures from visually similar series offer a complementary challenge. We introduce Doppeldwarf-306: 1,691 openly licensed photographs of 306 bronze dwarf statues in Wrocław, Poland, many made in themed series that share one style, with the photographer of each image recorded. With no training, nearest-neighbour search over frozen DINOv2 features names the right statue first for 93.1% of leave-one-out queries, and the best of thirteen backbones from seven pretraining paradigms reaches 94.7%. Accuracy falls slowly as candidates are added: for DINOv2, by about 0.8 points each time their number doubles. A natural design for a phone guide compares a photograph only with statues near the user. In simulation this helps, but less than an equal number of randomly chosen statues does, so random subsampling overstates its value; a permutation test ties the penalty to the real layout (p = 0.005). Used as a weight instead of a filter, location raises DINOv2 from 93.4% to 98.7% for a simulated user 25 m from the statue. With the query's photographer withheld, learned local-feature matching raises DINOv2 accuracy from 81",
-          "pub_date": "2026-11-19T19:00:00.000Z",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Commerzbank-Backed CommerzVentures Pursues European AI Startups $54.5M Fund",
+          "link": "https://www.pymnts.com/news/investment-tracker/fintech-investments/2026/commerzbank-backed-commerzventures-pursues-european-ai-startups-54-5m-fund/",
+          "content": "Commerzbank-backed FinTech investor CommerzVentures has announced a €50 million (about $54.5 million) fund that will focus on the intersection of artificial intelligence and financial services together with adjacent sectors such as supply chain and cybersecurity, the company said in a Tuesday (Nov. 24) press release emailed to PYMNTS. CommerzVentures IV (Fund IV) will invest at [&#8230;] The post Commerzbank-Backed CommerzVentures Pursues European AI Startups $54.5M Fund appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 24 Nov 2026 05:01:08 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 506
         },
         {
-          "id": 185,
-          "source": "arXiv cs.CL",
+          "id": 873,
+          "source": "PYMNTS.com",
           "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "AutoOntologyBench: A Task-Grounded Benchmark for Agentic Knowledge Engineering",
-          "link": "https://arxiv.org/abs/2611.27734",
-          "content": "arXiv:2611.27734v1 Announce Type: new Abstract: Foundation-model agents are increasingly extending beyond software engineering (SWE) into autonomous scientific research, where acquiring and integrating domain knowledge remains a critical challenge. Recent industrial advances have increasingly adopted knowledge graphs and ontology-based semantic layers to organize heterogeneous knowledge into reusable representations. We ask: Can autonomous agents construct ontologies that help them solve real tasks, and do they offer measurable benefits over alternative knowledge representations? Existing benchmarks evaluate ontology correctness or agent task success in isolation, leaving the value of autonomously acquired knowledge unresolved. We therefore introduce AutoOntologyBench, a task-grounded benchmark comprising 19,947 audited tasks grounded in 18 real-world knowledge sources across 7 domains, with source-native verification. Spanning Application, Repair, Organization, and Construction, AutoOntologyBench compares nine frontier-model agents under matched knowledge representations. Layered on retrieval, agent-built ontologies add 6.1 points of task success, yet trail an expert-derived refer",
-          "pub_date": "Mon, 23 Nov 2026 00:00:00 -0500",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Anthropic Expands Availability of AI Safety Monitoring With Zero Data Retention",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-expands-availability-of-ai-safety-monitoring-with-zero-data-retention/",
+          "content": "Anthropic’s Enterprise Frontier Safeguards (EFS), which is designed to remain compatible with zero data retention (ZDR) while monitoring for misuse, is being opened in public beta to eligible customers, the company said in a Monday (Nov. 23) product update. Anthropic is making this move after further developing EFS in private beta with more than 100 [&#8230;] The post Anthropic Expands Availability of AI Safety Monitoring With Zero Data Retention appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 24 Nov 2026 00:20:37 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 481
         },
         {
-          "id": 187,
-          "source": "arXiv cs.CL",
+          "id": 879,
+          "source": "PYMNTS.com",
           "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "From Novel Combinations to Informative Absence: Structural permission, communicative opportunity, and form choice in language learning",
-          "link": "https://arxiv.org/abs/2611.27762",
-          "content": "arXiv:2611.27762v1 Announce Type: new Abstract: Language learners must infer which novel expressions are grammatically licensed and when continued absence is evidence against them. Our generative theory unites these capacities via counterfactual expression opportunities, decomposing utterance generation into structural permission, communicative opportunity, and form choice. First, shared predictive continuations recover structural permission for unseen word-construction pairings across 30 artificial grammars (mean AUC 0.945 after 120 sentences). Second, under hierarchical uncertainty, we derive a joint evidence law linking omissions to context diversity and within-context repetition, and an exact finite-sample context-refinement inequality. Thus, observing related expressions calibrates expected use to sharpen negative evidence, and higher expected use can drive steeper posterior declines for stronger-permission candidates (reversing initial order after six omissions in a fixed-rate example). Third, we prove that while raw counts confound semantic availability and form selection, scene-level opportunity observations identify both. Empirically, reanalyzing adult and child artificial",
-          "pub_date": "Mon, 23 Nov 2026 00:00:00 -0500",
+          "tier": "T2",
+          "priority": 4,
+          "title": "AWS CEO Matt Garman Says AI Models Need External Boundaries",
+          "link": "https://www.pymnts.com/news/artificial-intelligence/2026/aws-ceo-matt-garman-says-ai-models-need-external-boundaries/",
+          "content": "Companies already have access to the tools and techniques they need to build trustworthy artificial intelligence systems, Amazon Web Services (AWS) CEO Matt Garman said in a Monday (Nov. 23) blog post. Garman highlighted proven security fundamentals like identity, logging and containment, saying they apply to AI systems. “With the right engineering discipline, you can [&#8230;] The post AWS CEO Matt Garman Says AI Models Need External Boundaries appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 23 Nov 2026 21:02:37 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1200
+          "word_count": 480
+        },
+        {
+          "id": 886,
+          "source": "PaymentsDive",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Travel brands aren’t the only ones that benefit from non-prime credit card partnerships",
+          "link": "https://www.paymentsdive.com/spons/travel-brands-arent-the-only-ones-that-benefit-from-non-prime-credit-card/875363/",
+          "content": "75% of non-prime consumers plan to travel. Here's how brands can earn their loyalty.",
+          "pub_date": "Mon, 23 Nov 2026 05:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 84
         }
       ],
       "quota": {
@@ -1074,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 223,
-      "total_valid": 45,
+      "total_raw": 213,
+      "total_valid": 35,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1862,
-    "dup": 444,
-    "nocontent": 394,
+    "total_raw": 1081,
+    "dup": 243,
+    "nocontent": 396,
     "noise": 8
   }
 }

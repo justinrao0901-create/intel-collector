@@ -17,8 +17,9 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 3,
+      "ok": true,
+      "latest_pub": "2026-11-23"
     },
     "Meta AI Blog": {
       "section": "ai",
@@ -55,7 +56,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 16,
+      "count": 15,
       "ok": true,
       "latest_pub": "2026-11-23"
     },
@@ -75,23 +76,20 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 142,
-      "ok": true,
-      "latest_pub": "2026-11-23"
+      "count": 0,
+      "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 351,
-      "ok": true,
-      "latest_pub": "2026-11-23"
+      "count": 0,
+      "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 304,
-      "ok": true,
-      "latest_pub": "2026-11-23"
+      "count": 0,
+      "ok": true
     },
     "Import AI": {
       "section": "ai",
@@ -109,16 +107,16 @@
     "Latent Space": {
       "section": "ai",
       "method": "rss",
-      "count": 19,
+      "count": 20,
       "ok": true,
-      "latest_pub": "2026-11-21"
+      "latest_pub": "2026-11-24"
     },
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 18,
+      "count": 19,
       "ok": true,
-      "latest_pub": "2026-11-23"
+      "latest_pub": "2026-11-24"
     },
     "Hacker News AI": {
       "section": "ai",
@@ -143,6 +141,55 @@
       "method": "scrape",
       "count": 25,
       "ok": true
+    },
+    "Semianalysis": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2025-09-16"
+    },
+    "Lilian Weng": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-07-04"
+    },
+    "Andrej Karpathy": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-02-12"
+    },
+    "The Gradient": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-02-18"
+    },
+    "Together AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 5,
+      "ok": true,
+      "latest_pub": "2026-11-21"
+    },
+    "Sakana AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 4,
+      "ok": true,
+      "latest_pub": "2026-11-23"
+    },
+    "Amazon Science": {
+      "section": "ai",
+      "method": "rss",
+      "count": 3,
+      "ok": true,
+      "latest_pub": "2026-11-18"
     },
     "Endpoints News": {
       "section": "vaccine",
@@ -362,6 +409,12 @@
       "count": 25,
       "ok": true
     },
+    "BioNTech": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 0,
+      "ok": false
+    },
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
@@ -559,14 +612,21 @@
   "alarms": {
     "fail": [
       "Absci Blog",
-      "Google DeepMind",
+      "BioNTech",
       "Import AI"
     ],
     "sudden_drop": [],
     "persistent_zero": [
+      "Andrej Karpathy",
       "Lancet Digital Health",
       "Lancet Infect Dis",
-      "WHO News"
+      "Lilian Weng",
+      "Semianalysis",
+      "The Gradient",
+      "WHO News",
+      "arXiv cs.AI",
+      "arXiv cs.CL",
+      "arXiv cs.LG"
     ]
   }
 }
