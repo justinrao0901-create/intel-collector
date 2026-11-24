@@ -85,7 +85,13 @@
     {"name":"NMPA / 医药魔方 / CDE","section":"vaccine","tier":"T3","priority":7,"method":"search","window_h":48,"enabled":true,"dual_china":true,"queries":["NMPA 药品批准 疫苗","医药魔方 疫苗 获批","CDE 受理 疫苗"]},
     {"name":"BioNTech","section":"vaccine","tier":"T1","priority":3,"method":"rss","url":"https://investors.biontech.de/rss/news-releases.xml","window_h":336,"enabled":true,"note":"mRNA疫苗大厂官方newsroom"},
     {"name":"Moderna","section":"vaccine","tier":"T1","priority":3,"method":"search","window_h":168,"enabled":true,"queries":["Moderna vaccine news","Moderna mRNA clinical trial"],"note":"mRNA疫苗大厂,newsroom URL变更,转WebSearch"},
-    {"name":"CDC ACIP","section":"vaccine","tier":"T1","priority":1,"method":"search","window_h":168,"enabled":true,"queries":["CDC ACIP vaccine recommendation","CDC immunization update"],"note":"美国免疫决策权威,官网反爬(403),转WebSearch"}
+    {"name":"CDC ACIP","section":"vaccine","tier":"T1","priority":1,"method":"search","window_h":168,"enabled":true,"queries":["CDC ACIP vaccine recommendation","CDC immunization update"],"note":"美国免疫决策权威,官网反爬(403),转WebSearch"},
+    {"name":"Derek Lowe In the Pipeline","section":"vaccine","tier":"T1","priority":2,"method":"rss","url":"https://www.science.org/blogs/pipeline/feed","window_h":720,"enabled":true,"review":true,"note":"顶级药化/生物医药权威评述博客,deep板块核心源"},
+    {"name":"PLoS Pathogens","section":"vaccine","tier":"T1","priority":2,"method":"rss","url":"https://journals.plos.org/plospathogens/feed/atom","window_h":720,"enabled":true,"note":"开放疫苗/病原研究(OA全文可取)"},
+    {"name":"Nature Communications","section":"vaccine","tier":"T1","priority":2,"method":"rss","url":"https://www.nature.com/ncomms.rss","window_h":720,"enabled":true,"note":"开放研究(OA全文可取)"},
+    {"name":"Labiotech.eu","section":"vaccine","tier":"T2","priority":5,"method":"rss","url":"https://www.labiotech.eu/feed/","window_h":336,"enabled":true,"note":"欧洲生物医药产业深度"},
+    {"name":"BioPharm International","section":"vaccine","tier":"T2","priority":5,"method":"rss","url":"https://www.biopharminternational.com/rss","window_h":336,"enabled":true,"note":"疫苗制造/产业化深度"},
+    {"name":"疫苗网","section":"vaccine","tier":"T2","priority":5,"method":"rss","url":"https://www.vaccine.vip/feed","window_h":336,"enabled":true,"dual_china":true,"note":"中国疫苗专业媒体(mRNA肿瘤疫苗/国产平台深度)"}
   ],
 
   "synbio": [
@@ -103,7 +109,8 @@
     {"name":"GEN News","section":"synbio","tier":"T2","priority":4,"method":"search","window_h":168,"enabled":true,"queries":["GEN genetic engineering biotechnology news","合成生物 基因工程"],"note":"SSL握手失败，转WebSearch"},
     {"name":"华大/凯赛/蓝晶/恩和","section":"synbio","tier":"T3","priority":7,"method":"search","window_h":168,"enabled":true,"dual_china":true,"queries":["华大基因 合成生物","凯赛生物","蓝晶微生物","恩和生物"]},
     {"name":"Ginkgo Bioworks","section":"synbio","tier":"T2","priority":4,"method":"search","window_h":168,"enabled":true,"queries":["Ginkgo Bioworks news","Ginkgo Bioworks platform"],"note":"合成生物平台巨头,feed 404,转WebSearch"},
-    {"name":"Twist Bioscience","section":"synbio","tier":"T2","priority":4,"method":"search","window_h":168,"enabled":true,"queries":["Twist Bioscience news","Twist DNA synthesis"],"note":"DNA合成龙头,feed 404,转WebSearch"}
+    {"name":"Twist Bioscience","section":"synbio","tier":"T2","priority":4,"method":"search","window_h":168,"enabled":true,"queries":["Twist Bioscience news","Twist DNA synthesis"],"note":"DNA合成龙头,feed 404,转WebSearch"},
+    {"name":"PLoS Biology","section":"synbio","tier":"T1","priority":2,"method":"rss","url":"https://journals.plos.org/plosbiology/feed/atom","window_h":720,"enabled":true,"note":"开放合成生物研究(OA全文可取)"}
   ],
 
   "cross": [
