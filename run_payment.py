@@ -27,6 +27,14 @@ DEEP_SOURCES = [
     {"name": "Thunes",           "url": "https://www.thunes.com/feed"},
     {"name": "Ledger Insights",  "url": "https://www.ledgerinsights.com/feed/"},
     {"name": "PYMNTS Cross-Border", "url": "https://www.pymnts.com/tag/cross-border-payments/feed/"},
+    {"name": "Fintech Business Weekly", "url": "https://fintechbusinessweekly.substack.com/feed"},
+    {"name": "Fintech Takes", "url": "https://fintechtakes.com/feed"},
+    {"name": "Popular Fintech", "url": "https://www.popularfintech.com/feed"},
+    {"name": "Fintech Wrap Up", "url": "https://www.fintechwrapup.com/feed"},
+    {"name": "Not Boring", "url": "https://www.notboring.co/feed"},
+    {"name": "Castle Island", "url": "https://castleisland.vc/feed"},
+    {"name": "Fintech Brainfood", "url": "https://rss.hiivinternal.com/feeds/SVje5oZrSu.xml"},
+    {"name": "Fintech Blueprint", "url": "https://lex.substack.com/feed"},
     # Circle Blog 无稳定 RSS(已移除),改由日报 payment 段(scrape)+ Layer2 WebSearch 覆盖
 ]
 SCHEDULE_REL = "payment/biweekly-schedule.json"
