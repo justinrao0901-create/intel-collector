@@ -50,22 +50,7 @@
           "word_count": 137
         },
         {
-          "id": 47,
-          "source": "Google DeepMind",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 3,
-          "title": "Finding faster quantum algorithms with agents and formal verification",
-          "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
-          "content": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
-          "pub_date": "Mon, 23 Nov 2026 16:59:40 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 97
-        },
-        {
-          "id": 270,
+          "id": 267,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +65,7 @@
           "word_count": 220
         },
         {
-          "id": 271,
+          "id": 268,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +80,7 @@
           "word_count": 201
         },
         {
-          "id": 273,
+          "id": 270,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +95,7 @@
           "word_count": 193
         },
         {
-          "id": 104,
+          "id": 101,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +110,7 @@
           "word_count": 167
         },
         {
-          "id": 98,
+          "id": 95,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +125,7 @@
           "word_count": 163
         },
         {
-          "id": 94,
+          "id": 91,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +140,22 @@
           "word_count": 150
         },
         {
-          "id": 79,
+          "id": 75,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "What Makes Good Data for Training Coding Agents? A Systematic Study on SWE-Gym",
+          "link": "https://arxiv.org/abs/2611.30207",
+          "content": "Reinforcement learning (RL) trains coding agents on software tasks whose hidden tests decide the reward, yet task collections check these tests only against the reference fix. We ask what makes a task good training data, focusing on the correctness of its reward labels. We audit SWE-Gym with two LLM families, and a suspected error counts only if execution reproduces it. We find that unsolved often means mislabelled: 74% of the tasks that a 9B base model never solves have a test that rejects correct fixes (a false negative), versus 20% of those it sometimes solves. We repair or remove such tasks, and the audited tasks that remain train better policies. At equal size and matched difficulty, models trained on them score 2.4 and 2.7 points higher on held-out tasks from SWE-bench Verified and SWE-bench Pro than models trained on the original tasks, whereas simply dropping the never-solved tasks shows no such gain. We further find that wrong patches that pass (false positives) make up about a quarter of all passing patches, and that new tests that catch a quarter of them do not change held-out scores detectably. A pass rate shows whether a task yields reward, not whether that reward is r",
+          "pub_date": "2026-11-22T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 80,
+          "id": 78,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 280,
-      "total_valid": 78,
+      "total_raw": 277,
+      "total_valid": 77,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 548,
+          "id": 545,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 550,
+          "id": 547,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 552,
+          "id": 549,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 502,
+          "id": 499,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 429
         },
         {
-          "id": 711,
+          "id": 708,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 290
         },
         {
-          "id": 429,
+          "id": 426,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 281
         },
         {
-          "id": 504,
+          "id": 501,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 269
         },
         {
-          "id": 668,
+          "id": 665,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 421
         },
         {
-          "id": 660,
+          "id": 657,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 418
         },
         {
-          "id": 647,
+          "id": 644,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 397
         },
         {
-          "id": 283,
+          "id": 280,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 219
         },
         {
-          "id": 286,
+          "id": 283,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,7 @@
           "word_count": 198
         },
         {
-          "id": 726,
+          "id": 723,
           "source": "BioPharma Dive",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +392,7 @@
           "word_count": 175
         },
         {
-          "id": 302,
+          "id": 299,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +407,7 @@
           "word_count": 134
         },
         {
-          "id": 298,
+          "id": 295,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 848,
+          "id": 832,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 852,
+          "id": 836,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 849,
+          "id": 833,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1199
         },
         {
-          "id": 853,
+          "id": 837,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,52 +494,7 @@
           "word_count": 456
         },
         {
-          "id": 767,
-          "source": "ACS Synthetic Biology",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Issue Editorial Masthead",
-          "link": "https://doi.org/10.1021/sbv015i011_7181911",
-          "content": "ACS Synthetic Biology | DOI: 10.1021/sbv015i011_7181911",
-          "pub_date": "2026-11-20",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 55
-        },
-        {
-          "id": 766,
-          "source": "ACS Synthetic Biology",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Building without Cells: Integrating Biomolecules, Synthetic Materials, and Devices into Cell-Free Systems",
-          "link": "https://doi.org/10.1021/acssynbio.6c00461",
-          "content": "ACS Synthetic Biology | DOI: 10.1021/acssynbio.6c00461",
-          "pub_date": "2026-11-20",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 54
-        },
-        {
-          "id": 768,
-          "source": "ACS Synthetic Biology",
-          "section": "synbio",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Issue Publication Information",
-          "link": "https://doi.org/10.1021/acssynbio.6c00659",
-          "content": "ACS Synthetic Biology | DOI: 10.1021/acssynbio.6c00659",
-          "pub_date": "2026-11-18",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 54
-        },
-        {
-          "id": 799,
+          "id": 783,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +509,7 @@
           "word_count": 173
         },
         {
-          "id": 797,
+          "id": 781,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +524,7 @@
           "word_count": 172
         },
         {
-          "id": 793,
+          "id": 777,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +544,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 106,
-      "total_valid": 31,
-      "total_candidates": 10
+      "total_raw": 93,
+      "total_valid": 18,
+      "total_candidates": 7
     },
     "cross": {
       "candidates": [
         {
-          "id": 439,
+          "id": 436,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +566,7 @@
           "word_count": 498
         },
         {
-          "id": 428,
+          "id": 425,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +581,7 @@
           "word_count": 374
         },
         {
-          "id": 863,
+          "id": 847,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +596,7 @@
           "word_count": 313
         },
         {
-          "id": 315,
+          "id": 312,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +611,7 @@
           "word_count": 230
         },
         {
-          "id": 317,
+          "id": 314,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +626,7 @@
           "word_count": 185
         },
         {
-          "id": 341,
+          "id": 338,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,37 +641,7 @@
           "word_count": 162
         },
         {
-          "id": 772,
-          "source": "ACS Synthetic Biology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "CRISPR-Cas Precision: Principles, Engineering, Applications, and AI-Assisted Design",
-          "link": "https://doi.org/10.1021/acssynbio.6c00663",
-          "content": "ACS Synthetic Biology | DOI: 10.1021/acssynbio.6c00663",
-          "pub_date": "2026-11-14",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 54
-        },
-        {
-          "id": 777,
-          "source": "ACS Synthetic Biology",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Virtual Knockout in the Era of Generative AI: From Intracellular Networks to Spatial and Cross-Modal Functional Simulations",
-          "link": "https://doi.org/10.1021/acssynbio.6c00493",
-          "content": "ACS Synthetic Biology | DOI: 10.1021/acssynbio.6c00493",
-          "pub_date": "2026-11-05",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 54
-        },
-        {
-          "id": 808,
+          "id": 792,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +656,7 @@
           "word_count": 130
         },
         {
-          "id": 284,
+          "id": 281,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -744,6 +669,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 210
+        },
+        {
+          "id": 282,
+          "source": "Endpoints News",
+          "section": "cross",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Healthcare spending on AI surpasses other sectors, report says",
+          "link": "https://endpoints.news/healthcare-spending-on-ai-surpasses-other-sectors-report-says/",
+          "content": "Spending on AI in healthcare hit $3.7 billion in 2026, up from $1.5 billion in 2025. According to a report from Menlo Ventures, healthcare is spending more than other industries on ...",
+          "pub_date": "Mon, 23 Nov 2026 18:05:58 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 184
+        },
+        {
+          "id": 286,
+          "source": "Endpoints News",
+          "section": "cross",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Avenzo begins public life, seeks to rival Bristol Myers' EGFRxHER3 bispecific",
+          "link": "https://endpoints.news/avenzo-begins-public-life-seeks-to-rival-bristol-myers-egfrxher3-bispecific/",
+          "content": "Avenzo Therapeutics, one of the first US biotechs to go all in on the China in-licensing model four years ago, began trading on the Nasdaq on Monday after completing its reverse ...",
+          "pub_date": "Mon, 23 Nov 2026 15:43:01 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 181
         }
       ],
       "quota": {
@@ -751,8 +706,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 34,
-      "total_valid": 24,
+      "total_raw": 32,
+      "total_valid": 22,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +724,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 923,
+          "id": 907,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +739,7 @@
           "word_count": 543
         },
         {
-          "id": 876,
+          "id": 860,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +754,7 @@
           "word_count": 482
         },
         {
-          "id": 874,
+          "id": 858,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +769,7 @@
           "word_count": 480
         },
         {
-          "id": 875,
+          "id": 859,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +784,7 @@
           "word_count": 468
         },
         {
-          "id": 901,
+          "id": 885,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +799,7 @@
           "word_count": 281
         },
         {
-          "id": 894,
+          "id": 878,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +814,7 @@
           "word_count": 263
         },
         {
-          "id": 895,
+          "id": 879,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +829,7 @@
           "word_count": 243
         },
         {
-          "id": 899,
+          "id": 883,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +844,7 @@
           "word_count": 201
         },
         {
-          "id": 96,
+          "id": 93,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -904,7 +859,7 @@
           "word_count": 186
         },
         {
-          "id": 890,
+          "id": 874,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +874,7 @@
           "word_count": 178
         },
         {
-          "id": 888,
+          "id": 872,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +889,7 @@
           "word_count": 149
         },
         {
-          "id": 882,
+          "id": 866,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +904,7 @@
           "word_count": 142
         },
         {
-          "id": 883,
+          "id": 867,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,7 +919,7 @@
           "word_count": 142
         },
         {
-          "id": 885,
+          "id": 869,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -979,7 +934,7 @@
           "word_count": 115
         },
         {
-          "id": 100,
+          "id": 97,
           "source": "TechCrunch AI",
           "section": "payment",
           "tier": "T2",
@@ -994,7 +949,7 @@
           "word_count": 106
         },
         {
-          "id": 884,
+          "id": 868,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +964,7 @@
           "word_count": 101
         },
         {
-          "id": 871,
+          "id": 855,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1024,7 +979,7 @@
           "word_count": 506
         },
         {
-          "id": 873,
+          "id": 857,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1039,7 +994,7 @@
           "word_count": 481
         },
         {
-          "id": 879,
+          "id": 863,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1054,7 +1009,7 @@
           "word_count": 480
         },
         {
-          "id": 886,
+          "id": 870,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1080,9 +1035,9 @@
     }
   },
   "meta": {
-    "total_raw": 1081,
+    "total_raw": 1065,
     "dup": 243,
-    "nocontent": 396,
+    "nocontent": 394,
     "noise": 8
   }
 }

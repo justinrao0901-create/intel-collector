@@ -17,9 +17,8 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 3,
-      "ok": true,
-      "latest_pub": "2026-11-23"
+      "count": 0,
+      "ok": false
     },
     "Meta AI Blog": {
       "section": "ai",
@@ -432,8 +431,8 @@
     "ACS Synthetic Biology": {
       "section": "synbio",
       "method": "api",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Metabolic Engineering": {
       "section": "synbio",
@@ -611,8 +610,10 @@
   },
   "alarms": {
     "fail": [
+      "ACS Synthetic Biology",
       "Absci Blog",
       "BioNTech",
+      "Google DeepMind",
       "Import AI"
     ],
     "sudden_drop": [],
