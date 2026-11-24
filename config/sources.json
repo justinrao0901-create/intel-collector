@@ -33,7 +33,14 @@
     {"name":"DeepSeek","section":"ai","tier":"T1","priority":3,"method":"search","window_h":168,"enabled":true,"dual_china":true,"queries":["DeepSeek 最新模型发布","DeepSeek new model release"],"note":"无稳定blog，WebSearch"},
     {"name":"智谱 Z.ai (GLM)","section":"ai","tier":"T1","priority":3,"method":"search","window_h":168,"enabled":true,"dual_china":true,"queries":["智谱 GLM 发布","Zhipu Z.ai GLM release"]},
     {"name":"Moonshot Kimi","section":"ai","tier":"T1","priority":3,"method":"search","window_h":168,"enabled":true,"dual_china":true,"queries":["Moonshot Kimi 发布","Kimi K2 release"]},
-    {"name":"The Information / Stratechery / Semafor","section":"ai","tier":"T2","priority":4,"method":"search","window_h":36,"enabled":true,"queries":["The Information AI","Stratechery AI","Semafor Technology"],"note":"付费墙"}
+    {"name":"The Information / Stratechery / Semafor","section":"ai","tier":"T2","priority":4,"method":"search","window_h":36,"enabled":true,"queries":["The Information AI","Stratechery AI","Semafor Technology"],"note":"付费墙"},
+    {"name":"Semianalysis","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://semianalysis.com/feed/","window_h":336,"enabled":true,"note":"AI算力/芯片/供应链权威深度(投资视角);feed需尾斜杠"},
+    {"name":"Lilian Weng","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://lilianweng.github.io/index.xml","window_h":720,"enabled":true,"note":"OpenAI研究员,LLM/Agent/RAG圣经级深度博客,月更低频"},
+    {"name":"Andrej Karpathy","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://karpathy.github.io/feed.xml","window_h":720,"enabled":true,"note":"顶级,低频"},
+    {"name":"The Gradient","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://thegradient.pub/rss/","window_h":336,"enabled":true,"note":"AI深度技术综述,深入浅出"},
+    {"name":"Together AI","section":"ai","tier":"T2","priority":4,"method":"rss","url":"https://www.together.ai/blog/rss.xml","window_h":168,"enabled":true,"note":"AI推理基础设施公司"},
+    {"name":"Sakana AI","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://sakana.ai/feed","window_h":336,"enabled":true,"note":"日本AI(进化算法/基础模型)"},
+    {"name":"Amazon Science","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://www.amazon.science/index.rss","window_h":336,"enabled":true,"note":"亚马逊科研"}
   ],
 
   "vaccine": [
@@ -74,7 +81,8 @@
     {"name":"GAVI / CEPI / WHO ICTRP","section":"vaccine","tier":"T1","priority":1,"method":"search","window_h":336,"enabled":true,"queries":["GAVI vaccine news","CEPI funding announcement","WHO prequalification vaccine"]},
     {"name":"动脉网","section":"vaccine","tier":"T3","priority":7,"method":"remote","url":"https://www.vbdata.cn/","window_h":36,"enabled":true,"dual_china":true,"note":"Mac够不到，Cowork web_fetch"},
     {"name":"丁香园","section":"vaccine","tier":"T3","priority":7,"method":"remote","url":"https://www.dxy.cn/bbs/newweb/pc/home","window_h":36,"enabled":true,"dual_china":true},
-    {"name":"NMPA / 医药魔方 / CDE","section":"vaccine","tier":"T3","priority":7,"method":"search","window_h":48,"enabled":true,"dual_china":true,"queries":["NMPA 药品批准 疫苗","医药魔方 疫苗 获批","CDE 受理 疫苗"]}
+    {"name":"NMPA / 医药魔方 / CDE","section":"vaccine","tier":"T3","priority":7,"method":"search","window_h":48,"enabled":true,"dual_china":true,"queries":["NMPA 药品批准 疫苗","医药魔方 疫苗 获批","CDE 受理 疫苗"]},
+    {"name":"BioNTech","section":"vaccine","tier":"T1","priority":3,"method":"rss","url":"https://investors.biontech.de/rss/news-releases.xml","window_h":336,"enabled":true,"note":"mRNA疫苗大厂官方newsroom"}
   ],
 
   "synbio": [
