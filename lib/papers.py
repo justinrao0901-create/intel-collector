@@ -11,7 +11,7 @@
 """
 from __future__ import annotations
 import os, re, json, time, glob, argparse
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from . import util
 from .fetch import compute_alarms   # 复用日报那套产量告警逻辑
 
@@ -40,6 +40,27 @@ CHINA_KW = ("tsinghua", "peking university", "chinese academy", "shanghai ai lab
             "iflytek", "megvii", "kuaishou", "xiaomi", "meituan", "netease",
             "中国", "清华", "北大", "中科院", "米哈游", "中国电信", "蚂蚁", "阶跃", "百川", "智源",
             "商汤", "讯飞", "旷视", "快手", "小米", "美团", "网易", "混元", "通义")
+
+# 深度文章源(7 家白名单 RSS,宁缺毋滥)。Anthropic/Meta AI 无稳定 RSS、走生成端 WebSearch 补查。
+TECH_BLOG_SOURCES = [
+    ("OpenAI", "https://openai.com/news/rss.xml", "official"),
+    ("Google DeepMind", "https://deepmind.google/blog/rss.xml", "official"),
+    ("NVIDIA Developer", "https://developer.nvidia.com/blog/feed", "official"),
+    ("Microsoft Research", "https://www.microsoft.com/en-us/research/feed/", "official"),
+    ("Simon Willison", "https://simonwillison.net/atom/entries/", "independent"),
+    ("Sebastian Raschka", "https://magazine.sebastianraschka.com/feed", "independent"),
+    ("Chip Huyen", "https://huyenchip.com/feed.xml", "independent"),
+]
+
+# 深度文标题信号(保留) vs 新闻信号(过滤)。原则:宁可漏(生成端补)不可误(污染板块)。
+DEEP_KW = ("technical report", "model card", "system card", "how we built", "how we train",
+           "scaling laws", "deep dive", "behind the scenes", "lessons learned", "lessons from",
+           "an analysis of", "architecture", "benchmark", "interpretability", "distillation",
+           "pretraining", "post-training", "alignment", "reinforcement learning",
+           "inference", "latency", "throughput", "quantization")
+NEWS_KW = ("announce", "partnership", "collaboration", "funding", "investment",
+           "acquire", "acquisition", "hiring", "welcome", "now available", "join us",
+           "expansion", "milestone", "celebrate", "we're excited", "company news")
 
 
 def _is_survey(text):
@@ -134,6 +155,74 @@ def fetch_besteffort(http):
     return out
 
 
+def _affil_is_china(authors):
+    """判断作者机构是否含中国机构(治本中国论文识别:标题/摘要不含机构名时靠作者 affiliation)。"""
+    for a in authors or []:
+        affs = a.get("affiliations") or []
+        for aff in affs:
+            t = ""
+            if isinstance(aff, str):
+                t = aff.lower()
+            elif isinstance(aff, dict):
+                t = (aff.get("name") or "").lower()
+            if t and (any(k in t for k in CHINA_KW) or re.search(r"[一-鿿]", t)):
+                return True
+    return False
+
+
+def _is_deep(title, summary):
+    """四层筛选的②标题信号 + ③正文密度(①来源白名单在 TECH_BLOG_SOURCES,④生成端精筛)。"""
+    t = (title + " " + summary).lower()
+    if any(k in t for k in NEWS_KW):      # 新闻信号 → 过滤
+        return False
+    if any(k in t for k in DEEP_KW):      # 深度文信号 → 保留
+        return True
+    # 兜底:正文长度 + 技术词密度(偏保守,宁可漏)
+    tech = sum(1 for k in ("model", "architecture", "training", "benchmark", "method",
+                           "system", "agent", "llm", "token", "parameter", "inference")
+               if k in t)
+    return len(t) > 600 and tech >= 2
+
+
+def fetch_tech_blogs(http, end, days=7):
+    """抓深度文章源(7 家白名单 RSS)+ 四层筛选(①白名单②标题③密度;④生成端精筛)+ 时间窗过滤。
+
+    end: naive datetime(END 当天)。窗口 = END 往前 days 天(留 1 天余量,宁多勿漏,生成端再精筛)。
+    """
+    end_utc = end.replace(tzinfo=timezone.utc) if end.tzinfo is None else end.astimezone(timezone.utc)
+    anchor = end_utc + timedelta(days=1)          # 锚点 = END 次日 00:00,覆盖 END 当天全天
+    window_h = (days + 1) * 24                    # 留 1 天余量
+    out = {}
+    for name, url, kind in TECH_BLOG_SOURCES:
+        txt, ok = util.http_get(url, http["timeout_s"], 2, http["user_agent"])
+        if not ok:
+            continue
+        for it in util.parse_feed(txt):
+            title = (it.get("title") or "").strip()
+            summary = it.get("summary") or ""
+            link = it.get("link") or ""
+            if not title or not link:
+                continue
+            pub = util.parse_date(it.get("pub"))
+            if pub is None:
+                continue
+            if pub > anchor:                                   # 未来文章(END 之后)剔除
+                continue
+            if not util.within_window(pub, window_h, anchor):  # 时间窗过滤(剔历史文章)
+                continue
+            if not _is_deep(title, summary):
+                continue
+            key = util.normalize_url(link) or title[:60].lower()
+            if key in out:
+                continue
+            out[key] = {"title": title, "link": link, "summary": util.strip_html(summary)[:300],
+                        "source": name, "kind": kind,
+                        "pub": pub.strftime("%Y-%m-%d") if pub else ""}
+    items = list(out.values())
+    items.sort(key=lambda x: x.get("pub", ""), reverse=True)
+    return items
+
+
 def enrich_ss(papers, http, limit=40):
     """Semantic Scholar 补引用数(无 key,限流 + 重试,best-effort)。只查前 limit 篇有 arXiv id 的。"""
     n = 0
@@ -144,7 +233,7 @@ def enrich_ss(papers, http, limit=40):
         if not re.match(r"^\d{4}\.\d{4,5}$", str(pid)):
             continue
         n += 1
-        url = f"https://api.semanticscholar.org/graph/v1/paper/arXiv:{pid}?fields=citationCount,influentialCitationCount,tldr"
+        url = f"https://api.semanticscholar.org/graph/v1/paper/arXiv:{pid}?fields=citationCount,influentialCitationCount,tldr,authors.affiliations"
         txt, ok = util.http_get(url, http["timeout_s"], 1, http["user_agent"])
         if ok:
             try:
@@ -152,6 +241,9 @@ def enrich_ss(papers, http, limit=40):
                 p["citations"] = d.get("citationCount")
                 if d.get("tldr") and not p.get("abstract"):
                     p["abstract"] = (d["tldr"].get("text") or "")[:1200]
+                # 作者机构识别:标题/摘要不含机构名时靠 affiliation 补 china(治本漏标)
+                if _affil_is_china(d.get("authors")):
+                    p["_china_affil"] = True
             except Exception:
                 pass
         time.sleep(1.1)  # 无 key 限流,温柔点
@@ -203,7 +295,7 @@ def collect(end_date, days=7):
     for p in papers:
         text = (p.get("title", "") + " " + p.get("abstract", ""))
         p["is_survey"] = _is_survey(text)
-        p["is_china"] = _is_china(text)
+        p["is_china"] = _is_china(text) or p.get("_china_affil", False)
         score = p.get("upvotes", 0) * 3 + p.get("hn_points", 0) * 1
         if p.get("citations"):
             score += min(p["citations"], 200) * 0.5      # 高引(综述)加分,封顶
@@ -222,13 +314,20 @@ def collect(end_date, days=7):
     path = util.path_for("prepared", f"weekly-papers-{end_date}.json")
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
+    # 深度文章源(7 家白名单 RSS + 四层筛选 + 时间窗过滤)
+    blogs = fetch_tech_blogs(http, end, days)
+    blog_path = util.path_for("prepared", f"tech-blogs-{end_date}.json")
+    json.dump({"end": end_date, "days": days, "total": len(blogs), "blogs": blogs},
+              open(blog_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"  深度文章源... {len(blogs)} 篇(过滤后)")
+
     # 论文源体检告警(对比上一份产量)
     alarms = compute_alarms(src_health, _prior_papers_health(end_date))
     hpath = util.path_for("prepared", f"papers-health-{end_date}.json")
     json.dump({"end": end_date, "sources": src_health, "alarms": alarms}, open(hpath, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
     print(f"\n✅ 论文候选池 → {path}")
-    print(f"   总抓取 {len(papers)} → 候选池 {len(pool)}(综述 {out['surveys']} / 中国 {out['china']})")
+    print(f"   总抓取 {len(papers)} → 候选池 {len(pool)}(综述 {out['surveys']} / 中国 {out['china']}) | 深度文章 {len(blogs)}")
     if alarms["fail"] or alarms["sudden_drop"] or alarms["persistent_zero"]:
         print("⚠️ 论文源健康告警:")
         if alarms["sudden_drop"]: print(f"   🔴 骤降归零(疑似临时失败,论文池可能缩水): {alarms['sudden_drop']}")
