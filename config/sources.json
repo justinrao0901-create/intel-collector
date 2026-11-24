@@ -40,7 +40,8 @@
     {"name":"The Gradient","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://thegradient.pub/rss/","window_h":336,"enabled":true,"note":"AI深度技术综述,深入浅出"},
     {"name":"Together AI","section":"ai","tier":"T2","priority":4,"method":"rss","url":"https://www.together.ai/blog/rss.xml","window_h":168,"enabled":true,"note":"AI推理基础设施公司"},
     {"name":"Sakana AI","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://sakana.ai/feed","window_h":336,"enabled":true,"note":"日本AI(进化算法/基础模型)"},
-    {"name":"Amazon Science","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://www.amazon.science/index.rss","window_h":336,"enabled":true,"note":"亚马逊科研"}
+    {"name":"Amazon Science","section":"ai","tier":"T2","priority":5,"method":"rss","url":"https://www.amazon.science/index.rss","window_h":336,"enabled":true,"note":"亚马逊科研"},
+    {"name":"xAI/Grok","section":"ai","tier":"T1","priority":3,"method":"search","window_h":168,"enabled":true,"queries":["xAI Grok model release","xAI news announcement"],"note":"重要AI玩家,无稳定RSS,转WebSearch"}
   ],
 
   "vaccine": [
@@ -82,7 +83,9 @@
     {"name":"动脉网","section":"vaccine","tier":"T3","priority":7,"method":"remote","url":"https://www.vbdata.cn/","window_h":36,"enabled":true,"dual_china":true,"note":"Mac够不到，Cowork web_fetch"},
     {"name":"丁香园","section":"vaccine","tier":"T3","priority":7,"method":"remote","url":"https://www.dxy.cn/bbs/newweb/pc/home","window_h":36,"enabled":true,"dual_china":true},
     {"name":"NMPA / 医药魔方 / CDE","section":"vaccine","tier":"T3","priority":7,"method":"search","window_h":48,"enabled":true,"dual_china":true,"queries":["NMPA 药品批准 疫苗","医药魔方 疫苗 获批","CDE 受理 疫苗"]},
-    {"name":"BioNTech","section":"vaccine","tier":"T1","priority":3,"method":"rss","url":"https://investors.biontech.de/rss/news-releases.xml","window_h":336,"enabled":true,"note":"mRNA疫苗大厂官方newsroom"}
+    {"name":"BioNTech","section":"vaccine","tier":"T1","priority":3,"method":"rss","url":"https://investors.biontech.de/rss/news-releases.xml","window_h":336,"enabled":true,"note":"mRNA疫苗大厂官方newsroom"},
+    {"name":"Moderna","section":"vaccine","tier":"T1","priority":3,"method":"search","window_h":168,"enabled":true,"queries":["Moderna vaccine news","Moderna mRNA clinical trial"],"note":"mRNA疫苗大厂,newsroom URL变更,转WebSearch"},
+    {"name":"CDC ACIP","section":"vaccine","tier":"T1","priority":1,"method":"search","window_h":168,"enabled":true,"queries":["CDC ACIP vaccine recommendation","CDC immunization update"],"note":"美国免疫决策权威,官网反爬(403),转WebSearch"}
   ],
 
   "synbio": [
@@ -98,7 +101,9 @@
     {"name":"Nucleic Acids Research","section":"synbio","tier":"T1","priority":2,"method":"rss","url":"https://academic.oup.com/rss/site_5127/3091.xml","window_h":336,"enabled":true,"validate":true},
     {"name":"Nature Reviews Bioengineering","section":"synbio","tier":"T1","priority":2,"method":"rss","url":"https://www.nature.com/natrevbioeng.rss","window_h":720,"enabled":true,"review":true},
     {"name":"GEN News","section":"synbio","tier":"T2","priority":4,"method":"search","window_h":168,"enabled":true,"queries":["GEN genetic engineering biotechnology news","合成生物 基因工程"],"note":"SSL握手失败，转WebSearch"},
-    {"name":"华大/凯赛/蓝晶/恩和","section":"synbio","tier":"T3","priority":7,"method":"search","window_h":168,"enabled":true,"dual_china":true,"queries":["华大基因 合成生物","凯赛生物","蓝晶微生物","恩和生物"]}
+    {"name":"华大/凯赛/蓝晶/恩和","section":"synbio","tier":"T3","priority":7,"method":"search","window_h":168,"enabled":true,"dual_china":true,"queries":["华大基因 合成生物","凯赛生物","蓝晶微生物","恩和生物"]},
+    {"name":"Ginkgo Bioworks","section":"synbio","tier":"T2","priority":4,"method":"search","window_h":168,"enabled":true,"queries":["Ginkgo Bioworks news","Ginkgo Bioworks platform"],"note":"合成生物平台巨头,feed 404,转WebSearch"},
+    {"name":"Twist Bioscience","section":"synbio","tier":"T2","priority":4,"method":"search","window_h":168,"enabled":true,"queries":["Twist Bioscience news","Twist DNA synthesis"],"note":"DNA合成龙头,feed 404,转WebSearch"}
   ],
 
   "cross": [
@@ -137,6 +142,8 @@
     {"name":"SWIFT","section":"payment","tier":"T1","priority":1,"method":"search","window_h":168,"enabled":true,"queries":["SWIFT news announcement","SWIFT cross-border payment ISO 20022"],"note":"跨境支付基础设施,官网反爬(403),转WebSearch"},
     {"name":"Adyen","section":"payment","tier":"T1","priority":3,"method":"search","window_h":72,"enabled":true,"queries":["Adyen latest news announcement","Adyen agentic payments partnership"],"note":"欧洲支付巨头,无稳定RSS,转WebSearch"},
     {"name":"Wise","section":"payment","tier":"T1","priority":3,"method":"search","window_h":72,"enabled":true,"queries":["Wise news announcement","Wise cross-border payment update"],"note":"跨境汇款巨头,Atom难定位,转WebSearch"},
-    {"name":"Airwallex","section":"payment","tier":"T2","priority":4,"method":"search","window_h":72,"enabled":true,"queries":["Airwallex news announcement","Airwallex cross-border payment"],"note":"跨境支付同业(亚太),转WebSearch"}
+    {"name":"Airwallex","section":"payment","tier":"T2","priority":4,"method":"search","window_h":72,"enabled":true,"queries":["Airwallex news announcement","Airwallex cross-border payment"],"note":"跨境支付同业(亚太),转WebSearch"},
+    {"name":"Ripple","section":"payment","tier":"T2","priority":4,"method":"search","window_h":72,"enabled":true,"queries":["Ripple stablecoin RLUSD news","Ripple cross-border payment"],"note":"稳定币跨境支付,feed 404,转WebSearch"},
+    {"name":"Mastercard Newsroom","section":"payment","tier":"T1","priority":3,"method":"search","window_h":72,"enabled":true,"queries":["Mastercard news announcement","Mastercard payment innovation"],"note":"卡组织官方,官网反爬(403),转WebSearch"}
   ]
 }
