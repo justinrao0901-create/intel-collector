@@ -65,7 +65,7 @@
           "word_count": 97
         },
         {
-          "id": 271,
+          "id": 270,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 220
         },
         {
-          "id": 272,
+          "id": 271,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 201
         },
         {
-          "id": 274,
+          "id": 273,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -160,9 +160,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Typhoon OCR 2: From Thai Document Transcription to Multilingual, Multi-Task OCR",
-          "link": "https://arxiv.org/abs/2611.27494",
-          "content": "Typhoon OCR 1.5 focused on reading Thai documents. However, in real-world workflows, users often need to extract specific information or preserve the structure of an entire page for further processing. Typhoon OCR 2 handles both tasks in a single model, with prompt-driven extraction and structured full-page parsing. Full-page parsing covers Thai, English, and Chinese. We release compact 2B and 0.8B models adapted from open document parsers through supervised fine-tuning on curated Thai and public multilingual data, followed by Group Relative Policy Optimization (GRPO) with task rewards and a rule penalizing unfinished responses. Among evaluated open models, Typhoon OCR 2 2B scores highest on Thai MDPBench (80.7 versus 68.9 for Typhoon OCR 1.5) and on ThaiOCRBench (59.91 versus 40.45), which covers recognition, extraction, and document understanding. The 2B model remains close to its base on English olmOCR-bench (84.7 versus 84.4) and on OmniDocBench, which evaluates English and Chinese together (90.97 versus 91.03). On MDPBench, GRPO reduces the mean share of pages with repetition loops for the 2B model from 3.2% to 0.7%, with a smaller and statistically uncertain score gain for th",
+          "title": "RUIBench: What Makes a Good Robot-Use Interface?",
+          "link": "https://arxiv.org/abs/2611.31115",
+          "content": "Foundation models can reason about complex physical tasks, yet translating this intelligence into reliable robot execution remains challenging. We argue that a critical, often overlooked factor is the robot-use interface (RUI), which determines how agents express and execute physical actions. To systematically study its impact, we introduce RUIBench, comprising 30 manipulation tasks across five suites spanning world knowledge, in-context learning, discovery, dynamic interaction, and contact-rich manipulation. We further develop RUIKit, a unified framework that crosses six action abstractions with two interaction forms, yielding 13 interfaces under shared perception and control. In simulation, changing only the RUI shifts a frontier agent's success rate from 45% to 81%, and that of a fine-tuned 4B model from 13% to 47%. Our analysis reveals that effective interfaces reduce unnecessary decisions while preserving essential feedback, with their benefits shaped by agent behavior and physical uncertainty. We further uncover a verification gap, where agents frequently declare success despite observable failures, revealing the need for task-level verification beyond individual actions. Tog",
           "pub_date": "2026-11-22T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -170,15 +170,15 @@
           "word_count": 1200
         },
         {
-          "id": 81,
+          "id": 80,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "How Complete Must an Environment Be to Train a Capable GUI Agent?",
-          "link": "https://arxiv.org/abs/2611.23946",
-          "content": "Graphical user interface (GUI) agents are widely trained in executable GUI environments. To lower cost, build environments in batches, and reduce manual effort, each work trades away part of the environment through its construction choices. We describe these choices along three dimensions: reward coverage, the goal-reaching trajectories the verifier rewards; data coverage, the application data the agent is exposed to beyond what the task reads or writes; and feature coverage, the application features beyond what the task uses. Existing works set each dimension on engineering grounds, but they do not measure its effect on training. How complete must an environment be to train a capable agent, and along which dimensions? In MobileGym, we adjust each dimension separately, train Qwen3-VL-4B-Instruct, and evaluate every policy in the original full environment. A verifier that rewards only one reference path lowers success by 10.53 points, and removing unneeded records also lowers success. Pruning unneeded features instead raises success from 51.61% to 56.13%, entirely on tasks whose environments it left unchanged. The gain reverses when each episode is weighted equally and vanishes when",
-          "pub_date": "2026-11-17T19:00:00.000Z",
+          "title": "WorldLeague: Benchmarking Physical Agency",
+          "link": "https://arxiv.org/abs/2611.30989",
+          "content": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's Physical Agency Profile. Among 13 representative AI systems, Claude Fa",
+          "pub_date": "2026-11-22T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 281,
-      "total_valid": 79,
+      "total_raw": 280,
+      "total_valid": 78,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 549,
+          "id": 548,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 551,
+          "id": 550,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 553,
+          "id": 552,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 503,
+          "id": 502,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 429
         },
         {
-          "id": 712,
+          "id": 711,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 290
         },
         {
-          "id": 430,
+          "id": 429,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 281
         },
         {
-          "id": 505,
+          "id": 504,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 269
         },
         {
-          "id": 669,
+          "id": 668,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 421
         },
         {
-          "id": 661,
+          "id": 660,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 418
         },
         {
-          "id": 648,
+          "id": 647,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 397
         },
         {
-          "id": 284,
+          "id": 283,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 219
         },
         {
-          "id": 287,
+          "id": 286,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,7 +377,22 @@
           "word_count": 198
         },
         {
-          "id": 303,
+          "id": 726,
+          "source": "BioPharma Dive",
+          "section": "vaccine",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Kymera eczema pill meets goals in mid-stage trial",
+          "link": "https://www.biopharmadive.com/news/kymera-eczema-pill-phase2-data-protein-degrader-dupixent-ebglyss/875462/",
+          "content": "The protein degrader drug showed \"biologic-like efficacy,\" according to Wall Street analysts who argued it could challenge Sanofi and Regeneron&rsquo;s market leader Dupixent.",
+          "pub_date": "Mon, 23 Nov 2026 09:53:55 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 175
+        },
+        {
+          "id": 302,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -392,7 +407,7 @@
           "word_count": 134
         },
         {
-          "id": 299,
+          "id": 298,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 121
-        },
-        {
-          "id": 440,
-          "source": "Immunity",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Longitudinal mapping reveals stromal-immune mechanisms underlying reversal of bone marrow fibrosis in myelofibrosis",
-          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00443-7?rss=yes",
-          "content": "Benabid et al. map the human bone marrow (BM) microenvironment during myelofibrosis progression and reversal after allogeneic hematopoietic stem cell transplantation (allo-HSCT) and find early remodeling of fibrotic stromal-immune interactions upon allo-HSCT. Adipogenic CXCL12-abundant reticular cells and SPP1+ macrophages emerge as key actors in the BM niche, and phosphodiesterase-5A as a therapeutically targetable driver of fibrosis, opening avenues for non-transplant antifibrotic therapies.",
-          "pub_date": "2026-11-23",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 498
         }
       ],
       "quota": {
@@ -427,8 +427,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 472,
-      "total_valid": 293,
+      "total_raw": 473,
+      "total_valid": 294,
       "total_candidates": 15
     },
     "synbio": {
@@ -596,7 +596,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 440,
+          "id": 439,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 498
         },
         {
-          "id": 429,
+          "id": 428,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 313
         },
         {
-          "id": 316,
+          "id": 315,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 230
         },
         {
-          "id": 318,
+          "id": 317,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 185
         },
         {
-          "id": 342,
+          "id": 341,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 130
         },
         {
-          "id": 285,
+          "id": 284,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -954,7 +954,7 @@
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Fed President pitches FedNow",
+          "title": "Fed president pitches FedNow",
           "link": "https://www.paymentsdive.com/news/federal-reserve-president-faster-payments-fednow/875321/",
           "content": "Jeff Schmid, who leads the Kansas City Federal Reserve, nudged credit union executives last week to adopt faster payment options, like FedNow.",
           "pub_date": "Mon, 23 Nov 2026 09:20:00 -0500",

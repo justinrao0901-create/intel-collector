@@ -471,6 +471,59 @@
       "dual_china": false,
       "window_h": 72,
       "note": "卡组织官方,官网反爬(403),转WebSearch"
+    },
+    {
+      "name": "PingPong",
+      "section": "payment",
+      "method": "remote",
+      "url": "https://www.pingpongx.com/",
+      "queries": [],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "跨境支付同业(对标),中文源只归payment;Mac够不到,Cowork web_fetch"
+    },
+    {
+      "name": "连连支付(LianLian)",
+      "section": "payment",
+      "method": "remote",
+      "url": "https://www.lianlianpay.com/",
+      "queries": [],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "跨境支付同业(对标);Mac够不到,Cowork web_fetch"
+    },
+    {
+      "name": "未央网",
+      "section": "payment",
+      "method": "remote",
+      "url": "https://www.weiyangx.com/",
+      "queries": [],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "支付/金融科技垂直;Mac够不到,Cowork web_fetch"
+    },
+    {
+      "name": "零壹财经",
+      "section": "payment",
+      "method": "remote",
+      "url": "https://www.01caijing.com/",
+      "queries": [],
+      "dual_china": false,
+      "window_h": 72,
+      "note": "金融科技/支付研究;Mac够不到,Cowork web_fetch"
+    },
+    {
+      "name": "霞光社",
+      "section": "payment",
+      "method": "search",
+      "url": null,
+      "queries": [
+        "霞光社 出海支付",
+        "霞光社 跨境"
+      ],
+      "dual_china": false,
+      "window_h": 72,
+      "note": ""
     }
   ]
 }
