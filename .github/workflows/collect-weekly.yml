@@ -47,6 +47,7 @@ jobs:
           DATE=$(date +%F)
           cd prepared
           python3 -c "import json; d=json.load(open('weekly-papers-$DATE.json')); d['date']='$DATE'; json.dump(d, open('latest-weekly-papers.json','w'), ensure_ascii=False)"
+          python3 -c "import json; d=json.load(open('tech-blogs-$DATE.json')); d['date']='$DATE'; json.dump(d, open('latest-tech-blogs.json','w'), ensure_ascii=False)" 2>/dev/null || echo "tech-blogs 未产出(深度文章源无新内容)"
           cp "papers-health-$DATE.json"  latest-papers-health.json 2>/dev/null || true
 
       - name: Encrypt full discovery evidence before any public step
@@ -67,6 +68,7 @@ jobs:
           git config user.name  "intel-collector-bot"
           git config user.email "intel-collector-bot@users.noreply.github.com"
           git add prepared/weekly-papers-"$DATE".json prepared/latest-weekly-papers.json 2>/dev/null || true
+          git add prepared/tech-blogs-"$DATE".json prepared/latest-tech-blogs.json 2>/dev/null || true
           git add prepared/papers-health-"$DATE".json prepared/latest-papers-health.json 2>/dev/null || true
           # Refuse a successful commit/Pages deploy that loses its encrypted archive.
           DISCOVERY_PUBLIC_DIR="prepared/discovery/${DISCOVERY_ARCHIVE_PROFILE}/${DISCOVERY_ARCHIVE_DATE}/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
