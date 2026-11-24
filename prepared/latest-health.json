@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 24,
+      "count": 21,
       "ok": true,
       "latest_pub": "2026-11-23"
     },
@@ -17,8 +17,9 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 3,
+      "ok": true,
+      "latest_pub": "2026-11-23"
     },
     "Meta AI Blog": {
       "section": "ai",
@@ -96,8 +97,9 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-23"
     },
     "Interconnects": {
       "section": "ai",
@@ -154,8 +156,8 @@
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "STAT News": {
       "section": "vaccine",
@@ -194,7 +196,7 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 23,
+      "count": 22,
       "ok": true,
       "latest_pub": "2026-11-21"
     },
@@ -208,7 +210,7 @@
     "Cell": {
       "section": "vaccine",
       "method": "rss",
-      "count": 11,
+      "count": 9,
       "ok": true,
       "latest_pub": "2026-11-23"
     },
@@ -236,21 +238,21 @@
     "JAMA": {
       "section": "vaccine",
       "method": "rss",
-      "count": 40,
+      "count": 0,
       "ok": true,
       "latest_pub": "2026-11-17"
     },
     "Nature Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true,
       "latest_pub": "2026-11-20"
     },
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true,
       "latest_pub": "2026-11-23"
     },
@@ -278,9 +280,9 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 9,
       "ok": true,
-      "latest_pub": "2026-11-20"
+      "latest_pub": "2026-11-23"
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -346,15 +348,15 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
+      "count": 3,
       "ok": true,
       "latest_pub": "2026-11-23"
     },
     "Fierce Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 25,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "EMA": {
       "section": "vaccine",
@@ -365,7 +367,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 9,
+      "count": 8,
       "ok": true,
       "latest_pub": "2026-11-23"
     },
@@ -398,15 +400,16 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 9,
+      "count": 5,
       "ok": true,
       "latest_pub": "2026-11-22"
     },
     "Absci Blog": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-12"
     },
     "Nature Chemical Biology": {
       "section": "synbio",
@@ -488,9 +491,8 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 5,
-      "ok": true,
-      "latest_pub": "2026-11-20"
+      "count": 0,
+      "ok": false
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -558,9 +560,9 @@
   },
   "alarms": {
     "fail": [
-      "Absci Blog",
-      "Google DeepMind",
-      "Import AI"
+      "Fierce Biotech",
+      "Fierce Pharma",
+      "Thunes"
     ],
     "sudden_drop": [],
     "persistent_zero": [

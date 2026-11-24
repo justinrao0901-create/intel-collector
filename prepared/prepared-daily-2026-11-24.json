@@ -50,6 +50,21 @@
           "word_count": 137
         },
         {
+          "id": 47,
+          "source": "Google DeepMind",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Finding faster quantum algorithms with agents and formal verification",
+          "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+          "content": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+          "pub_date": "Mon, 23 Nov 2026 16:59:40 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 97
+        },
+        {
           "id": 104,
           "source": "TechCrunch AI",
           "section": "ai",
@@ -145,6 +160,21 @@
           "section": "ai",
           "tier": "T2",
           "priority": 5,
+          "title": "datasette-charts 0.1a0",
+          "link": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
+          "content": "Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Datasette Lite here . It looks like this: The new charts plugin works against any table or arbitrary SQL query in Datasette. It defines several different chart types (using vendored D3 , Observable Plot , and topojson-client ), each with a set of heuristics for identifying when they might be a good match for a specific set of rows. Those suggestion thumbnails at the top are actual visualizations driven by the data, and selecting one pulls up the full chart along with tools for modifying it. You can also manually construct a chart from scratch. As with other Datasette visualization plugins, the current state of your chart is persisted in a #fragment in the URL - so you can bookmark charts or share them with others. The most important feature is that the charts take all rows into account . Previous charting plugins like datasette-vega would only show charts for the current page of results, generally up to 100 rows. The new plugin compi",
+          "pub_date": "2026-11-23T00:37:20+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 958,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
           "title": "Quoting Ravi Vakil",
           "link": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
           "content": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft. &mdash; Ravi Vakil , Hurried Announcement: Alessandro Masullo GRH Tags: mathematics",
@@ -153,36 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 518
-        },
-        {
-          "id": 109,
-          "source": "Sequoia Capital",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Partnering with Edelbyte: Data Infrastructure That Keeps Up With AI's Curiosity",
-          "link": "https://www.sequoiacap.com/article/partnering-with-edelbyte-data-infrastructure-that-keeps-up-with-ai-s-curiosity",
-          "content": "AI agents will ask far more questions of a company's data than people ever did. Edelbyte is building the data platform that can answer all of them, fast and at a price that makes sense.",
-          "pub_date": "Wed, 11 Nov 2026 00:00:00 -0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 185
-        },
-        {
-          "id": 946,
-          "source": "Latent Space",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
-          "link": "https://latent.space/p/jev-revolution/",
-          "content": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
-          "pub_date": "Thu, 12 Nov 2026 05:08:20 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 156
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1063,
-      "total_valid": 659,
+      "total_raw": 1065,
+      "total_valid": 660,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1380,
+          "id": 1330,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1382,
+          "id": 1332,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1384,
+          "id": 1334,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1328,
+          "id": 1285,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 429
         },
         {
-          "id": 1543,
+          "id": 1493,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 290
         },
         {
-          "id": 1211,
+          "id": 1212,
           "source": "Cell",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 281
         },
         {
-          "id": 1330,
+          "id": 1287,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 269
         },
         {
-          "id": 1500,
+          "id": 1450,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 421
         },
         {
-          "id": 1492,
+          "id": 1442,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 418
         },
         {
-          "id": 1479,
+          "id": 1429,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 397
         },
         {
-          "id": 1065,
+          "id": 1067,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -362,7 +362,7 @@
           "word_count": 219
         },
         {
-          "id": 1068,
+          "id": 1070,
           "source": "Endpoints News",
           "section": "vaccine",
           "tier": "T2",
@@ -377,22 +377,7 @@
           "word_count": 198
         },
         {
-          "id": 1558,
-          "source": "BioPharma Dive",
-          "section": "vaccine",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Kymera eczema pill meets goals in mid-stage trial",
-          "link": "https://www.biopharmadive.com/news/kymera-eczema-pill-phase2-data-protein-degrader-dupixent-ebglyss/875462/",
-          "content": "The protein degrader drug showed \"biologic-like efficacy,\" according to Wall Street analysts who argued it could challenge Sanofi and Regeneron&rsquo;s market leader Dupixent.",
-          "pub_date": "Mon, 23 Nov 2026 09:53:55 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 175
-        },
-        {
-          "id": 1083,
+          "id": 1085,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -407,7 +392,7 @@
           "word_count": 134
         },
         {
-          "id": 1079,
+          "id": 1081,
           "source": "STAT News",
           "section": "vaccine",
           "tier": "T2",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 121
+        },
+        {
+          "id": 1222,
+          "source": "Immunity",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Longitudinal mapping reveals stromal-immune mechanisms underlying reversal of bone marrow fibrosis in myelofibrosis",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(26)00443-7?rss=yes",
+          "content": "Benabid et al. map the human bone marrow (BM) microenvironment during myelofibrosis progression and reversal after allogeneic hematopoietic stem cell transplantation (allo-HSCT) and find early remodeling of fibrotic stromal-immune interactions upon allo-HSCT. Adipogenic CXCL12-abundant reticular cells and SPP1+ macrophages emerge as key actors in the BM niche, and phosphodiesterase-5A as a therapeutically targetable driver of fibrosis, opening avenues for non-transplant antifibrotic therapies.",
+          "pub_date": "2026-11-23",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 498
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 522,
-      "total_valid": 323,
+      "total_raw": 469,
+      "total_valid": 290,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1685,
+          "id": 1631,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 1200
         },
         {
-          "id": 1689,
+          "id": 1635,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 1200
         },
         {
-          "id": 1686,
+          "id": 1632,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 1199
         },
         {
-          "id": 1690,
+          "id": 1636,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 456
         },
         {
-          "id": 1600,
+          "id": 1548,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 55
         },
         {
-          "id": 1599,
+          "id": 1547,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 54
         },
         {
-          "id": 1601,
+          "id": 1549,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 54
         },
         {
-          "id": 1632,
+          "id": 1580,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 173
         },
         {
-          "id": 1630,
+          "id": 1578,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 172
         },
         {
-          "id": 1626,
+          "id": 1574,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -589,14 +589,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 111,
+      "total_raw": 108,
       "total_valid": 31,
       "total_candidates": 10
     },
     "cross": {
       "candidates": [
         {
-          "id": 1223,
+          "id": 1222,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -611,7 +611,7 @@
           "word_count": 498
         },
         {
-          "id": 1210,
+          "id": 1211,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -626,7 +626,7 @@
           "word_count": 374
         },
         {
-          "id": 1700,
+          "id": 1646,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 313
         },
         {
-          "id": 1095,
+          "id": 1098,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 230
         },
         {
-          "id": 1097,
+          "id": 1100,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 185
         },
         {
-          "id": 1121,
+          "id": 1124,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 162
         },
         {
-          "id": 1605,
+          "id": 1553,
           "source": "ACS Synthetic Biology",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 54
         },
         {
-          "id": 1610,
+          "id": 1558,
           "source": "ACS Synthetic Biology",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 54
         },
         {
-          "id": 1641,
+          "id": 1589,
           "source": "Metabolic Engineering",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 130
         },
         {
-          "id": 1066,
+          "id": 1068,
           "source": "Endpoints News",
           "section": "cross",
           "tier": "T2",
@@ -751,8 +751,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 41,
-      "total_valid": 31,
+      "total_raw": 39,
+      "total_valid": 29,
       "total_candidates": 10
     },
     "china": {
@@ -769,7 +769,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1716,
+          "id": 1663,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -784,7 +784,7 @@
           "word_count": 518
         },
         {
-          "id": 1759,
+          "id": 1700,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -799,7 +799,22 @@
           "word_count": 508
         },
         {
-          "id": 1709,
+          "id": 1654,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Adyen Co-Founder to Retire and Hand Reins to Co-CEO Ingo Uytdehaage",
+          "link": "https://www.pymnts.com/personnel/2026/adyen-co-founder-to-retire-and-hand-reins-to-co-ceo-ingo-uytdehaage/",
+          "content": "Adyen has announced a leadership transition in which Co-Founder and Co-CEO Pieter van der Does will retire effective Dec. 31 and Co-CEO Ingo Uytdehaage will become the company’s sole CEO. van der Does will retire during Adyen’s 20th anniversary and will remain an advisor to the company, Adyen said in a Monday (Nov. 23) press release. “After 20 years, this is the right [&#8230;] The post Adyen Co-Founder to Retire and Hand Reins to Co-CEO Ingo Uytdehaage appeared first on PYMNTS.com .",
+          "pub_date": "Mon, 23 Nov 2026 23:44:45 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 488
+        },
+        {
+          "id": 1656,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -814,7 +829,7 @@
           "word_count": 482
         },
         {
-          "id": 1708,
+          "id": 1655,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -829,7 +844,7 @@
           "word_count": 468
         },
         {
-          "id": 1714,
+          "id": 1661,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -844,7 +859,7 @@
           "word_count": 426
         },
         {
-          "id": 1737,
+          "id": 1683,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -859,7 +874,7 @@
           "word_count": 281
         },
         {
-          "id": 1730,
+          "id": 1676,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -874,7 +889,7 @@
           "word_count": 263
         },
         {
-          "id": 1731,
+          "id": 1677,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -889,7 +904,7 @@
           "word_count": 243
         },
         {
-          "id": 1735,
+          "id": 1681,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -919,7 +934,7 @@
           "word_count": 186
         },
         {
-          "id": 1726,
+          "id": 1672,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -934,7 +949,7 @@
           "word_count": 178
         },
         {
-          "id": 1724,
+          "id": 1670,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -949,7 +964,7 @@
           "word_count": 149
         },
         {
-          "id": 1719,
+          "id": 1665,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -964,12 +979,12 @@
           "word_count": 142
         },
         {
-          "id": 1720,
+          "id": 1666,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Fed president pitches FedNow",
+          "title": "Fed President pitches FedNow",
           "link": "https://www.paymentsdive.com/news/federal-reserve-president-faster-payments-fednow/875321/",
           "content": "Jeff Schmid, who leads the Kansas City Federal Reserve, nudged credit union executives last week to adopt faster payment options, like FedNow.",
           "pub_date": "Mon, 23 Nov 2026 09:20:00 -0500",
@@ -979,7 +994,7 @@
           "word_count": 142
         },
         {
-          "id": 1722,
+          "id": 1668,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1009,7 +1024,7 @@
           "word_count": 106
         },
         {
-          "id": 1721,
+          "id": 1667,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1052,21 +1067,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 189,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "From Novel Combinations to Informative Absence: Structural permission, communicative opportunity, and form choice in language learning",
-          "link": "https://arxiv.org/abs/2611.27762",
-          "content": "arXiv:2611.27762v1 Announce Type: new Abstract: Language learners must infer which novel expressions are grammatically licensed and when continued absence is evidence against them. Our generative theory unites these capacities via counterfactual expression opportunities, decomposing utterance generation into structural permission, communicative opportunity, and form choice. First, shared predictive continuations recover structural permission for unseen word-construction pairings across 30 artificial grammars (mean AUC 0.945 after 120 sentences). Second, under hierarchical uncertainty, we derive a joint evidence law linking omissions to context diversity and within-context repetition, and an exact finite-sample context-refinement inequality. Thus, observing related expressions calibrates expected use to sharpen negative evidence, and higher expected use can drive steeper posterior declines for stronger-permission candidates (reversing initial order after six omissions in a fixed-rate example). Third, we prove that while raw counts confound semantic availability and form selection, scene-level opportunity observations identify both. Empirically, reanalyzing adult and child artificial",
-          "pub_date": "Mon, 23 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1074,15 +1074,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 222,
+      "total_raw": 217,
       "total_valid": 44,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1917,
-    "dup": 469,
-    "nocontent": 396,
-    "noise": 9
+    "total_raw": 1858,
+    "dup": 441,
+    "nocontent": 398,
+    "noise": 8
   }
 }
