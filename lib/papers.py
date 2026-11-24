@@ -33,8 +33,13 @@ SURVEY_KW = ("survey", "comprehensive review", "a review", "review of", "literat
              "systematic review", "taxonomy", "lessons from", "best practices", "a guide to",
              "overview of", "empirical study", "综述", "评述")
 CHINA_KW = ("tsinghua", "peking university", "chinese academy", "shanghai ai lab", "shanghai artificial intelligence",
-            "fudan", "zhejiang university", "deepseek", "alibaba", "qwen", "zhipu", "glm", "moonshot", "kimi",
-            "minimax", "baidu", "tencent", "bytedance", "huawei", "中国", "清华", "北大", "中科院")
+            "fudan", "zhejiang university", "deepseek", "alibaba", "qwen", "tongyi", "zhipu", "glm", "moonshot", "kimi",
+            "minimax", "baidu", "tencent", "hunyuan", "bytedance", "huawei",
+            "mihoyo", "hoyoverse", "china telecom", "telechat", "ant group", "antgroup", "ant financial",
+            "stepfun", "baichuan", "baai", "beijing academy of artificial intelligence", "sensetime",
+            "iflytek", "megvii", "kuaishou", "xiaomi", "meituan", "netease",
+            "中国", "清华", "北大", "中科院", "米哈游", "中国电信", "蚂蚁", "阶跃", "百川", "智源",
+            "商汤", "讯飞", "旷视", "快手", "小米", "美团", "网易", "混元", "通义")
 
 
 def _is_survey(text):
