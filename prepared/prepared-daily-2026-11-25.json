@@ -50,7 +50,7 @@
           "word_count": 135
         },
         {
-          "id": 92,
+          "id": 95,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 205
         },
         {
-          "id": 1301,
+          "id": 1304,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 168
         },
         {
-          "id": 1298,
+          "id": 1301,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 161
         },
         {
-          "id": 99,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 159
         },
         {
-          "id": 96,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 150
         },
         {
-          "id": 1297,
+          "id": 1300,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,22 @@
           "word_count": 147
         },
         {
-          "id": 74,
+          "id": 77,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Qwen-Image-HD: Autoregressive Diffusion for High Definition Image Generation",
+          "link": "https://arxiv.org/abs/2611.32736",
+          "content": "Fine-tuning a generator on a complete high-resolution canvas requires long image sequences and substantial computation, yet local regions can still exhibit unnatural repetitive stripes when training resources are limited. We introduce Qwen-Image-HD, which adapts Qwen-Image 2.0 to high-resolution synthesis through local training and blockwise autoregressive generation. Each prediction covers a target tile at 1K scale, conditioned on high-resolution upper and left neighbors and a compressed historical thumbnail. These conditions provide adjacent fine-scale structures and an overview of the scene generated so far. To integrate these complementary cues, we map both forms of history and the target to a shared canvas coordinate system to express their spatial relationships and scale differences. On Qwen-Image-Bench at 4K, Qwen-Image-HD achieves stronger overall evaluation performance than direct 4K generation with FLUX-3-Image-Klein. Compared with full-image 4K supervised fine-tuning of the same backbone, it achieves better generation quality with lower training compute and higher inference efficiency, while exhibiting fewer unnatural repetitive stripes in original-resolution comparisons",
+          "pub_date": "2026-11-23T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 78,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 75,
+          "id": 79,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 76,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "MAGPIE: Agentic Multi-Reference Image Generation via Executable Scene Construction",
-          "link": "https://arxiv.org/abs/2611.32462",
-          "content": "Multi-reference image generation requires a model to preserve the appearance of selected subjects while arranging them according to an instruction. Despite recent progress in reference-based generation and compositional control, reliably organizing selected subjects into the intended scene remains challenging. Although existing methods provide various forms of compositional guidance, the planned relationships are not always explicitly instantiated for inspection and refinement before image synthesis. To address this limitation, we introduce MAGPIE, which represents the intended composition as a simplified 3D scene defined by an executable Blender program. A coding agent links each scene instance to its reference, checks the geometry and rendered view against the instruction, and revises the program to correct discrepancies. The final proxy rendering serves as a visual plan for the image generator. Using MAGPIE-Instruct-3K, we train the generator to follow this plan while drawing each subject's appearance from its reference. MAGPIE improves both Qwen and FLUX on DreamOmni2 and SconeEval. With FLUX, it improves overall success on DreamOmni2 by 28.21 percentage points over the origina",
-          "pub_date": "2026-11-23T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1309,
+      "total_raw": 1312,
       "total_valid": 860,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1618,
+          "id": 1621,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1640,
+          "id": 1643,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1628,
+          "id": 1631,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 1527,
+          "id": 1530,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 1200
         },
         {
-          "id": 1831,
+          "id": 1834,
           "source": "Derek Lowe In the Pipeline",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 1200
         },
         {
-          "id": 1839,
+          "id": 1842,
           "source": "Derek Lowe In the Pipeline",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 1200
         },
         {
-          "id": 1842,
+          "id": 1845,
           "source": "PLoS Pathogens",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 1200
         },
         {
-          "id": 1780,
+          "id": 1783,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 371
         },
         {
-          "id": 1459,
+          "id": 1462,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 360
         },
         {
-          "id": 1781,
+          "id": 1784,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 344
         },
         {
-          "id": 1779,
+          "id": 1782,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 337
         },
         {
-          "id": 1463,
+          "id": 1466,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 319
         },
         {
-          "id": 1346,
+          "id": 1349,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 228
         },
         {
-          "id": 1878,
+          "id": 1881,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 219
         },
         {
-          "id": 1543,
+          "id": 1546,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 2049,
+          "id": 2052,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 549
         },
         {
-          "id": 2041,
+          "id": 2044,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 300
         },
         {
-          "id": 1954,
+          "id": 1957,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 1955,
+          "id": 1958,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 54
         },
         {
-          "id": 1959,
+          "id": 1962,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 54
         },
         {
-          "id": 1960,
+          "id": 1963,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 54
         },
         {
-          "id": 2021,
+          "id": 2024,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 203
         },
         {
-          "id": 2016,
+          "id": 2019,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 192
         },
         {
-          "id": 2020,
+          "id": 2023,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 170
         },
         {
-          "id": 2038,
+          "id": 2041,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 2040,
+          "id": 2043,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 2032,
+          "id": 2035,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1830,
+          "id": 1833,
           "source": "Derek Lowe In the Pipeline",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 1832,
+          "id": 1835,
           "source": "Derek Lowe In the Pipeline",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 2038,
+          "id": 2041,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 1447,
+          "id": 1450,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 389
         },
         {
-          "id": 1879,
+          "id": 1882,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 340
         },
         {
-          "id": 1876,
+          "id": 1879,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 328
         },
         {
-          "id": 2087,
+          "id": 2090,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 324
         },
         {
-          "id": 1532,
+          "id": 1535,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 292
         },
         {
-          "id": 1782,
+          "id": 1785,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 287
         },
         {
-          "id": 1345,
+          "id": 1348,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -788,7 +788,7 @@
     "china": {
       "candidates": [
         {
-          "id": 1922,
+          "id": 1925,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 1924,
+          "id": 1927,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 1925,
+          "id": 1928,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,7 +845,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2102,
+          "id": 2105,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -860,7 +860,7 @@
           "word_count": 524
         },
         {
-          "id": 2094,
+          "id": 2097,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -875,7 +875,7 @@
           "word_count": 508
         },
         {
-          "id": 2097,
+          "id": 2100,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +890,7 @@
           "word_count": 502
         },
         {
-          "id": 2104,
+          "id": 2107,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +905,7 @@
           "word_count": 476
         },
         {
-          "id": 2105,
+          "id": 2108,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -920,7 +920,7 @@
           "word_count": 457
         },
         {
-          "id": 2146,
+          "id": 2149,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +935,7 @@
           "word_count": 374
         },
         {
-          "id": 2148,
+          "id": 2151,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +950,7 @@
           "word_count": 366
         },
         {
-          "id": 2147,
+          "id": 2150,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +965,7 @@
           "word_count": 360
         },
         {
-          "id": 2125,
+          "id": 2128,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +980,7 @@
           "word_count": 275
         },
         {
-          "id": 2130,
+          "id": 2133,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +995,7 @@
           "word_count": 245
         },
         {
-          "id": 2123,
+          "id": 2126,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +1010,7 @@
           "word_count": 240
         },
         {
-          "id": 2112,
+          "id": 2115,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1025,7 +1025,7 @@
           "word_count": 212
         },
         {
-          "id": 2128,
+          "id": 2131,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1040,7 +1040,7 @@
           "word_count": 204
         },
         {
-          "id": 2124,
+          "id": 2127,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1055,7 +1055,7 @@
           "word_count": 187
         },
         {
-          "id": 2108,
+          "id": 2111,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1070,7 +1070,7 @@
           "word_count": 169
         },
         {
-          "id": 2109,
+          "id": 2112,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1085,7 +1085,7 @@
           "word_count": 160
         },
         {
-          "id": 2110,
+          "id": 2113,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1100,7 +1100,7 @@
           "word_count": 160
         },
         {
-          "id": 2107,
+          "id": 2110,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1115,7 +1115,22 @@
           "word_count": 145
         },
         {
-          "id": 2152,
+          "id": 77,
+          "source": "HuggingFace Daily Papers",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Qwen-Image-HD: Autoregressive Diffusion for High Definition Image Generation",
+          "link": "https://arxiv.org/abs/2611.32736",
+          "content": "Fine-tuning a generator on a complete high-resolution canvas requires long image sequences and substantial computation, yet local regions can still exhibit unnatural repetitive stripes when training resources are limited. We introduce Qwen-Image-HD, which adapts Qwen-Image 2.0 to high-resolution synthesis through local training and blockwise autoregressive generation. Each prediction covers a target tile at 1K scale, conditioned on high-resolution upper and left neighbors and a compressed historical thumbnail. These conditions provide adjacent fine-scale structures and an overview of the scene generated so far. To integrate these complementary cues, we map both forms of history and the target to a shared canvas coordinate system to express their spatial relationships and scale differences. On Qwen-Image-Bench at 4K, Qwen-Image-HD achieves stronger overall evaluation performance than direct 4K generation with FLUX-3-Image-Klein. Compared with full-image 4K supervised fine-tuning of the same backbone, it achieves better generation quality with lower training compute and higher inference efficiency, while exhibiting fewer unnatural repetitive stripes in original-resolution comparisons",
+          "pub_date": "2026-11-23T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 2155,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1128,21 +1143,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 517
-        },
-        {
-          "id": 259,
-          "source": "arXiv cs.CL",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation",
-          "link": "https://arxiv.org/abs/2611.33135",
-          "content": "arXiv:2611.33135v1 Announce Type: cross Abstract: Language models can generate LEGO$^\\circledR$ assemblies from text, but their builds often contain parts that collide or attach to nothing. The usual approach of rejecting and resampling invalid placements discards decoded tokens without guaranteeing a valid build. We present BriConstrain, a constrained decoding method that restricts a pretrained language model's next-token probabilities before sampling, steering it towards valid placements. Because the validity of a brick placement depends on the non-predetermined build state, it cannot be compiled into a fixed grammar and must be checked dynamically. However, checking the validity of a brick before sampling is challenging as the space of valid placements is combinatorially large and cannot be enumerated exhaustively. Our key idea is to narrow the search space by constraining how parts attach rather than which parts attach to each other. Concretely, given the model's predictions of the currently placed part, and the previously placed parent it wants to connect to, we constrain the model's choice of how they attach. This allows us to span the space of part attachments, using a preco",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -1150,15 +1150,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 232,
-      "total_valid": 55,
+      "total_raw": 233,
+      "total_valid": 56,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2314,
-    "dup": 553,
-    "nocontent": 432,
+    "total_raw": 2317,
+    "dup": 554,
+    "nocontent": 434,
     "noise": 8
   }
 }
