@@ -5,6 +5,21 @@
     "ai": {
       "candidates": [
         {
+          "id": 5,
+          "source": "OpenAI News",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 3,
+          "title": "Clay helps sales teams win with Codex and ChatGPT",
+          "link": "https://openai.com/business/customer-stories/clay-plugins-openai",
+          "content": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+          "pub_date": "Tue, 24 Nov 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 144
+        },
+        {
           "id": 2,
           "source": "OpenAI News",
           "section": "ai",
@@ -35,7 +50,7 @@
           "word_count": 135
         },
         {
-          "id": 97,
+          "id": 94,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +65,7 @@
           "word_count": 205
         },
         {
-          "id": 2090,
+          "id": 2088,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +80,7 @@
           "word_count": 168
         },
         {
-          "id": 2087,
+          "id": 2085,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +95,7 @@
           "word_count": 161
         },
         {
-          "id": 104,
+          "id": 101,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +110,7 @@
           "word_count": 159
         },
         {
-          "id": 101,
+          "id": 98,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +125,22 @@
           "word_count": 150
         },
         {
-          "id": 81,
+          "id": 2084,
+          "source": "Together AI",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Introducing preemptible compute: the same compute, half the price",
+          "link": "https://www.together.ai/blog/introducing-preemptible-compute-the-same-compute-half-the-price",
+          "content": "Together GPU Clusters now supports preemptible compute: the same GPU capacity at a flat 50% of the on-demand rate, with a five-minute drain window.",
+          "pub_date": "Tue, 24 Nov 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 147
+        },
+        {
+          "id": 78,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -125,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 84,
+          "id": 81,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -140,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 85,
+          "id": 82,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -153,36 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 1975,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "GPT 6.2 Astra Solves a Historical Mystery",
-          "link": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
-          "content": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little known source in a paper archive, predicted that it would prove its hypothesis if examined and, in the end, it did. Not only that, but this new source turns out to be a major find on its own that will be of significant interest to both Canadian and fur trade historians. Here's the digitized sketchbook . Astra found a diary reference reference to a visit by the vicomte de Chabot dated five days before a date mentioned in the sketchbook at a nearby river, and suggested that Chabot's journal of his travels (only available by order from Cleveland State University) might confirm that the sketchbook was his work. Are historians due for a round of Deep Blue ? Mark thinks it will be mild: But if the experience of mathematics is any guide, we c",
-          "pub_date": "2026-11-24T16:53:59+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1980,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "datasette-charts 0.1a0",
-          "link": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
-          "content": "Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Datasette Lite here . It looks like this: The new charts plugin works against any table or arbitrary SQL query in Datasette. It defines several different chart types (using vendored D3 , Observable Plot , and topojson-client ), each with a set of heuristics for identifying when they might be a good match for a specific set of rows. Those suggestion thumbnails at the top are actual visualizations driven by the data, and selecting one pulls up the full chart along with tools for modifying it. You can also manually construct a chart from scratch. As with other Datasette visualization plugins, the current state of your chart is persisted in a #fragment in the URL - so you can bookmark charts or share them with others. The most important feature is that the charts take all rows into account . Previous charting plugins like datasette-vega would only show charts for the current page of results, generally up to 100 rows. The new plugin compi",
-          "pub_date": "2026-11-23T00:37:20+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2097,
-      "total_valid": 1471,
+      "total_raw": 2095,
+      "total_valid": 1473,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2429,
+          "id": 2406,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2451,
+          "id": 2428,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2439,
+          "id": 2416,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 2337,
+          "id": 2318,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 1200
         },
         {
-          "id": 2644,
+          "id": 2617,
           "source": "Derek Lowe In the Pipeline",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 1200
         },
         {
-          "id": 2652,
+          "id": 2625,
           "source": "Derek Lowe In the Pipeline",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 1200
         },
         {
-          "id": 2656,
+          "id": 2629,
           "source": "PLoS Pathogens",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 1200
         },
         {
-          "id": 2692,
+          "id": 2665,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 509
         },
         {
-          "id": 2591,
+          "id": 2568,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 371
         },
         {
-          "id": 2269,
+          "id": 2250,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 360
         },
         {
-          "id": 2592,
+          "id": 2569,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 344
         },
         {
-          "id": 2590,
+          "id": 2567,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 337
         },
         {
-          "id": 2273,
+          "id": 2254,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 319
         },
         {
-          "id": 2144,
+          "id": 2138,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 228
         },
         {
-          "id": 2689,
+          "id": 2662,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 658,
-      "total_valid": 403,
+      "total_raw": 633,
+      "total_valid": 387,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2865,
+          "id": 2836,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 549
         },
         {
-          "id": 2857,
+          "id": 2828,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,12 +464,12 @@
           "word_count": 300
         },
         {
-          "id": 2769,
+          "id": 2741,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
           "priority": 2,
-          "title": "Tensegrity continuum robots enable task-adaptive morphologies for cooperative behaviours",
+          "title": "Interpretable distance-resolved graph learning for cancer gene priority screening",
           "link": "https://doi.org/10.1021/acssynbio.6c00812",
           "content": "ACS Synthetic Biology | DOI: 10.1021/acssynbio.6c00812",
           "pub_date": "2026-11-24",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 2770,
+          "id": 2742,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 54
         },
         {
-          "id": 2774,
+          "id": 2746,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 54
         },
         {
-          "id": 2775,
+          "id": 2747,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 54
         },
         {
-          "id": 2836,
+          "id": 2808,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 203
         },
         {
-          "id": 2831,
+          "id": 2803,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 192
         },
         {
-          "id": 2835,
+          "id": 2807,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 170
         },
         {
-          "id": 2854,
+          "id": 2825,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 2856,
+          "id": 2827,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 2848,
+          "id": 2819,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 144,
+      "total_raw": 141,
       "total_valid": 36,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 2643,
+          "id": 2616,
           "source": "Derek Lowe In the Pipeline",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 2645,
+          "id": 2618,
           "source": "Derek Lowe In the Pipeline",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 2854,
+          "id": 2825,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 2257,
+          "id": 2238,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 389
         },
         {
-          "id": 2693,
+          "id": 2666,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 363
         },
         {
-          "id": 2690,
+          "id": 2663,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 340
         },
         {
-          "id": 2687,
+          "id": 2660,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 328
         },
         {
-          "id": 2904,
+          "id": 2874,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 324
         },
         {
-          "id": 2342,
+          "id": 2323,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 292
         },
         {
-          "id": 2593,
+          "id": 2570,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -781,14 +781,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 65,
-      "total_valid": 56,
+      "total_raw": 64,
+      "total_valid": 55,
       "total_candidates": 10
     },
     "china": {
       "candidates": [
         {
-          "id": 2736,
+          "id": 2709,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 2738,
+          "id": 2711,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 2739,
+          "id": 2712,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,37 +845,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 2979,
-          "source": "Ledger Insights",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "SNB, UBS, SIX explore Swiss distributed ledger for payments, securities settlement",
-          "link": "https://www.ledgerinsights.com/snb-ubs-six-explore-swiss-distributed-ledger-for-payments-securities-settlement/",
-          "content": "Today the Swiss National Bank (SNB) announced plans to explore a Swiss unified ledger, the Swiss Financial Ledger, to incorporate central bank money, commercial bank money and securities on a single distributed ledger. Participants include UBS, SIX, Zürcher Kantonalbank, PostFinance, settlement platform Seturion and others. The initiative is part of Project Helvetia, and envisages a [&#8230;] The post SNB, UBS, SIX explore Swiss distributed ledger for payments, securities settlement appeared first on Ledger Insights - blockchain for enterprise .",
-          "pub_date": "Tue, 24 Nov 2026 17:56:40 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 551
-        },
-        {
-          "id": 2919,
+          "id": 2885,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "From Credit Markets to Cross-Border Payments, Stablecoins Build New Walled Gardens",
-          "link": "https://www.pymnts.com/blockchain/2026/from-credit-markets-to-cross-border-payments-stablecoins-build-new-walled-gardens/",
-          "content": "The maturing stablecoin economy is starting to look less like an alternative to traditional banking and more like a competition to capture its most profitable financial relationships. A new breed of financial intermediary is emerging around digital dollars, and its commercial ambitions look surprisingly familiar: acquiring customers, holding their money, facilitating access to credit and [&#8230;] The post From Credit Markets to Cross-Border Payments, Stablecoins Build New Walled Gardens appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 24 Nov 2026 19:43:33 +0000",
+          "title": "CFTC Says FIs Can Count Stablecoins as Financial Resources, Not Cash",
+          "link": "https://www.pymnts.com/cryptocurrency/2026/cftc-says-financial-institutions-can-count-stablecoins-financial-resources-not-cash/",
+          "content": "Financial institutions are finding that digital dollars can be useful for moving money without necessarily being an acceptable substitute for the money they need in an emergency. In a Tuesday (Nov. 23) advisory, Commodity Futures Trading Commission staff said certain regulated digital asset trading platforms and clearinghouses could count qualifying payment stablecoins toward operating-cost financial [&#8230;] The post CFTC Says FIs Can Count Stablecoins as Financial Resources, Not Cash appeared first on PYMNTS.com .",
+          "pub_date": "Tue, 24 Nov 2026 23:02:08 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 523
+          "word_count": 522
         },
         {
-          "id": 2914,
+          "id": 2889,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +875,7 @@
           "word_count": 516
         },
         {
-          "id": 2921,
+          "id": 2891,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +890,7 @@
           "word_count": 476
         },
         {
-          "id": 2915,
+          "id": 2890,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -920,7 +905,7 @@
           "word_count": 461
         },
         {
-          "id": 2922,
+          "id": 2892,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +920,7 @@
           "word_count": 457
         },
         {
-          "id": 2967,
+          "id": 2938,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +935,7 @@
           "word_count": 374
         },
         {
-          "id": 2969,
+          "id": 2940,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +950,7 @@
           "word_count": 366
         },
         {
-          "id": 2968,
+          "id": 2939,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +965,7 @@
           "word_count": 360
         },
         {
-          "id": 2946,
+          "id": 2917,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +980,7 @@
           "word_count": 275
         },
         {
-          "id": 2951,
+          "id": 2922,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +995,7 @@
           "word_count": 245
         },
         {
-          "id": 2944,
+          "id": 2915,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1025,7 +1010,7 @@
           "word_count": 240
         },
         {
-          "id": 2949,
+          "id": 2920,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1040,7 +1025,7 @@
           "word_count": 204
         },
         {
-          "id": 2945,
+          "id": 2916,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1055,7 +1040,7 @@
           "word_count": 187
         },
         {
-          "id": 2924,
+          "id": 2895,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1070,7 +1055,7 @@
           "word_count": 169
         },
         {
-          "id": 2950,
+          "id": 2921,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1085,7 +1070,7 @@
           "word_count": 167
         },
         {
-          "id": 2925,
+          "id": 2896,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1100,7 +1085,7 @@
           "word_count": 160
         },
         {
-          "id": 2926,
+          "id": 2897,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1115,7 +1100,22 @@
           "word_count": 160
         },
         {
-          "id": 80,
+          "id": 2894,
+          "source": "PaymentsDive",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Cap One pursues payments modernization",
+          "link": "https://www.paymentsdive.com/news/cap-one-pursues-payments-modernization/875673/",
+          "content": "The bank&rsquo;s investments in real-time and cloud-based rails are letting it keep pace with technology advances, a top payments executive said.",
+          "pub_date": "Tue, 24 Nov 2026 17:34:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 145
+        },
+        {
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "payment",
           "tier": "T1",
@@ -1130,7 +1130,7 @@
           "word_count": 1184
         },
         {
-          "id": 2973,
+          "id": 2944,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1150,15 +1150,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 244,
-      "total_valid": 62,
+      "total_raw": 245,
+      "total_valid": 63,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3136,
-    "dup": 742,
-    "nocontent": 437,
+    "total_raw": 3107,
+    "dup": 729,
+    "nocontent": 434,
     "noise": 8
   }
 }
