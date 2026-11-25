@@ -17,8 +17,9 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 3,
+      "ok": true,
+      "latest_pub": "2026-11-23"
     },
     "Meta AI Blog": {
       "section": "ai",
@@ -75,23 +76,20 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 334,
-      "ok": true,
-      "latest_pub": "2026-11-24"
+      "count": 0,
+      "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 773,
-      "ok": true,
-      "latest_pub": "2026-11-24"
+      "count": 0,
+      "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 708,
-      "ok": true,
-      "latest_pub": "2026-11-24"
+      "count": 0,
+      "ok": true
     },
     "Import AI": {
       "section": "ai",
@@ -111,7 +109,7 @@
       "method": "rss",
       "count": 17,
       "ok": true,
-      "latest_pub": "2026-11-24"
+      "latest_pub": "2026-11-25"
     },
     "Simon Willison": {
       "section": "ai",
@@ -196,7 +194,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 17,
+      "count": 14,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -209,7 +207,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 13,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -229,7 +227,7 @@
     "Nature": {
       "section": "vaccine",
       "method": "rss",
-      "count": 62,
+      "count": 63,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -320,14 +318,14 @@
     "bioRxiv Immunology": {
       "section": "vaccine",
       "method": "rss",
-      "count": 28,
+      "count": 29,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 10,
+      "count": 11,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -376,7 +374,7 @@
       "method": "rss",
       "count": 8,
       "ok": true,
-      "latest_pub": "2026-11-20"
+      "latest_pub": "2026-11-25"
     },
     "Science Immunology": {
       "section": "vaccine",
@@ -420,7 +418,7 @@
     "Derek Lowe In the Pipeline": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 15,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -436,7 +434,7 @@
       "method": "rss",
       "count": 8,
       "ok": true,
-      "latest_pub": "2026-11-24"
+      "latest_pub": "2026-11-25"
     },
     "Labiotech.eu": {
       "section": "vaccine",
@@ -571,14 +569,14 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 6,
+      "count": 4,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 37,
+      "count": 35,
       "ok": true,
       "latest_pub": "2027-02-17"
     },
@@ -664,7 +662,6 @@
     "fail": [
       "Absci Blog",
       "BioNTech",
-      "Google DeepMind",
       "Import AI"
     ],
     "sudden_drop": [],
@@ -675,7 +672,10 @@
       "Lilian Weng",
       "Semianalysis",
       "The Gradient",
-      "WHO News"
+      "WHO News",
+      "arXiv cs.AI",
+      "arXiv cs.CL",
+      "arXiv cs.LG"
     ]
   }
 }

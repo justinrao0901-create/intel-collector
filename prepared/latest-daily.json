@@ -50,7 +50,7 @@
           "word_count": 135
         },
         {
-          "id": 92,
+          "id": 95,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 205
         },
         {
-          "id": 2085,
+          "id": 273,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 168
         },
         {
-          "id": 2082,
+          "id": 270,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 161
         },
         {
-          "id": 99,
+          "id": 102,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 159
         },
         {
-          "id": 96,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 150
         },
         {
-          "id": 2081,
+          "id": 269,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -140,14 +140,14 @@
           "word_count": 147
         },
         {
-          "id": 74,
+          "id": 77,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Let Vision-Language Models Generate Images through Their Representations",
-          "link": "https://arxiv.org/abs/2611.31237",
-          "content": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further dem",
+          "title": "Do learned image captioning metrics generalize? Auditing duplicated samples in human-judgment benchmarks",
+          "link": "https://arxiv.org/abs/2611.30488",
+          "content": "Learned image captioning metrics are trained and tested on human judgments, so their reported correlation is a claim about generalization. We audit this claim for the three most recent collections of such judgments, Polaris, Nebula, and Spica, matching images at the pixel level. First, test samples reappear in training sets: the Spica training set contains about two-thirds of the Polaris test set, with identical human ratings. Second, controlled retraining shows that duplicates can inflate a metric: for Pearl, the gain is confined to the duplicated samples and grows with every epoch; for DENEB, it stays below one point. The gain depends on the learner and on how often a training set repeats a sample. Third, Kendall's τ over all samples is the sum of two terms, detecting captions with the lowest human score and ranking the others; the first supplies most of the reported correlation and is nearly saturated. The recent test sets cannot order Polos, DENEB and Pearl consistently, and a ridge regression on frozen features matches or exceeds all three. Fourth, we propose a protocol that ranks a learned metric only with a model trained without test samples, reports both terms, and compares",
           "pub_date": "2026-11-22T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -155,30 +155,30 @@
           "word_count": 1200
         },
         {
-          "id": 76,
+          "id": 78,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
-          "link": "https://arxiv.org/abs/2611.28167",
-          "content": "Answering questions over days or weeks of video requires searching for scattered clues across long timelines. Existing video agents rely on complex memory graphs and fixed retrieval pipelines, which restrict how the agent can search. We propose VideoJSON, a minimal harness for ultra-long video understanding that keeps the memory simple and lets a coding agent write its own search programs. During indexing, a vision-language model turns each minute of video into a single JSON record containing a dense caption and structured fields such as events, entities, places, and speech transcripts. At query time, the agent writes Python or Bash programs in a sandboxed container to filter, link, and read these records over multiple steps, without task-specific training or raw video access. On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points. Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-V",
-          "pub_date": "2026-11-19T19:00:00.000Z",
+          "title": "Coding4Games: Can Modern Coding Agents Play Modern Video Games?",
+          "link": "https://arxiv.org/abs/2611.31974",
+          "content": "Games, especially modern AAA games, challenge language models to perceive complex scenes, control actions, and make decisions over long horizons. Existing game benchmarks primarily test language models as computer-use agents that query a language model throughout play, incurring repeated inference cost and, in real-time games, acting while the environment continues to evolve. We ask whether coding agents can learn from game interaction to develop standalone game-playing programs that run without language model inference. We thus introduce Coding4Games, a benchmark for evaluating whether coding agents can develop standalone programs that play modern games through visual observations and standard game inputs. Coding4Games has three defining features: 1) Diverse Modern Games, covering 15 games with diverse visual, strategic, and control demands; 2) Development-Test Separation, in which a coding agent uses a sandbox and the standard player interface to iteratively develop a program, after which the selected program is frozen and independently tested without language-model inference; and 3) Outcome and Process Evaluation, which measures not only game performance and reliability but also",
+          "pub_date": "2026-11-23T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 79,
+          "id": 80,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Self-Supervised Dataset Distillation via Mutual Information Maximization",
-          "link": "https://arxiv.org/abs/2611.31225",
-          "content": "Dataset distillation (DD) aims to compress a large dataset into a small synthetic one that remains effective for training neural networks. Despite its success in supervised learning, DD remains underexplored in self-supervised learning (SSL), where distilled data must preserve the information needed to learn representations that remain consistent across augmentations. To bridge this gap, we introduce Mutual Information Prototype Alignment (MIPA), an efficient SSL dataset distillation approach that optimizes synthetic images to preserve augmentation-invariant information. Specifically, MIPA treats synthetic images as learnable prototypes and uses a frozen encoder to assign real samples to them based on feature similarity. A synthetic dataset that preserves such augmentation invariance should yield stable prototype assignments across multiple augmented views of the same real image. MIPA encourages this by maximizing mutual information between cross-view assignments while avoiding trivial solutions in which all real samples are assigned to only a few synthetic prototypes. Evaluations on image classification benchmarks show that synthetic data generated by MIPA yield higher-quality rep",
-          "pub_date": "2026-11-22T19:00:00.000Z",
+          "title": "LoopDVR: Looped Transformer for Efficient Dense Visual Recognition",
+          "link": "https://arxiv.org/abs/2611.32067",
+          "content": "We propose LoopDVR, a framework for converting pretrained Transformer-based dense visual recognition models into parameter-efficient looped networks. Rather than reducing the network width or depth directly, LoopDVR reuses Transformer blocks across layers in both the ViT backbone and Transformer decoder, reducing the number of parameters while retaining the original computational structure. However, naively sharing parameters can disrupt the distinct transformations learned at different depths. To address this challenge, we identify suitable sharing groups based on inter-layer representation dissimilarity and keep the final backbone block independent for multi-scale feature construction. We then initialize each shared backbone block with the pretrained weights of its group's terminal layer to better preserve the learned representations. An independent Loop Adapter at each layer further helps retain depth-specific transformations within shared blocks. Subsequently, we distill visual representations into the looped backbone and integrate it with a looped decoder for task-specific training. Experiments demonstrate that LoopDVR achieves the best accuracy--parameter trade-offs across de",
+          "pub_date": "2026-11-23T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 2093,
-      "total_valid": 1475,
+      "total_raw": 281,
+      "total_valid": 78,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 2405,
+          "id": 590,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 2427,
+          "id": 612,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 2415,
+          "id": 600,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 2316,
+          "id": 499,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 1200
         },
         {
-          "id": 2616,
+          "id": 801,
           "source": "Derek Lowe In the Pipeline",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 1200
         },
         {
-          "id": 2624,
+          "id": 809,
           "source": "Derek Lowe In the Pipeline",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 1200
         },
         {
-          "id": 2628,
+          "id": 812,
           "source": "PLoS Pathogens",
           "section": "vaccine",
           "tier": "T1",
@@ -302,22 +302,7 @@
           "word_count": 1200
         },
         {
-          "id": 2664,
-          "source": "Nature Communications",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Subsets of regulatory T cells are CD1a-reactive and dysfunctional in psoriasis",
-          "link": "https://www.nature.com/articles/s41467-026-79338-3",
-          "content": "Nature Communications, Published online: 24 November 2026; doi:10.1038/s41467-026-79338-3 T regulatory cells (Treg) cells may be involved with the regulation of immune responses in psoriasis. Here, using psoriasis samples from humans, the authors characterize the function of CD1a-responsive Treg cells in psoriasis and show that these cells secrete IL-10 in response to lysophosphatidylcholine and are found in close proximity to CD1a+ antigen-presenting cells and are potentially dysfunctional in psoriasis.",
-          "pub_date": "2026-11-24",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 509
-        },
-        {
-          "id": 2567,
+          "id": 752,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +317,7 @@
           "word_count": 371
         },
         {
-          "id": 2248,
+          "id": 431,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +332,7 @@
           "word_count": 360
         },
         {
-          "id": 2568,
+          "id": 753,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +347,7 @@
           "word_count": 344
         },
         {
-          "id": 2566,
+          "id": 751,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +362,7 @@
           "word_count": 337
         },
         {
-          "id": 2252,
+          "id": 435,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +377,7 @@
           "word_count": 319
         },
         {
-          "id": 2136,
+          "id": 318,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +392,7 @@
           "word_count": 228
         },
         {
-          "id": 2661,
+          "id": 848,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -420,6 +405,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 219
+        },
+        {
+          "id": 515,
+          "source": "JAMA",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "124 I-Evuzamitide PET/CT for Diagnosing Cardiac Amyloidosis",
+          "link": "https://jamanetwork.com/journals/jama/fullarticle/2853272",
+          "content": "This nonrandomized clinical trial evaluates the sensitivity and specificity of 124I-evuzamitide positron emission tomography (PET)/computed tomography (CT) for diagnosing adults suspected of having cardiac amyloidosis.",
+          "pub_date": "Tue, 24 Nov 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 218
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 634,
-      "total_valid": 388,
+      "total_raw": 630,
+      "total_valid": 384,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 2835,
+          "id": 1019,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 549
         },
         {
-          "id": 2827,
+          "id": 1011,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 300
         },
         {
-          "id": 2740,
+          "id": 924,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 2741,
+          "id": 925,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 54
         },
         {
-          "id": 2745,
+          "id": 929,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 54
         },
         {
-          "id": 2746,
+          "id": 930,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 54
         },
         {
-          "id": 2807,
+          "id": 991,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 203
         },
         {
-          "id": 2802,
+          "id": 986,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 192
         },
         {
-          "id": 2806,
+          "id": 990,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 170
         },
         {
-          "id": 2824,
+          "id": 1008,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 2826,
+          "id": 1010,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 2818,
+          "id": 1002,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 2615,
+          "id": 800,
           "source": "Derek Lowe In the Pipeline",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 2617,
+          "id": 802,
           "source": "Derek Lowe In the Pipeline",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 2824,
+          "id": 1008,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 2236,
+          "id": 419,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -686,22 +686,7 @@
           "word_count": 389
         },
         {
-          "id": 2665,
-          "source": "Nature Communications",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "A spectral-spatial interweaver for hyperdimensional photonic computing",
-          "link": "https://www.nature.com/articles/s41467-026-78734-z",
-          "content": "Nature Communications, Published online: 24 November 2026; doi:10.1038/s41467-026-78734-z Photonic computing promises faster, more energy-efficient AI, but hardware scaling remains challenging. Here, the authors present HyperON, a TFLN-based hyperdimensional photonic computing network combining a spectral-spatial interweaver with wavelength-parallel modulators.",
-          "pub_date": "2026-11-24",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 363
-        },
-        {
-          "id": 2662,
+          "id": 849,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +701,7 @@
           "word_count": 340
         },
         {
-          "id": 2659,
+          "id": 846,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +716,7 @@
           "word_count": 328
         },
         {
-          "id": 2873,
+          "id": 1057,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +731,7 @@
           "word_count": 324
         },
         {
-          "id": 2321,
+          "id": 504,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +746,7 @@
           "word_count": 292
         },
         {
-          "id": 2569,
+          "id": 754,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -774,6 +759,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 287
+        },
+        {
+          "id": 317,
+          "source": "Nature",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Watch out, AlphaFold: Claude and ChatGPT’s new biology skills wow scientists",
+          "link": "https://www.nature.com/articles/d41586-026-03836-z",
+          "content": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03836-z Anthropic and OpenAI’s language models can design proteins and predict their sequences and structures — capabilities previously seen only in specialized AI tools.",
+          "pub_date": "2026-11-24",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 237
         }
       ],
       "quota": {
@@ -781,14 +781,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 65,
-      "total_valid": 56,
+      "total_raw": 48,
+      "total_valid": 39,
       "total_candidates": 10
     },
     "china": {
       "candidates": [
         {
-          "id": 2708,
+          "id": 892,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 2710,
+          "id": 894,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 2711,
+          "id": 895,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,37 +845,52 @@
     "payment": {
       "candidates": [
         {
-          "id": 2884,
+          "id": 1072,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "CFTC Says FIs Can Count Stablecoins as Financial Resources, Not Cash",
+          "title": "CFTC Says Banks Can Count Stablecoins as Financial Resources, Not Cash",
           "link": "https://www.pymnts.com/cryptocurrency/2026/cftc-says-financial-institutions-can-count-stablecoins-financial-resources-not-cash/",
-          "content": "Financial institutions are finding that digital dollars can be useful for moving money without necessarily being an acceptable substitute for the money they need in an emergency. In a Tuesday (Nov. 23) advisory, Commodity Futures Trading Commission staff said certain regulated digital asset trading platforms and clearinghouses could count qualifying payment stablecoins toward operating-cost financial [&#8230;] The post CFTC Says FIs Can Count Stablecoins as Financial Resources, Not Cash appeared first on PYMNTS.com .",
+          "content": "Financial institutions are finding that digital dollars can be useful for moving money without necessarily being an acceptable substitute for the money they need in an emergency. In a Tuesday (Nov. 23) advisory, Commodity Futures Trading Commission staff said certain regulated digital asset trading platforms and clearinghouses could count qualifying payment stablecoins toward operating-cost financial [&#8230;] The post CFTC Says Banks Can Count Stablecoins as Financial Resources, Not Cash appeared first on PYMNTS.com .",
           "pub_date": "Tue, 24 Nov 2026 23:02:08 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 522
+          "word_count": 524
         },
         {
-          "id": 2888,
+          "id": 1064,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Freightos Looks to Weave Payments Into Freight Transactions",
-          "link": "https://www.pymnts.com/earnings/2026/freightos-looks-to-weave-payments-into-freight-transactions/",
-          "content": "Freightos is betting that AI and deeper integration of digital payments can help modernize the traditionally paper-heavy air cargo industry. The logistics technology company outlined these plans Wednesday (Nov. 24) as it reported quarterly earnings showing 494,000 transactions facilitated, a 15% year-over-year increase. Revenues were up just 2% to $7.8 million. CEO Pablo Pinillos told analysts during an [&#8230;] The post Freightos Looks to Weave Payments Into Freight Transactions appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 24 Nov 2026 20:36:00 +0000",
+          "title": "Kohl’s Deploys AI Assistant, On-Demand Delivery, Flexible Payments for Holidays",
+          "link": "https://www.pymnts.com/earnings/2026/kohls-deploys-ai-assistant-on-demand-delivery-flexible-payments-for-holidays/",
+          "content": "Digital modernization is playing a key role in Kohl’s preparations for the holiday season and beyond, CEO Michael Bender said Tuesday (Nov. 24) during the retailer’s third quarter earnings call. Kohl’s initiatives in the digital arena include its recent launches of an agentic shopping assistant, additional same-day delivery offerings and flexible payment options, Bender said. [&#8230;] The post Kohl’s Deploys AI Assistant, On-Demand Delivery, Flexible Payments for Holidays appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 25 Nov 2026 03:36:56 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 516
+          "word_count": 508
         },
         {
-          "id": 2890,
+          "id": 1067,
+          "source": "PYMNTS.com",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Blackstone Leads Talks to Back GTCR’s $50 Billion Global Payments Deal",
+          "link": "https://www.pymnts.com/news/acquiring/2026/blackstone-warburg-pincus-and-apollo-weigh-backing-50-billion-global-payments-acquisition/",
+          "content": "Private equity firms Blackstone, Warburg Pincus and Apollo are in talks to help GTCR finance its take-private acquisition of payments processor Global Payments, Reuters reported Tuesday (Nov. 24), citing unnamed sources. The discussions on this help are ongoing, and no agreement has been finalized, according to the report. Representatives of Blackstone, Warburg Pincus and Apollo [&#8230;] The post Blackstone Leads Talks to Back GTCR’s $50 Billion Global Payments Deal appeared first on PYMNTS.com .",
+          "pub_date": "Wed, 25 Nov 2026 01:07:38 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 502
+        },
+        {
+          "id": 1074,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -890,22 +905,7 @@
           "word_count": 476
         },
         {
-          "id": 2889,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Banks Explore Ways to Verify Customers Without Starting Over",
-          "link": "https://www.pymnts.com/authentication/2026/banks-explore-ways-verify-customers-without-starting-over/",
-          "content": "A customer who uses a mobile driver’s license to open one account can present the same credential to another financial institution that accepts it. The second institution now has a way to verify the information directly from the credential and spare the customer another document upload. FinTechs are helping bring digital identities more firmly into [&#8230;] The post Banks Explore Ways to Verify Customers Without Starting Over appeared first on PYMNTS.com .",
-          "pub_date": "Tue, 24 Nov 2026 20:33:26 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 461
-        },
-        {
-          "id": 2891,
+          "id": 1075,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -920,7 +920,7 @@
           "word_count": 457
         },
         {
-          "id": 2936,
+          "id": 1116,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +935,7 @@
           "word_count": 374
         },
         {
-          "id": 2938,
+          "id": 1118,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +950,7 @@
           "word_count": 366
         },
         {
-          "id": 2937,
+          "id": 1117,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +965,7 @@
           "word_count": 360
         },
         {
-          "id": 2915,
+          "id": 1095,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +980,7 @@
           "word_count": 275
         },
         {
-          "id": 2920,
+          "id": 1100,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +995,7 @@
           "word_count": 245
         },
         {
-          "id": 2913,
+          "id": 1093,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +1010,7 @@
           "word_count": 240
         },
         {
-          "id": 2900,
+          "id": 1082,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1025,7 +1025,7 @@
           "word_count": 212
         },
         {
-          "id": 2918,
+          "id": 1098,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1040,7 +1040,7 @@
           "word_count": 204
         },
         {
-          "id": 2914,
+          "id": 1094,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1055,7 +1055,7 @@
           "word_count": 187
         },
         {
-          "id": 2894,
+          "id": 1078,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1070,7 +1070,7 @@
           "word_count": 169
         },
         {
-          "id": 2895,
+          "id": 1079,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1085,7 +1085,7 @@
           "word_count": 160
         },
         {
-          "id": 2896,
+          "id": 1080,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1100,7 +1100,7 @@
           "word_count": 160
         },
         {
-          "id": 2893,
+          "id": 1077,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1115,22 +1115,7 @@
           "word_count": 145
         },
         {
-          "id": 75,
-          "source": "HuggingFace Daily Papers",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 5,
-          "title": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
-          "link": "https://arxiv.org/abs/2611.30235",
-          "content": "GUI grounding requires precise clicks at low latency. Recent models such as GUI-Decisions and GUI-Swift predict coordinates in one forward pass using fixed global bins with local refinement. However, screenshot downsampling removes detail needed to locate small controls, while fixed bins cover larger pixel ranges at higher resolutions. We introduce PixelOne, which transfers spatial knowledge from a search teacher to a student that predicts clicks directly from screenshots at native resolution. The teacher uses VideoJEV's text-option scorer to select rows and columns and progressively zoom into candidate regions. The student inherits the teacher's parameters and matches its distributions over explored regions through spatial distillation alongside box supervision. At inference, the same decision head selects a visual token, and a lightweight pixel head predicts the click within it, all in one forward pass. A click-aligned loss encourages pixels inside the target box to score above those outside. Across four benchmarks, PixelOne-Pro-35B-A3B achieves 83.8% mean accuracy, the highest among the evaluated single-forward grounders, with a mean latency of 0.43 s per target.",
-          "pub_date": "2026-11-22T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1184
-        },
-        {
-          "id": 2942,
+          "id": 1122,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1143,6 +1128,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 517
+        },
+        {
+          "id": 1128,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "BlackRock launches $100m HKD tokenized MMF with Ant Intl, StanChart as investors",
+          "link": "https://www.ledgerinsights.com/blackrock-launches-100m-hkd-tokenized-mmf-with-ant-intl-stanchart-as-investors/",
+          "content": "BlackRock has launched its first tokenized money market fund (MMF) in Hong Kong, the BlackRock HKD Digital Liquidity Fund, with some novel features. It adds a fourth currency, given BlackRock already has tokenized MMFs in USD, EUR and GBP. The Hong Kong fund launches with USD 100 million in investment from Ant International and Standard [&#8230;] The post BlackRock launches $100m HKD tokenized MMF with Ant Intl, StanChart as investors appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Tue, 24 Nov 2026 20:42:34 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 502
         }
       ],
       "quota": {
@@ -1150,15 +1150,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 244,
-      "total_valid": 63,
+      "total_raw": 222,
+      "total_valid": 44,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 3105,
-    "dup": 726,
-    "nocontent": 432,
+    "total_raw": 1285,
+    "dup": 306,
+    "nocontent": 434,
     "noise": 8
   }
 }
