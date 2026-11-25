@@ -17,9 +17,8 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 3,
-      "ok": true,
-      "latest_pub": "2026-11-23"
+      "count": 0,
+      "ok": false
     },
     "Meta AI Blog": {
       "section": "ai",
@@ -76,20 +75,23 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": true
+      "count": 193,
+      "ok": true,
+      "latest_pub": "2026-11-25"
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": true
+      "count": 447,
+      "ok": true,
+      "latest_pub": "2026-11-25"
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": true
+      "count": 391,
+      "ok": true,
+      "latest_pub": "2026-11-25"
     },
     "Import AI": {
       "section": "ai",
@@ -393,7 +395,7 @@
     "BioPharma Dive": {
       "section": "vaccine",
       "method": "rss",
-      "count": 4,
+      "count": 6,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -590,7 +592,7 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 6,
+      "count": 5,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -662,6 +664,7 @@
     "fail": [
       "Absci Blog",
       "BioNTech",
+      "Google DeepMind",
       "Import AI"
     ],
     "sudden_drop": [],
@@ -672,10 +675,7 @@
       "Lilian Weng",
       "Semianalysis",
       "The Gradient",
-      "WHO News",
-      "arXiv cs.AI",
-      "arXiv cs.CL",
-      "arXiv cs.LG"
+      "WHO News"
     ]
   }
 }

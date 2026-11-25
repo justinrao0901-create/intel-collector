@@ -50,7 +50,7 @@
           "word_count": 135
         },
         {
-          "id": 95,
+          "id": 92,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 205
         },
         {
-          "id": 273,
+          "id": 1301,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -80,7 +80,7 @@
           "word_count": 168
         },
         {
-          "id": 270,
+          "id": 1298,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -95,7 +95,7 @@
           "word_count": 161
         },
         {
-          "id": 102,
+          "id": 99,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 159
         },
         {
-          "id": 99,
+          "id": 96,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 150
         },
         {
-          "id": 269,
+          "id": 1297,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,22 @@
           "word_count": 147
         },
         {
-          "id": 77,
+          "id": 74,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Residual Guidance for Real-Time Interactive Video Generation",
+          "link": "https://arxiv.org/abs/2611.32820",
+          "content": "Real-time interactive video generation allows users to change the prompt during generation to steer the evolving video. However, existing streaming models, which generate videos chunk by chunk, often keep following the previous prompt after a switch. We trace this failure to context inertia, where the previous chunk acts as a strong prior that suppresses the new prompt. Furthermore, we find that this inertia persists even when the cache retains only the previous chunk, yet discarding the context breaks visual continuity, which limits approaches that edit the cache. Rather than editing the cache, we propose Residual Guidance (RG), a simple, training-free method that counteracts context inertia with a correction measured outside the cache. Specifically, RG denoises the re-noised previous chunk once under the new prompt without the cache and adds the resulting residual to the early denoising steps of the next chunk, where its content is largely decided and the new prompt is most suppressed. Across settings ranging from a single switch to long multi-switch generation, RG substantially improves prompt switching capability on existing streaming models, including those with dedicated swit",
+          "pub_date": "2026-11-23T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 75,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -155,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 78,
+          "id": 76,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -168,21 +183,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
-        },
-        {
-          "id": 79,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Do learned image captioning metrics generalize? Auditing duplicated samples in human-judgment benchmarks",
-          "link": "https://arxiv.org/abs/2611.30488",
-          "content": "Learned image captioning metrics are trained and tested on human judgments, so their reported correlation is a claim about generalization. We audit this claim for the three most recent collections of such judgments, Polaris, Nebula, and Spica, matching images at the pixel level. First, test samples reappear in training sets: the Spica training set contains about two-thirds of the Polaris test set, with identical human ratings. Second, controlled retraining shows that duplicates can inflate a metric: for Pearl, the gain is confined to the duplicated samples and grows with every epoch; for DENEB, it stays below one point. The gain depends on the learner and on how often a training set repeats a sample. Third, Kendall's τ over all samples is the sum of two terms, detecting captions with the lowest human score and ranking the others; the first supplies most of the reported correlation and is nearly saturated. The recent test sets cannot order Polos, DENEB and Pearl consistently, and a ridge regression on frozen features matches or exceeds all three. Fourth, we propose a protocol that ranks a learned metric only with a model trained without test samples, reports both terms, and compares",
-          "pub_date": "2026-11-22T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
         }
       ],
       "quota": {
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 281,
-      "total_valid": 78,
+      "total_raw": 1309,
+      "total_valid": 860,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 590,
+          "id": 1618,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 612,
+          "id": 1640,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 600,
+          "id": 1628,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1199
         },
         {
-          "id": 499,
+          "id": 1527,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 1200
         },
         {
-          "id": 801,
+          "id": 1831,
           "source": "Derek Lowe In the Pipeline",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 1200
         },
         {
-          "id": 809,
+          "id": 1839,
           "source": "Derek Lowe In the Pipeline",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 1200
         },
         {
-          "id": 812,
+          "id": 1842,
           "source": "PLoS Pathogens",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 1200
         },
         {
-          "id": 752,
+          "id": 1780,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 371
         },
         {
-          "id": 431,
+          "id": 1459,
           "source": "Cell Host Microbe",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 360
         },
         {
-          "id": 753,
+          "id": 1781,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 344
         },
         {
-          "id": 751,
+          "id": 1779,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 337
         },
         {
-          "id": 435,
+          "id": 1463,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 319
         },
         {
-          "id": 318,
+          "id": 1346,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 228
         },
         {
-          "id": 847,
+          "id": 1878,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 219
         },
         {
-          "id": 515,
+          "id": 1543,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 630,
-      "total_valid": 384,
+      "total_raw": 632,
+      "total_valid": 386,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1019,
+          "id": 2049,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 549
         },
         {
-          "id": 1011,
+          "id": 2041,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 300
         },
         {
-          "id": 924,
+          "id": 1954,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 925,
+          "id": 1955,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 54
         },
         {
-          "id": 929,
+          "id": 1959,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 54
         },
         {
-          "id": 930,
+          "id": 1960,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 54
         },
         {
-          "id": 991,
+          "id": 2021,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 203
         },
         {
-          "id": 986,
+          "id": 2016,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 192
         },
         {
-          "id": 990,
+          "id": 2020,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 170
         },
         {
-          "id": 1008,
+          "id": 2038,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 1200
         },
         {
-          "id": 1010,
+          "id": 2040,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 1200
         },
         {
-          "id": 1002,
+          "id": 2032,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 800,
+          "id": 1830,
           "source": "Derek Lowe In the Pipeline",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 1200
         },
         {
-          "id": 802,
+          "id": 1832,
           "source": "Derek Lowe In the Pipeline",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 1200
         },
         {
-          "id": 1008,
+          "id": 2038,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 1200
         },
         {
-          "id": 419,
+          "id": 1447,
           "source": "Cell",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 389
         },
         {
-          "id": 848,
+          "id": 1879,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 340
         },
         {
-          "id": 845,
+          "id": 1876,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 328
         },
         {
-          "id": 1057,
+          "id": 2087,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 324
         },
         {
-          "id": 504,
+          "id": 1532,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 292
         },
         {
-          "id": 754,
+          "id": 1782,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 287
         },
         {
-          "id": 317,
+          "id": 1345,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -781,14 +781,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 48,
-      "total_valid": 39,
+      "total_raw": 52,
+      "total_valid": 43,
       "total_candidates": 10
     },
     "china": {
       "candidates": [
         {
-          "id": 892,
+          "id": 1922,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 894,
+          "id": 1924,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 895,
+          "id": 1925,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,7 +845,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 1072,
+          "id": 2102,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -860,7 +860,7 @@
           "word_count": 524
         },
         {
-          "id": 1064,
+          "id": 2094,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -875,7 +875,7 @@
           "word_count": 508
         },
         {
-          "id": 1067,
+          "id": 2097,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +890,7 @@
           "word_count": 502
         },
         {
-          "id": 1074,
+          "id": 2104,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +905,7 @@
           "word_count": 476
         },
         {
-          "id": 1075,
+          "id": 2105,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -920,7 +920,7 @@
           "word_count": 457
         },
         {
-          "id": 1116,
+          "id": 2146,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +935,7 @@
           "word_count": 374
         },
         {
-          "id": 1118,
+          "id": 2148,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +950,7 @@
           "word_count": 366
         },
         {
-          "id": 1117,
+          "id": 2147,
           "source": "Payments Cards & Mobile",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +965,7 @@
           "word_count": 360
         },
         {
-          "id": 1095,
+          "id": 2125,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +980,7 @@
           "word_count": 275
         },
         {
-          "id": 1100,
+          "id": 2130,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +995,7 @@
           "word_count": 245
         },
         {
-          "id": 1093,
+          "id": 2123,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +1010,7 @@
           "word_count": 240
         },
         {
-          "id": 1082,
+          "id": 2112,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1025,7 +1025,7 @@
           "word_count": 212
         },
         {
-          "id": 1098,
+          "id": 2128,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1040,7 +1040,7 @@
           "word_count": 204
         },
         {
-          "id": 1094,
+          "id": 2124,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1055,7 +1055,7 @@
           "word_count": 187
         },
         {
-          "id": 1078,
+          "id": 2108,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1070,7 +1070,7 @@
           "word_count": 169
         },
         {
-          "id": 1079,
+          "id": 2109,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1085,7 +1085,7 @@
           "word_count": 160
         },
         {
-          "id": 1080,
+          "id": 2110,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1100,7 +1100,7 @@
           "word_count": 160
         },
         {
-          "id": 1077,
+          "id": 2107,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1115,7 +1115,7 @@
           "word_count": 145
         },
         {
-          "id": 1122,
+          "id": 2152,
           "source": "Thunes",
           "section": "payment",
           "tier": "T2",
@@ -1130,19 +1130,19 @@
           "word_count": 517
         },
         {
-          "id": 1128,
-          "source": "Ledger Insights",
+          "id": 259,
+          "source": "arXiv cs.CL",
           "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "BlackRock launches $100m HKD tokenized MMF with Ant Intl, StanChart as investors",
-          "link": "https://www.ledgerinsights.com/blackrock-launches-100m-hkd-tokenized-mmf-with-ant-intl-stanchart-as-investors/",
-          "content": "BlackRock has launched its first tokenized money market fund (MMF) in Hong Kong, the BlackRock HKD Digital Liquidity Fund, with some novel features. It adds a fourth currency, given BlackRock already has tokenized MMFs in USD, EUR and GBP. The Hong Kong fund launches with USD 100 million in investment from Ant International and Standard [&#8230;] The post BlackRock launches $100m HKD tokenized MMF with Ant Intl, StanChart as investors appeared first on Ledger Insights - blockchain for enterprise .",
-          "pub_date": "Tue, 24 Nov 2026 20:42:34 +0000",
+          "tier": "T1",
+          "priority": 6,
+          "title": "BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation",
+          "link": "https://arxiv.org/abs/2611.33135",
+          "content": "arXiv:2611.33135v1 Announce Type: cross Abstract: Language models can generate LEGO$^\\circledR$ assemblies from text, but their builds often contain parts that collide or attach to nothing. The usual approach of rejecting and resampling invalid placements discards decoded tokens without guaranteeing a valid build. We present BriConstrain, a constrained decoding method that restricts a pretrained language model's next-token probabilities before sampling, steering it towards valid placements. Because the validity of a brick placement depends on the non-predetermined build state, it cannot be compiled into a fixed grammar and must be checked dynamically. However, checking the validity of a brick before sampling is challenging as the space of valid placements is combinatorially large and cannot be enumerated exhaustively. Our key idea is to narrow the search space by constraining how parts attach rather than which parts attach to each other. Concretely, given the model's predictions of the currently placed part, and the previously placed parent it wants to connect to, we constrain the model's choice of how they attach. This allows us to span the space of part attachments, using a preco",
+          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 502
+          "word_count": 1200
         }
       ],
       "quota": {
@@ -1150,15 +1150,15 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 222,
-      "total_valid": 44,
+      "total_raw": 232,
+      "total_valid": 55,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 1285,
-    "dup": 306,
-    "nocontent": 434,
+    "total_raw": 2314,
+    "dup": 553,
+    "nocontent": 432,
     "noise": 8
   }
 }
