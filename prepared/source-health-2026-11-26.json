@@ -97,9 +97,8 @@
     "Import AI": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
-      "ok": true,
-      "latest_pub": "2026-11-23"
+      "count": 0,
+      "ok": false
     },
     "Interconnects": {
       "section": "ai",
@@ -125,8 +124,8 @@
     "Hacker News AI": {
       "section": "ai",
       "method": "api",
-      "count": 0,
-      "ok": false
+      "count": 20,
+      "ok": true
     },
     "Mistral AI": {
       "section": "ai",
@@ -205,8 +204,8 @@
     "Fierce Pharma": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "STAT News": {
       "section": "vaccine",
@@ -329,9 +328,8 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 10,
-      "ok": true,
-      "latest_pub": "2026-11-25"
+      "count": 0,
+      "ok": false
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -404,8 +402,8 @@
     "Fierce Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 25,
+      "ok": true
     },
     "EMA": {
       "section": "vaccine",
@@ -417,8 +415,7 @@
       "section": "vaccine",
       "method": "rss",
       "count": 0,
-      "ok": true,
-      "latest_pub": "2026-11-03"
+      "ok": false
     },
     "Derek Lowe In the Pipeline": {
       "section": "vaccine",
@@ -498,16 +495,14 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 3,
-      "ok": true,
-      "latest_pub": "2026-11-25"
+      "count": 0,
+      "ok": false
     },
     "Absci Blog": {
       "section": "synbio",
       "method": "rss",
-      "count": 2,
-      "ok": true,
-      "latest_pub": "2026-11-12"
+      "count": 0,
+      "ok": false
     },
     "Nature Chemical Biology": {
       "section": "synbio",
@@ -563,7 +558,7 @@
       "method": "rss",
       "count": 10,
       "ok": true,
-      "latest_pub": "2026-11-25"
+      "latest_pub": "2026-11-26"
     },
     "PYMNTS Cross-Border": {
       "section": "payment",
@@ -582,7 +577,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 38,
+      "count": 37,
       "ok": true,
       "latest_pub": "2027-02-17"
     },
@@ -596,8 +591,9 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 5,
+      "ok": true,
+      "latest_pub": "2026-11-24"
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -665,15 +661,15 @@
   },
   "alarms": {
     "fail": [
-      "Fierce Biotech",
-      "Fierce Pharma",
-      "Hacker News AI",
-      "Thunes"
+      "Absci Blog",
+      "BioNTech",
+      "Import AI",
+      "bioRxiv SynBio",
+      "medRxiv Infectious"
     ],
     "sudden_drop": [],
     "persistent_zero": [
       "Andrej Karpathy",
-      "BioNTech",
       "Lancet Digital Health",
       "Lancet Infect Dis",
       "Lilian Weng",
