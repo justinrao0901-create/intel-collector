@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 17,
+      "count": 13,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -120,13 +120,13 @@
       "method": "rss",
       "count": 15,
       "ok": true,
-      "latest_pub": "2026-11-24"
+      "latest_pub": "2026-11-25"
     },
     "Hacker News AI": {
       "section": "ai",
       "method": "api",
-      "count": 20,
-      "ok": true
+      "count": 0,
+      "ok": false
     },
     "Mistral AI": {
       "section": "ai",
@@ -177,7 +177,7 @@
     "Together AI": {
       "section": "ai",
       "method": "rss",
-      "count": 7,
+      "count": 5,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -254,26 +254,26 @@
       "method": "rss",
       "count": 9,
       "ok": true,
-      "latest_pub": "2026-09-25"
+      "latest_pub": "2026-11-05"
     },
     "Cell": {
-      "section": "vaccine",
-      "method": "rss",
-      "count": 9,
-      "ok": true,
-      "latest_pub": "2026-11-24"
-    },
-    "Cell Host Microbe": {
       "section": "vaccine",
       "method": "rss",
       "count": 5,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
+    "Cell Host Microbe": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 4,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
     "Immunity": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 7,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -294,21 +294,21 @@
     "Nature Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 6,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
     "Nature Biotech": {
       "section": "vaccine",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 16,
+      "count": 15,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -329,7 +329,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 13,
+      "count": 10,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -390,7 +390,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 20,
+      "count": 18,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -465,7 +465,7 @@
     "Nature Synthetic Biology": {
       "section": "synbio",
       "method": "rss",
-      "count": 11,
+      "count": 10,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -491,14 +491,14 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 5,
+      "count": 3,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -568,7 +568,7 @@
     "PYMNTS Cross-Border": {
       "section": "payment",
       "method": "rss",
-      "count": 3,
+      "count": 2,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -667,6 +667,7 @@
     "fail": [
       "Fierce Biotech",
       "Fierce Pharma",
+      "Hacker News AI",
       "Thunes"
     ],
     "sudden_drop": [],
