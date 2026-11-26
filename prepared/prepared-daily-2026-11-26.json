@@ -20,7 +20,7 @@
           "word_count": 363
         },
         {
-          "id": 1286,
+          "id": 1287,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -65,29 +65,14 @@
           "word_count": 205
         },
         {
-          "id": 65,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Loupe: Reinforcing Knowledge-Intensive Video Generation Agents",
-          "link": "https://arxiv.org/abs/2611.31895",
-          "content": "Knowledge-intensive video generation remains challenging because prompts often omit the facts, appearances, and temporal relationships required for accurate generation. While search-based workflows can retrieve missing evidence, manually designed strategies limit adaptive planning, and conventional training suffers from costly video-level feedback and coarse trajectory-level credit assignment. In this paper, we present Loupe, a video generation agent that retrieves and verifies textual and visual evidence to construct evidence-grounded temporal video prompts with reference images. We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering. Building on RBC, RBC-SFT reweights assistant-token learning by step quality, while RBC-GRPO incorporates step-level credits alongside a final planning reward, without rendering videos during RL. To address the lack of dedicated search-oriented evaluation, we construct Search-VBench, which contains 150 held-out prompts across seven categories. Experiments show that Loupe improves all four evaluation dimensio",
-          "pub_date": "2026-11-23T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
           "id": 66,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CONCOR: Benchmarking Contrastive Decoding for Visual Hallucination Mitigation Beyond Final-Output Performance",
-          "link": "https://arxiv.org/abs/2611.30460",
-          "content": "Contrastive decoding (CD) mitigates object hallucination in multimodal large language models (MLLMs) by contrasting token distributions under different conditions to adjust token scores. However, existing generative and discriminative benchmarks primarily measure final task scores, which can be confounded by candidate filtering, changes in generation trajectories, and response biases, making it difficult to isolate the effects of the underlying contrastive adjustments. To address these limitations while complementing existing evaluations, we introduce CONCOR (Contrastive Correction Evaluation), a controlled benchmark that directly evaluates the competition between ground-truth and different types of hallucinated candidates using the Contrastive Grounding Margin (CGM). CGM also enables analysis of directional consistency, composition, and reliability of contrastive corrections. Our evaluation reveals that existing CD methods exhibit distinct correction behaviors: some consistently favor ground-truth candidates, whereas others produce strong corrections but also introduce more errors. Crucially, these differences help explain their contrasting responses to increased contrast strength",
+          "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+          "link": "https://arxiv.org/abs/2611.34575",
+          "content": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modali",
           "pub_date": "2026-11-24T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -100,10 +85,25 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Target-Part Preference Optimization for Part-Aware 3D Generation",
-          "link": "https://arxiv.org/abs/2611.30472",
-          "content": "Part-aware 3D generation requires not only globally plausible objects but also complete, well-separated semantic parts, yet high-quality part decompositions remain too scarce to support large-scale supervised fine-tuning. We study whether preference fine-tuning based on Direct Preference Optimization (DPO) can adapt a pretrained part-aware generator from limited part-annotated data without architectural changes. We rank candidates generated with different random seeds against ground-truth (GT) geometric metrics, and select the (object, target-part) examples with the largest across-seed quality gap. Each selected example stores a seed pair whose two flow trajectories share one clean GT compositional latent and differ only in Gaussian noise. We derive a reference-relative target-block preference loss from FlowDPO that compares the two trajectories against a frozen reference model. GT flow-matching losses on the target block and complete part set provide absolute supervision, while only the diffusion transformer (DiT) is updated. Human-ranked controls test an alternative ordering source, and synthetic cropping provides controlled loser targets that are incomplete by construction. Amon",
-          "pub_date": "2026-11-22T19:00:00.000Z",
+          "title": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
+          "link": "https://arxiv.org/abs/2611.34237",
+          "content": "Code-driven video generation asks a coding agent to write and run rendering programs. This gives exact control over typography, data visualizations, synchronized audio, and multi-shot scenes, and it leaves an editable project behind. A program that exits cleanly can still render overlapping labels, a camera aimed away from its subject, broken object interactions, or narration that drifts out of sync, and none of these raise a runtime error. Feeding rendered frames and audio back into the coding session bloats its long-horizon context, while critiquing only the finished full-resolution render turns early design mistakes into costly rewrites. We introduce VibeVideoAgent, a training-free framework that lets coding agents inspect their drafts throughout production. Multimodal perception runs in short-lived contexts kept apart from the coder and returns compact, grounded Findings. Seven primitives operate on a unified multi-clock representation of assets and drafts: they explore media from coarse to fine, verify quoted requirements with evidence from every required modality, compare a draft with a reference or an earlier revision on separate clocks, and measure stream signals locally. A",
+          "pub_date": "2026-11-24T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 68,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+          "link": "https://arxiv.org/abs/2611.34907",
+          "content": "Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent systems provide such memory for offline multi-shot generation, yet they read the whole script in advance, plan each shot before generating it, and regenerate failed shots, which a live stream does not allow. We present Agentic LongLive, an asynchronous agentic memory for long video generation. A memory agent on separate GPUs reads only the prompts revealed so far, never the generated video, and keeps a text state and evolving images for every person, object, and scene. From this entity memory it composes a global image and a per-shot memory image, which an auxiliary GPU prefills into the generator's attention sink before the next shot starts, and writes entity cards for the prompts that name them, so the video never waits for memory and video errors are not written back. A small language model, trained with reinforcement learning and an image reward calibrated using downstream video outcomes, decides what to remember before the next prompt is known. On LongStory-Online, a new benchmark o",
+          "pub_date": "2026-11-24T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1183,
+          "id": 1184,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1291,
+          "id": 1292,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 1292,
+          "id": 1293,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1296,
-      "total_valid": 853,
+      "total_raw": 1297,
+      "total_valid": 855,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1597,
+          "id": 1598,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1604,
+          "id": 1605,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1605,
+          "id": 1606,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1437,
+          "id": 1438,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 438
         },
         {
-          "id": 1359,
+          "id": 1360,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 373
         },
         {
-          "id": 1754,
+          "id": 1755,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 373
         },
         {
-          "id": 1850,
+          "id": 1851,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 341
         },
         {
-          "id": 1361,
+          "id": 1362,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 327
         },
         {
-          "id": 1336,
+          "id": 1337,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 235
         },
         {
-          "id": 1542,
+          "id": 1543,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 219
         },
         {
-          "id": 1511,
+          "id": 1512,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 177
         },
         {
-          "id": 1480,
+          "id": 1481,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 175
         },
         {
-          "id": 1421,
+          "id": 1422,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 160
         },
         {
-          "id": 1525,
+          "id": 1526,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 147
         },
         {
-          "id": 1726,
+          "id": 1727,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1938,
+          "id": 1939,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 54
         },
         {
-          "id": 1940,
+          "id": 1941,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 54
         },
         {
-          "id": 1941,
+          "id": 1942,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 1957,
+          "id": 1958,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 424
         },
         {
-          "id": 1973,
+          "id": 1974,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 244
         },
         {
-          "id": 1998,
+          "id": 1999,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 195
         },
         {
-          "id": 2024,
+          "id": 2025,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 2023,
+          "id": 2024,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1199
         },
         {
-          "id": 2016,
+          "id": 2017,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1098
         },
         {
-          "id": 2032,
+          "id": 2033,
           "source": "PLoS Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 571
         },
         {
-          "id": 2002,
+          "id": 2003,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 359
         },
         {
-          "id": 2009,
+          "id": 2010,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1853,
+          "id": 1854,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 481
         },
         {
-          "id": 1437,
+          "id": 1438,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 438
         },
         {
-          "id": 1849,
+          "id": 1850,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 397
         },
         {
-          "id": 1436,
+          "id": 1437,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 382
         },
         {
-          "id": 1753,
+          "id": 1754,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 378
         },
         {
-          "id": 1754,
+          "id": 1755,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 373
         },
         {
-          "id": 1755,
+          "id": 1756,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 365
         },
         {
-          "id": 2002,
+          "id": 2003,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 359
         },
         {
-          "id": 1361,
+          "id": 1362,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 327
         },
         {
-          "id": 1325,
+          "id": 1326,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -788,7 +788,7 @@
     "china": {
       "candidates": [
         {
-          "id": 1898,
+          "id": 1899,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 1899,
+          "id": 1900,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 1900,
+          "id": 1901,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,7 +845,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2083,
+          "id": 2084,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -860,7 +860,7 @@
           "word_count": 525
         },
         {
-          "id": 2080,
+          "id": 2081,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -875,7 +875,7 @@
           "word_count": 507
         },
         {
-          "id": 2079,
+          "id": 2080,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +890,7 @@
           "word_count": 497
         },
         {
-          "id": 2077,
+          "id": 2078,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +905,7 @@
           "word_count": 487
         },
         {
-          "id": 2101,
+          "id": 2102,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -920,7 +920,7 @@
           "word_count": 320
         },
         {
-          "id": 2103,
+          "id": 2104,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +935,7 @@
           "word_count": 290
         },
         {
-          "id": 2109,
+          "id": 2110,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +950,7 @@
           "word_count": 287
         },
         {
-          "id": 2111,
+          "id": 2112,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +965,7 @@
           "word_count": 250
         },
         {
-          "id": 2108,
+          "id": 2109,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +980,7 @@
           "word_count": 245
         },
         {
-          "id": 2102,
+          "id": 2103,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +995,7 @@
           "word_count": 231
         },
         {
-          "id": 2086,
+          "id": 2087,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +1010,7 @@
           "word_count": 171
         },
         {
-          "id": 249,
+          "id": 248,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1025,7 +1025,7 @@
           "word_count": 1200
         },
         {
-          "id": 642,
+          "id": 641,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1040,7 +1040,7 @@
           "word_count": 1200
         },
         {
-          "id": 695,
+          "id": 694,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1055,7 +1055,7 @@
           "word_count": 1200
         },
         {
-          "id": 761,
+          "id": 760,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1070,7 +1070,7 @@
           "word_count": 1200
         },
         {
-          "id": 781,
+          "id": 780,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1085,7 +1085,7 @@
           "word_count": 1200
         },
         {
-          "id": 1058,
+          "id": 1057,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1100,7 +1100,7 @@
           "word_count": 1200
         },
         {
-          "id": 160,
+          "id": 159,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1115,7 +1115,7 @@
           "word_count": 1199
         },
         {
-          "id": 501,
+          "id": 500,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1130,7 +1130,7 @@
           "word_count": 1199
         },
         {
-          "id": 207,
+          "id": 206,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1156,8 +1156,8 @@
     }
   },
   "meta": {
-    "total_raw": 2293,
-    "dup": 539,
+    "total_raw": 2294,
+    "dup": 538,
     "nocontent": 435,
     "noise": 8
   }
