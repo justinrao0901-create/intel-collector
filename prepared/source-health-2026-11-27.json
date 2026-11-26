@@ -1,0 +1,681 @@
+{
+  "date": "2026-11-27",
+  "sources": {
+    "OpenAI News": {
+      "section": "ai",
+      "method": "rss",
+      "count": 12,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Anthropic Blog": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Google DeepMind": {
+      "section": "ai",
+      "method": "rss",
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Meta AI Blog": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 11,
+      "ok": true
+    },
+    "Microsoft AI Blog": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 2,
+      "ok": true
+    },
+    "NVIDIA Blog": {
+      "section": "ai",
+      "method": "rss",
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "HuggingFace Blog": {
+      "section": "ai",
+      "method": "rss",
+      "count": 9,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "HuggingFace Daily Papers": {
+      "section": "ai",
+      "method": "api",
+      "count": 15,
+      "ok": true
+    },
+    "TechCrunch AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 11,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Sequoia Capital": {
+      "section": "ai",
+      "method": "rss",
+      "count": 1,
+      "ok": true,
+      "latest_pub": "2026-11-23"
+    },
+    "a16z AI": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "arXiv cs.CL": {
+      "section": "ai",
+      "method": "rss",
+      "count": 177,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "arXiv cs.AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 398,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "arXiv cs.LG": {
+      "section": "ai",
+      "method": "rss",
+      "count": 419,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Import AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": false
+    },
+    "Interconnects": {
+      "section": "ai",
+      "method": "rss",
+      "count": 1,
+      "ok": true,
+      "latest_pub": "2026-11-14"
+    },
+    "Latent Space": {
+      "section": "ai",
+      "method": "rss",
+      "count": 18,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Simon Willison": {
+      "section": "ai",
+      "method": "rss",
+      "count": 19,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Hacker News AI": {
+      "section": "ai",
+      "method": "api",
+      "count": 20,
+      "ok": true
+    },
+    "Mistral AI": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Epoch AI": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Artificial Analysis": {
+      "section": "ai",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Semianalysis": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2025-09-16"
+    },
+    "Lilian Weng": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-07-04"
+    },
+    "Andrej Karpathy": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-02-12"
+    },
+    "The Gradient": {
+      "section": "ai",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-02-18"
+    },
+    "Together AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 6,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Sakana AI": {
+      "section": "ai",
+      "method": "rss",
+      "count": 5,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Amazon Science": {
+      "section": "ai",
+      "method": "rss",
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Endpoints News": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 7,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Fierce Pharma": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 25,
+      "ok": true
+    },
+    "STAT News": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 6,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "WHO News": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-10-10"
+    },
+    "FDA 审批动态": {
+      "section": "vaccine",
+      "method": "api",
+      "count": 1,
+      "ok": true
+    },
+    "Nature": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 75,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "NEJM": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 20,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "The Lancet": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 22,
+      "ok": true,
+      "latest_pub": "2026-11-21"
+    },
+    "Lancet Infect Dis": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 9,
+      "ok": true,
+      "latest_pub": "2026-11-05"
+    },
+    "Cell": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 5,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Cell Host Microbe": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 4,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Immunity": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 7,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Science": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 33,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "JAMA": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 41,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Nature Medicine": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Nature Biotech": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Nature Vaccines": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 15,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Nature Immunology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "bioRxiv Immunology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 30,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "medRxiv Infectious": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 10,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "ClinicalTrials.gov": {
+      "section": "vaccine",
+      "method": "api",
+      "count": 25,
+      "ok": true
+    },
+    "Vaccine (journal)": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 97,
+      "ok": true
+    },
+    "npj Vaccines": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-22"
+    },
+    "Sci Transl Med": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 7,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Nature Rev Drug Discovery": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Nature Reviews Immunology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Nature Reviews Microbiology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Science Immunology": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 5,
+      "ok": true,
+      "latest_pub": "2026-11-20"
+    },
+    "Cell Reports Medicine": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 18,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "BioPharma Dive": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 5,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Fierce Biotech": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 25,
+      "ok": true
+    },
+    "EMA": {
+      "section": "vaccine",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "BioNTech": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 0,
+      "ok": false
+    },
+    "Derek Lowe In the Pipeline": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 14,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "PLoS Pathogens": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 30,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Nature Communications": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Labiotech.eu": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 12,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "BioPharm International": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 30,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "疫苗网": {
+      "section": "vaccine",
+      "method": "rss",
+      "count": 20,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Nature Synthetic Biology": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 10,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Nature Machine Intel": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 5,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "ACS Synthetic Biology": {
+      "section": "synbio",
+      "method": "api",
+      "count": 25,
+      "ok": true
+    },
+    "Metabolic Engineering": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 60,
+      "ok": true
+    },
+    "Cell Systems": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "bioRxiv SynBio": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Absci Blog": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 0,
+      "ok": false
+    },
+    "Nature Chemical Biology": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Nucleic Acids Research": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 19,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Nature Reviews Bioengineering": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "PLoS Biology": {
+      "section": "synbio",
+      "method": "rss",
+      "count": 30,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Lancet Digital Health": {
+      "section": "cross",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-11-04"
+    },
+    "NEJM AI": {
+      "section": "cross",
+      "method": "rss",
+      "count": 3,
+      "ok": true,
+      "latest_pub": "2026-11-19"
+    },
+    "Nature Methods": {
+      "section": "cross",
+      "method": "rss",
+      "count": 8,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "PYMNTS.com": {
+      "section": "payment",
+      "method": "rss",
+      "count": 10,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "PYMNTS Cross-Border": {
+      "section": "payment",
+      "method": "rss",
+      "count": 1,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "PaymentsDive": {
+      "section": "payment",
+      "method": "rss",
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-25"
+    },
+    "Finextra": {
+      "section": "payment",
+      "method": "rss",
+      "count": 37,
+      "ok": true,
+      "latest_pub": "2027-02-17"
+    },
+    "Payments Cards & Mobile": {
+      "section": "payment",
+      "method": "rss",
+      "count": 3,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Thunes": {
+      "section": "payment",
+      "method": "rss",
+      "count": 5,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Cointelegraph Payments": {
+      "section": "payment",
+      "method": "rss",
+      "count": 0,
+      "ok": true,
+      "latest_pub": "2026-11-19"
+    },
+    "Ledger Insights": {
+      "section": "payment",
+      "method": "rss",
+      "count": 1,
+      "ok": true,
+      "latest_pub": "2026-11-24"
+    },
+    "Chainalysis Blog": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Stripe Blog": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Checkout.com Blog": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "Fed Reserve": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "ECB Press": {
+      "section": "payment",
+      "method": "rss",
+      "count": 13,
+      "ok": true,
+      "latest_pub": "2026-11-26"
+    },
+    "Visa Navigate": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 11,
+      "ok": true
+    },
+    "Circle Blog": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 25,
+      "ok": true
+    },
+    "a16z crypto": {
+      "section": "payment",
+      "method": "scrape",
+      "count": 11,
+      "ok": true
+    }
+  },
+  "alarms": {
+    "fail": [
+      "Absci Blog",
+      "BioNTech",
+      "Import AI"
+    ],
+    "sudden_drop": [],
+    "persistent_zero": [
+      "Andrej Karpathy",
+      "Lancet Digital Health",
+      "Lancet Infect Dis",
+      "Lilian Weng",
+      "Semianalysis",
+      "The Gradient",
+      "WHO News"
+    ]
+  }
+}
