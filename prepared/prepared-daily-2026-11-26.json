@@ -20,7 +20,7 @@
           "word_count": 363
         },
         {
-          "id": 1248,
+          "id": 1247,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,37 @@
           "word_count": 205
         },
         {
+          "id": 65,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+          "link": "https://arxiv.org/abs/2611.34849",
+          "content": "Real-to-simulation transfer, which builds simulations from real-world observations, has long been studied in research and industry. Recently, coding agents have become capable of generating simulation programs from video recordings, and several benchmarks have been proposed to evaluate them. However, each individual benchmark defines its own inputs, deliverables, and scoring pipeline. This leads to N times M integrations when evaluating N methods on M benchmarks. To this end, we present Real2SimLab, a unified platform for real-to-simulation transfer. It evaluates a method by running its written program and scoring the output simulation with the original scorer of each benchmark. Moreover, Real2SimLab provides a pipeline to create training data and reward annotations for real-to-simulation methods. Our pipeline carefully avoids data contamination by filtering out the video recordings that exist in benchmarks. For each video recording, a program is first produced, and then our pipeline computes its reward with the same code that Real2SimLab uses for evaluation. So far, it supports 47 coding agents and 5 non-agent methods on 6 benchmarks. Both the platform and Awesome-Real2Sim, our re",
+          "pub_date": "2026-11-24T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
           "id": 66,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "AIRIS: Benchmarking Social Embodied Intelligence in Egocentric Streaming Videos",
+          "link": "https://arxiv.org/abs/2611.34347",
+          "content": "Embodied agents operating around people must not only recognize social cues, but also decide when the available evidence is sufficient, whether to intervene, and how to respond without violating social norms. Existing benchmarks typically evaluate these abilities in isolation or with access to completed videos, obscuring where an online social decision fails. We introduce AIRIS, a causal streaming benchmark that formulates social embodied intelligence as a time-anchored chain of Attention, Intention, Reaction, and Interaction (A-I-R-I). AIRIS contains 8,000 expert-curated questions grounded in 357 egocentric clips across 11 context categories and 36 capability dimensions. At each query, models receive only the observation prefix available at that time; decision-aware metrics reward calibrated waiting and complete reactions while penalizing premature commitment. Evaluating 45 proprietary and open-source general-purpose, embodied, streaming-video, and omni-modal models reveals fragmented and temporally miscalibrated competence. General-purpose VLMs excel at passive cue grounding and intent recognition, whereas embodied specialists lead on isolated reaction sub-decisions; yet across a",
+          "pub_date": "2026-11-24T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 69,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,37 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "3D CoCa v3: Contrastive Learners with Scene Graphs for Urban Scene Understanding",
-          "link": "https://arxiv.org/abs/2611.33835",
-          "content": "Understanding large-scale 3D urban scenes requires representations that capture both multi-scale geometric structures and complex spatial relationships. However, existing 3D vision-language methods primarily emphasize global semantic alignment or object-level representations, leaving structured relational modeling underexplored within unified contrastive and generative frameworks. In this paper, we present 3D CoCa v3, a scene-graph-enhanced contrastive and generative framework for urban 3D scene understanding. Our framework features a Pyramid Vision Encoder for multi-scale geometric representation learning and a language-model-based decoder with question-guided caption retrieval and visual cross-attention. We further introduce MSG-based relational descriptions to enrich contrastive 3D-language alignment with structured spatial relationships. To support semantic and relational supervision, we construct City3D-9.6K, a multi-view urban vision-language dataset with aligned visual-geometric observations, scene captions, and scene graphs. Extensive experiments on City-3DQA demonstrate that 3D CoCa v3 achieves 88.35% and 64.79% overall top-1 accuracy on the sentence-wise and city-wise spl",
-          "pub_date": "2026-11-24T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 70,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
-          "link": "https://arxiv.org/abs/2611.34575",
-          "content": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modali",
-          "pub_date": "2026-11-24T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1138,
+          "id": 1137,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 1139,
+          "id": 1138,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1145,
+          "id": 1144,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1254,
+          "id": 1253,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 1255,
+          "id": 1254,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1259,
+      "total_raw": 1258,
       "total_valid": 815,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1560,
+          "id": 1559,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1567,
+          "id": 1566,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1568,
+          "id": 1567,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1813,
+          "id": 1812,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 451
         },
         {
-          "id": 1400,
+          "id": 1399,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 438
         },
         {
-          "id": 1322,
+          "id": 1321,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 373
         },
         {
-          "id": 1717,
+          "id": 1716,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 373
         },
         {
-          "id": 1816,
+          "id": 1815,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 341
         },
         {
-          "id": 1324,
+          "id": 1323,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 327
         },
         {
-          "id": 1299,
+          "id": 1298,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 235
         },
         {
-          "id": 1505,
+          "id": 1504,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 219
         },
         {
-          "id": 1474,
+          "id": 1473,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 177
         },
         {
-          "id": 1443,
+          "id": 1442,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 175
         },
         {
-          "id": 1384,
+          "id": 1383,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 160
         },
         {
-          "id": 1488,
+          "id": 1487,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1901,
+          "id": 1900,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 54
         },
         {
-          "id": 1903,
+          "id": 1902,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 54
         },
         {
-          "id": 1904,
+          "id": 1903,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 1920,
+          "id": 1919,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 424
         },
         {
-          "id": 1936,
+          "id": 1935,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 244
         },
         {
-          "id": 1961,
+          "id": 1960,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 195
         },
         {
-          "id": 1987,
+          "id": 1986,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1986,
+          "id": 1985,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1199
         },
         {
-          "id": 1979,
+          "id": 1978,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1098
         },
         {
-          "id": 1995,
+          "id": 1994,
           "source": "PLoS Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 571
         },
         {
-          "id": 1965,
+          "id": 1964,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 359
         },
         {
-          "id": 1972,
+          "id": 1971,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1400,
+          "id": 1399,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 438
         },
         {
-          "id": 1815,
+          "id": 1814,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 397
         },
         {
-          "id": 1399,
+          "id": 1398,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 382
         },
         {
-          "id": 1716,
+          "id": 1715,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 378
         },
         {
-          "id": 1717,
+          "id": 1716,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 373
         },
         {
-          "id": 1718,
+          "id": 1717,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 365
         },
         {
-          "id": 1965,
+          "id": 1964,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 359
         },
         {
-          "id": 1324,
+          "id": 1323,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 327
         },
         {
-          "id": 1288,
+          "id": 1287,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 243
         },
         {
-          "id": 1479,
+          "id": 1478,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -788,7 +788,7 @@
     "china": {
       "candidates": [
         {
-          "id": 1861,
+          "id": 1860,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 1862,
+          "id": 1861,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 1863,
+          "id": 1862,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,7 +845,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2046,
+          "id": 2045,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -860,7 +860,7 @@
           "word_count": 525
         },
         {
-          "id": 2043,
+          "id": 2042,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -875,7 +875,7 @@
           "word_count": 507
         },
         {
-          "id": 2042,
+          "id": 2041,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +890,7 @@
           "word_count": 497
         },
         {
-          "id": 2040,
+          "id": 2039,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +905,7 @@
           "word_count": 487
         },
         {
-          "id": 2063,
+          "id": 2062,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -920,7 +920,7 @@
           "word_count": 320
         },
         {
-          "id": 2065,
+          "id": 2064,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +935,7 @@
           "word_count": 290
         },
         {
-          "id": 2071,
+          "id": 2070,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +950,7 @@
           "word_count": 287
         },
         {
-          "id": 2073,
+          "id": 2072,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +965,7 @@
           "word_count": 250
         },
         {
-          "id": 2070,
+          "id": 2069,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +980,7 @@
           "word_count": 245
         },
         {
-          "id": 2064,
+          "id": 2063,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +995,7 @@
           "word_count": 231
         },
         {
-          "id": 2048,
+          "id": 2047,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1130,7 +1130,7 @@
           "word_count": 1187
         },
         {
-          "id": 2096,
+          "id": 2095,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -1156,8 +1156,8 @@
     }
   },
   "meta": {
-    "total_raw": 2255,
-    "dup": 539,
+    "total_raw": 2254,
+    "dup": 538,
     "nocontent": 435,
     "noise": 8
   }
