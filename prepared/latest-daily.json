@@ -20,7 +20,7 @@
           "word_count": 363
         },
         {
-          "id": 1287,
+          "id": 1248,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -70,24 +70,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
-          "link": "https://arxiv.org/abs/2611.34575",
-          "content": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modali",
-          "pub_date": "2026-11-24T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 67,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
-          "link": "https://arxiv.org/abs/2611.34237",
-          "content": "Code-driven video generation asks a coding agent to write and run rendering programs. This gives exact control over typography, data visualizations, synchronized audio, and multi-shot scenes, and it leaves an editable project behind. A program that exits cleanly can still render overlapping labels, a camera aimed away from its subject, broken object interactions, or narration that drifts out of sync, and none of these raise a runtime error. Feeding rendered frames and audio back into the coding session bloats its long-horizon context, while critiquing only the finished full-resolution render turns early design mistakes into costly rewrites. We introduce VibeVideoAgent, a training-free framework that lets coding agents inspect their drafts throughout production. Multimodal perception runs in short-lived contexts kept apart from the coder and returns compact, grounded Findings. Seven primitives operate on a unified multi-clock representation of assets and drafts: they explore media from coarse to fine, verify quoted requirements with evidence from every required modality, compare a draft with a reference or an earlier revision on separate clocks, and measure stream signals locally. A",
+          "title": "RoboEvo^2: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution",
+          "link": "https://arxiv.org/abs/2611.34675",
+          "content": "Robots should adapt to unfamiliar environments and acquire new skills through interaction, then execute those skills efficiently with practice. Vision-language-action policies provide efficient control, but often need additional human demonstrations to handle unfamiliar settings; reasoning agents can discover solutions using broad prior knowledge and robot-control APIs, but repeated deliberation and repair are costly. Inspired by human learning through reasoning and practice, we propose RoboEvo^2, a framework for recursive harness-policy co-evolution. In Policy-to-Harness (P2H) evolution, policy failures guide a coding agent to search complementary Code, Code+ICL, and Code+Policy routes, consolidating verified solutions into reusable skills, routing strategies, and experience memory. In Harness-to-Policy (H2P) evolution, verified trajectories provide supervised training, while Counterfactual Preference Distillation (CPD) teaches the policy to favor successful corrections over failures from the same starting state. The improved policy provides stronger motor skills for subsequent search, while its remaining failures redirect harness evolution, closing the reciprocal loop. Through re",
           "pub_date": "2026-11-24T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -100,9 +85,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
-          "link": "https://arxiv.org/abs/2611.34907",
-          "content": "Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent systems provide such memory for offline multi-shot generation, yet they read the whole script in advance, plan each shot before generating it, and regenerate failed shots, which a live stream does not allow. We present Agentic LongLive, an asynchronous agentic memory for long video generation. A memory agent on separate GPUs reads only the prompts revealed so far, never the generated video, and keeps a text state and evolving images for every person, object, and scene. From this entity memory it composes a global image and a per-shot memory image, which an auxiliary GPU prefills into the generator's attention sink before the next shot starts, and writes entity cards for the prompts that name them, so the video never waits for memory and video errors are not written back. A small language model, trained with reinforcement learning and an image reward calibrated using downstream video outcomes, decides what to remember before the next prompt is known. On LongStory-Online, a new benchmark o",
+          "title": "3D CoCa v3: Contrastive Learners with Scene Graphs for Urban Scene Understanding",
+          "link": "https://arxiv.org/abs/2611.33835",
+          "content": "Understanding large-scale 3D urban scenes requires representations that capture both multi-scale geometric structures and complex spatial relationships. However, existing 3D vision-language methods primarily emphasize global semantic alignment or object-level representations, leaving structured relational modeling underexplored within unified contrastive and generative frameworks. In this paper, we present 3D CoCa v3, a scene-graph-enhanced contrastive and generative framework for urban 3D scene understanding. Our framework features a Pyramid Vision Encoder for multi-scale geometric representation learning and a language-model-based decoder with question-guided caption retrieval and visual cross-attention. We further introduce MSG-based relational descriptions to enrich contrastive 3D-language alignment with structured spatial relationships. To support semantic and relational supervision, we construct City3D-9.6K, a multi-view urban vision-language dataset with aligned visual-geometric observations, scene captions, and scene graphs. Extensive experiments on City-3DQA demonstrate that 3D CoCa v3 achieves 88.35% and 64.79% overall top-1 accuracy on the sentence-wise and city-wise spl",
           "pub_date": "2026-11-24T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -110,7 +95,22 @@
           "word_count": 1200
         },
         {
-          "id": 1177,
+          "id": 70,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
+          "link": "https://arxiv.org/abs/2611.34575",
+          "content": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modali",
+          "pub_date": "2026-11-24T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1138,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 1178,
+          "id": 1139,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1184,
+          "id": 1145,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1292,
+          "id": 1254,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 1293,
+          "id": 1255,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1297,
-      "total_valid": 855,
+      "total_raw": 1259,
+      "total_valid": 815,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1598,
+          "id": 1560,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1200
         },
         {
-          "id": 1605,
+          "id": 1567,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 1200
         },
         {
-          "id": 1606,
+          "id": 1568,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,22 @@
           "word_count": 1200
         },
         {
-          "id": 1438,
+          "id": 1813,
+          "source": "Nature Communications",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Targeting chemotherapy-induced CD200 via a nucleoside-enhanced nanocarrier for cancer immunochemotherapy",
+          "link": "https://www.nature.com/articles/s41467-026-79655-7",
+          "content": "Nature Communications, Published online: 26 November 2026; doi:10.1038/s41467-026-79655-7 The efficacy of immune checkpoint blockade therapy is limited by the immunosuppressive tumor microenvironment (TME). Here this group identifies the chemotherapy-induced CD200 upregulation as a resistance mechanism then develops a nanotechnology-based framework for spatially selective CD200 silencing, thereby reprogramming TME and enhancing antitumor efficacy.",
+          "pub_date": "2026-11-26",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 451
+        },
+        {
+          "id": 1400,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +272,7 @@
           "word_count": 438
         },
         {
-          "id": 1360,
+          "id": 1322,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +287,7 @@
           "word_count": 373
         },
         {
-          "id": 1755,
+          "id": 1717,
           "source": "Cell Reports Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +302,7 @@
           "word_count": 373
         },
         {
-          "id": 1851,
+          "id": 1816,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +317,7 @@
           "word_count": 341
         },
         {
-          "id": 1362,
+          "id": 1324,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +332,7 @@
           "word_count": 327
         },
         {
-          "id": 1337,
+          "id": 1299,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +347,7 @@
           "word_count": 235
         },
         {
-          "id": 1543,
+          "id": 1505,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +362,7 @@
           "word_count": 219
         },
         {
-          "id": 1512,
+          "id": 1474,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +377,7 @@
           "word_count": 177
         },
         {
-          "id": 1481,
+          "id": 1443,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +392,7 @@
           "word_count": 175
         },
         {
-          "id": 1422,
+          "id": 1384,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +407,7 @@
           "word_count": 160
         },
         {
-          "id": 1526,
+          "id": 1488,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -405,21 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 147
-        },
-        {
-          "id": 1727,
-          "source": "Nature Rev Drug Discovery",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "First-in-class RIPTAC tears into phase III trial",
-          "link": "https://www.nature.com/articles/d41573-026-00188-1",
-          "content": "Nature Reviews Drug Discovery, Published online: 25 November 2026; doi:10.1038/d41573-026-00188-1 First-in-class RIPTAC tears into phase III trial",
-          "pub_date": "2026-11-25",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 146
         }
       ],
       "quota": {
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1939,
+          "id": 1901,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 54
         },
         {
-          "id": 1941,
+          "id": 1903,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 54
         },
         {
-          "id": 1942,
+          "id": 1904,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 1958,
+          "id": 1920,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 424
         },
         {
-          "id": 1974,
+          "id": 1936,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 244
         },
         {
-          "id": 1999,
+          "id": 1961,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 195
         },
         {
-          "id": 2025,
+          "id": 1987,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 2024,
+          "id": 1986,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1199
         },
         {
-          "id": 2017,
+          "id": 1979,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1098
         },
         {
-          "id": 2033,
+          "id": 1995,
           "source": "PLoS Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 571
         },
         {
-          "id": 2003,
+          "id": 1965,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 359
         },
         {
-          "id": 2010,
+          "id": 1972,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -626,22 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1854,
-          "source": "Nature Communications",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Lithium coordination compound reduces nephrotoxicity and enhances therapeutic effects in Alzheimer’s disease female mice",
-          "link": "https://www.nature.com/articles/s41467-026-79416-6",
-          "content": "Nature Communications, Published online: 25 November 2026; doi:10.1038/s41467-026-79416-6 Here authors rationally design a lithium coordination compound BuLiPro. Compared with conventional lithium carbonate, BuLiPro improves brain lithium bioavailability, enhances GSK-3β inhibitory potency and reduces nephrotoxicity. In female AD mouse models, BuLiPro mitigates tau and amyloid-β pathologies and rescues cognitive deficits, showing potential for safer lithium-based therapeutics.",
-          "pub_date": "2026-11-25",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 481
-        },
-        {
-          "id": 1438,
+          "id": 1400,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +641,7 @@
           "word_count": 438
         },
         {
-          "id": 1850,
+          "id": 1815,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +656,7 @@
           "word_count": 397
         },
         {
-          "id": 1437,
+          "id": 1399,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +671,7 @@
           "word_count": 382
         },
         {
-          "id": 1754,
+          "id": 1716,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +686,7 @@
           "word_count": 378
         },
         {
-          "id": 1755,
+          "id": 1717,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +701,7 @@
           "word_count": 373
         },
         {
-          "id": 1756,
+          "id": 1718,
           "source": "Cell Reports Medicine",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +716,7 @@
           "word_count": 365
         },
         {
-          "id": 2003,
+          "id": 1965,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +731,7 @@
           "word_count": 359
         },
         {
-          "id": 1362,
+          "id": 1324,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +746,7 @@
           "word_count": 327
         },
         {
-          "id": 1326,
+          "id": 1288,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -774,6 +759,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 243
+        },
+        {
+          "id": 1479,
+          "source": "JAMA",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Electrocardiogram-Based Deep Learning to Prioritize Testing for Transthyretin Amyloid Cardiomyopathy",
+          "link": "https://jamanetwork.com/journals/jama/fullarticle/2853388",
+          "content": "This diagnostic test study developed and validated a locally deployable artificial intelligence–enabled system to identify patients for further evaluation of transthyretin amyloid cardiomyopathy from routine electrocardiography images.",
+          "pub_date": "Tue, 24 Nov 2026 00:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 235
         }
       ],
       "quota": {
@@ -781,14 +781,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 59,
-      "total_valid": 49,
+      "total_raw": 60,
+      "total_valid": 50,
       "total_candidates": 10
     },
     "china": {
       "candidates": [
         {
-          "id": 1899,
+          "id": 1861,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 1900,
+          "id": 1862,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 1901,
+          "id": 1863,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,7 +845,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2084,
+          "id": 2046,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
@@ -860,7 +860,7 @@
           "word_count": 525
         },
         {
-          "id": 2081,
+          "id": 2043,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -875,7 +875,7 @@
           "word_count": 507
         },
         {
-          "id": 2080,
+          "id": 2042,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +890,7 @@
           "word_count": 497
         },
         {
-          "id": 2078,
+          "id": 2040,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +905,7 @@
           "word_count": 487
         },
         {
-          "id": 2102,
+          "id": 2063,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -920,7 +920,7 @@
           "word_count": 320
         },
         {
-          "id": 2104,
+          "id": 2065,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +935,7 @@
           "word_count": 290
         },
         {
-          "id": 2110,
+          "id": 2071,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +950,7 @@
           "word_count": 287
         },
         {
-          "id": 2112,
+          "id": 2073,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +965,7 @@
           "word_count": 250
         },
         {
-          "id": 2109,
+          "id": 2070,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +980,7 @@
           "word_count": 245
         },
         {
-          "id": 2103,
+          "id": 2064,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +995,7 @@
           "word_count": 231
         },
         {
-          "id": 2087,
+          "id": 2048,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1010,139 +1010,139 @@
           "word_count": 171
         },
         {
-          "id": 248,
+          "id": 181,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation",
-          "link": "https://arxiv.org/abs/2611.33135",
-          "content": "arXiv:2611.33135v1 Announce Type: cross Abstract: Language models can generate LEGO$^\\circledR$ assemblies from text, but their builds often contain parts that collide or attach to nothing. The usual approach of rejecting and resampling invalid placements discards decoded tokens without guaranteeing a valid build. We present BriConstrain, a constrained decoding method that restricts a pretrained language model's next-token probabilities before sampling, steering it towards valid placements. Because the validity of a brick placement depends on the non-predetermined build state, it cannot be compiled into a fixed grammar and must be checked dynamically. However, checking the validity of a brick before sampling is challenging as the space of valid placements is combinatorially large and cannot be enumerated exhaustively. Our key idea is to narrow the search space by constraining how parts attach rather than which parts attach to each other. Concretely, given the model's predictions of the currently placed part, and the previously placed parent it wants to connect to, we constrain the model's choice of how they attach. This allows us to span the space of part attachments, using a preco",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
+          "title": "AliceAI-Foundation-80B-A3B-Base",
+          "link": "https://arxiv.org/abs/2611.34529",
+          "content": "arXiv:2611.34529v1 Announce Type: new Abstract: We present AliceAI-Foundation-80B-A3B-Base, a mixture-of-experts language model with 80 billion total parameters and approximately 3 billion active parameters per token, trained from scratch at Yandex and released under the Apache 2.0 license. The model combines Kimi Delta Attention with full attention, uses Attention Residuals, and is trained with Muon. Training comprises general pretraining on 17.5 trillion tokens, two context-extension stages, and a dedicated stage for reasoning and agentic interaction. We describe the data collection and augmentation pipelines, evaluation protocols, architectural ablations, and scaling-law experiments. We identify the limitations of held-out training loss as a proxy for downstream performance and introduce an auxiliary loss on mixture-of-experts outputs to stabilize training at the predicted learning rate. Domain-specific data selection and augmentation improve factual knowledge, mathematics, and programming skills, while agent trajectories introduced during pretraining improve performance on agentic benchmarks after supervised fine-tuning. In zero-shot reasoning evaluation, the model achieves lea",
+          "pub_date": "Thu, 26 Nov 2026 00:00:00 -0500",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 641,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Depth Enables Local Entropy: Quadratic Depth Dependence in Deep Variation-Norm ReLU Regression",
-          "link": "https://arxiv.org/abs/2608.17434",
-          "content": "arXiv:2608.17434v2 Announce Type: replace Abstract: How small can a layer-sum variation budget be while deep ReLU regression keeps a statistical complexity quadratic in depth? We study Gaussian regression on the circle over compositions of $L$ vector-valued ReLU blocks of width $w$, whose second-order variation costs sum to at most $A$. With unit output bound and noise level, a budget $CLw^\\varepsilon$ already forces minimax risk $\\Omega(\\varepsilon^2\\min\\{1,L^2w^2\\log w/n\\})$ for each fixed $\\varepsilon\\in(0,2]$ and $L\\gtrsim1/\\varepsilon$. This is far below the budget of order $Lw^2$ needed when every layer carries the full gain. When $L\\gtrsim\\log w$, a budget $CL$ forces risk $\\Omega(\\min\\{1,L^2w^2/(n\\log w)\\})$, and over a wide range of sample sizes no budget below a small multiple of $L$ reaches this risk. Conversely, every function in the class has derivative variation at most $2(A/L)^L$, independently of the width, and in a low-budget regime the minimax risk matches that of a one-dimensional second-variation ball of radius $(A/L)^L$. The budget thus moves the class from the behavior of a one-dimensional smoothness ball to statistical complexity quadratic in depth, and a bud",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 694,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Experiment-as-Code Labs: A Declarative Stack for AI-Driven Scientific Discovery",
-          "link": "https://arxiv.org/abs/2605.04375",
-          "content": "arXiv:2605.04375v3 Announce Type: replace-cross Abstract: To unleash the full potential of AI for Science, we must untether the agents from a purely digital environment. The agent's ability to control and explore in real-world labs is essential because the physical lab remains foundational to scientific discovery. While some tasks can be performed on a computer (e.g., data analysis, running simulated experiments), Eureka moments could occur at any time while operating lab instruments (e.g., when a scientist notices unexpected clues, intuition may prompt a real-time course change). Although autonomous labs are on the rise, which expose programmable APIs to control scientific instruments via software, bridging the gap between increasingly powerful AI agents and automated lab equipment requires innovation that draws insights from computer systems. We propose a new paradigm called ``Experiment-as-Code (EaC) Labs,'' where a core concept is to encode experiments as declarative configurations that can be compiled down to device-level APIs. AI agents come up with hypotheses and experiments, written as an ensemble of declarative configurations. The systems layer performs program analysis, s",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 760,
-          "source": "arXiv cs.AI",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
-          "link": "https://arxiv.org/abs/2611.30235",
-          "content": "arXiv:2611.30235v2 Announce Type: replace-cross Abstract: GUI grounding requires precise clicks at low latency. Recent models such as GUI-Decisions and GUI-Swift predict coordinates in one forward pass using fixed global bins with local refinement. However, screenshot downsampling removes detail needed to locate small controls, while fixed bins cover larger pixel ranges at higher resolutions. We introduce PixelOne, which transfers spatial knowledge from a search teacher to a student that predicts clicks directly from screenshots at native resolution. The teacher uses VideoJEV's text-option scorer to select rows and columns and progressively zoom into candidate regions. The student inherits the teacher's parameters and matches its distributions over explored regions through spatial distillation alongside box supervision. At inference, the same decision head selects a visual token, and a lightweight pixel head predicts the click within it, all in one forward pass. A click-aligned loss encourages pixels inside the target box to score above those outside. Across four benchmarks, PixelOne-Pro-35B-A3B achieves 83.8% mean accuracy, the highest among the evaluated single-forward grounders,",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 780,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "CHORD: Learning Latent Spaces for Constrained Stellarator Design",
-          "link": "https://arxiv.org/abs/2611.31486",
-          "content": "arXiv:2611.31486v1 Announce Type: new Abstract: In high-dimensional, PDE-constrained design, interpolating between known feasible solutions can reveal trade-offs without repeating expensive optimization campaigns. In stellarator design for fusion energy, direct interpolation of plasma boundary parameters can violate physical constraints even when both endpoints are feasible. Learned latent representations can capture nonlinear relationships among design variables, but latent interpolation can still cross infeasible regions, and conditioning on target metrics can become inconsistent with the decoded design. We introduce CHORD, a conditional variational autoencoder that penalizes predicted constraint violations along decoded latent interpolants during training, paired with self-consistent inference that aligns conditioning with the decoded design's predicted metrics. Geometric benchmarks show the benefit of regularizing latent interpolants. In stellarator interpolation between distinct geometry families, CHORD reaches up to 81% simulator-validated mid-segment feasibility, compared with 50% for an unregularized conditional VAE and 28% for direct interpolation of boundary parameters. A",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1057,
-          "source": "arXiv cs.LG",
-          "section": "payment",
-          "tier": "T1",
-          "priority": 6,
-          "title": "Announced Breaks Separate Conformal Reliability from Frequency Calibration",
-          "link": "https://arxiv.org/abs/2610.23917",
-          "content": "arXiv:2610.23917v4 Announce Type: replace Abstract: A prediction interval should contain the outcome at a stated rate. Conformal prediction sets its width from past forecast errors. When the process behind a time series changes on an announced date, intervals set from errors before that break can stop covering. After Australia moved to five minute electricity settlement, a 90% interval fixed beforehand covered 51.5% of the next 400 days. One forecaster needs the next interval to cover, another a finished period's share of misses at 10%. We show that each need calls for its own restart at the date. We recompute the next interval from the $n$ errors since the break. If these errors are independent, its coverage comes within $O(n^{-1/2})$ of the stated rate, the best order attainable. For a finished period, we restart adaptive conformal inference (ACI). On bounded errors, if a floor under its width adds a bounded total, it brings the share of misses within $O(n^{-1})$ of target but promises nothing about the next interval. After a simulated mean shift of 5.0 noise standard deviations, recomputed intervals cover within 3.5 percentage points of 90% on average at the 50th forecast, a thi",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 159,
+          "id": 212,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Scoring What Matters: Exact Feedback Reduction for Language Model Comparison",
-          "link": "https://arxiv.org/abs/2611.31931",
-          "content": "arXiv:2611.31931v1 Announce Type: new Abstract: Comparing language-model checkpoints requires estimating performance differences, yet evaluation pipelines can pay to score responses whose contributions cancel from those differences. We introduce Contrast-Aware Feedback Acquisition (CAFA), a sampler-agnostic method that identifies which scores a requested linear report needs before acquiring feedback. CAFA groups identical scoring inputs and aggregates their report coefficients, removing queries beyond ordinary caching while preserving the fully scored result. For a fixed response bank and an otherwise unrestricted scalar scorer, we characterize necessary and sufficient query sets for exact recovery of sample means, either alone or jointly with ordinary sample covariances. On controlled updates, CAFA removes 55.8% and 90.1% of the scoring inputs remaining after caching for Qwen2.5-1.5B-Instruct and SmolLM2-1.7B-Instruct, respectively, averaged over four generation repetitions. Across three online group relative policy optimization (GRPO) trajectories, Independent Star sampling with CAFA achieves 46.1-51.3% lower recorded generation-plus-feedback cost than independent autoregressive",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
+          "title": "CA-RAG: Constraint-Aligned Retrieval for Structurally Faithful Long-Form Generation",
+          "link": "https://arxiv.org/abs/2611.33497",
+          "content": "arXiv:2611.33497v1 Announce Type: cross Abstract: Retrieval-augmented generation (RAG) typically optimises evidence selection for semantic relevance, whereas compliance-sensitive long-form generation also requires evidence supporting explicit structural obligations. Semantically relevant retrieval may therefore omit information needed for mandatory downstream clauses. We propose Constraint-Aligned RAG (CA-RAG), a retrieval-conditioning framework that augments section-specific queries with ontology-derived structural constraints and policy-grounded knowledge-graph relations before evidence selection. Retrieval-only evaluation with manually annotated evidence shows consistent improvements across retrieval budgets. At $k=6$, CA-RAG increases Precision@$k$ from $0.5268$ to $0.5692$, pooled Recall@$k$ from $0.5402$ to $0.5950$, and F1@$k$ from $0.5389$ to $0.5672$ over standard RAG. Generation experiments further show improvements in compliance and reliability in several model--domain settings, while generation-only constraints achieve higher clause coverage but lower overall compliance and reliability. These results indicate that structurally aligned retrieval can improve evidence suff",
+          "pub_date": "Thu, 26 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 363,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Evaluating Aviation Safety Knowledge Extraction with SmolLM2: From Zero-Shot to Retrieval-Grounded Prompting",
+          "link": "https://arxiv.org/abs/2611.34432",
+          "content": "arXiv:2611.34432v1 Announce Type: new Abstract: Aviation accident narratives contain safety knowledge that is difficult to capture using structured occurrence fields alone. This study evaluates prompting-based knowledge extraction across four dimensions: concept accuracy, verbatim evidence grounding, structural compliance, and directed relation extraction. SmolLM2-1.7B-Instruct was evaluated under zero-shot, one-shot, fixed few-shot, and retrieval-grounded prompting using 300 National Transportation Safety Board narratives from 2000-2020, containing 3,763 reference concepts and 467 directed relations. Evaluation combined structural checks, verbatim evidence matching, expert-reviewed semantic matching, and paired bootstrap confidence intervals. No prompting strategy performed best across all dimensions. Retrieval-grounded prompting achieved the highest concept micro-F1 of 32.27%, although its advantage over fixed few-shot prompting was uncertain (95% CI: -0.92 to 2.40 percentage points). One-shot prompting achieved the highest relation F1 of 6.95%, identifying directed relation extraction as the principal SmolLM2 bottleneck. Compared with fixed few-shot prompting, retrieval improved",
+          "pub_date": "Thu, 26 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 461,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Do Machine Learning Ensembles Beat Published Quotas? Target Parameterization, Censored Baselines, and Conformal Intervals Under Admissions Reform",
+          "link": "https://arxiv.org/abs/2611.34104",
+          "content": "arXiv:2611.34104v1 Announce Type: cross Abstract: Public admission capacity caps published prior to matriculation are widely used by ministries and institutional analysts as default intake projections in centralized postsecondary clearinghouses. Using an audited 2022 to 2026 Vietnamese undergraduate panel (26,895 program-year records across 309 universities) linked to strictly lagged t-1 occupational vacancy signals, this paper evaluates machine learning, multilevel, and censored econometric estimators against published quotas across 5,385 continuing 2024 programs (five-fold university-grouped cross-validation) and 3,348 matched (2,179 grain-consistent) 2025 programs strictly out of time. Because 62.8% of 2024 programs enroll their exact published quota, unanchored log-growth ensembles degrade accuracy, while the worst 5% generate half of total quota error via unfilled \"phantom capacity.\" Controlled target ablations, including a single-factor test under widened non-binding clipping, show that parameterizing the log fill ratio ln(D_it / S_it) instead of log growth reduces 2024 MAE by 21.5% (14.86 to 11.67), aligns ML with Tobit, Cragg, REML HLM, and capped L1 baselines, and lifts co",
+          "pub_date": "Thu, 26 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 404,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Sequentially Acquiring Concept Knowledge to Guide Continual Learning",
+          "link": "https://arxiv.org/abs/2611.33399",
+          "content": "arXiv:2611.33399v1 Announce Type: cross Abstract: The goal of continual learning (CL) is to adapt to new data (plasticity) while retaining the knowledge acquired from old data (stability). Existing methods are explicitly designed to focus on balancing stability and plasticity to mitigate the challenge of catastrophic forgetting while promoting learning. However, the impact of order and nature of samples from the new data that the network is trained on remains an under explored factor. We argue that a CL algorithm should have the ability to rank incoming samples in terms of their relationship with prior data and their effect on the learning process. In this work, we investigate if scoring and prioritizing incoming data based on their semantic relationships with the model's current knowledge can benefit CL. We propose SACK, short for Sequentially Acquiring Concept Knowledge, a plug and play technique for continual learning methods. SACK dissects categorical knowledge of the model into fine-grained concepts, computes the relationships between previously learned concepts and new concepts in each experience, and uses this relationship knowledge for prioritizing new samples. Experiments",
+          "pub_date": "Thu, 26 Nov 2026 00:00:00 -0500",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
         },
         {
-          "id": 500,
+          "id": 492,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "Machine learning enables full Bayesian inference for spinning extreme-mass-ratio inspirals",
-          "link": "https://arxiv.org/abs/2611.31916",
-          "content": "arXiv:2611.31916v1 Announce Type: cross Abstract: Extreme-mass-ratio inspirals (EMRIs), stellar-mass compact objects spiralling into massive black holes, promise to measure the masses and spins of the central black holes, reveal the strong-field environment around them and gauge cosmic distances via millihertz gravitational-wave observations. Yet most forecasts for the parameter inference of these systems assume known source parameters, and broad-prior analyses have addressed only simplified versions of the problem. The joint inversion of all 14 parameters of a spinning source from the complete prior has remained unsolved. Here we solve it for the augmented analytic kludge model: generative networks narrow the complete prior and reveal a ring of degenerate spin directions, and the exact detector likelihood determines the posterior. For a simulated one-year LISA-Taiji observation, within one ring sector we obtain, for the first time, a 14-parameter posterior of a spinning EMRI from the complete prior, the most precise yet obtained for such a source from broad priors. The redshifted mass and spin of the massive black hole are determined to two parts in $10^5$, the mass two orders of",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
+          "title": "CHASE: Curiosity-Guided Skill Acquisition for Embodied Task Execution",
+          "link": "https://arxiv.org/abs/2611.34416",
+          "content": "arXiv:2611.34416v1 Announce Type: cross Abstract: Robots executing tasks in partially observed environments must resolve uncertainty while operating with incomplete skills. Inspired by human curiosity, we investigate how robots can formulate task-relevant hypotheses, seek evidence, and acquire missing skills during task execution. We propose CHASE, a Curiosity-guided Harness for Acquiring Skills from Evidence, which operationalizes curiosity as selecting investigations that resolve task uncertainty and expand executable capabilities. Four modules connect dynamic scene understanding, hypothesis-driven planning, on-demand skill acquisition, and verified execution. The planner balances information value, skill reuse, and acquisition/execution cost. Missing skills trigger bounded exploration, learning from verified segments, and held-out admission during acquisition; separate checks verify physical effects and acquired evidence. Newly admitted skills expand the executable investigation set, closing the loop between resolving uncertainty and acquiring capabilities. Simulation and real-robot experiments evaluate investigation, skill acquisition, and task execution. CHASE achieves 50-80%",
+          "pub_date": "Thu, 26 Nov 2026 00:00:00 -0500",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
         },
         {
-          "id": 206,
-          "source": "arXiv cs.CL",
+          "id": 563,
+          "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
           "priority": 6,
-          "title": "SwiftLoop: Selective Refinement for Adaptive Implicit Reasoning in Looped Transformers",
-          "link": "https://arxiv.org/abs/2611.31481",
-          "content": "arXiv:2611.31481v1 Announce Type: cross Abstract: Looped Transformers advance implicit chain-of-thought reasoning through recurrent latent refinement. However, existing looped reasoners typically employ fixed-depth recurrence, updating all latent positions at every iteration and incurring redundancy when further refinement is unnecessary. We introduce \\textsc{SwiftLoop}, an inference-time framework for selective recurrent refinement through position-wise freezing, enabling adaptive computation allocation across both recurrent depth and active width. SwiftLoop learns lightweight freezing policies through hindsight-guided supervision derived from two complementary criteria: K/V reusability at the internal representation level and functional impact at the output level. At inference time, these policies guide adaptive freezing based on observed hidden states. Extensive experiments demonstrate that SwiftLoop achieves favorable accuracy--computation trade-offs over fixed-loop inference and adaptive baselines, with measured inference acceleration. Beyond implicit reasoning, we further demonstrate its applicability to recurrent prompt prefilling in general looped models.",
-          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
+          "title": "Are You Still the Agent I Authorized? Earned Authority under a Fixed Ceiling for Evolving Agents",
+          "link": "https://arxiv.org/abs/2607.23586",
+          "content": "arXiv:2607.23586v2 Announce Type: replace Abstract: Long-lived AI agents increasingly evolve after deployment by retaining experience, acquiring skills and tools, revising workflows, delegating work, and moving across task phases. This improves adaptation but creates a distinct authorization problem. Tool-enabled agents can turn model errors and prompt injections into consequential external actions; when evolution occurs under a live grant, the subject exercising that authority or the context in which it acts may no longer match what the user evaluated. Evolution can change both the effects reachable under an old grant and the authority required by the task, which may rise, fall, or become incomparable. Existing tool policies constrain actions but do not determine when a grant survives this change. We formulate authorization continuity: when does an existing grant remain valid, how may active authority change, and what boundary must never move? Our state-bound model fixes a transition envelope and an immutable effect ceiling at grant time. The envelope determines whether the grant survives a mutation; below the ceiling, authority may contract freely and expand only under specified",
+          "pub_date": "Thu, 26 Nov 2026 00:00:00 -0500",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 1181
+          "word_count": 1199
+        },
+        {
+          "id": 620,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "AESP: A Human-Sovereign Economic Protocol for AI Agents with Privacy-Preserving Settlement",
+          "link": "https://arxiv.org/abs/2603.00318",
+          "content": "arXiv:2603.00318v2 Announce Type: replace-cross Abstract: As AI agents increasingly perform economic tasks on behalf of humans, a fundamental tension arises between agent autonomy and human control over financial assets. We present the Agent Economic Sovereignty Protocol (AESP), a layered protocol in which agents transact autonomously at machine speed on crypto-native infrastructure while remaining cryptographically bound to human-defined governance boundaries. AESP enforces the invariant that agents are economically capable but never economically sovereign through five mechanisms: (1) a deterministic eight-check policy engine with tiered escalation; (2) human-in-the-loop review with automatic, explicit, and biometric tiers; (3) EIP-712 dual-signed commitments with escrow; (4) HKDF-based context-isolated privacy with batched consolidation; and (5) an ACE-GF-based cryptographic substrate. We formalize two testable hypotheses on security coverage and latency overhead, and specify a complete evaluation methodology with baselines and ablation design. The protocol is implemented as an open-source TypeScript SDK (208 tests, ten modules) with interoperability via MCP and A2A.",
+          "pub_date": "Thu, 26 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1187
+        },
+        {
+          "id": 2096,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "BlackRock launches $100m HKD tokenized MMF with Ant Intl, StanChart as investors",
+          "link": "https://www.ledgerinsights.com/blackrock-launches-100m-hkd-tokenized-mmf-with-ant-intl-stanchart-as-investors/",
+          "content": "BlackRock has launched its first tokenized money market fund (MMF) in Hong Kong, the BlackRock HKD Digital Liquidity Fund, with some novel features. It adds a fourth currency, given BlackRock already has tokenized MMFs in USD, EUR and GBP. The Hong Kong fund launches with USD 100 million in investment from Ant International and Standard [&#8230;] The post BlackRock launches $100m HKD tokenized MMF with Ant Intl, StanChart as investors appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Tue, 24 Nov 2026 20:42:34 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 502
         }
       ],
       "quota": {
@@ -1150,14 +1150,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 232,
-      "total_valid": 51,
+      "total_raw": 228,
+      "total_valid": 48,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2294,
-    "dup": 538,
+    "total_raw": 2255,
+    "dup": 539,
     "nocontent": 435,
     "noise": 8
   }
