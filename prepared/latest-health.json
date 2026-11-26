@@ -56,7 +56,7 @@
     "TechCrunch AI": {
       "section": "ai",
       "method": "rss",
-      "count": 20,
+      "count": 19,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -197,7 +197,7 @@
     "Endpoints News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 14,
+      "count": 10,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -210,7 +210,7 @@
     "STAT News": {
       "section": "vaccine",
       "method": "rss",
-      "count": 12,
+      "count": 7,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -328,8 +328,9 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 10,
+      "ok": true,
+      "latest_pub": "2026-11-25"
     },
     "ClinicalTrials.gov": {
       "section": "vaccine",
@@ -420,7 +421,7 @@
     "Derek Lowe In the Pipeline": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 14,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -457,7 +458,7 @@
       "method": "rss",
       "count": 20,
       "ok": true,
-      "latest_pub": "2026-11-24"
+      "latest_pub": "2026-11-26"
     },
     "Nature Synthetic Biology": {
       "section": "synbio",
@@ -495,8 +496,9 @@
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 4,
+      "ok": true,
+      "latest_pub": "2026-11-25"
     },
     "Absci Blog": {
       "section": "synbio",
@@ -570,7 +572,7 @@
     "PaymentsDive": {
       "section": "payment",
       "method": "rss",
-      "count": 6,
+      "count": 4,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -663,9 +665,7 @@
     "fail": [
       "Absci Blog",
       "BioNTech",
-      "Import AI",
-      "bioRxiv SynBio",
-      "medRxiv Infectious"
+      "Import AI"
     ],
     "sudden_drop": [],
     "persistent_zero": [

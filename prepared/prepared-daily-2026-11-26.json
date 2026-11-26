@@ -20,7 +20,7 @@
           "word_count": 363
         },
         {
-          "id": 1287,
+          "id": 1286,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -70,9 +70,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Fractal Neural Synthesis: Constant-Storage Procedural Weight Derivation via Complex Quadratic Boundary Dynamics",
-          "link": "https://arxiv.org/abs/2611.32393",
-          "content": "Conventional neural networks store synaptic parameters as explicit tensors whose persistent Flash footprint scales linearly (O(W)) with parameter count, constraining resource-limited edge microcontrollers. We formulate and systematically evaluate Fractal Neural Synthesis (FNS), a procedural weight derivation architecture that replaces hidden-layer matrices with a constant 24-byte coordinate seed Theta = (c_x, c_y, ell) in F_64^3 anchored near the complex quadratic bifurcation boundary dM of f_c(z) = z^2 + c. We introduce a large-bailout (R = 256) smooth escape kernel, four zero-overhead geometric sampling apertures--Cartesian Grid, coprime 3x3 Rule-of-Thirds (Z/9Z), phi-Vogel spiral, and multi-scale Harmonic Tripod--and prove conditional Kolmogorov (K_Kolm <= 192 + c_0 bits) and Shannon entropy bounds. Across magnifications zeta in [10^0, 10^8], C^1 Fourier and lattice-noise bases collapse to post-standardization rank ~2.25 and SHA-256 PRNG exhibits avalanche discontinuity (rho ~ 0.019, 50.6% micro-step retention), whereas dM uniquely sustains both rank (~10.0) and local continuity (rho in [0.81, 0.97], 89.2% retention). Under leak-free 10-fold CV across four zero-scaler-byte non-l",
+          "title": "Loupe: Reinforcing Knowledge-Intensive Video Generation Agents",
+          "link": "https://arxiv.org/abs/2611.31895",
+          "content": "Knowledge-intensive video generation remains challenging because prompts often omit the facts, appearances, and temporal relationships required for accurate generation. While search-based workflows can retrieve missing evidence, manually designed strategies limit adaptive planning, and conventional training suffers from costly video-level feedback and coarse trajectory-level credit assignment. In this paper, we present Loupe, a video generation agent that retrieves and verifies textual and visual evidence to construct evidence-grounded temporal video prompts with reference images. We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering. Building on RBC, RBC-SFT reweights assistant-token learning by step quality, while RBC-GRPO incorporates step-level credits alongside a final planning reward, without rendering videos during RL. To address the lack of dedicated search-oriented evaluation, we construct Search-VBench, which contains 150 held-out prompts across seven categories. Experiments show that Loupe improves all four evaluation dimensio",
           "pub_date": "2026-11-23T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -85,24 +85,24 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "Point Dynamics as Proxy for Robotic World Models",
-          "link": "https://arxiv.org/abs/2611.25946",
-          "content": "Robotic world models predict future video frames from the current observation and a sequence of robot actions. While recent models follow the given actions closely, manipulated objects often collapse or move inconsistently with the action. We attribute this to the conditioning: an action, or a rendering of the robot, specifies where the robot goes but not how the scene responds, leaving a single video model to infer the interaction dynamics implicitly while also rendering appearance. We therefore separate dynamics prediction from visual rendering, with 3D point dynamics as the proxy between them. Specifically, we lift the first frame into 3D points, simulate how they respond to the robot's motion with a learned point dynamics model, and render the simulated points back into pixel-aligned videos that any video model can read. In controlled experiments on the DROID dataset with two video renderers of different architectures, this point dynamics proxy reduces object motion error by 8.6% and 6.2% without degrading image quality, and by 8.1% on a real bimanual robot. Moreover, the video follows the simulation: more accurate dynamics yield more accurate object motion, and editing the poi",
-          "pub_date": "2026-11-18T19:00:00.000Z",
+          "title": "CONCOR: Benchmarking Contrastive Decoding for Visual Hallucination Mitigation Beyond Final-Output Performance",
+          "link": "https://arxiv.org/abs/2611.30460",
+          "content": "Contrastive decoding (CD) mitigates object hallucination in multimodal large language models (MLLMs) by contrasting token distributions under different conditions to adjust token scores. However, existing generative and discriminative benchmarks primarily measure final task scores, which can be confounded by candidate filtering, changes in generation trajectories, and response biases, making it difficult to isolate the effects of the underlying contrastive adjustments. To address these limitations while complementing existing evaluations, we introduce CONCOR (Contrastive Correction Evaluation), a controlled benchmark that directly evaluates the competition between ground-truth and different types of hallucinated candidates using the Contrastive Grounding Margin (CGM). CGM also enables analysis of directional consistency, composition, and reliability of contrastive corrections. Our evaluation reveals that existing CD methods exhibit distinct correction behaviors: some consistently favor ground-truth candidates, whereas others produce strong corrections but also introduce more errors. Crucially, these differences help explain their contrasting responses to increased contrast strength",
+          "pub_date": "2026-11-24T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 67,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "OWE-Bench: A long-horizon benchmark for measuring real-world engineering",
-          "link": "https://arxiv.org/abs/2611.30017",
-          "content": "We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from optimizing kernels and designing an aircraft, to identifying the faults responsible for an earthquake. Each task requires significant domain knowledge and engineering work, with models averaging hundreds of millions of tokens per task. Solutions are scored on practical measures such as speed, cost and accuracy, both on provided cases the agent could test against and on hidden cases that an engineer would expect from the task description. The best-performing frontier model so far, Claude Fable 5.2, scores 54.6% and averages 211 million tokens per task. We highlight two findings. First, when models are given more time, they use more test-time compute and achieve higher scores. Models also scale differently with test-time compute: GPT-6 Astra achieves higher scores at shorter time limits and at equal token use, while Claude Fable 5.2 uses more tokens at longer limits to achieve the highest overall score. Second, each model scores lower on hidden cases than o",
+          "title": "Target-Part Preference Optimization for Part-Aware 3D Generation",
+          "link": "https://arxiv.org/abs/2611.30472",
+          "content": "Part-aware 3D generation requires not only globally plausible objects but also complete, well-separated semantic parts, yet high-quality part decompositions remain too scarce to support large-scale supervised fine-tuning. We study whether preference fine-tuning based on Direct Preference Optimization (DPO) can adapt a pretrained part-aware generator from limited part-annotated data without architectural changes. We rank candidates generated with different random seeds against ground-truth (GT) geometric metrics, and select the (object, target-part) examples with the largest across-seed quality gap. Each selected example stores a seed pair whose two flow trajectories share one clean GT compositional latent and differ only in Gaussian noise. We derive a reference-relative target-block preference loss from FlowDPO that compares the two trajectories against a frozen reference model. GT flow-matching losses on the target block and complete part set provide absolute supervision, while only the diffusion transformer (DiT) is updated. Human-ranked controls test an alternative ordering source, and synthetic cropping provides controlled loser targets that are incomplete by construction. Amon",
           "pub_date": "2026-11-22T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 1178,
+          "id": 1177,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 1179,
+          "id": 1178,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1200
         },
         {
-          "id": 1184,
+          "id": 1183,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1200
         },
         {
-          "id": 1292,
+          "id": 1291,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1200
         },
         {
-          "id": 1293,
+          "id": 1292,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -190,8 +190,8 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1297,
-      "total_valid": 849,
+      "total_raw": 1296,
+      "total_valid": 853,
       "total_candidates": 12
     },
     "vaccine": {
@@ -242,7 +242,7 @@
           "word_count": 1200
         },
         {
-          "id": 1447,
+          "id": 1437,
           "source": "Immunity",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 438
         },
         {
-          "id": 1369,
+          "id": 1359,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 373
         },
         {
-          "id": 1851,
+          "id": 1850,
           "source": "Nature Communications",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 341
         },
         {
-          "id": 1371,
+          "id": 1361,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 327
         },
         {
-          "id": 1346,
+          "id": 1336,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 235
         },
         {
-          "id": 1552,
+          "id": 1542,
           "source": "Nature Immunology",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 219
         },
         {
-          "id": 1521,
+          "id": 1511,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 177
         },
         {
-          "id": 1490,
+          "id": 1480,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 175
         },
         {
-          "id": 1431,
+          "id": 1421,
           "source": "Lancet Infect Dis",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 160
         },
         {
-          "id": 1535,
+          "id": 1525,
           "source": "Nature Biotech",
           "section": "vaccine",
           "tier": "T1",
@@ -434,7 +434,7 @@
     "synbio": {
       "candidates": [
         {
-          "id": 1939,
+          "id": 1938,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 54
         },
         {
-          "id": 1941,
+          "id": 1940,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 54
         },
         {
-          "id": 1942,
+          "id": 1941,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 1958,
+          "id": 1957,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 424
         },
         {
-          "id": 1974,
+          "id": 1973,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 244
         },
         {
-          "id": 1999,
+          "id": 1998,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 195
         },
         {
-          "id": 2021,
+          "id": 2024,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 2020,
+          "id": 2023,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1199
         },
         {
-          "id": 2013,
+          "id": 2016,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1098
         },
         {
-          "id": 2029,
+          "id": 2032,
           "source": "PLoS Biology",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 571
         },
         {
-          "id": 2003,
+          "id": 2002,
           "source": "Cell Systems",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 359
         },
         {
-          "id": 2006,
+          "id": 2009,
           "source": "Nature Chemical Biology",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 140,
-      "total_valid": 30,
+      "total_raw": 144,
+      "total_valid": 32,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1854,
+          "id": 1853,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 481
         },
         {
-          "id": 1447,
+          "id": 1437,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 438
         },
         {
-          "id": 1850,
+          "id": 1849,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 397
         },
         {
-          "id": 1446,
+          "id": 1436,
           "source": "Immunity",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 365
         },
         {
-          "id": 2003,
+          "id": 2002,
           "source": "Cell Systems",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 359
         },
         {
-          "id": 1371,
+          "id": 1361,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 327
         },
         {
-          "id": 1335,
+          "id": 1325,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -781,52 +781,52 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 56,
-      "total_valid": 46,
+      "total_raw": 59,
+      "total_valid": 49,
       "total_candidates": 10
     },
     "china": {
       "candidates": [
         {
-          "id": 1903,
+          "id": 1898,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
           "priority": 5,
-          "title": "埃博拉病毒死亡人数超过5700人。疫情能否得到控制？",
-          "link": "https://www.vaccine.vip/ebolas-death-toll-tops-5700-can-the-outbreak-be-contained/",
-          "content": "&#160; 经过 丽贝卡·施奈德 Open follow modal 记者 Nov 21, 202",
-          "pub_date": "Tue, 24 Nov 2026 07:14:36 +0000",
+          "title": "世界卫生组织官员称，麻疹在美国卷土重来。",
+          "link": "https://www.vaccine.vip/measles-is-back-in-the-united-states-who-authorities-say/",
+          "content": "Measles is back in the United States, WHO authorit",
+          "pub_date": "Thu, 26 Nov 2026 03:58:29 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 50
         },
         {
-          "id": 1904,
+          "id": 1899,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
           "priority": 5,
-          "title": "疫苗情报报告：11月12日至17日",
-          "link": "https://www.vaccine.vip/the-vaccine-intelligence-report-november-12-17/",
-          "content": "The Vaccine Intelligence Report: November 12-17 疫苗",
-          "pub_date": "Tue, 24 Nov 2026 06:51:02 +0000",
+          "title": "研究表明，免疫系统通过调整表观遗传学来“记住”病原体。",
+          "link": "https://www.vaccine.vip/the-immune-system-remembers-germs-by-tweaking-its-epigenetics-study-shows/",
+          "content": "&#160; The immune system &#8216;remembers&#8217; g",
+          "pub_date": "Thu, 26 Nov 2026 03:38:49 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 50
         },
         {
-          "id": 1905,
+          "id": 1900,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
           "priority": 5,
-          "title": "麻疹疫情不仅在美国卷土重来，而且在全球范围内肆虐。",
-          "link": "https://www.vaccine.vip/its-not-just-the-u-s-measles-is-roaring-back-around-the-globe/",
-          "content": "&#160; 信任危机、资金减少和政治纷争助长了一种原本很容易预防的病毒性疾病的蔓延。 2026年1",
-          "pub_date": "Tue, 24 Nov 2026 06:47:33 +0000",
+          "title": "美国在历经26年消除麻疹疫情后，最终失败。接下来该怎么办？",
+          "link": "https://www.vaccine.vip/the-u-s-lost-measles-elimination-after-26-years-now-what/",
+          "content": "&#160; 事件发生的原因、哪些人面临风险以及需要采取哪些措施才能挽回局面 凯特琳·杰特琳娜 No",
+          "pub_date": "Thu, 26 Nov 2026 03:22:01 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -845,14 +845,14 @@
     "payment": {
       "candidates": [
         {
-          "id": 2080,
+          "id": 2083,
           "source": "PYMNTS Cross-Border",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Ant International and BNY Partner On Cross-Border Payments",
+          "title": "Ant International and BNY Partner on Cross-Border Payments",
           "link": "https://www.pymnts.com/partnerships/2026/ant-international-and-bny-partner-on-cross-border-payments/",
-          "content": "Ant International and BNY signed a memorandum of understanding (MOU) Tuesday (Nov. 24) at the Singapore Fintech Festival to explore solutions spanning liquidity management, payments and digital assets. Potential areas of collaboration include tokenized deposits, tokenized money market funds and interoperability between tokenized and traditional money market funds, subject to internal and regulatory approvals. The [&#8230;] The post Ant International and BNY Partner On Cross-Border Payments appeared first on PYMNTS.com .",
+          "content": "Ant International and BNY signed a memorandum of understanding (MOU) Tuesday (Nov. 24) at the Singapore Fintech Festival to explore solutions spanning liquidity management, payments and digital assets. Potential areas of collaboration include tokenized deposits, tokenized money market funds and interoperability between tokenized and traditional money market funds, subject to internal and regulatory approvals. The [&#8230;] The post Ant International and BNY Partner on Cross-Border Payments appeared first on PYMNTS.com .",
           "pub_date": "Wed, 25 Nov 2026 17:23:24 +0000",
           "is_duplicate": false,
           "has_content": true,
@@ -860,37 +860,22 @@
           "word_count": 525
         },
         {
-          "id": 2077,
+          "id": 2080,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
           "priority": 4,
-          "title": "Holiday Secondhand Shopping Expands as Consumers Seek Value",
-          "link": "https://www.pymnts.com/news/retail/2026/holiday-secondhand-shopping-expands-as-consumers-seek-value/",
-          "content": "Shoppers squeezed by inflation are reportedly turning to secondhand retail in growing numbers this holiday season. According to a CNBC report published Wednesday (Nov. 25), resale platforms and traditional merchants are experiencing rising consumer traffic as shoppers place greater emphasis on affordability, uniqueness and household budget management. The shift highlights broader structural momentum across the [&#8230;] The post Holiday Secondhand Shopping Expands as Consumers Seek Value appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 25 Nov 2026 19:58:49 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 523
-        },
-        {
-          "id": 2073,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Banks Bring Subscription Management Into Their Apps",
+          "title": "Banks Target Recurring Payments to Win More Card Spending",
           "link": "https://www.pymnts.com/subscriptions/2026/banks-bring-subscription-management-into-their-apps/",
-          "content": "Subscription management is becoming part of the everyday business of banking. As issuers add controls for recurring payments, they are taking on some of the work historically handled by merchants, from identifying unfamiliar charges to facilitating subscription cancellations where supported. The October PYMNTS Intelligence report “Keep the House, Cut the Subscription: How Consumers Rank Spending” [&#8230;] The post Banks Bring Subscription Management Into Their Apps appeared first on PYMNTS.com .",
+          "content": "Subscription management is becoming part of the everyday business of banking. As issuers add controls for recurring payments, they are taking on some of the work historically handled by merchants, from identifying unfamiliar charges to facilitating subscription cancellations where supported. The October PYMNTS Intelligence report “Keep the House, Cut the Subscription: How Consumers Rank Spending” [&#8230;] The post Banks Target Recurring Payments to Win More Card Spending appeared first on PYMNTS.com .",
           "pub_date": "Wed, 25 Nov 2026 21:19:25 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
-          "word_count": 501
+          "word_count": 507
         },
         {
-          "id": 2072,
+          "id": 2079,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +890,7 @@
           "word_count": 497
         },
         {
-          "id": 2070,
+          "id": 2077,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -920,22 +905,7 @@
           "word_count": 487
         },
         {
-          "id": 2076,
-          "source": "PYMNTS.com",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Payment Providers Face Thanksgiving Weekend’s Five-9s Uptime Test",
-          "link": "https://www.pymnts.com/commerce/ecommerce/2026/payment-providers-face-thanksgiving-weekends-five-9s-uptime-test/",
-          "content": "The Cyber Monday outage at Shopify last year showed the payment industry that this year’s most important Black Friday innovation may be the ability to make a technology failure something that’s commercially invisible. With millions of Americans preparing to shop at hundreds of thousands of businesses between Thanksgiving and Cyber Monday, payment companies are again [&#8230;] The post Payment Providers Face Thanksgiving Weekend’s Five-9s Uptime Test appeared first on PYMNTS.com .",
-          "pub_date": "Wed, 25 Nov 2026 20:19:36 +0000",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 484
-        },
-        {
-          "id": 2100,
+          "id": 2101,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +920,7 @@
           "word_count": 320
         },
         {
-          "id": 2102,
+          "id": 2103,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +935,7 @@
           "word_count": 290
         },
         {
-          "id": 2108,
+          "id": 2109,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +950,7 @@
           "word_count": 287
         },
         {
-          "id": 2110,
+          "id": 2111,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +965,7 @@
           "word_count": 250
         },
         {
-          "id": 2107,
+          "id": 2108,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +980,7 @@
           "word_count": 245
         },
         {
-          "id": 2101,
+          "id": 2102,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1025,7 +995,7 @@
           "word_count": 231
         },
         {
-          "id": 2083,
+          "id": 2086,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1040,7 +1010,7 @@
           "word_count": 171
         },
         {
-          "id": 250,
+          "id": 249,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1055,7 +1025,7 @@
           "word_count": 1200
         },
         {
-          "id": 643,
+          "id": 642,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1070,7 +1040,7 @@
           "word_count": 1200
         },
         {
-          "id": 696,
+          "id": 695,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1085,7 +1055,7 @@
           "word_count": 1200
         },
         {
-          "id": 762,
+          "id": 761,
           "source": "arXiv cs.AI",
           "section": "payment",
           "tier": "T1",
@@ -1100,7 +1070,7 @@
           "word_count": 1200
         },
         {
-          "id": 782,
+          "id": 781,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1115,7 +1085,7 @@
           "word_count": 1200
         },
         {
-          "id": 1059,
+          "id": 1058,
           "source": "arXiv cs.LG",
           "section": "payment",
           "tier": "T1",
@@ -1130,7 +1100,7 @@
           "word_count": 1200
         },
         {
-          "id": 161,
+          "id": 160,
           "source": "arXiv cs.CL",
           "section": "payment",
           "tier": "T1",
@@ -1143,6 +1113,36 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1199
+        },
+        {
+          "id": 501,
+          "source": "arXiv cs.AI",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "Machine learning enables full Bayesian inference for spinning extreme-mass-ratio inspirals",
+          "link": "https://arxiv.org/abs/2611.31916",
+          "content": "arXiv:2611.31916v1 Announce Type: cross Abstract: Extreme-mass-ratio inspirals (EMRIs), stellar-mass compact objects spiralling into massive black holes, promise to measure the masses and spins of the central black holes, reveal the strong-field environment around them and gauge cosmic distances via millihertz gravitational-wave observations. Yet most forecasts for the parameter inference of these systems assume known source parameters, and broad-prior analyses have addressed only simplified versions of the problem. The joint inversion of all 14 parameters of a spinning source from the complete prior has remained unsolved. Here we solve it for the augmented analytic kludge model: generative networks narrow the complete prior and reveal a ring of degenerate spin directions, and the exact detector likelihood determines the posterior. For a simulated one-year LISA-Taiji observation, within one ring sector we obtain, for the first time, a 14-parameter posterior of a spinning EMRI from the complete prior, the most precise yet obtained for such a source from broad priors. The redshifted mass and spin of the massive black hole are determined to two parts in $10^5$, the mass two orders of",
+          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1199
+        },
+        {
+          "id": 207,
+          "source": "arXiv cs.CL",
+          "section": "payment",
+          "tier": "T1",
+          "priority": 6,
+          "title": "SwiftLoop: Selective Refinement for Adaptive Implicit Reasoning in Looped Transformers",
+          "link": "https://arxiv.org/abs/2611.31481",
+          "content": "arXiv:2611.31481v1 Announce Type: cross Abstract: Looped Transformers advance implicit chain-of-thought reasoning through recurrent latent refinement. However, existing looped reasoners typically employ fixed-depth recurrence, updating all latent positions at every iteration and incurring redundancy when further refinement is unnecessary. We introduce \\textsc{SwiftLoop}, an inference-time framework for selective recurrent refinement through position-wise freezing, enabling adaptive computation allocation across both recurrent depth and active width. SwiftLoop learns lightweight freezing policies through hindsight-guided supervision derived from two complementary criteria: K/V reusability at the internal representation level and functional impact at the output level. At inference time, these policies guide adaptive freezing based on observed hidden states. Extensive experiments demonstrate that SwiftLoop achieves favorable accuracy--computation trade-offs over fixed-loop inference and adaptive baselines, with measured inference acceleration. Beyond implicit reasoning, we further demonstrate its applicability to recurrent prompt prefilling in general looped models.",
+          "pub_date": "Wed, 25 Nov 2026 00:00:00 -0500",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1181
         }
       ],
       "quota": {
@@ -1150,14 +1150,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 234,
+      "total_raw": 232,
       "total_valid": 51,
       "total_candidates": 20
     }
   },
   "meta": {
-    "total_raw": 2292,
-    "dup": 544,
+    "total_raw": 2293,
+    "dup": 539,
     "nocontent": 435,
     "noise": 8
   }
