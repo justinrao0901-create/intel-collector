@@ -78,21 +78,20 @@
       "method": "rss",
       "count": 177,
       "ok": true,
-      "latest_pub": "2026-11-26"
+      "latest_pub": "2026-11-27"
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
       "count": 398,
       "ok": true,
-      "latest_pub": "2026-11-26"
+      "latest_pub": "2026-11-27"
     },
     "arXiv cs.LG": {
       "section": "ai",
       "method": "rss",
-      "count": 419,
-      "ok": true,
-      "latest_pub": "2026-11-26"
+      "count": 0,
+      "ok": true
     },
     "Import AI": {
       "section": "ai",
@@ -667,7 +666,9 @@
       "BioNTech",
       "Import AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "arXiv cs.LG"
+    ],
     "persistent_zero": [
       "Andrej Karpathy",
       "Lancet Digital Health",
