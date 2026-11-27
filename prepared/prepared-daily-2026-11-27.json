@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 1238,
+          "id": 1233,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -70,39 +70,9 @@
           "section": "ai",
           "tier": "T1",
           "priority": 5,
-          "title": "CARE-3D: Reinforcement Learning for Evidence Grounded Agentic Reasoning in Situated 3D Scenes",
-          "link": "https://arxiv.org/abs/2611.29969",
-          "content": "Situated 3D reasoning requires embodied agents to interpret objects, scene geometry, and viewpoint dependent spatial relations. Existing methods learn grounded interactions from supervised traces, but largely imitate prescribed evidence acquisition patterns rather than optimizing the support that the returned evidence provides for the correct answer. Moreover, outcome rewards provide limited credit for intermediate tool choices and may leave infrequent tools underexplored. An effective agent should instead adaptively decide what to ground, which tool to invoke, and how to assess the utility of returned evidence. To this end, this paper presents CARE-3D, a reinforcement post-training framework for adaptive grounded reasoning. Supervised fine-tuning (SFT) on grounding instructions first establishes valid interactions, after which Group Relative Policy Optimization (GRPO) optimizes the agent while keeping the 3D grounding module frozen. CARE-3D combines Counterfactual Attribution of Returned Evidence for evidence sensitive credit assignment, and Group Coverage Sampling to preserve tool coverage. Experiments on MSQA and Beacon3D show consistent gains over SFT and GRPO using only answer",
-          "pub_date": "2026-11-22T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 64,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
-          "link": "https://arxiv.org/abs/2611.28732",
-          "content": "In-context learning (ICL) enables foundation models to perform unseen tasks from context without parameter updates. In robotic manipulation, a human video provides the context that specifies how a task should be performed. However, scaling human-video ICL on world-action models (WAMs) faces two challenges: task-level human-robot pairs are not temporally aligned with robot actions, and standard action losses allow policies to rely on initial-scene or task-identity shortcuts rather than tracking the context. We present Entangle, an in-context world-action model that maps a single human video and current robot observations to future visual states and executable actions. To scale temporally aligned training data, we convert recorded robot videos into matched human contexts via video-to-video generation, supplemented by real paired recordings. For model training, we combine variable-length video windows with an intra-task contrastive objective that distinguishes the paired action trajectory from other executions of the same task, preventing task-identity shortcuts. Without task-specific fine-tuning, Entangle improves steadily as aligned training data scales, reaching an average score of",
-          "pub_date": "2026-11-24T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 65,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
-          "link": "https://arxiv.org/abs/2611.33093",
-          "content": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests re",
+          "title": "Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation",
+          "link": "https://arxiv.org/abs/2611.32238",
+          "content": "Agent-orchestrated robot systems combine the general reasoning capability of multimodal agents with the precise physical control of learned visuomotor policies. Yet such systems often fail at the moment of handoff: a policy is reliable only from a limited set of start states, while the agent may invoke it outside this region. We call this region the policy's handoff boundary. Existing whole-task policies typically have handoff boundaries that are narrow and difficult for an agent to characterize, making reliable coordination challenging. We propose Boundary-Aware Policy Learning, which explicitly shapes and then expands the handoff boundary of a visuomotor policy. First, Boundary-Explicit Training fine-tunes the policy on contact segments with diverse start poses, yielding a wide and well-defined boundary that can be communicated to the agent through a simple handoff protocol. Second, Boundary-Expanding Self-Improvement retrains the policy on curated successful system rollouts, extending the boundary toward earlier stages of each task and allowing the agent to hand over sooner with fewer language-model calls. Across RoboTwin 2.0 and RoboDojo, our system outperforms the strongest ba",
           "pub_date": "2026-11-23T19:00:00.000Z",
           "is_duplicate": false,
           "has_content": true,
@@ -110,7 +80,37 @@
           "word_count": 1200
         },
         {
-          "id": 1247,
+          "id": 62,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+          "link": "https://arxiv.org/abs/2611.34232",
+          "content": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated ag",
+          "pub_date": "2026-11-24T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 63,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+          "link": "https://arxiv.org/abs/2611.34852",
+          "content": "Deep research agents gather information from multiple sources and synthesize it into reports on complex, open-ended questions. Existing benchmarks assess report quality along several dimensions, but lack a dedicated knowledge-centric evaluation of which research directions a report covers and how deeply it explores them. We introduce DRBench Pro, a benchmark that makes structured knowledge coverage the primary evaluation target. Our automated pipeline builds local knowledge trees from Wikipedia and uses sampled subgraphs to generate research queries and evidence-grounded rubrics. Each rubric corresponds to a relation in the tree, preserving the structure of the knowledge being evaluated. Agents receive only the research query. This structure allows us to measure breadth across major research directions and depth along related knowledge chains, with their geometric mean giving overall coverage. The benchmark includes 144 cases across 24 domains and 44,102 rubrics. Evaluating 16 deep research agents reveals different strengths in breadth and depth, with the best-performing agent reaching 57.04% overall coverage. Rubric judgments agree closely with human annotations, and agent ranking",
+          "pub_date": "2026-11-24T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 1242,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 1134,
+          "id": 1131,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1199
         },
         {
-          "id": 1246,
+          "id": 1241,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1199
         },
         {
-          "id": 1132,
+          "id": 1129,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1043
         },
         {
-          "id": 1126,
+          "id": 1123,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1249,
-      "total_valid": 797,
+      "total_raw": 1244,
+      "total_valid": 794,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1546,
+          "id": 1534,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1170
         },
         {
-          "id": 1559,
+          "id": 1547,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 948
         },
         {
-          "id": 1543,
+          "id": 1531,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 861
         },
         {
-          "id": 1372,
+          "id": 1360,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 836
         },
         {
-          "id": 1364,
+          "id": 1352,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 721
         },
         {
-          "id": 1370,
+          "id": 1358,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 575
         },
         {
-          "id": 1471,
+          "id": 1459,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 419
         },
         {
-          "id": 1286,
+          "id": 1274,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 181
         },
         {
-          "id": 1275,
+          "id": 1263,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 176
         },
         {
-          "id": 1672,
+          "id": 1660,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 146
         },
         {
-          "id": 1439,
+          "id": 1427,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 130
         },
         {
-          "id": 1344,
+          "id": 1332,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 90
         },
         {
-          "id": 1353,
+          "id": 1341,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 90
         },
         {
-          "id": 1663,
+          "id": 1651,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 69
         },
         {
-          "id": 1571,
+          "id": 1559,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 609,
-      "total_valid": 394,
+      "total_raw": 601,
+      "total_valid": 386,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1874,
+          "id": 1861,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 54
         },
         {
-          "id": 1886,
+          "id": 1873,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 54
         },
         {
-          "id": 1887,
+          "id": 1874,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 1942,
+          "id": 1929,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 343
         },
         {
-          "id": 1894,
+          "id": 1881,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 291
         },
         {
-          "id": 1943,
+          "id": 1930,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 234
         },
         {
-          "id": 1964,
+          "id": 1951,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1965,
+          "id": 1952,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1966,
+          "id": 1953,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1983,
+          "id": 1970,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 601
         },
         {
-          "id": 1984,
+          "id": 1971,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 467
         },
         {
-          "id": 1870,
+          "id": 1857,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1971,
+          "id": 1958,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,22 +641,7 @@
           "word_count": 977
         },
         {
-          "id": 1795,
-          "source": "Nature Communications",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Nuclear factor I connects H3K27M to a targetable purine dependency in diffuse intrinsic pontine glioma",
-          "link": "https://www.nature.com/articles/s41467-026-79694-0",
-          "content": "Nature Communications, Published online: 26 November 2026; doi:10.1038/s41467-026-79694-0 Diffuse intrinsic pontine glioma is an aggressive childhood cancer commonly driven by H3K27M with few treatment options. This study links H3K27M-driven chromatin remodelling to NFI-dependent purine metabolism, causing ATIC/PNP-mediated metabolic rewiring and ATIC-targetable tumour dependence.",
-          "pub_date": "2026-11-26",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 383
-        },
-        {
-          "id": 1870,
+          "id": 1857,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +656,7 @@
           "word_count": 348
         },
         {
-          "id": 1869,
+          "id": 1856,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +671,7 @@
           "word_count": 317
         },
         {
-          "id": 1327,
+          "id": 1315,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +686,7 @@
           "word_count": 277
         },
         {
-          "id": 2024,
+          "id": 2011,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +701,7 @@
           "word_count": 273
         },
         {
-          "id": 2026,
+          "id": 2013,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +716,7 @@
           "word_count": 233
         },
         {
-          "id": 1454,
+          "id": 1442,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +731,7 @@
           "word_count": 231
         },
         {
-          "id": 1307,
+          "id": 1295,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +746,7 @@
           "word_count": 225
         },
         {
-          "id": 1276,
+          "id": 1264,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -774,6 +759,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 222
+        },
+        {
+          "id": 2012,
+          "source": "Nature Methods",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Large-scale quantitative assessment of tissue preparation and staining conditions for robust multiplexed imaging of FFPE tissue samples",
+          "link": "https://www.nature.com/articles/s41592-026-03317-1",
+          "content": "Nature Methods, Published online: 26 November 2026; doi:10.1038/s41592-026-03317-1 This Registered Report quantitatively evaluates the impact of tissue preparation and staining conditions on imaging.",
+          "pub_date": "2026-11-26",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 199
         }
       ],
       "quota": {
@@ -781,52 +781,52 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 57,
-      "total_valid": 48,
+      "total_raw": 55,
+      "total_valid": 46,
       "total_candidates": 10
     },
     "china": {
       "candidates": [
         {
-          "id": 1839,
+          "id": 1826,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
           "priority": 5,
-          "title": "每日疫苗和生物药新闻推送 · 2026-11-26（周四）",
-          "link": "https://www.vaccine.vip/vaccine_biopharma_daily_2026-11-26/",
-          "content": "采集窗口：2026-11-25 09:00 → 2026-11-26 09:10（覆盖美国 11-2",
-          "pub_date": "Thu, 26 Nov 2026 13:15:55 +0000",
+          "title": "为什么要接种疫苗？",
+          "link": "https://www.vaccine.vip/why-immunize/",
+          "content": "Why Immunize &#160; &#160; 在与准父母及照护者交谈时，请将这些讲话要点和随",
+          "pub_date": "Fri, 27 Nov 2026 04:16:04 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 50
         },
         {
-          "id": 1840,
+          "id": 1827,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
           "priority": 5,
-          "title": "自身炎症",
-          "link": "https://www.vaccine.vip/autoinflammation-british-society-for-immunology/",
-          "content": "&#160; &#160; 托马斯·斯克拉姆布勒，伯明翰大学 在炎症反应期间，区分外来微生物和宿主细",
-          "pub_date": "Thu, 26 Nov 2026 06:42:53 +0000",
+          "title": "孕妇和新生儿麻疹病例正在增加",
+          "link": "https://www.vaccine.vip/measles-cases-are-rising-in-pregnant-women-and-newborns/",
+          "content": "Measles Cases Are Rising in Pregnant Women and New",
+          "pub_date": "Fri, 27 Nov 2026 03:53:10 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
           "word_count": 50
         },
         {
-          "id": 1841,
+          "id": 1828,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
           "priority": 5,
-          "title": "耳部感染",
-          "link": "https://www.vaccine.vip/ear-infections/",
-          "content": "Ear infections 中耳炎也称为中耳感染，非常常见，尤其是在 6 个月至 3 岁的儿童中。",
-          "pub_date": "Thu, 26 Nov 2026 06:38:21 +0000",
+          "title": "乙肝疫苗的保护作用能持续多久？",
+          "link": "https://www.vaccine.vip/how-long-does-protection-from-the-hepatitis-b-vaccine-last/",
+          "content": "How Long Does Protection From the Hepatitis B Vacc",
+          "pub_date": "Fri, 27 Nov 2026 03:37:07 +0000",
           "is_duplicate": false,
           "has_content": true,
           "is_noise": false,
@@ -845,7 +845,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2089,
+          "id": 2072,
           "source": "Ledger Insights",
           "section": "payment",
           "tier": "T2",
@@ -860,7 +860,7 @@
           "word_count": 506
         },
         {
-          "id": 2033,
+          "id": 2020,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -875,7 +875,7 @@
           "word_count": 499
         },
         {
-          "id": 2062,
+          "id": 2045,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +890,7 @@
           "word_count": 367
         },
         {
-          "id": 2063,
+          "id": 2046,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -905,22 +905,7 @@
           "word_count": 214
         },
         {
-          "id": 2055,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "Lloyds completes multiple digital trade collections between Bangladesh and the UK",
-          "link": "https://www.finextra.com/newsarticle/48813/lloyds-completes-multiple-digital-trade-collections-between-bangladesh-and-the-uk?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "Lloyds has teamed up with Prime Bank and vendor Enigio to carry out multiple cross-border documentary collections for apparel shipments from Bangladesh to a UK garment wholesaler, entirely in digital form.",
-          "pub_date": "Wed, 25 Nov 2026 14:26:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 205
-        },
-        {
-          "id": 2059,
+          "id": 2042,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +920,7 @@
           "word_count": 176
         },
         {
-          "id": 2073,
+          "id": 2056,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +935,7 @@
           "word_count": 124
         },
         {
-          "id": 2068,
+          "id": 2051,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +950,22 @@
           "word_count": 84
         },
         {
-          "id": 2039,
+          "id": 2048,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Inverite Insights launches portfolio intelligence tool",
+          "link": "https://www.finextra.com/pressarticle/111797/inverite-insights-launches-portfolio-intelligence-tool?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "Inverite Insights Inc. (\"Inverite\" or the \"Company\") (CSE: INVR) (OTC: INVRF) (FSE: 2V0), a Canadian risk infrastructure company that transforms permissioned financial data into trusted financial intelligence that powers identity, risk and financial decision-making across financial institutions and enterprise organizations, today announced the launch of Portfolio IQ, a portfolio intelligence solution designed to help lenders connect historical and ongoing loan performance with the financial data and risk intelligence available at origination.",
+          "pub_date": "Thu, 26 Nov 2026 13:17:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 548
+        },
+        {
+          "id": 2026,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +980,7 @@
           "word_count": 498
         },
         {
-          "id": 2036,
+          "id": 2023,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +995,7 @@
           "word_count": 471
         },
         {
-          "id": 2037,
+          "id": 2024,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +1010,7 @@
           "word_count": 470
         },
         {
-          "id": 2035,
+          "id": 2022,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1025,7 +1025,7 @@
           "word_count": 466
         },
         {
-          "id": 2034,
+          "id": 2021,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1038,21 +1038,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 461
-        },
-        {
-          "id": 2043,
-          "source": "PaymentsDive",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "California fines Afterpay $2.7M",
-          "link": "https://www.paymentsdive.com/news/california-fines-afterpay-27m/875775/",
-          "content": "The state imposed the penalty on Block&rsquo;s buy now, pay later business after finding the company failed to assess customers&rsquo; ability to repay loans.",
-          "pub_date": "Wed, 25 Nov 2026 11:05:00 -0500",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 158
         }
       ],
       "quota": {
@@ -1060,14 +1045,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 218,
-      "total_valid": 34,
-      "total_candidates": 14
+      "total_raw": 214,
+      "total_valid": 31,
+      "total_candidates": 13
     }
   },
   "meta": {
-    "total_raw": 2249,
-    "dup": 551,
+    "total_raw": 2232,
+    "dup": 548,
     "nocontent": 428,
     "noise": 5
   }
