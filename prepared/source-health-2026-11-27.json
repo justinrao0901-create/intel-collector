@@ -4,7 +4,7 @@
     "OpenAI News": {
       "section": "ai",
       "method": "rss",
-      "count": 12,
+      "count": 10,
       "ok": true,
       "latest_pub": "2026-11-24"
     },
@@ -17,9 +17,8 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
-      "ok": true,
-      "latest_pub": "2026-11-24"
+      "count": 0,
+      "ok": false
     },
     "Meta AI Blog": {
       "section": "ai",
@@ -43,7 +42,7 @@
     "HuggingFace Blog": {
       "section": "ai",
       "method": "rss",
-      "count": 9,
+      "count": 7,
       "ok": true,
       "latest_pub": "2026-11-26"
     },
@@ -176,7 +175,7 @@
     "Together AI": {
       "section": "ai",
       "method": "rss",
-      "count": 6,
+      "count": 5,
       "ok": true,
       "latest_pub": "2026-11-26"
     },
@@ -244,9 +243,9 @@
     "The Lancet": {
       "section": "vaccine",
       "method": "rss",
-      "count": 22,
+      "count": 16,
       "ok": true,
-      "latest_pub": "2026-11-21"
+      "latest_pub": "2026-11-28"
     },
     "Lancet Infect Dis": {
       "section": "vaccine",
@@ -272,7 +271,7 @@
     "Immunity": {
       "section": "vaccine",
       "method": "rss",
-      "count": 7,
+      "count": 6,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -293,7 +292,7 @@
     "Nature Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 8,
+      "count": 6,
       "ok": true,
       "latest_pub": "2026-11-26"
     },
@@ -307,7 +306,7 @@
     "Nature Vaccines": {
       "section": "vaccine",
       "method": "rss",
-      "count": 15,
+      "count": 13,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -328,7 +327,7 @@
     "medRxiv Infectious": {
       "section": "vaccine",
       "method": "rss",
-      "count": 10,
+      "count": 8,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -389,7 +388,7 @@
     "Cell Reports Medicine": {
       "section": "vaccine",
       "method": "rss",
-      "count": 18,
+      "count": 17,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
@@ -489,14 +488,14 @@
     "Cell Systems": {
       "section": "synbio",
       "method": "rss",
-      "count": 2,
+      "count": 1,
       "ok": true,
       "latest_pub": "2026-11-25"
     },
     "bioRxiv SynBio": {
       "section": "synbio",
       "method": "rss",
-      "count": 8,
+      "count": 7,
       "ok": true,
       "latest_pub": "2026-11-26"
     },
@@ -665,6 +664,7 @@
     "fail": [
       "Absci Blog",
       "BioNTech",
+      "Google DeepMind",
       "Import AI"
     ],
     "sudden_drop": [],

@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 1243,
+          "id": 1237,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +20,7 @@
           "word_count": 201
         },
         {
-          "id": 86,
+          "id": 80,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 179
         },
         {
-          "id": 79,
+          "id": 73,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 172
         },
         {
-          "id": 80,
+          "id": 74,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,7 @@
           "word_count": 156
         },
         {
-          "id": 67,
+          "id": 61,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +80,7 @@
           "word_count": 1200
         },
         {
-          "id": 68,
+          "id": 62,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 71,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -110,7 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 1253,
+          "id": 1246,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 1139,
+          "id": 1133,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1199
         },
         {
-          "id": 1252,
+          "id": 1245,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1199
         },
         {
-          "id": 1137,
+          "id": 1131,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1043
         },
         {
-          "id": 1131,
+          "id": 1125,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1255,
-      "total_valid": 797,
+      "total_raw": 1248,
+      "total_valid": 796,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1567,
+          "id": 1547,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1170
         },
         {
-          "id": 1580,
+          "id": 1560,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 948
         },
         {
-          "id": 1564,
+          "id": 1544,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,52 @@
           "word_count": 861
         },
         {
-          "id": 1486,
+          "id": 1373,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] The PSMAddition trial in metastatic prostate cancer – Authors’ reply",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02150-1/fulltext?rss=yes",
+          "content": "We appreciate the interest in the PSMAddition study.1 Paolo Zaurito and colleagues discuss the study's control arm, toxicity of the triplet, and financial implications. We acknowledge that several triplets are now proven to enhance efficacy by adding a third drug to the androgen-deprivation therapy (ADT) and androgen receptor pathway inhibitor (ARPI) backbone in molecularly selected patient populations.1–4 However, at the time of study design, results from docetaxel triplets were only emerging. The addition of docetaxel to the contemporary standard backbone of ADT and ARPI is of unproven benefit, and we encourage enrolment into actively accruing clinical trials specifically assessing the utility of chemotherapy for patients with metastatic androgen pathway modulator-naive/sensitive prostate cancer (NCT06931340, NCT06592924).",
+          "pub_date": "2026-11-28",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 836
+        },
+        {
+          "id": 1365,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Perspectives] A fearless vulnerability",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02362-7/fulltext?rss=yes",
+          "content": "“I wanted to know, too, not just why people get sick, but why they suffer”, Jonathan Gleason writes in Field Guide to Falling Ill, Essays. His insights in this book come from his experience of health care as a patient, his work as an interpreter for Spanish patients in a free clinic, and his candid experiences as a gay man navigating the historical inheritance of the HIV/AIDS epidemic and the emotional and financial burden of staying safe in his relationships. In this book, he unspools the threads of how medicine and illness have shaped his familial and personal life, his stoical formative experiences and observations as a child of a family with a genetic disease, and of his inherited anxieties about ill-health.",
+          "pub_date": "2026-11-28",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 721
+        },
+        {
+          "id": 1371,
+          "source": "The Lancet",
+          "section": "vaccine",
+          "tier": "T1",
+          "priority": 2,
+          "title": "[Correspondence] The PSMAddition trial in metastatic prostate cancer",
+          "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02003-9/fulltext?rss=yes",
+          "content": "We read with great interest the report of the phase 3 PSMAddition trial by Scott T Tagawa and colleagues,1 which evaluated [177Lu]Lu-PSMA-617 added to androgen-deprivation therapy (ADT) plus an androgen receptor pathway inhibitor (ARPI) in prostate-specific membrane antigen (PSMA)-positive metastatic hormone-sensitive prostate cancer. The investigators should be congratulated for completing a large and methodologically rigorous radioligand trial. The improvement in radiographic progression-free survival (hazard ratio [HR] 0·72; 95% CI 0·58–0·90) is clinically relevant.",
+          "pub_date": "2026-11-28",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 575
+        },
+        {
+          "id": 1472,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +302,7 @@
           "word_count": 419
         },
         {
-          "id": 1293,
+          "id": 1287,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +317,7 @@
           "word_count": 181
         },
         {
-          "id": 1282,
+          "id": 1276,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +332,7 @@
           "word_count": 176
         },
         {
-          "id": 1693,
+          "id": 1673,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +347,7 @@
           "word_count": 146
         },
         {
-          "id": 1454,
+          "id": 1440,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +362,7 @@
           "word_count": 130
         },
         {
-          "id": 1352,
+          "id": 1345,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +377,7 @@
           "word_count": 90
         },
         {
-          "id": 1361,
+          "id": 1354,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +392,7 @@
           "word_count": 90
         },
         {
-          "id": 1684,
+          "id": 1664,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +407,7 @@
           "word_count": 69
         },
         {
-          "id": 1592,
+          "id": 1572,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -375,51 +420,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 403
-        },
-        {
-          "id": 1672,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Corrigendum to “COVID-19 vaccine attitudes, beliefs, intentions and behaviors among pregnant women within the context of dynamic national policy recommendations in Brazil, Ghana, Kenya, and Pakistan” [Vaccine (2025) 127595]",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X25010655?dgcid=rss_sd_all",
-          "content": "Publication date: Available online 25 September 2025 Source: Vaccine Author(s): Jessica L. Schue, Emily S. Miller, Berhaun Fesshaye, Prachi Singh, Renato T. Souza, Caroline Dinam Badzi, Emefa Modey Amoah, Saleem Jessani, Muhammad Asim, Ingrid Gichere, Maria Laura Costa, Jose G. Cecatti, Kwasi Torpey, Sarah Saleem, Marleen Temmerman, Sami L. Gottlieb, Rupali J. Limaye",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 369
-        },
-        {
-          "id": 1624,
-          "source": "Vaccine (journal)",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Strengthening catch-up vaccination delivery in routine health services for children under five in Western Kenya, 2022–2024",
-          "link": "https://www.sciencedirect.com/science/article/pii/S0264410X26011394?dgcid=rss_sd_all",
-          "content": "Publication date: 15 January 2027 Source: Vaccine, Volume 96 Author(s): Pierre Muhoza, Cyrus Kagecha, Kirsten Ward, Hongjiang Gao, Dominic Ouma, Mohamed Adan, Ledor S. Igboh, Youngjoo Park, Anh N. Ly, Damaris Jepkosgei, Milcah Akala, Ian Leboo, William Mulwa, Dave H. Noh, Joshua Ondiege, Rose Jalang'o, Sam Wafula, Christina Mwachari, Emily Koech, Ciara E. Sugerman",
-          "pub_date": "",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 366
-        },
-        {
-          "id": 1269,
-          "source": "FDA 审批动态",
-          "section": "vaccine",
-          "tier": "T1",
-          "priority": 1,
-          "title": "TELMISARTAN — AP",
-          "link": "https://www.accessdata.fda.gov/scripts/cder/daf/",
-          "content": "[{\"product_number\": \"002\", \"reference_drug\": \"No\", \"brand_name\": \"TELMISARTAN\", \"active_ingredients\": [{\"name\": \"TELMISARTAN\", \"strength\": \"40MG\"}], \"reference_standard\": \"No\", \"dosage_form\": \"TABLET\", \"route\": \"ORAL\", \"marketing_status\": \"Prescription\", \"te_code\": \"AB\"}, {\"product_number\": \"003\", \"reference_drug\": \"No\", \"brand_name\": \"TELMISARTAN\", \"active_ingredients\": [{\"name\": \"TELMISARTAN\", \"strength\": \"80MG\"}], \"reference_standard\": \"No\", \"dosage_form\": \"TABLET\", \"route\": \"ORAL\", \"marketing_status\": \"Prescription\", \"te_code\": \"AB\"}, {\"product_number\": \"001\", \"reference_drug\": \"No\", \"bran",
-          "pub_date": "20190517",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 600
         }
       ],
       "quota": {
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 625,
-      "total_valid": 394,
+      "total_raw": 611,
+      "total_valid": 396,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1896,
+          "id": 1875,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 54
         },
         {
-          "id": 1908,
+          "id": 1887,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 54
         },
         {
-          "id": 1909,
+          "id": 1888,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 1964,
+          "id": 1943,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 343
         },
         {
-          "id": 1916,
+          "id": 1895,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 291
         },
         {
-          "id": 1965,
+          "id": 1944,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 234
         },
         {
-          "id": 1988,
+          "id": 1965,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1989,
+          "id": 1966,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1990,
+          "id": 1967,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 2007,
+          "id": 1984,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 601
         },
         {
-          "id": 2008,
+          "id": 1985,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 467
         },
         {
-          "id": 1892,
+          "id": 1871,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -619,14 +619,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 164,
+      "total_raw": 162,
       "total_valid": 45,
       "total_candidates": 12
     },
     "cross": {
       "candidates": [
         {
-          "id": 1995,
+          "id": 1972,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 977
         },
         {
-          "id": 1817,
+          "id": 1796,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 383
         },
         {
-          "id": 1892,
+          "id": 1871,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 348
         },
         {
-          "id": 1891,
+          "id": 1870,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 317
         },
         {
-          "id": 1334,
+          "id": 1328,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 277
         },
         {
-          "id": 2048,
+          "id": 2025,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 273
         },
         {
-          "id": 2050,
+          "id": 2027,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 233
         },
         {
-          "id": 1469,
+          "id": 1455,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 231
         },
         {
-          "id": 1314,
+          "id": 1308,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 225
         },
         {
-          "id": 1283,
+          "id": 1277,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -781,14 +781,14 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 55,
-      "total_valid": 47,
+      "total_raw": 57,
+      "total_valid": 48,
       "total_candidates": 10
     },
     "china": {
       "candidates": [
         {
-          "id": 1861,
+          "id": 1840,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 1862,
+          "id": 1841,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 1863,
+          "id": 1842,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,7 +845,7 @@
     "payment": {
       "candidates": [
         {
-          "id": 2057,
+          "id": 2034,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -860,7 +860,7 @@
           "word_count": 499
         },
         {
-          "id": 2087,
+          "id": 2064,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -875,7 +875,7 @@
           "word_count": 367
         },
         {
-          "id": 2088,
+          "id": 2065,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +890,7 @@
           "word_count": 214
         },
         {
-          "id": 2077,
+          "id": 2054,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +905,7 @@
           "word_count": 205
         },
         {
-          "id": 2084,
+          "id": 2061,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -920,7 +920,7 @@
           "word_count": 176
         },
         {
-          "id": 2078,
+          "id": 2055,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -935,7 +935,7 @@
           "word_count": 159
         },
         {
-          "id": 2098,
+          "id": 2075,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +950,7 @@
           "word_count": 124
         },
         {
-          "id": 2063,
+          "id": 2040,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +965,7 @@
           "word_count": 498
         },
         {
-          "id": 2060,
+          "id": 2037,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +980,7 @@
           "word_count": 471
         },
         {
-          "id": 2061,
+          "id": 2038,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +995,7 @@
           "word_count": 470
         },
         {
-          "id": 2059,
+          "id": 2036,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +1010,7 @@
           "word_count": 466
         },
         {
-          "id": 2058,
+          "id": 2035,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1025,7 +1025,7 @@
           "word_count": 461
         },
         {
-          "id": 2067,
+          "id": 2044,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1051,9 +1051,9 @@
     }
   },
   "meta": {
-    "total_raw": 2274,
-    "dup": 569,
-    "nocontent": 432,
-    "noise": 8
+    "total_raw": 2251,
+    "dup": 552,
+    "nocontent": 428,
+    "noise": 5
   }
 }
