@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 1237,
+          "id": 1238,
           "source": "Together AI",
           "section": "ai",
           "tier": "T2",
@@ -20,7 +20,7 @@
           "word_count": 201
         },
         {
-          "id": 80,
+          "id": 82,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -35,7 +35,7 @@
           "word_count": 179
         },
         {
-          "id": 73,
+          "id": 75,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -50,7 +50,7 @@
           "word_count": 172
         },
         {
-          "id": 74,
+          "id": 76,
           "source": "TechCrunch AI",
           "section": "ai",
           "tier": "T2",
@@ -65,7 +65,22 @@
           "word_count": 156
         },
         {
-          "id": 61,
+          "id": 60,
+          "source": "HuggingFace Daily Papers",
+          "section": "ai",
+          "tier": "T1",
+          "priority": 5,
+          "title": "CARE-3D: Reinforcement Learning for Evidence Grounded Agentic Reasoning in Situated 3D Scenes",
+          "link": "https://arxiv.org/abs/2611.29969",
+          "content": "Situated 3D reasoning requires embodied agents to interpret objects, scene geometry, and viewpoint dependent spatial relations. Existing methods learn grounded interactions from supervised traces, but largely imitate prescribed evidence acquisition patterns rather than optimizing the support that the returned evidence provides for the correct answer. Moreover, outcome rewards provide limited credit for intermediate tool choices and may leave infrequent tools underexplored. An effective agent should instead adaptively decide what to ground, which tool to invoke, and how to assess the utility of returned evidence. To this end, this paper presents CARE-3D, a reinforcement post-training framework for adaptive grounded reasoning. Supervised fine-tuning (SFT) on grounding instructions first establishes valid interactions, after which Group Relative Policy Optimization (GRPO) optimizes the agent while keeping the 3D grounding module frozen. CARE-3D combines Counterfactual Attribution of Returned Evidence for evidence sensitive credit assignment, and Group Coverage Sampling to preserve tool coverage. Experiments on MSQA and Beacon3D show consistent gains over SFT and GRPO using only answer",
+          "pub_date": "2026-11-22T19:00:00.000Z",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 1200
+        },
+        {
+          "id": 64,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -80,7 +95,7 @@
           "word_count": 1200
         },
         {
-          "id": 62,
+          "id": 65,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -95,22 +110,7 @@
           "word_count": 1200
         },
         {
-          "id": 65,
-          "source": "HuggingFace Daily Papers",
-          "section": "ai",
-          "tier": "T1",
-          "priority": 5,
-          "title": "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift",
-          "link": "https://arxiv.org/abs/2611.30334",
-          "content": "Entity disambiguation (mapping ambiguous mentions in text to entities in a knowledge base) is a foundational step in tasks such as knowledge graph construction, question answering, and information extraction. Recent work has applied LLMs to this problem, achieving stateof-the-art performance. Notably, reasoning LLMs have been shown to perform entity disambiguation in a true zero-shot fashion, generalizing across knowledge bases and domains. However, it is unclear whether this capability survives, or remains competitive, with smaller LLMs, where entity disambiguation has typically relied on reranking rather than reasoning. We ask when reasoning is worth its cost at small scale. We compare pointwise, listwise, and reasoning-based candidate-selection components within a classical coarse-to-fine entity disambiguation pipeline, across the classical, few-shot and true zero-shot settings. The reasoning paradigm is trained with distillation and reinforcement learning recipes. The benefit of reasoning grows with domain shift: negligible in-domain, decisive in the true zero-shot setting. We show that two distinct factors are at work: the reranker's uncertainty over the candidates locates whe",
-          "pub_date": "2026-11-22T19:00:00.000Z",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 1200
-        },
-        {
-          "id": 1246,
+          "id": 1247,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -125,7 +125,7 @@
           "word_count": 1200
         },
         {
-          "id": 1133,
+          "id": 1134,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 1199
         },
         {
-          "id": 1245,
+          "id": 1246,
           "source": "Sakana AI",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 1199
         },
         {
-          "id": 1131,
+          "id": 1132,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 1043
         },
         {
-          "id": 1125,
+          "id": 1126,
           "source": "Simon Willison",
           "section": "ai",
           "tier": "T2",
@@ -190,14 +190,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 1248,
-      "total_valid": 796,
+      "total_raw": 1249,
+      "total_valid": 797,
       "total_candidates": 12
     },
     "vaccine": {
       "candidates": [
         {
-          "id": 1547,
+          "id": 1546,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -212,7 +212,7 @@
           "word_count": 1170
         },
         {
-          "id": 1560,
+          "id": 1559,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -227,7 +227,7 @@
           "word_count": 948
         },
         {
-          "id": 1544,
+          "id": 1543,
           "source": "ClinicalTrials.gov",
           "section": "vaccine",
           "tier": "T1",
@@ -242,7 +242,7 @@
           "word_count": 861
         },
         {
-          "id": 1373,
+          "id": 1372,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -257,7 +257,7 @@
           "word_count": 836
         },
         {
-          "id": 1365,
+          "id": 1364,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -272,7 +272,7 @@
           "word_count": 721
         },
         {
-          "id": 1371,
+          "id": 1370,
           "source": "The Lancet",
           "section": "vaccine",
           "tier": "T1",
@@ -287,7 +287,7 @@
           "word_count": 575
         },
         {
-          "id": 1472,
+          "id": 1471,
           "source": "Nature Medicine",
           "section": "vaccine",
           "tier": "T1",
@@ -302,7 +302,7 @@
           "word_count": 419
         },
         {
-          "id": 1287,
+          "id": 1286,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -317,7 +317,7 @@
           "word_count": 181
         },
         {
-          "id": 1276,
+          "id": 1275,
           "source": "Nature",
           "section": "vaccine",
           "tier": "T1",
@@ -332,7 +332,7 @@
           "word_count": 176
         },
         {
-          "id": 1673,
+          "id": 1672,
           "source": "Nature Rev Drug Discovery",
           "section": "vaccine",
           "tier": "T1",
@@ -347,7 +347,7 @@
           "word_count": 146
         },
         {
-          "id": 1440,
+          "id": 1439,
           "source": "JAMA",
           "section": "vaccine",
           "tier": "T1",
@@ -362,7 +362,7 @@
           "word_count": 130
         },
         {
-          "id": 1345,
+          "id": 1344,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -377,7 +377,7 @@
           "word_count": 90
         },
         {
-          "id": 1354,
+          "id": 1353,
           "source": "NEJM",
           "section": "vaccine",
           "tier": "T1",
@@ -392,7 +392,7 @@
           "word_count": 90
         },
         {
-          "id": 1664,
+          "id": 1663,
           "source": "Sci Transl Med",
           "section": "vaccine",
           "tier": "T1",
@@ -407,7 +407,7 @@
           "word_count": 69
         },
         {
-          "id": 1572,
+          "id": 1571,
           "source": "Vaccine (journal)",
           "section": "vaccine",
           "tier": "T1",
@@ -427,14 +427,14 @@
         "target": 5,
         "max": 7
       },
-      "total_raw": 611,
-      "total_valid": 396,
+      "total_raw": 609,
+      "total_valid": 394,
       "total_candidates": 15
     },
     "synbio": {
       "candidates": [
         {
-          "id": 1875,
+          "id": 1874,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -449,7 +449,7 @@
           "word_count": 54
         },
         {
-          "id": 1887,
+          "id": 1886,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -464,7 +464,7 @@
           "word_count": 54
         },
         {
-          "id": 1888,
+          "id": 1887,
           "source": "ACS Synthetic Biology",
           "section": "synbio",
           "tier": "T1",
@@ -479,7 +479,7 @@
           "word_count": 54
         },
         {
-          "id": 1943,
+          "id": 1942,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -494,7 +494,7 @@
           "word_count": 343
         },
         {
-          "id": 1895,
+          "id": 1894,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -509,7 +509,7 @@
           "word_count": 291
         },
         {
-          "id": 1944,
+          "id": 1943,
           "source": "Metabolic Engineering",
           "section": "synbio",
           "tier": "T1",
@@ -524,7 +524,7 @@
           "word_count": 234
         },
         {
-          "id": 1965,
+          "id": 1964,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -539,7 +539,7 @@
           "word_count": 1200
         },
         {
-          "id": 1966,
+          "id": 1965,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -554,7 +554,7 @@
           "word_count": 1200
         },
         {
-          "id": 1967,
+          "id": 1966,
           "source": "Nucleic Acids Research",
           "section": "synbio",
           "tier": "T1",
@@ -569,7 +569,7 @@
           "word_count": 1200
         },
         {
-          "id": 1984,
+          "id": 1983,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -584,7 +584,7 @@
           "word_count": 601
         },
         {
-          "id": 1985,
+          "id": 1984,
           "source": "Nature Reviews Bioengineering",
           "section": "synbio",
           "tier": "T1",
@@ -599,7 +599,7 @@
           "word_count": 467
         },
         {
-          "id": 1871,
+          "id": 1870,
           "source": "Nature Machine Intel",
           "section": "synbio",
           "tier": "T1",
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1972,
+          "id": 1971,
           "source": "Nucleic Acids Research",
           "section": "cross",
           "tier": "T1",
@@ -641,7 +641,7 @@
           "word_count": 977
         },
         {
-          "id": 1796,
+          "id": 1795,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -656,7 +656,7 @@
           "word_count": 383
         },
         {
-          "id": 1871,
+          "id": 1870,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -671,7 +671,7 @@
           "word_count": 348
         },
         {
-          "id": 1870,
+          "id": 1869,
           "source": "Nature Machine Intel",
           "section": "cross",
           "tier": "T1",
@@ -686,7 +686,7 @@
           "word_count": 317
         },
         {
-          "id": 1328,
+          "id": 1327,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -701,7 +701,7 @@
           "word_count": 277
         },
         {
-          "id": 2025,
+          "id": 2024,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -716,7 +716,7 @@
           "word_count": 273
         },
         {
-          "id": 2027,
+          "id": 2026,
           "source": "Nature Methods",
           "section": "cross",
           "tier": "T1",
@@ -731,7 +731,7 @@
           "word_count": 233
         },
         {
-          "id": 1455,
+          "id": 1454,
           "source": "JAMA",
           "section": "cross",
           "tier": "T1",
@@ -746,7 +746,7 @@
           "word_count": 231
         },
         {
-          "id": 1308,
+          "id": 1307,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -761,7 +761,7 @@
           "word_count": 225
         },
         {
-          "id": 1277,
+          "id": 1276,
           "source": "Nature",
           "section": "cross",
           "tier": "T1",
@@ -788,7 +788,7 @@
     "china": {
       "candidates": [
         {
-          "id": 1840,
+          "id": 1839,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -803,7 +803,7 @@
           "word_count": 50
         },
         {
-          "id": 1841,
+          "id": 1840,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -818,7 +818,7 @@
           "word_count": 50
         },
         {
-          "id": 1842,
+          "id": 1841,
           "source": "疫苗网",
           "section": "china",
           "tier": "T2",
@@ -845,7 +845,22 @@
     "payment": {
       "candidates": [
         {
-          "id": 2034,
+          "id": 2089,
+          "source": "Ledger Insights",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "EU banking regulator concerned about impact of DeFi on investors, stablecoins",
+          "link": "https://www.ledgerinsights.com/eu-banking-regulator-concerned-about-impact-of-defi-on-investors-stablecoins/",
+          "content": "The European Banking Authority (EBA) has raised concerns about the risks of DeFi activities for investors and the impact on MiCA regulated stablecoins, which fall under its remit. While it acknowledges that EU engagement in DeFi is limited, it is concerned about risks as DeFi becomes more accessible. A handful of MiCA regulated stablecoins are [&#8230;] The post EU banking regulator concerned about impact of DeFi on investors, stablecoins appeared first on Ledger Insights - blockchain for enterprise .",
+          "pub_date": "Thu, 26 Nov 2026 19:05:20 +0000",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 506
+        },
+        {
+          "id": 2033,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -860,7 +875,7 @@
           "word_count": 499
         },
         {
-          "id": 2064,
+          "id": 2062,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -875,7 +890,7 @@
           "word_count": 367
         },
         {
-          "id": 2065,
+          "id": 2063,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -890,7 +905,7 @@
           "word_count": 214
         },
         {
-          "id": 2054,
+          "id": 2055,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -905,7 +920,7 @@
           "word_count": 205
         },
         {
-          "id": 2061,
+          "id": 2059,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -920,22 +935,7 @@
           "word_count": 176
         },
         {
-          "id": 2055,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "AfricaNenda Foundation launches State of Inclusive Payments in Africa 2026",
-          "link": "https://www.finextra.com/newsarticle/48810/africanenda-foundation-launches-state-of-inclusive-payments-in-africa-2026?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "This year’s report highlighted that instant payments systems (IPS) in Africa are having a clear impact on financial inclusion, economic growth, and user trust.",
-          "pub_date": "Wed, 25 Nov 2026 13:00:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 159
-        },
-        {
-          "id": 2075,
+          "id": 2073,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -950,7 +950,22 @@
           "word_count": 124
         },
         {
-          "id": 2040,
+          "id": 2068,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "Self-service, AI-enabled payments: Putting corporates in control of exceptions",
+          "link": "https://www.finextra.com/event-info/644/self-service-ai-enabled-payments-putting-corporates-in-control-of-exceptions?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "How can banks deliver an AI-enabled, self-service payments experience to corporates?",
+          "pub_date": "Tue, 01 Dec 2026 15:00:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 84
+        },
+        {
+          "id": 2039,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -965,7 +980,7 @@
           "word_count": 498
         },
         {
-          "id": 2037,
+          "id": 2036,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -980,7 +995,7 @@
           "word_count": 471
         },
         {
-          "id": 2038,
+          "id": 2037,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -995,7 +1010,7 @@
           "word_count": 470
         },
         {
-          "id": 2036,
+          "id": 2035,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1010,7 +1025,7 @@
           "word_count": 466
         },
         {
-          "id": 2035,
+          "id": 2034,
           "source": "PYMNTS.com",
           "section": "payment",
           "tier": "T2",
@@ -1025,7 +1040,7 @@
           "word_count": 461
         },
         {
-          "id": 2044,
+          "id": 2043,
           "source": "PaymentsDive",
           "section": "payment",
           "tier": "T2",
@@ -1045,14 +1060,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 219,
+      "total_raw": 218,
       "total_valid": 34,
-      "total_candidates": 13
+      "total_candidates": 14
     }
   },
   "meta": {
-    "total_raw": 2251,
-    "dup": 552,
+    "total_raw": 2249,
+    "dup": 551,
     "nocontent": 428,
     "noise": 5
   }
