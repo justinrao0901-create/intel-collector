@@ -5,7 +5,7 @@
     "ai": {
       "candidates": [
         {
-          "id": 61,
+          "id": 59,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -20,7 +20,7 @@
           "word_count": 1200
         },
         {
-          "id": 62,
+          "id": 60,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -35,7 +35,7 @@
           "word_count": 1200
         },
         {
-          "id": 63,
+          "id": 61,
           "source": "HuggingFace Daily Papers",
           "section": "ai",
           "tier": "T1",
@@ -48,6 +48,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 1200
+        },
+        {
+          "id": 694,
+          "source": "Simon Willison",
+          "section": "ai",
+          "tier": "T2",
+          "priority": 5,
+          "title": "datasette-charts 0.4a0",
+          "link": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+          "content": "Release: datasette-charts 0.4a0 The new datasette-charts plugin has its own plugin hook to allow other plugins to define new chart types, but I hadn't actually used it for anything yet. I had Claude Opus 5.5 build an experimental plugins just to try out the hook and it came up with a bunch of friction points in the design. This release addresses those, which should make building additional chart plugins a whole lot more ergonomic. I've also added a website for the plugin, at charts.datasette.io . The new website includes a tutorial for plugin authors , and a gallery showing all of the core charts and annotations, each one linking to an interactive demo on Datasette Lite . Tags: datasette-charts , datasette , visualization , datasette-lite",
+          "pub_date": "2026-11-27T23:57:17+00:00",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 748
         },
         {
           "id": 700,
@@ -80,22 +95,7 @@
           "word_count": 554
         },
         {
-          "id": 696,
-          "source": "Simon Willison",
-          "section": "ai",
-          "tier": "T2",
-          "priority": 5,
-          "title": "Quoting Jack Despain Zhou",
-          "link": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
-          "content": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their reputations and mine, and I see Claude . &mdash; Jack Despain Zhou , Spitting in the Face of Glaude Tags: ai-misuse , claude , generative-ai , ai , llms",
-          "pub_date": "2026-11-26T15:09:31+00:00",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 546
-        },
-        {
-          "id": 679,
+          "id": 677,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -110,7 +110,7 @@
           "word_count": 255
         },
         {
-          "id": 681,
+          "id": 679,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -140,7 +140,7 @@
           "word_count": 180
         },
         {
-          "id": 680,
+          "id": 678,
           "source": "Latent Space",
           "section": "ai",
           "tier": "T2",
@@ -155,7 +155,7 @@
           "word_count": 160
         },
         {
-          "id": 77,
+          "id": 75,
           "source": "Sequoia Capital",
           "section": "ai",
           "tier": "T2",
@@ -170,7 +170,7 @@
           "word_count": 113
         },
         {
-          "id": 104,
+          "id": 102,
           "source": "arXiv cs.CL",
           "section": "ai",
           "tier": "T1",
@@ -191,7 +191,7 @@
         "max": 7
       },
       "total_raw": 815,
-      "total_valid": 535,
+      "total_valid": 536,
       "total_candidates": 12
     },
     "vaccine": {
@@ -626,7 +626,7 @@
     "cross": {
       "candidates": [
         {
-          "id": 1358,
+          "id": 1357,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -639,21 +639,6 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 380
-        },
-        {
-          "id": 1354,
-          "source": "Nature Communications",
-          "section": "cross",
-          "tier": "T1",
-          "priority": 2,
-          "title": "Distinct SMARCAD1 domains enable R-loop binding and facilitate R-loop-associated conflict resolution at active replication forks",
-          "link": "https://www.nature.com/articles/s41467-026-79364-1",
-          "content": "Nature Communications, Published online: 27 November 2026; doi:10.1038/s41467-026-79364-1 During DNA replication stalled transcription and R-loops need to be removed to allow replication fork progression. Here the authors show that the chromatin remodeler SMARCAD1, which associates with active replication forks, resolves R-loops near nascent DNA to maintain fork stability.",
-          "pub_date": "2026-11-27",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 375
         },
         {
           "id": 1526,
@@ -671,7 +656,7 @@
           "word_count": 373
         },
         {
-          "id": 1359,
+          "id": 1358,
           "source": "Nature Communications",
           "section": "cross",
           "tier": "T1",
@@ -699,6 +684,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 316
+        },
+        {
+          "id": 1352,
+          "source": "Nature Communications",
+          "section": "cross",
+          "tier": "T1",
+          "priority": 2,
+          "title": "Anyone can be the best depending on how structural variant callers are evaluated",
+          "link": "https://www.nature.com/articles/s41467-026-79601-7",
+          "content": "Nature Communications, Published online: 27 November 2026; doi:10.1038/s41467-026-79601-7 An evaluation of long-read structural variant detection methods shows that reported performance can depend strongly on how they are evaluated, highlighting the need for more consistent benchmarking practices.",
+          "pub_date": "2026-11-27",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 298
         },
         {
           "id": 1252,
@@ -781,8 +781,8 @@
         "target": 3,
         "max": 5
       },
-      "total_raw": 58,
-      "total_valid": 47,
+      "total_raw": 56,
+      "total_valid": 45,
       "total_candidates": 10
     },
     "china": {
@@ -920,7 +920,7 @@
           "word_count": 473
         },
         {
-          "id": 1626,
+          "id": 1624,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -980,21 +980,6 @@
           "word_count": 494
         },
         {
-          "id": 1619,
-          "source": "Finextra",
-          "section": "payment",
-          "tier": "T2",
-          "priority": 4,
-          "title": "BTS and Veridas partner to strengthen digital identity and fraud prevention",
-          "link": "https://www.finextra.com/pressarticle/111793/bts-and-veridas-partner-to-strengthen-digital-identity-and-fraud-prevention?utm_medium=rssfinextra&utm_source=finextrafeed",
-          "content": "BTS, a global telecommunications and technology company, and Veridas, a leader in digital identity verification and biometric authentication, have announced a global partnership to expand identity verification, authentication and fraud prevention capabilities across Europe, Latin America and North America.",
-          "pub_date": "Thu, 26 Nov 2026 12:45:00 GMT",
-          "is_duplicate": false,
-          "has_content": true,
-          "is_noise": false,
-          "word_count": 307
-        },
-        {
           "id": 1617,
           "source": "Finextra",
           "section": "payment",
@@ -1010,7 +995,7 @@
           "word_count": 262
         },
         {
-          "id": 1624,
+          "id": 1622,
           "source": "Finextra",
           "section": "payment",
           "tier": "T2",
@@ -1023,6 +1008,21 @@
           "has_content": true,
           "is_noise": false,
           "word_count": 253
+        },
+        {
+          "id": 1625,
+          "source": "Finextra",
+          "section": "payment",
+          "tier": "T2",
+          "priority": 4,
+          "title": "BBVA modernises its banking platform with Finastra Universal Banking",
+          "link": "https://www.finextra.com/pressarticle/111801/bbva-modernises-its-banking-platform-with-finastra-universal-banking?utm_medium=rssfinextra&utm_source=finextrafeed",
+          "content": "The project will cover 13 international offices of BBVA Corporate & Investment Banking (CIB) and is part of the area's investment in technology to support the growth of its businesses, particularly internationally.",
+          "pub_date": "Fri, 27 Nov 2026 11:21:00 GMT",
+          "is_duplicate": false,
+          "has_content": true,
+          "is_noise": false,
+          "word_count": 214
         }
       ],
       "quota": {
@@ -1030,14 +1030,14 @@
         "target": 9,
         "max": 12
       },
-      "total_raw": 210,
-      "total_valid": 28,
+      "total_raw": 203,
+      "total_valid": 27,
       "total_candidates": 12
     }
   },
   "meta": {
-    "total_raw": 1808,
-    "dup": 396,
+    "total_raw": 1801,
+    "dup": 389,
     "nocontent": 430,
     "noise": 5
   }

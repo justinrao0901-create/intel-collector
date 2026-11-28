@@ -17,9 +17,8 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 2,
-      "ok": true,
-      "latest_pub": "2026-11-24"
+      "count": 0,
+      "ok": false
     },
     "Meta AI Blog": {
       "section": "ai",
@@ -116,9 +115,9 @@
     "Simon Willison": {
       "section": "ai",
       "method": "rss",
-      "count": 15,
+      "count": 17,
       "ok": true,
-      "latest_pub": "2026-11-26"
+      "latest_pub": "2026-11-27"
     },
     "Hacker News AI": {
       "section": "ai",
@@ -578,7 +577,7 @@
     "Finextra": {
       "section": "payment",
       "method": "rss",
-      "count": 33,
+      "count": 31,
       "ok": true,
       "latest_pub": "2027-02-17"
     },
@@ -592,9 +591,8 @@
     "Thunes": {
       "section": "payment",
       "method": "rss",
-      "count": 5,
-      "ok": true,
-      "latest_pub": "2026-11-24"
+      "count": 0,
+      "ok": false
     },
     "Cointelegraph Payments": {
       "section": "payment",
@@ -664,7 +662,9 @@
     "fail": [
       "Absci Blog",
       "BioNTech",
-      "Import AI"
+      "Google DeepMind",
+      "Import AI",
+      "Thunes"
     ],
     "sudden_drop": [],
     "persistent_zero": [
