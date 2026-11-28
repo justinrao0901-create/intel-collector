@@ -17,8 +17,9 @@
     "Google DeepMind": {
       "section": "ai",
       "method": "rss",
-      "count": 0,
-      "ok": false
+      "count": 2,
+      "ok": true,
+      "latest_pub": "2026-11-24"
     },
     "Meta AI Blog": {
       "section": "ai",
@@ -75,16 +76,14 @@
     "arXiv cs.CL": {
       "section": "ai",
       "method": "rss",
-      "count": 177,
-      "ok": true,
-      "latest_pub": "2026-11-27"
+      "count": 0,
+      "ok": true
     },
     "arXiv cs.AI": {
       "section": "ai",
       "method": "rss",
-      "count": 398,
-      "ok": true,
-      "latest_pub": "2026-11-27"
+      "count": 0,
+      "ok": true
     },
     "arXiv cs.LG": {
       "section": "ai",
@@ -663,10 +662,12 @@
     "fail": [
       "Absci Blog",
       "BioNTech",
-      "Google DeepMind",
       "Import AI"
     ],
-    "sudden_drop": [],
+    "sudden_drop": [
+      "arXiv cs.AI",
+      "arXiv cs.CL"
+    ],
     "persistent_zero": [
       "Andrej Karpathy",
       "Lancet Digital Health",
